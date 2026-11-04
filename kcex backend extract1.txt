@@ -1,0 +1,738 @@
+{
+  "timestamp": "2026-11-03T23:12:54.042Z",
+  "url": "https://www.kcex.com/futures/exchange/SKHYNIX_USDT",
+  "tvGlobals": [
+    "oncontentvisibilityautostatechange",
+    "TradingView",
+    "flushSaveTvSettingFn",
+    "tradingview_19fb3"
+  ],
+  "iframes": [
+    {
+      "index": 0,
+      "id": "tradingview_19fb3",
+      "name": "tradingview_19fb3",
+      "src": "blob:https://www.kcex.com/0d12309b-d851-45f1-a632-f114b8920400",
+      "accessible": true,
+      "exposedKeys": [
+        "oncontentvisibilityautostatechange",
+        "customChartDescriptionFunction",
+        "webpackChunktradingview",
+        "TradingView",
+        "__tv_js_errors",
+        "TVLocalStorage",
+        "TVLocalStorageAsync",
+        "TVSettings",
+        "TradingViewApi",
+        "widgetReady",
+        "getCurrencyAndUnitVisibility",
+        "ChartApiInstance",
+        "chartWidgetCollection",
+        "chartWidget",
+        "tradingViewApi"
+      ],
+      "hasWidgetCollection": true
+    },
+    {
+      "index": 1,
+      "id": "",
+      "name": "",
+      "src": "chrome-extension://ijejnggjjphlenbhmjhhgcdpehhacaal/audio-devices.html",
+      "accessible": true,
+      "exposedKeys": [],
+      "hasWidgetCollection": false,
+      "error": "Failed to read a named property 'chartWidgetCollection' from 'Window': Blocked a frame with origin \"https://www.kcex.com\" from accessing a cross-origin frame."
+    }
+  ],
+  "timeframeDOM": [
+    {
+      "text": "1m",
+      "tag": "DIV",
+      "className": "klineInterval_favInterval__RhIQS klineInterval_activeInterval__AmMwu",
+      "parentClass": "klineInterval_klineActions__GN56e",
+      "hasReactFiber": true,
+      "hasReactProps": true,
+      "fiberTree": [
+        {
+          "depth": 0,
+          "type": "Component",
+          "props": {
+            "data-interval": "1"
+          }
+        },
+        {
+          "depth": 3,
+          "type": "Component",
+          "props": {
+            "klinePriceType": "lastPrice",
+            "klineInterval": "1",
+            "klineIntervalExtra": "0",
+            "onChange": "[Function: anonymous] function(){for(var e=[],t=0;t<arguments.length;t++)e[t]=arguments[t];return r.current.apply(this,e)}",
+            "onChangeExtra": "[Function: anonymous] function(){for(var e=[],t=0;t<arguments.length;t++)e[t]=arguments[t];return r.current.apply(this,e)}",
+            "showIntervals": true
+          }
+        },
+        {
+          "depth": 6,
+          "type": "WithErrorBoundary",
+          "props": {
+            "klinePriceType": "lastPrice",
+            "klineInterval": "1",
+            "klineIntervalExtra": "0",
+            "onChange": "[Function: anonymous] function(){for(var e=[],t=0;t<arguments.length;t++)e[t]=arguments[t];return r.current.apply(this,e)}",
+            "onChangeExtra": "[Function: anonymous] function(){for(var e=[],t=0;t<arguments.length;t++)e[t]=arguments[t];return r.current.apply(this,e)}",
+            "showIntervals": true
+          }
+        },
+        {
+          "depth": 9,
+          "type": "Component",
+          "props": {
+            "klinePriceType": "lastPrice",
+            "saveKlineInterval": "[Function: anonymous] function(){for(var e=[],t=0;t<arguments.length;t++)e[t]=arguments[t];return r.current.apply(this,e)}",
+            "saveKlineIntervalExtra": "[Function: anonymous] n=>{S(n),window.localStorage.setItem(lc,n)}",
+            "klineInterval": "1",
+            "klineIntervalExtra": "0",
+            "setKlinePriceType": "[Function: bound mg] function () { [native code] }"
+          }
+        }
+      ]
+    },
+    {
+      "text": "1m",
+      "tag": "SPAN",
+      "className": "",
+      "parentClass": "klineInterval_favInterval__RhIQS klineInterval_activeInterval__AmMwu",
+      "hasReactFiber": true,
+      "hasReactProps": true,
+      "fiberTree": [
+        {
+          "depth": 1,
+          "type": "Component",
+          "props": {
+            "data-interval": "1"
+          }
+        },
+        {
+          "depth": 4,
+          "type": "Component",
+          "props": {
+            "klinePriceType": "lastPrice",
+            "klineInterval": "1",
+            "klineIntervalExtra": "0",
+            "onChange": "[Function: anonymous] function(){for(var e=[],t=0;t<arguments.length;t++)e[t]=arguments[t];return r.current.apply(this,e)}",
+            "onChangeExtra": "[Function: anonymous] function(){for(var e=[],t=0;t<arguments.length;t++)e[t]=arguments[t];return r.current.apply(this,e)}",
+            "showIntervals": true
+          }
+        },
+        {
+          "depth": 7,
+          "type": "WithErrorBoundary",
+          "props": {
+            "klinePriceType": "lastPrice",
+            "klineInterval": "1",
+            "klineIntervalExtra": "0",
+            "onChange": "[Function: anonymous] function(){for(var e=[],t=0;t<arguments.length;t++)e[t]=arguments[t];return r.current.apply(this,e)}",
+            "onChangeExtra": "[Function: anonymous] function(){for(var e=[],t=0;t<arguments.length;t++)e[t]=arguments[t];return r.current.apply(this,e)}",
+            "showIntervals": true
+          }
+        },
+        {
+          "depth": 10,
+          "type": "Component",
+          "props": {
+            "klinePriceType": "lastPrice",
+            "saveKlineInterval": "[Function: anonymous] function(){for(var e=[],t=0;t<arguments.length;t++)e[t]=arguments[t];return r.current.apply(this,e)}",
+            "saveKlineIntervalExtra": "[Function: anonymous] n=>{S(n),window.localStorage.setItem(lc,n)}",
+            "klineInterval": "1",
+            "klineIntervalExtra": "0",
+            "setKlinePriceType": "[Function: bound mg] function () { [native code] }"
+          }
+        }
+      ]
+    },
+    {
+      "text": "5m",
+      "tag": "DIV",
+      "className": "klineInterval_favInterval__RhIQS",
+      "parentClass": "klineInterval_klineActions__GN56e",
+      "hasReactFiber": true,
+      "hasReactProps": true,
+      "fiberTree": [
+        {
+          "depth": 0,
+          "type": "Component",
+          "props": {
+            "data-interval": "5"
+          }
+        },
+        {
+          "depth": 3,
+          "type": "Component",
+          "props": {
+            "klinePriceType": "lastPrice",
+            "klineInterval": "1",
+            "klineIntervalExtra": "0",
+            "onChange": "[Function: anonymous] function(){for(var e=[],t=0;t<arguments.length;t++)e[t]=arguments[t];return r.current.apply(this,e)}",
+            "onChangeExtra": "[Function: anonymous] function(){for(var e=[],t=0;t<arguments.length;t++)e[t]=arguments[t];return r.current.apply(this,e)}",
+            "showIntervals": true
+          }
+        },
+        {
+          "depth": 6,
+          "type": "WithErrorBoundary",
+          "props": {
+            "klinePriceType": "lastPrice",
+            "klineInterval": "1",
+            "klineIntervalExtra": "0",
+            "onChange": "[Function: anonymous] function(){for(var e=[],t=0;t<arguments.length;t++)e[t]=arguments[t];return r.current.apply(this,e)}",
+            "onChangeExtra": "[Function: anonymous] function(){for(var e=[],t=0;t<arguments.length;t++)e[t]=arguments[t];return r.current.apply(this,e)}",
+            "showIntervals": true
+          }
+        },
+        {
+          "depth": 9,
+          "type": "Component",
+          "props": {
+            "klinePriceType": "lastPrice",
+            "saveKlineInterval": "[Function: anonymous] function(){for(var e=[],t=0;t<arguments.length;t++)e[t]=arguments[t];return r.current.apply(this,e)}",
+            "saveKlineIntervalExtra": "[Function: anonymous] n=>{S(n),window.localStorage.setItem(lc,n)}",
+            "klineInterval": "1",
+            "klineIntervalExtra": "0",
+            "setKlinePriceType": "[Function: bound mg] function () { [native code] }"
+          }
+        }
+      ]
+    },
+    {
+      "text": "5m",
+      "tag": "SPAN",
+      "className": "",
+      "parentClass": "klineInterval_favInterval__RhIQS",
+      "hasReactFiber": true,
+      "hasReactProps": true,
+      "fiberTree": [
+        {
+          "depth": 1,
+          "type": "Component",
+          "props": {
+            "data-interval": "5"
+          }
+        },
+        {
+          "depth": 4,
+          "type": "Component",
+          "props": {
+            "klinePriceType": "lastPrice",
+            "klineInterval": "1",
+            "klineIntervalExtra": "0",
+            "onChange": "[Function: anonymous] function(){for(var e=[],t=0;t<arguments.length;t++)e[t]=arguments[t];return r.current.apply(this,e)}",
+            "onChangeExtra": "[Function: anonymous] function(){for(var e=[],t=0;t<arguments.length;t++)e[t]=arguments[t];return r.current.apply(this,e)}",
+            "showIntervals": true
+          }
+        },
+        {
+          "depth": 7,
+          "type": "WithErrorBoundary",
+          "props": {
+            "klinePriceType": "lastPrice",
+            "klineInterval": "1",
+            "klineIntervalExtra": "0",
+            "onChange": "[Function: anonymous] function(){for(var e=[],t=0;t<arguments.length;t++)e[t]=arguments[t];return r.current.apply(this,e)}",
+            "onChangeExtra": "[Function: anonymous] function(){for(var e=[],t=0;t<arguments.length;t++)e[t]=arguments[t];return r.current.apply(this,e)}",
+            "showIntervals": true
+          }
+        },
+        {
+          "depth": 10,
+          "type": "Component",
+          "props": {
+            "klinePriceType": "lastPrice",
+            "saveKlineInterval": "[Function: anonymous] function(){for(var e=[],t=0;t<arguments.length;t++)e[t]=arguments[t];return r.current.apply(this,e)}",
+            "saveKlineIntervalExtra": "[Function: anonymous] n=>{S(n),window.localStorage.setItem(lc,n)}",
+            "klineInterval": "1",
+            "klineIntervalExtra": "0",
+            "setKlinePriceType": "[Function: bound mg] function () { [native code] }"
+          }
+        }
+      ]
+    },
+    {
+      "text": "15m",
+      "tag": "DIV",
+      "className": "klineInterval_favInterval__RhIQS",
+      "parentClass": "klineInterval_klineActions__GN56e",
+      "hasReactFiber": true,
+      "hasReactProps": true,
+      "fiberTree": [
+        {
+          "depth": 0,
+          "type": "Component",
+          "props": {
+            "data-interval": "15"
+          }
+        },
+        {
+          "depth": 3,
+          "type": "Component",
+          "props": {
+            "klinePriceType": "lastPrice",
+            "klineInterval": "1",
+            "klineIntervalExtra": "0",
+            "onChange": "[Function: anonymous] function(){for(var e=[],t=0;t<arguments.length;t++)e[t]=arguments[t];return r.current.apply(this,e)}",
+            "onChangeExtra": "[Function: anonymous] function(){for(var e=[],t=0;t<arguments.length;t++)e[t]=arguments[t];return r.current.apply(this,e)}",
+            "showIntervals": true
+          }
+        },
+        {
+          "depth": 6,
+          "type": "WithErrorBoundary",
+          "props": {
+            "klinePriceType": "lastPrice",
+            "klineInterval": "1",
+            "klineIntervalExtra": "0",
+            "onChange": "[Function: anonymous] function(){for(var e=[],t=0;t<arguments.length;t++)e[t]=arguments[t];return r.current.apply(this,e)}",
+            "onChangeExtra": "[Function: anonymous] function(){for(var e=[],t=0;t<arguments.length;t++)e[t]=arguments[t];return r.current.apply(this,e)}",
+            "showIntervals": true
+          }
+        },
+        {
+          "depth": 9,
+          "type": "Component",
+          "props": {
+            "klinePriceType": "lastPrice",
+            "saveKlineInterval": "[Function: anonymous] function(){for(var e=[],t=0;t<arguments.length;t++)e[t]=arguments[t];return r.current.apply(this,e)}",
+            "saveKlineIntervalExtra": "[Function: anonymous] n=>{S(n),window.localStorage.setItem(lc,n)}",
+            "klineInterval": "1",
+            "klineIntervalExtra": "0",
+            "setKlinePriceType": "[Function: bound mg] function () { [native code] }"
+          }
+        }
+      ]
+    },
+    {
+      "text": "15m",
+      "tag": "SPAN",
+      "className": "",
+      "parentClass": "klineInterval_favInterval__RhIQS",
+      "hasReactFiber": true,
+      "hasReactProps": true,
+      "fiberTree": [
+        {
+          "depth": 1,
+          "type": "Component",
+          "props": {
+            "data-interval": "15"
+          }
+        },
+        {
+          "depth": 4,
+          "type": "Component",
+          "props": {
+            "klinePriceType": "lastPrice",
+            "klineInterval": "1",
+            "klineIntervalExtra": "0",
+            "onChange": "[Function: anonymous] function(){for(var e=[],t=0;t<arguments.length;t++)e[t]=arguments[t];return r.current.apply(this,e)}",
+            "onChangeExtra": "[Function: anonymous] function(){for(var e=[],t=0;t<arguments.length;t++)e[t]=arguments[t];return r.current.apply(this,e)}",
+            "showIntervals": true
+          }
+        },
+        {
+          "depth": 7,
+          "type": "WithErrorBoundary",
+          "props": {
+            "klinePriceType": "lastPrice",
+            "klineInterval": "1",
+            "klineIntervalExtra": "0",
+            "onChange": "[Function: anonymous] function(){for(var e=[],t=0;t<arguments.length;t++)e[t]=arguments[t];return r.current.apply(this,e)}",
+            "onChangeExtra": "[Function: anonymous] function(){for(var e=[],t=0;t<arguments.length;t++)e[t]=arguments[t];return r.current.apply(this,e)}",
+            "showIntervals": true
+          }
+        },
+        {
+          "depth": 10,
+          "type": "Component",
+          "props": {
+            "klinePriceType": "lastPrice",
+            "saveKlineInterval": "[Function: anonymous] function(){for(var e=[],t=0;t<arguments.length;t++)e[t]=arguments[t];return r.current.apply(this,e)}",
+            "saveKlineIntervalExtra": "[Function: anonymous] n=>{S(n),window.localStorage.setItem(lc,n)}",
+            "klineInterval": "1",
+            "klineIntervalExtra": "0",
+            "setKlinePriceType": "[Function: bound mg] function () { [native code] }"
+          }
+        }
+      ]
+    },
+    {
+      "text": "1H",
+      "tag": "DIV",
+      "className": "klineInterval_favInterval__RhIQS",
+      "parentClass": "klineInterval_klineActions__GN56e",
+      "hasReactFiber": true,
+      "hasReactProps": true,
+      "fiberTree": [
+        {
+          "depth": 0,
+          "type": "Component",
+          "props": {
+            "data-interval": "60"
+          }
+        },
+        {
+          "depth": 3,
+          "type": "Component",
+          "props": {
+            "klinePriceType": "lastPrice",
+            "klineInterval": "1",
+            "klineIntervalExtra": "0",
+            "onChange": "[Function: anonymous] function(){for(var e=[],t=0;t<arguments.length;t++)e[t]=arguments[t];return r.current.apply(this,e)}",
+            "onChangeExtra": "[Function: anonymous] function(){for(var e=[],t=0;t<arguments.length;t++)e[t]=arguments[t];return r.current.apply(this,e)}",
+            "showIntervals": true
+          }
+        },
+        {
+          "depth": 6,
+          "type": "WithErrorBoundary",
+          "props": {
+            "klinePriceType": "lastPrice",
+            "klineInterval": "1",
+            "klineIntervalExtra": "0",
+            "onChange": "[Function: anonymous] function(){for(var e=[],t=0;t<arguments.length;t++)e[t]=arguments[t];return r.current.apply(this,e)}",
+            "onChangeExtra": "[Function: anonymous] function(){for(var e=[],t=0;t<arguments.length;t++)e[t]=arguments[t];return r.current.apply(this,e)}",
+            "showIntervals": true
+          }
+        },
+        {
+          "depth": 9,
+          "type": "Component",
+          "props": {
+            "klinePriceType": "lastPrice",
+            "saveKlineInterval": "[Function: anonymous] function(){for(var e=[],t=0;t<arguments.length;t++)e[t]=arguments[t];return r.current.apply(this,e)}",
+            "saveKlineIntervalExtra": "[Function: anonymous] n=>{S(n),window.localStorage.setItem(lc,n)}",
+            "klineInterval": "1",
+            "klineIntervalExtra": "0",
+            "setKlinePriceType": "[Function: bound mg] function () { [native code] }"
+          }
+        }
+      ]
+    },
+    {
+      "text": "1H",
+      "tag": "SPAN",
+      "className": "",
+      "parentClass": "klineInterval_favInterval__RhIQS",
+      "hasReactFiber": true,
+      "hasReactProps": true,
+      "fiberTree": [
+        {
+          "depth": 1,
+          "type": "Component",
+          "props": {
+            "data-interval": "60"
+          }
+        },
+        {
+          "depth": 4,
+          "type": "Component",
+          "props": {
+            "klinePriceType": "lastPrice",
+            "klineInterval": "1",
+            "klineIntervalExtra": "0",
+            "onChange": "[Function: anonymous] function(){for(var e=[],t=0;t<arguments.length;t++)e[t]=arguments[t];return r.current.apply(this,e)}",
+            "onChangeExtra": "[Function: anonymous] function(){for(var e=[],t=0;t<arguments.length;t++)e[t]=arguments[t];return r.current.apply(this,e)}",
+            "showIntervals": true
+          }
+        },
+        {
+          "depth": 7,
+          "type": "WithErrorBoundary",
+          "props": {
+            "klinePriceType": "lastPrice",
+            "klineInterval": "1",
+            "klineIntervalExtra": "0",
+            "onChange": "[Function: anonymous] function(){for(var e=[],t=0;t<arguments.length;t++)e[t]=arguments[t];return r.current.apply(this,e)}",
+            "onChangeExtra": "[Function: anonymous] function(){for(var e=[],t=0;t<arguments.length;t++)e[t]=arguments[t];return r.current.apply(this,e)}",
+            "showIntervals": true
+          }
+        },
+        {
+          "depth": 10,
+          "type": "Component",
+          "props": {
+            "klinePriceType": "lastPrice",
+            "saveKlineInterval": "[Function: anonymous] function(){for(var e=[],t=0;t<arguments.length;t++)e[t]=arguments[t];return r.current.apply(this,e)}",
+            "saveKlineIntervalExtra": "[Function: anonymous] n=>{S(n),window.localStorage.setItem(lc,n)}",
+            "klineInterval": "1",
+            "klineIntervalExtra": "0",
+            "setKlinePriceType": "[Function: bound mg] function () { [native code] }"
+          }
+        }
+      ]
+    },
+    {
+      "text": "4H",
+      "tag": "DIV",
+      "className": "klineInterval_favInterval__RhIQS",
+      "parentClass": "klineInterval_klineActions__GN56e",
+      "hasReactFiber": true,
+      "hasReactProps": true,
+      "fiberTree": [
+        {
+          "depth": 0,
+          "type": "Component",
+          "props": {
+            "data-interval": "240"
+          }
+        },
+        {
+          "depth": 3,
+          "type": "Component",
+          "props": {
+            "klinePriceType": "lastPrice",
+            "klineInterval": "1",
+            "klineIntervalExtra": "0",
+            "onChange": "[Function: anonymous] function(){for(var e=[],t=0;t<arguments.length;t++)e[t]=arguments[t];return r.current.apply(this,e)}",
+            "onChangeExtra": "[Function: anonymous] function(){for(var e=[],t=0;t<arguments.length;t++)e[t]=arguments[t];return r.current.apply(this,e)}",
+            "showIntervals": true
+          }
+        },
+        {
+          "depth": 6,
+          "type": "WithErrorBoundary",
+          "props": {
+            "klinePriceType": "lastPrice",
+            "klineInterval": "1",
+            "klineIntervalExtra": "0",
+            "onChange": "[Function: anonymous] function(){for(var e=[],t=0;t<arguments.length;t++)e[t]=arguments[t];return r.current.apply(this,e)}",
+            "onChangeExtra": "[Function: anonymous] function(){for(var e=[],t=0;t<arguments.length;t++)e[t]=arguments[t];return r.current.apply(this,e)}",
+            "showIntervals": true
+          }
+        },
+        {
+          "depth": 9,
+          "type": "Component",
+          "props": {
+            "klinePriceType": "lastPrice",
+            "saveKlineInterval": "[Function: anonymous] function(){for(var e=[],t=0;t<arguments.length;t++)e[t]=arguments[t];return r.current.apply(this,e)}",
+            "saveKlineIntervalExtra": "[Function: anonymous] n=>{S(n),window.localStorage.setItem(lc,n)}",
+            "klineInterval": "1",
+            "klineIntervalExtra": "0",
+            "setKlinePriceType": "[Function: bound mg] function () { [native code] }"
+          }
+        }
+      ]
+    },
+    {
+      "text": "4H",
+      "tag": "SPAN",
+      "className": "",
+      "parentClass": "klineInterval_favInterval__RhIQS",
+      "hasReactFiber": true,
+      "hasReactProps": true,
+      "fiberTree": [
+        {
+          "depth": 1,
+          "type": "Component",
+          "props": {
+            "data-interval": "240"
+          }
+        },
+        {
+          "depth": 4,
+          "type": "Component",
+          "props": {
+            "klinePriceType": "lastPrice",
+            "klineInterval": "1",
+            "klineIntervalExtra": "0",
+            "onChange": "[Function: anonymous] function(){for(var e=[],t=0;t<arguments.length;t++)e[t]=arguments[t];return r.current.apply(this,e)}",
+            "onChangeExtra": "[Function: anonymous] function(){for(var e=[],t=0;t<arguments.length;t++)e[t]=arguments[t];return r.current.apply(this,e)}",
+            "showIntervals": true
+          }
+        },
+        {
+          "depth": 7,
+          "type": "WithErrorBoundary",
+          "props": {
+            "klinePriceType": "lastPrice",
+            "klineInterval": "1",
+            "klineIntervalExtra": "0",
+            "onChange": "[Function: anonymous] function(){for(var e=[],t=0;t<arguments.length;t++)e[t]=arguments[t];return r.current.apply(this,e)}",
+            "onChangeExtra": "[Function: anonymous] function(){for(var e=[],t=0;t<arguments.length;t++)e[t]=arguments[t];return r.current.apply(this,e)}",
+            "showIntervals": true
+          }
+        },
+        {
+          "depth": 10,
+          "type": "Component",
+          "props": {
+            "klinePriceType": "lastPrice",
+            "saveKlineInterval": "[Function: anonymous] function(){for(var e=[],t=0;t<arguments.length;t++)e[t]=arguments[t];return r.current.apply(this,e)}",
+            "saveKlineIntervalExtra": "[Function: anonymous] n=>{S(n),window.localStorage.setItem(lc,n)}",
+            "klineInterval": "1",
+            "klineIntervalExtra": "0",
+            "setKlinePriceType": "[Function: bound mg] function () { [native code] }"
+          }
+        }
+      ]
+    },
+    {
+      "text": "1m",
+      "tag": "DIV",
+      "className": "klineInterval_wrapper__2P_0t guide-klineInterval",
+      "parentClass": "tradingView_settingWrapper__Dy9_J tradingView_settingWrapperSmallScreen__pAe5s",
+      "hasReactFiber": true,
+      "hasReactProps": true,
+      "fiberTree": [
+        {
+          "depth": 1,
+          "type": "Component",
+          "props": {
+            "klinePriceType": "lastPrice",
+            "klineInterval": "1",
+            "klineIntervalExtra": "0",
+            "onChange": "[Function: anonymous] function(){for(var e=[],t=0;t<arguments.length;t++)e[t]=arguments[t];return r.current.apply(this,e)}",
+            "onChangeExtra": "[Function: anonymous] function(){for(var e=[],t=0;t<arguments.length;t++)e[t]=arguments[t];return r.current.apply(this,e)}",
+            "showIntervals": false
+          }
+        },
+        {
+          "depth": 4,
+          "type": "WithErrorBoundary",
+          "props": {
+            "klinePriceType": "lastPrice",
+            "klineInterval": "1",
+            "klineIntervalExtra": "0",
+            "onChange": "[Function: anonymous] function(){for(var e=[],t=0;t<arguments.length;t++)e[t]=arguments[t];return r.current.apply(this,e)}",
+            "onChangeExtra": "[Function: anonymous] function(){for(var e=[],t=0;t<arguments.length;t++)e[t]=arguments[t];return r.current.apply(this,e)}",
+            "showIntervals": false
+          }
+        },
+        {
+          "depth": 7,
+          "type": "Component",
+          "props": {
+            "klinePriceType": "lastPrice",
+            "saveKlineInterval": "[Function: anonymous] function(){for(var e=[],t=0;t<arguments.length;t++)e[t]=arguments[t];return r.current.apply(this,e)}",
+            "saveKlineIntervalExtra": "[Function: anonymous] n=>{S(n),window.localStorage.setItem(lc,n)}",
+            "klineInterval": "1",
+            "klineIntervalExtra": "0",
+            "setKlinePriceType": "[Function: bound mg] function () { [native code] }"
+          }
+        },
+        {
+          "depth": 10,
+          "type": "WithErrorBoundary",
+          "props": {
+            "klinePriceType": "lastPrice",
+            "saveKlineInterval": "[Function: anonymous] function(){for(var e=[],t=0;t<arguments.length;t++)e[t]=arguments[t];return r.current.apply(this,e)}",
+            "saveKlineIntervalExtra": "[Function: anonymous] n=>{S(n),window.localStorage.setItem(lc,n)}",
+            "klineInterval": "1",
+            "klineIntervalExtra": "0",
+            "setKlinePriceType": "[Function: bound mg] function () { [native code] }"
+          }
+        }
+      ]
+    },
+    {
+      "text": "1m",
+      "tag": "DIV",
+      "className": "klineInterval_more___3_te guide-more",
+      "parentClass": "klineInterval_wrapper__2P_0t guide-klineInterval",
+      "hasReactFiber": true,
+      "hasReactProps": true,
+      "fiberTree": [
+        {
+          "depth": 1,
+          "type": "Component",
+          "props": {
+            "value": "{}"
+          }
+        },
+        {
+          "depth": 2,
+          "type": "Trigger",
+          "props": {
+            "onPopupVisibleChange": "[Function: onVisibleChange] function(N){var et,en;eC(!isNoTitle()&&N),isNoTitle()||(null===(et=C.onOpenChange)||void 0===et||et.call(C,N),null===(en=C.onVisibleChange)||void 0===",
+            "afterPopupVisibleChange": "[Function: noop] function noop(){}",
+            "onOpenChange": "[Function: anonymous] function(){for(var e=[],t=0;t<arguments.length;t++)e[t]=arguments[t];return r.current.apply(this,e)}"
+          }
+        },
+        {
+          "depth": 3,
+          "type": "Component",
+          "props": {
+            "onOpenChange": "[Function: anonymous] function(){for(var e=[],t=0;t<arguments.length;t++)e[t]=arguments[t];return r.current.apply(this,e)}",
+            "onVisibleChange": "[Function: onVisibleChange] function(N){var et,en;eC(!isNoTitle()&&N),isNoTitle()||(null===(et=C.onOpenChange)||void 0===et||et.call(C,N),null===(en=C.onVisibleChange)||void 0==="
+          }
+        },
+        {
+          "depth": 4,
+          "type": "Component",
+          "props": {
+            "onOpenChange": "[Function: anonymous] function(){for(var e=[],t=0;t<arguments.length;t++)e[t]=arguments[t];return r.current.apply(this,e)}"
+          }
+        },
+        {
+          "depth": 5,
+          "type": "Component",
+          "props": {
+            "onOpenChange": "[Function: anonymous] function(){for(var e=[],t=0;t<arguments.length;t++)e[t]=arguments[t];return r.current.apply(this,e)}"
+          }
+        },
+        {
+          "depth": 7,
+          "type": "Component",
+          "props": {
+            "klinePriceType": "lastPrice",
+            "klineInterval": "1",
+            "klineIntervalExtra": "0",
+            "onChange": "[Function: anonymous] function(){for(var e=[],t=0;t<arguments.length;t++)e[t]=arguments[t];return r.current.apply(this,e)}",
+            "onChangeExtra": "[Function: anonymous] function(){for(var e=[],t=0;t<arguments.length;t++)e[t]=arguments[t];return r.current.apply(this,e)}",
+            "showIntervals": false
+          }
+        },
+        {
+          "depth": 10,
+          "type": "WithErrorBoundary",
+          "props": {
+            "klinePriceType": "lastPrice",
+            "klineInterval": "1",
+            "klineIntervalExtra": "0",
+            "onChange": "[Function: anonymous] function(){for(var e=[],t=0;t<arguments.length;t++)e[t]=arguments[t];return r.current.apply(this,e)}",
+            "onChangeExtra": "[Function: anonymous] function(){for(var e=[],t=0;t<arguments.length;t++)e[t]=arguments[t];return r.current.apply(this,e)}",
+            "showIntervals": false
+          }
+        }
+      ]
+    }
+  ],
+  "reactPropsSample": null,
+  "klineEndpoints": [
+    "https://www.kcex.com/fapi/v1/contract/ping",
+    "https://www.kcex.com/fapi/v1/contract/ping",
+    "https://www.kcex.com/fapi/v1/contract/ping",
+    "https://www.kcex.com/fapi/v1/contract/ping",
+    "https://www.kcex.com/fapi/v1/contract/ping",
+    "https://www.kcex.com/fapi/v1/contract/ping",
+    "https://www.kcex.com/fapi/v1/contract/ping",
+    "https://www.kcex.com/fapi/v1/contract/ping",
+    "https://www.kcex.com/fapi/v1/contract/ping",
+    "https://www.kcex.com/fapi/v1/contract/ping",
+    "https://www.kcex.com/fapi/v1/contract/ping",
+    "https://www.kcex.com/fapi/v1/contract/ping",
+    "https://www.kcex.com/fapi/v1/contract/ping",
+    "https://www.kcex.com/fapi/v1/contract/ping",
+    "https://www.kcex.com/fapi/v1/contract/ping",
+    "https://www.kcex.com/fapi/v1/contract/ping",
+    "https://www.kcex.com/fapi/v1/contract/ping",
+    "https://www.kcex.com/fapi/v1/contract/ping",
+    "https://www.kcex.com/fapi/v1/contract/ping",
+    "https://www.kcex.com/fapi/v1/contract/ping"
+  ],
+  "datafeedConfig": null,
+  "activeChartInfo": {
+    "resolution": null,
+    "symbol": null,
+    "hasModel": true
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "externalDatafeedMethods": {
+    "onReady": "e=>{setTimeout(()=>e(em))}",
+    "searchSymbols": "(e,t,r,o)=>{}",
+    "resolveSymbol": "(e,t)=>{var r;let o=getFormatedKlinePriceTypeMap(),[n,i]=e.split(\":\");ev[i]=!0;let l=eg[n]||{},a=\"\".concat(null==l?void 0:l.showName,\" \").concat(null===(r=o[null==l?void 0:l.priceType])||void 0===r?void 0:r.text),c=Math.pow(10,(null==l?void 0:l.priceScale)||4),s={name:a,description:a,type:\"crypto\",session:\"24x7\",timezone:\"Etc/UTC\",ticker:e,minmov:1,pricescale:c,has_seconds:!0,has_intraday:!0,has_daily:!0,has_weekly_and_monthly:!0,seconds_multipliers:[\"1\"],intraday_multipliers:[\"1\",\"5\",\"15\",\"30\",\"60\",\"240\",\"480\"],supported_resolutions:e_,supported_resolution:e_,volume_precision:(null==l?void 0:l.volScale)||2,data_status:\"streaming\",exchange:\"KCEX\",listed_exchange:\"KCEX\"};setTimeout(function(){t(s)})}",
+    "getBars": "async function(e,t,r,o,n){let{from:i,to:l,firstDataRequest:a}=r;try{var c,s,d,u,p,_;let r=getFormatedKlinePriceTypeMap(),[n,m]=((null==e?void 0:e.ticker)||\"\").split(\":\");a&&(ev[m]=!0),\"1W\"===t&&a&&(l+=28800);let g=eg[n]||{},{priceType:y,unit:f}=g||{},x=[],b=null==r?void 0:null===(c=r[y])||void 0===c?void 0:c.api,S=v.Wh[t];if(!n||!b||!S){o([],{noData:!0}),a&&(ev[m]=!0);return}let w=l-i,P=v.xK[S],L=P?v.au*P:0,T=[],O=(0,h.ej)(C.j4M)||C.onc,I=O===C.LEs&&y===v.G4.LAST_PRICE;if(L&&w>L){let e=Math.floor(w/L),t=l;for(let r=0;r<e;r++){let e=t-L;T.push({start:e,end:t}),t=e-1}T.push({start:i,end:t})}else T.push({start:i,end:l});let N=!1,V=T.map(e=>async()=>{if(N)return;let t=Date.now(),r=await b({symbol:n,interval:S,start:1e3*e.start,end:1e3*e.end}),o=Date.now();try{(0,eo.zr)({currency:n,state:(null==r?void 0:r.code)===0?\"True\":\"False\",loadingMain:(o-t)/1e3})}catch(e){}if(!r)return;let{data:i,success:l}=r,a=(null==i?void 0:i.vol)||[];if(l&&0===a.length){N=!0;return}if(!l||(null==i?void 0:i.s)===\"no_data\")return;let c=Array.isArray(null==i?void 0:i.time)?i.time.length:0;for(let e=0;e<c;++e){var s,d,u,p,_,m,v,y,C,w,P,L,T,O,V,B,E,F,j;let t=Number(null==i?void 0:null===(s=i.close)||void 0===s?void 0:s[e]);if(!Number.isFinite(t))continue;let r={time:1e3*Number(i.time[e]),close:t,open:Number(null!==(v=null==i?void 0:null===(d=i.open)||void 0===d?void 0:d[e])&&void 0!==v?v:t),high:Number(null!==(y=null==i?void 0:null===(u=i.high)||void 0===u?void 0:u[e])&&void 0!==y?y:t),low:Number(null!==(C=null==i?void 0:null===(p=i.low)||void 0===p?void 0:p[e])&&void 0!==C?C:t)};I&&(r.open=Number(null!==(O=null==i?void 0:null===(w=i.realOpen)||void 0===w?void 0:w[e])&&void 0!==O?O:r.open),r.high=Number(null!==(V=null==i?void 0:null===(P=i.realHigh)||void 0===P?void 0:P[e])&&void 0!==V?V:r.high),r.low=Number(null!==(B=null==i?void 0:null===(L=i.realLow)||void 0===L?void 0:L[e])&&void 0!==B?B:r.low),r.close=Number(null!==(E=null==i?void 0:null===(T=i.realClose)||void 0===T?void 0:T[e])&&void 0!==E?E:r.close));let o=2==+f?Number((0,h.FT)(null!==(F=null==i?void 0:null===(_=i.amount)||void 0===_?void 0:_[e])&&void 0!==F?F:0,2)):Number((0,k.zs)({vol:Number(null!==(j=null==i?void 0:null===(m=i.vol)||void 0===m?void 0:m[e])&&void 0!==j?j:0),productInfo:g,price:t,unit:f}));r.volume=Number.isFinite(o)?o:0,x.push(r)}});await V.reduce((e,t)=>e.then(t),Promise.resolve());let B=x.sort((e,t)=>e.time-t.time),E=[],F=new Set;for(let e of B)!(null==e?void 0:e.time)||F.has(e.time)||(F.add(e.time),E.push(e));o(E,{noData:!E.length}),a&&(ev[m]=!E.length);try{a&&!(0,eu.s)()&&(null===(d=window)||void 0===d?void 0:null===(s=d._appStore)||void 0===s?void 0:s.dispatch)&&(null===(_=window)||void 0===_||null===(p=_._appStore)||void 0===p||p.dispatch({type:\"market/setMarket\",payload:{key:\"klineRealTimePrice\",data:null==E?void 0:null===(u=E[E.length-1])||void 0===u?void 0:u.close}}))}catch(e){}}catch(e){null==n||n(e)}}",
+    "subscribeBars": "(e,t,r,o,n)=>{let i=getFormatedKlinePriceTypeMap(),l=v.Wh[t],{ticker:a}=e,c=a.split(\":\")[0],{priceType:s}=eg[c]||{},d=s||v.G4.LAST_PRICE,u=i[d].subChannel,p=i[d].onChannel,_=(0,h.ej)(C.j4M)||C.onc,m=_===C.LEs&&d===v.G4.LAST_PRICE;Object.keys(ep[\"\".concat(c,\":\").concat(l,\":\").concat(d)]||{}).length||(ep[\"\".concat(c,\":\").concat(l,\":\").concat(d)]={},(0,ed.bG)({method:u,param:{symbol:c,interval:l}}),ed.ZP.on(p,e=>{try{var t,r,o,n;let i=eg[e.symbol]||{},{unit:l}=i;if(!e||!ep[\"\".concat(e.symbol,\":\").concat(e.interval,\":\").concat(d)])throw Error(\"\");let a=2==+l?Number((0,h.FT)(e.a,2)):(0,k.zs)({vol:Number(e.q),productInfo:i,price:e.c,unit:l}),c={time:1e3*e.t,open:m?e.ro:e.o,high:m?e.rh:e.h,low:m?e.rl:e.l,close:m?e.rc:e.c,volume:Number(a)};handleRealTimeData(\"\".concat(e.symbol,\":\").concat(e.interval,\":\").concat(d),null,c),!(0,eu.s)()&&(null===(r=window)||void 0===r?void 0:null===(t=r._appStore)||void 0===t?void 0:t.dispatch)&&(null===(n=window)||void 0===n||null===(o=n._appStore)||void 0===o||o.dispatch({type:\"market/setMarket\",payload:{key:\"klineRealTimePrice\",data:e.c}}))}catch(e){handleRealTimeData(\"fxxk\",e)}})),ep[\"\".concat(c,\":\").concat(l,\":\").concat(d)][a]={onRealtimeCallback:r,subscribeUID:o,symbol:c,resolution:t,priceType:d},eh[a]=n}",
+    "unsubscribeBars": "e=>{let t=getFormatedKlinePriceTypeMap();Object.keys(ep).forEach(r=>{let o=ep[r],n=Object.keys(o);n.forEach(i=>{var l;let a=o[i],c=v.Wh[null==a?void 0:a.resolution],s=null==a?void 0:a.symbol,d=t[null==a?void 0:a.priceType].unsubChannel;(null==a?void 0:null===(l=a.subscribeUID)||void 0===l?void 0:l.startsWith(e))&&(n.length<=1&&(0,ed.bG)({method:d,param:{symbol:s,interval:c}}),delete o[i],n.length<=1&&delete ep[r])})})}",
+    "getMarks": "(e,t,r,o,n)=>{}",
+    "getTimeScaleMarks": "(e,t,r,o,n)=>{}",
+    "getServerTime": "async e=>{let t=await (0,ee.SFA)(),r=Date.now()+t;e(Math.round(r/1e3))}",
+    "constructor": "function Object() { [native code] }",
+    "__defineGetter__": "function __defineGetter__() { [native code] }",
+    "__defineSetter__": "function __defineSetter__() { [native code] }",
+    "hasOwnProperty": "function hasOwnProperty() { [native code] }",
+    "__lookupGetter__": "function __lookupGetter__() { [native code] }",
+    "__lookupSetter__": "function __lookupSetter__() { [native code] }",
+    "isPrototypeOf": "function isPrototypeOf() { [native code] }",
+    "propertyIsEnumerable": "function propertyIsEnumerable() { [native code] }",
+    "toString": "function toString() { [native code] }",
+    "valueOf": "function valueOf() { [native code] }",
+    "toLocaleString": "function toLocaleString() { [native code] }"
+  },
+  "dealsSample": {
+    "success": true,
+    "code": 0,
+    "count": 100,
+    "firstTwo": [
+      {
+        "p": 1086.43,
+        "v": 230,
+        "T": 2,
+        "O": 3,
+        "M": 1,
+        "t": 1793747923842
+      },
+      {
+        "p": 1086.42,
+        "v": 450,
+        "T": 2,
+        "O": 3,
+        "M": 1,
+        "t": 1793747922682
+      }
+    ]
+  },
+  "klineMin1Sample": {
+    "success": true,
+    "code": 0,
+    "data": {
+      "time": [
+        1793747640,
+        1793747700,
+        1793747760,
+        1793747820,
+        1793747880
+      ],
+      "open": [
+        1085.78,
+        1085.56,
+        1086.37,
+        1086.82,
+        1086.33
+      ],
+      "close": [
+        1085.56,
+        1086.37,
+        1086.82,
+        1086.33,
+        1086.43
+      ],
+      "high": [
+        1086.27,
+        1086.62,
+        1086.82,
+        1086.89,
+        1086.7
+      ],
+      "low": [
+        1085.43,
+        1085.56,
+        1086.37,
+        1085.47,
+        1086.32
+      ],
+      "vol": [
+        31529,
+        46059,
+        42920,
+        45300,
+        20040
+      ],
+      "amount": [
+        34234.66992,
+        50027.00404,
+        46643.5341,
+        49202.0725,
+        21773.2075
+      ],
+      "realOpen": [
+        1085.43,
+        1085.97,
+        1086.58,
+        1086.89,
+        1086.7
+      ],
+      "realClose": [
+        1085.56,
+        1086.37,
+        1086.82,
+        1086.33,
+        1086.43
+      ],
+      "realHigh": [
+        1086.27,
+        1086.62,
+        1086.82,
+        1086.89,
+        1086.7
+      ],
+      "realLow": [
+        1085.43,
+        1085.74,
+        1086.47,
+        1085.47,
+        1086.32
+      ]
+    }
+  },
+  "serverSecondTests": {
+    "Sec1": {
+      "success": false,
+      "code": 600,
+      "message": "Type mismatch error!"
+    },
+    "1s": {
+      "success": false,
+      "code": 600,
+      "message": "Type mismatch error!"
+    },
+    "1S": {
+      "success": false,
+      "code": 600,
+      "message": "Type mismatch error!"
+    },
+    "Second1": {
+      "success": true,
+      "code": 0,
+      "data": {
+        "time": [],
+        "open": [],
+        "close": [],
+        "high": [],
+        "low": [],
+        "vol": [],
+        "amount": [],
+        "realOpen": [],
+        "realClose": [],
+        "realHigh": [],
+        "realLow": []
+      }
+    },
+    "Min0": {
+      "success": false,
+      "code": 600,
+      "message": "Type mismatch error!"
+    }
+  },
+  "tvSetResolutionMethods": [
+    "mainSeries",
+    "publishedChartsTimelineSource",
+    "timeScale",
+    "restorePropertiesForSource",
+    "restoreLineToolsFactoryDefaults",
+    "restorePreferences",
+    "restoreState",
+    "interval",
+    "switchToRealtime",
+    "canChangeResolution",
+    "startScrollTime",
+    "scrollTimeTo",
+    "endScrollTime",
+    "startScaleTime",
+    "scaleTimeTo",
+    "endScaleTime",
+    "resetTimeScale",
+    "changeTimeScale",
+    "resetPriceScale",
+    "setResolution",
+    "resetScales",
+    "onSymbolIntervalChanged",
+    "mainSeriesScaleRatioProperty",
+    "restart",
+    "_restoreStudyFactoryDefaults",
+    "_restoreLineToolFactoryDefaults"
+  ],
+  "externalDatafeedKeys": [
+    "onReady",
+    "searchSymbols",
+    "resolveSymbol",
+    "getBars",
+    "subscribeBars",
+    "unsubscribeBars",
+    "getMarks",
+    "getTimeScaleMarks",
+    "getServerTime",
+    "constructor",
+    "__defineGetter__",
+    "__defineSetter__",
+    "hasOwnProperty",
+    "__lookupGetter__",
+    "__lookupSetter__",
+    "isPrototypeOf",
+    "propertyIsEnumerable",
+    "toString",
+    "valueOf",
+    "__proto__",
+    "toLocaleString"
+  ]
+}

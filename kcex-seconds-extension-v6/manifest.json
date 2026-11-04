@@ -1,0 +1,39 @@
+{
+  "manifest_version": 3,
+  "name": "KCEX Original Chart Second Timeframes (v6)",
+  "version": "1.6.0",
+  "description": "Real-time 1s, 5s, 10s, 15s, and 30s timeframes for KCEX Futures Original Chart with multi-symbol & high-precision support.",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.kcex.com/*",
+        "https://*.kcex.com/*"
+      ],
+      "js": ["injected.js"],
+      "run_at": "document_start",
+      "world": "MAIN"
+    },
+    {
+      "matches": [
+        "https://www.kcex.com/*",
+        "https://*.kcex.com/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["injected.js"],
+      "matches": [
+        "https://www.kcex.com/*",
+        "https://*.kcex.com/*"
+      ]
+    }
+  ]
+}
