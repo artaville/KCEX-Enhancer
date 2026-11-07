@@ -1,0 +1,3839 @@
+{
+  "page": "/futures/exchange/PEPE_USDT",
+  "startedAt": "2026-11-07T16:26:34.351Z",
+  "snapshots": [
+    {
+      "timeMs": 42385,
+      "reason": "mutation",
+      "root": {
+        "tag": "DIV",
+        "className": "ant-modal-root",
+        "role": null,
+        "ariaModal": null,
+        "text": "Risk reminder Take-profit trigger price is near the order price and may be triggered soon Cancel Confirm",
+        "buttons": [
+          {
+            "tag": "BUTTON",
+            "text": "",
+            "className": "ant-modal-close",
+            "attributes": {
+              "type": "button",
+              "aria-label": "Close",
+              "class": "ant-modal-close"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "type",
+                "onClick",
+                "aria-label",
+                "className",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" aria-label=\"Close\" class=\"ant-modal-close\"><span class=\"ant-modal-close-x\"><svg class=\"sc-gEvEer hSTeNi kcex-icon ant-modal-close-icon\" focusable=\"false\" width=\"1em\" height=\"1em\" fill=\"currentColor\" aria-hidden=\"true\" viewBox=\"0 0 1024 1024\" data-icon=\"CloseOutlined\"><path d=\"M512 592.440889l414.890667 414.890667 80.440889-80.440889L592.440889 512l414.890667-414.890667L926.890667 16.668444 512 431.559111 97.109333 16.668444 16.668444 97.109333 431.559111 512 16.668444 926.890667l80.440889 80.440889L512 592.440889z\"></path></svg></span></button>"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Cancel",
+            "className": "ant-btn ant-btn-default ant-btn-background-ghost",
+            "attributes": {
+              "type": "button",
+              "class": "ant-btn ant-btn-default ant-btn-background-ghost"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "onClick",
+                "type",
+                "className",
+                "disabled",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" class=\"ant-btn ant-btn-default ant-btn-background-ghost\"><span>Cancel</span></button>"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Confirm",
+            "className": "ant-btn ant-btn-primary",
+            "attributes": {
+              "type": "button",
+              "class": "ant-btn ant-btn-primary"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "onClick",
+                "type",
+                "className",
+                "disabled",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" class=\"ant-btn ant-btn-primary\"><span>Confirm</span></button>"
+          }
+        ],
+        "ancestors": [
+          {
+            "tag": "DIV",
+            "className": "",
+            "role": null
+          },
+          {
+            "tag": "BODY",
+            "className": "ant-scrolling-effect",
+            "role": null
+          },
+          {
+            "tag": "HTML",
+            "className": " ",
+            "role": null
+          }
+        ],
+        "html": "<div class=\"ant-modal-root\"><div class=\"ant-modal-mask ant-fade-appear ant-fade-appear-start ant-fade\"></div><div tabindex=\"-1\" class=\"ant-modal-wrap\"><div role=\"dialog\" aria-labelledby=\":r0:\" aria-modal=\"true\" class=\"ant-modal PlanRiskWindow_modal__jh5UT ant-zoom-appear ant-zoom-appear-prepare ant-zoom\" style=\"width: 320px;\"><div tabindex=\"0\" aria-hidden=\"true\" style=\"width: 0px; height: 0px; overflow: hidden; outline: none;\"></div><div class=\"ant-modal-content\"><button type=\"button\" aria-label=\"Close\" class=\"ant-modal-close\"><span class=\"ant-modal-close-x\"><svg class=\"sc-gEvEer hSTeNi kcex-icon ant-modal-close-icon\" focusable=\"false\" width=\"1em\" height=\"1em\" fill=\"currentColor\" aria-hidden=\"true\" viewBox=\"0 0 1024 1024\" data-icon=\"CloseOutlined\"><path d=\"M512 592.440889l414.890667 414.890667 80.440889-80.440889L592.440889 512l414.890667-414.890667L926.890667 16.668444 512 431.559111 97.109333 16.668444 16.668444 97.109333 431.559111 512 16.668444 926.890667l80.440889 80.440889L512 592.440889z\"></path></svg></span></button><div class=\"ant-modal-header\"><div class=\"ant-modal-title\" id=\":r0:\">Risk reminder</div></div><div class=\"ant-modal-body\"><div>Take-profit trigger price is near the order price and may be triggered soon</div></div><div class=\"ant-modal-footer\"><div class=\"PlanRiskWindow_footer__4j7_A\"><button type=\"button\" class=\"ant-btn ant-btn-default ant-btn-background-ghost\"><span>Cancel</span></button><button type=\"button\" class=\"ant-btn ant-btn-primary\"><span>Confirm</span></button></div></div></div><div tabindex=\"0\" aria-hidden=\"true\" style=\"width: 0px; height: 0px; overflow: hidden; outline: none;\"></div></div></div></div>"
+      }
+    },
+    {
+      "timeMs": 42385,
+      "reason": "mutation",
+      "root": {
+        "tag": "DIV",
+        "className": "ant-modal-wrap",
+        "role": null,
+        "ariaModal": null,
+        "text": "Risk reminder Take-profit trigger price is near the order price and may be triggered soon Cancel Confirm",
+        "buttons": [
+          {
+            "tag": "BUTTON",
+            "text": "",
+            "className": "ant-modal-close",
+            "attributes": {
+              "type": "button",
+              "aria-label": "Close",
+              "class": "ant-modal-close"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "type",
+                "onClick",
+                "aria-label",
+                "className",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" aria-label=\"Close\" class=\"ant-modal-close\"><span class=\"ant-modal-close-x\"><svg class=\"sc-gEvEer hSTeNi kcex-icon ant-modal-close-icon\" focusable=\"false\" width=\"1em\" height=\"1em\" fill=\"currentColor\" aria-hidden=\"true\" viewBox=\"0 0 1024 1024\" data-icon=\"CloseOutlined\"><path d=\"M512 592.440889l414.890667 414.890667 80.440889-80.440889L592.440889 512l414.890667-414.890667L926.890667 16.668444 512 431.559111 97.109333 16.668444 16.668444 97.109333 431.559111 512 16.668444 926.890667l80.440889 80.440889L512 592.440889z\"></path></svg></span></button>"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Cancel",
+            "className": "ant-btn ant-btn-default ant-btn-background-ghost",
+            "attributes": {
+              "type": "button",
+              "class": "ant-btn ant-btn-default ant-btn-background-ghost"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "onClick",
+                "type",
+                "className",
+                "disabled",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" class=\"ant-btn ant-btn-default ant-btn-background-ghost\"><span>Cancel</span></button>"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Confirm",
+            "className": "ant-btn ant-btn-primary",
+            "attributes": {
+              "type": "button",
+              "class": "ant-btn ant-btn-primary"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "onClick",
+                "type",
+                "className",
+                "disabled",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" class=\"ant-btn ant-btn-primary\"><span>Confirm</span></button>"
+          }
+        ],
+        "ancestors": [
+          {
+            "tag": "DIV",
+            "className": "ant-modal-root",
+            "role": null
+          },
+          {
+            "tag": "DIV",
+            "className": "",
+            "role": null
+          },
+          {
+            "tag": "BODY",
+            "className": "ant-scrolling-effect",
+            "role": null
+          },
+          {
+            "tag": "HTML",
+            "className": " ",
+            "role": null
+          }
+        ],
+        "html": "<div tabindex=\"-1\" class=\"ant-modal-wrap\"><div role=\"dialog\" aria-labelledby=\":r0:\" aria-modal=\"true\" class=\"ant-modal PlanRiskWindow_modal__jh5UT ant-zoom-appear ant-zoom-appear-prepare ant-zoom\" style=\"width: 320px;\"><div tabindex=\"0\" aria-hidden=\"true\" style=\"width: 0px; height: 0px; overflow: hidden; outline: none;\"></div><div class=\"ant-modal-content\"><button type=\"button\" aria-label=\"Close\" class=\"ant-modal-close\"><span class=\"ant-modal-close-x\"><svg class=\"sc-gEvEer hSTeNi kcex-icon ant-modal-close-icon\" focusable=\"false\" width=\"1em\" height=\"1em\" fill=\"currentColor\" aria-hidden=\"true\" viewBox=\"0 0 1024 1024\" data-icon=\"CloseOutlined\"><path d=\"M512 592.440889l414.890667 414.890667 80.440889-80.440889L592.440889 512l414.890667-414.890667L926.890667 16.668444 512 431.559111 97.109333 16.668444 16.668444 97.109333 431.559111 512 16.668444 926.890667l80.440889 80.440889L512 592.440889z\"></path></svg></span></button><div class=\"ant-modal-header\"><div class=\"ant-modal-title\" id=\":r0:\">Risk reminder</div></div><div class=\"ant-modal-body\"><div>Take-profit trigger price is near the order price and may be triggered soon</div></div><div class=\"ant-modal-footer\"><div class=\"PlanRiskWindow_footer__4j7_A\"><button type=\"button\" class=\"ant-btn ant-btn-default ant-btn-background-ghost\"><span>Cancel</span></button><button type=\"button\" class=\"ant-btn ant-btn-primary\"><span>Confirm</span></button></div></div></div><div tabindex=\"0\" aria-hidden=\"true\" style=\"width: 0px; height: 0px; overflow: hidden; outline: none;\"></div></div></div>"
+      }
+    },
+    {
+      "timeMs": 42386,
+      "reason": "mutation",
+      "root": {
+        "tag": "DIV",
+        "className": "ant-modal-content",
+        "role": null,
+        "ariaModal": null,
+        "text": "Risk reminder Take-profit trigger price is near the order price and may be triggered soon Cancel Confirm",
+        "buttons": [
+          {
+            "tag": "BUTTON",
+            "text": "",
+            "className": "ant-modal-close",
+            "attributes": {
+              "type": "button",
+              "aria-label": "Close",
+              "class": "ant-modal-close"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "type",
+                "onClick",
+                "aria-label",
+                "className",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" aria-label=\"Close\" class=\"ant-modal-close\"><span class=\"ant-modal-close-x\"><svg class=\"sc-gEvEer hSTeNi kcex-icon ant-modal-close-icon\" focusable=\"false\" width=\"1em\" height=\"1em\" fill=\"currentColor\" aria-hidden=\"true\" viewBox=\"0 0 1024 1024\" data-icon=\"CloseOutlined\"><path d=\"M512 592.440889l414.890667 414.890667 80.440889-80.440889L592.440889 512l414.890667-414.890667L926.890667 16.668444 512 431.559111 97.109333 16.668444 16.668444 97.109333 431.559111 512 16.668444 926.890667l80.440889 80.440889L512 592.440889z\"></path></svg></span></button>"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Cancel",
+            "className": "ant-btn ant-btn-default ant-btn-background-ghost",
+            "attributes": {
+              "type": "button",
+              "class": "ant-btn ant-btn-default ant-btn-background-ghost"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "onClick",
+                "type",
+                "className",
+                "disabled",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" class=\"ant-btn ant-btn-default ant-btn-background-ghost\"><span>Cancel</span></button>"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Confirm",
+            "className": "ant-btn ant-btn-primary",
+            "attributes": {
+              "type": "button",
+              "class": "ant-btn ant-btn-primary"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "onClick",
+                "type",
+                "className",
+                "disabled",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" class=\"ant-btn ant-btn-primary\"><span>Confirm</span></button>"
+          }
+        ],
+        "ancestors": [
+          {
+            "tag": "DIV",
+            "className": "ant-modal PlanRiskWindow_modal__jh5UT ant-zoom-appear ant-zoom-appear-prepare ant-zoom",
+            "role": "dialog"
+          },
+          {
+            "tag": "DIV",
+            "className": "ant-modal-wrap",
+            "role": null
+          },
+          {
+            "tag": "DIV",
+            "className": "ant-modal-root",
+            "role": null
+          },
+          {
+            "tag": "DIV",
+            "className": "",
+            "role": null
+          }
+        ],
+        "html": "<div class=\"ant-modal-content\"><button type=\"button\" aria-label=\"Close\" class=\"ant-modal-close\"><span class=\"ant-modal-close-x\"><svg class=\"sc-gEvEer hSTeNi kcex-icon ant-modal-close-icon\" focusable=\"false\" width=\"1em\" height=\"1em\" fill=\"currentColor\" aria-hidden=\"true\" viewBox=\"0 0 1024 1024\" data-icon=\"CloseOutlined\"><path d=\"M512 592.440889l414.890667 414.890667 80.440889-80.440889L592.440889 512l414.890667-414.890667L926.890667 16.668444 512 431.559111 97.109333 16.668444 16.668444 97.109333 431.559111 512 16.668444 926.890667l80.440889 80.440889L512 592.440889z\"></path></svg></span></button><div class=\"ant-modal-header\"><div class=\"ant-modal-title\" id=\":r0:\">Risk reminder</div></div><div class=\"ant-modal-body\"><div>Take-profit trigger price is near the order price and may be triggered soon</div></div><div class=\"ant-modal-footer\"><div class=\"PlanRiskWindow_footer__4j7_A\"><button type=\"button\" class=\"ant-btn ant-btn-default ant-btn-background-ghost\"><span>Cancel</span></button><button type=\"button\" class=\"ant-btn ant-btn-primary\"><span>Confirm</span></button></div></div></div>"
+      }
+    },
+    {
+      "timeMs": 42386,
+      "reason": "mutation",
+      "root": {
+        "tag": "DIV",
+        "className": "ant-modal-header",
+        "role": null,
+        "ariaModal": null,
+        "text": "Risk reminder",
+        "buttons": [],
+        "ancestors": [
+          {
+            "tag": "DIV",
+            "className": "ant-modal-content",
+            "role": null
+          },
+          {
+            "tag": "DIV",
+            "className": "ant-modal PlanRiskWindow_modal__jh5UT ant-zoom-appear ant-zoom-appear-prepare ant-zoom",
+            "role": "dialog"
+          },
+          {
+            "tag": "DIV",
+            "className": "ant-modal-wrap",
+            "role": null
+          },
+          {
+            "tag": "DIV",
+            "className": "ant-modal-root",
+            "role": null
+          }
+        ],
+        "html": "<div class=\"ant-modal-header\"><div class=\"ant-modal-title\" id=\":r0:\">Risk reminder</div></div>"
+      }
+    },
+    {
+      "timeMs": 42387,
+      "reason": "mutation",
+      "root": {
+        "tag": "DIV",
+        "className": "ant-modal-title",
+        "role": null,
+        "ariaModal": null,
+        "text": "Risk reminder",
+        "buttons": [],
+        "ancestors": [
+          {
+            "tag": "DIV",
+            "className": "ant-modal-header",
+            "role": null
+          },
+          {
+            "tag": "DIV",
+            "className": "ant-modal-content",
+            "role": null
+          },
+          {
+            "tag": "DIV",
+            "className": "ant-modal PlanRiskWindow_modal__jh5UT ant-zoom-appear ant-zoom-appear-prepare ant-zoom",
+            "role": "dialog"
+          },
+          {
+            "tag": "DIV",
+            "className": "ant-modal-wrap",
+            "role": null
+          }
+        ],
+        "html": "<div class=\"ant-modal-title\" id=\":r0:\">Risk reminder</div>"
+      }
+    },
+    {
+      "timeMs": 42388,
+      "reason": "mutation",
+      "root": {
+        "tag": "DIV",
+        "className": "ant-modal-body",
+        "role": null,
+        "ariaModal": null,
+        "text": "Take-profit trigger price is near the order price and may be triggered soon",
+        "buttons": [],
+        "ancestors": [
+          {
+            "tag": "DIV",
+            "className": "ant-modal-content",
+            "role": null
+          },
+          {
+            "tag": "DIV",
+            "className": "ant-modal PlanRiskWindow_modal__jh5UT ant-zoom-appear ant-zoom-appear-prepare ant-zoom",
+            "role": "dialog"
+          },
+          {
+            "tag": "DIV",
+            "className": "ant-modal-wrap",
+            "role": null
+          },
+          {
+            "tag": "DIV",
+            "className": "ant-modal-root",
+            "role": null
+          }
+        ],
+        "html": "<div class=\"ant-modal-body\"><div>Take-profit trigger price is near the order price and may be triggered soon</div></div>"
+      }
+    },
+    {
+      "timeMs": 42388,
+      "reason": "mutation",
+      "root": {
+        "tag": "DIV",
+        "className": "ant-modal-footer",
+        "role": null,
+        "ariaModal": null,
+        "text": "Cancel Confirm",
+        "buttons": [
+          {
+            "tag": "BUTTON",
+            "text": "Cancel",
+            "className": "ant-btn ant-btn-default ant-btn-background-ghost",
+            "attributes": {
+              "type": "button",
+              "class": "ant-btn ant-btn-default ant-btn-background-ghost"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "onClick",
+                "type",
+                "className",
+                "disabled",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" class=\"ant-btn ant-btn-default ant-btn-background-ghost\"><span>Cancel</span></button>"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Confirm",
+            "className": "ant-btn ant-btn-primary",
+            "attributes": {
+              "type": "button",
+              "class": "ant-btn ant-btn-primary"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "onClick",
+                "type",
+                "className",
+                "disabled",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" class=\"ant-btn ant-btn-primary\"><span>Confirm</span></button>"
+          }
+        ],
+        "ancestors": [
+          {
+            "tag": "DIV",
+            "className": "ant-modal-content",
+            "role": null
+          },
+          {
+            "tag": "DIV",
+            "className": "ant-modal PlanRiskWindow_modal__jh5UT ant-zoom-appear ant-zoom-appear-prepare ant-zoom",
+            "role": "dialog"
+          },
+          {
+            "tag": "DIV",
+            "className": "ant-modal-wrap",
+            "role": null
+          },
+          {
+            "tag": "DIV",
+            "className": "ant-modal-root",
+            "role": null
+          }
+        ],
+        "html": "<div class=\"ant-modal-footer\"><div class=\"PlanRiskWindow_footer__4j7_A\"><button type=\"button\" class=\"ant-btn ant-btn-default ant-btn-background-ghost\"><span>Cancel</span></button><button type=\"button\" class=\"ant-btn ant-btn-primary\"><span>Confirm</span></button></div></div>"
+      }
+    },
+    {
+      "timeMs": 42388,
+      "reason": "mutation",
+      "root": {
+        "tag": "DIV",
+        "className": "PlanRiskWindow_footer__4j7_A",
+        "role": null,
+        "ariaModal": null,
+        "text": "Cancel Confirm",
+        "buttons": [
+          {
+            "tag": "BUTTON",
+            "text": "Cancel",
+            "className": "ant-btn ant-btn-default ant-btn-background-ghost",
+            "attributes": {
+              "type": "button",
+              "class": "ant-btn ant-btn-default ant-btn-background-ghost"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "onClick",
+                "type",
+                "className",
+                "disabled",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" class=\"ant-btn ant-btn-default ant-btn-background-ghost\"><span>Cancel</span></button>"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Confirm",
+            "className": "ant-btn ant-btn-primary",
+            "attributes": {
+              "type": "button",
+              "class": "ant-btn ant-btn-primary"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "onClick",
+                "type",
+                "className",
+                "disabled",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" class=\"ant-btn ant-btn-primary\"><span>Confirm</span></button>"
+          }
+        ],
+        "ancestors": [
+          {
+            "tag": "DIV",
+            "className": "ant-modal-footer",
+            "role": null
+          },
+          {
+            "tag": "DIV",
+            "className": "ant-modal-content",
+            "role": null
+          },
+          {
+            "tag": "DIV",
+            "className": "ant-modal PlanRiskWindow_modal__jh5UT ant-zoom-appear ant-zoom-appear-prepare ant-zoom",
+            "role": "dialog"
+          },
+          {
+            "tag": "DIV",
+            "className": "ant-modal-wrap",
+            "role": null
+          }
+        ],
+        "html": "<div class=\"PlanRiskWindow_footer__4j7_A\"><button type=\"button\" class=\"ant-btn ant-btn-default ant-btn-background-ghost\"><span>Cancel</span></button><button type=\"button\" class=\"ant-btn ant-btn-primary\"><span>Confirm</span></button></div>"
+      }
+    },
+    {
+      "timeMs": 42454,
+      "reason": "mutation",
+      "root": {
+        "tag": "DIV",
+        "className": "ant-modal-root",
+        "role": null,
+        "ariaModal": null,
+        "text": "Risk reminder Take-profit trigger price is near the order price and may be triggered soon Cancel Confirm",
+        "buttons": [
+          {
+            "tag": "BUTTON",
+            "text": "",
+            "className": "ant-modal-close",
+            "attributes": {
+              "type": "button",
+              "aria-label": "Close",
+              "class": "ant-modal-close"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "type",
+                "onClick",
+                "aria-label",
+                "className",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" aria-label=\"Close\" class=\"ant-modal-close\"><span class=\"ant-modal-close-x\"><svg class=\"sc-gEvEer hSTeNi kcex-icon ant-modal-close-icon\" focusable=\"false\" width=\"1em\" height=\"1em\" fill=\"currentColor\" aria-hidden=\"true\" viewBox=\"0 0 1024 1024\" data-icon=\"CloseOutlined\"><path d=\"M512 592.440889l414.890667 414.890667 80.440889-80.440889L592.440889 512l414.890667-414.890667L926.890667 16.668444 512 431.559111 97.109333 16.668444 16.668444 97.109333 431.559111 512 16.668444 926.890667l80.440889 80.440889L512 592.440889z\"></path></svg></span></button>"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Cancel",
+            "className": "ant-btn ant-btn-default ant-btn-background-ghost",
+            "attributes": {
+              "type": "button",
+              "class": "ant-btn ant-btn-default ant-btn-background-ghost"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "onClick",
+                "type",
+                "className",
+                "disabled",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" class=\"ant-btn ant-btn-default ant-btn-background-ghost\"><span>Cancel</span></button>"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Confirm",
+            "className": "ant-btn ant-btn-primary",
+            "attributes": {
+              "type": "button",
+              "class": "ant-btn ant-btn-primary"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "onClick",
+                "type",
+                "className",
+                "disabled",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" class=\"ant-btn ant-btn-primary\"><span>Confirm</span></button>"
+          }
+        ],
+        "ancestors": [
+          {
+            "tag": "DIV",
+            "className": "",
+            "role": null
+          },
+          {
+            "tag": "BODY",
+            "className": "ant-scrolling-effect",
+            "role": null
+          },
+          {
+            "tag": "HTML",
+            "className": " ",
+            "role": null
+          }
+        ],
+        "html": "<div class=\"ant-modal-root\"><div class=\"ant-modal-mask ant-fade-appear ant-fade-appear-active ant-fade\"></div><div tabindex=\"-1\" class=\"ant-modal-wrap\"><div role=\"dialog\" aria-labelledby=\":r0:\" aria-modal=\"true\" class=\"ant-modal PlanRiskWindow_modal__jh5UT ant-zoom-appear ant-zoom-appear-start ant-zoom\" style=\"width: 320px; transition: none;\"><div tabindex=\"0\" aria-hidden=\"true\" style=\"width: 0px; height: 0px; overflow: hidden; outline: none;\"></div><div class=\"ant-modal-content\"><button type=\"button\" aria-label=\"Close\" class=\"ant-modal-close\"><span class=\"ant-modal-close-x\"><svg class=\"sc-gEvEer hSTeNi kcex-icon ant-modal-close-icon\" focusable=\"false\" width=\"1em\" height=\"1em\" fill=\"currentColor\" aria-hidden=\"true\" viewBox=\"0 0 1024 1024\" data-icon=\"CloseOutlined\"><path d=\"M512 592.440889l414.890667 414.890667 80.440889-80.440889L592.440889 512l414.890667-414.890667L926.890667 16.668444 512 431.559111 97.109333 16.668444 16.668444 97.109333 431.559111 512 16.668444 926.890667l80.440889 80.440889L512 592.440889z\"></path></svg></span></button><div class=\"ant-modal-header\"><div class=\"ant-modal-title\" id=\":r0:\">Risk reminder</div></div><div class=\"ant-modal-body\"><div>Take-profit trigger price is near the order price and may be triggered soon</div></div><div class=\"ant-modal-footer\"><div class=\"PlanRiskWindow_footer__4j7_A\"><button type=\"button\" class=\"ant-btn ant-btn-default ant-btn-background-ghost\"><span>Cancel</span></button><button type=\"button\" class=\"ant-btn ant-btn-primary\"><span>Confirm</span></button></div></div></div><div tabindex=\"0\" aria-hidden=\"true\" style=\"width: 0px; height: 0px; overflow: hidden; outline: none;\"></div></div></div></div>"
+      }
+    },
+    {
+      "timeMs": 42455,
+      "reason": "mutation",
+      "root": {
+        "tag": "DIV",
+        "className": "ant-modal-wrap",
+        "role": null,
+        "ariaModal": null,
+        "text": "Risk reminder Take-profit trigger price is near the order price and may be triggered soon Cancel Confirm",
+        "buttons": [
+          {
+            "tag": "BUTTON",
+            "text": "",
+            "className": "ant-modal-close",
+            "attributes": {
+              "type": "button",
+              "aria-label": "Close",
+              "class": "ant-modal-close"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "type",
+                "onClick",
+                "aria-label",
+                "className",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" aria-label=\"Close\" class=\"ant-modal-close\"><span class=\"ant-modal-close-x\"><svg class=\"sc-gEvEer hSTeNi kcex-icon ant-modal-close-icon\" focusable=\"false\" width=\"1em\" height=\"1em\" fill=\"currentColor\" aria-hidden=\"true\" viewBox=\"0 0 1024 1024\" data-icon=\"CloseOutlined\"><path d=\"M512 592.440889l414.890667 414.890667 80.440889-80.440889L592.440889 512l414.890667-414.890667L926.890667 16.668444 512 431.559111 97.109333 16.668444 16.668444 97.109333 431.559111 512 16.668444 926.890667l80.440889 80.440889L512 592.440889z\"></path></svg></span></button>"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Cancel",
+            "className": "ant-btn ant-btn-default ant-btn-background-ghost",
+            "attributes": {
+              "type": "button",
+              "class": "ant-btn ant-btn-default ant-btn-background-ghost"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "onClick",
+                "type",
+                "className",
+                "disabled",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" class=\"ant-btn ant-btn-default ant-btn-background-ghost\"><span>Cancel</span></button>"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Confirm",
+            "className": "ant-btn ant-btn-primary",
+            "attributes": {
+              "type": "button",
+              "class": "ant-btn ant-btn-primary"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "onClick",
+                "type",
+                "className",
+                "disabled",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" class=\"ant-btn ant-btn-primary\"><span>Confirm</span></button>"
+          }
+        ],
+        "ancestors": [
+          {
+            "tag": "DIV",
+            "className": "ant-modal-root",
+            "role": null
+          },
+          {
+            "tag": "DIV",
+            "className": "",
+            "role": null
+          },
+          {
+            "tag": "BODY",
+            "className": "ant-scrolling-effect",
+            "role": null
+          },
+          {
+            "tag": "HTML",
+            "className": " ",
+            "role": null
+          }
+        ],
+        "html": "<div tabindex=\"-1\" class=\"ant-modal-wrap\"><div role=\"dialog\" aria-labelledby=\":r0:\" aria-modal=\"true\" class=\"ant-modal PlanRiskWindow_modal__jh5UT ant-zoom-appear ant-zoom-appear-start ant-zoom\" style=\"width: 320px; transition: none;\"><div tabindex=\"0\" aria-hidden=\"true\" style=\"width: 0px; height: 0px; overflow: hidden; outline: none;\"></div><div class=\"ant-modal-content\"><button type=\"button\" aria-label=\"Close\" class=\"ant-modal-close\"><span class=\"ant-modal-close-x\"><svg class=\"sc-gEvEer hSTeNi kcex-icon ant-modal-close-icon\" focusable=\"false\" width=\"1em\" height=\"1em\" fill=\"currentColor\" aria-hidden=\"true\" viewBox=\"0 0 1024 1024\" data-icon=\"CloseOutlined\"><path d=\"M512 592.440889l414.890667 414.890667 80.440889-80.440889L592.440889 512l414.890667-414.890667L926.890667 16.668444 512 431.559111 97.109333 16.668444 16.668444 97.109333 431.559111 512 16.668444 926.890667l80.440889 80.440889L512 592.440889z\"></path></svg></span></button><div class=\"ant-modal-header\"><div class=\"ant-modal-title\" id=\":r0:\">Risk reminder</div></div><div class=\"ant-modal-body\"><div>Take-profit trigger price is near the order price and may be triggered soon</div></div><div class=\"ant-modal-footer\"><div class=\"PlanRiskWindow_footer__4j7_A\"><button type=\"button\" class=\"ant-btn ant-btn-default ant-btn-background-ghost\"><span>Cancel</span></button><button type=\"button\" class=\"ant-btn ant-btn-primary\"><span>Confirm</span></button></div></div></div><div tabindex=\"0\" aria-hidden=\"true\" style=\"width: 0px; height: 0px; overflow: hidden; outline: none;\"></div></div></div>"
+      }
+    },
+    {
+      "timeMs": 42473,
+      "reason": "mutation",
+      "root": {
+        "tag": "DIV",
+        "className": "ant-modal-root",
+        "role": null,
+        "ariaModal": null,
+        "text": "Risk reminder Take-profit trigger price is near the order price and may be triggered soon Cancel Confirm",
+        "buttons": [
+          {
+            "tag": "BUTTON",
+            "text": "",
+            "className": "ant-modal-close",
+            "attributes": {
+              "type": "button",
+              "aria-label": "Close",
+              "class": "ant-modal-close"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "type",
+                "onClick",
+                "aria-label",
+                "className",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" aria-label=\"Close\" class=\"ant-modal-close\"><span class=\"ant-modal-close-x\"><svg class=\"sc-gEvEer hSTeNi kcex-icon ant-modal-close-icon\" focusable=\"false\" width=\"1em\" height=\"1em\" fill=\"currentColor\" aria-hidden=\"true\" viewBox=\"0 0 1024 1024\" data-icon=\"CloseOutlined\"><path d=\"M512 592.440889l414.890667 414.890667 80.440889-80.440889L592.440889 512l414.890667-414.890667L926.890667 16.668444 512 431.559111 97.109333 16.668444 16.668444 97.109333 431.559111 512 16.668444 926.890667l80.440889 80.440889L512 592.440889z\"></path></svg></span></button>"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Cancel",
+            "className": "ant-btn ant-btn-default ant-btn-background-ghost",
+            "attributes": {
+              "type": "button",
+              "class": "ant-btn ant-btn-default ant-btn-background-ghost"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "onClick",
+                "type",
+                "className",
+                "disabled",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" class=\"ant-btn ant-btn-default ant-btn-background-ghost\"><span>Cancel</span></button>"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Confirm",
+            "className": "ant-btn ant-btn-primary",
+            "attributes": {
+              "type": "button",
+              "class": "ant-btn ant-btn-primary"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "onClick",
+                "type",
+                "className",
+                "disabled",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" class=\"ant-btn ant-btn-primary\"><span>Confirm</span></button>"
+          }
+        ],
+        "ancestors": [
+          {
+            "tag": "DIV",
+            "className": "",
+            "role": null
+          },
+          {
+            "tag": "BODY",
+            "className": "ant-scrolling-effect",
+            "role": null
+          },
+          {
+            "tag": "HTML",
+            "className": " ",
+            "role": null
+          }
+        ],
+        "html": "<div class=\"ant-modal-root\"><div class=\"ant-modal-mask ant-fade-appear ant-fade-appear-active ant-fade\"></div><div tabindex=\"-1\" class=\"ant-modal-wrap\"><div role=\"dialog\" aria-labelledby=\":r0:\" aria-modal=\"true\" class=\"ant-modal PlanRiskWindow_modal__jh5UT ant-zoom-appear ant-zoom-appear-active ant-zoom\" style=\"width: 320px;\"><div tabindex=\"0\" aria-hidden=\"true\" style=\"width: 0px; height: 0px; overflow: hidden; outline: none;\"></div><div class=\"ant-modal-content\"><button type=\"button\" aria-label=\"Close\" class=\"ant-modal-close\"><span class=\"ant-modal-close-x\"><svg class=\"sc-gEvEer hSTeNi kcex-icon ant-modal-close-icon\" focusable=\"false\" width=\"1em\" height=\"1em\" fill=\"currentColor\" aria-hidden=\"true\" viewBox=\"0 0 1024 1024\" data-icon=\"CloseOutlined\"><path d=\"M512 592.440889l414.890667 414.890667 80.440889-80.440889L592.440889 512l414.890667-414.890667L926.890667 16.668444 512 431.559111 97.109333 16.668444 16.668444 97.109333 431.559111 512 16.668444 926.890667l80.440889 80.440889L512 592.440889z\"></path></svg></span></button><div class=\"ant-modal-header\"><div class=\"ant-modal-title\" id=\":r0:\">Risk reminder</div></div><div class=\"ant-modal-body\"><div>Take-profit trigger price is near the order price and may be triggered soon</div></div><div class=\"ant-modal-footer\"><div class=\"PlanRiskWindow_footer__4j7_A\"><button type=\"button\" class=\"ant-btn ant-btn-default ant-btn-background-ghost\"><span>Cancel</span></button><button type=\"button\" class=\"ant-btn ant-btn-primary\"><span>Confirm</span></button></div></div></div><div tabindex=\"0\" aria-hidden=\"true\" style=\"width: 0px; height: 0px; overflow: hidden; outline: none;\"></div></div></div></div>"
+      }
+    },
+    {
+      "timeMs": 42473,
+      "reason": "mutation",
+      "root": {
+        "tag": "DIV",
+        "className": "ant-modal-wrap",
+        "role": null,
+        "ariaModal": null,
+        "text": "Risk reminder Take-profit trigger price is near the order price and may be triggered soon Cancel Confirm",
+        "buttons": [
+          {
+            "tag": "BUTTON",
+            "text": "",
+            "className": "ant-modal-close",
+            "attributes": {
+              "type": "button",
+              "aria-label": "Close",
+              "class": "ant-modal-close"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "type",
+                "onClick",
+                "aria-label",
+                "className",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" aria-label=\"Close\" class=\"ant-modal-close\"><span class=\"ant-modal-close-x\"><svg class=\"sc-gEvEer hSTeNi kcex-icon ant-modal-close-icon\" focusable=\"false\" width=\"1em\" height=\"1em\" fill=\"currentColor\" aria-hidden=\"true\" viewBox=\"0 0 1024 1024\" data-icon=\"CloseOutlined\"><path d=\"M512 592.440889l414.890667 414.890667 80.440889-80.440889L592.440889 512l414.890667-414.890667L926.890667 16.668444 512 431.559111 97.109333 16.668444 16.668444 97.109333 431.559111 512 16.668444 926.890667l80.440889 80.440889L512 592.440889z\"></path></svg></span></button>"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Cancel",
+            "className": "ant-btn ant-btn-default ant-btn-background-ghost",
+            "attributes": {
+              "type": "button",
+              "class": "ant-btn ant-btn-default ant-btn-background-ghost"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "onClick",
+                "type",
+                "className",
+                "disabled",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" class=\"ant-btn ant-btn-default ant-btn-background-ghost\"><span>Cancel</span></button>"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Confirm",
+            "className": "ant-btn ant-btn-primary",
+            "attributes": {
+              "type": "button",
+              "class": "ant-btn ant-btn-primary"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "onClick",
+                "type",
+                "className",
+                "disabled",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" class=\"ant-btn ant-btn-primary\"><span>Confirm</span></button>"
+          }
+        ],
+        "ancestors": [
+          {
+            "tag": "DIV",
+            "className": "ant-modal-root",
+            "role": null
+          },
+          {
+            "tag": "DIV",
+            "className": "",
+            "role": null
+          },
+          {
+            "tag": "BODY",
+            "className": "ant-scrolling-effect",
+            "role": null
+          },
+          {
+            "tag": "HTML",
+            "className": " ",
+            "role": null
+          }
+        ],
+        "html": "<div tabindex=\"-1\" class=\"ant-modal-wrap\"><div role=\"dialog\" aria-labelledby=\":r0:\" aria-modal=\"true\" class=\"ant-modal PlanRiskWindow_modal__jh5UT ant-zoom-appear ant-zoom-appear-active ant-zoom\" style=\"width: 320px;\"><div tabindex=\"0\" aria-hidden=\"true\" style=\"width: 0px; height: 0px; overflow: hidden; outline: none;\"></div><div class=\"ant-modal-content\"><button type=\"button\" aria-label=\"Close\" class=\"ant-modal-close\"><span class=\"ant-modal-close-x\"><svg class=\"sc-gEvEer hSTeNi kcex-icon ant-modal-close-icon\" focusable=\"false\" width=\"1em\" height=\"1em\" fill=\"currentColor\" aria-hidden=\"true\" viewBox=\"0 0 1024 1024\" data-icon=\"CloseOutlined\"><path d=\"M512 592.440889l414.890667 414.890667 80.440889-80.440889L592.440889 512l414.890667-414.890667L926.890667 16.668444 512 431.559111 97.109333 16.668444 16.668444 97.109333 431.559111 512 16.668444 926.890667l80.440889 80.440889L512 592.440889z\"></path></svg></span></button><div class=\"ant-modal-header\"><div class=\"ant-modal-title\" id=\":r0:\">Risk reminder</div></div><div class=\"ant-modal-body\"><div>Take-profit trigger price is near the order price and may be triggered soon</div></div><div class=\"ant-modal-footer\"><div class=\"PlanRiskWindow_footer__4j7_A\"><button type=\"button\" class=\"ant-btn ant-btn-default ant-btn-background-ghost\"><span>Cancel</span></button><button type=\"button\" class=\"ant-btn ant-btn-primary\"><span>Confirm</span></button></div></div></div><div tabindex=\"0\" aria-hidden=\"true\" style=\"width: 0px; height: 0px; overflow: hidden; outline: none;\"></div></div></div>"
+      }
+    },
+    {
+      "timeMs": 42520,
+      "reason": "mutation",
+      "root": {
+        "tag": "DIV",
+        "className": "ant-modal PlanRiskWindow_modal__jh5UT ant-zoom-appear ant-zoom-appear-active ant-zoom",
+        "role": "dialog",
+        "ariaModal": "true",
+        "text": "Risk reminder Take-profit trigger price is near the order price and may be triggered soon Cancel Confirm",
+        "buttons": [
+          {
+            "tag": "BUTTON",
+            "text": "",
+            "className": "ant-modal-close",
+            "attributes": {
+              "type": "button",
+              "aria-label": "Close",
+              "class": "ant-modal-close"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "type",
+                "onClick",
+                "aria-label",
+                "className",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" aria-label=\"Close\" class=\"ant-modal-close\"><span class=\"ant-modal-close-x\"><svg class=\"sc-gEvEer hSTeNi kcex-icon ant-modal-close-icon\" focusable=\"false\" width=\"1em\" height=\"1em\" fill=\"currentColor\" aria-hidden=\"true\" viewBox=\"0 0 1024 1024\" data-icon=\"CloseOutlined\"><path d=\"M512 592.440889l414.890667 414.890667 80.440889-80.440889L592.440889 512l414.890667-414.890667L926.890667 16.668444 512 431.559111 97.109333 16.668444 16.668444 97.109333 431.559111 512 16.668444 926.890667l80.440889 80.440889L512 592.440889z\"></path></svg></span></button>"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Cancel",
+            "className": "ant-btn ant-btn-default ant-btn-background-ghost",
+            "attributes": {
+              "type": "button",
+              "class": "ant-btn ant-btn-default ant-btn-background-ghost"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "onClick",
+                "type",
+                "className",
+                "disabled",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" class=\"ant-btn ant-btn-default ant-btn-background-ghost\"><span>Cancel</span></button>"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Confirm",
+            "className": "ant-btn ant-btn-primary",
+            "attributes": {
+              "type": "button",
+              "class": "ant-btn ant-btn-primary"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "onClick",
+                "type",
+                "className",
+                "disabled",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" class=\"ant-btn ant-btn-primary\"><span>Confirm</span></button>"
+          }
+        ],
+        "ancestors": [
+          {
+            "tag": "DIV",
+            "className": "ant-modal-wrap",
+            "role": null
+          },
+          {
+            "tag": "DIV",
+            "className": "ant-modal-root",
+            "role": null
+          },
+          {
+            "tag": "DIV",
+            "className": "",
+            "role": null
+          },
+          {
+            "tag": "BODY",
+            "className": "ant-scrolling-effect",
+            "role": null
+          }
+        ],
+        "html": "<div role=\"dialog\" aria-labelledby=\":r0:\" aria-modal=\"true\" class=\"ant-modal PlanRiskWindow_modal__jh5UT ant-zoom-appear ant-zoom-appear-active ant-zoom\" style=\"width: 320px;\"><div tabindex=\"0\" aria-hidden=\"true\" style=\"width: 0px; height: 0px; overflow: hidden; outline: none;\"></div><div class=\"ant-modal-content\"><button type=\"button\" aria-label=\"Close\" class=\"ant-modal-close\"><span class=\"ant-modal-close-x\"><svg class=\"sc-gEvEer hSTeNi kcex-icon ant-modal-close-icon\" focusable=\"false\" width=\"1em\" height=\"1em\" fill=\"currentColor\" aria-hidden=\"true\" viewBox=\"0 0 1024 1024\" data-icon=\"CloseOutlined\"><path d=\"M512 592.440889l414.890667 414.890667 80.440889-80.440889L592.440889 512l414.890667-414.890667L926.890667 16.668444 512 431.559111 97.109333 16.668444 16.668444 97.109333 431.559111 512 16.668444 926.890667l80.440889 80.440889L512 592.440889z\"></path></svg></span></button><div class=\"ant-modal-header\"><div class=\"ant-modal-title\" id=\":r0:\">Risk reminder</div></div><div class=\"ant-modal-body\"><div>Take-profit trigger price is near the order price and may be triggered soon</div></div><div class=\"ant-modal-footer\"><div class=\"PlanRiskWindow_footer__4j7_A\"><button type=\"button\" class=\"ant-btn ant-btn-default ant-btn-background-ghost\"><span>Cancel</span></button><button type=\"button\" class=\"ant-btn ant-btn-primary\"><span>Confirm</span></button></div></div></div><div tabindex=\"0\" aria-hidden=\"true\" style=\"width: 0px; height: 0px; overflow: hidden; outline: none;\"></div></div>"
+      }
+    },
+    {
+      "timeMs": 42663,
+      "reason": "mutation",
+      "root": {
+        "tag": "DIV",
+        "className": "ant-modal-root",
+        "role": null,
+        "ariaModal": null,
+        "text": "Risk reminder Take-profit trigger price is near the order price and may be triggered soon Cancel Confirm",
+        "buttons": [
+          {
+            "tag": "BUTTON",
+            "text": "",
+            "className": "ant-modal-close",
+            "attributes": {
+              "type": "button",
+              "aria-label": "Close",
+              "class": "ant-modal-close"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "type",
+                "onClick",
+                "aria-label",
+                "className",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" aria-label=\"Close\" class=\"ant-modal-close\"><span class=\"ant-modal-close-x\"><svg class=\"sc-gEvEer hSTeNi kcex-icon ant-modal-close-icon\" focusable=\"false\" width=\"1em\" height=\"1em\" fill=\"currentColor\" aria-hidden=\"true\" viewBox=\"0 0 1024 1024\" data-icon=\"CloseOutlined\"><path d=\"M512 592.440889l414.890667 414.890667 80.440889-80.440889L592.440889 512l414.890667-414.890667L926.890667 16.668444 512 431.559111 97.109333 16.668444 16.668444 97.109333 431.559111 512 16.668444 926.890667l80.440889 80.440889L512 592.440889z\"></path></svg></span></button>"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Cancel",
+            "className": "ant-btn ant-btn-default ant-btn-background-ghost",
+            "attributes": {
+              "type": "button",
+              "class": "ant-btn ant-btn-default ant-btn-background-ghost"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "onClick",
+                "type",
+                "className",
+                "disabled",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" class=\"ant-btn ant-btn-default ant-btn-background-ghost\"><span>Cancel</span></button>"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Confirm",
+            "className": "ant-btn ant-btn-primary",
+            "attributes": {
+              "type": "button",
+              "class": "ant-btn ant-btn-primary"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "onClick",
+                "type",
+                "className",
+                "disabled",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" class=\"ant-btn ant-btn-primary\"><span>Confirm</span></button>"
+          }
+        ],
+        "ancestors": [
+          {
+            "tag": "DIV",
+            "className": "",
+            "role": null
+          },
+          {
+            "tag": "BODY",
+            "className": "ant-scrolling-effect",
+            "role": null
+          },
+          {
+            "tag": "HTML",
+            "className": " ",
+            "role": null
+          }
+        ],
+        "html": "<div class=\"ant-modal-root\"><div class=\"ant-modal-mask\"></div><div tabindex=\"-1\" class=\"ant-modal-wrap\"><div role=\"dialog\" aria-labelledby=\":r0:\" aria-modal=\"true\" class=\"ant-modal PlanRiskWindow_modal__jh5UT ant-zoom-appear ant-zoom-appear-active ant-zoom\" style=\"width: 320px;\"><div tabindex=\"0\" aria-hidden=\"true\" style=\"width: 0px; height: 0px; overflow: hidden; outline: none;\"></div><div class=\"ant-modal-content\"><button type=\"button\" aria-label=\"Close\" class=\"ant-modal-close\"><span class=\"ant-modal-close-x\"><svg class=\"sc-gEvEer hSTeNi kcex-icon ant-modal-close-icon\" focusable=\"false\" width=\"1em\" height=\"1em\" fill=\"currentColor\" aria-hidden=\"true\" viewBox=\"0 0 1024 1024\" data-icon=\"CloseOutlined\"><path d=\"M512 592.440889l414.890667 414.890667 80.440889-80.440889L592.440889 512l414.890667-414.890667L926.890667 16.668444 512 431.559111 97.109333 16.668444 16.668444 97.109333 431.559111 512 16.668444 926.890667l80.440889 80.440889L512 592.440889z\"></path></svg></span></button><div class=\"ant-modal-header\"><div class=\"ant-modal-title\" id=\":r0:\">Risk reminder</div></div><div class=\"ant-modal-body\"><div>Take-profit trigger price is near the order price and may be triggered soon</div></div><div class=\"ant-modal-footer\"><div class=\"PlanRiskWindow_footer__4j7_A\"><button type=\"button\" class=\"ant-btn ant-btn-default ant-btn-background-ghost\"><span>Cancel</span></button><button type=\"button\" class=\"ant-btn ant-btn-primary\"><span>Confirm</span></button></div></div></div><div tabindex=\"0\" aria-hidden=\"true\" style=\"width: 0px; height: 0px; overflow: hidden; outline: none;\"></div></div></div></div>"
+      }
+    },
+    {
+      "timeMs": 42803,
+      "reason": "mutation",
+      "root": {
+        "tag": "DIV",
+        "className": "ant-modal-root",
+        "role": null,
+        "ariaModal": null,
+        "text": "Risk reminder Take-profit trigger price is near the order price and may be triggered soon Cancel Confirm",
+        "buttons": [
+          {
+            "tag": "BUTTON",
+            "text": "",
+            "className": "ant-modal-close",
+            "attributes": {
+              "type": "button",
+              "aria-label": "Close",
+              "class": "ant-modal-close"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "type",
+                "onClick",
+                "aria-label",
+                "className",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" aria-label=\"Close\" class=\"ant-modal-close\"><span class=\"ant-modal-close-x\"><svg class=\"sc-gEvEer hSTeNi kcex-icon ant-modal-close-icon\" focusable=\"false\" width=\"1em\" height=\"1em\" fill=\"currentColor\" aria-hidden=\"true\" viewBox=\"0 0 1024 1024\" data-icon=\"CloseOutlined\"><path d=\"M512 592.440889l414.890667 414.890667 80.440889-80.440889L592.440889 512l414.890667-414.890667L926.890667 16.668444 512 431.559111 97.109333 16.668444 16.668444 97.109333 431.559111 512 16.668444 926.890667l80.440889 80.440889L512 592.440889z\"></path></svg></span></button>"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Cancel",
+            "className": "ant-btn ant-btn-default ant-btn-background-ghost",
+            "attributes": {
+              "type": "button",
+              "class": "ant-btn ant-btn-default ant-btn-background-ghost"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "onClick",
+                "type",
+                "className",
+                "disabled",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" class=\"ant-btn ant-btn-default ant-btn-background-ghost\"><span>Cancel</span></button>"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Confirm",
+            "className": "ant-btn ant-btn-primary",
+            "attributes": {
+              "type": "button",
+              "class": "ant-btn ant-btn-primary"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "onClick",
+                "type",
+                "className",
+                "disabled",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" class=\"ant-btn ant-btn-primary\"><span>Confirm</span></button>"
+          }
+        ],
+        "ancestors": [
+          {
+            "tag": "DIV",
+            "className": "",
+            "role": null
+          },
+          {
+            "tag": "BODY",
+            "className": "ant-scrolling-effect",
+            "role": null
+          },
+          {
+            "tag": "HTML",
+            "className": " ",
+            "role": null
+          }
+        ],
+        "html": "<div class=\"ant-modal-root\"><div class=\"ant-modal-mask\"></div><div tabindex=\"-1\" class=\"ant-modal-wrap\"><div role=\"dialog\" aria-labelledby=\":r0:\" aria-modal=\"true\" class=\"ant-modal PlanRiskWindow_modal__jh5UT\" style=\"width: 320px;\"><div tabindex=\"0\" aria-hidden=\"true\" style=\"width: 0px; height: 0px; overflow: hidden; outline: none;\"></div><div class=\"ant-modal-content\"><button type=\"button\" aria-label=\"Close\" class=\"ant-modal-close\"><span class=\"ant-modal-close-x\"><svg class=\"sc-gEvEer hSTeNi kcex-icon ant-modal-close-icon\" focusable=\"false\" width=\"1em\" height=\"1em\" fill=\"currentColor\" aria-hidden=\"true\" viewBox=\"0 0 1024 1024\" data-icon=\"CloseOutlined\"><path d=\"M512 592.440889l414.890667 414.890667 80.440889-80.440889L592.440889 512l414.890667-414.890667L926.890667 16.668444 512 431.559111 97.109333 16.668444 16.668444 97.109333 431.559111 512 16.668444 926.890667l80.440889 80.440889L512 592.440889z\"></path></svg></span></button><div class=\"ant-modal-header\"><div class=\"ant-modal-title\" id=\":r0:\">Risk reminder</div></div><div class=\"ant-modal-body\"><div>Take-profit trigger price is near the order price and may be triggered soon</div></div><div class=\"ant-modal-footer\"><div class=\"PlanRiskWindow_footer__4j7_A\"><button type=\"button\" class=\"ant-btn ant-btn-default ant-btn-background-ghost\"><span>Cancel</span></button><button type=\"button\" class=\"ant-btn ant-btn-primary\"><span>Confirm</span></button></div></div></div><div tabindex=\"0\" aria-hidden=\"true\" style=\"width: 0px; height: 0px; overflow: hidden; outline: none;\"></div></div></div></div>"
+      }
+    },
+    {
+      "timeMs": 42804,
+      "reason": "mutation",
+      "root": {
+        "tag": "DIV",
+        "className": "ant-modal-wrap",
+        "role": null,
+        "ariaModal": null,
+        "text": "Risk reminder Take-profit trigger price is near the order price and may be triggered soon Cancel Confirm",
+        "buttons": [
+          {
+            "tag": "BUTTON",
+            "text": "",
+            "className": "ant-modal-close",
+            "attributes": {
+              "type": "button",
+              "aria-label": "Close",
+              "class": "ant-modal-close"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "type",
+                "onClick",
+                "aria-label",
+                "className",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" aria-label=\"Close\" class=\"ant-modal-close\"><span class=\"ant-modal-close-x\"><svg class=\"sc-gEvEer hSTeNi kcex-icon ant-modal-close-icon\" focusable=\"false\" width=\"1em\" height=\"1em\" fill=\"currentColor\" aria-hidden=\"true\" viewBox=\"0 0 1024 1024\" data-icon=\"CloseOutlined\"><path d=\"M512 592.440889l414.890667 414.890667 80.440889-80.440889L592.440889 512l414.890667-414.890667L926.890667 16.668444 512 431.559111 97.109333 16.668444 16.668444 97.109333 431.559111 512 16.668444 926.890667l80.440889 80.440889L512 592.440889z\"></path></svg></span></button>"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Cancel",
+            "className": "ant-btn ant-btn-default ant-btn-background-ghost",
+            "attributes": {
+              "type": "button",
+              "class": "ant-btn ant-btn-default ant-btn-background-ghost"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "onClick",
+                "type",
+                "className",
+                "disabled",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" class=\"ant-btn ant-btn-default ant-btn-background-ghost\"><span>Cancel</span></button>"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Confirm",
+            "className": "ant-btn ant-btn-primary",
+            "attributes": {
+              "type": "button",
+              "class": "ant-btn ant-btn-primary"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "onClick",
+                "type",
+                "className",
+                "disabled",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" class=\"ant-btn ant-btn-primary\"><span>Confirm</span></button>"
+          }
+        ],
+        "ancestors": [
+          {
+            "tag": "DIV",
+            "className": "ant-modal-root",
+            "role": null
+          },
+          {
+            "tag": "DIV",
+            "className": "",
+            "role": null
+          },
+          {
+            "tag": "BODY",
+            "className": "ant-scrolling-effect",
+            "role": null
+          },
+          {
+            "tag": "HTML",
+            "className": " ",
+            "role": null
+          }
+        ],
+        "html": "<div tabindex=\"-1\" class=\"ant-modal-wrap\"><div role=\"dialog\" aria-labelledby=\":r0:\" aria-modal=\"true\" class=\"ant-modal PlanRiskWindow_modal__jh5UT\" style=\"width: 320px;\"><div tabindex=\"0\" aria-hidden=\"true\" style=\"width: 0px; height: 0px; overflow: hidden; outline: none;\"></div><div class=\"ant-modal-content\"><button type=\"button\" aria-label=\"Close\" class=\"ant-modal-close\"><span class=\"ant-modal-close-x\"><svg class=\"sc-gEvEer hSTeNi kcex-icon ant-modal-close-icon\" focusable=\"false\" width=\"1em\" height=\"1em\" fill=\"currentColor\" aria-hidden=\"true\" viewBox=\"0 0 1024 1024\" data-icon=\"CloseOutlined\"><path d=\"M512 592.440889l414.890667 414.890667 80.440889-80.440889L592.440889 512l414.890667-414.890667L926.890667 16.668444 512 431.559111 97.109333 16.668444 16.668444 97.109333 431.559111 512 16.668444 926.890667l80.440889 80.440889L512 592.440889z\"></path></svg></span></button><div class=\"ant-modal-header\"><div class=\"ant-modal-title\" id=\":r0:\">Risk reminder</div></div><div class=\"ant-modal-body\"><div>Take-profit trigger price is near the order price and may be triggered soon</div></div><div class=\"ant-modal-footer\"><div class=\"PlanRiskWindow_footer__4j7_A\"><button type=\"button\" class=\"ant-btn ant-btn-default ant-btn-background-ghost\"><span>Cancel</span></button><button type=\"button\" class=\"ant-btn ant-btn-primary\"><span>Confirm</span></button></div></div></div><div tabindex=\"0\" aria-hidden=\"true\" style=\"width: 0px; height: 0px; overflow: hidden; outline: none;\"></div></div></div>"
+      }
+    },
+    {
+      "timeMs": 42804,
+      "reason": "mutation",
+      "root": {
+        "tag": "DIV",
+        "className": "ant-modal PlanRiskWindow_modal__jh5UT",
+        "role": "dialog",
+        "ariaModal": "true",
+        "text": "Risk reminder Take-profit trigger price is near the order price and may be triggered soon Cancel Confirm",
+        "buttons": [
+          {
+            "tag": "BUTTON",
+            "text": "",
+            "className": "ant-modal-close",
+            "attributes": {
+              "type": "button",
+              "aria-label": "Close",
+              "class": "ant-modal-close"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "type",
+                "onClick",
+                "aria-label",
+                "className",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" aria-label=\"Close\" class=\"ant-modal-close\"><span class=\"ant-modal-close-x\"><svg class=\"sc-gEvEer hSTeNi kcex-icon ant-modal-close-icon\" focusable=\"false\" width=\"1em\" height=\"1em\" fill=\"currentColor\" aria-hidden=\"true\" viewBox=\"0 0 1024 1024\" data-icon=\"CloseOutlined\"><path d=\"M512 592.440889l414.890667 414.890667 80.440889-80.440889L592.440889 512l414.890667-414.890667L926.890667 16.668444 512 431.559111 97.109333 16.668444 16.668444 97.109333 431.559111 512 16.668444 926.890667l80.440889 80.440889L512 592.440889z\"></path></svg></span></button>"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Cancel",
+            "className": "ant-btn ant-btn-default ant-btn-background-ghost",
+            "attributes": {
+              "type": "button",
+              "class": "ant-btn ant-btn-default ant-btn-background-ghost"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "onClick",
+                "type",
+                "className",
+                "disabled",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" class=\"ant-btn ant-btn-default ant-btn-background-ghost\"><span>Cancel</span></button>"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Confirm",
+            "className": "ant-btn ant-btn-primary",
+            "attributes": {
+              "type": "button",
+              "class": "ant-btn ant-btn-primary"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "onClick",
+                "type",
+                "className",
+                "disabled",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" class=\"ant-btn ant-btn-primary\"><span>Confirm</span></button>"
+          }
+        ],
+        "ancestors": [
+          {
+            "tag": "DIV",
+            "className": "ant-modal-wrap",
+            "role": null
+          },
+          {
+            "tag": "DIV",
+            "className": "ant-modal-root",
+            "role": null
+          },
+          {
+            "tag": "DIV",
+            "className": "",
+            "role": null
+          },
+          {
+            "tag": "BODY",
+            "className": "ant-scrolling-effect",
+            "role": null
+          }
+        ],
+        "html": "<div role=\"dialog\" aria-labelledby=\":r0:\" aria-modal=\"true\" class=\"ant-modal PlanRiskWindow_modal__jh5UT\" style=\"width: 320px;\"><div tabindex=\"0\" aria-hidden=\"true\" style=\"width: 0px; height: 0px; overflow: hidden; outline: none;\"></div><div class=\"ant-modal-content\"><button type=\"button\" aria-label=\"Close\" class=\"ant-modal-close\"><span class=\"ant-modal-close-x\"><svg class=\"sc-gEvEer hSTeNi kcex-icon ant-modal-close-icon\" focusable=\"false\" width=\"1em\" height=\"1em\" fill=\"currentColor\" aria-hidden=\"true\" viewBox=\"0 0 1024 1024\" data-icon=\"CloseOutlined\"><path d=\"M512 592.440889l414.890667 414.890667 80.440889-80.440889L592.440889 512l414.890667-414.890667L926.890667 16.668444 512 431.559111 97.109333 16.668444 16.668444 97.109333 431.559111 512 16.668444 926.890667l80.440889 80.440889L512 592.440889z\"></path></svg></span></button><div class=\"ant-modal-header\"><div class=\"ant-modal-title\" id=\":r0:\">Risk reminder</div></div><div class=\"ant-modal-body\"><div>Take-profit trigger price is near the order price and may be triggered soon</div></div><div class=\"ant-modal-footer\"><div class=\"PlanRiskWindow_footer__4j7_A\"><button type=\"button\" class=\"ant-btn ant-btn-default ant-btn-background-ghost\"><span>Cancel</span></button><button type=\"button\" class=\"ant-btn ant-btn-primary\"><span>Confirm</span></button></div></div></div><div tabindex=\"0\" aria-hidden=\"true\" style=\"width: 0px; height: 0px; overflow: hidden; outline: none;\"></div></div>"
+      }
+    },
+    {
+      "timeMs": 44408,
+      "reason": "mutation",
+      "root": {
+        "tag": "DIV",
+        "className": "ant-modal-root",
+        "role": null,
+        "ariaModal": null,
+        "text": "Risk reminder Take-profit trigger price is near the order price and may be triggered soon Cancel Confirm",
+        "buttons": [
+          {
+            "tag": "BUTTON",
+            "text": "",
+            "className": "ant-modal-close",
+            "attributes": {
+              "type": "button",
+              "aria-label": "Close",
+              "class": "ant-modal-close"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "type",
+                "onClick",
+                "aria-label",
+                "className",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" aria-label=\"Close\" class=\"ant-modal-close\"><span class=\"ant-modal-close-x\"><svg class=\"sc-gEvEer hSTeNi kcex-icon ant-modal-close-icon\" focusable=\"false\" width=\"1em\" height=\"1em\" fill=\"currentColor\" aria-hidden=\"true\" viewBox=\"0 0 1024 1024\" data-icon=\"CloseOutlined\"><path d=\"M512 592.440889l414.890667 414.890667 80.440889-80.440889L592.440889 512l414.890667-414.890667L926.890667 16.668444 512 431.559111 97.109333 16.668444 16.668444 97.109333 431.559111 512 16.668444 926.890667l80.440889 80.440889L512 592.440889z\"></path></svg></span></button>"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Cancel",
+            "className": "ant-btn ant-btn-default ant-btn-background-ghost",
+            "attributes": {
+              "type": "button",
+              "class": "ant-btn ant-btn-default ant-btn-background-ghost"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "onClick",
+                "type",
+                "className",
+                "disabled",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" class=\"ant-btn ant-btn-default ant-btn-background-ghost\"><span>Cancel</span></button>"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Confirm",
+            "className": "ant-btn ant-btn-primary",
+            "attributes": {
+              "type": "button",
+              "class": "ant-btn ant-btn-primary",
+              "ant-click-animating-without-extra-node": "false"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "onClick",
+                "type",
+                "className",
+                "disabled",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" class=\"ant-btn ant-btn-primary\" ant-click-animating-without-extra-node=\"false\"><span>Confirm</span></button>"
+          }
+        ],
+        "ancestors": [
+          {
+            "tag": "DIV",
+            "className": "",
+            "role": null
+          },
+          {
+            "tag": "BODY",
+            "className": "ant-scrolling-effect",
+            "role": null
+          },
+          {
+            "tag": "HTML",
+            "className": " ",
+            "role": null
+          }
+        ],
+        "html": "<div class=\"ant-modal-root\"><div class=\"ant-modal-mask\"></div><div tabindex=\"-1\" class=\"ant-modal-wrap\"><div role=\"dialog\" aria-labelledby=\":r0:\" aria-modal=\"true\" class=\"ant-modal PlanRiskWindow_modal__jh5UT\" style=\"width: 320px;\"><div tabindex=\"0\" aria-hidden=\"true\" style=\"width: 0px; height: 0px; overflow: hidden; outline: none;\"></div><div class=\"ant-modal-content\"><button type=\"button\" aria-label=\"Close\" class=\"ant-modal-close\"><span class=\"ant-modal-close-x\"><svg class=\"sc-gEvEer hSTeNi kcex-icon ant-modal-close-icon\" focusable=\"false\" width=\"1em\" height=\"1em\" fill=\"currentColor\" aria-hidden=\"true\" viewBox=\"0 0 1024 1024\" data-icon=\"CloseOutlined\"><path d=\"M512 592.440889l414.890667 414.890667 80.440889-80.440889L592.440889 512l414.890667-414.890667L926.890667 16.668444 512 431.559111 97.109333 16.668444 16.668444 97.109333 431.559111 512 16.668444 926.890667l80.440889 80.440889L512 592.440889z\"></path></svg></span></button><div class=\"ant-modal-header\"><div class=\"ant-modal-title\" id=\":r0:\">Risk reminder</div></div><div class=\"ant-modal-body\"><div>Take-profit trigger price is near the order price and may be triggered soon</div></div><div class=\"ant-modal-footer\"><div class=\"PlanRiskWindow_footer__4j7_A\"><button type=\"button\" class=\"ant-btn ant-btn-default ant-btn-background-ghost\"><span>Cancel</span></button><button type=\"button\" class=\"ant-btn ant-btn-primary\" ant-click-animating-without-extra-node=\"false\"><span>Confirm</span></button></div></div></div><div tabindex=\"0\" aria-hidden=\"true\" style=\"width: 0px; height: 0px; overflow: hidden; outline: none;\"></div></div></div></div>"
+      }
+    },
+    {
+      "timeMs": 44409,
+      "reason": "mutation",
+      "root": {
+        "tag": "DIV",
+        "className": "ant-modal-wrap",
+        "role": null,
+        "ariaModal": null,
+        "text": "Risk reminder Take-profit trigger price is near the order price and may be triggered soon Cancel Confirm",
+        "buttons": [
+          {
+            "tag": "BUTTON",
+            "text": "",
+            "className": "ant-modal-close",
+            "attributes": {
+              "type": "button",
+              "aria-label": "Close",
+              "class": "ant-modal-close"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "type",
+                "onClick",
+                "aria-label",
+                "className",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" aria-label=\"Close\" class=\"ant-modal-close\"><span class=\"ant-modal-close-x\"><svg class=\"sc-gEvEer hSTeNi kcex-icon ant-modal-close-icon\" focusable=\"false\" width=\"1em\" height=\"1em\" fill=\"currentColor\" aria-hidden=\"true\" viewBox=\"0 0 1024 1024\" data-icon=\"CloseOutlined\"><path d=\"M512 592.440889l414.890667 414.890667 80.440889-80.440889L592.440889 512l414.890667-414.890667L926.890667 16.668444 512 431.559111 97.109333 16.668444 16.668444 97.109333 431.559111 512 16.668444 926.890667l80.440889 80.440889L512 592.440889z\"></path></svg></span></button>"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Cancel",
+            "className": "ant-btn ant-btn-default ant-btn-background-ghost",
+            "attributes": {
+              "type": "button",
+              "class": "ant-btn ant-btn-default ant-btn-background-ghost"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "onClick",
+                "type",
+                "className",
+                "disabled",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" class=\"ant-btn ant-btn-default ant-btn-background-ghost\"><span>Cancel</span></button>"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Confirm",
+            "className": "ant-btn ant-btn-primary",
+            "attributes": {
+              "type": "button",
+              "class": "ant-btn ant-btn-primary",
+              "ant-click-animating-without-extra-node": "false"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "onClick",
+                "type",
+                "className",
+                "disabled",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" class=\"ant-btn ant-btn-primary\" ant-click-animating-without-extra-node=\"false\"><span>Confirm</span></button>"
+          }
+        ],
+        "ancestors": [
+          {
+            "tag": "DIV",
+            "className": "ant-modal-root",
+            "role": null
+          },
+          {
+            "tag": "DIV",
+            "className": "",
+            "role": null
+          },
+          {
+            "tag": "BODY",
+            "className": "ant-scrolling-effect",
+            "role": null
+          },
+          {
+            "tag": "HTML",
+            "className": " ",
+            "role": null
+          }
+        ],
+        "html": "<div tabindex=\"-1\" class=\"ant-modal-wrap\"><div role=\"dialog\" aria-labelledby=\":r0:\" aria-modal=\"true\" class=\"ant-modal PlanRiskWindow_modal__jh5UT\" style=\"width: 320px;\"><div tabindex=\"0\" aria-hidden=\"true\" style=\"width: 0px; height: 0px; overflow: hidden; outline: none;\"></div><div class=\"ant-modal-content\"><button type=\"button\" aria-label=\"Close\" class=\"ant-modal-close\"><span class=\"ant-modal-close-x\"><svg class=\"sc-gEvEer hSTeNi kcex-icon ant-modal-close-icon\" focusable=\"false\" width=\"1em\" height=\"1em\" fill=\"currentColor\" aria-hidden=\"true\" viewBox=\"0 0 1024 1024\" data-icon=\"CloseOutlined\"><path d=\"M512 592.440889l414.890667 414.890667 80.440889-80.440889L592.440889 512l414.890667-414.890667L926.890667 16.668444 512 431.559111 97.109333 16.668444 16.668444 97.109333 431.559111 512 16.668444 926.890667l80.440889 80.440889L512 592.440889z\"></path></svg></span></button><div class=\"ant-modal-header\"><div class=\"ant-modal-title\" id=\":r0:\">Risk reminder</div></div><div class=\"ant-modal-body\"><div>Take-profit trigger price is near the order price and may be triggered soon</div></div><div class=\"ant-modal-footer\"><div class=\"PlanRiskWindow_footer__4j7_A\"><button type=\"button\" class=\"ant-btn ant-btn-default ant-btn-background-ghost\"><span>Cancel</span></button><button type=\"button\" class=\"ant-btn ant-btn-primary\" ant-click-animating-without-extra-node=\"false\"><span>Confirm</span></button></div></div></div><div tabindex=\"0\" aria-hidden=\"true\" style=\"width: 0px; height: 0px; overflow: hidden; outline: none;\"></div></div></div>"
+      }
+    },
+    {
+      "timeMs": 44409,
+      "reason": "mutation",
+      "root": {
+        "tag": "DIV",
+        "className": "ant-modal PlanRiskWindow_modal__jh5UT",
+        "role": "dialog",
+        "ariaModal": "true",
+        "text": "Risk reminder Take-profit trigger price is near the order price and may be triggered soon Cancel Confirm",
+        "buttons": [
+          {
+            "tag": "BUTTON",
+            "text": "",
+            "className": "ant-modal-close",
+            "attributes": {
+              "type": "button",
+              "aria-label": "Close",
+              "class": "ant-modal-close"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "type",
+                "onClick",
+                "aria-label",
+                "className",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" aria-label=\"Close\" class=\"ant-modal-close\"><span class=\"ant-modal-close-x\"><svg class=\"sc-gEvEer hSTeNi kcex-icon ant-modal-close-icon\" focusable=\"false\" width=\"1em\" height=\"1em\" fill=\"currentColor\" aria-hidden=\"true\" viewBox=\"0 0 1024 1024\" data-icon=\"CloseOutlined\"><path d=\"M512 592.440889l414.890667 414.890667 80.440889-80.440889L592.440889 512l414.890667-414.890667L926.890667 16.668444 512 431.559111 97.109333 16.668444 16.668444 97.109333 431.559111 512 16.668444 926.890667l80.440889 80.440889L512 592.440889z\"></path></svg></span></button>"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Cancel",
+            "className": "ant-btn ant-btn-default ant-btn-background-ghost",
+            "attributes": {
+              "type": "button",
+              "class": "ant-btn ant-btn-default ant-btn-background-ghost"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "onClick",
+                "type",
+                "className",
+                "disabled",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" class=\"ant-btn ant-btn-default ant-btn-background-ghost\"><span>Cancel</span></button>"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Confirm",
+            "className": "ant-btn ant-btn-primary",
+            "attributes": {
+              "type": "button",
+              "class": "ant-btn ant-btn-primary",
+              "ant-click-animating-without-extra-node": "false"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "onClick",
+                "type",
+                "className",
+                "disabled",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" class=\"ant-btn ant-btn-primary\" ant-click-animating-without-extra-node=\"false\"><span>Confirm</span></button>"
+          }
+        ],
+        "ancestors": [
+          {
+            "tag": "DIV",
+            "className": "ant-modal-wrap",
+            "role": null
+          },
+          {
+            "tag": "DIV",
+            "className": "ant-modal-root",
+            "role": null
+          },
+          {
+            "tag": "DIV",
+            "className": "",
+            "role": null
+          },
+          {
+            "tag": "BODY",
+            "className": "ant-scrolling-effect",
+            "role": null
+          }
+        ],
+        "html": "<div role=\"dialog\" aria-labelledby=\":r0:\" aria-modal=\"true\" class=\"ant-modal PlanRiskWindow_modal__jh5UT\" style=\"width: 320px;\"><div tabindex=\"0\" aria-hidden=\"true\" style=\"width: 0px; height: 0px; overflow: hidden; outline: none;\"></div><div class=\"ant-modal-content\"><button type=\"button\" aria-label=\"Close\" class=\"ant-modal-close\"><span class=\"ant-modal-close-x\"><svg class=\"sc-gEvEer hSTeNi kcex-icon ant-modal-close-icon\" focusable=\"false\" width=\"1em\" height=\"1em\" fill=\"currentColor\" aria-hidden=\"true\" viewBox=\"0 0 1024 1024\" data-icon=\"CloseOutlined\"><path d=\"M512 592.440889l414.890667 414.890667 80.440889-80.440889L592.440889 512l414.890667-414.890667L926.890667 16.668444 512 431.559111 97.109333 16.668444 16.668444 97.109333 431.559111 512 16.668444 926.890667l80.440889 80.440889L512 592.440889z\"></path></svg></span></button><div class=\"ant-modal-header\"><div class=\"ant-modal-title\" id=\":r0:\">Risk reminder</div></div><div class=\"ant-modal-body\"><div>Take-profit trigger price is near the order price and may be triggered soon</div></div><div class=\"ant-modal-footer\"><div class=\"PlanRiskWindow_footer__4j7_A\"><button type=\"button\" class=\"ant-btn ant-btn-default ant-btn-background-ghost\"><span>Cancel</span></button><button type=\"button\" class=\"ant-btn ant-btn-primary\" ant-click-animating-without-extra-node=\"false\"><span>Confirm</span></button></div></div></div><div tabindex=\"0\" aria-hidden=\"true\" style=\"width: 0px; height: 0px; overflow: hidden; outline: none;\"></div></div>"
+      }
+    },
+    {
+      "timeMs": 44409,
+      "reason": "mutation",
+      "root": {
+        "tag": "DIV",
+        "className": "ant-modal-content",
+        "role": null,
+        "ariaModal": null,
+        "text": "Risk reminder Take-profit trigger price is near the order price and may be triggered soon Cancel Confirm",
+        "buttons": [
+          {
+            "tag": "BUTTON",
+            "text": "",
+            "className": "ant-modal-close",
+            "attributes": {
+              "type": "button",
+              "aria-label": "Close",
+              "class": "ant-modal-close"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "type",
+                "onClick",
+                "aria-label",
+                "className",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" aria-label=\"Close\" class=\"ant-modal-close\"><span class=\"ant-modal-close-x\"><svg class=\"sc-gEvEer hSTeNi kcex-icon ant-modal-close-icon\" focusable=\"false\" width=\"1em\" height=\"1em\" fill=\"currentColor\" aria-hidden=\"true\" viewBox=\"0 0 1024 1024\" data-icon=\"CloseOutlined\"><path d=\"M512 592.440889l414.890667 414.890667 80.440889-80.440889L592.440889 512l414.890667-414.890667L926.890667 16.668444 512 431.559111 97.109333 16.668444 16.668444 97.109333 431.559111 512 16.668444 926.890667l80.440889 80.440889L512 592.440889z\"></path></svg></span></button>"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Cancel",
+            "className": "ant-btn ant-btn-default ant-btn-background-ghost",
+            "attributes": {
+              "type": "button",
+              "class": "ant-btn ant-btn-default ant-btn-background-ghost"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "onClick",
+                "type",
+                "className",
+                "disabled",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" class=\"ant-btn ant-btn-default ant-btn-background-ghost\"><span>Cancel</span></button>"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Confirm",
+            "className": "ant-btn ant-btn-primary",
+            "attributes": {
+              "type": "button",
+              "class": "ant-btn ant-btn-primary",
+              "ant-click-animating-without-extra-node": "false"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "onClick",
+                "type",
+                "className",
+                "disabled",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" class=\"ant-btn ant-btn-primary\" ant-click-animating-without-extra-node=\"false\"><span>Confirm</span></button>"
+          }
+        ],
+        "ancestors": [
+          {
+            "tag": "DIV",
+            "className": "ant-modal PlanRiskWindow_modal__jh5UT",
+            "role": "dialog"
+          },
+          {
+            "tag": "DIV",
+            "className": "ant-modal-wrap",
+            "role": null
+          },
+          {
+            "tag": "DIV",
+            "className": "ant-modal-root",
+            "role": null
+          },
+          {
+            "tag": "DIV",
+            "className": "",
+            "role": null
+          }
+        ],
+        "html": "<div class=\"ant-modal-content\"><button type=\"button\" aria-label=\"Close\" class=\"ant-modal-close\"><span class=\"ant-modal-close-x\"><svg class=\"sc-gEvEer hSTeNi kcex-icon ant-modal-close-icon\" focusable=\"false\" width=\"1em\" height=\"1em\" fill=\"currentColor\" aria-hidden=\"true\" viewBox=\"0 0 1024 1024\" data-icon=\"CloseOutlined\"><path d=\"M512 592.440889l414.890667 414.890667 80.440889-80.440889L592.440889 512l414.890667-414.890667L926.890667 16.668444 512 431.559111 97.109333 16.668444 16.668444 97.109333 431.559111 512 16.668444 926.890667l80.440889 80.440889L512 592.440889z\"></path></svg></span></button><div class=\"ant-modal-header\"><div class=\"ant-modal-title\" id=\":r0:\">Risk reminder</div></div><div class=\"ant-modal-body\"><div>Take-profit trigger price is near the order price and may be triggered soon</div></div><div class=\"ant-modal-footer\"><div class=\"PlanRiskWindow_footer__4j7_A\"><button type=\"button\" class=\"ant-btn ant-btn-default ant-btn-background-ghost\"><span>Cancel</span></button><button type=\"button\" class=\"ant-btn ant-btn-primary\" ant-click-animating-without-extra-node=\"false\"><span>Confirm</span></button></div></div></div>"
+      }
+    },
+    {
+      "timeMs": 44410,
+      "reason": "mutation",
+      "root": {
+        "tag": "DIV",
+        "className": "ant-modal-footer",
+        "role": null,
+        "ariaModal": null,
+        "text": "Cancel Confirm",
+        "buttons": [
+          {
+            "tag": "BUTTON",
+            "text": "Cancel",
+            "className": "ant-btn ant-btn-default ant-btn-background-ghost",
+            "attributes": {
+              "type": "button",
+              "class": "ant-btn ant-btn-default ant-btn-background-ghost"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "onClick",
+                "type",
+                "className",
+                "disabled",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" class=\"ant-btn ant-btn-default ant-btn-background-ghost\"><span>Cancel</span></button>"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Confirm",
+            "className": "ant-btn ant-btn-primary",
+            "attributes": {
+              "type": "button",
+              "class": "ant-btn ant-btn-primary",
+              "ant-click-animating-without-extra-node": "false"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "onClick",
+                "type",
+                "className",
+                "disabled",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" class=\"ant-btn ant-btn-primary\" ant-click-animating-without-extra-node=\"false\"><span>Confirm</span></button>"
+          }
+        ],
+        "ancestors": [
+          {
+            "tag": "DIV",
+            "className": "ant-modal-content",
+            "role": null
+          },
+          {
+            "tag": "DIV",
+            "className": "ant-modal PlanRiskWindow_modal__jh5UT",
+            "role": "dialog"
+          },
+          {
+            "tag": "DIV",
+            "className": "ant-modal-wrap",
+            "role": null
+          },
+          {
+            "tag": "DIV",
+            "className": "ant-modal-root",
+            "role": null
+          }
+        ],
+        "html": "<div class=\"ant-modal-footer\"><div class=\"PlanRiskWindow_footer__4j7_A\"><button type=\"button\" class=\"ant-btn ant-btn-default ant-btn-background-ghost\"><span>Cancel</span></button><button type=\"button\" class=\"ant-btn ant-btn-primary\" ant-click-animating-without-extra-node=\"false\"><span>Confirm</span></button></div></div>"
+      }
+    },
+    {
+      "timeMs": 44411,
+      "reason": "mutation",
+      "root": {
+        "tag": "DIV",
+        "className": "PlanRiskWindow_footer__4j7_A",
+        "role": null,
+        "ariaModal": null,
+        "text": "Cancel Confirm",
+        "buttons": [
+          {
+            "tag": "BUTTON",
+            "text": "Cancel",
+            "className": "ant-btn ant-btn-default ant-btn-background-ghost",
+            "attributes": {
+              "type": "button",
+              "class": "ant-btn ant-btn-default ant-btn-background-ghost"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "onClick",
+                "type",
+                "className",
+                "disabled",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" class=\"ant-btn ant-btn-default ant-btn-background-ghost\"><span>Cancel</span></button>"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Confirm",
+            "className": "ant-btn ant-btn-primary",
+            "attributes": {
+              "type": "button",
+              "class": "ant-btn ant-btn-primary",
+              "ant-click-animating-without-extra-node": "false"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "onClick",
+                "type",
+                "className",
+                "disabled",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" class=\"ant-btn ant-btn-primary\" ant-click-animating-without-extra-node=\"false\"><span>Confirm</span></button>"
+          }
+        ],
+        "ancestors": [
+          {
+            "tag": "DIV",
+            "className": "ant-modal-footer",
+            "role": null
+          },
+          {
+            "tag": "DIV",
+            "className": "ant-modal-content",
+            "role": null
+          },
+          {
+            "tag": "DIV",
+            "className": "ant-modal PlanRiskWindow_modal__jh5UT",
+            "role": "dialog"
+          },
+          {
+            "tag": "DIV",
+            "className": "ant-modal-wrap",
+            "role": null
+          }
+        ],
+        "html": "<div class=\"PlanRiskWindow_footer__4j7_A\"><button type=\"button\" class=\"ant-btn ant-btn-default ant-btn-background-ghost\"><span>Cancel</span></button><button type=\"button\" class=\"ant-btn ant-btn-primary\" ant-click-animating-without-extra-node=\"false\"><span>Confirm</span></button></div>"
+      }
+    },
+    {
+      "timeMs": 44439,
+      "reason": "mutation",
+      "root": {
+        "tag": "DIV",
+        "className": "ant-modal-root",
+        "role": null,
+        "ariaModal": null,
+        "text": "Risk reminder Take-profit trigger price is near the order price and may be triggered soon Cancel Confirm",
+        "buttons": [
+          {
+            "tag": "BUTTON",
+            "text": "",
+            "className": "ant-modal-close",
+            "attributes": {
+              "type": "button",
+              "aria-label": "Close",
+              "class": "ant-modal-close"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "type",
+                "onClick",
+                "aria-label",
+                "className",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" aria-label=\"Close\" class=\"ant-modal-close\"><span class=\"ant-modal-close-x\"><svg class=\"sc-gEvEer hSTeNi kcex-icon ant-modal-close-icon\" focusable=\"false\" width=\"1em\" height=\"1em\" fill=\"currentColor\" aria-hidden=\"true\" viewBox=\"0 0 1024 1024\" data-icon=\"CloseOutlined\"><path d=\"M512 592.440889l414.890667 414.890667 80.440889-80.440889L592.440889 512l414.890667-414.890667L926.890667 16.668444 512 431.559111 97.109333 16.668444 16.668444 97.109333 431.559111 512 16.668444 926.890667l80.440889 80.440889L512 592.440889z\"></path></svg></span></button>"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Cancel",
+            "className": "ant-btn ant-btn-default ant-btn-background-ghost",
+            "attributes": {
+              "type": "button",
+              "class": "ant-btn ant-btn-default ant-btn-background-ghost"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "onClick",
+                "type",
+                "className",
+                "disabled",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" class=\"ant-btn ant-btn-default ant-btn-background-ghost\"><span>Cancel</span></button>"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Confirm",
+            "className": "ant-btn ant-btn-primary",
+            "attributes": {
+              "type": "button",
+              "class": "ant-btn ant-btn-primary",
+              "ant-click-animating-without-extra-node": "false"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "onClick",
+                "type",
+                "className",
+                "disabled",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" class=\"ant-btn ant-btn-primary\" ant-click-animating-without-extra-node=\"false\"><span>Confirm</span></button>"
+          }
+        ],
+        "ancestors": [
+          {
+            "tag": "DIV",
+            "className": "",
+            "role": null
+          },
+          {
+            "tag": "BODY",
+            "className": "ant-scrolling-effect",
+            "role": null
+          },
+          {
+            "tag": "HTML",
+            "className": " ",
+            "role": null
+          }
+        ],
+        "html": "<div class=\"ant-modal-root\"><div class=\"ant-modal-mask ant-fade-leave ant-fade-leave-start ant-fade\"></div><div tabindex=\"-1\" class=\"ant-modal-wrap\"><div role=\"dialog\" aria-labelledby=\":r0:\" aria-modal=\"true\" class=\"ant-modal PlanRiskWindow_modal__jh5UT ant-zoom-leave ant-zoom-leave-start ant-zoom\" style=\"width: 320px;\"><div tabindex=\"0\" aria-hidden=\"true\" style=\"width: 0px; height: 0px; overflow: hidden; outline: none;\"></div><div class=\"ant-modal-content\"><button type=\"button\" aria-label=\"Close\" class=\"ant-modal-close\"><span class=\"ant-modal-close-x\"><svg class=\"sc-gEvEer hSTeNi kcex-icon ant-modal-close-icon\" focusable=\"false\" width=\"1em\" height=\"1em\" fill=\"currentColor\" aria-hidden=\"true\" viewBox=\"0 0 1024 1024\" data-icon=\"CloseOutlined\"><path d=\"M512 592.440889l414.890667 414.890667 80.440889-80.440889L592.440889 512l414.890667-414.890667L926.890667 16.668444 512 431.559111 97.109333 16.668444 16.668444 97.109333 431.559111 512 16.668444 926.890667l80.440889 80.440889L512 592.440889z\"></path></svg></span></button><div class=\"ant-modal-header\"><div class=\"ant-modal-title\" id=\":r0:\">Risk reminder</div></div><div class=\"ant-modal-body\"><div>Take-profit trigger price is near the order price and may be triggered soon</div></div><div class=\"ant-modal-footer\"><div class=\"PlanRiskWindow_footer__4j7_A\"><button type=\"button\" class=\"ant-btn ant-btn-default ant-btn-background-ghost\"><span>Cancel</span></button><button type=\"button\" class=\"ant-btn ant-btn-primary\" ant-click-animating-without-extra-node=\"false\"><span>Confirm</span></button></div></div></div><div tabindex=\"0\" aria-hidden=\"true\" style=\"width: 0px; height: 0px; overflow: hidden; outline: none;\"></div></div></div></div>"
+      }
+    },
+    {
+      "timeMs": 44439,
+      "reason": "mutation",
+      "root": {
+        "tag": "DIV",
+        "className": "ant-modal-wrap",
+        "role": null,
+        "ariaModal": null,
+        "text": "Risk reminder Take-profit trigger price is near the order price and may be triggered soon Cancel Confirm",
+        "buttons": [
+          {
+            "tag": "BUTTON",
+            "text": "",
+            "className": "ant-modal-close",
+            "attributes": {
+              "type": "button",
+              "aria-label": "Close",
+              "class": "ant-modal-close"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "type",
+                "onClick",
+                "aria-label",
+                "className",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" aria-label=\"Close\" class=\"ant-modal-close\"><span class=\"ant-modal-close-x\"><svg class=\"sc-gEvEer hSTeNi kcex-icon ant-modal-close-icon\" focusable=\"false\" width=\"1em\" height=\"1em\" fill=\"currentColor\" aria-hidden=\"true\" viewBox=\"0 0 1024 1024\" data-icon=\"CloseOutlined\"><path d=\"M512 592.440889l414.890667 414.890667 80.440889-80.440889L592.440889 512l414.890667-414.890667L926.890667 16.668444 512 431.559111 97.109333 16.668444 16.668444 97.109333 431.559111 512 16.668444 926.890667l80.440889 80.440889L512 592.440889z\"></path></svg></span></button>"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Cancel",
+            "className": "ant-btn ant-btn-default ant-btn-background-ghost",
+            "attributes": {
+              "type": "button",
+              "class": "ant-btn ant-btn-default ant-btn-background-ghost"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "onClick",
+                "type",
+                "className",
+                "disabled",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" class=\"ant-btn ant-btn-default ant-btn-background-ghost\"><span>Cancel</span></button>"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Confirm",
+            "className": "ant-btn ant-btn-primary",
+            "attributes": {
+              "type": "button",
+              "class": "ant-btn ant-btn-primary",
+              "ant-click-animating-without-extra-node": "false"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "onClick",
+                "type",
+                "className",
+                "disabled",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" class=\"ant-btn ant-btn-primary\" ant-click-animating-without-extra-node=\"false\"><span>Confirm</span></button>"
+          }
+        ],
+        "ancestors": [
+          {
+            "tag": "DIV",
+            "className": "ant-modal-root",
+            "role": null
+          },
+          {
+            "tag": "DIV",
+            "className": "",
+            "role": null
+          },
+          {
+            "tag": "BODY",
+            "className": "ant-scrolling-effect",
+            "role": null
+          },
+          {
+            "tag": "HTML",
+            "className": " ",
+            "role": null
+          }
+        ],
+        "html": "<div tabindex=\"-1\" class=\"ant-modal-wrap\"><div role=\"dialog\" aria-labelledby=\":r0:\" aria-modal=\"true\" class=\"ant-modal PlanRiskWindow_modal__jh5UT ant-zoom-leave ant-zoom-leave-start ant-zoom\" style=\"width: 320px;\"><div tabindex=\"0\" aria-hidden=\"true\" style=\"width: 0px; height: 0px; overflow: hidden; outline: none;\"></div><div class=\"ant-modal-content\"><button type=\"button\" aria-label=\"Close\" class=\"ant-modal-close\"><span class=\"ant-modal-close-x\"><svg class=\"sc-gEvEer hSTeNi kcex-icon ant-modal-close-icon\" focusable=\"false\" width=\"1em\" height=\"1em\" fill=\"currentColor\" aria-hidden=\"true\" viewBox=\"0 0 1024 1024\" data-icon=\"CloseOutlined\"><path d=\"M512 592.440889l414.890667 414.890667 80.440889-80.440889L592.440889 512l414.890667-414.890667L926.890667 16.668444 512 431.559111 97.109333 16.668444 16.668444 97.109333 431.559111 512 16.668444 926.890667l80.440889 80.440889L512 592.440889z\"></path></svg></span></button><div class=\"ant-modal-header\"><div class=\"ant-modal-title\" id=\":r0:\">Risk reminder</div></div><div class=\"ant-modal-body\"><div>Take-profit trigger price is near the order price and may be triggered soon</div></div><div class=\"ant-modal-footer\"><div class=\"PlanRiskWindow_footer__4j7_A\"><button type=\"button\" class=\"ant-btn ant-btn-default ant-btn-background-ghost\"><span>Cancel</span></button><button type=\"button\" class=\"ant-btn ant-btn-primary\" ant-click-animating-without-extra-node=\"false\"><span>Confirm</span></button></div></div></div><div tabindex=\"0\" aria-hidden=\"true\" style=\"width: 0px; height: 0px; overflow: hidden; outline: none;\"></div></div></div>"
+      }
+    },
+    {
+      "timeMs": 44440,
+      "reason": "mutation",
+      "root": {
+        "tag": "DIV",
+        "className": "ant-modal PlanRiskWindow_modal__jh5UT ant-zoom-leave ant-zoom-leave-start ant-zoom",
+        "role": "dialog",
+        "ariaModal": "true",
+        "text": "Risk reminder Take-profit trigger price is near the order price and may be triggered soon Cancel Confirm",
+        "buttons": [
+          {
+            "tag": "BUTTON",
+            "text": "",
+            "className": "ant-modal-close",
+            "attributes": {
+              "type": "button",
+              "aria-label": "Close",
+              "class": "ant-modal-close"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "type",
+                "onClick",
+                "aria-label",
+                "className",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" aria-label=\"Close\" class=\"ant-modal-close\"><span class=\"ant-modal-close-x\"><svg class=\"sc-gEvEer hSTeNi kcex-icon ant-modal-close-icon\" focusable=\"false\" width=\"1em\" height=\"1em\" fill=\"currentColor\" aria-hidden=\"true\" viewBox=\"0 0 1024 1024\" data-icon=\"CloseOutlined\"><path d=\"M512 592.440889l414.890667 414.890667 80.440889-80.440889L592.440889 512l414.890667-414.890667L926.890667 16.668444 512 431.559111 97.109333 16.668444 16.668444 97.109333 431.559111 512 16.668444 926.890667l80.440889 80.440889L512 592.440889z\"></path></svg></span></button>"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Cancel",
+            "className": "ant-btn ant-btn-default ant-btn-background-ghost",
+            "attributes": {
+              "type": "button",
+              "class": "ant-btn ant-btn-default ant-btn-background-ghost"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "onClick",
+                "type",
+                "className",
+                "disabled",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" class=\"ant-btn ant-btn-default ant-btn-background-ghost\"><span>Cancel</span></button>"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Confirm",
+            "className": "ant-btn ant-btn-primary",
+            "attributes": {
+              "type": "button",
+              "class": "ant-btn ant-btn-primary",
+              "ant-click-animating-without-extra-node": "false"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "onClick",
+                "type",
+                "className",
+                "disabled",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" class=\"ant-btn ant-btn-primary\" ant-click-animating-without-extra-node=\"false\"><span>Confirm</span></button>"
+          }
+        ],
+        "ancestors": [
+          {
+            "tag": "DIV",
+            "className": "ant-modal-wrap",
+            "role": null
+          },
+          {
+            "tag": "DIV",
+            "className": "ant-modal-root",
+            "role": null
+          },
+          {
+            "tag": "DIV",
+            "className": "",
+            "role": null
+          },
+          {
+            "tag": "BODY",
+            "className": "ant-scrolling-effect",
+            "role": null
+          }
+        ],
+        "html": "<div role=\"dialog\" aria-labelledby=\":r0:\" aria-modal=\"true\" class=\"ant-modal PlanRiskWindow_modal__jh5UT ant-zoom-leave ant-zoom-leave-start ant-zoom\" style=\"width: 320px;\"><div tabindex=\"0\" aria-hidden=\"true\" style=\"width: 0px; height: 0px; overflow: hidden; outline: none;\"></div><div class=\"ant-modal-content\"><button type=\"button\" aria-label=\"Close\" class=\"ant-modal-close\"><span class=\"ant-modal-close-x\"><svg class=\"sc-gEvEer hSTeNi kcex-icon ant-modal-close-icon\" focusable=\"false\" width=\"1em\" height=\"1em\" fill=\"currentColor\" aria-hidden=\"true\" viewBox=\"0 0 1024 1024\" data-icon=\"CloseOutlined\"><path d=\"M512 592.440889l414.890667 414.890667 80.440889-80.440889L592.440889 512l414.890667-414.890667L926.890667 16.668444 512 431.559111 97.109333 16.668444 16.668444 97.109333 431.559111 512 16.668444 926.890667l80.440889 80.440889L512 592.440889z\"></path></svg></span></button><div class=\"ant-modal-header\"><div class=\"ant-modal-title\" id=\":r0:\">Risk reminder</div></div><div class=\"ant-modal-body\"><div>Take-profit trigger price is near the order price and may be triggered soon</div></div><div class=\"ant-modal-footer\"><div class=\"PlanRiskWindow_footer__4j7_A\"><button type=\"button\" class=\"ant-btn ant-btn-default ant-btn-background-ghost\"><span>Cancel</span></button><button type=\"button\" class=\"ant-btn ant-btn-primary\" ant-click-animating-without-extra-node=\"false\"><span>Confirm</span></button></div></div></div><div tabindex=\"0\" aria-hidden=\"true\" style=\"width: 0px; height: 0px; overflow: hidden; outline: none;\"></div></div>"
+      }
+    },
+    {
+      "timeMs": 44450,
+      "reason": "mutation",
+      "root": {
+        "tag": "DIV",
+        "className": "ant-modal-root",
+        "role": null,
+        "ariaModal": null,
+        "text": "Risk reminder Take-profit trigger price is near the order price and may be triggered soon Cancel Confirm",
+        "buttons": [
+          {
+            "tag": "BUTTON",
+            "text": "",
+            "className": "ant-modal-close",
+            "attributes": {
+              "type": "button",
+              "aria-label": "Close",
+              "class": "ant-modal-close"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "type",
+                "onClick",
+                "aria-label",
+                "className",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" aria-label=\"Close\" class=\"ant-modal-close\"><span class=\"ant-modal-close-x\"><svg class=\"sc-gEvEer hSTeNi kcex-icon ant-modal-close-icon\" focusable=\"false\" width=\"1em\" height=\"1em\" fill=\"currentColor\" aria-hidden=\"true\" viewBox=\"0 0 1024 1024\" data-icon=\"CloseOutlined\"><path d=\"M512 592.440889l414.890667 414.890667 80.440889-80.440889L592.440889 512l414.890667-414.890667L926.890667 16.668444 512 431.559111 97.109333 16.668444 16.668444 97.109333 431.559111 512 16.668444 926.890667l80.440889 80.440889L512 592.440889z\"></path></svg></span></button>"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Cancel",
+            "className": "ant-btn ant-btn-default ant-btn-background-ghost",
+            "attributes": {
+              "type": "button",
+              "class": "ant-btn ant-btn-default ant-btn-background-ghost"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "onClick",
+                "type",
+                "className",
+                "disabled",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" class=\"ant-btn ant-btn-default ant-btn-background-ghost\"><span>Cancel</span></button>"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Confirm",
+            "className": "ant-btn ant-btn-primary",
+            "attributes": {
+              "type": "button",
+              "class": "ant-btn ant-btn-primary",
+              "ant-click-animating-without-extra-node": "true"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "onClick",
+                "type",
+                "className",
+                "disabled",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" class=\"ant-btn ant-btn-primary\" ant-click-animating-without-extra-node=\"true\"><span>Confirm</span></button>"
+          }
+        ],
+        "ancestors": [
+          {
+            "tag": "DIV",
+            "className": "",
+            "role": null
+          },
+          {
+            "tag": "BODY",
+            "className": "ant-scrolling-effect",
+            "role": null
+          },
+          {
+            "tag": "HTML",
+            "className": " ",
+            "role": null
+          }
+        ],
+        "html": "<div class=\"ant-modal-root\"><div class=\"ant-modal-mask ant-fade-leave ant-fade-leave-start ant-fade\"></div><div tabindex=\"-1\" class=\"ant-modal-wrap\"><div role=\"dialog\" aria-labelledby=\":r0:\" aria-modal=\"true\" class=\"ant-modal PlanRiskWindow_modal__jh5UT ant-zoom-leave ant-zoom-leave-start ant-zoom\" style=\"width: 320px;\"><div tabindex=\"0\" aria-hidden=\"true\" style=\"width: 0px; height: 0px; overflow: hidden; outline: none;\"></div><div class=\"ant-modal-content\"><button type=\"button\" aria-label=\"Close\" class=\"ant-modal-close\"><span class=\"ant-modal-close-x\"><svg class=\"sc-gEvEer hSTeNi kcex-icon ant-modal-close-icon\" focusable=\"false\" width=\"1em\" height=\"1em\" fill=\"currentColor\" aria-hidden=\"true\" viewBox=\"0 0 1024 1024\" data-icon=\"CloseOutlined\"><path d=\"M512 592.440889l414.890667 414.890667 80.440889-80.440889L592.440889 512l414.890667-414.890667L926.890667 16.668444 512 431.559111 97.109333 16.668444 16.668444 97.109333 431.559111 512 16.668444 926.890667l80.440889 80.440889L512 592.440889z\"></path></svg></span></button><div class=\"ant-modal-header\"><div class=\"ant-modal-title\" id=\":r0:\">Risk reminder</div></div><div class=\"ant-modal-body\"><div>Take-profit trigger price is near the order price and may be triggered soon</div></div><div class=\"ant-modal-footer\"><div class=\"PlanRiskWindow_footer__4j7_A\"><button type=\"button\" class=\"ant-btn ant-btn-default ant-btn-background-ghost\"><span>Cancel</span></button><button type=\"button\" class=\"ant-btn ant-btn-primary\" ant-click-animating-without-extra-node=\"true\"><span>Confirm</span></button></div></div></div><div tabindex=\"0\" aria-hidden=\"true\" style=\"width: 0px; height: 0px; overflow: hidden; outline: none;\"></div></div></div></div>"
+      }
+    },
+    {
+      "timeMs": 44451,
+      "reason": "mutation",
+      "root": {
+        "tag": "DIV",
+        "className": "ant-modal-wrap",
+        "role": null,
+        "ariaModal": null,
+        "text": "Risk reminder Take-profit trigger price is near the order price and may be triggered soon Cancel Confirm",
+        "buttons": [
+          {
+            "tag": "BUTTON",
+            "text": "",
+            "className": "ant-modal-close",
+            "attributes": {
+              "type": "button",
+              "aria-label": "Close",
+              "class": "ant-modal-close"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "type",
+                "onClick",
+                "aria-label",
+                "className",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" aria-label=\"Close\" class=\"ant-modal-close\"><span class=\"ant-modal-close-x\"><svg class=\"sc-gEvEer hSTeNi kcex-icon ant-modal-close-icon\" focusable=\"false\" width=\"1em\" height=\"1em\" fill=\"currentColor\" aria-hidden=\"true\" viewBox=\"0 0 1024 1024\" data-icon=\"CloseOutlined\"><path d=\"M512 592.440889l414.890667 414.890667 80.440889-80.440889L592.440889 512l414.890667-414.890667L926.890667 16.668444 512 431.559111 97.109333 16.668444 16.668444 97.109333 431.559111 512 16.668444 926.890667l80.440889 80.440889L512 592.440889z\"></path></svg></span></button>"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Cancel",
+            "className": "ant-btn ant-btn-default ant-btn-background-ghost",
+            "attributes": {
+              "type": "button",
+              "class": "ant-btn ant-btn-default ant-btn-background-ghost"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "onClick",
+                "type",
+                "className",
+                "disabled",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" class=\"ant-btn ant-btn-default ant-btn-background-ghost\"><span>Cancel</span></button>"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Confirm",
+            "className": "ant-btn ant-btn-primary",
+            "attributes": {
+              "type": "button",
+              "class": "ant-btn ant-btn-primary",
+              "ant-click-animating-without-extra-node": "true"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "onClick",
+                "type",
+                "className",
+                "disabled",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" class=\"ant-btn ant-btn-primary\" ant-click-animating-without-extra-node=\"true\"><span>Confirm</span></button>"
+          }
+        ],
+        "ancestors": [
+          {
+            "tag": "DIV",
+            "className": "ant-modal-root",
+            "role": null
+          },
+          {
+            "tag": "DIV",
+            "className": "",
+            "role": null
+          },
+          {
+            "tag": "BODY",
+            "className": "ant-scrolling-effect",
+            "role": null
+          },
+          {
+            "tag": "HTML",
+            "className": " ",
+            "role": null
+          }
+        ],
+        "html": "<div tabindex=\"-1\" class=\"ant-modal-wrap\"><div role=\"dialog\" aria-labelledby=\":r0:\" aria-modal=\"true\" class=\"ant-modal PlanRiskWindow_modal__jh5UT ant-zoom-leave ant-zoom-leave-start ant-zoom\" style=\"width: 320px;\"><div tabindex=\"0\" aria-hidden=\"true\" style=\"width: 0px; height: 0px; overflow: hidden; outline: none;\"></div><div class=\"ant-modal-content\"><button type=\"button\" aria-label=\"Close\" class=\"ant-modal-close\"><span class=\"ant-modal-close-x\"><svg class=\"sc-gEvEer hSTeNi kcex-icon ant-modal-close-icon\" focusable=\"false\" width=\"1em\" height=\"1em\" fill=\"currentColor\" aria-hidden=\"true\" viewBox=\"0 0 1024 1024\" data-icon=\"CloseOutlined\"><path d=\"M512 592.440889l414.890667 414.890667 80.440889-80.440889L592.440889 512l414.890667-414.890667L926.890667 16.668444 512 431.559111 97.109333 16.668444 16.668444 97.109333 431.559111 512 16.668444 926.890667l80.440889 80.440889L512 592.440889z\"></path></svg></span></button><div class=\"ant-modal-header\"><div class=\"ant-modal-title\" id=\":r0:\">Risk reminder</div></div><div class=\"ant-modal-body\"><div>Take-profit trigger price is near the order price and may be triggered soon</div></div><div class=\"ant-modal-footer\"><div class=\"PlanRiskWindow_footer__4j7_A\"><button type=\"button\" class=\"ant-btn ant-btn-default ant-btn-background-ghost\"><span>Cancel</span></button><button type=\"button\" class=\"ant-btn ant-btn-primary\" ant-click-animating-without-extra-node=\"true\"><span>Confirm</span></button></div></div></div><div tabindex=\"0\" aria-hidden=\"true\" style=\"width: 0px; height: 0px; overflow: hidden; outline: none;\"></div></div></div>"
+      }
+    },
+    {
+      "timeMs": 44451,
+      "reason": "mutation",
+      "root": {
+        "tag": "DIV",
+        "className": "ant-modal PlanRiskWindow_modal__jh5UT ant-zoom-leave ant-zoom-leave-start ant-zoom",
+        "role": "dialog",
+        "ariaModal": "true",
+        "text": "Risk reminder Take-profit trigger price is near the order price and may be triggered soon Cancel Confirm",
+        "buttons": [
+          {
+            "tag": "BUTTON",
+            "text": "",
+            "className": "ant-modal-close",
+            "attributes": {
+              "type": "button",
+              "aria-label": "Close",
+              "class": "ant-modal-close"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "type",
+                "onClick",
+                "aria-label",
+                "className",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" aria-label=\"Close\" class=\"ant-modal-close\"><span class=\"ant-modal-close-x\"><svg class=\"sc-gEvEer hSTeNi kcex-icon ant-modal-close-icon\" focusable=\"false\" width=\"1em\" height=\"1em\" fill=\"currentColor\" aria-hidden=\"true\" viewBox=\"0 0 1024 1024\" data-icon=\"CloseOutlined\"><path d=\"M512 592.440889l414.890667 414.890667 80.440889-80.440889L592.440889 512l414.890667-414.890667L926.890667 16.668444 512 431.559111 97.109333 16.668444 16.668444 97.109333 431.559111 512 16.668444 926.890667l80.440889 80.440889L512 592.440889z\"></path></svg></span></button>"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Cancel",
+            "className": "ant-btn ant-btn-default ant-btn-background-ghost",
+            "attributes": {
+              "type": "button",
+              "class": "ant-btn ant-btn-default ant-btn-background-ghost"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "onClick",
+                "type",
+                "className",
+                "disabled",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" class=\"ant-btn ant-btn-default ant-btn-background-ghost\"><span>Cancel</span></button>"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Confirm",
+            "className": "ant-btn ant-btn-primary",
+            "attributes": {
+              "type": "button",
+              "class": "ant-btn ant-btn-primary",
+              "ant-click-animating-without-extra-node": "true"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "onClick",
+                "type",
+                "className",
+                "disabled",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" class=\"ant-btn ant-btn-primary\" ant-click-animating-without-extra-node=\"true\"><span>Confirm</span></button>"
+          }
+        ],
+        "ancestors": [
+          {
+            "tag": "DIV",
+            "className": "ant-modal-wrap",
+            "role": null
+          },
+          {
+            "tag": "DIV",
+            "className": "ant-modal-root",
+            "role": null
+          },
+          {
+            "tag": "DIV",
+            "className": "",
+            "role": null
+          },
+          {
+            "tag": "BODY",
+            "className": "ant-scrolling-effect",
+            "role": null
+          }
+        ],
+        "html": "<div role=\"dialog\" aria-labelledby=\":r0:\" aria-modal=\"true\" class=\"ant-modal PlanRiskWindow_modal__jh5UT ant-zoom-leave ant-zoom-leave-start ant-zoom\" style=\"width: 320px;\"><div tabindex=\"0\" aria-hidden=\"true\" style=\"width: 0px; height: 0px; overflow: hidden; outline: none;\"></div><div class=\"ant-modal-content\"><button type=\"button\" aria-label=\"Close\" class=\"ant-modal-close\"><span class=\"ant-modal-close-x\"><svg class=\"sc-gEvEer hSTeNi kcex-icon ant-modal-close-icon\" focusable=\"false\" width=\"1em\" height=\"1em\" fill=\"currentColor\" aria-hidden=\"true\" viewBox=\"0 0 1024 1024\" data-icon=\"CloseOutlined\"><path d=\"M512 592.440889l414.890667 414.890667 80.440889-80.440889L592.440889 512l414.890667-414.890667L926.890667 16.668444 512 431.559111 97.109333 16.668444 16.668444 97.109333 431.559111 512 16.668444 926.890667l80.440889 80.440889L512 592.440889z\"></path></svg></span></button><div class=\"ant-modal-header\"><div class=\"ant-modal-title\" id=\":r0:\">Risk reminder</div></div><div class=\"ant-modal-body\"><div>Take-profit trigger price is near the order price and may be triggered soon</div></div><div class=\"ant-modal-footer\"><div class=\"PlanRiskWindow_footer__4j7_A\"><button type=\"button\" class=\"ant-btn ant-btn-default ant-btn-background-ghost\"><span>Cancel</span></button><button type=\"button\" class=\"ant-btn ant-btn-primary\" ant-click-animating-without-extra-node=\"true\"><span>Confirm</span></button></div></div></div><div tabindex=\"0\" aria-hidden=\"true\" style=\"width: 0px; height: 0px; overflow: hidden; outline: none;\"></div></div>"
+      }
+    },
+    {
+      "timeMs": 44452,
+      "reason": "mutation",
+      "root": {
+        "tag": "DIV",
+        "className": "ant-modal-content",
+        "role": null,
+        "ariaModal": null,
+        "text": "Risk reminder Take-profit trigger price is near the order price and may be triggered soon Cancel Confirm",
+        "buttons": [
+          {
+            "tag": "BUTTON",
+            "text": "",
+            "className": "ant-modal-close",
+            "attributes": {
+              "type": "button",
+              "aria-label": "Close",
+              "class": "ant-modal-close"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "type",
+                "onClick",
+                "aria-label",
+                "className",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" aria-label=\"Close\" class=\"ant-modal-close\"><span class=\"ant-modal-close-x\"><svg class=\"sc-gEvEer hSTeNi kcex-icon ant-modal-close-icon\" focusable=\"false\" width=\"1em\" height=\"1em\" fill=\"currentColor\" aria-hidden=\"true\" viewBox=\"0 0 1024 1024\" data-icon=\"CloseOutlined\"><path d=\"M512 592.440889l414.890667 414.890667 80.440889-80.440889L592.440889 512l414.890667-414.890667L926.890667 16.668444 512 431.559111 97.109333 16.668444 16.668444 97.109333 431.559111 512 16.668444 926.890667l80.440889 80.440889L512 592.440889z\"></path></svg></span></button>"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Cancel",
+            "className": "ant-btn ant-btn-default ant-btn-background-ghost",
+            "attributes": {
+              "type": "button",
+              "class": "ant-btn ant-btn-default ant-btn-background-ghost"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "onClick",
+                "type",
+                "className",
+                "disabled",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" class=\"ant-btn ant-btn-default ant-btn-background-ghost\"><span>Cancel</span></button>"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Confirm",
+            "className": "ant-btn ant-btn-primary",
+            "attributes": {
+              "type": "button",
+              "class": "ant-btn ant-btn-primary",
+              "ant-click-animating-without-extra-node": "true"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "onClick",
+                "type",
+                "className",
+                "disabled",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" class=\"ant-btn ant-btn-primary\" ant-click-animating-without-extra-node=\"true\"><span>Confirm</span></button>"
+          }
+        ],
+        "ancestors": [
+          {
+            "tag": "DIV",
+            "className": "ant-modal PlanRiskWindow_modal__jh5UT ant-zoom-leave ant-zoom-leave-start ant-zoom",
+            "role": "dialog"
+          },
+          {
+            "tag": "DIV",
+            "className": "ant-modal-wrap",
+            "role": null
+          },
+          {
+            "tag": "DIV",
+            "className": "ant-modal-root",
+            "role": null
+          },
+          {
+            "tag": "DIV",
+            "className": "",
+            "role": null
+          }
+        ],
+        "html": "<div class=\"ant-modal-content\"><button type=\"button\" aria-label=\"Close\" class=\"ant-modal-close\"><span class=\"ant-modal-close-x\"><svg class=\"sc-gEvEer hSTeNi kcex-icon ant-modal-close-icon\" focusable=\"false\" width=\"1em\" height=\"1em\" fill=\"currentColor\" aria-hidden=\"true\" viewBox=\"0 0 1024 1024\" data-icon=\"CloseOutlined\"><path d=\"M512 592.440889l414.890667 414.890667 80.440889-80.440889L592.440889 512l414.890667-414.890667L926.890667 16.668444 512 431.559111 97.109333 16.668444 16.668444 97.109333 431.559111 512 16.668444 926.890667l80.440889 80.440889L512 592.440889z\"></path></svg></span></button><div class=\"ant-modal-header\"><div class=\"ant-modal-title\" id=\":r0:\">Risk reminder</div></div><div class=\"ant-modal-body\"><div>Take-profit trigger price is near the order price and may be triggered soon</div></div><div class=\"ant-modal-footer\"><div class=\"PlanRiskWindow_footer__4j7_A\"><button type=\"button\" class=\"ant-btn ant-btn-default ant-btn-background-ghost\"><span>Cancel</span></button><button type=\"button\" class=\"ant-btn ant-btn-primary\" ant-click-animating-without-extra-node=\"true\"><span>Confirm</span></button></div></div></div>"
+      }
+    },
+    {
+      "timeMs": 44452,
+      "reason": "mutation",
+      "root": {
+        "tag": "DIV",
+        "className": "ant-modal-footer",
+        "role": null,
+        "ariaModal": null,
+        "text": "Cancel Confirm",
+        "buttons": [
+          {
+            "tag": "BUTTON",
+            "text": "Cancel",
+            "className": "ant-btn ant-btn-default ant-btn-background-ghost",
+            "attributes": {
+              "type": "button",
+              "class": "ant-btn ant-btn-default ant-btn-background-ghost"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "onClick",
+                "type",
+                "className",
+                "disabled",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" class=\"ant-btn ant-btn-default ant-btn-background-ghost\"><span>Cancel</span></button>"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Confirm",
+            "className": "ant-btn ant-btn-primary",
+            "attributes": {
+              "type": "button",
+              "class": "ant-btn ant-btn-primary",
+              "ant-click-animating-without-extra-node": "true"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "onClick",
+                "type",
+                "className",
+                "disabled",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" class=\"ant-btn ant-btn-primary\" ant-click-animating-without-extra-node=\"true\"><span>Confirm</span></button>"
+          }
+        ],
+        "ancestors": [
+          {
+            "tag": "DIV",
+            "className": "ant-modal-content",
+            "role": null
+          },
+          {
+            "tag": "DIV",
+            "className": "ant-modal PlanRiskWindow_modal__jh5UT ant-zoom-leave ant-zoom-leave-start ant-zoom",
+            "role": "dialog"
+          },
+          {
+            "tag": "DIV",
+            "className": "ant-modal-wrap",
+            "role": null
+          },
+          {
+            "tag": "DIV",
+            "className": "ant-modal-root",
+            "role": null
+          }
+        ],
+        "html": "<div class=\"ant-modal-footer\"><div class=\"PlanRiskWindow_footer__4j7_A\"><button type=\"button\" class=\"ant-btn ant-btn-default ant-btn-background-ghost\"><span>Cancel</span></button><button type=\"button\" class=\"ant-btn ant-btn-primary\" ant-click-animating-without-extra-node=\"true\"><span>Confirm</span></button></div></div>"
+      }
+    },
+    {
+      "timeMs": 44453,
+      "reason": "mutation",
+      "root": {
+        "tag": "DIV",
+        "className": "PlanRiskWindow_footer__4j7_A",
+        "role": null,
+        "ariaModal": null,
+        "text": "Cancel Confirm",
+        "buttons": [
+          {
+            "tag": "BUTTON",
+            "text": "Cancel",
+            "className": "ant-btn ant-btn-default ant-btn-background-ghost",
+            "attributes": {
+              "type": "button",
+              "class": "ant-btn ant-btn-default ant-btn-background-ghost"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "onClick",
+                "type",
+                "className",
+                "disabled",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" class=\"ant-btn ant-btn-default ant-btn-background-ghost\"><span>Cancel</span></button>"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Confirm",
+            "className": "ant-btn ant-btn-primary",
+            "attributes": {
+              "type": "button",
+              "class": "ant-btn ant-btn-primary",
+              "ant-click-animating-without-extra-node": "true"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "onClick",
+                "type",
+                "className",
+                "disabled",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" class=\"ant-btn ant-btn-primary\" ant-click-animating-without-extra-node=\"true\"><span>Confirm</span></button>"
+          }
+        ],
+        "ancestors": [
+          {
+            "tag": "DIV",
+            "className": "ant-modal-footer",
+            "role": null
+          },
+          {
+            "tag": "DIV",
+            "className": "ant-modal-content",
+            "role": null
+          },
+          {
+            "tag": "DIV",
+            "className": "ant-modal PlanRiskWindow_modal__jh5UT ant-zoom-leave ant-zoom-leave-start ant-zoom",
+            "role": "dialog"
+          },
+          {
+            "tag": "DIV",
+            "className": "ant-modal-wrap",
+            "role": null
+          }
+        ],
+        "html": "<div class=\"PlanRiskWindow_footer__4j7_A\"><button type=\"button\" class=\"ant-btn ant-btn-default ant-btn-background-ghost\"><span>Cancel</span></button><button type=\"button\" class=\"ant-btn ant-btn-primary\" ant-click-animating-without-extra-node=\"true\"><span>Confirm</span></button></div>"
+      }
+    },
+    {
+      "timeMs": 44497,
+      "reason": "mutation",
+      "root": {
+        "tag": "DIV",
+        "className": "ant-modal-root",
+        "role": null,
+        "ariaModal": null,
+        "text": "Risk reminder Take-profit trigger price is near the order price and may be triggered soon Cancel Confirm",
+        "buttons": [
+          {
+            "tag": "BUTTON",
+            "text": "",
+            "className": "ant-modal-close",
+            "attributes": {
+              "type": "button",
+              "aria-label": "Close",
+              "class": "ant-modal-close"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "type",
+                "onClick",
+                "aria-label",
+                "className",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" aria-label=\"Close\" class=\"ant-modal-close\"><span class=\"ant-modal-close-x\"><svg class=\"sc-gEvEer hSTeNi kcex-icon ant-modal-close-icon\" focusable=\"false\" width=\"1em\" height=\"1em\" fill=\"currentColor\" aria-hidden=\"true\" viewBox=\"0 0 1024 1024\" data-icon=\"CloseOutlined\"><path d=\"M512 592.440889l414.890667 414.890667 80.440889-80.440889L592.440889 512l414.890667-414.890667L926.890667 16.668444 512 431.559111 97.109333 16.668444 16.668444 97.109333 431.559111 512 16.668444 926.890667l80.440889 80.440889L512 592.440889z\"></path></svg></span></button>"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Cancel",
+            "className": "ant-btn ant-btn-default ant-btn-background-ghost",
+            "attributes": {
+              "type": "button",
+              "class": "ant-btn ant-btn-default ant-btn-background-ghost"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "onClick",
+                "type",
+                "className",
+                "disabled",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" class=\"ant-btn ant-btn-default ant-btn-background-ghost\"><span>Cancel</span></button>"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Confirm",
+            "className": "ant-btn ant-btn-primary",
+            "attributes": {
+              "type": "button",
+              "class": "ant-btn ant-btn-primary",
+              "ant-click-animating-without-extra-node": "true"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "onClick",
+                "type",
+                "className",
+                "disabled",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" class=\"ant-btn ant-btn-primary\" ant-click-animating-without-extra-node=\"true\"><span>Confirm</span></button>"
+          }
+        ],
+        "ancestors": [
+          {
+            "tag": "DIV",
+            "className": "",
+            "role": null
+          },
+          {
+            "tag": "BODY",
+            "className": "ant-scrolling-effect",
+            "role": null
+          },
+          {
+            "tag": "HTML",
+            "className": " ",
+            "role": null
+          }
+        ],
+        "html": "<div class=\"ant-modal-root\"><div class=\"ant-modal-mask ant-fade-leave ant-fade-leave-active ant-fade\"></div><div tabindex=\"-1\" class=\"ant-modal-wrap\"><div role=\"dialog\" aria-labelledby=\":r0:\" aria-modal=\"true\" class=\"ant-modal PlanRiskWindow_modal__jh5UT ant-zoom-leave ant-zoom-leave-active ant-zoom\" style=\"width: 320px;\"><div tabindex=\"0\" aria-hidden=\"true\" style=\"width: 0px; height: 0px; overflow: hidden; outline: none;\"></div><div class=\"ant-modal-content\"><button type=\"button\" aria-label=\"Close\" class=\"ant-modal-close\"><span class=\"ant-modal-close-x\"><svg class=\"sc-gEvEer hSTeNi kcex-icon ant-modal-close-icon\" focusable=\"false\" width=\"1em\" height=\"1em\" fill=\"currentColor\" aria-hidden=\"true\" viewBox=\"0 0 1024 1024\" data-icon=\"CloseOutlined\"><path d=\"M512 592.440889l414.890667 414.890667 80.440889-80.440889L592.440889 512l414.890667-414.890667L926.890667 16.668444 512 431.559111 97.109333 16.668444 16.668444 97.109333 431.559111 512 16.668444 926.890667l80.440889 80.440889L512 592.440889z\"></path></svg></span></button><div class=\"ant-modal-header\"><div class=\"ant-modal-title\" id=\":r0:\">Risk reminder</div></div><div class=\"ant-modal-body\"><div>Take-profit trigger price is near the order price and may be triggered soon</div></div><div class=\"ant-modal-footer\"><div class=\"PlanRiskWindow_footer__4j7_A\"><button type=\"button\" class=\"ant-btn ant-btn-default ant-btn-background-ghost\"><span>Cancel</span></button><button type=\"button\" class=\"ant-btn ant-btn-primary\" ant-click-animating-without-extra-node=\"true\"><span>Confirm</span></button></div></div></div><div tabindex=\"0\" aria-hidden=\"true\" style=\"width: 0px; height: 0px; overflow: hidden; outline: none;\"></div></div></div></div>"
+      }
+    },
+    {
+      "timeMs": 44497,
+      "reason": "mutation",
+      "root": {
+        "tag": "DIV",
+        "className": "ant-modal-wrap",
+        "role": null,
+        "ariaModal": null,
+        "text": "Risk reminder Take-profit trigger price is near the order price and may be triggered soon Cancel Confirm",
+        "buttons": [
+          {
+            "tag": "BUTTON",
+            "text": "",
+            "className": "ant-modal-close",
+            "attributes": {
+              "type": "button",
+              "aria-label": "Close",
+              "class": "ant-modal-close"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "type",
+                "onClick",
+                "aria-label",
+                "className",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" aria-label=\"Close\" class=\"ant-modal-close\"><span class=\"ant-modal-close-x\"><svg class=\"sc-gEvEer hSTeNi kcex-icon ant-modal-close-icon\" focusable=\"false\" width=\"1em\" height=\"1em\" fill=\"currentColor\" aria-hidden=\"true\" viewBox=\"0 0 1024 1024\" data-icon=\"CloseOutlined\"><path d=\"M512 592.440889l414.890667 414.890667 80.440889-80.440889L592.440889 512l414.890667-414.890667L926.890667 16.668444 512 431.559111 97.109333 16.668444 16.668444 97.109333 431.559111 512 16.668444 926.890667l80.440889 80.440889L512 592.440889z\"></path></svg></span></button>"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Cancel",
+            "className": "ant-btn ant-btn-default ant-btn-background-ghost",
+            "attributes": {
+              "type": "button",
+              "class": "ant-btn ant-btn-default ant-btn-background-ghost"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "onClick",
+                "type",
+                "className",
+                "disabled",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" class=\"ant-btn ant-btn-default ant-btn-background-ghost\"><span>Cancel</span></button>"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Confirm",
+            "className": "ant-btn ant-btn-primary",
+            "attributes": {
+              "type": "button",
+              "class": "ant-btn ant-btn-primary",
+              "ant-click-animating-without-extra-node": "true"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "onClick",
+                "type",
+                "className",
+                "disabled",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" class=\"ant-btn ant-btn-primary\" ant-click-animating-without-extra-node=\"true\"><span>Confirm</span></button>"
+          }
+        ],
+        "ancestors": [
+          {
+            "tag": "DIV",
+            "className": "ant-modal-root",
+            "role": null
+          },
+          {
+            "tag": "DIV",
+            "className": "",
+            "role": null
+          },
+          {
+            "tag": "BODY",
+            "className": "ant-scrolling-effect",
+            "role": null
+          },
+          {
+            "tag": "HTML",
+            "className": " ",
+            "role": null
+          }
+        ],
+        "html": "<div tabindex=\"-1\" class=\"ant-modal-wrap\"><div role=\"dialog\" aria-labelledby=\":r0:\" aria-modal=\"true\" class=\"ant-modal PlanRiskWindow_modal__jh5UT ant-zoom-leave ant-zoom-leave-active ant-zoom\" style=\"width: 320px;\"><div tabindex=\"0\" aria-hidden=\"true\" style=\"width: 0px; height: 0px; overflow: hidden; outline: none;\"></div><div class=\"ant-modal-content\"><button type=\"button\" aria-label=\"Close\" class=\"ant-modal-close\"><span class=\"ant-modal-close-x\"><svg class=\"sc-gEvEer hSTeNi kcex-icon ant-modal-close-icon\" focusable=\"false\" width=\"1em\" height=\"1em\" fill=\"currentColor\" aria-hidden=\"true\" viewBox=\"0 0 1024 1024\" data-icon=\"CloseOutlined\"><path d=\"M512 592.440889l414.890667 414.890667 80.440889-80.440889L592.440889 512l414.890667-414.890667L926.890667 16.668444 512 431.559111 97.109333 16.668444 16.668444 97.109333 431.559111 512 16.668444 926.890667l80.440889 80.440889L512 592.440889z\"></path></svg></span></button><div class=\"ant-modal-header\"><div class=\"ant-modal-title\" id=\":r0:\">Risk reminder</div></div><div class=\"ant-modal-body\"><div>Take-profit trigger price is near the order price and may be triggered soon</div></div><div class=\"ant-modal-footer\"><div class=\"PlanRiskWindow_footer__4j7_A\"><button type=\"button\" class=\"ant-btn ant-btn-default ant-btn-background-ghost\"><span>Cancel</span></button><button type=\"button\" class=\"ant-btn ant-btn-primary\" ant-click-animating-without-extra-node=\"true\"><span>Confirm</span></button></div></div></div><div tabindex=\"0\" aria-hidden=\"true\" style=\"width: 0px; height: 0px; overflow: hidden; outline: none;\"></div></div></div>"
+      }
+    },
+    {
+      "timeMs": 44498,
+      "reason": "mutation",
+      "root": {
+        "tag": "DIV",
+        "className": "ant-modal PlanRiskWindow_modal__jh5UT ant-zoom-leave ant-zoom-leave-active ant-zoom",
+        "role": "dialog",
+        "ariaModal": "true",
+        "text": "Risk reminder Take-profit trigger price is near the order price and may be triggered soon Cancel Confirm",
+        "buttons": [
+          {
+            "tag": "BUTTON",
+            "text": "",
+            "className": "ant-modal-close",
+            "attributes": {
+              "type": "button",
+              "aria-label": "Close",
+              "class": "ant-modal-close"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "type",
+                "onClick",
+                "aria-label",
+                "className",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" aria-label=\"Close\" class=\"ant-modal-close\"><span class=\"ant-modal-close-x\"><svg class=\"sc-gEvEer hSTeNi kcex-icon ant-modal-close-icon\" focusable=\"false\" width=\"1em\" height=\"1em\" fill=\"currentColor\" aria-hidden=\"true\" viewBox=\"0 0 1024 1024\" data-icon=\"CloseOutlined\"><path d=\"M512 592.440889l414.890667 414.890667 80.440889-80.440889L592.440889 512l414.890667-414.890667L926.890667 16.668444 512 431.559111 97.109333 16.668444 16.668444 97.109333 431.559111 512 16.668444 926.890667l80.440889 80.440889L512 592.440889z\"></path></svg></span></button>"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Cancel",
+            "className": "ant-btn ant-btn-default ant-btn-background-ghost",
+            "attributes": {
+              "type": "button",
+              "class": "ant-btn ant-btn-default ant-btn-background-ghost"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "onClick",
+                "type",
+                "className",
+                "disabled",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" class=\"ant-btn ant-btn-default ant-btn-background-ghost\"><span>Cancel</span></button>"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Confirm",
+            "className": "ant-btn ant-btn-primary",
+            "attributes": {
+              "type": "button",
+              "class": "ant-btn ant-btn-primary",
+              "ant-click-animating-without-extra-node": "true"
+            },
+            "disabled": false,
+            "react": {
+              "propKeys": [
+                "onClick",
+                "type",
+                "className",
+                "disabled",
+                "children"
+              ],
+              "handlers": [
+                "onClick"
+              ]
+            },
+            "html": "<button type=\"button\" class=\"ant-btn ant-btn-primary\" ant-click-animating-without-extra-node=\"true\"><span>Confirm</span></button>"
+          }
+        ],
+        "ancestors": [
+          {
+            "tag": "DIV",
+            "className": "ant-modal-wrap",
+            "role": null
+          },
+          {
+            "tag": "DIV",
+            "className": "ant-modal-root",
+            "role": null
+          },
+          {
+            "tag": "DIV",
+            "className": "",
+            "role": null
+          },
+          {
+            "tag": "BODY",
+            "className": "ant-scrolling-effect",
+            "role": null
+          }
+        ],
+        "html": "<div role=\"dialog\" aria-labelledby=\":r0:\" aria-modal=\"true\" class=\"ant-modal PlanRiskWindow_modal__jh5UT ant-zoom-leave ant-zoom-leave-active ant-zoom\" style=\"width: 320px;\"><div tabindex=\"0\" aria-hidden=\"true\" style=\"width: 0px; height: 0px; overflow: hidden; outline: none;\"></div><div class=\"ant-modal-content\"><button type=\"button\" aria-label=\"Close\" class=\"ant-modal-close\"><span class=\"ant-modal-close-x\"><svg class=\"sc-gEvEer hSTeNi kcex-icon ant-modal-close-icon\" focusable=\"false\" width=\"1em\" height=\"1em\" fill=\"currentColor\" aria-hidden=\"true\" viewBox=\"0 0 1024 1024\" data-icon=\"CloseOutlined\"><path d=\"M512 592.440889l414.890667 414.890667 80.440889-80.440889L592.440889 512l414.890667-414.890667L926.890667 16.668444 512 431.559111 97.109333 16.668444 16.668444 97.109333 431.559111 512 16.668444 926.890667l80.440889 80.440889L512 592.440889z\"></path></svg></span></button><div class=\"ant-modal-header\"><div class=\"ant-modal-title\" id=\":r0:\">Risk reminder</div></div><div class=\"ant-modal-body\"><div>Take-profit trigger price is near the order price and may be triggered soon</div></div><div class=\"ant-modal-footer\"><div class=\"PlanRiskWindow_footer__4j7_A\"><button type=\"button\" class=\"ant-btn ant-btn-default ant-btn-background-ghost\"><span>Cancel</span></button><button type=\"button\" class=\"ant-btn ant-btn-primary\" ant-click-animating-without-extra-node=\"true\"><span>Confirm</span></button></div></div></div><div tabindex=\"0\" aria-hidden=\"true\" style=\"width: 0px; height: 0px; overflow: hidden; outline: none;\"></div></div>"
+      }
+    },
+    {
+      "timeMs": 44699,
+      "reason": "mutation",
+      "root": {
+        "tag": "DIV",
+        "className": "ant-modal-root",
+        "role": null,
+        "ariaModal": null,
+        "text": "Risk reminderTake-profit trigger price is near the order price and may be triggered soonCancelConfirm",
+        "buttons": [],
+        "ancestors": [
+          {
+            "tag": "DIV",
+            "className": "",
+            "role": null
+          },
+          {
+            "tag": "BODY",
+            "className": "ant-scrolling-effect",
+            "role": null
+          },
+          {
+            "tag": "HTML",
+            "className": " ",
+            "role": null
+          }
+        ],
+        "html": "<div class=\"ant-modal-root\"><div tabindex=\"-1\" class=\"ant-modal-wrap\"><div role=\"dialog\" aria-labelledby=\":r0:\" aria-modal=\"true\" class=\"ant-modal PlanRiskWindow_modal__jh5UT\" style=\"width: 320px; display: none;\"><div tabindex=\"0\" aria-hidden=\"true\" style=\"width: 0px; height: 0px; overflow: hidden; outline: none;\"></div><div class=\"ant-modal-content\"><button type=\"button\" aria-label=\"Close\" class=\"ant-modal-close\"><span class=\"ant-modal-close-x\"><svg class=\"sc-gEvEer hSTeNi kcex-icon ant-modal-close-icon\" focusable=\"false\" width=\"1em\" height=\"1em\" fill=\"currentColor\" aria-hidden=\"true\" viewBox=\"0 0 1024 1024\" data-icon=\"CloseOutlined\"><path d=\"M512 592.440889l414.890667 414.890667 80.440889-80.440889L592.440889 512l414.890667-414.890667L926.890667 16.668444 512 431.559111 97.109333 16.668444 16.668444 97.109333 431.559111 512 16.668444 926.890667l80.440889 80.440889L512 592.440889z\"></path></svg></span></button><div class=\"ant-modal-header\"><div class=\"ant-modal-title\" id=\":r0:\">Risk reminder</div></div><div class=\"ant-modal-body\"><div>Take-profit trigger price is near the order price and may be triggered soon</div></div><div class=\"ant-modal-footer\"><div class=\"PlanRiskWindow_footer__4j7_A\"><button type=\"button\" class=\"ant-btn ant-btn-default ant-btn-background-ghost\"><span>Cancel</span></button><button type=\"button\" class=\"ant-btn ant-btn-primary\" ant-click-animating-without-extra-node=\"true\"><span>Confirm</span></button></div></div></div><div tabindex=\"0\" aria-hidden=\"true\" style=\"width: 0px; height: 0px; overflow: hidden; outline: none;\"></div></div></div></div>"
+      }
+    },
+    {
+      "timeMs": 44699,
+      "reason": "mutation",
+      "root": {
+        "tag": "DIV",
+        "className": "ant-modal-wrap",
+        "role": null,
+        "ariaModal": null,
+        "text": "Risk reminderTake-profit trigger price is near the order price and may be triggered soonCancelConfirm",
+        "buttons": [],
+        "ancestors": [
+          {
+            "tag": "DIV",
+            "className": "ant-modal-root",
+            "role": null
+          },
+          {
+            "tag": "DIV",
+            "className": "",
+            "role": null
+          },
+          {
+            "tag": "BODY",
+            "className": "ant-scrolling-effect",
+            "role": null
+          },
+          {
+            "tag": "HTML",
+            "className": " ",
+            "role": null
+          }
+        ],
+        "html": "<div tabindex=\"-1\" class=\"ant-modal-wrap\"><div role=\"dialog\" aria-labelledby=\":r0:\" aria-modal=\"true\" class=\"ant-modal PlanRiskWindow_modal__jh5UT\" style=\"width: 320px; display: none;\"><div tabindex=\"0\" aria-hidden=\"true\" style=\"width: 0px; height: 0px; overflow: hidden; outline: none;\"></div><div class=\"ant-modal-content\"><button type=\"button\" aria-label=\"Close\" class=\"ant-modal-close\"><span class=\"ant-modal-close-x\"><svg class=\"sc-gEvEer hSTeNi kcex-icon ant-modal-close-icon\" focusable=\"false\" width=\"1em\" height=\"1em\" fill=\"currentColor\" aria-hidden=\"true\" viewBox=\"0 0 1024 1024\" data-icon=\"CloseOutlined\"><path d=\"M512 592.440889l414.890667 414.890667 80.440889-80.440889L592.440889 512l414.890667-414.890667L926.890667 16.668444 512 431.559111 97.109333 16.668444 16.668444 97.109333 431.559111 512 16.668444 926.890667l80.440889 80.440889L512 592.440889z\"></path></svg></span></button><div class=\"ant-modal-header\"><div class=\"ant-modal-title\" id=\":r0:\">Risk reminder</div></div><div class=\"ant-modal-body\"><div>Take-profit trigger price is near the order price and may be triggered soon</div></div><div class=\"ant-modal-footer\"><div class=\"PlanRiskWindow_footer__4j7_A\"><button type=\"button\" class=\"ant-btn ant-btn-default ant-btn-background-ghost\"><span>Cancel</span></button><button type=\"button\" class=\"ant-btn ant-btn-primary\" ant-click-animating-without-extra-node=\"true\"><span>Confirm</span></button></div></div></div><div tabindex=\"0\" aria-hidden=\"true\" style=\"width: 0px; height: 0px; overflow: hidden; outline: none;\"></div></div></div>"
+      }
+    },
+    {
+      "timeMs": 44722,
+      "reason": "mutation",
+      "root": {
+        "tag": "DIV",
+        "className": "ant-modal-root",
+        "role": null,
+        "ariaModal": null,
+        "text": "Risk reminderTake-profit trigger price is near the order price and may be triggered soonCancelConfirm",
+        "buttons": [],
+        "ancestors": [
+          {
+            "tag": "DIV",
+            "className": "",
+            "role": null
+          },
+          {
+            "tag": "BODY",
+            "className": "",
+            "role": null
+          },
+          {
+            "tag": "HTML",
+            "className": " ",
+            "role": null
+          }
+        ],
+        "html": "<div class=\"ant-modal-root\"><div tabindex=\"-1\" class=\"ant-modal-wrap\" style=\"display: none;\"><div role=\"dialog\" aria-labelledby=\":r0:\" aria-modal=\"true\" class=\"ant-modal PlanRiskWindow_modal__jh5UT\" style=\"width: 320px; display: none;\"><div tabindex=\"0\" aria-hidden=\"true\" style=\"width: 0px; height: 0px; overflow: hidden; outline: none;\"></div><div class=\"ant-modal-content\"><button type=\"button\" aria-label=\"Close\" class=\"ant-modal-close\"><span class=\"ant-modal-close-x\"><svg class=\"sc-gEvEer hSTeNi kcex-icon ant-modal-close-icon\" focusable=\"false\" width=\"1em\" height=\"1em\" fill=\"currentColor\" aria-hidden=\"true\" viewBox=\"0 0 1024 1024\" data-icon=\"CloseOutlined\"><path d=\"M512 592.440889l414.890667 414.890667 80.440889-80.440889L592.440889 512l414.890667-414.890667L926.890667 16.668444 512 431.559111 97.109333 16.668444 16.668444 97.109333 431.559111 512 16.668444 926.890667l80.440889 80.440889L512 592.440889z\"></path></svg></span></button><div class=\"ant-modal-header\"><div class=\"ant-modal-title\" id=\":r0:\">Risk reminder</div></div><div class=\"ant-modal-body\"><div>Take-profit trigger price is near the order price and may be triggered soon</div></div><div class=\"ant-modal-footer\"><div class=\"PlanRiskWindow_footer__4j7_A\"><button type=\"button\" class=\"ant-btn ant-btn-default ant-btn-background-ghost\"><span>Cancel</span></button><button type=\"button\" class=\"ant-btn ant-btn-primary\" ant-click-animating-without-extra-node=\"true\"><span>Confirm</span></button></div></div></div><div tabindex=\"0\" aria-hidden=\"true\" style=\"width: 0px; height: 0px; overflow: hidden; outline: none;\"></div></div></div></div>"
+      }
+    }
+  ],
+  "clicks": [
+    {
+      "timeMs": 44404,
+      "label": "Confirm",
+      "modalText": "Cancel Confirm",
+      "clickedElement": {
+        "tag": "BUTTON",
+        "text": "Confirm",
+        "className": "ant-btn ant-btn-primary",
+        "attributes": {
+          "type": "button",
+          "class": "ant-btn ant-btn-primary"
+        },
+        "disabled": false,
+        "react": {
+          "propKeys": [
+            "onClick",
+            "type",
+            "className",
+            "disabled",
+            "children"
+          ],
+          "handlers": [
+            "onClick"
+          ]
+        },
+        "html": "<button type=\"button\" class=\"ant-btn ant-btn-primary\"><span>Confirm</span></button>"
+      },
+      "chain": [
+        {
+          "tag": "BUTTON",
+          "text": "Confirm",
+          "className": "ant-btn ant-btn-primary",
+          "attributes": {
+            "type": "button",
+            "class": "ant-btn ant-btn-primary"
+          },
+          "disabled": false,
+          "react": {
+            "propKeys": [
+              "onClick",
+              "type",
+              "className",
+              "disabled",
+              "children"
+            ],
+            "handlers": [
+              "onClick"
+            ]
+          },
+          "html": "<button type=\"button\" class=\"ant-btn ant-btn-primary\"><span>Confirm</span></button>"
+        },
+        {
+          "tag": "DIV",
+          "text": "Cancel Confirm",
+          "className": "PlanRiskWindow_footer__4j7_A",
+          "attributes": {
+            "class": "PlanRiskWindow_footer__4j7_A"
+          },
+          "disabled": null,
+          "react": {
+            "propKeys": [
+              "className",
+              "children"
+            ],
+            "handlers": []
+          },
+          "html": "<div class=\"PlanRiskWindow_footer__4j7_A\"><button type=\"button\" class=\"ant-btn ant-btn-default ant-btn-background-ghost\"><span>Cancel</span></button><button type=\"button\" class=\"ant-btn ant-btn-primary\"><span>Confirm</span></button></div>"
+        },
+        {
+          "tag": "DIV",
+          "text": "Cancel Confirm",
+          "className": "ant-modal-footer",
+          "attributes": {
+            "class": "ant-modal-footer"
+          },
+          "disabled": null,
+          "react": {
+            "propKeys": [
+              "className",
+              "children"
+            ],
+            "handlers": []
+          },
+          "html": "<div class=\"ant-modal-footer\"><div class=\"PlanRiskWindow_footer__4j7_A\"><button type=\"button\" class=\"ant-btn ant-btn-default ant-btn-background-ghost\"><span>Cancel</span></button><button type=\"button\" class=\"ant-btn ant-btn-primary\"><span>Confirm</span></button></div></div>"
+        },
+        {
+          "tag": "DIV",
+          "text": "Risk reminder Take-profit trigger price is near the order price and may be triggered soon Cancel Confirm",
+          "className": "ant-modal-content",
+          "attributes": {
+            "class": "ant-modal-content"
+          },
+          "disabled": null,
+          "react": {
+            "propKeys": [
+              "className",
+              "children"
+            ],
+            "handlers": []
+          },
+          "html": "<div class=\"ant-modal-content\"><button type=\"button\" aria-label=\"Close\" class=\"ant-modal-close\"><span class=\"ant-modal-close-x\"><svg class=\"sc-gEvEer hSTeNi kcex-icon ant-modal-close-icon\" focusable=\"false\" width=\"1em\" height=\"1em\" fill=\"currentColor\" aria-hidden=\"true\" viewBox=\"0 0 1024 1024\" data-icon=\"CloseOutlined\"><path d=\"M512 592.440889l414.890667 414.890667 80.440889-80.440889L592.440889 512l414.890667-414.890667L926.890667 16.668444 512 431.559111 97.109333 16.668444 16.668444 97.109333 431.559111 512 16.668444 926.890667l80.440889 80.440889L512 592.440889z\"></path></svg></span></button><div class=\"ant-modal-header\"><div class=\"ant-modal-title\" id=\":r0:\">Risk reminder</div></div><div class=\"ant-modal-body\"><div>Take-profit trigger price is near the order price and may be triggered soon</div></div><div class=\"ant-modal-footer\"><div class=\"PlanRiskWindow_footer__4j7_A\"><button type=\"button\" class=\"ant-btn ant-btn-default ant-btn-background-ghost\"><span>Cancel</span></button><button type=\"button\" class=\"ant-btn ant-btn-primary\"><span>Confirm</span></button></div></div></div>"
+        },
+        {
+          "tag": "DIV",
+          "text": "Risk reminder Take-profit trigger price is near the order price and may be triggered soon Cancel Confirm",
+          "className": "ant-modal PlanRiskWindow_modal__jh5UT",
+          "attributes": {
+            "role": "dialog",
+            "aria-labelledby": ":r0:",
+            "aria-modal": "true",
+            "class": "ant-modal PlanRiskWindow_modal__jh5UT",
+            "style": "width: 320px;"
+          },
+          "disabled": null,
+          "react": {
+            "propKeys": [
+              "role",
+              "aria-labelledby",
+              "aria-modal",
+              "style",
+              "className",
+              "onMouseDown",
+              "onMouseUp",
+              "children"
+            ],
+            "handlers": [
+              "onMouseDown",
+              "onMouseUp"
+            ]
+          },
+          "html": "<div role=\"dialog\" aria-labelledby=\":r0:\" aria-modal=\"true\" class=\"ant-modal PlanRiskWindow_modal__jh5UT\" style=\"width: 320px;\"><div tabindex=\"0\" aria-hidden=\"true\" style=\"width: 0px; height: 0px; overflow: hidden; outline: none;\"></div><div class=\"ant-modal-content\"><button type=\"button\" aria-label=\"Close\" class=\"ant-modal-close\"><span class=\"ant-modal-close-x\"><svg class=\"sc-gEvEer hSTeNi kcex-icon ant-modal-close-icon\" focusable=\"false\" width=\"1em\" height=\"1em\" fill=\"currentColor\" aria-hidden=\"true\" viewBox=\"0 0 1024 1024\" data-icon=\"CloseOutlined\"><path d=\"M512 592.440889l414.890667 414.890667 80.440889-80.440889L592.440889 512l414.890667-414.890667L926.890667 16.668444 512 431.559111 97.109333 16.668444 16.668444 97.109333 431.559111 512 16.668444 926.890667l80.440889 80.440889L512 592.440889z\"></path></svg></span></button><div class=\"ant-modal-header\"><div class=\"ant-modal-title\" id=\":r0:\">Risk reminder</div></div><div class=\"ant-modal-body\"><div>Take-profit trigger price is near the order price and may be triggered soon</div></div><div class=\"ant-modal-footer\"><div class=\"PlanRiskWindow_footer__4j7_A\"><button type=\"button\" class=\"ant-btn ant-btn-default ant-btn-background-ghost\"><span>Cancel</span></button><button type=\"button\" class=\"ant-btn ant-btn-primary\"><span>Confirm</span></button></div></div></div><div tabindex=\"0\" aria-hidden=\"true\" style=\"width: 0px; height: 0px; overflow: hidden; outline: none;\"></div></div>"
+        }
+      ]
+    }
+  ],
+  "finishedAt": "2026-11-07T16:27:28.030Z",
+  "networkResources": [
+    {
+      "origin": "https://www.kcex.com",
+      "path": "/api/platform/asset/api/asset/overview/convert/v2",
+      "type": "fetch",
+      "startMs": 8,
+      "durationMs": 417
+    },
+    {
+      "origin": "https://www.kcex.com",
+      "path": "/fapi/v1/contract/ping",
+      "type": "fetch",
+      "startMs": 1345,
+      "durationMs": 156
+    },
+    {
+      "origin": "https://www.kcex.com",
+      "path": "/probe/probeNoCache.json",
+      "type": "fetch",
+      "startMs": 1516,
+      "durationMs": 155
+    },
+    {
+      "origin": "https://www.kcex.com",
+      "path": "/probe/probe.json",
+      "type": "fetch",
+      "startMs": 1770,
+      "durationMs": 179
+    },
+    {
+      "origin": "https://www.kcex.com",
+      "path": "/uc/user_api/page_lang/available",
+      "type": "fetch",
+      "startMs": 1968,
+      "durationMs": 203
+    },
+    {
+      "origin": "https://static.picdenlab.com",
+      "path": "/front/setting/webGlobalSetting.json",
+      "type": "fetch",
+      "startMs": 1969,
+      "durationMs": 10
+    },
+    {
+      "origin": "https://www.kcex.com",
+      "path": "/uc/site_message/messages/unread-count",
+      "type": "fetch",
+      "startMs": 1971,
+      "durationMs": 395
+    },
+    {
+      "origin": "https://www.kcex.com",
+      "path": "/static/music/event/keyboard_input.mp3",
+      "type": "fetch",
+      "startMs": 2513,
+      "durationMs": 143
+    },
+    {
+      "origin": "https://www.kcex.com",
+      "path": "/main-static/web-futures/v3.8.75/static/images/common/favicon.png",
+      "type": "other",
+      "startMs": 3723,
+      "durationMs": 4
+    },
+    {
+      "origin": "https://www.kcex.com",
+      "path": "/fapi/v1/private/position/order/calc_liquidate_price/v2",
+      "type": "fetch",
+      "startMs": 5461,
+      "durationMs": 399
+    },
+    {
+      "origin": "https://www.kcex.com",
+      "path": "/static/music/event/keyboard_delete.mp3",
+      "type": "fetch",
+      "startMs": 6655,
+      "durationMs": 140
+    },
+    {
+      "origin": "https://www.kcex.com",
+      "path": "/static/music/event/keyboard_delete.mp3",
+      "type": "fetch",
+      "startMs": 6800,
+      "durationMs": 142
+    },
+    {
+      "origin": "https://www.kcex.com",
+      "path": "/fapi/v1/private/position/order/calc_liquidate_price/v2",
+      "type": "fetch",
+      "startMs": 9750,
+      "durationMs": 408
+    },
+    {
+      "origin": "https://www.kcex.com",
+      "path": "/fapi/v1/contract/ping",
+      "type": "fetch",
+      "startMs": 11979,
+      "durationMs": 153
+    },
+    {
+      "origin": "https://www.kcex.com",
+      "path": "/probe/probeNoCache.json",
+      "type": "fetch",
+      "startMs": 12143,
+      "durationMs": 144
+    },
+    {
+      "origin": "https://www.kcex.com",
+      "path": "/probe/probe.json",
+      "type": "fetch",
+      "startMs": 12290,
+      "durationMs": 138
+    },
+    {
+      "origin": "https://www.kcex.com",
+      "path": "/fapi/v1/contract/ping",
+      "type": "fetch",
+      "startMs": 14364,
+      "durationMs": 241
+    },
+    {
+      "origin": "https://www.kcex.com",
+      "path": "/fapi/v1/private/position/order/calc_liquidate_price/v2",
+      "type": "fetch",
+      "startMs": 17812,
+      "durationMs": 434
+    },
+    {
+      "origin": "https://www.kcex.com",
+      "path": "/fapi/v1/contract/ping",
+      "type": "fetch",
+      "startMs": 22868,
+      "durationMs": 156
+    },
+    {
+      "origin": "https://www.kcex.com",
+      "path": "/probe/probeNoCache.json",
+      "type": "fetch",
+      "startMs": 23122,
+      "durationMs": 138
+    },
+    {
+      "origin": "https://www.kcex.com",
+      "path": "/probe/probe.json",
+      "type": "fetch",
+      "startMs": 23269,
+      "durationMs": 151
+    },
+    {
+      "origin": "https://www.kcex.com",
+      "path": "/fapi/v1/private/position/order/calc_liquidate_price/v2",
+      "type": "fetch",
+      "startMs": 27924,
+      "durationMs": 402
+    },
+    {
+      "origin": "https://www.kcex.com",
+      "path": "/fapi/v1/private/position/order/calc_liquidate_price/v2",
+      "type": "fetch",
+      "startMs": 29164,
+      "durationMs": 417
+    },
+    {
+      "origin": "https://www.kcex.com",
+      "path": "/fapi/v1/contract/ping",
+      "type": "fetch",
+      "startMs": 29366,
+      "durationMs": 294
+    },
+    {
+      "origin": "https://www.kcex.com",
+      "path": "/fapi/v1/contract/ping",
+      "type": "fetch",
+      "startMs": 33594,
+      "durationMs": 169
+    },
+    {
+      "origin": "https://www.kcex.com",
+      "path": "/probe/probeNoCache.json",
+      "type": "fetch",
+      "startMs": 33776,
+      "durationMs": 143
+    },
+    {
+      "origin": "https://www.kcex.com",
+      "path": "/probe/probe.json",
+      "type": "fetch",
+      "startMs": 33921,
+      "durationMs": 159
+    },
+    {
+      "origin": "https://www.kcex.com",
+      "path": "/fapi/v1/private/position/order/calc_liquidate_price/v2",
+      "type": "fetch",
+      "startMs": 37807,
+      "durationMs": 406
+    },
+    {
+      "origin": "https://www.kcex.com",
+      "path": "/fapi/v1/private/position/order/calc_liquidate_price/v2",
+      "type": "fetch",
+      "startMs": 41681,
+      "durationMs": 623
+    },
+    {
+      "origin": "https://www.kcex.com",
+      "path": "/fapi/v1/contract/ping",
+      "type": "fetch",
+      "startMs": 44083,
+      "durationMs": 152
+    },
+    {
+      "origin": "https://www.kcex.com",
+      "path": "/probe/probeNoCache.json",
+      "type": "fetch",
+      "startMs": 44246,
+      "durationMs": 137
+    },
+    {
+      "origin": "https://www.kcex.com",
+      "path": "/probe/probe.json",
+      "type": "fetch",
+      "startMs": 44385,
+      "durationMs": 153
+    },
+    {
+      "origin": "https://www.kcex.com",
+      "path": "/fapi/v1/private/order/create",
+      "type": "fetch",
+      "startMs": 44417,
+      "durationMs": 431
+    },
+    {
+      "origin": "https://www.kcex.com",
+      "path": "/fapi/v1/contract/ping",
+      "type": "fetch",
+      "startMs": 44517,
+      "durationMs": 202
+    },
+    {
+      "origin": "https://www.kcex.com",
+      "path": "/main-static/web-futures/v3.8.75/static/music/futures/normal.mp3",
+      "type": "audio",
+      "startMs": 44996,
+      "durationMs": 5
+    },
+    {
+      "origin": "https://tracking.picdenlab.com",
+      "path": "/api/v1/tracking/events",
+      "type": "fetch",
+      "startMs": 45304,
+      "durationMs": 775
+    },
+    {
+      "origin": "https://www.kcex.com",
+      "path": "/fapi/v1/private/order/list/order_deals",
+      "type": "fetch",
+      "startMs": 45445,
+      "durationMs": 577
+    },
+    {
+      "origin": "https://www.kcex.com",
+      "path": "/fapi/v1/private/order/list/history_orders",
+      "type": "fetch",
+      "startMs": 45450,
+      "durationMs": 570
+    },
+    {
+      "origin": "https://www.kcex.com",
+      "path": "/fapi/v1/private/order/list/open_orders",
+      "type": "fetch",
+      "startMs": 47085,
+      "durationMs": 392
+    }
+  ]
+}
