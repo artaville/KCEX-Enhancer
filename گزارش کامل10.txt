@@ -1,0 +1,338 @@
+{
+  "report": "TV Enhancer Final Diagnostic",
+  "version": "4.0.0",
+  "generatedAt": "2026-11-08T15:22:07.482Z",
+  "config": {
+    "wsUrl": "wss://www.kcex.com/fapi/edge",
+    "symbol": "PEPE_USDT",
+    "durationMs": 45000,
+    "pingEveryMs": 10000,
+    "intervals": [
+      1,
+      5,
+      10,
+      15,
+      20,
+      30,
+      45
+    ],
+    "maxRawSamples": 8,
+    "maxTradeSamples": 12,
+    "maxUnparsedSamples": 8,
+    "maxCandleSamples": 6
+  },
+  "safety": {
+    "chartModified": false,
+    "chartDataInjected": false,
+    "chartResolutionChanged": false,
+    "exchangeOrdersPlaced": false,
+    "apiKeysUsed": false
+  },
+  "websocket": {
+    "url": "wss://www.kcex.com/fapi/edge",
+    "symbol": "PEPE_USDT",
+    "state": "finished",
+    "opened": true,
+    "subscriptionSent": true,
+    "pingCount": 4,
+    "pongCount": 4,
+    "closeCode": null,
+    "closeReason": null,
+    "error": null,
+    "framesReceived": 29,
+    "textFrames": 29,
+    "binaryFrames": 0,
+    "jsonFrames": 29,
+    "decompressedFrames": 0,
+    "parseFailures": 0,
+    "controlFrames": 5,
+    "rawSamples": [
+      {
+        "receivedAt": "2026-11-08T15:22:09.536Z",
+        "content": "{\"channel\":\"rs.sub.deal\",\"data\":\"success\",\"ts\":1794151329393}"
+      },
+      {
+        "receivedAt": "2026-11-08T15:22:11.128Z",
+        "content": "{\"symbol\":\"PEPE_USDT\",\"data\":[{\"p\":0.0000050814,\"v\":2258,\"T\":1,\"O\":3,\"M\":1,\"t\":1794151330980}],\"channel\":\"push.deal\",\"ts\":1794151330980}"
+      },
+      {
+        "receivedAt": "2026-11-08T15:22:12.608Z",
+        "content": "{\"symbol\":\"PEPE_USDT\",\"data\":[{\"p\":0.0000050814,\"v\":6,\"T\":1,\"O\":3,\"M\":1,\"t\":1794151332465}],\"channel\":\"push.deal\",\"ts\":1794151332465}"
+      },
+      {
+        "receivedAt": "2026-11-08T15:22:13.255Z",
+        "content": "{\"symbol\":\"PEPE_USDT\",\"data\":[{\"p\":0.0000050814,\"v\":93,\"T\":2,\"O\":3,\"M\":1,\"t\":1794151333111}],\"channel\":\"push.deal\",\"ts\":1794151333111}"
+      },
+      {
+        "receivedAt": "2026-11-08T15:22:15.495Z",
+        "content": "{\"symbol\":\"PEPE_USDT\",\"data\":[{\"p\":0.0000050814,\"v\":7,\"T\":2,\"O\":3,\"M\":1,\"t\":1794151335352}],\"channel\":\"push.deal\",\"ts\":1794151335352}"
+      },
+      {
+        "receivedAt": "2026-11-08T15:22:19.177Z",
+        "content": "{\"symbol\":\"PEPE_USDT\",\"data\":[{\"p\":0.0000050801,\"v\":437,\"T\":1,\"O\":3,\"M\":1,\"t\":1794151339031}],\"channel\":\"push.deal\",\"ts\":1794151339031}"
+      },
+      {
+        "receivedAt": "2026-11-08T15:22:19.539Z",
+        "content": "{\"channel\":\"pong\",\"data\":1794151339395,\"ts\":1794151339395}"
+      },
+      {
+        "receivedAt": "2026-11-08T15:22:19.713Z",
+        "content": "{\"symbol\":\"PEPE_USDT\",\"data\":[{\"p\":0.0000050802,\"v\":4,\"T\":2,\"O\":3,\"M\":1,\"t\":1794151339564}],\"channel\":\"push.deal\",\"ts\":1794151339564}"
+      }
+    ],
+    "unparsedSamples": [
+      {
+        "reason": "JSON received, but no p/v/T trade object found",
+        "content": "{\"channel\":\"rs.sub.deal\",\"data\":\"success\",\"ts\":1794151329393}"
+      },
+      {
+        "reason": "JSON received, but no p/v/T trade object found",
+        "content": "{\"channel\":\"pong\",\"data\":1794151339395,\"ts\":1794151339395}"
+      },
+      {
+        "reason": "JSON received, but no p/v/T trade object found",
+        "content": "{\"channel\":\"pong\",\"data\":1794151349397,\"ts\":1794151349397}"
+      },
+      {
+        "reason": "JSON received, but no p/v/T trade object found",
+        "content": "{\"channel\":\"pong\",\"data\":1794151359428,\"ts\":1794151359428}"
+      },
+      {
+        "reason": "JSON received, but no p/v/T trade object found",
+        "content": "{\"channel\":\"pong\",\"data\":1794151369394,\"ts\":1794151369394}"
+      }
+    ],
+    "openedAt": "2026-11-08T15:22:09.135Z",
+    "subscriptionMessage": {
+      "method": "sub.deal",
+      "param": {
+        "symbol": "PEPE_USDT",
+        "compress": true
+      }
+    },
+    "testEnd": "2026-11-08T15:22:54.138Z",
+    "finishReason": "45-second collection completed",
+    "durationObservedMs": 45003
+  },
+  "trades": {
+    "count": 0,
+    "invalidCount": 24,
+    "timestampUnit": {},
+    "firstExchangeTime": null,
+    "lastExchangeTime": null,
+    "firstReceiveTime": null,
+    "lastReceiveTime": null,
+    "outOfOrderCount": 0,
+    "repeatedSignatureCount": 0,
+    "latencyMs": {
+      "sampleCount": 0,
+      "median": null,
+      "p95": null,
+      "min": null,
+      "max": null
+    },
+    "samples": []
+  },
+  "candles": {
+    "1s": {
+      "intervalSeconds": 1,
+      "actualCandleCount": 0,
+      "missingBucketCount": 0,
+      "continuousCandleCount": 0,
+      "missingRatio": null,
+      "firstBucket": null,
+      "lastBucket": null,
+      "totalTrades": 0,
+      "lastActualCandles": [],
+      "lastContinuousCandles": []
+    },
+    "5s": {
+      "intervalSeconds": 5,
+      "actualCandleCount": 0,
+      "missingBucketCount": 0,
+      "continuousCandleCount": 0,
+      "missingRatio": null,
+      "firstBucket": null,
+      "lastBucket": null,
+      "totalTrades": 0,
+      "lastActualCandles": [],
+      "lastContinuousCandles": []
+    },
+    "10s": {
+      "intervalSeconds": 10,
+      "actualCandleCount": 0,
+      "missingBucketCount": 0,
+      "continuousCandleCount": 0,
+      "missingRatio": null,
+      "firstBucket": null,
+      "lastBucket": null,
+      "totalTrades": 0,
+      "lastActualCandles": [],
+      "lastContinuousCandles": []
+    },
+    "15s": {
+      "intervalSeconds": 15,
+      "actualCandleCount": 0,
+      "missingBucketCount": 0,
+      "continuousCandleCount": 0,
+      "missingRatio": null,
+      "firstBucket": null,
+      "lastBucket": null,
+      "totalTrades": 0,
+      "lastActualCandles": [],
+      "lastContinuousCandles": []
+    },
+    "20s": {
+      "intervalSeconds": 20,
+      "actualCandleCount": 0,
+      "missingBucketCount": 0,
+      "continuousCandleCount": 0,
+      "missingRatio": null,
+      "firstBucket": null,
+      "lastBucket": null,
+      "totalTrades": 0,
+      "lastActualCandles": [],
+      "lastContinuousCandles": []
+    },
+    "30s": {
+      "intervalSeconds": 30,
+      "actualCandleCount": 0,
+      "missingBucketCount": 0,
+      "continuousCandleCount": 0,
+      "missingRatio": null,
+      "firstBucket": null,
+      "lastBucket": null,
+      "totalTrades": 0,
+      "lastActualCandles": [],
+      "lastContinuousCandles": []
+    },
+    "45s": {
+      "intervalSeconds": 45,
+      "actualCandleCount": 0,
+      "missingBucketCount": 0,
+      "continuousCandleCount": 0,
+      "missingRatio": null,
+      "firstBucket": null,
+      "lastBucket": null,
+      "totalTrades": 0,
+      "lastActualCandles": [],
+      "lastContinuousCandles": []
+    }
+  },
+  "tradingView": {
+    "apiFound": true,
+    "widgetFound": true,
+    "modelFound": true,
+    "mainSeriesFound": true,
+    "seriesSourceFound": true,
+    "seriesDataFound": true,
+    "barStoreFound": true,
+    "timeScaleFound": true,
+    "symbol": {
+      "found": true,
+      "value": "KCEX:PEPEUSDT.P"
+    },
+    "resolution": {
+      "found": true,
+      "value": "1"
+    },
+    "interval": {
+      "found": true,
+      "value": "1"
+    },
+    "barCount": 377,
+    "firstBarIndex": {
+      "found": true,
+      "value": 0
+    },
+    "lastBarIndex": {
+      "found": true,
+      "value": 376
+    },
+    "timeScalePointCount": 548,
+    "timeScaleBaseIndex": {
+      "found": true,
+      "value": 376
+    },
+    "availablePipelineMethods": {
+      "_onMessageImpl": {
+        "found": true,
+        "source": "async _onMessageImpl(t){switch(t.method){case\"symbol_resolved\":{const[e,s]=t.params;if(e!==this._symbolInstanceId){null!==this._symbolInstanceId&&b.logNormal(`Resolve for old symbol, expected: ${this._symbolInstanceId}, actual ${t.params[0]}`);break}this._onSymbolResolved(s);break}case\"symbol_error\":if(t.params[0]!==this._symbolInstanceId){null!==this._symbolInstanceId&&b.logNormal(`Symbol error for old symbol, expected: ${this._symbolInstanceId}, actual ${t.params[0]}`);break}this._onSymbolError(t);break;case\"series_timeframe\":{const[e,s,r,i,a,n,o]=t.params;if(!this._checkTurnaround(e,s)){b.logNormal(`Time frame for old data, expected: ${this._symbolInstanceId} (${this.turnaround()}), actual ${e} (${s})`);break}this._onSeriesTimeFrame(r,i,a,n,o);break}case\"series_error\":{const[e,s]=t.params;if(!this._checkTurnaround(e,s)){b.logNormal(`Series error for old data, expected: ${this._symbolInstanceId} (${this.turnaround()}), actual ${e} (${s})`);break}this._onSeriesError(t.params[2]);break}case\"series_loading\":{const[e,s]=t.params;if(!this._checkTurnaround(e,s))break;this._onSeriesLoading(t.time);break}case\"series_completed\":{const[e,s,r,i]=t.params;if(!this._checkTurnaround(e,r)){b.logNormal(`Series completed for old data, expected: ${this._symbolInstanceId} (${this.turnaround()}), actual ${e} (${r})`);break}this._onSeriesCompleted(s,t.time,i);break}case\"data_update\":if(!this._checkTurnaround(t.params.customId,t.params.turnaround)){b.logNormal(`Data update for old data, expected: ${this._symbolInstanceId} (${this.turnaround()}), actual ${t.params.customId} (${t.params.turnaround})`);break}await this._onDataUpdate(t.params.plots,t.params.nonseries,t.params.lastBar);break;case\"clear_data\":{if(t.params.turnaround!==this.turnaround()){b.logNormal(`Clear data for old data, expected: ${this.turnaround()}, actual ${t.params.turnaround}`);break}const e=this._data.first();this._clearDataImpl(),this._dataEvents.fireDataUpdated(void 0,!1,null,!1,e);break}}}"
+      },
+      "_onDataUpdate": {
+        "found": true,
+        "source": "async _onDataUpdate(t,e,s){this._onDataUnpacked(t,s,await(0,c.parseJapaneseProjectionBars)(e,this._gateway.wireFormat().unpackNonSeriesData))}"
+      },
+      "_onDataUnpacked": {
+        "found": true,
+        "source": "_onDataUnpacked(t,e,s){if(0===this._status)return;2===this._status&&(this._changeStatusTo(3),this._clearDataImpl());const r=this._data.bars().size(),i=this._data.first(),a=this._data.bars().firstIndex(),n=this._data.mergeRegularBars(t);null!==s&&(this._data.nsBars().clear(),this._data.nsBars().merge(s.projectionPlots),this._data.lastProjectionPrice=s.lastPrice,null!==s.boxSize&&(this._data.boxSize=s.boxSize),this._data.reversalAmount=s.reversalAmount);const o=null===a,l=o||null!==n&&n.index<a;this._dataEvents.fireDataUpdated(e,l,n,o,i),r!==this._data.bars().size()&&null!==n&&this._dataEvents.fireBarReceived(n)}"
+      },
+      "_enqueueUpdate": {
+        "found": true,
+        "source": "_enqueueUpdate(t){return this._ongoingDataUpdate=this._ongoingDataUpdate.then(t,t),this._ongoingDataUpdate}"
+      },
+      "mergeRegularBars": {
+        "found": true,
+        "source": "mergeRegularBars(t){return this._conflatedChunksBuilder.mergeData(t)}"
+      },
+      "merge": {
+        "found": true,
+        "source": "merge(t){return this._shareRead?(l.logDebug(\"merge: readonly collection modification attempt\"),null):0===t.length?null:this.isEmpty()||t[t.length-1].index<this._items[0].index?this._prepend(t):t[0].index>this._items[this._items.length-1].index?this._append(t):1===t.length&&t[0].index===this._items[this._items.length-1].index?(this._updateLast(t[0]),t[0]):this._merge(t)}"
+      },
+      "update": {
+        "found": true,
+        "source": "update(e,t,i,s,r){this._visibleBarsInvalidated=!0,i.length>0&&this._points.merge(e,t,i),this._tickMarks.merge(s,r),this.correctOffset()}"
+      },
+      "indexToTimePoint": {
+        "found": true,
+        "source": "indexToTimePoint(e){return this._points.valueAt(e)}"
+      },
+      "timePointToIndex": {
+        "found": true,
+        "source": "timePointToIndex(e,t){switch(t){case zl.SearchMode.Exact:return this._points.indexOf(e,!1);case zl.SearchMode.ExactOrNearestLeft:return this._points.closestIndexLeft(e);default:return this._points.indexOf(e,!0)}}"
+      },
+      "_updateTimeScale": {
+        "found": true,
+        "source": "_updateTimeScale(e){const{index:t,zoffset:i,values:s,indexDiffs:r,baseIndex:o,marks:n,clearFlag:a,clearTickMarks:l}=e;if(a){this._timeScale.reset();for(const e of this.dataSources())e.clearData?.()}if(r.length>0)for(const e of this.dataSources())e.moveData?.(r);const c=this._timeScale.indexToTimePoint(this._timeScale.baseIndex()),h=this._timeScale.canNormalize();this._timeScale.update(t,i,s,n,l||!1);const d=this._timeScale.points().range().value();let u=\"ChartModel.prototype._updateTimeScale(\"+t+\",\"+i+\",\"+s.length+\",\"+r.length+\",\"+n.length+\",\"+a+\")\";if(u+=\"TimeScale: {first:\"+(d?.firstIndex??null)+\",last:\"+(d?.lastIndex??null)+\"}\",null===o){this._timeScale.resetBaseIndex();const e=this._timeScale.rightOffset();this._timeScale.setRightOffset(Math.max(e,this._cachedStudiesMaxOffset))}else if(void 0!==o){const e=this._timeScale.indexToTimePoint(o),t=null!==c&&null!==e&&e>c;this._updateBaseIndex(o,t)}if(mu.logDebug(u),!h&&h!==this._timeScale.canNormalize())for(const e of this.dataSources())!(0,oe.isLineTool)(e)||e.isFixed()||e.isSourceHidden()||e.processHibernate();for(const e of this.dataSources())e.updateAllViews({type:Qd.ChangeEventType.DataSourceChange,sourceId:e.id(),clearData:!0});this.recalculateAllPanes((0,Fi.globalChangeEvent)()),this.lightUpdate()}"
+      },
+      "_onDataUpdated": {
+        "found": true,
+        "source": "_onDataUpdated(e,t,i,s,o){if(t&&o&&this._colorOnPrevBar()&&this._precomputedBarStyles.delete(o.value),s){const e=this.symbolInfo();this._volumePointWeights=null!==e&&(0,R.hasVolume)(e)?function(e){let t=0,i=0;for(const s of e){const e=s.value[x.SeriesPlotIndex.Volume];(0,a.isNumber)(e)&&e>0&&(t+=e,i+=1)}return i>0?new kt(t/i):null}(this.bars().fullRangeIterator()):null,this._updateTimeScaleTimePointWeights()}if(null!==this._volumePointWeights){const e=t?this.bars().fullRangeIterator():i?this.bars().rangeIterator(i.index,(0,r.ensureNotNull)(this.bars().lastIndex())):null;null!==e&&function(e,t){for(const i of t){const t=i.value[x.SeriesPlotIndex.Volume];(0,a.isNumber)(t)&&e.setVolume(i.index,t)}}(this._volumePointWeights,e)}t?this._requestMoreDataAvailable=!0:this._lastPriceAnimationActive&&this._seriesLoaded&&this._lineStyleLastPriceCirclePaneView.update((0,ve.sourceChangeEvent)(this.id())),this._lastBarCloseTime=e&&e.closeTime||null,this._boxSizeValue.setValue(this.data().boxSize),this._statusView.update();const n=this.bars().firstIndex(),l=this.bars().lastIndex();null!==n&&null!==l?this._dataRangeUpdated.fire({type:\"partial\",startIndex:i?.index??n,endIndex:t?o?.index??l:l}):this._dataRangeUpdated.fire({type:\"full\"}),this.clearAveragePriceCache(),this.clearHighLowPriceCache();const c=this.model(),h=(0,r.ensureNotNull)(c.paneForSource(this));c.recalculatePane(h,(0,ve.sourceChangeEvent)({sourceId:this.id(),realtime:!t,firstUpdatedTimePointIndex:i?.index??void 0})),\nc.updateSource(this)}"
+      },
+      "_onBarReceived": {
+        "found": true,
+        "source": "_onBarReceived(e){this.model().recalcVisibleRangeStudies(P.RecalcVisibleRangeStudiesReason.DataUpdate)}"
+      },
+      "updateAllViews": {
+        "found": true,
+        "source": "updateAllViews(e){this._studyBindings?.updateAllViews(e),this._delayStatusPaneView?.get()?.update(e),e.type!==$e.ChangeEventType.HoverChange&&(this._paneView?.update(e),this._dataWindowView.update(),this._legendView.update(),this._statusView.update(),this._floatingTooltipView.update(e),this._averagePaneViews.forEach((t=>t.update(e))),this._highLowAvgPaneViews.forEach((t=>t.update(e))),this._labelPaneViews.forEach((t=>t.update(e))),this._priceAxisViews.forEach((t=>t.update(e))),this._priceLineAxisViews.forEach((t=>t.update(e))),this._futureBarsPaneView?.update(e),this._projectionBarsPaneView?.update(e),this._waterlineView?.update(e),this._prevClosePriceLineView?.update(e),this._priceLineView?.update(e),this._gotoDateView?.update(e),this._endOfDataPaneView?.update(e),this._baseHorizontalLineView?.update(e),this._model.activeStrategySource().value()?.updateAllViews(e),this._model.replayStudyStrategy().value()?.updateAllViews(e),this._lineStyleLastPriceCirclePaneView.update(e))}"
+      }
+    },
+    "notes": [
+      "This audit reads the current chart only.",
+      "No TradingView method that changes chart data or resolution is called."
+    ]
+  },
+  "conclusion": {
+    "exchangeWebSocketOpened": true,
+    "subscriptionMessageSent": true,
+    "receivedValidTradeData": false,
+    "validTradeCount": 0,
+    "candleAggregationWorked": true,
+    "tradingViewChartInternalsFound": true,
+    "enoughToStartIndependentCandleEngine": false,
+    "enoughToStartControlledTradingViewIntegrationPrototype": false,
+    "notYetProven": [
+      "Actual candle insertion into TradingView's private data model.",
+      "Whether TradingView studies recalculate correctly after such insertion.",
+      "Whether every KCEX contract symbol has the same trade stream behavior.",
+      "Long-duration reconnect and packet-loss behavior."
+    ],
+    "recommendation": "WebSocket connected but no valid p/v/T trade records were parsed. Inspect raw and unparsed samples before building."
+  },
+  "execution": {
+    "errors": {},
+    "finished": true,
+    "finishReason": "45-second collection completed"
+  }
+}
