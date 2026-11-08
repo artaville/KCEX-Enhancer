@@ -1,0 +1,4472 @@
+{
+  "report": "TV Enhancer Diagnostic - Gateway and merge pipeline",
+  "version": "3.6.0",
+  "generatedAt": "2026-11-08T14:36:09.376Z",
+  "privacy": "Read-only diagnostic. No network requests, outgoing WebSocket messages, cookies, local storage, authentication values, or account identifiers are collected. Getters are not invoked. Only selected zero-argument read methods are called. Merge, append, update, create, remove, set and other mutation methods are inspected as source only; they are never executed.",
+  "page": {
+    "title": "PEPEUSDT.P 0.50372e-5 ▲ +3.61% Unnamed",
+    "url": "https://www.tradingview.com/chart/4JBVKCwz/",
+    "chartLabels": [
+      "Chart for KCEX:PEPEUSDT.P, 1 minute"
+    ],
+    "toolbarText": "PEPEUSDT.P 1m 3m 5m 15m 30m 1h 4h D W M Unnamed Save Trade Upgrade",
+    "symbol": {
+      "exists": true,
+      "called": true,
+      "result": "KCEX:PEPEUSDT.P"
+    },
+    "resolution": {
+      "exists": true,
+      "called": true,
+      "result": "1"
+    }
+  },
+  "seriesIdentity": {
+    "symbol": "KCEX:PEPEUSDT.P",
+    "instanceId": "sds_3",
+    "resolution": "1",
+    "seriesLoaded": {
+      "exists": true,
+      "called": true,
+      "result": true
+    },
+    "isLoading": {
+      "exists": true,
+      "called": true,
+      "result": false
+    },
+    "isFailed": {
+      "exists": true,
+      "called": true,
+      "result": false
+    },
+    "barStore": {
+      "constructor": "_",
+      "start": 0,
+      "end": 331,
+      "size": {
+        "exists": true,
+        "called": true,
+        "result": 331
+      },
+      "firstIndex": {
+        "exists": true,
+        "called": true,
+        "result": 0
+      },
+      "lastIndex": {
+        "exists": true,
+        "called": true,
+        "result": 330
+      },
+      "first": {
+        "constructor": "Object",
+        "index": 0,
+        "value": [
+          1794128760,
+          0.0000049081,
+          0.0000049094,
+          0.0000049066,
+          0.0000049066,
+          997100000
+        ]
+      },
+      "last": {
+        "constructor": "Object",
+        "index": 330,
+        "value": [
+          1794148560,
+          0.0000050385,
+          0.0000050385,
+          0.0000050372,
+          0.0000050372,
+          626100000
+        ]
+      },
+      "methods": [
+        {
+          "name": "clear",
+          "arguments": 0,
+          "code": "clear(){this._items=[],this._start=0,this._end=0,this._shareRead=!1,this._minMaxCache.clear(),this._invalidateSearchCaches()}"
+        },
+        {
+          "name": "first",
+          "arguments": 0,
+          "code": "first(){return this.size()>0?this._items[this._start]:null}"
+        },
+        {
+          "name": "last",
+          "arguments": 0,
+          "code": "last(){return this.size()>0?this._items[this._end-1]:null}"
+        },
+        {
+          "name": "firstIndex",
+          "arguments": 0,
+          "code": "firstIndex(){return this.size()>0?this._indexAt(this._start):null}"
+        },
+        {
+          "name": "firstPlottableIndex",
+          "arguments": 0,
+          "code": "firstPlottableIndex(){if(this.isEmpty())return null;for(let t=this._start;t<this._end;++t){const e=this._indexAt(t);if(e>n.UNPLOTTABLE_TIME_POINT_INDEX)return e}return null}"
+        },
+        {
+          "name": "lastIndex",
+          "arguments": 0,
+          "code": "lastIndex(){return this.size()>0?this._indexAt(this._end-1):null}"
+        },
+        {
+          "name": "size",
+          "arguments": 0,
+          "code": "size(){return this._end-this._start}"
+        },
+        {
+          "name": "search",
+          "arguments": 1,
+          "code": "search(t,e=o.PlotRowSearchMode.Exact,s){return this._searchImpl(t,e,this._rowSearchCacheByIndex,this._rowSearchCacheByIndexWithoutEmptyValues,d,s)}"
+        },
+        {
+          "name": "searchByTime",
+          "arguments": 1,
+          "code": "searchByTime(t,e=o.PlotRowSearchMode.Exact,s){return this._searchImpl(t,e,this._rowSearchCacheByTime,this._rowSearchCacheByTimeWithoutEmptyValues,u,s)}"
+        },
+        {
+          "name": "findFirst",
+          "arguments": 2,
+          "code": "findFirst(t,e){const s=void 0!==e&&Math.min(this._start+e,this._end)||this._end;for(let e=this._start;e<s;++e){const s=this._indexAt(e),r=this._valueAt(e);if(t(s,r))return{index:s,value:r}}return null}"
+        },
+        {
+          "name": "findLast",
+          "arguments": 2,
+          "code": "findLast(t,e){const s=void 0!==e&&Math.max(this._end-e,this._start)||this._start;for(let e=this._end-1;e>=s;--e){const s=this._indexAt(e),r=this._valueAt(e);if(t(s,r))return{index:s,value:r}}return null}"
+        },
+        {
+          "name": "merge",
+          "arguments": 1,
+          "code": "merge(t){return this._shareRead?(l.logDebug(\"merge: readonly collection modification attempt\"),null):0===t.length?null:this.isEmpty()||t[t.length-1].index<this._items[0].index?this._prepend(t):t[0].index>this._items[this._items.length-1].index?this._append(t):1===t.length&&t[0].index===this._items[this._items.length-1].index?(this._updateLast(t[0]),t[0]):this._merge(t)}"
+        },
+        {
+          "name": "_indexAt",
+          "arguments": 1,
+          "code": "_indexAt(t){return this._items[t].index}"
+        },
+        {
+          "name": "_searchImpl",
+          "arguments": 6,
+          "code": "_searchImpl(t,e,s,r,i,a){const n=void 0!==a?s:r,o=void 0!==a?1e4*(e+1)+a:e;let l=n.get(t);if(void 0!==l){const t=l.get(o);if(void 0!==t)return t}const h=this._nonCachedSearch(t,e,i,a);if(null===h)return null;const d={\nindex:this._indexAt(h),value:this._valueAt(h)};return void 0===l&&(l=new Map,n.set(t,l)),l.set(o,d),d}"
+        },
+        {
+          "name": "_nonCachedSearch",
+          "arguments": 4,
+          "code": "_nonCachedSearch(t,e,s,r){const i=this._lowerbound(t,s),a=i===this._end||t!==s(this._items[i]);if(a&&e!==o.PlotRowSearchMode.Exact)switch(e){case o.PlotRowSearchMode.NearestLeft:return this._searchNearestLeft(i,r);case o.PlotRowSearchMode.NearestRight:return this._searchNearestRight(i,r);default:throw new TypeError(\"Unknown search mode\")}if(void 0===r||a||e===o.PlotRowSearchMode.Exact)return a?null:i;switch(e){case o.PlotRowSearchMode.NearestLeft:return this._nonEmptyNearestLeft(i,r);case o.PlotRowSearchMode.NearestRight:return this._nonEmptyNearestRight(i,r);default:throw new TypeError(\"Unknown search mode\")}}"
+        },
+        {
+          "name": "_searchNearestLeft",
+          "arguments": 2,
+          "code": "_searchNearestLeft(t,e){if(t===this._start)return null;const s=t-1,r=s!==this._end?s:null;return void 0!==e&&null!==r?this._nonEmptyNearestLeft(r,e):r}"
+        },
+        {
+          "name": "_searchNearestRight",
+          "arguments": 2,
+          "code": "_searchNearestRight(t,e){const s=t,r=s!==this._end?s:null;return void 0!==e&&null!==r?this._nonEmptyNearestRight(r,e):r}"
+        },
+        {
+          "name": "_bsearch",
+          "arguments": 2,
+          "code": "_bsearch(t,e){const s=this._lowerbound(t,e);return s!==this._end&&t===e(this._items[s])?s:null}"
+        }
+      ]
+    }
+  },
+  "execution": {
+    "successfulSections": 4,
+    "totalSections": 4,
+    "errors": {}
+  },
+  "sections": {
+    "conflatedBuilder": {
+      "object": {
+        "available": true,
+        "constructor": "n",
+        "ownKeys": [
+          "_plots",
+          "_state"
+        ],
+        "methods": [
+          {
+            "name": "constructor",
+            "arguments": 2
+          },
+          {
+            "name": "conflatedChunks",
+            "arguments": 2
+          },
+          {
+            "name": "mergeData",
+            "arguments": 1
+          },
+          {
+            "name": "moveData",
+            "arguments": 1
+          },
+          {
+            "name": "clearData",
+            "arguments": 0
+          },
+          {
+            "name": "_rebuildConflatedChunks",
+            "arguments": 1
+          },
+          {
+            "name": "_updateLatestChunks",
+            "arguments": 0
+          },
+          {
+            "name": "_setEmptyConflatedChunks",
+            "arguments": 0
+          },
+          {
+            "name": "_clearState",
+            "arguments": 0
+          },
+          {
+            "name": "__defineGetter__",
+            "arguments": 2
+          },
+          {
+            "name": "__defineSetter__",
+            "arguments": 2
+          },
+          {
+            "name": "hasOwnProperty",
+            "arguments": 1
+          },
+          {
+            "name": "__lookupGetter__",
+            "arguments": 1
+          },
+          {
+            "name": "__lookupSetter__",
+            "arguments": 1
+          },
+          {
+            "name": "isPrototypeOf",
+            "arguments": 1
+          },
+          {
+            "name": "propertyIsEnumerable",
+            "arguments": 1
+          },
+          {
+            "name": "toString",
+            "arguments": 0
+          },
+          {
+            "name": "valueOf",
+            "arguments": 0
+          },
+          {
+            "name": "toLocaleString",
+            "arguments": 0
+          }
+        ]
+      },
+      "primitiveProperties": {
+        "_plots": "[_]",
+        "_state": "[Object]"
+      },
+      "state": {
+        "object": {
+          "available": true,
+          "constructor": "Object",
+          "ownKeys": [
+            "chunks",
+            "priceSource",
+            "priceSourcesProvider"
+          ],
+          "methods": [
+            {
+              "name": "priceSourcesProvider",
+              "arguments": 1
+            },
+            {
+              "name": "constructor",
+              "arguments": 1
+            },
+            {
+              "name": "__defineGetter__",
+              "arguments": 2
+            },
+            {
+              "name": "__defineSetter__",
+              "arguments": 2
+            },
+            {
+              "name": "hasOwnProperty",
+              "arguments": 1
+            },
+            {
+              "name": "__lookupGetter__",
+              "arguments": 1
+            },
+            {
+              "name": "__lookupSetter__",
+              "arguments": 1
+            },
+            {
+              "name": "isPrototypeOf",
+              "arguments": 1
+            },
+            {
+              "name": "propertyIsEnumerable",
+              "arguments": 1
+            },
+            {
+              "name": "toString",
+              "arguments": 0
+            },
+            {
+              "name": "valueOf",
+              "arguments": 0
+            },
+            {
+              "name": "toLocaleString",
+              "arguments": 0
+            }
+          ]
+        },
+        "primitiveProperties": {
+          "chunks": "[Map]",
+          "priceSource": null,
+          "priceSourcesProvider": "[Function ]"
+        },
+        "chunkContainer": {
+          "available": true,
+          "constructor": "Map",
+          "ownKeys": [],
+          "methods": [
+            {
+              "name": "constructor",
+              "arguments": 0
+            },
+            {
+              "name": "get",
+              "arguments": 1
+            },
+            {
+              "name": "set",
+              "arguments": 2
+            },
+            {
+              "name": "has",
+              "arguments": 1
+            },
+            {
+              "name": "delete",
+              "arguments": 1
+            },
+            {
+              "name": "clear",
+              "arguments": 0
+            },
+            {
+              "name": "entries",
+              "arguments": 0
+            },
+            {
+              "name": "forEach",
+              "arguments": 1
+            },
+            {
+              "name": "keys",
+              "arguments": 0
+            },
+            {
+              "name": "values",
+              "arguments": 0
+            },
+            {
+              "name": "getOrInsert",
+              "arguments": 2
+            },
+            {
+              "name": "getOrInsertComputed",
+              "arguments": 2
+            },
+            {
+              "name": "__defineGetter__",
+              "arguments": 2
+            },
+            {
+              "name": "__defineSetter__",
+              "arguments": 2
+            },
+            {
+              "name": "hasOwnProperty",
+              "arguments": 1
+            },
+            {
+              "name": "__lookupGetter__",
+              "arguments": 1
+            },
+            {
+              "name": "__lookupSetter__",
+              "arguments": 1
+            },
+            {
+              "name": "isPrototypeOf",
+              "arguments": 1
+            },
+            {
+              "name": "propertyIsEnumerable",
+              "arguments": 1
+            },
+            {
+              "name": "toString",
+              "arguments": 0
+            },
+            {
+              "name": "valueOf",
+              "arguments": 0
+            },
+            {
+              "name": "toLocaleString",
+              "arguments": 0
+            }
+          ]
+        },
+        "priceSource": "object"
+      },
+      "plotsReference": {
+        "exists": true,
+        "sameAsBarsStore": true,
+        "constructor": "_",
+        "keys": [
+          "_items",
+          "_start",
+          "_end",
+          "_shareRead",
+          "_minMaxCache",
+          "_rowSearchCacheByIndex",
+          "_rowSearchCacheByIndexWithoutEmptyValues",
+          "_rowSearchCacheByTime",
+          "_rowSearchCacheByTimeWithoutEmptyValues",
+          "_plotFunctions",
+          "_emptyValuePredicate"
+        ]
+      },
+      "mergeMethods": {
+        "mergeData": {
+          "exists": true,
+          "argumentCount": 1,
+          "code": "mergeData(t){const e=this._plots.size(),s=this._plots.merge(t);return s&&null!==this._state.priceSource&&(e===this._plots.size()&&s.index===this._plots.lastIndex()?this._updateLatestChunks():this._rebuildConflatedChunks(s)),s}"
+        },
+        "moveData": {
+          "exists": true,
+          "argumentCount": 1,
+          "code": "moveData(t){this._plots.move(t),this._plots.size()>0&&this._clearState()}"
+        },
+        "clearData": {
+          "exists": true,
+          "argumentCount": 0,
+          "code": "clearData(){this._plots.clear(),this._clearState()}"
+        },
+        "add": {
+          "exists": false
+        },
+        "update": {
+          "exists": false
+        }
+      },
+      "relatedMethods": [
+        {
+          "name": "conflatedChunks",
+          "arguments": 2,
+          "code": "conflatedChunks(t,e){if(e!==this._state.priceSource){this._state.priceSource=e;const t=this._plots.first();t&&(this._setEmptyConflatedChunks(),this._rebuildConflatedChunks(t))}const s=(0,r.ensureDefined)(a.find((e=>e.forBarspacingLargerThen<=t)));return(0,r.ensureDefined)(this._state.chunks.get(s.barsToMerge))}"
+        },
+        {
+          "name": "mergeData",
+          "arguments": 1,
+          "code": "mergeData(t){const e=this._plots.size(),s=this._plots.merge(t);return s&&null!==this._state.priceSource&&(e===this._plots.size()&&s.index===this._plots.lastIndex()?this._updateLatestChunks():this._rebuildConflatedChunks(s)),s}"
+        },
+        {
+          "name": "moveData",
+          "arguments": 1,
+          "code": "moveData(t){this._plots.move(t),this._plots.size()>0&&this._clearState()}"
+        },
+        {
+          "name": "clearData",
+          "arguments": 0,
+          "code": "clearData(){this._plots.clear(),this._clearState()}"
+        },
+        {
+          "name": "_rebuildConflatedChunks",
+          "arguments": 1,
+          "code": "_rebuildConflatedChunks(t){const e=this._state.priceSource;if(null===e)return;const s=t.index,n=this._state.priceSourcesProvider(e),o=(t,e,s)=>{let r=null;for(const i of t){const t=n(i.value);r&&i.index-r.startTime>=s.barsToMerge&&(e.push(r),r=null),r?(r.endTime=i.index,r.high=Math.max(r.high,t),r.low=Math.min(r.low,t),r.close=t):r={startTime:i.index,endTime:i.index,open:t,high:t,low:t,close:t}}r&&e.push(r)};a.forEach((t=>{const e=(0,r.ensureDefined)(this._state.chunks.get(t.barsToMerge)),a=(0,i.lowerbound)(e,s,((t,e)=>t.endTime<e));if(0===a&&e.length>0){const s=e[0].startTime-1,i=(0,r.ensureNotNull)(this._plots.firstIndex()),a=this._plots.rangeIterator(i,s),n=[];o(a,n,t);const l=n.concat(e);this._state.chunks.set(t.barsToMerge,l)}else{const s=(0,r.ensureNotNull)(this._plots.lastIndex());e.splice(a);let i=(0,r.ensureNotNull)(this._plots.firstIndex());e.length&&(i=e[e.length-1].endTime+1);const n=this._plots.rangeIterator(i,s);o(n,e,t)}}))}"
+        },
+        {
+          "name": "_updateLatestChunks",
+          "arguments": 0,
+          "code": "_updateLatestChunks(){const t=(0,r.ensureNotNull)(this._plots.last()),e=this._state.priceSourcesProvider(\"close\");a.forEach((s=>{const i=(0,r.ensureDefined)(this._state.chunks.get(s.barsToMerge)),a=e(t.value),n=i[i.length-1];n.high=Math.max(n.high,a),n.low=Math.min(n.low,a),n.close=a,n.endTime=t.index}))}"
+        },
+        {
+          "name": "_setEmptyConflatedChunks",
+          "arguments": 0,
+          "code": "_setEmptyConflatedChunks(){a.forEach((t=>this._state.chunks.set(t.barsToMerge,[])))}"
+        },
+        {
+          "name": "_clearState",
+          "arguments": 0,
+          "code": "_clearState(){this._state.chunks.clear(),this._state.priceSource=null}"
+        }
+      ],
+      "relatedDataMethods": [
+        {
+          "name": "mergeRegularBars",
+          "arguments": 1,
+          "code": "mergeRegularBars(t){return this._conflatedChunksBuilder.mergeData(t)}"
+        },
+        {
+          "name": "clear",
+          "arguments": 0,
+          "code": "clear(){this.m_nsBars.clear(),this.lastProjectionPrice=void 0,this._conflatedChunksBuilder.clearData()}"
+        },
+        {
+          "name": "first",
+          "arguments": 0,
+          "code": "first(){return this.m_bars.isEmpty()?this.m_nsBars.first():this.m_bars.first()}"
+        },
+        {
+          "name": "last",
+          "arguments": 0,
+          "code": "last(){return this.m_nsBars.isEmpty()?this.m_bars.last():this.m_nsBars.last()}"
+        },
+        {
+          "name": "moveData",
+          "arguments": 1,
+          "code": "moveData(t){this._conflatedChunksBuilder.moveData(t),this.m_nsBars.move(t)}"
+        }
+      ]
+    },
+    "gatewayAndHandlers": {
+      "seriesSource": {
+        "constructor": "I",
+        "instanceId": "sds_3",
+        "symbol": "KCEX:PEPEUSDT.P",
+        "resolution": "1",
+        "turnaroundPrefix": "s",
+        "boundOnMessage": {
+          "name": "bound _onMessage",
+          "type": "function"
+        },
+        "onMessage": {
+          "exists": true,
+          "argumentCount": 1,
+          "code": "_onMessage(t){\nthis._enqueueUpdate((()=>this._onMessageImpl(t)))}"
+        },
+        "onMessageImpl": {
+          "exists": true,
+          "argumentCount": 1,
+          "code": "async _onMessageImpl(t){switch(t.method){case\"symbol_resolved\":{const[e,s]=t.params;if(e!==this._symbolInstanceId){null!==this._symbolInstanceId&&b.logNormal(`Resolve for old symbol, expected: ${this._symbolInstanceId}, actual ${t.params[0]}`);break}this._onSymbolResolved(s);break}case\"symbol_error\":if(t.params[0]!==this._symbolInstanceId){null!==this._symbolInstanceId&&b.logNormal(`Symbol error for old symbol, expected: ${this._symbolInstanceId}, actual ${t.params[0]}`);break}this._onSymbolError(t);break;case\"series_timeframe\":{const[e,s,r,i,a,n,o]=t.params;if(!this._checkTurnaround(e,s)){b.logNormal(`Time frame for old data, expected: ${this._symbolInstanceId} (${this.turnaround()}), actual ${e} (${s})`);break}this._onSeriesTimeFrame(r,i,a,n,o);break}case\"series_error\":{const[e,s]=t.params;if(!this._checkTurnaround(e,s)){b.logNormal(`Series error for old data, expected: ${this._symbolInstanceId} (${this.turnaround()}), actual ${e} (${s})`);break}this._onSeriesError(t.params[2]);break}case\"series_loading\":{const[e,s]=t.params;if(!this._checkTurnaround(e,s))break;this._onSeriesLoading(t.time);break}case\"series_completed\":{const[e,s,r,i]=t.params;if(!this._checkTurnaround(e,r)){b.logNormal(`Series completed for old data, expected: ${this._symbolInstanceId} (${this.turnaround()}), actual ${e} (${r})`);break}this._onSeriesCompleted(s,t.time,i);break}case\"data_update\":if(!this._checkTurnaround(t.params.customId,t.params.turnaround)){b.logNormal(`Data update for old data, expected: ${this._symbolInstanceId} (${this.turnaround()}), actual ${t.params.customId} (${t.params.turnaround})`);break}await this._onDataUpdate(t.params.plots,t.params.nonseries,t.params.lastBar);break;case\"clear_data\":{if(t.params.turnaround!==this.turnaround()){b.logNormal(`Clear data for old data, expected: ${this.turnaround()}, actual ${t.params.turnaround}`);break}const e=this._data.first();this._clearDataImpl(),this._dataEvents.fireDataUpdated(void 0,!1,null,!1,e);break}}}"
+        },
+        "boundMessageMethod": {
+          "exists": true,
+          "argumentCount": 1,
+          "code": "function () { [native code] }"
+        }
+      },
+      "gateway": {
+        "sameAsOneOfChartApiSessions": true,
+        "matchedSessionSlot": "session_5",
+        "constructor": "o",
+        "primitiveProperties": {
+          "_isConnected": "[a]",
+          "_state": 2,
+          "_isConnectForbidden": false,
+          "_chartApi": "[Se]",
+          "_sessionPrefix": "cs",
+          "_shouldReconnectAfterCriticalError": false,
+          "_sessionDisabled": false,
+          "_handler": "[Function bound _onData]",
+          "_criticalError": "[a]",
+          "_symbolResolveMap": "[Map]",
+          "_lastSymbolResolveInfoMap": "[Map]",
+          "_wireFormat": "[Object]",
+          "_disableStatistics": false
+        },
+        "object": {
+          "available": true,
+          "constructor": "o",
+          "ownKeys": [
+            "_isConnected",
+            "_state",
+            "_isConnectForbidden",
+            "_chartApi",
+            "_sessionPrefix",
+            "_shouldReconnectAfterCriticalError",
+            "_sessionDisabled",
+            "_handler",
+            "_criticalError",
+            "_symbolResolveMap",
+            "_lastSymbolResolveInfoMap",
+            "_wireFormat",
+            "_disableStatistics"
+          ],
+          "methods": [
+            {
+              "name": "_handler",
+              "arguments": 1
+            },
+            {
+              "name": "constructor",
+              "arguments": 2
+            },
+            {
+              "name": "destroy",
+              "arguments": 0
+            },
+            {
+              "name": "switchTimezone",
+              "arguments": 1
+            },
+            {
+              "name": "wireFormat",
+              "arguments": 0
+            },
+            {
+              "name": "defaultResolutions",
+              "arguments": 0
+            },
+            {
+              "name": "availableCurrencies",
+              "arguments": 0
+            },
+            {
+              "name": "availableUnits",
+              "arguments": 0
+            },
+            {
+              "name": "availableMetrics",
+              "arguments": 0
+            },
+            {
+              "name": "availablePriceSources",
+              "arguments": 1
+            },
+            {
+              "name": "resolveSymbol",
+              "arguments": 3
+            },
+            {
+              "name": "requestFirstBarTime",
+              "arguments": 3
+            },
+            {
+              "name": "lastSymbolResolveInfo",
+              "arguments": 1
+            },
+            {
+              "name": "createSeries",
+              "arguments": 7
+            },
+            {
+              "name": "modifySeries",
+              "arguments": 7
+            },
+            {
+              "name": "removeSeries",
+              "arguments": 1
+            },
+            {
+              "name": "requestMoreData",
+              "arguments": 3
+            },
+            {
+              "name": "requestMoreTickmarks",
+              "arguments": 3
+            },
+            {
+              "name": "setFutureTickmarksMode",
+              "arguments": 1
+            },
+            {
+              "name": "canCreateStudy",
+              "arguments": 2
+            },
+            {
+              "name": "getStudyCounter",
+              "arguments": 0
+            },
+            {
+              "name": "getFundamentalCounter",
+              "arguments": 0
+            },
+            {
+              "name": "getChildStudyCounter",
+              "arguments": 0
+            },
+            {
+              "name": "createStudy",
+              "arguments": 7
+            },
+            {
+              "name": "modifyStudy",
+              "arguments": 5
+            },
+            {
+              "name": "notifyStudy",
+              "arguments": 3
+            },
+            {
+              "name": "removeStudy",
+              "arguments": 1
+            },
+            {
+              "name": "createPointset",
+              "arguments": 6
+            },
+            {
+              "name": "modifyPointset",
+              "arguments": 4
+            },
+            {
+              "name": "removePointset",
+              "arguments": 1
+            },
+            {
+              "name": "setVisibleTimeRange",
+              "arguments": 7
+            },
+            {
+              "name": "criticalError",
+              "arguments": 0
+            },
+            {
+              "name": "connect",
+              "arguments": 0
+            },
+            {
+              "name": "setHandler",
+              "arguments": 1
+            },
+            {
+              "name": "connected",
+              "arguments": 0
+            },
+            {
+              "name": "disable",
+              "arguments": 0
+            },
+            {
+              "name": "chartApi",
+              "arguments": 0
+            },
+            {
+              "name": "_sendCreateSession",
+              "arguments": 0
+            },
+            {
+              "name": "_sendRemoveSession",
+              "arguments": 0
+            },
+            {
+              "name": "_onMessage",
+              "arguments": 1
+            },
+            {
+              "name": "_onCriticalError",
+              "arguments": 2
+            },
+            {
+              "name": "isConnected",
+              "arguments": 0
+            },
+            {
+              "name": "disconnect",
+              "arguments": 0
+            },
+            {
+              "name": "onMessage",
+              "arguments": 1
+            },
+            {
+              "name": "serverTime",
+              "arguments": 0
+            },
+            {
+              "name": "_getChartApi",
+              "arguments": 0
+            },
+            {
+              "name": "_generateLogMessage",
+              "arguments": 1
+            },
+            {
+              "name": "_onChartApiConnected",
+              "arguments": 0
+            },
+            {
+              "name": "_onChartApiDisconnected",
+              "arguments": 0
+            },
+            {
+              "name": "_logNormal",
+              "arguments": 1
+            },
+            {
+              "name": "_logError",
+              "arguments": 1
+            },
+            {
+              "name": "_processDestroyingOnServer",
+              "arguments": 0
+            },
+            {
+              "name": "_forbidConnectWhile",
+              "arguments": 1
+            },
+            {
+              "name": "__defineGetter__",
+              "arguments": 2
+            },
+            {
+              "name": "__defineSetter__",
+              "arguments": 2
+            },
+            {
+              "name": "hasOwnProperty",
+              "arguments": 1
+            },
+            {
+              "name": "__lookupGetter__",
+              "arguments": 1
+            },
+            {
+              "name": "__lookupSetter__",
+              "arguments": 1
+            },
+            {
+              "name": "isPrototypeOf",
+              "arguments": 1
+            },
+            {
+              "name": "propertyIsEnumerable",
+              "arguments": 1
+            },
+            {
+              "name": "toString",
+              "arguments": 0
+            },
+            {
+              "name": "valueOf",
+              "arguments": 0
+            },
+            {
+              "name": "toLocaleString",
+              "arguments": 0
+            }
+          ]
+        },
+        "methods": [
+          {
+            "name": "_handler",
+            "arguments": 1,
+            "code": "function () { [native code] }"
+          },
+          {
+            "name": "createSeries",
+            "arguments": 7,
+            "code": "createSeries(e,t,i,s,r,o,n){return this._getChartApi().createSeries(this.sessionId(),e,t,i,s,r,o,n)}"
+          },
+          {
+            "name": "modifySeries",
+            "arguments": 7,
+            "code": "modifySeries(e,t,i,s,r,o,n){return this._getChartApi().modifySeries(this.sessionId(),e,t,i,s,r,o,n)}"
+          },
+          {
+            "name": "removeSeries",
+            "arguments": 1,
+            "code": "removeSeries(e){return!!this.isConnected().value()&&this._getChartApi().removeSeries(this.sessionId(),e)}"
+          },
+          {
+            "name": "canCreateStudy",
+            "arguments": 2,
+            "code": "canCreateStudy(e,t){return this._getChartApi().canCreateStudy(this.sessionId(),e,t)}"
+          },
+          {
+            "name": "getStudyCounter",
+            "arguments": 0,
+            "code": "getStudyCounter(){return this._getChartApi().getStudyCounter(this.sessionId())}"
+          },
+          {
+            "name": "getChildStudyCounter",
+            "arguments": 0,
+            "code": "getChildStudyCounter(){return this._getChartApi().getChildStudyCounter(this.sessionId())}"
+          },
+          {
+            "name": "createStudy",
+            "arguments": 7,
+            "code": "createStudy(e,t,i,s,r,o,n){return this._getChartApi().createStudy(this.sessionId(),e,t,i,s,r,o,n)}"
+          },
+          {
+            "name": "modifyStudy",
+            "arguments": 5,
+            "code": "modifyStudy(e,t,i,s,r){return this._getChartApi().modifyStudy(this.sessionId(),e,t,i,s,r)}"
+          },
+          {
+            "name": "notifyStudy",
+            "arguments": 3,
+            "code": "notifyStudy(e,t,i){return this._getChartApi().notifyStudy(this.sessionId(),e,t,i)}"
+          },
+          {
+            "name": "removeStudy",
+            "arguments": 1,
+            "code": "removeStudy(e){return this._getChartApi().removeStudy(this.sessionId(),e)}"
+          },
+          {
+            "name": "createPointset",
+            "arguments": 6,
+            "code": "createPointset(e,t,i,s,r,o){return this._getChartApi().createPointset(this.sessionId(),e,t,i,s,r,o)}"
+          },
+          {
+            "name": "modifyPointset",
+            "arguments": 4,
+            "code": "modifyPointset(e,t,i,s){return this._getChartApi().modifyPointset(this.sessionId(),e,t,i,s)}"
+          },
+          {
+            "name": "connect",
+            "arguments": 0,
+            "code": "connect(e=null){null!==e&&(this._handler=e),this._symbolResolveMap.clear(),super.connect()}"
+          },
+          {
+            "name": "setHandler",
+            "arguments": 1,
+            "code": "setHandler(e){this._handler=e}"
+          },
+          {
+            "name": "connected",
+            "arguments": 0,
+            "code": "connected(){return this.isConnected().value()&&!this._sessionDisabled}"
+          },
+          {
+            "name": "_sendCreateSession",
+            "arguments": 0,
+            "code": "_sendCreateSession(){Object.keys(this).forEach((e=>{/^(s|st|symbol_)\\d+$/.test(e)&&delete this[e]})),this._getChartApi().chartCreateSession(this.sessionId(),this._disableStatistics)}"
+          },
+          {
+            "name": "_sendRemoveSession",
+            "arguments": 0,
+            "code": "_sendRemoveSession(){this._getChartApi().chartDeleteSession(this.sessionId())}"
+          },
+          {
+            "name": "_onMessage",
+            "arguments": 1,
+            "code": "_onMessage(e){this._handler&&this._handler(e)}"
+          },
+          {
+            "name": "isConnected",
+            "arguments": 0,
+            "code": "isConnected(){return this._isConnected}"
+          },
+          {
+            "name": "disconnect",
+            "arguments": 0,
+            "code": "disconnect(){0!==this._state&&((0,s.assert)(\"\"!==this._sessionId,\"sessionId must not be invalid\"),this._logNormal(\"Disconnecting session...\"),this._forbidConnectWhile((()=>{this._chartApi.connected()&&this._sendRemoveSession(),this._processDestroyingOnServer()})))}"
+          },
+          {
+            "name": "onMessage",
+            "arguments": 1,
+            "code": "onMessage(e){switch(e.method){case\"connected\":return void this._onChartApiConnected();case\"disconnected\":return void this._onChartApiDisconnected();case\"critical_error\":const t=String(e.params[0]),i=String(e.params[1]);return void this._onCriticalError(t,i)}this._onMessage(e)}"
+          },
+          {
+            "name": "_generateLogMessage",
+            "arguments": 1,
+            "code": "_generateLogMessage(e){return`[${this._sessionId}] ${e}`}"
+          },
+          {
+            "name": "_onChartApiConnected",
+            "arguments": 0,
+            "code": "_onChartApiConnected(){(0,s.assert)(1===this._state,\"Session is not registered\"),this._logNormal(\"Transport is connected. Creating session on the server\"),this._sendCreateSession(),this._state=2,this._isConnected.setValue(!0)}"
+          }
+        ],
+        "createSeries": {
+          "exists": true,
+          "argumentCount": 7,
+          "code": "createSeries(e,t,i,s,r,o,n){return this._getChartApi().createSeries(this.sessionId(),e,t,i,s,r,o,n)}"
+        },
+        "modifySeries": {
+          "exists": true,
+          "argumentCount": 7,
+          "code": "modifySeries(e,t,i,s,r,o,n){return this._getChartApi().modifySeries(this.sessionId(),e,t,i,s,r,o,n)}"
+        },
+        "onMessage": {
+          "exists": true,
+          "argumentCount": 1,
+          "code": "onMessage(e){switch(e.method){case\"connected\":return void this._onChartApiConnected();case\"disconnected\":return void this._onChartApiDisconnected();case\"critical_error\":const t=String(e.params[0]),i=String(e.params[1]);return void this._onCriticalError(t,i)}this._onMessage(e)}"
+        },
+        "internalOnMessage": {
+          "exists": true,
+          "argumentCount": 1,
+          "code": "_onMessage(e){this._handler&&this._handler(e)}"
+        },
+        "sendCreateSession": {
+          "exists": true,
+          "argumentCount": 0,
+          "code": "_sendCreateSession(){Object.keys(this).forEach((e=>{/^(s|st|symbol_)\\d+$/.test(e)&&delete this[e]})),this._getChartApi().chartCreateSession(this.sessionId(),this._disableStatistics)}"
+        }
+      },
+      "sessionTable": {
+        "count": 5,
+        "entries": [
+          {
+            "slot": "session_1",
+            "keyType": "string",
+            "isSeriesGateway": false,
+            "constructor": "s",
+            "prefix": null,
+            "connected": {
+              "exists": true,
+              "called": true,
+              "result": true
+            },
+            "methods": [
+              {
+                "name": "_globalHandler",
+                "arguments": 1,
+                "code": "function () { [native code] }"
+              },
+              {
+                "name": "connected",
+                "arguments": 0,
+                "code": "connected(){return this._chartApi.connected()}"
+              },
+              {
+                "name": "connect",
+                "arguments": 1,
+                "code": "connect(e){this._globalHandler=e,this._chartApi.createSession(this._sessionid,this),this._chartApi.connect()}"
+              },
+              {
+                "name": "disconnect",
+                "arguments": 0,
+                "code": "disconnect(){this._chartApi.disconnect()}"
+              },
+              {
+                "name": "onMessage",
+                "arguments": 1,
+                "code": "onMessage(e){switch(e.method){case\"connected\":this._sessionstarted||(this._chartApi.quoteCreateSession(this._sessionid),this._sessionstarted=!0);break;case\"disconnected\":this._sessionstarted=!1}this._globalHandler?.(e)}"
+              }
+            ],
+            "onMessage": {
+              "exists": true,
+              "argumentCount": 1,
+              "code": "onMessage(e){switch(e.method){case\"connected\":this._sessionstarted||(this._chartApi.quoteCreateSession(this._sessionid),this._sessionstarted=!0);break;case\"disconnected\":this._sessionstarted=!1}this._globalHandler?.(e)}"
+            },
+            "internalOnMessage": {
+              "exists": false
+            },
+            "setHandler": {
+              "exists": false
+            },
+            "createSeries": {
+              "exists": false
+            },
+            "modifySeries": {
+              "exists": false
+            }
+          },
+          {
+            "slot": "session_2",
+            "keyType": "string",
+            "isSeriesGateway": false,
+            "constructor": "s",
+            "prefix": null,
+            "connected": {
+              "exists": true,
+              "called": true,
+              "result": true
+            },
+            "methods": [
+              {
+                "name": "_globalHandler",
+                "arguments": 1,
+                "code": "function () { [native code] }"
+              },
+              {
+                "name": "connected",
+                "arguments": 0,
+                "code": "connected(){return this._chartApi.connected()}"
+              },
+              {
+                "name": "connect",
+                "arguments": 1,
+                "code": "connect(e){this._globalHandler=e,this._chartApi.createSession(this._sessionid,this),this._chartApi.connect()}"
+              },
+              {
+                "name": "disconnect",
+                "arguments": 0,
+                "code": "disconnect(){this._chartApi.disconnect()}"
+              },
+              {
+                "name": "onMessage",
+                "arguments": 1,
+                "code": "onMessage(e){switch(e.method){case\"connected\":this._sessionstarted||(this._chartApi.quoteCreateSession(this._sessionid),this._sessionstarted=!0);break;case\"disconnected\":this._sessionstarted=!1}this._globalHandler?.(e)}"
+              }
+            ],
+            "onMessage": {
+              "exists": true,
+              "argumentCount": 1,
+              "code": "onMessage(e){switch(e.method){case\"connected\":this._sessionstarted||(this._chartApi.quoteCreateSession(this._sessionid),this._sessionstarted=!0);break;case\"disconnected\":this._sessionstarted=!1}this._globalHandler?.(e)}"
+            },
+            "internalOnMessage": {
+              "exists": false
+            },
+            "setHandler": {
+              "exists": false
+            },
+            "createSeries": {
+              "exists": false
+            },
+            "modifySeries": {
+              "exists": false
+            }
+          },
+          {
+            "slot": "session_3",
+            "keyType": "string",
+            "isSeriesGateway": false,
+            "constructor": "s",
+            "prefix": null,
+            "connected": {
+              "exists": true,
+              "called": true,
+              "result": true
+            },
+            "methods": [
+              {
+                "name": "_globalHandler",
+                "arguments": 1,
+                "code": "e=>{switch(e.method){case\"connected\":this._connected||(this._connected=!0,this._handleConnected());break;case\"quote_symbol_data\":this._connected&&this._handleSymbolData(e.params[0]);break;case\"quote_completed\":this._connected&&this._handleCompleteData(e.params[0]);break;case\"disconnected\":this._connected&&(this._connected=!1,this._batcher=null)}}"
+              },
+              {
+                "name": "connected",
+                "arguments": 0,
+                "code": "connected(){return this._chartApi.connected()}"
+              },
+              {
+                "name": "connect",
+                "arguments": 1,
+                "code": "connect(e){this._globalHandler=e,this._chartApi.createSession(this._sessionid,this),this._chartApi.connect()}"
+              },
+              {
+                "name": "disconnect",
+                "arguments": 0,
+                "code": "disconnect(){this._chartApi.disconnect()}"
+              },
+              {
+                "name": "onMessage",
+                "arguments": 1,
+                "code": "onMessage(e){switch(e.method){case\"connected\":this._sessionstarted||(this._chartApi.quoteCreateSession(this._sessionid),this._sessionstarted=!0);break;case\"disconnected\":this._sessionstarted=!1}this._globalHandler?.(e)}"
+              }
+            ],
+            "onMessage": {
+              "exists": true,
+              "argumentCount": 1,
+              "code": "onMessage(e){switch(e.method){case\"connected\":this._sessionstarted||(this._chartApi.quoteCreateSession(this._sessionid),this._sessionstarted=!0);break;case\"disconnected\":this._sessionstarted=!1}this._globalHandler?.(e)}"
+            },
+            "internalOnMessage": {
+              "exists": false
+            },
+            "setHandler": {
+              "exists": false
+            },
+            "createSeries": {
+              "exists": false
+            },
+            "modifySeries": {
+              "exists": false
+            }
+          },
+          {
+            "slot": "session_4",
+            "keyType": "string",
+            "isSeriesGateway": false,
+            "constructor": "s",
+            "prefix": null,
+            "connected": {
+              "exists": true,
+              "called": true,
+              "result": true
+            },
+            "methods": [
+              {
+                "name": "_globalHandler",
+                "arguments": 1,
+                "code": "e=>{switch(e.method){case\"connected\":this._connected||(this._connected=!0,this._handleConnected());break;case\"quote_symbol_data\":this._connected&&this._handleSymbolData(e.params[0]);break;case\"quote_completed\":this._connected&&this._handleCompleteData(e.params[0]);break;case\"disconnected\":this._connected&&(this._connected=!1,this._batcher=null)}}"
+              },
+              {
+                "name": "connected",
+                "arguments": 0,
+                "code": "connected(){return this._chartApi.connected()}"
+              },
+              {
+                "name": "connect",
+                "arguments": 1,
+                "code": "connect(e){this._globalHandler=e,this._chartApi.createSession(this._sessionid,this),this._chartApi.connect()}"
+              },
+              {
+                "name": "disconnect",
+                "arguments": 0,
+                "code": "disconnect(){this._chartApi.disconnect()}"
+              },
+              {
+                "name": "onMessage",
+                "arguments": 1,
+                "code": "onMessage(e){switch(e.method){case\"connected\":this._sessionstarted||(this._chartApi.quoteCreateSession(this._sessionid),this._sessionstarted=!0);break;case\"disconnected\":this._sessionstarted=!1}this._globalHandler?.(e)}"
+              }
+            ],
+            "onMessage": {
+              "exists": true,
+              "argumentCount": 1,
+              "code": "onMessage(e){switch(e.method){case\"connected\":this._sessionstarted||(this._chartApi.quoteCreateSession(this._sessionid),this._sessionstarted=!0);break;case\"disconnected\":this._sessionstarted=!1}this._globalHandler?.(e)}"
+            },
+            "internalOnMessage": {
+              "exists": false
+            },
+            "setHandler": {
+              "exists": false
+            },
+            "createSeries": {
+              "exists": false
+            },
+            "modifySeries": {
+              "exists": false
+            }
+          },
+          {
+            "slot": "session_5",
+            "keyType": "string",
+            "isSeriesGateway": true,
+            "constructor": "o",
+            "prefix": "cs",
+            "state": 2,
+            "connected": {
+              "exists": true,
+              "called": true,
+              "result": true
+            },
+            "methods": [
+              {
+                "name": "_handler",
+                "arguments": 1,
+                "code": "function () { [native code] }"
+              },
+              {
+                "name": "createSeries",
+                "arguments": 7,
+                "code": "createSeries(e,t,i,s,r,o,n){return this._getChartApi().createSeries(this.sessionId(),e,t,i,s,r,o,n)}"
+              },
+              {
+                "name": "modifySeries",
+                "arguments": 7,
+                "code": "modifySeries(e,t,i,s,r,o,n){return this._getChartApi().modifySeries(this.sessionId(),e,t,i,s,r,o,n)}"
+              },
+              {
+                "name": "removeSeries",
+                "arguments": 1,
+                "code": "removeSeries(e){return!!this.isConnected().value()&&this._getChartApi().removeSeries(this.sessionId(),e)}"
+              },
+              {
+                "name": "canCreateStudy",
+                "arguments": 2,
+                "code": "canCreateStudy(e,t){return this._getChartApi().canCreateStudy(this.sessionId(),e,t)}"
+              },
+              {
+                "name": "getStudyCounter",
+                "arguments": 0,
+                "code": "getStudyCounter(){return this._getChartApi().getStudyCounter(this.sessionId())}"
+              },
+              {
+                "name": "getChildStudyCounter",
+                "arguments": 0,
+                "code": "getChildStudyCounter(){return this._getChartApi().getChildStudyCounter(this.sessionId())}"
+              },
+              {
+                "name": "createStudy",
+                "arguments": 7,
+                "code": "createStudy(e,t,i,s,r,o,n){return this._getChartApi().createStudy(this.sessionId(),e,t,i,s,r,o,n)}"
+              },
+              {
+                "name": "modifyStudy",
+                "arguments": 5,
+                "code": "modifyStudy(e,t,i,s,r){return this._getChartApi().modifyStudy(this.sessionId(),e,t,i,s,r)}"
+              },
+              {
+                "name": "notifyStudy",
+                "arguments": 3,
+                "code": "notifyStudy(e,t,i){return this._getChartApi().notifyStudy(this.sessionId(),e,t,i)}"
+              },
+              {
+                "name": "removeStudy",
+                "arguments": 1,
+                "code": "removeStudy(e){return this._getChartApi().removeStudy(this.sessionId(),e)}"
+              },
+              {
+                "name": "createPointset",
+                "arguments": 6,
+                "code": "createPointset(e,t,i,s,r,o){return this._getChartApi().createPointset(this.sessionId(),e,t,i,s,r,o)}"
+              },
+              {
+                "name": "modifyPointset",
+                "arguments": 4,
+                "code": "modifyPointset(e,t,i,s){return this._getChartApi().modifyPointset(this.sessionId(),e,t,i,s)}"
+              },
+              {
+                "name": "connect",
+                "arguments": 0,
+                "code": "connect(e=null){null!==e&&(this._handler=e),this._symbolResolveMap.clear(),super.connect()}"
+              }
+            ],
+            "onMessage": {
+              "exists": true,
+              "argumentCount": 1,
+              "code": "onMessage(e){switch(e.method){case\"connected\":return void this._onChartApiConnected();case\"disconnected\":return void this._onChartApiDisconnected();case\"critical_error\":const t=String(e.params[0]),i=String(e.params[1]);return void this._onCriticalError(t,i)}this._onMessage(e)}"
+            },
+            "internalOnMessage": {
+              "exists": true,
+              "argumentCount": 1,
+              "code": "_onMessage(e){this._handler&&this._handler(e)}"
+            },
+            "setHandler": {
+              "exists": true,
+              "argumentCount": 1,
+              "code": "setHandler(e){this._handler=e}"
+            },
+            "createSeries": {
+              "exists": true,
+              "argumentCount": 7,
+              "code": "createSeries(e,t,i,s,r,o,n){return this._getChartApi().createSeries(this.sessionId(),e,t,i,s,r,o,n)}"
+            },
+            "modifySeries": {
+              "exists": true,
+              "argumentCount": 7,
+              "code": "modifySeries(e,t,i,s,r,o,n){return this._getChartApi().modifySeries(this.sessionId(),e,t,i,s,r,o,n)}"
+            }
+          }
+        ]
+      },
+      "notificationHandlers": {
+        "outerContainer": "Object",
+        "outerSlotCount": 5,
+        "outerSlots": [
+          {
+            "slot": "registry_1",
+            "mapsToGatewaySession": false,
+            "valueType": "object",
+            "constructor": "Object",
+            "keyCount": 0,
+            "containsCurrentSeries": false,
+            "relevantKeys": []
+          },
+          {
+            "slot": "registry_2",
+            "mapsToGatewaySession": false,
+            "valueType": "object",
+            "constructor": "Object",
+            "keyCount": 0,
+            "containsCurrentSeries": false,
+            "relevantKeys": []
+          },
+          {
+            "slot": "registry_3",
+            "mapsToGatewaySession": false,
+            "valueType": "object",
+            "constructor": "Object",
+            "keyCount": 0,
+            "containsCurrentSeries": false,
+            "relevantKeys": []
+          },
+          {
+            "slot": "registry_4",
+            "mapsToGatewaySession": false,
+            "valueType": "object",
+            "constructor": "Object",
+            "keyCount": 0,
+            "containsCurrentSeries": false,
+            "relevantKeys": []
+          },
+          {
+            "slot": "registry_5",
+            "mapsToGatewaySession": true,
+            "valueType": "object",
+            "constructor": "Object",
+            "keyCount": 31,
+            "containsCurrentSeries": true,
+            "relevantKeys": [
+              "sds_3",
+              "nv2NCk"
+            ]
+          }
+        ],
+        "matchedGatewayRegistryFound": true,
+        "matchedRegistryConstructor": "Object",
+        "matchedRegistryKeys": [
+          "sds_3",
+          "st3",
+          "BCkWQR",
+          "om96lM",
+          "QeqPvb",
+          "60vgyf",
+          "nv2NCk",
+          "pointset_53",
+          "pointset_54",
+          "pointset_55",
+          "pointset_56",
+          "pointset_57",
+          "pointset_58",
+          "pointset_59",
+          "pointset_60",
+          "pointset_61",
+          "pointset_62",
+          "pointset_63",
+          "pointset_64",
+          "pointset_65",
+          "pointset_66",
+          "pointset_67",
+          "pointset_68",
+          "pointset_69",
+          "pointset_70",
+          "pointset_71",
+          "pointset_72",
+          "pointset_73",
+          "pointset_74",
+          "pointset_75",
+          "pointset_76"
+        ],
+        "currentSeriesInstanceId": "sds_3",
+        "handlerEntries": {
+          "current_series_handler": {
+            "matchesCurrentSeries": true,
+            "constructor": "H",
+            "callbackName": "bound _onMessage",
+            "callbackCode": "function () { [native code] }"
+          },
+          "other_relevant_handler": {
+            "matchesCurrentSeries": false,
+            "constructor": "H",
+            "callbackName": "",
+            "callbackCode": "e=>this._onData(e)"
+          }
+        }
+      },
+      "chartApiDispatch": {
+        "createSeries": {
+          "exists": true,
+          "argumentCount": 8,
+          "code": "createSeries(e,t,s,n,i,r,o,a){b.telemetry.timeCounters.series.marks.push(\"create_series_\"+e),this._notificationHandlers[e][t]=new H(a,t);const _=null===o?\"\":(0,E.convertTimeFrameToStr)(o,!0);return this._sendRequest(\"create_series\",[e,t,s,n,i,r,_])}"
+        },
+        "modifySeries": {
+          "exists": true,
+          "argumentCount": 8,
+          "code": "modifySeries(e,t,s,n,i,r,o,a){this._notificationHandlers[e][t]=new H(a,t);const _=null===o?\"\":(0,E.convertTimeFrameToStr)(o,!0);return this._sendRequest(\"modify_series\",[e,t,s,n,i,_])}"
+        },
+        "dispatchNotification": {
+          "exists": true,
+          "argumentCount": 2,
+          "code": "_dispatchNotification(e,t){if(\"request_data_problems\"===e.method&&this._onDataProblemsPromiseCb)return void this._onDataProblemsPromiseCb(e.params);if(e.method===M.WebchartChartSessionResponseMethod.StudiesMetadata&&null!==this._metadataDeferredPromise)return void this._processedMetadata(e);const s=e.params.shift();if(!this._notificationHandlers[s])return;if(\"symbol_resolved\"===e.method){const t=e.params[1].full_name;b.telemetry.sendChartReport(\"symbol_resolved\",{count:1,additional:{symbol:t}});const n=b.telemetry.timeCounters.series[\"resolve_symbol_\"+s];\"number\"==typeof n&&b.telemetry.sendChartReport(\"symbol_resolve_time_frame\",{value:window.performance.now()-n,additional:{symbol:t}})}if([\"series_error\",\"series_completed\"].includes(e.method)&&b.telemetry.timeCounters.series.marks.length>0){const e=\"create_series_\"+s,t=b.telemetry.timeCounters.series.marks.indexOf(e);t>=0&&b.telemetry.timeCounters.series.marks.splice(t,1)}\nte||\"series_error\"!==e.method||(te=!0);const n=this._wsBackendConnection.getConnectionEstablished();if(null!==n&&\"series_completed\"===e.method&&(te||(te=!0,b.telemetry.sendChartReport(\"first_series_full_time_frame\",{value:window.performance.now()-n}),b.telemetry.timeCounters.series.marks=[]),ee||(ee=!0,b.telemetry.sendChartReport(\"page_full_load_time_frame\",{value:window.performance.now()}))),s.startsWith(\"cs_\")){let s=\"recv: \"+t;\"data_update\"===e.method?(s=(0,h.isHighRateEnabled)()?s:s.slice(0,500),W.logNormal(this._appendDuration(s,e.time))):\"study_loading\"===e.method?G.logNormal(this._appendDuration(s,e.time)):\"tickmark_update\"===e.method?Y.logNormal(this._appendDuration(s,e.time)):x.logNormal(this._appendDuration(s,e.time))}if(s.startsWith(\"qs_\")){(\"quote_symbol_data\"===e.method?K.logNormal:$.logNormal)(\"recv: \"+t)}switch(e.method){case M.WebchartChartSessionResponseMethod.TimeScaleUpdate:{const t=this._dataHandleModule.getTimescaleObjects(e),n=this._dataHandleModule.getTimescaleChangeset(e),i=this._convertTimescaleResponse(n);this._sessions[s].onMessage({method:M.WebchartChartSessionResponseMethod.TimeScaleUpdate,params:i}),this._dataHandleModule.prepareDataUpdateObjects(s,t,((e,t,s)=>{this._invokeNotificationHandler(e,t,s)}));break}case\"tickmark_update\":const t={...this._convertTimescaleResponse(e.params[0]),changes:[]};this._sessions[s].onMessage({method:M.WebchartChartSessionResponseMethod.TimeScaleUpdate,params:t});break;case M.WebchartChartSessionResponseMethod.DataUpdate:{const t=this._dataHandleModule.getDataUpdateObjects(e);this._dataHandleModule.prepareDataUpdateObjects(s,t,((e,t,s)=>{this._invokeNotificationHandler(e,t,s)}));break}case\"index_update\":for(const t in e.params[0])if(e.params[0].hasOwnProperty(t)){const n={method:\"index_update\",params:e.params[0][t]};this._invokeNotificationHandler(s,t,n)}break;case M.WebchartResponseMethod.CriticalError:q.logInfo(new Date+\" critical_error session:\"+this.sessionid+\" reason:\"+e.params[0]),b.telemetry.sendChartReport(\"critical_error\"),this._sendErrorLogOnce(\"critical_error_log\",e.params),this._sessions[s].onMessage({method:M.WebchartResponseMethod.CriticalError,params:e.params});break;case\"timescale_completed\":case\"quote_symbol_data\":case\"quote_list_fields\":case\"quote_completed\":case\"depth_symbol_error\":case\"depth_symbol_success\":case\"dd\":case\"dpu\":case\"depth_bar_last_value\":this._sessions[s].onMessage({method:e.method,params:e.params});break;case\"clear_data\":for(const t in e.params[0])e.params[0].hasOwnProperty(t)&&this._invokeNotificationHandler(s,t,{method:M.WebchartChartSessionResponseMethod.ClearData,params:e.params[0][t]});break;case M.WebchartReplaySe"
+        },
+        "invokeNotificationHandler": {
+          "exists": true,
+          "argumentCount": 3,
+          "code": "_invokeNotificationHandler(e,t,s){if(void 0===t)return;const n=this._notificationHandlers[e][t];void 0!==n&&(n.singleShot&&delete this._notificationHandlers[e][t],n.handler?.(s))}"
+        },
+        "onMessage": {
+          "exists": true,
+          "argumentCount": 1,
+          "code": "_onMessage(e){this._checkAuthTokenExpiration(\"AuthToken invalidation detected on receiving a message, requesting new token\"),this._calcTrafficStats(e);const t=this.unpack(e);this._receivedMethodsCounters.set(t.method,(this._receivedMethodsCounters.get(t.method)??0)+1),\"t_ms\"in t&&(0,o.default)(t.t_ms)&&this.compensateConnectionLag(t.t_ms),\"protocol_switched\"!==t.method?\"protocol_error\"!==t.method?this._dispatchNotification(t,e):this._processProtocolError(t):q.logError(\"Unexpected protocol changing request, try skipping. Requested protocol:\"+t.params[0])}"
+        }
+      }
+    },
+    "inboundPipeline": {
+      "seriesSourceMethods": {
+        "boundOnMessage": {
+          "exists": true,
+          "argumentCount": 1,
+          "code": "function () { [native code] }"
+        },
+        "onMessage": {
+          "exists": true,
+          "argumentCount": 1,
+          "code": "_onMessage(t){\nthis._enqueueUpdate((()=>this._onMessageImpl(t)))}"
+        },
+        "onMessageImpl": {
+          "exists": true,
+          "argumentCount": 1,
+          "code": "async _onMessageImpl(t){switch(t.method){case\"symbol_resolved\":{const[e,s]=t.params;if(e!==this._symbolInstanceId){null!==this._symbolInstanceId&&b.logNormal(`Resolve for old symbol, expected: ${this._symbolInstanceId}, actual ${t.params[0]}`);break}this._onSymbolResolved(s);break}case\"symbol_error\":if(t.params[0]!==this._symbolInstanceId){null!==this._symbolInstanceId&&b.logNormal(`Symbol error for old symbol, expected: ${this._symbolInstanceId}, actual ${t.params[0]}`);break}this._onSymbolError(t);break;case\"series_timeframe\":{const[e,s,r,i,a,n,o]=t.params;if(!this._checkTurnaround(e,s)){b.logNormal(`Time frame for old data, expected: ${this._symbolInstanceId} (${this.turnaround()}), actual ${e} (${s})`);break}this._onSeriesTimeFrame(r,i,a,n,o);break}case\"series_error\":{const[e,s]=t.params;if(!this._checkTurnaround(e,s)){b.logNormal(`Series error for old data, expected: ${this._symbolInstanceId} (${this.turnaround()}), actual ${e} (${s})`);break}this._onSeriesError(t.params[2]);break}case\"series_loading\":{const[e,s]=t.params;if(!this._checkTurnaround(e,s))break;this._onSeriesLoading(t.time);break}case\"series_completed\":{const[e,s,r,i]=t.params;if(!this._checkTurnaround(e,r)){b.logNormal(`Series completed for old data, expected: ${this._symbolInstanceId} (${this.turnaround()}), actual ${e} (${r})`);break}this._onSeriesCompleted(s,t.time,i);break}case\"data_update\":if(!this._checkTurnaround(t.params.customId,t.params.turnaround)){b.logNormal(`Data update for old data, expected: ${this._symbolInstanceId} (${this.turnaround()}), actual ${t.params.customId} (${t.params.turnaround})`);break}await this._onDataUpdate(t.params.plots,t.params.nonseries,t.params.lastBar);break;case\"clear_data\":{if(t.params.turnaround!==this.turnaround()){b.logNormal(`Clear data for old data, expected: ${this.turnaround()}, actual ${t.params.turnaround}`);break}const e=this._data.first();this._clearDataImpl(),this._dataEvents.fireDataUpdated(void 0,!1,null,!1,e);break}}}"
+        },
+        "onDataUpdate": {
+          "exists": true,
+          "argumentCount": 3,
+          "code": "async _onDataUpdate(t,e,s){this._onDataUnpacked(t,s,await(0,c.parseJapaneseProjectionBars)(e,this._gateway.wireFormat().unpackNonSeriesData))}"
+        },
+        "enqueueUpdate": {
+          "exists": true,
+          "argumentCount": 1,
+          "code": "_enqueueUpdate(t){return this._ongoingDataUpdate=this._ongoingDataUpdate.then(t,t),this._ongoingDataUpdate}"
+        },
+        "onDataUnpacked": {
+          "exists": true,
+          "argumentCount": 3,
+          "code": "_onDataUnpacked(t,e,s){if(0===this._status)return;2===this._status&&(this._changeStatusTo(3),this._clearDataImpl());const r=this._data.bars().size(),i=this._data.first(),a=this._data.bars().firstIndex(),n=this._data.mergeRegularBars(t);null!==s&&(this._data.nsBars().clear(),this._data.nsBars().merge(s.projectionPlots),this._data.lastProjectionPrice=s.lastPrice,null!==s.boxSize&&(this._data.boxSize=s.boxSize),this._data.reversalAmount=s.reversalAmount);const o=null===a,l=o||null!==n&&n.index<a;this._dataEvents.fireDataUpdated(e,l,n,o,i),r!==this._data.bars().size()&&null!==n&&this._dataEvents.fireBarReceived(n)}"
+        },
+        "onSeriesCompleted": {
+          "exists": true,
+          "argumentCount": 3,
+          "code": "_onSeriesCompleted(t,e,s){this._dataEvents.fireCompleted({updateMode:t,time:e,flags:s})}"
+        },
+        "onSeriesLoading": {
+          "exists": true,
+          "argumentCount": 1,
+          "code": "_onSeriesLoading(t){this._dataEvents.fireLoading(t)}"
+        },
+        "onSeriesTimeFrame": {
+          "exists": true,
+          "argumentCount": 5,
+          "code": "_onSeriesTimeFrame(t,e,s,r,i){this._dataEvents.fireSeriesTimeFrame(t,e,s,r??!0,i)}"
+        },
+        "matchingMethods": [
+          {
+            "name": "_boundOnGatewayIsConnectedChanged",
+            "arguments": 1,
+            "code": "function () { [native code] }"
+          },
+          {
+            "name": "_boundOnMessage",
+            "arguments": 1,
+            "code": "function () { [native code] }"
+          },
+          {
+            "name": "canModifySeries",
+            "arguments": 2,
+            "code": "canModifySeries(t,e){const s=!(0,i.deepEquals)(this._extSymbol,t)[0],r=null===this._resolution||!n.Interval.isEqual(this._resolution,e);return s||r}"
+          },
+          {
+            "name": "modifySeries",
+            "arguments": 2,
+            "code": "modifySeries(t,e,s=null,a=!1,o=null){a&&(b.logNormal(\"Due to force flag clearing symbol & resolution to force re-requesting data.\"),this._extSymbol=null,this._resolution=null);const l=x(t),h=!this.symbolSameAsResolved(l);if(h&&(this._lastResolvedSymbol=\"\"),this._extSymbol&&!h){const e=x(this._extSymbol);(0,d.replaceExtendedSymbol)(t,e)}const u=this._extSymbol,_=this._resolution;if(this._extSymbol=t,this._resolution=e,null===this._instanceId)return void(this._timeFrame=s);const c=!(0,i.deepEquals)(u,t)[0];c&&(0,d.replaceExtendedSymbol)(this._extSymbol,l);const m=null===_||!n.Interval.isEqual(_,e);(c||m||null!==s)&&(this._timeFrame=null,(c||m)&&this._turnaroundCounter++,c&&this._resolveSymbol(),this._gateway.modifySeries(this._instanceId,this.turnaround(),(0,r.ensureNotNull)(this._symbolInstanceId),this._resolution,o,s,this._boundOnMessage),this._dataEvents.fireModified())}"
+          },
+          {
+            "name": "requestMoreData",
+            "arguments": 1,
+            "code": "requestMoreData(t){null!==this._instanceId&&this._gateway.requestMoreData(this._instanceId,t,this._boundOnMessage)}"
+          },
+          {
+            "name": "data",
+            "arguments": 0,
+            "code": "data(){return this._data}"
+          },
+          {
+            "name": "setData",
+            "arguments": 1,
+            "code": "setData(t){this._data=t}"
+          },
+          {
+            "name": "clearData",
+            "arguments": 0,
+            "code": "clearData(){this.isStarted()?this._enqueueUpdate((()=>this._clearDataImpl())):this._clearDataImpl()}"
+          },
+          {
+            "name": "dataEvents",
+            "arguments": 0,
+            "code": "dataEvents(){return this._dataEvents}"
+          },
+          {
+            "name": "turnaround",
+            "arguments": 0,
+            "code": "turnaround(){return`${this._turnaroundPrefix}${this._turnaroundCounter}`}"
+          },
+          {
+            "name": "updateExtSymbol",
+            "arguments": 1,
+            "code": "updateExtSymbol(t){this._extSymbol=t}"
+          },
+          {
+            "name": "moveData",
+            "arguments": 1,
+            "code": "moveData(t){return this._enqueueUpdate((()=>this._data.moveData(t)))}"
+          },
+          {
+            "name": "_clearDataImpl",
+            "arguments": 0,
+            "code": "_clearDataImpl(){this._data.clear(),this._dataEvents.fireCleared()}"
+          },
+          {
+            "name": "_createSeries",
+            "arguments": 0,
+            "code": "_createSeries(){(0,r.assert)(3!==this._status,'Status should not be \"Active\" when creating a study'),this._instanceId=\"sds_\"+S++,this._resolveSymbol();const t=this._createSeriesOverriddenParams||this._createSeriesParams;this._createSeriesOverriddenParams&&(this._createSeriesOverriddenParams=0),this._gateway.createSeries(this._instanceId,this.turnaround(),(0,r.ensureNotNull)(this._symbolInstanceId),(0,r.ensureNotNull)(this._resolution),t,this._timeFrame,this._boundOnMessage),this._timeFrame=null,this._changeStatusTo(2),this._dataEvents.fireCreated(this._instanceId)}"
+          },
+          {
+            "name": "_onGatewayIsConnectedChanged",
+            "arguments": 1,
+            "code": "_onGatewayIsConnectedChanged(t){t?this._onGatewayConnected():this._onGatewayDisconnected()}"
+          },
+          {
+            "name": "_onGatewayConnected",
+            "arguments": 0,
+            "code": "_onGatewayConnected(){1===this._status&&this._createSeries()}"
+          },
+          {
+            "name": "_onGatewayDisconnected",
+            "arguments": 0,
+            "code": "_onGatewayDisconnected(){0!==this._status&&1!==this._status&&(this._instanceId=null,this._changeStatusTo(1)),this._turnaroundCounter=1}"
+          },
+          {
+            "name": "_onMessage",
+            "arguments": 1,
+            "code": "_onMessage(t){\nthis._enqueueUpdate((()=>this._onMessageImpl(t)))}"
+          },
+          {
+            "name": "_onMessageImpl",
+            "arguments": 1,
+            "code": "async _onMessageImpl(t){switch(t.method){case\"symbol_resolved\":{const[e,s]=t.params;if(e!==this._symbolInstanceId){null!==this._symbolInstanceId&&b.logNormal(`Resolve for old symbol, expected: ${this._symbolInstanceId}, actual ${t.params[0]}`);break}this._onSymbolResolved(s);break}case\"symbol_error\":if(t.params[0]!==this._symbolInstanceId){null!==this._symbolInstanceId&&b.logNormal(`Symbol error for old symbol, expected: ${this._symbolInstanceId}, actual ${t.params[0]}`);break}this._onSymbolError(t);break;case\"series_timeframe\":{const[e,s,r,i,a,n,o]=t.params;if(!this._checkTurnaround(e,s)){b.logNormal(`Time frame for old data, expected: ${this._symbolInstanceId} (${this.turnaround()}), actual ${e} (${s})`);break}this._onSeriesTimeFrame(r,i,a,n,o);break}case\"series_error\":{const[e,s]=t.params;if(!this._checkTurnaround(e,s)){b.logNormal(`Series error for old data, expected: ${this._symbolInstanceId} (${this.turnaround()}), actual ${e} (${s})`);break}this._onSeriesError(t.params[2]);break}case\"series_loading\":{const[e,s]=t.params;if(!this._checkTurnaround(e,s))break;this._onSeriesLoading(t.time);break}case\"series_completed\":{const[e,s,r,i]=t.params;if(!this._checkTurnaround(e,r)){b.logNormal(`Series completed for old data, expected: ${this._symbolInstanceId} (${this.turnaround()}), actual ${e} (${r})`);break}this._onSeriesCompleted(s,t.time,i);break}case\"data_update\":if(!this._checkTurnaround(t.params.customId,t.params.turnaround"
+          },
+          {
+            "name": "_onSeriesError",
+            "arguments": 1,
+            "code": "_onSeriesError(t){let e,s;if(\"string\"==typeof t)s={error:t},e=t;else if(s=t,t.ctx){const s={};Object.entries(t.ctx).forEach((([t,e])=>{s[t]=e.toString()})),i=t.error,a=s,e=i.replace(y,((t,e)=>void 0!==a[e]?a[e]:t))}else e=t.error;var i,a;if(e.startsWith(\"study_not_auth:\")){const t=e.split(\":\",2)[1].split(\"@\",2)[0];if([\"BarSetRenko\",\"BarSetPriceBreak\",\"BarSetKagi\",\"BarSetPnF\"].includes(t))this._dataEvents.fireChartTypeNotPermitted(t);else{if(\"BarSetSpread\"===t)return void this._dataEvents.fireIntradaySpreadNotPermitted();if(\"BarSetRange\"===t){const t=`${(0,r.ensureNotNull)(this._extSymbol).inputs.range}R`;this._dataEvents.fireCustomIntervalNotPermitted(t)}}}else{if(e.startsWith(\"unsupported\"))return void this._dataEvents.fireUnsupportedResolutionRequested();(0,m.isPlanRestrictedResolutionError)(e)&&this._firePlanRestrictedResolution(e)}this._dataEvents.fireSeriesError(s)}"
+          },
+          {
+            "name": "_onSeriesTimeFrame",
+            "arguments": 5,
+            "code": "_onSeriesTimeFrame(t,e,s,r,i){this._dataEvents.fireSeriesTimeFrame(t,e,s,r??!0,i)}"
+          },
+          {
+            "name": "_onDataUpdate",
+            "arguments": 3,
+            "code": "async _onDataUpdate(t,e,s){this._onDataUnpacked(t,s,await(0,c.parseJapaneseProjectionBars)(e,this._gateway.wireFormat().unpackNonSeriesData))}"
+          },
+          {
+            "name": "_enqueueUpdate",
+            "arguments": 1,
+            "code": "_enqueueUpdate(t){return this._ongoingDataUpdate=this._ongoingDataUpdate.then(t,t),this._ongoingDataUpdate}"
+          },
+          {
+            "name": "_onDataUnpacked",
+            "arguments": 3,
+            "code": "_onDataUnpacked(t,e,s){if(0===this._status)return;2===this._status&&(this._changeStatusTo(3),this._clearDataImpl());const r=this._data.bars().size(),i=this._data.first(),a=this._data.bars().firstIndex(),n=this._data.mergeRegularBars(t);null!==s&&(this._data.nsBars().clear(),this._data.nsBars().merge(s.projectionPlots),this._data.lastProjectionPrice=s.lastPrice,null!==s.boxSize&&(this._data.boxSize=s.boxSize),this._data.reversalAmount=s.reversalAmount);const o=null===a,l=o||null!==n&&n.index<a;this._dataEvents.fireDataUpdated(e,l,n,o,i),r!==this._data.bars().size()&&null!==n&&this._dataEvents.fireBarReceived(n)}"
+          },
+          {
+            "name": "_onSeriesLoading",
+            "arguments": 1,
+            "code": "_onSeriesLoading(t){this._dataEvents.fireLoading(t)}"
+          },
+          {
+            "name": "_onSeriesCompleted",
+            "arguments": 3,
+            "code": "_onSeriesCompleted(t,e,s){this._dataEvents.fireCompleted({updateMode:t,time:e,flags:s})}"
+          },
+          {
+            "name": "_checkTurnaround",
+            "arguments": 2,
+            "code": "_checkTurnaround(t,e){return this._instanceId===t&&(void 0===e||e===this.turnaround())}"
+          }
+        ]
+      },
+      "dataHandle": {
+        "object": {
+          "available": true,
+          "constructor": "F",
+          "ownKeys": [],
+          "methods": [
+            {
+              "name": "constructor",
+              "arguments": 0
+            },
+            {
+              "name": "set_broker",
+              "arguments": 1
+            },
+            {
+              "name": "set_data_quality",
+              "arguments": 0
+            },
+            {
+              "name": "quote_create_session",
+              "arguments": 1
+            },
+            {
+              "name": "quote_delete_session",
+              "arguments": 1
+            },
+            {
+              "name": "quote_set_fields",
+              "arguments": 2
+            },
+            {
+              "name": "quote_add_symbols",
+              "arguments": 2
+            },
+            {
+              "name": "quote_remove_symbols",
+              "arguments": 2
+            },
+            {
+              "name": "quote_fast_symbols",
+              "arguments": 2
+            },
+            {
+              "name": "quote_hibernate_all",
+              "arguments": 1
+            },
+            {
+              "name": "depth_create_session",
+              "arguments": 3
+            },
+            {
+              "name": "depth_delete_session",
+              "arguments": 1
+            },
+            {
+              "name": "depth_set_symbol",
+              "arguments": 2
+            },
+            {
+              "name": "depth_clear_symbol",
+              "arguments": 1
+            },
+            {
+              "name": "depth_set_scale",
+              "arguments": 2
+            },
+            {
+              "name": "chart_create_session",
+              "arguments": 2
+            },
+            {
+              "name": "chart_delete_session",
+              "arguments": 1
+            },
+            {
+              "name": "set_locale",
+              "arguments": 2
+            },
+            {
+              "name": "switch_timezone",
+              "arguments": 2
+            },
+            {
+              "name": "resolve_symbol",
+              "arguments": 3
+            },
+            {
+              "name": "create_series",
+              "arguments": 7
+            },
+            {
+              "name": "remove_series",
+              "arguments": 2
+            },
+            {
+              "name": "modify_series",
+              "arguments": 6
+            },
+            {
+              "name": "request_more_data",
+              "arguments": 3
+            },
+            {
+              "name": "set_future_tickmarks_mode",
+              "arguments": 2
+            },
+            {
+              "name": "request_studies_metadata",
+              "arguments": 1
+            },
+            {
+              "name": "create_study",
+              "arguments": 6
+            },
+            {
+              "name": "create_child_study",
+              "arguments": 6
+            },
+            {
+              "name": "remove_study",
+              "arguments": 2
+            },
+            {
+              "name": "modify_study",
+              "arguments": 4
+            },
+            {
+              "name": "notify_study",
+              "arguments": 4
+            },
+            {
+              "name": "create_pointset",
+              "arguments": 6
+            },
+            {
+              "name": "modify_pointset",
+              "arguments": 4
+            },
+            {
+              "name": "remove_pointset",
+              "arguments": 2
+            },
+            {
+              "name": "request_more_tickmarks",
+              "arguments": 3
+            },
+            {
+              "name": "get_first_bar_time",
+              "arguments": 3
+            },
+            {
+              "name": "replay_create_session",
+              "arguments": 1
+            },
+            {
+              "name": "replay_delete_session",
+              "arguments": 1
+            },
+            {
+              "name": "replay_reset",
+              "arguments": 3
+            },
+            {
+              "name": "replay_start",
+              "arguments": 3
+            },
+            {
+              "name": "replay_stop",
+              "arguments": 2
+            },
+            {
+              "name": "replay_step",
+              "arguments": 3
+            },
+            {
+              "name": "replay_add_series",
+              "arguments": 4
+            },
+            {
+              "name": "replay_remove_series",
+              "arguments": 4
+            },
+            {
+              "name": "replay_set_resolution",
+              "arguments": 3
+            },
+            {
+              "name": "replay_get_depth",
+              "arguments": 4
+            },
+            {
+              "name": "convertTimescaleResponse",
+              "arguments": 1
+            },
+            {
+              "name": "getDataUpdateObjects",
+              "arguments": 1
+            },
+            {
+              "name": "getTimescaleObjects",
+              "arguments": 1
+            },
+            {
+              "name": "getTimescaleChangeset",
+              "arguments": 1
+            },
+            {
+              "name": "prepareDataUpdateObjects",
+              "arguments": 3
+            },
+            {
+              "name": "unpack",
+              "arguments": 1
+            },
+            {
+              "name": "prepareEncodeMessage",
+              "arguments": 2
+            },
+            {
+              "name": "request_data_problems",
+              "arguments": 0
+            },
+            {
+              "name": "__defineGetter__",
+              "arguments": 2
+            },
+            {
+              "name": "__defineSetter__",
+              "arguments": 2
+            },
+            {
+              "name": "hasOwnProperty",
+              "arguments": 1
+            },
+            {
+              "name": "__lookupGetter__",
+              "arguments": 1
+            },
+            {
+              "name": "__lookupSetter__",
+              "arguments": 1
+            },
+            {
+              "name": "isPrototypeOf",
+              "arguments": 1
+            },
+            {
+              "name": "propertyIsEnumerable",
+              "arguments": 1
+            },
+            {
+              "name": "toString",
+              "arguments": 0
+            },
+            {
+              "name": "valueOf",
+              "arguments": 0
+            },
+            {
+              "name": "toLocaleString",
+              "arguments": 0
+            }
+          ]
+        },
+        "unpack": {
+          "exists": true,
+          "argumentCount": 1,
+          "code": "unpack(e){const t=JSON.parse(e);t.m&&t.p&&(t.method=t.m,t.params=t.p,t.time=t.t);const s=t.params[1];switch(t.method){case\"qsd\":t.method=\"quote_symbol_data\",s.symbolname=s.n,s.status=s.s,s.values=s.v,s.values.change=s.v.ch,s.values.last_price=s.v.lp,s.values.change_percent=s.v.chp,delete s.n,delete s.s,delete s.v,delete s.values.ch,delete s.values.lp,delete s.values.chp;break;case\"du\":t.method=\"data_update\",U(s);break;case\"clear_data\":for(const e of Object.keys(s))s[e].turnaround=s[e].t;break;case\"timescale_update\":U(s)}return t}"
+        },
+        "getDataUpdateObjects": {
+          "exists": true,
+          "argumentCount": 1,
+          "code": "getDataUpdateObjects(e){return e.params[0]}"
+        },
+        "prepareDataUpdateObjects": {
+          "exists": true,
+          "argumentCount": 3,
+          "code": "prepareDataUpdateObjects(e,t,s){for(const[n,i]of Object.entries(t)){const t=\"plots\"in i?i.plots:i.series,r={customId:n,turnaround:i.turnaround,plots:t};\"ns\"in i&&i.ns&&(r.nonseries=i.ns),\"lbs\"in i&&i.lbs&&(r.lastBar={closeTime:i.lbs.bar_close_time});for(const e of r.plots)for(const[t,s]of Object.entries(e.value))s&&Math.abs(s)>=1e100&&(e.value[+t]=void 0);s(e,n,{method:M.WebchartChartSessionResponseMethod.DataUpdate,params:r})}}"
+        },
+        "getTimescaleObjects": {
+          "exists": true,
+          "argumentCount": 1,
+          "code": "getTimescaleObjects(e){return e.params[0]}"
+        },
+        "getTimescaleChangeset": {
+          "exists": true,
+          "argumentCount": 1,
+          "code": "getTimescaleChangeset(e){return e.params[1]}"
+        },
+        "convertTimescaleResponse": {
+          "exists": true,
+          "argumentCount": 1,
+          "code": "convertTimescaleResponse(e){const t=e.marks.map((e=>({span:e[0],time:e[1],index:e[2]}))),s=void 0===e.index_diff?[]:e.index_diff.map((e=>({old:e[0],new:e[1]})));return{...e,marks:t,index_diff:s,clear:0===e.changes.length&&0===s.length&&0===t.length}}"
+        },
+        "relevantMethods": [
+          {
+            "name": "set_data_quality",
+            "arguments": 0,
+            "code": "set_data_quality(){return[\"low\"]}"
+          },
+          {
+            "name": "quote_create_session",
+            "arguments": 1,
+            "code": "quote_create_session(e){return[e]}"
+          },
+          {
+            "name": "quote_delete_session",
+            "arguments": 1,
+            "code": "quote_delete_session(e){return[e]}"
+          },
+          {
+            "name": "depth_create_session",
+            "arguments": 3,
+            "code": "depth_create_session(e,t,s){return[e,t,s]}"
+          },
+          {
+            "name": "depth_delete_session",
+            "arguments": 1,
+            "code": "depth_delete_session(e){return[e]}"
+          },
+          {
+            "name": "chart_create_session",
+            "arguments": 2,
+            "code": "chart_create_session(e,t){return[e,t?\"disable_statistics\":\"\"]}"
+          },
+          {
+            "name": "chart_delete_session",
+            "arguments": 1,
+            "code": "chart_delete_session(e){return[e]}"
+          },
+          {
+            "name": "request_more_data",
+            "arguments": 3,
+            "code": "request_more_data(e,t,s){return[e,t,s]}"
+          },
+          {
+            "name": "request_studies_metadata",
+            "arguments": 1,
+            "code": "request_studies_metadata(e){return[e]}"
+          },
+          {
+            "name": "get_first_bar_time",
+            "arguments": 3,
+            "code": "get_first_bar_time(e,t,s){return[e,t,s]}"
+          },
+          {
+            "name": "replay_create_session",
+            "arguments": 1,
+            "code": "replay_create_session(e){return[e]}"
+          },
+          {
+            "name": "replay_delete_session",
+            "arguments": 1,
+            "code": "replay_delete_session(e){return[e]}"
+          },
+          {
+            "name": "convertTimescaleResponse",
+            "arguments": 1,
+            "code": "convertTimescaleResponse(e){const t=e.marks.map((e=>({span:e[0],time:e[1],index:e[2]}))),s=void 0===e.index_diff?[]:e.index_diff.map((e=>({old:e[0],new:e[1]})));return{...e,marks:t,index_diff:s,clear:0===e.changes.length&&0===s.length&&0===t.length}}"
+          },
+          {
+            "name": "getDataUpdateObjects",
+            "arguments": 1,
+            "code": "getDataUpdateObjects(e){return e.params[0]}"
+          },
+          {
+            "name": "getTimescaleObjects",
+            "arguments": 1,
+            "code": "getTimescaleObjects(e){return e.params[0]}"
+          },
+          {
+            "name": "getTimescaleChangeset",
+            "arguments": 1,
+            "code": "getTimescaleChangeset(e){return e.params[1]}"
+          },
+          {
+            "name": "prepareDataUpdateObjects",
+            "arguments": 3,
+            "code": "prepareDataUpdateObjects(e,t,s){for(const[n,i]of Object.entries(t)){const t=\"plots\"in i?i.plots:i.series,r={customId:n,turnaround:i.turnaround,plots:t};\"ns\"in i&&i.ns&&(r.nonseries=i.ns),\"lbs\"in i&&i.lbs&&(r.lastBar={closeTime:i.lbs.bar_close_time});for(const e of r.plots)for(const[t,s]of Object.entries(e.value))s&&Math.abs(s)>=1e100&&(e.value[+t]=void 0);s(e,n,{method:M.WebchartChartSessionResponseMethod.DataUpdate,params:r})}}"
+          },
+          {
+            "name": "unpack",
+            "arguments": 1,
+            "code": "unpack(e){const t=JSON.parse(e);t.m&&t.p&&(t.method=t.m,t.params=t.p,t.time=t.t);const s=t.params[1];switch(t.method){case\"qsd\":t.method=\"quote_symbol_data\",s.symbolname=s.n,s.status=s.s,s.values=s.v,s.values.change=s.v.ch,s.values.last_price=s.v.lp,s.values.change_percent=s.v.chp,delete s.n,delete s.s,delete s.v,delete s.values.ch,delete s.values.lp,delete s.values.chp;break;case\"du\":t.method=\"data_update\",U(s);break;case\"clear_data\":for(const e of Object.keys(s))s[e].turnaround=s[e].t;break;case\"timescale_update\":U(s)}return t}"
+          },
+          {
+            "name": "prepareEncodeMessage",
+            "arguments": 2,
+            "code": "prepareEncodeMessage(e,t){return JSON.stringify({m:e,p:t})}"
+          },
+          {
+            "name": "request_data_problems",
+            "arguments": 0,
+            "code": "request_data_problems(){return[]}"
+          }
+        ]
+      },
+      "dataObject": {
+        "constructor": "c",
+        "keys": [
+          "m_bars",
+          "m_nsBars",
+          "_conflatedChunksBuilder",
+          "lastProjectionPrice"
+        ],
+        "mergeRegularBars": {
+          "exists": true,
+          "argumentCount": 1,
+          "code": "mergeRegularBars(t){return this._conflatedChunksBuilder.mergeData(t)}"
+        },
+        "first": {
+          "exists": true,
+          "called": true,
+          "result": {
+            "index": 0,
+            "value": [
+              1794128760,
+              0.0000049081,
+              0.0000049094,
+              0.0000049066,
+              0.0000049066,
+              997100000
+            ]
+          }
+        },
+        "last": {
+          "exists": true,
+          "called": true,
+          "result": {
+            "index": 330,
+            "value": [
+              1794148560,
+              0.0000050385,
+              0.0000050385,
+              0.0000050372,
+              0.0000050372,
+              626100000
+            ]
+          }
+        },
+        "bars": {
+          "constructor": "_",
+          "start": 0,
+          "end": 331,
+          "size": {
+            "exists": true,
+            "called": true,
+            "result": 331
+          },
+          "firstIndex": {
+            "exists": true,
+            "called": true,
+            "result": 0
+          },
+          "lastIndex": {
+            "exists": true,
+            "called": true,
+            "result": 330
+          },
+          "first": {
+            "constructor": "Object",
+            "index": 0,
+            "value": [
+              1794128760,
+              0.0000049081,
+              0.0000049094,
+              0.0000049066,
+              0.0000049066,
+              997100000
+            ]
+          },
+          "last": {
+            "constructor": "Object",
+            "index": 330,
+            "value": [
+              1794148560,
+              0.0000050385,
+              0.0000050385,
+              0.0000050372,
+              0.0000050372,
+              626100000
+            ]
+          },
+          "methods": [
+            {
+              "name": "clear",
+              "arguments": 0,
+              "code": "clear(){this._items=[],this._start=0,this._end=0,this._shareRead=!1,this._minMaxCache.clear(),this._invalidateSearchCaches()}"
+            },
+            {
+              "name": "first",
+              "arguments": 0,
+              "code": "first(){return this.size()>0?this._items[this._start]:null}"
+            },
+            {
+              "name": "last",
+              "arguments": 0,
+              "code": "last(){return this.size()>0?this._items[this._end-1]:null}"
+            },
+            {
+              "name": "firstIndex",
+              "arguments": 0,
+              "code": "firstIndex(){return this.size()>0?this._indexAt(this._start):null}"
+            },
+            {
+              "name": "firstPlottableIndex",
+              "arguments": 0,
+              "code": "firstPlottableIndex(){if(this.isEmpty())return null;for(let t=this._start;t<this._end;++t){const e=this._indexAt(t);if(e>n.UNPLOTTABLE_TIME_POINT_INDEX)return e}return null}"
+            },
+            {
+              "name": "lastIndex",
+              "arguments": 0,
+              "code": "lastIndex(){return this.size()>0?this._indexAt(this._end-1):null}"
+            },
+            {
+              "name": "size",
+              "arguments": 0,
+              "code": "size(){return this._end-this._start}"
+            },
+            {
+              "name": "search",
+              "arguments": 1,
+              "code": "search(t,e=o.PlotRowSearchMode.Exact,s){return this._searchImpl(t,e,this._rowSearchCacheByIndex,this._rowSearchCacheByIndexWithoutEmptyValues,d,s)}"
+            },
+            {
+              "name": "searchByTime",
+              "arguments": 1,
+              "code": "searchByTime(t,e=o.PlotRowSearchMode.Exact,s){return this._searchImpl(t,e,this._rowSearchCacheByTime,this._rowSearchCacheByTimeWithoutEmptyValues,u,s)}"
+            },
+            {
+              "name": "findFirst",
+              "arguments": 2,
+              "code": "findFirst(t,e){const s=void 0!==e&&Math.min(this._start+e,this._end)||this._end;for(let e=this._start;e<s;++e){const s=this._indexAt(e),r=this._valueAt(e);if(t(s,r))return{index:s,value:r}}return null}"
+            },
+            {
+              "name": "findLast",
+              "arguments": 2,
+              "code": "findLast(t,e){const s=void 0!==e&&Math.max(this._end-e,this._start)||this._start;for(let e=this._end-1;e>=s;--e){const s=this._indexAt(e),r=this._valueAt(e);if(t(s,r))return{index:s,value:r}}return null}"
+            },
+            {
+              "name": "merge",
+              "arguments": 1,
+              "code": "merge(t){return this._shareRead?(l.logDebug(\"merge: readonly collection modification attempt\"),null):0===t.length?null:this.isEmpty()||t[t.length-1].index<this._items[0].index?this._prepend(t):t[0].index>this._items[this._items.length-1].index?this._append(t):1===t.length&&t[0].index===this._items[this._items.length-1].index?(this._updateLast(t[0]),t[0]):this._merge(t)}"
+            },
+            {
+              "name": "_indexAt",
+              "arguments": 1,
+              "code": "_indexAt(t){return this._items[t].index}"
+            },
+            {
+              "name": "_searchImpl",
+              "arguments": 6,
+              "code": "_searchImpl(t,e,s,r,i,a){const n=void 0!==a?s:r,o=void 0!==a?1e4*(e+1)+a:e;let l=n.get(t);if(void 0!==l){const t=l.get(o);if(void 0!==t)return t}const h=this._nonCachedSearch(t,e,i,a);if(null===h)return null;const d={\nindex:this._indexAt(h),value:this._valueAt(h)};return void 0===l&&(l=new Map,n.set(t,l)),l.set(o,d),d}"
+            },
+            {
+              "name": "_nonCachedSearch",
+              "arguments": 4,
+              "code": "_nonCachedSearch(t,e,s,r){const i=this._lowerbound(t,s),a=i===this._end||t!==s(this._items[i]);if(a&&e!==o.PlotRowSearchMode.Exact)switch(e){case o.PlotRowSearchMode.NearestLeft:return this._searchNearestLeft(i,r);case o.PlotRowSearchMode.NearestRight:return this._searchNearestRight(i,r);default:throw new TypeError(\"Unknown search mode\")}if(void 0===r||a||e===o.PlotRowSearchMode.Exact)return a?null:i;switch(e){case o.PlotRowSearchMode.NearestLeft:return this._nonEmptyNearestLeft(i,r);case o.PlotRowSearchMode.NearestRight:return this._nonEmptyNearestRight(i,r);default:throw new TypeError(\"Unknown search mode\")}}"
+            },
+            {
+              "name": "_searchNearestLeft",
+              "arguments": 2,
+              "code": "_searchNearestLeft(t,e){if(t===this._start)return null;const s=t-1,r=s!==this._end?s:null;return void 0!==e&&null!==r?this._nonEmptyNearestLeft(r,e):r}"
+            },
+            {
+              "name": "_searchNearestRight",
+              "arguments": 2,
+              "code": "_searchNearestRight(t,e){const s=t,r=s!==this._end?s:null;return void 0!==e&&null!==r?this._nonEmptyNearestRight(r,e):r}"
+            },
+            {
+              "name": "_bsearch",
+              "arguments": 2,
+              "code": "_bsearch(t,e){const s=this._lowerbound(t,e);return s!==this._end&&t===e(this._items[s])?s:null}"
+            }
+          ]
+        },
+        "builderMergeData": {
+          "exists": true,
+          "argumentCount": 1,
+          "code": "mergeData(t){const e=this._plots.size(),s=this._plots.merge(t);return s&&null!==this._state.priceSource&&(e===this._plots.size()&&s.index===this._plots.lastIndex()?this._updateLatestChunks():this._rebuildConflatedChunks(s)),s}"
+        }
+      },
+      "seriesDataEvents": {
+        "constructor": "_",
+        "keys": [
+          "_created",
+          "_modified",
+          "_cleared",
+          "_loading",
+          "_completed",
+          "_error",
+          "_symbolError",
+          "_symbolResolved",
+          "_seriesError",
+          "_symbolNotPermitted",
+          "_symbolInvalid",
+          "_symbolGroupNotPermitted",
+          "_symbolBondMetricsNotPermitted",
+          "_chartTypeNotPermitted",
+          "_intradaySpreadNotPermitted",
+          "_intradayExchangeNotPermitted",
+          "_customIntervalNotPermitted",
+          "_customSecondsIntervalNotPermitted",
+          "_secondsIntervalNotPermitted",
+          "_ticksIntervalNotPermitted",
+          "_barReceived",
+          "_seriesTimeFrame",
+          "_dataUpdated",
+          "_unsupportedResolutionRequested"
+        ],
+        "fireDataUpdated": {
+          "exists": true,
+          "argumentCount": 5,
+          "code": "fireDataUpdated(t,e,s,r,i){this._dataUpdated.fire(t,e,s,r,i)}"
+        },
+        "fireBarReceived": {
+          "exists": true,
+          "argumentCount": 1,
+          "code": "fireBarReceived(t){this._barReceived.fire(t)}"
+        },
+        "fireCompleted": {
+          "exists": true,
+          "argumentCount": 1,
+          "code": "fireCompleted(t){this._completed.fire(t)}"
+        },
+        "fireLoading": {
+          "exists": true,
+          "argumentCount": 1,
+          "code": "fireLoading(t){this._loading.fire(t)}"
+        },
+        "fireCleared": {
+          "exists": true,
+          "argumentCount": 0,
+          "code": "fireCleared(){this._cleared.fire()}"
+        }
+      }
+    },
+    "studyPropagation": {
+      "counts": {
+        "allDataSources": 60,
+        "studyFlaggedAndOwnedByMainSeries": 4
+      },
+      "mainSeriesMethods": {
+        "onBarReceived": {
+          "exists": true,
+          "argumentCount": 1,
+          "code": "_onBarReceived(e){this.model().recalcVisibleRangeStudies(P.RecalcVisibleRangeStudiesReason.DataUpdate)}"
+        },
+        "onDataUpdated": {
+          "exists": true,
+          "argumentCount": 5,
+          "code": "_onDataUpdated(e,t,i,s,o){if(t&&o&&this._colorOnPrevBar()&&this._precomputedBarStyles.delete(o.value),s){const e=this.symbolInfo();this._volumePointWeights=null!==e&&(0,R.hasVolume)(e)?function(e){let t=0,i=0;for(const s of e){const e=s.value[x.SeriesPlotIndex.Volume];(0,a.isNumber)(e)&&e>0&&(t+=e,i+=1)}return i>0?new kt(t/i):null}(this.bars().fullRangeIterator()):null,this._updateTimeScaleTimePointWeights()}if(null!==this._volumePointWeights){const e=t?this.bars().fullRangeIterator():i?this.bars().rangeIterator(i.index,(0,r.ensureNotNull)(this.bars().lastIndex())):null;null!==e&&function(e,t){for(const i of t){const t=i.value[x.SeriesPlotIndex.Volume];(0,a.isNumber)(t)&&e.setVolume(i.index,t)}}(this._volumePointWeights,e)}t?this._requestMoreDataAvailable=!0:this._lastPriceAnimationActive&&this._seriesLoaded&&this._lineStyleLastPriceCirclePaneView.update((0,ve.sourceChangeEvent)(this.id())),this._lastBarCloseTime=e&&e.closeTime||null,this._boxSizeValue.setValue(this.data().boxSize),this._statusView.update();const n=this.bars().firstIndex(),l=this.bars().lastIndex();null!==n&&null!==l?this._dataRangeUpdated.fire({type:\"partial\",startIndex:i?.index??n,endIndex:t?o?.index??l:l}):this._dataRangeUpdated.fire({type:\"full\"}),this.clearAveragePriceCache(),this.clearHighLowPriceCache();const c=this.model(),h=(0,r.ensureNotNull)(c.paneForSource(this));c.recalculatePane(h,(0,ve.sourceChangeEvent)({sourceId:this.id(),realtime:!t,firstUpdatedTimePointIndex:i?.index??void 0})),\nc.updateSource(this)}"
+        },
+        "updateAllViews": {
+          "exists": true,
+          "argumentCount": 1,
+          "code": "updateAllViews(e){this._studyBindings?.updateAllViews(e),this._delayStatusPaneView?.get()?.update(e),e.type!==$e.ChangeEventType.HoverChange&&(this._paneView?.update(e),this._dataWindowView.update(),this._legendView.update(),this._statusView.update(),this._floatingTooltipView.update(e),this._averagePaneViews.forEach((t=>t.update(e))),this._highLowAvgPaneViews.forEach((t=>t.update(e))),this._labelPaneViews.forEach((t=>t.update(e))),this._priceAxisViews.forEach((t=>t.update(e))),this._priceLineAxisViews.forEach((t=>t.update(e))),this._futureBarsPaneView?.update(e),this._projectionBarsPaneView?.update(e),this._waterlineView?.update(e),this._prevClosePriceLineView?.update(e),this._priceLineView?.update(e),this._gotoDateView?.update(e),this._endOfDataPaneView?.update(e),this._baseHorizontalLineView?.update(e),this._model.activeStrategySource().value()?.updateAllViews(e),this._model.replayStudyStrategy().value()?.updateAllViews(e),this._lineStyleLastPriceCirclePaneView.update(e))}"
+        },
+        "updateAllPaneViews": {
+          "exists": false
+        }
+      },
+      "studyBindings": {
+        "constructor": "xt",
+        "object": {
+          "available": true,
+          "constructor": "xt",
+          "ownKeys": [
+            "_onStatusChanged",
+            "_bindings",
+            "_series"
+          ],
+          "methods": [
+            {
+              "name": "constructor",
+              "arguments": 1
+            },
+            {
+              "name": "destroy",
+              "arguments": 0
+            },
+            {
+              "name": "bindToSeriesProperties",
+              "arguments": 1
+            },
+            {
+              "name": "paneViews",
+              "arguments": 1
+            },
+            {
+              "name": "widgetSideAreaViews",
+              "arguments": 1
+            },
+            {
+              "name": "stop",
+              "arguments": 0
+            },
+            {
+              "name": "restart",
+              "arguments": 0
+            },
+            {
+              "name": "moveData",
+              "arguments": 1
+            },
+            {
+              "name": "clearData",
+              "arguments": 0
+            },
+            {
+              "name": "updateAllViews",
+              "arguments": 1
+            },
+            {
+              "name": "syncStudy",
+              "arguments": 1
+            },
+            {
+              "name": "onStatusChanged",
+              "arguments": 0
+            },
+            {
+              "name": "wasCompletedBefore",
+              "arguments": 0
+            },
+            {
+              "name": "dataWindowValuesProvider",
+              "arguments": 0
+            },
+            {
+              "name": "tableViewValuesProvider",
+              "arguments": 0
+            },
+            {
+              "name": "legendValuesProvider",
+              "arguments": 0
+            },
+            {
+              "name": "status",
+              "arguments": 0
+            },
+            {
+              "name": "priceRange",
+              "arguments": 1
+            },
+            {
+              "name": "requestMoreDataIndex",
+              "arguments": 0
+            },
+            {
+              "name": "getInputsInfoProperties",
+              "arguments": 0
+            },
+            {
+              "name": "state",
+              "arguments": 1
+            },
+            {
+              "name": "restoreState",
+              "arguments": 2
+            },
+            {
+              "name": "autoScaleInfos",
+              "arguments": 1
+            },
+            {
+              "name": "activeStudy",
+              "arguments": 0
+            },
+            {
+              "name": "createStatusWidgets",
+              "arguments": 1
+            },
+            {
+              "name": "_activeBinding",
+              "arguments": 0
+            },
+            {
+              "name": "__defineGetter__",
+              "arguments": 2
+            },
+            {
+              "name": "__defineSetter__",
+              "arguments": 2
+            },
+            {
+              "name": "hasOwnProperty",
+              "arguments": 1
+            },
+            {
+              "name": "__lookupGetter__",
+              "arguments": 1
+            },
+            {
+              "name": "__lookupSetter__",
+              "arguments": 1
+            },
+            {
+              "name": "isPrototypeOf",
+              "arguments": 1
+            },
+            {
+              "name": "propertyIsEnumerable",
+              "arguments": 1
+            },
+            {
+              "name": "toString",
+              "arguments": 0
+            },
+            {
+              "name": "valueOf",
+              "arguments": 0
+            },
+            {
+              "name": "toLocaleString",
+              "arguments": 0
+            }
+          ]
+        },
+        "primitiveProperties": {
+          "_onStatusChanged": "[a]",
+          "_bindings": "[Array]",
+          "_series": "[Os]"
+        },
+        "updateAllViews": {
+          "exists": true,
+          "argumentCount": 1,
+          "code": "updateAllViews(e){e.type!==$e.ChangeEventType.HoverChange?this._bindings.forEach((t=>t.updateAllViews(e))):this._bindings.filter((e=>e instanceof at||e instanceof _t)).forEach((t=>t.updateAllViews(e)))}"
+        },
+        "requestMoreDataIndex": {
+          "exists": true,
+          "argumentCount": 0,
+          "code": "requestMoreDataIndex(){return this._activeBinding()?.requestMoreDataIndex()??null}"
+        },
+        "relevantMethods": [
+          {
+            "name": "bindToSeriesProperties",
+            "arguments": 1,
+            "code": "bindToSeriesProperties(e){this._bindings.forEach((t=>t.bindToSeriesProperties(e)))}"
+          },
+          {
+            "name": "moveData",
+            "arguments": 1,
+            "code": "moveData(e){this._activeBinding()?.moveData(e)}"
+          },
+          {
+            "name": "clearData",
+            "arguments": 0,
+            "code": "clearData(){this._bindings.forEach((e=>e.clearData()))}"
+          },
+          {
+            "name": "updateAllViews",
+            "arguments": 1,
+            "code": "updateAllViews(e){e.type!==$e.ChangeEventType.HoverChange?this._bindings.forEach((t=>t.updateAllViews(e))):this._bindings.filter((e=>e instanceof at||e instanceof _t)).forEach((t=>t.updateAllViews(e)))}"
+          },
+          {
+            "name": "syncStudy",
+            "arguments": 1,
+            "code": "syncStudy(e){this._bindings.forEach((t=>t.syncStudy(e)))}"
+          },
+          {
+            "name": "dataWindowValuesProvider",
+            "arguments": 0,
+            "code": "dataWindowValuesProvider(){return this._activeBinding()?.dataWindowValuesProvider()??null}"
+          },
+          {
+            "name": "requestMoreDataIndex",
+            "arguments": 0,
+            "code": "requestMoreDataIndex(){return this._activeBinding()?.requestMoreDataIndex()??null}"
+          },
+          {
+            "name": "activeStudy",
+            "arguments": 0,
+            "code": "activeStudy(){return this._activeBinding()?.study()??null}"
+          },
+          {
+            "name": "_activeBinding",
+            "arguments": 0,
+            "code": "_activeBinding(){return this._bindings.find((e=>e.requiredStyle()===this._series.style()))??null}"
+          }
+        ]
+      },
+      "modelRecalculation": {
+        "recalcVisibleRangeStudies": {
+          "exists": false
+        },
+        "recalculatePane": {
+          "exists": false
+        },
+        "updateSource": {
+          "exists": false
+        },
+        "recalcStudyBasedLineTools": {
+          "exists": false
+        }
+      },
+      "eventListeners": {
+        "dataUpdated": {
+          "available": true,
+          "constructor": "a",
+          "listenerCount": 20,
+          "listeners": [
+            {
+              "index": 0,
+              "ownerConstructor": "Os",
+              "memberName": "_onDataUpdated",
+              "singleShot": false,
+              "skip": false,
+              "ownerMethodSource": {
+                "exists": true,
+                "argumentCount": 5,
+                "code": "_onDataUpdated(e,t,i,s,o){if(t&&o&&this._colorOnPrevBar()&&this._precomputedBarStyles.delete(o.value),s){const e=this.symbolInfo();this._volumePointWeights=null!==e&&(0,R.hasVolume)(e)?function(e){let t=0,i=0;for(const s of e){const e=s.value[x.SeriesPlotIndex.Volume];(0,a.isNumber)(e)&&e>0&&(t+=e,i+=1)}return i>0?new kt(t/i):null}(this.bars().fullRangeIterator()):null,this._updateTimeScaleTimePointWeights()}if(null!==this._volumePointWeights){const e=t?this.bars().fullRangeIterator():i?this.bars().rangeIterator(i.index,(0,r.ensureNotNull)(this.bars().lastIndex())):null;null!==e&&function(e,t){for(const i of t){const t=i.value[x.SeriesPlotIndex.Volume];(0,a.isNumber)(t)&&e.setVolume(i.index,t)}}(this._volumePointWeights,e)}t?this._requestMoreDataAvailable=!0:this._lastPriceAnimationActive&&this._seriesLoaded&&this._lineStyleLastPriceCirclePaneView.update((0,ve.sourceChangeEvent)(this.id())),this._lastBarCloseTime=e&&e.closeTime||null,this._boxSizeValue.setValue(this.data().boxSize),this._statusView.update();const n=this.bars().firstIndex(),l=this.bars().lastIndex();null!==n&&null!==l?this._dataRangeUpdated.fire({type:\"partial\",startIndex:i?.index??n,endIndex:t?o?.index??l:l}):this._dataRangeUpdated.fire({type:\"full\"}),this.clearAveragePriceCache(),this.clearHighLowPriceCache();const c=this.model(),h=(0,r.ensureNotNull)(c.paneForSource(this));c.recalculatePane(h,(0,ve.sourceChangeEvent)({sourceId:this.id(),realtime:!t,firstUpdatedTimePointIndex:i?.index??void 0})),\nc.updateSource(this)}"
+              }
+            },
+            {
+              "index": 1,
+              "ownerConstructor": "Object",
+              "memberName": "",
+              "singleShot": false,
+              "skip": false,
+              "ownerMethodSource": null
+            },
+            {
+              "index": 2,
+              "ownerConstructor": "Object",
+              "memberName": "",
+              "singleShot": false,
+              "skip": false,
+              "ownerMethodSource": null
+            },
+            {
+              "index": 3,
+              "ownerConstructor": "Object",
+              "memberName": "",
+              "singleShot": false,
+              "skip": false,
+              "ownerMethodSource": null
+            },
+            {
+              "index": 4,
+              "ownerConstructor": "p",
+              "memberName": "_onSeriesUpdated",
+              "singleShot": false,
+              "skip": false,
+              "ownerMethodSource": {
+                "exists": true,
+                "argumentCount": 3,
+                "code": "_onSeriesUpdated(e,t,i){this.isSourceHidden()||this._points.length<2||null!==i&&i.index>Math.max(this._points[0].index,this._points[1].index)||this.recalculateStateByData()}"
+              }
+            },
+            {
+              "index": 5,
+              "ownerConstructor": "p",
+              "memberName": "_onSeriesUpdated",
+              "singleShot": false,
+              "skip": false,
+              "ownerMethodSource": {
+                "exists": true,
+                "argumentCount": 3,
+                "code": "_onSeriesUpdated(e,t,i){this.isSourceHidden()||this._points.length<2||null!==i&&i.index>Math.max(this._points[0].index,this._points[1].index)||this.recalculateStateByData()}"
+              }
+            },
+            {
+              "index": 6,
+              "ownerConstructor": "p",
+              "memberName": "_onSeriesUpdated",
+              "singleShot": false,
+              "skip": false,
+              "ownerMethodSource": {
+                "exists": true,
+                "argumentCount": 3,
+                "code": "_onSeriesUpdated(e,t,i){this.isSourceHidden()||this._points.length<2||null!==i&&i.index>Math.max(this._points[0].index,this._points[1].index)||this.recalculateStateByData()}"
+              }
+            },
+            {
+              "index": 7,
+              "ownerConstructor": "p",
+              "memberName": "_onSeriesUpdated",
+              "singleShot": false,
+              "skip": false,
+              "ownerMethodSource": {
+                "exists": true,
+                "argumentCount": 3,
+                "code": "_onSeriesUpdated(e,t,i){this.isSourceHidden()||this._points.length<2||null!==i&&i.index>Math.max(this._points[0].index,this._points[1].index)||this.recalculateStateByData()}"
+              }
+            },
+            {
+              "index": 8,
+              "ownerConstructor": "p",
+              "memberName": "_onSeriesUpdated",
+              "singleShot": false,
+              "skip": false,
+              "ownerMethodSource": {
+                "exists": true,
+                "argumentCount": 3,
+                "code": "_onSeriesUpdated(e,t,i){this.isSourceHidden()||this._points.length<2||null!==i&&i.index>Math.max(this._points[0].index,this._points[1].index)||this.recalculateStateByData()}"
+              }
+            },
+            {
+              "index": 9,
+              "ownerConstructor": "p",
+              "memberName": "_onSeriesUpdated",
+              "singleShot": false,
+              "skip": false,
+              "ownerMethodSource": {
+                "exists": true,
+                "argumentCount": 3,
+                "code": "_onSeriesUpdated(e,t,i){this.isSourceHidden()||this._points.length<2||null!==i&&i.index>Math.max(this._points[0].index,this._points[1].index)||this.recalculateStateByData()}"
+              }
+            },
+            {
+              "index": 10,
+              "ownerConstructor": "p",
+              "memberName": "_onSeriesUpdated",
+              "singleShot": false,
+              "skip": false,
+              "ownerMethodSource": {
+                "exists": true,
+                "argumentCount": 3,
+                "code": "_onSeriesUpdated(e,t,i){this.isSourceHidden()||this._points.length<2||null!==i&&i.index>Math.max(this._points[0].index,this._points[1].index)||this.recalculateStateByData()}"
+              }
+            },
+            {
+              "index": 11,
+              "ownerConstructor": "p",
+              "memberName": "_onSeriesUpdated",
+              "singleShot": false,
+              "skip": false,
+              "ownerMethodSource": {
+                "exists": true,
+                "argumentCount": 3,
+                "code": "_onSeriesUpdated(e,t,i){this.isSourceHidden()||this._points.length<2||null!==i&&i.index>Math.max(this._points[0].index,this._points[1].index)||this.recalculateStateByData()}"
+              }
+            },
+            {
+              "index": 12,
+              "ownerConstructor": "p",
+              "memberName": "_onSeriesUpdated",
+              "singleShot": false,
+              "skip": false,
+              "ownerMethodSource": {
+                "exists": true,
+                "argumentCount": 3,
+                "code": "_onSeriesUpdated(e,t,i){this.isSourceHidden()||this._points.length<2||null!==i&&i.index>Math.max(this._points[0].index,this._points[1].index)||this.recalculateStateByData()}"
+              }
+            },
+            {
+              "index": 13,
+              "ownerConstructor": "p",
+              "memberName": "_onSeriesUpdated",
+              "singleShot": false,
+              "skip": false,
+              "ownerMethodSource": {
+                "exists": true,
+                "argumentCount": 3,
+                "code": "_onSeriesUpdated(e,t,i){this.isSourceHidden()||this._points.length<2||null!==i&&i.index>Math.max(this._points[0].index,this._points[1].index)||this.recalculateStateByData()}"
+              }
+            },
+            {
+              "index": 14,
+              "ownerConstructor": "p",
+              "memberName": "_onSeriesUpdated",
+              "singleShot": false,
+              "skip": false,
+              "ownerMethodSource": {
+                "exists": true,
+                "argumentCount": 3,
+                "code": "_onSeriesUpdated(e,t,i){this.isSourceHidden()||this._points.length<2||null!==i&&i.index>Math.max(this._points[0].index,this._points[1].index)||this.recalculateStateByData()}"
+              }
+            },
+            {
+              "index": 15,
+              "ownerConstructor": "p",
+              "memberName": "_onSeriesUpdated",
+              "singleShot": false,
+              "skip": false,
+              "ownerMethodSource": {
+                "exists": true,
+                "argumentCount": 3,
+                "code": "_onSeriesUpdated(e,t,i){this.isSourceHidden()||this._points.length<2||null!==i&&i.index>Math.max(this._points[0].index,this._points[1].index)||this.recalculateStateByData()}"
+              }
+            },
+            {
+              "index": 16,
+              "ownerConstructor": "p",
+              "memberName": "_onSeriesUpdated",
+              "singleShot": false,
+              "skip": false,
+              "ownerMethodSource": {
+                "exists": true,
+                "argumentCount": 3,
+                "code": "_onSeriesUpdated(e,t,i){this.isSourceHidden()||this._points.length<2||null!==i&&i.index>Math.max(this._points[0].index,this._points[1].index)||this.recalculateStateByData()}"
+              }
+            },
+            {
+              "index": 17,
+              "ownerConstructor": "p",
+              "memberName": "_onSeriesUpdated",
+              "singleShot": false,
+              "skip": false,
+              "ownerMethodSource": {
+                "exists": true,
+                "argumentCount": 3,
+                "code": "_onSeriesUpdated(e,t,i){this.isSourceHidden()||this._points.length<2||null!==i&&i.index>Math.max(this._points[0].index,this._points[1].index)||this.recalculateStateByData()}"
+              }
+            },
+            {
+              "index": 18,
+              "ownerConstructor": "p",
+              "memberName": "_onSeriesUpdated",
+              "singleShot": false,
+              "skip": false,
+              "ownerMethodSource": {
+                "exists": true,
+                "argumentCount": 3,
+                "code": "_onSeriesUpdated(e,t,i){this.isSourceHidden()||this._points.length<2||null!==i&&i.index>Math.max(this._points[0].index,this._points[1].index)||this.recalculateStateByData()}"
+              }
+            },
+            {
+              "index": 19,
+              "ownerConstructor": "p",
+              "memberName": "_onSeriesUpdated",
+              "singleShot": false,
+              "skip": false,
+              "ownerMethodSource": {
+                "exists": true,
+                "argumentCount": 3,
+                "code": "_onSeriesUpdated(e,t,i){this.isSourceHidden()||this._points.length<2||null!==i&&i.index>Math.max(this._points[0].index,this._points[1].index)||this.recalculateStateByData()}"
+              }
+            }
+          ]
+        },
+        "barReceived": {
+          "available": true,
+          "constructor": "a",
+          "listenerCount": 3,
+          "listeners": [
+            {
+              "index": 0,
+              "ownerConstructor": "Os",
+              "memberName": "_onBarReceived",
+              "singleShot": false,
+              "skip": false,
+              "ownerMethodSource": {
+                "exists": true,
+                "argumentCount": 1,
+                "code": "_onBarReceived(e){this.model().recalcVisibleRangeStudies(P.RecalcVisibleRangeStudiesReason.DataUpdate)}"
+              }
+            },
+            {
+              "index": 1,
+              "ownerConstructor": "Mu",
+              "memberName": "updateTimeScaleBaseIndex",
+              "singleShot": false,
+              "skip": false,
+              "ownerMethodSource": {
+                "exists": true,
+                "argumentCount": 1,
+                "code": "updateTimeScaleBaseIndex(e){const t=this.mainSeries().bars(),i=(t.firstIndex()??1/0)<(e?.index??-1/0),s=this._timeScale.baseIndex();if(t.isEmpty()||this._updateBaseIndex((0,l.ensureNotNull)(t.lastIndex()),!!(e&&e.index>0)),i&&!this._timeScale.isBeingScrolled()&&!this._timeScale.isBeingScaled()){const e=this._timeScale.baseIndex()-s,t=this._timeScale.rightOffset();t-this.studyAwareDefaultRightOffset()>e&&this._timeScale.setRightOffset(t-e)}}"
+              }
+            },
+            {
+              "index": 2,
+              "ownerConstructor": "Object",
+              "memberName": "",
+              "singleShot": false,
+              "skip": false,
+              "ownerMethodSource": null
+            }
+          ]
+        },
+        "seriesCompleted": {
+          "available": true,
+          "constructor": "a",
+          "listenerCount": 10,
+          "listeners": [
+            {
+              "index": 0,
+              "ownerConstructor": "Os",
+              "memberName": "_onSeriesCompleted",
+              "singleShot": false,
+              "skip": false,
+              "ownerMethodSource": {
+                "exists": true,
+                "argumentCount": 1,
+                "code": "_onSeriesCompleted(e){if(this._status.value().seriesStatus===N.Status.UnsupportedResolution)return;this._sendTelemetryCounter(\"series_loaded\",this._getTelemetryAdditionalData()),this._seriesErrorMessage=null,this._updateCompleteStatusMode(e.updateMode),this._lastCompleteFlags=e.flags??null;const t=(0,r.ensureNotNull)(this._model.paneForSource(this));t.recalculatePriceScale(this.priceScale(),(0,ve.sourceChangeEvent)(this.id()));const s=bi.InvalidationMask.full();if(null!==this._model.appliedTimeFrame().value()&&s.lockVisibleTimeRangeOnResize(),this._model.invalidate(s),!this.priceScale().isLockScale()||this.model().timeScale().isEmpty()||this._seriesLoaded||(this.model().timeScale().correctOffset(),this.model().timeScale().correctBarSpacing(),this.model().resetPriceScale(t,this.priceScale())),this._seriesLoaded=!0,this._seriesCompleted=!0,this.model().recalcVisibleRangeStudies(P.RecalcVisibleRangeStudiesReason.SeriesCompleted),this.model().recalcStudyBasedLineTools(),!Ds){Ds=!0;(0,i(742977).trackTiming)(\"Chart\",\"Time to series\",window.performance.now())}if(this.requestMoreData(),null!==this._savedLeftEdge&&this._status.value().seriesStatus!==N.Status.Loading){const e=1e3*this._savedLeftEdge,t=this._pendingScrollToLeftEdge;setTimeout((()=>{const i=()=>{t?.resolve()},s=this.syncModel();null!==s?this._model.syncTimeWithModel(s.syncSourceTarget(),e,{targetPointAlignment:\"left\",alignIfTargetPointIsVisible:!0,autoscaleAfterScroll:!1}).then(i,i):i()}),0),this._savedLeftEdge=null,this._pendingScrollToLeftEdge=null}this._enablePriceRangeReady()}"
+              }
+            },
+            {
+              "index": 1,
+              "ownerConstructor": "z",
+              "memberName": "update",
+              "singleShot": false,
+              "skip": false,
+              "ownerMethodSource": {
+                "exists": true,
+                "argumentCount": 0,
+                "code": "update(){this._invalidated=!0}"
+              }
+            },
+            {
+              "index": 2,
+              "ownerConstructor": "Object",
+              "memberName": "",
+              "singleShot": false,
+              "skip": false,
+              "ownerMethodSource": null
+            },
+            {
+              "index": 3,
+              "ownerConstructor": "Mu",
+              "memberName": "",
+              "singleShot": false,
+              "skip": false,
+              "ownerMethodSource": null
+            },
+            {
+              "index": 4,
+              "ownerConstructor": "W",
+              "memberName": "",
+              "singleShot": false,
+              "skip": false,
+              "ownerMethodSource": null
+            },
+            {
+              "index": 5,
+              "ownerConstructor": "Mu",
+              "memberName": "",
+              "singleShot": false,
+              "skip": false,
+              "ownerMethodSource": null
+            },
+            {
+              "index": 6,
+              "ownerConstructor": "Dg",
+              "memberName": "",
+              "singleShot": false,
+              "skip": false,
+              "ownerMethodSource": null
+            },
+            {
+              "index": 7,
+              "ownerConstructor": "Dg",
+              "memberName": "",
+              "singleShot": false,
+              "skip": false,
+              "ownerMethodSource": null
+            },
+            {
+              "index": 8,
+              "ownerConstructor": "C",
+              "memberName": "_onSeriesCompleted",
+              "singleShot": false,
+              "skip": false,
+              "ownerMethodSource": {
+                "exists": true,
+                "argumentCount": 0,
+                "code": "_onSeriesCompleted(){this._noteStateChange();const t=this._currentState(),e=this._series.symbolInfo();null!==t&&null!==e&&this._pendingOfferState===t&&(this._pendingOfferState=null,this._shouldOffer(e)&&this._offerInFlightFor!==e.pro_name&&this._offerPrimaryListing(e))}"
+              }
+            },
+            {
+              "index": 9,
+              "ownerConstructor": "te",
+              "memberName": "_recalcDistribution",
+              "singleShot": false,
+              "skip": false,
+              "ownerMethodSource": {
+                "exists": true,
+                "argumentCount": 0,
+                "code": "_recalcDistribution(){if(this._isDestroyed)return;const e=this._series.symbolInfo();if(null===e)return;if(!this._chartEvents)return;if(this._coordinates=null,this._distribution=null,this._model.mainPane()?.updateLollipopViews((0,q.sourceChangeEvent)(this.id())),!this._properties.childs().visible.value())return;if(!(0,Z.symbolHasEconomicEvents)(e))return;const t=this._model.timeScale().tickMarks(),i=this._rangeSpawn.value();if(null===i)return;const r=this._series.data().bars(),n=r.firstIndex(),l=r.lastIndex();if(null===n||null===l)return;const{name:a,base_currency:c,currency_code:h}=e,d=[c,h].filter((e=>!!e&&N.includes(e)));if(!d.length)return;const u=j.Interval.parse(this._series.interval());if(!u.isValid())return;let p=NaN;switch(u.kind()){case j.ResolutionKind.Weeks:p=168*u.multiplier();break;case j.ResolutionKind.Days:p=24*u.multiplier();break;case j.ResolutionKind.Minutes:p=u.multiplier()/60;break;case j.ResolutionKind.Seconds:p=u.multiplier()/3600;break;default:return}if(p>=672)return;this._symbolName!==a&&(this._chartEvents.reset({minImportance:1,currencyFilter:d}),this._symbolName=a);const _=this._chartEvents.items(),m={};this._distribution=m;let v=Math.max(n,i.firstIndex);this._properties.childs().futureOnly.value()&&(v=Math.max(v,l));const g=i.lastIndex;if(!isFinite(v)||v>g)return;const b=_.length;let C=0;const f=u.isDWM(),T=this._timezone,w=t.indexToTime(g);if(w){const e=ee(w,T,f);for(;C<_.length&&!(_[C].timestamp<=e);C++);}const S=ee((0,s.ensureNotNull)(t.indexToTime(v)),T,f),y=this._getSessionSpec(e);for(let e=g;e>=v;e--){const i=t.indexToTime(e);if(!i)continue;const s=ee(i,T,f);for(;C<b;C++){const t=_[C];let i,r=t.timestamp;if(f){let e=(0,o.utc_to_cal)(T,r);e=y.correctTradingDay(e),(0,o.set_hms)(e,0,0,0,0),r=e.getTime()}if(t.timestamp<s)break;for(m[e]||(m[e]=[]),i=m[e].length;i--;){const s=m[e][i];if(s.items[0].currency===t.currency){s.items.push(t),t.importance>s.maxImportance&&(s.maxImportance=t.importance);break}}i<0&&m[e].push({items:[t],maxImportance:t.importance})}this._chartEvents.minObtainedTimestamp>S&&this._chartEvents.requestMore({from:S})}}"
+              }
+            }
+          ]
+        }
+      },
+      "linkedStudies": [
+        {
+          "index": 0,
+          "constructor": "Te",
+          "ownKeys": [
+            "isSeries",
+            "_isDestroyed",
+            "_hasAlert",
+            "_alertStatus",
+            "_alertCreationAvailable",
+            "_zorder",
+            "_priceScale",
+            "_ownerSource",
+            "_userEditEnabled",
+            "_priceScaleChanged",
+            "_updateAlertCreationAvailableBound",
+            "_isSelectionEnabled",
+            "_instanceId",
+            "_ownerSourceChanged",
+            "_zOrderChanged",
+            "_id",
+            "isPriceDataSource",
+            "_formatterChanged",
+            "_priceStepChanged",
+            "_currencyChanged",
+            "_isCurrencyOrigin",
+            "_currencyMetaData",
+            "_unitChanged",
+            "_isUnitOrigin",
+            "_unitMetaData",
+            "_metricChanged",
+            "_priceRangeReadyChanged",
+            "_dataRangeUpdated",
+            "_priceStep",
+            "_signature",
+            "_priceRangeReady",
+            "_model",
+            "isStudy",
+            "_onStart",
+            "_restarting",
+            "_paneViews",
+            "_forceOverlaysPaneViews",
+            "_legendView",
+            "_floatingTooltipView",
+            "_priceAxisViews",
+            "_forceOverlayPriceAxisViews",
+            "_priceAxisViewsBase",
+            "_timeAxisViews",
+            "_resolvedSymbols",
+            "_resolvedSymbolsByInput",
+            "_priceLinesAxisViews",
+            "_labelPaneViews",
+            "_forceOverlayLabelPaneViews",
+            "_currencyInputProperty",
+            "_unitInputProperty",
+            "_currencyUnitSourceSymbolInfo",
+            "_ownFirstValue",
+            "_formatter",
+            "_defaultFormatter",
+            "_dataUpdated",
+            "_currencySourceSymbolInputProperty",
+            "_pineSourceCodeModel",
+            "_alertSourceModel",
+            "_onHibernationStateChange",
+            "_symbolsResolved",
+            "_statusChanged",
+            "_inputsAnchorsPaneView",
+            "_inputsLinesPaneView",
+            "_inputsTimeAxisPaneViews",
+            "_inputsPriceAxisPaneViews",
+            "_sources",
+            "_status",
+            "_compileActiveStatus",
+            "_compileErrorStatus",
+            "_wasCompletedBefore",
+            "_isStarted",
+            "_titleStrCache",
+            "_titleInPartsCache",
+            "_inputsInPartsCache",
+            "_children"
+          ],
+          "primitiveProperties": {
+            "isSeries": false,
+            "_isDestroyed": false,
+            "_hasAlert": "[a]",
+            "_alertStatus": "[a]",
+            "_alertCreationAvailable": "[a]",
+            "_zorder": 10000006,
+            "_priceScale": "[Pl]",
+            "_ownerSource": "[Os]",
+            "_userEditEnabled": true,
+            "_priceScaleChanged": "[a]",
+            "_updateAlertCreationAvailableBound": "[Function bound _updateAlertCreationAvailable]",
+            "_isSelectionEnabled": true,
+            "_instanceId": "sMV85d",
+            "_ownerSourceChanged": "[a]",
+            "_zOrderChanged": "[a]",
+            "_id": "[a]",
+            "isPriceDataSource": true,
+            "_formatterChanged": "[a]",
+            "_priceStepChanged": "[a]",
+            "_currencyChanged": "[a]",
+            "_isCurrencyOrigin": "[a]",
+            "_currencyMetaData": "[s]",
+            "_unitChanged": "[a]",
+            "_isUnitOrigin": "[a]",
+            "_unitMetaData": "[s]",
+            "_metricChanged": "[a]",
+            "_priceRangeReadyChanged": "[a]",
+            "_dataRangeUpdated": "[a]"
+          },
+          "metaInfo": {
+            "_listeners": "[Array]",
+            "_value": "[T]"
+          },
+          "propertiesObject": {
+            "available": true,
+            "constructor": "f",
+            "ownKeys": [
+              "_listeners",
+              "_muteChildChanges",
+              "_owner",
+              "_name",
+              "_childs",
+              "_dependents",
+              "_schema",
+              "_themedColors",
+              "_restoreFactoryDefaultsEvent",
+              "_replaceThemedColorsOnThemeChange",
+              "_forbidSavingDefaults",
+              "_defaultName",
+              "_useUserPreferences",
+              "_saveNonDefaultUserPreferencesOnly",
+              "_ignoreAllowSavingDefaults",
+              "_saveDefaultsConsumer",
+              "_factoryDefaultsSupplier",
+              "_allStateKeys",
+              "_excludedStateKeys",
+              "_nonThemedDefaultsKeys",
+              "_themedDefaultsKeys",
+              "_allDefaultsKeys",
+              "_excludedDefaultsKeys",
+              "_excludedTemplateKeys",
+              "_alwaysSaveDefaultKeys",
+              "_theme",
+              "inputs",
+              "styles",
+              "bands",
+              "graphics",
+              "ohlcPlots",
+              "palettes",
+              "filledAreasStyle",
+              "filledAreas",
+              "visible",
+              "showLegendValues",
+              "showLegendInputs",
+              "showLabelsOnPriceScale",
+              "precision",
+              "parentSources",
+              "intervalsVisibilities",
+              "version"
+            ],
+            "methods": [
+              {
+                "name": "_saveDefaultsConsumer",
+                "arguments": 2
+              },
+              {
+                "name": "_factoryDefaultsSupplier",
+                "arguments": 1
+              },
+              {
+                "name": "constructor",
+                "arguments": 1
+              },
+              {
+                "name": "_userSettingsState",
+                "arguments": 0
+              },
+              {
+                "name": "destroy",
+                "arguments": 0
+              },
+              {
+                "name": "applyTemplate",
+                "arguments": 2
+              },
+              {
+                "name": "preferences",
+                "arguments": 0
+              },
+              {
+                "name": "template",
+                "arguments": 0
+              },
+              {
+                "name": "mergePreferences",
+                "arguments": 1
+              },
+              {
+                "name": "addExcludedKey",
+                "arguments": 2
+              },
+              {
+                "name": "removeExcludedKey",
+                "arguments": 2
+              },
+              {
+                "name": "restoreFactoryDefaults",
+                "arguments": 0
+              },
+              {
+                "name": "onRestoreFactoryDefaults",
+                "arguments": 0
+              },
+              {
+                "name": "saveDefaults",
+                "arguments": 0
+              },
+              {
+                "name": "themeDefaults",
+                "arguments": 1
+              },
+              {
+                "name": "factoryDefaults",
+                "arguments": 0
+              },
+              {
+                "name": "themeState",
+                "arguments": 0
+              },
+              {
+                "name": "allThemePropertiesAreDefault",
+                "arguments": 1
+              },
+              {
+                "name": "clone",
+                "arguments": 1
+              },
+              {
+                "name": "setThemedColors",
+                "arguments": 1
+              },
+              {
+                "name": "applyDefaultThemedProperties",
+                "arguments": 1
+              },
+              {
+                "name": "state",
+                "arguments": 2
+              },
+              {
+                "name": "fullState",
+                "arguments": 0
+              },
+              {
+                "name": "_plainState",
+                "arguments": 1
+              },
+              {
+                "name": "_updateThemedColors",
+                "arguments": 1
+              },
+              {
+                "name": "_userSettings",
+                "arguments": 0
+              },
+              {
+                "name": "_options",
+                "arguments": 0
+              },
+              {
+                "name": "_childChanged",
+                "arguments": 2
+              },
+              {
+                "name": "_fireMergeAndFireChangedProps",
+                "arguments": 1
+              },
+              {
+                "name": "_factoryDefaultsForTheme",
+                "arguments": 1
+              }
+            ]
+          },
+          "onSeriesUpdated": {
+            "exists": false
+          },
+          "onDataUpdated": {
+            "exists": true,
+            "argumentCount": 4,
+            "code": "_onDataUpdated(e,t,s,i){if(this.hasBarColorer()&&e.length>0){const t=(0,c.ensureNotNull)(this.barColorer()).firstColoredBar(e[0].index);null!==t&&this._model.mainSeries().invalidateBarStylesCache(t)}null!==t&&this._postProcessGraphics()\n;const r=this._model.paneForSource(this);if(this._model.recalculatePane(r,(0,xe.sourceChangeEvent)({sourceId:this.id(),firstUpdatedTimePointIndex:i??void 0,nonSeriesOnly:0===e.length})),this._updateSources(),e.length){const t=e[e.length-1].index,s=e[0].index;this._dataRangeUpdated.fire({type:\"partial\",startIndex:s,endIndex:t})}else this.data().isEmpty()&&this._dataRangeUpdated.fire({type:\"full\"})}"
+          },
+          "transformData": {
+            "exists": true,
+            "argumentCount": 1,
+            "code": "_transformData(e){for(let t=e.length-1;t>=0;--t){const i=e[t],s=i.index!==r.INVALID_TIME_POINT_INDEX&&this.isValid(i.value);this._updatePlotStash(i,s)}}"
+          },
+          "restoreData": {
+            "exists": true,
+            "argumentCount": 1,
+            "code": "restoreData(e){(e.version??1)<2&&e.data.forEach((e=>{e.value[3]=null})),super.restoreData(e)}"
+          },
+          "updateAllViews": {
+            "exists": true,
+            "argumentCount": 1,
+            "code": "updateAllViews(e){const t=this._model.paneForSource(this),s=this._model.mainPane(),i=e.type===$t.ChangeEventType.ViewportChange&&e.pane&&e.pane!==s;e.type===$t.ChangeEventType.ViewportChange&&e.pane&&e.pane!==t||(this._paneViews.forEach((t=>t.update(e))),this._labelPaneViews.forEach((t=>t.update(e))),this._dataWindowView?.update(e),this._legendView?.update(e),this._statusView?.update(e),\nthis._floatingTooltipView?.update(e),this._priceAxisViews.forEach((t=>t.update(e))),this._priceLinesAxisViews.forEach((t=>t.update(e))),this._timeAxisViews.forEach((t=>t.update(e))),this._inputsLinesPaneView?.update(e),this._inputsAnchorsPaneView?.update(e),this._inputsTimeAxisPaneViews.forEach((t=>t.update(e))),this._inputsPriceAxisPaneViews.forEach((t=>t.update(e)))),i||(this._forceOverlaysPaneViews.forEach((t=>t.update(e))),this._forceOverlayLabelPaneViews.forEach((t=>t.update(e))),this._forceOverlayPriceAxisViews.forEach((t=>t.update(e)))),e.type===$t.ChangeEventType.DataSourceChange&&e.sourceId===this.id()&&e.clearData&&this._children.forEach((e=>e.updateAllViews({type:$t.ChangeEventType.DataSourceChange,sourceId:e.id(),clearData:!0})))}"
+          },
+          "relevantMethods": [
+            {
+              "name": "_updateAlertCreationAvailableBound",
+              "arguments": 0,
+              "code": "function () { [native code] }"
+            },
+            {
+              "name": "restoreData",
+              "arguments": 1,
+              "code": "restoreData(e){(e.version??1)<2&&e.data.forEach((e=>{e.value[3]=null})),super.restoreData(e)}"
+            },
+            {
+              "name": "updateAllViewsAndRepaint",
+              "arguments": 0,
+              "code": "updateAllViewsAndRepaint(){this.updateAllViews((0,l.sourceChangeEvent)(this.id())),this._model.updateSource(this)}"
+            },
+            {
+              "name": "isSavedInStudyTemplates",
+              "arguments": 0,
+              "code": "isSavedInStudyTemplates(){return!1}"
+            },
+            {
+              "name": "isRemovedByStudyTemplates",
+              "arguments": 0,
+              "code": "isRemovedByStudyTemplates(){return!1}"
+            },
+            {
+              "name": "isSpeciallyZOrderedSource",
+              "arguments": 0,
+              "code": "isSpeciallyZOrderedSource(){return!0}"
+            },
+            {
+              "name": "isCurrencySource",
+              "arguments": 0,
+              "code": "isCurrencySource(){return!1}"
+            },
+            {
+              "name": "isUnitSource",
+              "arguments": 0,
+              "code": "isUnitSource(){return!1}"
+            },
+            {
+              "name": "_transformData",
+              "arguments": 1,
+              "code": "_transformData(e){for(let t=e.length-1;t>=0;--t){const i=e[t],s=i.index!==r.INVALID_TIME_POINT_INDEX&&this.isValid(i.value);this._updatePlotStash(i,s)}}"
+            },
+            {
+              "name": "_seriesDataRangeToSave",
+              "arguments": 1,
+              "code": "_seriesDataRangeToSave(e){return this._model.timeScale().visibleBarsStrictRange()}"
+            },
+            {
+              "name": "_initPlotStash",
+              "arguments": 0,
+              "code": "_initPlotStash(){this._plotStash={}}"
+            },
+            {
+              "name": "_updatePlotStash",
+              "arguments": 2,
+              "code": "_updatePlotStash(e,t){if(this._restartRequired||!this._plotStash)return;const i=e.value.slice(),s=i.shift(),r=String(s);t?this._plotStash[r]?String(this._plotStash[r])!==String(i)&&(this._restartRequired=!0):this._plotStash[r]=i:this._plotStash[r]&&(this._restartRequired=!0)}"
+            },
+            {
+              "name": "lastValueData",
+              "arguments": 3,
+              "code": "lastValueData(e,t,s){const i={noData:!0},r=this.metaInfo().isPlotForceOverlay(e),n=r?this._model.mainSeries().priceScale():this.priceScale();if(this._model.timeScale().isEmpty()||null===n||n.isEmpty()||this.data().isEmpty())return i;const a=this._model.timeScale().visibleBarsStrictRange(),o=this.firstValue(!0,r);if(null===a||null===o)return i;if(!this._properties.childs().visible.value())return i;const l=this._properties.childs().styles,u=this._properties.childs().ohlcPlots;let c,d;if(l&&l.childs()[e]&&(c=l.childs()[e]),u&&u.childs()[e]&&(c=u.childs()[e]),!c||c.childs().display.value()===Re.StudyPlotDisplayTarget.None)return i;const p=this.metaInfo().plots;for(d=0;d<p.length;d++){const t=p[d];if(t.id===e||(0,Re.isOhlcClosePlot)(t)&&t.target===e)break}const _=d+1,f=this.offset(e),m=this.nearestIndex(a.lastBar()-f,b.PlotRowSearchMode.NearestLeft,_);if(void 0===m)return i;const y=this._lastNonEmptyPlotRow(_),g=null!==y&&a.contains(y.index),S=null!==y?y.value:null,v=t||g?S:this.data().valueAt(m);if(!v||!(0,h.isNumber)(v[_]))return i;const P=v[_],I=this._valuesProvider.getPlotColor(d,v),w=n.priceToCoordinate(P,o),C=this.plotFormatter(e).format(P),T={...n.getFormattedValues(P,o,void 0,C),noData:!1,color:I,coordinate:w};return s&&(T.price=P),T}"
+            },
+            {
+              "name": "updateBondComparisonStatus",
+              "arguments": 0,
+              "code": "async updateBondComparisonStatus(){if((0,Y.isCompareOrOverlayStudy)(this)){try{await this._allSymbolsAreResolved()}catch{return}this._hasRestrictedBondSymbol()&&this._showRestrictedBondComparison()}}"
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "constructor": "Le",
+          "ownKeys": [
+            "isSeries",
+            "_isDestroyed",
+            "_hasAlert",
+            "_alertStatus",
+            "_alertCreationAvailable",
+            "_zorder",
+            "_priceScale",
+            "_ownerSource",
+            "_userEditEnabled",
+            "_priceScaleChanged",
+            "_updateAlertCreationAvailableBound",
+            "_isSelectionEnabled",
+            "_instanceId",
+            "_ownerSourceChanged",
+            "_zOrderChanged",
+            "_id",
+            "isPriceDataSource",
+            "_formatterChanged",
+            "_priceStepChanged",
+            "_currencyChanged",
+            "_isCurrencyOrigin",
+            "_currencyMetaData",
+            "_unitChanged",
+            "_isUnitOrigin",
+            "_unitMetaData",
+            "_metricChanged",
+            "_priceRangeReadyChanged",
+            "_dataRangeUpdated",
+            "_priceStep",
+            "_signature",
+            "_priceRangeReady",
+            "_model",
+            "isStudy",
+            "_onStart",
+            "_restarting",
+            "_paneViews",
+            "_forceOverlaysPaneViews",
+            "_legendView",
+            "_floatingTooltipView",
+            "_priceAxisViews",
+            "_forceOverlayPriceAxisViews",
+            "_priceAxisViewsBase",
+            "_timeAxisViews",
+            "_resolvedSymbols",
+            "_resolvedSymbolsByInput",
+            "_priceLinesAxisViews",
+            "_labelPaneViews",
+            "_forceOverlayLabelPaneViews",
+            "_currencyInputProperty",
+            "_unitInputProperty",
+            "_currencyUnitSourceSymbolInfo",
+            "_ownFirstValue",
+            "_formatter",
+            "_defaultFormatter",
+            "_dataUpdated",
+            "_currencySourceSymbolInputProperty",
+            "_pineSourceCodeModel",
+            "_alertSourceModel",
+            "_onHibernationStateChange",
+            "_symbolsResolved",
+            "_statusChanged",
+            "_inputsAnchorsPaneView",
+            "_inputsLinesPaneView",
+            "_inputsTimeAxisPaneViews",
+            "_inputsPriceAxisPaneViews",
+            "_sources",
+            "_status",
+            "_compileActiveStatus",
+            "_compileErrorStatus",
+            "_wasCompletedBefore",
+            "_isStarted",
+            "_titleStrCache",
+            "_titleInPartsCache",
+            "_inputsInPartsCache",
+            "_children"
+          ],
+          "primitiveProperties": {
+            "isSeries": false,
+            "_isDestroyed": false,
+            "_hasAlert": "[a]",
+            "_alertStatus": "[a]",
+            "_alertCreationAvailable": "[a]",
+            "_zorder": 10000007,
+            "_priceScale": "[Pl]",
+            "_ownerSource": "[Os]",
+            "_userEditEnabled": true,
+            "_priceScaleChanged": "[a]",
+            "_updateAlertCreationAvailableBound": "[Function bound _updateAlertCreationAvailable]",
+            "_isSelectionEnabled": true,
+            "_instanceId": "8rmdMy",
+            "_ownerSourceChanged": "[a]",
+            "_zOrderChanged": "[a]",
+            "_id": "[a]",
+            "isPriceDataSource": true,
+            "_formatterChanged": "[a]",
+            "_priceStepChanged": "[a]",
+            "_currencyChanged": "[a]",
+            "_isCurrencyOrigin": "[a]",
+            "_currencyMetaData": "[s]",
+            "_unitChanged": "[a]",
+            "_isUnitOrigin": "[a]",
+            "_unitMetaData": "[s]",
+            "_metricChanged": "[a]",
+            "_priceRangeReadyChanged": "[a]",
+            "_dataRangeUpdated": "[a]"
+          },
+          "metaInfo": {
+            "_listeners": "[Array]",
+            "_value": "[T]"
+          },
+          "propertiesObject": {
+            "available": true,
+            "constructor": "f",
+            "ownKeys": [
+              "_listeners",
+              "_muteChildChanges",
+              "_owner",
+              "_name",
+              "_childs",
+              "_dependents",
+              "_schema",
+              "_themedColors",
+              "_restoreFactoryDefaultsEvent",
+              "_replaceThemedColorsOnThemeChange",
+              "_forbidSavingDefaults",
+              "_defaultName",
+              "_useUserPreferences",
+              "_saveNonDefaultUserPreferencesOnly",
+              "_ignoreAllowSavingDefaults",
+              "_saveDefaultsConsumer",
+              "_factoryDefaultsSupplier",
+              "_allStateKeys",
+              "_excludedStateKeys",
+              "_nonThemedDefaultsKeys",
+              "_themedDefaultsKeys",
+              "_allDefaultsKeys",
+              "_excludedDefaultsKeys",
+              "_excludedTemplateKeys",
+              "_alwaysSaveDefaultKeys",
+              "_theme",
+              "inputs",
+              "styles",
+              "bands",
+              "graphics",
+              "ohlcPlots",
+              "palettes",
+              "filledAreasStyle",
+              "filledAreas",
+              "visible",
+              "showLegendValues",
+              "showLegendInputs",
+              "showLabelsOnPriceScale",
+              "precision",
+              "parentSources",
+              "intervalsVisibilities",
+              "version"
+            ],
+            "methods": [
+              {
+                "name": "_saveDefaultsConsumer",
+                "arguments": 2
+              },
+              {
+                "name": "_factoryDefaultsSupplier",
+                "arguments": 1
+              },
+              {
+                "name": "constructor",
+                "arguments": 1
+              },
+              {
+                "name": "_userSettingsState",
+                "arguments": 0
+              },
+              {
+                "name": "destroy",
+                "arguments": 0
+              },
+              {
+                "name": "applyTemplate",
+                "arguments": 2
+              },
+              {
+                "name": "preferences",
+                "arguments": 0
+              },
+              {
+                "name": "template",
+                "arguments": 0
+              },
+              {
+                "name": "mergePreferences",
+                "arguments": 1
+              },
+              {
+                "name": "addExcludedKey",
+                "arguments": 2
+              },
+              {
+                "name": "removeExcludedKey",
+                "arguments": 2
+              },
+              {
+                "name": "restoreFactoryDefaults",
+                "arguments": 0
+              },
+              {
+                "name": "onRestoreFactoryDefaults",
+                "arguments": 0
+              },
+              {
+                "name": "saveDefaults",
+                "arguments": 0
+              },
+              {
+                "name": "themeDefaults",
+                "arguments": 1
+              },
+              {
+                "name": "factoryDefaults",
+                "arguments": 0
+              },
+              {
+                "name": "themeState",
+                "arguments": 0
+              },
+              {
+                "name": "allThemePropertiesAreDefault",
+                "arguments": 1
+              },
+              {
+                "name": "clone",
+                "arguments": 1
+              },
+              {
+                "name": "setThemedColors",
+                "arguments": 1
+              },
+              {
+                "name": "applyDefaultThemedProperties",
+                "arguments": 1
+              },
+              {
+                "name": "state",
+                "arguments": 2
+              },
+              {
+                "name": "fullState",
+                "arguments": 0
+              },
+              {
+                "name": "_plainState",
+                "arguments": 1
+              },
+              {
+                "name": "_updateThemedColors",
+                "arguments": 1
+              },
+              {
+                "name": "_userSettings",
+                "arguments": 0
+              },
+              {
+                "name": "_options",
+                "arguments": 0
+              },
+              {
+                "name": "_childChanged",
+                "arguments": 2
+              },
+              {
+                "name": "_fireMergeAndFireChangedProps",
+                "arguments": 1
+              },
+              {
+                "name": "_factoryDefaultsForTheme",
+                "arguments": 1
+              }
+            ]
+          },
+          "onSeriesUpdated": {
+            "exists": false
+          },
+          "onDataUpdated": {
+            "exists": true,
+            "argumentCount": 4,
+            "code": "_onDataUpdated(e,t,s,i){if(this.hasBarColorer()&&e.length>0){const t=(0,c.ensureNotNull)(this.barColorer()).firstColoredBar(e[0].index);null!==t&&this._model.mainSeries().invalidateBarStylesCache(t)}null!==t&&this._postProcessGraphics()\n;const r=this._model.paneForSource(this);if(this._model.recalculatePane(r,(0,xe.sourceChangeEvent)({sourceId:this.id(),firstUpdatedTimePointIndex:i??void 0,nonSeriesOnly:0===e.length})),this._updateSources(),e.length){const t=e[e.length-1].index,s=e[0].index;this._dataRangeUpdated.fire({type:\"partial\",startIndex:s,endIndex:t})}else this.data().isEmpty()&&this._dataRangeUpdated.fire({type:\"full\"})}"
+          },
+          "transformData": {
+            "exists": true,
+            "argumentCount": 1,
+            "code": "_transformData(e){for(let t=e.length-1;t>=0;--t){const i=e[t],s=i.index!==r.INVALID_TIME_POINT_INDEX&&this.isValid(i.value);this._updatePlotStash(i,s)}}"
+          },
+          "restoreData": {
+            "exists": true,
+            "argumentCount": 1,
+            "code": "restoreData(e){e.data=e.data.filter((e=>e.index!==r.INVALID_TIME_POINT_INDEX&&this.isValid(e.value))),this._transformData(e.data),e.end=e.data.length,super.restoreData(e)}"
+          },
+          "updateAllViews": {
+            "exists": true,
+            "argumentCount": 1,
+            "code": "updateAllViews(e){const t=this._model.paneForSource(this),s=this._model.mainPane(),i=e.type===$t.ChangeEventType.ViewportChange&&e.pane&&e.pane!==s;e.type===$t.ChangeEventType.ViewportChange&&e.pane&&e.pane!==t||(this._paneViews.forEach((t=>t.update(e))),this._labelPaneViews.forEach((t=>t.update(e))),this._dataWindowView?.update(e),this._legendView?.update(e),this._statusView?.update(e),\nthis._floatingTooltipView?.update(e),this._priceAxisViews.forEach((t=>t.update(e))),this._priceLinesAxisViews.forEach((t=>t.update(e))),this._timeAxisViews.forEach((t=>t.update(e))),this._inputsLinesPaneView?.update(e),this._inputsAnchorsPaneView?.update(e),this._inputsTimeAxisPaneViews.forEach((t=>t.update(e))),this._inputsPriceAxisPaneViews.forEach((t=>t.update(e)))),i||(this._forceOverlaysPaneViews.forEach((t=>t.update(e))),this._forceOverlayLabelPaneViews.forEach((t=>t.update(e))),this._forceOverlayPriceAxisViews.forEach((t=>t.update(e)))),e.type===$t.ChangeEventType.DataSourceChange&&e.sourceId===this.id()&&e.clearData&&this._children.forEach((e=>e.updateAllViews({type:$t.ChangeEventType.DataSourceChange,sourceId:e.id(),clearData:!0})))}"
+          },
+          "relevantMethods": [
+            {
+              "name": "_updateAlertCreationAvailableBound",
+              "arguments": 0,
+              "code": "function () { [native code] }"
+            },
+            {
+              "name": "updateAllViewsAndRepaint",
+              "arguments": 0,
+              "code": "updateAllViewsAndRepaint(){this.updateAllViews((0,l.sourceChangeEvent)(this.id())),this._model.updateSource(this)}"
+            },
+            {
+              "name": "restoreData",
+              "arguments": 1,
+              "code": "restoreData(e){e.data=e.data.filter((e=>e.index!==r.INVALID_TIME_POINT_INDEX&&this.isValid(e.value))),this._transformData(e.data),e.end=e.data.length,super.restoreData(e)}"
+            },
+            {
+              "name": "isSavedInStudyTemplates",
+              "arguments": 0,
+              "code": "isSavedInStudyTemplates(){return!1}"
+            },
+            {
+              "name": "isRemovedByStudyTemplates",
+              "arguments": 0,
+              "code": "isRemovedByStudyTemplates(){return!1}"
+            },
+            {
+              "name": "isSpeciallyZOrderedSource",
+              "arguments": 0,
+              "code": "isSpeciallyZOrderedSource(){return!0}"
+            },
+            {
+              "name": "isCurrencySource",
+              "arguments": 0,
+              "code": "isCurrencySource(){return!1}"
+            },
+            {
+              "name": "isUnitSource",
+              "arguments": 0,
+              "code": "isUnitSource(){return!1}"
+            },
+            {
+              "name": "_transformData",
+              "arguments": 1,
+              "code": "_transformData(e){for(let t=e.length-1;t>=0;--t){const i=e[t],s=i.index!==r.INVALID_TIME_POINT_INDEX&&this.isValid(i.value);this._updatePlotStash(i,s)}}"
+            },
+            {
+              "name": "_seriesDataRangeToSave",
+              "arguments": 1,
+              "code": "_seriesDataRangeToSave(e){return this._model.timeScale().visibleBarsStrictRange()}"
+            },
+            {
+              "name": "_initPlotStash",
+              "arguments": 0,
+              "code": "_initPlotStash(){this._plotStash={}}"
+            },
+            {
+              "name": "_updatePlotStash",
+              "arguments": 2,
+              "code": "_updatePlotStash(e,t){if(this._restartRequired||!this._plotStash)return;const i=e.value.slice(),s=i.shift(),r=String(s);t?this._plotStash[r]?String(this._plotStash[r])!==String(i)&&(this._restartRequired=!0):this._plotStash[r]=i:this._plotStash[r]&&(this._restartRequired=!0)}"
+            },
+            {
+              "name": "lastValueData",
+              "arguments": 3,
+              "code": "lastValueData(e,t,s){const i={noData:!0},r=this.metaInfo().isPlotForceOverlay(e),n=r?this._model.mainSeries().priceScale():this.priceScale();if(this._model.timeScale().isEmpty()||null===n||n.isEmpty()||this.data().isEmpty())return i;const a=this._model.timeScale().visibleBarsStrictRange(),o=this.firstValue(!0,r);if(null===a||null===o)return i;if(!this._properties.childs().visible.value())return i;const l=this._properties.childs().styles,u=this._properties.childs().ohlcPlots;let c,d;if(l&&l.childs()[e]&&(c=l.childs()[e]),u&&u.childs()[e]&&(c=u.childs()[e]),!c||c.childs().display.value()===Re.StudyPlotDisplayTarget.None)return i;const p=this.metaInfo().plots;for(d=0;d<p.length;d++){const t=p[d];if(t.id===e||(0,Re.isOhlcClosePlot)(t)&&t.target===e)break}const _=d+1,f=this.offset(e),m=this.nearestIndex(a.lastBar()-f,b.PlotRowSearchMode.NearestLeft,_);if(void 0===m)return i;const y=this._lastNonEmptyPlotRow(_),g=null!==y&&a.contains(y.index),S=null!==y?y.value:null,v=t||g?S:this.data().valueAt(m);if(!v||!(0,h.isNumber)(v[_]))return i;const P=v[_],I=this._valuesProvider.getPlotColor(d,v),w=n.priceToCoordinate(P,o),C=this.plotFormatter(e).format(P),T={...n.getFormattedValues(P,o,void 0,C),noData:!1,color:I,coordinate:w};return s&&(T.price=P),T}"
+            },
+            {
+              "name": "updateBondComparisonStatus",
+              "arguments": 0,
+              "code": "async updateBondComparisonStatus(){if((0,Y.isCompareOrOverlayStudy)(this)){try{await this._allSymbolsAreResolved()}catch{return}this._hasRestrictedBondSymbol()&&this._showRestrictedBondComparison()}}"
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "constructor": "Ve",
+          "ownKeys": [
+            "isSeries",
+            "_isDestroyed",
+            "_hasAlert",
+            "_alertStatus",
+            "_alertCreationAvailable",
+            "_zorder",
+            "_priceScale",
+            "_ownerSource",
+            "_userEditEnabled",
+            "_priceScaleChanged",
+            "_updateAlertCreationAvailableBound",
+            "_isSelectionEnabled",
+            "_instanceId",
+            "_ownerSourceChanged",
+            "_zOrderChanged",
+            "_id",
+            "isPriceDataSource",
+            "_formatterChanged",
+            "_priceStepChanged",
+            "_currencyChanged",
+            "_isCurrencyOrigin",
+            "_currencyMetaData",
+            "_unitChanged",
+            "_isUnitOrigin",
+            "_unitMetaData",
+            "_metricChanged",
+            "_priceRangeReadyChanged",
+            "_dataRangeUpdated",
+            "_priceStep",
+            "_signature",
+            "_priceRangeReady",
+            "_model",
+            "isStudy",
+            "_onStart",
+            "_restarting",
+            "_paneViews",
+            "_forceOverlaysPaneViews",
+            "_legendView",
+            "_floatingTooltipView",
+            "_priceAxisViews",
+            "_forceOverlayPriceAxisViews",
+            "_priceAxisViewsBase",
+            "_timeAxisViews",
+            "_resolvedSymbols",
+            "_resolvedSymbolsByInput",
+            "_priceLinesAxisViews",
+            "_labelPaneViews",
+            "_forceOverlayLabelPaneViews",
+            "_currencyInputProperty",
+            "_unitInputProperty",
+            "_currencyUnitSourceSymbolInfo",
+            "_ownFirstValue",
+            "_formatter",
+            "_defaultFormatter",
+            "_dataUpdated",
+            "_currencySourceSymbolInputProperty",
+            "_pineSourceCodeModel",
+            "_alertSourceModel",
+            "_onHibernationStateChange",
+            "_symbolsResolved",
+            "_statusChanged",
+            "_inputsAnchorsPaneView",
+            "_inputsLinesPaneView",
+            "_inputsTimeAxisPaneViews",
+            "_inputsPriceAxisPaneViews",
+            "_sources",
+            "_status",
+            "_compileActiveStatus",
+            "_compileErrorStatus",
+            "_wasCompletedBefore",
+            "_isStarted",
+            "_titleStrCache",
+            "_titleInPartsCache",
+            "_inputsInPartsCache",
+            "_children"
+          ],
+          "primitiveProperties": {
+            "isSeries": false,
+            "_isDestroyed": false,
+            "_hasAlert": "[a]",
+            "_alertStatus": "[a]",
+            "_alertCreationAvailable": "[a]",
+            "_zorder": 10000008,
+            "_priceScale": "[Pl]",
+            "_ownerSource": "[Os]",
+            "_userEditEnabled": true,
+            "_priceScaleChanged": "[a]",
+            "_updateAlertCreationAvailableBound": "[Function bound _updateAlertCreationAvailable]",
+            "_isSelectionEnabled": true,
+            "_instanceId": "xO3oyc",
+            "_ownerSourceChanged": "[a]",
+            "_zOrderChanged": "[a]",
+            "_id": "[a]",
+            "isPriceDataSource": true,
+            "_formatterChanged": "[a]",
+            "_priceStepChanged": "[a]",
+            "_currencyChanged": "[a]",
+            "_isCurrencyOrigin": "[a]",
+            "_currencyMetaData": "[s]",
+            "_unitChanged": "[a]",
+            "_isUnitOrigin": "[a]",
+            "_unitMetaData": "[s]",
+            "_metricChanged": "[a]",
+            "_priceRangeReadyChanged": "[a]",
+            "_dataRangeUpdated": "[a]"
+          },
+          "metaInfo": {
+            "_listeners": "[Array]",
+            "_value": "[T]"
+          },
+          "propertiesObject": {
+            "available": true,
+            "constructor": "f",
+            "ownKeys": [
+              "_listeners",
+              "_muteChildChanges",
+              "_owner",
+              "_name",
+              "_childs",
+              "_dependents",
+              "_schema",
+              "_themedColors",
+              "_restoreFactoryDefaultsEvent",
+              "_replaceThemedColorsOnThemeChange",
+              "_forbidSavingDefaults",
+              "_defaultName",
+              "_useUserPreferences",
+              "_saveNonDefaultUserPreferencesOnly",
+              "_ignoreAllowSavingDefaults",
+              "_saveDefaultsConsumer",
+              "_factoryDefaultsSupplier",
+              "_allStateKeys",
+              "_excludedStateKeys",
+              "_nonThemedDefaultsKeys",
+              "_themedDefaultsKeys",
+              "_allDefaultsKeys",
+              "_excludedDefaultsKeys",
+              "_excludedTemplateKeys",
+              "_alwaysSaveDefaultKeys",
+              "_theme",
+              "inputs",
+              "styles",
+              "bands",
+              "graphics",
+              "ohlcPlots",
+              "palettes",
+              "filledAreasStyle",
+              "filledAreas",
+              "visible",
+              "showLegendValues",
+              "showLegendInputs",
+              "showLabelsOnPriceScale",
+              "precision",
+              "parentSources",
+              "intervalsVisibilities",
+              "version"
+            ],
+            "methods": [
+              {
+                "name": "_saveDefaultsConsumer",
+                "arguments": 2
+              },
+              {
+                "name": "_factoryDefaultsSupplier",
+                "arguments": 1
+              },
+              {
+                "name": "constructor",
+                "arguments": 1
+              },
+              {
+                "name": "_userSettingsState",
+                "arguments": 0
+              },
+              {
+                "name": "destroy",
+                "arguments": 0
+              },
+              {
+                "name": "applyTemplate",
+                "arguments": 2
+              },
+              {
+                "name": "preferences",
+                "arguments": 0
+              },
+              {
+                "name": "template",
+                "arguments": 0
+              },
+              {
+                "name": "mergePreferences",
+                "arguments": 1
+              },
+              {
+                "name": "addExcludedKey",
+                "arguments": 2
+              },
+              {
+                "name": "removeExcludedKey",
+                "arguments": 2
+              },
+              {
+                "name": "restoreFactoryDefaults",
+                "arguments": 0
+              },
+              {
+                "name": "onRestoreFactoryDefaults",
+                "arguments": 0
+              },
+              {
+                "name": "saveDefaults",
+                "arguments": 0
+              },
+              {
+                "name": "themeDefaults",
+                "arguments": 1
+              },
+              {
+                "name": "factoryDefaults",
+                "arguments": 0
+              },
+              {
+                "name": "themeState",
+                "arguments": 0
+              },
+              {
+                "name": "allThemePropertiesAreDefault",
+                "arguments": 1
+              },
+              {
+                "name": "clone",
+                "arguments": 1
+              },
+              {
+                "name": "setThemedColors",
+                "arguments": 1
+              },
+              {
+                "name": "applyDefaultThemedProperties",
+                "arguments": 1
+              },
+              {
+                "name": "state",
+                "arguments": 2
+              },
+              {
+                "name": "fullState",
+                "arguments": 0
+              },
+              {
+                "name": "_plainState",
+                "arguments": 1
+              },
+              {
+                "name": "_updateThemedColors",
+                "arguments": 1
+              },
+              {
+                "name": "_userSettings",
+                "arguments": 0
+              },
+              {
+                "name": "_options",
+                "arguments": 0
+              },
+              {
+                "name": "_childChanged",
+                "arguments": 2
+              },
+              {
+                "name": "_fireMergeAndFireChangedProps",
+                "arguments": 1
+              },
+              {
+                "name": "_factoryDefaultsForTheme",
+                "arguments": 1
+              }
+            ]
+          },
+          "onSeriesUpdated": {
+            "exists": false
+          },
+          "onDataUpdated": {
+            "exists": true,
+            "argumentCount": 4,
+            "code": "_onDataUpdated(e,t,s,i){if(this.hasBarColorer()&&e.length>0){const t=(0,c.ensureNotNull)(this.barColorer()).firstColoredBar(e[0].index);null!==t&&this._model.mainSeries().invalidateBarStylesCache(t)}null!==t&&this._postProcessGraphics()\n;const r=this._model.paneForSource(this);if(this._model.recalculatePane(r,(0,xe.sourceChangeEvent)({sourceId:this.id(),firstUpdatedTimePointIndex:i??void 0,nonSeriesOnly:0===e.length})),this._updateSources(),e.length){const t=e[e.length-1].index,s=e[0].index;this._dataRangeUpdated.fire({type:\"partial\",startIndex:s,endIndex:t})}else this.data().isEmpty()&&this._dataRangeUpdated.fire({type:\"full\"})}"
+          },
+          "transformData": {
+            "exists": true,
+            "argumentCount": 1,
+            "code": "_transformData(e){for(let t=e.length-1;t>=0;--t){const i=e[t],s=i.index!==r.INVALID_TIME_POINT_INDEX&&this.isValid(i.value);this._updatePlotStash(i,s)}}"
+          },
+          "restoreData": {
+            "exists": true,
+            "argumentCount": 1,
+            "code": "restoreData(e){super.restoreData(e);let t=null;if(e.estimate||e.pointSets&&null==e.pointSetsVersion);else if(e.pointSets&&\"1\"===e.pointSetsVersion){const i=this._getSymbol();if(null!==i){const s=i.split(\":\")[1].toUpperCase();e.pointSets[i]?t=e.pointSets[i].estimate:e.pointSets[s]&&(t=e.pointSets[s].estimate)}}else null!=e.estimatePlotRow&&\"2\"===e.pointSetsVersion&&(t=e.estimatePlotRow);this._estimatePlotRow=t}"
+          },
+          "updateAllViews": {
+            "exists": true,
+            "argumentCount": 1,
+            "code": "updateAllViews(e){super.updateAllViews(e),this._liveEventsEsdTopPaneView?.update(e)}"
+          },
+          "relevantMethods": [
+            {
+              "name": "_updateAlertCreationAvailableBound",
+              "arguments": 0,
+              "code": "function () { [native code] }"
+            },
+            {
+              "name": "restoreData",
+              "arguments": 1,
+              "code": "restoreData(e){super.restoreData(e);let t=null;if(e.estimate||e.pointSets&&null==e.pointSetsVersion);else if(e.pointSets&&\"1\"===e.pointSetsVersion){const i=this._getSymbol();if(null!==i){const s=i.split(\":\")[1].toUpperCase();e.pointSets[i]?t=e.pointSets[i].estimate:e.pointSets[s]&&(t=e.pointSets[s].estimate)}}else null!=e.estimatePlotRow&&\"2\"===e.pointSetsVersion&&(t=e.estimatePlotRow);this._estimatePlotRow=t}"
+            },
+            {
+              "name": "updateAllViews",
+              "arguments": 1,
+              "code": "updateAllViews(e){super.updateAllViews(e),this._liveEventsEsdTopPaneView?.update(e)}"
+            },
+            {
+              "name": "updateAllViewsAndRepaint",
+              "arguments": 0,
+              "code": "updateAllViewsAndRepaint(){this.updateAllViews((0,l.sourceChangeEvent)(this.id())),this._model.updateSource(this)}"
+            },
+            {
+              "name": "isSavedInStudyTemplates",
+              "arguments": 0,
+              "code": "isSavedInStudyTemplates(){return!1}"
+            },
+            {
+              "name": "isRemovedByStudyTemplates",
+              "arguments": 0,
+              "code": "isRemovedByStudyTemplates(){return!1}"
+            },
+            {
+              "name": "isSpeciallyZOrderedSource",
+              "arguments": 0,
+              "code": "isSpeciallyZOrderedSource(){return!0}"
+            },
+            {
+              "name": "isCurrencySource",
+              "arguments": 0,
+              "code": "isCurrencySource(){return!1}"
+            },
+            {
+              "name": "isUnitSource",
+              "arguments": 0,
+              "code": "isUnitSource(){return!1}"
+            },
+            {
+              "name": "_transformData",
+              "arguments": 1,
+              "code": "_transformData(e){for(let t=e.length-1;t>=0;--t){const i=e[t],s=i.index!==r.INVALID_TIME_POINT_INDEX&&this.isValid(i.value);this._updatePlotStash(i,s)}}"
+            },
+            {
+              "name": "_seriesDataRangeToSave",
+              "arguments": 1,
+              "code": "_seriesDataRangeToSave(e){return this._model.timeScale().visibleBarsStrictRange()}"
+            },
+            {
+              "name": "_initPlotStash",
+              "arguments": 0,
+              "code": "_initPlotStash(){this._plotStash={}}"
+            },
+            {
+              "name": "_updatePlotStash",
+              "arguments": 2,
+              "code": "_updatePlotStash(e,t){if(this._restartRequired||!this._plotStash)return;const i=e.value.slice(),s=i.shift(),r=String(s);t?this._plotStash[r]?String(this._plotStash[r])!==String(i)&&(this._restartRequired=!0):this._plotStash[r]=i:this._plotStash[r]&&(this._restartRequired=!0)}"
+            },
+            {
+              "name": "lastValueData",
+              "arguments": 3,
+              "code": "lastValueData(e,t,s){const i={noData:!0},r=this.metaInfo().isPlotForceOverlay(e),n=r?this._model.mainSeries().priceScale():this.priceScale();if(this._model.timeScale().isEmpty()||null===n||n.isEmpty()||this.data().isEmpty())return i;const a=this._model.timeScale().visibleBarsStrictRange(),o=this.firstValue(!0,r);if(null===a||null===o)return i;if(!this._properties.childs().visible.value())return i;const l=this._properties.childs().styles,u=this._properties.childs().ohlcPlots;let c,d;if(l&&l.childs()[e]&&(c=l.childs()[e]),u&&u.childs()[e]&&(c=u.childs()[e]),!c||c.childs().display.value()===Re.StudyPlotDisplayTarget.None)return i;const p=this.metaInfo().plots;for(d=0;d<p.length;d++){const t=p[d];if(t.id===e||(0,Re.isOhlcClosePlot)(t)&&t.target===e)break}const _=d+1,f=this.offset(e),m=this.nearestIndex(a.lastBar()-f,b.PlotRowSearchMode.NearestLeft,_);if(void 0===m)return i;const y=this._lastNonEmptyPlotRow(_),g=null!==y&&a.contains(y.index),S=null!==y?y.value:null,v=t||g?S:this.data().valueAt(m);if(!v||!(0,h.isNumber)(v[_]))return i;const P=v[_],I=this._valuesProvider.getPlotColor(d,v),w=n.priceToCoordinate(P,o),C=this.plotFormatter(e).format(P),T={...n.getFormattedValues(P,o,void 0,C),noData:!1,color:I,coordinate:w};return s&&(T.price=P),T}"
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "constructor": "B",
+          "ownKeys": [
+            "isSeries",
+            "_isDestroyed",
+            "_hasAlert",
+            "_alertStatus",
+            "_alertCreationAvailable",
+            "_zorder",
+            "_priceScale",
+            "_ownerSource",
+            "_userEditEnabled",
+            "_priceScaleChanged",
+            "_updateAlertCreationAvailableBound",
+            "_isSelectionEnabled",
+            "_instanceId",
+            "_ownerSourceChanged",
+            "_zOrderChanged",
+            "_id",
+            "isPriceDataSource",
+            "_formatterChanged",
+            "_priceStepChanged",
+            "_currencyChanged",
+            "_isCurrencyOrigin",
+            "_currencyMetaData",
+            "_unitChanged",
+            "_isUnitOrigin",
+            "_unitMetaData",
+            "_metricChanged",
+            "_priceRangeReadyChanged",
+            "_dataRangeUpdated",
+            "_priceStep",
+            "_signature",
+            "_priceRangeReady",
+            "_model",
+            "isStudy",
+            "_onStart",
+            "_restarting",
+            "_paneViews",
+            "_forceOverlaysPaneViews",
+            "_legendView",
+            "_floatingTooltipView",
+            "_priceAxisViews",
+            "_forceOverlayPriceAxisViews",
+            "_priceAxisViewsBase",
+            "_timeAxisViews",
+            "_resolvedSymbols",
+            "_resolvedSymbolsByInput",
+            "_priceLinesAxisViews",
+            "_labelPaneViews",
+            "_forceOverlayLabelPaneViews",
+            "_currencyInputProperty",
+            "_unitInputProperty",
+            "_currencyUnitSourceSymbolInfo",
+            "_ownFirstValue",
+            "_formatter",
+            "_defaultFormatter",
+            "_dataUpdated",
+            "_currencySourceSymbolInputProperty",
+            "_pineSourceCodeModel",
+            "_alertSourceModel",
+            "_onHibernationStateChange",
+            "_symbolsResolved",
+            "_statusChanged",
+            "_inputsAnchorsPaneView",
+            "_inputsLinesPaneView",
+            "_inputsTimeAxisPaneViews",
+            "_inputsPriceAxisPaneViews",
+            "_sources",
+            "_status",
+            "_compileActiveStatus",
+            "_compileErrorStatus",
+            "_wasCompletedBefore",
+            "_isStarted",
+            "_titleStrCache",
+            "_titleInPartsCache",
+            "_inputsInPartsCache",
+            "_children"
+          ],
+          "primitiveProperties": {
+            "isSeries": false,
+            "_isDestroyed": false,
+            "_hasAlert": "[a]",
+            "_alertStatus": "[a]",
+            "_alertCreationAvailable": "[a]",
+            "_zorder": 10000009,
+            "_priceScale": "[Pl]",
+            "_ownerSource": "[Os]",
+            "_userEditEnabled": true,
+            "_priceScaleChanged": "[a]",
+            "_updateAlertCreationAvailableBound": "[Function bound _updateAlertCreationAvailable]",
+            "_isSelectionEnabled": true,
+            "_instanceId": "pvfAtX",
+            "_ownerSourceChanged": "[a]",
+            "_zOrderChanged": "[a]",
+            "_id": "[a]",
+            "isPriceDataSource": true,
+            "_formatterChanged": "[a]",
+            "_priceStepChanged": "[a]",
+            "_currencyChanged": "[a]",
+            "_isCurrencyOrigin": "[a]",
+            "_currencyMetaData": "[s]",
+            "_unitChanged": "[a]",
+            "_isUnitOrigin": "[a]",
+            "_unitMetaData": "[s]",
+            "_metricChanged": "[a]",
+            "_priceRangeReadyChanged": "[a]",
+            "_dataRangeUpdated": "[a]"
+          },
+          "metaInfo": {
+            "_listeners": "[Array]",
+            "_value": "[T]"
+          },
+          "propertiesObject": {
+            "available": true,
+            "constructor": "f",
+            "ownKeys": [
+              "_listeners",
+              "_muteChildChanges",
+              "_owner",
+              "_name",
+              "_childs",
+              "_dependents",
+              "_schema",
+              "_themedColors",
+              "_restoreFactoryDefaultsEvent",
+              "_replaceThemedColorsOnThemeChange",
+              "_forbidSavingDefaults",
+              "_defaultName",
+              "_useUserPreferences",
+              "_saveNonDefaultUserPreferencesOnly",
+              "_ignoreAllowSavingDefaults",
+              "_saveDefaultsConsumer",
+              "_factoryDefaultsSupplier",
+              "_allStateKeys",
+              "_excludedStateKeys",
+              "_nonThemedDefaultsKeys",
+              "_themedDefaultsKeys",
+              "_allDefaultsKeys",
+              "_excludedDefaultsKeys",
+              "_excludedTemplateKeys",
+              "_alwaysSaveDefaultKeys",
+              "_theme",
+              "inputs",
+              "styles",
+              "bands",
+              "graphics",
+              "ohlcPlots",
+              "palettes",
+              "filledAreasStyle",
+              "filledAreas",
+              "visible",
+              "showLegendValues",
+              "showLegendInputs",
+              "showLabelsOnPriceScale",
+              "precision",
+              "parentSources",
+              "intervalsVisibilities",
+              "version"
+            ],
+            "methods": [
+              {
+                "name": "_saveDefaultsConsumer",
+                "arguments": 2
+              },
+              {
+                "name": "_factoryDefaultsSupplier",
+                "arguments": 1
+              },
+              {
+                "name": "constructor",
+                "arguments": 1
+              },
+              {
+                "name": "_userSettingsState",
+                "arguments": 0
+              },
+              {
+                "name": "destroy",
+                "arguments": 0
+              },
+              {
+                "name": "applyTemplate",
+                "arguments": 2
+              },
+              {
+                "name": "preferences",
+                "arguments": 0
+              },
+              {
+                "name": "template",
+                "arguments": 0
+              },
+              {
+                "name": "mergePreferences",
+                "arguments": 1
+              },
+              {
+                "name": "addExcludedKey",
+                "arguments": 2
+              },
+              {
+                "name": "removeExcludedKey",
+                "arguments": 2
+              },
+              {
+                "name": "restoreFactoryDefaults",
+                "arguments": 0
+              },
+              {
+                "name": "onRestoreFactoryDefaults",
+                "arguments": 0
+              },
+              {
+                "name": "saveDefaults",
+                "arguments": 0
+              },
+              {
+                "name": "themeDefaults",
+                "arguments": 1
+              },
+              {
+                "name": "factoryDefaults",
+                "arguments": 0
+              },
+              {
+                "name": "themeState",
+                "arguments": 0
+              },
+              {
+                "name": "allThemePropertiesAreDefault",
+                "arguments": 1
+              },
+              {
+                "name": "clone",
+                "arguments": 1
+              },
+              {
+                "name": "setThemedColors",
+                "arguments": 1
+              },
+              {
+                "name": "applyDefaultThemedProperties",
+                "arguments": 1
+              },
+              {
+                "name": "state",
+                "arguments": 2
+              },
+              {
+                "name": "fullState",
+                "arguments": 0
+              },
+              {
+                "name": "_plainState",
+                "arguments": 1
+              },
+              {
+                "name": "_updateThemedColors",
+                "arguments": 1
+              },
+              {
+                "name": "_userSettings",
+                "arguments": 0
+              },
+              {
+                "name": "_options",
+                "arguments": 0
+              },
+              {
+                "name": "_childChanged",
+                "arguments": 2
+              },
+              {
+                "name": "_fireMergeAndFireChangedProps",
+                "arguments": 1
+              },
+              {
+                "name": "_factoryDefaultsForTheme",
+                "arguments": 1
+              }
+            ]
+          },
+          "onSeriesUpdated": {
+            "exists": false
+          },
+          "onDataUpdated": {
+            "exists": true,
+            "argumentCount": 4,
+            "code": "_onDataUpdated(e,t,s,i){if(this.hasBarColorer()&&e.length>0){const t=(0,c.ensureNotNull)(this.barColorer()).firstColoredBar(e[0].index);null!==t&&this._model.mainSeries().invalidateBarStylesCache(t)}null!==t&&this._postProcessGraphics()\n;const r=this._model.paneForSource(this);if(this._model.recalculatePane(r,(0,xe.sourceChangeEvent)({sourceId:this.id(),firstUpdatedTimePointIndex:i??void 0,nonSeriesOnly:0===e.length})),this._updateSources(),e.length){const t=e[e.length-1].index,s=e[0].index;this._dataRangeUpdated.fire({type:\"partial\",startIndex:s,endIndex:t})}else this.data().isEmpty()&&this._dataRangeUpdated.fire({type:\"full\"})}"
+          },
+          "transformData": {
+            "exists": true,
+            "argumentCount": 1,
+            "code": "_transformData(e){for(let t=e.length-1;t>=0;--t){const i=e[t],s=i.index!==r.INVALID_TIME_POINT_INDEX&&this.isValid(i.value);this._updatePlotStash(i,s)}}"
+          },
+          "restoreData": {
+            "exists": true,
+            "argumentCount": 1,
+            "code": "restoreData(e){e.data=e.data.filter((e=>e.index!==r.INVALID_TIME_POINT_INDEX&&this.isValid(e.value))),this._transformData(e.data),e.end=e.data.length,super.restoreData(e)}"
+          },
+          "updateAllViews": {
+            "exists": true,
+            "argumentCount": 1,
+            "code": "updateAllViews(e){const t=this._model.paneForSource(this),s=this._model.mainPane(),i=e.type===$t.ChangeEventType.ViewportChange&&e.pane&&e.pane!==s;e.type===$t.ChangeEventType.ViewportChange&&e.pane&&e.pane!==t||(this._paneViews.forEach((t=>t.update(e))),this._labelPaneViews.forEach((t=>t.update(e))),this._dataWindowView?.update(e),this._legendView?.update(e),this._statusView?.update(e),\nthis._floatingTooltipView?.update(e),this._priceAxisViews.forEach((t=>t.update(e))),this._priceLinesAxisViews.forEach((t=>t.update(e))),this._timeAxisViews.forEach((t=>t.update(e))),this._inputsLinesPaneView?.update(e),this._inputsAnchorsPaneView?.update(e),this._inputsTimeAxisPaneViews.forEach((t=>t.update(e))),this._inputsPriceAxisPaneViews.forEach((t=>t.update(e)))),i||(this._forceOverlaysPaneViews.forEach((t=>t.update(e))),this._forceOverlayLabelPaneViews.forEach((t=>t.update(e))),this._forceOverlayPriceAxisViews.forEach((t=>t.update(e)))),e.type===$t.ChangeEventType.DataSourceChange&&e.sourceId===this.id()&&e.clearData&&this._children.forEach((e=>e.updateAllViews({type:$t.ChangeEventType.DataSourceChange,sourceId:e.id(),clearData:!0})))}"
+          },
+          "relevantMethods": [
+            {
+              "name": "_updateAlertCreationAvailableBound",
+              "arguments": 0,
+              "code": "function () { [native code] }"
+            },
+            {
+              "name": "updateAllViewsAndRepaint",
+              "arguments": 0,
+              "code": "updateAllViewsAndRepaint(){this.updateAllViews((0,l.sourceChangeEvent)(this.id())),this._model.updateSource(this)}"
+            },
+            {
+              "name": "restoreData",
+              "arguments": 1,
+              "code": "restoreData(e){e.data=e.data.filter((e=>e.index!==r.INVALID_TIME_POINT_INDEX&&this.isValid(e.value))),this._transformData(e.data),e.end=e.data.length,super.restoreData(e)}"
+            },
+            {
+              "name": "isSavedInStudyTemplates",
+              "arguments": 0,
+              "code": "isSavedInStudyTemplates(){return!1}"
+            },
+            {
+              "name": "isRemovedByStudyTemplates",
+              "arguments": 0,
+              "code": "isRemovedByStudyTemplates(){return!1}"
+            },
+            {
+              "name": "isSpeciallyZOrderedSource",
+              "arguments": 0,
+              "code": "isSpeciallyZOrderedSource(){return!0}"
+            },
+            {
+              "name": "isCurrencySource",
+              "arguments": 0,
+              "code": "isCurrencySource(){return!1}"
+            },
+            {
+              "name": "isUnitSource",
+              "arguments": 0,
+              "code": "isUnitSource(){return!1}"
+            },
+            {
+              "name": "_transformData",
+              "arguments": 1,
+              "code": "_transformData(e){for(let t=e.length-1;t>=0;--t){const i=e[t],s=i.index!==r.INVALID_TIME_POINT_INDEX&&this.isValid(i.value);this._updatePlotStash(i,s)}}"
+            },
+            {
+              "name": "_seriesDataRangeToSave",
+              "arguments": 1,
+              "code": "_seriesDataRangeToSave(e){return this._model.timeScale().visibleBarsStrictRange()}"
+            },
+            {
+              "name": "_initPlotStash",
+              "arguments": 0,
+              "code": "_initPlotStash(){this._plotStash={}}"
+            },
+            {
+              "name": "_updatePlotStash",
+              "arguments": 2,
+              "code": "_updatePlotStash(e,t){if(this._restartRequired||!this._plotStash)return;const i=e.value.slice(),s=i.shift(),r=String(s);t?this._plotStash[r]?String(this._plotStash[r])!==String(i)&&(this._restartRequired=!0):this._plotStash[r]=i:this._plotStash[r]&&(this._restartRequired=!0)}"
+            },
+            {
+              "name": "lastValueData",
+              "arguments": 3,
+              "code": "lastValueData(e,t,s){const i={noData:!0},r=this.metaInfo().isPlotForceOverlay(e),n=r?this._model.mainSeries().priceScale():this.priceScale();if(this._model.timeScale().isEmpty()||null===n||n.isEmpty()||this.data().isEmpty())return i;const a=this._model.timeScale().visibleBarsStrictRange(),o=this.firstValue(!0,r);if(null===a||null===o)return i;if(!this._properties.childs().visible.value())return i;const l=this._properties.childs().styles,u=this._properties.childs().ohlcPlots;let c,d;if(l&&l.childs()[e]&&(c=l.childs()[e]),u&&u.childs()[e]&&(c=u.childs()[e]),!c||c.childs().display.value()===Re.StudyPlotDisplayTarget.None)return i;const p=this.metaInfo().plots;for(d=0;d<p.length;d++){const t=p[d];if(t.id===e||(0,Re.isOhlcClosePlot)(t)&&t.target===e)break}const _=d+1,f=this.offset(e),m=this.nearestIndex(a.lastBar()-f,b.PlotRowSearchMode.NearestLeft,_);if(void 0===m)return i;const y=this._lastNonEmptyPlotRow(_),g=null!==y&&a.contains(y.index),S=null!==y?y.value:null,v=t||g?S:this.data().valueAt(m);if(!v||!(0,h.isNumber)(v[_]))return i;const P=v[_],I=this._valuesProvider.getPlotColor(d,v),w=n.priceToCoordinate(P,o),C=this.plotFormatter(e).format(P),T={...n.getFormattedValues(P,o,void 0,C),noData:!1,color:I,coordinate:w};return s&&(T.price=P),T}"
+            },
+            {
+              "name": "updateBondComparisonStatus",
+              "arguments": 0,
+              "code": "async updateBondComparisonStatus(){if((0,Y.isCompareOrOverlayStudy)(this)){try{await this._allSymbolsAreResolved()}catch{return}this._hasRestrictedBondSymbol()&&this._showRestrictedBondComparison()}}"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
