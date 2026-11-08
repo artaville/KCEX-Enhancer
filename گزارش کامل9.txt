@@ -1,0 +1,3717 @@
+{
+  "report": "TV Enhancer Diagnostic",
+  "version": "3.9.0",
+  "generatedAt": "2026-11-08T15:00:26.432Z",
+  "page": {
+    "title": "PEPEUSDT.P 0.50963e-5 ▲ +4.82% Unnamed",
+    "url": "https://www.tradingview.com/chart/4JBVKCwz/",
+    "chartLabels": [
+      "Chart for KCEX:PEPEUSDT.P, 1 minute"
+    ]
+  },
+  "discovery": {
+    "apiFound": true,
+    "collectionFound": true,
+    "activeWidgetFound": true,
+    "exposedWidgetFound": true,
+    "modelFound": true,
+    "modelConstructor": "Mu",
+    "modelKeys": [
+      "_onRearrangePanes",
+      "_lineToolsGroupModel",
+      "_sourcesBeingMoved",
+      "_activeItemBeingMoved",
+      "_lineBeingEdited",
+      "_customSourceBeingMovedHitTestData",
+      "_customSourceBeingMoved",
+      "_dataSourceCollectionChanged",
+      "_sourceProperitesChanged",
+      "_sourceZOrderChanged",
+      "_symbolSourceResolved",
+      "_symbolSourceResolvingActive",
+      "_adjustForDividendsAvailability",
+      "_adjustForDividendsEnabled",
+      "_inactivityGapsWatchedValue",
+      "_allowedAdjustment",
+      "_currentTool",
+      "_linesBeingCreated",
+      "_lineCancelled",
+      "_phantomSourceContainer",
+      "_destroyed",
+      "_restoringState",
+      "_isSettingsExternalPosition",
+      "_isTimeScrolling",
+      "_magnet",
+      "_scrollingState",
+      "_modelIntervals",
+      "_rendererOptionsProvider",
+      "_studyInserted",
+      "_cachedStudiesMaxOffset",
+      "_replayStatus",
+      "_panes",
+      "_maximizedPane",
+      "_strategySources",
+      "_strategySourcesChange",
+      "_activeStrategySource",
+      "_symbolIntervalChanged",
+      "_paneCollapsingAvailable",
+      "_panesCollectionChanged",
+      "_mainSeriesPriceScaleSide",
+      "_scrollEnabled",
+      "_zoomEnabled",
+      "_lollipopSourcesWatcher",
+      "_alertsWatcher",
+      "_hoveredSource",
+      "_hoveredSourceChanged",
+      "_lastHoveredHittestData",
+      "_hoveredSourceOrigin",
+      "_lastSelectedHittestData",
+      "_highlightedSourceInfo",
+      "_topmostCustomSources",
+      "_fgCustomSources",
+      "_bgCustomSources",
+      "_allCustomSources",
+      "_customSourcesMap",
+      "_dragExportEnabled",
+      "_multiPaneSources",
+      "_showLegendProperty",
+      "_id",
+      "_chartSaveTime",
+      "_availableCurrenciesList",
+      "_availableCurrencies",
+      "_availablePriceSources",
+      "_availableUnitsObject",
+      "_availableUnits",
+      "_allAvailableMetricsList",
+      "_availablePriceSourcesBySymbol",
+      "_shouldBeSavedEvenIfHidden",
+      "_watchedThemeSpawn",
+      "_backgroundColorAtYPercentFromTop",
+      "_studiesWV",
+      "_studiesExcludeInternalWV",
+      "_resetScalesAvailable",
+      "_recalcVRStudiesParams",
+      "_recalcColorStudiesParams",
+      "_alertsListCreated",
+      "_replayStudyStrategy",
+      "_studyColorRotatorFactory",
+      "_mainSeriesScaleRatioProperty",
+      "_abortController",
+      "_recalcVisibleRangeStudiesImplDebouncedByAdapter",
+      "_recalcColorStudiesImplDebounced",
+      "_width",
+      "_resetScales",
+      "_chartThemeLoaded",
+      "_selection",
+      "_selectedSourceChanged",
+      "_previousSelectedDrawingOrGroupIds",
+      "_symbolSourceCollectionChanged",
+      "_gridSource",
+      "_visibleRangeStudiesInputs",
+      "_syncPointCache",
+      "_lastAppliedGotoTimeRange",
+      "_lastGotoTimeRange",
+      "_lastGotoTimeRangeDataLoad",
+      "_alertsCollection",
+      "_lollipopSourcesWatcherLoader",
+      "_sessions",
+      "_onMultipaneSourcesCollectionChanged",
+      "_replayStudyStrategyInputs"
+    ],
+    "seriesFound": true,
+    "seriesConstructor": "Os",
+    "seriesKeys": [
+      "isSeries",
+      "_isDestroyed",
+      "_hasAlert",
+      "_alertStatus",
+      "_alertCreationAvailable",
+      "_zorder",
+      "_priceScale",
+      "_ownerSource",
+      "_userEditEnabled",
+      "_priceScaleChanged",
+      "_updateAlertCreationAvailableBound",
+      "_isSelectionEnabled",
+      "_instanceId",
+      "_ownerSourceChanged",
+      "_zOrderChanged",
+      "_id",
+      "isPriceDataSource",
+      "_formatterChanged",
+      "_priceStepChanged",
+      "_currencyChanged",
+      "_isCurrencyOrigin",
+      "_currencyMetaData",
+      "_unitChanged",
+      "_isUnitOrigin",
+      "_unitMetaData",
+      "_metricChanged",
+      "_priceRangeReadyChanged",
+      "_dataRangeUpdated",
+      "_priceStep",
+      "_signature",
+      "_priceRangeReady",
+      "_model",
+      "requestingStyleIsNotSupported",
+      "requestingStyleSupportRecovered",
+      "_paneView",
+      "_futureBarsPaneView",
+      "_projectionBarsPaneView",
+      "_waterlineView",
+      "_priceLineView",
+      "_gotoDateView",
+      "_baseHorizontalLineView",
+      "_symbolInfo",
+      "_isPrePostMarketPricesAvailableProperty",
+      "_isOvernightMarketPricesAvailableProperty",
+      "_isBackAdjustmentForbiddenProperty",
+      "_isSettlementAsCloseForbiddenProperty",
+      "_highLowPriceCache",
+      "_averagePriceCache",
+      "_prevClosePriceAxisView",
+      "_priceScaleAboutToBeChanged",
+      "_onRestarted",
+      "_onStatusChanged",
+      "_intervalChanged",
+      "_sessionIdChanged",
+      "_requestMoreDataAvailable",
+      "_lineStyleLastPriceCirclePaneView",
+      "_prevClosePriceLineView",
+      "_dataPoweredBy",
+      "_symbolResolvingActive",
+      "_predictBars",
+      "_syncModel",
+      "_data",
+      "_lastCompleteFlags",
+      "_barColorerCache",
+      "_quotesLastSplits",
+      "_overriddenLastSplits",
+      "_lastSplits",
+      "_boxSizeValue",
+      "_base",
+      "_pointValue",
+      "_formattingDeps",
+      "_defaultFormatter",
+      "_formatter",
+      "_ignoreMinMoveFormatter",
+      "_ignoreMinMovePriceStep",
+      "_lastBarCloseTime",
+      "_onSessionIdPropertyChangedBound",
+      "_ignoreSessionIdProxyPropertyChanges",
+      "_realignLineToolsBound",
+      "_textSourceIsAlwaysTickerRestrictionEnabled",
+      "_lastPriceAnimationActive",
+      "_currentSession",
+      "_onStyleChanged",
+      "_obsoleteZOrder",
+      "_seriesErrorMessage",
+      "_isBondDataRestricted",
+      "_areStudiesStoppedForRestrictedBond",
+      "_seriesAlwaysFalseHibernatedVW",
+      "_styleToRecover",
+      "_metricToRecover",
+      "_precomputedBarStyles",
+      "_doNotShowLastAvailableBar",
+      "_gotoDateResultCleared",
+      "_endOfDataPaneView",
+      "_delayStatusPaneView",
+      "_pendingTimeRange",
+      "_replaySubscriber",
+      "_symbolIntervalChanged",
+      "_isReplayResolutionAvailableForUser",
+      "_onInReplayStateChanged"
+    ],
+    "timeScaleFound": true,
+    "timeScaleConstructor": "Dc",
+    "timeScaleKeys": [
+      "_width",
+      "_widthChanged",
+      "_rightOffset",
+      "_rightOffsetChanged",
+      "_maxRightOffsetChanged",
+      "_defaultRightOffset",
+      "_defaultRightOffsetPercentage",
+      "_usePercentageRightOffset",
+      "_lastDefaultRightOffset",
+      "_baseIndex",
+      "_leftEdgeIndex",
+      "_futureContentBoundary",
+      "_barSpacingChanged",
+      "_barSpacing",
+      "_snapshotBarSpacing",
+      "_visibleBars",
+      "_visibleBarsInvalidated",
+      "_visibleBarsChanged",
+      "_logicalRangeChanged",
+      "_points",
+      "_onScroll",
+      "_visibleRangeChanged",
+      "_resetDelegate",
+      "_scrollData",
+      "_scaleStartPoint",
+      "_commonTransitionStartState",
+      "_requestingMoreData",
+      "_requestedTickmarksCount",
+      "_endOfData",
+      "_lockBarsAndLogicalRangeEvents",
+      "_resetAvailable",
+      "_pointWeights",
+      "_weightedPointsCache",
+      "_throttleRequestMoreDataOnScroll",
+      "_onMainSeriesStyleChanged",
+      "_options",
+      "_model",
+      "_scalesProperties",
+      "_mainSeriesStyle",
+      "_lastMainSeriesStyle",
+      "_tickMarks"
+    ],
+    "pointsFound": true,
+    "pointsConstructor": "Yl",
+    "pointsKeys": [
+      "_zoffset",
+      "_items",
+      "_range"
+    ],
+    "seriesDataFound": true,
+    "seriesDataConstructor": "c",
+    "seriesSourceFound": true,
+    "seriesSourceConstructor": "I",
+    "conflatedBuilderFound": true,
+    "chartApiFound": true,
+    "websocketConnectionFound": false,
+    "gatewayFound": true
+  },
+  "mapping": {
+    "baseIndex": {
+      "type": "Object",
+      "keys": [
+        "found",
+        "value"
+      ],
+      "found": true,
+      "value": 354
+    },
+    "rightOffset": {
+      "found": true,
+      "value": 43.516052
+    },
+    "barSpacing": {
+      "found": true,
+      "value": 16.565060516869497
+    },
+    "logicalRange": {
+      "found": true,
+      "value": {
+        "type": "o",
+        "keys": [
+          "_left",
+          "_right"
+        ],
+        "_left": 345.69402945991214,
+        "_right": 397.516052
+      }
+    },
+    "visibleBarsStrictRange": {
+      "found": true,
+      "value": {
+        "type": "r",
+        "keys": [
+          "_firstBar",
+          "_lastBar"
+        ],
+        "_firstBar": 345,
+        "_lastBar": 398
+      }
+    },
+    "points": {
+      "constructor": "Yl",
+      "zoffset": 0,
+      "itemCount": 526,
+      "firstTimestamp": 1794128760,
+      "lastTimestamp": 1794160260,
+      "samples": [
+        {
+          "index": 0,
+          "pointAtSameArrayIndex": 1794128760,
+          "pointAtIndexPlusOffset": 1794128760
+        },
+        {
+          "index": 1,
+          "pointAtSameArrayIndex": 1794128820,
+          "pointAtIndexPlusOffset": 1794128820
+        },
+        {
+          "index": 2,
+          "pointAtSameArrayIndex": 1794128880,
+          "pointAtIndexPlusOffset": 1794128880
+        },
+        {
+          "index": 177,
+          "pointAtSameArrayIndex": 1794139380,
+          "pointAtIndexPlusOffset": 1794139380
+        },
+        {
+          "index": 354,
+          "pointAtSameArrayIndex": 1794150000,
+          "pointAtIndexPlusOffset": 1794150000
+        }
+      ]
+    },
+    "indexToTimePoint": [
+      {
+        "index": 0,
+        "result": {
+          "found": true,
+          "value": 1794128760
+        }
+      },
+      {
+        "index": 1,
+        "result": {
+          "found": true,
+          "value": 1794128820
+        }
+      },
+      {
+        "index": 2,
+        "result": {
+          "found": true,
+          "value": 1794128880
+        }
+      },
+      {
+        "index": 177,
+        "result": {
+          "found": true,
+          "value": 1794139380
+        }
+      },
+      {
+        "index": 354,
+        "result": {
+          "found": true,
+          "value": 1794150000
+        }
+      }
+    ],
+    "timeSamples": [
+      {
+        "position": 0,
+        "timestamp": 1794128760,
+        "timePointToIndex": {
+          "found": true,
+          "value": 0
+        },
+        "timeToIndex": {
+          "found": false
+        },
+        "pointTimePointToIndex": {
+          "found": false
+        },
+        "pointTimeToIndex": {
+          "found": false
+        }
+      },
+      {
+        "position": 1,
+        "timestamp": 1794128820,
+        "timePointToIndex": {
+          "found": true,
+          "value": 1
+        },
+        "timeToIndex": {
+          "found": false
+        },
+        "pointTimePointToIndex": {
+          "found": false
+        },
+        "pointTimeToIndex": {
+          "found": false
+        }
+      },
+      {
+        "position": 263,
+        "timestamp": 1794144540,
+        "timePointToIndex": {
+          "found": true,
+          "value": 263
+        },
+        "timeToIndex": {
+          "found": false
+        },
+        "pointTimePointToIndex": {
+          "found": false
+        },
+        "pointTimeToIndex": {
+          "found": false
+        }
+      },
+      {
+        "position": 524,
+        "timestamp": 1794160200,
+        "timePointToIndex": {
+          "found": true,
+          "value": 524
+        },
+        "timeToIndex": {
+          "found": false
+        },
+        "pointTimePointToIndex": {
+          "found": false
+        },
+        "pointTimeToIndex": {
+          "found": false
+        }
+      },
+      {
+        "position": 525,
+        "timestamp": 1794160260,
+        "timePointToIndex": {
+          "found": true,
+          "value": 525
+        },
+        "timeToIndex": {
+          "found": false
+        },
+        "pointTimePointToIndex": {
+          "found": false
+        },
+        "pointTimeToIndex": {
+          "found": false
+        }
+      }
+    ],
+    "timeScaleMethods": [
+      {
+        "name": "canNormalize",
+        "arguments": 0,
+        "code": "canNormalize(){return this._points.size()>0}"
+      },
+      {
+        "name": "update",
+        "arguments": 5,
+        "code": "update(e,t,i,s,r){this._visibleBarsInvalidated=!0,i.length>0&&this._points.merge(e,t,i),this._tickMarks.merge(s,r),this.correctOffset()}"
+      },
+      {
+        "name": "visibleBarsStrictRange",
+        "arguments": 0,
+        "code": "visibleBarsStrictRange(){return this._visibleBarsInvalidated&&(this._visibleBarsInvalidated=!1,this._updateVisibleBars()),this._visibleBars.strictRange()}"
+      },
+      {
+        "name": "visibleBarsStrictRangeChanged",
+        "arguments": 0,
+        "code": "visibleBarsStrictRangeChanged(){return this._visibleBarsChanged}"
+      },
+      {
+        "name": "visibleStrictDataRange",
+        "arguments": 1,
+        "code": "visibleStrictDataRange(e){const t=this.visibleBarsStrictRange();if(null===t)return null;const i=e.search(t.firstBar(),In.PlotRowSearchMode.NearestRight),s=e.search(t.lastBar(),In.PlotRowSearchMode.NearestLeft);return null===i||null===s?null:new Ul.BarsRange(i.index,s.index)}"
+      },
+      {
+        "name": "visibleExtendedDataRange",
+        "arguments": 2,
+        "code": "visibleExtendedDataRange(e,t){const i=this.visibleBarsStrictRange();if(null===i)return null;let s=t===zl.ExtendDirection.RightEdge?null:e.search(i.firstBar()-1,In.PlotRowSearchMode.NearestLeft),r=t===zl.ExtendDirection.LeftEdge?null:e.search(i.lastBar()+1,In.PlotRowSearchMode.NearestRight);return null===s&&(s=e.search(i.firstBar(),In.PlotRowSearchMode.NearestRight)),null===r&&(r=e.search(i.lastBar(),In.PlotRowSearchMode.NearestLeft)),null===s||null===r?null:new Ul.BarsRange(s.index,r.index)}"
+      },
+      {
+        "name": "logicalRangeChanged",
+        "arguments": 0,
+        "code": "logicalRangeChanged(){return this._logicalRangeChanged}"
+      },
+      {
+        "name": "onVisibleRangeChanged",
+        "arguments": 0,
+        "code": "onVisibleRangeChanged(){return this._visibleRangeChanged}"
+      },
+      {
+        "name": "points",
+        "arguments": 0,
+        "code": "points(){return this._points}"
+      },
+      {
+        "name": "positionPercentToCoordinate",
+        "arguments": 1,
+        "code": "positionPercentToCoordinate(e){return this.width()*e}"
+      },
+      {
+        "name": "indexToCoordinate",
+        "arguments": 1,
+        "code": "indexToCoordinate(e){if(this.isEmpty())return 0\n;const t=this.baseIndex(),i=this._pointWeights.indexToTotalWeight(t+this._rightOffset+.5)-this._pointWeights.indexToTotalWeight(e);return this._width-i*this._barSpacing}"
+      },
+      {
+        "name": "indexToUserTime",
+        "arguments": 1,
+        "code": "indexToUserTime(e){return this._tickMarks.indexToTime(e)}"
+      },
+      {
+        "name": "timePointToIndex",
+        "arguments": 2,
+        "code": "timePointToIndex(e,t){switch(t){case zl.SearchMode.Exact:return this._points.indexOf(e,!1);case zl.SearchMode.ExactOrNearestLeft:return this._points.closestIndexLeft(e);default:return this._points.indexOf(e,!0)}}"
+      },
+      {
+        "name": "indexToTimePoint",
+        "arguments": 1,
+        "code": "indexToTimePoint(e){return this._points.valueAt(e)}"
+      },
+      {
+        "name": "timeToCoordinate",
+        "arguments": 1,
+        "code": "timeToCoordinate(e){const t=this._points.closestIndexLeft(e);if(null===t)return null;const i=(0,l.ensureNotNull)(this._points.valueAt(t)),s=this.indexToCoordinate(t);if(s<=0||s>=this._width)return null;const r=this.barSpacing(),o=this.baseIndex();let n;n=0===o?this._model.mainSeries().intervalObj().value().inMilliseconds()/1e3:(0,l.ensureNotNull)(this._points.valueAt(o))-(0,l.ensureNotNull)(this._points.valueAt(o-1));const a=s+(e-i)/n*r+1;return a<=0||a>=this._width?null:a}"
+      },
+      {
+        "name": "timedValuesToCoordinates",
+        "arguments": 3,
+        "code": "timedValuesToCoordinates(e,t,i){const s=this._pointWeights.indexToTotalWeight(this.baseIndex()+this._rightOffset+.5),r=t?.startItemIndex??0;let o=r;const n=t?.endItemIndex??e.length;!0===i&&(o=(0,H.upperbound)(e,$l.UNPLOTTABLE_TIME_POINT_INDEX,((e,t)=>e<t.x),r,n));for(let t=o;t<n;++t){const i=e[t],r=s-this._pointWeights.indexToTotalWeight(i.x);i.x=this._width-r*this._barSpacing}for(let t=r;t<o;++t)e[t].x=-500}"
+      },
+      {
+        "name": "rightOffsetForTimePoint",
+        "arguments": 1,
+        "code": "rightOffsetForTimePoint(e){const t=this.timeToCoordinate(e);if(null===t)return null;const i=(t-this._baseIndexBarCenterCoordinate())/this._barSpacing;return this._pointWeights.totalWeightToIndex(i)}"
+      },
+      {
+        "name": "scrollToRealtime",
+        "arguments": 2,
+        "code": "scrollToRealtime(e,t){let i=this.targetDefaultRightOffset();i<0&&(i=this.rightOffsetDefaultValue());const s=()=>{void 0!==t&&t(),this._requestMoreData()};if(e){const e=this.logicalRange(),t=this._model.mainSeries().bars().lastIndex();if(null===e||null===t)return;const r=this.indexToCoordinate(e.right()+.5),o=this.indexToCoordinate(t+i+.5)\n;return this._model.stopTimeScaleAnimation(),void this._model.setTimeScaleAnimation(new ws({from:0,to:r-o,duration:1e3,easing:_s.easingFunc.easeInOutQuint,onFinish:s}))}this._visibleBarsInvalidated=!0,this._updateRightOffset(i),this._onScroll.fire(),this._visibleRangeChanged.fire(),s()}"
+      },
+      {
+        "name": "scrollToOffsetAnimated",
+        "arguments": 2,
+        "code": "scrollToOffsetAnimated(e,t){if(!isFinite(e))throw new RangeError(\"offset is required and must be finite number\");const i=void 0===t?400:t;if(!isFinite(i)||i<=0)throw new RangeError(\"animationDuration (optional) must be finite positive number\");const s=this._rightOffset,r=Date.now(),o=()=>{this._visibleBarsInvalidated=!0;const t=(Date.now()-r)/i;if(t>=1)return this._updateRightOffset(e),this._visibleBarsInvalidated=!0,this._model.recalculateAllPanes((0,Fi.viewportChangeEvent)()),void this._model.lightUpdate();const n=s+(e-s)*t;this._updateRightOffset(n),this._model.recalculateAllPanes((0,Fi.viewportChangeEvent)()),setTimeout(o,20)};o()}"
+      },
+      {
+        "name": "defaultRightOffset",
+        "arguments": 0,
+        "code": "defaultRightOffset(){return this._defaultRightOffset}"
+      },
+      {
+        "name": "rightOffsetDefaultValue",
+        "arguments": 0,
+        "code": "rightOffsetDefaultValue(){return 10}"
+      },
+      {
+        "name": "defaultRightOffsetPercentage",
+        "arguments": 0,
+        "code": "defaultRightOffsetPercentage(){return this._defaultRightOffsetPercentage}"
+      },
+      {
+        "name": "usePercentageRightOffset",
+        "arguments": 0,
+        "code": "usePercentageRightOffset(){return this._usePercentageRightOffset}"
+      },
+      {
+        "name": "normalizeBarIndex",
+        "arguments": 1,
+        "code": "normalizeBarIndex(e){let t=0,i=0;const s=this.baseIndex(),r=(0,l.ensureNotNull)(this._points.range().value()).firstIndex;return e<r?(t=(0,l.ensureNotNull)(this._points.valueAt(r)),i=e-r):e>s?(t=(0,l.ensureNotNull)(this._points.valueAt(s)),i=e-s):(t=(0,l.ensureNotNull)(this._points.valueAt(e)),i=0),{time_t:t,offset:i}}"
+      },
+      {
+        "name": "denormalizeTimePoint",
+        "arguments": 1,
+        "code": "denormalizeTimePoint(e){const t=this._points.indexOf(e.time_t,!1);if(null!==t)return t+e.offset}"
+      },
+      {
+        "name": "rightOffset",
+        "arguments": 0,
+        "code": "rightOffset(){return this._rightOffset}"
+      },
+      {
+        "name": "rightOffsetChanged",
+        "arguments": 0,
+        "code": "rightOffsetChanged(){return this._rightOffsetChanged}"
+      },
+      {
+        "name": "minRightOffset",
+        "arguments": 0,
+        "code": "minRightOffset(){const e=this.points().range().value()?.firstIndex,t=this._baseIndex;if(void 0===e||null===t)return null;if(null!==this._leftEdgeIndex){const e=this.width()/this._barSpacing;return this._leftEdgeIndex-t+e-1}return e-t-1+Lc}"
+      },
+      {
+        "name": "geometricMaxRightOffset",
+        "arguments": 0,
+        "code": "geometricMaxRightOffset(){return this.width()/this._barSpacing-Lc}"
+      },
+      {
+        "name": "maxRightOffset",
+        "arguments": 0,
+        "code": "maxRightOffset(){const e=this.geometricMaxRightOffset(),t=this._futureContentBoundary;return null===t||null===this._baseIndex?e:Math.max(e,t.index-this._baseIndex+t.rightMarginPx/this._barSpacing)}"
+      },
+      {
+        "name": "maxRightOffsetChanged",
+        "arguments": 0,
+        "code": "maxRightOffsetChanged(){return this._maxRightOffsetChanged}"
+      },
+      {
+        "name": "baseIndex",
+        "arguments": 0,
+        "code": "baseIndex(){return this._baseIndex||0}"
+      },
+      {
+        "name": "zoomToBarsRange",
+        "arguments": 2,
+        "code": "zoomToBarsRange(e,t){if(null!==this._leftEdgeIndex&&(e=Math.max(e,this._leftEdgeIndex)),t<e)return;const i=this.baseIndex(),s=this._rightOffset;this._rightOffset=t-i;const r=e-.5,o=t+.5,n=Math.max(this._pointWeights.indexToTotalWeight(o)-this._pointWeights.indexToTotalWeight(r),Lc);this.setBarSpacing(this.width()/n),this._visibleBarsInvalidated=!0,this.correctOffset(),this._rightOffset!==s&&this._rightOffsetChanged.fire(this._rightOffset),this._requestMoreData()}"
+      },
+      {
+        "name": "coordinateToIndex",
+        "arguments": 1,
+        "code": "coordinateToIndex(e){return Math.round(this.coordinateToFloatIndex(e))}"
+      },
+      {
+        "name": "coordinateToFloatIndex",
+        "arguments": 1,
+        "code": "coordinateToFloatIndex(e){const t=(e-this._baseIndexBarCenterCoordinate())/this._barSpacing,i=this._pointWeights.totalWeightToIndex(t);return Math.round(1e6*i)/1e6}"
+      },
+      {
+        "name": "coordinateToVisibleIndex",
+        "arguments": 1,
+        "code": "coordinateToVisibleIndex(e){let t=this.coordinateToIndex(e);const i=this.visibleBarsStrictRange();return null===i||i.contains(t)||(t=Math.min(Math.max(i.firstBar(),t),i.lastBar())),t}"
+      },
+      {
+        "name": "minVisibleBarCount",
+        "arguments": 0,
+        "code": "minVisibleBarCount(){return Lc}"
+      },
+      {
+        "name": "resetRightOffset",
+        "arguments": 0,
+        "code": "resetRightOffset(){this.setRightOffset(this.targetDefaultRightOffset())}"
+      },
+      {
+        "name": "setBaseIndex",
+        "arguments": 1,
+        "code": "setBaseIndex(e){if(!Number.isFinite(e))return void kc.logDebug(`setBaseIndex: invalid argument: ${e}`);const t=this._baseIndex!==e;this._visibleBarsInvalidated=!0,this._baseIndex=e,this._pointWeights.setBaseIndex(this._baseIndex),this.correctOffset(),t&&(this._model.recalculateAllPanes((0,Fi.viewportChangeEvent)()),this._model.lightUpdate(),null!==this._futureContentBoundary&&this._maxRightOffsetOnChanged())}"
+      },
+      {
+        "name": "resetBaseIndex",
+        "arguments": 0,
+        "code": "resetBaseIndex(){this._visibleBarsInvalidated=!0,this._baseIndex=null}"
+      },
+      {
+        "name": "setRightOffset",
+        "arguments": 1,
+        "code": "setRightOffset(e){Number.isFinite(e)?(this._visibleBarsInvalidated=!0,this._updateRightOffset(e)):kc.logWarn(`setRightOffset: invalid argument: ${e}`)}"
+      },
+      {
+        "name": "setTimePointWeights",
+        "arguments": 1,
+        "code": "setTimePointWeights(e){this._weightedPointsCache=[],this._pointWeights=e??new Cc,this._pointWeights.setBaseIndex(this.baseIndex()),this._visibleBarsInvalidated=!0}"
+      },
+      {
+        "name": "correctOffset",
+        "arguments": 0,
+        "code": "correctOffset(){const e=this.maxRightOffset();this._rightOffset>e&&(this._rightOffset=e,this._visibleBarsInvalidated=!0);const t=this.minRightOffset();null!==t&&this._rightOffset<t&&(this._rightOffset=t,this._visibleBarsInvalidated=!0)}"
+      },
+      {
+        "name": "logicalRange",
+        "arguments": 0,
+        "code": "logicalRange(){return this._visibleBarsInvalidated&&(this._visibleBarsInvalidated=!1,this._updateVisibleBars()),this._visibleBars.logicalRange()}"
+      },
+      {
+        "name": "invalidateVisibleBars",
+        "arguments": 0,
+        "code": "invalidateVisibleBars(){this._visibleBarsInvalidated=!0}"
+      },
+      {
+        "name": "onTimeScaleCompleted",
+        "arguments": 1,
+        "code": "onTimeScaleCompleted(e){if(this._requestingMoreData=!1,this._endOfData=e,(0,x.isFeaturesetEnabled)(\"fix_left_edge\")&&this._endOfData){const e=this._points.range().value()?.firstIndex;void 0!==e&&this.setLeftEdgeFix(e)}this._requestMoreData()}"
+      },
+      {
+        "name": "requestMoreHistoryPoints",
+        "arguments": 1,
+        "code": "requestMoreHistoryPoints(e){this._model.mainSeries().requestMoreData(e)}"
+      },
+      {
+        "name": "targetDefaultRightOffset",
+        "arguments": 0,
+        "code": "targetDefaultRightOffset(){return this._targetDefaultRightOffsetForStyle(this._mainSeriesStyle.value())}"
+      },
+      {
+        "name": "percentsToBarIndexLength",
+        "arguments": 1,
+        "code": "percentsToBarIndexLength(e){return.01*e*this._width/this._barSpacing}"
+      },
+      {
+        "name": "barIndexLengthToPercents",
+        "arguments": 1,
+        "code": "barIndexLengthToPercents(e){return 100*e*this._barSpacing/this._width}"
+      },
+      {
+        "name": "requestHistoryPointsIfNeeded",
+        "arguments": 0,
+        "code": "requestHistoryPointsIfNeeded(){this._model.mainSeries().requestMoreData()}"
+      },
+      {
+        "name": "_requestHistoryPoints",
+        "arguments": 1,
+        "code": "_requestHistoryPoints(e){this._model.chartApi().isConnected().value()&&(this._requestingMoreData?kc.logNormal(\"Skipping loading more data due active loading\"):(this._requestingMoreData=!0,this._model.chartApi().requestMoreData(e)))}"
+      },
+      {
+        "name": "_updateVisibleBars",
+        "arguments": 0,
+        "code": "_updateVisibleBars(){const e=this._visibleBars;if(this.isEmpty())return void(this._visibleBars.isValid()&&(this._visibleBars=Zl.TimeScaleVisibleRange.invalid(),this._visibleBarsChanged.fire(null,e.strictRange()),this._logicalRangeChanged.fire(null,e.logicalRange())));const t=this.width()/this.barSpacing(),i=this.baseIndex(),s=i+this._rightOffset,r=s+.5,o=this._pointWeights.indexToTotalWeight(r)-t,n=Math.min(r-1,this._pointWeights.totalWeightToIndex(o))+.5;Number.isFinite(n)&&Number.isFinite(s)?(this._visibleBars=new Zl.TimeScaleVisibleRange(new Gl.LogicalRange(n,s),this._model.mainSeries().style()),this._lockBarsAndLogicalRangeEvents||this._fireVisibleBarsChangedIfRequired(e,this._visibleBars)):kc.logWarn(`updateVisibleBars error: baseIndex: ${i}, barSpacing: ${this._barSpacing}, rightOffset: ${this._rightOffset}`)}"
+      },
+      {
+        "name": "_targetDefaultRightOffsetForStyle",
+        "arguments": 1,
+        "code": "_targetDefaultRightOffsetForStyle(e){if(this.usePercentageRightOffset().value())return this.percentsToBarIndexLength(this._defaultRightOffsetPercentage.value());const t=this._defaultRightOffset.value();return Ic.has(e)?6*t/this._barSpacing:t}"
+      },
+      {
+        "name": "_fireVisibleBarsChangedIfRequired",
+        "arguments": 2,
+        "code": "_fireVisibleBarsChangedIfRequired(e,t){Ul.BarsRange.compare(e.strictRange(),t.strictRange())||this._visibleBarsChanged.fire(t.strictRange(),e.strictRange()),Gl.LogicalRange.compare(e.logicalRange(),t.logicalRange())||this._logicalRangeChanged.fire(t.logicalRange(),e.logicalRange())}"
+      },
+      {
+        "name": "_baseIndexBarCenterCoordinate",
+        "arguments": 0,
+        "code": "_baseIndexBarCenterCoordinate(){\nconst e=this.baseIndex()+this._rightOffset+.5,t=this._pointWeights.indexToTotalWeight(e);return this._width-t*this._barSpacing}"
+      },
+      {
+        "name": "_tryToUpdateBarSpacing",
+        "arguments": 2,
+        "code": "_tryToUpdateBarSpacing(e,t){return e!==t&&(this._visibleBarsInvalidated=!0,this._barSpacing=t,this._barSpacingChanged.fire(t),this._visibleRangeChanged.fire(),!0)}"
+      },
+      {
+        "name": "_maxRightOffsetOnChanged",
+        "arguments": 0,
+        "code": "_maxRightOffsetOnChanged(){this._maxRightOffsetChanged.fire(this.maxRightOffset())}"
+      },
+      {
+        "name": "_updateRightOffset",
+        "arguments": 1,
+        "code": "_updateRightOffset(e){if(!Number.isFinite(e))return void kc.logWarn(`_updateRightOffset: invalid argument: ${e}`);const t=this._rightOffset;this._rightOffset=e,this.correctOffset(),this._rightOffset!==t&&this._rightOffsetChanged.fire(this._rightOffset),this._model.recalculateAllPanes((0,Fi.viewportChangeEvent)()),this._model.lightUpdate()}"
+      },
+      {
+        "name": "_defaultRightOffsetOptionsUpdated",
+        "arguments": 0,
+        "code": "_defaultRightOffsetOptionsUpdated(){this.rightOffset();this.setRightOffset(this.targetDefaultRightOffset()),this._updateResetAvailableValue(),this._lastDefaultRightOffset=this._defaultRightOffsetPercentage.value()}"
+      },
+      {
+        "name": "_updateResetAvailableValue",
+        "arguments": 0,
+        "code": "_updateResetAvailableValue(){this._resetAvailable.setValue(this.barSpacing()!==this.defaultBarSpacing()||this.rightOffset()!==this.targetDefaultRightOffset())}"
+      }
+    ],
+    "pointsMethods": [
+      {
+        "name": "clear",
+        "arguments": 0,
+        "code": "clear(){this._zoffset=0,this._items=[],this._range.setValue(null)}"
+      },
+      {
+        "name": "range",
+        "arguments": 0,
+        "code": "range(){return this._range.readonly()}"
+      },
+      {
+        "name": "remove",
+        "arguments": 1,
+        "code": "remove(e){const t=this._indexToOffset(e);if(null===t)return[];const i=this._items.splice(t),s=[];for(let t=0;t<i.length;t++)s.push({change:\"remove\",index:e+t,value:i[t]});return this._updateFirstAndLastIndex(),s}"
+      },
+      {
+        "name": "indexOf",
+        "arguments": 2,
+        "code": "indexOf(e,t){if(this._items.length<1)return null;if(e>this._items[this._items.length-1])return t?this._validOffsetToIndex(this._items.length-1):null;for(let i=0;i<this._items.length;++i){if(e===this._items[i])return this._validOffsetToIndex(i);if(e<this._items[i])return t?this._validOffsetToIndex(i):null}return null}"
+      },
+      {
+        "name": "roughTime",
+        "arguments": 1,
+        "code": "roughTime(e,t=null){e=Math.round(e);const i=this.valueAt(e);if(null!==i)return i;const s=this._items;if(!s.length||s.length<2)return null;const r=s.length-1,o=this._validOffsetToIndex(0),n=this._validOffsetToIndex(r),a=s[0],l=s[r],c=(l-a)/(n-o);if(e<o){return a-(o-e)*c}if(e>n){const i=e-n;if(i<500&&null!=t)return t(l,i);return l+i*c}return null}"
+      },
+      {
+        "name": "roughIndex",
+        "arguments": 1,
+        "code": "roughIndex(e,t=null,i=ql.Left){const s=this._items\n;if(!s.length||s.length<2)return null;const r=s.length-1,o=this._validOffsetToIndex(0),n=this._validOffsetToIndex(r),a=s[0],l=s[r];if(e>=a&&e<=l)return this._closestIndex(e,i);const c=(l-a)/(n-o);if(e<a){const t=a-e;return o-Math.round(t/c)}if(e>l){const i=e-l;let s=Math.trunc(i/c);if(s<500&&null!==t){const i=t(l,e);i.success&&(s=i.result)}return n+s}return null}"
+      },
+      {
+        "name": "closestIndexLeft",
+        "arguments": 1,
+        "code": "closestIndexLeft(e){return this._closestIndex(e,ql.Left)}"
+      },
+      {
+        "name": "firstPoint",
+        "arguments": 0,
+        "code": "firstPoint(){return 0===this._items.length?null:this._items[0]}"
+      },
+      {
+        "name": "lastPoint",
+        "arguments": 0,
+        "code": "lastPoint(){return 0===this._items.length?null:this._items[this._items.length-1]}"
+      },
+      {
+        "name": "_closestIndex",
+        "arguments": 2,
+        "code": "_closestIndex(e,t){const i=this._items;if(!i.length)return null;if(Number.isNaN(e))return null;const s=i.length-1;if(e>=i[s])return this._validOffsetToIndex(s);const r=(0,H.lowerbound)(this._items,e,((e,t)=>e<t));if(r<=s&&this._items[r]===e)return this._validOffsetToIndex(r);if(t===ql.Left)return 0===r?null:this._validOffsetToIndex(r-1);if(t===ql.Right)return r>s?null:this._validOffsetToIndex(r);const o=e-(this._items[r-1]??-1/0),n=(this._items[r]??1/0)-e;return this._validOffsetToIndex(o<n?r-1:r)}"
+      },
+      {
+        "name": "_updateFirstAndLastIndex",
+        "arguments": 0,
+        "code": "_updateFirstAndLastIndex(){const e=this._offsetToIndex(0),t=this._offsetToIndex(this._items.length-1);this._range.setValue(null===e||null===t?null:{firstIndex:e,lastIndex:t})}"
+      },
+      {
+        "name": "_validOffsetToIndex",
+        "arguments": 1,
+        "code": "_validOffsetToIndex(e){return e-this._zoffset}"
+      },
+      {
+        "name": "_offsetToIndex",
+        "arguments": 1,
+        "code": "_offsetToIndex(e){return 0<=e&&e<this.size()?this._validOffsetToIndex(e):null}"
+      },
+      {
+        "name": "_indexToOffset",
+        "arguments": 1,
+        "code": "_indexToOffset(e){const t=e+this._zoffset;return 0<=t&&t<this.size()?t:null}"
+      }
+    ]
+  },
+  "barStore": {
+    "constructor": "_",
+    "start": 0,
+    "end": 355,
+    "physicalLength": 355,
+    "firstIndex": {
+      "found": true,
+      "value": 0
+    },
+    "lastIndex": {
+      "found": true,
+      "value": 354
+    },
+    "firstRow": {
+      "index": 0,
+      "timestamp": 1794128760,
+      "open": 0.0000049081,
+      "high": 0.0000049094,
+      "low": 0.0000049066,
+      "close": 0.0000049066,
+      "volume": 997100000
+    },
+    "middleRow": {
+      "index": 177,
+      "timestamp": 1794139380,
+      "open": 0.000004993,
+      "high": 0.0000050037,
+      "low": 0.0000049928,
+      "close": 0.0000050007,
+      "volume": 4998000000
+    },
+    "lastRow": {
+      "index": 354,
+      "timestamp": 1794150000,
+      "open": 0.0000050904,
+      "high": 0.0000050963,
+      "low": 0.0000050888,
+      "close": 0.0000050963,
+      "volume": 5327200000
+    },
+    "searchByTimeSamples": [
+      {
+        "inputTimestamp": 1794128760,
+        "expectedIndex": 0,
+        "exactSearch": {
+          "found": true,
+          "value": {
+            "type": "Object",
+            "keys": [
+              "index",
+              "value"
+            ],
+            "index": 0,
+            "value": {
+              "type": "Array",
+              "length": 6,
+              "first": [
+                1794128760,
+                0.0000049081,
+                0.0000049094,
+                0.0000049066,
+                0.0000049066,
+                997100000
+              ]
+            }
+          }
+        }
+      },
+      {
+        "inputTimestamp": 1794139380,
+        "expectedIndex": 177,
+        "exactSearch": {
+          "found": true,
+          "value": {
+            "type": "Object",
+            "keys": [
+              "index",
+              "value"
+            ],
+            "index": 177,
+            "value": {
+              "type": "Array",
+              "length": 6,
+              "first": [
+                1794139380,
+                0.000004993,
+                0.0000050037,
+                0.0000049928,
+                0.0000050007,
+                4998000000
+              ]
+            }
+          }
+        }
+      },
+      {
+        "inputTimestamp": 1794150000,
+        "expectedIndex": 354,
+        "exactSearch": {
+          "found": true,
+          "value": {
+            "type": "Object",
+            "keys": [
+              "index",
+              "value"
+            ],
+            "index": 354,
+            "value": {
+              "type": "Array",
+              "length": 6,
+              "first": [
+                1794150000,
+                0.0000050904,
+                0.0000050963,
+                0.0000050888,
+                0.0000050963,
+                5327200000
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "methods": [
+      {
+        "name": "first",
+        "arguments": 0,
+        "code": "first(){return this.size()>0?this._items[this._start]:null}"
+      },
+      {
+        "name": "last",
+        "arguments": 0,
+        "code": "last(){return this.size()>0?this._items[this._end-1]:null}"
+      },
+      {
+        "name": "firstIndex",
+        "arguments": 0,
+        "code": "firstIndex(){return this.size()>0?this._indexAt(this._start):null}"
+      },
+      {
+        "name": "firstPlottableIndex",
+        "arguments": 0,
+        "code": "firstPlottableIndex(){if(this.isEmpty())return null;for(let t=this._start;t<this._end;++t){const e=this._indexAt(t);if(e>n.UNPLOTTABLE_TIME_POINT_INDEX)return e}return null}"
+      },
+      {
+        "name": "lastIndex",
+        "arguments": 0,
+        "code": "lastIndex(){return this.size()>0?this._indexAt(this._end-1):null}"
+      },
+      {
+        "name": "add",
+        "arguments": 2,
+        "code": "add(t,e){if(this._shareRead)return l.logDebug(\"add: readonly collection modification attempt\"),!1;const s={index:t,value:e},r=this._nonCachedSearch(t,o.PlotRowSearchMode.Exact,d);return this._invalidateSearchCaches(),null===r?(this._items.splice(this._lowerbound(t,d),0,s),this._start=0,this._end=this._items.length,!0):(this._items[r]=s,!1)}"
+      },
+      {
+        "name": "search",
+        "arguments": 1,
+        "code": "search(t,e=o.PlotRowSearchMode.Exact,s){return this._searchImpl(t,e,this._rowSearchCacheByIndex,this._rowSearchCacheByIndexWithoutEmptyValues,d,s)}"
+      },
+      {
+        "name": "searchByTime",
+        "arguments": 1,
+        "code": "searchByTime(t,e=o.PlotRowSearchMode.Exact,s){return this._searchImpl(t,e,this._rowSearchCacheByTime,this._rowSearchCacheByTimeWithoutEmptyValues,u,s)}"
+      },
+      {
+        "name": "findFirst",
+        "arguments": 2,
+        "code": "findFirst(t,e){const s=void 0!==e&&Math.min(this._start+e,this._end)||this._end;for(let e=this._start;e<s;++e){const s=this._indexAt(e),r=this._valueAt(e);if(t(s,r))return{index:s,value:r}}return null}"
+      },
+      {
+        "name": "findLast",
+        "arguments": 2,
+        "code": "findLast(t,e){const s=void 0!==e&&Math.max(this._end-e,this._start)||this._start;for(let e=this._end-1;e>=s;--e){const s=this._indexAt(e),r=this._valueAt(e);if(t(s,r))return{index:s,value:r}}return null}"
+      },
+      {
+        "name": "range",
+        "arguments": 2,
+        "code": "range(t,e){const s=new _(this._plotFunctions,this._emptyValuePredicate);return s._items=this._items,s._start=this._lowerbound(t,d),s._end=this._upperbound(e),s._shareRead=!0,s}"
+      },
+      {
+        "name": "plottableRange",
+        "arguments": 1,
+        "code": "plottableRange(t){const e=new _(this._plotFunctions,this._emptyValuePredicate);return e._items=this._items,\ne._start=this._upperbound(n.UNPLOTTABLE_TIME_POINT_INDEX),e._end=this._end,e._shareRead=!0,!0===t&&e._start>this._start&&(e._start-=1),e}"
+      },
+      {
+        "name": "rangeCountback",
+        "arguments": 2,
+        "code": "rangeCountback(t,e){if(null===this.firstIndex())return new _;const s=new _(this._plotFunctions,this._emptyValuePredicate);return s._items=this._items,s._end=this._upperbound(t),s._start=Math.max(this._start,s._end-e),s._shareRead=!0,s}"
+      },
+      {
+        "name": "rangeIterator",
+        "arguments": 2,
+        "code": "rangeIterator(t,e){const s=this._lowerbound(t,d),r=this._upperbound(e);return this._rangeIteratorImpl(s,r)}"
+      },
+      {
+        "name": "fullRangeIterator",
+        "arguments": 0,
+        "code": "fullRangeIterator(){return this._rangeIteratorImpl(this._start,this._end)}"
+      },
+      {
+        "name": "minMaxOnRangeCached",
+        "arguments": 3,
+        "code": "minMaxOnRangeCached(t,e,s){if(this.isEmpty())return null;let r=null;for(const i of s){r=c(r,this._minMaxOnRangeCachedImpl(t-i.offset,e-i.offset,i.name))}return r}"
+      },
+      {
+        "name": "minMaxOnRange",
+        "arguments": 3,
+        "code": "minMaxOnRange(t,e,s){if(this.isEmpty())return null;let r=null;for(const i of s){r=c(r,this._minMaxOnRange(t-i.offset,e-i.offset,i.name))}return r}"
+      },
+      {
+        "name": "merge",
+        "arguments": 1,
+        "code": "merge(t){return this._shareRead?(l.logDebug(\"merge: readonly collection modification attempt\"),null):0===t.length?null:this.isEmpty()||t[t.length-1].index<this._items[0].index?this._prepend(t):t[0].index>this._items[this._items.length-1].index?this._append(t):1===t.length&&t[0].index===this._items[this._items.length-1].index?(this._updateLast(t[0]),t[0]):this._merge(t)}"
+      },
+      {
+        "name": "addTail",
+        "arguments": 1,
+        "code": "addTail(t,e=!1){if(0===t.length)return;let s=0;e&&this._end-this._start>0&&(s=1,this._items[this._end-this._start-1].value=t[0].value);for(let e=s;e<t.length;++e){const s=t[e],r=this.lastIndex();if(null===r){l.logError(\"Can't add tail to the empty plotlist\");break}this.add(r+1,s.value)}this._invalidateSearchCaches()}"
+      },
+      {
+        "name": "remove",
+        "arguments": 1,
+        "code": "remove(t){if(this._shareRead)return l.logDebug(\"remove: readonly collection modification attempt\"),null;const e=this._nonCachedSearch(t,o.PlotRowSearchMode.NearestRight,d);if(null===e)return null;const s=this._items.splice(e);return this._end=this._items.length,this._minMaxCache.clear(),this._invalidateSearchCaches(),s.length>0?s[0]:null}"
+      },
+      {
+        "name": "_indexAt",
+        "arguments": 1,
+        "code": "_indexAt(t){return this._items[t].index}"
+      },
+      {
+        "name": "_searchImpl",
+        "arguments": 6,
+        "code": "_searchImpl(t,e,s,r,i,a){const n=void 0!==a?s:r,o=void 0!==a?1e4*(e+1)+a:e;let l=n.get(t);if(void 0!==l){const t=l.get(o);if(void 0!==t)return t}const h=this._nonCachedSearch(t,e,i,a);if(null===h)return null;const d={\nindex:this._indexAt(h),value:this._valueAt(h)};return void 0===l&&(l=new Map,n.set(t,l)),l.set(o,d),d}"
+      },
+      {
+        "name": "_nonCachedSearch",
+        "arguments": 4,
+        "code": "_nonCachedSearch(t,e,s,r){const i=this._lowerbound(t,s),a=i===this._end||t!==s(this._items[i]);if(a&&e!==o.PlotRowSearchMode.Exact)switch(e){case o.PlotRowSearchMode.NearestLeft:return this._searchNearestLeft(i,r);case o.PlotRowSearchMode.NearestRight:return this._searchNearestRight(i,r);default:throw new TypeError(\"Unknown search mode\")}if(void 0===r||a||e===o.PlotRowSearchMode.Exact)return a?null:i;switch(e){case o.PlotRowSearchMode.NearestLeft:return this._nonEmptyNearestLeft(i,r);case o.PlotRowSearchMode.NearestRight:return this._nonEmptyNearestRight(i,r);default:throw new TypeError(\"Unknown search mode\")}}"
+      },
+      {
+        "name": "_searchNearestLeft",
+        "arguments": 2,
+        "code": "_searchNearestLeft(t,e){if(t===this._start)return null;const s=t-1,r=s!==this._end?s:null;return void 0!==e&&null!==r?this._nonEmptyNearestLeft(r,e):r}"
+      },
+      {
+        "name": "_searchNearestRight",
+        "arguments": 2,
+        "code": "_searchNearestRight(t,e){const s=t,r=s!==this._end?s:null;return void 0!==e&&null!==r?this._nonEmptyNearestRight(r,e):r}"
+      },
+      {
+        "name": "_bsearch",
+        "arguments": 2,
+        "code": "_bsearch(t,e){const s=this._lowerbound(t,e);return s!==this._end&&t===e(this._items[s])?s:null}"
+      },
+      {
+        "name": "_prepend",
+        "arguments": 1,
+        "code": "_prepend(t){return(0,r.assert)(!this._shareRead,\"collection should not be readonly\"),(0,r.assert)(0!==t.length,\"plotRows should not be empty\"),this._invalidateSearchCaches(),this._minMaxCache.clear(),this._items=t.concat(this._items),this._start=0,this._end=this._items.length,t[0]}"
+      },
+      {
+        "name": "_append",
+        "arguments": 1,
+        "code": "_append(t){return(0,r.assert)(!this._shareRead,\"collection should not be readonly\"),(0,r.assert)(0!==t.length,\"plotRows should not be empty\"),this._invalidateSearchCaches(),this._minMaxCache.clear(),this._items=this._items.concat(t),this._start=0,this._end=this._items.length,t[0]}"
+      },
+      {
+        "name": "_updateLast",
+        "arguments": 1,
+        "code": "_updateLast(t){(0,r.assert)(!this.isEmpty(),\"plot list should not be empty\");const e=this._items[this._end-1];(0,r.assert)(e.index===t.index,\"last row index should match new row index\"),this._invalidateCacheForRow(t),this._invalidateSearchCaches(),this._items[this._end-1]=t}"
+      },
+      {
+        "name": "_merge",
+        "arguments": 1,
+        "code": "_merge(t){return(0,r.assert)(0!==t.length,\"plot rows should not be empty\"),this._invalidateSearchCaches(),this._minMaxCache.clear(),this._items=function(t,e){const s=function(t,e){const s=t.length,r=e.length;let i=s+r,a=0,n=0\n;for(;a<s&&n<r;)t[a].index<e[n].index?a++:t[a].index>e[n].index?n++:(a++,n++,i--);return i}(t,e),r=new Array(s);let i=0,a=0;const n=t.length,o=e.length;let l=0;for(;i<n&&a<o;)t[i].index<e[a].index?(r[l]=t[i],i++):t[i].index>e[a].index?(r[l]=e[a],a++):(r[l]=e[a],i++,a++),l++;for(;i<n;)r[l]=t[i],i++,l++;for(;a<o;)r[l]=e[a],a++,l++;return r}(this._items,t),this._start=0,this._end=this._items.length,t[0]}"
+      },
+      {
+        "name": "_minMaxOnRangeCachedImpl",
+        "arguments": 3,
+        "code": "_minMaxOnRangeCachedImpl(t,e,s){if(this.isEmpty())return null;let i=null;const a=(0,r.ensureNotNull)(this.firstIndex()),n=(0,r.ensureNotNull)(this.lastIndex()),o=Math.max(t,a),l=Math.min(e,n),d=Math.ceil(o/h)*h,u=Math.max(d,Math.floor(l/h)*h);i=c(i,this._minMaxOnRange(o,Math.min(d,e,l),s));let _=this._minMaxCache.get(s);void 0===_&&(_=new Map,this._minMaxCache.set(s,_));for(let t=Math.max(d+1,o);t<u;t+=h){const e=Math.floor(t/h);let r=_.get(e);if(void 0===r){const t=e*h,i=(e+1)*h-1;r=this._minMaxOnRange(t,i,s),_.set(e,r)}i=c(i,r)}i=c(i,this._minMaxOnRange(u,l,s));return i}"
+      },
+      {
+        "name": "_minMaxOnRange",
+        "arguments": 3,
+        "code": "_minMaxOnRange(t,e,s){return this._plotMinMax(this._lowerbound(t,d),this._upperbound(e),s)}"
+      },
+      {
+        "name": "_rangeIteratorImpl",
+        "arguments": 2,
+        "code": "_rangeIteratorImpl(t,e){let s=t-1;return{[Symbol.iterator](){return this},next:()=>(s+=1,s>=e?{done:!0,value:void 0}:{done:!1,value:this._items[s]})}}"
+      },
+      {
+        "name": "_invalidateSearchCaches",
+        "arguments": 0,
+        "code": "_invalidateSearchCaches(){this._rowSearchCacheByIndex.clear(),this._rowSearchCacheByIndexWithoutEmptyValues.clear(),this._rowSearchCacheByTime.clear(),this._rowSearchCacheByTimeWithoutEmptyValues.clear()}"
+      }
+    ]
+  },
+  "dataPipeline": {
+    "seriesData": {
+      "found": true,
+      "constructor": "c",
+      "keys": [
+        "m_bars",
+        "m_nsBars",
+        "_conflatedChunksBuilder",
+        "lastProjectionPrice"
+      ],
+      "methods": [
+        {
+          "name": "bars",
+          "arguments": 0,
+          "code": "bars(){return this.m_bars}"
+        },
+        {
+          "name": "nsBars",
+          "arguments": 0,
+          "code": "nsBars(){return this.m_nsBars}"
+        },
+        {
+          "name": "mergeRegularBars",
+          "arguments": 1,
+          "code": "mergeRegularBars(t){return this._conflatedChunksBuilder.mergeData(t)}"
+        },
+        {
+          "name": "clear",
+          "arguments": 0,
+          "code": "clear(){this.m_nsBars.clear(),this.lastProjectionPrice=void 0,this._conflatedChunksBuilder.clearData()}"
+        },
+        {
+          "name": "first",
+          "arguments": 0,
+          "code": "first(){return this.m_bars.isEmpty()?this.m_nsBars.first():this.m_bars.first()}"
+        },
+        {
+          "name": "last",
+          "arguments": 0,
+          "code": "last(){return this.m_nsBars.isEmpty()?this.m_bars.last():this.m_nsBars.last()}"
+        },
+        {
+          "name": "search",
+          "arguments": 3,
+          "code": "search(t,e,s){return this.nsBars().isEmpty()?this.bars().search(t,e,s):this.bars().isEmpty()||(0,r.ensureNotNull)(this.nsBars().firstIndex())<=t?this.nsBars().search(t,e,s):this.bars().search(t,e,s)}"
+        },
+        {
+          "name": "moveData",
+          "arguments": 1,
+          "code": "moveData(t){this._conflatedChunksBuilder.moveData(t),this.m_nsBars.move(t)}"
+        }
+      ]
+    },
+    "conflatedChunksBuilder": {
+      "found": true,
+      "constructor": "n",
+      "keys": [
+        "_plots",
+        "_state"
+      ],
+      "methods": [
+        {
+          "name": "conflatedChunks",
+          "arguments": 2,
+          "code": "conflatedChunks(t,e){if(e!==this._state.priceSource){this._state.priceSource=e;const t=this._plots.first();t&&(this._setEmptyConflatedChunks(),this._rebuildConflatedChunks(t))}const s=(0,r.ensureDefined)(a.find((e=>e.forBarspacingLargerThen<=t)));return(0,r.ensureDefined)(this._state.chunks.get(s.barsToMerge))}"
+        },
+        {
+          "name": "mergeData",
+          "arguments": 1,
+          "code": "mergeData(t){const e=this._plots.size(),s=this._plots.merge(t);return s&&null!==this._state.priceSource&&(e===this._plots.size()&&s.index===this._plots.lastIndex()?this._updateLatestChunks():this._rebuildConflatedChunks(s)),s}"
+        },
+        {
+          "name": "moveData",
+          "arguments": 1,
+          "code": "moveData(t){this._plots.move(t),this._plots.size()>0&&this._clearState()}"
+        },
+        {
+          "name": "clearData",
+          "arguments": 0,
+          "code": "clearData(){this._plots.clear(),this._clearState()}"
+        },
+        {
+          "name": "_rebuildConflatedChunks",
+          "arguments": 1,
+          "code": "_rebuildConflatedChunks(t){const e=this._state.priceSource;if(null===e)return;const s=t.index,n=this._state.priceSourcesProvider(e),o=(t,e,s)=>{let r=null;for(const i of t){const t=n(i.value);r&&i.index-r.startTime>=s.barsToMerge&&(e.push(r),r=null),r?(r.endTime=i.index,r.high=Math.max(r.high,t),r.low=Math.min(r.low,t),r.close=t):r={startTime:i.index,endTime:i.index,open:t,high:t,low:t,close:t}}r&&e.push(r)};a.forEach((t=>{const e=(0,r.ensureDefined)(this._state.chunks.get(t.barsToMerge)),a=(0,i.lowerbound)(e,s,((t,e)=>t.endTime<e));if(0===a&&e.length>0){const s=e[0].startTime-1,i=(0,r.ensureNotNull)(this._plots.firstIndex()),a=this._plots.rangeIterator(i,s),n=[];o(a,n,t);const l=n.concat(e);this._state.chunks.set(t.barsToMerge,l)}else{const s=(0,r.ensureNotNull)(this._plots.lastIndex());e.splice(a);let i=(0,r.ensureNotNull)(this._plots.firstIndex());e.length&&(i=e[e.length-1].endTime+1);const n=this._plots.rangeIterator(i,s);o(n,e,t)}}))}"
+        },
+        {
+          "name": "_updateLatestChunks",
+          "arguments": 0,
+          "code": "_updateLatestChunks(){const t=(0,r.ensureNotNull)(this._plots.last()),e=this._state.priceSourcesProvider(\"close\");a.forEach((s=>{const i=(0,r.ensureDefined)(this._state.chunks.get(s.barsToMerge)),a=e(t.value),n=i[i.length-1];n.high=Math.max(n.high,a),n.low=Math.min(n.low,a),n.close=a,n.endTime=t.index}))}"
+        },
+        {
+          "name": "_setEmptyConflatedChunks",
+          "arguments": 0,
+          "code": "_setEmptyConflatedChunks(){a.forEach((t=>this._state.chunks.set(t.barsToMerge,[])))}"
+        },
+        {
+          "name": "_clearState",
+          "arguments": 0,
+          "code": "_clearState(){this._state.chunks.clear(),this._state.priceSource=null}"
+        }
+      ]
+    },
+    "seriesSource": {
+      "found": true,
+      "constructor": "I",
+      "keys": [
+        "_extSymbol",
+        "_lastResolvedSymbol",
+        "_createSeriesOverriddenParams",
+        "_instanceId",
+        "_symbolInstanceId",
+        "_resolution",
+        "_timeFrame",
+        "_data",
+        "_dataEvents",
+        "_status",
+        "_turnaroundCounter",
+        "_boundOnGatewayIsConnectedChanged",
+        "_boundOnMessage",
+        "_ongoingDataUpdate",
+        "_gateway",
+        "_turnaroundPrefix",
+        "_createSeriesParams"
+      ],
+      "identifiers": {
+        "instanceId": "sds_3",
+        "symbolInstanceId": "sds_sym_4",
+        "resolution": "1",
+        "status": 3,
+        "turnaroundPrefix": "s"
+      },
+      "methods": [
+        {
+          "name": "_boundOnGatewayIsConnectedChanged",
+          "arguments": 1,
+          "code": "function () { [native code] }"
+        },
+        {
+          "name": "_boundOnMessage",
+          "arguments": 1,
+          "code": "function () { [native code] }"
+        },
+        {
+          "name": "requestMoreData",
+          "arguments": 1,
+          "code": "requestMoreData(t){null!==this._instanceId&&this._gateway.requestMoreData(this._instanceId,t,this._boundOnMessage)}"
+        },
+        {
+          "name": "resolution",
+          "arguments": 0,
+          "code": "resolution(){return this._resolution}"
+        },
+        {
+          "name": "data",
+          "arguments": 0,
+          "code": "data(){return this._data}"
+        },
+        {
+          "name": "setData",
+          "arguments": 1,
+          "code": "setData(t){this._data=t}"
+        },
+        {
+          "name": "setTimeframe",
+          "arguments": 1,
+          "code": "setTimeframe(t){this._timeFrame=t}"
+        },
+        {
+          "name": "clearData",
+          "arguments": 0,
+          "code": "clearData(){this.isStarted()?this._enqueueUpdate((()=>this._clearDataImpl())):this._clearDataImpl()}"
+        },
+        {
+          "name": "dataEvents",
+          "arguments": 0,
+          "code": "dataEvents(){return this._dataEvents}"
+        },
+        {
+          "name": "updateExtSymbol",
+          "arguments": 1,
+          "code": "updateExtSymbol(t){this._extSymbol=t}"
+        },
+        {
+          "name": "moveData",
+          "arguments": 1,
+          "code": "moveData(t){return this._enqueueUpdate((()=>this._data.moveData(t)))}"
+        },
+        {
+          "name": "_clearDataImpl",
+          "arguments": 0,
+          "code": "_clearDataImpl(){this._data.clear(),this._dataEvents.fireCleared()}"
+        },
+        {
+          "name": "_changeStatusTo",
+          "arguments": 1,
+          "code": "_changeStatusTo(t){(0,r.assert)(this._status!==t,\"Source and destination status should be distinct\"),b.logNormal(`Status changed from ${g[this._status]} to ${g[t]}`),this._status=t}"
+        },
+        {
+          "name": "_onGatewayIsConnectedChanged",
+          "arguments": 1,
+          "code": "_onGatewayIsConnectedChanged(t){t?this._onGatewayConnected():this._onGatewayDisconnected()}"
+        },
+        {
+          "name": "_onGatewayConnected",
+          "arguments": 0,
+          "code": "_onGatewayConnected(){1===this._status&&this._createSeries()}"
+        },
+        {
+          "name": "_onGatewayDisconnected",
+          "arguments": 0,
+          "code": "_onGatewayDisconnected(){0!==this._status&&1!==this._status&&(this._instanceId=null,this._changeStatusTo(1)),this._turnaroundCounter=1}"
+        },
+        {
+          "name": "_onMessage",
+          "arguments": 1,
+          "code": "_onMessage(t){\nthis._enqueueUpdate((()=>this._onMessageImpl(t)))}"
+        },
+        {
+          "name": "_onMessageImpl",
+          "arguments": 1,
+          "code": "async _onMessageImpl(t){switch(t.method){case\"symbol_resolved\":{const[e,s]=t.params;if(e!==this._symbolInstanceId){null!==this._symbolInstanceId&&b.logNormal(`Resolve for old symbol, expected: ${this._symbolInstanceId}, actual ${t.params[0]}`);break}this._onSymbolResolved(s);break}case\"symbol_error\":if(t.params[0]!==this._symbolInstanceId){null!==this._symbolInstanceId&&b.logNormal(`Symbol error for old symbol, expected: ${this._symbolInstanceId}, actual ${t.params[0]}`);break}this._onSymbolError(t);break;case\"series_timeframe\":{const[e,s,r,i,a,n,o]=t.params;if(!this._checkTurnaround(e,s)){b.logNormal(`Time frame for old data, expected: ${this._symbolInstanceId} (${this.turnaround()}), actual ${e} (${s})`);break}this._onSeriesTimeFrame(r,i,a,n,o);break}case\"series_error\":{const[e,s]=t.params;if(!this._checkTurnaround(e,s)){b.logNormal(`Series error for old data, expected: ${this._symbolInstanceId} (${this.turnaround()}), actual ${e} (${s})`);break}this._onSeriesError(t.params[2]);break}case\"series_loading\":{const[e,s]=t.params;if(!this._checkTurnaround(e,s))break;this._onSeriesLoading(t.time);break}case\"series_completed\":{const[e,s,r,i]=t.params;if(!this._checkTurnaround(e,r)){b.logNormal(`Series completed for old data, expected: ${this._symbolInstanceId} (${this.turnaround()}), actual ${e} (${r})`);break}this._onSeriesCompleted(s,t.time,i);break}case\"data_update\":if(!this._checkTurnaround(t.params.customId,t.params.turnaround)){b.logNormal(`Data update for old data, expected: ${this._symbolInstanceId} (${this.turnaround()}), actual ${t.params.customId} (${t.params.turnaround})`);break}await this._onDataUpdate(t.params.plots,t.params.nonseries,t.params.lastBar);break;case\"clear_data\":{if(t.params.turnaround!==this.turnaround()){b.logNormal(`Clear data for old data, expected: ${this.turnaround()}, actual ${t.params.turnaround}`);break}const e=this._data.first();this._clearDataImpl(),this._dataEvents.fireDataUpdated(void 0,!1,null,!1,e);break}}}"
+        },
+        {
+          "name": "_firePlanRestrictedResolution",
+          "arguments": 1,
+          "code": "_firePlanRestrictedResolution(t){({resolution_not_entitled:()=>this._dataEvents.fireIntradayExchangeNotPermitted(),\ncustom_resolution:()=>this._dataEvents.fireCustomIntervalNotPermitted((0,r.ensureNotNull)(this._resolution)),custom_sec_resolution:()=>this._dataEvents.fireCustomSecondsIntervalNotPermitted((0,r.ensureNotNull)(this._resolution)),seconds_not_entitled:()=>this._dataEvents.fireSecondsIntervalNotPermitted(),ticks_not_entitled:()=>this._dataEvents.fireTicksIntervalNotPermitted()})[t]()}"
+        },
+        {
+          "name": "_onSeriesTimeFrame",
+          "arguments": 5,
+          "code": "_onSeriesTimeFrame(t,e,s,r,i){this._dataEvents.fireSeriesTimeFrame(t,e,s,r??!0,i)}"
+        },
+        {
+          "name": "_onDataUpdate",
+          "arguments": 3,
+          "code": "async _onDataUpdate(t,e,s){this._onDataUnpacked(t,s,await(0,c.parseJapaneseProjectionBars)(e,this._gateway.wireFormat().unpackNonSeriesData))}"
+        },
+        {
+          "name": "_enqueueUpdate",
+          "arguments": 1,
+          "code": "_enqueueUpdate(t){return this._ongoingDataUpdate=this._ongoingDataUpdate.then(t,t),this._ongoingDataUpdate}"
+        },
+        {
+          "name": "_onDataUnpacked",
+          "arguments": 3,
+          "code": "_onDataUnpacked(t,e,s){if(0===this._status)return;2===this._status&&(this._changeStatusTo(3),this._clearDataImpl());const r=this._data.bars().size(),i=this._data.first(),a=this._data.bars().firstIndex(),n=this._data.mergeRegularBars(t);null!==s&&(this._data.nsBars().clear(),this._data.nsBars().merge(s.projectionPlots),this._data.lastProjectionPrice=s.lastPrice,null!==s.boxSize&&(this._data.boxSize=s.boxSize),this._data.reversalAmount=s.reversalAmount);const o=null===a,l=o||null!==n&&n.index<a;this._dataEvents.fireDataUpdated(e,l,n,o,i),r!==this._data.bars().size()&&null!==n&&this._dataEvents.fireBarReceived(n)}"
+        }
+      ]
+    },
+    "gateway": {
+      "found": true,
+      "constructor": "o",
+      "keys": [
+        "_isConnected",
+        "_state",
+        "_isConnectForbidden",
+        "_sessionId",
+        "_sessionIdChanged",
+        "_chartApi",
+        "_sessionPrefix",
+        "_shouldReconnectAfterCriticalError",
+        "_sessionDisabled",
+        "_handler",
+        "_criticalError",
+        "_symbolResolveMap",
+        "_lastSymbolResolveInfoMap",
+        "_wireFormat",
+        "_disableStatistics"
+      ],
+      "methods": [
+        {
+          "name": "_handler",
+          "arguments": 1,
+          "code": "function () { [native code] }"
+        },
+        {
+          "name": "requestFirstBarTime",
+          "arguments": 3,
+          "code": "requestFirstBarTime(e,t,i){return this._getChartApi().requestFirstBarTime(this.sessionId(),e,t,i)}"
+        },
+        {
+          "name": "requestMoreData",
+          "arguments": 3,
+          "code": "requestMoreData(e,t,i){return\"number\"==typeof e?this._getChartApi().requestMoreData(this.sessionId(),e):this._getChartApi().requestMoreData(this.sessionId(),e,t,i)}"
+        },
+        {
+          "name": "requestMoreTickmarks",
+          "arguments": 3,
+          "code": "requestMoreTickmarks(e,t,i){return this._getChartApi().requestMoreTickmarks(this.sessionId(),e,t,i)}"
+        },
+        {
+          "name": "setHandler",
+          "arguments": 1,
+          "code": "setHandler(e){this._handler=e}"
+        },
+        {
+          "name": "_sendCreateSession",
+          "arguments": 0,
+          "code": "_sendCreateSession(){Object.keys(this).forEach((e=>{/^(s|st|symbol_)\\d+$/.test(e)&&delete this[e]})),this._getChartApi().chartCreateSession(this.sessionId(),this._disableStatistics)}"
+        },
+        {
+          "name": "_sendRemoveSession",
+          "arguments": 0,
+          "code": "_sendRemoveSession(){this._getChartApi().chartDeleteSession(this.sessionId())}"
+        },
+        {
+          "name": "_onMessage",
+          "arguments": 1,
+          "code": "_onMessage(e){this._handler&&this._handler(e)}"
+        },
+        {
+          "name": "onMessage",
+          "arguments": 1,
+          "code": "onMessage(e){switch(e.method){case\"connected\":return void this._onChartApiConnected();case\"disconnected\":return void this._onChartApiDisconnected();case\"critical_error\":const t=String(e.params[0]),i=String(e.params[1]);return void this._onCriticalError(t,i)}this._onMessage(e)}"
+        },
+        {
+          "name": "_generateLogMessage",
+          "arguments": 1,
+          "code": "_generateLogMessage(e){return`[${this._sessionId}] ${e}`}"
+        }
+      ]
+    }
+  },
+  "events": {
+    "sourceDataEvents": {
+      "found": true,
+      "constructor": "_",
+      "keys": [
+        "_created",
+        "_modified",
+        "_cleared",
+        "_loading",
+        "_completed",
+        "_error",
+        "_symbolError",
+        "_symbolResolved",
+        "_seriesError",
+        "_symbolNotPermitted",
+        "_symbolInvalid",
+        "_symbolGroupNotPermitted",
+        "_symbolBondMetricsNotPermitted",
+        "_chartTypeNotPermitted",
+        "_intradaySpreadNotPermitted",
+        "_intradayExchangeNotPermitted",
+        "_customIntervalNotPermitted",
+        "_customSecondsIntervalNotPermitted",
+        "_secondsIntervalNotPermitted",
+        "_ticksIntervalNotPermitted",
+        "_barReceived",
+        "_seriesTimeFrame",
+        "_dataUpdated",
+        "_unsupportedResolutionRequested"
+      ],
+      "delegates": {
+        "_error": {
+          "found": true,
+          "constructor": "a",
+          "keys": [
+            "fire",
+            "_listeners"
+          ],
+          "listenerCount": 0,
+          "listeners": []
+        },
+        "_symbolError": {
+          "found": true,
+          "constructor": "a",
+          "keys": [
+            "fire",
+            "_listeners"
+          ],
+          "listenerCount": 8,
+          "listeners": [
+            {
+              "callbackName": null,
+              "callbackSource": null,
+              "ownerConstructor": null,
+              "ownerKeys": []
+            },
+            {
+              "callbackName": null,
+              "callbackSource": null,
+              "ownerConstructor": null,
+              "ownerKeys": []
+            },
+            {
+              "callbackName": null,
+              "callbackSource": null,
+              "ownerConstructor": null,
+              "ownerKeys": []
+            },
+            {
+              "callbackName": null,
+              "callbackSource": null,
+              "ownerConstructor": null,
+              "ownerKeys": []
+            },
+            {
+              "callbackName": null,
+              "callbackSource": null,
+              "ownerConstructor": null,
+              "ownerKeys": []
+            },
+            {
+              "callbackName": null,
+              "callbackSource": null,
+              "ownerConstructor": null,
+              "ownerKeys": []
+            },
+            {
+              "callbackName": null,
+              "callbackSource": null,
+              "ownerConstructor": null,
+              "ownerKeys": []
+            },
+            {
+              "callbackName": null,
+              "callbackSource": null,
+              "ownerConstructor": null,
+              "ownerKeys": []
+            }
+          ]
+        },
+        "_seriesError": {
+          "found": true,
+          "constructor": "a",
+          "keys": [
+            "fire",
+            "_listeners"
+          ],
+          "listenerCount": 2,
+          "listeners": [
+            {
+              "callbackName": null,
+              "callbackSource": null,
+              "ownerConstructor": null,
+              "ownerKeys": []
+            },
+            {
+              "callbackName": null,
+              "callbackSource": null,
+              "ownerConstructor": null,
+              "ownerKeys": []
+            }
+          ]
+        },
+        "_customIntervalNotPermitted": {
+          "found": true,
+          "constructor": "a",
+          "keys": [
+            "fire",
+            "_listeners"
+          ],
+          "listenerCount": 1,
+          "listeners": [
+            {
+              "callbackName": null,
+              "callbackSource": null,
+              "ownerConstructor": null,
+              "ownerKeys": []
+            }
+          ]
+        },
+        "_customSecondsIntervalNotPermitted": {
+          "found": true,
+          "constructor": "a",
+          "keys": [
+            "fire",
+            "_listeners"
+          ],
+          "listenerCount": 1,
+          "listeners": [
+            {
+              "callbackName": null,
+              "callbackSource": null,
+              "ownerConstructor": null,
+              "ownerKeys": []
+            }
+          ]
+        },
+        "_secondsIntervalNotPermitted": {
+          "found": true,
+          "constructor": "a",
+          "keys": [
+            "fire",
+            "_listeners"
+          ],
+          "listenerCount": 1,
+          "listeners": [
+            {
+              "callbackName": null,
+              "callbackSource": null,
+              "ownerConstructor": null,
+              "ownerKeys": []
+            }
+          ]
+        },
+        "_ticksIntervalNotPermitted": {
+          "found": true,
+          "constructor": "a",
+          "keys": [
+            "fire",
+            "_listeners"
+          ],
+          "listenerCount": 1,
+          "listeners": [
+            {
+              "callbackName": null,
+              "callbackSource": null,
+              "ownerConstructor": null,
+              "ownerKeys": []
+            }
+          ]
+        },
+        "_barReceived": {
+          "found": true,
+          "constructor": "a",
+          "keys": [
+            "fire",
+            "_listeners"
+          ],
+          "listenerCount": 3,
+          "listeners": [
+            {
+              "callbackName": null,
+              "callbackSource": null,
+              "ownerConstructor": null,
+              "ownerKeys": []
+            },
+            {
+              "callbackName": null,
+              "callbackSource": null,
+              "ownerConstructor": null,
+              "ownerKeys": []
+            },
+            {
+              "callbackName": null,
+              "callbackSource": null,
+              "ownerConstructor": null,
+              "ownerKeys": []
+            }
+          ]
+        },
+        "_seriesTimeFrame": {
+          "found": true,
+          "constructor": "a",
+          "keys": [
+            "fire",
+            "_listeners"
+          ],
+          "listenerCount": 3,
+          "listeners": [
+            {
+              "callbackName": null,
+              "callbackSource": null,
+              "ownerConstructor": null,
+              "ownerKeys": []
+            },
+            {
+              "callbackName": null,
+              "callbackSource": null,
+              "ownerConstructor": null,
+              "ownerKeys": []
+            },
+            {
+              "callbackName": null,
+              "callbackSource": null,
+              "ownerConstructor": null,
+              "ownerKeys": []
+            }
+          ]
+        },
+        "_dataUpdated": {
+          "found": true,
+          "constructor": "a",
+          "keys": [
+            "fire",
+            "_listeners"
+          ],
+          "listenerCount": 20,
+          "listeners": [
+            {
+              "callbackName": null,
+              "callbackSource": null,
+              "ownerConstructor": null,
+              "ownerKeys": []
+            },
+            {
+              "callbackName": null,
+              "callbackSource": null,
+              "ownerConstructor": null,
+              "ownerKeys": []
+            },
+            {
+              "callbackName": null,
+              "callbackSource": null,
+              "ownerConstructor": null,
+              "ownerKeys": []
+            },
+            {
+              "callbackName": null,
+              "callbackSource": null,
+              "ownerConstructor": null,
+              "ownerKeys": []
+            },
+            {
+              "callbackName": null,
+              "callbackSource": null,
+              "ownerConstructor": null,
+              "ownerKeys": []
+            },
+            {
+              "callbackName": null,
+              "callbackSource": null,
+              "ownerConstructor": null,
+              "ownerKeys": []
+            },
+            {
+              "callbackName": null,
+              "callbackSource": null,
+              "ownerConstructor": null,
+              "ownerKeys": []
+            },
+            {
+              "callbackName": null,
+              "callbackSource": null,
+              "ownerConstructor": null,
+              "ownerKeys": []
+            },
+            {
+              "callbackName": null,
+              "callbackSource": null,
+              "ownerConstructor": null,
+              "ownerKeys": []
+            },
+            {
+              "callbackName": null,
+              "callbackSource": null,
+              "ownerConstructor": null,
+              "ownerKeys": []
+            },
+            {
+              "callbackName": null,
+              "callbackSource": null,
+              "ownerConstructor": null,
+              "ownerKeys": []
+            },
+            {
+              "callbackName": null,
+              "callbackSource": null,
+              "ownerConstructor": null,
+              "ownerKeys": []
+            },
+            {
+              "callbackName": null,
+              "callbackSource": null,
+              "ownerConstructor": null,
+              "ownerKeys": []
+            },
+            {
+              "callbackName": null,
+              "callbackSource": null,
+              "ownerConstructor": null,
+              "ownerKeys": []
+            },
+            {
+              "callbackName": null,
+              "callbackSource": null,
+              "ownerConstructor": null,
+              "ownerKeys": []
+            },
+            {
+              "callbackName": null,
+              "callbackSource": null,
+              "ownerConstructor": null,
+              "ownerKeys": []
+            },
+            {
+              "callbackName": null,
+              "callbackSource": null,
+              "ownerConstructor": null,
+              "ownerKeys": []
+            },
+            {
+              "callbackName": null,
+              "callbackSource": null,
+              "ownerConstructor": null,
+              "ownerKeys": []
+            },
+            {
+              "callbackName": null,
+              "callbackSource": null,
+              "ownerConstructor": null,
+              "ownerKeys": []
+            },
+            {
+              "callbackName": null,
+              "callbackSource": null,
+              "ownerConstructor": null,
+              "ownerKeys": []
+            }
+          ]
+        },
+        "_unsupportedResolutionRequested": {
+          "found": true,
+          "constructor": "a",
+          "keys": [
+            "fire",
+            "_listeners"
+          ],
+          "listenerCount": 2,
+          "listeners": [
+            {
+              "callbackName": null,
+              "callbackSource": null,
+              "ownerConstructor": null,
+              "ownerKeys": []
+            },
+            {
+              "callbackName": null,
+              "callbackSource": null,
+              "ownerConstructor": null,
+              "ownerKeys": []
+            }
+          ]
+        }
+      }
+    },
+    "seriesDataEvents": {
+      "found": false,
+      "delegates": {}
+    },
+    "modelEvents": {
+      "found": false,
+      "delegates": {}
+    }
+  },
+  "chartApi": {
+    "chartApi": {
+      "found": true,
+      "constructor": "Se",
+      "keys": [
+        "sessionid",
+        "_banInfo",
+        "_isAuthTokenLoaded",
+        "_authTokenDfd",
+        "_serverTimeBasePoint",
+        "_initCachePromise",
+        "_trafficStats",
+        "_lowQualityEnabled",
+        "_brokerId",
+        "_sendingQueuedRequestsCount",
+        "_modifyStudyMap",
+        "_disconnectCount",
+        "_isConnected",
+        "_metadataDeferredPromise",
+        "_dataHandleModule",
+        "_sessions",
+        "_notificationHandlers",
+        "_pendingMessagesQueue",
+        "_loadNewBars",
+        "_sentAuthToken",
+        "_metadataRequestNextNumber",
+        "_fundamentalCounter",
+        "_studyCounter",
+        "_childStudyCounter",
+        "_studySpecs",
+        "_connectionsLimitReached",
+        "_planUpgradeRequired",
+        "_protocolError",
+        "_loggedErrorReasons",
+        "_protocolErrorBailout",
+        "_isProtocolErrorBailoutEnabled",
+        "_isProtocolErrorBailoutReported",
+        "_hasProtocolErrorOnConnection",
+        "_failedConnectionStreak",
+        "_healthyConnectionTimeout",
+        "_sentMethodsCounters",
+        "_receivedMethodsCounters",
+        "_requestDataProblemsPromise",
+        "_wsBackendConnection",
+        "_connectOnlyOptions",
+        "_authTokenManager",
+        "_metadataServerHash",
+        "connectDfd",
+        "_isNonCountedStudy"
+      ],
+      "methods": [
+        {
+          "name": "createSession",
+          "arguments": 2,
+          "code": "createSession(e,t){this._sessions[e]=t,this._notificationHandlers[e]={},this.connected()&&this._isAuthTokenLoaded&&t.onMessage({method:S.ChartApiMessageMethod.Connected,params:[]})}"
+        },
+        {
+          "name": "removeSession",
+          "arguments": 1,
+          "code": "removeSession(e){delete this._sessions[e],\ndelete this._notificationHandlers[e]}"
+        },
+        {
+          "name": "chartCreateSession",
+          "arguments": 2,
+          "code": "chartCreateSession(e,t){return this._sendRequest(\"chart_create_session\",[e,t])}"
+        },
+        {
+          "name": "chartDeleteSession",
+          "arguments": 1,
+          "code": "chartDeleteSession(e){return this._sendRequest(\"chart_delete_session\",[e])}"
+        },
+        {
+          "name": "createSeries",
+          "arguments": 8,
+          "code": "createSeries(e,t,s,n,i,r,o,a){b.telemetry.timeCounters.series.marks.push(\"create_series_\"+e),this._notificationHandlers[e][t]=new H(a,t);const _=null===o?\"\":(0,E.convertTimeFrameToStr)(o,!0);return this._sendRequest(\"create_series\",[e,t,s,n,i,r,_])}"
+        },
+        {
+          "name": "removeSeries",
+          "arguments": 2,
+          "code": "removeSeries(e,t){return delete this._notificationHandlers[e][t],this._sendRequest(\"remove_series\",[e,t])}"
+        },
+        {
+          "name": "modifySeries",
+          "arguments": 8,
+          "code": "modifySeries(e,t,s,n,i,r,o,a){this._notificationHandlers[e][t]=new H(a,t);const _=null===o?\"\":(0,E.convertTimeFrameToStr)(o,!0);return this._sendRequest(\"modify_series\",[e,t,s,n,i,_])}"
+        },
+        {
+          "name": "requestMoreData",
+          "arguments": 4,
+          "code": "requestMoreData(e,t,s,n){if(void 0===s||void 0===n)throw new Error(\"unsupported request to load more data, bars=\"+s);const i=t;return this._notificationHandlers[e][i]=new H(n,i),this._sendRequest(\"request_more_data\",[e,i,s])}"
+        },
+        {
+          "name": "requestDataProblems",
+          "arguments": 0,
+          "code": "requestDataProblems(){return this._requestDataProblemsPromise||(this._requestDataProblemsPromise=this.connectDfd.then((()=>new Promise(((e,t)=>{this._onDataProblemsPromiseErrback=t,this._sendRequest(\"request_data_problems\",[])?this._onDataProblemsPromiseCb=e:t()})))).finally((()=>{this._requestDataProblemsPromise=null}))),this._requestDataProblemsPromise}"
+        },
+        {
+          "name": "requestMetadata",
+          "arguments": 0,
+          "code": "async requestMetadata(){return null===this._metadataDeferredPromise&&(this._metadataDeferredPromise=(0,O.createDeferredPromise)(),this._metadataDeferredPromise.promise.finally((()=>{this._metadataDeferredPromise=null})),this._requestMetadata()),\nthis._metadataDeferredPromise.promise}"
+        },
+        {
+          "name": "allStudiesMetadata",
+          "arguments": 0,
+          "code": "allStudiesMetadata(){throw new Error(\"This method is not implemented\")}"
+        },
+        {
+          "name": "quoteCreateSession",
+          "arguments": 1,
+          "code": "quoteCreateSession(e){return this._sendRequest(\"quote_create_session\",[e])}"
+        },
+        {
+          "name": "quoteDeleteSession",
+          "arguments": 1,
+          "code": "quoteDeleteSession(e){return this._sendRequest(\"quote_delete_session\",[e])}"
+        },
+        {
+          "name": "depthCreateSession",
+          "arguments": 3,
+          "code": "depthCreateSession(e,t,s){return this._sendRequest(\"depth_create_session\",[e,t,s])}"
+        },
+        {
+          "name": "depthDeleteSession",
+          "arguments": 1,
+          "code": "depthDeleteSession(e){return this._sendRequest(\"depth_delete_session\",[e])}"
+        },
+        {
+          "name": "unpack",
+          "arguments": 1,
+          "code": "unpack(e){return this._dataHandleModule.unpack(e)}"
+        },
+        {
+          "name": "_dispatchNotification",
+          "arguments": 2,
+          "code": "_dispatchNotification(e,t){if(\"request_data_problems\"===e.method&&this._onDataProblemsPromiseCb)return void this._onDataProblemsPromiseCb(e.params);if(e.method===M.WebchartChartSessionResponseMethod.StudiesMetadata&&null!==this._metadataDeferredPromise)return void this._processedMetadata(e);const s=e.params.shift();if(!this._notificationHandlers[s])return;if(\"symbol_resolved\"===e.method){const t=e.params[1].full_name;b.telemetry.sendChartReport(\"symbol_resolved\",{count:1,additional:{symbol:t}});const n=b.telemetry.timeCounters.series[\"resolve_symbol_\"+s];\"number\"==typeof n&&b.telemetry.sendChartReport(\"symbol_resolve_time_frame\",{value:window.performance.now()-n,additional:{symbol:t}})}if([\"series_error\",\"series_completed\"].includes(e.method)&&b.telemetry.timeCounters.series.marks.length>0){const e=\"create_series_\"+s,t=b.telemetry.timeCounters.series.marks.indexOf(e);t>=0&&b.telemetry.timeCounters.series.marks.splice(t,1)}\nte||\"series_error\"!==e.method||(te=!0);const n=this._wsBackendConnection.getConnectionEstablished();if(null!==n&&\"series_completed\"===e.method&&(te||(te=!0,b.telemetry.sendChartReport(\"first_series_full_time_frame\",{value:window.performance.now()-n}),b.telemetry.timeCounters.series.marks=[]),ee||(ee=!0,b.telemetry.sendChartReport(\"page_full_load_time_frame\",{value:window.performance.now()}))),s.startsWith(\"cs_\")){let s=\"recv: \"+t;\"data_update\"===e.method?(s=(0,h.isHighRateEnabled)()?s:s.slice(0,500),W.logNormal(this._appendDuration(s,e.time))):\"study_loading\"===e.method?G.logNormal(this._appendDuration(s,e.time)):\"tickmark_update\"===e.method?Y.logNormal(this._appendDuration(s,e.time)):x.logNormal(this._appendDuration(s,e.time))}if(s.startsWith(\"qs_\")){(\"quote_symbol_data\"===e.method?K.logNormal:$.logNormal)(\"recv: \"+t)}switch(e.method){case M.WebchartChartSessionResponseMethod.TimeScaleUpdate:{const t=this._dataHandleModule.getTimescaleObjects(e),n=this._dataHandleModule.getTimescaleChangeset(e),i=this._convertTimescaleResponse(n);this._sessions[s].onMessage({method:M.WebchartChartSessionResponseMethod.TimeScaleUpdate,params:i}),this._dataHandleModule.prepareDataUpdateObjects(s,t,((e,t,s)=>{this._invokeNotificationHandler(e,t,s)}));break}case\"tickmark_update\":const t={...this._convertTimescaleResponse(e.params[0]),changes:[]};this._sessions[s].onMessage({method:M.WebchartChartSessionResponseMethod.TimeScaleUpdate,params:t});break;case M.WebchartChartSessionResponseMethod.DataUpdate:{const t=this._dataHandleModule.getDataUpdateObjects(e);this._dataHandleModule.prepareDataUpdateObjects(s,t,((e,t,s)=>{this._invokeNotificationHandler(e,t,s)}));break}case\"index_update\":for(const t in e.params[0])if(e.params[0].hasOwnProperty(t)){const n={method:\"index_update\",params:e.params[0][t]};this._invokeNotificationHandler(s,t,n)}break;case M.WebchartResponseMethod.CriticalError:q.logInfo(new Date+\" critical_error session:\"+this.sessionid+\" reason:\"+e.params[0]),b.telemetry.sendChartReport(\"critical_error\"),this._sendErrorLogOnce(\"critical_error_log\",e.params),this._sessions[s].onMessage({method:M.WebchartResponseMethod.CriticalError,params:e.params});break;case\"timescale_completed\":case\"quote_symbol_data\":case\"quote_list_fields\":case\"quote_completed\":case\"depth_symbol_error\":case\"depth_symbol_success\":case\"dd\":case\"dpu\":case\"depth_bar_last_value\":this._sessions[s].onMessage({method:e.method,params:e.params});break;case\"clear_data\":for(const t in e.params[0])e.params[0].hasOwnProperty(t)&&this._invokeNotificationHandler(s,t,{method:M.WebchartChartSessionResponseMethod.ClearData,params:e.params[0][t]});break;case M.WebchartReplaySessionResponseMethod.ReplayPoint:case M.WebchartReplaySessionResponseMethod.ReplayResolutions:case M.WebchartReplaySessionResponseMethod.ReplayDataEnd:case M.WebchartReplaySessionResponseMethod.ReplayI"
+        },
+        {
+          "name": "_notifySessions",
+          "arguments": 1,
+          "code": "_notifySessions(e){for(const t in this._sessions)if(this._sessions.hasOwnProperty(t)){const s=this._sessions[t];\"function\"==typeof s.onMessage&&s.onMessage(e)}}"
+        },
+        {
+          "name": "_onMessage",
+          "arguments": 1,
+          "code": "_onMessage(e){this._checkAuthTokenExpiration(\"AuthToken invalidation detected on receiving a message, requesting new token\"),this._calcTrafficStats(e);const t=this.unpack(e);this._receivedMethodsCounters.set(t.method,(this._receivedMethodsCounters.get(t.method)??0)+1),\"t_ms\"in t&&(0,o.default)(t.t_ms)&&this.compensateConnectionLag(t.t_ms),\"protocol_switched\"!==t.method?\"protocol_error\"!==t.method?this._dispatchNotification(t,e):this._processProtocolError(t):q.logError(\"Unexpected protocol changing request, try skipping. Requested protocol:\"+t.params[0])}"
+        },
+        {
+          "name": "_processedMetadata",
+          "arguments": 1,
+          "code": "async _processedMetadata(e){const t=(0,l.ensureNotNull)(this._metadataDeferredPromise),s=await this._initCachePromise,n=N.shopConfService.hash(),r=(0,m.isFeaturesetEnabled)(\"widget\");try{await s.setValue(ue,(0,i.default)(e));const o=Array.from(new Set(e.params[1].metainfo.map((e=>{return`${(t=(0,A.parseIdString)(e.id)).packageId}-${t.version}`;var t}))));if(q.logNormal(`Updated studies_metadata cache, unique package ids: ${o.join(\", \")}`),!r)try{await s.setValue(le,(0,i.default)(n)),q.logNormal(\"Updated pro_hash cache\")}catch(e){t.reject(),q.logError(\"Cannot update pro_hash cache, reason: \"+e)}}catch(e){t.reject(),q.logError(\"Cannot update studies_metadata cache, reason: \"+e)}t.resolve((0,i.default)(e))}"
+        },
+        {
+          "name": "_invokeNotificationHandler",
+          "arguments": 3,
+          "code": "_invokeNotificationHandler(e,t,s){if(void 0===t)return;const n=this._notificationHandlers[e][t];void 0!==n&&(n.singleShot&&delete this._notificationHandlers[e][t],n.handler?.(s))}"
+        },
+        {
+          "name": "_requestMetadata",
+          "arguments": 0,
+          "code": "async _requestMetadata(){const e=this._makeNextRequestId();B.logNormal(`Requesting metainfo #${e}`);const t=(0,l.ensureNotNull)(this._metadataDeferredPromise),s=N.shopConfService.hash(),n=(0,m.isFeaturesetEnabled)(\"widget\");q.logNormal(\"Requesting pro hash\");try{const r=await this._initCachePromise;await r.migrateValue(\"pro_hash\",le),await r.migrateValue(_e,ue);const o=await r.getValue(le);if(null!==o&&o===s||n){q.logNormal(\"Pro hash has not changed, requesting from local\");const n=await r.getValue(ue),o=null!==n&&n.params[1].hash||null;if(null===o||null===this._metadataServerHash||this._metadataServerHash!==o)q.logNormal(`Metadata hash has changed (cached: '${o}', server: '${this._metadataServerHash}')`),this._requestMetadataFromServer(e);else{\nif(!N.shopConfService.hasPackage(\"tv-volumebyprice\")||void 0!==n.params[1].metainfo.find((e=>e.id.includes(\"@tv-volumebyprice\"))))return q.logNormal(\"Using studies_metadata from browser cache\"),void t.resolve((0,i.default)(n));q.logNormal(`De-sync detected! pro.hash contains VbPR studies, but data from cache doesn't and pro.hash isn't changed, pro.hash=${s}`),this._requestMetadataFromServer(e)}}else q.logNormal(`Pro hash has changed (cached: '${o}', current: '${s}')`),this._requestMetadataFromServer(e)}catch(t){q.logError(\"Cannot get studies_metadata, reason: \"+t),this._requestMetadataFromServer(e)}finally{B.logNormal(`Requesting studies metadata #${e} finished`)}}"
+        },
+        {
+          "name": "_requestMetadataFromServer",
+          "arguments": 1,
+          "code": "_requestMetadataFromServer(e){return q.logNormal(\"Request studies_metadata from server\"),this._sendRequest(\"request_studies_metadata\",[e])}"
+        },
+        {
+          "name": "_sendBrokerIdToSession",
+          "arguments": 1,
+          "code": "_sendBrokerIdToSession(e){return!X||this._sendRequest(\"set_broker\",[e])}"
+        },
+        {
+          "name": "_flushPendingMessages",
+          "arguments": 0,
+          "code": "_flushPendingMessages(){q.logInfo(`Flush pending messages. Count=${this._pendingMessagesQueue.length}`),this._pendingMessagesQueue.forEach((e=>this._sendRequest(e.method,e.args))),this._pendingMessagesQueue=[]}"
+        }
+      ]
+    },
+    "websocketConnection": {
+      "found": false,
+      "methods": []
+    }
+  },
+  "studyPropagation": {
+    "seriesMethods": [
+      {
+        "name": "createPaneView",
+        "arguments": 0,
+        "code": "createPaneView(){this._paneView=null,this._projectionBarsPaneView=null,this._waterlineView=null,this._priceLineView=this.hasClosePrice()?new Pi(this):null;const e=this._properties.childs().style.value();switch(e){case W.ChartStyle.Bar:this._paneView=new $i.SeriesBarsPaneView(this,this._model);break;case W.ChartStyle.VolFootprint:case W.ChartStyle.VolCandle:case W.ChartStyle.Candle:this._paneView=new Zi.SeriesCandlesPaneView(this,this._model,e===W.ChartStyle.Candle||e===W.ChartStyle.VolCandle?1:.2);break;case W.ChartStyle.Line:case W.ChartStyle.TPO:case W.ChartStyle.LineWithMarkers:case W.ChartStyle.Stepline:this._paneView=new Xi.SeriesLinePaneView(this,this._model);break;case W.ChartStyle.Area:this._paneView=new Ji.SeriesAreaPaneView(this,this._model);break;case W.ChartStyle.HLCArea:\nthis._paneView=new Qi.SeriesHLCAreaPaneView(this,this._model);break;case W.ChartStyle.HeikinAshi:this._paneView=new es(this,this._model);break;case W.ChartStyle.HollowCandle:this._paneView=new ts.SeriesHollowCandlesPaneView(this,this._model);break;case W.ChartStyle.Column:this._paneView=new Yi.SeriesColumnsPaneView(this,this._model);break;case W.ChartStyle.Baseline:{this._paneView=new is.SeriesBaselinePaneView(this,this._model);const e=this._properties.childs().baselineStyle.childs();this._waterlineView=new Mi.SeriesWaterlinePaneView({paneHeight:()=>this.priceScale().height(),color:()=>e.baselineColor.value(),baseLevelPercentage:()=>e.baseLevelPercentage.value()});break}case W.ChartStyle.HiLo:this._paneView=new xi.SeriesHiLoPaneView(this,this._model);break;case W.ChartStyle.HLCBars:this._paneView=new bs.SeriesHLCBarsPaneView(this,this._model)}switch(e){case W.ChartStyle.Renko:this._paneView=new Ri(this,this._model),this._projectionBarsPaneView=new Vi(this,this._model);break;case W.ChartStyle.LineBreak:this._paneView=new Bi(this,this._model),this._projectionBarsPaneView=new Oi(this,this._model);break;case W.ChartStyle.Kagi:this._paneView=new Hi(this,this._model),this._projectionBarsPaneView=new zi(this,this._model);break;case W.ChartStyle.PnF:this._paneView=new qi(this,this._model),this._projectionBarsPaneView=new ji(this,this._model)}if(e===W.ChartStyle.Range&&(this._properties.childs().rangeStyle.childs().barStyle.value()===ds.RangeBarStyle.Bars?(this._paneView=new $i.SeriesBarsPaneView(this,this._model),this._projectionBarsPaneView=new jt(this,this._model)):(this._paneView=new Zi.SeriesCandlesPaneView(this,this._model),this._projectionBarsPaneView=new Kt(this,this._model))),e===W.ChartStyle.SVP&&(this._paneView=Ye.instance()),null===this._paneView)throw Error(\"Unknown chart style assigned: \"+e)}"
+      },
+      {
+        "name": "labelPaneViews",
+        "arguments": 0,
+        "code": "labelPaneViews(){return this._labelPaneViews}"
+      },
+      {
+        "name": "topPaneViews",
+        "arguments": 0,
+        "code": "topPaneViews(){const e=[];if(null!==this._gotoDateView&&e.push(this._gotoDateView),this._lastPriceAnimationActive){const t=this._lineStyleLastPriceCirclePaneView;t.animationActive()&&setTimeout((()=>this._model.invalidate(bi.InvalidationMask.cursor())),0),t.invalidateStage(),e.push(t)}return 0!==e.length?e:null}"
+      },
+      {
+        "name": "paneViews",
+        "arguments": 1,
+        "code": "paneViews(e){if(!this.properties().childs().visible.value()||!this._model.isSnapshot()&&!this._wasCompletedBefore())return null;const t=e===this._model.paneForSource(this),i=t?[(0,r.ensureNotNull)(this._baseHorizontalLineView),(0,r.ensureNotNull)(this._paneView)]:[];if(i.push(...this._studyBindings?.paneViews(e)??[]),t){if(this.style()!==W.ChartStyle.VolFootprint&&this._delayStatusPaneView&&!this.isInReplay().value()){const e=this._delayStatusPaneView.get();e&&(e.setBarsProvider(this._projectionBarsPaneView),i.push(e))}this._endOfDataPaneView&&i.push(this._endOfDataPaneView),\nthis._futureBarsPaneView&&i.push(this._futureBarsPaneView),this._projectionBarsPaneView&&i.push(this._projectionBarsPaneView),null!==this._waterlineView&&i.push(this._waterlineView),i.push((0,r.ensureNotNull)(this._prevClosePriceLineView)),null!==this._priceLineView&&i.push(this._priceLineView),window.TradingView.printing&&this._lastPriceAnimationActive&&(this._lineStyleLastPriceCirclePaneView.stopAnimation(),i.push(this._lineStyleLastPriceCirclePaneView)),i.push(...this._highLowAvgPaneViews),i.push(...this._averagePaneViews)}return i}"
+      },
+      {
+        "name": "styleStudyInfos",
+        "arguments": 0,
+        "code": "styleStudyInfos(){let e={\nhaStyle:{studyId:(0,r.ensureNotNull)((0,L.chartStyleStudyId)(W.ChartStyle.HeikinAshi,!0))},renkoStyle:{studyId:(0,r.ensureNotNull)((0,L.chartStyleStudyId)(W.ChartStyle.Renko,!0))},pbStyle:{studyId:(0,r.ensureNotNull)((0,L.chartStyleStudyId)(W.ChartStyle.LineBreak,!0))},kagiStyle:{studyId:(0,r.ensureNotNull)((0,L.chartStyleStudyId)(W.ChartStyle.Kagi,!0))},pnfStyle:{studyId:(0,r.ensureNotNull)((0,L.chartStyleStudyId)(W.ChartStyle.PnF,!0))},rangeStyle:{studyId:(0,r.ensureNotNull)((0,L.chartStyleStudyId)(W.ChartStyle.Range,!0))}};return e={...e,svpStyle:{studyId:(0,r.ensureNotNull)((0,L.chartStyleStudyId)(W.ChartStyle.SVP,!0))}},e={...e,volFootprintStyle:{studyId:(0,r.ensureNotNull)((0,L.chartStyleStudyId)(W.ChartStyle.VolFootprint,!0))},tpoStyle:{studyId:(0,r.ensureNotNull)((0,L.chartStyleStudyId)(W.ChartStyle.TPO,!0,this._properties.childs().tpoStyle.childs().inputs.state()))}},e}"
+      },
+      {
+        "name": "isMainSeries",
+        "arguments": 0,
+        "code": "isMainSeries(){return!0}"
+      },
+      {
+        "name": "updateAllViews",
+        "arguments": 1,
+        "code": "updateAllViews(e){this._studyBindings?.updateAllViews(e),this._delayStatusPaneView?.get()?.update(e),e.type!==$e.ChangeEventType.HoverChange&&(this._paneView?.update(e),this._dataWindowView.update(),this._legendView.update(),this._statusView.update(),this._floatingTooltipView.update(e),this._averagePaneViews.forEach((t=>t.update(e))),this._highLowAvgPaneViews.forEach((t=>t.update(e))),this._labelPaneViews.forEach((t=>t.update(e))),this._priceAxisViews.forEach((t=>t.update(e))),this._priceLineAxisViews.forEach((t=>t.update(e))),this._futureBarsPaneView?.update(e),this._projectionBarsPaneView?.update(e),this._waterlineView?.update(e),this._prevClosePriceLineView?.update(e),this._priceLineView?.update(e),this._gotoDateView?.update(e),this._endOfDataPaneView?.update(e),this._baseHorizontalLineView?.update(e),this._model.activeStrategySource().value()?.updateAllViews(e),this._model.replayStudyStrategy().value()?.updateAllViews(e),this._lineStyleLastPriceCirclePaneView.update(e))}"
+      },
+      {
+        "name": "styleStudyInfo",
+        "arguments": 1,
+        "code": "styleStudyInfo(e){return this.styleStudyInfos()[e]}"
+      },
+      {
+        "name": "createStudyBindingsStatusWidgets",
+        "arguments": 1,
+        "code": "createStudyBindingsStatusWidgets(e){return this._studyBindings?.createStatusWidgets(e)??[]}"
+      },
+      {
+        "name": "activeStudyBinding",
+        "arguments": 0,
+        "code": "activeStudyBinding(){return this._studyBindings?.activeStudy()??null}"
+      },
+      {
+        "name": "_onDataUpdated",
+        "arguments": 5,
+        "code": "_onDataUpdated(e,t,i,s,o){if(t&&o&&this._colorOnPrevBar()&&this._precomputedBarStyles.delete(o.value),s){const e=this.symbolInfo();this._volumePointWeights=null!==e&&(0,R.hasVolume)(e)?function(e){let t=0,i=0;for(const s of e){const e=s.value[x.SeriesPlotIndex.Volume];(0,a.isNumber)(e)&&e>0&&(t+=e,i+=1)}return i>0?new kt(t/i):null}(this.bars().fullRangeIterator()):null,this._updateTimeScaleTimePointWeights()}if(null!==this._volumePointWeights){const e=t?this.bars().fullRangeIterator():i?this.bars().rangeIterator(i.index,(0,r.ensureNotNull)(this.bars().lastIndex())):null;null!==e&&function(e,t){for(const i of t){const t=i.value[x.SeriesPlotIndex.Volume];(0,a.isNumber)(t)&&e.setVolume(i.index,t)}}(this._volumePointWeights,e)}t?this._requestMoreDataAvailable=!0:this._lastPriceAnimationActive&&this._seriesLoaded&&this._lineStyleLastPriceCirclePaneView.update((0,ve.sourceChangeEvent)(this.id())),this._lastBarCloseTime=e&&e.closeTime||null,this._boxSizeValue.setValue(this.data().boxSize),this._statusView.update();const n=this.bars().firstIndex(),l=this.bars().lastIndex();null!==n&&null!==l?this._dataRangeUpdated.fire({type:\"partial\",startIndex:i?.index??n,endIndex:t?o?.index??l:l}):this._dataRangeUpdated.fire({type:\"full\"}),this.clearAveragePriceCache(),this.clearHighLowPriceCache();const c=this.model(),h=(0,r.ensureNotNull)(c.paneForSource(this));c.recalculatePane(h,(0,ve.sourceChangeEvent)({sourceId:this.id(),realtime:!t,firstUpdatedTimePointIndex:i?.index??void 0})),\nc.updateSource(this)}"
+      },
+      {
+        "name": "_onBarReceived",
+        "arguments": 1,
+        "code": "_onBarReceived(e){this.model().recalcVisibleRangeStudies(P.RecalcVisibleRangeStudiesReason.DataUpdate)}"
+      },
+      {
+        "name": "_stopStudiesForRestrictedBond",
+        "arguments": 0,
+        "code": "_stopStudiesForRestrictedBond(){this._withStudyBindings((e=>e.stop())),this._model.allStudies().filter((e=>e.isStarted())).forEach((e=>e.stop())),this._model.sessions().get()?.stop(),this._model.allLineToolsIncludingHidden().filter(ps.isStudyLineTool).forEach((e=>e.stop())),this._areStudiesStoppedForRestrictedBond=!0}"
+      },
+      {
+        "name": "_restartStudiesStoppedForRestrictedBond",
+        "arguments": 0,
+        "code": "_restartStudiesStoppedForRestrictedBond(){if(this._areStudiesStoppedForRestrictedBond){this._areStudiesStoppedForRestrictedBond=!1,this._withStudyBindings((e=>e.restart()));for(const e of this._model.allStudies())e.isStarted()||e.restart();this._model.sessions().get()?.restart()}}"
+      },
+      {
+        "name": "_recalcSymbolTextSourceProxyProperty",
+        "arguments": 0,
+        "code": "_recalcSymbolTextSourceProxyProperty(){this._textSourceIsAlwaysTickerRestrictionEnabled?this._symbolTextSourceProxyProperty.setValue(\"ticker\"):this._symbolTextSourceProxyProperty.setValue(this._properties.childs().statusViewStyle.childs().symbolTextSource.value())}"
+      },
+      {
+        "name": "_withStudyBindings",
+        "arguments": 1,
+        "code": "_withStudyBindings(e){null===this._studyBindings?this._studyBindingsLoader?.callFunction(e):e(this._studyBindings)}"
+      },
+      {
+        "name": "isSavedInStudyTemplates",
+        "arguments": 0,
+        "code": "isSavedInStudyTemplates(){return!0}"
+      },
+      {
+        "name": "isRemovedByStudyTemplates",
+        "arguments": 0,
+        "code": "isRemovedByStudyTemplates(){return!0}"
+      },
+      {
+        "name": "isChildStudy",
+        "arguments": 0,
+        "code": "isChildStudy(){return!1}"
+      },
+      {
+        "name": "isMultiPaneAvailable",
+        "arguments": 0,
+        "code": "isMultiPaneAvailable(){return!1}"
+      },
+      {
+        "name": "isMultiPaneEnabled",
+        "arguments": 0,
+        "code": "isMultiPaneEnabled(){return!1}"
+      },
+      {
+        "name": "allowsMovingBetweenPanes",
+        "arguments": 0,
+        "code": "allowsMovingBetweenPanes(){return!0}"
+      }
+    ],
+    "modelMethods": [
+      {
+        "name": "_recalcColorStudiesImplDebounced",
+        "arguments": 0,
+        "code": "function w(){var t=a(),r=_(t);if(o=arguments,l=this,v=t,r){if(void 0===s)return function(t){return p=t,s=setTimeout(g,e),b?h(t):i}(v);if(y)return clearTimeout(s),s=setTimeout(g,e),h(v)}return void 0===s&&(s=setTimeout(g,e)),i}"
+      },
+      {
+        "name": "_recalcSymbolResolvingActive",
+        "arguments": 0,
+        "code": "()=>{for(const e of this._panes)if(e.symbolSourceResolvingActive().value())return void this._symbolSourceResolvingActive.setValue(!0);this._symbolSourceResolvingActive.setValue(!1)}"
+      },
+      {
+        "name": "_recalcAdjustForDividendsAvailability",
+        "arguments": 0,
+        "code": "()=>{if(this._symbolSourceResolvingActive.value())return;const e=this.mainSeries();switch(e.symbolInfo()?.allowed_adjustment??\"none\"){case\"dividends\":return void this._adjustForDividendsAvailability.setValue(He.DividendAdjustmentAvailability.AvailableReadonlyAlwaysEnabled);case\"splits\":return void this._adjustForDividendsAvailability.setValue(He.DividendAdjustmentAvailability.AvailableReadonlyAlwaysDisabled);case\"any\":return void this._adjustForDividendsAvailability.setValue(He.DividendAdjustmentAvailability.Available)}for(const t of this.symbolSources()){if(t.symbolHibernated().value()||t===e)continue;if(\"any\"===(t.symbolInfo()?.allowed_adjustment??\"none\"))return void this._adjustForDividendsAvailability.setValue(He.DividendAdjustmentAvailability.Available)}this._adjustForDividendsAvailability.setValue(He.DividendAdjustmentAvailability.Unavailable)}"
+      },
+      {
+        "name": "_recalcAllowedAdjustment",
+        "arguments": 0,
+        "code": "()=>{const e=this.mainSeries(),t=e.symbolInfo()?.allowed_adjustment??\"none\";if(\"dividends\"===t||\"splits\"===t)return void this._allowedAdjustment.setValue(t);let i=\"none\";for(const e of this.symbolSources()){if(e.symbolHibernated().value())continue;const t=e.symbolInfo()?.allowed_adjustment??\"none\";if(\"any\"===t)return void this._allowedAdjustment.setValue(\"any\")\n;\"splits\"===t&&\"dividends\"!==i&&(i=\"splits\"),\"dividends\"===t&&(i=\"dividends\")}this._allowedAdjustment.setValue(i)}"
+      },
+      {
+        "name": "_recalcAdjustForDividendsEnabled",
+        "arguments": 0,
+        "code": "()=>{switch(this._adjustForDividendsAvailability.value()){case He.DividendAdjustmentAvailability.AvailableReadonlyAlwaysEnabled:return void this._adjustForDividendsEnabled.setValue(!0);case He.DividendAdjustmentAvailability.Unavailable:case He.DividendAdjustmentAvailability.AvailableReadonlyAlwaysDisabled:return void this._adjustForDividendsEnabled.setValue(!1)}this._adjustForDividendsEnabled.setValue((0,l.ensureDefined)(this.mainSeries().properties().childs().dividendsAdjustment).value())}"
+      },
+      {
+        "name": "_recalcPaneCollapsingAvailable",
+        "arguments": 1,
+        "code": "e=>{let t=this._panes.filter((e=>!e.collapsed().value())).length;0===t&&e&&this._panes.length>0&&(this._panes[0].collapsed().setValue(!1),t=1),this._paneCollapsingAvailable.setValue(t>1)}"
+      },
+      {
+        "name": "_boundUpdateStudiesMaxOffset",
+        "arguments": 0,
+        "code": "function () { [native code] }"
+      },
+      {
+        "name": "_boundUpdateStudiesFutureBoundary",
+        "arguments": 0,
+        "code": "function () { [native code] }"
+      },
+      {
+        "name": "visibleRangeStudiesInputs",
+        "arguments": 0,
+        "code": "visibleRangeStudiesInputs(){return this._visibleRangeStudiesInputs.readonly()}"
+      },
+      {
+        "name": "startNotStartedStudies",
+        "arguments": 0,
+        "code": "startNotStartedStudies(){if(!this._mainSeries.isBondDataRestricted()){if(!this._mainSeries.isStarted())throw new Error(\"Cannot start studies: main series is not started\");for(const e of this.dataSources())(0,ee.isStudy)(e)&&!e.isStarted()&&e.restart?.()}}"
+      },
+      {
+        "name": "replayStudyStrategy",
+        "arguments": 0,
+        "code": "replayStudyStrategy(){return this._replayStudyStrategy}"
+      },
+      {
+        "name": "setReplayStudyStrategy",
+        "arguments": 1,
+        "code": "setReplayStudyStrategy(e){this._replayStudyStrategy.setValue(e)}"
+      },
+      {
+        "name": "replayStudyStrategyProperties",
+        "arguments": 0,
+        "code": "async replayStudyStrategyProperties(){if(null===this._replayStudyStrategyInputs){const e=await(0,Xc.getReplayStrategyMetaInfo)();if(null!==this._replayStudyStrategyInputs)return this._replayStudyStrategyInputs;this._replayStudyStrategyInputs=new $r.DefaultProperty({defaultName:\"replayStudyStrategyInputs\",factoryDefaultsSupplier:()=>(0,c.clone)(e.defaults.inputs)})}return this._replayStudyStrategyInputs}"
+      },
+      {
+        "name": "clearReplayStudyStrategyProperties",
+        "arguments": 0,
+        "code": "clearReplayStudyStrategyProperties(){this._replayStudyStrategyInputs=null}"
+      },
+      {
+        "name": "panesCollectionChanged",
+        "arguments": 0,
+        "code": "panesCollectionChanged(){return this._panesCollectionChanged}"
+      },
+      {
+        "name": "paneCollapsingAvailable",
+        "arguments": 0,
+        "code": "paneCollapsingAvailable(){return this._paneCollapsingAvailable}"
+      },
+      {
+        "name": "mainSeries",
+        "arguments": 0,
+        "code": "mainSeries(){return this._mainSeries}"
+      },
+      {
+        "name": "updateAllPaneViews",
+        "arguments": 1,
+        "code": "updateAllPaneViews(e){for(const t of this._panes)t.updateAllViews(e);this._watermarkSource?.updateAllViews(e)}"
+      },
+      {
+        "name": "dataSources",
+        "arguments": 0,
+        "code": "dataSources(){const e=[this.crosshairSource()];for(const t of this._panes)for(const i of t.dataSources())e.push(i);return e}"
+      },
+      {
+        "name": "priceDataSources",
+        "arguments": 0,
+        "code": "priceDataSources(){const e=[];for(const t of this._panes)for(const i of t.priceDataSources())e.push(i);return e}"
+      },
+      {
+        "name": "orderedDataSources",
+        "arguments": 1,
+        "code": "orderedDataSources(e){let t=[this._crossHairSource];for(let i=0;i<this._panes.length;i++){let s=this._panes[i].sourcesByGroup().all();e&&(s=s.slice().reverse()),t=t.concat(s)}return t}"
+      },
+      {
+        "name": "updateSource",
+        "arguments": 1,
+        "code": "updateSource(e){const t=this._invalidationMaskForSource(e);null!==t&&this.invalidate(t)}"
+      },
+      {
+        "name": "updateSourcePriceScale",
+        "arguments": 1,
+        "code": "updateSourcePriceScale(e){const t=this._invalidationMaskForSourcePriceScale(e);null!==t&&this.invalidate(t)}"
+      },
+      {
+        "name": "updatePane",
+        "arguments": 1,
+        "code": "updatePane(e){this.invalidate(this._paneInvalidationMask(e))}"
+      },
+      {
+        "name": "createStudyInserter",
+        "arguments": 1,
+        "code": "createStudyInserter(e){return new cu(e,{createStudy:e=>this.insertStudyWithParams(e),storeFailedStub:e=>{}})}"
+      },
+      {
+        "name": "insertStudyWithParams",
+        "arguments": 1,
+        "code": "insertStudyWithParams(e){const{studyMetaInfo:t,inputs:s,targetZOrder:r,propsState:o,forceOverlay:n,parentSources:a,preferredPriceScale:h,allowChangeCurrency:d,allowChangeUnit:u,allowChangeMetric:_,paneSize:p,targetScaleMode:m,id:g}=e;let S=null;if(!n&&void 0!==t.groupingKey){const e=this.findNonOverlayStudyWithGroupingKey(t.groupingKey);null!==e&&(S=e.pane)}null===S&&(n||t.is_price_study?S=(0,\nl.ensureNotNull)(this.paneForSource(a?.[0]??this._mainSeries)):(S=this.createPane(),void 0!==p&&S.setPaneSize(p))),\"Compare@tv-basicstudies\"===t.id&&this._mainSeries.priceScale().setMode({log:!1,percentage:!0});const v=(0,c.merge)((0,mn.default)(o??{}),{inputs:s,parentSources:[]});let b=!1,f=null,y=null;const w=a??[],T=Promise.all([i.e(71682),i.e(59830),i.e(8360),i.e(81708),i.e(83156),i.e(61048),i.e(5919),i.e(68905),i.e(79857),i.e(93658),i.e(70169),i.e(99053),i.e(69523),i.e(5656),i.e(23192),i.e(85785),i.e(971),i.e(57824),i.e(66866),i.e(47538)]).then(i.bind(i,305919)).then((({prepareStudyProperties:e})=>e(t,v,S,(0,Zn.studyMetaInfoRepository)().studyVersioning(),w))).then((e=>{const i=new ps.StudyMetaInfo(t.state(),t.useVersionFromMetaInfo);return(0,On.createStudy)(this,e,w,i,new ps.StudyMetaInfo(t.state(),t.useVersionFromMetaInfo),g,void 0,void 0,this._optionsProductServices,this._newsReadService,this._solutionOpener,this._liveEarningsEventsService,this._hostAnalysisServices,this._documentsServices)})),P=(0,L.createDeferredPromise)();return T.then((e=>{if(b)return e.stop(),void e.destroy?.();f=e.id();const t=S.findSuitableScale(e,a?.[0]??this.mainSeries(),h);if(y=t.mode(),t===this.mainSeries().priceScale()&&(0,on.isSymbolSource)(e)){const i=d?(0,Ps.sourceNewCurrencyOnPinningToPriceScale)(e,t,this,!0):null,s=u?(0,su.sourceNewUnitOnPinningToPriceScale)(e,t,this,!0):null,r=_?(0,Ch.sourceNewMetricOnPinningToPriceScale)(e,t,this):null;null===i&&null===s&&null===r||e.setSymbolParams({currency:i??void 0,unit:s??void 0,metric:r??void 0})}if((0,on.isSymbolSource)(e)&&(0,l.ensureNotNull)(S).hasDataSource(this.mainSeries())&&_u&&!C.getBool(\"enable_symbol_labels_on_inserting_compare_once\",!1)&&((0,$r.allowSavingDefaults)(!0),this.properties().childs().scalesProperties.childs().showSymbolLabels.setValue(!0),(0,$r.allowSavingDefaults)(!1),C.setValue(\"enable_symbol_labels_on_inserting_compare_once\",!0)),P.resolve(e.start()),r&&S.id()===r.paneId)S.insertDataSource(e,t,r.zorder);else{S.addDataSource(e,t,!1);null!==e.preferredZOrder()&&S.insertAfter([e],this.mainSeries())}void 0!==m&&t.setMode(m),e.isLinkedToSeries()&&e.setOwnerSource(this.mainSeries()),this.recalculatePane(S,(0,Fi.sourceChangeEvent)(e.id())),this.fullUpdate(),this._invalidateBarColorerCaches(),this._recalcVisibleRangeStudiesImpl({studies:[e],reasons:new Set([He.RecalcVisibleRangeStudiesReason.StudyCreation])}),this._recalcColorStudiesImpl({studies:[e],force:!0}),this._studyInserted.fire(e),this.alertsWatcher()?.syncSourceAlertLabels(e),e.maxOffset().subscribe(this._boundUpdateStudiesMaxOffset,{callWithLast:!0}),e.futureGraphicsBoundary().subscribe(this._boundUpdateStudiesFutureBoundary,{callWithLast:!0})})),{study:T,startPromise:P.promise,cancel:()=>b=!0,entityId:()=>f,originalScaleMode:()=>y}}"
+      },
+      {
+        "name": "replaceStudyStub",
+        "arguments": 2,
+        "code": "replaceStudyStub(e,t){const i=this.paneForSource(e);if(null===i)return!1;const s=e.priceScale(),r=e.zorder(),o=e.ownerSource();return this.paneForSource(e)===i?i.replaceSource(e,t,s):(i.insertDataSource(t,s,r),this.removeSource(e)),t.setOwnerSource(o),\nthis.dataSources().forEach((i=>{i.ownerSource()===e&&(i.setOwnerSource(t),(0,oe.isLineTool)(i)&&i.supportsTargetSignature()&&!i.targetSignature().value()&&i.setTargetSignature(t.signature().value()))})),this._invalidateBarColorerCaches(),t.futureGraphicsBoundary().subscribe(this._boundUpdateStudiesFutureBoundary,{callWithLast:!0}),t.start(),this.recalculatePane(i,(0,Fi.sourceChangeEvent)(t.id())),this.fullUpdate(),!0}"
+      },
+      {
+        "name": "insertStudyStub",
+        "arguments": 4,
+        "code": "insertStudyStub(e,t,i,s){const r=void 0!==t,o=new jn.StudyStub(this,i??null,e,t,s??null);let n;if(t||!r){n=(0,l.ensureNotNull)(this.mainPane());const e=!0===t?this.mainSeries().priceScale():n.createPriceScaleAtPosition(\"overlay\");n.addDataSource(o,e,!1)}else n=this.createPane(),n.addDataSource(o,null,!1);return o.setZorder(n.newStudyZOrder()),this.recalculatePane(n,(0,Fi.sourceChangeEvent)(o.id())),this.fullUpdate(),o}"
+      },
+      {
+        "name": "removeStudyStub",
+        "arguments": 1,
+        "code": "removeStudyStub(e){const t=this.dataSourceForId(e);return null===t?(mu.logNormal(\"StudyStub id=\"+e+\" is not found in chart model\"),!1):(this.removeSource(t),!0)}"
+      },
+      {
+        "name": "restoreStudyStub",
+        "arguments": 1,
+        "code": "restoreStudyStub(e){const t=this.insertStudyStub(e.title,e.isOverlay,e.descriptor);return this.paneForSource(t)?.changeSourceId(t,e.id),t.setStatus(e.status),t}"
+      },
+      {
+        "name": "recalculatePane",
+        "arguments": 2,
+        "code": "recalculatePane(e,t){e?.recalculate(t)}"
+      },
+      {
+        "name": "recalculateAllPanes",
+        "arguments": 1,
+        "code": "recalculateAllPanes(e){this._panes.forEach((t=>t.recalculate(e))),this.updateAllPaneViews(e),this.crosshairSource().updateAllViews(e)}"
+      },
+      {
+        "name": "paneForSource",
+        "arguments": 1,
+        "code": "paneForSource(e){if(e===this._mainSeries.activeStudyBinding())return this.mainPane();if(!(0,Ge.isDataSource)(e))return Array.from(this._customSourcesMap.values()).includes(e)?this.paneForSource(this.mainSeries()):null;for(let t=this._panes.length-1;t>=0;t--)if(this._panes[t].hasDataSource(e))return this._panes[t];return e instanceof gh.BarsMarksContainer?this.paneForSource(this.mainSeries()):null}"
+      },
+      {
+        "name": "paneForLineToolsGroup",
+        "arguments": 1,
+        "code": "paneForLineToolsGroup(e){const t=e.firstLineTool();return null===t?null:this.paneForSource(t)}"
+      },
+      {
+        "name": "mainPane",
+        "arguments": 0,
+        "code": "mainPane(){return this._panes.find((e=>e.isMainPane().value()))??null}"
+      },
+      {
+        "name": "lastPane",
+        "arguments": 0,
+        "code": "lastPane(){return this._panes[this._panes.length-1]}"
+      },
+      {
+        "name": "mainSeriesScaleRatio",
+        "arguments": 0,
+        "code": "mainSeriesScaleRatio(){return(0,Bn.scaleRatio)(this._timeScale,this.mainSeries().priceScale())}"
+      },
+      {
+        "name": "setMainSeriesScaleRatio",
+        "arguments": 1,
+        "code": "setMainSeriesScaleRatio(e){(0,l.ensureNotNull)(this.paneForSource(this._mainSeries)).applyPriceScaleRatio(this._mainSeries.priceScale(),e)}"
+      },
+      {
+        "name": "allStudies",
+        "arguments": 1,
+        "code": "allStudies(e){const t=e?e=>(0,ee.isStudy)(e)&&!(0,re.isLollipopDataSource)(e):ee.isStudy;return this._getAllSources(t)}"
+      },
+      {
+        "name": "studiesWV",
+        "arguments": 1,
+        "code": "studiesWV(e){return e?this._studiesExcludeInternalWV.readonly():this._studiesWV.readonly()}"
+      },
+      {
+        "name": "listUserStudies",
+        "arguments": 1,
+        "code": "listUserStudies(e){const t=[];for(const i of this._panes)for(const s of i.priceDataSources())if(!(0,ee.isFundamentalStudy)(s)&&(0,ee.isStudy)(s)&&s.showInObjectTree()){const{id:i,shortDescription:r}=s.metaInfo();if(e.dontCountVolume&&\"Volume@tv-basicstudies\"===i||e.dontCountCompare&&\"Compare@tv-basicstudies\"===i||e.dontCountOverlay&&\"Overlay@tv-basicstudies\"===i)continue;t.push(r)}return t}"
+      },
+      {
+        "name": "findNonOverlayStudyWithGroupingKey",
+        "arguments": 2,
+        "code": "findNonOverlayStudyWithGroupingKey(e,t){\nconst i=void 0!==t?[t]:this._panes;for(const t of i){const i=t.dataSources().find((i=>(0,ee.isStudy)(i)&&i.metaInfo().groupingKey===e&&!t.isOverlay(i)));if(void 0!==i)return{pane:t,study:i}}return null}"
+      },
+      {
+        "name": "canMovePaneUp",
+        "arguments": 1,
+        "code": "canMovePaneUp(e){if(0===e)return!1;const t=this._panes[e],i=this._panes[e-1];return t.mode()===Oe.PaneMode.Widget?i.containsMainSeries():i.mode()!==Oe.PaneMode.Widget||!t.containsMainSeries()||1!==e}"
+      },
+      {
+        "name": "movePaneUp",
+        "arguments": 1,
+        "code": "movePaneUp(e){this.movePane(e,e-1)}"
+      },
+      {
+        "name": "canMovePaneDown",
+        "arguments": 1,
+        "code": "canMovePaneDown(e){if(e===this._panes.length-1)return!1;const t=this._panes[e],i=this._panes[e+1];return t.mode()===Oe.PaneMode.Widget?i.containsMainSeries():i.mode()!==Oe.PaneMode.Widget||!t.containsMainSeries()||e!==this._panes.length-2}"
+      },
+      {
+        "name": "movePaneDown",
+        "arguments": 1,
+        "code": "movePaneDown(e){this.movePane(e,e+1)}"
+      },
+      {
+        "name": "movePane",
+        "arguments": 2,
+        "code": "movePane(e,t){const i=this._panes[e];this._panes.splice(e,1),this._panes.splice(t,0,i),this._panesCollectionChanged.fire(this._panes),this._onRearrangePanes.fire(),this._invalidateBarColorerCaches(),this.invalidate(_e.InvalidationMask.panesOrder())}"
+      },
+      {
+        "name": "toggleCollapsedPane",
+        "arguments": 1,
+        "code": "toggleCollapsedPane(e){const t=this._panes[e];t.collapsed().setValue(!t.collapsed().value()),this.fullUpdate()}"
+      },
+      {
+        "name": "mainSeriesPaneHeight",
+        "arguments": 0,
+        "code": "mainSeriesPaneHeight(){return this.mainSeries().priceScale().height()}"
+      },
+      {
+        "name": "mainSeriesPane",
+        "arguments": 0,
+        "code": "mainSeriesPane(){return(0,l.ensureNotNull)(this.paneForSource(this.mainSeries()))}"
+      },
+      {
+        "name": "isMainSeriesPaneScaleBeingScaled",
+        "arguments": 0,
+        "code": "isMainSeriesPaneScaleBeingScaled(){const e=this.mainSeriesPane();return[...e.leftPriceScales(),...e.rightPriceScales()].some((e=>e.isBeingScaled()))}"
+      },
+      {
+        "name": "resetDeferredStudies",
+        "arguments": 0,
+        "code": "resetDeferredStudies(){Al.DeferredStudies.instance(this).reset()}"
+      },
+      {
+        "name": "waitForStudy",
+        "arguments": 1,
+        "code": "waitForStudy(e){const t=this.dataSourceForId(e);return t&&(0,ee.isStudy)(t)?Promise.resolve(t):Al.DeferredStudies.instance(this).get(e)}"
+      },
+      {
+        "name": "resetWaitForStudy",
+        "arguments": 1,
+        "code": "resetWaitForStudy(e){Al.DeferredStudies.instance(this).delete(e)}"
+      },
+      {
+        "name": "studyTemplate",
+        "arguments": 3,
+        "code": "studyTemplate(e,t,i){const s={panes:[],version:this.version()};for(const e of this.panes())s.panes.push(e.state({includeSources:!0,isStudyTemplate:!0}));const r=this.mainSeries();return e&&(s.symbol=r.symbol(),this.currencyConversionEnabled()&&i&&(s.currency=r.currency()),this.unitConversionEnabled()&&i&&(s.unit=r.unit())),t&&(s.interval=r.interval()),s}"
+      },
+      {
+        "name": "getStudyById",
+        "arguments": 1,
+        "code": "getStudyById(e){const t=this.dataSourceForId(e);return null!==t&&(0,ee.isStudy)(t)?t:null}"
+      },
+      {
+        "name": "setPaneHeight",
+        "arguments": 2,
+        "code": "setPaneHeight(e,t){e.setHeight(t),this.recalculateAllPanes((0,Fi.viewportChangeEvent)()),this.lightUpdate()}"
+      },
+      {
+        "name": "maximizedPane",
+        "arguments": 0,
+        "code": "maximizedPane(){return this._maximizedPane.readonly()}"
+      },
+      {
+        "name": "setMaximizedPane",
+        "arguments": 1,
+        "code": "setMaximizedPane(e){(0,l.assert)(null===e||this._panes.includes(e),\"The pane is not part of this chart\"),this._maximizedPane.setValue(e)}"
+      },
+      {
+        "name": "panes",
+        "arguments": 0,
+        "code": "panes(){return this._panes}"
+      },
+      {
+        "name": "paneForId",
+        "arguments": 1,
+        "code": "paneForId(e){return this._panes.find((t=>t.id()===e))||null}"
+      },
+      {
+        "name": "createPane",
+        "arguments": 4,
+        "code": "createPane(e,t,i,s){this._restoringState||this._maximizedPane.setValue(null);const r=this._properties.childs().paneProperties;t&&r.merge(t);const o=new Hl({timeScale:this._timeScale,properties:r,model:this,id:i,mode:s??Oe.PaneMode.Regular,optionsProductServices:this._optionsProductServices,newsReadService:this._newsReadService,ideaPopupOpener:this._ideaPopupOpener,contextMenu:this._contextMenu,solutionOpener:this._solutionOpener,liveEarningsEventsService:this._liveEarningsEventsService,hostAnalysisServices:this._hostAnalysisServices,documentsServices:this._documentsServices});return void 0!==e?this._panes.splice(e,0,o):this._panes.push(o),o.dataSourcesCollectionChanged().subscribe(this,(()=>this._dataSourceCollectionChanged.fire(o))),o.dataSourcesZOrdersChanged().subscribe(this,(()=>this._invalidateBarColorerCaches())),o.symbolSourceCollectionChanged().subscribe(this,(()=>this._onSymbolSourceCollectionChanged(o))),o.priceSourcesCollectionChanged().subscribe(this,(()=>this._onPriceSourcesCollectionChanged(o))),o.sourcePropertiesChanged().subscribe(this,(e=>this._sourceProperitesChanged.fire(o,e))),o.sourceZOrderChanged().subscribe(this,(e=>this._sourceZOrderChanged.fire(o,e))),o.symbolSourceResolved().subscribe(this,(e=>this._symbolSourceResolved.fire(o,e))),o.symbolSourceResolvingActive().subscribe(this._recalcSymbolResolvingActive),o.collapsed().subscribe(this._recalcPaneCollapsingAvailable),o.resetPriceScalesAvailable().subscribe(this._updateResetScalesAvailableValue,{callWithLast:!0}),o.onPriceScalesChanged().subscribe(this,this._updateMainSeriesPriceScaleSide),this._recalcPaneCollapsingAvailable(),this._panesCollectionChanged.fire(this._panes),this._invalidateBarColorerCaches(),this.invalidate(_e.InvalidationMask.panesOrder()),o}"
+      },
+      {
+        "name": "removePane",
+        "arguments": 1,
+        "code": "removePane(e){e===this._maximizedPane.value()&&this._maximizedPane.setValue(null),\ne.destroy();const t=this._panes.indexOf(e);-1!==t&&(this._panes.splice(t,1),e.dataSourcesCollectionChanged().unsubscribeAll(this),e.dataSourcesZOrdersChanged().unsubscribeAll(this),e.symbolSourceCollectionChanged().unsubscribeAll(this),e.priceSourcesCollectionChanged().unsubscribeAll(this),e.sourcePropertiesChanged().unsubscribeAll(this),e.symbolSourceResolved().unsubscribeAll(this),e.symbolSourceResolvingActive().unsubscribe(this._recalcSymbolResolvingActive),e.collapsed().unsubscribe(this._recalcPaneCollapsingAvailable),e.resetPriceScalesAvailable().unsubscribe(this._updateResetScalesAvailableValue),e.onPriceScalesChanged().unsubscribeAll(this),this._recalcPaneCollapsingAvailable(!0)),this._updateResetScalesAvailableValue();this.crosshairSource().pane===e&&this.clearCurrentPosition(),this._panesCollectionChanged.fire(this._panes),this._invalidateBarColorerCaches(),this.invalidate(_e.InvalidationMask.panesOrder())}"
+      },
+      {
+        "name": "changePanesHeight",
+        "arguments": 2,
+        "code": "changePanesHeight(e,t){if(this._panes.length<2)return;(0,l.assert)(e>=0&&e<this._panes.length,\"Invalid pane index\");const i=this._panes[e],s=this._panes.reduce(((e,t)=>e+t.stretchFactor()),0),r=this._panes.reduce(((e,t)=>e+t.height()),0),o=r-30*(this._panes.length-1);t=Math.min(o,Math.max(30,t));const n=s/r,a=i.height();i.setStretchFactor(t*n);let c=t-a,h=this._panes.length-1;for(const e of this._panes)if(e!==i){const t=Math.min(o,Math.max(30,e.height()-c/h));c-=e.height()-t,h-=1;const i=t*n;e.setStretchFactor(i)}this.fullUpdate()}"
+      },
+      {
+        "name": "getTpoSummaryPane",
+        "arguments": 0,
+        "code": "getTpoSummaryPane(){const e=this._mainSeries.properties().childs().tpoStyle.childs(),t=e.summary.childs().belowSeries.value(),i=e.summary.childs().infoBlocks,s=e.summary.childs().infoBlocks.childNames();let r=0;s.forEach((e=>{i.childs()[e].childs().visible.value()&&r++}));const o=Math.max(r*Jc.constants.cellHeight,30);return this._getWidgetPane(t,o)}"
+      }
+    ],
+    "dataSources": {
+      "count": 60,
+      "studyCount": 0,
+      "samples": [
+        {
+          "constructor": "Jd",
+          "isStudy": false,
+          "id": {
+            "found": true,
+            "value": "ZKTLQf"
+          },
+          "name": {
+            "found": true,
+            "value": "Crosshair"
+          },
+          "keys": [
+            "isSeries",
+            "_isDestroyed",
+            "_hasAlert",
+            "_alertStatus",
+            "_alertCreationAvailable",
+            "_zorder",
+            "_priceScale",
+            "_ownerSource",
+            "_userEditEnabled",
+            "_priceScaleChanged",
+            "_updateAlertCreationAvailableBound",
+            "_isSelectionEnabled",
+            "_instanceId",
+            "_ownerSourceChanged",
+            "_zOrderChanged",
+            "_id",
+            "pane",
+            "price",
+            "index",
+            "visible",
+            "x",
+            "y",
+            "_lockData",
+            "_crosshairDemonstration",
+            "_measurePane"
+          ]
+        },
+        {
+          "constructor": "Os",
+          "isStudy": false,
+          "id": {
+            "found": true,
+            "value": "_seriesId"
+          },
+          "name": {
+            "found": true,
+            "value": "PEPEUSDT.P · KCEX, 1"
+          },
+          "keys": [
+            "isSeries",
+            "_isDestroyed",
+            "_hasAlert",
+            "_alertStatus",
+            "_alertCreationAvailable",
+            "_zorder",
+            "_priceScale",
+            "_ownerSource",
+            "_userEditEnabled",
+            "_priceScaleChanged",
+            "_updateAlertCreationAvailableBound",
+            "_isSelectionEnabled",
+            "_instanceId",
+            "_ownerSourceChanged",
+            "_zOrderChanged",
+            "_id",
+            "isPriceDataSource",
+            "_formatterChanged",
+            "_priceStepChanged",
+            "_currencyChanged",
+            "_isCurrencyOrigin",
+            "_currencyMetaData",
+            "_unitChanged",
+            "_isUnitOrigin",
+            "_unitMetaData"
+          ]
+        },
+        {
+          "constructor": "W",
+          "isStudy": false,
+          "id": {
+            "found": true,
+            "value": "PublishedChartsTimeline"
+          },
+          "name": {
+            "found": true,
+            "value": "Ideas on chart"
+          },
+          "keys": [
+            "isSeries",
+            "_isDestroyed",
+            "_hasAlert",
+            "_alertStatus",
+            "_alertCreationAvailable",
+            "_zorder",
+            "_priceScale",
+            "_ownerSource",
+            "_userEditEnabled",
+            "_priceScaleChanged",
+            "_updateAlertCreationAvailableBound",
+            "_isSelectionEnabled",
+            "_instanceId",
+            "_ownerSourceChanged",
+            "_zOrderChanged",
+            "_id",
+            "_paneViews",
+            "_model",
+            "_properties",
+            "_requests",
+            "_marks",
+            "_loadedRange",
+            "_getDataTimeout",
+            "_collectedRange",
+            "_lastRange"
+          ]
+        },
+        {
+          "constructor": "sr",
+          "isStudy": false,
+          "id": {
+            "found": true,
+            "value": "nukFO0"
+          },
+          "name": {
+            "found": true,
+            "value": "Bollinger Bands"
+          },
+          "keys": [
+            "isSeries",
+            "_isDestroyed",
+            "_hasAlert",
+            "_alertStatus",
+            "_alertCreationAvailable",
+            "_zorder",
+            "_priceScale",
+            "_ownerSource",
+            "_userEditEnabled",
+            "_priceScaleChanged",
+            "_updateAlertCreationAvailableBound",
+            "_isSelectionEnabled",
+            "_instanceId",
+            "_ownerSourceChanged",
+            "_zOrderChanged",
+            "_id",
+            "isPriceDataSource",
+            "_formatterChanged",
+            "_priceStepChanged",
+            "_currencyChanged",
+            "_isCurrencyOrigin",
+            "_currencyMetaData",
+            "_unitChanged",
+            "_isUnitOrigin",
+            "_unitMetaData"
+          ]
+        },
+        {
+          "constructor": "sr",
+          "isStudy": false,
+          "id": {
+            "found": true,
+            "value": "D7zFy3"
+          },
+          "name": {
+            "found": true,
+            "value": "Average True Range Stop Loss Finder"
+          },
+          "keys": [
+            "isSeries",
+            "_isDestroyed",
+            "_hasAlert",
+            "_alertStatus",
+            "_alertCreationAvailable",
+            "_zorder",
+            "_priceScale",
+            "_ownerSource",
+            "_userEditEnabled",
+            "_priceScaleChanged",
+            "_updateAlertCreationAvailableBound",
+            "_isSelectionEnabled",
+            "_instanceId",
+            "_ownerSourceChanged",
+            "_zOrderChanged",
+            "_id",
+            "isPriceDataSource",
+            "_formatterChanged",
+            "_priceStepChanged",
+            "_currencyChanged",
+            "_isCurrencyOrigin",
+            "_currencyMetaData",
+            "_unitChanged",
+            "_isUnitOrigin",
+            "_unitMetaData"
+          ]
+        },
+        {
+          "constructor": "sr",
+          "isStudy": false,
+          "id": {
+            "found": true,
+            "value": "yOmNHB"
+          },
+          "name": {
+            "found": true,
+            "value": "Swing high low support & resistance, by Patternsmart.com"
+          },
+          "keys": [
+            "isSeries",
+            "_isDestroyed",
+            "_hasAlert",
+            "_alertStatus",
+            "_alertCreationAvailable",
+            "_zorder",
+            "_priceScale",
+            "_ownerSource",
+            "_userEditEnabled",
+            "_priceScaleChanged",
+            "_updateAlertCreationAvailableBound",
+            "_isSelectionEnabled",
+            "_instanceId",
+            "_ownerSourceChanged",
+            "_zOrderChanged",
+            "_id",
+            "isPriceDataSource",
+            "_formatterChanged",
+            "_priceStepChanged",
+            "_currencyChanged",
+            "_isCurrencyOrigin",
+            "_currencyMetaData",
+            "_unitChanged",
+            "_isUnitOrigin",
+            "_unitMetaData"
+          ]
+        },
+        {
+          "constructor": "sr",
+          "isStudy": false,
+          "id": {
+            "found": true,
+            "value": "tItVLl"
+          },
+          "name": {
+            "found": true,
+            "value": "Trendlines with Breaks [LuxAlgo]"
+          },
+          "keys": [
+            "isSeries",
+            "_isDestroyed",
+            "_hasAlert",
+            "_alertStatus",
+            "_alertCreationAvailable",
+            "_zorder",
+            "_priceScale",
+            "_ownerSource",
+            "_userEditEnabled",
+            "_priceScaleChanged",
+            "_updateAlertCreationAvailableBound",
+            "_isSelectionEnabled",
+            "_instanceId",
+            "_ownerSourceChanged",
+            "_zOrderChanged",
+            "_id",
+            "isPriceDataSource",
+            "_formatterChanged",
+            "_priceStepChanged",
+            "_currencyChanged",
+            "_isCurrencyOrigin",
+            "_currencyMetaData",
+            "_unitChanged",
+            "_isUnitOrigin",
+            "_unitMetaData"
+          ]
+        },
+        {
+          "constructor": "sr",
+          "isStudy": false,
+          "id": {
+            "found": true,
+            "value": "vBsC8z"
+          },
+          "name": {
+            "found": true,
+            "value": "Trendlines with Breaks [LuxAlgo]"
+          },
+          "keys": [
+            "isSeries",
+            "_isDestroyed",
+            "_hasAlert",
+            "_alertStatus",
+            "_alertCreationAvailable",
+            "_zorder",
+            "_priceScale",
+            "_ownerSource",
+            "_userEditEnabled",
+            "_priceScaleChanged",
+            "_updateAlertCreationAvailableBound",
+            "_isSelectionEnabled",
+            "_instanceId",
+            "_ownerSourceChanged",
+            "_zOrderChanged",
+            "_id",
+            "isPriceDataSource",
+            "_formatterChanged",
+            "_priceStepChanged",
+            "_currencyChanged",
+            "_isCurrencyOrigin",
+            "_currencyMetaData",
+            "_unitChanged",
+            "_isUnitOrigin",
+            "_unitMetaData"
+          ]
+        },
+        {
+          "constructor": "sr",
+          "isStudy": false,
+          "id": {
+            "found": true,
+            "value": "uZUbZL"
+          },
+          "name": {
+            "found": true,
+            "value": "Trendline Pivots [QuantVue]"
+          },
+          "keys": [
+            "isSeries",
+            "_isDestroyed",
+            "_hasAlert",
+            "_alertStatus",
+            "_alertCreationAvailable",
+            "_zorder",
+            "_priceScale",
+            "_ownerSource",
+            "_userEditEnabled",
+            "_priceScaleChanged",
+            "_updateAlertCreationAvailableBound",
+            "_isSelectionEnabled",
+            "_instanceId",
+            "_ownerSourceChanged",
+            "_zOrderChanged",
+            "_id",
+            "isPriceDataSource",
+            "_formatterChanged",
+            "_priceStepChanged",
+            "_currencyChanged",
+            "_isCurrencyOrigin",
+            "_currencyMetaData",
+            "_unitChanged",
+            "_isUnitOrigin",
+            "_unitMetaData"
+          ]
+        },
+        {
+          "constructor": "sr",
+          "isStudy": false,
+          "id": {
+            "found": true,
+            "value": "srtpa5"
+          },
+          "name": {
+            "found": true,
+            "value": "Pivot Point SuperTrend"
+          },
+          "keys": [
+            "isSeries",
+            "_isDestroyed",
+            "_hasAlert",
+            "_alertStatus",
+            "_alertCreationAvailable",
+            "_zorder",
+            "_priceScale",
+            "_ownerSource",
+            "_userEditEnabled",
+            "_priceScaleChanged",
+            "_updateAlertCreationAvailableBound",
+            "_isSelectionEnabled",
+            "_instanceId",
+            "_ownerSourceChanged",
+            "_zOrderChanged",
+            "_id",
+            "isPriceDataSource",
+            "_formatterChanged",
+            "_priceStepChanged",
+            "_currencyChanged",
+            "_isCurrencyOrigin",
+            "_currencyMetaData",
+            "_unitChanged",
+            "_isUnitOrigin",
+            "_unitMetaData"
+          ]
+        },
+        {
+          "constructor": "sr",
+          "isStudy": false,
+          "id": {
+            "found": true,
+            "value": "9Zjq20"
+          },
+          "name": {
+            "found": true,
+            "value": "Pivot Channel Breaks [BigBeluga]"
+          },
+          "keys": [
+            "isSeries",
+            "_isDestroyed",
+            "_hasAlert",
+            "_alertStatus",
+            "_alertCreationAvailable",
+            "_zorder",
+            "_priceScale",
+            "_ownerSource",
+            "_userEditEnabled",
+            "_priceScaleChanged",
+            "_updateAlertCreationAvailableBound",
+            "_isSelectionEnabled",
+            "_instanceId",
+            "_ownerSourceChanged",
+            "_zOrderChanged",
+            "_id",
+            "isPriceDataSource",
+            "_formatterChanged",
+            "_priceStepChanged",
+            "_currencyChanged",
+            "_isCurrencyOrigin",
+            "_currencyMetaData",
+            "_unitChanged",
+            "_isUnitOrigin",
+            "_unitMetaData"
+          ]
+        },
+        {
+          "constructor": "sr",
+          "isStudy": false,
+          "id": {
+            "found": true,
+            "value": "I3kftm"
+          },
+          "name": {
+            "found": true,
+            "value": "Angle Market Structure [BigBeluga]"
+          },
+          "keys": [
+            "isSeries",
+            "_isDestroyed",
+            "_hasAlert",
+            "_alertStatus",
+            "_alertCreationAvailable",
+            "_zorder",
+            "_priceScale",
+            "_ownerSource",
+            "_userEditEnabled",
+            "_priceScaleChanged",
+            "_updateAlertCreationAvailableBound",
+            "_isSelectionEnabled",
+            "_instanceId",
+            "_ownerSourceChanged",
+            "_zOrderChanged",
+            "_id",
+            "isPriceDataSource",
+            "_formatterChanged",
+            "_priceStepChanged",
+            "_currencyChanged",
+            "_isCurrencyOrigin",
+            "_currencyMetaData",
+            "_unitChanged",
+            "_isUnitOrigin",
+            "_unitMetaData"
+          ]
+        },
+        {
+          "constructor": "sr",
+          "isStudy": false,
+          "id": {
+            "found": true,
+            "value": "ShG16J"
+          },
+          "name": {
+            "found": true,
+            "value": "Trend Magic"
+          },
+          "keys": [
+            "isSeries",
+            "_isDestroyed",
+            "_hasAlert",
+            "_alertStatus",
+            "_alertCreationAvailable",
+            "_zorder",
+            "_priceScale",
+            "_ownerSource",
+            "_userEditEnabled",
+            "_priceScaleChanged",
+            "_updateAlertCreationAvailableBound",
+            "_isSelectionEnabled",
+            "_instanceId",
+            "_ownerSourceChanged",
+            "_zOrderChanged",
+            "_id",
+            "isPriceDataSource",
+            "_formatterChanged",
+            "_priceStepChanged",
+            "_currencyChanged",
+            "_isCurrencyOrigin",
+            "_currencyMetaData",
+            "_unitChanged",
+            "_isUnitOrigin",
+            "_unitMetaData"
+          ]
+        },
+        {
+          "constructor": "sr",
+          "isStudy": false,
+          "id": {
+            "found": true,
+            "value": "zCTcIf"
+          },
+          "name": {
+            "found": true,
+            "value": "Curved Radius Supertrend [BOSWaves]"
+          },
+          "keys": [
+            "isSeries",
+            "_isDestroyed",
+            "_hasAlert",
+            "_alertStatus",
+            "_alertCreationAvailable",
+            "_zorder",
+            "_priceScale",
+            "_ownerSource",
+            "_userEditEnabled",
+            "_priceScaleChanged",
+            "_updateAlertCreationAvailableBound",
+            "_isSelectionEnabled",
+            "_instanceId",
+            "_ownerSourceChanged",
+            "_zOrderChanged",
+            "_id",
+            "isPriceDataSource",
+            "_formatterChanged",
+            "_priceStepChanged",
+            "_currencyChanged",
+            "_isCurrencyOrigin",
+            "_currencyMetaData",
+            "_unitChanged",
+            "_isUnitOrigin",
+            "_unitMetaData"
+          ]
+        },
+        {
+          "constructor": "sr",
+          "isStudy": false,
+          "id": {
+            "found": true,
+            "value": "ZHYeXX"
+          },
+          "name": {
+            "found": true,
+            "value": "RSI Bands [LazyBear]"
+          },
+          "keys": [
+            "isSeries",
+            "_isDestroyed",
+            "_hasAlert",
+            "_alertStatus",
+            "_alertCreationAvailable",
+            "_zorder",
+            "_priceScale",
+            "_ownerSource",
+            "_userEditEnabled",
+            "_priceScaleChanged",
+            "_updateAlertCreationAvailableBound",
+            "_isSelectionEnabled",
+            "_instanceId",
+            "_ownerSourceChanged",
+            "_zOrderChanged",
+            "_id",
+            "isPriceDataSource",
+            "_formatterChanged",
+            "_priceStepChanged",
+            "_currencyChanged",
+            "_isCurrencyOrigin",
+            "_currencyMetaData",
+            "_unitChanged",
+            "_isUnitOrigin",
+            "_unitMetaData"
+          ]
+        },
+        {
+          "constructor": "sr",
+          "isStudy": false,
+          "id": {
+            "found": true,
+            "value": "hDJvzS"
+          },
+          "name": {
+            "found": true,
+            "value": "Ichimoku Baseline (based on Close) — Colored"
+          },
+          "keys": [
+            "isSeries",
+            "_isDestroyed",
+            "_hasAlert",
+            "_alertStatus",
+            "_alertCreationAvailable",
+            "_zorder",
+            "_priceScale",
+            "_ownerSource",
+            "_userEditEnabled",
+            "_priceScaleChanged",
+            "_updateAlertCreationAvailableBound",
+            "_isSelectionEnabled",
+            "_instanceId",
+            "_ownerSourceChanged",
+            "_zOrderChanged",
+            "_id",
+            "isPriceDataSource",
+            "_formatterChanged",
+            "_priceStepChanged",
+            "_currencyChanged",
+            "_isCurrencyOrigin",
+            "_currencyMetaData",
+            "_unitChanged",
+            "_isUnitOrigin",
+            "_unitMetaData"
+          ]
+        },
+        {
+          "constructor": "sr",
+          "isStudy": false,
+          "id": {
+            "found": true,
+            "value": "OstqYO"
+          },
+          "name": {
+            "found": true,
+            "value": "Double Zig Zag with HHLL + Removed Labels"
+          },
+          "keys": [
+            "isSeries",
+            "_isDestroyed",
+            "_hasAlert",
+            "_alertStatus",
+            "_alertCreationAvailable",
+            "_zorder",
+            "_priceScale",
+            "_ownerSource",
+            "_userEditEnabled",
+            "_priceScaleChanged",
+            "_updateAlertCreationAvailableBound",
+            "_isSelectionEnabled",
+            "_instanceId",
+            "_ownerSourceChanged",
+            "_zOrderChanged",
+            "_id",
+            "isPriceDataSource",
+            "_formatterChanged",
+            "_priceStepChanged",
+            "_currencyChanged",
+            "_isCurrencyOrigin",
+            "_currencyMetaData",
+            "_unitChanged",
+            "_isUnitOrigin",
+            "_unitMetaData"
+          ]
+        },
+        {
+          "constructor": "sr",
+          "isStudy": false,
+          "id": {
+            "found": true,
+            "value": "xRK45x"
+          },
+          "name": {
+            "found": true,
+            "value": "Trendline Pivots e"
+          },
+          "keys": [
+            "isSeries",
+            "_isDestroyed",
+            "_hasAlert",
+            "_alertStatus",
+            "_alertCreationAvailable",
+            "_zorder",
+            "_priceScale",
+            "_ownerSource",
+            "_userEditEnabled",
+            "_priceScaleChanged",
+            "_updateAlertCreationAvailableBound",
+            "_isSelectionEnabled",
+            "_instanceId",
+            "_ownerSourceChanged",
+            "_zOrderChanged",
+            "_id",
+            "isPriceDataSource",
+            "_formatterChanged",
+            "_priceStepChanged",
+            "_currencyChanged",
+            "_isCurrencyOrigin",
+            "_currencyMetaData",
+            "_unitChanged",
+            "_isUnitOrigin",
+            "_unitMetaData"
+          ]
+        },
+        {
+          "constructor": "sr",
+          "isStudy": false,
+          "id": {
+            "found": true,
+            "value": "VBPfOv"
+          },
+          "name": {
+            "found": true,
+            "value": "Trendline Pivots"
+          },
+          "keys": [
+            "isSeries",
+            "_isDestroyed",
+            "_hasAlert",
+            "_alertStatus",
+            "_alertCreationAvailable",
+            "_zorder",
+            "_priceScale",
+            "_ownerSource",
+            "_userEditEnabled",
+            "_priceScaleChanged",
+            "_updateAlertCreationAvailableBound",
+            "_isSelectionEnabled",
+            "_instanceId",
+            "_ownerSourceChanged",
+            "_zOrderChanged",
+            "_id",
+            "isPriceDataSource",
+            "_formatterChanged",
+            "_priceStepChanged",
+            "_currencyChanged",
+            "_isCurrencyOrigin",
+            "_currencyMetaData",
+            "_unitChanged",
+            "_isUnitOrigin",
+            "_unitMetaData"
+          ]
+        },
+        {
+          "constructor": "sr",
+          "isStudy": false,
+          "id": {
+            "found": true,
+            "value": "AdB1Hh"
+          },
+          "name": {
+            "found": true,
+            "value": "Pivot Channel Breaks [BigBeluga]"
+          },
+          "keys": [
+            "isSeries",
+            "_isDestroyed",
+            "_hasAlert",
+            "_alertStatus",
+            "_alertCreationAvailable",
+            "_zorder",
+            "_priceScale",
+            "_ownerSource",
+            "_userEditEnabled",
+            "_priceScaleChanged",
+            "_updateAlertCreationAvailableBound",
+            "_isSelectionEnabled",
+            "_instanceId",
+            "_ownerSourceChanged",
+            "_zOrderChanged",
+            "_id",
+            "isPriceDataSource",
+            "_formatterChanged",
+            "_priceStepChanged",
+            "_currencyChanged",
+            "_isCurrencyOrigin",
+            "_currencyMetaData",
+            "_unitChanged",
+            "_isUnitOrigin",
+            "_unitMetaData"
+          ]
+        },
+        {
+          "constructor": "sr",
+          "isStudy": false,
+          "id": {
+            "found": true,
+            "value": "UGB4cl"
+          },
+          "name": {
+            "found": true,
+            "value": "Swing high low support & resistance, by Patternsmart.com"
+          },
+          "keys": [
+            "isSeries",
+            "_isDestroyed",
+            "_hasAlert",
+            "_alertStatus",
+            "_alertCreationAvailable",
+            "_zorder",
+            "_priceScale",
+            "_ownerSource",
+            "_userEditEnabled",
+            "_priceScaleChanged",
+            "_updateAlertCreationAvailableBound",
+            "_isSelectionEnabled",
+            "_instanceId",
+            "_ownerSourceChanged",
+            "_zOrderChanged",
+            "_id",
+            "isPriceDataSource",
+            "_formatterChanged",
+            "_priceStepChanged",
+            "_currencyChanged",
+            "_isCurrencyOrigin",
+            "_currencyMetaData",
+            "_unitChanged",
+            "_isUnitOrigin",
+            "_unitMetaData"
+          ]
+        },
+        {
+          "constructor": "sr",
+          "isStudy": false,
+          "id": {
+            "found": true,
+            "value": "RlsciB"
+          },
+          "name": {
+            "found": true,
+            "value": "Wick Pattern Signals"
+          },
+          "keys": [
+            "isSeries",
+            "_isDestroyed",
+            "_hasAlert",
+            "_alertStatus",
+            "_alertCreationAvailable",
+            "_zorder",
+            "_priceScale",
+            "_ownerSource",
+            "_userEditEnabled",
+            "_priceScaleChanged",
+            "_updateAlertCreationAvailableBound",
+            "_isSelectionEnabled",
+            "_instanceId",
+            "_ownerSourceChanged",
+            "_zOrderChanged",
+            "_id",
+            "isPriceDataSource",
+            "_formatterChanged",
+            "_priceStepChanged",
+            "_currencyChanged",
+            "_isCurrencyOrigin",
+            "_currencyMetaData",
+            "_unitChanged",
+            "_isUnitOrigin",
+            "_unitMetaData"
+          ]
+        },
+        {
+          "constructor": "sr",
+          "isStudy": false,
+          "id": {
+            "found": true,
+            "value": "IDUdsj"
+          },
+          "name": {
+            "found": true,
+            "value": "Hull moving average"
+          },
+          "keys": [
+            "isSeries",
+            "_isDestroyed",
+            "_hasAlert",
+            "_alertStatus",
+            "_alertCreationAvailable",
+            "_zorder",
+            "_priceScale",
+            "_ownerSource",
+            "_userEditEnabled",
+            "_priceScaleChanged",
+            "_updateAlertCreationAvailableBound",
+            "_isSelectionEnabled",
+            "_instanceId",
+            "_ownerSourceChanged",
+            "_zOrderChanged",
+            "_id",
+            "isPriceDataSource",
+            "_formatterChanged",
+            "_priceStepChanged",
+            "_currencyChanged",
+            "_isCurrencyOrigin",
+            "_currencyMetaData",
+            "_unitChanged",
+            "_isUnitOrigin",
+            "_unitMetaData"
+          ]
+        },
+        {
+          "constructor": "sr",
+          "isStudy": false,
+          "id": {
+            "found": true,
+            "value": "izjpf0"
+          },
+          "name": {
+            "found": true,
+            "value": "Trend Indicator A (v2.3)"
+          },
+          "keys": [
+            "isSeries",
+            "_isDestroyed",
+            "_hasAlert",
+            "_alertStatus",
+            "_alertCreationAvailable",
+            "_zorder",
+            "_priceScale",
+            "_ownerSource",
+            "_userEditEnabled",
+            "_priceScaleChanged",
+            "_updateAlertCreationAvailableBound",
+            "_isSelectionEnabled",
+            "_instanceId",
+            "_ownerSourceChanged",
+            "_zOrderChanged",
+            "_id",
+            "isPriceDataSource",
+            "_formatterChanged",
+            "_priceStepChanged",
+            "_currencyChanged",
+            "_isCurrencyOrigin",
+            "_currencyMetaData",
+            "_unitChanged",
+            "_isUnitOrigin",
+            "_unitMetaData"
+          ]
+        },
+        {
+          "constructor": "sr",
+          "isStudy": false,
+          "id": {
+            "found": true,
+            "value": "LNkFEX"
+          },
+          "name": {
+            "found": true,
+            "value": "Swing high low support & resistance edited"
+          },
+          "keys": [
+            "isSeries",
+            "_isDestroyed",
+            "_hasAlert",
+            "_alertStatus",
+            "_alertCreationAvailable",
+            "_zorder",
+            "_priceScale",
+            "_ownerSource",
+            "_userEditEnabled",
+            "_priceScaleChanged",
+            "_updateAlertCreationAvailableBound",
+            "_isSelectionEnabled",
+            "_instanceId",
+            "_ownerSourceChanged",
+            "_zOrderChanged",
+            "_id",
+            "isPriceDataSource",
+            "_formatterChanged",
+            "_priceStepChanged",
+            "_currencyChanged",
+            "_isCurrencyOrigin",
+            "_currencyMetaData",
+            "_unitChanged",
+            "_isUnitOrigin",
+            "_unitMetaData"
+          ]
+        }
+      ]
+    },
+    "mainSeriesCallbacks": {
+      "onBarReceived": {
+        "found": true
+      },
+      "onDataUpdated": {
+        "found": true
+      }
+    }
+  },
+  "entitlement": {
+    "currentSymbol": {
+      "found": true,
+      "value": "KCEX:PEPEUSDT.P"
+    },
+    "currentSeriesInterval": {
+      "found": true,
+      "value": "1"
+    },
+    "currentWidgetResolution": {
+      "found": false
+    },
+    "sourceResolution": {
+      "found": true,
+      "value": "1"
+    },
+    "sourceInternalResolution": "1",
+    "seriesUnsupportedState": {
+      "type": "a",
+      "keys": [
+        "_listeners",
+        "_value",
+        "_readonlyInstance"
+      ],
+      "_listeners": {
+        "type": "Array",
+        "length": 0,
+        "first": []
+      },
+      "_value": null,
+      "_readonlyInstance": {
+        "type": "Object",
+        "keys": [
+          "subscribe",
+          "unsubscribe",
+          "value",
+          "when",
+          "ownership",
+          "spawnOwnership",
+          "weakReference",
+          "spawn",
+          "destroy"
+        ],
+        "subscribe": "[Function bound subscribe]",
+        "unsubscribe": "[Function bound unsubscribe]",
+        "value": "[Function bound value]",
+        "when": "[Function bound when]",
+        "ownership": "[Function bound ownership]",
+        "spawnOwnership": "[Function bound spawnOwnership]",
+        "weakReference": "[Function bound weakReference]",
+        "spawn": "[Function spawn]",
+        "destroy": "[Function bound destroy]"
+      }
+    },
+    "symbolInfoFound": true,
+    "symbolInfo": {
+      "name": "PEPEUSDT.P",
+      "full_name": "KCEX:PEPEUSDT.P",
+      "exchange": "KCEX",
+      "type": "swap",
+      "has_intraday": true,
+      "timezone": "Etc/UTC",
+      "session": "0000-0000:1234567",
+      "minmov": 1,
+      "pricescale": 10000000000
+    },
+    "restrictionMethods": [
+      {
+        "name": "resolution",
+        "arguments": 0,
+        "code": "resolution(){return this._resolution}"
+      },
+      {
+        "name": "setTimeframe",
+        "arguments": 1,
+        "code": "setTimeframe(t){this._timeFrame=t}"
+      },
+      {
+        "name": "_firePlanRestrictedResolution",
+        "arguments": 1,
+        "code": "_firePlanRestrictedResolution(t){({resolution_not_entitled:()=>this._dataEvents.fireIntradayExchangeNotPermitted(),\ncustom_resolution:()=>this._dataEvents.fireCustomIntervalNotPermitted((0,r.ensureNotNull)(this._resolution)),custom_sec_resolution:()=>this._dataEvents.fireCustomSecondsIntervalNotPermitted((0,r.ensureNotNull)(this._resolution)),seconds_not_entitled:()=>this._dataEvents.fireSecondsIntervalNotPermitted(),ticks_not_entitled:()=>this._dataEvents.fireTicksIntervalNotPermitted()})[t]()}"
+      },
+      {
+        "name": "_onSeriesTimeFrame",
+        "arguments": 5,
+        "code": "_onSeriesTimeFrame(t,e,s,r,i){this._dataEvents.fireSeriesTimeFrame(t,e,s,r??!0,i)}"
+      },
+      {
+        "name": "isBondDataRestricted",
+        "arguments": 0,
+        "code": "isBondDataRestricted(){return this._isBondDataRestricted}"
+      },
+      {
+        "name": "unsupportedResolutionState",
+        "arguments": 0,
+        "code": "unsupportedResolutionState(){return this._unsupportedResolutionState.readonly()}"
+      },
+      {
+        "name": "interval",
+        "arguments": 0,
+        "code": "interval(){return this.properties().childs().interval.value()}"
+      },
+      {
+        "name": "setInterval",
+        "arguments": 1,
+        "code": "setInterval(e){this.setSymbolParams({interval:e})}"
+      },
+      {
+        "name": "intervalObj",
+        "arguments": 0,
+        "code": "intervalObj(){return this._intervalObj.readonly()}"
+      },
+      {
+        "name": "onSymbolIntervalChanged",
+        "arguments": 0,
+        "code": "onSymbolIntervalChanged(){return this._symbolIntervalChanged}"
+      },
+      {
+        "name": "onIntervalChanged",
+        "arguments": 0,
+        "code": "onIntervalChanged(){return this._intervalChanged}"
+      },
+      {
+        "name": "setChartStyleWithIntervalIfNeeded",
+        "arguments": 2,
+        "code": "setChartStyleWithIntervalIfNeeded(e,t){const i=this.interval(),s=t??(0,Ci.getResolutionByChartStyle)(e,i,this._model.defaultResolutions()),r=d.Interval.isEqual(s,i);this.setSymbolParams({interval:r?void 0:s,style:e})}"
+      },
+      {
+        "name": "onTimeFrameApplied",
+        "arguments": 0,
+        "code": "onTimeFrameApplied(){return this._onTimeFrameApplied}"
+      },
+      {
+        "name": "setDefaultTimeframe",
+        "arguments": 1,
+        "code": "setDefaultTimeframe(e){this._pendingTimeRange=e}"
+      },
+      {
+        "name": "canChangeResolution",
+        "arguments": 1,
+        "code": "async canChangeResolution(e){{if(!this.isInReplay().value())return!0;const t=\"changeResolution\";if(!(0,r.ensureNotNull)(this._isReplayResolutionAvailableForUser)(e))return this._paramsNotApplicableForReplay.fire(w.NotApplicableForReplayReason.UnsupportedIntradyReplay,t),!1;const i=(0,r.ensureNotNull)(this._replaySubscriber.value()),s=await i.canChangeSymbolParams(this.getReplaySymbolString(),e);return s.res||this._replaySubscriber.value()!==i||this._paramsNotApplicableForReplay.fire(w.NotApplicableForReplayReason.UnsupportedDepth,t),s.res}}"
+      },
+      {
+        "name": "changeTimeFrame",
+        "arguments": 0,
+        "code": "changeTimeFrame(){(0,S.trackEvent)(\"GUI\",\"Change timeframe\")}"
+      },
+      {
+        "name": "_onSeriesTimeFrame",
+        "arguments": 5,
+        "code": "_onSeriesTimeFrame(e,t,i,s,r){const o=(0,k.isSingleValueBasedStyle)(this.style())?e+.5:e;let n=t;if(void 0===r)null!==i&&i.type!==m.TimeFrameType.PeriodBack||(n+=this._model.studyAwareDefaultRightOffset());else if(r.applyDefaultRightMargin)n+=this._model.studyAwareDefaultRightOffset();else if(r.percentRightMargin){const e=t-o+1,i=Math.max(0,Math.min(.99,r.percentRightMargin/100));n+=i*e/(1-i)}this._model.setTimeViewport(o,n)}"
+      },
+      {
+        "name": "_onUnsupportedResolutionRequested",
+        "arguments": 0,
+        "code": "_onUnsupportedResolutionRequested(){const e=(0,r.ensureNotNull)(this._getStateForUnsupportedResolution());this._seriesErrorMessage=e.reason,this._unsupportedResolutionState.setValue(e),this._setStatus(N.Status.UnsupportedResolution),this._seriesLoaded=!0,this.clearData(),this._model.timeScale().points().clear(),this._enablePriceRangeReady()}"
+      },
+      {
+        "name": "_getStateForUnsupportedResolution",
+        "arguments": 0,
+        "code": "_getStateForUnsupportedResolution(){const e=this.symbolInfo();if(null===e)return null;const t=this.interval(),i=(0,ss.getResolutionUnsupportedReason)(e,t);if(null===i)return null;return function(e){const{symbolInfo:t,resolution:i,reason:s,hasResolutionPolicy:o,isInternalDataFeed:n,defaultResolutions:a,isAuthenticated:l,isPro:c}=e,h=t.name;if(\"less_than_frequency\"!==s){let e=[\"D\",\"W\",\"M\"];return o||n||(e=t.supported_resolutions),{ticker:h,reason:s,unsupportedResolution:i,applicableResolution:e[0],supportedResolutions:e}}const d=(0,r.ensureDefined)(t.data_frequency);let u=(0,os.getApplicableIntervalForFrequency)(d,i);return!o||a.includes(u)||l&&c||(u=(0,os.getApplicableDefaultResolution)(a,u)),{ticker:h,reason:s,applicableResolution:u,unsupportedResolution:i,supportedResolutions:[]}}({symbolInfo:e,resolution:t,reason:i,hasResolutionPolicy:!0,isInternalDataFeed:(0,v.isTradingViewData)(),defaultResolutions:this._model.defaultResolutions(),isAuthenticated:!!window.is_authenticated,isPro:!!window.user?.is_pro})}"
+      },
+      {
+        "name": "_notifyIntervalChanged",
+        "arguments": 1,
+        "code": "_notifyIntervalChanged(e){const t={timeframe:this._pendingTimeRange??void 0};this._intervalChanged.fire(e,t),this._pendingTimeRange=t.timeframe??null}"
+      },
+      {
+        "name": "_clearPriceScalesForRestrictedBond",
+        "arguments": 0,
+        "code": "_clearPriceScalesForRestrictedBond(){for(const e of this._model.panes())e.clearPriceRanges()}"
+      },
+      {
+        "name": "_stopStudiesForRestrictedBond",
+        "arguments": 0,
+        "code": "_stopStudiesForRestrictedBond(){this._withStudyBindings((e=>e.stop())),this._model.allStudies().filter((e=>e.isStarted())).forEach((e=>e.stop())),this._model.sessions().get()?.stop(),this._model.allLineToolsIncludingHidden().filter(ps.isStudyLineTool).forEach((e=>e.stop())),this._areStudiesStoppedForRestrictedBond=!0}"
+      },
+      {
+        "name": "_restartStudiesStoppedForRestrictedBond",
+        "arguments": 0,
+        "code": "_restartStudiesStoppedForRestrictedBond(){if(this._areStudiesStoppedForRestrictedBond){this._areStudiesStoppedForRestrictedBond=!1,this._withStudyBindings((e=>e.restart()));for(const e of this._model.allStudies())e.isStarted()||e.restart();this._model.sessions().get()?.restart()}}"
+      }
+    ]
+  },
+  "checks": {
+    "hasApi": true,
+    "hasModel": true,
+    "hasSeries": true,
+    "hasTimeScale": true,
+    "hasPoints": true,
+    "hasSeriesData": true,
+    "hasBarStore": true,
+    "hasSeriesSource": true,
+    "hasDataEvents": true,
+    "hasGateway": true,
+    "hasChartApi": true,
+    "hasIndexToTimePoint": true,
+    "hasTimePointToIndex": true,
+    "hasSearchByTime": true
+  },
+  "execution": {
+    "readOnly": true,
+    "errors": {}
+  }
+}
