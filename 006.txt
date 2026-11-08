@@ -1,0 +1,5113 @@
+{
+  "diagnostic": "TVE-DIAG-SOURCE-ONLY-v8-for-0.2.8",
+  "startedAt": "2026-11-08T18:46:57.410Z",
+  "page": {
+    "url": "https://www.tradingview.com/chart/4JBVKCwz/",
+    "title": "PEPEUSDT.P 0.50978e-5 ▲ +4.85% Unnamed",
+    "viewport": {
+      "width": 1064,
+      "height": 1054
+    }
+  },
+  "extensionVersionFlag": true,
+  "safety": "Selects 5s and invokes Apply exactly once. This specifically tests the source-only experiment: MainSeries must keep its original native interval while SeriesSource changes to 5S. Reads BarStore, TimeScale, PriceScale, PaneView and Renderer references, plus live updates. The script itself does not mutate TradingView chart internals. Apply is destructive/experimental; reload after copying this report.",
+  "actions": [
+    {
+      "action": "click-5s",
+      "at": "2026-11-08T18:46:57.422Z"
+    },
+    {
+      "action": "invoke-apply-once",
+      "at": "2026-11-08T18:46:58.683Z",
+      "realCandles": 40,
+      "totalCandles": 47
+    },
+    {
+      "event": "TVE_LIVE_UPDATE",
+      "at": "2026-11-08T18:46:59.398Z",
+      "detail": {
+        "rows": 1,
+        "newBars": 0,
+        "lastTime": 1794163615,
+        "lastIndex": 46
+      }
+    },
+    {
+      "event": "TVE_LIVE_UPDATE",
+      "at": "2026-11-08T18:47:00.034Z",
+      "detail": {
+        "rows": 2,
+        "newBars": 1,
+        "lastTime": 1794163620,
+        "lastIndex": 47
+      }
+    },
+    {
+      "event": "TVE_LIVE_UPDATE",
+      "at": "2026-11-08T18:47:01.009Z",
+      "detail": {
+        "rows": 1,
+        "newBars": 0,
+        "lastTime": 1794163620,
+        "lastIndex": 47
+      }
+    },
+    {
+      "event": "TVE_LIVE_UPDATE",
+      "at": "2026-11-08T18:47:01.864Z",
+      "detail": {
+        "rows": 1,
+        "newBars": 0,
+        "lastTime": 1794163620,
+        "lastIndex": 47
+      }
+    },
+    {
+      "event": "TVE_LIVE_UPDATE",
+      "at": "2026-11-08T18:47:02.125Z",
+      "detail": {
+        "rows": 1,
+        "newBars": 0,
+        "lastTime": 1794163620,
+        "lastIndex": 47
+      }
+    }
+  ],
+  "phases": [
+    {
+      "at": "2026-11-08T18:46:58.697Z",
+      "phase": "source-resolution-only",
+      "targetResolution": "5S",
+      "sourceOnlyMode": {
+        "mainSeriesIntervalPreserved": true,
+        "originalMainSeriesInterval": "1",
+        "currentMainSeriesInterval": "1",
+        "originalSourceResolution": "1",
+        "currentSourceResolution": "5S",
+        "mainSeriesSetIntervalCalled": false
+      },
+      "barCountBeforeReset": 300,
+      "timeScalePointCountBeforeReset": 310
+    },
+    {
+      "at": "2026-11-08T18:46:58.698Z",
+      "phase": "timescale-reset-requested",
+      "expectedBars": 47,
+      "expectedFirstTime": 1794163385,
+      "expectedLastTime": 1794163615,
+      "timeScalePointCount": 47
+    },
+    {
+      "at": "2026-11-08T18:46:58.737Z",
+      "phase": "clear-queues-drained",
+      "drainedSourceQueues": 1,
+      "sourceQueueTypes": [
+        "I"
+      ],
+      "barCountAfterDrain": 0
+    },
+    {
+      "at": "2026-11-08T18:46:58.737Z",
+      "phase": "old-bars-cleared",
+      "clearedBarCount": 0,
+      "timeScalePointCount": 47,
+      "expectedBars": 47
+    },
+    {
+      "at": "2026-11-08T18:46:58.754Z",
+      "phase": "data-update-queues-drained",
+      "drainedSourceQueues": 1,
+      "sourceQueueTypes": [
+        "I"
+      ],
+      "barCountAfterDrain": 47
+    },
+    {
+      "at": "2026-11-08T18:46:58.756Z",
+      "phase": "verification-complete",
+      "success": true,
+      "verification": {
+        "barCount": 47,
+        "firstIndex": 0,
+        "lastIndex": 46,
+        "firstBarTime": 1794163385,
+        "lastBarTime": 1794163615,
+        "allBarsMatch": true,
+        "seriesResolution": "1",
+        "expectedSeriesResolution": "1",
+        "sourceResolution": "5S",
+        "timeScaleFirstPoint": 1794163385,
+        "timeScaleLastPoint": 1794163615,
+        "timeScaleRange": {
+          "firstIndex": 0,
+          "lastIndex": 46
+        },
+        "timeScalePointCount": 47,
+        "tickMarkLastTime": null,
+        "tickMarkLastTimeType": "object",
+        "tickMarkLastTimeSeconds": null,
+        "tickMarkMatchesExpected": false
+      }
+    }
+  ],
+  "browserErrors": [],
+  "result": {
+    "ready": true,
+    "applyInvoked": true,
+    "readiness": {
+      "buttonEnabled": true,
+      "realCandles": 40,
+      "totalCandles": 47,
+      "historyLoaded": true,
+      "feedState": "connected"
+    },
+    "originalSeriesInterval": "1",
+    "applyInvokedAt": "2026-11-08T18:46:58.683Z",
+    "terminalEvent": {
+      "type": "TVE_APPLY_RESULT",
+      "detail": {
+        "success": true,
+        "applyAlgorithm": "source-resolution-only -> reset-outside-queue -> drain-all-clear-queues -> native-unpacked-insert -> verify -> reveal-viewport -> recalculate-visible-price-scale",
+        "resolutionMode": "source-only-experiment",
+        "mainSeriesIntervalPreserved": true,
+        "reloadRequired": true,
+        "chartLockedForReload": true,
+        "nativeMessagesBlocked": true,
+        "suppressedNativeMessages": 1,
+        "symbol": "KCEX:PEPEUSDT.P",
+        "interval": "5s",
+        "seriesInterval": "1",
+        "sourceResolution": "5S",
+        "submittedBars": 47,
+        "barStoreCount": 47,
+        "firstTime": 1794163385,
+        "lastTime": 1794163615,
+        "firstBarTime": 1794163385,
+        "lastBarTime": 1794163615,
+        "timeScaleFirstPoint": 1794163385,
+        "timeScaleLastPoint": 1794163615,
+        "tickMarkLastTime": null,
+        "originalResolution": "1",
+        "originalSeriesInterval": "1",
+        "sourceOnlyMode": {
+          "mainSeriesIntervalPreserved": true,
+          "originalMainSeriesInterval": "1",
+          "currentMainSeriesInterval": "1",
+          "originalSourceResolution": "1",
+          "currentSourceResolution": "5S",
+          "mainSeriesSetIntervalCalled": false
+        },
+        "verification": {
+          "barCount": 47,
+          "firstIndex": 0,
+          "lastIndex": 46,
+          "firstBarTime": 1794163385,
+          "lastBarTime": 1794163615,
+          "allBarsMatch": true,
+          "seriesResolution": "1",
+          "expectedSeriesResolution": "1",
+          "sourceResolution": "5S",
+          "timeScaleFirstPoint": 1794163385,
+          "timeScaleLastPoint": 1794163615,
+          "timeScaleRange": {
+            "firstIndex": 0,
+            "lastIndex": 46
+          },
+          "timeScalePointCount": 47,
+          "tickMarkLastTime": null,
+          "tickMarkLastTimeType": "object",
+          "tickMarkLastTimeSeconds": null,
+          "tickMarkMatchesExpected": false
+        },
+        "viewport": {
+          "before": {
+            "baseIndex": 46,
+            "rightOffset": 10,
+            "barSpacing": 10.282143689688416,
+            "width": 875,
+            "logicalRange": "[Object]",
+            "visibleBars": "[Object]"
+          },
+          "after": {
+            "baseIndex": 46,
+            "rightOffset": 5,
+            "barSpacing": 10.282143689688416,
+            "width": 875,
+            "logicalRange": "[Object]",
+            "visibleBars": "[Object]"
+          },
+          "visibleContainsLatest": true,
+          "targetRightOffset": 5
+        },
+        "priceScaleRefresh": {
+          "before": {
+            "ok": true,
+            "isLog": false,
+            "autoScale": true,
+            "lockScale": false,
+            "priceRangeReady": true,
+            "bounds": "[Object]",
+            "range": "[Object]",
+            "coversVisibleBars": true
+          },
+          "readyBefore": true,
+          "readyAfter": true,
+          "readinessRestored": false,
+          "firstCalculationOk": true,
+          "autoscaleFallback": false,
+          "after": {
+            "ok": true,
+            "isLog": false,
+            "autoScale": true,
+            "lockScale": false,
+            "priceRangeReady": true,
+            "bounds": "[Object]",
+            "range": "[Object]",
+            "coversVisibleBars": true
+          },
+          "invalidatedForRange": {
+            "visibleBars": "[Object]",
+            "logicalRange": "[Object]",
+            "isValid": true
+          }
+        },
+        "warning": "این اتصال از APIهای خصوصی TradingView استفاده می‌کند. پیام‌های داده‌ی قدیمی سرور برای سری اصلی مسدود شدند تا با کندل‌های ثانیه‌ای مخلوط نشوند. Reload وضعیت اصلی را برمی‌گرداند؛ رفتار اندیکاتورها باید روی چارت واقعی بررسی شود."
+      }
+    },
+    "applyEventTimeout": false,
+    "sourceOnlyContract": {
+      "seriesIntervalPreserved": true,
+      "sourceResolutionIs5S": true,
+      "rendererPresent": true
+    },
+    "reloadReminder": "After copying this report, reload TradingView to restore the original chart/session state. Do not click Apply again in this page session.",
+    "liveUpdateEvents": 5
+  },
+  "before": {
+    "label": "before-5s",
+    "at": "2026-11-08T18:46:57.412Z",
+    "chartFound": true,
+    "chart": {
+      "symbol": "KCEX:PEPEUSDT.P",
+      "interval": {
+        "series": "1",
+        "source": "1",
+        "sourceStatus": 3
+      },
+      "renderer": {
+        "panePresent": true,
+        "pane": {
+          "type": "Hl",
+          "keys": [
+            "m_dataSources",
+            "_sourceWatchedValuesSubscriptions",
+            "m_mainDataSource",
+            "_cachedOrderedSources",
+            "_sourcesById",
+            "_priceSourcesById",
+            "_sourcePropertiesChanged",
+            "_sourcesZOrderChanged",
+            "_stretchFactor",
+            "_isInInsertManyDataSourcesState",
+            "_lastLineDataSourceZOrder",
+            "_rightPriceScales",
+            "_leftPriceScales",
+            "_lockedPriceScale",
+            "_currentPriceScaleRatio",
+            "_onPriceScalesChanged",
+            "_isRecalculatingScales",
+            "_priceDataSources",
+            "_symbolSources",
+            "_studySources",
+            "_lollipopDataSources",
+            "_symbolSourceResolved",
+            "_symbolSourceResolvingActive",
+            "_bulkActions",
+            "_height",
+            "_width",
+            "_sizeChanged",
+            "_dataSourcesCollectionChanged",
+            "_dataSourcesZOrdersChanged",
+            "_symbolSourceCollectionChanged",
+            "_priceSourcesCollectionChanged",
+            "_isMainPane",
+            "_collapsed",
+            "_resetPriceScalesAvailable",
+            "_destroyed",
+            "_executionsPositionController",
+            "_seriesDisplayError",
+            "_onPriceScaleIsVisibleChanged",
+            "_recalcSymbolSourceResolvingActive",
+            "_onSymbolSourceCollectionChanged",
+            "_onSeriesDisplayError",
+            "_updateResetPriceScalesAvailableValue",
+            "_priceScaleSelectionStrategy",
+            "_id",
+            "_mode",
+            "_optionsProductServices",
+            "_newsReadService",
+            "_ideaPopupOpener",
+            "_contextMenu",
+            "_solutionOpener",
+            "_liveEarningsEventsService",
+            "_hostAnalysisServices",
+            "_documentsServices",
+            "_timeScale",
+            "_properties",
+            "_model",
+            "_maximized",
+            "_collapsingAvailable",
+            "_lineToolsByLinkKey"
+          ],
+          "methods": [
+            "_applyOldScaleRatioToPriceScale",
+            "_applyOldScaleRatioToTimeScale",
+            "_mainSourceVisiblePriceRange",
+            "_onDataSourcesZOrdersChanged",
+            "_onPriceScaleIsVisibleChanged",
+            "_onPriceScaleModeChanged",
+            "_onPriceScaleSetMinMaxPriceRange",
+            "_placePriceScale",
+            "_recalculatePriceScaleByScaleRatio",
+            "_recalculateTimeScaleByScaleRatio",
+            "_setCurrentPriceScaleRatio",
+            "_setNewBarSpacingByScaleRatio",
+            "_setNewPriceRangeByScaleRatio",
+            "_targetPriceAxisViews",
+            "_tryToApplyNewPriceScaleRatio",
+            "_updateMargins",
+            "_updateResetPriceScalesAvailableValue",
+            "actionNoScaleIsEnabled",
+            "addDataSource",
+            "applyPriceScaleRatio",
+            "beginInsertManyLineDataSources",
+            "canCreateNewPriceScale",
+            "clearDrawingCaches",
+            "createDrawingsCaches",
+            "createNewPriceScaleIfPossible",
+            "createPriceScaleAtPosition",
+            "dataSourceForId",
+            "dataSources",
+            "dataSourcesCollectionChanged",
+            "dataSourcesZOrdersChanged",
+            "defaultPriceScale",
+            "endInsertManyLineDataSources",
+            "endScalePrice",
+            "findCustomSourceTargetPriceAxisViews",
+            "findSuitableScale",
+            "findTargetPriceAxisViews",
+            "getPriceScaleById",
+            "hasDataSource",
+            "hasDataSourceWithSignature",
+            "hasPriceDataSource",
+            "insertDataSource",
+            "isMainPane",
+            "leftPriceScales",
+            "lollipopDataSources",
+            "mainDataSource",
+            "movePriceScale",
+            "onPriceScalesChanged",
+            "priceDataSources",
+            "priceScaleIndex",
+            "priceScalePosition",
+            "priceScaleSelectionStrategy",
+            "recalculatePriceScale",
+            "removeDataSource",
+            "removePriceScale",
+            "removeSourceFromPriceScale",
+            "resetPriceScale",
+            "resetPriceScalesAvailable",
+            "restorePriceScaleState",
+            "rightPriceScales",
+            "scalePriceTo",
+            "setPaneSize",
+            "setPriceAutoScale",
+            "setPriceScaleSelectionStrategy",
+            "startScalePrice",
+            "timeScale",
+            "updateAllViews",
+            "updateLollipopViews",
+            "visibleLeftPriceScales",
+            "visibleRightPriceScales"
+          ]
+        },
+        "paneViewPresent": true,
+        "paneView": {
+          "type": "c",
+          "keys": [
+            "_bars",
+            "_invalidated",
+            "_isMarkersEnabled",
+            "_selectionData",
+            "_source",
+            "_model",
+            "_selectionIndexer",
+            "_scaleCoeff"
+          ],
+          "methods": [
+            "_updateImpl",
+            "renderer",
+            "update"
+          ]
+        },
+        "rendererMethodFound": true,
+        "rendererPresent": true,
+        "renderer": {
+          "type": "i",
+          "keys": [
+            "_renderers",
+            "_globalAlpha"
+          ],
+          "methods": [
+            "draw",
+            "drawBackground"
+          ]
+        },
+        "futureBarsPaneView": null,
+        "projectionBarsPaneView": null
+      },
+      "bars": {
+        "count": 300,
+        "valid": 300,
+        "flat": 0,
+        "moving": 300,
+        "flatRatio": 0,
+        "first": {
+          "index": 0,
+          "value": [
+            1794145620,
+            0.0000050322,
+            0.0000050339,
+            0.0000050287,
+            0.0000050289,
+            2710000000
+          ]
+        },
+        "last": {
+          "index": 299,
+          "value": [
+            1794163560,
+            0.0000050953,
+            0.0000051,
+            0.0000050932,
+            0.0000050978,
+            3622000000
+          ]
+        }
+      },
+      "timeScale": {
+        "baseIndex": 299,
+        "rightOffset": 10,
+        "barSpacing": 10.282143689688416,
+        "width": 875,
+        "logicalRange": {
+          "left": 224.90101418466799,
+          "right": 309
+        },
+        "visibleBars": {
+          "firstBar": 225,
+          "lastBar": 309
+        },
+        "pointCount": 310
+      },
+      "priceScale": {
+        "type": "Pl",
+        "isEmpty": false,
+        "isAutoScale": true,
+        "isLockScale": false,
+        "isLog": false,
+        "priceRange": {
+          "min": 0.000005016,
+          "max": 0.000005107,
+          "type": "o"
+        },
+        "priceRangeReady": true,
+        "visibleBarPriceBounds": {
+          "low": 0.0000050175,
+          "high": 0.000005107,
+          "count": 75
+        },
+        "rangeCoversVisibleBars": true,
+        "invalidatedForRange": {
+          "visibleBars": {
+            "_firstBar": 225,
+            "_lastBar": 309
+          },
+          "logicalRange": {
+            "_left": 224.90101418466799,
+            "_right": 309
+          },
+          "isValid": true
+        }
+      },
+      "pane": {
+        "type": "Hl"
+      },
+      "toolbar": {
+        "text": "TVE\n1s\n5s\n10s\n15s\n20s\n30s\n45s\nApply\nReload\nTV: 1\nآماده\n0 معامله · 0 واقعی · 0 کندل",
+        "rect": {
+          "x": 48,
+          "y": 72,
+          "width": 503,
+          "height": 42
+        }
+      }
+    },
+    "render": {
+      "canvases": [
+        {
+          "width": 875,
+          "height": 649,
+          "rect": {
+            "x": 56,
+            "y": 42,
+            "width": 875,
+            "height": 649
+          },
+          "visibility": "visible",
+          "display": "block"
+        },
+        {
+          "width": 875,
+          "height": 649,
+          "rect": {
+            "x": 56,
+            "y": 42,
+            "width": 875,
+            "height": 649
+          },
+          "visibility": "visible",
+          "display": "block"
+        },
+        {
+          "width": 84,
+          "height": 649,
+          "rect": {
+            "x": 931,
+            "y": 42,
+            "width": 84,
+            "height": 649
+          },
+          "visibility": "visible",
+          "display": "block"
+        },
+        {
+          "width": 84,
+          "height": 649,
+          "rect": {
+            "x": 931,
+            "y": 42,
+            "width": 84,
+            "height": 649
+          },
+          "visibility": "visible",
+          "display": "block"
+        },
+        {
+          "width": 875,
+          "height": 296,
+          "rect": {
+            "x": 56,
+            "y": 692,
+            "width": 875,
+            "height": 296
+          },
+          "visibility": "visible",
+          "display": "block"
+        },
+        {
+          "width": 875,
+          "height": 296,
+          "rect": {
+            "x": 56,
+            "y": 692,
+            "width": 875,
+            "height": 296
+          },
+          "visibility": "visible",
+          "display": "block"
+        },
+        {
+          "width": 84,
+          "height": 296,
+          "rect": {
+            "x": 931,
+            "y": 692,
+            "width": 84,
+            "height": 296
+          },
+          "visibility": "visible",
+          "display": "block"
+        },
+        {
+          "width": 84,
+          "height": 296,
+          "rect": {
+            "x": 931,
+            "y": 692,
+            "width": 84,
+            "height": 296
+          },
+          "visibility": "visible",
+          "display": "block"
+        }
+      ]
+    }
+  },
+  "beforeApply": {
+    "label": "before-apply",
+    "at": "2026-11-08T18:46:58.682Z",
+    "chartFound": true,
+    "chart": {
+      "symbol": "KCEX:PEPEUSDT.P",
+      "interval": {
+        "series": "1",
+        "source": "1",
+        "sourceStatus": 3
+      },
+      "renderer": {
+        "panePresent": true,
+        "pane": {
+          "type": "Hl",
+          "keys": [
+            "m_dataSources",
+            "_sourceWatchedValuesSubscriptions",
+            "m_mainDataSource",
+            "_cachedOrderedSources",
+            "_sourcesById",
+            "_priceSourcesById",
+            "_sourcePropertiesChanged",
+            "_sourcesZOrderChanged",
+            "_stretchFactor",
+            "_isInInsertManyDataSourcesState",
+            "_lastLineDataSourceZOrder",
+            "_rightPriceScales",
+            "_leftPriceScales",
+            "_lockedPriceScale",
+            "_currentPriceScaleRatio",
+            "_onPriceScalesChanged",
+            "_isRecalculatingScales",
+            "_priceDataSources",
+            "_symbolSources",
+            "_studySources",
+            "_lollipopDataSources",
+            "_symbolSourceResolved",
+            "_symbolSourceResolvingActive",
+            "_bulkActions",
+            "_height",
+            "_width",
+            "_sizeChanged",
+            "_dataSourcesCollectionChanged",
+            "_dataSourcesZOrdersChanged",
+            "_symbolSourceCollectionChanged",
+            "_priceSourcesCollectionChanged",
+            "_isMainPane",
+            "_collapsed",
+            "_resetPriceScalesAvailable",
+            "_destroyed",
+            "_executionsPositionController",
+            "_seriesDisplayError",
+            "_onPriceScaleIsVisibleChanged",
+            "_recalcSymbolSourceResolvingActive",
+            "_onSymbolSourceCollectionChanged",
+            "_onSeriesDisplayError",
+            "_updateResetPriceScalesAvailableValue",
+            "_priceScaleSelectionStrategy",
+            "_id",
+            "_mode",
+            "_optionsProductServices",
+            "_newsReadService",
+            "_ideaPopupOpener",
+            "_contextMenu",
+            "_solutionOpener",
+            "_liveEarningsEventsService",
+            "_hostAnalysisServices",
+            "_documentsServices",
+            "_timeScale",
+            "_properties",
+            "_model",
+            "_maximized",
+            "_collapsingAvailable",
+            "_lineToolsByLinkKey"
+          ],
+          "methods": [
+            "_applyOldScaleRatioToPriceScale",
+            "_applyOldScaleRatioToTimeScale",
+            "_mainSourceVisiblePriceRange",
+            "_onDataSourcesZOrdersChanged",
+            "_onPriceScaleIsVisibleChanged",
+            "_onPriceScaleModeChanged",
+            "_onPriceScaleSetMinMaxPriceRange",
+            "_placePriceScale",
+            "_recalculatePriceScaleByScaleRatio",
+            "_recalculateTimeScaleByScaleRatio",
+            "_setCurrentPriceScaleRatio",
+            "_setNewBarSpacingByScaleRatio",
+            "_setNewPriceRangeByScaleRatio",
+            "_targetPriceAxisViews",
+            "_tryToApplyNewPriceScaleRatio",
+            "_updateMargins",
+            "_updateResetPriceScalesAvailableValue",
+            "actionNoScaleIsEnabled",
+            "addDataSource",
+            "applyPriceScaleRatio",
+            "beginInsertManyLineDataSources",
+            "canCreateNewPriceScale",
+            "clearDrawingCaches",
+            "createDrawingsCaches",
+            "createNewPriceScaleIfPossible",
+            "createPriceScaleAtPosition",
+            "dataSourceForId",
+            "dataSources",
+            "dataSourcesCollectionChanged",
+            "dataSourcesZOrdersChanged",
+            "defaultPriceScale",
+            "endInsertManyLineDataSources",
+            "endScalePrice",
+            "findCustomSourceTargetPriceAxisViews",
+            "findSuitableScale",
+            "findTargetPriceAxisViews",
+            "getPriceScaleById",
+            "hasDataSource",
+            "hasDataSourceWithSignature",
+            "hasPriceDataSource",
+            "insertDataSource",
+            "isMainPane",
+            "leftPriceScales",
+            "lollipopDataSources",
+            "mainDataSource",
+            "movePriceScale",
+            "onPriceScalesChanged",
+            "priceDataSources",
+            "priceScaleIndex",
+            "priceScalePosition",
+            "priceScaleSelectionStrategy",
+            "recalculatePriceScale",
+            "removeDataSource",
+            "removePriceScale",
+            "removeSourceFromPriceScale",
+            "resetPriceScale",
+            "resetPriceScalesAvailable",
+            "restorePriceScaleState",
+            "rightPriceScales",
+            "scalePriceTo",
+            "setPaneSize",
+            "setPriceAutoScale",
+            "setPriceScaleSelectionStrategy",
+            "startScalePrice",
+            "timeScale",
+            "updateAllViews",
+            "updateLollipopViews",
+            "visibleLeftPriceScales",
+            "visibleRightPriceScales"
+          ]
+        },
+        "paneViewPresent": true,
+        "paneView": {
+          "type": "c",
+          "keys": [
+            "_bars",
+            "_invalidated",
+            "_isMarkersEnabled",
+            "_selectionData",
+            "_source",
+            "_model",
+            "_selectionIndexer",
+            "_scaleCoeff"
+          ],
+          "methods": [
+            "_updateImpl",
+            "renderer",
+            "update"
+          ]
+        },
+        "rendererMethodFound": true,
+        "rendererPresent": true,
+        "renderer": {
+          "type": "i",
+          "keys": [
+            "_renderers",
+            "_globalAlpha"
+          ],
+          "methods": [
+            "draw",
+            "drawBackground"
+          ]
+        },
+        "futureBarsPaneView": null,
+        "projectionBarsPaneView": null
+      },
+      "bars": {
+        "count": 300,
+        "valid": 300,
+        "flat": 0,
+        "moving": 300,
+        "flatRatio": 0,
+        "first": {
+          "index": 0,
+          "value": [
+            1794145620,
+            0.0000050322,
+            0.0000050339,
+            0.0000050287,
+            0.0000050289,
+            2710000000
+          ]
+        },
+        "last": {
+          "index": 299,
+          "value": [
+            1794163560,
+            0.0000050953,
+            0.0000051,
+            0.0000050932,
+            0.0000050978,
+            3622000000
+          ]
+        }
+      },
+      "timeScale": {
+        "baseIndex": 299,
+        "rightOffset": 10,
+        "barSpacing": 10.282143689688416,
+        "width": 875,
+        "logicalRange": {
+          "left": 224.90101418466799,
+          "right": 309
+        },
+        "visibleBars": {
+          "firstBar": 225,
+          "lastBar": 309
+        },
+        "pointCount": 310
+      },
+      "priceScale": {
+        "type": "Pl",
+        "isEmpty": false,
+        "isAutoScale": true,
+        "isLockScale": false,
+        "isLog": false,
+        "priceRange": {
+          "min": 0.000005016,
+          "max": 0.000005107,
+          "type": "o"
+        },
+        "priceRangeReady": true,
+        "visibleBarPriceBounds": {
+          "low": 0.0000050175,
+          "high": 0.000005107,
+          "count": 75
+        },
+        "rangeCoversVisibleBars": true,
+        "invalidatedForRange": {
+          "visibleBars": {
+            "_firstBar": 225,
+            "_lastBar": 309
+          },
+          "logicalRange": {
+            "_left": 224.90101418466799,
+            "_right": 309
+          },
+          "isValid": true
+        }
+      },
+      "pane": {
+        "type": "Hl"
+      },
+      "toolbar": {
+        "text": "TVE\n1s\n5s\n10s\n15s\n20s\n30s\n45s\nApply\nReload\nTV: 1\nKCEX متصل\n100 معامله · 40 واقعی · 47 کندل",
+        "rect": {
+          "x": 48,
+          "y": 72,
+          "width": 553,
+          "height": 42
+        }
+      }
+    },
+    "render": {
+      "canvases": [
+        {
+          "width": 875,
+          "height": 649,
+          "rect": {
+            "x": 56,
+            "y": 42,
+            "width": 875,
+            "height": 649
+          },
+          "visibility": "visible",
+          "display": "block"
+        },
+        {
+          "width": 875,
+          "height": 649,
+          "rect": {
+            "x": 56,
+            "y": 42,
+            "width": 875,
+            "height": 649
+          },
+          "visibility": "visible",
+          "display": "block"
+        },
+        {
+          "width": 84,
+          "height": 649,
+          "rect": {
+            "x": 931,
+            "y": 42,
+            "width": 84,
+            "height": 649
+          },
+          "visibility": "visible",
+          "display": "block"
+        },
+        {
+          "width": 84,
+          "height": 649,
+          "rect": {
+            "x": 931,
+            "y": 42,
+            "width": 84,
+            "height": 649
+          },
+          "visibility": "visible",
+          "display": "block"
+        },
+        {
+          "width": 875,
+          "height": 296,
+          "rect": {
+            "x": 56,
+            "y": 692,
+            "width": 875,
+            "height": 296
+          },
+          "visibility": "visible",
+          "display": "block"
+        },
+        {
+          "width": 875,
+          "height": 296,
+          "rect": {
+            "x": 56,
+            "y": 692,
+            "width": 875,
+            "height": 296
+          },
+          "visibility": "visible",
+          "display": "block"
+        },
+        {
+          "width": 84,
+          "height": 296,
+          "rect": {
+            "x": 931,
+            "y": 692,
+            "width": 84,
+            "height": 296
+          },
+          "visibility": "visible",
+          "display": "block"
+        },
+        {
+          "width": 84,
+          "height": 296,
+          "rect": {
+            "x": 931,
+            "y": 692,
+            "width": 84,
+            "height": 296
+          },
+          "visibility": "visible",
+          "display": "block"
+        }
+      ]
+    }
+  },
+  "afterApply": {
+    "label": "after-apply",
+    "at": "2026-11-08T18:46:58.861Z",
+    "chartFound": true,
+    "chart": {
+      "symbol": "KCEX:PEPEUSDT.P",
+      "interval": {
+        "series": "1",
+        "source": "5S",
+        "sourceStatus": 3
+      },
+      "renderer": {
+        "panePresent": true,
+        "pane": {
+          "type": "Hl",
+          "keys": [
+            "m_dataSources",
+            "_sourceWatchedValuesSubscriptions",
+            "m_mainDataSource",
+            "_cachedOrderedSources",
+            "_sourcesById",
+            "_priceSourcesById",
+            "_sourcePropertiesChanged",
+            "_sourcesZOrderChanged",
+            "_stretchFactor",
+            "_isInInsertManyDataSourcesState",
+            "_lastLineDataSourceZOrder",
+            "_rightPriceScales",
+            "_leftPriceScales",
+            "_lockedPriceScale",
+            "_currentPriceScaleRatio",
+            "_onPriceScalesChanged",
+            "_isRecalculatingScales",
+            "_priceDataSources",
+            "_symbolSources",
+            "_studySources",
+            "_lollipopDataSources",
+            "_symbolSourceResolved",
+            "_symbolSourceResolvingActive",
+            "_bulkActions",
+            "_height",
+            "_width",
+            "_sizeChanged",
+            "_dataSourcesCollectionChanged",
+            "_dataSourcesZOrdersChanged",
+            "_symbolSourceCollectionChanged",
+            "_priceSourcesCollectionChanged",
+            "_isMainPane",
+            "_collapsed",
+            "_resetPriceScalesAvailable",
+            "_destroyed",
+            "_executionsPositionController",
+            "_seriesDisplayError",
+            "_onPriceScaleIsVisibleChanged",
+            "_recalcSymbolSourceResolvingActive",
+            "_onSymbolSourceCollectionChanged",
+            "_onSeriesDisplayError",
+            "_updateResetPriceScalesAvailableValue",
+            "_priceScaleSelectionStrategy",
+            "_id",
+            "_mode",
+            "_optionsProductServices",
+            "_newsReadService",
+            "_ideaPopupOpener",
+            "_contextMenu",
+            "_solutionOpener",
+            "_liveEarningsEventsService",
+            "_hostAnalysisServices",
+            "_documentsServices",
+            "_timeScale",
+            "_properties",
+            "_model",
+            "_maximized",
+            "_collapsingAvailable",
+            "_lineToolsByLinkKey"
+          ],
+          "methods": [
+            "_applyOldScaleRatioToPriceScale",
+            "_applyOldScaleRatioToTimeScale",
+            "_mainSourceVisiblePriceRange",
+            "_onDataSourcesZOrdersChanged",
+            "_onPriceScaleIsVisibleChanged",
+            "_onPriceScaleModeChanged",
+            "_onPriceScaleSetMinMaxPriceRange",
+            "_placePriceScale",
+            "_recalculatePriceScaleByScaleRatio",
+            "_recalculateTimeScaleByScaleRatio",
+            "_setCurrentPriceScaleRatio",
+            "_setNewBarSpacingByScaleRatio",
+            "_setNewPriceRangeByScaleRatio",
+            "_targetPriceAxisViews",
+            "_tryToApplyNewPriceScaleRatio",
+            "_updateMargins",
+            "_updateResetPriceScalesAvailableValue",
+            "actionNoScaleIsEnabled",
+            "addDataSource",
+            "applyPriceScaleRatio",
+            "beginInsertManyLineDataSources",
+            "canCreateNewPriceScale",
+            "clearDrawingCaches",
+            "createDrawingsCaches",
+            "createNewPriceScaleIfPossible",
+            "createPriceScaleAtPosition",
+            "dataSourceForId",
+            "dataSources",
+            "dataSourcesCollectionChanged",
+            "dataSourcesZOrdersChanged",
+            "defaultPriceScale",
+            "endInsertManyLineDataSources",
+            "endScalePrice",
+            "findCustomSourceTargetPriceAxisViews",
+            "findSuitableScale",
+            "findTargetPriceAxisViews",
+            "getPriceScaleById",
+            "hasDataSource",
+            "hasDataSourceWithSignature",
+            "hasPriceDataSource",
+            "insertDataSource",
+            "isMainPane",
+            "leftPriceScales",
+            "lollipopDataSources",
+            "mainDataSource",
+            "movePriceScale",
+            "onPriceScalesChanged",
+            "priceDataSources",
+            "priceScaleIndex",
+            "priceScalePosition",
+            "priceScaleSelectionStrategy",
+            "recalculatePriceScale",
+            "removeDataSource",
+            "removePriceScale",
+            "removeSourceFromPriceScale",
+            "resetPriceScale",
+            "resetPriceScalesAvailable",
+            "restorePriceScaleState",
+            "rightPriceScales",
+            "scalePriceTo",
+            "setPaneSize",
+            "setPriceAutoScale",
+            "setPriceScaleSelectionStrategy",
+            "startScalePrice",
+            "timeScale",
+            "updateAllViews",
+            "updateLollipopViews",
+            "visibleLeftPriceScales",
+            "visibleRightPriceScales"
+          ]
+        },
+        "paneViewPresent": true,
+        "paneView": {
+          "type": "c",
+          "keys": [
+            "_bars",
+            "_invalidated",
+            "_isMarkersEnabled",
+            "_selectionData",
+            "_source",
+            "_model",
+            "_selectionIndexer",
+            "_scaleCoeff"
+          ],
+          "methods": [
+            "_updateImpl",
+            "renderer",
+            "update"
+          ]
+        },
+        "rendererMethodFound": true,
+        "rendererPresent": true,
+        "renderer": {
+          "type": "i",
+          "keys": [
+            "_renderers",
+            "_globalAlpha"
+          ],
+          "methods": [
+            "draw",
+            "drawBackground"
+          ]
+        },
+        "futureBarsPaneView": null,
+        "projectionBarsPaneView": null
+      },
+      "bars": {
+        "count": 47,
+        "valid": 47,
+        "flat": 25,
+        "moving": 22,
+        "flatRatio": 0.5319,
+        "first": {
+          "index": 0,
+          "value": [
+            1794163385,
+            0.0000050898,
+            0.0000050905,
+            0.0000050898,
+            0.0000050905,
+            265
+          ]
+        },
+        "last": {
+          "index": 46,
+          "value": [
+            1794163615,
+            0.0000050978,
+            0.0000050978,
+            0.0000050978,
+            0.0000050978,
+            0
+          ]
+        }
+      },
+      "timeScale": {
+        "baseIndex": 46,
+        "rightOffset": 5,
+        "barSpacing": 10.282143689688416,
+        "width": 881,
+        "logicalRange": {
+          "left": -33.682521718065715,
+          "right": 51
+        },
+        "visibleBars": {
+          "firstBar": -34,
+          "lastBar": 51
+        },
+        "pointCount": 47
+      },
+      "priceScale": {
+        "type": "Pl",
+        "isEmpty": false,
+        "isAutoScale": true,
+        "isLockScale": false,
+        "isLog": false,
+        "priceRange": {
+          "min": 0.0000050898,
+          "max": 0.000005107,
+          "type": "o"
+        },
+        "priceRangeReady": true,
+        "visibleBarPriceBounds": {
+          "low": 0.0000050898,
+          "high": 0.000005107,
+          "count": 47
+        },
+        "rangeCoversVisibleBars": true,
+        "invalidatedForRange": {
+          "visibleBars": {
+            "_firstBar": -34,
+            "_lastBar": 51
+          },
+          "logicalRange": {
+            "_left": -33.682521718065715,
+            "_right": 51
+          },
+          "isValid": true
+        }
+      },
+      "pane": {
+        "type": "Hl"
+      },
+      "toolbar": {
+        "text": "TVE\n1s\n5s\n10s\n15s\n20s\n30s\n45s\nApply\nReload\nTV: 1\nبرای بازگردانی چارت، Reload لازم است\n100 معامله · 40 واقعی · 47 کندل",
+        "rect": {
+          "x": 48,
+          "y": 72,
+          "width": 657,
+          "height": 42
+        }
+      }
+    },
+    "render": {
+      "canvases": [
+        {
+          "width": 881,
+          "height": 649,
+          "rect": {
+            "x": 56,
+            "y": 42,
+            "width": 881,
+            "height": 649
+          },
+          "visibility": "visible",
+          "display": "block"
+        },
+        {
+          "width": 881,
+          "height": 649,
+          "rect": {
+            "x": 56,
+            "y": 42,
+            "width": 881,
+            "height": 649
+          },
+          "visibility": "visible",
+          "display": "block"
+        },
+        {
+          "width": 78,
+          "height": 649,
+          "rect": {
+            "x": 937,
+            "y": 42,
+            "width": 78,
+            "height": 649
+          },
+          "visibility": "visible",
+          "display": "block"
+        },
+        {
+          "width": 78,
+          "height": 649,
+          "rect": {
+            "x": 937,
+            "y": 42,
+            "width": 78,
+            "height": 649
+          },
+          "visibility": "visible",
+          "display": "block"
+        },
+        {
+          "width": 881,
+          "height": 296,
+          "rect": {
+            "x": 56,
+            "y": 692,
+            "width": 881,
+            "height": 296
+          },
+          "visibility": "visible",
+          "display": "block"
+        },
+        {
+          "width": 881,
+          "height": 296,
+          "rect": {
+            "x": 56,
+            "y": 692,
+            "width": 881,
+            "height": 296
+          },
+          "visibility": "visible",
+          "display": "block"
+        },
+        {
+          "width": 78,
+          "height": 296,
+          "rect": {
+            "x": 937,
+            "y": 692,
+            "width": 78,
+            "height": 296
+          },
+          "visibility": "visible",
+          "display": "block"
+        },
+        {
+          "width": 78,
+          "height": 296,
+          "rect": {
+            "x": 937,
+            "y": 692,
+            "width": 78,
+            "height": 296
+          },
+          "visibility": "visible",
+          "display": "block"
+        }
+      ]
+    }
+  },
+  "samples": [
+    {
+      "label": "live-sample",
+      "at": "2026-11-08T18:46:59.866Z",
+      "chartFound": true,
+      "chart": {
+        "symbol": "KCEX:PEPEUSDT.P",
+        "interval": {
+          "series": "1",
+          "source": "5S",
+          "sourceStatus": 3
+        },
+        "renderer": {
+          "panePresent": true,
+          "pane": {
+            "type": "Hl",
+            "keys": [
+              "m_dataSources",
+              "_sourceWatchedValuesSubscriptions",
+              "m_mainDataSource",
+              "_cachedOrderedSources",
+              "_sourcesById",
+              "_priceSourcesById",
+              "_sourcePropertiesChanged",
+              "_sourcesZOrderChanged",
+              "_stretchFactor",
+              "_isInInsertManyDataSourcesState",
+              "_lastLineDataSourceZOrder",
+              "_rightPriceScales",
+              "_leftPriceScales",
+              "_lockedPriceScale",
+              "_currentPriceScaleRatio",
+              "_onPriceScalesChanged",
+              "_isRecalculatingScales",
+              "_priceDataSources",
+              "_symbolSources",
+              "_studySources",
+              "_lollipopDataSources",
+              "_symbolSourceResolved",
+              "_symbolSourceResolvingActive",
+              "_bulkActions",
+              "_height",
+              "_width",
+              "_sizeChanged",
+              "_dataSourcesCollectionChanged",
+              "_dataSourcesZOrdersChanged",
+              "_symbolSourceCollectionChanged",
+              "_priceSourcesCollectionChanged",
+              "_isMainPane",
+              "_collapsed",
+              "_resetPriceScalesAvailable",
+              "_destroyed",
+              "_executionsPositionController",
+              "_seriesDisplayError",
+              "_onPriceScaleIsVisibleChanged",
+              "_recalcSymbolSourceResolvingActive",
+              "_onSymbolSourceCollectionChanged",
+              "_onSeriesDisplayError",
+              "_updateResetPriceScalesAvailableValue",
+              "_priceScaleSelectionStrategy",
+              "_id",
+              "_mode",
+              "_optionsProductServices",
+              "_newsReadService",
+              "_ideaPopupOpener",
+              "_contextMenu",
+              "_solutionOpener",
+              "_liveEarningsEventsService",
+              "_hostAnalysisServices",
+              "_documentsServices",
+              "_timeScale",
+              "_properties",
+              "_model",
+              "_maximized",
+              "_collapsingAvailable",
+              "_lineToolsByLinkKey"
+            ],
+            "methods": [
+              "_applyOldScaleRatioToPriceScale",
+              "_applyOldScaleRatioToTimeScale",
+              "_mainSourceVisiblePriceRange",
+              "_onDataSourcesZOrdersChanged",
+              "_onPriceScaleIsVisibleChanged",
+              "_onPriceScaleModeChanged",
+              "_onPriceScaleSetMinMaxPriceRange",
+              "_placePriceScale",
+              "_recalculatePriceScaleByScaleRatio",
+              "_recalculateTimeScaleByScaleRatio",
+              "_setCurrentPriceScaleRatio",
+              "_setNewBarSpacingByScaleRatio",
+              "_setNewPriceRangeByScaleRatio",
+              "_targetPriceAxisViews",
+              "_tryToApplyNewPriceScaleRatio",
+              "_updateMargins",
+              "_updateResetPriceScalesAvailableValue",
+              "actionNoScaleIsEnabled",
+              "addDataSource",
+              "applyPriceScaleRatio",
+              "beginInsertManyLineDataSources",
+              "canCreateNewPriceScale",
+              "clearDrawingCaches",
+              "createDrawingsCaches",
+              "createNewPriceScaleIfPossible",
+              "createPriceScaleAtPosition",
+              "dataSourceForId",
+              "dataSources",
+              "dataSourcesCollectionChanged",
+              "dataSourcesZOrdersChanged",
+              "defaultPriceScale",
+              "endInsertManyLineDataSources",
+              "endScalePrice",
+              "findCustomSourceTargetPriceAxisViews",
+              "findSuitableScale",
+              "findTargetPriceAxisViews",
+              "getPriceScaleById",
+              "hasDataSource",
+              "hasDataSourceWithSignature",
+              "hasPriceDataSource",
+              "insertDataSource",
+              "isMainPane",
+              "leftPriceScales",
+              "lollipopDataSources",
+              "mainDataSource",
+              "movePriceScale",
+              "onPriceScalesChanged",
+              "priceDataSources",
+              "priceScaleIndex",
+              "priceScalePosition",
+              "priceScaleSelectionStrategy",
+              "recalculatePriceScale",
+              "removeDataSource",
+              "removePriceScale",
+              "removeSourceFromPriceScale",
+              "resetPriceScale",
+              "resetPriceScalesAvailable",
+              "restorePriceScaleState",
+              "rightPriceScales",
+              "scalePriceTo",
+              "setPaneSize",
+              "setPriceAutoScale",
+              "setPriceScaleSelectionStrategy",
+              "startScalePrice",
+              "timeScale",
+              "updateAllViews",
+              "updateLollipopViews",
+              "visibleLeftPriceScales",
+              "visibleRightPriceScales"
+            ]
+          },
+          "paneViewPresent": true,
+          "paneView": {
+            "type": "c",
+            "keys": [
+              "_bars",
+              "_invalidated",
+              "_isMarkersEnabled",
+              "_selectionData",
+              "_source",
+              "_model",
+              "_selectionIndexer",
+              "_scaleCoeff"
+            ],
+            "methods": [
+              "_updateImpl",
+              "renderer",
+              "update"
+            ]
+          },
+          "rendererMethodFound": true,
+          "rendererPresent": true,
+          "renderer": {
+            "type": "i",
+            "keys": [
+              "_renderers",
+              "_globalAlpha"
+            ],
+            "methods": [
+              "draw",
+              "drawBackground"
+            ]
+          },
+          "futureBarsPaneView": null,
+          "projectionBarsPaneView": null
+        },
+        "bars": {
+          "count": 47,
+          "valid": 47,
+          "flat": 25,
+          "moving": 22,
+          "flatRatio": 0.5319,
+          "first": {
+            "index": 0,
+            "value": [
+              1794163385,
+              0.0000050898,
+              0.0000050905,
+              0.0000050898,
+              0.0000050905,
+              265
+            ]
+          },
+          "last": {
+            "index": 46,
+            "value": [
+              1794163615,
+              0.0000050984,
+              0.0000050984,
+              0.0000050984,
+              0.0000050984,
+              105
+            ]
+          }
+        },
+        "timeScale": {
+          "baseIndex": 46,
+          "rightOffset": 5,
+          "barSpacing": 10.282143689688416,
+          "width": 881,
+          "logicalRange": {
+            "left": -33.682521718065715,
+            "right": 51
+          },
+          "visibleBars": {
+            "firstBar": -34,
+            "lastBar": 51
+          },
+          "pointCount": 81
+        },
+        "priceScale": {
+          "type": "Pl",
+          "isEmpty": false,
+          "isAutoScale": true,
+          "isLockScale": false,
+          "isLog": false,
+          "priceRange": {
+            "min": 0.000005002,
+            "max": 0.000005107,
+            "type": "o"
+          },
+          "priceRangeReady": true,
+          "visibleBarPriceBounds": {
+            "low": 0.0000050898,
+            "high": 0.000005107,
+            "count": 47
+          },
+          "rangeCoversVisibleBars": true,
+          "invalidatedForRange": {
+            "visibleBars": {
+              "_firstBar": -34,
+              "_lastBar": 51
+            },
+            "logicalRange": {
+              "_left": -33.682521718065715,
+              "_right": 51
+            },
+            "isValid": true
+          }
+        },
+        "pane": {
+          "type": "Hl"
+        },
+        "toolbar": {
+          "text": "TVE\n1s\n5s\n10s\n15s\n20s\n30s\n45s\nApply\nReload\nTV: 1\nبرای بازگردانی چارت، Reload لازم است\n101 معامله · 41 واقعی · 47 کندل",
+          "rect": {
+            "x": 48,
+            "y": 72,
+            "width": 657,
+            "height": 42
+          }
+        }
+      },
+      "render": {
+        "canvases": [
+          {
+            "width": 881,
+            "height": 649,
+            "rect": {
+              "x": 56,
+              "y": 42,
+              "width": 881,
+              "height": 649
+            },
+            "visibility": "visible",
+            "display": "block"
+          },
+          {
+            "width": 881,
+            "height": 649,
+            "rect": {
+              "x": 56,
+              "y": 42,
+              "width": 881,
+              "height": 649
+            },
+            "visibility": "visible",
+            "display": "block"
+          },
+          {
+            "width": 78,
+            "height": 649,
+            "rect": {
+              "x": 937,
+              "y": 42,
+              "width": 78,
+              "height": 649
+            },
+            "visibility": "visible",
+            "display": "block"
+          },
+          {
+            "width": 78,
+            "height": 649,
+            "rect": {
+              "x": 937,
+              "y": 42,
+              "width": 78,
+              "height": 649
+            },
+            "visibility": "visible",
+            "display": "block"
+          },
+          {
+            "width": 881,
+            "height": 296,
+            "rect": {
+              "x": 56,
+              "y": 692,
+              "width": 881,
+              "height": 296
+            },
+            "visibility": "visible",
+            "display": "block"
+          },
+          {
+            "width": 881,
+            "height": 296,
+            "rect": {
+              "x": 56,
+              "y": 692,
+              "width": 881,
+              "height": 296
+            },
+            "visibility": "visible",
+            "display": "block"
+          },
+          {
+            "width": 78,
+            "height": 296,
+            "rect": {
+              "x": 937,
+              "y": 692,
+              "width": 78,
+              "height": 296
+            },
+            "visibility": "visible",
+            "display": "block"
+          },
+          {
+            "width": 78,
+            "height": 296,
+            "rect": {
+              "x": 937,
+              "y": 692,
+              "width": 78,
+              "height": 296
+            },
+            "visibility": "visible",
+            "display": "block"
+          }
+        ]
+      }
+    },
+    {
+      "label": "live-sample",
+      "at": "2026-11-08T18:47:00.868Z",
+      "chartFound": true,
+      "chart": {
+        "symbol": "KCEX:PEPEUSDT.P",
+        "interval": {
+          "series": "1",
+          "source": "5S",
+          "sourceStatus": 3
+        },
+        "renderer": {
+          "panePresent": true,
+          "pane": {
+            "type": "Hl",
+            "keys": [
+              "m_dataSources",
+              "_sourceWatchedValuesSubscriptions",
+              "m_mainDataSource",
+              "_cachedOrderedSources",
+              "_sourcesById",
+              "_priceSourcesById",
+              "_sourcePropertiesChanged",
+              "_sourcesZOrderChanged",
+              "_stretchFactor",
+              "_isInInsertManyDataSourcesState",
+              "_lastLineDataSourceZOrder",
+              "_rightPriceScales",
+              "_leftPriceScales",
+              "_lockedPriceScale",
+              "_currentPriceScaleRatio",
+              "_onPriceScalesChanged",
+              "_isRecalculatingScales",
+              "_priceDataSources",
+              "_symbolSources",
+              "_studySources",
+              "_lollipopDataSources",
+              "_symbolSourceResolved",
+              "_symbolSourceResolvingActive",
+              "_bulkActions",
+              "_height",
+              "_width",
+              "_sizeChanged",
+              "_dataSourcesCollectionChanged",
+              "_dataSourcesZOrdersChanged",
+              "_symbolSourceCollectionChanged",
+              "_priceSourcesCollectionChanged",
+              "_isMainPane",
+              "_collapsed",
+              "_resetPriceScalesAvailable",
+              "_destroyed",
+              "_executionsPositionController",
+              "_seriesDisplayError",
+              "_onPriceScaleIsVisibleChanged",
+              "_recalcSymbolSourceResolvingActive",
+              "_onSymbolSourceCollectionChanged",
+              "_onSeriesDisplayError",
+              "_updateResetPriceScalesAvailableValue",
+              "_priceScaleSelectionStrategy",
+              "_id",
+              "_mode",
+              "_optionsProductServices",
+              "_newsReadService",
+              "_ideaPopupOpener",
+              "_contextMenu",
+              "_solutionOpener",
+              "_liveEarningsEventsService",
+              "_hostAnalysisServices",
+              "_documentsServices",
+              "_timeScale",
+              "_properties",
+              "_model",
+              "_maximized",
+              "_collapsingAvailable",
+              "_lineToolsByLinkKey"
+            ],
+            "methods": [
+              "_applyOldScaleRatioToPriceScale",
+              "_applyOldScaleRatioToTimeScale",
+              "_mainSourceVisiblePriceRange",
+              "_onDataSourcesZOrdersChanged",
+              "_onPriceScaleIsVisibleChanged",
+              "_onPriceScaleModeChanged",
+              "_onPriceScaleSetMinMaxPriceRange",
+              "_placePriceScale",
+              "_recalculatePriceScaleByScaleRatio",
+              "_recalculateTimeScaleByScaleRatio",
+              "_setCurrentPriceScaleRatio",
+              "_setNewBarSpacingByScaleRatio",
+              "_setNewPriceRangeByScaleRatio",
+              "_targetPriceAxisViews",
+              "_tryToApplyNewPriceScaleRatio",
+              "_updateMargins",
+              "_updateResetPriceScalesAvailableValue",
+              "actionNoScaleIsEnabled",
+              "addDataSource",
+              "applyPriceScaleRatio",
+              "beginInsertManyLineDataSources",
+              "canCreateNewPriceScale",
+              "clearDrawingCaches",
+              "createDrawingsCaches",
+              "createNewPriceScaleIfPossible",
+              "createPriceScaleAtPosition",
+              "dataSourceForId",
+              "dataSources",
+              "dataSourcesCollectionChanged",
+              "dataSourcesZOrdersChanged",
+              "defaultPriceScale",
+              "endInsertManyLineDataSources",
+              "endScalePrice",
+              "findCustomSourceTargetPriceAxisViews",
+              "findSuitableScale",
+              "findTargetPriceAxisViews",
+              "getPriceScaleById",
+              "hasDataSource",
+              "hasDataSourceWithSignature",
+              "hasPriceDataSource",
+              "insertDataSource",
+              "isMainPane",
+              "leftPriceScales",
+              "lollipopDataSources",
+              "mainDataSource",
+              "movePriceScale",
+              "onPriceScalesChanged",
+              "priceDataSources",
+              "priceScaleIndex",
+              "priceScalePosition",
+              "priceScaleSelectionStrategy",
+              "recalculatePriceScale",
+              "removeDataSource",
+              "removePriceScale",
+              "removeSourceFromPriceScale",
+              "resetPriceScale",
+              "resetPriceScalesAvailable",
+              "restorePriceScaleState",
+              "rightPriceScales",
+              "scalePriceTo",
+              "setPaneSize",
+              "setPriceAutoScale",
+              "setPriceScaleSelectionStrategy",
+              "startScalePrice",
+              "timeScale",
+              "updateAllViews",
+              "updateLollipopViews",
+              "visibleLeftPriceScales",
+              "visibleRightPriceScales"
+            ]
+          },
+          "paneViewPresent": true,
+          "paneView": {
+            "type": "c",
+            "keys": [
+              "_bars",
+              "_invalidated",
+              "_isMarkersEnabled",
+              "_selectionData",
+              "_source",
+              "_model",
+              "_selectionIndexer",
+              "_scaleCoeff"
+            ],
+            "methods": [
+              "_updateImpl",
+              "renderer",
+              "update"
+            ]
+          },
+          "rendererMethodFound": true,
+          "rendererPresent": true,
+          "renderer": {
+            "type": "i",
+            "keys": [
+              "_renderers",
+              "_globalAlpha"
+            ],
+            "methods": [
+              "draw",
+              "drawBackground"
+            ]
+          },
+          "futureBarsPaneView": null,
+          "projectionBarsPaneView": null
+        },
+        "bars": {
+          "count": 48,
+          "valid": 48,
+          "flat": 26,
+          "moving": 22,
+          "flatRatio": 0.5417,
+          "first": {
+            "index": 0,
+            "value": [
+              1794163385,
+              0.0000050898,
+              0.0000050905,
+              0.0000050898,
+              0.0000050905,
+              265
+            ]
+          },
+          "last": {
+            "index": 47,
+            "value": [
+              1794163620,
+              0.0000050984,
+              0.0000050984,
+              0.0000050984,
+              0.0000050984,
+              0
+            ]
+          }
+        },
+        "timeScale": {
+          "baseIndex": 47,
+          "rightOffset": 5,
+          "barSpacing": 10.282143689688416,
+          "width": 881,
+          "logicalRange": {
+            "left": -32.682521718065715,
+            "right": 52
+          },
+          "visibleBars": {
+            "firstBar": -33,
+            "lastBar": 52
+          },
+          "pointCount": 82
+        },
+        "priceScale": {
+          "type": "Pl",
+          "isEmpty": false,
+          "isAutoScale": true,
+          "isLockScale": false,
+          "isLog": false,
+          "priceRange": {
+            "min": 0.000005002,
+            "max": 0.000005107,
+            "type": "o"
+          },
+          "priceRangeReady": true,
+          "visibleBarPriceBounds": {
+            "low": 0.0000050898,
+            "high": 0.000005107,
+            "count": 48
+          },
+          "rangeCoversVisibleBars": true,
+          "invalidatedForRange": {
+            "visibleBars": {
+              "_firstBar": -33,
+              "_lastBar": 52
+            },
+            "logicalRange": {
+              "_left": -32.682521718065715,
+              "_right": 52
+            },
+            "isValid": true
+          }
+        },
+        "pane": {
+          "type": "Hl"
+        },
+        "toolbar": {
+          "text": "TVE\n1s\n5s\n10s\n15s\n20s\n30s\n45s\nApply\nReload\nTV: 1\nبرای بازگردانی چارت، Reload لازم است\n102 معامله · 41 واقعی · 47 کندل",
+          "rect": {
+            "x": 48,
+            "y": 72,
+            "width": 657,
+            "height": 42
+          }
+        }
+      },
+      "render": {
+        "canvases": [
+          {
+            "width": 881,
+            "height": 649,
+            "rect": {
+              "x": 56,
+              "y": 42,
+              "width": 881,
+              "height": 649
+            },
+            "visibility": "visible",
+            "display": "block"
+          },
+          {
+            "width": 881,
+            "height": 649,
+            "rect": {
+              "x": 56,
+              "y": 42,
+              "width": 881,
+              "height": 649
+            },
+            "visibility": "visible",
+            "display": "block"
+          },
+          {
+            "width": 78,
+            "height": 649,
+            "rect": {
+              "x": 937,
+              "y": 42,
+              "width": 78,
+              "height": 649
+            },
+            "visibility": "visible",
+            "display": "block"
+          },
+          {
+            "width": 78,
+            "height": 649,
+            "rect": {
+              "x": 937,
+              "y": 42,
+              "width": 78,
+              "height": 649
+            },
+            "visibility": "visible",
+            "display": "block"
+          },
+          {
+            "width": 881,
+            "height": 296,
+            "rect": {
+              "x": 56,
+              "y": 692,
+              "width": 881,
+              "height": 296
+            },
+            "visibility": "visible",
+            "display": "block"
+          },
+          {
+            "width": 881,
+            "height": 296,
+            "rect": {
+              "x": 56,
+              "y": 692,
+              "width": 881,
+              "height": 296
+            },
+            "visibility": "visible",
+            "display": "block"
+          },
+          {
+            "width": 78,
+            "height": 296,
+            "rect": {
+              "x": 937,
+              "y": 692,
+              "width": 78,
+              "height": 296
+            },
+            "visibility": "visible",
+            "display": "block"
+          },
+          {
+            "width": 78,
+            "height": 296,
+            "rect": {
+              "x": 937,
+              "y": 692,
+              "width": 78,
+              "height": 296
+            },
+            "visibility": "visible",
+            "display": "block"
+          }
+        ]
+      }
+    },
+    {
+      "label": "live-sample",
+      "at": "2026-11-08T18:47:01.869Z",
+      "chartFound": true,
+      "chart": {
+        "symbol": "KCEX:PEPEUSDT.P",
+        "interval": {
+          "series": "1",
+          "source": "5S",
+          "sourceStatus": 3
+        },
+        "renderer": {
+          "panePresent": true,
+          "pane": {
+            "type": "Hl",
+            "keys": [
+              "m_dataSources",
+              "_sourceWatchedValuesSubscriptions",
+              "m_mainDataSource",
+              "_cachedOrderedSources",
+              "_sourcesById",
+              "_priceSourcesById",
+              "_sourcePropertiesChanged",
+              "_sourcesZOrderChanged",
+              "_stretchFactor",
+              "_isInInsertManyDataSourcesState",
+              "_lastLineDataSourceZOrder",
+              "_rightPriceScales",
+              "_leftPriceScales",
+              "_lockedPriceScale",
+              "_currentPriceScaleRatio",
+              "_onPriceScalesChanged",
+              "_isRecalculatingScales",
+              "_priceDataSources",
+              "_symbolSources",
+              "_studySources",
+              "_lollipopDataSources",
+              "_symbolSourceResolved",
+              "_symbolSourceResolvingActive",
+              "_bulkActions",
+              "_height",
+              "_width",
+              "_sizeChanged",
+              "_dataSourcesCollectionChanged",
+              "_dataSourcesZOrdersChanged",
+              "_symbolSourceCollectionChanged",
+              "_priceSourcesCollectionChanged",
+              "_isMainPane",
+              "_collapsed",
+              "_resetPriceScalesAvailable",
+              "_destroyed",
+              "_executionsPositionController",
+              "_seriesDisplayError",
+              "_onPriceScaleIsVisibleChanged",
+              "_recalcSymbolSourceResolvingActive",
+              "_onSymbolSourceCollectionChanged",
+              "_onSeriesDisplayError",
+              "_updateResetPriceScalesAvailableValue",
+              "_priceScaleSelectionStrategy",
+              "_id",
+              "_mode",
+              "_optionsProductServices",
+              "_newsReadService",
+              "_ideaPopupOpener",
+              "_contextMenu",
+              "_solutionOpener",
+              "_liveEarningsEventsService",
+              "_hostAnalysisServices",
+              "_documentsServices",
+              "_timeScale",
+              "_properties",
+              "_model",
+              "_maximized",
+              "_collapsingAvailable",
+              "_lineToolsByLinkKey"
+            ],
+            "methods": [
+              "_applyOldScaleRatioToPriceScale",
+              "_applyOldScaleRatioToTimeScale",
+              "_mainSourceVisiblePriceRange",
+              "_onDataSourcesZOrdersChanged",
+              "_onPriceScaleIsVisibleChanged",
+              "_onPriceScaleModeChanged",
+              "_onPriceScaleSetMinMaxPriceRange",
+              "_placePriceScale",
+              "_recalculatePriceScaleByScaleRatio",
+              "_recalculateTimeScaleByScaleRatio",
+              "_setCurrentPriceScaleRatio",
+              "_setNewBarSpacingByScaleRatio",
+              "_setNewPriceRangeByScaleRatio",
+              "_targetPriceAxisViews",
+              "_tryToApplyNewPriceScaleRatio",
+              "_updateMargins",
+              "_updateResetPriceScalesAvailableValue",
+              "actionNoScaleIsEnabled",
+              "addDataSource",
+              "applyPriceScaleRatio",
+              "beginInsertManyLineDataSources",
+              "canCreateNewPriceScale",
+              "clearDrawingCaches",
+              "createDrawingsCaches",
+              "createNewPriceScaleIfPossible",
+              "createPriceScaleAtPosition",
+              "dataSourceForId",
+              "dataSources",
+              "dataSourcesCollectionChanged",
+              "dataSourcesZOrdersChanged",
+              "defaultPriceScale",
+              "endInsertManyLineDataSources",
+              "endScalePrice",
+              "findCustomSourceTargetPriceAxisViews",
+              "findSuitableScale",
+              "findTargetPriceAxisViews",
+              "getPriceScaleById",
+              "hasDataSource",
+              "hasDataSourceWithSignature",
+              "hasPriceDataSource",
+              "insertDataSource",
+              "isMainPane",
+              "leftPriceScales",
+              "lollipopDataSources",
+              "mainDataSource",
+              "movePriceScale",
+              "onPriceScalesChanged",
+              "priceDataSources",
+              "priceScaleIndex",
+              "priceScalePosition",
+              "priceScaleSelectionStrategy",
+              "recalculatePriceScale",
+              "removeDataSource",
+              "removePriceScale",
+              "removeSourceFromPriceScale",
+              "resetPriceScale",
+              "resetPriceScalesAvailable",
+              "restorePriceScaleState",
+              "rightPriceScales",
+              "scalePriceTo",
+              "setPaneSize",
+              "setPriceAutoScale",
+              "setPriceScaleSelectionStrategy",
+              "startScalePrice",
+              "timeScale",
+              "updateAllViews",
+              "updateLollipopViews",
+              "visibleLeftPriceScales",
+              "visibleRightPriceScales"
+            ]
+          },
+          "paneViewPresent": true,
+          "paneView": {
+            "type": "c",
+            "keys": [
+              "_bars",
+              "_invalidated",
+              "_isMarkersEnabled",
+              "_selectionData",
+              "_source",
+              "_model",
+              "_selectionIndexer",
+              "_scaleCoeff"
+            ],
+            "methods": [
+              "_updateImpl",
+              "renderer",
+              "update"
+            ]
+          },
+          "rendererMethodFound": true,
+          "rendererPresent": true,
+          "renderer": {
+            "type": "i",
+            "keys": [
+              "_renderers",
+              "_globalAlpha"
+            ],
+            "methods": [
+              "draw",
+              "drawBackground"
+            ]
+          },
+          "futureBarsPaneView": null,
+          "projectionBarsPaneView": null
+        },
+        "bars": {
+          "count": 48,
+          "valid": 48,
+          "flat": 26,
+          "moving": 22,
+          "flatRatio": 0.5417,
+          "first": {
+            "index": 0,
+            "value": [
+              1794163385,
+              0.0000050898,
+              0.0000050905,
+              0.0000050898,
+              0.0000050905,
+              265
+            ]
+          },
+          "last": {
+            "index": 47,
+            "value": [
+              1794163620,
+              0.0000050984,
+              0.0000050984,
+              0.0000050984,
+              0.0000050984,
+              32
+            ]
+          }
+        },
+        "timeScale": {
+          "baseIndex": 47,
+          "rightOffset": 5,
+          "barSpacing": 10.282143689688416,
+          "width": 881,
+          "logicalRange": {
+            "left": -32.682521718065715,
+            "right": 52
+          },
+          "visibleBars": {
+            "firstBar": -33,
+            "lastBar": 52
+          },
+          "pointCount": 82
+        },
+        "priceScale": {
+          "type": "Pl",
+          "isEmpty": false,
+          "isAutoScale": true,
+          "isLockScale": false,
+          "isLog": false,
+          "priceRange": {
+            "min": 0.0000050148,
+            "max": 0.000005107,
+            "type": "o"
+          },
+          "priceRangeReady": true,
+          "visibleBarPriceBounds": {
+            "low": 0.0000050898,
+            "high": 0.000005107,
+            "count": 48
+          },
+          "rangeCoversVisibleBars": true,
+          "invalidatedForRange": {
+            "visibleBars": {
+              "_firstBar": -33,
+              "_lastBar": 52
+            },
+            "logicalRange": {
+              "_left": -32.682521718065715,
+              "_right": 52
+            },
+            "isValid": true
+          }
+        },
+        "pane": {
+          "type": "Hl"
+        },
+        "toolbar": {
+          "text": "TVE\n1s\n5s\n10s\n15s\n20s\n30s\n45s\nApply\nReload\nTV: 1\nبرای بازگردانی چارت، Reload لازم است\n104 معامله · 42 واقعی · 48 کندل",
+          "rect": {
+            "x": 48,
+            "y": 72,
+            "width": 657,
+            "height": 42
+          }
+        }
+      },
+      "render": {
+        "canvases": [
+          {
+            "width": 881,
+            "height": 649,
+            "rect": {
+              "x": 56,
+              "y": 42,
+              "width": 881,
+              "height": 649
+            },
+            "visibility": "visible",
+            "display": "block"
+          },
+          {
+            "width": 881,
+            "height": 649,
+            "rect": {
+              "x": 56,
+              "y": 42,
+              "width": 881,
+              "height": 649
+            },
+            "visibility": "visible",
+            "display": "block"
+          },
+          {
+            "width": 78,
+            "height": 649,
+            "rect": {
+              "x": 937,
+              "y": 42,
+              "width": 78,
+              "height": 649
+            },
+            "visibility": "visible",
+            "display": "block"
+          },
+          {
+            "width": 78,
+            "height": 649,
+            "rect": {
+              "x": 937,
+              "y": 42,
+              "width": 78,
+              "height": 649
+            },
+            "visibility": "visible",
+            "display": "block"
+          },
+          {
+            "width": 881,
+            "height": 296,
+            "rect": {
+              "x": 56,
+              "y": 692,
+              "width": 881,
+              "height": 296
+            },
+            "visibility": "visible",
+            "display": "block"
+          },
+          {
+            "width": 881,
+            "height": 296,
+            "rect": {
+              "x": 56,
+              "y": 692,
+              "width": 881,
+              "height": 296
+            },
+            "visibility": "visible",
+            "display": "block"
+          },
+          {
+            "width": 78,
+            "height": 296,
+            "rect": {
+              "x": 937,
+              "y": 692,
+              "width": 78,
+              "height": 296
+            },
+            "visibility": "visible",
+            "display": "block"
+          },
+          {
+            "width": 78,
+            "height": 296,
+            "rect": {
+              "x": 937,
+              "y": 692,
+              "width": 78,
+              "height": 296
+            },
+            "visibility": "visible",
+            "display": "block"
+          }
+        ]
+      }
+    },
+    {
+      "label": "live-sample",
+      "at": "2026-11-08T18:47:02.872Z",
+      "chartFound": true,
+      "chart": {
+        "symbol": "KCEX:PEPEUSDT.P",
+        "interval": {
+          "series": "1",
+          "source": "5S",
+          "sourceStatus": 3
+        },
+        "renderer": {
+          "panePresent": true,
+          "pane": {
+            "type": "Hl",
+            "keys": [
+              "m_dataSources",
+              "_sourceWatchedValuesSubscriptions",
+              "m_mainDataSource",
+              "_cachedOrderedSources",
+              "_sourcesById",
+              "_priceSourcesById",
+              "_sourcePropertiesChanged",
+              "_sourcesZOrderChanged",
+              "_stretchFactor",
+              "_isInInsertManyDataSourcesState",
+              "_lastLineDataSourceZOrder",
+              "_rightPriceScales",
+              "_leftPriceScales",
+              "_lockedPriceScale",
+              "_currentPriceScaleRatio",
+              "_onPriceScalesChanged",
+              "_isRecalculatingScales",
+              "_priceDataSources",
+              "_symbolSources",
+              "_studySources",
+              "_lollipopDataSources",
+              "_symbolSourceResolved",
+              "_symbolSourceResolvingActive",
+              "_bulkActions",
+              "_height",
+              "_width",
+              "_sizeChanged",
+              "_dataSourcesCollectionChanged",
+              "_dataSourcesZOrdersChanged",
+              "_symbolSourceCollectionChanged",
+              "_priceSourcesCollectionChanged",
+              "_isMainPane",
+              "_collapsed",
+              "_resetPriceScalesAvailable",
+              "_destroyed",
+              "_executionsPositionController",
+              "_seriesDisplayError",
+              "_onPriceScaleIsVisibleChanged",
+              "_recalcSymbolSourceResolvingActive",
+              "_onSymbolSourceCollectionChanged",
+              "_onSeriesDisplayError",
+              "_updateResetPriceScalesAvailableValue",
+              "_priceScaleSelectionStrategy",
+              "_id",
+              "_mode",
+              "_optionsProductServices",
+              "_newsReadService",
+              "_ideaPopupOpener",
+              "_contextMenu",
+              "_solutionOpener",
+              "_liveEarningsEventsService",
+              "_hostAnalysisServices",
+              "_documentsServices",
+              "_timeScale",
+              "_properties",
+              "_model",
+              "_maximized",
+              "_collapsingAvailable",
+              "_lineToolsByLinkKey"
+            ],
+            "methods": [
+              "_applyOldScaleRatioToPriceScale",
+              "_applyOldScaleRatioToTimeScale",
+              "_mainSourceVisiblePriceRange",
+              "_onDataSourcesZOrdersChanged",
+              "_onPriceScaleIsVisibleChanged",
+              "_onPriceScaleModeChanged",
+              "_onPriceScaleSetMinMaxPriceRange",
+              "_placePriceScale",
+              "_recalculatePriceScaleByScaleRatio",
+              "_recalculateTimeScaleByScaleRatio",
+              "_setCurrentPriceScaleRatio",
+              "_setNewBarSpacingByScaleRatio",
+              "_setNewPriceRangeByScaleRatio",
+              "_targetPriceAxisViews",
+              "_tryToApplyNewPriceScaleRatio",
+              "_updateMargins",
+              "_updateResetPriceScalesAvailableValue",
+              "actionNoScaleIsEnabled",
+              "addDataSource",
+              "applyPriceScaleRatio",
+              "beginInsertManyLineDataSources",
+              "canCreateNewPriceScale",
+              "clearDrawingCaches",
+              "createDrawingsCaches",
+              "createNewPriceScaleIfPossible",
+              "createPriceScaleAtPosition",
+              "dataSourceForId",
+              "dataSources",
+              "dataSourcesCollectionChanged",
+              "dataSourcesZOrdersChanged",
+              "defaultPriceScale",
+              "endInsertManyLineDataSources",
+              "endScalePrice",
+              "findCustomSourceTargetPriceAxisViews",
+              "findSuitableScale",
+              "findTargetPriceAxisViews",
+              "getPriceScaleById",
+              "hasDataSource",
+              "hasDataSourceWithSignature",
+              "hasPriceDataSource",
+              "insertDataSource",
+              "isMainPane",
+              "leftPriceScales",
+              "lollipopDataSources",
+              "mainDataSource",
+              "movePriceScale",
+              "onPriceScalesChanged",
+              "priceDataSources",
+              "priceScaleIndex",
+              "priceScalePosition",
+              "priceScaleSelectionStrategy",
+              "recalculatePriceScale",
+              "removeDataSource",
+              "removePriceScale",
+              "removeSourceFromPriceScale",
+              "resetPriceScale",
+              "resetPriceScalesAvailable",
+              "restorePriceScaleState",
+              "rightPriceScales",
+              "scalePriceTo",
+              "setPaneSize",
+              "setPriceAutoScale",
+              "setPriceScaleSelectionStrategy",
+              "startScalePrice",
+              "timeScale",
+              "updateAllViews",
+              "updateLollipopViews",
+              "visibleLeftPriceScales",
+              "visibleRightPriceScales"
+            ]
+          },
+          "paneViewPresent": true,
+          "paneView": {
+            "type": "c",
+            "keys": [
+              "_bars",
+              "_invalidated",
+              "_isMarkersEnabled",
+              "_selectionData",
+              "_source",
+              "_model",
+              "_selectionIndexer",
+              "_scaleCoeff"
+            ],
+            "methods": [
+              "_updateImpl",
+              "renderer",
+              "update"
+            ]
+          },
+          "rendererMethodFound": true,
+          "rendererPresent": true,
+          "renderer": {
+            "type": "i",
+            "keys": [
+              "_renderers",
+              "_globalAlpha"
+            ],
+            "methods": [
+              "draw",
+              "drawBackground"
+            ]
+          },
+          "futureBarsPaneView": null,
+          "projectionBarsPaneView": null
+        },
+        "bars": {
+          "count": 48,
+          "valid": 48,
+          "flat": 25,
+          "moving": 23,
+          "flatRatio": 0.5208,
+          "first": {
+            "index": 0,
+            "value": [
+              1794163385,
+              0.0000050898,
+              0.0000050905,
+              0.0000050898,
+              0.0000050905,
+              265
+            ]
+          },
+          "last": {
+            "index": 47,
+            "value": [
+              1794163620,
+              0.0000050984,
+              0.0000050984,
+              0.0000050983,
+              0.0000050983,
+              1645
+            ]
+          }
+        },
+        "timeScale": {
+          "baseIndex": 47,
+          "rightOffset": 5,
+          "barSpacing": 10.282143689688416,
+          "width": 881,
+          "logicalRange": {
+            "left": -32.682521718065715,
+            "right": 52
+          },
+          "visibleBars": {
+            "firstBar": -33,
+            "lastBar": 52
+          },
+          "pointCount": 82
+        },
+        "priceScale": {
+          "type": "Pl",
+          "isEmpty": false,
+          "isAutoScale": true,
+          "isLockScale": false,
+          "isLog": false,
+          "priceRange": {
+            "min": 0.0000050148,
+            "max": 0.000005107,
+            "type": "o"
+          },
+          "priceRangeReady": true,
+          "visibleBarPriceBounds": {
+            "low": 0.0000050898,
+            "high": 0.000005107,
+            "count": 48
+          },
+          "rangeCoversVisibleBars": true,
+          "invalidatedForRange": {
+            "visibleBars": {
+              "_firstBar": -33,
+              "_lastBar": 52
+            },
+            "logicalRange": {
+              "_left": -32.682521718065715,
+              "_right": 52
+            },
+            "isValid": true
+          }
+        },
+        "pane": {
+          "type": "Hl"
+        },
+        "toolbar": {
+          "text": "TVE\n1s\n5s\n10s\n15s\n20s\n30s\n45s\nApply\nReload\nTV: 1\nبرای بازگردانی چارت، Reload لازم است\n106 معامله · 42 واقعی · 48 کندل",
+          "rect": {
+            "x": 48,
+            "y": 72,
+            "width": 657,
+            "height": 42
+          }
+        }
+      },
+      "render": {
+        "canvases": [
+          {
+            "width": 881,
+            "height": 649,
+            "rect": {
+              "x": 56,
+              "y": 42,
+              "width": 881,
+              "height": 649
+            },
+            "visibility": "visible",
+            "display": "block"
+          },
+          {
+            "width": 881,
+            "height": 649,
+            "rect": {
+              "x": 56,
+              "y": 42,
+              "width": 881,
+              "height": 649
+            },
+            "visibility": "visible",
+            "display": "block"
+          },
+          {
+            "width": 78,
+            "height": 649,
+            "rect": {
+              "x": 937,
+              "y": 42,
+              "width": 78,
+              "height": 649
+            },
+            "visibility": "visible",
+            "display": "block"
+          },
+          {
+            "width": 78,
+            "height": 649,
+            "rect": {
+              "x": 937,
+              "y": 42,
+              "width": 78,
+              "height": 649
+            },
+            "visibility": "visible",
+            "display": "block"
+          },
+          {
+            "width": 881,
+            "height": 296,
+            "rect": {
+              "x": 56,
+              "y": 692,
+              "width": 881,
+              "height": 296
+            },
+            "visibility": "visible",
+            "display": "block"
+          },
+          {
+            "width": 881,
+            "height": 296,
+            "rect": {
+              "x": 56,
+              "y": 692,
+              "width": 881,
+              "height": 296
+            },
+            "visibility": "visible",
+            "display": "block"
+          },
+          {
+            "width": 78,
+            "height": 296,
+            "rect": {
+              "x": 937,
+              "y": 692,
+              "width": 78,
+              "height": 296
+            },
+            "visibility": "visible",
+            "display": "block"
+          },
+          {
+            "width": 78,
+            "height": 296,
+            "rect": {
+              "x": 937,
+              "y": 692,
+              "width": 78,
+              "height": 296
+            },
+            "visibility": "visible",
+            "display": "block"
+          }
+        ]
+      }
+    },
+    {
+      "label": "live-sample",
+      "at": "2026-11-08T18:47:03.873Z",
+      "chartFound": true,
+      "chart": {
+        "symbol": "KCEX:PEPEUSDT.P",
+        "interval": {
+          "series": "1",
+          "source": "5S",
+          "sourceStatus": 3
+        },
+        "renderer": {
+          "panePresent": true,
+          "pane": {
+            "type": "Hl",
+            "keys": [
+              "m_dataSources",
+              "_sourceWatchedValuesSubscriptions",
+              "m_mainDataSource",
+              "_cachedOrderedSources",
+              "_sourcesById",
+              "_priceSourcesById",
+              "_sourcePropertiesChanged",
+              "_sourcesZOrderChanged",
+              "_stretchFactor",
+              "_isInInsertManyDataSourcesState",
+              "_lastLineDataSourceZOrder",
+              "_rightPriceScales",
+              "_leftPriceScales",
+              "_lockedPriceScale",
+              "_currentPriceScaleRatio",
+              "_onPriceScalesChanged",
+              "_isRecalculatingScales",
+              "_priceDataSources",
+              "_symbolSources",
+              "_studySources",
+              "_lollipopDataSources",
+              "_symbolSourceResolved",
+              "_symbolSourceResolvingActive",
+              "_bulkActions",
+              "_height",
+              "_width",
+              "_sizeChanged",
+              "_dataSourcesCollectionChanged",
+              "_dataSourcesZOrdersChanged",
+              "_symbolSourceCollectionChanged",
+              "_priceSourcesCollectionChanged",
+              "_isMainPane",
+              "_collapsed",
+              "_resetPriceScalesAvailable",
+              "_destroyed",
+              "_executionsPositionController",
+              "_seriesDisplayError",
+              "_onPriceScaleIsVisibleChanged",
+              "_recalcSymbolSourceResolvingActive",
+              "_onSymbolSourceCollectionChanged",
+              "_onSeriesDisplayError",
+              "_updateResetPriceScalesAvailableValue",
+              "_priceScaleSelectionStrategy",
+              "_id",
+              "_mode",
+              "_optionsProductServices",
+              "_newsReadService",
+              "_ideaPopupOpener",
+              "_contextMenu",
+              "_solutionOpener",
+              "_liveEarningsEventsService",
+              "_hostAnalysisServices",
+              "_documentsServices",
+              "_timeScale",
+              "_properties",
+              "_model",
+              "_maximized",
+              "_collapsingAvailable",
+              "_lineToolsByLinkKey"
+            ],
+            "methods": [
+              "_applyOldScaleRatioToPriceScale",
+              "_applyOldScaleRatioToTimeScale",
+              "_mainSourceVisiblePriceRange",
+              "_onDataSourcesZOrdersChanged",
+              "_onPriceScaleIsVisibleChanged",
+              "_onPriceScaleModeChanged",
+              "_onPriceScaleSetMinMaxPriceRange",
+              "_placePriceScale",
+              "_recalculatePriceScaleByScaleRatio",
+              "_recalculateTimeScaleByScaleRatio",
+              "_setCurrentPriceScaleRatio",
+              "_setNewBarSpacingByScaleRatio",
+              "_setNewPriceRangeByScaleRatio",
+              "_targetPriceAxisViews",
+              "_tryToApplyNewPriceScaleRatio",
+              "_updateMargins",
+              "_updateResetPriceScalesAvailableValue",
+              "actionNoScaleIsEnabled",
+              "addDataSource",
+              "applyPriceScaleRatio",
+              "beginInsertManyLineDataSources",
+              "canCreateNewPriceScale",
+              "clearDrawingCaches",
+              "createDrawingsCaches",
+              "createNewPriceScaleIfPossible",
+              "createPriceScaleAtPosition",
+              "dataSourceForId",
+              "dataSources",
+              "dataSourcesCollectionChanged",
+              "dataSourcesZOrdersChanged",
+              "defaultPriceScale",
+              "endInsertManyLineDataSources",
+              "endScalePrice",
+              "findCustomSourceTargetPriceAxisViews",
+              "findSuitableScale",
+              "findTargetPriceAxisViews",
+              "getPriceScaleById",
+              "hasDataSource",
+              "hasDataSourceWithSignature",
+              "hasPriceDataSource",
+              "insertDataSource",
+              "isMainPane",
+              "leftPriceScales",
+              "lollipopDataSources",
+              "mainDataSource",
+              "movePriceScale",
+              "onPriceScalesChanged",
+              "priceDataSources",
+              "priceScaleIndex",
+              "priceScalePosition",
+              "priceScaleSelectionStrategy",
+              "recalculatePriceScale",
+              "removeDataSource",
+              "removePriceScale",
+              "removeSourceFromPriceScale",
+              "resetPriceScale",
+              "resetPriceScalesAvailable",
+              "restorePriceScaleState",
+              "rightPriceScales",
+              "scalePriceTo",
+              "setPaneSize",
+              "setPriceAutoScale",
+              "setPriceScaleSelectionStrategy",
+              "startScalePrice",
+              "timeScale",
+              "updateAllViews",
+              "updateLollipopViews",
+              "visibleLeftPriceScales",
+              "visibleRightPriceScales"
+            ]
+          },
+          "paneViewPresent": true,
+          "paneView": {
+            "type": "c",
+            "keys": [
+              "_bars",
+              "_invalidated",
+              "_isMarkersEnabled",
+              "_selectionData",
+              "_source",
+              "_model",
+              "_selectionIndexer",
+              "_scaleCoeff"
+            ],
+            "methods": [
+              "_updateImpl",
+              "renderer",
+              "update"
+            ]
+          },
+          "rendererMethodFound": true,
+          "rendererPresent": true,
+          "renderer": {
+            "type": "i",
+            "keys": [
+              "_renderers",
+              "_globalAlpha"
+            ],
+            "methods": [
+              "draw",
+              "drawBackground"
+            ]
+          },
+          "futureBarsPaneView": null,
+          "projectionBarsPaneView": null
+        },
+        "bars": {
+          "count": 48,
+          "valid": 48,
+          "flat": 25,
+          "moving": 23,
+          "flatRatio": 0.5208,
+          "first": {
+            "index": 0,
+            "value": [
+              1794163385,
+              0.0000050898,
+              0.0000050905,
+              0.0000050898,
+              0.0000050905,
+              265
+            ]
+          },
+          "last": {
+            "index": 47,
+            "value": [
+              1794163620,
+              0.0000050984,
+              0.0000050984,
+              0.0000050983,
+              0.0000050983,
+              1645
+            ]
+          }
+        },
+        "timeScale": {
+          "baseIndex": 47,
+          "rightOffset": 5,
+          "barSpacing": 10.282143689688416,
+          "width": 881,
+          "logicalRange": {
+            "left": -32.682521718065715,
+            "right": 52
+          },
+          "visibleBars": {
+            "firstBar": -33,
+            "lastBar": 52
+          },
+          "pointCount": 82
+        },
+        "priceScale": {
+          "type": "Pl",
+          "isEmpty": false,
+          "isAutoScale": true,
+          "isLockScale": false,
+          "isLog": false,
+          "priceRange": {
+            "min": 0.0000050148,
+            "max": 0.000005107,
+            "type": "o"
+          },
+          "priceRangeReady": true,
+          "visibleBarPriceBounds": {
+            "low": 0.0000050898,
+            "high": 0.000005107,
+            "count": 48
+          },
+          "rangeCoversVisibleBars": true,
+          "invalidatedForRange": {
+            "visibleBars": {
+              "_firstBar": -33,
+              "_lastBar": 52
+            },
+            "logicalRange": {
+              "_left": -32.682521718065715,
+              "_right": 52
+            },
+            "isValid": true
+          }
+        },
+        "pane": {
+          "type": "Hl"
+        },
+        "toolbar": {
+          "text": "TVE\n1s\n5s\n10s\n15s\n20s\n30s\n45s\nApply\nReload\nTV: 1\nبرای بازگردانی چارت، Reload لازم است\n106 معامله · 42 واقعی · 48 کندل",
+          "rect": {
+            "x": 48,
+            "y": 72,
+            "width": 657,
+            "height": 42
+          }
+        }
+      },
+      "render": {
+        "canvases": [
+          {
+            "width": 881,
+            "height": 649,
+            "rect": {
+              "x": 56,
+              "y": 42,
+              "width": 881,
+              "height": 649
+            },
+            "visibility": "visible",
+            "display": "block"
+          },
+          {
+            "width": 881,
+            "height": 649,
+            "rect": {
+              "x": 56,
+              "y": 42,
+              "width": 881,
+              "height": 649
+            },
+            "visibility": "visible",
+            "display": "block"
+          },
+          {
+            "width": 78,
+            "height": 649,
+            "rect": {
+              "x": 937,
+              "y": 42,
+              "width": 78,
+              "height": 649
+            },
+            "visibility": "visible",
+            "display": "block"
+          },
+          {
+            "width": 78,
+            "height": 649,
+            "rect": {
+              "x": 937,
+              "y": 42,
+              "width": 78,
+              "height": 649
+            },
+            "visibility": "visible",
+            "display": "block"
+          },
+          {
+            "width": 881,
+            "height": 296,
+            "rect": {
+              "x": 56,
+              "y": 692,
+              "width": 881,
+              "height": 296
+            },
+            "visibility": "visible",
+            "display": "block"
+          },
+          {
+            "width": 881,
+            "height": 296,
+            "rect": {
+              "x": 56,
+              "y": 692,
+              "width": 881,
+              "height": 296
+            },
+            "visibility": "visible",
+            "display": "block"
+          },
+          {
+            "width": 78,
+            "height": 296,
+            "rect": {
+              "x": 937,
+              "y": 692,
+              "width": 78,
+              "height": 296
+            },
+            "visibility": "visible",
+            "display": "block"
+          },
+          {
+            "width": 78,
+            "height": 296,
+            "rect": {
+              "x": 937,
+              "y": 692,
+              "width": 78,
+              "height": 296
+            },
+            "visibility": "visible",
+            "display": "block"
+          }
+        ]
+      }
+    },
+    {
+      "label": "live-sample",
+      "at": "2026-11-08T18:47:04.875Z",
+      "chartFound": true,
+      "chart": {
+        "symbol": "KCEX:PEPEUSDT.P",
+        "interval": {
+          "series": "1",
+          "source": "5S",
+          "sourceStatus": 3
+        },
+        "renderer": {
+          "panePresent": true,
+          "pane": {
+            "type": "Hl",
+            "keys": [
+              "m_dataSources",
+              "_sourceWatchedValuesSubscriptions",
+              "m_mainDataSource",
+              "_cachedOrderedSources",
+              "_sourcesById",
+              "_priceSourcesById",
+              "_sourcePropertiesChanged",
+              "_sourcesZOrderChanged",
+              "_stretchFactor",
+              "_isInInsertManyDataSourcesState",
+              "_lastLineDataSourceZOrder",
+              "_rightPriceScales",
+              "_leftPriceScales",
+              "_lockedPriceScale",
+              "_currentPriceScaleRatio",
+              "_onPriceScalesChanged",
+              "_isRecalculatingScales",
+              "_priceDataSources",
+              "_symbolSources",
+              "_studySources",
+              "_lollipopDataSources",
+              "_symbolSourceResolved",
+              "_symbolSourceResolvingActive",
+              "_bulkActions",
+              "_height",
+              "_width",
+              "_sizeChanged",
+              "_dataSourcesCollectionChanged",
+              "_dataSourcesZOrdersChanged",
+              "_symbolSourceCollectionChanged",
+              "_priceSourcesCollectionChanged",
+              "_isMainPane",
+              "_collapsed",
+              "_resetPriceScalesAvailable",
+              "_destroyed",
+              "_executionsPositionController",
+              "_seriesDisplayError",
+              "_onPriceScaleIsVisibleChanged",
+              "_recalcSymbolSourceResolvingActive",
+              "_onSymbolSourceCollectionChanged",
+              "_onSeriesDisplayError",
+              "_updateResetPriceScalesAvailableValue",
+              "_priceScaleSelectionStrategy",
+              "_id",
+              "_mode",
+              "_optionsProductServices",
+              "_newsReadService",
+              "_ideaPopupOpener",
+              "_contextMenu",
+              "_solutionOpener",
+              "_liveEarningsEventsService",
+              "_hostAnalysisServices",
+              "_documentsServices",
+              "_timeScale",
+              "_properties",
+              "_model",
+              "_maximized",
+              "_collapsingAvailable",
+              "_lineToolsByLinkKey"
+            ],
+            "methods": [
+              "_applyOldScaleRatioToPriceScale",
+              "_applyOldScaleRatioToTimeScale",
+              "_mainSourceVisiblePriceRange",
+              "_onDataSourcesZOrdersChanged",
+              "_onPriceScaleIsVisibleChanged",
+              "_onPriceScaleModeChanged",
+              "_onPriceScaleSetMinMaxPriceRange",
+              "_placePriceScale",
+              "_recalculatePriceScaleByScaleRatio",
+              "_recalculateTimeScaleByScaleRatio",
+              "_setCurrentPriceScaleRatio",
+              "_setNewBarSpacingByScaleRatio",
+              "_setNewPriceRangeByScaleRatio",
+              "_targetPriceAxisViews",
+              "_tryToApplyNewPriceScaleRatio",
+              "_updateMargins",
+              "_updateResetPriceScalesAvailableValue",
+              "actionNoScaleIsEnabled",
+              "addDataSource",
+              "applyPriceScaleRatio",
+              "beginInsertManyLineDataSources",
+              "canCreateNewPriceScale",
+              "clearDrawingCaches",
+              "createDrawingsCaches",
+              "createNewPriceScaleIfPossible",
+              "createPriceScaleAtPosition",
+              "dataSourceForId",
+              "dataSources",
+              "dataSourcesCollectionChanged",
+              "dataSourcesZOrdersChanged",
+              "defaultPriceScale",
+              "endInsertManyLineDataSources",
+              "endScalePrice",
+              "findCustomSourceTargetPriceAxisViews",
+              "findSuitableScale",
+              "findTargetPriceAxisViews",
+              "getPriceScaleById",
+              "hasDataSource",
+              "hasDataSourceWithSignature",
+              "hasPriceDataSource",
+              "insertDataSource",
+              "isMainPane",
+              "leftPriceScales",
+              "lollipopDataSources",
+              "mainDataSource",
+              "movePriceScale",
+              "onPriceScalesChanged",
+              "priceDataSources",
+              "priceScaleIndex",
+              "priceScalePosition",
+              "priceScaleSelectionStrategy",
+              "recalculatePriceScale",
+              "removeDataSource",
+              "removePriceScale",
+              "removeSourceFromPriceScale",
+              "resetPriceScale",
+              "resetPriceScalesAvailable",
+              "restorePriceScaleState",
+              "rightPriceScales",
+              "scalePriceTo",
+              "setPaneSize",
+              "setPriceAutoScale",
+              "setPriceScaleSelectionStrategy",
+              "startScalePrice",
+              "timeScale",
+              "updateAllViews",
+              "updateLollipopViews",
+              "visibleLeftPriceScales",
+              "visibleRightPriceScales"
+            ]
+          },
+          "paneViewPresent": true,
+          "paneView": {
+            "type": "c",
+            "keys": [
+              "_bars",
+              "_invalidated",
+              "_isMarkersEnabled",
+              "_selectionData",
+              "_source",
+              "_model",
+              "_selectionIndexer",
+              "_scaleCoeff"
+            ],
+            "methods": [
+              "_updateImpl",
+              "renderer",
+              "update"
+            ]
+          },
+          "rendererMethodFound": true,
+          "rendererPresent": true,
+          "renderer": {
+            "type": "i",
+            "keys": [
+              "_renderers",
+              "_globalAlpha"
+            ],
+            "methods": [
+              "draw",
+              "drawBackground"
+            ]
+          },
+          "futureBarsPaneView": null,
+          "projectionBarsPaneView": null
+        },
+        "bars": {
+          "count": 48,
+          "valid": 48,
+          "flat": 25,
+          "moving": 23,
+          "flatRatio": 0.5208,
+          "first": {
+            "index": 0,
+            "value": [
+              1794163385,
+              0.0000050898,
+              0.0000050905,
+              0.0000050898,
+              0.0000050905,
+              265
+            ]
+          },
+          "last": {
+            "index": 47,
+            "value": [
+              1794163620,
+              0.0000050984,
+              0.0000050984,
+              0.0000050983,
+              0.0000050983,
+              1645
+            ]
+          }
+        },
+        "timeScale": {
+          "baseIndex": 47,
+          "rightOffset": 5,
+          "barSpacing": 10.282143689688416,
+          "width": 881,
+          "logicalRange": {
+            "left": -32.682521718065715,
+            "right": 52
+          },
+          "visibleBars": {
+            "firstBar": -33,
+            "lastBar": 52
+          },
+          "pointCount": 82
+        },
+        "priceScale": {
+          "type": "Pl",
+          "isEmpty": false,
+          "isAutoScale": true,
+          "isLockScale": false,
+          "isLog": false,
+          "priceRange": {
+            "min": 0.0000050148,
+            "max": 0.000005107,
+            "type": "o"
+          },
+          "priceRangeReady": true,
+          "visibleBarPriceBounds": {
+            "low": 0.0000050898,
+            "high": 0.000005107,
+            "count": 48
+          },
+          "rangeCoversVisibleBars": true,
+          "invalidatedForRange": {
+            "visibleBars": {
+              "_firstBar": -33,
+              "_lastBar": 52
+            },
+            "logicalRange": {
+              "_left": -32.682521718065715,
+              "_right": 52
+            },
+            "isValid": true
+          }
+        },
+        "pane": {
+          "type": "Hl"
+        },
+        "toolbar": {
+          "text": "TVE\n1s\n5s\n10s\n15s\n20s\n30s\n45s\nApply\nReload\nTV: 1\nبرای بازگردانی چارت، Reload لازم است\n106 معامله · 42 واقعی · 48 کندل",
+          "rect": {
+            "x": 48,
+            "y": 72,
+            "width": 657,
+            "height": 42
+          }
+        }
+      },
+      "render": {
+        "canvases": [
+          {
+            "width": 881,
+            "height": 649,
+            "rect": {
+              "x": 56,
+              "y": 42,
+              "width": 881,
+              "height": 649
+            },
+            "visibility": "visible",
+            "display": "block"
+          },
+          {
+            "width": 881,
+            "height": 649,
+            "rect": {
+              "x": 56,
+              "y": 42,
+              "width": 881,
+              "height": 649
+            },
+            "visibility": "visible",
+            "display": "block"
+          },
+          {
+            "width": 78,
+            "height": 649,
+            "rect": {
+              "x": 937,
+              "y": 42,
+              "width": 78,
+              "height": 649
+            },
+            "visibility": "visible",
+            "display": "block"
+          },
+          {
+            "width": 78,
+            "height": 649,
+            "rect": {
+              "x": 937,
+              "y": 42,
+              "width": 78,
+              "height": 649
+            },
+            "visibility": "visible",
+            "display": "block"
+          },
+          {
+            "width": 881,
+            "height": 296,
+            "rect": {
+              "x": 56,
+              "y": 692,
+              "width": 881,
+              "height": 296
+            },
+            "visibility": "visible",
+            "display": "block"
+          },
+          {
+            "width": 881,
+            "height": 296,
+            "rect": {
+              "x": 56,
+              "y": 692,
+              "width": 881,
+              "height": 296
+            },
+            "visibility": "visible",
+            "display": "block"
+          },
+          {
+            "width": 78,
+            "height": 296,
+            "rect": {
+              "x": 937,
+              "y": 692,
+              "width": 78,
+              "height": 296
+            },
+            "visibility": "visible",
+            "display": "block"
+          },
+          {
+            "width": 78,
+            "height": 296,
+            "rect": {
+              "x": 937,
+              "y": 692,
+              "width": 78,
+              "height": 296
+            },
+            "visibility": "visible",
+            "display": "block"
+          }
+        ]
+      }
+    },
+    {
+      "label": "live-sample",
+      "at": "2026-11-08T18:47:05.876Z",
+      "chartFound": true,
+      "chart": {
+        "symbol": "KCEX:PEPEUSDT.P",
+        "interval": {
+          "series": "1",
+          "source": "5S",
+          "sourceStatus": 3
+        },
+        "renderer": {
+          "panePresent": true,
+          "pane": {
+            "type": "Hl",
+            "keys": [
+              "m_dataSources",
+              "_sourceWatchedValuesSubscriptions",
+              "m_mainDataSource",
+              "_cachedOrderedSources",
+              "_sourcesById",
+              "_priceSourcesById",
+              "_sourcePropertiesChanged",
+              "_sourcesZOrderChanged",
+              "_stretchFactor",
+              "_isInInsertManyDataSourcesState",
+              "_lastLineDataSourceZOrder",
+              "_rightPriceScales",
+              "_leftPriceScales",
+              "_lockedPriceScale",
+              "_currentPriceScaleRatio",
+              "_onPriceScalesChanged",
+              "_isRecalculatingScales",
+              "_priceDataSources",
+              "_symbolSources",
+              "_studySources",
+              "_lollipopDataSources",
+              "_symbolSourceResolved",
+              "_symbolSourceResolvingActive",
+              "_bulkActions",
+              "_height",
+              "_width",
+              "_sizeChanged",
+              "_dataSourcesCollectionChanged",
+              "_dataSourcesZOrdersChanged",
+              "_symbolSourceCollectionChanged",
+              "_priceSourcesCollectionChanged",
+              "_isMainPane",
+              "_collapsed",
+              "_resetPriceScalesAvailable",
+              "_destroyed",
+              "_executionsPositionController",
+              "_seriesDisplayError",
+              "_onPriceScaleIsVisibleChanged",
+              "_recalcSymbolSourceResolvingActive",
+              "_onSymbolSourceCollectionChanged",
+              "_onSeriesDisplayError",
+              "_updateResetPriceScalesAvailableValue",
+              "_priceScaleSelectionStrategy",
+              "_id",
+              "_mode",
+              "_optionsProductServices",
+              "_newsReadService",
+              "_ideaPopupOpener",
+              "_contextMenu",
+              "_solutionOpener",
+              "_liveEarningsEventsService",
+              "_hostAnalysisServices",
+              "_documentsServices",
+              "_timeScale",
+              "_properties",
+              "_model",
+              "_maximized",
+              "_collapsingAvailable",
+              "_lineToolsByLinkKey"
+            ],
+            "methods": [
+              "_applyOldScaleRatioToPriceScale",
+              "_applyOldScaleRatioToTimeScale",
+              "_mainSourceVisiblePriceRange",
+              "_onDataSourcesZOrdersChanged",
+              "_onPriceScaleIsVisibleChanged",
+              "_onPriceScaleModeChanged",
+              "_onPriceScaleSetMinMaxPriceRange",
+              "_placePriceScale",
+              "_recalculatePriceScaleByScaleRatio",
+              "_recalculateTimeScaleByScaleRatio",
+              "_setCurrentPriceScaleRatio",
+              "_setNewBarSpacingByScaleRatio",
+              "_setNewPriceRangeByScaleRatio",
+              "_targetPriceAxisViews",
+              "_tryToApplyNewPriceScaleRatio",
+              "_updateMargins",
+              "_updateResetPriceScalesAvailableValue",
+              "actionNoScaleIsEnabled",
+              "addDataSource",
+              "applyPriceScaleRatio",
+              "beginInsertManyLineDataSources",
+              "canCreateNewPriceScale",
+              "clearDrawingCaches",
+              "createDrawingsCaches",
+              "createNewPriceScaleIfPossible",
+              "createPriceScaleAtPosition",
+              "dataSourceForId",
+              "dataSources",
+              "dataSourcesCollectionChanged",
+              "dataSourcesZOrdersChanged",
+              "defaultPriceScale",
+              "endInsertManyLineDataSources",
+              "endScalePrice",
+              "findCustomSourceTargetPriceAxisViews",
+              "findSuitableScale",
+              "findTargetPriceAxisViews",
+              "getPriceScaleById",
+              "hasDataSource",
+              "hasDataSourceWithSignature",
+              "hasPriceDataSource",
+              "insertDataSource",
+              "isMainPane",
+              "leftPriceScales",
+              "lollipopDataSources",
+              "mainDataSource",
+              "movePriceScale",
+              "onPriceScalesChanged",
+              "priceDataSources",
+              "priceScaleIndex",
+              "priceScalePosition",
+              "priceScaleSelectionStrategy",
+              "recalculatePriceScale",
+              "removeDataSource",
+              "removePriceScale",
+              "removeSourceFromPriceScale",
+              "resetPriceScale",
+              "resetPriceScalesAvailable",
+              "restorePriceScaleState",
+              "rightPriceScales",
+              "scalePriceTo",
+              "setPaneSize",
+              "setPriceAutoScale",
+              "setPriceScaleSelectionStrategy",
+              "startScalePrice",
+              "timeScale",
+              "updateAllViews",
+              "updateLollipopViews",
+              "visibleLeftPriceScales",
+              "visibleRightPriceScales"
+            ]
+          },
+          "paneViewPresent": true,
+          "paneView": {
+            "type": "c",
+            "keys": [
+              "_bars",
+              "_invalidated",
+              "_isMarkersEnabled",
+              "_selectionData",
+              "_source",
+              "_model",
+              "_selectionIndexer",
+              "_scaleCoeff"
+            ],
+            "methods": [
+              "_updateImpl",
+              "renderer",
+              "update"
+            ]
+          },
+          "rendererMethodFound": true,
+          "rendererPresent": true,
+          "renderer": {
+            "type": "i",
+            "keys": [
+              "_renderers",
+              "_globalAlpha"
+            ],
+            "methods": [
+              "draw",
+              "drawBackground"
+            ]
+          },
+          "futureBarsPaneView": null,
+          "projectionBarsPaneView": null
+        },
+        "bars": {
+          "count": 48,
+          "valid": 48,
+          "flat": 25,
+          "moving": 23,
+          "flatRatio": 0.5208,
+          "first": {
+            "index": 0,
+            "value": [
+              1794163385,
+              0.0000050898,
+              0.0000050905,
+              0.0000050898,
+              0.0000050905,
+              265
+            ]
+          },
+          "last": {
+            "index": 47,
+            "value": [
+              1794163620,
+              0.0000050984,
+              0.0000050984,
+              0.0000050983,
+              0.0000050983,
+              1645
+            ]
+          }
+        },
+        "timeScale": {
+          "baseIndex": 47,
+          "rightOffset": 5,
+          "barSpacing": 10.282143689688416,
+          "width": 881,
+          "logicalRange": {
+            "left": -32.682521718065715,
+            "right": 52
+          },
+          "visibleBars": {
+            "firstBar": -33,
+            "lastBar": 52
+          },
+          "pointCount": 82
+        },
+        "priceScale": {
+          "type": "Pl",
+          "isEmpty": false,
+          "isAutoScale": true,
+          "isLockScale": false,
+          "isLog": false,
+          "priceRange": {
+            "min": 0.0000050148,
+            "max": 0.000005107,
+            "type": "o"
+          },
+          "priceRangeReady": true,
+          "visibleBarPriceBounds": {
+            "low": 0.0000050898,
+            "high": 0.000005107,
+            "count": 48
+          },
+          "rangeCoversVisibleBars": true,
+          "invalidatedForRange": {
+            "visibleBars": {
+              "_firstBar": -33,
+              "_lastBar": 52
+            },
+            "logicalRange": {
+              "_left": -32.682521718065715,
+              "_right": 52
+            },
+            "isValid": true
+          }
+        },
+        "pane": {
+          "type": "Hl"
+        },
+        "toolbar": {
+          "text": "TVE\n1s\n5s\n10s\n15s\n20s\n30s\n45s\nApply\nReload\nTV: 1\nبرای بازگردانی چارت، Reload لازم است\n106 معامله · 42 واقعی · 48 کندل",
+          "rect": {
+            "x": 48,
+            "y": 72,
+            "width": 657,
+            "height": 42
+          }
+        }
+      },
+      "render": {
+        "canvases": [
+          {
+            "width": 881,
+            "height": 649,
+            "rect": {
+              "x": 56,
+              "y": 42,
+              "width": 881,
+              "height": 649
+            },
+            "visibility": "visible",
+            "display": "block"
+          },
+          {
+            "width": 881,
+            "height": 649,
+            "rect": {
+              "x": 56,
+              "y": 42,
+              "width": 881,
+              "height": 649
+            },
+            "visibility": "visible",
+            "display": "block"
+          },
+          {
+            "width": 78,
+            "height": 649,
+            "rect": {
+              "x": 937,
+              "y": 42,
+              "width": 78,
+              "height": 649
+            },
+            "visibility": "visible",
+            "display": "block"
+          },
+          {
+            "width": 78,
+            "height": 649,
+            "rect": {
+              "x": 937,
+              "y": 42,
+              "width": 78,
+              "height": 649
+            },
+            "visibility": "visible",
+            "display": "block"
+          },
+          {
+            "width": 881,
+            "height": 296,
+            "rect": {
+              "x": 56,
+              "y": 692,
+              "width": 881,
+              "height": 296
+            },
+            "visibility": "visible",
+            "display": "block"
+          },
+          {
+            "width": 881,
+            "height": 296,
+            "rect": {
+              "x": 56,
+              "y": 692,
+              "width": 881,
+              "height": 296
+            },
+            "visibility": "visible",
+            "display": "block"
+          },
+          {
+            "width": 78,
+            "height": 296,
+            "rect": {
+              "x": 937,
+              "y": 692,
+              "width": 78,
+              "height": 296
+            },
+            "visibility": "visible",
+            "display": "block"
+          },
+          {
+            "width": 78,
+            "height": 296,
+            "rect": {
+              "x": 937,
+              "y": 692,
+              "width": 78,
+              "height": 296
+            },
+            "visibility": "visible",
+            "display": "block"
+          }
+        ]
+      }
+    },
+    {
+      "label": "live-sample",
+      "at": "2026-11-08T18:47:06.879Z",
+      "chartFound": true,
+      "chart": {
+        "symbol": "KCEX:PEPEUSDT.P",
+        "interval": {
+          "series": "1",
+          "source": "5S",
+          "sourceStatus": 3
+        },
+        "renderer": {
+          "panePresent": true,
+          "pane": {
+            "type": "Hl",
+            "keys": [
+              "m_dataSources",
+              "_sourceWatchedValuesSubscriptions",
+              "m_mainDataSource",
+              "_cachedOrderedSources",
+              "_sourcesById",
+              "_priceSourcesById",
+              "_sourcePropertiesChanged",
+              "_sourcesZOrderChanged",
+              "_stretchFactor",
+              "_isInInsertManyDataSourcesState",
+              "_lastLineDataSourceZOrder",
+              "_rightPriceScales",
+              "_leftPriceScales",
+              "_lockedPriceScale",
+              "_currentPriceScaleRatio",
+              "_onPriceScalesChanged",
+              "_isRecalculatingScales",
+              "_priceDataSources",
+              "_symbolSources",
+              "_studySources",
+              "_lollipopDataSources",
+              "_symbolSourceResolved",
+              "_symbolSourceResolvingActive",
+              "_bulkActions",
+              "_height",
+              "_width",
+              "_sizeChanged",
+              "_dataSourcesCollectionChanged",
+              "_dataSourcesZOrdersChanged",
+              "_symbolSourceCollectionChanged",
+              "_priceSourcesCollectionChanged",
+              "_isMainPane",
+              "_collapsed",
+              "_resetPriceScalesAvailable",
+              "_destroyed",
+              "_executionsPositionController",
+              "_seriesDisplayError",
+              "_onPriceScaleIsVisibleChanged",
+              "_recalcSymbolSourceResolvingActive",
+              "_onSymbolSourceCollectionChanged",
+              "_onSeriesDisplayError",
+              "_updateResetPriceScalesAvailableValue",
+              "_priceScaleSelectionStrategy",
+              "_id",
+              "_mode",
+              "_optionsProductServices",
+              "_newsReadService",
+              "_ideaPopupOpener",
+              "_contextMenu",
+              "_solutionOpener",
+              "_liveEarningsEventsService",
+              "_hostAnalysisServices",
+              "_documentsServices",
+              "_timeScale",
+              "_properties",
+              "_model",
+              "_maximized",
+              "_collapsingAvailable",
+              "_lineToolsByLinkKey"
+            ],
+            "methods": [
+              "_applyOldScaleRatioToPriceScale",
+              "_applyOldScaleRatioToTimeScale",
+              "_mainSourceVisiblePriceRange",
+              "_onDataSourcesZOrdersChanged",
+              "_onPriceScaleIsVisibleChanged",
+              "_onPriceScaleModeChanged",
+              "_onPriceScaleSetMinMaxPriceRange",
+              "_placePriceScale",
+              "_recalculatePriceScaleByScaleRatio",
+              "_recalculateTimeScaleByScaleRatio",
+              "_setCurrentPriceScaleRatio",
+              "_setNewBarSpacingByScaleRatio",
+              "_setNewPriceRangeByScaleRatio",
+              "_targetPriceAxisViews",
+              "_tryToApplyNewPriceScaleRatio",
+              "_updateMargins",
+              "_updateResetPriceScalesAvailableValue",
+              "actionNoScaleIsEnabled",
+              "addDataSource",
+              "applyPriceScaleRatio",
+              "beginInsertManyLineDataSources",
+              "canCreateNewPriceScale",
+              "clearDrawingCaches",
+              "createDrawingsCaches",
+              "createNewPriceScaleIfPossible",
+              "createPriceScaleAtPosition",
+              "dataSourceForId",
+              "dataSources",
+              "dataSourcesCollectionChanged",
+              "dataSourcesZOrdersChanged",
+              "defaultPriceScale",
+              "endInsertManyLineDataSources",
+              "endScalePrice",
+              "findCustomSourceTargetPriceAxisViews",
+              "findSuitableScale",
+              "findTargetPriceAxisViews",
+              "getPriceScaleById",
+              "hasDataSource",
+              "hasDataSourceWithSignature",
+              "hasPriceDataSource",
+              "insertDataSource",
+              "isMainPane",
+              "leftPriceScales",
+              "lollipopDataSources",
+              "mainDataSource",
+              "movePriceScale",
+              "onPriceScalesChanged",
+              "priceDataSources",
+              "priceScaleIndex",
+              "priceScalePosition",
+              "priceScaleSelectionStrategy",
+              "recalculatePriceScale",
+              "removeDataSource",
+              "removePriceScale",
+              "removeSourceFromPriceScale",
+              "resetPriceScale",
+              "resetPriceScalesAvailable",
+              "restorePriceScaleState",
+              "rightPriceScales",
+              "scalePriceTo",
+              "setPaneSize",
+              "setPriceAutoScale",
+              "setPriceScaleSelectionStrategy",
+              "startScalePrice",
+              "timeScale",
+              "updateAllViews",
+              "updateLollipopViews",
+              "visibleLeftPriceScales",
+              "visibleRightPriceScales"
+            ]
+          },
+          "paneViewPresent": true,
+          "paneView": {
+            "type": "c",
+            "keys": [
+              "_bars",
+              "_invalidated",
+              "_isMarkersEnabled",
+              "_selectionData",
+              "_source",
+              "_model",
+              "_selectionIndexer",
+              "_scaleCoeff"
+            ],
+            "methods": [
+              "_updateImpl",
+              "renderer",
+              "update"
+            ]
+          },
+          "rendererMethodFound": true,
+          "rendererPresent": true,
+          "renderer": {
+            "type": "i",
+            "keys": [
+              "_renderers",
+              "_globalAlpha"
+            ],
+            "methods": [
+              "draw",
+              "drawBackground"
+            ]
+          },
+          "futureBarsPaneView": null,
+          "projectionBarsPaneView": null
+        },
+        "bars": {
+          "count": 48,
+          "valid": 48,
+          "flat": 25,
+          "moving": 23,
+          "flatRatio": 0.5208,
+          "first": {
+            "index": 0,
+            "value": [
+              1794163385,
+              0.0000050898,
+              0.0000050905,
+              0.0000050898,
+              0.0000050905,
+              265
+            ]
+          },
+          "last": {
+            "index": 47,
+            "value": [
+              1794163620,
+              0.0000050984,
+              0.0000050984,
+              0.0000050983,
+              0.0000050983,
+              1645
+            ]
+          }
+        },
+        "timeScale": {
+          "baseIndex": 47,
+          "rightOffset": 5,
+          "barSpacing": 10.282143689688416,
+          "width": 881,
+          "logicalRange": {
+            "left": -32.682521718065715,
+            "right": 52
+          },
+          "visibleBars": {
+            "firstBar": -33,
+            "lastBar": 52
+          },
+          "pointCount": 82
+        },
+        "priceScale": {
+          "type": "Pl",
+          "isEmpty": false,
+          "isAutoScale": true,
+          "isLockScale": false,
+          "isLog": false,
+          "priceRange": {
+            "min": 0.0000050148,
+            "max": 0.000005107,
+            "type": "o"
+          },
+          "priceRangeReady": true,
+          "visibleBarPriceBounds": {
+            "low": 0.0000050898,
+            "high": 0.000005107,
+            "count": 48
+          },
+          "rangeCoversVisibleBars": true,
+          "invalidatedForRange": {
+            "visibleBars": {
+              "_firstBar": -33,
+              "_lastBar": 52
+            },
+            "logicalRange": {
+              "_left": -32.682521718065715,
+              "_right": 52
+            },
+            "isValid": true
+          }
+        },
+        "pane": {
+          "type": "Hl"
+        },
+        "toolbar": {
+          "text": "TVE\n1s\n5s\n10s\n15s\n20s\n30s\n45s\nApply\nReload\nTV: 1\nبرای بازگردانی چارت، Reload لازم است\n106 معامله · 42 واقعی · 48 کندل",
+          "rect": {
+            "x": 48,
+            "y": 72,
+            "width": 657,
+            "height": 42
+          }
+        }
+      },
+      "render": {
+        "canvases": [
+          {
+            "width": 881,
+            "height": 649,
+            "rect": {
+              "x": 56,
+              "y": 42,
+              "width": 881,
+              "height": 649
+            },
+            "visibility": "visible",
+            "display": "block"
+          },
+          {
+            "width": 881,
+            "height": 649,
+            "rect": {
+              "x": 56,
+              "y": 42,
+              "width": 881,
+              "height": 649
+            },
+            "visibility": "visible",
+            "display": "block"
+          },
+          {
+            "width": 78,
+            "height": 649,
+            "rect": {
+              "x": 937,
+              "y": 42,
+              "width": 78,
+              "height": 649
+            },
+            "visibility": "visible",
+            "display": "block"
+          },
+          {
+            "width": 78,
+            "height": 649,
+            "rect": {
+              "x": 937,
+              "y": 42,
+              "width": 78,
+              "height": 649
+            },
+            "visibility": "visible",
+            "display": "block"
+          },
+          {
+            "width": 881,
+            "height": 296,
+            "rect": {
+              "x": 56,
+              "y": 692,
+              "width": 881,
+              "height": 296
+            },
+            "visibility": "visible",
+            "display": "block"
+          },
+          {
+            "width": 881,
+            "height": 296,
+            "rect": {
+              "x": 56,
+              "y": 692,
+              "width": 881,
+              "height": 296
+            },
+            "visibility": "visible",
+            "display": "block"
+          },
+          {
+            "width": 78,
+            "height": 296,
+            "rect": {
+              "x": 937,
+              "y": 692,
+              "width": 78,
+              "height": 296
+            },
+            "visibility": "visible",
+            "display": "block"
+          },
+          {
+            "width": 78,
+            "height": 296,
+            "rect": {
+              "x": 937,
+              "y": 692,
+              "width": 78,
+              "height": 296
+            },
+            "visibility": "visible",
+            "display": "block"
+          }
+        ]
+      }
+    }
+  ],
+  "afterObserve": {
+    "label": "after-observation",
+    "at": "2026-11-08T18:47:06.879Z",
+    "chartFound": true,
+    "chart": {
+      "symbol": "KCEX:PEPEUSDT.P",
+      "interval": {
+        "series": "1",
+        "source": "5S",
+        "sourceStatus": 3
+      },
+      "renderer": {
+        "panePresent": true,
+        "pane": {
+          "type": "Hl",
+          "keys": [
+            "m_dataSources",
+            "_sourceWatchedValuesSubscriptions",
+            "m_mainDataSource",
+            "_cachedOrderedSources",
+            "_sourcesById",
+            "_priceSourcesById",
+            "_sourcePropertiesChanged",
+            "_sourcesZOrderChanged",
+            "_stretchFactor",
+            "_isInInsertManyDataSourcesState",
+            "_lastLineDataSourceZOrder",
+            "_rightPriceScales",
+            "_leftPriceScales",
+            "_lockedPriceScale",
+            "_currentPriceScaleRatio",
+            "_onPriceScalesChanged",
+            "_isRecalculatingScales",
+            "_priceDataSources",
+            "_symbolSources",
+            "_studySources",
+            "_lollipopDataSources",
+            "_symbolSourceResolved",
+            "_symbolSourceResolvingActive",
+            "_bulkActions",
+            "_height",
+            "_width",
+            "_sizeChanged",
+            "_dataSourcesCollectionChanged",
+            "_dataSourcesZOrdersChanged",
+            "_symbolSourceCollectionChanged",
+            "_priceSourcesCollectionChanged",
+            "_isMainPane",
+            "_collapsed",
+            "_resetPriceScalesAvailable",
+            "_destroyed",
+            "_executionsPositionController",
+            "_seriesDisplayError",
+            "_onPriceScaleIsVisibleChanged",
+            "_recalcSymbolSourceResolvingActive",
+            "_onSymbolSourceCollectionChanged",
+            "_onSeriesDisplayError",
+            "_updateResetPriceScalesAvailableValue",
+            "_priceScaleSelectionStrategy",
+            "_id",
+            "_mode",
+            "_optionsProductServices",
+            "_newsReadService",
+            "_ideaPopupOpener",
+            "_contextMenu",
+            "_solutionOpener",
+            "_liveEarningsEventsService",
+            "_hostAnalysisServices",
+            "_documentsServices",
+            "_timeScale",
+            "_properties",
+            "_model",
+            "_maximized",
+            "_collapsingAvailable",
+            "_lineToolsByLinkKey"
+          ],
+          "methods": [
+            "_applyOldScaleRatioToPriceScale",
+            "_applyOldScaleRatioToTimeScale",
+            "_mainSourceVisiblePriceRange",
+            "_onDataSourcesZOrdersChanged",
+            "_onPriceScaleIsVisibleChanged",
+            "_onPriceScaleModeChanged",
+            "_onPriceScaleSetMinMaxPriceRange",
+            "_placePriceScale",
+            "_recalculatePriceScaleByScaleRatio",
+            "_recalculateTimeScaleByScaleRatio",
+            "_setCurrentPriceScaleRatio",
+            "_setNewBarSpacingByScaleRatio",
+            "_setNewPriceRangeByScaleRatio",
+            "_targetPriceAxisViews",
+            "_tryToApplyNewPriceScaleRatio",
+            "_updateMargins",
+            "_updateResetPriceScalesAvailableValue",
+            "actionNoScaleIsEnabled",
+            "addDataSource",
+            "applyPriceScaleRatio",
+            "beginInsertManyLineDataSources",
+            "canCreateNewPriceScale",
+            "clearDrawingCaches",
+            "createDrawingsCaches",
+            "createNewPriceScaleIfPossible",
+            "createPriceScaleAtPosition",
+            "dataSourceForId",
+            "dataSources",
+            "dataSourcesCollectionChanged",
+            "dataSourcesZOrdersChanged",
+            "defaultPriceScale",
+            "endInsertManyLineDataSources",
+            "endScalePrice",
+            "findCustomSourceTargetPriceAxisViews",
+            "findSuitableScale",
+            "findTargetPriceAxisViews",
+            "getPriceScaleById",
+            "hasDataSource",
+            "hasDataSourceWithSignature",
+            "hasPriceDataSource",
+            "insertDataSource",
+            "isMainPane",
+            "leftPriceScales",
+            "lollipopDataSources",
+            "mainDataSource",
+            "movePriceScale",
+            "onPriceScalesChanged",
+            "priceDataSources",
+            "priceScaleIndex",
+            "priceScalePosition",
+            "priceScaleSelectionStrategy",
+            "recalculatePriceScale",
+            "removeDataSource",
+            "removePriceScale",
+            "removeSourceFromPriceScale",
+            "resetPriceScale",
+            "resetPriceScalesAvailable",
+            "restorePriceScaleState",
+            "rightPriceScales",
+            "scalePriceTo",
+            "setPaneSize",
+            "setPriceAutoScale",
+            "setPriceScaleSelectionStrategy",
+            "startScalePrice",
+            "timeScale",
+            "updateAllViews",
+            "updateLollipopViews",
+            "visibleLeftPriceScales",
+            "visibleRightPriceScales"
+          ]
+        },
+        "paneViewPresent": true,
+        "paneView": {
+          "type": "c",
+          "keys": [
+            "_bars",
+            "_invalidated",
+            "_isMarkersEnabled",
+            "_selectionData",
+            "_source",
+            "_model",
+            "_selectionIndexer",
+            "_scaleCoeff"
+          ],
+          "methods": [
+            "_updateImpl",
+            "renderer",
+            "update"
+          ]
+        },
+        "rendererMethodFound": true,
+        "rendererPresent": true,
+        "renderer": {
+          "type": "i",
+          "keys": [
+            "_renderers",
+            "_globalAlpha"
+          ],
+          "methods": [
+            "draw",
+            "drawBackground"
+          ]
+        },
+        "futureBarsPaneView": null,
+        "projectionBarsPaneView": null
+      },
+      "bars": {
+        "count": 48,
+        "valid": 48,
+        "flat": 25,
+        "moving": 23,
+        "flatRatio": 0.5208,
+        "first": {
+          "index": 0,
+          "value": [
+            1794163385,
+            0.0000050898,
+            0.0000050905,
+            0.0000050898,
+            0.0000050905,
+            265
+          ]
+        },
+        "last": {
+          "index": 47,
+          "value": [
+            1794163620,
+            0.0000050984,
+            0.0000050984,
+            0.0000050983,
+            0.0000050983,
+            1645
+          ]
+        }
+      },
+      "timeScale": {
+        "baseIndex": 47,
+        "rightOffset": 5,
+        "barSpacing": 10.282143689688416,
+        "width": 881,
+        "logicalRange": {
+          "left": -32.682521718065715,
+          "right": 52
+        },
+        "visibleBars": {
+          "firstBar": -33,
+          "lastBar": 52
+        },
+        "pointCount": 82
+      },
+      "priceScale": {
+        "type": "Pl",
+        "isEmpty": false,
+        "isAutoScale": true,
+        "isLockScale": false,
+        "isLog": false,
+        "priceRange": {
+          "min": 0.0000050148,
+          "max": 0.000005107,
+          "type": "o"
+        },
+        "priceRangeReady": true,
+        "visibleBarPriceBounds": {
+          "low": 0.0000050898,
+          "high": 0.000005107,
+          "count": 48
+        },
+        "rangeCoversVisibleBars": true,
+        "invalidatedForRange": {
+          "visibleBars": {
+            "_firstBar": -33,
+            "_lastBar": 52
+          },
+          "logicalRange": {
+            "_left": -32.682521718065715,
+            "_right": 52
+          },
+          "isValid": true
+        }
+      },
+      "pane": {
+        "type": "Hl"
+      },
+      "toolbar": {
+        "text": "TVE\n1s\n5s\n10s\n15s\n20s\n30s\n45s\nApply\nReload\nTV: 1\nبرای بازگردانی چارت، Reload لازم است\n106 معامله · 42 واقعی · 48 کندل",
+        "rect": {
+          "x": 48,
+          "y": 72,
+          "width": 657,
+          "height": 42
+        }
+      }
+    },
+    "render": {
+      "canvases": [
+        {
+          "width": 881,
+          "height": 649,
+          "rect": {
+            "x": 56,
+            "y": 42,
+            "width": 881,
+            "height": 649
+          },
+          "visibility": "visible",
+          "display": "block"
+        },
+        {
+          "width": 881,
+          "height": 649,
+          "rect": {
+            "x": 56,
+            "y": 42,
+            "width": 881,
+            "height": 649
+          },
+          "visibility": "visible",
+          "display": "block"
+        },
+        {
+          "width": 78,
+          "height": 649,
+          "rect": {
+            "x": 937,
+            "y": 42,
+            "width": 78,
+            "height": 649
+          },
+          "visibility": "visible",
+          "display": "block"
+        },
+        {
+          "width": 78,
+          "height": 649,
+          "rect": {
+            "x": 937,
+            "y": 42,
+            "width": 78,
+            "height": 649
+          },
+          "visibility": "visible",
+          "display": "block"
+        },
+        {
+          "width": 881,
+          "height": 296,
+          "rect": {
+            "x": 56,
+            "y": 692,
+            "width": 881,
+            "height": 296
+          },
+          "visibility": "visible",
+          "display": "block"
+        },
+        {
+          "width": 881,
+          "height": 296,
+          "rect": {
+            "x": 56,
+            "y": 692,
+            "width": 881,
+            "height": 296
+          },
+          "visibility": "visible",
+          "display": "block"
+        },
+        {
+          "width": 78,
+          "height": 296,
+          "rect": {
+            "x": 937,
+            "y": 692,
+            "width": 78,
+            "height": 296
+          },
+          "visibility": "visible",
+          "display": "block"
+        },
+        {
+          "width": 78,
+          "height": 296,
+          "rect": {
+            "x": 937,
+            "y": 692,
+            "width": 78,
+            "height": 296
+          },
+          "visibility": "visible",
+          "display": "block"
+        }
+      ]
+    }
+  },
+  "finishedAt": "2026-11-08T18:47:06.982Z",
+  "durationMs": 9572,
+  "finalSnapshot": {
+    "label": "final",
+    "at": "2026-11-08T18:47:06.982Z",
+    "chartFound": true,
+    "chart": {
+      "symbol": "KCEX:PEPEUSDT.P",
+      "interval": {
+        "series": "1",
+        "source": "5S",
+        "sourceStatus": 3
+      },
+      "renderer": {
+        "panePresent": true,
+        "pane": {
+          "type": "Hl",
+          "keys": [
+            "m_dataSources",
+            "_sourceWatchedValuesSubscriptions",
+            "m_mainDataSource",
+            "_cachedOrderedSources",
+            "_sourcesById",
+            "_priceSourcesById",
+            "_sourcePropertiesChanged",
+            "_sourcesZOrderChanged",
+            "_stretchFactor",
+            "_isInInsertManyDataSourcesState",
+            "_lastLineDataSourceZOrder",
+            "_rightPriceScales",
+            "_leftPriceScales",
+            "_lockedPriceScale",
+            "_currentPriceScaleRatio",
+            "_onPriceScalesChanged",
+            "_isRecalculatingScales",
+            "_priceDataSources",
+            "_symbolSources",
+            "_studySources",
+            "_lollipopDataSources",
+            "_symbolSourceResolved",
+            "_symbolSourceResolvingActive",
+            "_bulkActions",
+            "_height",
+            "_width",
+            "_sizeChanged",
+            "_dataSourcesCollectionChanged",
+            "_dataSourcesZOrdersChanged",
+            "_symbolSourceCollectionChanged",
+            "_priceSourcesCollectionChanged",
+            "_isMainPane",
+            "_collapsed",
+            "_resetPriceScalesAvailable",
+            "_destroyed",
+            "_executionsPositionController",
+            "_seriesDisplayError",
+            "_onPriceScaleIsVisibleChanged",
+            "_recalcSymbolSourceResolvingActive",
+            "_onSymbolSourceCollectionChanged",
+            "_onSeriesDisplayError",
+            "_updateResetPriceScalesAvailableValue",
+            "_priceScaleSelectionStrategy",
+            "_id",
+            "_mode",
+            "_optionsProductServices",
+            "_newsReadService",
+            "_ideaPopupOpener",
+            "_contextMenu",
+            "_solutionOpener",
+            "_liveEarningsEventsService",
+            "_hostAnalysisServices",
+            "_documentsServices",
+            "_timeScale",
+            "_properties",
+            "_model",
+            "_maximized",
+            "_collapsingAvailable",
+            "_lineToolsByLinkKey"
+          ],
+          "methods": [
+            "_applyOldScaleRatioToPriceScale",
+            "_applyOldScaleRatioToTimeScale",
+            "_mainSourceVisiblePriceRange",
+            "_onDataSourcesZOrdersChanged",
+            "_onPriceScaleIsVisibleChanged",
+            "_onPriceScaleModeChanged",
+            "_onPriceScaleSetMinMaxPriceRange",
+            "_placePriceScale",
+            "_recalculatePriceScaleByScaleRatio",
+            "_recalculateTimeScaleByScaleRatio",
+            "_setCurrentPriceScaleRatio",
+            "_setNewBarSpacingByScaleRatio",
+            "_setNewPriceRangeByScaleRatio",
+            "_targetPriceAxisViews",
+            "_tryToApplyNewPriceScaleRatio",
+            "_updateMargins",
+            "_updateResetPriceScalesAvailableValue",
+            "actionNoScaleIsEnabled",
+            "addDataSource",
+            "applyPriceScaleRatio",
+            "beginInsertManyLineDataSources",
+            "canCreateNewPriceScale",
+            "clearDrawingCaches",
+            "createDrawingsCaches",
+            "createNewPriceScaleIfPossible",
+            "createPriceScaleAtPosition",
+            "dataSourceForId",
+            "dataSources",
+            "dataSourcesCollectionChanged",
+            "dataSourcesZOrdersChanged",
+            "defaultPriceScale",
+            "endInsertManyLineDataSources",
+            "endScalePrice",
+            "findCustomSourceTargetPriceAxisViews",
+            "findSuitableScale",
+            "findTargetPriceAxisViews",
+            "getPriceScaleById",
+            "hasDataSource",
+            "hasDataSourceWithSignature",
+            "hasPriceDataSource",
+            "insertDataSource",
+            "isMainPane",
+            "leftPriceScales",
+            "lollipopDataSources",
+            "mainDataSource",
+            "movePriceScale",
+            "onPriceScalesChanged",
+            "priceDataSources",
+            "priceScaleIndex",
+            "priceScalePosition",
+            "priceScaleSelectionStrategy",
+            "recalculatePriceScale",
+            "removeDataSource",
+            "removePriceScale",
+            "removeSourceFromPriceScale",
+            "resetPriceScale",
+            "resetPriceScalesAvailable",
+            "restorePriceScaleState",
+            "rightPriceScales",
+            "scalePriceTo",
+            "setPaneSize",
+            "setPriceAutoScale",
+            "setPriceScaleSelectionStrategy",
+            "startScalePrice",
+            "timeScale",
+            "updateAllViews",
+            "updateLollipopViews",
+            "visibleLeftPriceScales",
+            "visibleRightPriceScales"
+          ]
+        },
+        "paneViewPresent": true,
+        "paneView": {
+          "type": "c",
+          "keys": [
+            "_bars",
+            "_invalidated",
+            "_isMarkersEnabled",
+            "_selectionData",
+            "_source",
+            "_model",
+            "_selectionIndexer",
+            "_scaleCoeff"
+          ],
+          "methods": [
+            "_updateImpl",
+            "renderer",
+            "update"
+          ]
+        },
+        "rendererMethodFound": true,
+        "rendererPresent": true,
+        "renderer": {
+          "type": "i",
+          "keys": [
+            "_renderers",
+            "_globalAlpha"
+          ],
+          "methods": [
+            "draw",
+            "drawBackground"
+          ]
+        },
+        "futureBarsPaneView": null,
+        "projectionBarsPaneView": null
+      },
+      "bars": {
+        "count": 48,
+        "valid": 48,
+        "flat": 25,
+        "moving": 23,
+        "flatRatio": 0.5208,
+        "first": {
+          "index": 0,
+          "value": [
+            1794163385,
+            0.0000050898,
+            0.0000050905,
+            0.0000050898,
+            0.0000050905,
+            265
+          ]
+        },
+        "last": {
+          "index": 47,
+          "value": [
+            1794163620,
+            0.0000050984,
+            0.0000050984,
+            0.0000050983,
+            0.0000050983,
+            1645
+          ]
+        }
+      },
+      "timeScale": {
+        "baseIndex": 47,
+        "rightOffset": 5,
+        "barSpacing": 10.282143689688416,
+        "width": 881,
+        "logicalRange": {
+          "left": -32.682521718065715,
+          "right": 52
+        },
+        "visibleBars": {
+          "firstBar": -33,
+          "lastBar": 52
+        },
+        "pointCount": 82
+      },
+      "priceScale": {
+        "type": "Pl",
+        "isEmpty": false,
+        "isAutoScale": true,
+        "isLockScale": false,
+        "isLog": false,
+        "priceRange": {
+          "min": 0.0000050148,
+          "max": 0.000005107,
+          "type": "o"
+        },
+        "priceRangeReady": true,
+        "visibleBarPriceBounds": {
+          "low": 0.0000050898,
+          "high": 0.000005107,
+          "count": 48
+        },
+        "rangeCoversVisibleBars": true,
+        "invalidatedForRange": {
+          "visibleBars": {
+            "_firstBar": -33,
+            "_lastBar": 52
+          },
+          "logicalRange": {
+            "_left": -32.682521718065715,
+            "_right": 52
+          },
+          "isValid": true
+        }
+      },
+      "pane": {
+        "type": "Hl"
+      },
+      "toolbar": {
+        "text": "TVE\n1s\n5s\n10s\n15s\n20s\n30s\n45s\nApply\nReload\nTV: 1\nبرای بازگردانی چارت، Reload لازم است\n106 معامله · 42 واقعی · 48 کندل",
+        "rect": {
+          "x": 48,
+          "y": 72,
+          "width": 657,
+          "height": 42
+        }
+      }
+    },
+    "render": {
+      "canvases": [
+        {
+          "width": 881,
+          "height": 649,
+          "rect": {
+            "x": 56,
+            "y": 42,
+            "width": 881,
+            "height": 649
+          },
+          "visibility": "visible",
+          "display": "block"
+        },
+        {
+          "width": 881,
+          "height": 649,
+          "rect": {
+            "x": 56,
+            "y": 42,
+            "width": 881,
+            "height": 649
+          },
+          "visibility": "visible",
+          "display": "block"
+        },
+        {
+          "width": 78,
+          "height": 649,
+          "rect": {
+            "x": 937,
+            "y": 42,
+            "width": 78,
+            "height": 649
+          },
+          "visibility": "visible",
+          "display": "block"
+        },
+        {
+          "width": 78,
+          "height": 649,
+          "rect": {
+            "x": 937,
+            "y": 42,
+            "width": 78,
+            "height": 649
+          },
+          "visibility": "visible",
+          "display": "block"
+        },
+        {
+          "width": 881,
+          "height": 296,
+          "rect": {
+            "x": 56,
+            "y": 692,
+            "width": 881,
+            "height": 296
+          },
+          "visibility": "visible",
+          "display": "block"
+        },
+        {
+          "width": 881,
+          "height": 296,
+          "rect": {
+            "x": 56,
+            "y": 692,
+            "width": 881,
+            "height": 296
+          },
+          "visibility": "visible",
+          "display": "block"
+        },
+        {
+          "width": 78,
+          "height": 296,
+          "rect": {
+            "x": 937,
+            "y": 692,
+            "width": 78,
+            "height": 296
+          },
+          "visibility": "visible",
+          "display": "block"
+        },
+        {
+          "width": 78,
+          "height": 296,
+          "rect": {
+            "x": 937,
+            "y": 692,
+            "width": 78,
+            "height": 296
+          },
+          "visibility": "visible",
+          "display": "block"
+        }
+      ]
+    }
+  }
+}
