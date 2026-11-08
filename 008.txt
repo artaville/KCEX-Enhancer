@@ -1,0 +1,5812 @@
+{
+  "diagnostic": "TVE-DIAG-NATIVE-v10-for-0.2.10",
+  "startedAt": "2026-11-08T19:19:43.801Z",
+  "page": {
+    "url": "https://www.tradingview.com/chart/4JBVKCwz/",
+    "title": "PEPEUSDT.P 0.50543e-5 ▲ +3.96% Unnamed",
+    "viewport": {
+      "width": 1064,
+      "height": 1054
+    }
+  },
+  "extensionVersionFlag": true,
+  "safety": "Automatically selects 5s and invokes Apply exactly once after >=20 real candles are ready. Then observes for 20 seconds. During observation, drag the RIGHT price scale axis vertically (not the plot body) once, and visually check the existing oscillator pane and native TradingView countdown. This diagnostic does not directly mutate TradingView internals; Apply is performed once through the extension bridge. Reload TradingView after copying the report.",
+  "actions": [
+    {
+      "action": "click-5s",
+      "at": "2026-11-08T19:19:43.821Z"
+    },
+    {
+      "action": "invoke-apply-once",
+      "at": "2026-11-08T19:19:45.582Z",
+      "realCandles": 42,
+      "totalCandles": 49
+    },
+    {
+      "event": "TVE_LIVE_UPDATE",
+      "at": "2026-11-08T19:19:47.782Z",
+      "detail": {
+        "rows": 1,
+        "newBars": 0,
+        "lastTime": 1794165585,
+        "lastIndex": 48
+      }
+    },
+    {
+      "event": "TVE_LIVE_UPDATE",
+      "at": "2026-11-08T19:19:53.883Z",
+      "detail": {
+        "rows": 2,
+        "newBars": 1,
+        "lastTime": 1794165590,
+        "lastIndex": 49
+      }
+    },
+    {
+      "event": "TVE_LIVE_UPDATE",
+      "at": "2026-11-08T19:19:56.409Z",
+      "detail": {
+        "rows": 2,
+        "newBars": 1,
+        "lastTime": 1794165595,
+        "lastIndex": 50
+      }
+    },
+    {
+      "event": "TVE_LIVE_UPDATE",
+      "at": "2026-11-08T19:19:59.140Z",
+      "detail": {
+        "rows": 1,
+        "newBars": 0,
+        "lastTime": 1794165595,
+        "lastIndex": 50
+      }
+    },
+    {
+      "event": "TVE_LIVE_UPDATE",
+      "at": "2026-11-08T19:20:02.677Z",
+      "detail": {
+        "rows": 2,
+        "newBars": 1,
+        "lastTime": 1794165600,
+        "lastIndex": 51
+      }
+    },
+    {
+      "event": "TVE_LIVE_UPDATE",
+      "at": "2026-11-08T19:20:04.556Z",
+      "detail": {
+        "rows": 1,
+        "newBars": 0,
+        "lastTime": 1794165600,
+        "lastIndex": 51
+      }
+    },
+    {
+      "event": "TVE_LIVE_UPDATE",
+      "at": "2026-11-08T19:20:05.825Z",
+      "detail": {
+        "rows": 2,
+        "newBars": 1,
+        "lastTime": 1794165605,
+        "lastIndex": 52
+      }
+    }
+  ],
+  "phases": [
+    {
+      "at": "2026-11-08T19:19:45.654Z",
+      "phase": "native-interval-synced",
+      "targetResolution": "5S",
+      "intervalSync": {
+        "beforeSeries": "1",
+        "beforeSource": "1",
+        "afterSeries": "5S",
+        "afterSource": "5S",
+        "gatewayModifySeriesCallsSuppressed": 1
+      },
+      "barCountBeforeReset": 300,
+      "timeScalePointCountBeforeReset": 331
+    },
+    {
+      "at": "2026-11-08T19:19:45.654Z",
+      "phase": "timescale-reset-requested",
+      "expectedBars": 49,
+      "expectedFirstTime": 1794165345,
+      "expectedLastTime": 1794165585,
+      "timeScalePointCount": 49
+    },
+    {
+      "at": "2026-11-08T19:19:45.667Z",
+      "phase": "clear-queues-drained",
+      "drainedSourceQueues": 1,
+      "sourceQueueTypes": [
+        "I"
+      ],
+      "barCountAfterDrain": 0
+    },
+    {
+      "at": "2026-11-08T19:19:45.667Z",
+      "phase": "old-bars-cleared",
+      "clearedBarCount": 0,
+      "timeScalePointCount": 49,
+      "expectedBars": 49
+    },
+    {
+      "at": "2026-11-08T19:19:45.694Z",
+      "phase": "data-update-queues-drained",
+      "drainedSourceQueues": 1,
+      "sourceQueueTypes": [
+        "I"
+      ],
+      "barCountAfterDrain": 49
+    },
+    {
+      "at": "2026-11-08T19:19:45.694Z",
+      "phase": "verification-complete",
+      "success": true,
+      "verification": {
+        "barCount": 49,
+        "firstIndex": 0,
+        "lastIndex": 48,
+        "firstBarTime": 1794165345,
+        "lastBarTime": 1794165585,
+        "allBarsMatch": true,
+        "seriesResolution": "5S",
+        "expectedSeriesResolution": "5S",
+        "sourceResolution": "5S",
+        "timeScaleFirstPoint": 1794165345,
+        "timeScaleLastPoint": 1794165585,
+        "timeScaleRange": {
+          "firstIndex": 0,
+          "lastIndex": 48
+        },
+        "timeScalePointCount": 49,
+        "tickMarkLastTime": "2026-11-08T19:19:45.000Z",
+        "tickMarkLastTimeType": "Date",
+        "tickMarkLastTimeSeconds": 1794165585,
+        "tickMarkMatchesExpected": true
+      }
+    }
+  ],
+  "browserErrors": [],
+  "samples": [
+    {
+      "label": "live-sample",
+      "at": "2026-11-08T19:19:46.919Z",
+      "chartFound": true,
+      "chart": {
+        "symbol": "KCEX:PEPEUSDT.P",
+        "resolution": {
+          "mainSeries": "5S",
+          "source": "5S",
+          "sourceStatus": 3
+        },
+        "bars": {
+          "count": 49,
+          "first": {
+            "index": 0,
+            "value": [
+              1794165345,
+              0.0000050607,
+              0.0000050608,
+              0.0000050607,
+              0.0000050608,
+              12
+            ]
+          },
+          "last": {
+            "index": 48,
+            "value": [
+              1794165585,
+              0.0000050578,
+              0.0000050578,
+              0.0000050578,
+              0.0000050578,
+              0
+            ]
+          }
+        },
+        "timeScale": {
+          "baseIndex": 48,
+          "rightOffset": 5,
+          "logicalRange": {
+            "left": -31.682521718065715,
+            "right": 53
+          },
+          "visibleBars": {
+            "first": -32,
+            "last": 53
+          },
+          "pointCount": 49,
+          "tickMarkLast": "2026-11-08T19:19:45.000Z",
+          "tickMarkLastSeconds": 1794165585,
+          "tickMarkMatchesLastBar": true
+        },
+        "priceScale": {
+          "type": "Pl",
+          "isEmpty": false,
+          "autoScale": true,
+          "lockScale": false,
+          "range": {
+            "min": 0.0000050543,
+            "max": 0.0000050683
+          },
+          "methods": [
+            "setMode",
+            "isAutoScale",
+            "isLockScale"
+          ]
+        },
+        "renderer": {
+          "paneViewPresent": true,
+          "rendererPresent": true,
+          "rendererType": "i",
+          "rendererCount": 1
+        },
+        "studies": {
+          "count": 0,
+          "items": []
+        },
+        "panes": [
+          {
+            "index": 0,
+            "type": "Hl",
+            "width": 881,
+            "height": 649,
+            "dataSourceCount": 58
+          },
+          {
+            "index": 1,
+            "type": "Hl",
+            "width": 881,
+            "height": 296,
+            "dataSourceCount": 1
+          }
+        ],
+        "canvases": [
+          {
+            "width": 881,
+            "height": 649,
+            "rect": {
+              "x": 56,
+              "y": 42,
+              "width": 881,
+              "height": 649
+            }
+          },
+          {
+            "width": 881,
+            "height": 649,
+            "rect": {
+              "x": 56,
+              "y": 42,
+              "width": 881,
+              "height": 649
+            }
+          },
+          {
+            "width": 78,
+            "height": 649,
+            "rect": {
+              "x": 937,
+              "y": 42,
+              "width": 78,
+              "height": 649
+            }
+          },
+          {
+            "width": 78,
+            "height": 649,
+            "rect": {
+              "x": 937,
+              "y": 42,
+              "width": 78,
+              "height": 649
+            }
+          },
+          {
+            "width": 881,
+            "height": 296,
+            "rect": {
+              "x": 56,
+              "y": 692,
+              "width": 881,
+              "height": 296
+            }
+          },
+          {
+            "width": 881,
+            "height": 296,
+            "rect": {
+              "x": 56,
+              "y": 692,
+              "width": 881,
+              "height": 296
+            }
+          },
+          {
+            "width": 78,
+            "height": 296,
+            "rect": {
+              "x": 937,
+              "y": 692,
+              "width": 78,
+              "height": 296
+            }
+          },
+          {
+            "width": 78,
+            "height": 296,
+            "rect": {
+              "x": 937,
+              "y": 692,
+              "width": 78,
+              "height": 296
+            }
+          },
+          {
+            "width": 881,
+            "height": 28,
+            "rect": {
+              "x": 56,
+              "y": 988,
+              "width": 881,
+              "height": 28
+            }
+          },
+          {
+            "width": 881,
+            "height": 28,
+            "rect": {
+              "x": 56,
+              "y": 988,
+              "width": 881,
+              "height": 28
+            }
+          },
+          {
+            "width": 78,
+            "height": 28,
+            "rect": {
+              "x": 937,
+              "y": 988,
+              "width": 78,
+              "height": 28
+            }
+          }
+        ],
+        "countdownCandidates": [],
+        "toolbarText": "TVE\n1s\n5s\n10s\n15s\n20s\n30s\n45s\nApply\nReload\nTV: 5S\nبرای بازگردانی چارت، Reload لازم است\n100 معامله · 42 واقعی · 49 کندل"
+      }
+    },
+    {
+      "label": "live-sample",
+      "at": "2026-11-08T19:19:47.929Z",
+      "chartFound": true,
+      "chart": {
+        "symbol": "KCEX:PEPEUSDT.P",
+        "resolution": {
+          "mainSeries": "5S",
+          "source": "5S",
+          "sourceStatus": 3
+        },
+        "bars": {
+          "count": 49,
+          "first": {
+            "index": 0,
+            "value": [
+              1794165345,
+              0.0000050607,
+              0.0000050608,
+              0.0000050607,
+              0.0000050608,
+              12
+            ]
+          },
+          "last": {
+            "index": 48,
+            "value": [
+              1794165585,
+              0.0000050582,
+              0.0000050582,
+              0.0000050582,
+              0.0000050582,
+              2426
+            ]
+          }
+        },
+        "timeScale": {
+          "baseIndex": 48,
+          "rightOffset": 5,
+          "logicalRange": {
+            "left": -31.682521718065715,
+            "right": 53
+          },
+          "visibleBars": {
+            "first": -32,
+            "last": 53
+          },
+          "pointCount": 49,
+          "tickMarkLast": "2026-11-08T19:19:45.000Z",
+          "tickMarkLastSeconds": 1794165585,
+          "tickMarkMatchesLastBar": true
+        },
+        "priceScale": {
+          "type": "Pl",
+          "isEmpty": false,
+          "autoScale": true,
+          "lockScale": false,
+          "range": {
+            "min": 0.0000050543,
+            "max": 0.0000050683
+          },
+          "methods": [
+            "setMode",
+            "isAutoScale",
+            "isLockScale"
+          ]
+        },
+        "renderer": {
+          "paneViewPresent": true,
+          "rendererPresent": true,
+          "rendererType": "i",
+          "rendererCount": 1
+        },
+        "studies": {
+          "count": 0,
+          "items": []
+        },
+        "panes": [
+          {
+            "index": 0,
+            "type": "Hl",
+            "width": 881,
+            "height": 649,
+            "dataSourceCount": 58
+          },
+          {
+            "index": 1,
+            "type": "Hl",
+            "width": 881,
+            "height": 296,
+            "dataSourceCount": 1
+          }
+        ],
+        "canvases": [
+          {
+            "width": 881,
+            "height": 649,
+            "rect": {
+              "x": 56,
+              "y": 42,
+              "width": 881,
+              "height": 649
+            }
+          },
+          {
+            "width": 881,
+            "height": 649,
+            "rect": {
+              "x": 56,
+              "y": 42,
+              "width": 881,
+              "height": 649
+            }
+          },
+          {
+            "width": 78,
+            "height": 649,
+            "rect": {
+              "x": 937,
+              "y": 42,
+              "width": 78,
+              "height": 649
+            }
+          },
+          {
+            "width": 78,
+            "height": 649,
+            "rect": {
+              "x": 937,
+              "y": 42,
+              "width": 78,
+              "height": 649
+            }
+          },
+          {
+            "width": 881,
+            "height": 296,
+            "rect": {
+              "x": 56,
+              "y": 692,
+              "width": 881,
+              "height": 296
+            }
+          },
+          {
+            "width": 881,
+            "height": 296,
+            "rect": {
+              "x": 56,
+              "y": 692,
+              "width": 881,
+              "height": 296
+            }
+          },
+          {
+            "width": 78,
+            "height": 296,
+            "rect": {
+              "x": 937,
+              "y": 692,
+              "width": 78,
+              "height": 296
+            }
+          },
+          {
+            "width": 78,
+            "height": 296,
+            "rect": {
+              "x": 937,
+              "y": 692,
+              "width": 78,
+              "height": 296
+            }
+          },
+          {
+            "width": 881,
+            "height": 28,
+            "rect": {
+              "x": 56,
+              "y": 988,
+              "width": 881,
+              "height": 28
+            }
+          },
+          {
+            "width": 881,
+            "height": 28,
+            "rect": {
+              "x": 56,
+              "y": 988,
+              "width": 881,
+              "height": 28
+            }
+          },
+          {
+            "width": 78,
+            "height": 28,
+            "rect": {
+              "x": 937,
+              "y": 988,
+              "width": 78,
+              "height": 28
+            }
+          }
+        ],
+        "countdownCandidates": [],
+        "toolbarText": "TVE\n1s\n5s\n10s\n15s\n20s\n30s\n45s\nApply\nReload\nTV: 5S\nبرای بازگردانی چارت، Reload لازم است\n101 معامله · 43 واقعی · 49 کندل"
+      }
+    },
+    {
+      "label": "live-sample",
+      "at": "2026-11-08T19:19:48.950Z",
+      "chartFound": true,
+      "chart": {
+        "symbol": "KCEX:PEPEUSDT.P",
+        "resolution": {
+          "mainSeries": "5S",
+          "source": "5S",
+          "sourceStatus": 3
+        },
+        "bars": {
+          "count": 49,
+          "first": {
+            "index": 0,
+            "value": [
+              1794165345,
+              0.0000050607,
+              0.0000050608,
+              0.0000050607,
+              0.0000050608,
+              12
+            ]
+          },
+          "last": {
+            "index": 48,
+            "value": [
+              1794165585,
+              0.0000050582,
+              0.0000050582,
+              0.0000050582,
+              0.0000050582,
+              2426
+            ]
+          }
+        },
+        "timeScale": {
+          "baseIndex": 48,
+          "rightOffset": -20.481068,
+          "logicalRange": {
+            "left": -57.16358971806571,
+            "right": 27.518932
+          },
+          "visibleBars": {
+            "first": -57,
+            "last": 28
+          },
+          "pointCount": 49,
+          "tickMarkLast": "2026-11-08T19:19:45.000Z",
+          "tickMarkLastSeconds": 1794165585,
+          "tickMarkMatchesLastBar": true
+        },
+        "priceScale": {
+          "type": "Pl",
+          "isEmpty": false,
+          "autoScale": true,
+          "lockScale": false,
+          "range": {
+            "min": 0.0000050593,
+            "max": 0.0000050674
+          },
+          "methods": [
+            "setMode",
+            "isAutoScale",
+            "isLockScale"
+          ]
+        },
+        "renderer": {
+          "paneViewPresent": true,
+          "rendererPresent": true,
+          "rendererType": "i",
+          "rendererCount": 1
+        },
+        "studies": {
+          "count": 0,
+          "items": []
+        },
+        "panes": [
+          {
+            "index": 0,
+            "type": "Hl",
+            "width": 881,
+            "height": 649,
+            "dataSourceCount": 58
+          },
+          {
+            "index": 1,
+            "type": "Hl",
+            "width": 881,
+            "height": 296,
+            "dataSourceCount": 1
+          }
+        ],
+        "canvases": [
+          {
+            "width": 881,
+            "height": 649,
+            "rect": {
+              "x": 56,
+              "y": 42,
+              "width": 881,
+              "height": 649
+            }
+          },
+          {
+            "width": 881,
+            "height": 649,
+            "rect": {
+              "x": 56,
+              "y": 42,
+              "width": 881,
+              "height": 649
+            }
+          },
+          {
+            "width": 78,
+            "height": 649,
+            "rect": {
+              "x": 937,
+              "y": 42,
+              "width": 78,
+              "height": 649
+            }
+          },
+          {
+            "width": 78,
+            "height": 649,
+            "rect": {
+              "x": 937,
+              "y": 42,
+              "width": 78,
+              "height": 649
+            }
+          },
+          {
+            "width": 881,
+            "height": 296,
+            "rect": {
+              "x": 56,
+              "y": 692,
+              "width": 881,
+              "height": 296
+            }
+          },
+          {
+            "width": 881,
+            "height": 296,
+            "rect": {
+              "x": 56,
+              "y": 692,
+              "width": 881,
+              "height": 296
+            }
+          },
+          {
+            "width": 78,
+            "height": 296,
+            "rect": {
+              "x": 937,
+              "y": 692,
+              "width": 78,
+              "height": 296
+            }
+          },
+          {
+            "width": 78,
+            "height": 296,
+            "rect": {
+              "x": 937,
+              "y": 692,
+              "width": 78,
+              "height": 296
+            }
+          },
+          {
+            "width": 881,
+            "height": 28,
+            "rect": {
+              "x": 56,
+              "y": 988,
+              "width": 881,
+              "height": 28
+            }
+          },
+          {
+            "width": 881,
+            "height": 28,
+            "rect": {
+              "x": 56,
+              "y": 988,
+              "width": 881,
+              "height": 28
+            }
+          },
+          {
+            "width": 78,
+            "height": 28,
+            "rect": {
+              "x": 937,
+              "y": 988,
+              "width": 78,
+              "height": 28
+            }
+          }
+        ],
+        "countdownCandidates": [],
+        "toolbarText": "TVE\n1s\n5s\n10s\n15s\n20s\n30s\n45s\nApply\nReload\nTV: 5S\nبرای بازگردانی چارت، Reload لازم است\n101 معامله · 43 واقعی · 49 کندل"
+      }
+    },
+    {
+      "label": "live-sample",
+      "at": "2026-11-08T19:19:49.963Z",
+      "chartFound": true,
+      "chart": {
+        "symbol": "KCEX:PEPEUSDT.P",
+        "resolution": {
+          "mainSeries": "5S",
+          "source": "5S",
+          "sourceStatus": 3
+        },
+        "bars": {
+          "count": 49,
+          "first": {
+            "index": 0,
+            "value": [
+              1794165345,
+              0.0000050607,
+              0.0000050608,
+              0.0000050607,
+              0.0000050608,
+              12
+            ]
+          },
+          "last": {
+            "index": 48,
+            "value": [
+              1794165585,
+              0.0000050582,
+              0.0000050582,
+              0.0000050582,
+              0.0000050582,
+              2426
+            ]
+          }
+        },
+        "timeScale": {
+          "baseIndex": 48,
+          "rightOffset": 18.421325999999993,
+          "logicalRange": {
+            "left": -18.26119571806572,
+            "right": 66.421326
+          },
+          "visibleBars": {
+            "first": -19,
+            "last": 67
+          },
+          "pointCount": 49,
+          "tickMarkLast": "2026-11-08T19:19:45.000Z",
+          "tickMarkLastSeconds": 1794165585,
+          "tickMarkMatchesLastBar": true
+        },
+        "priceScale": {
+          "type": "Pl",
+          "isEmpty": false,
+          "autoScale": true,
+          "lockScale": false,
+          "range": {
+            "min": 0.0000050543,
+            "max": 0.0000050683
+          },
+          "methods": [
+            "setMode",
+            "isAutoScale",
+            "isLockScale"
+          ]
+        },
+        "renderer": {
+          "paneViewPresent": true,
+          "rendererPresent": true,
+          "rendererType": "i",
+          "rendererCount": 1
+        },
+        "studies": {
+          "count": 0,
+          "items": []
+        },
+        "panes": [
+          {
+            "index": 0,
+            "type": "Hl",
+            "width": 881,
+            "height": 649,
+            "dataSourceCount": 58
+          },
+          {
+            "index": 1,
+            "type": "Hl",
+            "width": 881,
+            "height": 296,
+            "dataSourceCount": 1
+          }
+        ],
+        "canvases": [
+          {
+            "width": 881,
+            "height": 649,
+            "rect": {
+              "x": 56,
+              "y": 42,
+              "width": 881,
+              "height": 649
+            }
+          },
+          {
+            "width": 881,
+            "height": 649,
+            "rect": {
+              "x": 56,
+              "y": 42,
+              "width": 881,
+              "height": 649
+            }
+          },
+          {
+            "width": 78,
+            "height": 649,
+            "rect": {
+              "x": 937,
+              "y": 42,
+              "width": 78,
+              "height": 649
+            }
+          },
+          {
+            "width": 78,
+            "height": 649,
+            "rect": {
+              "x": 937,
+              "y": 42,
+              "width": 78,
+              "height": 649
+            }
+          },
+          {
+            "width": 881,
+            "height": 296,
+            "rect": {
+              "x": 56,
+              "y": 692,
+              "width": 881,
+              "height": 296
+            }
+          },
+          {
+            "width": 881,
+            "height": 296,
+            "rect": {
+              "x": 56,
+              "y": 692,
+              "width": 881,
+              "height": 296
+            }
+          },
+          {
+            "width": 78,
+            "height": 296,
+            "rect": {
+              "x": 937,
+              "y": 692,
+              "width": 78,
+              "height": 296
+            }
+          },
+          {
+            "width": 78,
+            "height": 296,
+            "rect": {
+              "x": 937,
+              "y": 692,
+              "width": 78,
+              "height": 296
+            }
+          },
+          {
+            "width": 881,
+            "height": 28,
+            "rect": {
+              "x": 56,
+              "y": 988,
+              "width": 881,
+              "height": 28
+            }
+          },
+          {
+            "width": 881,
+            "height": 28,
+            "rect": {
+              "x": 56,
+              "y": 988,
+              "width": 881,
+              "height": 28
+            }
+          },
+          {
+            "width": 78,
+            "height": 28,
+            "rect": {
+              "x": 937,
+              "y": 988,
+              "width": 78,
+              "height": 28
+            }
+          }
+        ],
+        "countdownCandidates": [],
+        "toolbarText": "TVE\n1s\n5s\n10s\n15s\n20s\n30s\n45s\nApply\nReload\nTV: 5S\nبرای بازگردانی چارت، Reload لازم است\n101 معامله · 43 واقعی · 49 کندل"
+      }
+    },
+    {
+      "label": "live-sample",
+      "at": "2026-11-08T19:19:50.968Z",
+      "chartFound": true,
+      "chart": {
+        "symbol": "KCEX:PEPEUSDT.P",
+        "resolution": {
+          "mainSeries": "5S",
+          "source": "5S",
+          "sourceStatus": 3
+        },
+        "bars": {
+          "count": 49,
+          "first": {
+            "index": 0,
+            "value": [
+              1794165345,
+              0.0000050607,
+              0.0000050608,
+              0.0000050607,
+              0.0000050608,
+              12
+            ]
+          },
+          "last": {
+            "index": 48,
+            "value": [
+              1794165585,
+              0.0000050582,
+              0.0000050582,
+              0.0000050582,
+              0.0000050582,
+              2426
+            ]
+          }
+        },
+        "timeScale": {
+          "baseIndex": 48,
+          "rightOffset": 18.421325999999993,
+          "logicalRange": {
+            "left": -18.26119571806572,
+            "right": 66.421326
+          },
+          "visibleBars": {
+            "first": -19,
+            "last": 67
+          },
+          "pointCount": 49,
+          "tickMarkLast": "2026-11-08T19:19:45.000Z",
+          "tickMarkLastSeconds": 1794165585,
+          "tickMarkMatchesLastBar": true
+        },
+        "priceScale": {
+          "type": "Pl",
+          "isEmpty": false,
+          "autoScale": false,
+          "lockScale": false,
+          "range": {
+            "min": 0.000005056423308469445,
+            "max": 0.000005066176691530555
+          },
+          "methods": [
+            "setMode",
+            "isAutoScale",
+            "isLockScale"
+          ]
+        },
+        "renderer": {
+          "paneViewPresent": true,
+          "rendererPresent": true,
+          "rendererType": "i",
+          "rendererCount": 1
+        },
+        "studies": {
+          "count": 0,
+          "items": []
+        },
+        "panes": [
+          {
+            "index": 0,
+            "type": "Hl",
+            "width": 881,
+            "height": 649,
+            "dataSourceCount": 58
+          },
+          {
+            "index": 1,
+            "type": "Hl",
+            "width": 881,
+            "height": 296,
+            "dataSourceCount": 1
+          }
+        ],
+        "canvases": [
+          {
+            "width": 881,
+            "height": 649,
+            "rect": {
+              "x": 56,
+              "y": 42,
+              "width": 881,
+              "height": 649
+            }
+          },
+          {
+            "width": 881,
+            "height": 649,
+            "rect": {
+              "x": 56,
+              "y": 42,
+              "width": 881,
+              "height": 649
+            }
+          },
+          {
+            "width": 78,
+            "height": 649,
+            "rect": {
+              "x": 937,
+              "y": 42,
+              "width": 78,
+              "height": 649
+            }
+          },
+          {
+            "width": 78,
+            "height": 649,
+            "rect": {
+              "x": 937,
+              "y": 42,
+              "width": 78,
+              "height": 649
+            }
+          },
+          {
+            "width": 881,
+            "height": 296,
+            "rect": {
+              "x": 56,
+              "y": 692,
+              "width": 881,
+              "height": 296
+            }
+          },
+          {
+            "width": 881,
+            "height": 296,
+            "rect": {
+              "x": 56,
+              "y": 692,
+              "width": 881,
+              "height": 296
+            }
+          },
+          {
+            "width": 78,
+            "height": 296,
+            "rect": {
+              "x": 937,
+              "y": 692,
+              "width": 78,
+              "height": 296
+            }
+          },
+          {
+            "width": 78,
+            "height": 296,
+            "rect": {
+              "x": 937,
+              "y": 692,
+              "width": 78,
+              "height": 296
+            }
+          },
+          {
+            "width": 881,
+            "height": 28,
+            "rect": {
+              "x": 56,
+              "y": 988,
+              "width": 881,
+              "height": 28
+            }
+          },
+          {
+            "width": 881,
+            "height": 28,
+            "rect": {
+              "x": 56,
+              "y": 988,
+              "width": 881,
+              "height": 28
+            }
+          },
+          {
+            "width": 78,
+            "height": 28,
+            "rect": {
+              "x": 937,
+              "y": 988,
+              "width": 78,
+              "height": 28
+            }
+          }
+        ],
+        "countdownCandidates": [],
+        "toolbarText": "TVE\n1s\n5s\n10s\n15s\n20s\n30s\n45s\nApply\nReload\nTV: 5S\nبرای بازگردانی چارت، Reload لازم است\n101 معامله · 43 واقعی · 49 کندل"
+      }
+    },
+    {
+      "label": "live-sample",
+      "at": "2026-11-08T19:19:51.973Z",
+      "chartFound": true,
+      "chart": {
+        "symbol": "KCEX:PEPEUSDT.P",
+        "resolution": {
+          "mainSeries": "5S",
+          "source": "5S",
+          "sourceStatus": 3
+        },
+        "bars": {
+          "count": 49,
+          "first": {
+            "index": 0,
+            "value": [
+              1794165345,
+              0.0000050607,
+              0.0000050608,
+              0.0000050607,
+              0.0000050608,
+              12
+            ]
+          },
+          "last": {
+            "index": 48,
+            "value": [
+              1794165585,
+              0.0000050582,
+              0.0000050582,
+              0.0000050582,
+              0.0000050582,
+              2426
+            ]
+          }
+        },
+        "timeScale": {
+          "baseIndex": 48,
+          "rightOffset": 18.421325999999993,
+          "logicalRange": {
+            "left": -18.26119571806572,
+            "right": 66.421326
+          },
+          "visibleBars": {
+            "first": -19,
+            "last": 67
+          },
+          "pointCount": 49,
+          "tickMarkLast": "2026-11-08T19:19:45.000Z",
+          "tickMarkLastSeconds": 1794165585,
+          "tickMarkMatchesLastBar": true
+        },
+        "priceScale": {
+          "type": "Pl",
+          "isEmpty": false,
+          "autoScale": false,
+          "lockScale": false,
+          "range": {
+            "min": 0.000005055190207078775,
+            "max": 0.000005067409792921225
+          },
+          "methods": [
+            "setMode",
+            "isAutoScale",
+            "isLockScale"
+          ]
+        },
+        "renderer": {
+          "paneViewPresent": true,
+          "rendererPresent": true,
+          "rendererType": "i",
+          "rendererCount": 1
+        },
+        "studies": {
+          "count": 0,
+          "items": []
+        },
+        "panes": [
+          {
+            "index": 0,
+            "type": "Hl",
+            "width": 881,
+            "height": 649,
+            "dataSourceCount": 58
+          },
+          {
+            "index": 1,
+            "type": "Hl",
+            "width": 881,
+            "height": 296,
+            "dataSourceCount": 1
+          }
+        ],
+        "canvases": [
+          {
+            "width": 881,
+            "height": 649,
+            "rect": {
+              "x": 56,
+              "y": 42,
+              "width": 881,
+              "height": 649
+            }
+          },
+          {
+            "width": 881,
+            "height": 649,
+            "rect": {
+              "x": 56,
+              "y": 42,
+              "width": 881,
+              "height": 649
+            }
+          },
+          {
+            "width": 78,
+            "height": 649,
+            "rect": {
+              "x": 937,
+              "y": 42,
+              "width": 78,
+              "height": 649
+            }
+          },
+          {
+            "width": 78,
+            "height": 649,
+            "rect": {
+              "x": 937,
+              "y": 42,
+              "width": 78,
+              "height": 649
+            }
+          },
+          {
+            "width": 881,
+            "height": 296,
+            "rect": {
+              "x": 56,
+              "y": 692,
+              "width": 881,
+              "height": 296
+            }
+          },
+          {
+            "width": 881,
+            "height": 296,
+            "rect": {
+              "x": 56,
+              "y": 692,
+              "width": 881,
+              "height": 296
+            }
+          },
+          {
+            "width": 78,
+            "height": 296,
+            "rect": {
+              "x": 937,
+              "y": 692,
+              "width": 78,
+              "height": 296
+            }
+          },
+          {
+            "width": 78,
+            "height": 296,
+            "rect": {
+              "x": 937,
+              "y": 692,
+              "width": 78,
+              "height": 296
+            }
+          },
+          {
+            "width": 881,
+            "height": 28,
+            "rect": {
+              "x": 56,
+              "y": 988,
+              "width": 881,
+              "height": 28
+            }
+          },
+          {
+            "width": 881,
+            "height": 28,
+            "rect": {
+              "x": 56,
+              "y": 988,
+              "width": 881,
+              "height": 28
+            }
+          },
+          {
+            "width": 78,
+            "height": 28,
+            "rect": {
+              "x": 937,
+              "y": 988,
+              "width": 78,
+              "height": 28
+            }
+          }
+        ],
+        "countdownCandidates": [],
+        "toolbarText": "TVE\n1s\n5s\n10s\n15s\n20s\n30s\n45s\nApply\nReload\nTV: 5S\nبرای بازگردانی چارت، Reload لازم است\n101 معامله · 43 واقعی · 49 کندل"
+      }
+    },
+    {
+      "label": "live-sample",
+      "at": "2026-11-08T19:19:52.978Z",
+      "chartFound": true,
+      "chart": {
+        "symbol": "KCEX:PEPEUSDT.P",
+        "resolution": {
+          "mainSeries": "5S",
+          "source": "5S",
+          "sourceStatus": 3
+        },
+        "bars": {
+          "count": 49,
+          "first": {
+            "index": 0,
+            "value": [
+              1794165345,
+              0.0000050607,
+              0.0000050608,
+              0.0000050607,
+              0.0000050608,
+              12
+            ]
+          },
+          "last": {
+            "index": 48,
+            "value": [
+              1794165585,
+              0.0000050582,
+              0.0000050582,
+              0.0000050582,
+              0.0000050582,
+              2426
+            ]
+          }
+        },
+        "timeScale": {
+          "baseIndex": 48,
+          "rightOffset": 18.421325999999993,
+          "logicalRange": {
+            "left": -18.26119571806572,
+            "right": 66.421326
+          },
+          "visibleBars": {
+            "first": -19,
+            "last": 67
+          },
+          "pointCount": 49,
+          "tickMarkLast": "2026-11-08T19:19:45.000Z",
+          "tickMarkLastSeconds": 1794165585,
+          "tickMarkMatchesLastBar": true
+        },
+        "priceScale": {
+          "type": "Pl",
+          "isEmpty": false,
+          "autoScale": false,
+          "lockScale": false,
+          "range": {
+            "min": 0.000005054509808454989,
+            "max": 0.000005068090191545011
+          },
+          "methods": [
+            "setMode",
+            "isAutoScale",
+            "isLockScale"
+          ]
+        },
+        "renderer": {
+          "paneViewPresent": true,
+          "rendererPresent": true,
+          "rendererType": "i",
+          "rendererCount": 1
+        },
+        "studies": {
+          "count": 0,
+          "items": []
+        },
+        "panes": [
+          {
+            "index": 0,
+            "type": "Hl",
+            "width": 881,
+            "height": 649,
+            "dataSourceCount": 58
+          },
+          {
+            "index": 1,
+            "type": "Hl",
+            "width": 881,
+            "height": 296,
+            "dataSourceCount": 1
+          }
+        ],
+        "canvases": [
+          {
+            "width": 881,
+            "height": 649,
+            "rect": {
+              "x": 56,
+              "y": 42,
+              "width": 881,
+              "height": 649
+            }
+          },
+          {
+            "width": 881,
+            "height": 649,
+            "rect": {
+              "x": 56,
+              "y": 42,
+              "width": 881,
+              "height": 649
+            }
+          },
+          {
+            "width": 78,
+            "height": 649,
+            "rect": {
+              "x": 937,
+              "y": 42,
+              "width": 78,
+              "height": 649
+            }
+          },
+          {
+            "width": 78,
+            "height": 649,
+            "rect": {
+              "x": 937,
+              "y": 42,
+              "width": 78,
+              "height": 649
+            }
+          },
+          {
+            "width": 881,
+            "height": 296,
+            "rect": {
+              "x": 56,
+              "y": 692,
+              "width": 881,
+              "height": 296
+            }
+          },
+          {
+            "width": 881,
+            "height": 296,
+            "rect": {
+              "x": 56,
+              "y": 692,
+              "width": 881,
+              "height": 296
+            }
+          },
+          {
+            "width": 78,
+            "height": 296,
+            "rect": {
+              "x": 937,
+              "y": 692,
+              "width": 78,
+              "height": 296
+            }
+          },
+          {
+            "width": 78,
+            "height": 296,
+            "rect": {
+              "x": 937,
+              "y": 692,
+              "width": 78,
+              "height": 296
+            }
+          },
+          {
+            "width": 881,
+            "height": 28,
+            "rect": {
+              "x": 56,
+              "y": 988,
+              "width": 881,
+              "height": 28
+            }
+          },
+          {
+            "width": 881,
+            "height": 28,
+            "rect": {
+              "x": 56,
+              "y": 988,
+              "width": 881,
+              "height": 28
+            }
+          },
+          {
+            "width": 78,
+            "height": 28,
+            "rect": {
+              "x": 937,
+              "y": 988,
+              "width": 78,
+              "height": 28
+            }
+          }
+        ],
+        "countdownCandidates": [],
+        "toolbarText": "TVE\n1s\n5s\n10s\n15s\n20s\n30s\n45s\nApply\nReload\nTV: 5S\nبرای بازگردانی چارت، Reload لازم است\n101 معامله · 43 واقعی · 49 کندل"
+      }
+    },
+    {
+      "label": "live-sample",
+      "at": "2026-11-08T19:19:53.982Z",
+      "chartFound": true,
+      "chart": {
+        "symbol": "KCEX:PEPEUSDT.P",
+        "resolution": {
+          "mainSeries": "5S",
+          "source": "5S",
+          "sourceStatus": 3
+        },
+        "bars": {
+          "count": 50,
+          "first": {
+            "index": 0,
+            "value": [
+              1794165345,
+              0.0000050607,
+              0.0000050608,
+              0.0000050607,
+              0.0000050608,
+              12
+            ]
+          },
+          "last": {
+            "index": 49,
+            "value": [
+              1794165590,
+              0.0000050584,
+              0.0000050584,
+              0.0000050584,
+              0.0000050584,
+              7021
+            ]
+          }
+        },
+        "timeScale": {
+          "baseIndex": 49,
+          "rightOffset": 18.421325999999993,
+          "logicalRange": {
+            "left": -17.26119571806572,
+            "right": 67.421326
+          },
+          "visibleBars": {
+            "first": -18,
+            "last": 68
+          },
+          "pointCount": 50,
+          "tickMarkLast": "2026-11-08T19:19:50.000Z",
+          "tickMarkLastSeconds": 1794165590,
+          "tickMarkMatchesLastBar": true
+        },
+        "priceScale": {
+          "type": "Pl",
+          "isEmpty": false,
+          "autoScale": false,
+          "lockScale": false,
+          "range": {
+            "min": 0.000005056817155112932,
+            "max": 0.000005065782844887069
+          },
+          "methods": [
+            "setMode",
+            "isAutoScale",
+            "isLockScale"
+          ]
+        },
+        "renderer": {
+          "paneViewPresent": true,
+          "rendererPresent": true,
+          "rendererType": "i",
+          "rendererCount": 1
+        },
+        "studies": {
+          "count": 0,
+          "items": []
+        },
+        "panes": [
+          {
+            "index": 0,
+            "type": "Hl",
+            "width": 881,
+            "height": 649,
+            "dataSourceCount": 58
+          },
+          {
+            "index": 1,
+            "type": "Hl",
+            "width": 881,
+            "height": 296,
+            "dataSourceCount": 1
+          }
+        ],
+        "canvases": [
+          {
+            "width": 881,
+            "height": 649,
+            "rect": {
+              "x": 56,
+              "y": 42,
+              "width": 881,
+              "height": 649
+            }
+          },
+          {
+            "width": 881,
+            "height": 649,
+            "rect": {
+              "x": 56,
+              "y": 42,
+              "width": 881,
+              "height": 649
+            }
+          },
+          {
+            "width": 78,
+            "height": 649,
+            "rect": {
+              "x": 937,
+              "y": 42,
+              "width": 78,
+              "height": 649
+            }
+          },
+          {
+            "width": 78,
+            "height": 649,
+            "rect": {
+              "x": 937,
+              "y": 42,
+              "width": 78,
+              "height": 649
+            }
+          },
+          {
+            "width": 881,
+            "height": 296,
+            "rect": {
+              "x": 56,
+              "y": 692,
+              "width": 881,
+              "height": 296
+            }
+          },
+          {
+            "width": 881,
+            "height": 296,
+            "rect": {
+              "x": 56,
+              "y": 692,
+              "width": 881,
+              "height": 296
+            }
+          },
+          {
+            "width": 78,
+            "height": 296,
+            "rect": {
+              "x": 937,
+              "y": 692,
+              "width": 78,
+              "height": 296
+            }
+          },
+          {
+            "width": 78,
+            "height": 296,
+            "rect": {
+              "x": 937,
+              "y": 692,
+              "width": 78,
+              "height": 296
+            }
+          },
+          {
+            "width": 881,
+            "height": 28,
+            "rect": {
+              "x": 56,
+              "y": 988,
+              "width": 881,
+              "height": 28
+            }
+          },
+          {
+            "width": 881,
+            "height": 28,
+            "rect": {
+              "x": 56,
+              "y": 988,
+              "width": 881,
+              "height": 28
+            }
+          },
+          {
+            "width": 78,
+            "height": 28,
+            "rect": {
+              "x": 937,
+              "y": 988,
+              "width": 78,
+              "height": 28
+            }
+          }
+        ],
+        "countdownCandidates": [],
+        "toolbarText": "TVE\n1s\n5s\n10s\n15s\n20s\n30s\n45s\nApply\nReload\nTV: 5S\nبرای بازگردانی چارت، Reload لازم است\n102 معامله · 44 واقعی · 50 کندل"
+      }
+    },
+    {
+      "label": "live-sample",
+      "at": "2026-11-08T19:19:54.986Z",
+      "chartFound": true,
+      "chart": {
+        "symbol": "KCEX:PEPEUSDT.P",
+        "resolution": {
+          "mainSeries": "5S",
+          "source": "5S",
+          "sourceStatus": 3
+        },
+        "bars": {
+          "count": 50,
+          "first": {
+            "index": 0,
+            "value": [
+              1794165345,
+              0.0000050607,
+              0.0000050608,
+              0.0000050607,
+              0.0000050608,
+              12
+            ]
+          },
+          "last": {
+            "index": 49,
+            "value": [
+              1794165590,
+              0.0000050584,
+              0.0000050584,
+              0.0000050584,
+              0.0000050584,
+              7021
+            ]
+          }
+        },
+        "timeScale": {
+          "baseIndex": 49,
+          "rightOffset": 10.251823000000002,
+          "logicalRange": {
+            "left": -25.430698718065713,
+            "right": 59.251823
+          },
+          "visibleBars": {
+            "first": -26,
+            "last": 60
+          },
+          "pointCount": 50,
+          "tickMarkLast": "2026-11-08T19:19:50.000Z",
+          "tickMarkLastSeconds": 1794165590,
+          "tickMarkMatchesLastBar": true
+        },
+        "priceScale": {
+          "type": "Pl",
+          "isEmpty": false,
+          "autoScale": false,
+          "lockScale": false,
+          "range": {
+            "min": 0.000005049299301396104,
+            "max": 0.000005060374078727916
+          },
+          "methods": [
+            "setMode",
+            "isAutoScale",
+            "isLockScale"
+          ]
+        },
+        "renderer": {
+          "paneViewPresent": true,
+          "rendererPresent": true,
+          "rendererType": "i",
+          "rendererCount": 1
+        },
+        "studies": {
+          "count": 0,
+          "items": []
+        },
+        "panes": [
+          {
+            "index": 0,
+            "type": "Hl",
+            "width": 881,
+            "height": 649,
+            "dataSourceCount": 58
+          },
+          {
+            "index": 1,
+            "type": "Hl",
+            "width": 881,
+            "height": 296,
+            "dataSourceCount": 1
+          }
+        ],
+        "canvases": [
+          {
+            "width": 881,
+            "height": 649,
+            "rect": {
+              "x": 56,
+              "y": 42,
+              "width": 881,
+              "height": 649
+            }
+          },
+          {
+            "width": 881,
+            "height": 649,
+            "rect": {
+              "x": 56,
+              "y": 42,
+              "width": 881,
+              "height": 649
+            }
+          },
+          {
+            "width": 78,
+            "height": 649,
+            "rect": {
+              "x": 937,
+              "y": 42,
+              "width": 78,
+              "height": 649
+            }
+          },
+          {
+            "width": 78,
+            "height": 649,
+            "rect": {
+              "x": 937,
+              "y": 42,
+              "width": 78,
+              "height": 649
+            }
+          },
+          {
+            "width": 881,
+            "height": 296,
+            "rect": {
+              "x": 56,
+              "y": 692,
+              "width": 881,
+              "height": 296
+            }
+          },
+          {
+            "width": 881,
+            "height": 296,
+            "rect": {
+              "x": 56,
+              "y": 692,
+              "width": 881,
+              "height": 296
+            }
+          },
+          {
+            "width": 78,
+            "height": 296,
+            "rect": {
+              "x": 937,
+              "y": 692,
+              "width": 78,
+              "height": 296
+            }
+          },
+          {
+            "width": 78,
+            "height": 296,
+            "rect": {
+              "x": 937,
+              "y": 692,
+              "width": 78,
+              "height": 296
+            }
+          },
+          {
+            "width": 881,
+            "height": 28,
+            "rect": {
+              "x": 56,
+              "y": 988,
+              "width": 881,
+              "height": 28
+            }
+          },
+          {
+            "width": 881,
+            "height": 28,
+            "rect": {
+              "x": 56,
+              "y": 988,
+              "width": 881,
+              "height": 28
+            }
+          },
+          {
+            "width": 78,
+            "height": 28,
+            "rect": {
+              "x": 937,
+              "y": 988,
+              "width": 78,
+              "height": 28
+            }
+          }
+        ],
+        "countdownCandidates": [],
+        "toolbarText": "TVE\n1s\n5s\n10s\n15s\n20s\n30s\n45s\nApply\nReload\nTV: 5S\nبرای بازگردانی چارت، Reload لازم است\n102 معامله · 44 واقعی · 50 کندل"
+      }
+    },
+    {
+      "label": "live-sample",
+      "at": "2026-11-08T19:19:56.001Z",
+      "chartFound": true,
+      "chart": {
+        "symbol": "KCEX:PEPEUSDT.P",
+        "resolution": {
+          "mainSeries": "5S",
+          "source": "5S",
+          "sourceStatus": 3
+        },
+        "bars": {
+          "count": 50,
+          "first": {
+            "index": 0,
+            "value": [
+              1794165345,
+              0.0000050607,
+              0.0000050608,
+              0.0000050607,
+              0.0000050608,
+              12
+            ]
+          },
+          "last": {
+            "index": 49,
+            "value": [
+              1794165590,
+              0.0000050584,
+              0.0000050584,
+              0.0000050584,
+              0.0000050584,
+              7021
+            ]
+          }
+        },
+        "timeScale": {
+          "baseIndex": 49,
+          "rightOffset": 24.159429000000003,
+          "logicalRange": {
+            "left": -11.523092718065712,
+            "right": 73.159429
+          },
+          "visibleBars": {
+            "first": -12,
+            "last": 73
+          },
+          "pointCount": 50,
+          "tickMarkLast": "2026-11-08T19:19:50.000Z",
+          "tickMarkLastSeconds": 1794165590,
+          "tickMarkMatchesLastBar": true
+        },
+        "priceScale": {
+          "type": "Pl",
+          "isEmpty": false,
+          "autoScale": false,
+          "lockScale": false,
+          "range": {
+            "min": 0.000005052426709430616,
+            "max": 0.0000050635014867624275
+          },
+          "methods": [
+            "setMode",
+            "isAutoScale",
+            "isLockScale"
+          ]
+        },
+        "renderer": {
+          "paneViewPresent": true,
+          "rendererPresent": true,
+          "rendererType": "i",
+          "rendererCount": 1
+        },
+        "studies": {
+          "count": 0,
+          "items": []
+        },
+        "panes": [
+          {
+            "index": 0,
+            "type": "Hl",
+            "width": 881,
+            "height": 649,
+            "dataSourceCount": 58
+          },
+          {
+            "index": 1,
+            "type": "Hl",
+            "width": 881,
+            "height": 296,
+            "dataSourceCount": 1
+          }
+        ],
+        "canvases": [
+          {
+            "width": 881,
+            "height": 649,
+            "rect": {
+              "x": 56,
+              "y": 42,
+              "width": 881,
+              "height": 649
+            }
+          },
+          {
+            "width": 881,
+            "height": 649,
+            "rect": {
+              "x": 56,
+              "y": 42,
+              "width": 881,
+              "height": 649
+            }
+          },
+          {
+            "width": 78,
+            "height": 649,
+            "rect": {
+              "x": 937,
+              "y": 42,
+              "width": 78,
+              "height": 649
+            }
+          },
+          {
+            "width": 78,
+            "height": 649,
+            "rect": {
+              "x": 937,
+              "y": 42,
+              "width": 78,
+              "height": 649
+            }
+          },
+          {
+            "width": 881,
+            "height": 296,
+            "rect": {
+              "x": 56,
+              "y": 692,
+              "width": 881,
+              "height": 296
+            }
+          },
+          {
+            "width": 881,
+            "height": 296,
+            "rect": {
+              "x": 56,
+              "y": 692,
+              "width": 881,
+              "height": 296
+            }
+          },
+          {
+            "width": 78,
+            "height": 296,
+            "rect": {
+              "x": 937,
+              "y": 692,
+              "width": 78,
+              "height": 296
+            }
+          },
+          {
+            "width": 78,
+            "height": 296,
+            "rect": {
+              "x": 937,
+              "y": 692,
+              "width": 78,
+              "height": 296
+            }
+          },
+          {
+            "width": 881,
+            "height": 28,
+            "rect": {
+              "x": 56,
+              "y": 988,
+              "width": 881,
+              "height": 28
+            }
+          },
+          {
+            "width": 881,
+            "height": 28,
+            "rect": {
+              "x": 56,
+              "y": 988,
+              "width": 881,
+              "height": 28
+            }
+          },
+          {
+            "width": 78,
+            "height": 28,
+            "rect": {
+              "x": 937,
+              "y": 988,
+              "width": 78,
+              "height": 28
+            }
+          }
+        ],
+        "countdownCandidates": [],
+        "toolbarText": "TVE\n1s\n5s\n10s\n15s\n20s\n30s\n45s\nApply\nReload\nTV: 5S\nبرای بازگردانی چارت، Reload لازم است\n102 معامله · 44 واقعی · 50 کندل"
+      }
+    },
+    {
+      "label": "live-sample",
+      "at": "2026-11-08T19:19:57.013Z",
+      "chartFound": true,
+      "chart": {
+        "symbol": "KCEX:PEPEUSDT.P",
+        "resolution": {
+          "mainSeries": "5S",
+          "source": "5S",
+          "sourceStatus": 3
+        },
+        "bars": {
+          "count": 51,
+          "first": {
+            "index": 0,
+            "value": [
+              1794165345,
+              0.0000050607,
+              0.0000050608,
+              0.0000050607,
+              0.0000050608,
+              12
+            ]
+          },
+          "last": {
+            "index": 50,
+            "value": [
+              1794165595,
+              0.0000050584,
+              0.0000050584,
+              0.0000050584,
+              0.0000050584,
+              1
+            ]
+          }
+        },
+        "timeScale": {
+          "baseIndex": 50,
+          "rightOffset": -25.079539,
+          "logicalRange": {
+            "left": -59.76206071806571,
+            "right": 24.920461
+          },
+          "visibleBars": {
+            "first": -60,
+            "last": 25
+          },
+          "pointCount": 51,
+          "tickMarkLast": "2026-11-08T19:19:55.000Z",
+          "tickMarkLastSeconds": 1794165595,
+          "tickMarkMatchesLastBar": true
+        },
+        "priceScale": {
+          "type": "Pl",
+          "isEmpty": false,
+          "autoScale": false,
+          "lockScale": false,
+          "range": {
+            "min": 0.000005049195054461621,
+            "max": 0.000005060269831793433
+          },
+          "methods": [
+            "setMode",
+            "isAutoScale",
+            "isLockScale"
+          ]
+        },
+        "renderer": {
+          "paneViewPresent": true,
+          "rendererPresent": true,
+          "rendererType": "i",
+          "rendererCount": 1
+        },
+        "studies": {
+          "count": 0,
+          "items": []
+        },
+        "panes": [
+          {
+            "index": 0,
+            "type": "Hl",
+            "width": 881,
+            "height": 649,
+            "dataSourceCount": 58
+          },
+          {
+            "index": 1,
+            "type": "Hl",
+            "width": 881,
+            "height": 296,
+            "dataSourceCount": 1
+          }
+        ],
+        "canvases": [
+          {
+            "width": 881,
+            "height": 649,
+            "rect": {
+              "x": 56,
+              "y": 42,
+              "width": 881,
+              "height": 649
+            }
+          },
+          {
+            "width": 881,
+            "height": 649,
+            "rect": {
+              "x": 56,
+              "y": 42,
+              "width": 881,
+              "height": 649
+            }
+          },
+          {
+            "width": 78,
+            "height": 649,
+            "rect": {
+              "x": 937,
+              "y": 42,
+              "width": 78,
+              "height": 649
+            }
+          },
+          {
+            "width": 78,
+            "height": 649,
+            "rect": {
+              "x": 937,
+              "y": 42,
+              "width": 78,
+              "height": 649
+            }
+          },
+          {
+            "width": 881,
+            "height": 296,
+            "rect": {
+              "x": 56,
+              "y": 692,
+              "width": 881,
+              "height": 296
+            }
+          },
+          {
+            "width": 881,
+            "height": 296,
+            "rect": {
+              "x": 56,
+              "y": 692,
+              "width": 881,
+              "height": 296
+            }
+          },
+          {
+            "width": 78,
+            "height": 296,
+            "rect": {
+              "x": 937,
+              "y": 692,
+              "width": 78,
+              "height": 296
+            }
+          },
+          {
+            "width": 78,
+            "height": 296,
+            "rect": {
+              "x": 937,
+              "y": 692,
+              "width": 78,
+              "height": 296
+            }
+          },
+          {
+            "width": 881,
+            "height": 28,
+            "rect": {
+              "x": 56,
+              "y": 988,
+              "width": 881,
+              "height": 28
+            }
+          },
+          {
+            "width": 881,
+            "height": 28,
+            "rect": {
+              "x": 56,
+              "y": 988,
+              "width": 881,
+              "height": 28
+            }
+          },
+          {
+            "width": 78,
+            "height": 28,
+            "rect": {
+              "x": 937,
+              "y": 988,
+              "width": 78,
+              "height": 28
+            }
+          }
+        ],
+        "countdownCandidates": [],
+        "toolbarText": "TVE\n1s\n5s\n10s\n15s\n20s\n30s\n45s\nApply\nReload\nTV: 5S\nبرای بازگردانی چارت، Reload لازم است\n103 معامله · 45 واقعی · 51 کندل"
+      }
+    },
+    {
+      "label": "live-sample",
+      "at": "2026-11-08T19:19:58.052Z",
+      "chartFound": true,
+      "chart": {
+        "symbol": "KCEX:PEPEUSDT.P",
+        "resolution": {
+          "mainSeries": "5S",
+          "source": "5S",
+          "sourceStatus": 3
+        },
+        "bars": {
+          "count": 51,
+          "first": {
+            "index": 0,
+            "value": [
+              1794165345,
+              0.0000050607,
+              0.0000050608,
+              0.0000050607,
+              0.0000050608,
+              12
+            ]
+          },
+          "last": {
+            "index": 50,
+            "value": [
+              1794165595,
+              0.0000050584,
+              0.0000050584,
+              0.0000050584,
+              0.0000050584,
+              1
+            ]
+          }
+        },
+        "timeScale": {
+          "baseIndex": 50,
+          "rightOffset": -20.800275,
+          "logicalRange": {
+            "left": -55.482796718065714,
+            "right": 29.199725
+          },
+          "visibleBars": {
+            "first": -56,
+            "last": 30
+          },
+          "pointCount": 51,
+          "tickMarkLast": "2026-11-08T19:19:55.000Z",
+          "tickMarkLastSeconds": 1794165595,
+          "tickMarkMatchesLastBar": true
+        },
+        "priceScale": {
+          "type": "Pl",
+          "isEmpty": false,
+          "autoScale": false,
+          "lockScale": false,
+          "range": {
+            "min": 0.000005054928635858225,
+            "max": 0.000005066003413190037
+          },
+          "methods": [
+            "setMode",
+            "isAutoScale",
+            "isLockScale"
+          ]
+        },
+        "renderer": {
+          "paneViewPresent": true,
+          "rendererPresent": true,
+          "rendererType": "i",
+          "rendererCount": 1
+        },
+        "studies": {
+          "count": 0,
+          "items": []
+        },
+        "panes": [
+          {
+            "index": 0,
+            "type": "Hl",
+            "width": 881,
+            "height": 649,
+            "dataSourceCount": 58
+          },
+          {
+            "index": 1,
+            "type": "Hl",
+            "width": 881,
+            "height": 296,
+            "dataSourceCount": 1
+          }
+        ],
+        "canvases": [
+          {
+            "width": 881,
+            "height": 649,
+            "rect": {
+              "x": 56,
+              "y": 42,
+              "width": 881,
+              "height": 649
+            }
+          },
+          {
+            "width": 881,
+            "height": 649,
+            "rect": {
+              "x": 56,
+              "y": 42,
+              "width": 881,
+              "height": 649
+            }
+          },
+          {
+            "width": 78,
+            "height": 649,
+            "rect": {
+              "x": 937,
+              "y": 42,
+              "width": 78,
+              "height": 649
+            }
+          },
+          {
+            "width": 78,
+            "height": 649,
+            "rect": {
+              "x": 937,
+              "y": 42,
+              "width": 78,
+              "height": 649
+            }
+          },
+          {
+            "width": 881,
+            "height": 296,
+            "rect": {
+              "x": 56,
+              "y": 692,
+              "width": 881,
+              "height": 296
+            }
+          },
+          {
+            "width": 881,
+            "height": 296,
+            "rect": {
+              "x": 56,
+              "y": 692,
+              "width": 881,
+              "height": 296
+            }
+          },
+          {
+            "width": 78,
+            "height": 296,
+            "rect": {
+              "x": 937,
+              "y": 692,
+              "width": 78,
+              "height": 296
+            }
+          },
+          {
+            "width": 78,
+            "height": 296,
+            "rect": {
+              "x": 937,
+              "y": 692,
+              "width": 78,
+              "height": 296
+            }
+          },
+          {
+            "width": 881,
+            "height": 28,
+            "rect": {
+              "x": 56,
+              "y": 988,
+              "width": 881,
+              "height": 28
+            }
+          },
+          {
+            "width": 881,
+            "height": 28,
+            "rect": {
+              "x": 56,
+              "y": 988,
+              "width": 881,
+              "height": 28
+            }
+          },
+          {
+            "width": 78,
+            "height": 28,
+            "rect": {
+              "x": 937,
+              "y": 988,
+              "width": 78,
+              "height": 28
+            }
+          }
+        ],
+        "countdownCandidates": [],
+        "toolbarText": "TVE\n1s\n5s\n10s\n15s\n20s\n30s\n45s\nApply\nReload\nTV: 5S\nبرای بازگردانی چارت، Reload لازم است\n103 معامله · 45 واقعی · 51 کندل"
+      }
+    },
+    {
+      "label": "live-sample",
+      "at": "2026-11-08T19:19:59.058Z",
+      "chartFound": true,
+      "chart": {
+        "symbol": "KCEX:PEPEUSDT.P",
+        "resolution": {
+          "mainSeries": "5S",
+          "source": "5S",
+          "sourceStatus": 3
+        },
+        "bars": {
+          "count": 51,
+          "first": {
+            "index": 0,
+            "value": [
+              1794165345,
+              0.0000050607,
+              0.0000050608,
+              0.0000050607,
+              0.0000050608,
+              12
+            ]
+          },
+          "last": {
+            "index": 50,
+            "value": [
+              1794165595,
+              0.0000050584,
+              0.0000050584,
+              0.0000050584,
+              0.0000050584,
+              1
+            ]
+          }
+        },
+        "timeScale": {
+          "baseIndex": 50,
+          "rightOffset": -13.408819999999999,
+          "logicalRange": {
+            "left": -48.091341718065706,
+            "right": 36.59118
+          },
+          "visibleBars": {
+            "first": -48,
+            "last": 37
+          },
+          "pointCount": 51,
+          "tickMarkLast": "2026-11-08T19:19:55.000Z",
+          "tickMarkLastSeconds": 1794165595,
+          "tickMarkMatchesLastBar": true
+        },
+        "priceScale": {
+          "type": "Pl",
+          "isEmpty": false,
+          "autoScale": false,
+          "lockScale": false,
+          "range": {
+            "min": 0.00000506187148169484,
+            "max": 0.000005072946259026651
+          },
+          "methods": [
+            "setMode",
+            "isAutoScale",
+            "isLockScale"
+          ]
+        },
+        "renderer": {
+          "paneViewPresent": true,
+          "rendererPresent": true,
+          "rendererType": "i",
+          "rendererCount": 1
+        },
+        "studies": {
+          "count": 0,
+          "items": []
+        },
+        "panes": [
+          {
+            "index": 0,
+            "type": "Hl",
+            "width": 881,
+            "height": 649,
+            "dataSourceCount": 58
+          },
+          {
+            "index": 1,
+            "type": "Hl",
+            "width": 881,
+            "height": 296,
+            "dataSourceCount": 1
+          }
+        ],
+        "canvases": [
+          {
+            "width": 881,
+            "height": 649,
+            "rect": {
+              "x": 56,
+              "y": 42,
+              "width": 881,
+              "height": 649
+            }
+          },
+          {
+            "width": 881,
+            "height": 649,
+            "rect": {
+              "x": 56,
+              "y": 42,
+              "width": 881,
+              "height": 649
+            }
+          },
+          {
+            "width": 78,
+            "height": 649,
+            "rect": {
+              "x": 937,
+              "y": 42,
+              "width": 78,
+              "height": 649
+            }
+          },
+          {
+            "width": 78,
+            "height": 649,
+            "rect": {
+              "x": 937,
+              "y": 42,
+              "width": 78,
+              "height": 649
+            }
+          },
+          {
+            "width": 881,
+            "height": 296,
+            "rect": {
+              "x": 56,
+              "y": 692,
+              "width": 881,
+              "height": 296
+            }
+          },
+          {
+            "width": 881,
+            "height": 296,
+            "rect": {
+              "x": 56,
+              "y": 692,
+              "width": 881,
+              "height": 296
+            }
+          },
+          {
+            "width": 78,
+            "height": 296,
+            "rect": {
+              "x": 937,
+              "y": 692,
+              "width": 78,
+              "height": 296
+            }
+          },
+          {
+            "width": 78,
+            "height": 296,
+            "rect": {
+              "x": 937,
+              "y": 692,
+              "width": 78,
+              "height": 296
+            }
+          },
+          {
+            "width": 881,
+            "height": 28,
+            "rect": {
+              "x": 56,
+              "y": 988,
+              "width": 881,
+              "height": 28
+            }
+          },
+          {
+            "width": 881,
+            "height": 28,
+            "rect": {
+              "x": 56,
+              "y": 988,
+              "width": 881,
+              "height": 28
+            }
+          },
+          {
+            "width": 78,
+            "height": 28,
+            "rect": {
+              "x": 937,
+              "y": 988,
+              "width": 78,
+              "height": 28
+            }
+          }
+        ],
+        "countdownCandidates": [],
+        "toolbarText": "TVE\n1s\n5s\n10s\n15s\n20s\n30s\n45s\nApply\nReload\nTV: 5S\nبرای بازگردانی چارت، Reload لازم است\n104 معامله · 45 واقعی · 51 کندل"
+      }
+    },
+    {
+      "label": "live-sample",
+      "at": "2026-11-08T19:20:00.062Z",
+      "chartFound": true,
+      "chart": {
+        "symbol": "KCEX:PEPEUSDT.P",
+        "resolution": {
+          "mainSeries": "5S",
+          "source": "5S",
+          "sourceStatus": 3
+        },
+        "bars": {
+          "count": 51,
+          "first": {
+            "index": 0,
+            "value": [
+              1794165345,
+              0.0000050607,
+              0.0000050608,
+              0.0000050607,
+              0.0000050608,
+              12
+            ]
+          },
+          "last": {
+            "index": 50,
+            "value": [
+              1794165595,
+              0.0000050584,
+              0.0000050584,
+              0.0000050583,
+              0.0000050583,
+              2
+            ]
+          }
+        },
+        "timeScale": {
+          "baseIndex": 50,
+          "rightOffset": -16.521011,
+          "logicalRange": {
+            "left": -51.203532718065716,
+            "right": 33.478989
+          },
+          "visibleBars": {
+            "first": -52,
+            "last": 34
+          },
+          "pointCount": 51,
+          "tickMarkLast": "2026-11-08T19:19:55.000Z",
+          "tickMarkLastSeconds": 1794165595,
+          "tickMarkMatchesLastBar": true
+        },
+        "priceScale": {
+          "type": "Pl",
+          "isEmpty": false,
+          "autoScale": false,
+          "lockScale": false,
+          "range": {
+            "min": 0.0000050567216831313445,
+            "max": 0.000005067796460463156
+          },
+          "methods": [
+            "setMode",
+            "isAutoScale",
+            "isLockScale"
+          ]
+        },
+        "renderer": {
+          "paneViewPresent": true,
+          "rendererPresent": true,
+          "rendererType": "i",
+          "rendererCount": 1
+        },
+        "studies": {
+          "count": 0,
+          "items": []
+        },
+        "panes": [
+          {
+            "index": 0,
+            "type": "Hl",
+            "width": 881,
+            "height": 649,
+            "dataSourceCount": 58
+          },
+          {
+            "index": 1,
+            "type": "Hl",
+            "width": 881,
+            "height": 296,
+            "dataSourceCount": 1
+          }
+        ],
+        "canvases": [
+          {
+            "width": 881,
+            "height": 649,
+            "rect": {
+              "x": 56,
+              "y": 42,
+              "width": 881,
+              "height": 649
+            }
+          },
+          {
+            "width": 881,
+            "height": 649,
+            "rect": {
+              "x": 56,
+              "y": 42,
+              "width": 881,
+              "height": 649
+            }
+          },
+          {
+            "width": 78,
+            "height": 649,
+            "rect": {
+              "x": 937,
+              "y": 42,
+              "width": 78,
+              "height": 649
+            }
+          },
+          {
+            "width": 78,
+            "height": 649,
+            "rect": {
+              "x": 937,
+              "y": 42,
+              "width": 78,
+              "height": 649
+            }
+          },
+          {
+            "width": 881,
+            "height": 296,
+            "rect": {
+              "x": 56,
+              "y": 692,
+              "width": 881,
+              "height": 296
+            }
+          },
+          {
+            "width": 881,
+            "height": 296,
+            "rect": {
+              "x": 56,
+              "y": 692,
+              "width": 881,
+              "height": 296
+            }
+          },
+          {
+            "width": 78,
+            "height": 296,
+            "rect": {
+              "x": 937,
+              "y": 692,
+              "width": 78,
+              "height": 296
+            }
+          },
+          {
+            "width": 78,
+            "height": 296,
+            "rect": {
+              "x": 937,
+              "y": 692,
+              "width": 78,
+              "height": 296
+            }
+          },
+          {
+            "width": 881,
+            "height": 28,
+            "rect": {
+              "x": 56,
+              "y": 988,
+              "width": 881,
+              "height": 28
+            }
+          },
+          {
+            "width": 881,
+            "height": 28,
+            "rect": {
+              "x": 56,
+              "y": 988,
+              "width": 881,
+              "height": 28
+            }
+          },
+          {
+            "width": 78,
+            "height": 28,
+            "rect": {
+              "x": 937,
+              "y": 988,
+              "width": 78,
+              "height": 28
+            }
+          }
+        ],
+        "countdownCandidates": [],
+        "toolbarText": "TVE\n1s\n5s\n10s\n15s\n20s\n30s\n45s\nApply\nReload\nTV: 5S\nبرای بازگردانی چارت، Reload لازم است\n104 معامله · 45 واقعی · 51 کندل"
+      }
+    },
+    {
+      "label": "live-sample",
+      "at": "2026-11-08T19:20:01.067Z",
+      "chartFound": true,
+      "chart": {
+        "symbol": "KCEX:PEPEUSDT.P",
+        "resolution": {
+          "mainSeries": "5S",
+          "source": "5S",
+          "sourceStatus": 3
+        },
+        "bars": {
+          "count": 51,
+          "first": {
+            "index": 0,
+            "value": [
+              1794165345,
+              0.0000050607,
+              0.0000050608,
+              0.0000050607,
+              0.0000050608,
+              12
+            ]
+          },
+          "last": {
+            "index": 50,
+            "value": [
+              1794165595,
+              0.0000050584,
+              0.0000050584,
+              0.0000050583,
+              0.0000050583,
+              2
+            ]
+          }
+        },
+        "timeScale": {
+          "baseIndex": 50,
+          "rightOffset": -16.521011,
+          "logicalRange": {
+            "left": -51.203532718065716,
+            "right": 33.478989
+          },
+          "visibleBars": {
+            "first": -52,
+            "last": 34
+          },
+          "pointCount": 51,
+          "tickMarkLast": "2026-11-08T19:19:55.000Z",
+          "tickMarkLastSeconds": 1794165595,
+          "tickMarkMatchesLastBar": true
+        },
+        "priceScale": {
+          "type": "Pl",
+          "isEmpty": false,
+          "autoScale": false,
+          "lockScale": false,
+          "range": {
+            "min": 0.0000050567216831313445,
+            "max": 0.000005067796460463156
+          },
+          "methods": [
+            "setMode",
+            "isAutoScale",
+            "isLockScale"
+          ]
+        },
+        "renderer": {
+          "paneViewPresent": true,
+          "rendererPresent": true,
+          "rendererType": "i",
+          "rendererCount": 1
+        },
+        "studies": {
+          "count": 0,
+          "items": []
+        },
+        "panes": [
+          {
+            "index": 0,
+            "type": "Hl",
+            "width": 881,
+            "height": 649,
+            "dataSourceCount": 58
+          },
+          {
+            "index": 1,
+            "type": "Hl",
+            "width": 881,
+            "height": 296,
+            "dataSourceCount": 1
+          }
+        ],
+        "canvases": [
+          {
+            "width": 881,
+            "height": 649,
+            "rect": {
+              "x": 56,
+              "y": 42,
+              "width": 881,
+              "height": 649
+            }
+          },
+          {
+            "width": 881,
+            "height": 649,
+            "rect": {
+              "x": 56,
+              "y": 42,
+              "width": 881,
+              "height": 649
+            }
+          },
+          {
+            "width": 78,
+            "height": 649,
+            "rect": {
+              "x": 937,
+              "y": 42,
+              "width": 78,
+              "height": 649
+            }
+          },
+          {
+            "width": 78,
+            "height": 649,
+            "rect": {
+              "x": 937,
+              "y": 42,
+              "width": 78,
+              "height": 649
+            }
+          },
+          {
+            "width": 881,
+            "height": 296,
+            "rect": {
+              "x": 56,
+              "y": 692,
+              "width": 881,
+              "height": 296
+            }
+          },
+          {
+            "width": 881,
+            "height": 296,
+            "rect": {
+              "x": 56,
+              "y": 692,
+              "width": 881,
+              "height": 296
+            }
+          },
+          {
+            "width": 78,
+            "height": 296,
+            "rect": {
+              "x": 937,
+              "y": 692,
+              "width": 78,
+              "height": 296
+            }
+          },
+          {
+            "width": 78,
+            "height": 296,
+            "rect": {
+              "x": 937,
+              "y": 692,
+              "width": 78,
+              "height": 296
+            }
+          },
+          {
+            "width": 881,
+            "height": 28,
+            "rect": {
+              "x": 56,
+              "y": 988,
+              "width": 881,
+              "height": 28
+            }
+          },
+          {
+            "width": 881,
+            "height": 28,
+            "rect": {
+              "x": 56,
+              "y": 988,
+              "width": 881,
+              "height": 28
+            }
+          },
+          {
+            "width": 78,
+            "height": 28,
+            "rect": {
+              "x": 937,
+              "y": 988,
+              "width": 78,
+              "height": 28
+            }
+          }
+        ],
+        "countdownCandidates": [],
+        "toolbarText": "TVE\n1s\n5s\n10s\n15s\n20s\n30s\n45s\nApply\nReload\nTV: 5S\nبرای بازگردانی چارت، Reload لازم است\n104 معامله · 45 واقعی · 51 کندل"
+      }
+    },
+    {
+      "label": "live-sample",
+      "at": "2026-11-08T19:20:02.072Z",
+      "chartFound": true,
+      "chart": {
+        "symbol": "KCEX:PEPEUSDT.P",
+        "resolution": {
+          "mainSeries": "5S",
+          "source": "5S",
+          "sourceStatus": 3
+        },
+        "bars": {
+          "count": 51,
+          "first": {
+            "index": 0,
+            "value": [
+              1794165345,
+              0.0000050607,
+              0.0000050608,
+              0.0000050607,
+              0.0000050608,
+              12
+            ]
+          },
+          "last": {
+            "index": 50,
+            "value": [
+              1794165595,
+              0.0000050584,
+              0.0000050584,
+              0.0000050583,
+              0.0000050583,
+              2
+            ]
+          }
+        },
+        "timeScale": {
+          "baseIndex": 50,
+          "rightOffset": -19.341435,
+          "logicalRange": {
+            "left": -54.02395671806572,
+            "right": 30.658565
+          },
+          "visibleBars": {
+            "first": -54,
+            "last": 31
+          },
+          "pointCount": 51,
+          "tickMarkLast": "2026-11-08T19:19:55.000Z",
+          "tickMarkLastSeconds": 1794165595,
+          "tickMarkMatchesLastBar": true
+        },
+        "priceScale": {
+          "type": "Pl",
+          "isEmpty": false,
+          "autoScale": false,
+          "lockScale": false,
+          "range": {
+            "min": 0.000005050300071967148,
+            "max": 0.0000050613748492989595
+          },
+          "methods": [
+            "setMode",
+            "isAutoScale",
+            "isLockScale"
+          ]
+        },
+        "renderer": {
+          "paneViewPresent": true,
+          "rendererPresent": true,
+          "rendererType": "i",
+          "rendererCount": 1
+        },
+        "studies": {
+          "count": 0,
+          "items": []
+        },
+        "panes": [
+          {
+            "index": 0,
+            "type": "Hl",
+            "width": 881,
+            "height": 649,
+            "dataSourceCount": 58
+          },
+          {
+            "index": 1,
+            "type": "Hl",
+            "width": 881,
+            "height": 296,
+            "dataSourceCount": 1
+          }
+        ],
+        "canvases": [
+          {
+            "width": 881,
+            "height": 649,
+            "rect": {
+              "x": 56,
+              "y": 42,
+              "width": 881,
+              "height": 649
+            }
+          },
+          {
+            "width": 881,
+            "height": 649,
+            "rect": {
+              "x": 56,
+              "y": 42,
+              "width": 881,
+              "height": 649
+            }
+          },
+          {
+            "width": 78,
+            "height": 649,
+            "rect": {
+              "x": 937,
+              "y": 42,
+              "width": 78,
+              "height": 649
+            }
+          },
+          {
+            "width": 78,
+            "height": 649,
+            "rect": {
+              "x": 937,
+              "y": 42,
+              "width": 78,
+              "height": 649
+            }
+          },
+          {
+            "width": 881,
+            "height": 296,
+            "rect": {
+              "x": 56,
+              "y": 692,
+              "width": 881,
+              "height": 296
+            }
+          },
+          {
+            "width": 881,
+            "height": 296,
+            "rect": {
+              "x": 56,
+              "y": 692,
+              "width": 881,
+              "height": 296
+            }
+          },
+          {
+            "width": 78,
+            "height": 296,
+            "rect": {
+              "x": 937,
+              "y": 692,
+              "width": 78,
+              "height": 296
+            }
+          },
+          {
+            "width": 78,
+            "height": 296,
+            "rect": {
+              "x": 937,
+              "y": 692,
+              "width": 78,
+              "height": 296
+            }
+          },
+          {
+            "width": 881,
+            "height": 28,
+            "rect": {
+              "x": 56,
+              "y": 988,
+              "width": 881,
+              "height": 28
+            }
+          },
+          {
+            "width": 881,
+            "height": 28,
+            "rect": {
+              "x": 56,
+              "y": 988,
+              "width": 881,
+              "height": 28
+            }
+          },
+          {
+            "width": 78,
+            "height": 28,
+            "rect": {
+              "x": 937,
+              "y": 988,
+              "width": 78,
+              "height": 28
+            }
+          }
+        ],
+        "countdownCandidates": [],
+        "toolbarText": "TVE\n1s\n5s\n10s\n15s\n20s\n30s\n45s\nApply\nReload\nTV: 5S\nبرای بازگردانی چارت، Reload لازم است\n104 معامله · 45 واقعی · 51 کندل"
+      }
+    },
+    {
+      "label": "live-sample",
+      "at": "2026-11-08T19:20:03.079Z",
+      "chartFound": true,
+      "chart": {
+        "symbol": "KCEX:PEPEUSDT.P",
+        "resolution": {
+          "mainSeries": "5S",
+          "source": "5S",
+          "sourceStatus": 3
+        },
+        "bars": {
+          "count": 52,
+          "first": {
+            "index": 0,
+            "value": [
+              1794165345,
+              0.0000050607,
+              0.0000050608,
+              0.0000050607,
+              0.0000050608,
+              12
+            ]
+          },
+          "last": {
+            "index": 51,
+            "value": [
+              1794165600,
+              0.0000050584,
+              0.0000050584,
+              0.0000050584,
+              0.0000050584,
+              254
+            ]
+          }
+        },
+        "timeScale": {
+          "baseIndex": 51,
+          "rightOffset": -21.119483,
+          "logicalRange": {
+            "left": -54.80200471806572,
+            "right": 29.880517
+          },
+          "visibleBars": {
+            "first": -55,
+            "last": 30
+          },
+          "pointCount": 52,
+          "tickMarkLast": "2026-11-08T19:20:00.000Z",
+          "tickMarkLastSeconds": 1794165600,
+          "tickMarkMatchesLastBar": true
+        },
+        "priceScale": {
+          "type": "Pl",
+          "isEmpty": false,
+          "autoScale": false,
+          "lockScale": false,
+          "range": {
+            "min": 0.000005051238294377502,
+            "max": 0.000005062313071709313
+          },
+          "methods": [
+            "setMode",
+            "isAutoScale",
+            "isLockScale"
+          ]
+        },
+        "renderer": {
+          "paneViewPresent": true,
+          "rendererPresent": true,
+          "rendererType": "i",
+          "rendererCount": 1
+        },
+        "studies": {
+          "count": 0,
+          "items": []
+        },
+        "panes": [
+          {
+            "index": 0,
+            "type": "Hl",
+            "width": 881,
+            "height": 649,
+            "dataSourceCount": 58
+          },
+          {
+            "index": 1,
+            "type": "Hl",
+            "width": 881,
+            "height": 296,
+            "dataSourceCount": 1
+          }
+        ],
+        "canvases": [
+          {
+            "width": 881,
+            "height": 649,
+            "rect": {
+              "x": 56,
+              "y": 42,
+              "width": 881,
+              "height": 649
+            }
+          },
+          {
+            "width": 881,
+            "height": 649,
+            "rect": {
+              "x": 56,
+              "y": 42,
+              "width": 881,
+              "height": 649
+            }
+          },
+          {
+            "width": 78,
+            "height": 649,
+            "rect": {
+              "x": 937,
+              "y": 42,
+              "width": 78,
+              "height": 649
+            }
+          },
+          {
+            "width": 78,
+            "height": 649,
+            "rect": {
+              "x": 937,
+              "y": 42,
+              "width": 78,
+              "height": 649
+            }
+          },
+          {
+            "width": 881,
+            "height": 296,
+            "rect": {
+              "x": 56,
+              "y": 692,
+              "width": 881,
+              "height": 296
+            }
+          },
+          {
+            "width": 881,
+            "height": 296,
+            "rect": {
+              "x": 56,
+              "y": 692,
+              "width": 881,
+              "height": 296
+            }
+          },
+          {
+            "width": 78,
+            "height": 296,
+            "rect": {
+              "x": 937,
+              "y": 692,
+              "width": 78,
+              "height": 296
+            }
+          },
+          {
+            "width": 78,
+            "height": 296,
+            "rect": {
+              "x": 937,
+              "y": 692,
+              "width": 78,
+              "height": 296
+            }
+          },
+          {
+            "width": 881,
+            "height": 28,
+            "rect": {
+              "x": 56,
+              "y": 988,
+              "width": 881,
+              "height": 28
+            }
+          },
+          {
+            "width": 881,
+            "height": 28,
+            "rect": {
+              "x": 56,
+              "y": 988,
+              "width": 881,
+              "height": 28
+            }
+          },
+          {
+            "width": 78,
+            "height": 28,
+            "rect": {
+              "x": 937,
+              "y": 988,
+              "width": 78,
+              "height": 28
+            }
+          }
+        ],
+        "countdownCandidates": [],
+        "toolbarText": "TVE\n1s\n5s\n10s\n15s\n20s\n30s\n45s\nApply\nReload\nTV: 5S\nبرای بازگردانی چارت، Reload لازم است\n105 معامله · 46 واقعی · 52 کندل"
+      }
+    },
+    {
+      "label": "live-sample",
+      "at": "2026-11-08T19:20:04.083Z",
+      "chartFound": true,
+      "chart": {
+        "symbol": "KCEX:PEPEUSDT.P",
+        "resolution": {
+          "mainSeries": "5S",
+          "source": "5S",
+          "sourceStatus": 3
+        },
+        "bars": {
+          "count": 52,
+          "first": {
+            "index": 0,
+            "value": [
+              1794165345,
+              0.0000050607,
+              0.0000050608,
+              0.0000050607,
+              0.0000050608,
+              12
+            ]
+          },
+          "last": {
+            "index": 51,
+            "value": [
+              1794165600,
+              0.0000050584,
+              0.0000050584,
+              0.0000050584,
+              0.0000050584,
+              254
+            ]
+          }
+        },
+        "timeScale": {
+          "baseIndex": 51,
+          "rightOffset": -16.256684,
+          "logicalRange": {
+            "left": -49.93920571806572,
+            "right": 34.743316
+          },
+          "visibleBars": {
+            "first": -50,
+            "last": 35
+          },
+          "pointCount": 52,
+          "tickMarkLast": "2026-11-08T19:20:00.000Z",
+          "tickMarkLastSeconds": 1794165600,
+          "tickMarkMatchesLastBar": true
+        },
+        "priceScale": {
+          "type": "Pl",
+          "isEmpty": false,
+          "autoScale": false,
+          "lockScale": false,
+          "range": {
+            "min": 0.000005057743303089286,
+            "max": 0.000005068818080421097
+          },
+          "methods": [
+            "setMode",
+            "isAutoScale",
+            "isLockScale"
+          ]
+        },
+        "renderer": {
+          "paneViewPresent": true,
+          "rendererPresent": true,
+          "rendererType": "i",
+          "rendererCount": 1
+        },
+        "studies": {
+          "count": 0,
+          "items": []
+        },
+        "panes": [
+          {
+            "index": 0,
+            "type": "Hl",
+            "width": 881,
+            "height": 649,
+            "dataSourceCount": 58
+          },
+          {
+            "index": 1,
+            "type": "Hl",
+            "width": 881,
+            "height": 296,
+            "dataSourceCount": 1
+          }
+        ],
+        "canvases": [
+          {
+            "width": 881,
+            "height": 649,
+            "rect": {
+              "x": 56,
+              "y": 42,
+              "width": 881,
+              "height": 649
+            }
+          },
+          {
+            "width": 881,
+            "height": 649,
+            "rect": {
+              "x": 56,
+              "y": 42,
+              "width": 881,
+              "height": 649
+            }
+          },
+          {
+            "width": 78,
+            "height": 649,
+            "rect": {
+              "x": 937,
+              "y": 42,
+              "width": 78,
+              "height": 649
+            }
+          },
+          {
+            "width": 78,
+            "height": 649,
+            "rect": {
+              "x": 937,
+              "y": 42,
+              "width": 78,
+              "height": 649
+            }
+          },
+          {
+            "width": 881,
+            "height": 296,
+            "rect": {
+              "x": 56,
+              "y": 692,
+              "width": 881,
+              "height": 296
+            }
+          },
+          {
+            "width": 881,
+            "height": 296,
+            "rect": {
+              "x": 56,
+              "y": 692,
+              "width": 881,
+              "height": 296
+            }
+          },
+          {
+            "width": 78,
+            "height": 296,
+            "rect": {
+              "x": 937,
+              "y": 692,
+              "width": 78,
+              "height": 296
+            }
+          },
+          {
+            "width": 78,
+            "height": 296,
+            "rect": {
+              "x": 937,
+              "y": 692,
+              "width": 78,
+              "height": 296
+            }
+          },
+          {
+            "width": 881,
+            "height": 28,
+            "rect": {
+              "x": 56,
+              "y": 988,
+              "width": 881,
+              "height": 28
+            }
+          },
+          {
+            "width": 881,
+            "height": 28,
+            "rect": {
+              "x": 56,
+              "y": 988,
+              "width": 881,
+              "height": 28
+            }
+          },
+          {
+            "width": 78,
+            "height": 28,
+            "rect": {
+              "x": 937,
+              "y": 988,
+              "width": 78,
+              "height": 28
+            }
+          }
+        ],
+        "countdownCandidates": [],
+        "toolbarText": "TVE\n1s\n5s\n10s\n15s\n20s\n30s\n45s\nApply\nReload\nTV: 5S\nبرای بازگردانی چارت، Reload لازم است\n105 معامله · 46 واقعی · 52 کندل"
+      }
+    },
+    {
+      "label": "live-sample",
+      "at": "2026-11-08T19:20:05.093Z",
+      "chartFound": true,
+      "chart": {
+        "symbol": "KCEX:PEPEUSDT.P",
+        "resolution": {
+          "mainSeries": "5S",
+          "source": "5S",
+          "sourceStatus": 3
+        },
+        "bars": {
+          "count": 52,
+          "first": {
+            "index": 0,
+            "value": [
+              1794165345,
+              0.0000050607,
+              0.0000050608,
+              0.0000050607,
+              0.0000050608,
+              12
+            ]
+          },
+          "last": {
+            "index": 51,
+            "value": [
+              1794165600,
+              0.0000050584,
+              0.0000050584,
+              0.0000050579,
+              0.0000050579,
+              447
+            ]
+          }
+        },
+        "timeScale": {
+          "baseIndex": 51,
+          "rightOffset": -45.238967,
+          "logicalRange": {
+            "left": -78.92148871806572,
+            "right": 5.761032999999998
+          },
+          "visibleBars": {
+            "first": -79,
+            "last": 6
+          },
+          "pointCount": 52,
+          "tickMarkLast": "2026-11-08T19:20:00.000Z",
+          "tickMarkLastSeconds": 1794165600,
+          "tickMarkMatchesLastBar": true
+        },
+        "priceScale": {
+          "type": "Pl",
+          "isEmpty": false,
+          "autoScale": false,
+          "lockScale": false,
+          "range": {
+            "min": 0.000005060578819707243,
+            "max": 0.000005071653597039054
+          },
+          "methods": [
+            "setMode",
+            "isAutoScale",
+            "isLockScale"
+          ]
+        },
+        "renderer": {
+          "paneViewPresent": true,
+          "rendererPresent": true,
+          "rendererType": "i",
+          "rendererCount": 1
+        },
+        "studies": {
+          "count": 0,
+          "items": []
+        },
+        "panes": [
+          {
+            "index": 0,
+            "type": "Hl",
+            "width": 881,
+            "height": 649,
+            "dataSourceCount": 58
+          },
+          {
+            "index": 1,
+            "type": "Hl",
+            "width": 881,
+            "height": 296,
+            "dataSourceCount": 1
+          }
+        ],
+        "canvases": [
+          {
+            "width": 881,
+            "height": 649,
+            "rect": {
+              "x": 56,
+              "y": 42,
+              "width": 881,
+              "height": 649
+            }
+          },
+          {
+            "width": 881,
+            "height": 649,
+            "rect": {
+              "x": 56,
+              "y": 42,
+              "width": 881,
+              "height": 649
+            }
+          },
+          {
+            "width": 78,
+            "height": 649,
+            "rect": {
+              "x": 937,
+              "y": 42,
+              "width": 78,
+              "height": 649
+            }
+          },
+          {
+            "width": 78,
+            "height": 649,
+            "rect": {
+              "x": 937,
+              "y": 42,
+              "width": 78,
+              "height": 649
+            }
+          },
+          {
+            "width": 881,
+            "height": 296,
+            "rect": {
+              "x": 56,
+              "y": 692,
+              "width": 881,
+              "height": 296
+            }
+          },
+          {
+            "width": 881,
+            "height": 296,
+            "rect": {
+              "x": 56,
+              "y": 692,
+              "width": 881,
+              "height": 296
+            }
+          },
+          {
+            "width": 78,
+            "height": 296,
+            "rect": {
+              "x": 937,
+              "y": 692,
+              "width": 78,
+              "height": 296
+            }
+          },
+          {
+            "width": 78,
+            "height": 296,
+            "rect": {
+              "x": 937,
+              "y": 692,
+              "width": 78,
+              "height": 296
+            }
+          },
+          {
+            "width": 881,
+            "height": 28,
+            "rect": {
+              "x": 56,
+              "y": 988,
+              "width": 881,
+              "height": 28
+            }
+          },
+          {
+            "width": 881,
+            "height": 28,
+            "rect": {
+              "x": 56,
+              "y": 988,
+              "width": 881,
+              "height": 28
+            }
+          },
+          {
+            "width": 78,
+            "height": 28,
+            "rect": {
+              "x": 937,
+              "y": 988,
+              "width": 78,
+              "height": 28
+            }
+          }
+        ],
+        "countdownCandidates": [],
+        "toolbarText": "TVE\n1s\n5s\n10s\n15s\n20s\n30s\n45s\nApply\nReload\nTV: 5S\nبرای بازگردانی چارت، Reload لازم است\n106 معامله · 46 واقعی · 52 کندل"
+      }
+    },
+    {
+      "label": "live-sample",
+      "at": "2026-11-08T19:20:06.098Z",
+      "chartFound": true,
+      "chart": {
+        "symbol": "KCEX:PEPEUSDT.P",
+        "resolution": {
+          "mainSeries": "5S",
+          "source": "5S",
+          "sourceStatus": 3
+        },
+        "bars": {
+          "count": 53,
+          "first": {
+            "index": 0,
+            "value": [
+              1794165345,
+              0.0000050607,
+              0.0000050608,
+              0.0000050607,
+              0.0000050608,
+              12
+            ]
+          },
+          "last": {
+            "index": 52,
+            "value": [
+              1794165605,
+              0.0000050578,
+              0.0000050578,
+              0.0000050578,
+              0.0000050578,
+              113
+            ]
+          }
+        },
+        "timeScale": {
+          "baseIndex": 52,
+          "rightOffset": -12.102117,
+          "logicalRange": {
+            "left": -44.78463871806571,
+            "right": 39.897883
+          },
+          "visibleBars": {
+            "first": -45,
+            "last": 40
+          },
+          "pointCount": 53,
+          "tickMarkLast": "2026-11-08T19:20:05.000Z",
+          "tickMarkLastSeconds": 1794165605,
+          "tickMarkMatchesLastBar": true
+        },
+        "priceScale": {
+          "type": "Pl",
+          "isEmpty": false,
+          "autoScale": false,
+          "lockScale": false,
+          "range": {
+            "min": 0.000005060516271546552,
+            "max": 0.000005071591048878363
+          },
+          "methods": [
+            "setMode",
+            "isAutoScale",
+            "isLockScale"
+          ]
+        },
+        "renderer": {
+          "paneViewPresent": true,
+          "rendererPresent": true,
+          "rendererType": "i",
+          "rendererCount": 1
+        },
+        "studies": {
+          "count": 0,
+          "items": []
+        },
+        "panes": [
+          {
+            "index": 0,
+            "type": "Hl",
+            "width": 881,
+            "height": 649,
+            "dataSourceCount": 58
+          },
+          {
+            "index": 1,
+            "type": "Hl",
+            "width": 881,
+            "height": 296,
+            "dataSourceCount": 1
+          }
+        ],
+        "canvases": [
+          {
+            "width": 881,
+            "height": 649,
+            "rect": {
+              "x": 56,
+              "y": 42,
+              "width": 881,
+              "height": 649
+            }
+          },
+          {
+            "width": 881,
+            "height": 649,
+            "rect": {
+              "x": 56,
+              "y": 42,
+              "width": 881,
+              "height": 649
+            }
+          },
+          {
+            "width": 78,
+            "height": 649,
+            "rect": {
+              "x": 937,
+              "y": 42,
+              "width": 78,
+              "height": 649
+            }
+          },
+          {
+            "width": 78,
+            "height": 649,
+            "rect": {
+              "x": 937,
+              "y": 42,
+              "width": 78,
+              "height": 649
+            }
+          },
+          {
+            "width": 881,
+            "height": 296,
+            "rect": {
+              "x": 56,
+              "y": 692,
+              "width": 881,
+              "height": 296
+            }
+          },
+          {
+            "width": 881,
+            "height": 296,
+            "rect": {
+              "x": 56,
+              "y": 692,
+              "width": 881,
+              "height": 296
+            }
+          },
+          {
+            "width": 78,
+            "height": 296,
+            "rect": {
+              "x": 937,
+              "y": 692,
+              "width": 78,
+              "height": 296
+            }
+          },
+          {
+            "width": 78,
+            "height": 296,
+            "rect": {
+              "x": 937,
+              "y": 692,
+              "width": 78,
+              "height": 296
+            }
+          },
+          {
+            "width": 881,
+            "height": 28,
+            "rect": {
+              "x": 56,
+              "y": 988,
+              "width": 881,
+              "height": 28
+            }
+          },
+          {
+            "width": 881,
+            "height": 28,
+            "rect": {
+              "x": 56,
+              "y": 988,
+              "width": 881,
+              "height": 28
+            }
+          },
+          {
+            "width": 78,
+            "height": 28,
+            "rect": {
+              "x": 937,
+              "y": 988,
+              "width": 78,
+              "height": 28
+            }
+          }
+        ],
+        "countdownCandidates": [],
+        "toolbarText": "TVE\n1s\n5s\n10s\n15s\n20s\n30s\n45s\nApply\nReload\nTV: 5S\nبرای بازگردانی چارت، Reload لازم است\n107 معامله · 47 واقعی · 53 کندل"
+      }
+    }
+  ],
+  "result": {
+    "ready": true,
+    "applyInvoked": true,
+    "readiness": {
+      "buttonEnabled": true,
+      "realCandles": 42,
+      "totalCandles": 49,
+      "historyLoaded": true,
+      "feedState": "connected"
+    },
+    "applyInvokedAt": "2026-11-08T19:19:45.582Z",
+    "terminalEvent": {
+      "type": "TVE_APPLY_RESULT",
+      "detail": {
+        "success": true,
+        "applyAlgorithm": "native-mainseries-setInterval -> reset-outside-queue -> drain-all-clear-queues -> native-unpacked-insert -> verify-tickmarks -> reveal-viewport -> recalculate-visible-price-scale -> fullUpdate",
+        "resolutionMode": "native-series-resolution",
+        "mainSeriesIntervalPreserved": false,
+        "nativeResolutionAligned": true,
+        "reloadRequired": true,
+        "chartLockedForReload": true,
+        "nativeMessagesBlocked": true,
+        "suppressedNativeMessages": 0,
+        "symbol": "KCEX:PEPEUSDT.P",
+        "interval": "5s",
+        "seriesInterval": "5S",
+        "sourceResolution": "5S",
+        "submittedBars": 49,
+        "barStoreCount": 49,
+        "firstTime": 1794165345,
+        "lastTime": 1794165585,
+        "firstBarTime": 1794165345,
+        "lastBarTime": 1794165585,
+        "timeScaleFirstPoint": 1794165345,
+        "timeScaleLastPoint": 1794165585,
+        "tickMarkLastTime": "2026-11-08T19:19:45.000Z",
+        "originalResolution": "1",
+        "originalSeriesInterval": "1",
+        "intervalSync": {
+          "beforeSeries": "1",
+          "beforeSource": "1",
+          "afterSeries": "5S",
+          "afterSource": "5S",
+          "gatewayModifySeriesCallsSuppressed": 1
+        },
+        "tickMarkTemplate": {
+          "tickStore": {
+            "_marksByIndex": "[Object]",
+            "_marksByTime": "[Object]",
+            "_marksBySpan": "[Object]",
+            "_cache": "[Object]",
+            "_labelsInvalidated": false,
+            "_widthsInvalidated": false,
+            "_skipIntraDayMarksSparseCache": null,
+            "_changed": "[Object]",
+            "_formatterBySpan": "[Object]",
+            "_textWidthCache": "[Object]",
+            "_timeVisible": "[Object]",
+            "_sparseMarks": "[Object]",
+            "_font": "[Object]",
+            "minIndex": 0,
+            "maxIndex": 48
+          },
+          "template": null,
+          "weight": 0,
+          "templateKeys": [],
+          "weightBuckets": []
+        },
+        "verification": {
+          "barCount": 49,
+          "firstIndex": 0,
+          "lastIndex": 48,
+          "firstBarTime": 1794165345,
+          "lastBarTime": 1794165585,
+          "allBarsMatch": true,
+          "seriesResolution": "5S",
+          "expectedSeriesResolution": "5S",
+          "sourceResolution": "5S",
+          "timeScaleFirstPoint": 1794165345,
+          "timeScaleLastPoint": 1794165585,
+          "timeScaleRange": {
+            "firstIndex": 0,
+            "lastIndex": 48
+          },
+          "timeScalePointCount": 49,
+          "tickMarkLastTime": "2026-11-08T19:19:45.000Z",
+          "tickMarkLastTimeType": "Date",
+          "tickMarkLastTimeSeconds": 1794165585,
+          "tickMarkMatchesExpected": true
+        },
+        "viewport": {
+          "before": {
+            "baseIndex": 48,
+            "rightOffset": 20.698157999999978,
+            "barSpacing": 10.282143689688416,
+            "width": 875,
+            "logicalRange": "[Object]",
+            "visibleBars": "[Object]"
+          },
+          "after": {
+            "baseIndex": 48,
+            "rightOffset": 5,
+            "barSpacing": 10.282143689688416,
+            "width": 875,
+            "logicalRange": "[Object]",
+            "visibleBars": "[Object]"
+          },
+          "visibleContainsLatest": true,
+          "targetRightOffset": 5
+        },
+        "priceScaleRefresh": {
+          "before": {
+            "ok": true,
+            "isLog": false,
+            "autoScale": true,
+            "lockScale": false,
+            "priceRangeReady": true,
+            "bounds": "[Object]",
+            "range": "[Object]",
+            "coversVisibleBars": true
+          },
+          "readyBefore": true,
+          "readyAfter": true,
+          "readinessRestored": false,
+          "autoScaleEnabledForInteraction": true,
+          "firstCalculationOk": true,
+          "autoscaleFallback": false,
+          "after": {
+            "ok": true,
+            "isLog": false,
+            "autoScale": true,
+            "lockScale": false,
+            "priceRangeReady": true,
+            "bounds": "[Object]",
+            "range": "[Object]",
+            "coversVisibleBars": true
+          },
+          "invalidatedForRange": {
+            "visibleBars": "[Object]",
+            "logicalRange": "[Object]",
+            "isValid": true
+          }
+        },
+        "nativeFullUpdate": {
+          "ok": true,
+          "reason": null
+        }
+      }
+    },
+    "applyEventTimeout": false,
+    "nativeResolution": {
+      "mainSeriesIs5S": true,
+      "sourceIs5S": true,
+      "tickMarkMatchesLastBar": true,
+      "studyCount": 0
+    },
+    "priceScaleSamples": [
+      {
+        "at": "2026-11-08T19:19:46.919Z",
+        "autoScale": true,
+        "lockScale": false,
+        "range": {
+          "min": 0.0000050543,
+          "max": 0.0000050683
+        },
+        "rightOffset": 5
+      },
+      {
+        "at": "2026-11-08T19:19:47.929Z",
+        "autoScale": true,
+        "lockScale": false,
+        "range": {
+          "min": 0.0000050543,
+          "max": 0.0000050683
+        },
+        "rightOffset": 5
+      },
+      {
+        "at": "2026-11-08T19:19:48.950Z",
+        "autoScale": true,
+        "lockScale": false,
+        "range": {
+          "min": 0.0000050593,
+          "max": 0.0000050674
+        },
+        "rightOffset": -20.481068
+      },
+      {
+        "at": "2026-11-08T19:19:49.963Z",
+        "autoScale": true,
+        "lockScale": false,
+        "range": {
+          "min": 0.0000050543,
+          "max": 0.0000050683
+        },
+        "rightOffset": 18.421325999999993
+      },
+      {
+        "at": "2026-11-08T19:19:50.968Z",
+        "autoScale": false,
+        "lockScale": false,
+        "range": {
+          "min": 0.000005056423308469445,
+          "max": 0.000005066176691530555
+        },
+        "rightOffset": 18.421325999999993
+      },
+      {
+        "at": "2026-11-08T19:19:51.973Z",
+        "autoScale": false,
+        "lockScale": false,
+        "range": {
+          "min": 0.000005055190207078775,
+          "max": 0.000005067409792921225
+        },
+        "rightOffset": 18.421325999999993
+      },
+      {
+        "at": "2026-11-08T19:19:52.978Z",
+        "autoScale": false,
+        "lockScale": false,
+        "range": {
+          "min": 0.000005054509808454989,
+          "max": 0.000005068090191545011
+        },
+        "rightOffset": 18.421325999999993
+      },
+      {
+        "at": "2026-11-08T19:19:53.982Z",
+        "autoScale": false,
+        "lockScale": false,
+        "range": {
+          "min": 0.000005056817155112932,
+          "max": 0.000005065782844887069
+        },
+        "rightOffset": 18.421325999999993
+      },
+      {
+        "at": "2026-11-08T19:19:54.986Z",
+        "autoScale": false,
+        "lockScale": false,
+        "range": {
+          "min": 0.000005049299301396104,
+          "max": 0.000005060374078727916
+        },
+        "rightOffset": 10.251823000000002
+      },
+      {
+        "at": "2026-11-08T19:19:56.001Z",
+        "autoScale": false,
+        "lockScale": false,
+        "range": {
+          "min": 0.000005052426709430616,
+          "max": 0.0000050635014867624275
+        },
+        "rightOffset": 24.159429000000003
+      },
+      {
+        "at": "2026-11-08T19:19:57.013Z",
+        "autoScale": false,
+        "lockScale": false,
+        "range": {
+          "min": 0.000005049195054461621,
+          "max": 0.000005060269831793433
+        },
+        "rightOffset": -25.079539
+      },
+      {
+        "at": "2026-11-08T19:19:58.052Z",
+        "autoScale": false,
+        "lockScale": false,
+        "range": {
+          "min": 0.000005054928635858225,
+          "max": 0.000005066003413190037
+        },
+        "rightOffset": -20.800275
+      },
+      {
+        "at": "2026-11-08T19:19:59.058Z",
+        "autoScale": false,
+        "lockScale": false,
+        "range": {
+          "min": 0.00000506187148169484,
+          "max": 0.000005072946259026651
+        },
+        "rightOffset": -13.408819999999999
+      },
+      {
+        "at": "2026-11-08T19:20:00.062Z",
+        "autoScale": false,
+        "lockScale": false,
+        "range": {
+          "min": 0.0000050567216831313445,
+          "max": 0.000005067796460463156
+        },
+        "rightOffset": -16.521011
+      },
+      {
+        "at": "2026-11-08T19:20:01.067Z",
+        "autoScale": false,
+        "lockScale": false,
+        "range": {
+          "min": 0.0000050567216831313445,
+          "max": 0.000005067796460463156
+        },
+        "rightOffset": -16.521011
+      },
+      {
+        "at": "2026-11-08T19:20:02.072Z",
+        "autoScale": false,
+        "lockScale": false,
+        "range": {
+          "min": 0.000005050300071967148,
+          "max": 0.0000050613748492989595
+        },
+        "rightOffset": -19.341435
+      },
+      {
+        "at": "2026-11-08T19:20:03.079Z",
+        "autoScale": false,
+        "lockScale": false,
+        "range": {
+          "min": 0.000005051238294377502,
+          "max": 0.000005062313071709313
+        },
+        "rightOffset": -21.119483
+      },
+      {
+        "at": "2026-11-08T19:20:04.083Z",
+        "autoScale": false,
+        "lockScale": false,
+        "range": {
+          "min": 0.000005057743303089286,
+          "max": 0.000005068818080421097
+        },
+        "rightOffset": -16.256684
+      },
+      {
+        "at": "2026-11-08T19:20:05.093Z",
+        "autoScale": false,
+        "lockScale": false,
+        "range": {
+          "min": 0.000005060578819707243,
+          "max": 0.000005071653597039054
+        },
+        "rightOffset": -45.238967
+      },
+      {
+        "at": "2026-11-08T19:20:06.098Z",
+        "autoScale": false,
+        "lockScale": false,
+        "range": {
+          "min": 0.000005060516271546552,
+          "max": 0.000005071591048878363
+        },
+        "rightOffset": -12.102117
+      }
+    ],
+    "distinctPriceRanges": [
+      "{\"min\":0.0000050543,\"max\":0.0000050683}",
+      "{\"min\":0.0000050593,\"max\":0.0000050674}",
+      "{\"min\":0.000005056423308469445,\"max\":0.000005066176691530555}",
+      "{\"min\":0.000005055190207078775,\"max\":0.000005067409792921225}",
+      "{\"min\":0.000005054509808454989,\"max\":0.000005068090191545011}",
+      "{\"min\":0.000005056817155112932,\"max\":0.000005065782844887069}",
+      "{\"min\":0.000005049299301396104,\"max\":0.000005060374078727916}",
+      "{\"min\":0.000005052426709430616,\"max\":0.0000050635014867624275}",
+      "{\"min\":0.000005049195054461621,\"max\":0.000005060269831793433}",
+      "{\"min\":0.000005054928635858225,\"max\":0.000005066003413190037}",
+      "{\"min\":0.00000506187148169484,\"max\":0.000005072946259026651}",
+      "{\"min\":0.0000050567216831313445,\"max\":0.000005067796460463156}",
+      "{\"min\":0.000005050300071967148,\"max\":0.0000050613748492989595}",
+      "{\"min\":0.000005051238294377502,\"max\":0.000005062313071709313}",
+      "{\"min\":0.000005057743303089286,\"max\":0.000005068818080421097}",
+      "{\"min\":0.000005060578819707243,\"max\":0.000005071653597039054}",
+      "{\"min\":0.000005060516271546552,\"max\":0.000005071591048878363}"
+    ],
+    "distinctRightOffsets": [
+      5,
+      -20.481068,
+      18.421325999999993,
+      10.251823000000002,
+      24.159429000000003,
+      -25.079539,
+      -20.800275,
+      -13.408819999999999,
+      -16.521011,
+      -19.341435,
+      -21.119483,
+      -16.256684,
+      -45.238967,
+      -12.102117
+    ],
+    "studySnapshots": [
+      {
+        "count": 0,
+        "items": []
+      },
+      {
+        "count": 0,
+        "items": []
+      },
+      {
+        "count": 0,
+        "items": []
+      }
+    ],
+    "reloadReminder": "After copying this report, reload TradingView to restore the original server chart/session.",
+    "liveUpdateEvents": 7
+  },
+  "before": {
+    "label": "before-5s",
+    "at": "2026-11-08T19:19:43.803Z",
+    "chartFound": true,
+    "chart": {
+      "symbol": "KCEX:PEPEUSDT.P",
+      "resolution": {
+        "mainSeries": "1",
+        "source": "1",
+        "sourceStatus": 3
+      },
+      "bars": {
+        "count": 300,
+        "first": {
+          "index": 0,
+          "value": [
+            1794147600,
+            0.0000050279,
+            0.0000050311,
+            0.0000050266,
+            0.0000050307,
+            1324300000
+          ]
+        },
+        "last": {
+          "index": 299,
+          "value": [
+            1794165540,
+            0.0000050668,
+            0.0000050668,
+            0.0000050543,
+            0.0000050543,
+            1957400000
+          ]
+        }
+      },
+      "timeScale": {
+        "baseIndex": 299,
+        "rightOffset": 20.698157999999978,
+        "logicalRange": {
+          "left": 235.59917218466796,
+          "right": 319.698158
+        },
+        "visibleBars": {
+          "first": 235,
+          "last": 320
+        },
+        "pointCount": 331,
+        "tickMarkLast": "2026-11-08T22:49:00.000Z",
+        "tickMarkLastSeconds": 1794178140,
+        "tickMarkMatchesLastBar": false
+      },
+      "priceScale": {
+        "type": "Pl",
+        "isEmpty": false,
+        "autoScale": true,
+        "lockScale": false,
+        "range": {
+          "min": 0.0000050239,
+          "max": 0.0000051081
+        },
+        "methods": [
+          "setMode",
+          "isAutoScale",
+          "isLockScale"
+        ]
+      },
+      "renderer": {
+        "paneViewPresent": true,
+        "rendererPresent": true,
+        "rendererType": "i",
+        "rendererCount": 1
+      },
+      "studies": {
+        "count": 0,
+        "items": []
+      },
+      "panes": [
+        {
+          "index": 0,
+          "type": "Hl",
+          "width": 875,
+          "height": 649,
+          "dataSourceCount": 58
+        },
+        {
+          "index": 1,
+          "type": "Hl",
+          "width": 875,
+          "height": 296,
+          "dataSourceCount": 1
+        }
+      ],
+      "canvases": [
+        {
+          "width": 875,
+          "height": 649,
+          "rect": {
+            "x": 56,
+            "y": 42,
+            "width": 875,
+            "height": 649
+          }
+        },
+        {
+          "width": 875,
+          "height": 649,
+          "rect": {
+            "x": 56,
+            "y": 42,
+            "width": 875,
+            "height": 649
+          }
+        },
+        {
+          "width": 84,
+          "height": 649,
+          "rect": {
+            "x": 931,
+            "y": 42,
+            "width": 84,
+            "height": 649
+          }
+        },
+        {
+          "width": 84,
+          "height": 649,
+          "rect": {
+            "x": 931,
+            "y": 42,
+            "width": 84,
+            "height": 649
+          }
+        },
+        {
+          "width": 875,
+          "height": 296,
+          "rect": {
+            "x": 56,
+            "y": 692,
+            "width": 875,
+            "height": 296
+          }
+        },
+        {
+          "width": 875,
+          "height": 296,
+          "rect": {
+            "x": 56,
+            "y": 692,
+            "width": 875,
+            "height": 296
+          }
+        },
+        {
+          "width": 84,
+          "height": 296,
+          "rect": {
+            "x": 931,
+            "y": 692,
+            "width": 84,
+            "height": 296
+          }
+        },
+        {
+          "width": 84,
+          "height": 296,
+          "rect": {
+            "x": 931,
+            "y": 692,
+            "width": 84,
+            "height": 296
+          }
+        },
+        {
+          "width": 875,
+          "height": 28,
+          "rect": {
+            "x": 56,
+            "y": 988,
+            "width": 875,
+            "height": 28
+          }
+        },
+        {
+          "width": 875,
+          "height": 28,
+          "rect": {
+            "x": 56,
+            "y": 988,
+            "width": 875,
+            "height": 28
+          }
+        },
+        {
+          "width": 84,
+          "height": 28,
+          "rect": {
+            "x": 931,
+            "y": 988,
+            "width": 84,
+            "height": 28
+          }
+        }
+      ],
+      "countdownCandidates": [],
+      "toolbarText": "TVE\n1s\n5s\n10s\n15s\n20s\n30s\n45s\nApply\nReload\nTV: 1\nآماده\n0 معامله · 0 واقعی · 0 کندل"
+    }
+  },
+  "beforeApply": {
+    "label": "before-apply",
+    "at": "2026-11-08T19:19:45.578Z",
+    "chartFound": true,
+    "chart": {
+      "symbol": "KCEX:PEPEUSDT.P",
+      "resolution": {
+        "mainSeries": "1",
+        "source": "1",
+        "sourceStatus": 3
+      },
+      "bars": {
+        "count": 300,
+        "first": {
+          "index": 0,
+          "value": [
+            1794147600,
+            0.0000050279,
+            0.0000050311,
+            0.0000050266,
+            0.0000050307,
+            1324300000
+          ]
+        },
+        "last": {
+          "index": 299,
+          "value": [
+            1794165540,
+            0.0000050668,
+            0.0000050668,
+            0.0000050543,
+            0.0000050578,
+            2595900000
+          ]
+        }
+      },
+      "timeScale": {
+        "baseIndex": 299,
+        "rightOffset": 20.698157999999978,
+        "logicalRange": {
+          "left": 235.59917218466796,
+          "right": 319.698158
+        },
+        "visibleBars": {
+          "first": 235,
+          "last": 320
+        },
+        "pointCount": 331,
+        "tickMarkLast": "2026-11-08T22:49:00.000Z",
+        "tickMarkLastSeconds": 1794178140,
+        "tickMarkMatchesLastBar": false
+      },
+      "priceScale": {
+        "type": "Pl",
+        "isEmpty": false,
+        "autoScale": true,
+        "lockScale": false,
+        "range": {
+          "min": 0.0000050239,
+          "max": 0.0000051081
+        },
+        "methods": [
+          "setMode",
+          "isAutoScale",
+          "isLockScale"
+        ]
+      },
+      "renderer": {
+        "paneViewPresent": true,
+        "rendererPresent": true,
+        "rendererType": "i",
+        "rendererCount": 1
+      },
+      "studies": {
+        "count": 0,
+        "items": []
+      },
+      "panes": [
+        {
+          "index": 0,
+          "type": "Hl",
+          "width": 875,
+          "height": 649,
+          "dataSourceCount": 58
+        },
+        {
+          "index": 1,
+          "type": "Hl",
+          "width": 875,
+          "height": 296,
+          "dataSourceCount": 1
+        }
+      ],
+      "canvases": [
+        {
+          "width": 875,
+          "height": 649,
+          "rect": {
+            "x": 56,
+            "y": 42,
+            "width": 875,
+            "height": 649
+          }
+        },
+        {
+          "width": 875,
+          "height": 649,
+          "rect": {
+            "x": 56,
+            "y": 42,
+            "width": 875,
+            "height": 649
+          }
+        },
+        {
+          "width": 84,
+          "height": 649,
+          "rect": {
+            "x": 931,
+            "y": 42,
+            "width": 84,
+            "height": 649
+          }
+        },
+        {
+          "width": 84,
+          "height": 649,
+          "rect": {
+            "x": 931,
+            "y": 42,
+            "width": 84,
+            "height": 649
+          }
+        },
+        {
+          "width": 875,
+          "height": 296,
+          "rect": {
+            "x": 56,
+            "y": 692,
+            "width": 875,
+            "height": 296
+          }
+        },
+        {
+          "width": 875,
+          "height": 296,
+          "rect": {
+            "x": 56,
+            "y": 692,
+            "width": 875,
+            "height": 296
+          }
+        },
+        {
+          "width": 84,
+          "height": 296,
+          "rect": {
+            "x": 931,
+            "y": 692,
+            "width": 84,
+            "height": 296
+          }
+        },
+        {
+          "width": 84,
+          "height": 296,
+          "rect": {
+            "x": 931,
+            "y": 692,
+            "width": 84,
+            "height": 296
+          }
+        },
+        {
+          "width": 875,
+          "height": 28,
+          "rect": {
+            "x": 56,
+            "y": 988,
+            "width": 875,
+            "height": 28
+          }
+        },
+        {
+          "width": 875,
+          "height": 28,
+          "rect": {
+            "x": 56,
+            "y": 988,
+            "width": 875,
+            "height": 28
+          }
+        },
+        {
+          "width": 84,
+          "height": 28,
+          "rect": {
+            "x": 931,
+            "y": 988,
+            "width": 84,
+            "height": 28
+          }
+        }
+      ],
+      "countdownCandidates": [],
+      "toolbarText": "TVE\n1s\n5s\n10s\n15s\n20s\n30s\n45s\nApply\nReload\nTV: 1\nKCEX متصل\n100 معامله · 42 واقعی · 49 کندل"
+    }
+  },
+  "afterApply": {
+    "label": "after-apply",
+    "at": "2026-11-08T19:19:45.911Z",
+    "chartFound": true,
+    "chart": {
+      "symbol": "KCEX:PEPEUSDT.P",
+      "resolution": {
+        "mainSeries": "5S",
+        "source": "5S",
+        "sourceStatus": 3
+      },
+      "bars": {
+        "count": 49,
+        "first": {
+          "index": 0,
+          "value": [
+            1794165345,
+            0.0000050607,
+            0.0000050608,
+            0.0000050607,
+            0.0000050608,
+            12
+          ]
+        },
+        "last": {
+          "index": 48,
+          "value": [
+            1794165585,
+            0.0000050578,
+            0.0000050578,
+            0.0000050578,
+            0.0000050578,
+            0
+          ]
+        }
+      },
+      "timeScale": {
+        "baseIndex": 48,
+        "rightOffset": 5,
+        "logicalRange": {
+          "left": -31.682521718065715,
+          "right": 53
+        },
+        "visibleBars": {
+          "first": -32,
+          "last": 53
+        },
+        "pointCount": 49,
+        "tickMarkLast": "2026-11-08T19:19:45.000Z",
+        "tickMarkLastSeconds": 1794165585,
+        "tickMarkMatchesLastBar": true
+      },
+      "priceScale": {
+        "type": "Pl",
+        "isEmpty": false,
+        "autoScale": true,
+        "lockScale": false,
+        "range": {
+          "min": 0.0000050543,
+          "max": 0.0000050683
+        },
+        "methods": [
+          "setMode",
+          "isAutoScale",
+          "isLockScale"
+        ]
+      },
+      "renderer": {
+        "paneViewPresent": true,
+        "rendererPresent": true,
+        "rendererType": "i",
+        "rendererCount": 1
+      },
+      "studies": {
+        "count": 0,
+        "items": []
+      },
+      "panes": [
+        {
+          "index": 0,
+          "type": "Hl",
+          "width": 881,
+          "height": 649,
+          "dataSourceCount": 58
+        },
+        {
+          "index": 1,
+          "type": "Hl",
+          "width": 881,
+          "height": 296,
+          "dataSourceCount": 1
+        }
+      ],
+      "canvases": [
+        {
+          "width": 881,
+          "height": 649,
+          "rect": {
+            "x": 56,
+            "y": 42,
+            "width": 881,
+            "height": 649
+          }
+        },
+        {
+          "width": 881,
+          "height": 649,
+          "rect": {
+            "x": 56,
+            "y": 42,
+            "width": 881,
+            "height": 649
+          }
+        },
+        {
+          "width": 78,
+          "height": 649,
+          "rect": {
+            "x": 937,
+            "y": 42,
+            "width": 78,
+            "height": 649
+          }
+        },
+        {
+          "width": 78,
+          "height": 649,
+          "rect": {
+            "x": 937,
+            "y": 42,
+            "width": 78,
+            "height": 649
+          }
+        },
+        {
+          "width": 881,
+          "height": 296,
+          "rect": {
+            "x": 56,
+            "y": 692,
+            "width": 881,
+            "height": 296
+          }
+        },
+        {
+          "width": 881,
+          "height": 296,
+          "rect": {
+            "x": 56,
+            "y": 692,
+            "width": 881,
+            "height": 296
+          }
+        },
+        {
+          "width": 78,
+          "height": 296,
+          "rect": {
+            "x": 937,
+            "y": 692,
+            "width": 78,
+            "height": 296
+          }
+        },
+        {
+          "width": 78,
+          "height": 296,
+          "rect": {
+            "x": 937,
+            "y": 692,
+            "width": 78,
+            "height": 296
+          }
+        },
+        {
+          "width": 881,
+          "height": 28,
+          "rect": {
+            "x": 56,
+            "y": 988,
+            "width": 881,
+            "height": 28
+          }
+        },
+        {
+          "width": 881,
+          "height": 28,
+          "rect": {
+            "x": 56,
+            "y": 988,
+            "width": 881,
+            "height": 28
+          }
+        },
+        {
+          "width": 78,
+          "height": 28,
+          "rect": {
+            "x": 937,
+            "y": 988,
+            "width": 78,
+            "height": 28
+          }
+        }
+      ],
+      "countdownCandidates": [],
+      "toolbarText": "TVE\n1s\n5s\n10s\n15s\n20s\n30s\n45s\nApply\nReload\nTV: 5S\nبرای بازگردانی چارت، Reload لازم است\n100 معامله · 42 واقعی · 49 کندل"
+    }
+  },
+  "afterObserve": {
+    "label": "after-observation",
+    "at": "2026-11-08T19:20:06.105Z",
+    "chartFound": true,
+    "chart": {
+      "symbol": "KCEX:PEPEUSDT.P",
+      "resolution": {
+        "mainSeries": "5S",
+        "source": "5S",
+        "sourceStatus": 3
+      },
+      "bars": {
+        "count": 53,
+        "first": {
+          "index": 0,
+          "value": [
+            1794165345,
+            0.0000050607,
+            0.0000050608,
+            0.0000050607,
+            0.0000050608,
+            12
+          ]
+        },
+        "last": {
+          "index": 52,
+          "value": [
+            1794165605,
+            0.0000050578,
+            0.0000050578,
+            0.0000050578,
+            0.0000050578,
+            113
+          ]
+        }
+      },
+      "timeScale": {
+        "baseIndex": 52,
+        "rightOffset": -12.102117,
+        "logicalRange": {
+          "left": -44.78463871806571,
+          "right": 39.897883
+        },
+        "visibleBars": {
+          "first": -45,
+          "last": 40
+        },
+        "pointCount": 53,
+        "tickMarkLast": "2026-11-08T19:20:05.000Z",
+        "tickMarkLastSeconds": 1794165605,
+        "tickMarkMatchesLastBar": true
+      },
+      "priceScale": {
+        "type": "Pl",
+        "isEmpty": false,
+        "autoScale": false,
+        "lockScale": false,
+        "range": {
+          "min": 0.000005060516271546552,
+          "max": 0.000005071591048878363
+        },
+        "methods": [
+          "setMode",
+          "isAutoScale",
+          "isLockScale"
+        ]
+      },
+      "renderer": {
+        "paneViewPresent": true,
+        "rendererPresent": true,
+        "rendererType": "i",
+        "rendererCount": 1
+      },
+      "studies": {
+        "count": 0,
+        "items": []
+      },
+      "panes": [
+        {
+          "index": 0,
+          "type": "Hl",
+          "width": 881,
+          "height": 649,
+          "dataSourceCount": 58
+        },
+        {
+          "index": 1,
+          "type": "Hl",
+          "width": 881,
+          "height": 296,
+          "dataSourceCount": 1
+        }
+      ],
+      "canvases": [
+        {
+          "width": 881,
+          "height": 649,
+          "rect": {
+            "x": 56,
+            "y": 42,
+            "width": 881,
+            "height": 649
+          }
+        },
+        {
+          "width": 881,
+          "height": 649,
+          "rect": {
+            "x": 56,
+            "y": 42,
+            "width": 881,
+            "height": 649
+          }
+        },
+        {
+          "width": 78,
+          "height": 649,
+          "rect": {
+            "x": 937,
+            "y": 42,
+            "width": 78,
+            "height": 649
+          }
+        },
+        {
+          "width": 78,
+          "height": 649,
+          "rect": {
+            "x": 937,
+            "y": 42,
+            "width": 78,
+            "height": 649
+          }
+        },
+        {
+          "width": 881,
+          "height": 296,
+          "rect": {
+            "x": 56,
+            "y": 692,
+            "width": 881,
+            "height": 296
+          }
+        },
+        {
+          "width": 881,
+          "height": 296,
+          "rect": {
+            "x": 56,
+            "y": 692,
+            "width": 881,
+            "height": 296
+          }
+        },
+        {
+          "width": 78,
+          "height": 296,
+          "rect": {
+            "x": 937,
+            "y": 692,
+            "width": 78,
+            "height": 296
+          }
+        },
+        {
+          "width": 78,
+          "height": 296,
+          "rect": {
+            "x": 937,
+            "y": 692,
+            "width": 78,
+            "height": 296
+          }
+        },
+        {
+          "width": 881,
+          "height": 28,
+          "rect": {
+            "x": 56,
+            "y": 988,
+            "width": 881,
+            "height": 28
+          }
+        },
+        {
+          "width": 881,
+          "height": 28,
+          "rect": {
+            "x": 56,
+            "y": 988,
+            "width": 881,
+            "height": 28
+          }
+        },
+        {
+          "width": 78,
+          "height": 28,
+          "rect": {
+            "x": 937,
+            "y": 988,
+            "width": 78,
+            "height": 28
+          }
+        }
+      ],
+      "countdownCandidates": [],
+      "toolbarText": "TVE\n1s\n5s\n10s\n15s\n20s\n30s\n45s\nApply\nReload\nTV: 5S\nبرای بازگردانی چارت، Reload لازم است\n107 معامله · 47 واقعی · 53 کندل"
+    }
+  },
+  "finishedAt": "2026-11-08T19:20:06.215Z",
+  "durationMs": 22414,
+  "finalSnapshot": {
+    "label": "final",
+    "at": "2026-11-08T19:20:06.215Z",
+    "chartFound": true,
+    "chart": {
+      "symbol": "KCEX:PEPEUSDT.P",
+      "resolution": {
+        "mainSeries": "5S",
+        "source": "5S",
+        "sourceStatus": 3
+      },
+      "bars": {
+        "count": 53,
+        "first": {
+          "index": 0,
+          "value": [
+            1794165345,
+            0.0000050607,
+            0.0000050608,
+            0.0000050607,
+            0.0000050608,
+            12
+          ]
+        },
+        "last": {
+          "index": 52,
+          "value": [
+            1794165605,
+            0.0000050578,
+            0.0000050578,
+            0.0000050578,
+            0.0000050578,
+            113
+          ]
+        }
+      },
+      "timeScale": {
+        "baseIndex": 52,
+        "rightOffset": -12.102117,
+        "logicalRange": {
+          "left": -44.78463871806571,
+          "right": 39.897883
+        },
+        "visibleBars": {
+          "first": -45,
+          "last": 40
+        },
+        "pointCount": 53,
+        "tickMarkLast": "2026-11-08T19:20:05.000Z",
+        "tickMarkLastSeconds": 1794165605,
+        "tickMarkMatchesLastBar": true
+      },
+      "priceScale": {
+        "type": "Pl",
+        "isEmpty": false,
+        "autoScale": false,
+        "lockScale": false,
+        "range": {
+          "min": 0.000005060516271546552,
+          "max": 0.000005071591048878363
+        },
+        "methods": [
+          "setMode",
+          "isAutoScale",
+          "isLockScale"
+        ]
+      },
+      "renderer": {
+        "paneViewPresent": true,
+        "rendererPresent": true,
+        "rendererType": "i",
+        "rendererCount": 1
+      },
+      "studies": {
+        "count": 0,
+        "items": []
+      },
+      "panes": [
+        {
+          "index": 0,
+          "type": "Hl",
+          "width": 881,
+          "height": 649,
+          "dataSourceCount": 58
+        },
+        {
+          "index": 1,
+          "type": "Hl",
+          "width": 881,
+          "height": 296,
+          "dataSourceCount": 1
+        }
+      ],
+      "canvases": [
+        {
+          "width": 881,
+          "height": 649,
+          "rect": {
+            "x": 56,
+            "y": 42,
+            "width": 881,
+            "height": 649
+          }
+        },
+        {
+          "width": 881,
+          "height": 649,
+          "rect": {
+            "x": 56,
+            "y": 42,
+            "width": 881,
+            "height": 649
+          }
+        },
+        {
+          "width": 78,
+          "height": 649,
+          "rect": {
+            "x": 937,
+            "y": 42,
+            "width": 78,
+            "height": 649
+          }
+        },
+        {
+          "width": 78,
+          "height": 649,
+          "rect": {
+            "x": 937,
+            "y": 42,
+            "width": 78,
+            "height": 649
+          }
+        },
+        {
+          "width": 881,
+          "height": 296,
+          "rect": {
+            "x": 56,
+            "y": 692,
+            "width": 881,
+            "height": 296
+          }
+        },
+        {
+          "width": 881,
+          "height": 296,
+          "rect": {
+            "x": 56,
+            "y": 692,
+            "width": 881,
+            "height": 296
+          }
+        },
+        {
+          "width": 78,
+          "height": 296,
+          "rect": {
+            "x": 937,
+            "y": 692,
+            "width": 78,
+            "height": 296
+          }
+        },
+        {
+          "width": 78,
+          "height": 296,
+          "rect": {
+            "x": 937,
+            "y": 692,
+            "width": 78,
+            "height": 296
+          }
+        },
+        {
+          "width": 881,
+          "height": 28,
+          "rect": {
+            "x": 56,
+            "y": 988,
+            "width": 881,
+            "height": 28
+          }
+        },
+        {
+          "width": 881,
+          "height": 28,
+          "rect": {
+            "x": 56,
+            "y": 988,
+            "width": 881,
+            "height": 28
+          }
+        },
+        {
+          "width": 78,
+          "height": 28,
+          "rect": {
+            "x": 937,
+            "y": 988,
+            "width": 78,
+            "height": 28
+          }
+        }
+      ],
+      "countdownCandidates": [],
+      "toolbarText": "TVE\n1s\n5s\n10s\n15s\n20s\n30s\n45s\nApply\nReload\nTV: 5S\nبرای بازگردانی چارت، Reload لازم است\n107 معامله · 47 واقعی · 53 کندل"
+    }
+  }
+}
