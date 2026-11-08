@@ -1,0 +1,1173 @@
+{
+  "report": "TV Enhancer Diagnostic - TimeScale and Resolution",
+  "version": "3.7.0",
+  "generatedAt": "2026-11-08T14:46:21.481Z",
+  "privacy": "Read-only inspection. No network requests, WebSocket messages, cookies, authentication values, account identifiers, or local storage values are collected. Getters are not invoked. No chart mutation methods are executed.",
+  "page": {
+    "title": "PEPEUSDT.P 0.50865e-5 ▲ +4.62% Unnamed",
+    "url": "https://www.tradingview.com/chart/4JBVKCwz/",
+    "chartLabels": [
+      "Chart for KCEX:PEPEUSDT.P, 1 minute"
+    ],
+    "toolbarText": "PEPEUSDT.P\n1m\n3m\n5m\n15m\n30m\n1h\n4h\nD\nW\nM\nUnnamed\nSave\nTrade\nUpgrade"
+  },
+  "discovery": {
+    "tradingViewApiFound": true,
+    "chartApiFound": true,
+    "activeWidgetFound": true,
+    "exposedCollectionFound": true,
+    "scannedObjects": 1800,
+    "maxObjects": 1800,
+    "mainSeriesMatches": [
+      "exposedModel.mainSeries()",
+      "exposedModel.m_model.mainSeries()"
+    ],
+    "selectedMainSeriesPath": "exposedModel.mainSeries()",
+    "mainSeriesFound": true,
+    "modelFound": false,
+    "timeScaleFound": false,
+    "seriesDataFound": true,
+    "seriesSourceFound": true
+  },
+  "currentChart": {
+    "symbol": {
+      "exists": true,
+      "called": true,
+      "result": "KCEX:PEPEUSDT.P"
+    },
+    "resolution": {
+      "exists": false
+    },
+    "sourceSymbol": {
+      "exists": true,
+      "called": true,
+      "result": {
+        "type": "Object",
+        "ownKeys": [
+          "symbol",
+          "currency-id",
+          "adjustment"
+        ],
+        "properties": {
+          "symbol": "KCEX:PEPEUSDT.P",
+          "currency-id": "XTVCUSDT",
+          "adjustment": "splits"
+        }
+      }
+    },
+    "sourceResolution": {
+      "exists": true,
+      "called": true,
+      "result": "1"
+    },
+    "sourceInstanceId": "sds_3",
+    "sourceInternalResolution": "1",
+    "sourceTurnaround": {
+      "exists": true,
+      "called": true,
+      "result": "s1"
+    },
+    "resolutionObservables": {
+      "widgetResolutionRaw": "[undefined]",
+      "widgetSymbolRaw": "[undefined]"
+    },
+    "resolutionCalls": {
+      "activeChartResolution": {
+        "exists": false
+      },
+      "mainSeriesResolution": {
+        "exists": false
+      },
+      "sourceResolution": {
+        "exists": true,
+        "called": true,
+        "result": "1"
+      },
+      "modelInterval": {
+        "exists": false
+      },
+      "modelResolution": {
+        "exists": false
+      },
+      "widgetResolution": {
+        "exists": true,
+        "called": true,
+        "result": "1"
+      },
+      "activeWidgetInterval": {
+        "exists": false
+      }
+    }
+  },
+  "timeScale": {
+    "object": {
+      "available": false
+    },
+    "readMethods": {
+      "baseIndex": {
+        "exists": false
+      },
+      "rightOffset": {
+        "exists": false
+      },
+      "barSpacing": {
+        "exists": false
+      },
+      "width": {
+        "exists": false
+      },
+      "height": {
+        "exists": false
+      },
+      "logicalRange": {
+        "exists": false
+      },
+      "visibleBars": {
+        "exists": false
+      },
+      "visibleBarsStrictRange": {
+        "exists": false
+      },
+      "isEmpty": {
+        "exists": false
+      },
+      "tickMarks": {
+        "exists": false
+      },
+      "firstVisibleBar": {
+        "exists": false
+      },
+      "lastVisibleBar": {
+        "exists": false
+      },
+      "points": {
+        "exists": false
+      },
+      "indexToTime": {
+        "exists": false
+      },
+      "timeToIndex": {
+        "exists": false
+      },
+      "indexToCoordinate": {
+        "exists": false
+      },
+      "coordinateToIndex": {
+        "exists": false
+      },
+      "timeToCoordinate": {
+        "exists": false
+      },
+      "coordinateToTime": {
+        "exists": false
+      },
+      "getVisibleBarsRange": {
+        "exists": false
+      }
+    },
+    "internalStructures": {
+      "points": {
+        "available": false
+      },
+      "visibleBars": {
+        "available": false
+      },
+      "tickMarks": {
+        "available": false
+      },
+      "pointWeights": {
+        "available": false
+      }
+    },
+    "internalSamples": {
+      "points": "[undefined]",
+      "visibleBars": "[undefined]",
+      "tickMarks": "[undefined]",
+      "pointWeights": "[undefined]"
+    }
+  },
+  "barData": {
+    "storeConstructor": "_",
+    "start": 0,
+    "end": 341,
+    "physicalArrayLength": 341,
+    "extractedRows": 341,
+    "firstIndex": 0,
+    "lastIndex": 340,
+    "firstTimestamp": 1794128760,
+    "lastTimestamp": 1794149160,
+    "timestampUnit": "seconds",
+    "timestampDeltaHistogram": {
+      "60": 340
+    },
+    "minimumTimestampDelta": 60,
+    "maximumTimestampDelta": 60,
+    "duplicateTimestamps": 0,
+    "nonMonotonicTimestamps": 0,
+    "nonConsecutiveIndices": 0,
+    "firstRows": [
+      {
+        "index": 0,
+        "time": 1794128760,
+        "open": 0.0000049081,
+        "high": 0.0000049094,
+        "low": 0.0000049066,
+        "close": 0.0000049066,
+        "volume": 997100000
+      },
+      {
+        "index": 1,
+        "time": 1794128820,
+        "open": 0.0000049039,
+        "high": 0.000004906,
+        "low": 0.0000049037,
+        "close": 0.0000049044,
+        "volume": 1114600000
+      },
+      {
+        "index": 2,
+        "time": 1794128880,
+        "open": 0.0000049043,
+        "high": 0.0000049043,
+        "low": 0.0000048877,
+        "close": 0.0000048878,
+        "volume": 19546900000
+      },
+      {
+        "index": 3,
+        "time": 1794128940,
+        "open": 0.0000048877,
+        "high": 0.0000048877,
+        "low": 0.0000048813,
+        "close": 0.0000048852,
+        "volume": 8090300000
+      },
+      {
+        "index": 4,
+        "time": 1794129000,
+        "open": 0.0000048842,
+        "high": 0.0000048842,
+        "low": 0.0000048793,
+        "close": 0.0000048823,
+        "volume": 7192000000
+      },
+      {
+        "index": 5,
+        "time": 1794129060,
+        "open": 0.0000048823,
+        "high": 0.0000048823,
+        "low": 0.0000048784,
+        "close": 0.0000048784,
+        "volume": 3304800000
+      },
+      {
+        "index": 6,
+        "time": 1794129120,
+        "open": 0.0000048784,
+        "high": 0.0000048805,
+        "low": 0.000004878,
+        "close": 0.000004879,
+        "volume": 3104000000
+      },
+      {
+        "index": 7,
+        "time": 1794129180,
+        "open": 0.0000048791,
+        "high": 0.0000048794,
+        "low": 0.000004878,
+        "close": 0.000004878,
+        "volume": 1818100000
+      }
+    ],
+    "lastRows": [
+      {
+        "index": 329,
+        "time": 1794148500,
+        "open": 0.0000050395,
+        "high": 0.0000050431,
+        "low": 0.0000050395,
+        "close": 0.0000050396,
+        "volume": 3679300000
+      },
+      {
+        "index": 330,
+        "time": 1794148560,
+        "open": 0.0000050385,
+        "high": 0.0000050391,
+        "low": 0.0000050365,
+        "close": 0.0000050391,
+        "volume": 1299700000
+      },
+      {
+        "index": 331,
+        "time": 1794148620,
+        "open": 0.0000050367,
+        "high": 0.0000050548,
+        "low": 0.0000050354,
+        "close": 0.0000050548,
+        "volume": 13132100000
+      },
+      {
+        "index": 332,
+        "time": 1794148680,
+        "open": 0.0000050511,
+        "high": 0.0000050517,
+        "low": 0.0000050484,
+        "close": 0.0000050484,
+        "volume": 6310100000
+      },
+      {
+        "index": 333,
+        "time": 1794148740,
+        "open": 0.0000050496,
+        "high": 0.0000050525,
+        "low": 0.0000050483,
+        "close": 0.0000050525,
+        "volume": 849100000
+      },
+      {
+        "index": 334,
+        "time": 1794148800,
+        "open": 0.0000050508,
+        "high": 0.0000050683,
+        "low": 0.0000050507,
+        "close": 0.0000050639,
+        "volume": 20436500000
+      },
+      {
+        "index": 335,
+        "time": 1794148860,
+        "open": 0.0000050627,
+        "high": 0.0000050697,
+        "low": 0.000005062,
+        "close": 0.0000050695,
+        "volume": 7816500000
+      },
+      {
+        "index": 336,
+        "time": 1794148920,
+        "open": 0.0000050693,
+        "high": 0.0000050809,
+        "low": 0.0000050693,
+        "close": 0.0000050736,
+        "volume": 14800100000
+      },
+      {
+        "index": 337,
+        "time": 1794148980,
+        "open": 0.0000050732,
+        "high": 0.0000050799,
+        "low": 0.000005073,
+        "close": 0.0000050747,
+        "volume": 3244800000
+      },
+      {
+        "index": 338,
+        "time": 1794149040,
+        "open": 0.0000050729,
+        "high": 0.0000050729,
+        "low": 0.0000050677,
+        "close": 0.0000050725,
+        "volume": 4047500000
+      },
+      {
+        "index": 339,
+        "time": 1794149100,
+        "open": 0.0000050734,
+        "high": 0.0000050843,
+        "low": 0.0000050734,
+        "close": 0.0000050843,
+        "volume": 5858300000
+      },
+      {
+        "index": 340,
+        "time": 1794149160,
+        "open": 0.0000050849,
+        "high": 0.0000050876,
+        "low": 0.0000050849,
+        "close": 0.0000050865,
+        "volume": 3880800000
+      }
+    ]
+  },
+  "indexComparison": {
+    "barStoreFirstIndex": 0,
+    "barStoreLastIndex": 340,
+    "timeScaleBaseIndex": {
+      "exists": false
+    },
+    "visibleBarsStrictRange": {
+      "exists": false
+    },
+    "logicalRange": {
+      "exists": false
+    },
+    "baseIndexMatchesLastBar": null
+  },
+  "methodSources": {
+    "resolutionMethods": {
+      "mainSeries": [
+        {
+          "name": "unsupportedResolutionState",
+          "arguments": 0,
+          "code": "unsupportedResolutionState(){return this._unsupportedResolutionState.readonly()}"
+        },
+        {
+          "name": "interval",
+          "arguments": 0,
+          "code": "interval(){return this.properties().childs().interval.value()}"
+        },
+        {
+          "name": "setInterval",
+          "arguments": 1,
+          "code": "setInterval(e){this.setSymbolParams({interval:e})}"
+        },
+        {
+          "name": "intervalObj",
+          "arguments": 0,
+          "code": "intervalObj(){return this._intervalObj.readonly()}"
+        },
+        {
+          "name": "onSymbolIntervalChanged",
+          "arguments": 0,
+          "code": "onSymbolIntervalChanged(){return this._symbolIntervalChanged}"
+        },
+        {
+          "name": "onIntervalChanged",
+          "arguments": 0,
+          "code": "onIntervalChanged(){return this._intervalChanged}"
+        },
+        {
+          "name": "setChartStyleWithIntervalIfNeeded",
+          "arguments": 2,
+          "code": "setChartStyleWithIntervalIfNeeded(e,t){const i=this.interval(),s=t??(0,Ci.getResolutionByChartStyle)(e,i,this._model.defaultResolutions()),r=d.Interval.isEqual(s,i);this.setSymbolParams({interval:r?void 0:s,style:e})}"
+        },
+        {
+          "name": "onTimeFrameApplied",
+          "arguments": 0,
+          "code": "onTimeFrameApplied(){return this._onTimeFrameApplied}"
+        },
+        {
+          "name": "setDefaultTimeframe",
+          "arguments": 1,
+          "code": "setDefaultTimeframe(e){this._pendingTimeRange=e}"
+        },
+        {
+          "name": "canChangeResolution",
+          "arguments": 1,
+          "code": "async canChangeResolution(e){{if(!this.isInReplay().value())return!0;const t=\"changeResolution\";if(!(0,r.ensureNotNull)(this._isReplayResolutionAvailableForUser)(e))return this._paramsNotApplicableForReplay.fire(w.NotApplicableForReplayReason.UnsupportedIntradyReplay,t),!1;const i=(0,r.ensureNotNull)(this._replaySubscriber.value()),s=await i.canChangeSymbolParams(this.getReplaySymbolString(),e);return s.res||this._replaySubscriber.value()!==i||this._paramsNotApplicableForReplay.fire(w.NotApplicableForReplayReason.UnsupportedDepth,t),s.res}}"
+        },
+        {
+          "name": "changeTimeFrame",
+          "arguments": 0,
+          "code": "changeTimeFrame(){(0,S.trackEvent)(\"GUI\",\"Change timeframe\")}"
+        },
+        {
+          "name": "_onSeriesTimeFrame",
+          "arguments": 5,
+          "code": "_onSeriesTimeFrame(e,t,i,s,r){const o=(0,k.isSingleValueBasedStyle)(this.style())?e+.5:e;let n=t;if(void 0===r)null!==i&&i.type!==m.TimeFrameType.PeriodBack||(n+=this._model.studyAwareDefaultRightOffset());else if(r.applyDefaultRightMargin)n+=this._model.studyAwareDefaultRightOffset();else if(r.percentRightMargin){const e=t-o+1,i=Math.max(0,Math.min(.99,r.percentRightMargin/100));n+=i*e/(1-i)}this._model.setTimeViewport(o,n)}"
+        },
+        {
+          "name": "_onUnsupportedResolutionRequested",
+          "arguments": 0,
+          "code": "_onUnsupportedResolutionRequested(){const e=(0,r.ensureNotNull)(this._getStateForUnsupportedResolution());this._seriesErrorMessage=e.reason,this._unsupportedResolutionState.setValue(e),this._setStatus(N.Status.UnsupportedResolution),this._seriesLoaded=!0,this.clearData(),this._model.timeScale().points().clear(),this._enablePriceRangeReady()}"
+        },
+        {
+          "name": "_getStateForUnsupportedResolution",
+          "arguments": 0,
+          "code": "_getStateForUnsupportedResolution(){const e=this.symbolInfo();if(null===e)return null;const t=this.interval(),i=(0,ss.getResolutionUnsupportedReason)(e,t);if(null===i)return null;return function(e){const{symbolInfo:t,resolution:i,reason:s,hasResolutionPolicy:o,isInternalDataFeed:n,defaultResolutions:a,isAuthenticated:l,isPro:c}=e,h=t.name;if(\"less_than_frequency\"!==s){let e=[\"D\",\"W\",\"M\"];return o||n||(e=t.supported_resolutions),{ticker:h,reason:s,unsupportedResolution:i,applicableResolution:e[0],supportedResolutions:e}}const d=(0,r.ensureDefined)(t.data_frequency);let u=(0,os.getApplicableIntervalForFrequency)(d,i);return!o||a.includes(u)||l&&c||(u=(0,os.getApplicableDefaultResolution)(a,u)),{ticker:h,reason:s,applicableResolution:u,unsupportedResolution:i,supportedResolutions:[]}}({symbolInfo:e,resolution:t,reason:i,hasResolutionPolicy:!0,isInternalDataFeed:(0,v.isTradingViewData)(),defaultResolutions:this._model.defaultResolutions(),isAuthenticated:!!window.is_authenticated,isPro:!!window.user?.is_pro})}"
+        },
+        {
+          "name": "_notifyIntervalChanged",
+          "arguments": 1,
+          "code": "_notifyIntervalChanged(e){const t={timeframe:this._pendingTimeRange??void 0};this._intervalChanged.fire(e,t),this._pendingTimeRange=t.timeframe??null}"
+        },
+        {
+          "name": "_shouldDefineNumberOfBarsForModifySeries",
+          "arguments": 1,
+          "code": "_shouldDefineNumberOfBarsForModifySeries(e){return!1}"
+        }
+      ],
+      "seriesSource": [
+        {
+          "name": "canModifySeries",
+          "arguments": 2,
+          "code": "canModifySeries(t,e){const s=!(0,i.deepEquals)(this._extSymbol,t)[0],r=null===this._resolution||!n.Interval.isEqual(this._resolution,e);return s||r}"
+        },
+        {
+          "name": "modifySeries",
+          "arguments": 2,
+          "code": "modifySeries(t,e,s=null,a=!1,o=null){a&&(b.logNormal(\"Due to force flag clearing symbol & resolution to force re-requesting data.\"),this._extSymbol=null,this._resolution=null);const l=x(t),h=!this.symbolSameAsResolved(l);if(h&&(this._lastResolvedSymbol=\"\"),this._extSymbol&&!h){const e=x(this._extSymbol);(0,d.replaceExtendedSymbol)(t,e)}const u=this._extSymbol,_=this._resolution;if(this._extSymbol=t,this._resolution=e,null===this._instanceId)return void(this._timeFrame=s);const c=!(0,i.deepEquals)(u,t)[0];c&&(0,d.replaceExtendedSymbol)(this._extSymbol,l);const m=null===_||!n.Interval.isEqual(_,e);(c||m||null!==s)&&(this._timeFrame=null,(c||m)&&this._turnaroundCounter++,c&&this._resolveSymbol(),this._gateway.modifySeries(this._instanceId,this.turnaround(),(0,r.ensureNotNull)(this._symbolInstanceId),this._resolution,o,s,this._boundOnMessage),this._dataEvents.fireModified())}"
+        },
+        {
+          "name": "resolution",
+          "arguments": 0,
+          "code": "resolution(){return this._resolution}"
+        },
+        {
+          "name": "setTimeframe",
+          "arguments": 1,
+          "code": "setTimeframe(t){this._timeFrame=t}"
+        },
+        {
+          "name": "_createSeries",
+          "arguments": 0,
+          "code": "_createSeries(){(0,r.assert)(3!==this._status,'Status should not be \"Active\" when creating a study'),this._instanceId=\"sds_\"+S++,this._resolveSymbol();const t=this._createSeriesOverriddenParams||this._createSeriesParams;this._createSeriesOverriddenParams&&(this._createSeriesOverriddenParams=0),this._gateway.createSeries(this._instanceId,this.turnaround(),(0,r.ensureNotNull)(this._symbolInstanceId),(0,r.ensureNotNull)(this._resolution),t,this._timeFrame,this._boundOnMessage),this._timeFrame=null,this._changeStatusTo(2),this._dataEvents.fireCreated(this._instanceId)}"
+        },
+        {
+          "name": "_firePlanRestrictedResolution",
+          "arguments": 1,
+          "code": "_firePlanRestrictedResolution(t){({resolution_not_entitled:()=>this._dataEvents.fireIntradayExchangeNotPermitted(),\ncustom_resolution:()=>this._dataEvents.fireCustomIntervalNotPermitted((0,r.ensureNotNull)(this._resolution)),custom_sec_resolution:()=>this._dataEvents.fireCustomSecondsIntervalNotPermitted((0,r.ensureNotNull)(this._resolution)),seconds_not_entitled:()=>this._dataEvents.fireSecondsIntervalNotPermitted(),ticks_not_entitled:()=>this._dataEvents.fireTicksIntervalNotPermitted()})[t]()}"
+        },
+        {
+          "name": "_onSeriesTimeFrame",
+          "arguments": 5,
+          "code": "_onSeriesTimeFrame(t,e,s,r,i){this._dataEvents.fireSeriesTimeFrame(t,e,s,r??!0,i)}"
+        }
+      ],
+      "model": [],
+      "activeWidget": [
+        {
+          "name": "onIntervalChanged",
+          "arguments": 0,
+          "code": "onIntervalChanged(){return this._makeSubscriptionFromDelegate(this._chartWidget.model().mainSeries().onIntervalChanged())}"
+        },
+        {
+          "name": "onSeriesTimeframe",
+          "arguments": 0,
+          "code": "onSeriesTimeframe(){return this._makeSubscriptionFromDelegate(this._chartWidget.model().mainSeries().dataEvents().seriesTimeFrame())}"
+        },
+        {
+          "name": "setResolution",
+          "arguments": 2,
+          "code": "async setResolution(e,t){(0,se.isFunction)(t)&&(t={dataReady:t});const{dataReady:i,doNotActivateChart:r,initiatorName:s=\"Chart api\"}=t||{},n=k.Interval.normalize(e);if(null===n||n===this.resolution())return i?.(),!0;r||this._activateChart(),(0,xe.trackIntervalChanging)(n,s);const a=await this._chartWidget.chartWidgetCollection().setResolution(n,void 0,this._chartWidget);return a&&await new Promise((e=>{(0,ze.onSeriesCompletedOrErrorReceived)(this._chartWidget.model().mainSeries(),(t=>{!t&&i&&i(),e()}))})),a}"
+        },
+        {
+          "name": "resolution",
+          "arguments": 0,
+          "code": "resolution(){return this._chartWidget.model().mainSeries().interval()}"
+        },
+        {
+          "name": "setTimeFrame",
+          "arguments": 1,
+          "code": "setTimeFrame(e){this.setActive(),this._chartWidget.loadRange(e)}"
+        }
+      ],
+      "chartApi": [
+        {
+          "name": "defaultResolutions",
+          "arguments": 0,
+          "code": "defaultResolutions(){return(0,C.getDefaultResolutions)()}"
+        },
+        {
+          "name": "createSeries",
+          "arguments": 8,
+          "code": "createSeries(e,t,s,n,i,r,o,a){b.telemetry.timeCounters.series.marks.push(\"create_series_\"+e),this._notificationHandlers[e][t]=new H(a,t);const _=null===o?\"\":(0,E.convertTimeFrameToStr)(o,!0);return this._sendRequest(\"create_series\",[e,t,s,n,i,r,_])}"
+        },
+        {
+          "name": "modifySeries",
+          "arguments": 8,
+          "code": "modifySeries(e,t,s,n,i,r,o,a){this._notificationHandlers[e][t]=new H(a,t);const _=null===o?\"\":(0,E.convertTimeFrameToStr)(o,!0);return this._sendRequest(\"modify_series\",[e,t,s,n,i,_])}"
+        }
+      ]
+    },
+    "seriesMethods": {
+      "mainSeries": [
+        {
+          "name": "_updateAlertCreationAvailableBound",
+          "arguments": 0,
+          "code": "function () { [native code] }"
+        },
+        {
+          "name": "_updateTimeScaleTimePointWeights",
+          "arguments": 0,
+          "code": "()=>{this._model.timeScale().setTimePointWeights(this.style()===W.ChartStyle.VolCandle?this._volumePointWeights:null)}"
+        },
+        {
+          "name": "_barFunction",
+          "arguments": 2,
+          "code": "(t,e)=>{switch(e){case 0:return r(t);case 2:return a(t);default:return i(t)}}"
+        },
+        {
+          "name": "isBondDataRestricted",
+          "arguments": 0,
+          "code": "isBondDataRestricted(){return this._isBondDataRestricted}"
+        },
+        {
+          "name": "seriesErrorMessage",
+          "arguments": 0,
+          "code": "seriesErrorMessage(){\nconst{seriesStatus:e,additionalStudyStatus:t}=this._status.value();return this.isFailed()?this._seriesErrorMessage:W.seriesLoadingStatuses.has(e)?null:t?.type===ms.StudyStatusType.Error?(0,gs.convertStudyStatusToString)({type:ms.StudyStatusType.Error,errorDescription:t.errorDescription},!0):null}"
+        },
+        {
+          "name": "barColorer",
+          "arguments": 0,
+          "code": "barColorer(){if(this._barColorerCache)return this._barColorerCache;let e=null;const t=this._model.panes();for(let i=t.length-1;i>=0;i--){const s=t[i].dataSources().filter(Be.isStudy).filter((e=>e.hasBarColorer()&&!e.isSourceHidden())).sort(((e,t)=>e.zorder()-t.zorder()));for(let t=0;t<s.length;t++){const i=(0,r.ensureNotNull)(s[t].barColorer());null===e?e=i:e.pushBackBarColorer(i)}}return null===e?e=new ls.SeriesBarColorer(this):e.pushBackBarColorer(new ls.SeriesBarColorer(this)),this._barColorerCache=e,e}"
+        },
+        {
+          "name": "invalidateBarStylesCache",
+          "arguments": 1,
+          "code": "invalidateBarStylesCache(e){Ls.logDebug(\"Invalidate style cache starting from \"+e),this._clearStylePlot(this.bars(),e),this._clearStylePlot(this.nsBars())}"
+        },
+        {
+          "name": "unsupportedResolutionState",
+          "arguments": 0,
+          "code": "unsupportedResolutionState(){return this._unsupportedResolutionState.readonly()}"
+        },
+        {
+          "name": "isRangeBasedStyle",
+          "arguments": 0,
+          "code": "isRangeBasedStyle(){return(0,D.isRangeBasedStyle)(this.style())}"
+        },
+        {
+          "name": "seriesSource",
+          "arguments": 0,
+          "code": "seriesSource(){return this._seriesSource}"
+        },
+        {
+          "name": "firstBar",
+          "arguments": 0,
+          "code": "firstBar(){return this._firstBarRow()?.value??null}"
+        },
+        {
+          "name": "bars",
+          "arguments": 0,
+          "code": "bars(){return this.data().bars()}"
+        },
+        {
+          "name": "nsBars",
+          "arguments": 0,
+          "code": "nsBars(){return this.data().nsBars()}"
+        },
+        {
+          "name": "interval",
+          "arguments": 0,
+          "code": "interval(){return this.properties().childs().interval.value()}"
+        },
+        {
+          "name": "setInterval",
+          "arguments": 1,
+          "code": "setInterval(e){this.setSymbolParams({interval:e})}"
+        },
+        {
+          "name": "intervalObj",
+          "arguments": 0,
+          "code": "intervalObj(){return this._intervalObj.readonly()}"
+        },
+        {
+          "name": "lastValueData",
+          "arguments": 3,
+          "code": "lastValueData(e,t,i){const s={noData:!0},r=this.priceScale();if(this.model().timeScale().isEmpty()||r.isEmpty()||this.data().isEmpty())return s;const o=this.model().timeScale().visibleBarsStrictRange(),n=this.firstValue();if(null===o||null===n)return s;let a,l;if(t){const e=this.data().bars().last();if(null===e)return s;a=e.value,l=e.index}else{const e=this.data().bars().search(o.lastBar(),p.PlotRowSearchMode.NearestLeft);if(null===e)return s;a=e.value,l=e.index}const c=(void 0!==e?a[e]:this._barFunction(a,x.BarFunctionTargetValue.LastValuePrice))??NaN,h=this.barColorer().barStyle(l,!1),d=r.priceToCoordinate(c,n),u={...r.getFormattedValues(c,n,!0),noData:!1,color:h.barColor,coordinate:d,index:l};return i&&(u.price=c),u}"
+        },
+        {
+          "name": "data",
+          "arguments": 0,
+          "code": "data(){return this._data??this._seriesSource.data()}"
+        },
+        {
+          "name": "clearData",
+          "arguments": 0,
+          "code": "clearData(){(0,r.assert)(null===this._data,\"Cannot clear loaded data\"),this._withStudyBindings((e=>e.clearData())),this._seriesSource.clearData()}"
+        },
+        {
+          "name": "nearestData",
+          "arguments": 2,
+          "code": "nearestData(e,t){return this.data().search(e,t)??void 0}"
+        },
+        {
+          "name": "nearestIndex",
+          "arguments": 2,
+          "code": "nearestIndex(e,t){return this.nearestData(e,t)?.index}"
+        },
+        {
+          "name": "onSymbolIntervalChanged",
+          "arguments": 0,
+          "code": "onSymbolIntervalChanged(){return this._symbolIntervalChanged}"
+        },
+        {
+          "name": "firstBarTime",
+          "arguments": 0,
+          "code": "firstBarTime(){const e=this.data().first();return null===e?null:e.value[x.SeriesPlotIndex.Time]}"
+        },
+        {
+          "name": "onIntervalChanged",
+          "arguments": 0,
+          "code": "onIntervalChanged(){return this._intervalChanged}"
+        },
+        {
+          "name": "fixLastBar",
+          "arguments": 1,
+          "code": "fixLastBar(e){if(!this._futureBarsPaneView){const t=this.bars().lastIndex();t&&(this._futureBarsPaneView=new Ue(this.model().timeScale(),this,t,e))}}"
+        },
+        {
+          "name": "requestMoreData",
+          "arguments": 1,
+          "code": "requestMoreData(e){if(!W.seriesReadyStatuses.has(this._status.value().seriesStatus))return;if(this._model.timeScale().isEmpty())return;const t=this._model.timeScale().visibleBarsStrictRange();if(null===t)return;if(0===this.bars().size())return;const i=t.lastBar()-(0,r.ensureNotNull)(this.data().last()).index;if(this._predictBars<i&&(this._predictBars=i,this._seriesSource.requestMoreTickmarks(i)),!this._requestMoreDataAvailable)return;const s=(0,r.ensureNotNull)(this.bars().firstIndex()),o=e||Math.max(s-t.firstBar(),s-(this._studyBindings?.requestMoreDataIndex()??s));if(o<=0)return;if(!Number.isFinite(o))return void Ls.logWarn(\"requestMoreData: invalid bar count: \"+o+\", visible bars: [\"+t.firstBar()+\", \"+t.lastBar()+\"], last index: \"+(0,r.ensureNotNull)(this.data().last()).index+\", predicted bars: \"+this._predictBars+\", required bars:\"+e);this._requestMoreDataAvailable=!1;const n=this._colorOnPrevBar()?2:0;this._seriesSource.requestMoreData(o+n),this._setStatus(N.Status.Loading)}"
+        },
+        {
+          "name": "priceRange",
+          "arguments": 1,
+          "code": "priceRange(e){const t=this._priceScale;if(this.data().isEmpty()||!t)return null;const{startTimePoint:i,endTimePoint:s}=e;if(t.isLockScale()){const e=this._model.mainSeriesScaleRatio();if(null!==e){const i=t.internalHeight()/(this.model().timeScale().barSpacing()/e),o=(0,r.ensureNotNull)(this.data().search(s,p.PlotRowSearchMode.NearestLeft)).value,n=((0,r.ensure)(o[x.SeriesPlotIndex.High])+(0,r.ensure)(o[x.SeriesPlotIndex.Low]))/2;return new I.PriceRange(n-.5*i,n+.5*i)}}const o=this.priceSource();let n,a,l;if(null!==o?(n=this.data().bars().minMaxOnRangeCached(i,s,[{name:o,offset:0}]),a=this.data().nsBars().minMaxOnRangeCached(i,s,[{name:o,offset:0}])):(n=this.data().bars().minMaxOnRangeCached(i,s,[{name:\"low\",offset:0},{name:\"high\",offset:0}]),a=this.data().nsBars().minMaxOnRange(i,s,[{name:\"low\",offset:0},{name:\"high\",offset:0}])),n=(0,_.mergeMinMax)(n,a),null===n)return null;if(n.min===n.max){const e=5/(this.symbolInfo()?.pricescale??100);l=new I.PriceRange(n.min-e,n.max+e)}else l=new I.PriceRange(n.min,n.max);return t.isLog()?new I.PriceRange(t.priceToLogical(l.minValue()),t.priceToLogical(l.maxValue())):l}"
+        },
+        {
+          "name": "setChartStyleWithIntervalIfNeeded",
+          "arguments": 2,
+          "code": "setChartStyleWithIntervalIfNeeded(e,t){const i=this.interval(),s=t??(0,Ci.getResolutionByChartStyle)(e,i,this._model.defaultResolutions()),r=d.Interval.isEqual(s,i);this.setSymbolParams({interval:r?void 0:s,style:e})}"
+        },
+        {
+          "name": "dataEvents",
+          "arguments": 0,
+          "code": "dataEvents(){return this._seriesSource.dataEvents()}"
+        },
+        {
+          "name": "invalidateBarColorerCache",
+          "arguments": 0,
+          "code": "invalidateBarColorerCache(){this._barColorerCache=null,this.invalidateBarStylesCache()}"
+        },
+        {
+          "name": "onTimeFrameApplied",
+          "arguments": 0,
+          "code": "onTimeFrameApplied(){return this._onTimeFrameApplied}"
+        },
+        {
+          "name": "dataWindowView",
+          "arguments": 0,
+          "code": "dataWindowView(){return this._dataWindowView}"
+        },
+        {
+          "name": "isMainSeries",
+          "arguments": 0,
+          "code": "isMainSeries(){return!0}"
+        },
+        {
+          "name": "dataUpdatedModeModel",
+          "arguments": 0,
+          "code": "dataUpdatedModeModel(){return this._dataUpdatedModeModel}"
+        },
+        {
+          "name": "dataProblemModel",
+          "arguments": 0,
+          "code": "dataProblemModel(){return this._dataProblemModel}"
+        },
+        {
+          "name": "setDefaultTimeframe",
+          "arguments": 1,
+          "code": "setDefaultTimeframe(e){this._pendingTimeRange=e}"
+        },
+        {
+          "name": "loadDataTo",
+          "arguments": 1,
+          "code": "loadDataTo(e){const t=this._properties.childs().interval.value();this._onTimeFrameApplied.fire(e),this._seriesSource.modifySeries(this._getResolvingSymbolObject(),(0,g.getServerInterval)(t),e)}"
+        },
+        {
+          "name": "barCloseTime",
+          "arguments": 0,
+          "code": "barCloseTime(){return this._lastBarCloseTime}"
+        },
+        {
+          "name": "updateAllViews",
+          "arguments": 1,
+          "code": "updateAllViews(e){this._studyBindings?.updateAllViews(e),this._delayStatusPaneView?.get()?.update(e),e.type!==$e.ChangeEventType.HoverChange&&(this._paneView?.update(e),this._dataWindowView.update(),this._legendView.update(),this._statusView.update(),this._floatingTooltipView.update(e),this._averagePaneViews.forEach((t=>t.update(e))),this._highLowAvgPaneViews.forEach((t=>t.update(e))),this._labelPaneViews.forEach((t=>t.update(e))),this._priceAxisViews.forEach((t=>t.update(e))),this._priceLineAxisViews.forEach((t=>t.update(e))),this._futureBarsPaneView?.update(e),this._projectionBarsPaneView?.update(e),this._waterlineView?.update(e),this._prevClosePriceLineView?.update(e),this._priceLineView?.update(e),this._gotoDateView?.update(e),this._endOfDataPaneView?.update(e),this._baseHorizontalLineView?.update(e),this._model.activeStrategySource().value()?.updateAllViews(e),this._model.replayStudyStrategy().value()?.updateAllViews(e),this._lineStyleLastPriceCirclePaneView.update(e))}"
+        },
+        {
+          "name": "barFunction",
+          "arguments": 0,
+          "code": "barFunction(){return this._barFunction}"
+        },
+        {
+          "name": "precomputedBarStyle",
+          "arguments": 1,
+          "code": "precomputedBarStyle(e){return this._precomputedBarStyles.get(e)}"
+        },
+        {
+          "name": "setPrecomputedBarStyle",
+          "arguments": 2,
+          "code": "setPrecomputedBarStyle(e,t){this._precomputedBarStyles.set(e,t)}"
+        },
+        {
+          "name": "barsProvider",
+          "arguments": 0,
+          "code": "barsProvider(){return this}"
+        },
+        {
+          "name": "dataWindowValuesProvider",
+          "arguments": 0,
+          "code": "dataWindowValuesProvider(){return this._studyBindings?.dataWindowValuesProvider()??this._dataWindowValuesProvider}"
+        },
+        {
+          "name": "rerequestData",
+          "arguments": 0,
+          "code": "rerequestData(){this._applySymbolParamsChanges({force:!0})}"
+        },
+        {
+          "name": "switchToRealtime",
+          "arguments": 0,
+          "code": "switchToRealtime(){this.isInReplay().value()&&(this._removeReplaySubscriber(),this.rerequestData())}"
+        },
+        {
+          "name": "canChangeResolution",
+          "arguments": 1,
+          "code": "async canChangeResolution(e){{if(!this.isInReplay().value())return!0;const t=\"changeResolution\";if(!(0,r.ensureNotNull)(this._isReplayResolutionAvailableForUser)(e))return this._paramsNotApplicableForReplay.fire(w.NotApplicableForReplayReason.UnsupportedIntradyReplay,t),!1;const i=(0,r.ensureNotNull)(this._replaySubscriber.value()),s=await i.canChangeSymbolParams(this.getReplaySymbolString(),e);return s.res||this._replaySubscriber.value()!==i||this._paramsNotApplicableForReplay.fire(w.NotApplicableForReplayReason.UnsupportedDepth,t),s.res}}"
+        },
+        {
+          "name": "requestMoreDataAvailable",
+          "arguments": 0,
+          "code": "requestMoreDataAvailable(){return this._requestMoreDataAvailable}"
+        },
+        {
+          "name": "seriesLoaded",
+          "arguments": 0,
+          "code": "seriesLoaded(){return this._seriesLoaded}"
+        },
+        {
+          "name": "endOfData",
+          "arguments": 0,
+          "code": "endOfData(){return void 0!==this._lastCompleteFlags?.data_completed}"
+        },
+        {
+          "name": "endOfDataType",
+          "arguments": 0,
+          "code": "endOfDataType(){return this._lastCompleteFlags?.data_completed??null}"
+        },
+        {
+          "name": "dataPoweredBy",
+          "arguments": 0,
+          "code": "dataPoweredBy(){return this._dataPoweredBy}"
+        },
+        {
+          "name": "changeTimeFrame",
+          "arguments": 0,
+          "code": "changeTimeFrame(){(0,S.trackEvent)(\"GUI\",\"Change timeframe\")}"
+        },
+        {
+          "name": "restoreData",
+          "arguments": 6,
+          "code": "restoreData(e,t,i,s,r,o){this._updateStatus({seriesStatus:N.Status.Snapshot}),this._data=new x.SeriesData,this._data.bars().restoreState(e),this._data.nsBars().restoreState(t),this._updateSymbolInfo(i),this._data.lastProjectionPrice=s,this._data.boxSize=r;const n=this.properties().childs();r||(n.style.value()===W.ChartStyle.PnF?this._data.boxSize=n.pnfStyle.childs().inputs.childs().boxSize.value():n.style.value()===W.ChartStyle.Renko&&(this._data.boxSize=n.renkoStyle.childs().inputs.childs().boxSize.value())),this._data.reversalAmount=o,o||n.style.value()===W.ChartStyle.Kagi&&(this._data.reversalAmount=n.kagiStyle.childs().inputs.childs().reversalAmount.value())}"
+        },
+        {
+          "name": "doNotShowLastAvailableBar",
+          "arguments": 1,
+          "code": "doNotShowLastAvailableBar(e){this._doNotShowLastAvailableBar=e,this._gotoDateView?.doNotShowLastAvailableBar(e)}"
+        },
+        {
+          "name": "dataUpdated",
+          "arguments": 0,
+          "code": "dataUpdated(){return this.dataEvents().dataUpdated()}"
+        },
+        {
+          "name": "moveData",
+          "arguments": 1,
+          "code": "moveData(e){const t=this._seriesSource.moveData(e);null!==this._volumePointWeights&&this._volumePointWeights.moveData(e),this._withStudyBindings((t=>t.moveData(e))),t.then((()=>{this._isDestroyed||this.bars().isEmpty()||this._onIndexDiffsApplied(e)}))}"
+        },
+        {
+          "name": "seriesCreated",
+          "arguments": 0,
+          "code": "async seriesCreated(){const e=this._seriesSource.instanceId();if(null!==e)return e;const t=await Promise.race([this._deferredDestroyed.promise.then((()=>{})),this._model.isSnapshot()?Promise.resolve(null):new Promise((e=>{this.dataEvents().created().subscribe(this,e,!0)}))]);if(void 0===t)throw new Error(\"Series has been destroyed\");return t}"
+        },
+        {
+          "name": "_updateBarFunction",
+          "arguments": 0,
+          "code": "_updateBarFunction(){this._barFunction=(0,as.barFunctionByStyle)(this.style(),this.priceSource())}"
+        },
+        {
+          "name": "_updateSessionIdProxyProperty",
+          "arguments": 1,
+          "code": "_updateSessionIdProxyProperty(e){const t=this._properties.childs().sessionId.value();let i=t;if(e){const e=this.symbolInfo();null!==e&&(i=e.subsession_id||t)}this._ignoreSessionIdProxyPropertyChanges=!0,this._sessionIdProxyProperty.setValue(i),this._ignoreSessionIdProxyPropertyChanges=!1}"
+        },
+        {
+          "name": "_getTelemetryAdditionalData",
+          "arguments": 2,
+          "code": "_getTelemetryAdditionalData(e,t){t=void 0===t||t;const i={symbol:this.actualSymbol()};return t&&(i.resolution=this.interval()),void 0!==e&&(i.reason=e),i}"
+        },
+        {
+          "name": "_onSeriesTimeFrame",
+          "arguments": 5,
+          "code": "_onSeriesTimeFrame(e,t,i,s,r){const o=(0,k.isSingleValueBasedStyle)(this.style())?e+.5:e;let n=t;if(void 0===r)null!==i&&i.type!==m.TimeFrameType.PeriodBack||(n+=this._model.studyAwareDefaultRightOffset());else if(r.applyDefaultRightMargin)n+=this._model.studyAwareDefaultRightOffset();else if(r.percentRightMargin){const e=t-o+1,i=Math.max(0,Math.min(.99,r.percentRightMargin/100));n+=i*e/(1-i)}this._model.setTimeViewport(o,n)}"
+        },
+        {
+          "name": "_onSeriesError",
+          "arguments": 1,
+          "code": "_onSeriesError(e){let t=e.error;const i=e.ctx;if(i){const e={};Object.keys(i).forEach((t=>{e[t]=i[t].toString()})),t=(0,l.formatByKey)(t,e)}Is&&Ls.logNormal(\"Error reason: \"+t),this._seriesErrorMessage=t;const s=function(e){const{hasDetailedErrorMapping:t,errorMessage:i,noBarsStatusAvailable:s,hasSymbolInfo:r}=e;return t||\"unknown_symbol\"===i?s&&r?N.Status.NoBars:N.Status.InvalidSymbol:N.Status.Error}({hasDetailedErrorMapping:!0,errorMessage:t,noBarsStatusAvailable:xs,hasSymbolInfo:!!this.symbolInfo()});this._setStatus(s),this._seriesLoaded=!0,this._sendTelemetryCounter(\"series_error\",this._getTelemetryAdditionalData(t)),this._enablePriceRangeReady()}"
+        },
+        {
+          "name": "_onSeriesLoading",
+          "arguments": 1,
+          "code": "_onSeriesLoading(e){this._setStatus(N.Status.Loading)}"
+        },
+        {
+          "name": "_onDataUpdated",
+          "arguments": 5,
+          "code": "_onDataUpdated(e,t,i,s,o){if(t&&o&&this._colorOnPrevBar()&&this._precomputedBarStyles.delete(o.value),s){const e=this.symbolInfo();this._volumePointWeights=null!==e&&(0,R.hasVolume)(e)?function(e){let t=0,i=0;for(const s of e){const e=s.value[x.SeriesPlotIndex.Volume];(0,a.isNumber)(e)&&e>0&&(t+=e,i+=1)}return i>0?new kt(t/i):null}(this.bars().fullRangeIterator()):null,this._updateTimeScaleTimePointWeights()}if(null!==this._volumePointWeights){const e=t?this.bars().fullRangeIterator():i?this.bars().rangeIterator(i.index,(0,r.ensureNotNull)(this.bars().lastIndex())):null;null!==e&&function(e,t){for(const i of t){const t=i.value[x.SeriesPlotIndex.Volume];(0,a.isNumber)(t)&&e.setVolume(i.index,t)}}(this._volumePointWeights,e)}t?this._requestMoreDataAvailable=!0:this._lastPriceAnimationActive&&this._seriesLoaded&&this._lineStyleLastPriceCirclePaneView.update((0,ve.sourceChangeEvent)(this.id())),this._lastBarCloseTime=e&&e.closeTime||null,this._boxSizeValue.setValue(this.data().boxSize),this._statusView.update();const n=this.bars().firstIndex(),l=this.bars().lastIndex();null!==n&&null!==l?this._dataRangeUpdated.fire({type:\"partial\",startIndex:i?.index??n,endIndex:t?o?.index??l:l}):this._dataRangeUpdated.fire({type:\"full\"}),this.clearAveragePriceCache(),this.clearHighLowPriceCache();const c=this.model(),h=(0,r.ensureNotNull)(c.paneForSource(this));c.recalculatePane(h,(0,ve.sourceChangeEvent)({sourceId:this.id(),realtime:!t,firstUpdatedTimePointIndex:i?.index??void 0})),\nc.updateSource(this)}"
+        },
+        {
+          "name": "_plotsDataRange",
+          "arguments": 0,
+          "code": "_plotsDataRange(){const e=this.bars().firstIndex(),t=this.bars().lastIndex();return null!==e&&null!==t?[e,t]:null}"
+        },
+        {
+          "name": "_onBarReceived",
+          "arguments": 1,
+          "code": "_onBarReceived(e){this.model().recalcVisibleRangeStudies(P.RecalcVisibleRangeStudiesReason.DataUpdate)}"
+        },
+        {
+          "name": "_onUnsupportedResolutionRequested",
+          "arguments": 0,
+          "code": "_onUnsupportedResolutionRequested(){const e=(0,r.ensureNotNull)(this._getStateForUnsupportedResolution());this._seriesErrorMessage=e.reason,this._unsupportedResolutionState.setValue(e),this._setStatus(N.Status.UnsupportedResolution),this._seriesLoaded=!0,this.clearData(),this._model.timeScale().points().clear(),this._enablePriceRangeReady()}"
+        },
+        {
+          "name": "_getStateForUnsupportedResolution",
+          "arguments": 0,
+          "code": "_getStateForUnsupportedResolution(){const e=this.symbolInfo();if(null===e)return null;const t=this.interval(),i=(0,ss.getResolutionUnsupportedReason)(e,t);if(null===i)return null;return function(e){const{symbolInfo:t,resolution:i,reason:s,hasResolutionPolicy:o,isInternalDataFeed:n,defaultResolutions:a,isAuthenticated:l,isPro:c}=e,h=t.name;if(\"less_than_frequency\"!==s){let e=[\"D\",\"W\",\"M\"];return o||n||(e=t.supported_resolutions),{ticker:h,reason:s,unsupportedResolution:i,applicableResolution:e[0],supportedResolutions:e}}const d=(0,r.ensureDefined)(t.data_frequency);let u=(0,os.getApplicableIntervalForFrequency)(d,i);return!o||a.includes(u)||l&&c||(u=(0,os.getApplicableDefaultResolution)(a,u)),{ticker:h,reason:s,applicableResolution:u,unsupportedResolution:i,supportedResolutions:[]}}({symbolInfo:e,resolution:t,reason:i,hasResolutionPolicy:!0,isInternalDataFeed:(0,v.isTradingViewData)(),defaultResolutions:this._model.defaultResolutions(),isAuthenticated:!!window.is_authenticated,isPro:!!window.user?.is_pro})}"
+        },
+        {
+          "name": "_onQuotesUpdate",
+          "arguments": 2,
+          "code": "_onQuotesUpdate(e,t){{const i=void 0!==t.values.change||void 0!==t.values.change_percent;i&&ks&&this._legendView.update();const s=void 0!==t.values.prev_close_price;s&&((0,\nr.ensureNotNull)(this._prevClosePriceLineView).update((0,ve.sourceChangeEvent)(this.id())),(0,r.ensureNotNull)(this._prevClosePriceAxisView).update((0,ve.sourceChangeEvent)(this.id()))),(i||s)&&this.model().updateSource(this),this._quotesLastSplits.setValue(e.values.last_splits??null)}void 0!==e.values.current_session&&e.values.current_session!==this._currentSession&&(this._currentSession=e.values.current_session,this._updateLastPriceAnimationActive())}"
+        }
+      ],
+      "seriesSource": [
+        {
+          "name": "canModifySeries",
+          "arguments": 2,
+          "code": "canModifySeries(t,e){const s=!(0,i.deepEquals)(this._extSymbol,t)[0],r=null===this._resolution||!n.Interval.isEqual(this._resolution,e);return s||r}"
+        },
+        {
+          "name": "modifySeries",
+          "arguments": 2,
+          "code": "modifySeries(t,e,s=null,a=!1,o=null){a&&(b.logNormal(\"Due to force flag clearing symbol & resolution to force re-requesting data.\"),this._extSymbol=null,this._resolution=null);const l=x(t),h=!this.symbolSameAsResolved(l);if(h&&(this._lastResolvedSymbol=\"\"),this._extSymbol&&!h){const e=x(this._extSymbol);(0,d.replaceExtendedSymbol)(t,e)}const u=this._extSymbol,_=this._resolution;if(this._extSymbol=t,this._resolution=e,null===this._instanceId)return void(this._timeFrame=s);const c=!(0,i.deepEquals)(u,t)[0];c&&(0,d.replaceExtendedSymbol)(this._extSymbol,l);const m=null===_||!n.Interval.isEqual(_,e);(c||m||null!==s)&&(this._timeFrame=null,(c||m)&&this._turnaroundCounter++,c&&this._resolveSymbol(),this._gateway.modifySeries(this._instanceId,this.turnaround(),(0,r.ensureNotNull)(this._symbolInstanceId),this._resolution,o,s,this._boundOnMessage),this._dataEvents.fireModified())}"
+        },
+        {
+          "name": "requestMoreData",
+          "arguments": 1,
+          "code": "requestMoreData(t){null!==this._instanceId&&this._gateway.requestMoreData(this._instanceId,t,this._boundOnMessage)}"
+        },
+        {
+          "name": "resolution",
+          "arguments": 0,
+          "code": "resolution(){return this._resolution}"
+        },
+        {
+          "name": "data",
+          "arguments": 0,
+          "code": "data(){return this._data}"
+        },
+        {
+          "name": "setData",
+          "arguments": 1,
+          "code": "setData(t){this._data=t}"
+        },
+        {
+          "name": "setTimeframe",
+          "arguments": 1,
+          "code": "setTimeframe(t){this._timeFrame=t}"
+        },
+        {
+          "name": "clearData",
+          "arguments": 0,
+          "code": "clearData(){this.isStarted()?this._enqueueUpdate((()=>this._clearDataImpl())):this._clearDataImpl()}"
+        },
+        {
+          "name": "dataEvents",
+          "arguments": 0,
+          "code": "dataEvents(){return this._dataEvents}"
+        },
+        {
+          "name": "updateExtSymbol",
+          "arguments": 1,
+          "code": "updateExtSymbol(t){this._extSymbol=t}"
+        },
+        {
+          "name": "moveData",
+          "arguments": 1,
+          "code": "moveData(t){return this._enqueueUpdate((()=>this._data.moveData(t)))}"
+        },
+        {
+          "name": "_clearDataImpl",
+          "arguments": 0,
+          "code": "_clearDataImpl(){this._data.clear(),this._dataEvents.fireCleared()}"
+        },
+        {
+          "name": "_createSeries",
+          "arguments": 0,
+          "code": "_createSeries(){(0,r.assert)(3!==this._status,'Status should not be \"Active\" when creating a study'),this._instanceId=\"sds_\"+S++,this._resolveSymbol();const t=this._createSeriesOverriddenParams||this._createSeriesParams;this._createSeriesOverriddenParams&&(this._createSeriesOverriddenParams=0),this._gateway.createSeries(this._instanceId,this.turnaround(),(0,r.ensureNotNull)(this._symbolInstanceId),(0,r.ensureNotNull)(this._resolution),t,this._timeFrame,this._boundOnMessage),this._timeFrame=null,this._changeStatusTo(2),this._dataEvents.fireCreated(this._instanceId)}"
+        },
+        {
+          "name": "_onSeriesError",
+          "arguments": 1,
+          "code": "_onSeriesError(t){let e,s;if(\"string\"==typeof t)s={error:t},e=t;else if(s=t,t.ctx){const s={};Object.entries(t.ctx).forEach((([t,e])=>{s[t]=e.toString()})),i=t.error,a=s,e=i.replace(y,((t,e)=>void 0!==a[e]?a[e]:t))}else e=t.error;var i,a;if(e.startsWith(\"study_not_auth:\")){const t=e.split(\":\",2)[1].split(\"@\",2)[0];if([\"BarSetRenko\",\"BarSetPriceBreak\",\"BarSetKagi\",\"BarSetPnF\"].includes(t))this._dataEvents.fireChartTypeNotPermitted(t);else{if(\"BarSetSpread\"===t)return void this._dataEvents.fireIntradaySpreadNotPermitted();if(\"BarSetRange\"===t){const t=`${(0,r.ensureNotNull)(this._extSymbol).inputs.range}R`;this._dataEvents.fireCustomIntervalNotPermitted(t)}}}else{if(e.startsWith(\"unsupported\"))return void this._dataEvents.fireUnsupportedResolutionRequested();(0,m.isPlanRestrictedResolutionError)(e)&&this._firePlanRestrictedResolution(e)}this._dataEvents.fireSeriesError(s)}"
+        },
+        {
+          "name": "_firePlanRestrictedResolution",
+          "arguments": 1,
+          "code": "_firePlanRestrictedResolution(t){({resolution_not_entitled:()=>this._dataEvents.fireIntradayExchangeNotPermitted(),\ncustom_resolution:()=>this._dataEvents.fireCustomIntervalNotPermitted((0,r.ensureNotNull)(this._resolution)),custom_sec_resolution:()=>this._dataEvents.fireCustomSecondsIntervalNotPermitted((0,r.ensureNotNull)(this._resolution)),seconds_not_entitled:()=>this._dataEvents.fireSecondsIntervalNotPermitted(),ticks_not_entitled:()=>this._dataEvents.fireTicksIntervalNotPermitted()})[t]()}"
+        },
+        {
+          "name": "_onSeriesTimeFrame",
+          "arguments": 5,
+          "code": "_onSeriesTimeFrame(t,e,s,r,i){this._dataEvents.fireSeriesTimeFrame(t,e,s,r??!0,i)}"
+        },
+        {
+          "name": "_onDataUpdate",
+          "arguments": 3,
+          "code": "async _onDataUpdate(t,e,s){this._onDataUnpacked(t,s,await(0,c.parseJapaneseProjectionBars)(e,this._gateway.wireFormat().unpackNonSeriesData))}"
+        },
+        {
+          "name": "_enqueueUpdate",
+          "arguments": 1,
+          "code": "_enqueueUpdate(t){return this._ongoingDataUpdate=this._ongoingDataUpdate.then(t,t),this._ongoingDataUpdate}"
+        },
+        {
+          "name": "_onDataUnpacked",
+          "arguments": 3,
+          "code": "_onDataUnpacked(t,e,s){if(0===this._status)return;2===this._status&&(this._changeStatusTo(3),this._clearDataImpl());const r=this._data.bars().size(),i=this._data.first(),a=this._data.bars().firstIndex(),n=this._data.mergeRegularBars(t);null!==s&&(this._data.nsBars().clear(),this._data.nsBars().merge(s.projectionPlots),this._data.lastProjectionPrice=s.lastPrice,null!==s.boxSize&&(this._data.boxSize=s.boxSize),this._data.reversalAmount=s.reversalAmount);const o=null===a,l=o||null!==n&&n.index<a;this._dataEvents.fireDataUpdated(e,l,n,o,i),r!==this._data.bars().size()&&null!==n&&this._dataEvents.fireBarReceived(n)}"
+        },
+        {
+          "name": "_onSeriesLoading",
+          "arguments": 1,
+          "code": "_onSeriesLoading(t){this._dataEvents.fireLoading(t)}"
+        },
+        {
+          "name": "_onSeriesCompleted",
+          "arguments": 3,
+          "code": "_onSeriesCompleted(t,e,s){this._dataEvents.fireCompleted({updateMode:t,time:e,flags:s})}"
+        }
+      ],
+      "seriesData": [
+        {
+          "name": "bars",
+          "arguments": 0,
+          "code": "bars(){return this.m_bars}"
+        },
+        {
+          "name": "nsBars",
+          "arguments": 0,
+          "code": "nsBars(){return this.m_nsBars}"
+        },
+        {
+          "name": "mergeRegularBars",
+          "arguments": 1,
+          "code": "mergeRegularBars(t){return this._conflatedChunksBuilder.mergeData(t)}"
+        },
+        {
+          "name": "plotValueToTimePointIndex",
+          "arguments": 3,
+          "code": "plotValueToTimePointIndex(t,e,s){if(1===s){const s=(s,r)=>{const i=r[e];return null!=i&&t>=i},r=this.m_bars.findLast(s);if(null!==r)return r.index;const i=this.m_nsBars.findLast(s);return null!==i?i.index:this.m_bars.firstIndex()}if(-1===s){const s=(s,r)=>{const i=r[e];return null!=i&&t<=i},r=this.m_bars.findFirst(s);if(null!==r)return r.index;const i=this.m_nsBars.findFirst(s);return null!==i?i.index:this.m_bars.lastIndex()}throw new Error(\"plotValueToTimePointIndex: unsupported search mode\")}"
+        },
+        {
+          "name": "moveData",
+          "arguments": 1,
+          "code": "moveData(t){this._conflatedChunksBuilder.moveData(t),this.m_nsBars.move(t)}"
+        }
+      ],
+      "barStore": [
+        {
+          "name": "firstIndex",
+          "arguments": 0,
+          "code": "firstIndex(){return this.size()>0?this._indexAt(this._start):null}"
+        },
+        {
+          "name": "firstPlottableIndex",
+          "arguments": 0,
+          "code": "firstPlottableIndex(){if(this.isEmpty())return null;for(let t=this._start;t<this._end;++t){const e=this._indexAt(t);if(e>n.UNPLOTTABLE_TIME_POINT_INDEX)return e}return null}"
+        },
+        {
+          "name": "lastIndex",
+          "arguments": 0,
+          "code": "lastIndex(){return this.size()>0?this._indexAt(this._end-1):null}"
+        },
+        {
+          "name": "searchByTime",
+          "arguments": 1,
+          "code": "searchByTime(t,e=o.PlotRowSearchMode.Exact,s){return this._searchImpl(t,e,this._rowSearchCacheByTime,this._rowSearchCacheByTimeWithoutEmptyValues,u,s)}"
+        },
+        {
+          "name": "range",
+          "arguments": 2,
+          "code": "range(t,e){const s=new _(this._plotFunctions,this._emptyValuePredicate);return s._items=this._items,s._start=this._lowerbound(t,d),s._end=this._upperbound(e),s._shareRead=!0,s}"
+        },
+        {
+          "name": "plottableRange",
+          "arguments": 1,
+          "code": "plottableRange(t){const e=new _(this._plotFunctions,this._emptyValuePredicate);return e._items=this._items,\ne._start=this._upperbound(n.UNPLOTTABLE_TIME_POINT_INDEX),e._end=this._end,e._shareRead=!0,!0===t&&e._start>this._start&&(e._start-=1),e}"
+        },
+        {
+          "name": "rangeCountback",
+          "arguments": 2,
+          "code": "rangeCountback(t,e){if(null===this.firstIndex())return new _;const s=new _(this._plotFunctions,this._emptyValuePredicate);return s._items=this._items,s._end=this._upperbound(t),s._start=Math.max(this._start,s._end-e),s._shareRead=!0,s}"
+        },
+        {
+          "name": "rangeIterator",
+          "arguments": 2,
+          "code": "rangeIterator(t,e){const s=this._lowerbound(t,d),r=this._upperbound(e);return this._rangeIteratorImpl(s,r)}"
+        },
+        {
+          "name": "fullRangeIterator",
+          "arguments": 0,
+          "code": "fullRangeIterator(){return this._rangeIteratorImpl(this._start,this._end)}"
+        },
+        {
+          "name": "minMaxOnRangeCached",
+          "arguments": 3,
+          "code": "minMaxOnRangeCached(t,e,s){if(this.isEmpty())return null;let r=null;for(const i of s){r=c(r,this._minMaxOnRangeCachedImpl(t-i.offset,e-i.offset,i.name))}return r}"
+        },
+        {
+          "name": "minMaxOnRange",
+          "arguments": 3,
+          "code": "minMaxOnRange(t,e,s){if(this.isEmpty())return null;let r=null;for(const i of s){r=c(r,this._minMaxOnRange(t-i.offset,e-i.offset,i.name))}return r}"
+        },
+        {
+          "name": "merge",
+          "arguments": 1,
+          "code": "merge(t){return this._shareRead?(l.logDebug(\"merge: readonly collection modification attempt\"),null):0===t.length?null:this.isEmpty()||t[t.length-1].index<this._items[0].index?this._prepend(t):t[0].index>this._items[this._items.length-1].index?this._append(t):1===t.length&&t[0].index===this._items[this._items.length-1].index?(this._updateLast(t[0]),t[0]):this._merge(t)}"
+        },
+        {
+          "name": "_indexAt",
+          "arguments": 1,
+          "code": "_indexAt(t){return this._items[t].index}"
+        },
+        {
+          "name": "_updateLast",
+          "arguments": 1,
+          "code": "_updateLast(t){(0,r.assert)(!this.isEmpty(),\"plot list should not be empty\");const e=this._items[this._end-1];(0,r.assert)(e.index===t.index,\"last row index should match new row index\"),this._invalidateCacheForRow(t),this._invalidateSearchCaches(),this._items[this._end-1]=t}"
+        },
+        {
+          "name": "_merge",
+          "arguments": 1,
+          "code": "_merge(t){return(0,r.assert)(0!==t.length,\"plot rows should not be empty\"),this._invalidateSearchCaches(),this._minMaxCache.clear(),this._items=function(t,e){const s=function(t,e){const s=t.length,r=e.length;let i=s+r,a=0,n=0\n;for(;a<s&&n<r;)t[a].index<e[n].index?a++:t[a].index>e[n].index?n++:(a++,n++,i--);return i}(t,e),r=new Array(s);let i=0,a=0;const n=t.length,o=e.length;let l=0;for(;i<n&&a<o;)t[i].index<e[a].index?(r[l]=t[i],i++):t[i].index>e[a].index?(r[l]=e[a],a++):(r[l]=e[a],i++,a++),l++;for(;i<n;)r[l]=t[i],i++,l++;for(;a<o;)r[l]=e[a],a++,l++;return r}(this._items,t),this._start=0,this._end=this._items.length,t[0]}"
+        },
+        {
+          "name": "_minMaxOnRangeCachedImpl",
+          "arguments": 3,
+          "code": "_minMaxOnRangeCachedImpl(t,e,s){if(this.isEmpty())return null;let i=null;const a=(0,r.ensureNotNull)(this.firstIndex()),n=(0,r.ensureNotNull)(this.lastIndex()),o=Math.max(t,a),l=Math.min(e,n),d=Math.ceil(o/h)*h,u=Math.max(d,Math.floor(l/h)*h);i=c(i,this._minMaxOnRange(o,Math.min(d,e,l),s));let _=this._minMaxCache.get(s);void 0===_&&(_=new Map,this._minMaxCache.set(s,_));for(let t=Math.max(d+1,o);t<u;t+=h){const e=Math.floor(t/h);let r=_.get(e);if(void 0===r){const t=e*h,i=(e+1)*h-1;r=this._minMaxOnRange(t,i,s),_.set(e,r)}i=c(i,r)}i=c(i,this._minMaxOnRange(u,l,s));return i}"
+        },
+        {
+          "name": "_minMaxOnRange",
+          "arguments": 3,
+          "code": "_minMaxOnRange(t,e,s){return this._plotMinMax(this._lowerbound(t,d),this._upperbound(e),s)}"
+        },
+        {
+          "name": "_rangeIteratorImpl",
+          "arguments": 2,
+          "code": "_rangeIteratorImpl(t,e){let s=t-1;return{[Symbol.iterator](){return this},next:()=>(s+=1,s>=e?{done:!0,value:void 0}:{done:!1,value:this._items[s]})}}"
+        }
+      ],
+      "model": [],
+      "timeScale": [],
+      "timeScalePoints": []
+    }
+  },
+  "checks": {
+    "hasTradingViewApi": true,
+    "hasMainSeries": true,
+    "hasTimeScale": false,
+    "hasBarStore": true,
+    "hasBars": true,
+    "currentResolutionKnown": false,
+    "timestampSamplesAvailable": true,
+    "timestampOrderValid": true,
+    "indexOrderContinuous": true
+  },
+  "execution": {
+    "readOnly": true,
+    "errors": {}
+  }
+}
