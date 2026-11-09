@@ -1,0 +1,1621 @@
+{
+  "diagnostic": "TVE-DIAGNOSTIC-TICK-STUDY-v12",
+  "startedAt": "2026-11-09T08:00:30.130Z",
+  "finishedAt": "2026-11-09T08:00:52.204Z",
+  "before": {
+    "label": "before-apply",
+    "at": "2026-11-09T08:00:30.135Z",
+    "symbol": "KCEX:PEPEUSDT.P",
+    "resolution": {
+      "mainSeries": "1",
+      "source": "1"
+    },
+    "bars": {
+      "count": 302,
+      "first": {
+        "index": 0,
+        "value": [
+          1794193140,
+          0.0000051114,
+          0.0000051138,
+          0.0000051102,
+          0.0000051102,
+          722700000
+        ]
+      },
+      "last": {
+        "index": 301,
+        "value": [
+          1794211200,
+          0.0000050009,
+          0.0000050056,
+          0.000004997,
+          0.0000049988,
+          6154100000
+        ]
+      }
+    },
+    "timeScale": {
+      "baseIndex": 301,
+      "rightOffset": 37.83186699999999,
+      "pointCount": 381,
+      "tickStoreKeys": [
+        "_marksByIndex",
+        "_marksByTime",
+        "_marksBySpan",
+        "_cache",
+        "_labelsInvalidated",
+        "_widthsInvalidated",
+        "_skipIntraDayMarksSparseCache",
+        "_changed",
+        "_formatterBySpan",
+        "_textWidthCache",
+        "_timeVisible",
+        "_sparseMarks",
+        "_font",
+        "minIndex",
+        "maxIndex"
+      ],
+      "marksByIndex": {
+        "kind": "Map",
+        "size": 381,
+        "sample": [
+          [
+            0,
+            {
+              "span": 20,
+              "time": 1794205740,
+              "index": 0,
+              "label": "06:29",
+              "overriddenSpan": 20,
+              "width": 29.578125
+            }
+          ],
+          [
+            1,
+            {
+              "span": 22,
+              "time": 1794205800,
+              "index": 1,
+              "label": "06:30",
+              "overriddenSpan": 29,
+              "width": 29.578125
+            }
+          ],
+          [
+            2,
+            {
+              "span": 20,
+              "time": 1794205860,
+              "index": 2,
+              "label": "06:31",
+              "overriddenSpan": 20,
+              "width": 29.578125
+            }
+          ]
+        ]
+      },
+      "marksByTime": {
+        "kind": "Map",
+        "size": 381,
+        "sample": [
+          [
+            1794205740,
+            {
+              "span": 20,
+              "time": 1794205740,
+              "index": 0,
+              "label": "06:29",
+              "overriddenSpan": 20,
+              "width": 29.578125
+            }
+          ],
+          [
+            1794205800,
+            {
+              "span": 22,
+              "time": 1794205800,
+              "index": 1,
+              "label": "06:30",
+              "overriddenSpan": 29,
+              "width": 29.578125
+            }
+          ],
+          [
+            1794205860,
+            {
+              "span": 20,
+              "time": 1794205860,
+              "index": 2,
+              "label": "06:31",
+              "overriddenSpan": 20,
+              "width": 29.578125
+            }
+          ]
+        ]
+      },
+      "marksBySpan": {
+        "kind": "Array",
+        "length": 40,
+        "last": [
+          {
+            "span": 33,
+            "time": 1794225600,
+            "index": 331,
+            "label": "12:00",
+            "overriddenSpan": 39,
+            "width": 29.578125
+          }
+        ]
+      },
+      "cache": {
+        "kind": "Object",
+        "keys": [
+          "marks",
+          "barSpacing"
+        ],
+        "sample": [
+          [
+            "marks",
+            [
+              {
+                "span": 22,
+                "time": 1794205800,
+                "index": 1,
+                "label": "06:30",
+                "overriddenSpan": 29,
+                "width": 29.578125
+              },
+              {
+                "span": 21,
+                "time": 1794206100,
+                "index": 6,
+                "label": "06:35",
+                "overriddenSpan": 27,
+                "width": 29.578125
+              },
+              {
+                "span": 21,
+                "time": 1794206400,
+                "index": 11,
+                "label": "06:40",
+                "overriddenSpan": 27,
+                "width": 29.578125
+              },
+              {
+                "span": 21,
+                "time": 1794206700,
+                "index": 16,
+                "label": "06:45",
+                "overriddenSpan": 28,
+                "width": 29.578125
+              },
+              {
+                "span": 21,
+                "time": 1794207000,
+                "index": 21,
+                "label": "06:50",
+                "overriddenSpan": 27,
+                "width": 29.578125
+              },
+              {
+                "span": 21,
+                "time": 1794207300,
+                "index": 26,
+                "label": "06:55",
+                "overriddenSpan": 27,
+                "width": 29.578125
+              },
+              {
+                "span": 30,
+                "time": 1794207600,
+                "index": 31,
+                "label": "07:00",
+                "overriddenSpan": 30,
+                "width": 29.578125
+              },
+              {
+                "span": 21,
+                "time": 1794207900,
+                "index": 36,
+                "label": "07:05",
+                "overriddenSpan": 27,
+                "width": 29.578125
+              }
+            ]
+          ],
+          [
+            "barSpacing",
+            12.441393864522983
+          ]
+        ]
+      }
+    },
+    "renderer": {
+      "paneViewPresent": true,
+      "rendererPresent": false
+    },
+    "studyCount": 31,
+    "studyList": [
+      {
+        "id": "nukFO0",
+        "name": {
+          "subscribe": "[Function]",
+          "unsubscribe": "[Function]",
+          "value": "[Function]",
+          "when": "[Function]",
+          "ownership": "[Function]",
+          "spawnOwnership": "[Function]",
+          "weakReference": "[Function]",
+          "spawn": "[Function]",
+          "destroy": "[Function]",
+          "readonly": "[Function]"
+        }
+      },
+      {
+        "id": "D7zFy3",
+        "name": {
+          "subscribe": "[Function]",
+          "unsubscribe": "[Function]",
+          "value": "[Function]",
+          "when": "[Function]",
+          "ownership": "[Function]",
+          "spawnOwnership": "[Function]",
+          "weakReference": "[Function]",
+          "spawn": "[Function]",
+          "destroy": "[Function]",
+          "readonly": "[Function]"
+        }
+      },
+      {
+        "id": "yOmNHB",
+        "name": {
+          "subscribe": "[Function]",
+          "unsubscribe": "[Function]",
+          "value": "[Function]",
+          "when": "[Function]",
+          "ownership": "[Function]",
+          "spawnOwnership": "[Function]",
+          "weakReference": "[Function]",
+          "spawn": "[Function]",
+          "destroy": "[Function]",
+          "readonly": "[Function]"
+        }
+      },
+      {
+        "id": "tItVLl",
+        "name": {
+          "subscribe": "[Function]",
+          "unsubscribe": "[Function]",
+          "value": "[Function]",
+          "when": "[Function]",
+          "ownership": "[Function]",
+          "spawnOwnership": "[Function]",
+          "weakReference": "[Function]",
+          "spawn": "[Function]",
+          "destroy": "[Function]",
+          "readonly": "[Function]"
+        }
+      },
+      {
+        "id": "vBsC8z",
+        "name": {
+          "subscribe": "[Function]",
+          "unsubscribe": "[Function]",
+          "value": "[Function]",
+          "when": "[Function]",
+          "ownership": "[Function]",
+          "spawnOwnership": "[Function]",
+          "weakReference": "[Function]",
+          "spawn": "[Function]",
+          "destroy": "[Function]",
+          "readonly": "[Function]"
+        }
+      },
+      {
+        "id": "uZUbZL",
+        "name": {
+          "subscribe": "[Function]",
+          "unsubscribe": "[Function]",
+          "value": "[Function]",
+          "when": "[Function]",
+          "ownership": "[Function]",
+          "spawnOwnership": "[Function]",
+          "weakReference": "[Function]",
+          "spawn": "[Function]",
+          "destroy": "[Function]",
+          "readonly": "[Function]"
+        }
+      },
+      {
+        "id": "srtpa5",
+        "name": {
+          "subscribe": "[Function]",
+          "unsubscribe": "[Function]",
+          "value": "[Function]",
+          "when": "[Function]",
+          "ownership": "[Function]",
+          "spawnOwnership": "[Function]",
+          "weakReference": "[Function]",
+          "spawn": "[Function]",
+          "destroy": "[Function]",
+          "readonly": "[Function]"
+        }
+      },
+      {
+        "id": "9Zjq20",
+        "name": {
+          "subscribe": "[Function]",
+          "unsubscribe": "[Function]",
+          "value": "[Function]",
+          "when": "[Function]",
+          "ownership": "[Function]",
+          "spawnOwnership": "[Function]",
+          "weakReference": "[Function]",
+          "spawn": "[Function]",
+          "destroy": "[Function]",
+          "readonly": "[Function]"
+        }
+      },
+      {
+        "id": "I3kftm",
+        "name": {
+          "subscribe": "[Function]",
+          "unsubscribe": "[Function]",
+          "value": "[Function]",
+          "when": "[Function]",
+          "ownership": "[Function]",
+          "spawnOwnership": "[Function]",
+          "weakReference": "[Function]",
+          "spawn": "[Function]",
+          "destroy": "[Function]",
+          "readonly": "[Function]"
+        }
+      },
+      {
+        "id": "ShG16J",
+        "name": {
+          "subscribe": "[Function]",
+          "unsubscribe": "[Function]",
+          "value": "[Function]",
+          "when": "[Function]",
+          "ownership": "[Function]",
+          "spawnOwnership": "[Function]",
+          "weakReference": "[Function]",
+          "spawn": "[Function]",
+          "destroy": "[Function]",
+          "readonly": "[Function]"
+        }
+      },
+      {
+        "id": "zCTcIf",
+        "name": {
+          "subscribe": "[Function]",
+          "unsubscribe": "[Function]",
+          "value": "[Function]",
+          "when": "[Function]",
+          "ownership": "[Function]",
+          "spawnOwnership": "[Function]",
+          "weakReference": "[Function]",
+          "spawn": "[Function]",
+          "destroy": "[Function]",
+          "readonly": "[Function]"
+        }
+      },
+      {
+        "id": "ZHYeXX",
+        "name": {
+          "subscribe": "[Function]",
+          "unsubscribe": "[Function]",
+          "value": "[Function]",
+          "when": "[Function]",
+          "ownership": "[Function]",
+          "spawnOwnership": "[Function]",
+          "weakReference": "[Function]",
+          "spawn": "[Function]",
+          "destroy": "[Function]",
+          "readonly": "[Function]"
+        }
+      },
+      {
+        "id": "hDJvzS",
+        "name": {
+          "subscribe": "[Function]",
+          "unsubscribe": "[Function]",
+          "value": "[Function]",
+          "when": "[Function]",
+          "ownership": "[Function]",
+          "spawnOwnership": "[Function]",
+          "weakReference": "[Function]",
+          "spawn": "[Function]",
+          "destroy": "[Function]",
+          "readonly": "[Function]"
+        }
+      },
+      {
+        "id": "OstqYO",
+        "name": {
+          "subscribe": "[Function]",
+          "unsubscribe": "[Function]",
+          "value": "[Function]",
+          "when": "[Function]",
+          "ownership": "[Function]",
+          "spawnOwnership": "[Function]",
+          "weakReference": "[Function]",
+          "spawn": "[Function]",
+          "destroy": "[Function]",
+          "readonly": "[Function]"
+        }
+      },
+      {
+        "id": "xRK45x",
+        "name": {
+          "subscribe": "[Function]",
+          "unsubscribe": "[Function]",
+          "value": "[Function]",
+          "when": "[Function]",
+          "ownership": "[Function]",
+          "spawnOwnership": "[Function]",
+          "weakReference": "[Function]",
+          "spawn": "[Function]",
+          "destroy": "[Function]",
+          "readonly": "[Function]"
+        }
+      },
+      {
+        "id": "VBPfOv",
+        "name": {
+          "subscribe": "[Function]",
+          "unsubscribe": "[Function]",
+          "value": "[Function]",
+          "when": "[Function]",
+          "ownership": "[Function]",
+          "spawnOwnership": "[Function]",
+          "weakReference": "[Function]",
+          "spawn": "[Function]",
+          "destroy": "[Function]",
+          "readonly": "[Function]"
+        }
+      },
+      {
+        "id": "AdB1Hh",
+        "name": {
+          "subscribe": "[Function]",
+          "unsubscribe": "[Function]",
+          "value": "[Function]",
+          "when": "[Function]",
+          "ownership": "[Function]",
+          "spawnOwnership": "[Function]",
+          "weakReference": "[Function]",
+          "spawn": "[Function]",
+          "destroy": "[Function]",
+          "readonly": "[Function]"
+        }
+      },
+      {
+        "id": "UGB4cl",
+        "name": {
+          "subscribe": "[Function]",
+          "unsubscribe": "[Function]",
+          "value": "[Function]",
+          "when": "[Function]",
+          "ownership": "[Function]",
+          "spawnOwnership": "[Function]",
+          "weakReference": "[Function]",
+          "spawn": "[Function]",
+          "destroy": "[Function]",
+          "readonly": "[Function]"
+        }
+      },
+      {
+        "id": "RlsciB",
+        "name": {
+          "subscribe": "[Function]",
+          "unsubscribe": "[Function]",
+          "value": "[Function]",
+          "when": "[Function]",
+          "ownership": "[Function]",
+          "spawnOwnership": "[Function]",
+          "weakReference": "[Function]",
+          "spawn": "[Function]",
+          "destroy": "[Function]",
+          "readonly": "[Function]"
+        }
+      },
+      {
+        "id": "IDUdsj",
+        "name": {
+          "subscribe": "[Function]",
+          "unsubscribe": "[Function]",
+          "value": "[Function]",
+          "when": "[Function]",
+          "ownership": "[Function]",
+          "spawnOwnership": "[Function]",
+          "weakReference": "[Function]",
+          "spawn": "[Function]",
+          "destroy": "[Function]",
+          "readonly": "[Function]"
+        }
+      },
+      {
+        "id": "izjpf0",
+        "name": {
+          "subscribe": "[Function]",
+          "unsubscribe": "[Function]",
+          "value": "[Function]",
+          "when": "[Function]",
+          "ownership": "[Function]",
+          "spawnOwnership": "[Function]",
+          "weakReference": "[Function]",
+          "spawn": "[Function]",
+          "destroy": "[Function]",
+          "readonly": "[Function]"
+        }
+      },
+      {
+        "id": "LNkFEX",
+        "name": {
+          "subscribe": "[Function]",
+          "unsubscribe": "[Function]",
+          "value": "[Function]",
+          "when": "[Function]",
+          "ownership": "[Function]",
+          "spawnOwnership": "[Function]",
+          "weakReference": "[Function]",
+          "spawn": "[Function]",
+          "destroy": "[Function]",
+          "readonly": "[Function]"
+        }
+      },
+      {
+        "id": "NZW3Sh",
+        "name": {
+          "subscribe": "[Function]",
+          "unsubscribe": "[Function]",
+          "value": "[Function]",
+          "when": "[Function]",
+          "ownership": "[Function]",
+          "spawnOwnership": "[Function]",
+          "weakReference": "[Function]",
+          "spawn": "[Function]",
+          "destroy": "[Function]",
+          "readonly": "[Function]"
+        }
+      },
+      {
+        "id": "Jxj81m",
+        "name": {
+          "subscribe": "[Function]",
+          "unsubscribe": "[Function]",
+          "value": "[Function]",
+          "when": "[Function]",
+          "ownership": "[Function]",
+          "spawnOwnership": "[Function]",
+          "weakReference": "[Function]",
+          "spawn": "[Function]",
+          "destroy": "[Function]",
+          "readonly": "[Function]"
+        }
+      },
+      {
+        "id": "snrd54",
+        "name": {
+          "subscribe": "[Function]",
+          "unsubscribe": "[Function]",
+          "value": "[Function]",
+          "when": "[Function]",
+          "ownership": "[Function]",
+          "spawnOwnership": "[Function]",
+          "weakReference": "[Function]",
+          "spawn": "[Function]",
+          "destroy": "[Function]",
+          "readonly": "[Function]"
+        }
+      },
+      {
+        "id": "Csn4a7",
+        "name": {
+          "subscribe": "[Function]",
+          "unsubscribe": "[Function]",
+          "value": "[Function]",
+          "when": "[Function]",
+          "ownership": "[Function]",
+          "spawnOwnership": "[Function]",
+          "weakReference": "[Function]",
+          "spawn": "[Function]",
+          "destroy": "[Function]",
+          "readonly": "[Function]"
+        }
+      },
+      {
+        "id": "NUhPq8",
+        "name": {
+          "subscribe": "[Function]",
+          "unsubscribe": "[Function]",
+          "value": "[Function]",
+          "when": "[Function]",
+          "ownership": "[Function]",
+          "spawnOwnership": "[Function]",
+          "weakReference": "[Function]",
+          "spawn": "[Function]",
+          "destroy": "[Function]",
+          "readonly": "[Function]"
+        }
+      },
+      {
+        "id": "EC7E1M",
+        "name": {
+          "subscribe": "[Function]",
+          "unsubscribe": "[Function]",
+          "value": "[Function]",
+          "when": "[Function]",
+          "ownership": "[Function]",
+          "spawnOwnership": "[Function]",
+          "weakReference": "[Function]",
+          "spawn": "[Function]",
+          "destroy": "[Function]",
+          "readonly": "[Function]"
+        }
+      },
+      {
+        "id": "8s6DM9",
+        "name": {
+          "subscribe": "[Function]",
+          "unsubscribe": "[Function]",
+          "value": "[Function]",
+          "when": "[Function]",
+          "ownership": "[Function]",
+          "spawnOwnership": "[Function]",
+          "weakReference": "[Function]",
+          "spawn": "[Function]",
+          "destroy": "[Function]",
+          "readonly": "[Function]"
+        }
+      },
+      {
+        "id": "RlEfKO",
+        "name": {
+          "subscribe": "[Function]",
+          "unsubscribe": "[Function]",
+          "value": "[Function]",
+          "when": "[Function]",
+          "ownership": "[Function]",
+          "spawnOwnership": "[Function]",
+          "weakReference": "[Function]",
+          "spawn": "[Function]",
+          "destroy": "[Function]",
+          "readonly": "[Function]"
+        }
+      },
+      {
+        "id": "nv2NCk",
+        "name": {
+          "subscribe": "[Function]",
+          "unsubscribe": "[Function]",
+          "value": "[Function]",
+          "when": "[Function]",
+          "ownership": "[Function]",
+          "spawnOwnership": "[Function]",
+          "weakReference": "[Function]",
+          "spawn": "[Function]",
+          "destroy": "[Function]",
+          "readonly": "[Function]"
+        }
+      }
+    ],
+    "targetWPR": {
+      "id": "nv2NCk",
+      "name": {
+        "subscribe": "[Function]",
+        "unsubscribe": "[Function]",
+        "value": "[Function]",
+        "when": "[Function]",
+        "ownership": "[Function]",
+        "spawnOwnership": "[Function]",
+        "weakReference": "[Function]",
+        "spawn": "[Function]",
+        "destroy": "[Function]",
+        "readonly": "[Function]"
+      },
+      "statusMethod": {
+        "type": 2
+      },
+      "statusValue": {
+        "type": 2
+      },
+      "dataCount": 402,
+      "dataStart": 0,
+      "dataEnd": 402,
+      "firstItem": {
+        "index": -1000100,
+        "value": [
+          1794187140,
+          -83.64485981308412,
+          0.0000050754,
+          0.0000050701,
+          0,
+          0,
+          null,
+          null
+        ]
+      },
+      "secondItem": {
+        "index": -1000099,
+        "value": [
+          1794187200,
+          -19.62616822429825,
+          0.0000050754,
+          0.0000050701,
+          0,
+          0,
+          null,
+          null
+        ]
+      },
+      "lastItem": {
+        "index": 301,
+        "value": [
+          1794211200,
+          0,
+          0.0000050261,
+          0.0000049852,
+          0,
+          0,
+          null,
+          null
+        ]
+      },
+      "graphicsIndexes": {
+        "kind": "Array",
+        "length": 2,
+        "first": 298,
+        "second": 301,
+        "last": 301
+      },
+      "paneViewsCount": 9,
+      "methods": [
+        [
+          "recalculate",
+          true
+        ],
+        [
+          "onDataUpdated",
+          true
+        ],
+        [
+          "replaceData",
+          true
+        ],
+        [
+          "updateAllViews",
+          true
+        ]
+      ]
+    },
+    "axisNodes": [
+      {
+        "tag": "DIV",
+        "className": "chart-markup-table time-axis",
+        "dataName": null,
+        "text": "",
+        "rect": {
+          "x": 56,
+          "y": 988,
+          "width": 875,
+          "height": 28
+        }
+      },
+      {
+        "tag": "BUTTON",
+        "className": "item-RaFdWJxD button-zm3YRUFG button-EzpeYLKj apply-common-tooltip isInteractive-zm3YRUFG accessible-zm3YRUFG",
+        "dataName": "time-zone-menu",
+        "text": "11:30:27 UTC+3:30",
+        "rect": {
+          "x": 880,
+          "y": 1017,
+          "width": 131,
+          "height": 38
+        }
+      },
+      {
+        "tag": "BUTTON",
+        "className": "roundButton-LEXhwY2Z roundButtonColor-bRjlnCjX gray-bRjlnCjX secondary-bRjlnCjX xsmall-LEXhwY2Z withEndSlot-LEXhwY2Z",
+        "dataName": "toast-group-expand-button-account-deletion-initiated",
+        "text": "Show more",
+        "rect": {
+          "x": 64,
+          "y": 1055,
+          "width": 109,
+          "height": 28
+        }
+      },
+      {
+        "tag": "BUTTON",
+        "className": "roundButton-LEXhwY2Z roundButtonColor-bRjlnCjX gray-bRjlnCjX secondary-bRjlnCjX xsmall-LEXhwY2Z iconOnly-LEXhwY2Z withEndSlot-LEXhwY2Z apply-common-to",
+        "dataName": "toast-group-close-button-account-deletion-initiated",
+        "text": "",
+        "rect": {
+          "x": 181,
+          "y": 1055,
+          "width": 28,
+          "height": 28
+        }
+      },
+      {
+        "tag": "BUTTON",
+        "className": "roundButton-LEXhwY2Z roundButtonColor-bRjlnCjX gray-bRjlnCjX secondary-bRjlnCjX xsmall-LEXhwY2Z withEndSlot-LEXhwY2Z",
+        "dataName": "toast-group-expand-button-account-deletion-cancelled",
+        "text": "Show more",
+        "rect": {
+          "x": 64,
+          "y": 1055,
+          "width": 109,
+          "height": 28
+        }
+      },
+      {
+        "tag": "BUTTON",
+        "className": "roundButton-LEXhwY2Z roundButtonColor-bRjlnCjX gray-bRjlnCjX secondary-bRjlnCjX xsmall-LEXhwY2Z iconOnly-LEXhwY2Z withEndSlot-LEXhwY2Z apply-common-to",
+        "dataName": "toast-group-close-button-account-deletion-cancelled",
+        "text": "",
+        "rect": {
+          "x": 181,
+          "y": 1055,
+          "width": 28,
+          "height": 28
+        }
+      }
+    ]
+  },
+  "after": {
+    "label": "after-apply",
+    "at": "2026-11-09T08:00:49.826Z",
+    "symbol": "KCEX:PEPEUSDT.P",
+    "resolution": {
+      "mainSeries": "1",
+      "source": "5S"
+    },
+    "bars": {
+      "count": 77,
+      "first": {
+        "index": 0,
+        "value": [
+          1794210865,
+          0.0000049945,
+          0.0000049945,
+          0.0000049945,
+          0.0000049945,
+          3
+        ]
+      },
+      "last": {
+        "index": 76,
+        "value": [
+          1794211245,
+          0.0000050028,
+          0.0000050028,
+          0.0000050028,
+          0.0000050028,
+          0
+        ]
+      }
+    },
+    "timeScale": {
+      "baseIndex": 76,
+      "rightOffset": 5,
+      "pointCount": 77,
+      "tickStoreKeys": [
+        "_marksByIndex",
+        "_marksByTime",
+        "_marksBySpan",
+        "_cache",
+        "_labelsInvalidated",
+        "_widthsInvalidated",
+        "_skipIntraDayMarksSparseCache",
+        "_changed",
+        "_formatterBySpan",
+        "_textWidthCache",
+        "_timeVisible",
+        "_sparseMarks",
+        "_font",
+        "minIndex",
+        "maxIndex"
+      ],
+      "marksByIndex": {
+        "kind": "Map",
+        "size": 77,
+        "sample": [
+          [
+            0,
+            {
+              "index": 0,
+              "time": 1794210865,
+              "weight": 10,
+              "originalTime": 1794210865,
+              "label": "2026",
+              "width": 25.171875
+            }
+          ],
+          [
+            1,
+            {
+              "index": 1,
+              "time": 1794210870,
+              "weight": 20,
+              "originalTime": 1794210870,
+              "label": "2026",
+              "width": 25.171875
+            }
+          ],
+          [
+            2,
+            {
+              "index": 2,
+              "time": 1794210875,
+              "weight": 10,
+              "originalTime": 1794210875,
+              "label": "2026",
+              "width": 25.171875
+            }
+          ]
+        ]
+      },
+      "marksByTime": {
+        "kind": "Map",
+        "size": 77,
+        "sample": [
+          [
+            1794210865,
+            {
+              "index": 0,
+              "time": 1794210865,
+              "weight": 10,
+              "originalTime": 1794210865,
+              "label": "2026",
+              "width": 25.171875
+            }
+          ],
+          [
+            1794210870,
+            {
+              "index": 1,
+              "time": 1794210870,
+              "weight": 20,
+              "originalTime": 1794210870,
+              "label": "2026",
+              "width": 25.171875
+            }
+          ],
+          [
+            1794210875,
+            {
+              "index": 2,
+              "time": 1794210875,
+              "weight": 10,
+              "originalTime": 1794210875,
+              "label": "2026",
+              "width": 25.171875
+            }
+          ]
+        ]
+      },
+      "marksBySpan": {
+        "kind": "Array",
+        "length": 0
+      },
+      "cache": {
+        "kind": "Object",
+        "keys": [
+          "marks",
+          "barSpacing"
+        ],
+        "sample": [
+          [
+            "marks",
+            []
+          ],
+          [
+            "barSpacing",
+            12.441393864522983
+          ]
+        ]
+      }
+    },
+    "renderer": {
+      "paneViewPresent": true,
+      "rendererPresent": false
+    },
+    "studyCount": 31,
+    "studyList": [
+      {
+        "id": "nukFO0",
+        "name": {
+          "subscribe": "[Function]",
+          "unsubscribe": "[Function]",
+          "value": "[Function]",
+          "when": "[Function]",
+          "ownership": "[Function]",
+          "spawnOwnership": "[Function]",
+          "weakReference": "[Function]",
+          "spawn": "[Function]",
+          "destroy": "[Function]",
+          "readonly": "[Function]"
+        }
+      },
+      {
+        "id": "D7zFy3",
+        "name": {
+          "subscribe": "[Function]",
+          "unsubscribe": "[Function]",
+          "value": "[Function]",
+          "when": "[Function]",
+          "ownership": "[Function]",
+          "spawnOwnership": "[Function]",
+          "weakReference": "[Function]",
+          "spawn": "[Function]",
+          "destroy": "[Function]",
+          "readonly": "[Function]"
+        }
+      },
+      {
+        "id": "yOmNHB",
+        "name": {
+          "subscribe": "[Function]",
+          "unsubscribe": "[Function]",
+          "value": "[Function]",
+          "when": "[Function]",
+          "ownership": "[Function]",
+          "spawnOwnership": "[Function]",
+          "weakReference": "[Function]",
+          "spawn": "[Function]",
+          "destroy": "[Function]",
+          "readonly": "[Function]"
+        }
+      },
+      {
+        "id": "tItVLl",
+        "name": {
+          "subscribe": "[Function]",
+          "unsubscribe": "[Function]",
+          "value": "[Function]",
+          "when": "[Function]",
+          "ownership": "[Function]",
+          "spawnOwnership": "[Function]",
+          "weakReference": "[Function]",
+          "spawn": "[Function]",
+          "destroy": "[Function]",
+          "readonly": "[Function]"
+        }
+      },
+      {
+        "id": "vBsC8z",
+        "name": {
+          "subscribe": "[Function]",
+          "unsubscribe": "[Function]",
+          "value": "[Function]",
+          "when": "[Function]",
+          "ownership": "[Function]",
+          "spawnOwnership": "[Function]",
+          "weakReference": "[Function]",
+          "spawn": "[Function]",
+          "destroy": "[Function]",
+          "readonly": "[Function]"
+        }
+      },
+      {
+        "id": "uZUbZL",
+        "name": {
+          "subscribe": "[Function]",
+          "unsubscribe": "[Function]",
+          "value": "[Function]",
+          "when": "[Function]",
+          "ownership": "[Function]",
+          "spawnOwnership": "[Function]",
+          "weakReference": "[Function]",
+          "spawn": "[Function]",
+          "destroy": "[Function]",
+          "readonly": "[Function]"
+        }
+      },
+      {
+        "id": "srtpa5",
+        "name": {
+          "subscribe": "[Function]",
+          "unsubscribe": "[Function]",
+          "value": "[Function]",
+          "when": "[Function]",
+          "ownership": "[Function]",
+          "spawnOwnership": "[Function]",
+          "weakReference": "[Function]",
+          "spawn": "[Function]",
+          "destroy": "[Function]",
+          "readonly": "[Function]"
+        }
+      },
+      {
+        "id": "9Zjq20",
+        "name": {
+          "subscribe": "[Function]",
+          "unsubscribe": "[Function]",
+          "value": "[Function]",
+          "when": "[Function]",
+          "ownership": "[Function]",
+          "spawnOwnership": "[Function]",
+          "weakReference": "[Function]",
+          "spawn": "[Function]",
+          "destroy": "[Function]",
+          "readonly": "[Function]"
+        }
+      },
+      {
+        "id": "I3kftm",
+        "name": {
+          "subscribe": "[Function]",
+          "unsubscribe": "[Function]",
+          "value": "[Function]",
+          "when": "[Function]",
+          "ownership": "[Function]",
+          "spawnOwnership": "[Function]",
+          "weakReference": "[Function]",
+          "spawn": "[Function]",
+          "destroy": "[Function]",
+          "readonly": "[Function]"
+        }
+      },
+      {
+        "id": "ShG16J",
+        "name": {
+          "subscribe": "[Function]",
+          "unsubscribe": "[Function]",
+          "value": "[Function]",
+          "when": "[Function]",
+          "ownership": "[Function]",
+          "spawnOwnership": "[Function]",
+          "weakReference": "[Function]",
+          "spawn": "[Function]",
+          "destroy": "[Function]",
+          "readonly": "[Function]"
+        }
+      },
+      {
+        "id": "zCTcIf",
+        "name": {
+          "subscribe": "[Function]",
+          "unsubscribe": "[Function]",
+          "value": "[Function]",
+          "when": "[Function]",
+          "ownership": "[Function]",
+          "spawnOwnership": "[Function]",
+          "weakReference": "[Function]",
+          "spawn": "[Function]",
+          "destroy": "[Function]",
+          "readonly": "[Function]"
+        }
+      },
+      {
+        "id": "ZHYeXX",
+        "name": {
+          "subscribe": "[Function]",
+          "unsubscribe": "[Function]",
+          "value": "[Function]",
+          "when": "[Function]",
+          "ownership": "[Function]",
+          "spawnOwnership": "[Function]",
+          "weakReference": "[Function]",
+          "spawn": "[Function]",
+          "destroy": "[Function]",
+          "readonly": "[Function]"
+        }
+      },
+      {
+        "id": "hDJvzS",
+        "name": {
+          "subscribe": "[Function]",
+          "unsubscribe": "[Function]",
+          "value": "[Function]",
+          "when": "[Function]",
+          "ownership": "[Function]",
+          "spawnOwnership": "[Function]",
+          "weakReference": "[Function]",
+          "spawn": "[Function]",
+          "destroy": "[Function]",
+          "readonly": "[Function]"
+        }
+      },
+      {
+        "id": "OstqYO",
+        "name": {
+          "subscribe": "[Function]",
+          "unsubscribe": "[Function]",
+          "value": "[Function]",
+          "when": "[Function]",
+          "ownership": "[Function]",
+          "spawnOwnership": "[Function]",
+          "weakReference": "[Function]",
+          "spawn": "[Function]",
+          "destroy": "[Function]",
+          "readonly": "[Function]"
+        }
+      },
+      {
+        "id": "xRK45x",
+        "name": {
+          "subscribe": "[Function]",
+          "unsubscribe": "[Function]",
+          "value": "[Function]",
+          "when": "[Function]",
+          "ownership": "[Function]",
+          "spawnOwnership": "[Function]",
+          "weakReference": "[Function]",
+          "spawn": "[Function]",
+          "destroy": "[Function]",
+          "readonly": "[Function]"
+        }
+      },
+      {
+        "id": "VBPfOv",
+        "name": {
+          "subscribe": "[Function]",
+          "unsubscribe": "[Function]",
+          "value": "[Function]",
+          "when": "[Function]",
+          "ownership": "[Function]",
+          "spawnOwnership": "[Function]",
+          "weakReference": "[Function]",
+          "spawn": "[Function]",
+          "destroy": "[Function]",
+          "readonly": "[Function]"
+        }
+      },
+      {
+        "id": "AdB1Hh",
+        "name": {
+          "subscribe": "[Function]",
+          "unsubscribe": "[Function]",
+          "value": "[Function]",
+          "when": "[Function]",
+          "ownership": "[Function]",
+          "spawnOwnership": "[Function]",
+          "weakReference": "[Function]",
+          "spawn": "[Function]",
+          "destroy": "[Function]",
+          "readonly": "[Function]"
+        }
+      },
+      {
+        "id": "UGB4cl",
+        "name": {
+          "subscribe": "[Function]",
+          "unsubscribe": "[Function]",
+          "value": "[Function]",
+          "when": "[Function]",
+          "ownership": "[Function]",
+          "spawnOwnership": "[Function]",
+          "weakReference": "[Function]",
+          "spawn": "[Function]",
+          "destroy": "[Function]",
+          "readonly": "[Function]"
+        }
+      },
+      {
+        "id": "RlsciB",
+        "name": {
+          "subscribe": "[Function]",
+          "unsubscribe": "[Function]",
+          "value": "[Function]",
+          "when": "[Function]",
+          "ownership": "[Function]",
+          "spawnOwnership": "[Function]",
+          "weakReference": "[Function]",
+          "spawn": "[Function]",
+          "destroy": "[Function]",
+          "readonly": "[Function]"
+        }
+      },
+      {
+        "id": "IDUdsj",
+        "name": {
+          "subscribe": "[Function]",
+          "unsubscribe": "[Function]",
+          "value": "[Function]",
+          "when": "[Function]",
+          "ownership": "[Function]",
+          "spawnOwnership": "[Function]",
+          "weakReference": "[Function]",
+          "spawn": "[Function]",
+          "destroy": "[Function]",
+          "readonly": "[Function]"
+        }
+      },
+      {
+        "id": "izjpf0",
+        "name": {
+          "subscribe": "[Function]",
+          "unsubscribe": "[Function]",
+          "value": "[Function]",
+          "when": "[Function]",
+          "ownership": "[Function]",
+          "spawnOwnership": "[Function]",
+          "weakReference": "[Function]",
+          "spawn": "[Function]",
+          "destroy": "[Function]",
+          "readonly": "[Function]"
+        }
+      },
+      {
+        "id": "LNkFEX",
+        "name": {
+          "subscribe": "[Function]",
+          "unsubscribe": "[Function]",
+          "value": "[Function]",
+          "when": "[Function]",
+          "ownership": "[Function]",
+          "spawnOwnership": "[Function]",
+          "weakReference": "[Function]",
+          "spawn": "[Function]",
+          "destroy": "[Function]",
+          "readonly": "[Function]"
+        }
+      },
+      {
+        "id": "NZW3Sh",
+        "name": {
+          "subscribe": "[Function]",
+          "unsubscribe": "[Function]",
+          "value": "[Function]",
+          "when": "[Function]",
+          "ownership": "[Function]",
+          "spawnOwnership": "[Function]",
+          "weakReference": "[Function]",
+          "spawn": "[Function]",
+          "destroy": "[Function]",
+          "readonly": "[Function]"
+        }
+      },
+      {
+        "id": "Jxj81m",
+        "name": {
+          "subscribe": "[Function]",
+          "unsubscribe": "[Function]",
+          "value": "[Function]",
+          "when": "[Function]",
+          "ownership": "[Function]",
+          "spawnOwnership": "[Function]",
+          "weakReference": "[Function]",
+          "spawn": "[Function]",
+          "destroy": "[Function]",
+          "readonly": "[Function]"
+        }
+      },
+      {
+        "id": "snrd54",
+        "name": {
+          "subscribe": "[Function]",
+          "unsubscribe": "[Function]",
+          "value": "[Function]",
+          "when": "[Function]",
+          "ownership": "[Function]",
+          "spawnOwnership": "[Function]",
+          "weakReference": "[Function]",
+          "spawn": "[Function]",
+          "destroy": "[Function]",
+          "readonly": "[Function]"
+        }
+      },
+      {
+        "id": "Csn4a7",
+        "name": {
+          "subscribe": "[Function]",
+          "unsubscribe": "[Function]",
+          "value": "[Function]",
+          "when": "[Function]",
+          "ownership": "[Function]",
+          "spawnOwnership": "[Function]",
+          "weakReference": "[Function]",
+          "spawn": "[Function]",
+          "destroy": "[Function]",
+          "readonly": "[Function]"
+        }
+      },
+      {
+        "id": "NUhPq8",
+        "name": {
+          "subscribe": "[Function]",
+          "unsubscribe": "[Function]",
+          "value": "[Function]",
+          "when": "[Function]",
+          "ownership": "[Function]",
+          "spawnOwnership": "[Function]",
+          "weakReference": "[Function]",
+          "spawn": "[Function]",
+          "destroy": "[Function]",
+          "readonly": "[Function]"
+        }
+      },
+      {
+        "id": "EC7E1M",
+        "name": {
+          "subscribe": "[Function]",
+          "unsubscribe": "[Function]",
+          "value": "[Function]",
+          "when": "[Function]",
+          "ownership": "[Function]",
+          "spawnOwnership": "[Function]",
+          "weakReference": "[Function]",
+          "spawn": "[Function]",
+          "destroy": "[Function]",
+          "readonly": "[Function]"
+        }
+      },
+      {
+        "id": "8s6DM9",
+        "name": {
+          "subscribe": "[Function]",
+          "unsubscribe": "[Function]",
+          "value": "[Function]",
+          "when": "[Function]",
+          "ownership": "[Function]",
+          "spawnOwnership": "[Function]",
+          "weakReference": "[Function]",
+          "spawn": "[Function]",
+          "destroy": "[Function]",
+          "readonly": "[Function]"
+        }
+      },
+      {
+        "id": "RlEfKO",
+        "name": {
+          "subscribe": "[Function]",
+          "unsubscribe": "[Function]",
+          "value": "[Function]",
+          "when": "[Function]",
+          "ownership": "[Function]",
+          "spawnOwnership": "[Function]",
+          "weakReference": "[Function]",
+          "spawn": "[Function]",
+          "destroy": "[Function]",
+          "readonly": "[Function]"
+        }
+      },
+      {
+        "id": "nv2NCk",
+        "name": {
+          "subscribe": "[Function]",
+          "unsubscribe": "[Function]",
+          "value": "[Function]",
+          "when": "[Function]",
+          "ownership": "[Function]",
+          "spawnOwnership": "[Function]",
+          "weakReference": "[Function]",
+          "spawn": "[Function]",
+          "destroy": "[Function]",
+          "readonly": "[Function]"
+        }
+      }
+    ],
+    "targetWPR": {
+      "id": "nv2NCk",
+      "name": {
+        "subscribe": "[Function]",
+        "unsubscribe": "[Function]",
+        "value": "[Function]",
+        "when": "[Function]",
+        "ownership": "[Function]",
+        "spawnOwnership": "[Function]",
+        "weakReference": "[Function]",
+        "spawn": "[Function]",
+        "destroy": "[Function]",
+        "readonly": "[Function]"
+      },
+      "statusMethod": {
+        "type": 2
+      },
+      "statusValue": {
+        "type": 2
+      },
+      "dataCount": 0,
+      "dataStart": 0,
+      "dataEnd": 0,
+      "firstItem": null,
+      "secondItem": null,
+      "lastItem": null,
+      "graphicsIndexes": {
+        "kind": "Array",
+        "length": 0
+      },
+      "paneViewsCount": 9,
+      "methods": [
+        [
+          "recalculate",
+          true
+        ],
+        [
+          "onDataUpdated",
+          true
+        ],
+        [
+          "replaceData",
+          true
+        ],
+        [
+          "updateAllViews",
+          true
+        ]
+      ]
+    },
+    "axisNodes": [
+      {
+        "tag": "DIV",
+        "className": "chart-markup-table time-axis",
+        "dataName": null,
+        "text": "",
+        "rect": {
+          "x": 56,
+          "y": 988,
+          "width": 881,
+          "height": 28
+        }
+      },
+      {
+        "tag": "BUTTON",
+        "className": "item-RaFdWJxD button-zm3YRUFG button-EzpeYLKj apply-common-tooltip isInteractive-zm3YRUFG accessible-zm3YRUFG",
+        "dataName": "time-zone-menu",
+        "text": "11:30:47 UTC+3:30",
+        "rect": {
+          "x": 880,
+          "y": 1017,
+          "width": 131,
+          "height": 38
+        }
+      },
+      {
+        "tag": "BUTTON",
+        "className": "roundButton-LEXhwY2Z roundButtonColor-bRjlnCjX gray-bRjlnCjX secondary-bRjlnCjX xsmall-LEXhwY2Z withEndSlot-LEXhwY2Z",
+        "dataName": "toast-group-expand-button-account-deletion-initiated",
+        "text": "Show more",
+        "rect": {
+          "x": 64,
+          "y": 1055,
+          "width": 109,
+          "height": 28
+        }
+      },
+      {
+        "tag": "BUTTON",
+        "className": "roundButton-LEXhwY2Z roundButtonColor-bRjlnCjX gray-bRjlnCjX secondary-bRjlnCjX xsmall-LEXhwY2Z iconOnly-LEXhwY2Z withEndSlot-LEXhwY2Z apply-common-to",
+        "dataName": "toast-group-close-button-account-deletion-initiated",
+        "text": "",
+        "rect": {
+          "x": 181,
+          "y": 1055,
+          "width": 28,
+          "height": 28
+        }
+      },
+      {
+        "tag": "BUTTON",
+        "className": "roundButton-LEXhwY2Z roundButtonColor-bRjlnCjX gray-bRjlnCjX secondary-bRjlnCjX xsmall-LEXhwY2Z withEndSlot-LEXhwY2Z",
+        "dataName": "toast-group-expand-button-account-deletion-cancelled",
+        "text": "Show more",
+        "rect": {
+          "x": 64,
+          "y": 1055,
+          "width": 109,
+          "height": 28
+        }
+      },
+      {
+        "tag": "BUTTON",
+        "className": "roundButton-LEXhwY2Z roundButtonColor-bRjlnCjX gray-bRjlnCjX secondary-bRjlnCjX xsmall-LEXhwY2Z iconOnly-LEXhwY2Z withEndSlot-LEXhwY2Z apply-common-to",
+        "dataName": "toast-group-close-button-account-deletion-cancelled",
+        "text": "",
+        "rect": {
+          "x": 181,
+          "y": 1055,
+          "width": 28,
+          "height": 28
+        }
+      }
+    ]
+  }
+}
