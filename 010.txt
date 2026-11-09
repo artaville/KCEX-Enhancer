@@ -1,0 +1,11 @@
+{
+  "version": "010-structure-inspector",
+  "timestamp": "2026-11-09T06:29:38.404Z",
+  "timeScaleInternal": {
+    "marksByWeightDump": {}
+  },
+  "rightPriceAxisWidget": null,
+  "priceAxisViews": [],
+  "paneSummaries": [],
+  "sampleStudies": []
+}
