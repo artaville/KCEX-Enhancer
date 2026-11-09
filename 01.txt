@@ -1,0 +1,612 @@
+{
+  "diagnostic": "KCEX_INDICATOR_DIAG_V403",
+  "version": "4.0.3",
+  "durationMs": 20000,
+  "initial": {
+    "timestamp": "2026-11-09T14:01:35.789Z",
+    "page": {
+      "path": "/futures/exchange/PEPE_USDT",
+      "title": "0.0000051066 PEPE USDT Futures | USDT-Margined Perpetual Futures | KCEX",
+      "chartIframes": [
+        {
+          "id": "tradingview_6359e",
+          "title": "Financial Chart",
+          "host": "",
+          "width": 521,
+          "height": 315
+        },
+        {
+          "id": null,
+          "title": null,
+          "host": "chat.instant-chats.com",
+          "width": 0,
+          "height": 0
+        }
+      ],
+      "chartContainerPresent": true,
+      "swingInfoTablePresent": false
+    },
+    "module": {
+      "found": true,
+      "version": "4.0.3",
+      "studiesRegistered": 2,
+      "studiesAdded": 0,
+      "messagesReceived": 0,
+      "lastCreatedAt": 1794232827410,
+      "installedChartKeys": 1,
+      "installingChartKeys": 0,
+      "drawingIdsCount": 0,
+      "signalKeysCount": 0,
+      "channelLinesCount": 0,
+      "swingLevelsCount": 0,
+      "channelSymbol": "",
+      "swingSymbol": "",
+      "activeChartApiAvailable": true,
+      "errors": [],
+      "status": {
+        "version": "4.0.3",
+        "studiesRegistered": 2,
+        "studiesAdded": 0,
+        "messagesReceived": 0,
+        "createdAt": 1794232827410,
+        "lastError": null,
+        "signal": null
+      }
+    },
+    "calculation": {
+      "stateAvailable": false,
+      "state": null,
+      "latestStateMessage": null,
+      "options": null,
+      "externalSignal": null
+    },
+    "drawings": {
+      "verticalAndSwingShapeIds": 0,
+      "channelKeys": [],
+      "swingKeys": [],
+      "signalKeySamples": []
+    },
+    "chart": {
+      "available": true,
+      "symbol": "PEPE_USDT:TV_CHART_CONTAINER",
+      "resolution": "20S",
+      "studiesCount": 2,
+      "studies": [
+        {
+          "id": "9trEet",
+          "name": "Swing + Pivot Overlay (KCEX)",
+          "description": null,
+          "shortDescription": null,
+          "paneIndex": null,
+          "studyApiAvailable": true,
+          "apiMethods": [
+            "getInputValues",
+            "mergeUp",
+            "unmergeDown"
+          ],
+          "inputs": [],
+          "styleOverrides": null
+        },
+        {
+          "id": "FdEm94",
+          "name": "KCEX W%R + Swing + Pivot (Price)",
+          "description": null,
+          "shortDescription": null,
+          "paneIndex": null,
+          "studyApiAvailable": true,
+          "apiMethods": [
+            "getInputValues",
+            "mergeUp",
+            "unmergeDown"
+          ],
+          "inputs": [
+            {
+              "id": "show_williams",
+              "value": true
+            },
+            {
+              "id": "length",
+              "value": 14
+            },
+            {
+              "id": "source",
+              "value": "close"
+            },
+            {
+              "id": "williams_ob",
+              "value": -20
+            },
+            {
+              "id": "williams_os",
+              "value": -80
+            },
+            {
+              "id": "show_swing",
+              "value": true
+            },
+            {
+              "id": "sh_strength",
+              "value": 1
+            },
+            {
+              "id": "sl_strength",
+              "value": 1
+            },
+            {
+              "id": "sh_source",
+              "value": "close"
+            },
+            {
+              "id": "sl_source",
+              "value": "close"
+            },
+            {
+              "id": "only_first_break",
+              "value": false
+            },
+            {
+              "id": "show_table",
+              "value": false
+            },
+            {
+              "id": "table_pos",
+              "value": "Right Side"
+            },
+            {
+              "id": "show_pivot",
+              "value": false
+            },
+            {
+              "id": "pcb_cross",
+              "value": "Default"
+            },
+            {
+              "id": "pivot_right",
+              "value": 10
+            },
+            {
+              "id": "pivot_left",
+              "value": 40
+            },
+            {
+              "id": "dev_len",
+              "value": 1
+            },
+            {
+              "id": "show_sig",
+              "value": false
+            },
+            {
+              "id": "bar_col",
+              "value": false
+            },
+            {
+              "id": "show_lines",
+              "value": false
+            },
+            {
+              "id": "green_color",
+              "value": "#008000"
+            },
+            {
+              "id": "red_color",
+              "value": "#FF0000"
+            },
+            {
+              "id": "line_width",
+              "value": 2
+            },
+            {
+              "id": "line_style_input",
+              "value": "Solid"
+            }
+          ],
+          "styleOverrides": null
+        }
+      ],
+      "paneCount": 1,
+      "shapesCount": 62,
+      "sampleShapes": [
+        {
+          "id": "2ZZ10X",
+          "name": "short_position"
+        },
+        {
+          "id": "o4DjCu",
+          "name": "vertical_line"
+        },
+        {
+          "id": "sZs32s",
+          "name": "vertical_line"
+        },
+        {
+          "id": "j6Azvi",
+          "name": "vertical_line"
+        },
+        {
+          "id": "iiEQ2N",
+          "name": "vertical_line"
+        },
+        {
+          "id": "lIPWWq",
+          "name": "vertical_line"
+        },
+        {
+          "id": "KTRqKG",
+          "name": "vertical_line"
+        },
+        {
+          "id": "hedcFB",
+          "name": "vertical_line"
+        },
+        {
+          "id": "zOLPNN",
+          "name": "vertical_line"
+        },
+        {
+          "id": "0pJrZn",
+          "name": "vertical_line"
+        },
+        {
+          "id": "xaDZdd",
+          "name": "vertical_line"
+        },
+        {
+          "id": "XQnJcS",
+          "name": "vertical_line"
+        },
+        {
+          "id": "QhVNg9",
+          "name": "vertical_line"
+        },
+        {
+          "id": "Wg1AgJ",
+          "name": "vertical_line"
+        },
+        {
+          "id": "j9jF6U",
+          "name": "vertical_line"
+        },
+        {
+          "id": "VpLXYG",
+          "name": "vertical_line"
+        },
+        {
+          "id": "mPpTQF",
+          "name": "vertical_line"
+        },
+        {
+          "id": "UMWbrN",
+          "name": "vertical_line"
+        },
+        {
+          "id": "x0Gz55",
+          "name": "vertical_line"
+        },
+        {
+          "id": "ZbqsbB",
+          "name": "vertical_line"
+        }
+      ],
+      "methods": [
+        "getAllStudies",
+        "getStudyById",
+        "createStudy",
+        "removeEntity",
+        "createShape",
+        "createMultipointShape",
+        "getAllShapes",
+        "getPanes"
+      ]
+    }
+  },
+  "final": {
+    "timestamp": "2026-11-09T14:01:55.813Z",
+    "page": {
+      "path": "/futures/exchange/PEPE_USDT",
+      "title": "0.0000050998 PEPE USDT Futures | USDT-Margined Perpetual Futures | KCEX",
+      "chartIframes": [
+        {
+          "id": "tradingview_6359e",
+          "title": "Financial Chart",
+          "host": "",
+          "width": 476,
+          "height": 698
+        },
+        {
+          "id": null,
+          "title": null,
+          "host": "chat.instant-chats.com",
+          "width": 0,
+          "height": 0
+        }
+      ],
+      "chartContainerPresent": true,
+      "swingInfoTablePresent": false
+    },
+    "module": {
+      "found": true,
+      "version": "4.0.3",
+      "studiesRegistered": 2,
+      "studiesAdded": 0,
+      "messagesReceived": 0,
+      "lastCreatedAt": 1794232827410,
+      "installedChartKeys": 1,
+      "installingChartKeys": 0,
+      "drawingIdsCount": 0,
+      "signalKeysCount": 0,
+      "channelLinesCount": 0,
+      "swingLevelsCount": 0,
+      "channelSymbol": "",
+      "swingSymbol": "",
+      "activeChartApiAvailable": true,
+      "errors": [],
+      "status": {
+        "version": "4.0.3",
+        "studiesRegistered": 2,
+        "studiesAdded": 0,
+        "messagesReceived": 0,
+        "createdAt": 1794232827410,
+        "lastError": null,
+        "signal": null
+      }
+    },
+    "calculation": {
+      "stateAvailable": false,
+      "state": null,
+      "latestStateMessage": null,
+      "options": null,
+      "externalSignal": null
+    },
+    "drawings": {
+      "verticalAndSwingShapeIds": 0,
+      "channelKeys": [],
+      "swingKeys": [],
+      "signalKeySamples": []
+    },
+    "chart": {
+      "available": true,
+      "symbol": "PEPE_USDT:TV_CHART_CONTAINER",
+      "resolution": "10S",
+      "studiesCount": 2,
+      "studies": [
+        {
+          "id": "9trEet",
+          "name": "Swing + Pivot Overlay (KCEX)",
+          "description": null,
+          "shortDescription": null,
+          "paneIndex": null,
+          "studyApiAvailable": true,
+          "apiMethods": [
+            "getInputValues",
+            "mergeUp",
+            "unmergeDown"
+          ],
+          "inputs": [],
+          "styleOverrides": null
+        },
+        {
+          "id": "FdEm94",
+          "name": "KCEX W%R + Swing + Pivot (Price)",
+          "description": null,
+          "shortDescription": null,
+          "paneIndex": null,
+          "studyApiAvailable": true,
+          "apiMethods": [
+            "getInputValues",
+            "mergeUp",
+            "unmergeDown"
+          ],
+          "inputs": [
+            {
+              "id": "show_williams",
+              "value": true
+            },
+            {
+              "id": "length",
+              "value": 14
+            },
+            {
+              "id": "source",
+              "value": "close"
+            },
+            {
+              "id": "williams_ob",
+              "value": -20
+            },
+            {
+              "id": "williams_os",
+              "value": -80
+            },
+            {
+              "id": "show_swing",
+              "value": true
+            },
+            {
+              "id": "sh_strength",
+              "value": 1
+            },
+            {
+              "id": "sl_strength",
+              "value": 1
+            },
+            {
+              "id": "sh_source",
+              "value": "close"
+            },
+            {
+              "id": "sl_source",
+              "value": "close"
+            },
+            {
+              "id": "only_first_break",
+              "value": false
+            },
+            {
+              "id": "show_table",
+              "value": false
+            },
+            {
+              "id": "table_pos",
+              "value": "Right Side"
+            },
+            {
+              "id": "show_pivot",
+              "value": false
+            },
+            {
+              "id": "pcb_cross",
+              "value": "Default"
+            },
+            {
+              "id": "pivot_right",
+              "value": 10
+            },
+            {
+              "id": "pivot_left",
+              "value": 40
+            },
+            {
+              "id": "dev_len",
+              "value": 1
+            },
+            {
+              "id": "show_sig",
+              "value": false
+            },
+            {
+              "id": "bar_col",
+              "value": false
+            },
+            {
+              "id": "show_lines",
+              "value": false
+            },
+            {
+              "id": "green_color",
+              "value": "#008000"
+            },
+            {
+              "id": "red_color",
+              "value": "#FF0000"
+            },
+            {
+              "id": "line_width",
+              "value": 2
+            },
+            {
+              "id": "line_style_input",
+              "value": "Solid"
+            }
+          ],
+          "styleOverrides": null
+        }
+      ],
+      "paneCount": 1,
+      "shapesCount": 62,
+      "sampleShapes": [
+        {
+          "id": "2ZZ10X",
+          "name": "short_position"
+        },
+        {
+          "id": "o4DjCu",
+          "name": "vertical_line"
+        },
+        {
+          "id": "sZs32s",
+          "name": "vertical_line"
+        },
+        {
+          "id": "j6Azvi",
+          "name": "vertical_line"
+        },
+        {
+          "id": "iiEQ2N",
+          "name": "vertical_line"
+        },
+        {
+          "id": "lIPWWq",
+          "name": "vertical_line"
+        },
+        {
+          "id": "KTRqKG",
+          "name": "vertical_line"
+        },
+        {
+          "id": "hedcFB",
+          "name": "vertical_line"
+        },
+        {
+          "id": "zOLPNN",
+          "name": "vertical_line"
+        },
+        {
+          "id": "0pJrZn",
+          "name": "vertical_line"
+        },
+        {
+          "id": "xaDZdd",
+          "name": "vertical_line"
+        },
+        {
+          "id": "XQnJcS",
+          "name": "vertical_line"
+        },
+        {
+          "id": "QhVNg9",
+          "name": "vertical_line"
+        },
+        {
+          "id": "Wg1AgJ",
+          "name": "vertical_line"
+        },
+        {
+          "id": "j9jF6U",
+          "name": "vertical_line"
+        },
+        {
+          "id": "VpLXYG",
+          "name": "vertical_line"
+        },
+        {
+          "id": "mPpTQF",
+          "name": "vertical_line"
+        },
+        {
+          "id": "UMWbrN",
+          "name": "vertical_line"
+        },
+        {
+          "id": "x0Gz55",
+          "name": "vertical_line"
+        },
+        {
+          "id": "ZbqsbB",
+          "name": "vertical_line"
+        }
+      ],
+      "methods": [
+        "getAllStudies",
+        "getStudyById",
+        "createStudy",
+        "removeEntity",
+        "createShape",
+        "createMultipointShape",
+        "getAllShapes",
+        "getPanes"
+      ]
+    }
+  },
+  "changes": {
+    "moduleMessagesReceived": 0,
+    "studiesAdded": 0,
+    "drawingIds": 0,
+    "channelLines": 0,
+    "swingLevels": 0
+  },
+  "moduleMessages": [],
+  "runtimeErrors": [],
+  "unhandledRejections": [],
+  "consoleErrors": []
+}
