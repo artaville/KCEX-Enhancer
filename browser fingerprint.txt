@@ -1,0 +1,518 @@
+{
+  "masterFingerprintID_SHA256": "6eea3a0f7582e1775b80ffdbc81a28c1ca3f1f14139612ae353d68e1f08f1dcf",
+  "summaryHashes": {
+    "canvas2D_SHA256": "e869408b046cb09d87defad040ccc6b79a610bcc48b910fcf64ad0929d812eed",
+    "canvasPixels_SHA256": "b633e8bfe5e8af07bf517e7d431a845d88e9355ad859fc0202ba30375ef41e9f",
+    "webglImage_SHA256": "5f23ad7443be09ffde1fd455e55b359beb1db205c4ad5865af0c471ced5a9821",
+    "webglParams_SHA256": "04d3d9b879eff98c3c72809ceb885230202eae6c4c306e48f9991d56495bc988",
+    "webglExtensions_SHA256": "efc8bfe55e53f8eafda579bad5139a50f84df696cc99c439a2cd50a48878fad2",
+    "audioWave_SHA256": "a1c2c28a24f4b612fe415c4c9a1977c431b4a411119ed90971a18584215162e1",
+    "audioFloatSum": 124.04347503720783,
+    "fonts_SHA256": "dae6f5a779df165574d240f9cfea4a5fd4dbd3c8ca197f9fd0935eff970a214e",
+    "clientRects_SHA256": "853aeb6aa88052c8a7f1020faeb0d61977f9f2caaac560587501813904e396c3",
+    "mathCPU_SHA256": "ec7c01497d03e26eaea97cfb8ea676a869278a8862b0609c41492b26ba2e20e8",
+    "speechVoices_SHA256": "187ba682d3f71af2846e5622e2f3dcc661538b1c11f6e356b801307cc478f91c",
+    "webrtcSDP_SHA256": "4ab351da654041734d0f9c47674ddbb45dd929f35dd38b7e77bfb50b45928f4d"
+  },
+  "systemAndScreen": {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36",
+    "platform": "Win32",
+    "hardwareConcurrency": 4,
+    "deviceMemory": 8,
+    "languages": [
+      "en-US",
+      "en",
+      "fa",
+      "tr",
+      "ps"
+    ],
+    "timeZone": "Asia/Tehran",
+    "timezoneOffset": -210,
+    "screen": {
+      "width": 1536,
+      "height": 864,
+      "availWidth": 1536,
+      "availHeight": 824,
+      "colorDepth": 24,
+      "pixelDepth": 24,
+      "devicePixelRatio": 1.25,
+      "realMonitorEstimatedResolution": "1920x1080"
+    }
+  },
+  "memoryAndStorage": {
+    "memory": {
+      "jsHeapSizeLimit": 1174405120,
+      "totalJSHeapSize": 20621943,
+      "usedJSHeapSize": 14468655
+    },
+    "storageQuota": {
+      "quota": 10737418240,
+      "usage": 0,
+      "usageDetails": {}
+    }
+  },
+  "canvas": {
+    "sha256Hash": "e869408b046cb09d87defad040ccc6b79a610bcc48b910fcf64ad0929d812eed",
+    "pixelDataSha256": "b633e8bfe5e8af07bf517e7d431a845d88e9355ad859fc0202ba30375ef41e9f",
+    "pixelWeightedSum": 53002612,
+    "nonZeroByteCount": 71797,
+    "dataUrlByteLength": 37850
+  },
+  "webgl": {
+    "imageSha256Hash": "5f23ad7443be09ffde1fd455e55b359beb1db205c4ad5865af0c471ced5a9821",
+    "parametersSha256Hash": "04d3d9b879eff98c3c72809ceb885230202eae6c4c306e48f9991d56495bc988",
+    "webglPixelWeightedSum": 48601846,
+    "unmaskedVendor": "Google Inc. (Intel)",
+    "unmaskedRenderer": "ANGLE (Intel, Intel(R) HD Graphics 520 (0x00001916) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "vendor": "WebKit",
+    "renderer": "WebKit WebGL",
+    "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+    "shadingLanguageVersion": "WebGL GLSL ES 3.00 (OpenGL ES GLSL ES 3.0 Chromium)",
+    "parameters": {
+      "ALIASED_LINE_WIDTH_RANGE": [
+        1,
+        1
+      ],
+      "ALIASED_POINT_SIZE_RANGE": [
+        1,
+        1024
+      ],
+      "ALPHA_BITS": 8,
+      "BLUE_BITS": 8,
+      "DEPTH_BITS": 24,
+      "GREEN_BITS": 8,
+      "MAX_COMBINED_TEXTURE_IMAGE_UNITS": 32,
+      "MAX_CUBE_MAP_TEXTURE_SIZE": 16384,
+      "MAX_FRAGMENT_UNIFORM_VECTORS": 1024,
+      "MAX_RENDERBUFFER_SIZE": 16384,
+      "MAX_TEXTURE_IMAGE_UNITS": 16,
+      "MAX_TEXTURE_SIZE": 16384,
+      "MAX_VARYING_VECTORS": 30,
+      "MAX_VERTEX_ATTRIBS": 16,
+      "MAX_VERTEX_TEXTURE_IMAGE_UNITS": 16,
+      "MAX_VERTEX_UNIFORM_VECTORS": 4096,
+      "MAX_VIEWPORT_DIMS": [
+        32767,
+        32767
+      ],
+      "RED_BITS": 8,
+      "STENCIL_BITS": 0,
+      "SUBPIXEL_BITS": 4,
+      "MAX_SAMPLES": 16,
+      "MAX_3D_TEXTURE_SIZE": 2048,
+      "MAX_ARRAY_TEXTURE_LAYERS": 2048,
+      "MAX_COLOR_ATTACHMENTS": 8,
+      "MAX_DRAW_BUFFERS": 8,
+      "MAX_ELEMENT_INDEX": 4294967294,
+      "MAX_ELEMENTS_INDICES": 2147483647,
+      "MAX_ELEMENTS_VERTICES": 2147483647,
+      "MAX_FRAGMENT_INPUT_COMPONENTS": 120,
+      "MAX_FRAGMENT_UNIFORM_BLOCKS": 12,
+      "MAX_FRAGMENT_UNIFORM_COMPONENTS": 4096,
+      "MAX_PROGRAM_TEXEL_OFFSET": 7,
+      "MIN_PROGRAM_TEXEL_OFFSET": -8,
+      "MAX_SERVER_WAIT_TIMEOUT": 0,
+      "MAX_TEXTURE_LOD_BIAS": 2,
+      "MAX_TRANSFORM_FEEDBACK_INTERLEAVED_COMPONENTS": 120,
+      "MAX_UNIFORM_BLOCK_SIZE": 65536,
+      "MAX_UNIFORM_BUFFER_BINDINGS": 24,
+      "MAX_VARYING_COMPONENTS": 120,
+      "MAX_VERTEX_OUTPUT_COMPONENTS": 120,
+      "MAX_VERTEX_UNIFORM_BLOCKS": 12,
+      "MAX_VERTEX_UNIFORM_COMPONENTS": 16384
+    },
+    "shaderPrecisions": {
+      "VERTEX_SHADER_LOW_FLOAT": [
+        127,
+        127,
+        23
+      ],
+      "VERTEX_SHADER_MEDIUM_FLOAT": [
+        127,
+        127,
+        23
+      ],
+      "VERTEX_SHADER_HIGH_FLOAT": [
+        127,
+        127,
+        23
+      ],
+      "VERTEX_SHADER_LOW_INT": [
+        31,
+        30,
+        0
+      ],
+      "VERTEX_SHADER_MEDIUM_INT": [
+        31,
+        30,
+        0
+      ],
+      "VERTEX_SHADER_HIGH_INT": [
+        31,
+        30,
+        0
+      ],
+      "FRAGMENT_SHADER_LOW_FLOAT": [
+        127,
+        127,
+        23
+      ],
+      "FRAGMENT_SHADER_MEDIUM_FLOAT": [
+        127,
+        127,
+        23
+      ],
+      "FRAGMENT_SHADER_HIGH_FLOAT": [
+        127,
+        127,
+        23
+      ],
+      "FRAGMENT_SHADER_LOW_INT": [
+        31,
+        30,
+        0
+      ],
+      "FRAGMENT_SHADER_MEDIUM_INT": [
+        31,
+        30,
+        0
+      ],
+      "FRAGMENT_SHADER_HIGH_INT": [
+        31,
+        30,
+        0
+      ]
+    },
+    "extensionsCount": 32,
+    "extensionsSha256Hash": "efc8bfe55e53f8eafda579bad5139a50f84df696cc99c439a2cd50a48878fad2"
+  },
+  "webgpu": {
+    "supported": true,
+    "adapterAvailable": false
+  },
+  "audio": {
+    "audioSha256Hash": "a1c2c28a24f4b612fe415c4c9a1977c431b4a411119ed90971a18584215162e1",
+    "compressorFloatSum": 124.04347503720783,
+    "first20Samples": [
+      -0.10808049142360687,
+      -0.390911728143692,
+      -0.005692672450095415,
+      0.3892313539981842,
+      0.1189708486199379,
+      -0.3545846939086914,
+      -0.22215835750102997,
+      0.28990936279296875,
+      0.30651891231536865,
+      -0.20068733394145966,
+      -0.3649081289768219,
+      0.09447672963142395,
+      0.39241594076156616,
+      0.01972724124789238,
+      -0.38671600818634033,
+      -0.13228477537631989,
+      0.34825485944747925,
+      0.2336597591638565,
+      -0.28028473258018494,
+      -0.31526264548301697
+    ],
+    "hardwareProps": {
+      "sampleRate": 48000,
+      "baseLatency": 0.01,
+      "outputLatency": 0,
+      "maxChannelCount": 2
+    }
+  },
+  "fonts": {
+    "fontsSha256Hash": "dae6f5a779df165574d240f9cfea4a5fd4dbd3c8ca197f9fd0935eff970a214e",
+    "detectedCount": 57,
+    "detectedFonts": [
+      "Arial",
+      "Arial Black",
+      "Bahnschrift",
+      "Calibri",
+      "Cambria",
+      "Cambria Math",
+      "Candara",
+      "Comic Sans MS",
+      "Consolas",
+      "Constantia",
+      "Corbel",
+      "Courier New",
+      "Ebrima",
+      "Franklin Gothic Medium",
+      "Gabriola",
+      "Gadugi",
+      "Georgia",
+      "Impact",
+      "Ink Free",
+      "Javanese Text",
+      "Leelawadee UI",
+      "Lucida Console",
+      "Lucida Sans Unicode",
+      "Malgun Gothic",
+      "Marlett",
+      "Microsoft Himalaya",
+      "Microsoft JhengHei",
+      "Microsoft New Tai Lue",
+      "Microsoft PhagsPa",
+      "Microsoft Sans Serif",
+      "Microsoft Tai Le",
+      "Microsoft YaHei",
+      "Microsoft Yi Baiti",
+      "MingLiU-ExtB",
+      "Mongolian Baiti",
+      "MS Gothic",
+      "MV Boli",
+      "Myanmar Text",
+      "Nirmala UI",
+      "Palatino Linotype",
+      "Segoe Print",
+      "Segoe Script",
+      "Segoe UI",
+      "Segoe UI Historic",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      "SimSun",
+      "Sylfaen",
+      "Symbol",
+      "Tahoma",
+      "Times New Roman",
+      "Trebuchet MS",
+      "Verdana",
+      "Webdings",
+      "Wingdings",
+      "Yu Gothic",
+      "B Nazanin"
+    ],
+    "sampleSubPixelMetrics": {
+      "Arial": {
+        "width": 1225.3359375,
+        "actualBoundingBoxAscent": 53,
+        "actualBoundingBoxDescent": 15,
+        "actualBoundingBoxLeft": -4,
+        "actualBoundingBoxRight": 1221.31640625
+      },
+      "Arial Black": {
+        "width": 1444.9921875,
+        "actualBoundingBoxAscent": 53,
+        "actualBoundingBoxDescent": 8,
+        "actualBoundingBoxLeft": -4,
+        "actualBoundingBoxRight": 1441.9921875
+      },
+      "Bahnschrift": {
+        "width": 1203.22265625,
+        "actualBoundingBoxAscent": 52,
+        "actualBoundingBoxDescent": 14,
+        "actualBoundingBoxLeft": -5,
+        "actualBoundingBoxRight": 1200.7578125
+      },
+      "Calibri": {
+        "width": 1141.34765625,
+        "actualBoundingBoxAscent": 49,
+        "actualBoundingBoxDescent": 9,
+        "actualBoundingBoxLeft": -5,
+        "actualBoundingBoxRight": 1139.87890625
+      },
+      "Cambria": {
+        "width": 1229.203125,
+        "actualBoundingBoxAscent": 50,
+        "actualBoundingBoxDescent": 6,
+        "actualBoundingBoxLeft": -2,
+        "actualBoundingBoxRight": 1226.1484375
+      },
+      "Cambria Math": {
+        "width": 1229.203125,
+        "actualBoundingBoxAscent": 50,
+        "actualBoundingBoxDescent": 6,
+        "actualBoundingBoxLeft": -2,
+        "actualBoundingBoxRight": 1226.1484375
+      },
+      "Candara": {
+        "width": 1143.0703125,
+        "actualBoundingBoxAscent": 52,
+        "actualBoundingBoxDescent": 17,
+        "actualBoundingBoxLeft": -3,
+        "actualBoundingBoxRight": 1141.75390625
+      },
+      "Comic Sans MS": {
+        "width": 1233.66796875,
+        "actualBoundingBoxAscent": 58,
+        "actualBoundingBoxDescent": 5,
+        "actualBoundingBoxLeft": -4,
+        "actualBoundingBoxRight": 1231.60546875
+      }
+    }
+  },
+  "clientRects": {
+    "rectsSha256Hash": "853aeb6aa88052c8a7f1020faeb0d61977f9f2caaac560587501813904e396c3",
+    "rectsSubPixelValues": [
+      {
+        "x": -9922.814453125,
+        "y": -10062.8662109375,
+        "width": 181.1125030517578,
+        "height": 19.622655868530273,
+        "top": -10062.8662109375,
+        "right": -9741.701950073242,
+        "bottom": -10043.24355506897,
+        "left": -9922.814453125
+      },
+      {
+        "x": -9999,
+        "y": -10037.0126953125,
+        "width": 333.4624938964844,
+        "height": 20,
+        "top": -10037.0126953125,
+        "right": -9665.537506103516,
+        "bottom": -10017.0126953125,
+        "left": -9999
+      }
+    ]
+  },
+  "math": {
+    "mathSha256Hash": "ec7c01497d03e26eaea97cfb8ea676a869278a8862b0609c41492b26ba2e20e8",
+    "values": {
+      "acos": 1.447023754243771,
+      "acosh": 355.291251501643,
+      "asin": 1.4134993808403433,
+      "atanh": 0.5493061443340549,
+      "cbrt": 4.641588833612779,
+      "cos": -0.37419577499634155,
+      "cosh": 1.5430806348152437,
+      "expm1": 1.7182818284590453,
+      "log1p": 2.3978952727983707,
+      "sin": 0.9273497301314576,
+      "sinh": 1.1752011936438014,
+      "sqrt": 1.4142135623730951,
+      "tan": -2.478247463217681,
+      "tanh": 0.7615941559557649,
+      "powPi": 1.9275814160560206e-50
+    }
+  },
+  "speechVoices": {
+    "voicesSha256Hash": "187ba682d3f71af2846e5622e2f3dcc661538b1c11f6e356b801307cc478f91c",
+    "count": 19,
+    "voices": [
+      {
+        "name": "Google Deutsch",
+        "lang": "de-DE",
+        "localService": false,
+        "voiceURI": "Google Deutsch"
+      },
+      {
+        "name": "Google US English",
+        "lang": "en-US",
+        "localService": false,
+        "voiceURI": "Google US English"
+      },
+      {
+        "name": "Google UK English Female",
+        "lang": "en-GB",
+        "localService": false,
+        "voiceURI": "Google UK English Female"
+      },
+      {
+        "name": "Google UK English Male",
+        "lang": "en-GB",
+        "localService": false,
+        "voiceURI": "Google UK English Male"
+      },
+      {
+        "name": "Google español",
+        "lang": "es-ES",
+        "localService": false,
+        "voiceURI": "Google español"
+      },
+      {
+        "name": "Google español de Estados Unidos",
+        "lang": "es-US",
+        "localService": false,
+        "voiceURI": "Google español de Estados Unidos"
+      },
+      {
+        "name": "Google français",
+        "lang": "fr-FR",
+        "localService": false,
+        "voiceURI": "Google français"
+      },
+      {
+        "name": "Google हिन्दी",
+        "lang": "hi-IN",
+        "localService": false,
+        "voiceURI": "Google हिन्दी"
+      },
+      {
+        "name": "Google Bahasa Indonesia",
+        "lang": "id-ID",
+        "localService": false,
+        "voiceURI": "Google Bahasa Indonesia"
+      },
+      {
+        "name": "Google italiano",
+        "lang": "it-IT",
+        "localService": false,
+        "voiceURI": "Google italiano"
+      },
+      {
+        "name": "Google 日本語",
+        "lang": "ja-JP",
+        "localService": false,
+        "voiceURI": "Google 日本語"
+      },
+      {
+        "name": "Google 한국의",
+        "lang": "ko-KR",
+        "localService": false,
+        "voiceURI": "Google 한국의"
+      },
+      {
+        "name": "Google Nederlands",
+        "lang": "nl-NL",
+        "localService": false,
+        "voiceURI": "Google Nederlands"
+      },
+      {
+        "name": "Google polski",
+        "lang": "pl-PL",
+        "localService": false,
+        "voiceURI": "Google polski"
+      },
+      {
+        "name": "Google português do Brasil",
+        "lang": "pt-BR",
+        "localService": false,
+        "voiceURI": "Google português do Brasil"
+      },
+      {
+        "name": "Google русский",
+        "lang": "ru-RU",
+        "localService": false,
+        "voiceURI": "Google русский"
+      },
+      {
+        "name": "Google 普通话（中国大陆）",
+        "lang": "zh-CN",
+        "localService": false,
+        "voiceURI": "Google 普通话（中国大陆）"
+      },
+      {
+        "name": "Google 粤語（香港）",
+        "lang": "zh-HK",
+        "localService": false,
+        "voiceURI": "Google 粤語（香港）"
+      },
+      {
+        "name": "Google 國語（臺灣）",
+        "lang": "zh-TW",
+        "localService": false,
+        "voiceURI": "Google 國語（臺灣）"
+      }
+    ]
+  },
+  "webrtc": {
+    "sdpSha256Hash": "4ab351da654041734d0f9c47674ddbb45dd929f35dd38b7e77bfb50b45928f4d",
+    "candidatesCount": 1,
+    "candidates": [
+      "candidate:2716176823 1 udp 2113937151 52a8a293-5adb-439d-998e-fff9a5f8cbf4.local 57312 typ host generation 0 ufrag zqnS network-cost 999"
+    ]
+  }
+}
