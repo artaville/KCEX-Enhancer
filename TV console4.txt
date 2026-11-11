@@ -1,0 +1,1604 @@
+{
+  "diagnostic": "TV-TO-KCEX-STORE-IDENTITY-V4",
+  "startedAt": "2026-11-11T13:50:00.227Z",
+  "finishedAt": "2026-11-11T13:50:58.713Z",
+  "durationMs": 55000,
+  "safety": {
+    "chartDataModified": false,
+    "candleValuesModified": false,
+    "functionsReplaced": false,
+    "subscriptionsCreated": false,
+    "eventListenersAdded": false,
+    "networkRequestsSent": false,
+    "indicatorsModified": false,
+    "ordersPlaced": false
+  },
+  "page": {
+    "hostname": "www.tradingview.com",
+    "title": "PEPEUSDT.P 0.49842e-5 ▼ −7.25% Unnamed",
+    "visibility": "visible"
+  },
+  "chart": {
+    "modelPath": "collection._activeChartWidgetModel._value",
+    "symbol": "KCEX:PEPEUSDT.P",
+    "interval": "1"
+  },
+  "storeIdentity": {
+    "mainBarStoreIsBuilderPlots": true,
+    "mainItemsIsBuilderItems": true,
+    "mainBarStoreConstructor": "_",
+    "builderPlotsConstructor": "_",
+    "mainStoreCount": 342,
+    "builderStoreCount": 342,
+    "mainStore": {
+      "count": 342,
+      "firstIndex": 0,
+      "lastIndex": 341,
+      "firstTime": 1794384540,
+      "lastTime": 1794405000,
+      "first": {
+        "index": 0,
+        "value": [
+          1794384540,
+          0.0000052478,
+          0.0000052545,
+          0.0000052472,
+          0.0000052527,
+          4325600000
+        ]
+      },
+      "last": {
+        "index": 341,
+        "value": [
+          1794405000,
+          0.0000049828,
+          0.0000049842,
+          0.0000049776,
+          0.0000049842,
+          20515100000
+        ]
+      },
+      "signature": "[1794405000,0.0000049828,0.0000049842,0.0000049776,0.0000049842,20515100000]"
+    },
+    "builderStore": {
+      "count": 342,
+      "firstIndex": 0,
+      "lastIndex": 341,
+      "firstTime": 1794384540,
+      "lastTime": 1794405000,
+      "first": {
+        "index": 0,
+        "value": [
+          1794384540,
+          0.0000052478,
+          0.0000052545,
+          0.0000052472,
+          0.0000052527,
+          4325600000
+        ]
+      },
+      "last": {
+        "index": 341,
+        "value": [
+          1794405000,
+          0.0000049828,
+          0.0000049842,
+          0.0000049776,
+          0.0000049842,
+          20515100000
+        ]
+      },
+      "signature": "[1794405000,0.0000049828,0.0000049842,0.0000049776,0.0000049842,20515100000]"
+    },
+    "sameFirstRow": true,
+    "sameLastRow": true
+  },
+  "builderInternals": {
+    "description": {
+      "constructor": "n",
+      "ownKeys": [
+        "_plots",
+        "_state"
+      ],
+      "methods": [
+        "conflatedChunks",
+        "mergeData",
+        "moveData",
+        "clearData",
+        "_rebuildConflatedChunks",
+        "_updateLatestChunks",
+        "_setEmptyConflatedChunks",
+        "_clearState",
+        "__defineGetter__",
+        "__defineSetter__",
+        "hasOwnProperty",
+        "__lookupGetter__",
+        "__lookupSetter__",
+        "isPrototypeOf",
+        "propertyIsEnumerable",
+        "toString",
+        "valueOf",
+        "toLocaleString"
+      ]
+    },
+    "stateDescription": {
+      "constructor": "Object",
+      "ownKeys": [
+        "chunks",
+        "priceSource",
+        "priceSourcesProvider"
+      ],
+      "methods": [
+        "__defineGetter__",
+        "__defineSetter__",
+        "hasOwnProperty",
+        "__lookupGetter__",
+        "__lookupSetter__",
+        "isPrototypeOf",
+        "propertyIsEnumerable",
+        "toString",
+        "valueOf",
+        "toLocaleString"
+      ]
+    },
+    "priceSource": null,
+    "priceSourcesProvider": {
+      "type": "function",
+      "source": "t=>h[t]"
+    },
+    "chunks": {
+      "isMap": true,
+      "size": 0,
+      "keys": [],
+      "samples": []
+    },
+    "methods": {
+      "mergeData": {
+        "found": true,
+        "name": "mergeData",
+        "length": 226,
+        "source": "mergeData(t){const e=this._plots.size(),s=this._plots.merge(t);return s&&null!==this._state.priceSource&&(e===this._plots.size()&&s.index===this._plots.lastIndex()?this._updateLatestChunks():this._rebuildConflatedChunks(s)),s}",
+        "truncated": false
+      },
+      "rebuildConflatedChunks": {
+        "found": true,
+        "name": "_rebuildConflatedChunks",
+        "length": 953,
+        "source": "_rebuildConflatedChunks(t){const e=this._state.priceSource;if(null===e)return;const s=t.index,n=this._state.priceSourcesProvider(e),o=(t,e,s)=>{let r=null;for(const i of t){const t=n(i.value);r&&i.index-r.startTime>=s.barsToMerge&&(e.push(r),r=null),r?(r.endTime=i.index,r.high=Math.max(r.high,t),r.low=Math.min(r.low,t),r.close=t):r={startTime:i.index,endTime:i.index,open:t,high:t,low:t,close:t}}r&&e.push(r)};a.forEach((t=>{const e=(0,r.ensureDefined)(this._state.chunks.get(t.barsToMerge)),a=(0,i.lowerbound)(e,s,((t,e)=>t.endTime<e));if(0===a&&e.length>0){const s=e[0].startTime-1,i=(0,r.ensureNotNull)(this._plots.firstIndex()),a=this._plots.rangeIterator(i,s),n=[];o(a,n,t);const l=n.concat(e);this._state.chunks.set(t.barsToMerge,l)}else{const s=(0,r.ensureNotNull)(this._plots.lastIndex());e.splice(a);let i=(0,r.ensureNotNull)(this._plots.firstIndex());e.length&&(i=e[e.length-1].endTime+1);const n=this._plots.rangeIterator(i,s);o(n,e,t)}}))}",
+        "truncated": false
+      },
+      "updateLatestChunks": {
+        "found": true,
+        "name": "_updateLatestChunks",
+        "length": 306,
+        "source": "_updateLatestChunks(){const t=(0,r.ensureNotNull)(this._plots.last()),e=this._state.priceSourcesProvider(\"close\");a.forEach((s=>{const i=(0,r.ensureDefined)(this._state.chunks.get(s.barsToMerge)),a=e(t.value),n=i[i.length-1];n.high=Math.max(n.high,a),n.low=Math.min(n.low,a),n.close=a,n.endTime=t.index}))}",
+        "truncated": false
+      },
+      "conflatedChunks": {
+        "found": true,
+        "name": "conflatedChunks",
+        "length": 312,
+        "source": "conflatedChunks(t,e){if(e!==this._state.priceSource){this._state.priceSource=e;const t=this._plots.first();t&&(this._setEmptyConflatedChunks(),this._rebuildConflatedChunks(t))}const s=(0,r.ensureDefined)(a.find((e=>e.forBarspacingLargerThen<=t)));return(0,r.ensureDefined)(this._state.chunks.get(s.barsToMerge))}",
+        "truncated": false
+      }
+    }
+  },
+  "dataAndEvents": {
+    "dataDescription": {
+      "constructor": "c",
+      "ownKeys": [
+        "m_bars",
+        "m_nsBars",
+        "_conflatedChunksBuilder",
+        "lastProjectionPrice"
+      ],
+      "methods": [
+        "bars",
+        "nsBars",
+        "conflatedChunks",
+        "mergeRegularBars",
+        "size",
+        "each",
+        "clear",
+        "clone",
+        "isEmpty",
+        "first",
+        "last",
+        "search",
+        "valueAt",
+        "plotValueToTimePointIndex",
+        "moveData",
+        "__defineGetter__",
+        "__defineSetter__",
+        "hasOwnProperty",
+        "__lookupGetter__",
+        "__lookupSetter__",
+        "isPrototypeOf",
+        "propertyIsEnumerable",
+        "toString",
+        "valueOf",
+        "toLocaleString"
+      ]
+    },
+    "sourceDescription": {
+      "constructor": "I",
+      "ownKeys": [
+        "_extSymbol",
+        "_lastResolvedSymbol",
+        "_createSeriesOverriddenParams",
+        "_instanceId",
+        "_symbolInstanceId",
+        "_resolution",
+        "_timeFrame",
+        "_data",
+        "_dataEvents",
+        "_status",
+        "_turnaroundCounter",
+        "_boundOnGatewayIsConnectedChanged",
+        "_boundOnMessage",
+        "_ongoingDataUpdate",
+        "_gateway",
+        "_turnaroundPrefix",
+        "_createSeriesParams"
+      ],
+      "methods": [
+        "destroy",
+        "canModifySeries",
+        "modifySeries",
+        "requestMoreData",
+        "requestMoreTickmarks",
+        "setFutureTickmarksMode",
+        "isStarted",
+        "isActive",
+        "resolution",
+        "start",
+        "stop",
+        "stopWithError",
+        "instanceId",
+        "data",
+        "setData",
+        "setTimeframe",
+        "clearData",
+        "dataEvents",
+        "turnaround",
+        "symbolInstanceId",
+        "symbol",
+        "updateExtSymbol",
+        "moveData",
+        "setInitialRequestOptions",
+        "symbolSameAsResolved",
+        "resolvedSymbol",
+        "_resolveSymbol",
+        "_clearDataImpl",
+        "_changeStatusTo",
+        "_createSeries",
+        "_onGatewayIsConnectedChanged",
+        "_onGatewayConnected",
+        "_onGatewayDisconnected",
+        "_onMessage",
+        "_onMessageImpl",
+        "_onSeriesError",
+        "_firePlanRestrictedResolution",
+        "_onSeriesTimeFrame",
+        "_onSymbolError",
+        "_onSymbolResolved",
+        "_onDataUpdate",
+        "_enqueueUpdate",
+        "_onDataUnpacked",
+        "_onSeriesLoading",
+        "_onSeriesCompleted",
+        "_checkTurnaround",
+        "__defineGetter__",
+        "__defineSetter__",
+        "hasOwnProperty",
+        "__lookupGetter__",
+        "__lookupSetter__",
+        "isPrototypeOf",
+        "propertyIsEnumerable",
+        "toString",
+        "valueOf",
+        "toLocaleString"
+      ]
+    },
+    "seriesDescription": {
+      "constructor": "Os",
+      "ownKeys": [
+        "isSeries",
+        "_isDestroyed",
+        "_hasAlert",
+        "_alertStatus",
+        "_alertCreationAvailable",
+        "_zorder",
+        "_priceScale",
+        "_ownerSource",
+        "_userEditEnabled",
+        "_priceScaleChanged",
+        "_updateAlertCreationAvailableBound",
+        "_isSelectionEnabled",
+        "_instanceId",
+        "_ownerSourceChanged",
+        "_zOrderChanged",
+        "_id",
+        "isPriceDataSource",
+        "_formatterChanged",
+        "_priceStepChanged",
+        "_currencyChanged",
+        "_isCurrencyOrigin",
+        "_currencyMetaData",
+        "_unitChanged",
+        "_isUnitOrigin",
+        "_unitMetaData",
+        "_metricChanged",
+        "_priceRangeReadyChanged",
+        "_dataRangeUpdated",
+        "_priceStep",
+        "_signature",
+        "_priceRangeReady",
+        "_model",
+        "requestingStyleIsNotSupported",
+        "requestingStyleSupportRecovered",
+        "_paneView",
+        "_futureBarsPaneView",
+        "_projectionBarsPaneView",
+        "_waterlineView",
+        "_priceLineView",
+        "_gotoDateView",
+        "_baseHorizontalLineView",
+        "_symbolInfo",
+        "_isPrePostMarketPricesAvailableProperty",
+        "_isOvernightMarketPricesAvailableProperty",
+        "_isBackAdjustmentForbiddenProperty",
+        "_isSettlementAsCloseForbiddenProperty",
+        "_highLowPriceCache",
+        "_averagePriceCache",
+        "_prevClosePriceAxisView",
+        "_priceScaleAboutToBeChanged",
+        "_onRestarted",
+        "_onStatusChanged",
+        "_intervalChanged",
+        "_sessionIdChanged",
+        "_requestMoreDataAvailable",
+        "_lineStyleLastPriceCirclePaneView",
+        "_prevClosePriceLineView",
+        "_dataPoweredBy",
+        "_symbolResolvingActive",
+        "_predictBars",
+        "_syncModel",
+        "_data",
+        "_lastCompleteFlags",
+        "_barColorerCache",
+        "_quotesLastSplits",
+        "_overriddenLastSplits",
+        "_lastSplits",
+        "_boxSizeValue",
+        "_base",
+        "_pointValue",
+        "_formattingDeps",
+        "_defaultFormatter",
+        "_formatter",
+        "_ignoreMinMoveFormatter",
+        "_ignoreMinMovePriceStep",
+        "_lastBarCloseTime",
+        "_onSessionIdPropertyChangedBound",
+        "_ignoreSessionIdProxyPropertyChanges",
+        "_realignLineToolsBound",
+        "_textSourceIsAlwaysTickerRestrictionEnabled"
+      ],
+      "methods": [
+        "setId",
+        "supportsConflatedChunks",
+        "conflatedChunks",
+        "isBondDataRestricted",
+        "seriesErrorMessage",
+        "destroy",
+        "barColorer",
+        "createPaneView",
+        "properties",
+        "zorder",
+        "quotesProvider",
+        "currentSession",
+        "syncModel",
+        "labelPaneViews",
+        "topPaneViews",
+        "paneViews",
+        "widgetSideAreaViews",
+        "priceAxisViews",
+        "clearHighLowPriceCache",
+        "clearAveragePriceCache",
+        "priceScale",
+        "setPriceScale",
+        "priceScaleChanged",
+        "priceScaleAboutToBeChanged",
+        "applyPreferences",
+        "disconnect",
+        "isStarted",
+        "isCompleted",
+        "restart",
+        "isSymbolInvalid",
+        "getSymbolString",
+        "getReplaySymbolString",
+        "getAlertSymbolString",
+        "getAlertProSymbolString",
+        "getQuotesSymbolString",
+        "invalidateBarStylesCache",
+        "isLoading",
+        "isFailed",
+        "isStatusError",
+        "unsupportedResolutionState",
+        "actualSymbol",
+        "proSymbol",
+        "onStyleChanged",
+        "style",
+        "setStyle",
+        "isRangeBasedStyle",
+        "symbolSameAsCurrent",
+        "symbolSameAsResolved",
+        "status",
+        "statusWV",
+        "compositeStatusVW",
+        "symbol",
+        "symbolOrAlias",
+        "symbolChanged",
+        "seriesSource",
+        "symbolInfo",
+        "aliasSymbolInfo",
+        "symbolInfoWV",
+        "lastSplits",
+        "overrideLastSplits",
+        "symbolResolved",
+        "symbolResolvingActive",
+        "symbolHibernated",
+        "getSymbolName",
+        "firstValue",
+        "firstBar",
+        "formatter",
+        "defaultFormatter",
+        "priceStep",
+        "bars",
+        "nsBars",
+        "interval",
+        "setInterval",
+        "intervalObj",
+        "prevClose",
+        "priceLineColor",
+        "hasClosePrice",
+        "lastValueData",
+        "isDWM",
+        "isPulse",
+        "data",
+        "clearData",
+        "nearestData",
+        "nearestIndex",
+        "nearestValue",
+        "onSymbolIntervalChanged",
+        "priceScalePosition",
+        "firstBarTime",
+        "onIntervalChanged",
+        "onStatusChanged",
+        "onRestarted",
+        "fixLastBar",
+        "requestMoreData",
+        "isNeedRestart",
+        "isStyleSupported",
+        "sessionId",
+        "sessionIdChanged",
+        "sessionsTracker",
+        "priceRange",
+        "autoScaleInfo"
+      ]
+    },
+    "sourceEvents": {
+      "constructor": "_",
+      "ownKeys": [
+        "_created",
+        "_modified",
+        "_cleared",
+        "_loading",
+        "_completed",
+        "_error",
+        "_symbolError",
+        "_symbolResolved",
+        "_seriesError",
+        "_symbolNotPermitted",
+        "_symbolInvalid",
+        "_symbolGroupNotPermitted",
+        "_symbolBondMetricsNotPermitted",
+        "_chartTypeNotPermitted",
+        "_intradaySpreadNotPermitted",
+        "_intradayExchangeNotPermitted",
+        "_customIntervalNotPermitted",
+        "_customSecondsIntervalNotPermitted",
+        "_secondsIntervalNotPermitted",
+        "_ticksIntervalNotPermitted",
+        "_barReceived",
+        "_seriesTimeFrame",
+        "_dataUpdated",
+        "_unsupportedResolutionRequested"
+      ],
+      "methods": [
+        "destroy",
+        "created",
+        "modified",
+        "cleared",
+        "loading",
+        "completed",
+        "error",
+        "symbolError",
+        "symbolResolved",
+        "seriesError",
+        "symbolInvalid",
+        "symbolNotPermitted",
+        "symbolGroupNotPermitted",
+        "symbolBondMetricsNotPermitted",
+        "chartTypeNotPermitted",
+        "intradaySpreadNotPermitted",
+        "intradayExchangeNotPermitted",
+        "customIntervalNotPermitted",
+        "customSecondsIntervalNotPermitted",
+        "secondsIntervalNotPermitted",
+        "ticksIntervalNotPermitted",
+        "barReceived",
+        "seriesTimeFrame",
+        "dataUpdated",
+        "unsupportedResolutionRequested",
+        "fireCompleted",
+        "fireCreated",
+        "fireModified",
+        "fireCleared",
+        "fireLoading",
+        "fireError",
+        "fireSymbolError",
+        "fireSymbolResolved",
+        "fireSeriesError",
+        "fireSymbolInvalid",
+        "fireSymbolNotPermitted",
+        "fireSymbolGroupNotPermitted",
+        "fireSymbolBondMetricsNotPermitted",
+        "fireChartTypeNotPermitted",
+        "fireIntradaySpreadNotPermitted",
+        "fireIntradayExchangeNotPermitted",
+        "fireCustomIntervalNotPermitted",
+        "fireCustomSecondsIntervalNotPermitted",
+        "fireSecondsIntervalNotPermitted",
+        "fireTicksIntervalNotPermitted",
+        "fireBarReceived",
+        "fireSeriesTimeFrame",
+        "fireDataUpdated",
+        "fireUnsupportedResolutionRequested",
+        "__defineGetter__",
+        "__defineSetter__",
+        "hasOwnProperty",
+        "__lookupGetter__",
+        "__lookupSetter__",
+        "isPrototypeOf",
+        "propertyIsEnumerable",
+        "toString",
+        "valueOf",
+        "toLocaleString"
+      ]
+    },
+    "seriesEvents": {
+      "constructor": "_",
+      "ownKeys": [
+        "_created",
+        "_modified",
+        "_cleared",
+        "_loading",
+        "_completed",
+        "_error",
+        "_symbolError",
+        "_symbolResolved",
+        "_seriesError",
+        "_symbolNotPermitted",
+        "_symbolInvalid",
+        "_symbolGroupNotPermitted",
+        "_symbolBondMetricsNotPermitted",
+        "_chartTypeNotPermitted",
+        "_intradaySpreadNotPermitted",
+        "_intradayExchangeNotPermitted",
+        "_customIntervalNotPermitted",
+        "_customSecondsIntervalNotPermitted",
+        "_secondsIntervalNotPermitted",
+        "_ticksIntervalNotPermitted",
+        "_barReceived",
+        "_seriesTimeFrame",
+        "_dataUpdated",
+        "_unsupportedResolutionRequested"
+      ],
+      "methods": [
+        "destroy",
+        "created",
+        "modified",
+        "cleared",
+        "loading",
+        "completed",
+        "error",
+        "symbolError",
+        "symbolResolved",
+        "seriesError",
+        "symbolInvalid",
+        "symbolNotPermitted",
+        "symbolGroupNotPermitted",
+        "symbolBondMetricsNotPermitted",
+        "chartTypeNotPermitted",
+        "intradaySpreadNotPermitted",
+        "intradayExchangeNotPermitted",
+        "customIntervalNotPermitted",
+        "customSecondsIntervalNotPermitted",
+        "secondsIntervalNotPermitted",
+        "ticksIntervalNotPermitted",
+        "barReceived",
+        "seriesTimeFrame",
+        "dataUpdated",
+        "unsupportedResolutionRequested",
+        "fireCompleted",
+        "fireCreated",
+        "fireModified",
+        "fireCleared",
+        "fireLoading",
+        "fireError",
+        "fireSymbolError",
+        "fireSymbolResolved",
+        "fireSeriesError",
+        "fireSymbolInvalid",
+        "fireSymbolNotPermitted",
+        "fireSymbolGroupNotPermitted",
+        "fireSymbolBondMetricsNotPermitted",
+        "fireChartTypeNotPermitted",
+        "fireIntradaySpreadNotPermitted",
+        "fireIntradayExchangeNotPermitted",
+        "fireCustomIntervalNotPermitted",
+        "fireCustomSecondsIntervalNotPermitted",
+        "fireSecondsIntervalNotPermitted",
+        "fireTicksIntervalNotPermitted",
+        "fireBarReceived",
+        "fireSeriesTimeFrame",
+        "fireDataUpdated",
+        "fireUnsupportedResolutionRequested",
+        "__defineGetter__",
+        "__defineSetter__",
+        "hasOwnProperty",
+        "__lookupGetter__",
+        "__lookupSetter__",
+        "isPrototypeOf",
+        "propertyIsEnumerable",
+        "toString",
+        "valueOf",
+        "toLocaleString"
+      ]
+    },
+    "sourceMethods": {
+      "requestMoreData": {
+        "found": true,
+        "name": "requestMoreData",
+        "length": 115,
+        "source": "requestMoreData(t){null!==this._instanceId&&this._gateway.requestMoreData(this._instanceId,t,this._boundOnMessage)}",
+        "truncated": false
+      },
+      "onMessageImpl": {
+        "found": true,
+        "name": "_onMessageImpl",
+        "length": 1977,
+        "source": "async _onMessageImpl(t){switch(t.method){case\"symbol_resolved\":{const[e,s]=t.params;if(e!==this._symbolInstanceId){null!==this._symbolInstanceId&&b.logNormal(`Resolve for old symbol, expected: ${this._symbolInstanceId}, actual ${t.params[0]}`);break}this._onSymbolResolved(s);break}case\"symbol_error\":if(t.params[0]!==this._symbolInstanceId){null!==this._symbolInstanceId&&b.logNormal(`Symbol error for old symbol, expected: ${this._symbolInstanceId}, actual ${t.params[0]}`);break}this._onSymbolError(t);break;case\"series_timeframe\":{const[e,s,r,i,a,n,o]=t.params;if(!this._checkTurnaround(e,s)){b.logNormal(`Time frame for old data, expected: ${this._symbolInstanceId} (${this.turnaround()}), actual ${e} (${s})`);break}this._onSeriesTimeFrame(r,i,a,n,o);break}case\"series_error\":{const[e,s]=t.params;if(!this._checkTurnaround(e,s)){b.logNormal(`Series error for old data, expected: ${this._symbolInstanceId} (${this.turnaround()}), actual ${e} (${s})`);break}this._onSeriesError(t.params[2]);break}case\"series_loading\":{const[e,s]=t.params;if(!this._checkTurnaround(e,s))break;this._onSeriesLoading(t.time);break}case\"series_completed\":{const[e,s,r,i]=t.params;if(!this._checkTurnaround(e,r)){b.logNormal(`Series completed for old data, expected: ${this._symbolInstanceId} (${this.turnaround()}), actual ${e} (${r})`);break}this._onSeriesCompleted(s,t.time,i);break}case\"data_update\":if(!this._checkTurnaround(t.params.customId,t.params.turnaround)){b.logNormal(`Data update for old data, expected: ${this._symbolInstanceId} (${this.turnaround()}), actual ${t.params.customId} (${t.params.turnaround})`);break}await this._onDataUpdate(t.params.plots,t.params.nonseries,t.params.lastBar);break;case\"clear_data\":{if(t.params.turnaround!==this.turnaround()){b.logNormal(`Clear data for old data, expected: ${this.turnaround()}, actual ${t.params.turnaround}`);break}const e=this._data.first();this._clearDataImpl(),this._dataEvents.fireDataUpdated(void 0,!1,null,!1,e);break}}}",
+        "truncated": false
+      },
+      "onDataUpdate": {
+        "found": true,
+        "name": "_onDataUpdate",
+        "length": 142,
+        "source": "async _onDataUpdate(t,e,s){this._onDataUnpacked(t,s,await(0,c.parseJapaneseProjectionBars)(e,this._gateway.wireFormat().unpackNonSeriesData))}",
+        "truncated": false
+      },
+      "onDataUnpacked": {
+        "found": true,
+        "name": "_onDataUnpacked",
+        "length": 618,
+        "source": "_onDataUnpacked(t,e,s){if(0===this._status)return;2===this._status&&(this._changeStatusTo(3),this._clearDataImpl());const r=this._data.bars().size(),i=this._data.first(),a=this._data.bars().firstIndex(),n=this._data.mergeRegularBars(t);null!==s&&(this._data.nsBars().clear(),this._data.nsBars().merge(s.projectionPlots),this._data.lastProjectionPrice=s.lastPrice,null!==s.boxSize&&(this._data.boxSize=s.boxSize),this._data.reversalAmount=s.reversalAmount);const o=null===a,l=o||null!==n&&n.index<a;this._dataEvents.fireDataUpdated(e,l,n,o,i),r!==this._data.bars().size()&&null!==n&&this._dataEvents.fireBarReceived(n)}",
+        "truncated": false
+      }
+    },
+    "seriesMethods": {
+      "requestMoreData": {
+        "found": true,
+        "name": "requestMoreData",
+        "length": 993,
+        "source": "requestMoreData(e){if(!W.seriesReadyStatuses.has(this._status.value().seriesStatus))return;if(this._model.timeScale().isEmpty())return;const t=this._model.timeScale().visibleBarsStrictRange();if(null===t)return;if(0===this.bars().size())return;const i=t.lastBar()-(0,r.ensureNotNull)(this.data().last()).index;if(this._predictBars<i&&(this._predictBars=i,this._seriesSource.requestMoreTickmarks(i)),!this._requestMoreDataAvailable)return;const s=(0,r.ensureNotNull)(this.bars().firstIndex()),n=e||Math.max(s-t.firstBar(),s-(this._studyBindings?.requestMoreDataIndex()??s));if(n<=0)return;if(!Number.isFinite(n))return void Ls.logWarn(\"requestMoreData: invalid bar count: \"+n+\", visible bars: [\"+t.firstBar()+\", \"+t.lastBar()+\"], last index: \"+(0,r.ensureNotNull)(this.data().last()).index+\", predicted bars: \"+this._predictBars+\", required bars:\"+e);this._requestMoreDataAvailable=!1;const o=this._colorOnPrevBar()?2:0;this._seriesSource.requestMoreData(n+o),this._setStatus(N.Status.Loading)}",
+        "truncated": false
+      },
+      "updateAllViews": {
+        "found": true,
+        "name": "updateAllViews",
+        "length": 989,
+        "source": "updateAllViews(e){this._studyBindings?.updateAllViews(e),this._delayStatusPaneView?.get()?.update(e),e.type!==Ze.ChangeEventType.HoverChange&&(this._paneView?.update(e),this._dataWindowView.update(),this._legendView.update(),this._statusView.update(),this._floatingTooltipView.update(e),this._averagePaneViews.forEach((t=>t.update(e))),this._highLowAvgPaneViews.forEach((t=>t.update(e))),this._labelPaneViews.forEach((t=>t.update(e))),this._priceAxisViews.forEach((t=>t.update(e))),this._priceLineAxisViews.forEach((t=>t.update(e))),this._futureBarsPaneView?.update(e),this._projectionBarsPaneView?.update(e),this._waterlineView?.update(e),this._prevClosePriceLineView?.update(e),this._priceLineView?.update(e),this._gotoDateView?.update(e),this._endOfDataPaneView?.update(e),this._baseHorizontalLineView?.update(e),this._model.activeStrategySource().value()?.updateAllViews(e),this._model.replayStudyStrategy().value()?.updateAllViews(e),this._lineStyleLastPriceCirclePaneView.update(e))}",
+        "truncated": false
+      }
+    },
+    "gatewayMethods": {
+      "requestMoreData": {
+        "found": true,
+        "name": "requestMoreData",
+        "length": 164,
+        "source": "requestMoreData(e,t,i){return\"number\"==typeof e?this._getChartApi().requestMoreData(this.sessionId(),e):this._getChartApi().requestMoreData(this.sessionId(),e,t,i)}",
+        "truncated": false
+      },
+      "wireFormat": {
+        "found": true,
+        "name": "wireFormat",
+        "length": 37,
+        "source": "wireFormat(){return this._wireFormat}",
+        "truncated": false
+      }
+    },
+    "dataMethods": {
+      "bars": {
+        "found": true,
+        "name": "bars",
+        "length": 26,
+        "source": "bars(){return this.m_bars}",
+        "truncated": false
+      },
+      "mergeRegularBars": {
+        "found": true,
+        "name": "mergeRegularBars",
+        "length": 69,
+        "source": "mergeRegularBars(t){return this._conflatedChunksBuilder.mergeData(t)}",
+        "truncated": false
+      },
+      "moveData": {
+        "found": true,
+        "name": "moveData",
+        "length": 75,
+        "source": "moveData(t){this._conflatedChunksBuilder.moveData(t),this.m_nsBars.move(t)}",
+        "truncated": false
+      }
+    }
+  },
+  "liveAndHistoryMonitoring": {
+    "eventCounts": {
+      "mainHistoryPrepend": 0,
+      "mainHistoryGrowth": 0,
+      "mainNewBars": 1,
+      "mainLiveUpdates": 23,
+      "builderHistoryPrepend": 0,
+      "builderHistoryGrowth": 0,
+      "builderNewBars": 1,
+      "builderLiveUpdates": 23,
+      "otherChanges": 0
+    },
+    "events": [
+      {
+        "at": "2026-11-11T13:50:00.229Z",
+        "event": "baseline",
+        "main": {
+          "count": 341,
+          "firstIndex": 0,
+          "lastIndex": 340,
+          "firstTime": 1794384540,
+          "lastTime": 1794404940,
+          "first": {
+            "index": 0,
+            "value": [
+              1794384540,
+              0.0000052478,
+              0.0000052545,
+              0.0000052472,
+              0.0000052527,
+              4325600000
+            ]
+          },
+          "last": {
+            "index": 340,
+            "value": [
+              1794404940,
+              0.0000049929,
+              0.0000049929,
+              0.0000049832,
+              0.0000049834,
+              3393800000
+            ]
+          },
+          "signature": "[1794404940,0.0000049929,0.0000049929,0.0000049832,0.0000049834,3393800000]"
+        },
+        "builder": {
+          "count": 341,
+          "firstIndex": 0,
+          "lastIndex": 340,
+          "firstTime": 1794384540,
+          "lastTime": 1794404940,
+          "first": {
+            "index": 0,
+            "value": [
+              1794384540,
+              0.0000052478,
+              0.0000052545,
+              0.0000052472,
+              0.0000052527,
+              4325600000
+            ]
+          },
+          "last": {
+            "index": 340,
+            "value": [
+              1794404940,
+              0.0000049929,
+              0.0000049929,
+              0.0000049832,
+              0.0000049834,
+              3393800000
+            ]
+          },
+          "signature": "[1794404940,0.0000049929,0.0000049929,0.0000049832,0.0000049834,3393800000]"
+        }
+      },
+      {
+        "at": "2026-11-11T13:50:03.843Z",
+        "store": "main",
+        "label": "data.m_bars",
+        "event": "new-bar",
+        "before": {
+          "count": 341,
+          "firstTime": 1794384540,
+          "lastTime": 1794404940
+        },
+        "after": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        }
+      },
+      {
+        "at": "2026-11-11T13:50:03.843Z",
+        "store": "builder",
+        "label": "builder._plots",
+        "event": "new-bar",
+        "before": {
+          "count": 341,
+          "firstTime": 1794384540,
+          "lastTime": 1794404940
+        },
+        "after": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        }
+      },
+      {
+        "at": "2026-11-11T13:50:06.630Z",
+        "store": "main",
+        "label": "data.m_bars",
+        "event": "last-bar-update",
+        "before": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        },
+        "after": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        }
+      },
+      {
+        "at": "2026-11-11T13:50:06.630Z",
+        "store": "builder",
+        "label": "builder._plots",
+        "event": "last-bar-update",
+        "before": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        },
+        "after": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        }
+      },
+      {
+        "at": "2026-11-11T13:50:07.430Z",
+        "store": "main",
+        "label": "data.m_bars",
+        "event": "last-bar-update",
+        "before": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        },
+        "after": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        }
+      },
+      {
+        "at": "2026-11-11T13:50:07.430Z",
+        "store": "builder",
+        "label": "builder._plots",
+        "event": "last-bar-update",
+        "before": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        },
+        "after": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        }
+      },
+      {
+        "at": "2026-11-11T13:50:08.231Z",
+        "store": "main",
+        "label": "data.m_bars",
+        "event": "last-bar-update",
+        "before": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        },
+        "after": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        }
+      },
+      {
+        "at": "2026-11-11T13:50:08.231Z",
+        "store": "builder",
+        "label": "builder._plots",
+        "event": "last-bar-update",
+        "before": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        },
+        "after": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        }
+      },
+      {
+        "at": "2026-11-11T13:50:09.430Z",
+        "store": "main",
+        "label": "data.m_bars",
+        "event": "last-bar-update",
+        "before": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        },
+        "after": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        }
+      },
+      {
+        "at": "2026-11-11T13:50:09.430Z",
+        "store": "builder",
+        "label": "builder._plots",
+        "event": "last-bar-update",
+        "before": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        },
+        "after": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        }
+      },
+      {
+        "at": "2026-11-11T13:50:10.631Z",
+        "store": "main",
+        "label": "data.m_bars",
+        "event": "last-bar-update",
+        "before": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        },
+        "after": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        }
+      },
+      {
+        "at": "2026-11-11T13:50:10.631Z",
+        "store": "builder",
+        "label": "builder._plots",
+        "event": "last-bar-update",
+        "before": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        },
+        "after": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        }
+      },
+      {
+        "at": "2026-11-11T13:50:13.861Z",
+        "store": "main",
+        "label": "data.m_bars",
+        "event": "last-bar-update",
+        "before": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        },
+        "after": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        }
+      },
+      {
+        "at": "2026-11-11T13:50:13.861Z",
+        "store": "builder",
+        "label": "builder._plots",
+        "event": "last-bar-update",
+        "before": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        },
+        "after": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        }
+      },
+      {
+        "at": "2026-11-11T13:50:17.030Z",
+        "store": "main",
+        "label": "data.m_bars",
+        "event": "last-bar-update",
+        "before": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        },
+        "after": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        }
+      },
+      {
+        "at": "2026-11-11T13:50:17.030Z",
+        "store": "builder",
+        "label": "builder._plots",
+        "event": "last-bar-update",
+        "before": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        },
+        "after": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        }
+      },
+      {
+        "at": "2026-11-11T13:50:18.230Z",
+        "store": "main",
+        "label": "data.m_bars",
+        "event": "last-bar-update",
+        "before": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        },
+        "after": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        }
+      },
+      {
+        "at": "2026-11-11T13:50:18.230Z",
+        "store": "builder",
+        "label": "builder._plots",
+        "event": "last-bar-update",
+        "before": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        },
+        "after": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        }
+      },
+      {
+        "at": "2026-11-11T13:50:19.031Z",
+        "store": "main",
+        "label": "data.m_bars",
+        "event": "last-bar-update",
+        "before": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        },
+        "after": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        }
+      },
+      {
+        "at": "2026-11-11T13:50:19.031Z",
+        "store": "builder",
+        "label": "builder._plots",
+        "event": "last-bar-update",
+        "before": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        },
+        "after": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        }
+      },
+      {
+        "at": "2026-11-11T13:50:23.830Z",
+        "store": "main",
+        "label": "data.m_bars",
+        "event": "last-bar-update",
+        "before": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        },
+        "after": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        }
+      },
+      {
+        "at": "2026-11-11T13:50:23.830Z",
+        "store": "builder",
+        "label": "builder._plots",
+        "event": "last-bar-update",
+        "before": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        },
+        "after": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        }
+      },
+      {
+        "at": "2026-11-11T13:50:28.230Z",
+        "store": "main",
+        "label": "data.m_bars",
+        "event": "last-bar-update",
+        "before": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        },
+        "after": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        }
+      },
+      {
+        "at": "2026-11-11T13:50:28.230Z",
+        "store": "builder",
+        "label": "builder._plots",
+        "event": "last-bar-update",
+        "before": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        },
+        "after": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        }
+      },
+      {
+        "at": "2026-11-11T13:50:30.630Z",
+        "store": "main",
+        "label": "data.m_bars",
+        "event": "last-bar-update",
+        "before": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        },
+        "after": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        }
+      },
+      {
+        "at": "2026-11-11T13:50:30.630Z",
+        "store": "builder",
+        "label": "builder._plots",
+        "event": "last-bar-update",
+        "before": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        },
+        "after": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        }
+      },
+      {
+        "at": "2026-11-11T13:50:31.830Z",
+        "store": "main",
+        "label": "data.m_bars",
+        "event": "last-bar-update",
+        "before": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        },
+        "after": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        }
+      },
+      {
+        "at": "2026-11-11T13:50:31.830Z",
+        "store": "builder",
+        "label": "builder._plots",
+        "event": "last-bar-update",
+        "before": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        },
+        "after": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        }
+      },
+      {
+        "at": "2026-11-11T13:50:32.630Z",
+        "store": "main",
+        "label": "data.m_bars",
+        "event": "last-bar-update",
+        "before": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        },
+        "after": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        }
+      },
+      {
+        "at": "2026-11-11T13:50:32.630Z",
+        "store": "builder",
+        "label": "builder._plots",
+        "event": "last-bar-update",
+        "before": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        },
+        "after": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        }
+      },
+      {
+        "at": "2026-11-11T13:50:42.630Z",
+        "store": "main",
+        "label": "data.m_bars",
+        "event": "last-bar-update",
+        "before": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        },
+        "after": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        }
+      },
+      {
+        "at": "2026-11-11T13:50:42.630Z",
+        "store": "builder",
+        "label": "builder._plots",
+        "event": "last-bar-update",
+        "before": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        },
+        "after": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        }
+      },
+      {
+        "at": "2026-11-11T13:50:43.431Z",
+        "store": "main",
+        "label": "data.m_bars",
+        "event": "last-bar-update",
+        "before": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        },
+        "after": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        }
+      },
+      {
+        "at": "2026-11-11T13:50:43.431Z",
+        "store": "builder",
+        "label": "builder._plots",
+        "event": "last-bar-update",
+        "before": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        },
+        "after": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        }
+      },
+      {
+        "at": "2026-11-11T13:50:45.430Z",
+        "store": "main",
+        "label": "data.m_bars",
+        "event": "last-bar-update",
+        "before": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        },
+        "after": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        }
+      },
+      {
+        "at": "2026-11-11T13:50:45.430Z",
+        "store": "builder",
+        "label": "builder._plots",
+        "event": "last-bar-update",
+        "before": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        },
+        "after": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        }
+      },
+      {
+        "at": "2026-11-11T13:50:45.830Z",
+        "store": "main",
+        "label": "data.m_bars",
+        "event": "last-bar-update",
+        "before": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        },
+        "after": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        }
+      },
+      {
+        "at": "2026-11-11T13:50:45.830Z",
+        "store": "builder",
+        "label": "builder._plots",
+        "event": "last-bar-update",
+        "before": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        },
+        "after": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        }
+      },
+      {
+        "at": "2026-11-11T13:50:47.430Z",
+        "store": "main",
+        "label": "data.m_bars",
+        "event": "last-bar-update",
+        "before": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        },
+        "after": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        }
+      },
+      {
+        "at": "2026-11-11T13:50:47.430Z",
+        "store": "builder",
+        "label": "builder._plots",
+        "event": "last-bar-update",
+        "before": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        },
+        "after": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        }
+      },
+      {
+        "at": "2026-11-11T13:50:48.630Z",
+        "store": "main",
+        "label": "data.m_bars",
+        "event": "last-bar-update",
+        "before": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        },
+        "after": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        }
+      },
+      {
+        "at": "2026-11-11T13:50:48.630Z",
+        "store": "builder",
+        "label": "builder._plots",
+        "event": "last-bar-update",
+        "before": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        },
+        "after": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        }
+      },
+      {
+        "at": "2026-11-11T13:50:51.031Z",
+        "store": "main",
+        "label": "data.m_bars",
+        "event": "last-bar-update",
+        "before": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        },
+        "after": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        }
+      },
+      {
+        "at": "2026-11-11T13:50:51.031Z",
+        "store": "builder",
+        "label": "builder._plots",
+        "event": "last-bar-update",
+        "before": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        },
+        "after": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        }
+      },
+      {
+        "at": "2026-11-11T13:50:53.830Z",
+        "store": "main",
+        "label": "data.m_bars",
+        "event": "last-bar-update",
+        "before": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        },
+        "after": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        }
+      },
+      {
+        "at": "2026-11-11T13:50:53.830Z",
+        "store": "builder",
+        "label": "builder._plots",
+        "event": "last-bar-update",
+        "before": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        },
+        "after": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        }
+      },
+      {
+        "at": "2026-11-11T13:50:54.630Z",
+        "store": "main",
+        "label": "data.m_bars",
+        "event": "last-bar-update",
+        "before": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        },
+        "after": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        }
+      },
+      {
+        "at": "2026-11-11T13:50:54.630Z",
+        "store": "builder",
+        "label": "builder._plots",
+        "event": "last-bar-update",
+        "before": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        },
+        "after": {
+          "count": 342,
+          "firstTime": 1794384540,
+          "lastTime": 1794405000
+        }
+      }
+    ]
+  },
+  "errors": []
+}
