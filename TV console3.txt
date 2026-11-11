@@ -1,0 +1,1813 @@
+{
+  "diagnostic": "TV-TO-KCEX-HISTORY-LIVE-PIPELINE-V3",
+  "startedAt": "2026-11-11T13:45:48.826Z",
+  "finishedAt": "2026-11-11T13:46:37.368Z",
+  "durationMs": 45000,
+  "safety": {
+    "chartDataModified": false,
+    "candleValuesModified": false,
+    "functionsReplaced": false,
+    "eventListenersAddedToTradingView": false,
+    "subscriptionsCreated": false,
+    "networkRequestsSentByDiagnostic": false,
+    "ordersPlaced": false,
+    "indicatorsModified": false,
+    "chartResolutionChanged": false
+  },
+  "page": {
+    "hostname": "www.tradingview.com",
+    "title": "PEPEUSDT.P 0.49804e-5 ▼ −7.32% Unnamed",
+    "visibility": "visible"
+  },
+  "summary": {
+    "chartFound": true,
+    "symbol": "KCEX:PEPEUSDT.P",
+    "interval": "1",
+    "loadedBarCount": 338,
+    "builderFound": true,
+    "mergeDataFound": true,
+    "liveSamples": 16,
+    "observedEvents": {
+      "historicalPrepend": 0,
+      "historicalGrowth": 0,
+      "liveUpdates": 14,
+      "newLiveBars": 1,
+      "otherChanges": 0
+    },
+    "errors": []
+  },
+  "historicalCandles": {
+    "firstLoadedBar": {
+      "index": 0,
+      "value": [
+        1794384540,
+        0.0000052478,
+        0.0000052545,
+        0.0000052472,
+        0.0000052527,
+        4325600000
+      ]
+    },
+    "lastLoadedBar": {
+      "index": 337,
+      "value": [
+        1794404760,
+        0.0000049819,
+        0.0000049833,
+        0.0000049804,
+        0.0000049804,
+        1472700000
+      ]
+    },
+    "firstTenBars": [
+      {
+        "index": 0,
+        "value": [
+          1794384540,
+          0.0000052478,
+          0.0000052545,
+          0.0000052472,
+          0.0000052527,
+          4325600000
+        ]
+      },
+      {
+        "index": 1,
+        "value": [
+          1794384600,
+          0.000005254,
+          0.000005256,
+          0.0000052514,
+          0.0000052528,
+          7739000000
+        ]
+      },
+      {
+        "index": 2,
+        "value": [
+          1794384660,
+          0.0000052516,
+          0.0000052529,
+          0.0000052452,
+          0.0000052452,
+          1689300000
+        ]
+      },
+      {
+        "index": 3,
+        "value": [
+          1794384720,
+          0.0000052454,
+          0.0000052464,
+          0.0000052411,
+          0.0000052464,
+          2464700000
+        ]
+      },
+      {
+        "index": 4,
+        "value": [
+          1794384780,
+          0.0000052475,
+          0.0000052578,
+          0.0000052475,
+          0.0000052531,
+          2363500000
+        ]
+      },
+      {
+        "index": 5,
+        "value": [
+          1794384840,
+          0.0000052526,
+          0.0000052591,
+          0.0000052525,
+          0.0000052563,
+          4266900000
+        ]
+      },
+      {
+        "index": 6,
+        "value": [
+          1794384900,
+          0.0000052531,
+          0.0000052536,
+          0.0000052462,
+          0.0000052471,
+          4528300000
+        ]
+      },
+      {
+        "index": 7,
+        "value": [
+          1794384960,
+          0.0000052456,
+          0.0000052463,
+          0.0000052428,
+          0.0000052439,
+          3283400000
+        ]
+      },
+      {
+        "index": 8,
+        "value": [
+          1794385020,
+          0.0000052464,
+          0.0000052464,
+          0.0000052375,
+          0.0000052423,
+          2438200000
+        ]
+      },
+      {
+        "index": 9,
+        "value": [
+          1794385080,
+          0.0000052423,
+          0.0000052427,
+          0.0000052281,
+          0.0000052281,
+          4952300000
+        ]
+      }
+    ],
+    "lastTenBars": [
+      {
+        "index": 328,
+        "value": [
+          1794404220,
+          0.0000049784,
+          0.0000049786,
+          0.0000049661,
+          0.0000049705,
+          9801800000
+        ]
+      },
+      {
+        "index": 329,
+        "value": [
+          1794404280,
+          0.0000049694,
+          0.0000049725,
+          0.0000049659,
+          0.0000049679,
+          3877900000
+        ]
+      },
+      {
+        "index": 330,
+        "value": [
+          1794404340,
+          0.0000049684,
+          0.0000049699,
+          0.0000049654,
+          0.0000049681,
+          3358100000
+        ]
+      },
+      {
+        "index": 331,
+        "value": [
+          1794404400,
+          0.0000049698,
+          0.0000049733,
+          0.000004968,
+          0.0000049708,
+          14924800000
+        ]
+      },
+      {
+        "index": 332,
+        "value": [
+          1794404460,
+          0.0000049708,
+          0.000004974,
+          0.0000049601,
+          0.0000049717,
+          27983200000
+        ]
+      },
+      {
+        "index": 333,
+        "value": [
+          1794404520,
+          0.0000049729,
+          0.000004974,
+          0.000004968,
+          0.000004974,
+          2727600000
+        ]
+      },
+      {
+        "index": 334,
+        "value": [
+          1794404580,
+          0.0000049729,
+          0.0000049735,
+          0.0000049688,
+          0.000004973,
+          3095500000
+        ]
+      },
+      {
+        "index": 335,
+        "value": [
+          1794404640,
+          0.0000049709,
+          0.000004972,
+          0.0000049646,
+          0.000004972,
+          3510400000
+        ]
+      },
+      {
+        "index": 336,
+        "value": [
+          1794404700,
+          0.0000049719,
+          0.0000049819,
+          0.0000049719,
+          0.0000049819,
+          14377800000
+        ]
+      },
+      {
+        "index": 337,
+        "value": [
+          1794404760,
+          0.0000049819,
+          0.0000049833,
+          0.0000049804,
+          0.0000049804,
+          1472700000
+        ]
+      }
+    ],
+    "fieldOrder": {
+      "0": "Timestamp",
+      "1": "Open",
+      "2": "High",
+      "3": "Low",
+      "4": "Close",
+      "5": "Volume"
+    },
+    "hypotheticalOpenCloseAdjustment": {
+      "totalLoadedBars": 338,
+      "validComparisons": 337,
+      "alreadyAligned": 48,
+      "openWouldChange": 289,
+      "highWouldNeedExpansion": 61,
+      "lowWouldNeedExpansion": 42,
+      "bothHighAndLowWouldNeedExpansion": 0,
+      "invalidOriginalOHLC": 0,
+      "maxHighExpansionPercent": 0.234239,
+      "maxLowExpansionPercent": 0.194086,
+      "examples": [
+        {
+          "index": 1,
+          "previousClose": 0.0000052527,
+          "original": {
+            "open": 0.000005254,
+            "high": 0.000005256,
+            "low": 0.0000052514,
+            "close": 0.0000052528
+          },
+          "hypothetical": {
+            "open": 0.0000052527,
+            "high": 0.000005256,
+            "low": 0.0000052514,
+            "close": 0.0000052528
+          },
+          "highExpanded": false,
+          "lowExpanded": false
+        },
+        {
+          "index": 2,
+          "previousClose": 0.0000052528,
+          "original": {
+            "open": 0.0000052516,
+            "high": 0.0000052529,
+            "low": 0.0000052452,
+            "close": 0.0000052452
+          },
+          "hypothetical": {
+            "open": 0.0000052528,
+            "high": 0.0000052529,
+            "low": 0.0000052452,
+            "close": 0.0000052452
+          },
+          "highExpanded": false,
+          "lowExpanded": false
+        },
+        {
+          "index": 3,
+          "previousClose": 0.0000052452,
+          "original": {
+            "open": 0.0000052454,
+            "high": 0.0000052464,
+            "low": 0.0000052411,
+            "close": 0.0000052464
+          },
+          "hypothetical": {
+            "open": 0.0000052452,
+            "high": 0.0000052464,
+            "low": 0.0000052411,
+            "close": 0.0000052464
+          },
+          "highExpanded": false,
+          "lowExpanded": false
+        },
+        {
+          "index": 4,
+          "previousClose": 0.0000052464,
+          "original": {
+            "open": 0.0000052475,
+            "high": 0.0000052578,
+            "low": 0.0000052475,
+            "close": 0.0000052531
+          },
+          "hypothetical": {
+            "open": 0.0000052464,
+            "high": 0.0000052578,
+            "low": 0.0000052464,
+            "close": 0.0000052531
+          },
+          "highExpanded": false,
+          "lowExpanded": true
+        },
+        {
+          "index": 5,
+          "previousClose": 0.0000052531,
+          "original": {
+            "open": 0.0000052526,
+            "high": 0.0000052591,
+            "low": 0.0000052525,
+            "close": 0.0000052563
+          },
+          "hypothetical": {
+            "open": 0.0000052531,
+            "high": 0.0000052591,
+            "low": 0.0000052525,
+            "close": 0.0000052563
+          },
+          "highExpanded": false,
+          "lowExpanded": false
+        },
+        {
+          "index": 6,
+          "previousClose": 0.0000052563,
+          "original": {
+            "open": 0.0000052531,
+            "high": 0.0000052536,
+            "low": 0.0000052462,
+            "close": 0.0000052471
+          },
+          "hypothetical": {
+            "open": 0.0000052563,
+            "high": 0.0000052563,
+            "low": 0.0000052462,
+            "close": 0.0000052471
+          },
+          "highExpanded": true,
+          "lowExpanded": false
+        },
+        {
+          "index": 7,
+          "previousClose": 0.0000052471,
+          "original": {
+            "open": 0.0000052456,
+            "high": 0.0000052463,
+            "low": 0.0000052428,
+            "close": 0.0000052439
+          },
+          "hypothetical": {
+            "open": 0.0000052471,
+            "high": 0.0000052471,
+            "low": 0.0000052428,
+            "close": 0.0000052439
+          },
+          "highExpanded": true,
+          "lowExpanded": false
+        },
+        {
+          "index": 8,
+          "previousClose": 0.0000052439,
+          "original": {
+            "open": 0.0000052464,
+            "high": 0.0000052464,
+            "low": 0.0000052375,
+            "close": 0.0000052423
+          },
+          "hypothetical": {
+            "open": 0.0000052439,
+            "high": 0.0000052464,
+            "low": 0.0000052375,
+            "close": 0.0000052423
+          },
+          "highExpanded": false,
+          "lowExpanded": false
+        },
+        {
+          "index": 10,
+          "previousClose": 0.0000052281,
+          "original": {
+            "open": 0.0000052235,
+            "high": 0.0000052235,
+            "low": 0.0000052143,
+            "close": 0.0000052188
+          },
+          "hypothetical": {
+            "open": 0.0000052281,
+            "high": 0.0000052281,
+            "low": 0.0000052143,
+            "close": 0.0000052188
+          },
+          "highExpanded": true,
+          "lowExpanded": false
+        },
+        {
+          "index": 11,
+          "previousClose": 0.0000052188,
+          "original": {
+            "open": 0.0000052212,
+            "high": 0.0000052212,
+            "low": 0.0000052166,
+            "close": 0.0000052172
+          },
+          "hypothetical": {
+            "open": 0.0000052188,
+            "high": 0.0000052212,
+            "low": 0.0000052166,
+            "close": 0.0000052172
+          },
+          "highExpanded": false,
+          "lowExpanded": false
+        },
+        {
+          "index": 12,
+          "previousClose": 0.0000052172,
+          "original": {
+            "open": 0.0000052184,
+            "high": 0.000005221,
+            "low": 0.0000052112,
+            "close": 0.0000052124
+          },
+          "hypothetical": {
+            "open": 0.0000052172,
+            "high": 0.000005221,
+            "low": 0.0000052112,
+            "close": 0.0000052124
+          },
+          "highExpanded": false,
+          "lowExpanded": false
+        },
+        {
+          "index": 14,
+          "previousClose": 0.0000052153,
+          "original": {
+            "open": 0.0000052122,
+            "high": 0.0000052133,
+            "low": 0.0000052015,
+            "close": 0.0000052017
+          },
+          "hypothetical": {
+            "open": 0.0000052153,
+            "high": 0.0000052153,
+            "low": 0.0000052015,
+            "close": 0.0000052017
+          },
+          "highExpanded": true,
+          "lowExpanded": false
+        },
+        {
+          "index": 16,
+          "previousClose": 0.0000051773,
+          "original": {
+            "open": 0.0000051657,
+            "high": 0.0000051724,
+            "low": 0.0000051629,
+            "close": 0.0000051724
+          },
+          "hypothetical": {
+            "open": 0.0000051773,
+            "high": 0.0000051773,
+            "low": 0.0000051629,
+            "close": 0.0000051724
+          },
+          "highExpanded": true,
+          "lowExpanded": false
+        },
+        {
+          "index": 17,
+          "previousClose": 0.0000051724,
+          "original": {
+            "open": 0.0000051725,
+            "high": 0.0000051808,
+            "low": 0.0000051724,
+            "close": 0.0000051735
+          },
+          "hypothetical": {
+            "open": 0.0000051724,
+            "high": 0.0000051808,
+            "low": 0.0000051724,
+            "close": 0.0000051735
+          },
+          "highExpanded": false,
+          "lowExpanded": false
+        },
+        {
+          "index": 18,
+          "previousClose": 0.0000051735,
+          "original": {
+            "open": 0.0000051736,
+            "high": 0.0000051823,
+            "low": 0.0000051735,
+            "close": 0.0000051788
+          },
+          "hypothetical": {
+            "open": 0.0000051735,
+            "high": 0.0000051823,
+            "low": 0.0000051735,
+            "close": 0.0000051788
+          },
+          "highExpanded": false,
+          "lowExpanded": false
+        },
+        {
+          "index": 19,
+          "previousClose": 0.0000051788,
+          "original": {
+            "open": 0.0000051748,
+            "high": 0.0000051756,
+            "low": 0.0000051679,
+            "close": 0.0000051698
+          },
+          "hypothetical": {
+            "open": 0.0000051788,
+            "high": 0.0000051788,
+            "low": 0.0000051679,
+            "close": 0.0000051698
+          },
+          "highExpanded": true,
+          "lowExpanded": false
+        },
+        {
+          "index": 20,
+          "previousClose": 0.0000051698,
+          "original": {
+            "open": 0.0000051678,
+            "high": 0.0000051704,
+            "low": 0.000005164,
+            "close": 0.0000051645
+          },
+          "hypothetical": {
+            "open": 0.0000051698,
+            "high": 0.0000051704,
+            "low": 0.000005164,
+            "close": 0.0000051645
+          },
+          "highExpanded": false,
+          "lowExpanded": false
+        },
+        {
+          "index": 21,
+          "previousClose": 0.0000051645,
+          "original": {
+            "open": 0.0000051621,
+            "high": 0.0000051743,
+            "low": 0.000005162,
+            "close": 0.0000051743
+          },
+          "hypothetical": {
+            "open": 0.0000051645,
+            "high": 0.0000051743,
+            "low": 0.000005162,
+            "close": 0.0000051743
+          },
+          "highExpanded": false,
+          "lowExpanded": false
+        }
+      ]
+    }
+  },
+  "historicalAndLivePipeline": {
+    "explanation": "Inspect whether historical batches and live updates use the same data_update -> _onDataUpdate -> _onDataUnpacked -> mergeRegularBars -> mergeData route. Source code is read, not executed.",
+    "sourceMethods": {
+      "_onMessageImpl": {
+        "found": true,
+        "name": "_onMessageImpl",
+        "functionName": "_onMessageImpl",
+        "length": 1977,
+        "source": "async _onMessageImpl(t){switch(t.method){case\"symbol_resolved\":{const[e,s]=t.params;if(e!==this._symbolInstanceId){null!==this._symbolInstanceId&&b.logNormal(`Resolve for old symbol, expected: ${this._symbolInstanceId}, actual ${t.params[0]}`);break}this._onSymbolResolved(s);break}case\"symbol_error\":if(t.params[0]!==this._symbolInstanceId){null!==this._symbolInstanceId&&b.logNormal(`Symbol error for old symbol, expected: ${this._symbolInstanceId}, actual ${t.params[0]}`);break}this._onSymbolError(t);break;case\"series_timeframe\":{const[e,s,r,i,a,n,o]=t.params;if(!this._checkTurnaround(e,s)){b.logNormal(`Time frame for old data, expected: ${this._symbolInstanceId} (${this.turnaround()}), actual ${e} (${s})`);break}this._onSeriesTimeFrame(r,i,a,n,o);break}case\"series_error\":{const[e,s]=t.params;if(!this._checkTurnaround(e,s)){b.logNormal(`Series error for old data, expected: ${this._symbolInstanceId} (${this.turnaround()}), actual ${e} (${s})`);break}this._onSeriesError(t.params[2]);break}case\"series_loading\":{const[e,s]=t.params;if(!this._checkTurnaround(e,s))break;this._onSeriesLoading(t.time);break}case\"series_completed\":{const[e,s,r,i]=t.params;if(!this._checkTurnaround(e,r)){b.logNormal(`Series completed for old data, expected: ${this._symbolInstanceId} (${this.turnaround()}), actual ${e} (${r})`);break}this._onSeriesCompleted(s,t.time,i);break}case\"data_update\":if(!this._checkTurnaround(t.params.customId,t.params.turnaround)){b.logNormal(`Data update for old data, expected: ${this._symbolInstanceId} (${this.turnaround()}), actual ${t.params.customId} (${t.params.turnaround})`);break}await this._onDataUpdate(t.params.plots,t.params.nonseries,t.params.lastBar);break;case\"clear_data\":{if(t.params.turnaround!==this.turnaround()){b.logNormal(`Clear data for old data, expected: ${this.turnaround()}, actual ${t.params.turnaround}`);break}const e=this._data.first();this._clearDataImpl(),this._dataEvents.fireDataUpdated(void 0,!1,null,!1,e);break}}}",
+        "truncated": false
+      },
+      "_onDataUpdate": {
+        "found": true,
+        "name": "_onDataUpdate",
+        "functionName": "_onDataUpdate",
+        "length": 142,
+        "source": "async _onDataUpdate(t,e,s){this._onDataUnpacked(t,s,await(0,c.parseJapaneseProjectionBars)(e,this._gateway.wireFormat().unpackNonSeriesData))}",
+        "truncated": false
+      },
+      "_onDataUnpacked": {
+        "found": true,
+        "name": "_onDataUnpacked",
+        "functionName": "_onDataUnpacked",
+        "length": 618,
+        "source": "_onDataUnpacked(t,e,s){if(0===this._status)return;2===this._status&&(this._changeStatusTo(3),this._clearDataImpl());const r=this._data.bars().size(),i=this._data.first(),a=this._data.bars().firstIndex(),n=this._data.mergeRegularBars(t);null!==s&&(this._data.nsBars().clear(),this._data.nsBars().merge(s.projectionPlots),this._data.lastProjectionPrice=s.lastPrice,null!==s.boxSize&&(this._data.boxSize=s.boxSize),this._data.reversalAmount=s.reversalAmount);const o=null===a,l=o||null!==n&&n.index<a;this._dataEvents.fireDataUpdated(e,l,n,o,i),r!==this._data.bars().size()&&null!==n&&this._dataEvents.fireBarReceived(n)}",
+        "truncated": false
+      },
+      "_onSeriesCompleted": {
+        "found": true,
+        "name": "_onSeriesCompleted",
+        "functionName": "_onSeriesCompleted",
+        "length": 88,
+        "source": "_onSeriesCompleted(t,e,s){this._dataEvents.fireCompleted({updateMode:t,time:e,flags:s})}",
+        "truncated": false
+      },
+      "_onSeriesTimeFrame": {
+        "found": true,
+        "name": "_onSeriesTimeFrame",
+        "functionName": "_onSeriesTimeFrame",
+        "length": 82,
+        "source": "_onSeriesTimeFrame(t,e,s,r,i){this._dataEvents.fireSeriesTimeFrame(t,e,s,r??!0,i)}",
+        "truncated": false
+      },
+      "_enqueueUpdate": {
+        "found": true,
+        "name": "_enqueueUpdate",
+        "functionName": "_enqueueUpdate",
+        "length": 107,
+        "source": "_enqueueUpdate(t){return this._ongoingDataUpdate=this._ongoingDataUpdate.then(t,t),this._ongoingDataUpdate}",
+        "truncated": false
+      },
+      "setData": {
+        "found": true,
+        "name": "setData",
+        "functionName": "setData",
+        "length": 24,
+        "source": "setData(t){this._data=t}",
+        "truncated": false
+      },
+      "clearData": {
+        "found": true,
+        "name": "_clearDataImpl",
+        "functionName": "_clearDataImpl",
+        "length": 67,
+        "source": "_clearDataImpl(){this._data.clear(),this._dataEvents.fireCleared()}",
+        "truncated": false
+      }
+    },
+    "dataMethods": {
+      "mergeRegularBars": {
+        "found": true,
+        "name": "mergeRegularBars",
+        "functionName": "mergeRegularBars",
+        "length": 69,
+        "source": "mergeRegularBars(t){return this._conflatedChunksBuilder.mergeData(t)}",
+        "truncated": false
+      },
+      "moveData": {
+        "found": true,
+        "name": "moveData",
+        "functionName": "moveData",
+        "length": 75,
+        "source": "moveData(t){this._conflatedChunksBuilder.moveData(t),this.m_nsBars.move(t)}",
+        "truncated": false
+      },
+      "clone": {
+        "found": true,
+        "name": "clone",
+        "functionName": "clone",
+        "length": 198,
+        "source": "clone(){const t=new c;return t.lastProjectionPrice=this.lastProjectionPrice,t.boxSize=this.boxSize,t.reversalAmount=this.reversalAmount,t.m_bars=this.m_bars.clone(),t.m_nsBars=this.m_bars.clone(),t}",
+        "truncated": false
+      },
+      "clear": {
+        "found": true,
+        "name": "clear",
+        "functionName": "clear",
+        "length": 103,
+        "source": "clear(){this.m_nsBars.clear(),this.lastProjectionPrice=void 0,this._conflatedChunksBuilder.clearData()}",
+        "truncated": false
+      }
+    }
+  },
+  "conflatedChunksBuilder": {
+    "found": true,
+    "description": {
+      "constructor": "n",
+      "ownProperties": {
+        "_plots": {
+          "kind": "object",
+          "value": {
+            "type": "_",
+            "ownKeys": [
+              "_items",
+              "_start",
+              "_end",
+              "_shareRead",
+              "_minMaxCache",
+              "_rowSearchCacheByIndex",
+              "_rowSearchCacheByIndexWithoutEmptyValues",
+              "_rowSearchCacheByTime",
+              "_rowSearchCacheByTimeWithoutEmptyValues",
+              "_plotFunctions",
+              "_emptyValuePredicate"
+            ]
+          }
+        },
+        "_state": {
+          "kind": "object",
+          "value": {
+            "type": "Object",
+            "ownKeys": [
+              "chunks",
+              "priceSource",
+              "priceSourcesProvider"
+            ]
+          }
+        }
+      },
+      "prototypeMethods": [
+        "conflatedChunks",
+        "mergeData",
+        "moveData",
+        "clearData",
+        "_rebuildConflatedChunks",
+        "_updateLatestChunks",
+        "_setEmptyConflatedChunks",
+        "_clearState",
+        "__defineGetter__",
+        "__defineSetter__",
+        "hasOwnProperty",
+        "__lookupGetter__",
+        "__lookupSetter__",
+        "isPrototypeOf",
+        "propertyIsEnumerable",
+        "toString",
+        "valueOf",
+        "toLocaleString"
+      ]
+    },
+    "functionSources": {
+      "mergeData": {
+        "found": true,
+        "name": "mergeData",
+        "functionName": "mergeData",
+        "length": 226,
+        "source": "mergeData(t){const e=this._plots.size(),s=this._plots.merge(t);return s&&null!==this._state.priceSource&&(e===this._plots.size()&&s.index===this._plots.lastIndex()?this._updateLatestChunks():this._rebuildConflatedChunks(s)),s}",
+        "truncated": false
+      },
+      "moveData": {
+        "found": true,
+        "name": "moveData",
+        "functionName": "moveData",
+        "length": 73,
+        "source": "moveData(t){this._plots.move(t),this._plots.size()>0&&this._clearState()}",
+        "truncated": false
+      },
+      "conflatedChunks": {
+        "found": true,
+        "name": "conflatedChunks",
+        "functionName": "conflatedChunks",
+        "length": 312,
+        "source": "conflatedChunks(t,e){if(e!==this._state.priceSource){this._state.priceSource=e;const t=this._plots.first();t&&(this._setEmptyConflatedChunks(),this._rebuildConflatedChunks(t))}const s=(0,r.ensureDefined)(a.find((e=>e.forBarspacingLargerThen<=t)));return(0,r.ensureDefined)(this._state.chunks.get(s.barsToMerge))}",
+        "truncated": false
+      },
+      "clearData": {
+        "found": true,
+        "name": "clearData",
+        "functionName": "clearData",
+        "length": 51,
+        "source": "clearData(){this._plots.clear(),this._clearState()}",
+        "truncated": false
+      },
+      "_rebuildConflatedChunks": {
+        "found": true,
+        "name": "_rebuildConflatedChunks",
+        "functionName": "_rebuildConflatedChunks",
+        "length": 953,
+        "source": "_rebuildConflatedChunks(t){const e=this._state.priceSource;if(null===e)return;const s=t.index,n=this._state.priceSourcesProvider(e),o=(t,e,s)=>{let r=null;for(const i of t){const t=n(i.value);r&&i.index-r.startTime>=s.barsToMerge&&(e.push(r),r=null),r?(r.endTime=i.index,r.high=Math.max(r.high,t),r.low=Math.min(r.low,t),r.close=t):r={startTime:i.index,endTime:i.index,open:t,high:t,low:t,close:t}}r&&e.push(r)};a.forEach((t=>{const e=(0,r.ensureDefined)(this._state.chunks.get(t.barsToMerge)),a=(0,i.lowerbound)(e,s,((t,e)=>t.endTime<e));if(0===a&&e.length>0){const s=e[0].startTime-1,i=(0,r.ensureNotNull)(this._plots.firstIndex()),a=this._plots.rangeIterator(i,s),n=[];o(a,n,t);const l=n.concat(e);this._state.chunks.set(t.barsToMerge,l)}else{const s=(0,r.ensureNotNull)(this._plots.lastIndex());e.splice(a);let i=(0,r.ensureNotNull)(this._plots.firstIndex());e.length&&(i=e[e.length-1].endTime+1);const n=this._plots.rangeIterator(i,s);o(n,e,t)}}))}",
+        "truncated": false
+      },
+      "_updateLatestChunks": {
+        "found": true,
+        "name": "_updateLatestChunks",
+        "functionName": "_updateLatestChunks",
+        "length": 306,
+        "source": "_updateLatestChunks(){const t=(0,r.ensureNotNull)(this._plots.last()),e=this._state.priceSourcesProvider(\"close\");a.forEach((s=>{const i=(0,r.ensureDefined)(this._state.chunks.get(s.barsToMerge)),a=e(t.value),n=i[i.length-1];n.high=Math.max(n.high,a),n.low=Math.min(n.low,a),n.close=a,n.endTime=t.index}))}",
+        "truncated": false
+      },
+      "_setEmptyConflatedChunks": {
+        "found": true,
+        "name": "_setEmptyConflatedChunks",
+        "functionName": "_setEmptyConflatedChunks",
+        "length": 84,
+        "source": "_setEmptyConflatedChunks(){a.forEach((t=>this._state.chunks.set(t.barsToMerge,[])))}",
+        "truncated": false
+      },
+      "_clearState": {
+        "found": true,
+        "name": "_clearState",
+        "functionName": "_clearState",
+        "length": 70,
+        "source": "_clearState(){this._state.chunks.clear(),this._state.priceSource=null}",
+        "truncated": false
+      }
+    }
+  },
+  "barStore": {
+    "description": {
+      "constructor": "_",
+      "ownProperties": {
+        "_items": {
+          "kind": "object",
+          "value": {
+            "type": "Array",
+            "length": 338,
+            "sample": [
+              {
+                "type": "Object",
+                "keys": [
+                  "index",
+                  "value"
+                ]
+              },
+              {
+                "type": "Object",
+                "keys": [
+                  "index",
+                  "value"
+                ]
+              },
+              {
+                "type": "Object",
+                "keys": [
+                  "index",
+                  "value"
+                ]
+              }
+            ]
+          }
+        },
+        "_start": {
+          "kind": "number",
+          "value": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "_end": {
+          "kind": "number",
+          "value": {
+            "type": "number",
+            "value": 338
+          }
+        },
+        "_shareRead": {
+          "kind": "boolean",
+          "value": {
+            "type": "boolean",
+            "value": false
+          }
+        },
+        "_minMaxCache": {
+          "kind": "object",
+          "value": {
+            "type": "Map",
+            "ownKeys": []
+          }
+        },
+        "_rowSearchCacheByIndex": {
+          "kind": "object",
+          "value": {
+            "type": "Map",
+            "ownKeys": []
+          }
+        },
+        "_rowSearchCacheByIndexWithoutEmptyValues": {
+          "kind": "object",
+          "value": {
+            "type": "Map",
+            "ownKeys": []
+          }
+        },
+        "_rowSearchCacheByTime": {
+          "kind": "object",
+          "value": {
+            "type": "Map",
+            "ownKeys": []
+          }
+        },
+        "_rowSearchCacheByTimeWithoutEmptyValues": {
+          "kind": "object",
+          "value": {
+            "type": "Map",
+            "ownKeys": []
+          }
+        },
+        "_plotFunctions": {
+          "kind": "object",
+          "value": {
+            "type": "Map",
+            "ownKeys": []
+          }
+        },
+        "_emptyValuePredicate": {
+          "kind": "function",
+          "value": {
+            "type": "function",
+            "name": "_",
+            "length": 2
+          }
+        }
+      },
+      "prototypeMethods": [
+        "clear",
+        "first",
+        "last",
+        "firstIndex",
+        "firstPlottableIndex",
+        "lastIndex",
+        "clone",
+        "size",
+        "isEmpty",
+        "contains",
+        "valueAt",
+        "add",
+        "search",
+        "searchByTime",
+        "fold",
+        "findFirst",
+        "findLast",
+        "each",
+        "reduce",
+        "range",
+        "plottableRange",
+        "rangeCountback",
+        "rangeIterator",
+        "fullRangeIterator",
+        "minMaxOnRangeCached",
+        "minMaxOnRange",
+        "merge",
+        "addTail",
+        "move",
+        "remove",
+        "state",
+        "restoreState",
+        "_indexAt",
+        "_valueAt",
+        "_length",
+        "_searchImpl",
+        "_nonCachedSearch",
+        "_nonEmptyNearestRight",
+        "_nonEmptyNearestLeft",
+        "_searchNearestLeft",
+        "_searchNearestRight",
+        "_bsearch",
+        "_lowerbound",
+        "_upperbound",
+        "_plotMinMax",
+        "_invalidateCacheForRow",
+        "_prepend",
+        "_append",
+        "_updateLast",
+        "_merge",
+        "_minMaxOnRangeCachedImpl",
+        "_minMaxOnRange",
+        "_rangeIteratorImpl",
+        "_invalidateSearchCaches",
+        "__defineGetter__",
+        "__defineSetter__",
+        "hasOwnProperty",
+        "__lookupGetter__",
+        "__lookupSetter__",
+        "isPrototypeOf",
+        "propertyIsEnumerable",
+        "toString",
+        "valueOf",
+        "toLocaleString"
+      ]
+    },
+    "merge": {
+      "found": true,
+      "name": "merge",
+      "functionName": "merge",
+      "length": 372,
+      "source": "merge(t){return this._shareRead?(l.logDebug(\"merge: readonly collection modification attempt\"),null):0===t.length?null:this.isEmpty()||t[t.length-1].index<this._items[0].index?this._prepend(t):t[0].index>this._items[this._items.length-1].index?this._append(t):1===t.length&&t[0].index===this._items[this._items.length-1].index?(this._updateLast(t[0]),t[0]):this._merge(t)}",
+      "truncated": false
+    },
+    "internalMerge": {
+      "found": true,
+      "name": "_merge",
+      "functionName": "_merge",
+      "length": 630,
+      "source": "_merge(t){return(0,r.assert)(0!==t.length,\"plot rows should not be empty\"),this._invalidateSearchCaches(),this._minMaxCache.clear(),this._items=function(t,e){const s=function(t,e){const s=t.length,r=e.length;let i=s+r,a=0,n=0\n;for(;a<s&&n<r;)t[a].index<e[n].index?a++:t[a].index>e[n].index?n++:(a++,n++,i--);return i}(t,e),r=new Array(s);let i=0,a=0;const n=t.length,o=e.length;let l=0;for(;i<n&&a<o;)t[i].index<e[a].index?(r[l]=t[i],i++):t[i].index>e[a].index?(r[l]=e[a],a++):(r[l]=e[a],i++,a++),l++;for(;i<n;)r[l]=t[i],i++,l++;for(;a<o;)r[l]=e[a],a++,l++;return r}(this._items,t),this._start=0,this._end=this._items.length,t[0]}",
+      "truncated": false
+    },
+    "append": {
+      "found": true,
+      "name": "_append",
+      "functionName": "_append",
+      "length": 281,
+      "source": "_append(t){return(0,r.assert)(!this._shareRead,\"collection should not be readonly\"),(0,r.assert)(0!==t.length,\"plotRows should not be empty\"),this._invalidateSearchCaches(),this._minMaxCache.clear(),this._items=this._items.concat(t),this._start=0,this._end=this._items.length,t[0]}",
+      "truncated": false
+    },
+    "prepend": {
+      "found": true,
+      "name": "_prepend",
+      "functionName": "_prepend",
+      "length": 282,
+      "source": "_prepend(t){return(0,r.assert)(!this._shareRead,\"collection should not be readonly\"),(0,r.assert)(0!==t.length,\"plotRows should not be empty\"),this._invalidateSearchCaches(),this._minMaxCache.clear(),this._items=t.concat(this._items),this._start=0,this._end=this._items.length,t[0]}",
+      "truncated": false
+    },
+    "updateLast": {
+      "found": true,
+      "name": "_updateLast",
+      "functionName": "_updateLast",
+      "length": 275,
+      "source": "_updateLast(t){(0,r.assert)(!this.isEmpty(),\"plot list should not be empty\");const e=this._items[this._end-1];(0,r.assert)(e.index===t.index,\"last row index should match new row index\"),this._invalidateCacheForRow(t),this._invalidateSearchCaches(),this._items[this._end-1]=t}",
+      "truncated": false
+    }
+  },
+  "gateway": {
+    "description": {
+      "constructor": "n",
+      "ownProperties": {
+        "_isConnected": {
+          "kind": "object",
+          "value": {
+            "type": "a",
+            "ownKeys": [
+              "_listeners",
+              "_value"
+            ]
+          }
+        },
+        "_state": {
+          "kind": "number",
+          "value": {
+            "type": "number",
+            "value": 2
+          }
+        },
+        "_isConnectForbidden": {
+          "kind": "boolean",
+          "value": {
+            "type": "boolean",
+            "value": false
+          }
+        },
+        "_sessionId": {
+          "kind": "string",
+          "value": {
+            "type": "string",
+            "value": "cs_HXY7udjsOVMV"
+          }
+        },
+        "_sessionIdChanged": {
+          "kind": "object",
+          "value": {
+            "type": "a",
+            "ownKeys": [
+              "fire",
+              "_listeners"
+            ]
+          }
+        },
+        "_chartApi": {
+          "kind": "object",
+          "value": {
+            "type": "Se",
+            "ownKeys": [
+              "sessionid",
+              "_banInfo",
+              "_isAuthTokenLoaded",
+              "_authTokenDfd",
+              "_serverTimeBasePoint",
+              "_initCachePromise",
+              "_trafficStats",
+              "_lowQualityEnabled",
+              "_brokerId",
+              "_sendingQueuedRequestsCount",
+              "_modifyStudyMap",
+              "_disconnectCount",
+              "_isConnected",
+              "_metadataDeferredPromise",
+              "_dataHandleModule",
+              "_sessions",
+              "_notificationHandlers",
+              "_pendingMessagesQueue",
+              "_loadNewBars",
+              "_sentAuthToken",
+              "_metadataRequestNextNumber",
+              "_fundamentalCounter",
+              "_studyCounter",
+              "_childStudyCounter",
+              "_studySpecs",
+              "_connectionsLimitReached",
+              "_planUpgradeRequired",
+              "_protocolError",
+              "_redirectedToPro",
+              "_loggedErrorReasons",
+              "_protocolErrorBailout",
+              "_isProtocolErrorBailoutEnabled",
+              "_isProtocolErrorBailoutReported",
+              "_hasProtocolErrorOnConnection",
+              "_failedConnectionStreak",
+              "_healthyConnectionTimeout",
+              "_sentMethodsCounters",
+              "_receivedMethodsCounters",
+              "_requestDataProblemsPromise",
+              "_wsBackendConnection",
+              "_connectOnlyOptions",
+              "_authTokenManager",
+              "_metadataServerHash",
+              "connectDfd",
+              "_isNonCountedStudy"
+            ]
+          }
+        },
+        "_sessionPrefix": {
+          "kind": "string",
+          "value": {
+            "type": "string",
+            "value": "cs"
+          }
+        },
+        "_shouldReconnectAfterCriticalError": {
+          "kind": "boolean",
+          "value": {
+            "type": "boolean",
+            "value": false
+          }
+        },
+        "_sessionDisabled": {
+          "kind": "boolean",
+          "value": {
+            "type": "boolean",
+            "value": false
+          }
+        },
+        "_handler": {
+          "kind": "function",
+          "value": {
+            "type": "function",
+            "name": "bound _onData",
+            "length": 1
+          }
+        },
+        "_criticalError": {
+          "kind": "object",
+          "value": {
+            "type": "a",
+            "ownKeys": [
+              "fire",
+              "_listeners"
+            ]
+          }
+        },
+        "_symbolResolveMap": {
+          "kind": "object",
+          "value": {
+            "type": "Map",
+            "ownKeys": []
+          }
+        },
+        "_lastSymbolResolveInfoMap": {
+          "kind": "object",
+          "value": {
+            "type": "Map",
+            "ownKeys": []
+          }
+        },
+        "_wireFormat": {
+          "kind": "object",
+          "value": {
+            "type": "Object",
+            "ownKeys": [
+              "unpackNonSeriesData",
+              "encodeSymbol",
+              "extractSymbolFeaturesets"
+            ]
+          }
+        },
+        "_disableStatistics": {
+          "kind": "boolean",
+          "value": {
+            "type": "boolean",
+            "value": false
+          }
+        }
+      },
+      "prototypeMethods": [
+        "destroy",
+        "switchTimezone",
+        "wireFormat",
+        "defaultResolutions",
+        "availableCurrencies",
+        "availableUnits",
+        "availableMetrics",
+        "availablePriceSources",
+        "dataWatermark",
+        "resolveSymbol",
+        "requestFirstBarTime",
+        "lastSymbolResolveInfo",
+        "createSeries",
+        "modifySeries",
+        "removeSeries",
+        "requestMoreData",
+        "requestMoreTickmarks",
+        "setFutureTickmarksMode",
+        "canCreateStudy",
+        "getStudyCounter",
+        "getFundamentalCounter",
+        "getChildStudyCounter",
+        "createStudy",
+        "modifyStudy",
+        "notifyStudy",
+        "removeStudy",
+        "createPointset",
+        "modifyPointset",
+        "removePointset",
+        "setVisibleTimeRange",
+        "criticalError",
+        "connect",
+        "setHandler",
+        "connected",
+        "disable",
+        "chartApi",
+        "_sendCreateSession",
+        "_sendRemoveSession",
+        "_onMessage",
+        "_onCriticalError",
+        "isConnected",
+        "sessionId",
+        "onSessionIdChanged",
+        "disconnect",
+        "onMessage",
+        "serverTime",
+        "_getChartApi",
+        "_generateLogMessage",
+        "_onChartApiConnected",
+        "_onChartApiDisconnected",
+        "_setSessionId",
+        "_logNormal",
+        "_logError",
+        "_processDestroyingOnServer",
+        "_forbidConnectWhile",
+        "__defineGetter__",
+        "__defineSetter__",
+        "hasOwnProperty",
+        "__lookupGetter__",
+        "__lookupSetter__",
+        "isPrototypeOf",
+        "propertyIsEnumerable",
+        "toString",
+        "valueOf",
+        "toLocaleString"
+      ]
+    },
+    "wireFormat": {
+      "found": true,
+      "name": "wireFormat",
+      "functionName": "wireFormat",
+      "length": 37,
+      "source": "wireFormat(){return this._wireFormat}",
+      "truncated": false
+    }
+  },
+  "liveAndHistoryObservations": {
+    "eventCounts": {
+      "historicalPrepend": 0,
+      "historicalGrowth": 0,
+      "liveUpdates": 14,
+      "newLiveBars": 1,
+      "otherChanges": 0
+    },
+    "samples": [
+      {
+        "event": "baseline",
+        "at": "2026-11-11T13:45:48.828Z",
+        "barCount": 337,
+        "firstIndex": 0,
+        "lastIndex": 336,
+        "firstBar": {
+          "index": 0,
+          "value": [
+            1794384540,
+            0.0000052478,
+            0.0000052545,
+            0.0000052472,
+            0.0000052527,
+            4325600000
+          ]
+        },
+        "lastBar": {
+          "index": 336,
+          "value": [
+            1794404700,
+            0.0000049719,
+            0.000004981,
+            0.0000049719,
+            0.0000049802,
+            12476700000
+          ]
+        },
+        "lastSignature": "[1794404700,0.0000049719,0.000004981,0.0000049719,0.0000049802,12476700000]"
+      },
+      {
+        "event": "live-candle-update",
+        "at": "2026-11-11T13:45:50.928Z",
+        "barCount": 337,
+        "firstIndex": 0,
+        "lastIndex": 336,
+        "firstBar": {
+          "index": 0,
+          "value": [
+            1794384540,
+            0.0000052478,
+            0.0000052545,
+            0.0000052472,
+            0.0000052527,
+            4325600000
+          ]
+        },
+        "lastBar": {
+          "index": 336,
+          "value": [
+            1794404700,
+            0.0000049719,
+            0.0000049815,
+            0.0000049719,
+            0.0000049815,
+            14007000000
+          ]
+        },
+        "lastSignature": "[1794404700,0.0000049719,0.0000049815,0.0000049719,0.0000049815,14007000000]"
+      },
+      {
+        "event": "live-candle-update",
+        "at": "2026-11-11T13:45:56.179Z",
+        "barCount": 337,
+        "firstIndex": 0,
+        "lastIndex": 336,
+        "firstBar": {
+          "index": 0,
+          "value": [
+            1794384540,
+            0.0000052478,
+            0.0000052545,
+            0.0000052472,
+            0.0000052527,
+            4325600000
+          ]
+        },
+        "lastBar": {
+          "index": 336,
+          "value": [
+            1794404700,
+            0.0000049719,
+            0.0000049815,
+            0.0000049719,
+            0.0000049815,
+            14296700000
+          ]
+        },
+        "lastSignature": "[1794404700,0.0000049719,0.0000049815,0.0000049719,0.0000049815,14296700000]"
+      },
+      {
+        "event": "live-candle-update",
+        "at": "2026-11-11T13:45:57.228Z",
+        "barCount": 337,
+        "firstIndex": 0,
+        "lastIndex": 336,
+        "firstBar": {
+          "index": 0,
+          "value": [
+            1794384540,
+            0.0000052478,
+            0.0000052545,
+            0.0000052472,
+            0.0000052527,
+            4325600000
+          ]
+        },
+        "lastBar": {
+          "index": 336,
+          "value": [
+            1794404700,
+            0.0000049719,
+            0.0000049815,
+            0.0000049719,
+            0.0000049815,
+            14310500000
+          ]
+        },
+        "lastSignature": "[1794404700,0.0000049719,0.0000049815,0.0000049719,0.0000049815,14310500000]"
+      },
+      {
+        "event": "live-candle-update",
+        "at": "2026-11-11T13:45:59.328Z",
+        "barCount": 337,
+        "firstIndex": 0,
+        "lastIndex": 336,
+        "firstBar": {
+          "index": 0,
+          "value": [
+            1794384540,
+            0.0000052478,
+            0.0000052545,
+            0.0000052472,
+            0.0000052527,
+            4325600000
+          ]
+        },
+        "lastBar": {
+          "index": 336,
+          "value": [
+            1794404700,
+            0.0000049719,
+            0.0000049818,
+            0.0000049719,
+            0.0000049818,
+            14356000000
+          ]
+        },
+        "lastSignature": "[1794404700,0.0000049719,0.0000049818,0.0000049719,0.0000049818,14356000000]"
+      },
+      {
+        "event": "new-live-bar",
+        "at": "2026-11-11T13:46:00.378Z",
+        "barCount": 338,
+        "firstIndex": 0,
+        "lastIndex": 337,
+        "firstBar": {
+          "index": 0,
+          "value": [
+            1794384540,
+            0.0000052478,
+            0.0000052545,
+            0.0000052472,
+            0.0000052527,
+            4325600000
+          ]
+        },
+        "lastBar": {
+          "index": 337,
+          "value": [
+            1794404760,
+            0.0000049819,
+            0.0000049819,
+            0.0000049819,
+            0.0000049819,
+            2200000
+          ]
+        },
+        "lastSignature": "[1794404760,0.0000049819,0.0000049819,0.0000049819,0.0000049819,2200000]"
+      },
+      {
+        "event": "live-candle-update",
+        "at": "2026-11-11T13:46:01.428Z",
+        "barCount": 338,
+        "firstIndex": 0,
+        "lastIndex": 337,
+        "firstBar": {
+          "index": 0,
+          "value": [
+            1794384540,
+            0.0000052478,
+            0.0000052545,
+            0.0000052472,
+            0.0000052527,
+            4325600000
+          ]
+        },
+        "lastBar": {
+          "index": 337,
+          "value": [
+            1794404760,
+            0.0000049819,
+            0.0000049823,
+            0.0000049819,
+            0.0000049823,
+            103100000
+          ]
+        },
+        "lastSignature": "[1794404760,0.0000049819,0.0000049823,0.0000049819,0.0000049823,103100000]"
+      },
+      {
+        "event": "live-candle-update",
+        "at": "2026-11-11T13:46:08.428Z",
+        "barCount": 338,
+        "firstIndex": 0,
+        "lastIndex": 337,
+        "firstBar": {
+          "index": 0,
+          "value": [
+            1794384540,
+            0.0000052478,
+            0.0000052545,
+            0.0000052472,
+            0.0000052527,
+            4325600000
+          ]
+        },
+        "lastBar": {
+          "index": 337,
+          "value": [
+            1794404760,
+            0.0000049819,
+            0.0000049827,
+            0.0000049819,
+            0.0000049827,
+            302200000
+          ]
+        },
+        "lastSignature": "[1794404760,0.0000049819,0.0000049827,0.0000049819,0.0000049827,302200000]"
+      },
+      {
+        "event": "live-candle-update",
+        "at": "2026-11-11T13:46:12.628Z",
+        "barCount": 338,
+        "firstIndex": 0,
+        "lastIndex": 337,
+        "firstBar": {
+          "index": 0,
+          "value": [
+            1794384540,
+            0.0000052478,
+            0.0000052545,
+            0.0000052472,
+            0.0000052527,
+            4325600000
+          ]
+        },
+        "lastBar": {
+          "index": 337,
+          "value": [
+            1794404760,
+            0.0000049819,
+            0.0000049833,
+            0.0000049819,
+            0.0000049833,
+            558000000
+          ]
+        },
+        "lastSignature": "[1794404760,0.0000049819,0.0000049833,0.0000049819,0.0000049833,558000000]"
+      },
+      {
+        "event": "live-candle-update",
+        "at": "2026-11-11T13:46:13.719Z",
+        "barCount": 338,
+        "firstIndex": 0,
+        "lastIndex": 337,
+        "firstBar": {
+          "index": 0,
+          "value": [
+            1794384540,
+            0.0000052478,
+            0.0000052545,
+            0.0000052472,
+            0.0000052527,
+            4325600000
+          ]
+        },
+        "lastBar": {
+          "index": 337,
+          "value": [
+            1794404760,
+            0.0000049819,
+            0.0000049833,
+            0.0000049819,
+            0.0000049833,
+            558400000
+          ]
+        },
+        "lastSignature": "[1794404760,0.0000049819,0.0000049833,0.0000049819,0.0000049833,558400000]"
+      },
+      {
+        "event": "live-candle-update",
+        "at": "2026-11-11T13:46:14.768Z",
+        "barCount": 338,
+        "firstIndex": 0,
+        "lastIndex": 337,
+        "firstBar": {
+          "index": 0,
+          "value": [
+            1794384540,
+            0.0000052478,
+            0.0000052545,
+            0.0000052472,
+            0.0000052527,
+            4325600000
+          ]
+        },
+        "lastBar": {
+          "index": 337,
+          "value": [
+            1794404760,
+            0.0000049819,
+            0.0000049833,
+            0.0000049819,
+            0.0000049833,
+            736100000
+          ]
+        },
+        "lastSignature": "[1794404760,0.0000049819,0.0000049833,0.0000049819,0.0000049833,736100000]"
+      },
+      {
+        "event": "live-candle-update",
+        "at": "2026-11-11T13:46:16.128Z",
+        "barCount": 338,
+        "firstIndex": 0,
+        "lastIndex": 337,
+        "firstBar": {
+          "index": 0,
+          "value": [
+            1794384540,
+            0.0000052478,
+            0.0000052545,
+            0.0000052472,
+            0.0000052527,
+            4325600000
+          ]
+        },
+        "lastBar": {
+          "index": 337,
+          "value": [
+            1794404760,
+            0.0000049819,
+            0.0000049833,
+            0.0000049819,
+            0.0000049833,
+            737700000
+          ]
+        },
+        "lastSignature": "[1794404760,0.0000049819,0.0000049833,0.0000049819,0.0000049833,737700000]"
+      },
+      {
+        "event": "live-candle-update",
+        "at": "2026-11-11T13:46:21.033Z",
+        "barCount": 338,
+        "firstIndex": 0,
+        "lastIndex": 337,
+        "firstBar": {
+          "index": 0,
+          "value": [
+            1794384540,
+            0.0000052478,
+            0.0000052545,
+            0.0000052472,
+            0.0000052527,
+            4325600000
+          ]
+        },
+        "lastBar": {
+          "index": 337,
+          "value": [
+            1794404760,
+            0.0000049819,
+            0.0000049833,
+            0.0000049819,
+            0.0000049822,
+            1027300000
+          ]
+        },
+        "lastSignature": "[1794404760,0.0000049819,0.0000049833,0.0000049819,0.0000049822,1027300000]"
+      },
+      {
+        "event": "live-candle-update",
+        "at": "2026-11-11T13:46:22.078Z",
+        "barCount": 338,
+        "firstIndex": 0,
+        "lastIndex": 337,
+        "firstBar": {
+          "index": 0,
+          "value": [
+            1794384540,
+            0.0000052478,
+            0.0000052545,
+            0.0000052472,
+            0.0000052527,
+            4325600000
+          ]
+        },
+        "lastBar": {
+          "index": 337,
+          "value": [
+            1794404760,
+            0.0000049819,
+            0.0000049833,
+            0.0000049819,
+            0.0000049823,
+            1250200000
+          ]
+        },
+        "lastSignature": "[1794404760,0.0000049819,0.0000049833,0.0000049819,0.0000049823,1250200000]"
+      },
+      {
+        "event": "live-candle-update",
+        "at": "2026-11-11T13:46:27.328Z",
+        "barCount": 338,
+        "firstIndex": 0,
+        "lastIndex": 337,
+        "firstBar": {
+          "index": 0,
+          "value": [
+            1794384540,
+            0.0000052478,
+            0.0000052545,
+            0.0000052472,
+            0.0000052527,
+            4325600000
+          ]
+        },
+        "lastBar": {
+          "index": 337,
+          "value": [
+            1794404760,
+            0.0000049819,
+            0.0000049833,
+            0.0000049819,
+            0.0000049825,
+            1254400000
+          ]
+        },
+        "lastSignature": "[1794404760,0.0000049819,0.0000049833,0.0000049819,0.0000049825,1254400000]"
+      },
+      {
+        "event": "live-candle-update",
+        "at": "2026-11-11T13:46:31.878Z",
+        "barCount": 338,
+        "firstIndex": 0,
+        "lastIndex": 337,
+        "firstBar": {
+          "index": 0,
+          "value": [
+            1794384540,
+            0.0000052478,
+            0.0000052545,
+            0.0000052472,
+            0.0000052527,
+            4325600000
+          ]
+        },
+        "lastBar": {
+          "index": 337,
+          "value": [
+            1794404760,
+            0.0000049819,
+            0.0000049833,
+            0.0000049804,
+            0.0000049804,
+            1472700000
+          ]
+        },
+        "lastSignature": "[1794404760,0.0000049819,0.0000049833,0.0000049804,0.0000049804,1472700000]"
+      }
+    ]
+  },
+  "errors": []
+}
