@@ -1,0 +1,1354 @@
+{
+  "diagnostic": "TV-TO-KCEX-OPEN-CLOSE-PIPELINE-DIAGNOSTIC-V2",
+  "startedAt": "2026-11-11T13:39:24.667Z",
+  "finishedAt": "2026-11-11T13:39:53.827Z",
+  "durationMs": 25000,
+  "safety": {
+    "chartDataModified": false,
+    "candleValuesModified": false,
+    "functionsReplaced": false,
+    "subscriptionsCreated": false,
+    "networkRequestsSent": false,
+    "ordersPlaced": false,
+    "indicatorsModified": false,
+    "chartResolutionChanged": false
+  },
+  "page": {
+    "hostname": "www.tradingview.com",
+    "path": "/chart/4JBVKCwz/",
+    "title": "PEPEUSDT.P 0.49682e-5 ▼ −7.55% Unnamed",
+    "visibility": "visible"
+  },
+  "summary": {
+    "chartFound": true,
+    "sampleCount": 11,
+    "observedChanges": 11,
+    "errors": []
+  },
+  "chart": {
+    "modelPath": "collection._activeChartWidgetModel._value",
+    "symbol": "KCEX:PEPEUSDT.P",
+    "interval": "1",
+    "sourceResolution": "1",
+    "barStore": {
+      "size": 331,
+      "rawItemCount": 331,
+      "first": {
+        "index": 0,
+        "value": [
+          1794384540,
+          0.0000052478,
+          0.0000052545,
+          0.0000052472,
+          0.0000052527,
+          4325600000
+        ],
+        "valueType": "Array"
+      },
+      "previous": {
+        "index": 329,
+        "value": [
+          1794404280,
+          0.0000049694,
+          0.0000049725,
+          0.0000049659,
+          0.0000049679,
+          3877900000
+        ],
+        "valueType": "Array"
+      },
+      "current": {
+        "index": 330,
+        "value": [
+          1794404340,
+          0.0000049684,
+          0.0000049699,
+          0.0000049654,
+          0.0000049682,
+          3309300000
+        ],
+        "valueType": "Array"
+      },
+      "lastFive": [
+        {
+          "index": 326,
+          "value": [
+            1794404100,
+            0.0000049894,
+            0.0000049894,
+            0.0000049804,
+            0.0000049817,
+            9006200000
+          ],
+          "valueType": "Array"
+        },
+        {
+          "index": 327,
+          "value": [
+            1794404160,
+            0.0000049795,
+            0.0000049809,
+            0.0000049761,
+            0.0000049784,
+            10435700000
+          ],
+          "valueType": "Array"
+        },
+        {
+          "index": 328,
+          "value": [
+            1794404220,
+            0.0000049784,
+            0.0000049786,
+            0.0000049661,
+            0.0000049705,
+            9801800000
+          ],
+          "valueType": "Array"
+        },
+        {
+          "index": 329,
+          "value": [
+            1794404280,
+            0.0000049694,
+            0.0000049725,
+            0.0000049659,
+            0.0000049679,
+            3877900000
+          ],
+          "valueType": "Array"
+        },
+        {
+          "index": 330,
+          "value": [
+            1794404340,
+            0.0000049684,
+            0.0000049699,
+            0.0000049654,
+            0.0000049682,
+            3309300000
+          ],
+          "valueType": "Array"
+        }
+      ]
+    },
+    "candleFieldHypothesis": {
+      "0": "Timestamp",
+      "1": "Open",
+      "2": "High",
+      "3": "Low",
+      "4": "Close",
+      "5": "Volume"
+    },
+    "openCloseContinuity": {
+      "validComparisons": 330,
+      "aligned": 46,
+      "mismatched": 284,
+      "alignmentPercent": 13.94,
+      "invalidGeometry": 0,
+      "mismatchExamples": [
+        {
+          "previousIndex": 0,
+          "currentIndex": 1,
+          "previousClose": 0.0000052527,
+          "currentOpen": 0.000005254,
+          "difference": 1.3000000000003094e-9,
+          "differencePercent": 0.024749176613947377
+        },
+        {
+          "previousIndex": 1,
+          "currentIndex": 2,
+          "previousClose": 0.0000052528,
+          "currentOpen": 0.0000052516,
+          "difference": -1.2000000000000902e-9,
+          "differencePercent": -0.022844958879075783
+        },
+        {
+          "previousIndex": 2,
+          "currentIndex": 3,
+          "previousClose": 0.0000052452,
+          "currentOpen": 0.0000052454,
+          "difference": 1.999999999995915e-10,
+          "differencePercent": 0.0038130099900834935
+        },
+        {
+          "previousIndex": 3,
+          "currentIndex": 4,
+          "previousClose": 0.0000052464,
+          "currentOpen": 0.0000052475,
+          "difference": 1.0999999999998709e-9,
+          "differencePercent": 0.020966758157969778
+        },
+        {
+          "previousIndex": 4,
+          "currentIndex": 5,
+          "previousClose": 0.0000052531,
+          "currentOpen": 0.0000052526,
+          "difference": -4.999999999994023e-10,
+          "differencePercent": -0.009518189259660748
+        },
+        {
+          "previousIndex": 5,
+          "currentIndex": 6,
+          "previousClose": 0.0000052563,
+          "currentOpen": 0.0000052531,
+          "difference": -3.2000000000002404e-9,
+          "differencePercent": -0.06087932576147592
+        },
+        {
+          "previousIndex": 6,
+          "currentIndex": 7,
+          "previousClose": 0.0000052471,
+          "currentOpen": 0.0000052456,
+          "difference": -1.499999999999901e-9,
+          "differencePercent": -0.028587219607023595
+        },
+        {
+          "previousIndex": 7,
+          "currentIndex": 8,
+          "previousClose": 0.0000052439,
+          "currentOpen": 0.0000052464,
+          "difference": 2.5000000000003996e-9,
+          "differencePercent": 0.0476744407788221
+        },
+        {
+          "previousIndex": 9,
+          "currentIndex": 10,
+          "previousClose": 0.0000052281,
+          "currentOpen": 0.0000052235,
+          "difference": -4.599999999999922e-9,
+          "differencePercent": -0.08798607524721502
+        },
+        {
+          "previousIndex": 10,
+          "currentIndex": 11,
+          "previousClose": 0.0000052188,
+          "currentOpen": 0.0000052212,
+          "difference": 2.4000000000001803e-9,
+          "differencePercent": 0.045987583352502526
+        },
+        {
+          "previousIndex": 11,
+          "currentIndex": 12,
+          "previousClose": 0.0000052172,
+          "currentOpen": 0.0000052184,
+          "difference": 1.2000000000000902e-9,
+          "differencePercent": 0.023000843364262558
+        },
+        {
+          "previousIndex": 13,
+          "currentIndex": 14,
+          "previousClose": 0.0000052153,
+          "currentOpen": 0.0000052122,
+          "difference": -3.100000000000021e-9,
+          "differencePercent": -0.05944049239736682
+        }
+      ],
+      "geometryExamples": []
+    },
+    "objectStructure": {
+      "series": {
+        "constructor": "Os",
+        "ownKeys": [
+          "isSeries",
+          "_isDestroyed",
+          "_hasAlert",
+          "_alertStatus",
+          "_alertCreationAvailable",
+          "_zorder",
+          "_priceScale",
+          "_ownerSource",
+          "_userEditEnabled",
+          "_priceScaleChanged",
+          "_updateAlertCreationAvailableBound",
+          "_isSelectionEnabled",
+          "_instanceId",
+          "_ownerSourceChanged",
+          "_zOrderChanged",
+          "_id",
+          "isPriceDataSource",
+          "_formatterChanged",
+          "_priceStepChanged",
+          "_currencyChanged",
+          "_isCurrencyOrigin",
+          "_currencyMetaData",
+          "_unitChanged",
+          "_isUnitOrigin",
+          "_unitMetaData",
+          "_metricChanged",
+          "_priceRangeReadyChanged",
+          "_dataRangeUpdated",
+          "_priceStep",
+          "_signature",
+          "_priceRangeReady",
+          "_model",
+          "requestingStyleIsNotSupported",
+          "requestingStyleSupportRecovered",
+          "_paneView",
+          "_futureBarsPaneView",
+          "_projectionBarsPaneView",
+          "_waterlineView",
+          "_priceLineView",
+          "_gotoDateView",
+          "_baseHorizontalLineView",
+          "_symbolInfo",
+          "_isPrePostMarketPricesAvailableProperty",
+          "_isOvernightMarketPricesAvailableProperty",
+          "_isBackAdjustmentForbiddenProperty",
+          "_isSettlementAsCloseForbiddenProperty",
+          "_highLowPriceCache",
+          "_averagePriceCache",
+          "_prevClosePriceAxisView",
+          "_priceScaleAboutToBeChanged",
+          "_onRestarted",
+          "_onStatusChanged",
+          "_intervalChanged",
+          "_sessionIdChanged",
+          "_requestMoreDataAvailable",
+          "_lineStyleLastPriceCirclePaneView",
+          "_prevClosePriceLineView",
+          "_dataPoweredBy",
+          "_symbolResolvingActive",
+          "_predictBars",
+          "_syncModel",
+          "_data",
+          "_lastCompleteFlags",
+          "_barColorerCache",
+          "_quotesLastSplits",
+          "_overriddenLastSplits",
+          "_lastSplits",
+          "_boxSizeValue",
+          "_base",
+          "_pointValue",
+          "_formattingDeps",
+          "_defaultFormatter",
+          "_formatter",
+          "_ignoreMinMoveFormatter",
+          "_ignoreMinMovePriceStep",
+          "_lastBarCloseTime",
+          "_onSessionIdPropertyChangedBound",
+          "_ignoreSessionIdProxyPropertyChanges",
+          "_realignLineToolsBound",
+          "_textSourceIsAlwaysTickerRestrictionEnabled",
+          "_lastPriceAnimationActive",
+          "_currentSession",
+          "_onStyleChanged",
+          "_obsoleteZOrder",
+          "_seriesErrorMessage",
+          "_isBondDataRestricted",
+          "_areStudiesStoppedForRestrictedBond",
+          "_seriesAlwaysFalseHibernatedVW",
+          "_styleToRecover",
+          "_metricToRecover",
+          "_precomputedBarStyles",
+          "_doNotShowLastAvailableBar",
+          "_gotoDateResultCleared",
+          "_endOfDataPaneView",
+          "_delayStatusPaneView",
+          "_pendingTimeRange",
+          "_replaySubscriber",
+          "_symbolIntervalChanged",
+          "_isReplayResolutionAvailableForUser",
+          "_onInReplayStateChanged"
+        ],
+        "prototypeMethods": [
+          "setId",
+          "supportsConflatedChunks",
+          "conflatedChunks",
+          "isBondDataRestricted",
+          "seriesErrorMessage",
+          "destroy",
+          "barColorer",
+          "createPaneView",
+          "properties",
+          "zorder",
+          "quotesProvider",
+          "currentSession",
+          "syncModel",
+          "labelPaneViews",
+          "topPaneViews",
+          "paneViews",
+          "widgetSideAreaViews",
+          "priceAxisViews",
+          "clearHighLowPriceCache",
+          "clearAveragePriceCache",
+          "priceScale",
+          "setPriceScale",
+          "priceScaleChanged",
+          "priceScaleAboutToBeChanged",
+          "applyPreferences",
+          "disconnect",
+          "isStarted",
+          "isCompleted",
+          "restart",
+          "isSymbolInvalid",
+          "getSymbolString",
+          "getReplaySymbolString",
+          "getAlertSymbolString",
+          "getAlertProSymbolString",
+          "getQuotesSymbolString",
+          "invalidateBarStylesCache",
+          "isLoading",
+          "isFailed",
+          "isStatusError",
+          "unsupportedResolutionState",
+          "actualSymbol",
+          "proSymbol",
+          "onStyleChanged",
+          "style",
+          "setStyle",
+          "isRangeBasedStyle",
+          "symbolSameAsCurrent",
+          "symbolSameAsResolved",
+          "status",
+          "statusWV",
+          "compositeStatusVW",
+          "symbol",
+          "symbolOrAlias",
+          "symbolChanged",
+          "seriesSource",
+          "symbolInfo",
+          "aliasSymbolInfo",
+          "symbolInfoWV",
+          "lastSplits",
+          "overrideLastSplits",
+          "symbolResolved",
+          "symbolResolvingActive",
+          "symbolHibernated",
+          "getSymbolName",
+          "firstValue",
+          "firstBar",
+          "formatter",
+          "defaultFormatter",
+          "priceStep",
+          "bars",
+          "nsBars",
+          "interval",
+          "setInterval",
+          "intervalObj",
+          "prevClose",
+          "priceLineColor",
+          "hasClosePrice",
+          "lastValueData",
+          "isDWM",
+          "isPulse",
+          "data",
+          "clearData",
+          "nearestData",
+          "nearestIndex",
+          "nearestValue",
+          "onSymbolIntervalChanged",
+          "priceScalePosition",
+          "firstBarTime",
+          "onIntervalChanged",
+          "onStatusChanged",
+          "onRestarted",
+          "fixLastBar",
+          "requestMoreData",
+          "isNeedRestart",
+          "isStyleSupported",
+          "sessionId",
+          "sessionIdChanged",
+          "sessionsTracker",
+          "priceRange",
+          "autoScaleInfo",
+          "onChartStyleChanged",
+          "setChartStyleWithIntervalIfNeeded",
+          "getInputsProperties",
+          "getInputsInfoProperties",
+          "getSourceIcon",
+          "onSourceIconChanged",
+          "purgeSymbolInfo",
+          "idForAlert",
+          "hasStateForAlert",
+          "stateForAlert",
+          "stateForAlertAsync",
+          "styleStudyInfos",
+          "dataEvents",
+          "isSpread",
+          "isYield",
+          "dividendsAdjustmentProperty",
+          "sessionIdProxyProperty",
+          "symbolTextSourceProxyProperty",
+          "setTextSourceIsAlwaysTickerRestrictionEnabled",
+          "isDWMProperty"
+        ]
+      },
+      "source": {
+        "constructor": "I",
+        "ownKeys": [
+          "_extSymbol",
+          "_lastResolvedSymbol",
+          "_createSeriesOverriddenParams",
+          "_instanceId",
+          "_symbolInstanceId",
+          "_resolution",
+          "_timeFrame",
+          "_data",
+          "_dataEvents",
+          "_status",
+          "_turnaroundCounter",
+          "_boundOnGatewayIsConnectedChanged",
+          "_boundOnMessage",
+          "_ongoingDataUpdate",
+          "_gateway",
+          "_turnaroundPrefix",
+          "_createSeriesParams"
+        ],
+        "prototypeMethods": [
+          "destroy",
+          "canModifySeries",
+          "modifySeries",
+          "requestMoreData",
+          "requestMoreTickmarks",
+          "setFutureTickmarksMode",
+          "isStarted",
+          "isActive",
+          "resolution",
+          "start",
+          "stop",
+          "stopWithError",
+          "instanceId",
+          "data",
+          "setData",
+          "setTimeframe",
+          "clearData",
+          "dataEvents",
+          "turnaround",
+          "symbolInstanceId",
+          "symbol",
+          "updateExtSymbol",
+          "moveData",
+          "setInitialRequestOptions",
+          "symbolSameAsResolved",
+          "resolvedSymbol",
+          "_resolveSymbol",
+          "_clearDataImpl",
+          "_changeStatusTo",
+          "_createSeries",
+          "_onGatewayIsConnectedChanged",
+          "_onGatewayConnected",
+          "_onGatewayDisconnected",
+          "_onMessage",
+          "_onMessageImpl",
+          "_onSeriesError",
+          "_firePlanRestrictedResolution",
+          "_onSeriesTimeFrame",
+          "_onSymbolError",
+          "_onSymbolResolved",
+          "_onDataUpdate",
+          "_enqueueUpdate",
+          "_onDataUnpacked",
+          "_onSeriesLoading",
+          "_onSeriesCompleted",
+          "_checkTurnaround",
+          "__defineGetter__",
+          "__defineSetter__",
+          "hasOwnProperty",
+          "__lookupGetter__",
+          "__lookupSetter__",
+          "isPrototypeOf",
+          "propertyIsEnumerable",
+          "toString",
+          "valueOf",
+          "toLocaleString"
+        ]
+      },
+      "data": {
+        "constructor": "c",
+        "ownKeys": [
+          "m_bars",
+          "m_nsBars",
+          "_conflatedChunksBuilder",
+          "lastProjectionPrice"
+        ],
+        "prototypeMethods": [
+          "bars",
+          "nsBars",
+          "conflatedChunks",
+          "mergeRegularBars",
+          "size",
+          "each",
+          "clear",
+          "clone",
+          "isEmpty",
+          "first",
+          "last",
+          "search",
+          "valueAt",
+          "plotValueToTimePointIndex",
+          "moveData",
+          "__defineGetter__",
+          "__defineSetter__",
+          "hasOwnProperty",
+          "__lookupGetter__",
+          "__lookupSetter__",
+          "isPrototypeOf",
+          "propertyIsEnumerable",
+          "toString",
+          "valueOf",
+          "toLocaleString"
+        ]
+      },
+      "bars": {
+        "constructor": "_",
+        "ownKeys": [
+          "_items",
+          "_start",
+          "_end",
+          "_shareRead",
+          "_minMaxCache",
+          "_rowSearchCacheByIndex",
+          "_rowSearchCacheByIndexWithoutEmptyValues",
+          "_rowSearchCacheByTime",
+          "_rowSearchCacheByTimeWithoutEmptyValues",
+          "_plotFunctions",
+          "_emptyValuePredicate"
+        ],
+        "prototypeMethods": [
+          "clear",
+          "first",
+          "last",
+          "firstIndex",
+          "firstPlottableIndex",
+          "lastIndex",
+          "clone",
+          "size",
+          "isEmpty",
+          "contains",
+          "valueAt",
+          "add",
+          "search",
+          "searchByTime",
+          "fold",
+          "findFirst",
+          "findLast",
+          "each",
+          "reduce",
+          "range",
+          "plottableRange",
+          "rangeCountback",
+          "rangeIterator",
+          "fullRangeIterator",
+          "minMaxOnRangeCached",
+          "minMaxOnRange",
+          "merge",
+          "addTail",
+          "move",
+          "remove",
+          "state",
+          "restoreState",
+          "_indexAt",
+          "_valueAt",
+          "_length",
+          "_searchImpl",
+          "_nonCachedSearch",
+          "_nonEmptyNearestRight",
+          "_nonEmptyNearestLeft",
+          "_searchNearestLeft",
+          "_searchNearestRight",
+          "_bsearch",
+          "_lowerbound",
+          "_upperbound",
+          "_plotMinMax",
+          "_invalidateCacheForRow",
+          "_prepend",
+          "_append",
+          "_updateLast",
+          "_merge",
+          "_minMaxOnRangeCachedImpl",
+          "_minMaxOnRange",
+          "_rangeIteratorImpl",
+          "_invalidateSearchCaches",
+          "__defineGetter__",
+          "__defineSetter__",
+          "hasOwnProperty",
+          "__lookupGetter__",
+          "__lookupSetter__",
+          "isPrototypeOf",
+          "propertyIsEnumerable",
+          "toString",
+          "valueOf",
+          "toLocaleString"
+        ]
+      },
+      "currentRow": {
+        "constructor": "Object",
+        "ownKeys": [
+          "index",
+          "value"
+        ],
+        "prototypeMethods": [
+          "__defineGetter__",
+          "__defineSetter__",
+          "hasOwnProperty",
+          "__lookupGetter__",
+          "__lookupSetter__",
+          "isPrototypeOf",
+          "propertyIsEnumerable",
+          "toString",
+          "valueOf",
+          "toLocaleString"
+        ]
+      },
+      "currentRowValue": {
+        "constructor": "Array",
+        "ownKeys": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "length"
+        ],
+        "prototypeMethods": [
+          "at",
+          "concat",
+          "copyWithin",
+          "fill",
+          "find",
+          "findIndex",
+          "findLast",
+          "findLastIndex",
+          "lastIndexOf",
+          "pop",
+          "push",
+          "reverse",
+          "shift",
+          "unshift",
+          "slice",
+          "sort",
+          "splice",
+          "includes",
+          "indexOf",
+          "join",
+          "keys",
+          "entries",
+          "values",
+          "forEach",
+          "filter",
+          "flat",
+          "flatMap",
+          "map",
+          "every",
+          "some",
+          "reduce",
+          "reduceRight",
+          "toReversed",
+          "toSorted",
+          "toSpliced",
+          "with",
+          "toLocaleString",
+          "toString",
+          "__defineGetter__",
+          "__defineSetter__",
+          "hasOwnProperty",
+          "__lookupGetter__",
+          "__lookupSetter__",
+          "isPrototypeOf",
+          "propertyIsEnumerable",
+          "valueOf"
+        ]
+      },
+      "sourceDataEvents": {
+        "constructor": "_",
+        "ownKeys": [
+          "_created",
+          "_modified",
+          "_cleared",
+          "_loading",
+          "_completed",
+          "_error",
+          "_symbolError",
+          "_symbolResolved",
+          "_seriesError",
+          "_symbolNotPermitted",
+          "_symbolInvalid",
+          "_symbolGroupNotPermitted",
+          "_symbolBondMetricsNotPermitted",
+          "_chartTypeNotPermitted",
+          "_intradaySpreadNotPermitted",
+          "_intradayExchangeNotPermitted",
+          "_customIntervalNotPermitted",
+          "_customSecondsIntervalNotPermitted",
+          "_secondsIntervalNotPermitted",
+          "_ticksIntervalNotPermitted",
+          "_barReceived",
+          "_seriesTimeFrame",
+          "_dataUpdated",
+          "_unsupportedResolutionRequested"
+        ],
+        "prototypeMethods": [
+          "destroy",
+          "created",
+          "modified",
+          "cleared",
+          "loading",
+          "completed",
+          "error",
+          "symbolError",
+          "symbolResolved",
+          "seriesError",
+          "symbolInvalid",
+          "symbolNotPermitted",
+          "symbolGroupNotPermitted",
+          "symbolBondMetricsNotPermitted",
+          "chartTypeNotPermitted",
+          "intradaySpreadNotPermitted",
+          "intradayExchangeNotPermitted",
+          "customIntervalNotPermitted",
+          "customSecondsIntervalNotPermitted",
+          "secondsIntervalNotPermitted",
+          "ticksIntervalNotPermitted",
+          "barReceived",
+          "seriesTimeFrame",
+          "dataUpdated",
+          "unsupportedResolutionRequested",
+          "fireCompleted",
+          "fireCreated",
+          "fireModified",
+          "fireCleared",
+          "fireLoading",
+          "fireError",
+          "fireSymbolError",
+          "fireSymbolResolved",
+          "fireSeriesError",
+          "fireSymbolInvalid",
+          "fireSymbolNotPermitted",
+          "fireSymbolGroupNotPermitted",
+          "fireSymbolBondMetricsNotPermitted",
+          "fireChartTypeNotPermitted",
+          "fireIntradaySpreadNotPermitted",
+          "fireIntradayExchangeNotPermitted",
+          "fireCustomIntervalNotPermitted",
+          "fireCustomSecondsIntervalNotPermitted",
+          "fireSecondsIntervalNotPermitted",
+          "fireTicksIntervalNotPermitted",
+          "fireBarReceived",
+          "fireSeriesTimeFrame",
+          "fireDataUpdated",
+          "fireUnsupportedResolutionRequested",
+          "__defineGetter__",
+          "__defineSetter__",
+          "hasOwnProperty",
+          "__lookupGetter__",
+          "__lookupSetter__",
+          "isPrototypeOf",
+          "propertyIsEnumerable",
+          "toString",
+          "valueOf",
+          "toLocaleString"
+        ]
+      },
+      "ongoingDataUpdate": {
+        "constructor": "Promise",
+        "ownKeys": [],
+        "prototypeMethods": [
+          "then",
+          "catch",
+          "finally",
+          "__defineGetter__",
+          "__defineSetter__",
+          "hasOwnProperty",
+          "__lookupGetter__",
+          "__lookupSetter__",
+          "isPrototypeOf",
+          "propertyIsEnumerable",
+          "toString",
+          "valueOf",
+          "toLocaleString"
+        ]
+      }
+    },
+    "internalMethods": {
+      "source": {
+        "_onDataUpdate": {
+          "found": true,
+          "name": "_onDataUpdate",
+          "length": 142,
+          "source": "async _onDataUpdate(t,e,s){this._onDataUnpacked(t,s,await(0,c.parseJapaneseProjectionBars)(e,this._gateway.wireFormat().unpackNonSeriesData))}",
+          "truncated": false
+        },
+        "_enqueueUpdate": {
+          "found": true,
+          "name": "_enqueueUpdate",
+          "length": 107,
+          "source": "_enqueueUpdate(t){return this._ongoingDataUpdate=this._ongoingDataUpdate.then(t,t),this._ongoingDataUpdate}",
+          "truncated": false
+        },
+        "_onDataUnpacked": {
+          "found": true,
+          "name": "_onDataUnpacked",
+          "length": 618,
+          "source": "_onDataUnpacked(t,e,s){if(0===this._status)return;2===this._status&&(this._changeStatusTo(3),this._clearDataImpl());const r=this._data.bars().size(),i=this._data.first(),a=this._data.bars().firstIndex(),n=this._data.mergeRegularBars(t);null!==s&&(this._data.nsBars().clear(),this._data.nsBars().merge(s.projectionPlots),this._data.lastProjectionPrice=s.lastPrice,null!==s.boxSize&&(this._data.boxSize=s.boxSize),this._data.reversalAmount=s.reversalAmount);const o=null===a,l=o||null!==n&&n.index<a;this._dataEvents.fireDataUpdated(e,l,n,o,i),r!==this._data.bars().size()&&null!==n&&this._dataEvents.fireBarReceived(n)}",
+          "truncated": false
+        },
+        "_onMessage": {
+          "found": true,
+          "name": "_onMessage",
+          "length": 65,
+          "source": "_onMessage(t){\nthis._enqueueUpdate((()=>this._onMessageImpl(t)))}",
+          "truncated": false
+        },
+        "_onMessageImpl": {
+          "found": true,
+          "name": "_onMessageImpl",
+          "length": 1977,
+          "source": "async _onMessageImpl(t){switch(t.method){case\"symbol_resolved\":{const[e,s]=t.params;if(e!==this._symbolInstanceId){null!==this._symbolInstanceId&&b.logNormal(`Resolve for old symbol, expected: ${this._symbolInstanceId}, actual ${t.params[0]}`);break}this._onSymbolResolved(s);break}case\"symbol_error\":if(t.params[0]!==this._symbolInstanceId){null!==this._symbolInstanceId&&b.logNormal(`Symbol error for old symbol, expected: ${this._symbolInstanceId}, actual ${t.params[0]}`);break}this._onSymbolError(t);break;case\"series_timeframe\":{const[e,s,r,i,a,n,o]=t.params;if(!this._checkTurnaround(e,s)){b.logNormal(`Time frame for old data, expected: ${this._symbolInstanceId} (${this.turnaround()}), actual ${e} (${s})`);break}this._onSeriesTimeFrame(r,i,a,n,o);break}case\"series_error\":{const[e,s]=t.params;if(!this._checkTurnaround(e,s)){b.logNormal(`Series error for old data, expected: ${this._symbolInstanceId} (${this.turnaround()}), actual ${e} (${s})`);break}this._onSeriesError(t.params[2]);break}case\"series_loading\":{const[e,s]=t.params;if(!this._checkTurnaround(e,s))break;this._onSeriesLoading(t.time);break}case\"series_completed\":{const[e,s,r,i]=t.params;if(!this._checkTurnaround(e,r)){b.logNormal(`Series completed for old data, expected: ${this._symbolInstanceId} (${this.turnaround()}), actual ${e} (${r})`);break}this._onSeriesCompleted(s,t.time,i);break}case\"data_update\":if(!this._checkTurnaround(t.params.customId,t.params.turnaround)){b.logNormal(`Data update for old data, expected: ${this._symbolInstanceId} (${this.turnaround()}), actual ${t.params.customId} (${t.params.turnaround})`);break}await this._onDataUpdate(t.params.plots,t.params.nonseries,t.params.lastBar);break;case\"clear_data\":{if(t.params.turnaround!==this.turnaround()){b.logNormal(`Clear data for old data, expected: ${this.turnaround()}, actual ${t.params.turnaround}`);break}const e=this._data.first();this._clearDataImpl(),this._dataEvents.fireDataUpdated(void 0,!1,null,!1,e);break}}}",
+          "truncated": false
+        },
+        "setData": {
+          "found": true,
+          "name": "setData",
+          "length": 24,
+          "source": "setData(t){this._data=t}",
+          "truncated": false
+        },
+        "modifySeries": {
+          "found": true,
+          "name": "modifySeries",
+          "length": 884,
+          "source": "modifySeries(t,e,s=null,a=!1,o=null){a&&(b.logNormal(\"Due to force flag clearing symbol & resolution to force re-requesting data.\"),this._extSymbol=null,this._resolution=null);const l=x(t),h=!this.symbolSameAsResolved(l);if(h&&(this._lastResolvedSymbol=\"\"),this._extSymbol&&!h){const e=x(this._extSymbol);(0,d.replaceExtendedSymbol)(t,e)}const u=this._extSymbol,_=this._resolution;if(this._extSymbol=t,this._resolution=e,null===this._instanceId)return void(this._timeFrame=s);const c=!(0,i.deepEquals)(u,t)[0];c&&(0,d.replaceExtendedSymbol)(this._extSymbol,l);const m=null===_||!n.Interval.isEqual(_,e);(c||m||null!==s)&&(this._timeFrame=null,(c||m)&&this._turnaroundCounter++,c&&this._resolveSymbol(),this._gateway.modifySeries(this._instanceId,this.turnaround(),(0,r.ensureNotNull)(this._symbolInstanceId),this._resolution,o,s,this._boundOnMessage),this._dataEvents.fireModified())}",
+          "truncated": false
+        }
+      },
+      "data": {
+        "mergeRegularBars": {
+          "found": true,
+          "name": "mergeRegularBars",
+          "length": 69,
+          "source": "mergeRegularBars(t){return this._conflatedChunksBuilder.mergeData(t)}",
+          "truncated": false
+        },
+        "moveData": {
+          "found": true,
+          "name": "moveData",
+          "length": 75,
+          "source": "moveData(t){this._conflatedChunksBuilder.moveData(t),this.m_nsBars.move(t)}",
+          "truncated": false
+        },
+        "each": {
+          "found": true,
+          "name": "each",
+          "length": 50,
+          "source": "each(t){this.m_bars.each(t),this.m_nsBars.each(t)}",
+          "truncated": false
+        },
+        "valueAt": {
+          "found": true,
+          "name": "valueAt",
+          "length": 63,
+          "source": "valueAt(t){const e=this.search(t);return null!==e?e.value:null}",
+          "truncated": false
+        }
+      },
+      "bars": {
+        "merge": {
+          "found": true,
+          "name": "merge",
+          "length": 372,
+          "source": "merge(t){return this._shareRead?(l.logDebug(\"merge: readonly collection modification attempt\"),null):0===t.length?null:this.isEmpty()||t[t.length-1].index<this._items[0].index?this._prepend(t):t[0].index>this._items[this._items.length-1].index?this._append(t):1===t.length&&t[0].index===this._items[this._items.length-1].index?(this._updateLast(t[0]),t[0]):this._merge(t)}",
+          "truncated": false
+        },
+        "_merge": {
+          "found": true,
+          "name": "_merge",
+          "length": 630,
+          "source": "_merge(t){return(0,r.assert)(0!==t.length,\"plot rows should not be empty\"),this._invalidateSearchCaches(),this._minMaxCache.clear(),this._items=function(t,e){const s=function(t,e){const s=t.length,r=e.length;let i=s+r,a=0,n=0\n;for(;a<s&&n<r;)t[a].index<e[n].index?a++:t[a].index>e[n].index?n++:(a++,n++,i--);return i}(t,e),r=new Array(s);let i=0,a=0;const n=t.length,o=e.length;let l=0;for(;i<n&&a<o;)t[i].index<e[a].index?(r[l]=t[i],i++):t[i].index>e[a].index?(r[l]=e[a],a++):(r[l]=e[a],i++,a++),l++;for(;i<n;)r[l]=t[i],i++,l++;for(;a<o;)r[l]=e[a],a++,l++;return r}(this._items,t),this._start=0,this._end=this._items.length,t[0]}",
+          "truncated": false
+        },
+        "_updateLast": {
+          "found": true,
+          "name": "_updateLast",
+          "length": 275,
+          "source": "_updateLast(t){(0,r.assert)(!this.isEmpty(),\"plot list should not be empty\");const e=this._items[this._end-1];(0,r.assert)(e.index===t.index,\"last row index should match new row index\"),this._invalidateCacheForRow(t),this._invalidateSearchCaches(),this._items[this._end-1]=t}",
+          "truncated": false
+        },
+        "_append": {
+          "found": true,
+          "name": "_append",
+          "length": 281,
+          "source": "_append(t){return(0,r.assert)(!this._shareRead,\"collection should not be readonly\"),(0,r.assert)(0!==t.length,\"plotRows should not be empty\"),this._invalidateSearchCaches(),this._minMaxCache.clear(),this._items=this._items.concat(t),this._start=0,this._end=this._items.length,t[0]}",
+          "truncated": false
+        },
+        "_prepend": {
+          "found": true,
+          "name": "_prepend",
+          "length": 282,
+          "source": "_prepend(t){return(0,r.assert)(!this._shareRead,\"collection should not be readonly\"),(0,r.assert)(0!==t.length,\"plotRows should not be empty\"),this._invalidateSearchCaches(),this._minMaxCache.clear(),this._items=t.concat(this._items),this._start=0,this._end=this._items.length,t[0]}",
+          "truncated": false
+        },
+        "addTail": {
+          "found": true,
+          "name": "addTail",
+          "length": 318,
+          "source": "addTail(t,e=!1){if(0===t.length)return;let s=0;e&&this._end-this._start>0&&(s=1,this._items[this._end-this._start-1].value=t[0].value);for(let e=s;e<t.length;++e){const s=t[e],r=this.lastIndex();if(null===r){l.logError(\"Can't add tail to the empty plotlist\");break}this.add(r+1,s.value)}this._invalidateSearchCaches()}",
+          "truncated": false
+        },
+        "move": {
+          "found": true,
+          "name": "move",
+          "length": 589,
+          "source": "move(t){if(this._shareRead)return void l.logDebug(\"move: readonly collection modification attempt\");if(0===t.length)return;const e=this._items.slice();for(const s of t){const t=this._bsearch(s.old,d);if(null!==t&&void 0!==e[t])if(s.new===n.INVALID_TIME_POINT_INDEX)e[t]=void 0;else{e[t]={index:s.new,value:e[t].value};const r=this._bsearch(s.new,d);if(null!==r){const t=e[r];void 0!==t&&t.index===s.new&&(e[r]=void 0)}}}this._items=e.filter((t=>void 0!==t)).sort(((t,e)=>t.index-e.index)),this._invalidateSearchCaches(),this._minMaxCache.clear(),this._start=0,this._end=this._items.length}",
+          "truncated": false
+        },
+        "update": {
+          "found": false
+        }
+      },
+      "series": {
+        "fixLastBar": {
+          "found": true,
+          "name": "fixLastBar",
+          "length": 149,
+          "source": "fixLastBar(e){if(!this._futureBarsPaneView){const t=this.bars().lastIndex();t&&(this._futureBarsPaneView=new Ue(this.model().timeScale(),this,t,e))}}",
+          "truncated": false
+        },
+        "updateAllViews": {
+          "found": true,
+          "name": "updateAllViews",
+          "length": 989,
+          "source": "updateAllViews(e){this._studyBindings?.updateAllViews(e),this._delayStatusPaneView?.get()?.update(e),e.type!==Ze.ChangeEventType.HoverChange&&(this._paneView?.update(e),this._dataWindowView.update(),this._legendView.update(),this._statusView.update(),this._floatingTooltipView.update(e),this._averagePaneViews.forEach((t=>t.update(e))),this._highLowAvgPaneViews.forEach((t=>t.update(e))),this._labelPaneViews.forEach((t=>t.update(e))),this._priceAxisViews.forEach((t=>t.update(e))),this._priceLineAxisViews.forEach((t=>t.update(e))),this._futureBarsPaneView?.update(e),this._projectionBarsPaneView?.update(e),this._waterlineView?.update(e),this._prevClosePriceLineView?.update(e),this._priceLineView?.update(e),this._gotoDateView?.update(e),this._endOfDataPaneView?.update(e),this._baseHorizontalLineView?.update(e),this._model.activeStrategySource().value()?.updateAllViews(e),this._model.replayStudyStrategy().value()?.updateAllViews(e),this._lineStyleLastPriceCirclePaneView.update(e))}",
+          "truncated": false
+        },
+        "clearData": {
+          "found": true,
+          "name": "clearData",
+          "length": 146,
+          "source": "clearData(){(0,r.assert)(null===this._data,\"Cannot clear loaded data\"),this._withStudyBindings((e=>e.clearData())),this._seriesSource.clearData()}",
+          "truncated": false
+        },
+        "restart": {
+          "found": true,
+          "name": "restart",
+          "length": 1369,
+          "source": "restart(e){if(this._status.value().seriesStatus===N.Status.Snapshot)return;this._areStudiesStoppedForRestrictedBond=!1;let t=null;this._pendingTimeRange&&(t=this._pendingTimeRange,this._seriesSource.isStarted()||(this._seriesSource.setTimeframe(t),this._pendingTimeRange=null));const i=this._properties.childs().interval.value(),s=(0,g.getServerInterval)(i),r=this._getResolvingSymbolObject();this._seriesSource.canModifySeries(r,s)?(this._seriesLoaded=!1,this._seriesCompleted=!1,this._lastCompleteFlags=null,this._onRestarted.fire(),\nthis._isBondDataRestricted=!1,this._setStatus(N.Status.Resolving),this._updateSymbolInfo(null),d.Interval.isEqual(i,this._prevRequestedInterval)||this._notifyIntervalChanged(i),e||this._removeReplaySubscriber(),this._modifyReplaySeries(this.getReplaySymbolString(),i),this._onTimeFrameApplied.fire(t),this._data=null,this.model().recalcVisibleRangeStudies(T.RecalcVisibleRangeStudiesReason.SeriesRestart),this._seriesSource.modifySeries(r,s,t),this._seriesSource.isStarted()||this._seriesSource.start(),this._prevRequestedInterval=this.interval(),this._pendingTimeRange=null,this._withStudyBindings((e=>e.restart())),this.updateAllViews((0,ve.sourceChangeEvent)(this.id())),this._model.lightUpdate()):this._seriesSource.isStarted()||(this._updateSymbolInfo(null),this._seriesSource.start(),this._withStudyBindings((e=>e.restart())))}",
+          "truncated": false
+        }
+      }
+    },
+    "liveSamples": [
+      {
+        "at": "2026-11-11T13:39:24.669Z",
+        "barCount": 331,
+        "current": {
+          "index": 330,
+          "value": [
+            1794404340,
+            0.0000049684,
+            0.0000049684,
+            0.0000049666,
+            0.0000049669,
+            2451600000
+          ],
+          "valueType": "Array"
+        },
+        "previous": {
+          "index": 329,
+          "value": [
+            1794404280,
+            0.0000049694,
+            0.0000049725,
+            0.0000049659,
+            0.0000049679,
+            3877900000
+          ],
+          "valueType": "Array"
+        },
+        "changeNumber": 1
+      },
+      {
+        "at": "2026-11-11T13:39:30.669Z",
+        "barCount": 331,
+        "current": {
+          "index": 330,
+          "value": [
+            1794404340,
+            0.0000049684,
+            0.0000049691,
+            0.0000049666,
+            0.0000049691,
+            2654300000
+          ],
+          "valueType": "Array"
+        },
+        "previous": {
+          "index": 329,
+          "value": [
+            1794404280,
+            0.0000049694,
+            0.0000049725,
+            0.0000049659,
+            0.0000049679,
+            3877900000
+          ],
+          "valueType": "Array"
+        },
+        "changeNumber": 2
+      },
+      {
+        "at": "2026-11-11T13:39:32.269Z",
+        "barCount": 331,
+        "current": {
+          "index": 330,
+          "value": [
+            1794404340,
+            0.0000049684,
+            0.0000049699,
+            0.0000049666,
+            0.0000049699,
+            2654900000
+          ],
+          "valueType": "Array"
+        },
+        "previous": {
+          "index": 329,
+          "value": [
+            1794404280,
+            0.0000049694,
+            0.0000049725,
+            0.0000049659,
+            0.0000049679,
+            3877900000
+          ],
+          "valueType": "Array"
+        },
+        "changeNumber": 3
+      },
+      {
+        "at": "2026-11-11T13:39:33.469Z",
+        "barCount": 331,
+        "current": {
+          "index": 330,
+          "value": [
+            1794404340,
+            0.0000049684,
+            0.0000049699,
+            0.0000049666,
+            0.0000049691,
+            2656500000
+          ],
+          "valueType": "Array"
+        },
+        "previous": {
+          "index": 329,
+          "value": [
+            1794404280,
+            0.0000049694,
+            0.0000049725,
+            0.0000049659,
+            0.0000049679,
+            3877900000
+          ],
+          "valueType": "Array"
+        },
+        "changeNumber": 4
+      },
+      {
+        "at": "2026-11-11T13:39:37.869Z",
+        "barCount": 331,
+        "current": {
+          "index": 330,
+          "value": [
+            1794404340,
+            0.0000049684,
+            0.0000049699,
+            0.0000049663,
+            0.0000049663,
+            2744100000
+          ],
+          "valueType": "Array"
+        },
+        "previous": {
+          "index": 329,
+          "value": [
+            1794404280,
+            0.0000049694,
+            0.0000049725,
+            0.0000049659,
+            0.0000049679,
+            3877900000
+          ],
+          "valueType": "Array"
+        },
+        "changeNumber": 5
+      },
+      {
+        "at": "2026-11-11T13:39:39.469Z",
+        "barCount": 331,
+        "current": {
+          "index": 330,
+          "value": [
+            1794404340,
+            0.0000049684,
+            0.0000049699,
+            0.0000049663,
+            0.0000049663,
+            2856400000
+          ],
+          "valueType": "Array"
+        },
+        "previous": {
+          "index": 329,
+          "value": [
+            1794404280,
+            0.0000049694,
+            0.0000049725,
+            0.0000049659,
+            0.0000049679,
+            3877900000
+          ],
+          "valueType": "Array"
+        },
+        "changeNumber": 6
+      },
+      {
+        "at": "2026-11-11T13:39:40.670Z",
+        "barCount": 331,
+        "current": {
+          "index": 330,
+          "value": [
+            1794404340,
+            0.0000049684,
+            0.0000049699,
+            0.0000049663,
+            0.0000049663,
+            3077900000
+          ],
+          "valueType": "Array"
+        },
+        "previous": {
+          "index": 329,
+          "value": [
+            1794404280,
+            0.0000049694,
+            0.0000049725,
+            0.0000049659,
+            0.0000049679,
+            3877900000
+          ],
+          "valueType": "Array"
+        },
+        "changeNumber": 7
+      },
+      {
+        "at": "2026-11-11T13:39:41.870Z",
+        "barCount": 331,
+        "current": {
+          "index": 330,
+          "value": [
+            1794404340,
+            0.0000049684,
+            0.0000049699,
+            0.0000049663,
+            0.0000049663,
+            3087900000
+          ],
+          "valueType": "Array"
+        },
+        "previous": {
+          "index": 329,
+          "value": [
+            1794404280,
+            0.0000049694,
+            0.0000049725,
+            0.0000049659,
+            0.0000049679,
+            3877900000
+          ],
+          "valueType": "Array"
+        },
+        "changeNumber": 8
+      },
+      {
+        "at": "2026-11-11T13:39:43.470Z",
+        "barCount": 331,
+        "current": {
+          "index": 330,
+          "value": [
+            1794404340,
+            0.0000049684,
+            0.0000049699,
+            0.0000049658,
+            0.0000049658,
+            3088000000
+          ],
+          "valueType": "Array"
+        },
+        "previous": {
+          "index": 329,
+          "value": [
+            1794404280,
+            0.0000049694,
+            0.0000049725,
+            0.0000049659,
+            0.0000049679,
+            3877900000
+          ],
+          "valueType": "Array"
+        },
+        "changeNumber": 9
+      },
+      {
+        "at": "2026-11-11T13:39:47.069Z",
+        "barCount": 331,
+        "current": {
+          "index": 330,
+          "value": [
+            1794404340,
+            0.0000049684,
+            0.0000049699,
+            0.0000049654,
+            0.0000049654,
+            3088100000
+          ],
+          "valueType": "Array"
+        },
+        "previous": {
+          "index": 329,
+          "value": [
+            1794404280,
+            0.0000049694,
+            0.0000049725,
+            0.0000049659,
+            0.0000049679,
+            3877900000
+          ],
+          "valueType": "Array"
+        },
+        "changeNumber": 10
+      },
+      {
+        "at": "2026-11-11T13:39:48.269Z",
+        "barCount": 331,
+        "current": {
+          "index": 330,
+          "value": [
+            1794404340,
+            0.0000049684,
+            0.0000049699,
+            0.0000049654,
+            0.0000049654,
+            3096500000
+          ],
+          "valueType": "Array"
+        },
+        "previous": {
+          "index": 329,
+          "value": [
+            1794404280,
+            0.0000049694,
+            0.0000049725,
+            0.0000049659,
+            0.0000049679,
+            3877900000
+          ],
+          "valueType": "Array"
+        },
+        "changeNumber": 11
+      }
+    ]
+  },
+  "errors": []
+}
