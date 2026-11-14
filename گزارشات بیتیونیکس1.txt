@@ -1,0 +1,1280 @@
+{
+  "diagnostic": "__BITUNIX_DIAG_01__",
+  "startedAt": "2026-11-14T16:29:07.077Z",
+  "page": {
+    "host": "www.bitunix.com",
+    "origin": "https://www.bitunix.com",
+    "path": "/contract-trade/XAUTUSDT",
+    "title": "3,826.16 | XAUTUSDT Futures Exchange - Crypto Futures | Bitunix",
+    "readyState": "complete",
+    "language": "en-US",
+    "online": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 710,
+      "height": 703,
+      "devicePixelRatio": 1.25
+    }
+  },
+  "chartCandidates": [
+    {
+      "tag": "CANVAS",
+      "id": null,
+      "className": "bitunix-orderbook-canvas",
+      "role": null,
+      "ariaLabel": "",
+      "title": "",
+      "testId": null,
+      "visible": true,
+      "rect": {
+        "x": 300,
+        "y": 199,
+        "width": 389,
+        "height": 382
+      },
+      "canvas": {
+        "width": 486,
+        "height": 477
+      }
+    },
+    {
+      "tag": "CANVAS",
+      "id": null,
+      "className": "bitunix-orderbook-canvas",
+      "role": null,
+      "ariaLabel": "",
+      "title": "",
+      "testId": null,
+      "visible": true,
+      "rect": {
+        "x": 300,
+        "y": 199,
+        "width": 389,
+        "height": 382
+      },
+      "canvas": {
+        "width": 486,
+        "height": 477
+      }
+    },
+    {
+      "tag": "DIV",
+      "id": null,
+      "className": "kline-title md:ps-20 color-text-1 font-700 fs-18 md:leh-40 relative text-nowrap cursor-pointer max-md:flex max-md:items-center",
+      "role": null,
+      "ariaLabel": "",
+      "title": "",
+      "testId": null,
+      "visible": true,
+      "rect": {
+        "x": 15,
+        "y": 62,
+        "width": 120,
+        "height": 44
+      }
+    }
+  ],
+  "chartParents": [
+    {
+      "element": {
+        "tag": "CANVAS",
+        "id": null,
+        "className": "bitunix-orderbook-canvas",
+        "role": null,
+        "ariaLabel": "",
+        "title": "",
+        "testId": null,
+        "visible": true,
+        "rect": {
+          "x": 300,
+          "y": 199,
+          "width": 389,
+          "height": 382
+        },
+        "canvas": {
+          "width": 486,
+          "height": 477
+        }
+      },
+      "parents": [
+        {
+          "tag": "CANVAS",
+          "id": null,
+          "className": "bitunix-orderbook-canvas"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "bitunix-orderbook orderbook-6ce6e899"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "content-443E9745"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "container-3A8FA0CB flex-1"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "flex flex-col h100% w100% c8beeb859"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "orderbook-container-7E807388 color-bg-2"
+        }
+      ]
+    },
+    {
+      "element": {
+        "tag": "CANVAS",
+        "id": null,
+        "className": "bitunix-orderbook-canvas",
+        "role": null,
+        "ariaLabel": "",
+        "title": "",
+        "testId": null,
+        "visible": true,
+        "rect": {
+          "x": 300,
+          "y": 199,
+          "width": 389,
+          "height": 382
+        },
+        "canvas": {
+          "width": 486,
+          "height": 477
+        }
+      },
+      "parents": [
+        {
+          "tag": "CANVAS",
+          "id": null,
+          "className": "bitunix-orderbook-canvas"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "bitunix-orderbook orderbook-6ce6e899"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "content-443E9745"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "container-3A8FA0CB flex-1"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "flex flex-col h100% w100% c8beeb859"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "orderbook-container-7E807388 color-bg-2"
+        }
+      ]
+    },
+    {
+      "element": {
+        "tag": "DIV",
+        "id": null,
+        "className": "kline-title md:ps-20 color-text-1 font-700 fs-18 md:leh-40 relative text-nowrap cursor-pointer max-md:flex max-md:items-center",
+        "role": null,
+        "ariaLabel": "",
+        "title": "",
+        "testId": null,
+        "visible": true,
+        "rect": {
+          "x": 15,
+          "y": 62,
+          "width": 120,
+          "height": 44
+        }
+      },
+      "parents": [
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "kline-title md:ps-20 color-text-1 font-700 fs-18 md:leh-40 relative text-nowrap cursor-pointer max-md:flex max-md:items-center"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "flex items-center shrink-0"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "flex items-center gap-8 py-14 px-15 min-w-0 overflow-hidden"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "color-bg-2 flow-root sticky top-0 z-11"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "color-text-1 pb-[32px] color-bg-1 max-md:color-bg-2"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "reveal-content reveal-in"
+        }
+      ]
+    }
+  ],
+  "iframes": [
+    {
+      "tag": "IFRAME",
+      "id": null,
+      "className": "",
+      "role": "presentation",
+      "ariaLabel": "",
+      "title": "No content",
+      "testId": null,
+      "visible": false,
+      "rect": {
+        "x": 0,
+        "y": -9999,
+        "width": 0,
+        "height": 0
+      },
+      "src": "nullblank",
+      "sameOrigin": true
+    },
+    {
+      "tag": "IFRAME",
+      "id": null,
+      "className": "",
+      "role": null,
+      "ariaLabel": "",
+      "title": "Messaging window",
+      "testId": null,
+      "visible": false,
+      "rect": {
+        "x": 292,
+        "y": 1239,
+        "width": 380,
+        "height": 0
+      },
+      "src": "https://www.bitunix.com/contract-trade/XAUTUSDT",
+      "sameOrigin": true
+    },
+    {
+      "tag": "IFRAME",
+      "id": "launcher",
+      "className": "",
+      "role": null,
+      "ariaLabel": "",
+      "title": "Button to launch messaging window, conversation in progress",
+      "testId": null,
+      "visible": false,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      },
+      "src": "https://www.bitunix.com/contract-trade/XAUTUSDT",
+      "sameOrigin": true
+    }
+  ],
+  "canvases": [
+    {
+      "tag": "CANVAS",
+      "id": null,
+      "className": "bitunix-orderbook-canvas",
+      "role": null,
+      "ariaLabel": "",
+      "title": "",
+      "testId": null,
+      "visible": true,
+      "rect": {
+        "x": 300,
+        "y": 199,
+        "width": 389,
+        "height": 382
+      },
+      "canvas": {
+        "width": 486,
+        "height": 477
+      }
+    },
+    {
+      "tag": "CANVAS",
+      "id": null,
+      "className": "bitunix-orderbook-canvas",
+      "role": null,
+      "ariaLabel": "",
+      "title": "",
+      "testId": null,
+      "visible": true,
+      "rect": {
+        "x": 300,
+        "y": 199,
+        "width": 389,
+        "height": 382
+      },
+      "canvas": {
+        "width": 486,
+        "height": 477
+      }
+    }
+  ],
+  "buttons": [
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "ariaLabel": "",
+      "title": "",
+      "className": "pill-tabs__item",
+      "disabled": false,
+      "rect": {
+        "x": 599,
+        "y": 68,
+        "width": 44,
+        "height": 32
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "ariaLabel": "",
+      "title": "",
+      "className": "pill-tabs__item pill-tabs__item--active",
+      "disabled": false,
+      "rect": {
+        "x": 643,
+        "y": 68,
+        "width": 44,
+        "height": 32
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Open Long",
+      "ariaLabel": "",
+      "title": "",
+      "className": "arco-btn arco-btn-secondary arco-btn-shape-square arco-btn-size-medium arco-btn-status-normal btn h40 color-text-1 items-center justify-center flex-col cursor-pointer rounded-full ",
+      "disabled": false,
+      "rect": {
+        "x": 15,
+        "y": 507,
+        "width": 264,
+        "height": 40
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Open Short",
+      "ariaLabel": "",
+      "title": "",
+      "className": "arco-btn arco-btn-secondary arco-btn-shape-square arco-btn-size-medium arco-btn-status-normal btn h40 color-text-1 items-center justify-center flex-col cursor-pointer rounded-full ",
+      "disabled": false,
+      "rect": {
+        "x": 15,
+        "y": 562,
+        "width": 264,
+        "height": 40
+      }
+    }
+  ],
+  "inputs": [
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "",
+      "placeholder": "Min 5.13",
+      "ariaLabel": "",
+      "role": null,
+      "className": "arco-input arco-input-size-medium",
+      "rect": {
+        "x": 29,
+        "y": 397,
+        "width": 166,
+        "height": 22
+      }
+    }
+  ],
+  "scripts": [
+    "https://www.clarity.ms/tag/qtmsqbvh7m",
+    "https://www.googletagmanager.com/gtm.js",
+    "https://www.bitunix.com/web/bitunix-assets/futures/entry-DUW8vMQn.js",
+    "https://websdk.appsflyersdk.com/",
+    "https://static.bitunix.com/web/fp.min.js",
+    "https://widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js",
+    "https://static.zdassets.com/ekr/snippet.js",
+    "https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092"
+  ],
+  "chartGlobals": [
+    {
+      "name": "WebSocket",
+      "type": "function",
+      "constructor": "Function",
+      "isFunction": true,
+      "functionName": "WebSocket"
+    },
+    {
+      "name": "WebSocketError",
+      "type": "function",
+      "constructor": "Function",
+      "isFunction": true,
+      "functionName": "WebSocketError"
+    },
+    {
+      "name": "WebSocketStream",
+      "type": "function",
+      "constructor": "Function",
+      "isFunction": true,
+      "functionName": "WebSocketStream"
+    },
+    {
+      "name": "RESOURCE_SLOT_WIDGET_MANIFEST",
+      "type": "string",
+      "constructor": "String",
+      "isFunction": false,
+      "functionName": null
+    },
+    {
+      "name": "RESOURCE_SLOT_WIDGET_MANIFEST_FALLBACK_HOSTS",
+      "type": "object",
+      "constructor": "Array",
+      "isFunction": false,
+      "functionName": null
+    },
+    {
+      "name": "bitunix_tracking_sdk",
+      "type": "object",
+      "constructor": "",
+      "isFunction": false,
+      "functionName": null
+    },
+    {
+      "name": "TradingView",
+      "type": "object",
+      "constructor": "Object",
+      "isFunction": false,
+      "functionName": null
+    },
+    {
+      "name": "__BITUNIX_LCP_SETTLER__",
+      "type": "object",
+      "constructor": "Object",
+      "isFunction": false,
+      "functionName": null
+    },
+    {
+      "name": "__BITUNIX_CUSTOMER_SERVICE__",
+      "type": "object",
+      "constructor": "Object",
+      "isFunction": false,
+      "functionName": null
+    },
+    {
+      "name": "MockSocketClient",
+      "type": "function",
+      "constructor": "Function",
+      "isFunction": true,
+      "functionName": "b"
+    },
+    {
+      "name": "TradingViewApi",
+      "type": "object",
+      "constructor": null,
+      "isFunction": false,
+      "functionName": null
+    },
+    {
+      "name": "tvWidget",
+      "type": "object",
+      "constructor": null,
+      "isFunction": false,
+      "functionName": null
+    },
+    {
+      "name": "tvChart",
+      "type": "object",
+      "constructor": null,
+      "isFunction": false,
+      "functionName": null
+    },
+    {
+      "name": "_exposed_chartWidgetCollection",
+      "type": "object",
+      "constructor": null,
+      "isFunction": false,
+      "functionName": null
+    },
+    {
+      "name": "__INITIAL_STATE__",
+      "type": "object",
+      "constructor": null,
+      "isFunction": false,
+      "functionName": null
+    },
+    {
+      "name": "__NEXT_DATA__",
+      "type": "object",
+      "constructor": null,
+      "isFunction": false,
+      "functionName": null
+    }
+  ],
+  "globalNames": [
+    "WebSocket",
+    "WebSocketError",
+    "WebSocketStream",
+    "RESOURCE_SLOT_WIDGET_MANIFEST",
+    "RESOURCE_SLOT_WIDGET_MANIFEST_FALLBACK_HOSTS",
+    "bitunix_tracking_sdk",
+    "TradingView",
+    "__BITUNIX_LCP_SETTLER__",
+    "__BITUNIX_CUSTOMER_SERVICE__",
+    "MockSocketClient"
+  ],
+  "networkResources": [
+    {
+      "url": "https://img.bitunix.com/config/kv/a1ae4935-1a10-41b0-a8d8-0bf4e269f45e_98480053_1793934293020.png",
+      "initiatorType": "img",
+      "durationMs": 87,
+      "transferSize": 0
+    },
+    {
+      "url": "https://img.bitunix.com/config/kv/1784624296544407.png",
+      "initiatorType": "img",
+      "durationMs": 100,
+      "transferSize": 0
+    },
+    {
+      "url": "https://img.bitunix.com/config/kv/665635.png",
+      "initiatorType": "img",
+      "durationMs": 102,
+      "transferSize": 0
+    },
+    {
+      "url": "https://img.bitunix.com/config/kv/6f938803-2796-4815-b572-33954e40c475_f5af0cd3_1793933287542.png",
+      "initiatorType": "img",
+      "durationMs": 104,
+      "transferSize": 0
+    },
+    {
+      "url": "https://img.bitunix.com/config/kv/25298016-6754-4b71-b8c0-114064e06c1e_894b1af7_1793936290357.png",
+      "initiatorType": "img",
+      "durationMs": 117,
+      "transferSize": 0
+    },
+    {
+      "url": "https://img.bitunix.com/config/kv/fc4300f3-eca4-45c3-81a0-98f4aafa2304_5079af8f_1793934696123.png",
+      "initiatorType": "img",
+      "durationMs": 108,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/kyc-not-verified.Bdc4S1hj.png",
+      "initiatorType": "img",
+      "durationMs": 304,
+      "transferSize": 0
+    },
+    {
+      "url": "https://api.bitunix.com/kyc/api/private/kyc/status",
+      "initiatorType": "fetch",
+      "durationMs": 653,
+      "transferSize": 0
+    },
+    {
+      "url": "https://api.bitunix.com/welfare/welfare/api/private/v2/prize/pendingUseCount",
+      "initiatorType": "fetch",
+      "durationMs": 638,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/AssetListCommon-Cmg3yEM9.js",
+      "initiatorType": "script",
+      "durationMs": 294,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/AssetListCommon.CBuELEXX.css",
+      "initiatorType": "link",
+      "durationMs": 300,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/secondary-menu-BL586XLo.js",
+      "initiatorType": "script",
+      "durationMs": 298,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/secondary-menu.CuXVmXaz.css",
+      "initiatorType": "link",
+      "durationMs": 292,
+      "transferSize": 0
+    },
+    {
+      "url": "https://api.bitunix.com/copy/api/private/v1/asset/summary",
+      "initiatorType": "fetch",
+      "durationMs": 631,
+      "transferSize": 0
+    },
+    {
+      "url": "https://api.bitunix.com/crypto-card/api/public/v1/common/check-status",
+      "initiatorType": "fetch",
+      "durationMs": 1908,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/kyc-verified.BLEndQGT.png",
+      "initiatorType": "img",
+      "durationMs": 303,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/coin-default.B5ddNkmX.webp",
+      "initiatorType": "img",
+      "durationMs": 368,
+      "transferSize": 0
+    },
+    {
+      "url": "https://api.bitunix.com/futures/futures/market/symbols/simple",
+      "initiatorType": "fetch",
+      "durationMs": 874,
+      "transferSize": 0
+    },
+    {
+      "url": "https://api.bitunix.com/innovation-rank/api/protected/tradfi-cfd/list",
+      "initiatorType": "fetch",
+      "durationMs": 2039,
+      "transferSize": 0
+    },
+    {
+      "url": "https://api.bitunix.com/innovation-rank/api/public/coin/tag/coin-pair/filter/list",
+      "initiatorType": "fetch",
+      "durationMs": 870,
+      "transferSize": 0
+    },
+    {
+      "url": "https://api.bitunix.com/futures/futures/market/tickers/filter",
+      "initiatorType": "fetch",
+      "durationMs": 739,
+      "transferSize": 0
+    },
+    {
+      "url": "https://img.bitunix.com/config/kv/272fac097d7c4a1d9c49c81c47e7061d.png",
+      "initiatorType": "img",
+      "durationMs": 321,
+      "transferSize": 1952
+    },
+    {
+      "url": "https://img.bitunix.com/config/kv/33751.png",
+      "initiatorType": "img",
+      "durationMs": 290,
+      "transferSize": 1010
+    },
+    {
+      "url": "https://api.bitunix.com/station-msg/api/private/v2/station_msg/unread/type_count/list",
+      "initiatorType": "fetch",
+      "durationMs": 1034,
+      "transferSize": 0
+    },
+    {
+      "url": "https://api.bitunix.com/notification/api/private/v1/notification/messageCategory/queryCategoryList",
+      "initiatorType": "fetch",
+      "durationMs": 1131,
+      "transferSize": 0
+    },
+    {
+      "url": "https://api.bitunix.com/station-msg/api/private/v2/station_msg/page",
+      "initiatorType": "fetch",
+      "durationMs": 1064,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/favicon.ico",
+      "initiatorType": "other",
+      "durationMs": 392,
+      "transferSize": 300
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/extends-B4fyY34i.js",
+      "initiatorType": "script",
+      "durationMs": 295,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/futuresCancelOrderWindowAction-BjJNzXRy.js",
+      "initiatorType": "script",
+      "durationMs": 300,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/close-DQT_25o5.js",
+      "initiatorType": "script",
+      "durationMs": 346,
+      "transferSize": 0
+    },
+    {
+      "url": "https://img.bitunix.com/config/kv/657997.png",
+      "initiatorType": "img",
+      "durationMs": 119,
+      "transferSize": 0
+    },
+    {
+      "url": "https://img.bitunix.com/config/kv/324512.jpg",
+      "initiatorType": "img",
+      "durationMs": 359,
+      "transferSize": 1298
+    },
+    {
+      "url": "https://img.bitunix.com/config/kv/752516.png",
+      "initiatorType": "img",
+      "durationMs": 569,
+      "transferSize": 660
+    },
+    {
+      "url": "https://img.bitunix.com/config/kv/738912.png",
+      "initiatorType": "img",
+      "durationMs": 3828,
+      "transferSize": 0
+    },
+    {
+      "url": "https://img.bitunix.com/config/kv/339862.png",
+      "initiatorType": "img",
+      "durationMs": 3851,
+      "transferSize": 0
+    },
+    {
+      "url": "https://img.bitunix.com/config/kv/134949.png",
+      "initiatorType": "img",
+      "durationMs": 566,
+      "transferSize": 1088
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/recommended-coin-BTC-tiny.DRs_QGiU.webp",
+      "initiatorType": "img",
+      "durationMs": 302,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/recommended-coin-ETH-tiny-dark.BRWjGYG1.webp",
+      "initiatorType": "img",
+      "durationMs": 333,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/recommended-coin-Doge-tiny.btceyBeZ.webp",
+      "initiatorType": "img",
+      "durationMs": 336,
+      "transferSize": 0
+    },
+    {
+      "url": "https://img.bitunix.com/config/kv/1782268301604033.png",
+      "initiatorType": "img",
+      "durationMs": 8,
+      "transferSize": 0
+    },
+    {
+      "url": "https://img.bitunix.com/config/kv/1780371534090606.png",
+      "initiatorType": "img",
+      "durationMs": 328,
+      "transferSize": 598
+    },
+    {
+      "url": "https://img.bitunix.com/config/kv/1785312331763302.png",
+      "initiatorType": "img",
+      "durationMs": 299,
+      "transferSize": 740
+    },
+    {
+      "url": "https://img.bitunix.com/config/kv/1783730148354550.png",
+      "initiatorType": "img",
+      "durationMs": 1512,
+      "transferSize": 640
+    },
+    {
+      "url": "https://img.bitunix.com/config/kv/05ac6ae0-fdae-4602-849e-40c9fc189560_3ee914c_1793934164691.png",
+      "initiatorType": "img",
+      "durationMs": 303,
+      "transferSize": 1346
+    },
+    {
+      "url": "https://img.bitunix.com/config/kv/1780371595983410.png",
+      "initiatorType": "img",
+      "durationMs": 1562,
+      "transferSize": 1022
+    },
+    {
+      "url": "https://img.bitunix.com/config/kv/e62eca97-b9fe-47a8-8fcb-eae9de567f87_cb30f219_1793936439882.png",
+      "initiatorType": "img",
+      "durationMs": 322,
+      "transferSize": 660
+    },
+    {
+      "url": "https://img.bitunix.com/config/kv/1784191474417858.png",
+      "initiatorType": "img",
+      "durationMs": 2037,
+      "transferSize": 592
+    },
+    {
+      "url": "https://img.bitunix.com/config/kv/1783042478126303.jpg",
+      "initiatorType": "img",
+      "durationMs": 329,
+      "transferSize": 554
+    },
+    {
+      "url": "https://img.bitunix.com/config/kv/d87374d5-d201-4d90-88d4-785963f2b8e7_5047afdb_1788163442075.png",
+      "initiatorType": "img",
+      "durationMs": 362,
+      "transferSize": 784
+    },
+    {
+      "url": "https://img.bitunix.com/config/kv/ea555b12-b193-446d-bac7-3bb65a6a68b9_2c181553_1788163168969.png",
+      "initiatorType": "img",
+      "durationMs": 292,
+      "transferSize": 1234
+    },
+    {
+      "url": "https://img.bitunix.com/config/kv/43b9d65d-6e4c-4f4f-9502-43dffb451f2e_b8ad37d6_1793933312905.svg",
+      "initiatorType": "img",
+      "durationMs": 641,
+      "transferSize": 0
+    },
+    {
+      "url": "https://img.bitunix.com/config/kv/1782268261231541.png",
+      "initiatorType": "img",
+      "durationMs": 349,
+      "transferSize": 652
+    },
+    {
+      "url": "https://img.bitunix.com/config/kv/1780902004011817.png",
+      "initiatorType": "img",
+      "durationMs": 1552,
+      "transferSize": 866
+    },
+    {
+      "url": "https://img.bitunix.com/config/kv/2e0c6e8e-4b11-4b8b-be0b-35cdc719769d_7482c9fe_1793933847349.png",
+      "initiatorType": "img",
+      "durationMs": 282,
+      "transferSize": 1166
+    },
+    {
+      "url": "https://img.bitunix.com/config/kv/477037.png",
+      "initiatorType": "img",
+      "durationMs": 1562,
+      "transferSize": 540
+    },
+    {
+      "url": "https://img.bitunix.com/config/kv/17a017a0-b6b6-4cfb-86da-1600f476b9b2_15049a57_1793934649386.png",
+      "initiatorType": "img",
+      "durationMs": 296,
+      "transferSize": 1388
+    },
+    {
+      "url": "https://img.bitunix.com/config/kv/1781230836282362.png",
+      "initiatorType": "img",
+      "durationMs": 1481,
+      "transferSize": 706
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/854235.CQ5x5ruM.webp",
+      "initiatorType": "img",
+      "durationMs": 343,
+      "transferSize": 0
+    },
+    {
+      "url": "https://img.bitunix.com/config/kv/158bb337-8af4-49de-a8fc-6e11cab7e4d6_13ca1ec0_1793934891897.png",
+      "initiatorType": "img",
+      "durationMs": 311,
+      "transferSize": 1510
+    },
+    {
+      "url": "https://img.bitunix.com/config/kv/d73620fd-0b1a-4555-9405-6bf3abe92c6a_db805da2_1793936357530.png",
+      "initiatorType": "img",
+      "durationMs": 321,
+      "transferSize": 668
+    },
+    {
+      "url": "https://img.bitunix.com/config/kv/be742252-a60a-4549-a725-b8a1f2d90f8b_e189422f_1793934958837.png",
+      "initiatorType": "img",
+      "durationMs": 1348,
+      "transferSize": 1296
+    },
+    {
+      "url": "https://img.bitunix.com/config/kv/ace03dc9-d0b4-45bf-b56e-4df29726bb7e_a31c3c98_1793936508049.png",
+      "initiatorType": "img",
+      "durationMs": 359,
+      "transferSize": 776
+    },
+    {
+      "url": "https://img.bitunix.com/config/kv/1784624243958375.png",
+      "initiatorType": "img",
+      "durationMs": 2219,
+      "transferSize": 582
+    },
+    {
+      "url": "https://img.bitunix.com/config/kv/47929197-1289-40ce-ad96-c75d2415ae3c_bea8d3b5_1793935918309.png",
+      "initiatorType": "img",
+      "durationMs": 329,
+      "transferSize": 680
+    },
+    {
+      "url": "https://img.bitunix.com/config/kv/1780902134206218.png",
+      "initiatorType": "img",
+      "durationMs": 257,
+      "transferSize": 604
+    },
+    {
+      "url": "https://img.bitunix.com/config/kv/85016.png",
+      "initiatorType": "img",
+      "durationMs": 289,
+      "transferSize": 802
+    },
+    {
+      "url": "https://img.bitunix.com/config/kv/760746.png",
+      "initiatorType": "img",
+      "durationMs": 316,
+      "transferSize": 844
+    },
+    {
+      "url": "https://img.bitunix.com/config/kv/1785305031848568.png",
+      "initiatorType": "img",
+      "durationMs": 1631,
+      "transferSize": 582
+    },
+    {
+      "url": "https://img.bitunix.com/config/kv/1781230863245220.png",
+      "initiatorType": "img",
+      "durationMs": 1972,
+      "transferSize": 646
+    },
+    {
+      "url": "https://img.bitunix.com/config/kv/1780473193359662.png",
+      "initiatorType": "img",
+      "durationMs": 295,
+      "transferSize": 1068
+    },
+    {
+      "url": "https://img.bitunix.com/config/kv/1786505560578210.png",
+      "initiatorType": "img",
+      "durationMs": 570,
+      "transferSize": 706
+    },
+    {
+      "url": "https://img.bitunix.com/config/kv/1780902213397398.png",
+      "initiatorType": "img",
+      "durationMs": 430,
+      "transferSize": 996
+    },
+    {
+      "url": "https://img.bitunix.com/config/kv/57c978bc-25f5-4797-bc78-3607d172d724_41a33aab_1793935437366.png",
+      "initiatorType": "img",
+      "durationMs": 423,
+      "transferSize": 806
+    },
+    {
+      "url": "https://img.bitunix.com/config/kv/721799.png",
+      "initiatorType": "img",
+      "durationMs": 336,
+      "transferSize": 544
+    },
+    {
+      "url": "https://img.bitunix.com/config/kv/1784279371647121.png",
+      "initiatorType": "img",
+      "durationMs": 352,
+      "transferSize": 696
+    },
+    {
+      "url": "https://img.bitunix.com/config/kv/ac408263-6116-4137-a53a-d1d75712436a_4bce0ce0_1793935961441.jpeg",
+      "initiatorType": "img",
+      "durationMs": 362,
+      "transferSize": 722
+    },
+    {
+      "url": "https://img.bitunix.com/config/kv/967311.png",
+      "initiatorType": "img",
+      "durationMs": 1371,
+      "transferSize": 674
+    },
+    {
+      "url": "https://img.bitunix.com/config/kv/1783042543148430.png",
+      "initiatorType": "img",
+      "durationMs": 287,
+      "transferSize": 684
+    },
+    {
+      "url": "https://img.bitunix.com/config/kv/7556035b-357a-4505-bd3c-a684e2569279_8c40dfc9_1793587065123.png",
+      "initiatorType": "img",
+      "durationMs": 384,
+      "transferSize": 1544
+    },
+    {
+      "url": "https://img.bitunix.com/config/kv/1780473068250143.png",
+      "initiatorType": "img",
+      "durationMs": 1550,
+      "transferSize": 726
+    },
+    {
+      "url": "https://img.bitunix.com/config/kv/5c27bc5f-4440-4ea2-96be-38e96f470f85_ba46e471_1790587698953.png",
+      "initiatorType": "img",
+      "durationMs": 1414,
+      "transferSize": 918
+    },
+    {
+      "url": "https://img.bitunix.com/config/kv/925195.png",
+      "initiatorType": "img",
+      "durationMs": 362,
+      "transferSize": 1000
+    },
+    {
+      "url": "https://img.bitunix.com/config/kv/1779961811367301.jpg",
+      "initiatorType": "img",
+      "durationMs": 307,
+      "transferSize": 1014
+    },
+    {
+      "url": "https://img.bitunix.com/config/kv/1781231062504379.png",
+      "initiatorType": "img",
+      "durationMs": 374,
+      "transferSize": 706
+    },
+    {
+      "url": "https://img.bitunix.com/config/kv/377cf3d9-6eec-4d97-be0c-d8a8e965f034_a71680a9_1787114629246.png",
+      "initiatorType": "img",
+      "durationMs": 315,
+      "transferSize": 594
+    },
+    {
+      "url": "https://img.bitunix.com/config/kv/fc244c2a-7d18-4c9b-b231-723c39aaf41d_9183cdb7_1788163214020.png",
+      "initiatorType": "img",
+      "durationMs": 1553,
+      "transferSize": 1124
+    },
+    {
+      "url": "https://img.bitunix.com/config/kv/c7064585-d983-4a51-99bd-e8bedeec2629_64fda839_1787638747215.png",
+      "initiatorType": "img",
+      "durationMs": 272,
+      "transferSize": 716
+    },
+    {
+      "url": "https://img.bitunix.com/config/kv/1783649468267815.png",
+      "initiatorType": "img",
+      "durationMs": 2580,
+      "transferSize": 712
+    },
+    {
+      "url": "https://img.bitunix.com/config/kv/778761.png",
+      "initiatorType": "img",
+      "durationMs": 376,
+      "transferSize": 1054
+    },
+    {
+      "url": "https://img.bitunix.com/config/kv/5bccb95e-ccea-49e5-9170-247c773726a9_cac63a62_1791792881487.png",
+      "initiatorType": "img",
+      "durationMs": 1666,
+      "transferSize": 1328
+    },
+    {
+      "url": "https://img.bitunix.com/config/kv/1782181698704499.png",
+      "initiatorType": "img",
+      "durationMs": 1532,
+      "transferSize": 770
+    },
+    {
+      "url": "https://api.bitunix.com/welfare/welfare/api/private/v2/prize/not_activated_amount_by_coin",
+      "initiatorType": "fetch",
+      "durationMs": 2089,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/history-position-_43A3kvj.js",
+      "initiatorType": "script",
+      "durationMs": 334,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/symbolInfo.vue-CxW7ZlwW.js",
+      "initiatorType": "script",
+      "durationMs": 299,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/TableBottomHint-UtUHrHL5.js",
+      "initiatorType": "script",
+      "durationMs": 315,
+      "transferSize": 0
+    },
+    {
+      "url": "https://api.bitunix.com/futures-toc/api/private/v1/position/history/scroll",
+      "initiatorType": "fetch",
+      "durationMs": 882,
+      "transferSize": 0
+    },
+    {
+      "url": "https://img.bitunix.com/config/kv/898782.png",
+      "initiatorType": "img",
+      "durationMs": 3821,
+      "transferSize": 0
+    },
+    {
+      "url": "https://img.bitunix.com/config/kv/871946.png",
+      "initiatorType": "img",
+      "durationMs": 3836,
+      "transferSize": 0
+    },
+    {
+      "url": "https://img.bitunix.com/config/kv/170879.png",
+      "initiatorType": "img",
+      "durationMs": 3844,
+      "transferSize": 0
+    },
+    {
+      "url": "https://img.bitunix.com/config/kv/300244.png",
+      "initiatorType": "img",
+      "durationMs": 3853,
+      "transferSize": 0
+    },
+    {
+      "url": "https://api.bitunix.com/futures-toc-core/api/private/v1/market/config/leverage/update",
+      "initiatorType": "fetch",
+      "durationMs": 582,
+      "transferSize": 0
+    },
+    {
+      "url": "https://api.bitunix.com/futures-toc-core/api/private/v1/order/market",
+      "initiatorType": "fetch",
+      "durationMs": 730,
+      "transferSize": 0
+    },
+    {
+      "url": "https://api.bitunix.com/futures-toc-core/api/private/v1/stop-profit-loss/position/create",
+      "initiatorType": "fetch",
+      "durationMs": 605,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/tpsl.CAWMkWiI.mp3",
+      "initiatorType": "audio",
+      "durationMs": 1573,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/entrust-past-list-Ct8HOnkA.js",
+      "initiatorType": "script",
+      "durationMs": 356,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/sort-JUCw5Ezr.js",
+      "initiatorType": "script",
+      "durationMs": 370,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/table-header.vue-DZK8KMy2.js",
+      "initiatorType": "script",
+      "durationMs": 372,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/coupon-CusRCEU9.js",
+      "initiatorType": "script",
+      "durationMs": 376,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/order-header.vue-BPs5zta7.js",
+      "initiatorType": "script",
+      "durationMs": 377,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/move_profit_loss.vue-Cs8SXD37.js",
+      "initiatorType": "script",
+      "durationMs": 439,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/plan-trigger-cell.vue-DQhkNYFB.js",
+      "initiatorType": "script",
+      "durationMs": 435,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/triggerPrice.vue-CU9FeXuD.js",
+      "initiatorType": "script",
+      "durationMs": 433,
+      "transferSize": 0
+    },
+    {
+      "url": "https://api.bitunix.com/futures-toc/api/private/v1/order/history/scroll",
+      "initiatorType": "fetch",
+      "durationMs": 662,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/history-deals-CfOmFGn_.js",
+      "initiatorType": "script",
+      "durationMs": 1136,
+      "transferSize": 0
+    },
+    {
+      "url": "https://api.bitunix.com/futures-toc/api/private/v1/order/deals/scroll",
+      "initiatorType": "fetch",
+      "durationMs": 3629,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/MobileFuturesContent-XoGLDZgD.js",
+      "initiatorType": "script",
+      "durationMs": 1327,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/useFutureAssets-Dfm6E_Sq.js",
+      "initiatorType": "script",
+      "durationMs": 1541,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/commonly-functions-BScBQzMl.js",
+      "initiatorType": "script",
+      "durationMs": 770,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/live-data-jq4U3b_A.js",
+      "initiatorType": "script",
+      "durationMs": 600,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/currency-information-CdpWDJWq.js",
+      "initiatorType": "script",
+      "durationMs": 585,
+      "transferSize": 0
+    }
+  ],
+  "errors": [],
+  "safety": {
+    "readOnly": true,
+    "noOrdersSent": true,
+    "noDOMInteractions": true,
+    "noStorageRead": true,
+    "noCookiesRead": true,
+    "noFetchOrWebSocketInterception": true,
+    "sensitiveInputValuesExcluded": true,
+    "queryStringsRemovedFromURLs": true
+  },
+  "finishedAt": "2026-11-14T16:29:07.101Z"
+}
