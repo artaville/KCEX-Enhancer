@@ -1,0 +1,3581 @@
+{
+  "diagnostic": "BITUNIX_CHART_INSPECTOR_02",
+  "startedAt": "2026-11-14T16:34:04.158Z",
+  "page": {
+    "host": "www.bitunix.com",
+    "path": "/contract-trade/XAUTUSDT",
+    "title": "3,826.16 | XAUTUSDT Futures Exchange - Crypto Futures | Bitunix",
+    "readyState": "complete",
+    "viewport": {
+      "width": 710,
+      "height": 703,
+      "devicePixelRatio": 1.25
+    },
+    "scroll": {
+      "x": 0,
+      "y": 0
+    }
+  },
+  "chartNamespace": {
+    "path": "window.TradingView",
+    "type": "Object",
+    "keyCount": 1,
+    "properties": [
+      {
+        "name": "version",
+        "type": "function",
+        "constructor": "Function",
+        "functionName": "oH"
+      }
+    ],
+    "relevantChildren": []
+  },
+  "chartGlobals": [
+    {
+      "name": "TradingView",
+      "propertyType": "object",
+      "constructor": "Object",
+      "functionName": null,
+      "objectTree": {
+        "path": "window.TradingView",
+        "type": "Object",
+        "keyCount": 1,
+        "properties": [
+          {
+            "name": "version",
+            "type": "function",
+            "constructor": "Function",
+            "functionName": "oH"
+          }
+        ],
+        "relevantChildren": []
+      }
+    },
+    {
+      "name": "MockSocketClient",
+      "propertyType": "function",
+      "constructor": "Object",
+      "functionName": "b",
+      "objectTree": {
+        "path": "window.MockSocketClient",
+        "type": "Object",
+        "keyCount": 3,
+        "properties": [
+          {
+            "name": "length",
+            "type": "number",
+            "constructor": "number"
+          },
+          {
+            "name": "name",
+            "type": "string",
+            "constructor": "string"
+          },
+          {
+            "name": "prototype",
+            "type": "object",
+            "constructor": "C"
+          }
+        ],
+        "relevantChildren": []
+      }
+    },
+    {
+      "name": "__VUE__",
+      "propertyType": "boolean",
+      "constructor": "boolean",
+      "functionName": null
+    },
+    {
+      "name": "SVGTSpanElement",
+      "propertyType": "function",
+      "constructor": "Object",
+      "functionName": "SVGTSpanElement",
+      "objectTree": {
+        "path": "window.SVGTSpanElement",
+        "type": "Object",
+        "keyCount": 3,
+        "properties": [
+          {
+            "name": "length",
+            "type": "number",
+            "constructor": "number"
+          },
+          {
+            "name": "name",
+            "type": "string",
+            "constructor": "string"
+          },
+          {
+            "name": "prototype",
+            "type": "object",
+            "constructor": "SVGTextPositioningElement"
+          }
+        ],
+        "relevantChildren": []
+      }
+    },
+    {
+      "name": "HTMLSpanElement",
+      "propertyType": "function",
+      "constructor": "Object",
+      "functionName": "HTMLSpanElement",
+      "objectTree": {
+        "path": "window.HTMLSpanElement",
+        "type": "Object",
+        "keyCount": 3,
+        "properties": [
+          {
+            "name": "length",
+            "type": "number",
+            "constructor": "number"
+          },
+          {
+            "name": "name",
+            "type": "string",
+            "constructor": "string"
+          },
+          {
+            "name": "prototype",
+            "type": "object",
+            "constructor": "HTMLElement"
+          }
+        ],
+        "relevantChildren": []
+      }
+    }
+  ],
+  "dom": {
+    "totalScanned": 3157,
+    "shadowRoots": null,
+    "chartCandidates": [
+      {
+        "tag": "DIV",
+        "id": null,
+        "className": "kline-title md:ps-20 color-text-1 font-700 fs-18 md:leh-40 relative text-nowrap cursor-pointer max-md:flex max-md:items-center",
+        "role": null,
+        "title": "",
+        "ariaLabel": "",
+        "text": "XAUTUSDT 0 Fees",
+        "rect": {
+          "x": 15,
+          "y": 62,
+          "width": 120,
+          "height": 44
+        },
+        "attributes": {
+          "data-v-c77e59b3": "",
+          "class": "kline-title md:ps-20 color-text-1 font-700 fs-18 md:leh-40 relative text-nowrap cursor-pointer max-md:flex max"
+        },
+        "parents": [
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "kline-title md:ps-20 color-text-1 font-700 fs-18 md:leh-40 relative text-nowrap cursor-pointer max-md:flex max-md:items-center"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "flex items-center shrink-0"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "flex items-center gap-8 py-14 px-15 min-w-0 overflow-hidden"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "color-bg-2 flow-root sticky top-0 z-11"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "color-text-1 pb-[32px] color-bg-1 max-md:color-bg-2"
+          }
+        ]
+      },
+      {
+        "tag": "DIV",
+        "id": null,
+        "className": "pr-0! pl-0! w-full! color-bg-2 overflow-x-auto overflow-y-scroll trading-panel-container-new pr-0! pl-0! w-full!",
+        "role": null,
+        "title": "",
+        "ariaLabel": "",
+        "text": "Futures Grid Cross-Multi 8X 8X Market Available 5.6401 USDT Price 3828.35 USDT Cost USDT TP / SL Ope",
+        "rect": {
+          "x": 15,
+          "y": 120,
+          "width": 270,
+          "height": 533
+        },
+        "attributes": {
+          "data-v-663a940b": "",
+          "data-v-68f34279": "",
+          "class": "pr-0! pl-0! w-full! color-bg-2 overflow-x-auto overflow-y-scroll trading-panel-container-new pr-0! pl-0! w-ful",
+          "style": "width: 100%; height: 100%;"
+        },
+        "parents": [
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "pr-0! pl-0! w-full! color-bg-2 overflow-x-auto overflow-y-scroll trading-panel-container-new pr-0! pl-0! w-full!"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "w-40% max-sm:w-50%"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "flex px-15px pb-30 gap-15 color-bg-2"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": ""
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "color-text-1 pb-[32px] color-bg-1 max-md:color-bg-2"
+          }
+        ]
+      },
+      {
+        "tag": "DIV",
+        "id": null,
+        "className": "bitunix-tab-panel",
+        "role": null,
+        "title": "",
+        "ariaLabel": "",
+        "text": "Cross-Multi 8X 8X Market Available 5.6401 USDT Price 3828.35 USDT Cost USDT TP / SL Open Long Open S",
+        "rect": {
+          "x": 15,
+          "y": 160,
+          "width": 264,
+          "height": 493
+        },
+        "attributes": {
+          "data-v-942aa0d1": "",
+          "class": "bitunix-tab-panel"
+        },
+        "parents": [
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "bitunix-tab-panel"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "bitunix-tabs-content"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "bitunix-tabs-scoped futures-tab max-md:futures-tab-mini"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "pr-0! pl-0! w-full! color-bg-2 overflow-x-auto overflow-y-scroll trading-panel-container-new pr-0! pl-0! w-full!"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "w-40% max-sm:w-50%"
+          }
+        ]
+      },
+      {
+        "tag": "CANVAS",
+        "id": null,
+        "className": "bitunix-orderbook-canvas",
+        "role": null,
+        "title": "",
+        "ariaLabel": "",
+        "text": "",
+        "rect": {
+          "x": 300,
+          "y": 199,
+          "width": 389,
+          "height": 382
+        },
+        "attributes": {
+          "data-v-a03a7a41": "",
+          "class": "bitunix-orderbook-canvas",
+          "height": "477.5",
+          "width": "486.25"
+        },
+        "parents": [
+          {
+            "tag": "CANVAS",
+            "id": null,
+            "className": "bitunix-orderbook-canvas"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "bitunix-orderbook orderbook-6ce6e899"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "content-443E9745"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "container-3A8FA0CB flex-1"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "flex flex-col h100% w100% c8beeb859"
+          }
+        ]
+      },
+      {
+        "tag": "CANVAS",
+        "id": null,
+        "className": "bitunix-orderbook-canvas",
+        "role": null,
+        "title": "",
+        "ariaLabel": "",
+        "text": "",
+        "rect": {
+          "x": 300,
+          "y": 199,
+          "width": 389,
+          "height": 382
+        },
+        "attributes": {
+          "data-v-a03a7a41": "",
+          "class": "bitunix-orderbook-canvas",
+          "style": "z-index: 4;",
+          "height": "477.5",
+          "width": "486.25"
+        },
+        "parents": [
+          {
+            "tag": "CANVAS",
+            "id": null,
+            "className": "bitunix-orderbook-canvas"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "bitunix-orderbook orderbook-6ce6e899"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "content-443E9745"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "container-3A8FA0CB flex-1"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "flex flex-col h100% w100% c8beeb859"
+          }
+        ]
+      }
+    ],
+    "largeContainers": [
+      {
+        "tag": "HTML",
+        "id": null,
+        "className": "",
+        "role": null,
+        "title": "",
+        "ariaLabel": "",
+        "text": "XAUTUSDT 0 Fees 0.00% Futures Grid Cross-Multi 8X 8X Market Available 5.6401 USDT Price 3828.35 USDT",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 704,
+          "height": 1327
+        },
+        "attributes": {
+          "lang": "en-us",
+          "dir": "ltr",
+          "style": "--future-change-leverate-dot-border-color: rgb(#b9f641);"
+        },
+        "parents": [
+          {
+            "tag": "HTML",
+            "id": null,
+            "className": ""
+          }
+        ],
+        "chartRelated": false
+      },
+      {
+        "tag": "BODY",
+        "id": null,
+        "className": "zendesk-launcher-hidden",
+        "role": null,
+        "title": "",
+        "ariaLabel": "",
+        "text": "XAUTUSDT 0 Fees 0.00% Futures Grid Cross-Multi 8X 8X Market Available 5.6401 USDT Price 3828.35 USDT",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 704,
+          "height": 1327
+        },
+        "attributes": {
+          "arco-theme": "dark",
+          "class": "zendesk-launcher-hidden",
+          "style": ""
+        },
+        "parents": [
+          {
+            "tag": "BODY",
+            "id": null,
+            "className": "zendesk-launcher-hidden"
+          },
+          {
+            "tag": "HTML",
+            "id": null,
+            "className": ""
+          }
+        ],
+        "chartRelated": false
+      },
+      {
+        "tag": "DIV",
+        "id": "__nuxt",
+        "className": "",
+        "role": null,
+        "title": "",
+        "ariaLabel": "",
+        "text": "XAUTUSDT 0 Fees 0.00% Futures Grid Cross-Multi 8X 8X Market Available 5.6401 USDT Price 3828.35 USDT",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 704,
+          "height": 1327
+        },
+        "attributes": {
+          "id": "__nuxt"
+        },
+        "parents": [
+          {
+            "tag": "DIV",
+            "id": "__nuxt",
+            "className": ""
+          },
+          {
+            "tag": "BODY",
+            "id": null,
+            "className": "zendesk-launcher-hidden"
+          },
+          {
+            "tag": "HTML",
+            "id": null,
+            "className": ""
+          }
+        ],
+        "chartRelated": false
+      },
+      {
+        "tag": "DIV",
+        "id": null,
+        "className": "bitunix-layout bitunix-layout-contract-only bx-color-bg-fg bitunix-layout--bg-big-page",
+        "role": null,
+        "title": "",
+        "ariaLabel": "",
+        "text": "XAUTUSDT 0 Fees 0.00% Futures Grid Cross-Multi 8X 8X Market Available 5.6401 USDT Price 3828.35 USDT",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 704,
+          "height": 1327
+        },
+        "attributes": {
+          "class": "bitunix-layout bitunix-layout-contract-only bx-color-bg-fg bitunix-layout--bg-big-page",
+          "data-v-504aaf3f": ""
+        },
+        "parents": [
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "bitunix-layout bitunix-layout-contract-only bx-color-bg-fg bitunix-layout--bg-big-page"
+          },
+          {
+            "tag": "DIV",
+            "id": "__nuxt",
+            "className": ""
+          },
+          {
+            "tag": "BODY",
+            "id": null,
+            "className": "zendesk-launcher-hidden"
+          },
+          {
+            "tag": "HTML",
+            "id": null,
+            "className": ""
+          }
+        ],
+        "chartRelated": false
+      },
+      {
+        "tag": "SECTION",
+        "id": null,
+        "className": "multi-menu-drawer",
+        "role": null,
+        "title": "",
+        "ariaLabel": "",
+        "text": "Debugger toolanonymity_UID: Buy CryptoOne Click Buy Fiat Deposit Credit/Debit Card P2P Trading Third",
+        "rect": {
+          "x": 704,
+          "y": 0,
+          "width": 704,
+          "height": 703
+        },
+        "attributes": {
+          "class": "multi-menu-drawer",
+          "aria-hidden": "true",
+          "data-v-e99655fd": ""
+        },
+        "parents": [
+          {
+            "tag": "SECTION",
+            "id": null,
+            "className": "multi-menu-drawer"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "multi-menu-container h-100%"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "bitunix-header-mobile-flash-guard header-setting-slot h-100% lg:mx-12"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "header-right-mobile-cluster--compact header-right-mobile-cluster flex-center"
+          },
+          {
+            "tag": "SECTION",
+            "id": null,
+            "className": "max-md:gap-x-16 header-right relative z-1 h-100% flex shrink-0 items-center justify-end color-text-head-1 pe-12 max-md:pe-0"
+          }
+        ],
+        "chartRelated": false
+      },
+      {
+        "tag": "SECTION",
+        "id": null,
+        "className": "overflow-auto select-none px-15 h-calc100-64 pb-60",
+        "role": null,
+        "title": "",
+        "ariaLabel": "",
+        "text": "Buy CryptoOne Click Buy Fiat Deposit Credit/Debit Card P2P Trading Third-party MarketsOpportunities ",
+        "rect": {
+          "x": 704,
+          "y": 64,
+          "width": 704,
+          "height": 639
+        },
+        "attributes": {
+          "class": "overflow-auto select-none px-15 h-calc100-64 pb-60"
+        },
+        "parents": [
+          {
+            "tag": "SECTION",
+            "id": null,
+            "className": "overflow-auto select-none px-15 h-calc100-64 pb-60"
+          },
+          {
+            "tag": "SECTION",
+            "id": null,
+            "className": "multi-menu-drawer"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "multi-menu-container h-100%"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "bitunix-header-mobile-flash-guard header-setting-slot h-100% lg:mx-12"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "header-right-mobile-cluster--compact header-right-mobile-cluster flex-center"
+          }
+        ],
+        "chartRelated": false
+      },
+      {
+        "tag": "DIV",
+        "id": null,
+        "className": "arco-collapse arco-collapse-borderless multi-menu-collapse",
+        "role": null,
+        "title": "",
+        "ariaLabel": "",
+        "text": "Buy CryptoOne Click Buy Fiat Deposit Credit/Debit Card P2P Trading Third-party MarketsOpportunities ",
+        "rect": {
+          "x": 719,
+          "y": 64,
+          "width": 668,
+          "height": 580
+        },
+        "attributes": {
+          "class": "arco-collapse arco-collapse-borderless multi-menu-collapse",
+          "data-v-9cf46118": ""
+        },
+        "parents": [
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "arco-collapse arco-collapse-borderless multi-menu-collapse"
+          },
+          {
+            "tag": "SECTION",
+            "id": null,
+            "className": "overflow-auto select-none px-15 h-calc100-64 pb-60"
+          },
+          {
+            "tag": "SECTION",
+            "id": null,
+            "className": "multi-menu-drawer"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "multi-menu-container h-100%"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "bitunix-header-mobile-flash-guard header-setting-slot h-100% lg:mx-12"
+          }
+        ],
+        "chartRelated": false
+      },
+      {
+        "tag": "DIV",
+        "id": "partial-container",
+        "className": "client-page max-md:pb-115",
+        "role": null,
+        "title": "",
+        "ariaLabel": "",
+        "text": "XAUTUSDT 0 Fees 0.00% Futures Grid Cross-Multi 8X 8X Market Available 5.6401 USDT Price 3828.35 USDT",
+        "rect": {
+          "x": 0,
+          "y": 48,
+          "width": 704,
+          "height": 1164
+        },
+        "attributes": {
+          "id": "partial-container",
+          "data-monitor-page-content": "",
+          "class": "client-page max-md:pb-115",
+          "data-v-504aaf3f": ""
+        },
+        "parents": [
+          {
+            "tag": "DIV",
+            "id": "partial-container",
+            "className": "client-page max-md:pb-115"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "bitunix-layout bitunix-layout-contract-only bx-color-bg-fg bitunix-layout--bg-big-page"
+          },
+          {
+            "tag": "DIV",
+            "id": "__nuxt",
+            "className": ""
+          },
+          {
+            "tag": "BODY",
+            "id": null,
+            "className": "zendesk-launcher-hidden"
+          },
+          {
+            "tag": "HTML",
+            "id": null,
+            "className": ""
+          }
+        ],
+        "chartRelated": false
+      },
+      {
+        "tag": "SECTION",
+        "id": null,
+        "className": "relative",
+        "role": null,
+        "title": "",
+        "ariaLabel": "",
+        "text": "XAUTUSDT 0 Fees 0.00% Futures Grid Cross-Multi 8X 8X Market Available 5.6401 USDT Price 3828.35 USDT",
+        "rect": {
+          "x": 0,
+          "y": 48,
+          "width": 704,
+          "height": 1164
+        },
+        "attributes": {
+          "class": "relative",
+          "style": "background-color:var(--color_bg_fg);",
+          "data-v-504aaf3f": ""
+        },
+        "parents": [
+          {
+            "tag": "SECTION",
+            "id": null,
+            "className": "relative"
+          },
+          {
+            "tag": "DIV",
+            "id": "partial-container",
+            "className": "client-page max-md:pb-115"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "bitunix-layout bitunix-layout-contract-only bx-color-bg-fg bitunix-layout--bg-big-page"
+          },
+          {
+            "tag": "DIV",
+            "id": "__nuxt",
+            "className": ""
+          },
+          {
+            "tag": "BODY",
+            "id": null,
+            "className": "zendesk-launcher-hidden"
+          }
+        ],
+        "chartRelated": false
+      },
+      {
+        "tag": "DIV",
+        "id": null,
+        "className": "max-md:h-full",
+        "role": null,
+        "title": "",
+        "ariaLabel": "",
+        "text": "XAUTUSDT 0 Fees 0.00% Futures Grid Cross-Multi 8X 8X Market Available 5.6401 USDT Price 3828.35 USDT",
+        "rect": {
+          "x": 0,
+          "y": 48,
+          "width": 704,
+          "height": 1164
+        },
+        "attributes": {
+          "class": "max-md:h-full"
+        },
+        "parents": [
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "max-md:h-full"
+          },
+          {
+            "tag": "SECTION",
+            "id": null,
+            "className": "relative"
+          },
+          {
+            "tag": "DIV",
+            "id": "partial-container",
+            "className": "client-page max-md:pb-115"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "bitunix-layout bitunix-layout-contract-only bx-color-bg-fg bitunix-layout--bg-big-page"
+          },
+          {
+            "tag": "DIV",
+            "id": "__nuxt",
+            "className": ""
+          }
+        ],
+        "chartRelated": false
+      },
+      {
+        "tag": "DIV",
+        "id": null,
+        "className": "reveal-wrapper",
+        "role": null,
+        "title": "",
+        "ariaLabel": "",
+        "text": "XAUTUSDT 0 Fees 0.00% Futures Grid Cross-Multi 8X 8X Market Available 5.6401 USDT Price 3828.35 USDT",
+        "rect": {
+          "x": 0,
+          "y": 48,
+          "width": 704,
+          "height": 1164
+        },
+        "attributes": {
+          "data-v-f8a2fa51": "",
+          "class": "reveal-wrapper",
+          "style": "--reveal-delay: 0ms; --sk-base: rgba(255,255,255,0.02); --sk-hi: rgba(255,255,255,0.06); --sk-duration: 0s; --"
+        },
+        "parents": [
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "reveal-wrapper"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "max-md:h-full"
+          },
+          {
+            "tag": "SECTION",
+            "id": null,
+            "className": "relative"
+          },
+          {
+            "tag": "DIV",
+            "id": "partial-container",
+            "className": "client-page max-md:pb-115"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "bitunix-layout bitunix-layout-contract-only bx-color-bg-fg bitunix-layout--bg-big-page"
+          }
+        ],
+        "chartRelated": false
+      },
+      {
+        "tag": "DIV",
+        "id": null,
+        "className": "reveal-content reveal-in",
+        "role": null,
+        "title": "",
+        "ariaLabel": "",
+        "text": "XAUTUSDT 0 Fees 0.00% Futures Grid Cross-Multi 8X 8X Market Available 5.6401 USDT Price 3828.35 USDT",
+        "rect": {
+          "x": 0,
+          "y": 48,
+          "width": 704,
+          "height": 1164
+        },
+        "attributes": {
+          "data-v-f8a2fa51": "",
+          "class": "reveal-content reveal-in"
+        },
+        "parents": [
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "reveal-content reveal-in"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "reveal-wrapper"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "max-md:h-full"
+          },
+          {
+            "tag": "SECTION",
+            "id": null,
+            "className": "relative"
+          },
+          {
+            "tag": "DIV",
+            "id": "partial-container",
+            "className": "client-page max-md:pb-115"
+          }
+        ],
+        "chartRelated": false
+      },
+      {
+        "tag": "DIV",
+        "id": null,
+        "className": "color-text-1 pb-[32px] color-bg-1 max-md:color-bg-2",
+        "role": null,
+        "title": "",
+        "ariaLabel": "",
+        "text": "XAUTUSDT 0 Fees 0.00% Futures Grid Cross-Multi 8X 8X Market Available 5.6401 USDT Price 3828.35 USDT",
+        "rect": {
+          "x": 0,
+          "y": 48,
+          "width": 704,
+          "height": 1164
+        },
+        "attributes": {
+          "data-v-68f34279": "",
+          "class": "color-text-1 pb-[32px] color-bg-1 max-md:color-bg-2"
+        },
+        "parents": [
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "color-text-1 pb-[32px] color-bg-1 max-md:color-bg-2"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "reveal-content reveal-in"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "reveal-wrapper"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "max-md:h-full"
+          },
+          {
+            "tag": "SECTION",
+            "id": null,
+            "className": "relative"
+          }
+        ],
+        "chartRelated": false
+      },
+      {
+        "tag": "DIV",
+        "id": null,
+        "className": "",
+        "role": null,
+        "title": "",
+        "ariaLabel": "",
+        "text": "Futures Grid Cross-Multi 8X 8X Market Available 5.6401 USDT Price 3828.35 USDT Cost USDT TP / SL Ope",
+        "rect": {
+          "x": 0,
+          "y": 120,
+          "width": 704,
+          "height": 1061
+        },
+        "attributes": {
+          "data-v-68f34279": ""
+        },
+        "parents": [
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": ""
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "color-text-1 pb-[32px] color-bg-1 max-md:color-bg-2"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "reveal-content reveal-in"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "reveal-wrapper"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "max-md:h-full"
+          }
+        ],
+        "chartRelated": false
+      },
+      {
+        "tag": "DIV",
+        "id": null,
+        "className": "flex px-15px pb-30 gap-15 color-bg-2",
+        "role": null,
+        "title": "",
+        "ariaLabel": "",
+        "text": "Futures Grid Cross-Multi 8X 8X Market Available 5.6401 USDT Price 3828.35 USDT Cost USDT TP / SL Ope",
+        "rect": {
+          "x": 0,
+          "y": 120,
+          "width": 704,
+          "height": 563
+        },
+        "attributes": {
+          "data-v-68f34279": "",
+          "class": "flex px-15px pb-30 gap-15 color-bg-2"
+        },
+        "parents": [
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "flex px-15px pb-30 gap-15 color-bg-2"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": ""
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "color-text-1 pb-[32px] color-bg-1 max-md:color-bg-2"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "reveal-content reveal-in"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "reveal-wrapper"
+          }
+        ],
+        "chartRelated": false
+      },
+      {
+        "tag": "DIV",
+        "id": null,
+        "className": "w-40% max-sm:w-50%",
+        "role": null,
+        "title": "",
+        "ariaLabel": "",
+        "text": "Futures Grid Cross-Multi 8X 8X Market Available 5.6401 USDT Price 3828.35 USDT Cost USDT TP / SL Ope",
+        "rect": {
+          "x": 15,
+          "y": 120,
+          "width": 270,
+          "height": 533
+        },
+        "attributes": {
+          "data-v-68f34279": "",
+          "class": "w-40% max-sm:w-50%"
+        },
+        "parents": [
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "w-40% max-sm:w-50%"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "flex px-15px pb-30 gap-15 color-bg-2"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": ""
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "color-text-1 pb-[32px] color-bg-1 max-md:color-bg-2"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "reveal-content reveal-in"
+          }
+        ],
+        "chartRelated": false
+      },
+      {
+        "tag": "DIV",
+        "id": null,
+        "className": "pr-0! pl-0! w-full! color-bg-2 overflow-x-auto overflow-y-scroll trading-panel-container-new pr-0! pl-0! w-full!",
+        "role": null,
+        "title": "",
+        "ariaLabel": "",
+        "text": "Futures Grid Cross-Multi 8X 8X Market Available 5.6401 USDT Price 3828.35 USDT Cost USDT TP / SL Ope",
+        "rect": {
+          "x": 15,
+          "y": 120,
+          "width": 270,
+          "height": 533
+        },
+        "attributes": {
+          "data-v-663a940b": "",
+          "data-v-68f34279": "",
+          "class": "pr-0! pl-0! w-full! color-bg-2 overflow-x-auto overflow-y-scroll trading-panel-container-new pr-0! pl-0! w-ful",
+          "style": "width: 100%; height: 100%;"
+        },
+        "parents": [
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "pr-0! pl-0! w-full! color-bg-2 overflow-x-auto overflow-y-scroll trading-panel-container-new pr-0! pl-0! w-full!"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "w-40% max-sm:w-50%"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "flex px-15px pb-30 gap-15 color-bg-2"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": ""
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "color-text-1 pb-[32px] color-bg-1 max-md:color-bg-2"
+          }
+        ],
+        "chartRelated": true
+      },
+      {
+        "tag": "DIV",
+        "id": null,
+        "className": "bitunix-tabs-scoped futures-tab max-md:futures-tab-mini",
+        "role": null,
+        "title": "",
+        "ariaLabel": "",
+        "text": "Futures Grid Cross-Multi 8X 8X Market Available 5.6401 USDT Price 3828.35 USDT Cost USDT TP / SL Ope",
+        "rect": {
+          "x": 15,
+          "y": 120,
+          "width": 264,
+          "height": 533
+        },
+        "attributes": {
+          "data-v-942aa0d1": "",
+          "data-v-663a940b": "",
+          "class": "bitunix-tabs-scoped futures-tab max-md:futures-tab-mini"
+        },
+        "parents": [
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "bitunix-tabs-scoped futures-tab max-md:futures-tab-mini"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "pr-0! pl-0! w-full! color-bg-2 overflow-x-auto overflow-y-scroll trading-panel-container-new pr-0! pl-0! w-full!"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "w-40% max-sm:w-50%"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "flex px-15px pb-30 gap-15 color-bg-2"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": ""
+          }
+        ],
+        "chartRelated": false
+      },
+      {
+        "tag": "DIV",
+        "id": null,
+        "className": "bitunix-tabs-content",
+        "role": null,
+        "title": "",
+        "ariaLabel": "",
+        "text": "Cross-Multi 8X 8X Market Available 5.6401 USDT Price 3828.35 USDT Cost USDT TP / SL Open Long Open S",
+        "rect": {
+          "x": 15,
+          "y": 160,
+          "width": 264,
+          "height": 493
+        },
+        "attributes": {
+          "data-v-942aa0d1": "",
+          "class": "bitunix-tabs-content"
+        },
+        "parents": [
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "bitunix-tabs-content"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "bitunix-tabs-scoped futures-tab max-md:futures-tab-mini"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "pr-0! pl-0! w-full! color-bg-2 overflow-x-auto overflow-y-scroll trading-panel-container-new pr-0! pl-0! w-full!"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "w-40% max-sm:w-50%"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "flex px-15px pb-30 gap-15 color-bg-2"
+          }
+        ],
+        "chartRelated": false
+      },
+      {
+        "tag": "DIV",
+        "id": null,
+        "className": "bitunix-tab-panel",
+        "role": null,
+        "title": "",
+        "ariaLabel": "",
+        "text": "Cross-Multi 8X 8X Market Available 5.6401 USDT Price 3828.35 USDT Cost USDT TP / SL Open Long Open S",
+        "rect": {
+          "x": 15,
+          "y": 160,
+          "width": 264,
+          "height": 493
+        },
+        "attributes": {
+          "data-v-942aa0d1": "",
+          "class": "bitunix-tab-panel"
+        },
+        "parents": [
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "bitunix-tab-panel"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "bitunix-tabs-content"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "bitunix-tabs-scoped futures-tab max-md:futures-tab-mini"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "pr-0! pl-0! w-full! color-bg-2 overflow-x-auto overflow-y-scroll trading-panel-container-new pr-0! pl-0! w-full!"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "w-40% max-sm:w-50%"
+          }
+        ],
+        "chartRelated": true
+      },
+      {
+        "tag": "DIV",
+        "id": null,
+        "className": "px-0px max-md:px-0 p-t12",
+        "role": null,
+        "title": "",
+        "ariaLabel": "",
+        "text": "Cross-Multi 8X 8X Market Available 5.6401 USDT Price 3828.35 USDT Cost USDT TP / SL Open Long Open S",
+        "rect": {
+          "x": 15,
+          "y": 160,
+          "width": 264,
+          "height": 493
+        },
+        "attributes": {
+          "data-v-663a940b": "",
+          "class": "px-0px max-md:px-0 p-t12"
+        },
+        "parents": [
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "px-0px max-md:px-0 p-t12"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "bitunix-tab-panel"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "bitunix-tabs-content"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "bitunix-tabs-scoped futures-tab max-md:futures-tab-mini"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "pr-0! pl-0! w-full! color-bg-2 overflow-x-auto overflow-y-scroll trading-panel-container-new pr-0! pl-0! w-full!"
+          }
+        ],
+        "chartRelated": false
+      },
+      {
+        "tag": "DIV",
+        "id": null,
+        "className": "pr-0! pl-0! w-full! exchange-info-container color-bg-2 overflow-hidden pr-0! pl-0! w-full!",
+        "role": null,
+        "title": "",
+        "ariaLabel": "",
+        "text": "Cross-Multi 8X 8X Market Available 5.6401 USDT Price 3828.35 USDT Cost USDT TP / SL Open Long Open S",
+        "rect": {
+          "x": 15,
+          "y": 172,
+          "width": 264,
+          "height": 481
+        },
+        "attributes": {
+          "data-v-ebedb2cb": "",
+          "data-v-663a940b": "",
+          "class": "pr-0! pl-0! w-full! exchange-info-container color-bg-2 overflow-hidden pr-0! pl-0! w-full!"
+        },
+        "parents": [
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "pr-0! pl-0! w-full! exchange-info-container color-bg-2 overflow-hidden pr-0! pl-0! w-full!"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "px-0px max-md:px-0 p-t12"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "bitunix-tab-panel"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "bitunix-tabs-content"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "bitunix-tabs-scoped futures-tab max-md:futures-tab-mini"
+          }
+        ],
+        "chartRelated": false
+      },
+      {
+        "tag": "DIV",
+        "id": null,
+        "className": "exchange-info-item-padding mt-16px",
+        "role": null,
+        "title": "",
+        "ariaLabel": "",
+        "text": "Market Available 5.6401 USDT Price 3828.35 USDT Cost USDT TP / SL Open Long Open Short Cost (USDT) 0",
+        "rect": {
+          "x": 15,
+          "y": 216,
+          "width": 264,
+          "height": 437
+        },
+        "attributes": {
+          "data-v-ebedb2cb": "",
+          "class": "exchange-info-item-padding mt-16px"
+        },
+        "parents": [
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "exchange-info-item-padding mt-16px"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "pr-0! pl-0! w-full! exchange-info-container color-bg-2 overflow-hidden pr-0! pl-0! w-full!"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "px-0px max-md:px-0 p-t12"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "bitunix-tab-panel"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "bitunix-tabs-content"
+          }
+        ],
+        "chartRelated": false
+      },
+      {
+        "tag": "DIV",
+        "id": null,
+        "className": "pos-relative",
+        "role": null,
+        "title": "",
+        "ariaLabel": "",
+        "text": "Market Available 5.6401 USDT Price 3828.35 USDT Cost USDT TP / SL Open Long Open Short Cost (USDT) 0",
+        "rect": {
+          "x": 15,
+          "y": 216,
+          "width": 264,
+          "height": 437
+        },
+        "attributes": {
+          "class": "pos-relative"
+        },
+        "parents": [
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "pos-relative"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "exchange-info-item-padding mt-16px"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "pr-0! pl-0! w-full! exchange-info-container color-bg-2 overflow-hidden pr-0! pl-0! w-full!"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "px-0px max-md:px-0 p-t12"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "bitunix-tab-panel"
+          }
+        ],
+        "chartRelated": false
+      },
+      {
+        "tag": "DIV",
+        "id": null,
+        "className": "",
+        "role": null,
+        "title": "",
+        "ariaLabel": "",
+        "text": "Available 5.6401 USDT Price 3828.35 USDT Cost USDT TP / SL Open Long Open Short Cost (USDT) 0.0 Cost",
+        "rect": {
+          "x": 15,
+          "y": 265,
+          "width": 264,
+          "height": 388
+        },
+        "attributes": {
+          "data-v-d3dee633": "",
+          "class": ""
+        },
+        "parents": [
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": ""
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "pos-relative"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "exchange-info-item-padding mt-16px"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "pr-0! pl-0! w-full! exchange-info-container color-bg-2 overflow-hidden pr-0! pl-0! w-full!"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "px-0px max-md:px-0 p-t12"
+          }
+        ],
+        "chartRelated": false
+      },
+      {
+        "tag": "DIV",
+        "id": null,
+        "className": "flex-1",
+        "role": null,
+        "title": "",
+        "ariaLabel": "",
+        "text": "Funding Rate/Countdown 0.0015% / 03:25:56 Price (USDT) Qty. (USDT) 3,828.35 3,828.35 B 49.99% S 50.0",
+        "rect": {
+          "x": 300,
+          "y": 120,
+          "width": 389,
+          "height": 533
+        },
+        "attributes": {
+          "data-v-68f34279": "",
+          "class": "flex-1",
+          "un-flex": "~ col"
+        },
+        "parents": [
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "flex-1"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "flex px-15px pb-30 gap-15 color-bg-2"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": ""
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "color-text-1 pb-[32px] color-bg-1 max-md:color-bg-2"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "reveal-content reveal-in"
+          }
+        ],
+        "chartRelated": false
+      },
+      {
+        "tag": "DIV",
+        "id": null,
+        "className": "flex-1",
+        "role": null,
+        "title": "",
+        "ariaLabel": "",
+        "text": "Price (USDT) Qty. (USDT) 3,828.35 3,828.35 B 49.99% S 50.01% 0.01",
+        "rect": {
+          "x": 300,
+          "y": 163,
+          "width": 389,
+          "height": 489
+        },
+        "attributes": {
+          "data-v-68f34279": "",
+          "class": "flex-1"
+        },
+        "parents": [
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "flex-1"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "flex-1"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "flex px-15px pb-30 gap-15 color-bg-2"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": ""
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "color-text-1 pb-[32px] color-bg-1 max-md:color-bg-2"
+          }
+        ],
+        "chartRelated": false
+      },
+      {
+        "tag": "DIV",
+        "id": null,
+        "className": "orderbook-container-7E807388 color-bg-2",
+        "role": null,
+        "title": "",
+        "ariaLabel": "",
+        "text": "Price (USDT) Qty. (USDT) 3,828.35 3,828.35 B 49.99% S 50.01% 0.01",
+        "rect": {
+          "x": 300,
+          "y": 163,
+          "width": 389,
+          "height": 489
+        },
+        "attributes": {
+          "data-v-73cabe11": "",
+          "data-v-68f34279": "",
+          "class": "orderbook-container-7E807388 color-bg-2"
+        },
+        "parents": [
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "orderbook-container-7E807388 color-bg-2"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "flex-1"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "flex-1"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "flex px-15px pb-30 gap-15 color-bg-2"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": ""
+          }
+        ],
+        "chartRelated": false
+      },
+      {
+        "tag": "DIV",
+        "id": null,
+        "className": "flex flex-col h100% w100% c8beeb859",
+        "role": null,
+        "title": "",
+        "ariaLabel": "",
+        "text": "Price (USDT) Qty. (USDT) 3,828.35 3,828.35 B 49.99% S 50.01% 0.01",
+        "rect": {
+          "x": 300,
+          "y": 163,
+          "width": 389,
+          "height": 489
+        },
+        "attributes": {
+          "data-v-ee04eee3": "",
+          "data-v-73cabe11": "",
+          "class": "flex flex-col h100% w100% c8beeb859"
+        },
+        "parents": [
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "flex flex-col h100% w100% c8beeb859"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "orderbook-container-7E807388 color-bg-2"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "flex-1"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "flex-1"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "flex px-15px pb-30 gap-15 color-bg-2"
+          }
+        ],
+        "chartRelated": false
+      },
+      {
+        "tag": "DIV",
+        "id": null,
+        "className": "container-3A8FA0CB flex-1",
+        "role": null,
+        "title": "",
+        "ariaLabel": "",
+        "text": "Price (USDT) Qty. (USDT) 3,828.35 3,828.35 B 49.99% S 50.01%",
+        "rect": {
+          "x": 300,
+          "y": 163,
+          "width": 389,
+          "height": 447
+        },
+        "attributes": {
+          "data-v-ee04eee3": "",
+          "class": "container-3A8FA0CB flex-1"
+        },
+        "parents": [
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "container-3A8FA0CB flex-1"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "flex flex-col h100% w100% c8beeb859"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "orderbook-container-7E807388 color-bg-2"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "flex-1"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "flex-1"
+          }
+        ],
+        "chartRelated": false
+      },
+      {
+        "tag": "DIV",
+        "id": null,
+        "className": "content-443E9745",
+        "role": null,
+        "title": "",
+        "ariaLabel": "",
+        "text": "3,828.35 3,828.35",
+        "rect": {
+          "x": 300,
+          "y": 199,
+          "width": 389,
+          "height": 382
+        },
+        "attributes": {
+          "data-v-ee04eee3": "",
+          "class": "content-443E9745"
+        },
+        "parents": [
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "content-443E9745"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "container-3A8FA0CB flex-1"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "flex flex-col h100% w100% c8beeb859"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "orderbook-container-7E807388 color-bg-2"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "flex-1"
+          }
+        ],
+        "chartRelated": false
+      },
+      {
+        "tag": "DIV",
+        "id": null,
+        "className": "bitunix-orderbook orderbook-6ce6e899",
+        "role": null,
+        "title": "",
+        "ariaLabel": "",
+        "text": "3,828.35 3,828.35",
+        "rect": {
+          "x": 300,
+          "y": 199,
+          "width": 389,
+          "height": 382
+        },
+        "attributes": {
+          "data-v-a03a7a41": "",
+          "data-v-ee04eee3": "",
+          "class": "bitunix-orderbook orderbook-6ce6e899",
+          "dir": "ltr",
+          "style": "justify-content: center;"
+        },
+        "parents": [
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "bitunix-orderbook orderbook-6ce6e899"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "content-443E9745"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "container-3A8FA0CB flex-1"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "flex flex-col h100% w100% c8beeb859"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "orderbook-container-7E807388 color-bg-2"
+          }
+        ],
+        "chartRelated": false
+      },
+      {
+        "tag": "CANVAS",
+        "id": null,
+        "className": "bitunix-orderbook-canvas",
+        "role": null,
+        "title": "",
+        "ariaLabel": "",
+        "text": "",
+        "rect": {
+          "x": 300,
+          "y": 199,
+          "width": 389,
+          "height": 382
+        },
+        "attributes": {
+          "data-v-a03a7a41": "",
+          "class": "bitunix-orderbook-canvas",
+          "height": "477.5",
+          "width": "486.25"
+        },
+        "parents": [
+          {
+            "tag": "CANVAS",
+            "id": null,
+            "className": "bitunix-orderbook-canvas"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "bitunix-orderbook orderbook-6ce6e899"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "content-443E9745"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "container-3A8FA0CB flex-1"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "flex flex-col h100% w100% c8beeb859"
+          }
+        ],
+        "chartRelated": false
+      },
+      {
+        "tag": "CANVAS",
+        "id": null,
+        "className": "bitunix-orderbook-canvas",
+        "role": null,
+        "title": "",
+        "ariaLabel": "",
+        "text": "",
+        "rect": {
+          "x": 300,
+          "y": 199,
+          "width": 389,
+          "height": 382
+        },
+        "attributes": {
+          "data-v-a03a7a41": "",
+          "class": "bitunix-orderbook-canvas",
+          "style": "z-index: 4;",
+          "height": "477.5",
+          "width": "486.25"
+        },
+        "parents": [
+          {
+            "tag": "CANVAS",
+            "id": null,
+            "className": "bitunix-orderbook-canvas"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "bitunix-orderbook orderbook-6ce6e899"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "content-443E9745"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "container-3A8FA0CB flex-1"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "flex flex-col h100% w100% c8beeb859"
+          }
+        ],
+        "chartRelated": false
+      },
+      {
+        "tag": "DIV",
+        "id": null,
+        "className": "contract-table-container w100% md:h-100% color-bg-2 overflow-hidden",
+        "role": null,
+        "title": "",
+        "ariaLabel": "",
+        "text": "Positions (0) Open Orders (0) Order History Position History Trade History Transaction History Asset",
+        "rect": {
+          "x": 0,
+          "y": 682,
+          "width": 704,
+          "height": 498
+        },
+        "attributes": {
+          "data-v-6e6b4245": "",
+          "data-v-68f34279": "",
+          "class": "contract-table-container w100% md:h-100% color-bg-2 overflow-hidden"
+        },
+        "parents": [
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "contract-table-container w100% md:h-100% color-bg-2 overflow-hidden"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": ""
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "color-text-1 pb-[32px] color-bg-1 max-md:color-bg-2"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "reveal-content reveal-in"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "reveal-wrapper"
+          }
+        ],
+        "chartRelated": false
+      },
+      {
+        "tag": "DIV",
+        "id": null,
+        "className": "bitunix-tab-container max-md:overflow-hidden! is-shadow-ending EC6008EF596 max-md:h-auto!",
+        "role": null,
+        "title": "",
+        "ariaLabel": "",
+        "text": "Positions (0) Open Orders (0) Order History Position History Trade History Transaction History Asset",
+        "rect": {
+          "x": 0,
+          "y": 682,
+          "width": 704,
+          "height": 458
+        },
+        "attributes": {
+          "data-v-5ab74309": "",
+          "data-v-6e6b4245": "",
+          "class": "bitunix-tab-container max-md:overflow-hidden! is-shadow-ending EC6008EF596 max-md:h-auto!"
+        },
+        "parents": [
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "bitunix-tab-container max-md:overflow-hidden! is-shadow-ending EC6008EF596 max-md:h-auto!"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "contract-table-container w100% md:h-100% color-bg-2 overflow-hidden"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": ""
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "color-text-1 pb-[32px] color-bg-1 max-md:color-bg-2"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "reveal-content reveal-in"
+          }
+        ],
+        "chartRelated": false
+      },
+      {
+        "tag": "DIV",
+        "id": null,
+        "className": "bitunix-tabs-content",
+        "role": null,
+        "title": "",
+        "ariaLabel": "",
+        "text": "No Data",
+        "rect": {
+          "x": 0,
+          "y": 780,
+          "width": 704,
+          "height": 360
+        },
+        "attributes": {
+          "data-v-5ab74309": "",
+          "class": "bitunix-tabs-content"
+        },
+        "parents": [
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "bitunix-tabs-content"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "bitunix-tab-container max-md:overflow-hidden! is-shadow-ending EC6008EF596 max-md:h-auto!"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "contract-table-container w100% md:h-100% color-bg-2 overflow-hidden"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": ""
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "color-text-1 pb-[32px] color-bg-1 max-md:color-bg-2"
+          }
+        ],
+        "chartRelated": false
+      },
+      {
+        "tag": "DIV",
+        "id": null,
+        "className": "ml-16 mr-16 h-100% max-md:ml-0 max-md:mr-0 relative",
+        "role": null,
+        "title": "",
+        "ariaLabel": "",
+        "text": "No Data",
+        "rect": {
+          "x": 0,
+          "y": 796,
+          "width": 704,
+          "height": 344
+        },
+        "attributes": {
+          "data-v-6e6b4245": "",
+          "class": "ml-16 mr-16 h-100% max-md:ml-0 max-md:mr-0 relative"
+        },
+        "parents": [
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "ml-16 mr-16 h-100% max-md:ml-0 max-md:mr-0 relative"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "bitunix-tabs-content"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "bitunix-tab-container max-md:overflow-hidden! is-shadow-ending EC6008EF596 max-md:h-auto!"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "contract-table-container w100% md:h-100% color-bg-2 overflow-hidden"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": ""
+          }
+        ],
+        "chartRelated": false
+      },
+      {
+        "tag": "DIV",
+        "id": null,
+        "className": "sample-position-list-container color-text-1 fs-12 mt-16px",
+        "role": null,
+        "title": "",
+        "ariaLabel": "",
+        "text": "No Data",
+        "rect": {
+          "x": 0,
+          "y": 796,
+          "width": 704,
+          "height": 344
+        },
+        "attributes": {
+          "data-v-05bd9359": "",
+          "class": "sample-position-list-container color-text-1 fs-12 mt-16px",
+          "style": "user-select: auto;"
+        },
+        "parents": [
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "sample-position-list-container color-text-1 fs-12 mt-16px"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "ml-16 mr-16 h-100% max-md:ml-0 max-md:mr-0 relative"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "bitunix-tabs-content"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "bitunix-tab-container max-md:overflow-hidden! is-shadow-ending EC6008EF596 max-md:h-auto!"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "contract-table-container w100% md:h-100% color-bg-2 overflow-hidden"
+          }
+        ],
+        "chartRelated": false
+      },
+      {
+        "tag": "DIV",
+        "id": null,
+        "className": "position-list-empty-state",
+        "role": null,
+        "title": "",
+        "ariaLabel": "",
+        "text": "No Data",
+        "rect": {
+          "x": 0,
+          "y": 796,
+          "width": 704,
+          "height": 344
+        },
+        "attributes": {
+          "data-v-d551bddb": "",
+          "data-v-05bd9359": "",
+          "class": "position-list-empty-state"
+        },
+        "parents": [
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "position-list-empty-state"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "sample-position-list-container color-text-1 fs-12 mt-16px"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "ml-16 mr-16 h-100% max-md:ml-0 max-md:mr-0 relative"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "bitunix-tabs-content"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "bitunix-tab-container max-md:overflow-hidden! is-shadow-ending EC6008EF596 max-md:h-auto!"
+          }
+        ],
+        "chartRelated": false
+      },
+      {
+        "tag": "DIV",
+        "id": null,
+        "className": "flex justify-center",
+        "role": null,
+        "title": "",
+        "ariaLabel": "",
+        "text": "No Data",
+        "rect": {
+          "x": 0,
+          "y": 796,
+          "width": 704,
+          "height": 344
+        },
+        "attributes": {
+          "data-v-22fc0868": "",
+          "data-v-d551bddb": "",
+          "class": "flex justify-center",
+          "style": "height: 344px;"
+        },
+        "parents": [
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "flex justify-center"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "position-list-empty-state"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "sample-position-list-container color-text-1 fs-12 mt-16px"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "ml-16 mr-16 h-100% max-md:ml-0 max-md:mr-0 relative"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "bitunix-tabs-content"
+          }
+        ],
+        "chartRelated": false
+      }
+    ],
+    "canvases": [
+      {
+        "tag": "CANVAS",
+        "id": null,
+        "className": "bitunix-orderbook-canvas",
+        "role": null,
+        "title": "",
+        "ariaLabel": "",
+        "text": "",
+        "rect": {
+          "x": 300,
+          "y": 199,
+          "width": 389,
+          "height": 382
+        },
+        "attributes": {
+          "data-v-a03a7a41": "",
+          "class": "bitunix-orderbook-canvas",
+          "height": "477.5",
+          "width": "486.25"
+        },
+        "parents": [
+          {
+            "tag": "CANVAS",
+            "id": null,
+            "className": "bitunix-orderbook-canvas"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "bitunix-orderbook orderbook-6ce6e899"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "content-443E9745"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "container-3A8FA0CB flex-1"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "flex flex-col h100% w100% c8beeb859"
+          }
+        ],
+        "canvas": {
+          "width": 486,
+          "height": 477
+        },
+        "orderbookRelated": true
+      },
+      {
+        "tag": "CANVAS",
+        "id": null,
+        "className": "bitunix-orderbook-canvas",
+        "role": null,
+        "title": "",
+        "ariaLabel": "",
+        "text": "",
+        "rect": {
+          "x": 300,
+          "y": 199,
+          "width": 389,
+          "height": 382
+        },
+        "attributes": {
+          "data-v-a03a7a41": "",
+          "class": "bitunix-orderbook-canvas",
+          "style": "z-index: 4;",
+          "height": "477.5",
+          "width": "486.25"
+        },
+        "parents": [
+          {
+            "tag": "CANVAS",
+            "id": null,
+            "className": "bitunix-orderbook-canvas"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "bitunix-orderbook orderbook-6ce6e899"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "content-443E9745"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "container-3A8FA0CB flex-1"
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "flex flex-col h100% w100% c8beeb859"
+          }
+        ],
+        "canvas": {
+          "width": 486,
+          "height": 477
+        },
+        "orderbookRelated": true
+      }
+    ],
+    "svgs": [],
+    "buttons": [
+      {
+        "text": "Buy Crypto",
+        "title": "",
+        "ariaLabel": "",
+        "className": "arco-collapse-item-header arco-collapse-item-header-right",
+        "disabled": false,
+        "rect": {
+          "x": 719,
+          "y": 64,
+          "width": 668,
+          "height": 58
+        }
+      },
+      {
+        "text": "Markets",
+        "title": "",
+        "ariaLabel": "",
+        "className": "arco-collapse-item-header arco-collapse-item-header-right",
+        "disabled": false,
+        "rect": {
+          "x": 719,
+          "y": 122,
+          "width": 668,
+          "height": 58
+        }
+      },
+      {
+        "text": "Futures",
+        "title": "",
+        "ariaLabel": "",
+        "className": "arco-collapse-item-header arco-collapse-item-header-right",
+        "disabled": false,
+        "rect": {
+          "x": 719,
+          "y": 180,
+          "width": 668,
+          "height": 58
+        }
+      },
+      {
+        "text": "TradFi",
+        "title": "",
+        "ariaLabel": "",
+        "className": "arco-collapse-item-header arco-collapse-item-header-right",
+        "disabled": false,
+        "rect": {
+          "x": 719,
+          "y": 238,
+          "width": 668,
+          "height": 58
+        }
+      },
+      {
+        "text": "CFD",
+        "title": "",
+        "ariaLabel": "",
+        "className": "arco-collapse-item-header arco-collapse-item-header-right",
+        "disabled": false,
+        "rect": {
+          "x": 719,
+          "y": 296,
+          "width": 668,
+          "height": 58
+        }
+      },
+      {
+        "text": "Spot",
+        "title": "",
+        "ariaLabel": "",
+        "className": "arco-collapse-item-header arco-collapse-item-header-right",
+        "disabled": false,
+        "rect": {
+          "x": 719,
+          "y": 354,
+          "width": 668,
+          "height": 58
+        }
+      },
+      {
+        "text": "Finance",
+        "title": "",
+        "ariaLabel": "",
+        "className": "arco-collapse-item-header arco-collapse-item-header-right",
+        "disabled": false,
+        "rect": {
+          "x": 719,
+          "y": 412,
+          "width": 668,
+          "height": 58
+        }
+      },
+      {
+        "text": "Promotions",
+        "title": "",
+        "ariaLabel": "",
+        "className": "arco-collapse-item-header arco-collapse-item-header-right",
+        "disabled": false,
+        "rect": {
+          "x": 719,
+          "y": 470,
+          "width": 668,
+          "height": 58
+        }
+      },
+      {
+        "text": "Referral",
+        "title": "",
+        "ariaLabel": "",
+        "className": "arco-collapse-item-header arco-collapse-item-header-right",
+        "disabled": false,
+        "rect": {
+          "x": 719,
+          "y": 528,
+          "width": 668,
+          "height": 58
+        }
+      },
+      {
+        "text": "More",
+        "title": "",
+        "ariaLabel": "",
+        "className": "arco-collapse-item-header arco-collapse-item-header-right",
+        "disabled": false,
+        "rect": {
+          "x": 719,
+          "y": 586,
+          "width": 668,
+          "height": 58
+        }
+      },
+      {
+        "text": "Settings",
+        "title": "",
+        "ariaLabel": "",
+        "className": "arco-collapse-item-header arco-collapse-item-header-right",
+        "disabled": false,
+        "rect": {
+          "x": 719,
+          "y": 644,
+          "width": 668,
+          "height": 58
+        }
+      },
+      {
+        "text": "",
+        "title": "",
+        "ariaLabel": "",
+        "className": "pill-tabs__item",
+        "disabled": false,
+        "rect": {
+          "x": 599,
+          "y": 68,
+          "width": 44,
+          "height": 32
+        }
+      },
+      {
+        "text": "",
+        "title": "",
+        "ariaLabel": "",
+        "className": "pill-tabs__item pill-tabs__item--active",
+        "disabled": false,
+        "rect": {
+          "x": 643,
+          "y": 68,
+          "width": 44,
+          "height": 32
+        }
+      },
+      {
+        "text": "Open Long",
+        "title": "",
+        "ariaLabel": "",
+        "className": "arco-btn arco-btn-secondary arco-btn-shape-square arco-btn-size-medium arco-btn-status-normal btn h40 color-text-1 items-center justify-center flex-col cursor-pointer rounded-full w-100% place-order-long bitunix-btn-norm",
+        "disabled": false,
+        "rect": {
+          "x": 15,
+          "y": 507,
+          "width": 264,
+          "height": 40
+        }
+      },
+      {
+        "text": "Open Short",
+        "title": "",
+        "ariaLabel": "",
+        "className": "arco-btn arco-btn-secondary arco-btn-shape-square arco-btn-size-medium arco-btn-status-normal btn h40 color-text-1 items-center justify-center flex-col cursor-pointer rounded-full w-100% place-order-short bitunix-btn-nor",
+        "disabled": false,
+        "rect": {
+          "x": 15,
+          "y": 562,
+          "width": 264,
+          "height": 40
+        }
+      },
+      {
+        "text": "NIGHTUSDT",
+        "title": "",
+        "ariaLabel": "",
+        "className": "header-search-trigger-btn md:min-w-174 min-w-120 h-28px rounded-14px flex items-center px-12px border-0px gap-4px fs-15px color-text-2 cursor-pointer w-100%",
+        "disabled": false,
+        "rect": {
+          "x": 549,
+          "y": 640,
+          "width": 122,
+          "height": 28
+        }
+      }
+    ],
+    "timeframeControls": [],
+    "frameworkRoots": []
+  },
+  "resources": {
+    "scriptFiles": [
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/fortune-withdrawal-modal-ChgpZ_fJ.js",
+        "initiatorType": "script",
+        "durationMs": 6864,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/riskMonitor-CZ0bUQZ2.js",
+        "initiatorType": "script",
+        "durationMs": 6864,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/kline-close-position-modal-Dtc4TDIm.js",
+        "initiatorType": "script",
+        "durationMs": 7202,
+        "chartRelated": true
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/closeProfitToastBus-Cy6BmL2k.js",
+        "initiatorType": "script",
+        "durationMs": 7198,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/useCloseAmountConversion-Kq6LjFHg.js",
+        "initiatorType": "script",
+        "durationMs": 7202,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/common-modal.vue-oNpehfch.js",
+        "initiatorType": "script",
+        "durationMs": 7449,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/loss-amount-max-info-CCRFM9G4.js",
+        "initiatorType": "script",
+        "durationMs": 7463,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/confirmOrder-COwiDAgv.js",
+        "initiatorType": "script",
+        "durationMs": 7455,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/index-CqzdMM4W.js",
+        "initiatorType": "script",
+        "durationMs": 7690,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/useGetFutureGridCaculate-Czs4dkjj.js",
+        "initiatorType": "script",
+        "durationMs": 7715,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/symbolUnit.vue-B4Tt4u9R.js",
+        "initiatorType": "script",
+        "durationMs": 7713,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/useInitGridList-7zYB2w0U.js",
+        "initiatorType": "script",
+        "durationMs": 7899,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/gridListCoreCalculate-BT_EAAmv.js",
+        "initiatorType": "script",
+        "durationMs": 7931,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/index.vue-lsbD2fun.js",
+        "initiatorType": "script",
+        "durationMs": 7938,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/changeGridLine-B9MN4KsR.js",
+        "initiatorType": "script",
+        "durationMs": 8129,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/createSuccess-Bo1C1BMa.js",
+        "initiatorType": "script",
+        "durationMs": 8158,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/confirmStop-DIRVzqGE.js",
+        "initiatorType": "script",
+        "durationMs": 8166,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/index.vue-BC0gi9lz.js",
+        "initiatorType": "script",
+        "durationMs": 8353,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/addMargin-gdlsE00v.js",
+        "initiatorType": "script",
+        "durationMs": 8440,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/liqPrice-JCrNmzip.js",
+        "initiatorType": "script",
+        "durationMs": 8441,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/useGetSpotAmount-BugBJ8x0.js",
+        "initiatorType": "script",
+        "durationMs": 8601,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/changeLeverage-D0IQ2W-G.js",
+        "initiatorType": "script",
+        "durationMs": 8685,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/changeTpsl-BWw1zme9.js",
+        "initiatorType": "script",
+        "durationMs": 8684,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/index-6JiZedoP.js",
+        "initiatorType": "script",
+        "durationMs": 8844,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/profit-loss-common-tips-modal-lXRqyh0x.js",
+        "initiatorType": "script",
+        "durationMs": 8914,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/index.vue-D8piPW_x.js",
+        "initiatorType": "script",
+        "durationMs": 8918,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/useUserSettingModalConfig-BZZIu2rV.js",
+        "initiatorType": "script",
+        "durationMs": 9071,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/risk-warning-modal-DHcuzFxu.js",
+        "initiatorType": "script",
+        "durationMs": 9141,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/index-BmZBwm8A.js",
+        "initiatorType": "script",
+        "durationMs": 9141,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/useAlertDialogDevice-D_pWrqpC.js",
+        "initiatorType": "script",
+        "durationMs": 9272,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/edit-move-profit-loss-modal-BNcGAKK9.js",
+        "initiatorType": "script",
+        "durationMs": 9383,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/useTpslOrderInfo-BoigsL1q.js",
+        "initiatorType": "script",
+        "durationMs": 9387,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/add-position-BRuMK68Y.js",
+        "initiatorType": "script",
+        "durationMs": 9540,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/futuresPlaceOrderWindowAction-BHhxrWlq.js",
+        "initiatorType": "script",
+        "durationMs": 9660,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/useAmountConversionByUnit-CY1sFLnB.js",
+        "initiatorType": "script",
+        "durationMs": 9697,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/switch-perps-unit-DztfFC94.js",
+        "initiatorType": "script",
+        "durationMs": 9783,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/large-order-alert-CWHQ2-sg.js",
+        "initiatorType": "script",
+        "durationMs": 9932,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/preset-sl-est-liq-alert-Cqc9m81o.js",
+        "initiatorType": "script",
+        "durationMs": 9940,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/price-unnormal-tips-Qyq4fnSr.js",
+        "initiatorType": "script",
+        "durationMs": 10033,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/index-DaZciuYj.js",
+        "initiatorType": "script",
+        "durationMs": 10197,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/checkIsolationLiqPrice-AseC73Jk.js",
+        "initiatorType": "script",
+        "durationMs": 10195,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/preset-tpsl-advanced-BNEBOuL7.js",
+        "initiatorType": "script",
+        "durationMs": 10274,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/config-ukYOeShc.js",
+        "initiatorType": "script",
+        "durationMs": 10660,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/guarantee-stop-ZScEMiJq.js",
+        "initiatorType": "script",
+        "durationMs": 10676,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/modal-title.vue-BWjSbSyf.js",
+        "initiatorType": "script",
+        "durationMs": 10693,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/LeverageBadge-Ckr1Cgg9.js",
+        "initiatorType": "script",
+        "durationMs": 10904,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/tpsl-overview-ByYOJbHw.js",
+        "initiatorType": "script",
+        "durationMs": 10939,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/position-tpsl-DaviuaJU.js",
+        "initiatorType": "script",
+        "durationMs": 10941,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/break-even-form-DvMEDEDr.js",
+        "initiatorType": "script",
+        "durationMs": 11125,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/types-D_gMFhAz.js",
+        "initiatorType": "script",
+        "durationMs": 11165,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/batch-tpsl.vue-Bbf02tNr.js",
+        "initiatorType": "script",
+        "durationMs": 11179,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/move-tpsl-Cw1Kx5I5.js",
+        "initiatorType": "script",
+        "durationMs": 11368,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/usePositionLiqPrice-D6E546Bb.js",
+        "initiatorType": "script",
+        "durationMs": 11432,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/edit-ordinary-entrust-order-Bxg3FYLI.js",
+        "initiatorType": "script",
+        "durationMs": 11457,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/useOrderReguOrder-UaUIpctL.js",
+        "initiatorType": "script",
+        "durationMs": 11610,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/useExchangePriceBoundary-Bzv7KF5j.js",
+        "initiatorType": "script",
+        "durationMs": 11673,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/set-batch-tpsl-Cmfc8wuq.js",
+        "initiatorType": "script",
+        "durationMs": 11678,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/set-move-tpsl-qzQJu2RP.js",
+        "initiatorType": "script",
+        "durationMs": 11819,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/set-position-tpsl-DNUUfQCQ.js",
+        "initiatorType": "script",
+        "durationMs": 11929,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/set-break-even-DkNKLqP8.js",
+        "initiatorType": "script",
+        "durationMs": 11941,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/edit-plan-entrust-order-6v4BtvmL.js",
+        "initiatorType": "script",
+        "durationMs": 12148,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/customer-service-entry-D7XmLv1F.js",
+        "initiatorType": "script",
+        "durationMs": 12176,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/constants-CHZNnRZE.js",
+        "initiatorType": "script",
+        "durationMs": 12173,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/browser-XquSN495.js",
+        "initiatorType": "script",
+        "durationMs": 9636,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/dist-DQri4ocf.js",
+        "initiatorType": "script",
+        "durationMs": 4604,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/index-mZoFg4nl.js",
+        "initiatorType": "script",
+        "durationMs": 300,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/resolveKlineInsightsDeepLink-QU2BBFO0.js",
+        "initiatorType": "script",
+        "durationMs": 311,
+        "chartRelated": true
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/useAlertReadState-C89iQrvg.js",
+        "initiatorType": "script",
+        "durationMs": 309,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/kline-feedback-icon-DjnL43FL.js",
+        "initiatorType": "script",
+        "durationMs": 395,
+        "chartRelated": true
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/index-kv-_gGye.js",
+        "initiatorType": "script",
+        "durationMs": 337,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/index-m1nLOpq3.js",
+        "initiatorType": "script",
+        "durationMs": 424,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/changePriceReminder-Bc9oKt8h.js",
+        "initiatorType": "script",
+        "durationMs": 439,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/useNumberFormatData-DwZWiseP.js",
+        "initiatorType": "script",
+        "durationMs": 422,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/useSortable-DRatAHru.js",
+        "initiatorType": "script",
+        "durationMs": 453,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/symbolBaseInfo.vue-_wG0aM33.js",
+        "initiatorType": "script",
+        "durationMs": 469,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/useInitSymbol-CwUZaZMb.js",
+        "initiatorType": "script",
+        "durationMs": 456,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/coin-info-BynpcBCm.js",
+        "initiatorType": "script",
+        "durationMs": 459,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/limits-table-Dlu60u05.js",
+        "initiatorType": "script",
+        "durationMs": 461,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/index-BrIhfed2.js",
+        "initiatorType": "script",
+        "durationMs": 459,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/descriptions-item.vue-B_MiGiF4.js",
+        "initiatorType": "script",
+        "durationMs": 462,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/fund-fee-popup-DSQHdoA3.js",
+        "initiatorType": "script",
+        "durationMs": 456,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/table-DPN1n-JE.js",
+        "initiatorType": "script",
+        "durationMs": 457,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/useElementObserve-D7h4eeKa.js",
+        "initiatorType": "script",
+        "durationMs": 457,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/install-DsfXdfs3.js",
+        "initiatorType": "script",
+        "durationMs": 469,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/index-D73vpu7X.js",
+        "initiatorType": "script",
+        "durationMs": 450,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/index-CXgl_9Pb.js",
+        "initiatorType": "script",
+        "durationMs": 371,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/index-KanB45pw.js",
+        "initiatorType": "script",
+        "durationMs": 419,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/useSetDefaultCoin-C3mpkQ0m.js",
+        "initiatorType": "script",
+        "durationMs": 442,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/ContractTradeNewUserTaskHasHistoryBanner-nxM21xvA.js",
+        "initiatorType": "script",
+        "durationMs": 919,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/_...slug_-4C-WgaF9.js",
+        "initiatorType": "script",
+        "durationMs": 749,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/desktop-info-panel-ByfQdty3.js",
+        "initiatorType": "script",
+        "durationMs": 699,
+        "chartRelated": true
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/useFeeDiscountModal-D34Oub1a.js",
+        "initiatorType": "script",
+        "durationMs": 684,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/prize-info-wrapper.vue-CNUfXKmp.js",
+        "initiatorType": "script",
+        "durationMs": 702,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/index.vue-fn0j6Sbf.js",
+        "initiatorType": "script",
+        "durationMs": 699,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/useRiskRequest-Cmz54P-j.js",
+        "initiatorType": "script",
+        "durationMs": 705,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/roughUnPnlRate.vue-BU4Xzxtw.js",
+        "initiatorType": "script",
+        "durationMs": 705,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/createGrid-C1AwmRD0.js",
+        "initiatorType": "script",
+        "durationMs": 700,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/fee-rate-time-tip-CctmKfsJ.js",
+        "initiatorType": "script",
+        "durationMs": 579,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/order-confirm-BvvSCdQJ.js",
+        "initiatorType": "script",
+        "durationMs": 535,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/session-modal-CCkDRYa-.js",
+        "initiatorType": "script",
+        "durationMs": 538,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/calculate-Cdo-ngYC.js",
+        "initiatorType": "script",
+        "durationMs": 534,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/avg-entry-w3H2fRET.js",
+        "initiatorType": "script",
+        "durationMs": 533,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/PriceReminder-DAjcN7sD.js",
+        "initiatorType": "script",
+        "durationMs": 531,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/setting-Dyg_g1uc.js",
+        "initiatorType": "script",
+        "durationMs": 529,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/liveDealList-Cc9tVMjn.js",
+        "initiatorType": "script",
+        "durationMs": 481,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/liveDealList-DNHwJHNT.js",
+        "initiatorType": "script",
+        "durationMs": 495,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/infiniteList-DXDMv46i.js",
+        "initiatorType": "script",
+        "durationMs": 501,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/watchlist-panel-ghueHWDU.js",
+        "initiatorType": "script",
+        "durationMs": 496,
+        "chartRelated": true
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/conversions-modal-BgIDGHm0.js",
+        "initiatorType": "script",
+        "durationMs": 553,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/edit-tpsl-BGD2gUbY.js",
+        "initiatorType": "script",
+        "durationMs": 537,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/edit-tpsl.vue-eVZKxZzT.js",
+        "initiatorType": "script",
+        "durationMs": 550,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/index-CuGG6_0A.js",
+        "initiatorType": "script",
+        "durationMs": 545,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/position-sort-BDX1C_cG.js",
+        "initiatorType": "script",
+        "durationMs": 562,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/marketCloseAllModal-kb_Nit9t.js",
+        "initiatorType": "script",
+        "durationMs": 536,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/grid-bot-tab-BVRlBQhE.js",
+        "initiatorType": "script",
+        "durationMs": 602,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/table-empty-0rQfM1K1.js",
+        "initiatorType": "script",
+        "durationMs": 599,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/dateFormat.vue-D70lXvlm.js",
+        "initiatorType": "script",
+        "durationMs": 596,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/pagination.vue-w1jgtuVs.js",
+        "initiatorType": "script",
+        "durationMs": 586,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/useGetGridLine-PjOY7qxI.js",
+        "initiatorType": "script",
+        "durationMs": 587,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/useScreenSize-CFk7JGG-.js",
+        "initiatorType": "script",
+        "durationMs": 586,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/vendor.es-DEy481_o.js",
+        "initiatorType": "script",
+        "durationMs": 910,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/dealRecord-CVBsVsnY.js",
+        "initiatorType": "script",
+        "durationMs": 486,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/DetailModals-DJn0W3PW.js",
+        "initiatorType": "script",
+        "durationMs": 260,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/LiquidationDetailModal-zuL7Rcjz.js",
+        "initiatorType": "script",
+        "durationMs": 245,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/index-BGvhcZVl.js",
+        "initiatorType": "script",
+        "durationMs": 268,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/index-CryhAzQO.js",
+        "initiatorType": "script",
+        "durationMs": 272,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/quick-coin-select-chart-BVPSO35y.js",
+        "initiatorType": "script",
+        "durationMs": 244,
+        "chartRelated": true
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/footer-swiper-Bj_Kx6yH.js",
+        "initiatorType": "script",
+        "durationMs": 265,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/AssetListCommon-Cmg3yEM9.js",
+        "initiatorType": "script",
+        "durationMs": 294,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/secondary-menu-BL586XLo.js",
+        "initiatorType": "script",
+        "durationMs": 298,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/extends-B4fyY34i.js",
+        "initiatorType": "script",
+        "durationMs": 295,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/futuresCancelOrderWindowAction-BjJNzXRy.js",
+        "initiatorType": "script",
+        "durationMs": 300,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/close-DQT_25o5.js",
+        "initiatorType": "script",
+        "durationMs": 346,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/history-position-_43A3kvj.js",
+        "initiatorType": "script",
+        "durationMs": 334,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/symbolInfo.vue-CxW7ZlwW.js",
+        "initiatorType": "script",
+        "durationMs": 299,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/TableBottomHint-UtUHrHL5.js",
+        "initiatorType": "script",
+        "durationMs": 315,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/entrust-past-list-Ct8HOnkA.js",
+        "initiatorType": "script",
+        "durationMs": 356,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/sort-JUCw5Ezr.js",
+        "initiatorType": "script",
+        "durationMs": 370,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/table-header.vue-DZK8KMy2.js",
+        "initiatorType": "script",
+        "durationMs": 372,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/coupon-CusRCEU9.js",
+        "initiatorType": "script",
+        "durationMs": 376,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/order-header.vue-BPs5zta7.js",
+        "initiatorType": "script",
+        "durationMs": 377,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/move_profit_loss.vue-Cs8SXD37.js",
+        "initiatorType": "script",
+        "durationMs": 439,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/plan-trigger-cell.vue-DQhkNYFB.js",
+        "initiatorType": "script",
+        "durationMs": 435,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/triggerPrice.vue-CU9FeXuD.js",
+        "initiatorType": "script",
+        "durationMs": 433,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/history-deals-CfOmFGn_.js",
+        "initiatorType": "script",
+        "durationMs": 1136,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/MobileFuturesContent-XoGLDZgD.js",
+        "initiatorType": "script",
+        "durationMs": 1327,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/useFutureAssets-Dfm6E_Sq.js",
+        "initiatorType": "script",
+        "durationMs": 1541,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/commonly-functions-BScBQzMl.js",
+        "initiatorType": "script",
+        "durationMs": 770,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/live-data-jq4U3b_A.js",
+        "initiatorType": "script",
+        "durationMs": 600,
+        "chartRelated": false
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/currency-information-CdpWDJWq.js",
+        "initiatorType": "script",
+        "durationMs": 585,
+        "chartRelated": false
+      }
+    ],
+    "chartRelatedFiles": [
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/kline-close-position-modal-Dtc4TDIm.js",
+        "initiatorType": "script",
+        "durationMs": 7202,
+        "chartRelated": true
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/resolveKlineInsightsDeepLink-QU2BBFO0.js",
+        "initiatorType": "script",
+        "durationMs": 311,
+        "chartRelated": true
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/kline-feedback-icon-DjnL43FL.js",
+        "initiatorType": "script",
+        "durationMs": 395,
+        "chartRelated": true
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/desktop-info-panel-ByfQdty3.js",
+        "initiatorType": "script",
+        "durationMs": 699,
+        "chartRelated": true
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/watchlist-panel-ghueHWDU.js",
+        "initiatorType": "script",
+        "durationMs": 496,
+        "chartRelated": true
+      },
+      {
+        "url": "https://www.bitunix.com/web/bitunix-assets/futures/quick-coin-select-chart-BVPSO35y.js",
+        "initiatorType": "script",
+        "durationMs": 244,
+        "chartRelated": true
+      }
+    ]
+  },
+  "result": {
+    "tradingViewGlobalFound": true,
+    "tradingViewRootType": "Object",
+    "candidateCount": 5,
+    "canvasCount": 2,
+    "svgCount": 0,
+    "largeContainerCount": 41,
+    "chartRelatedScriptCount": 6,
+    "shadowRootCount": null,
+    "totalScriptFiles": 150,
+    "viewportWidth": 710,
+    "viewportHeight": 703
+  },
+  "safety": {
+    "readOnly": true,
+    "noOrdersSent": true,
+    "noClickActions": true,
+    "noInputValuesRead": true,
+    "noCookiesOrTokensRead": true,
+    "noDOMMutation": true,
+    "noNetworkInterception": true,
+    "noChartSettingsChanged": true
+  },
+  "finishedAt": "2026-11-14T16:34:04.213Z"
+}
