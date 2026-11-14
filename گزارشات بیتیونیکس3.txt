@@ -1,0 +1,6646 @@
+{
+  "diagnostic": "BITUNIX_CHART_DEEP_SCAN_03",
+  "startedAt": "2026-11-14T16:40:53.035Z",
+  "environment": {
+    "page": "https://www.bitunix.com/contract-trade/XAUTUSDT",
+    "title": "3,833.61 | XAUTUSDT Futures Exchange - Crypto Futures | Bitunix",
+    "window": {
+      "innerWidth": 1707,
+      "innerHeight": 781,
+      "outerWidth": 1536,
+      "outerHeight": 824,
+      "devicePixelRatio": 1.125
+    },
+    "document": {
+      "clientWidth": 1707,
+      "clientHeight": 781,
+      "bodyWidth": 1707,
+      "bodyHeight": 751
+    },
+    "screen": {
+      "width": 1536,
+      "height": 864,
+      "availableWidth": 1536,
+      "availableHeight": 824
+    },
+    "readyState": "complete"
+  },
+  "chartElements": [
+    {
+      "tag": "DIV",
+      "id": null,
+      "className": "ae21b19e chart-header-container h60 w100% flex flex-row flex-nowrap items-center justify-between p-t9 p-b9 color-bg-2",
+      "text": "XAUTUSDT 0 Fees Tether Gold 3,833.61 24H Change -1.03% Mark Price 3,833.62 Index Price 3,835.48 24H High 3,882.02 24H Lo",
+      "rect": {
+        "x": 0,
+        "y": 50,
+        "width": 1701,
+        "height": 60
+      },
+      "style": {
+        "display": "flex",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "static",
+        "overflow": "visible",
+        "zIndex": "auto",
+        "width": "1701px",
+        "height": "60px",
+        "transform": "none"
+      },
+      "visible": true,
+      "attributes": {
+        "data-v-f351f95b": "",
+        "data-v-ee9f709a": "",
+        "class": "ae21b19e chart-header-container h60 w100% flex flex-row flex-nowrap items-center justify-between p-t9 p-b9 color-bg-2",
+        "cursor": "grab",
+        "compname": "Header",
+        "fixed": "true",
+        "screenwidth": "1701.328125",
+        "moving": "false"
+      },
+      "parents": [
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "ae21b19e chart-header-container h60 w100% flex flex-row flex-nowrap items-center justify-between p-t9 p-b9 color-bg-2"
+        },
+        {
+          "tag": "DIV",
+          "id": "Header",
+          "className": "draggable-resizable"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "drag-resize-container color-bg-1"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": ""
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "contract-trade-main-page contract-container-ce3daf1823ef color-bg-1 fm-text"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": ""
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "max-md:h-full"
+        }
+      ]
+    },
+    {
+      "tag": "DIV",
+      "id": null,
+      "className": "kline-title color-text-1 font-700 fs-18 leh-40 relative text-nowrap cursor-pointer flex items-center ps8",
+      "text": "XAUTUSDT 0 Fees Tether Gold",
+      "rect": {
+        "x": 52,
+        "y": 60,
+        "width": 213,
+        "height": 40
+      },
+      "style": {
+        "display": "flex",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "relative",
+        "overflow": "visible",
+        "zIndex": "auto",
+        "width": "213.111px",
+        "height": "40px",
+        "transform": "none"
+      },
+      "visible": true,
+      "attributes": {
+        "class": "kline-title color-text-1 font-700 fs-18 leh-40 relative text-nowrap cursor-pointer flex items-center ps8"
+      },
+      "parents": [
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "kline-title color-text-1 font-700 fs-18 leh-40 relative text-nowrap cursor-pointer flex items-center ps8"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "flex items-center gap-16px"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "flex flex-row flex-nowrap items-center me-1 m-s-16"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "info-main c2dfda99 flex flex-row flex-nowrap flex-1"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "ae21b19e chart-header-container h60 w100% flex flex-row flex-nowrap items-center justify-between p-t9 p-b9 color-bg-2"
+        },
+        {
+          "tag": "DIV",
+          "id": "Header",
+          "className": "draggable-resizable"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "drag-resize-container color-bg-1"
+        }
+      ]
+    },
+    {
+      "tag": "DIV",
+      "id": "ExchangeChart",
+      "className": "draggable-resizable",
+      "text": "SOL 72.91 BTC 65,413.6 XAU 3,850.75 XAUT 3,833.61 BTC 65,457.0 BZ 93.09 XAG 48.23 DOGE 0.06034 8 Chart Info Data News 1m",
+      "rect": {
+        "x": 0,
+        "y": 113,
+        "width": 1077,
+        "height": 610
+      },
+      "style": {
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "absolute",
+        "overflow": "visible",
+        "zIndex": "1",
+        "width": "1077px",
+        "height": "610px",
+        "transform": "none"
+      },
+      "visible": true,
+      "attributes": {
+        "data-v-ee9f709a": "",
+        "data-v-1202f326": "",
+        "id": "ExchangeChart",
+        "class": "draggable-resizable",
+        "style": "width: 63.3035%; height: 610px; top: 65px; left: 0%; z-index: 1; transition: 0.2s ease-out;"
+      },
+      "parents": [
+        {
+          "tag": "DIV",
+          "id": "ExchangeChart",
+          "className": "draggable-resizable"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "drag-resize-container color-bg-1"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": ""
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "contract-trade-main-page contract-container-ce3daf1823ef color-bg-1 fm-text"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": ""
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "max-md:h-full"
+        },
+        {
+          "tag": "SECTION",
+          "id": null,
+          "className": "relative"
+        }
+      ]
+    },
+    {
+      "tag": "DIV",
+      "id": null,
+      "className": "arco-tabs arco-tabs-horizontal arco-tabs-top arco-tabs-type-line arco-tabs-size-medium arco-tabs-justify v_0-2-79-0 chart-tabs",
+      "text": "Chart Info Data News 1m 5m 15m 30m 1H Last Price",
+      "rect": {
+        "x": 0,
+        "y": 149,
+        "width": 1077,
+        "height": 574
+      },
+      "style": {
+        "display": "flex",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "relative",
+        "overflow": "hidden",
+        "zIndex": "auto",
+        "width": "1077px",
+        "height": "574px",
+        "transform": "none"
+      },
+      "visible": true,
+      "attributes": {
+        "data-v-b236e72e": "",
+        "class": "arco-tabs arco-tabs-horizontal arco-tabs-top arco-tabs-type-line arco-tabs-size-medium arco-tabs-justify v_0-2-79-0 chart-tabs"
+      },
+      "parents": [
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "arco-tabs arco-tabs-horizontal arco-tabs-top arco-tabs-type-line arco-tabs-size-medium arco-tabs-justify v_0-2-79-0 chart-tabs"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "trade-view-tab-wrapper"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "contract-info-area tradview-container"
+        },
+        {
+          "tag": "DIV",
+          "id": "ExchangeChart",
+          "className": "draggable-resizable"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "drag-resize-container color-bg-1"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": ""
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "contract-trade-main-page contract-container-ce3daf1823ef color-bg-1 fm-text"
+        }
+      ]
+    },
+    {
+      "tag": "DIV",
+      "id": null,
+      "className": "kline-business-wrap h-full w-full relative flex flex-col",
+      "text": "1m 5m 15m 30m 1H Last Price",
+      "rect": {
+        "x": 0,
+        "y": 189,
+        "width": 1077,
+        "height": 534
+      },
+      "style": {
+        "display": "flex",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "relative",
+        "overflow": "visible",
+        "zIndex": "auto",
+        "width": "1077px",
+        "height": "534px",
+        "transform": "none"
+      },
+      "visible": true,
+      "attributes": {
+        "data-v-b236e72e": "",
+        "class": "kline-business-wrap h-full w-full relative flex flex-col",
+        "theme": "Dark"
+      },
+      "parents": [
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "kline-business-wrap h-full w-full relative flex flex-col"
+        },
+        {
+          "tag": "DIV",
+          "id": "tradeView",
+          "className": "relative flex flex-col items-center justify-center h100% max-md:h100%"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "arco-tabs-pane"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "arco-tabs-content-item arco-tabs-content-item-active"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "arco-tabs-content-list arco-tabs-content-animation"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "arco-tabs-content"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "arco-tabs arco-tabs-horizontal arco-tabs-top arco-tabs-type-line arco-tabs-size-medium arco-tabs-justify v_0-2-79-0 chart-tabs"
+        }
+      ]
+    },
+    {
+      "tag": "DIV",
+      "id": null,
+      "className": "relative w-full bx-color-bg-fg bx-color-border border-b-1px border-b-solid select-none h-40px",
+      "text": "1m 5m 15m 30m 1H Last Price",
+      "rect": {
+        "x": 0,
+        "y": 189,
+        "width": 1077,
+        "height": 40
+      },
+      "style": {
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "relative",
+        "overflow": "visible",
+        "zIndex": "auto",
+        "width": "1077px",
+        "height": "40px",
+        "transform": "none"
+      },
+      "visible": true,
+      "attributes": {
+        "data-v-9a404a01": "",
+        "class": "relative w-full bx-color-bg-fg bx-color-border border-b-1px border-b-solid select-none h-40px",
+        "data-testid": "bx-chart-header"
+      },
+      "parents": [
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "relative w-full bx-color-bg-fg bx-color-border border-b-1px border-b-solid select-none h-40px"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "kline-business-wrap h-full w-full relative flex flex-col"
+        },
+        {
+          "tag": "DIV",
+          "id": "tradeView",
+          "className": "relative flex flex-col items-center justify-center h100% max-md:h100%"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "arco-tabs-pane"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "arco-tabs-content-item arco-tabs-content-item-active"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "arco-tabs-content-list arco-tabs-content-animation"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "arco-tabs-content"
+        }
+      ]
+    },
+    {
+      "tag": "BUTTON",
+      "id": null,
+      "className": "flex items-center justify-center w-24px h-24px -m-4px shrink-0 p-0 rounded-4px border-none cursor-pointer transition-colors focus:outline-none focus-visible:outline-auto bx-color-bg-btn-secondary bx-color-text-1",
+      "text": "",
+      "rect": {
+        "x": 212,
+        "y": 197,
+        "width": 24,
+        "height": 24
+      },
+      "style": {
+        "display": "flex",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "static",
+        "overflow": "visible",
+        "zIndex": "auto",
+        "width": "24px",
+        "height": "24px",
+        "transform": "none"
+      },
+      "visible": true,
+      "attributes": {
+        "type": "button",
+        "class": "flex items-center justify-center w-24px h-24px -m-4px shrink-0 p-0 rounded-4px border-none cursor-pointer transition-colors focus:",
+        "aria-label": "Candles"
+      },
+      "parents": [
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "className": "flex items-center justify-center w-24px h-24px -m-4px shrink-0 p-0 rounded-4px border-none cursor-pointer transition-colors focus:outline-none focus-visible:outline-auto bx-color-bg-btn-secondary bx-color-text-1"
+        },
+        {
+          "tag": "SPAN",
+          "id": null,
+          "className": "inline-flex items-center justify-center"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "inline-flex items-center"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "space-x-16 flex items-center"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "relative flex items-center h-full space-x-4px"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "inline-flex items-center h-full min-w-max"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "inline-block min-w-max h-full"
+        }
+      ]
+    },
+    {
+      "tag": "BUTTON",
+      "id": "reka-popover-trigger-v-0-2-79-26",
+      "className": "flex items-center justify-center w-24px h-24px -m-4px shrink-0 p-0 rounded-4px border-none bg-transparent cursor-pointer transition-colors focus:outline-none focus-visible:outline-auto bx-color-text-2 hover:bx-color-text",
+      "text": "",
+      "rect": {
+        "x": 236,
+        "y": 197,
+        "width": 24,
+        "height": 24
+      },
+      "style": {
+        "display": "flex",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "static",
+        "overflow": "visible",
+        "zIndex": "auto",
+        "width": "24px",
+        "height": "24px",
+        "transform": "none"
+      },
+      "visible": true,
+      "attributes": {
+        "id": "reka-popover-trigger-v-0-2-79-26",
+        "type": "button",
+        "aria-haspopup": "dialog",
+        "aria-expanded": "false",
+        "aria-controls": "",
+        "data-state": "closed",
+        "class": "flex items-center justify-center w-24px h-24px -m-4px shrink-0 p-0 rounded-4px border-none bg-transparent cursor-pointer transitio",
+        "aria-label": "Candles"
+      },
+      "parents": [
+        {
+          "tag": "BUTTON",
+          "id": "reka-popover-trigger-v-0-2-79-26",
+          "className": "flex items-center justify-center w-24px h-24px -m-4px shrink-0 p-0 rounded-4px border-none bg-transparent cursor-pointer transition-colors focus:outline-none focus-visible:outline-auto bx-color-text-2 hover:bx-color-text"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "relative flex items-center h-full space-x-4px"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "inline-flex items-center h-full min-w-max"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "inline-block min-w-max h-full"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "flex-1 min-w-0 h-full overflow-x-auto overflow-y-hidden [scrollbar-width:none] [&::-webkit-scrollbar]:hidden focus:outline-none focus-visible:outline-auto"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "relative flex items-center h-full min-w-0 overflow-hidden flex-1"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "flex items-center justify-between h-full max-w-full overflow-hidden px-10px"
+        }
+      ]
+    },
+    {
+      "tag": "DIV",
+      "id": null,
+      "className": "inline-flex items-center h-full shrink-0",
+      "text": "",
+      "rect": {
+        "x": 540,
+        "y": 189,
+        "width": 73,
+        "height": 39
+      },
+      "style": {
+        "display": "flex",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "static",
+        "overflow": "visible",
+        "zIndex": "auto",
+        "width": "73px",
+        "height": "39.1111px",
+        "transform": "none"
+      },
+      "visible": true,
+      "attributes": {
+        "data-v-9a404a01": "",
+        "class": "inline-flex items-center h-full shrink-0",
+        "data-testid": "bx-chart-header-history"
+      },
+      "parents": [
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "inline-flex items-center h-full shrink-0"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "inline-flex items-center h-full min-w-max"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "inline-block min-w-max h-full"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "flex-1 min-w-0 h-full overflow-x-auto overflow-y-hidden [scrollbar-width:none] [&::-webkit-scrollbar]:hidden focus:outline-none focus-visible:outline-auto"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "relative flex items-center h-full min-w-0 overflow-hidden flex-1"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "flex items-center justify-between h-full max-w-full overflow-hidden px-10px"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "relative w-full bx-color-bg-fg bx-color-border border-b-1px border-b-solid select-none h-40px"
+        }
+      ]
+    },
+    {
+      "tag": "BUTTON",
+      "id": null,
+      "className": "flex items-center justify-center w-24px h-24px -m-4px shrink-0 p-0 rounded-4px border-none bg-transparent transition-colors bx-color-text-2 focus:outline-none focus-visible:outline-auto opacity-40 cursor-not-allowed",
+      "text": "",
+      "rect": {
+        "x": 561,
+        "y": 197,
+        "width": 24,
+        "height": 24
+      },
+      "style": {
+        "display": "flex",
+        "visibility": "visible",
+        "opacity": "0.4",
+        "position": "static",
+        "overflow": "visible",
+        "zIndex": "auto",
+        "width": "24px",
+        "height": "24px",
+        "transform": "none"
+      },
+      "visible": true,
+      "attributes": {
+        "type": "button",
+        "class": "flex items-center justify-center w-24px h-24px -m-4px shrink-0 p-0 rounded-4px border-none bg-transparent transition-colors bx-col",
+        "disabled": "",
+        "aria-label": "Undo",
+        "aria-keyshortcuts": "Control+Z",
+        "data-testid": "bx-chart-header-undo"
+      },
+      "parents": [
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "className": "flex items-center justify-center w-24px h-24px -m-4px shrink-0 p-0 rounded-4px border-none bg-transparent transition-colors bx-color-text-2 focus:outline-none focus-visible:outline-auto opacity-40 cursor-not-allowed"
+        },
+        {
+          "tag": "SPAN",
+          "id": null,
+          "className": "inline-flex items-center justify-center"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "inline-flex items-center"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "flex items-center space-x-16px"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "inline-flex items-center h-full shrink-0"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "inline-flex items-center h-full min-w-max"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "inline-block min-w-max h-full"
+        }
+      ]
+    },
+    {
+      "tag": "BUTTON",
+      "id": null,
+      "className": "flex items-center justify-center w-24px h-24px -m-4px shrink-0 p-0 rounded-4px border-none bg-transparent transition-colors bx-color-text-2 focus:outline-none focus-visible:outline-auto opacity-40 cursor-not-allowed",
+      "text": "",
+      "rect": {
+        "x": 593,
+        "y": 197,
+        "width": 24,
+        "height": 24
+      },
+      "style": {
+        "display": "flex",
+        "visibility": "visible",
+        "opacity": "0.4",
+        "position": "static",
+        "overflow": "visible",
+        "zIndex": "auto",
+        "width": "24px",
+        "height": "24px",
+        "transform": "none"
+      },
+      "visible": true,
+      "attributes": {
+        "type": "button",
+        "class": "flex items-center justify-center w-24px h-24px -m-4px shrink-0 p-0 rounded-4px border-none bg-transparent transition-colors bx-col",
+        "disabled": "",
+        "aria-label": "Redo",
+        "aria-keyshortcuts": "Control+Y",
+        "data-testid": "bx-chart-header-redo"
+      },
+      "parents": [
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "className": "flex items-center justify-center w-24px h-24px -m-4px shrink-0 p-0 rounded-4px border-none bg-transparent transition-colors bx-color-text-2 focus:outline-none focus-visible:outline-auto opacity-40 cursor-not-allowed"
+        },
+        {
+          "tag": "SPAN",
+          "id": null,
+          "className": "inline-flex items-center justify-center"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "inline-flex items-center"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "flex items-center space-x-16px"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "inline-flex items-center h-full shrink-0"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "inline-flex items-center h-full min-w-max"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "inline-block min-w-max h-full"
+        }
+      ]
+    },
+    {
+      "tag": "BUTTON",
+      "id": null,
+      "className": "bx-chart-header-ultra-entry inline-flex shrink-0 items-center justify-center w-62px h-24px p-0 cursor-pointer appearance-none rounded-100px shadow-none outline-none focus:outline-none focus-visible:outline-none",
+      "text": "",
+      "rect": {
+        "x": 1005,
+        "y": 197,
+        "width": 62,
+        "height": 24
+      },
+      "style": {
+        "display": "flex",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "static",
+        "overflow": "visible",
+        "zIndex": "auto",
+        "width": "62px",
+        "height": "24px",
+        "transform": "none"
+      },
+      "visible": true,
+      "attributes": {
+        "data-v-f3ecd6b9": "",
+        "type": "button",
+        "class": "bx-chart-header-ultra-entry inline-flex shrink-0 items-center justify-center w-62px h-24px p-0 cursor-pointer appearance-none roun",
+        "aria-label": "Ultra",
+        "data-testid": "bx-chart-header-ultra-entry",
+        "data-state": "closed"
+      },
+      "parents": [
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "className": "bx-chart-header-ultra-entry inline-flex shrink-0 items-center justify-center w-62px h-24px p-0 cursor-pointer appearance-none rounded-100px shadow-none outline-none focus:outline-none focus-visible:outline-none"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "inline-flex items-center"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "flex items-center"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "flex items-center justify-between h-full max-w-full overflow-hidden px-10px"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "relative w-full bx-color-bg-fg bx-color-border border-b-1px border-b-solid select-none h-40px"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "kline-business-wrap h-full w-full relative flex flex-col"
+        },
+        {
+          "tag": "DIV",
+          "id": "tradeView",
+          "className": "relative flex flex-col items-center justify-center h100% max-md:h100%"
+        }
+      ]
+    },
+    {
+      "tag": "DIV",
+      "id": "futures-trade-tchart",
+      "className": "tv-container-chart",
+      "text": "",
+      "rect": {
+        "x": 0,
+        "y": 229,
+        "width": 1077,
+        "height": 494
+      },
+      "style": {
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "static",
+        "overflow": "visible",
+        "zIndex": "auto",
+        "width": "1077px",
+        "height": "494px",
+        "transform": "none"
+      },
+      "visible": true,
+      "attributes": {
+        "class": "tv-container-chart",
+        "id": "futures-trade-tchart"
+      },
+      "parents": [
+        {
+          "tag": "DIV",
+          "id": "futures-trade-tchart",
+          "className": "tv-container-chart"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "tv-container-left"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "tv-container-wrapper"
+        },
+        {
+          "tag": "DIV",
+          "id": "bitunix_trading_view",
+          "className": "bitunix_trading_view trading_view_drak"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "relative flex-1 overflow-hidden"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "kline-business-wrap h-full w-full relative flex flex-col"
+        },
+        {
+          "tag": "DIV",
+          "id": "tradeView",
+          "className": "relative flex flex-col items-center justify-center h100% max-md:h100%"
+        }
+      ]
+    },
+    {
+      "tag": "IFRAME",
+      "id": "tradingview_1d6ac",
+      "className": "",
+      "text": "",
+      "rect": {
+        "x": 0,
+        "y": 229,
+        "width": 1077,
+        "height": 494
+      },
+      "style": {
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "static",
+        "overflow": "clip",
+        "zIndex": "auto",
+        "width": "1077px",
+        "height": "494px",
+        "transform": "none"
+      },
+      "visible": true,
+      "attributes": {
+        "id": "tradingview_1d6ac",
+        "name": "tradingview_1d6ac",
+        "src": "blob:https://www.bitunix.com/cf59b174-c5ba-4efd-be1b-eeec255f561b",
+        "data-widget-options": "symbol=XAUTUSDT&interval=15&studiesAccess=%7B%22type%22%3A%22black%22%2C%22tools%22%3A%5B%7B%22name%22%3A%2252%20Week%20High%2FLow",
+        "title": "Financial Chart",
+        "frameborder": "0",
+        "allowtransparency": "true",
+        "scrolling": "no",
+        "allowfullscreen": "",
+        "style": "display: block; width: 100%; height: 100%;"
+      },
+      "parents": [
+        {
+          "tag": "IFRAME",
+          "id": "tradingview_1d6ac",
+          "className": ""
+        },
+        {
+          "tag": "DIV",
+          "id": "futures-trade-tchart",
+          "className": "tv-container-chart"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "tv-container-left"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "tv-container-wrapper"
+        },
+        {
+          "tag": "DIV",
+          "id": "bitunix_trading_view",
+          "className": "bitunix_trading_view trading_view_drak"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "relative flex-1 overflow-hidden"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "kline-business-wrap h-full w-full relative flex flex-col"
+        }
+      ]
+    }
+  ],
+  "hiddenChartElements": [
+    {
+      "tag": "DIV",
+      "id": null,
+      "className": "absolute top-0 left-0 w-100% h-100% hidden cursor-pointer table-chart-wrapper",
+      "text": "-8.15%",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      },
+      "style": {
+        "display": "none",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "absolute",
+        "overflow": "visible",
+        "zIndex": "auto",
+        "width": "100%",
+        "height": "100%",
+        "transform": "none"
+      },
+      "visible": false,
+      "attributes": {
+        "data-v-ba6dedb7": "",
+        "class": "absolute top-0 left-0 w-100% h-100% hidden cursor-pointer table-chart-wrapper"
+      },
+      "parents": [
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "absolute top-0 left-0 w-100% h-100% hidden cursor-pointer table-chart-wrapper"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "h100% flex items-center gap-4 relative line-h0"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "pl-8 pr-8 inline-flex items-center gap-4 cursor-pointer content-item relative"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "inline-flex quick-coin-item opacity-60"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "flex overflow-x-auto [scrollbar-width:none]"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "flex relative overflow-hidden"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "w100% flex overflow-hidden select-none"
+        }
+      ]
+    },
+    {
+      "tag": "DIV",
+      "id": null,
+      "className": "table-chart-wrapper",
+      "text": "",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      },
+      "style": {
+        "display": "inline-block",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "static",
+        "overflow": "visible",
+        "zIndex": "auto",
+        "width": "100%",
+        "height": "100%",
+        "transform": "none"
+      },
+      "visible": false,
+      "attributes": {
+        "data-v-30a2b3fa": "",
+        "data-v-ba6dedb7": "",
+        "class": "table-chart-wrapper",
+        "style": "user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);",
+        "_echarts_instance_": "ec_1794674430239"
+      },
+      "parents": [
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "table-chart-wrapper"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "w-100% h-22"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "absolute top-0 left-0 w-100% h-100% hidden cursor-pointer table-chart-wrapper"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "h100% flex items-center gap-4 relative line-h0"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "pl-8 pr-8 inline-flex items-center gap-4 cursor-pointer content-item relative"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "inline-flex quick-coin-item opacity-60"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "flex overflow-x-auto [scrollbar-width:none]"
+        }
+      ]
+    },
+    {
+      "tag": "DIV",
+      "id": null,
+      "className": "absolute top-0 left-0 w-100% h-100% hidden cursor-pointer table-chart-wrapper",
+      "text": "-4.70%",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      },
+      "style": {
+        "display": "none",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "absolute",
+        "overflow": "visible",
+        "zIndex": "auto",
+        "width": "100%",
+        "height": "100%",
+        "transform": "none"
+      },
+      "visible": false,
+      "attributes": {
+        "data-v-ba6dedb7": "",
+        "class": "absolute top-0 left-0 w-100% h-100% hidden cursor-pointer table-chart-wrapper"
+      },
+      "parents": [
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "absolute top-0 left-0 w-100% h-100% hidden cursor-pointer table-chart-wrapper"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "h100% flex items-center gap-4 relative line-h0"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "pl-8 pr-8 inline-flex items-center gap-4 cursor-pointer content-item relative"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "inline-flex quick-coin-item opacity-60"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "flex overflow-x-auto [scrollbar-width:none]"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "flex relative overflow-hidden"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "w100% flex overflow-hidden select-none"
+        }
+      ]
+    },
+    {
+      "tag": "DIV",
+      "id": null,
+      "className": "absolute top-0 left-0 w-100% h-100% hidden cursor-pointer table-chart-wrapper",
+      "text": "-1.00%",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      },
+      "style": {
+        "display": "none",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "absolute",
+        "overflow": "visible",
+        "zIndex": "auto",
+        "width": "100%",
+        "height": "100%",
+        "transform": "none"
+      },
+      "visible": false,
+      "attributes": {
+        "data-v-ba6dedb7": "",
+        "class": "absolute top-0 left-0 w-100% h-100% hidden cursor-pointer table-chart-wrapper"
+      },
+      "parents": [
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "absolute top-0 left-0 w-100% h-100% hidden cursor-pointer table-chart-wrapper"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "h100% flex items-center gap-4 relative line-h0"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "pl-8 pr-8 inline-flex items-center gap-4 cursor-pointer content-item relative"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "inline-flex quick-coin-item opacity-60"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "flex overflow-x-auto [scrollbar-width:none]"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "flex relative overflow-hidden"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "w100% flex overflow-hidden select-none"
+        }
+      ]
+    },
+    {
+      "tag": "DIV",
+      "id": null,
+      "className": "absolute top-0 left-0 w-100% h-100% hidden cursor-pointer table-chart-wrapper",
+      "text": "-1.04%",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      },
+      "style": {
+        "display": "none",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "absolute",
+        "overflow": "visible",
+        "zIndex": "auto",
+        "width": "100%",
+        "height": "100%",
+        "transform": "none"
+      },
+      "visible": false,
+      "attributes": {
+        "data-v-ba6dedb7": "",
+        "class": "absolute top-0 left-0 w-100% h-100% hidden cursor-pointer table-chart-wrapper"
+      },
+      "parents": [
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "absolute top-0 left-0 w-100% h-100% hidden cursor-pointer table-chart-wrapper"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "h100% flex items-center gap-4 relative line-h0"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "pl-8 pr-8 inline-flex items-center gap-4 cursor-pointer content-item relative"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "inline-flex quick-coin-item opacity-60"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "flex overflow-x-auto [scrollbar-width:none]"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "flex relative overflow-hidden"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "w100% flex overflow-hidden select-none"
+        }
+      ]
+    },
+    {
+      "tag": "DIV",
+      "id": null,
+      "className": "table-chart-wrapper",
+      "text": "",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      },
+      "style": {
+        "display": "inline-block",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "static",
+        "overflow": "visible",
+        "zIndex": "auto",
+        "width": "100%",
+        "height": "100%",
+        "transform": "none"
+      },
+      "visible": false,
+      "attributes": {
+        "data-v-30a2b3fa": "",
+        "data-v-ba6dedb7": "",
+        "class": "table-chart-wrapper",
+        "style": "user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);",
+        "_echarts_instance_": "ec_1794674430240"
+      },
+      "parents": [
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "table-chart-wrapper"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "w-100% h-22"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "absolute top-0 left-0 w-100% h-100% hidden cursor-pointer table-chart-wrapper"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "h100% flex items-center gap-4 relative line-h0"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "pl-8 pr-8 inline-flex items-center gap-4 cursor-pointer content-item relative"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "inline-flex quick-coin-item opacity-60"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "flex overflow-x-auto [scrollbar-width:none]"
+        }
+      ]
+    },
+    {
+      "tag": "DIV",
+      "id": null,
+      "className": "absolute top-0 left-0 w-100% h-100% hidden cursor-pointer table-chart-wrapper",
+      "text": "-4.71%",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      },
+      "style": {
+        "display": "none",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "absolute",
+        "overflow": "visible",
+        "zIndex": "auto",
+        "width": "100%",
+        "height": "100%",
+        "transform": "none"
+      },
+      "visible": false,
+      "attributes": {
+        "data-v-ba6dedb7": "",
+        "class": "absolute top-0 left-0 w-100% h-100% hidden cursor-pointer table-chart-wrapper"
+      },
+      "parents": [
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "absolute top-0 left-0 w-100% h-100% hidden cursor-pointer table-chart-wrapper"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "h100% flex items-center gap-4 relative line-h0"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "pl-8 pr-8 inline-flex items-center gap-4 cursor-pointer content-item relative"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "inline-flex quick-coin-item opacity-60"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "flex overflow-x-auto [scrollbar-width:none]"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "flex relative overflow-hidden"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "w100% flex overflow-hidden select-none"
+        }
+      ]
+    },
+    {
+      "tag": "DIV",
+      "id": null,
+      "className": "absolute top-0 left-0 w-100% h-100% hidden cursor-pointer table-chart-wrapper",
+      "text": "-0.26%",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      },
+      "style": {
+        "display": "none",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "absolute",
+        "overflow": "visible",
+        "zIndex": "auto",
+        "width": "100%",
+        "height": "100%",
+        "transform": "none"
+      },
+      "visible": false,
+      "attributes": {
+        "data-v-ba6dedb7": "",
+        "class": "absolute top-0 left-0 w-100% h-100% hidden cursor-pointer table-chart-wrapper"
+      },
+      "parents": [
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "absolute top-0 left-0 w-100% h-100% hidden cursor-pointer table-chart-wrapper"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "h100% flex items-center gap-4 relative line-h0"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "pl-8 pr-8 inline-flex items-center gap-4 cursor-pointer content-item relative"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "inline-flex quick-coin-item opacity-60"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "flex overflow-x-auto [scrollbar-width:none]"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "flex relative overflow-hidden"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "w100% flex overflow-hidden select-none"
+        }
+      ]
+    },
+    {
+      "tag": "DIV",
+      "id": null,
+      "className": "absolute top-0 left-0 w-100% h-100% hidden cursor-pointer table-chart-wrapper",
+      "text": "-1.89%",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      },
+      "style": {
+        "display": "none",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "absolute",
+        "overflow": "visible",
+        "zIndex": "auto",
+        "width": "100%",
+        "height": "100%",
+        "transform": "none"
+      },
+      "visible": false,
+      "attributes": {
+        "data-v-ba6dedb7": "",
+        "class": "absolute top-0 left-0 w-100% h-100% hidden cursor-pointer table-chart-wrapper"
+      },
+      "parents": [
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "absolute top-0 left-0 w-100% h-100% hidden cursor-pointer table-chart-wrapper"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "h100% flex items-center gap-4 relative line-h0"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "pl-8 pr-8 inline-flex items-center gap-4 cursor-pointer content-item relative"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "inline-flex quick-coin-item opacity-60"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "flex overflow-x-auto [scrollbar-width:none]"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "flex relative overflow-hidden"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "w100% flex overflow-hidden select-none"
+        }
+      ]
+    },
+    {
+      "tag": "DIV",
+      "id": null,
+      "className": "absolute top-0 left-0 w-100% h-100% hidden cursor-pointer table-chart-wrapper",
+      "text": "-7.00%",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      },
+      "style": {
+        "display": "none",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "absolute",
+        "overflow": "visible",
+        "zIndex": "auto",
+        "width": "100%",
+        "height": "100%",
+        "transform": "none"
+      },
+      "visible": false,
+      "attributes": {
+        "data-v-ba6dedb7": "",
+        "class": "absolute top-0 left-0 w-100% h-100% hidden cursor-pointer table-chart-wrapper"
+      },
+      "parents": [
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "absolute top-0 left-0 w-100% h-100% hidden cursor-pointer table-chart-wrapper"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "h100% flex items-center gap-4 relative line-h0"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "pl-8 pr-8 inline-flex items-center gap-4 cursor-pointer content-item relative"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "inline-flex quick-coin-item opacity-60"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "flex overflow-x-auto [scrollbar-width:none]"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "flex relative overflow-hidden"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "w100% flex overflow-hidden select-none"
+        }
+      ]
+    }
+  ],
+  "frames": [
+    {
+      "tag": "IFRAME",
+      "id": "tradingview_1d6ac",
+      "className": "",
+      "text": "",
+      "rect": {
+        "x": 0,
+        "y": 229,
+        "width": 1077,
+        "height": 494
+      },
+      "style": {
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "static",
+        "overflow": "clip",
+        "zIndex": "auto",
+        "width": "1077px",
+        "height": "494px",
+        "transform": "none"
+      },
+      "visible": true,
+      "attributes": {
+        "id": "tradingview_1d6ac",
+        "name": "tradingview_1d6ac",
+        "src": "blob:https://www.bitunix.com/cf59b174-c5ba-4efd-be1b-eeec255f561b",
+        "data-widget-options": "symbol=XAUTUSDT&interval=15&studiesAccess=%7B%22type%22%3A%22black%22%2C%22tools%22%3A%5B%7B%22name%22%3A%2252%20Week%20High%2FLow",
+        "title": "Financial Chart",
+        "frameborder": "0",
+        "allowtransparency": "true",
+        "scrolling": "no",
+        "allowfullscreen": "",
+        "style": "display: block; width: 100%; height: 100%;"
+      },
+      "parents": [
+        {
+          "tag": "IFRAME",
+          "id": "tradingview_1d6ac",
+          "className": ""
+        },
+        {
+          "tag": "DIV",
+          "id": "futures-trade-tchart",
+          "className": "tv-container-chart"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "tv-container-left"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "tv-container-wrapper"
+        },
+        {
+          "tag": "DIV",
+          "id": "bitunix_trading_view",
+          "className": "bitunix_trading_view trading_view_drak"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "relative flex-1 overflow-hidden"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "kline-business-wrap h-full w-full relative flex flex-col"
+        }
+      ],
+      "src": "https://www.bitunix.comhttps://www.bitunix.com/cf59b174-c5ba-4efd-be1b-eeec255f561b",
+      "sameOrigin": true,
+      "frameDocument": {
+        "title": "",
+        "readyState": "complete",
+        "width": 1077,
+        "height": 494,
+        "chartMatches": [
+          {
+            "tag": "BODY",
+            "id": null,
+            "className": "chart-page unselectable on-widget",
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 1077,
+              "height": 494
+            }
+          },
+          {
+            "tag": "DIV",
+            "id": "header-toolbar-chart-styles",
+            "className": "wrap-n5bmFxyX",
+            "rect": {
+              "x": 48,
+              "y": 0,
+              "width": 38,
+              "height": 38
+            }
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "chart-toolbar chart-controls-bar",
+            "rect": {
+              "x": 56,
+              "y": 455,
+              "width": 1021,
+              "height": 39
+            }
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "chart-container top-full-width-chart active",
+            "rect": {
+              "x": 56,
+              "y": 0,
+              "width": 1021,
+              "height": 455
+            }
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "chart-container-border",
+            "rect": {
+              "x": 56,
+              "y": 0,
+              "width": 1021,
+              "height": 455
+            }
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "chart-widget chart-widget--themed-dark chart-widget__top--themed-dark chart-widget__bottom--themed-dark",
+            "rect": {
+              "x": 56,
+              "y": 0,
+              "width": 1021,
+              "height": 455
+            }
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "chart-markup-table",
+            "rect": {
+              "x": 56,
+              "y": 0,
+              "width": 1021,
+              "height": 455
+            }
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "chart-markup-table price-axis-container",
+            "rect": {
+              "x": 56,
+              "y": 0,
+              "width": 0,
+              "height": 366
+            }
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "chart-markup-table pane",
+            "rect": {
+              "x": 56,
+              "y": 0,
+              "width": 957,
+              "height": 366
+            }
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "chart-gui-wrapper",
+            "rect": {
+              "x": 56,
+              "y": 0,
+              "width": 957,
+              "height": 366
+            }
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "chart-markup-table price-axis-container",
+            "rect": {
+              "x": 1013,
+              "y": 0,
+              "width": 64,
+              "height": 366
+            }
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "chart-markup-table price-axis-container",
+            "rect": {
+              "x": 56,
+              "y": 367,
+              "width": 0,
+              "height": 60
+            }
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "chart-markup-table pane",
+            "rect": {
+              "x": 56,
+              "y": 367,
+              "width": 957,
+              "height": 60
+            }
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "chart-gui-wrapper",
+            "rect": {
+              "x": 56,
+              "y": 367,
+              "width": 957,
+              "height": 60
+            }
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "chart-markup-table price-axis-container",
+            "rect": {
+              "x": 1013,
+              "y": 367,
+              "width": 64,
+              "height": 60
+            }
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "chart-markup-table price-axis-container",
+            "rect": {
+              "x": 56,
+              "y": 428,
+              "width": 0,
+              "height": 28
+            }
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "chart-markup-table time-axis",
+            "rect": {
+              "x": 56,
+              "y": 428,
+              "width": 957,
+              "height": 28
+            }
+          },
+          {
+            "tag": "DIV",
+            "id": null,
+            "className": "chart-markup-table price-axis-container",
+            "rect": {
+              "x": 1013,
+              "y": 428,
+              "width": 64,
+              "height": 28
+            }
+          },
+          {
+            "tag": "DIV",
+            "id": "chart-aria-description",
+            "className": "",
+            "rect": {
+              "x": 0,
+              "y": 494,
+              "width": 1077,
+              "height": 0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "tag": "IFRAME",
+      "id": null,
+      "className": "",
+      "text": "",
+      "rect": {
+        "x": 0,
+        "y": -9999,
+        "width": 0,
+        "height": 0
+      },
+      "style": {
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "absolute",
+        "overflow": "clip",
+        "zIndex": "auto",
+        "width": "0px",
+        "height": "0px",
+        "transform": "none"
+      },
+      "visible": false,
+      "attributes": {
+        "data-product": "web_widget",
+        "title": "No content",
+        "role": "presentation",
+        "tabindex": "-1",
+        "allow": "microphone *",
+        "aria-hidden": "true",
+        "src": "about:blank",
+        "style": "width: 0px; height: 0px; border: 0px; position: absolute; top: -9999px;"
+      },
+      "parents": [
+        {
+          "tag": "IFRAME",
+          "id": null,
+          "className": ""
+        },
+        {
+          "tag": "BODY",
+          "id": null,
+          "className": "zendesk-launcher-hidden"
+        },
+        {
+          "tag": "HTML",
+          "id": null,
+          "className": ""
+        }
+      ],
+      "src": "nullblank",
+      "sameOrigin": true,
+      "frameDocument": {
+        "title": "",
+        "readyState": "complete",
+        "width": 0,
+        "height": 8,
+        "chartMatches": []
+      }
+    },
+    {
+      "tag": "IFRAME",
+      "id": "launcher",
+      "className": "",
+      "text": "",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      },
+      "style": {
+        "display": "none",
+        "visibility": "hidden",
+        "opacity": "0",
+        "position": "fixed",
+        "overflow": "clip",
+        "zIndex": "999999",
+        "width": "64px",
+        "height": "64px",
+        "transform": "none"
+      },
+      "visible": false,
+      "attributes": {
+        "title": "Button to launch messaging window",
+        "id": "launcher",
+        "style": "color-scheme: light; height: 64px; width: 64px; position: fixed; bottom: 32px; right: 32px; border: 0px; margin-top: 0px; opacity:"
+      },
+      "parents": [
+        {
+          "tag": "IFRAME",
+          "id": "launcher",
+          "className": ""
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": ""
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": ""
+        },
+        {
+          "tag": "BODY",
+          "id": null,
+          "className": "zendesk-launcher-hidden"
+        },
+        {
+          "tag": "HTML",
+          "id": null,
+          "className": ""
+        }
+      ],
+      "src": "https://www.bitunix.com/contract-trade/XAUTUSDT",
+      "sameOrigin": true,
+      "frameDocument": {
+        "title": "Button to launch messaging window",
+        "readyState": "complete",
+        "width": 0,
+        "height": 0,
+        "chartMatches": []
+      }
+    }
+  ],
+  "canvases": [
+    {
+      "tag": "CANVAS",
+      "id": null,
+      "className": "",
+      "text": "",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      },
+      "style": {
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "absolute",
+        "overflow": "clip",
+        "zIndex": "auto",
+        "width": "0px",
+        "height": "0px",
+        "transform": "none"
+      },
+      "visible": false,
+      "attributes": {
+        "data-zr-dom-id": "zr_0",
+        "width": "0",
+        "height": "0",
+        "style": "position: absolute; left: 0px; top: 0px; width: 0px; height: 0px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0)"
+      },
+      "parents": [
+        {
+          "tag": "CANVAS",
+          "id": null,
+          "className": ""
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": ""
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "table-chart-wrapper"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "w-100% h-22"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "absolute top-0 left-0 w-100% h-100% hidden cursor-pointer table-chart-wrapper"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "h100% flex items-center gap-4 relative line-h0"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "pl-8 pr-8 inline-flex items-center gap-4 cursor-pointer content-item relative"
+        }
+      ],
+      "canvas": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "CANVAS",
+      "id": null,
+      "className": "",
+      "text": "",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      },
+      "style": {
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "absolute",
+        "overflow": "clip",
+        "zIndex": "auto",
+        "width": "0px",
+        "height": "0px",
+        "transform": "none"
+      },
+      "visible": false,
+      "attributes": {
+        "data-zr-dom-id": "zr_0",
+        "width": "0",
+        "height": "0",
+        "style": "position: absolute; left: 0px; top: 0px; width: 0px; height: 0px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0)"
+      },
+      "parents": [
+        {
+          "tag": "CANVAS",
+          "id": null,
+          "className": ""
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": ""
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "table-chart-wrapper"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "w-100% h-22"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "absolute top-0 left-0 w-100% h-100% hidden cursor-pointer table-chart-wrapper"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "h100% flex items-center gap-4 relative line-h0"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "pl-8 pr-8 inline-flex items-center gap-4 cursor-pointer content-item relative"
+        }
+      ],
+      "canvas": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "CANVAS",
+      "id": null,
+      "className": "bitunix-orderbook-canvas",
+      "text": "",
+      "rect": {
+        "x": 1081,
+        "y": 215,
+        "width": 309,
+        "height": 477
+      },
+      "style": {
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "absolute",
+        "overflow": "clip",
+        "zIndex": "5",
+        "width": "309px",
+        "height": "477.208px",
+        "transform": "none"
+      },
+      "visible": true,
+      "attributes": {
+        "data-v-a03a7a41": "",
+        "class": "bitunix-orderbook-canvas",
+        "height": "536.625",
+        "width": "347.625"
+      },
+      "parents": [
+        {
+          "tag": "CANVAS",
+          "id": null,
+          "className": "bitunix-orderbook-canvas"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "bitunix-orderbook orderbook-6ce6e899"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "content-443E9745"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "container-3A8FA0CB flex-1"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "flex flex-col h100% w100% c8beeb859"
+        },
+        {
+          "tag": "SPAN",
+          "id": null,
+          "className": ""
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "bitunix-tabs-content h100-percent"
+        }
+      ],
+      "canvas": {
+        "width": 347,
+        "height": 536
+      }
+    },
+    {
+      "tag": "CANVAS",
+      "id": null,
+      "className": "bitunix-orderbook-canvas",
+      "text": "",
+      "rect": {
+        "x": 1081,
+        "y": 215,
+        "width": 309,
+        "height": 477
+      },
+      "style": {
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "absolute",
+        "overflow": "clip",
+        "zIndex": "4",
+        "width": "309px",
+        "height": "477.208px",
+        "transform": "none"
+      },
+      "visible": true,
+      "attributes": {
+        "data-v-a03a7a41": "",
+        "class": "bitunix-orderbook-canvas",
+        "style": "z-index: 4;",
+        "height": "536.625",
+        "width": "347.625"
+      },
+      "parents": [
+        {
+          "tag": "CANVAS",
+          "id": null,
+          "className": "bitunix-orderbook-canvas"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "bitunix-orderbook orderbook-6ce6e899"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "content-443E9745"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "container-3A8FA0CB flex-1"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "flex flex-col h100% w100% c8beeb859"
+        },
+        {
+          "tag": "SPAN",
+          "id": null,
+          "className": ""
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "bitunix-tabs-content h100-percent"
+        }
+      ],
+      "canvas": {
+        "width": 347,
+        "height": 536
+      }
+    }
+  ],
+  "svgElements": [
+    {
+      "tag": "svg",
+      "id": null,
+      "className": "",
+      "text": "",
+      "rect": {
+        "x": 19,
+        "y": 6,
+        "width": 106,
+        "height": 32
+      },
+      "style": {
+        "display": "inline",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "static",
+        "overflow": "hidden",
+        "zIndex": "auto",
+        "width": "106px",
+        "height": "32px",
+        "transform": "none"
+      },
+      "visible": true,
+      "attributes": {
+        "xmlns": "http://www.w3.org/2000/svg",
+        "viewBox": "0 0 108 24",
+        "fill": "none",
+        "width": "106",
+        "height": "32",
+        "preserveAspectRatio": "xMidYMid meet",
+        "style": "",
+        "data-v-752b428b": ""
+      },
+      "parents": [
+        {
+          "tag": "svg",
+          "id": null,
+          "className": ""
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "bitunix-header-desktop-flash-guard hover-opacity-80 w-108 min-w-108 shrink-0 max-md:justify-start ml-15 lg:ml-19"
+        },
+        {
+          "tag": "A",
+          "id": null,
+          "className": "header-logo-link shrink-0"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "header-left h-100% flex min-w-0 items-center z-1"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "header-wrapper-dark h-48 header-wrapper-main--pc-bg-layer is-header-at-top header-wrapper-main--desktop-blur header-wrapper-main--compact max-md:py-0 max-md:px-15 max-md:impact-border header-wrapper-main flex-row-between"
+        },
+        {
+          "tag": "HEADER",
+          "id": null,
+          "className": "position-initial"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "bitunix-layout bitunix-layout-contract-only bx-color-bg-fg bitunix-layout--bg-big-page"
+        }
+      ]
+    },
+    {
+      "tag": "svg",
+      "id": null,
+      "className": "mt-1",
+      "text": "",
+      "rect": {
+        "x": 1305,
+        "y": 17,
+        "width": 16,
+        "height": 16
+      },
+      "style": {
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "static",
+        "overflow": "hidden",
+        "zIndex": "auto",
+        "width": "16px",
+        "height": "16px",
+        "transform": "none"
+      },
+      "visible": true,
+      "attributes": {
+        "data-v-d861daf5": "",
+        "viewBox": "0 0 1024 1024",
+        "xmlns": "http://www.w3.org/2000/svg",
+        "width": "16",
+        "height": "16",
+        "preserveAspectRatio": "xMidYMid meet",
+        "fill": "var(--color-text-2)",
+        "class": "mt-1"
+      },
+      "parents": [
+        {
+          "tag": "svg",
+          "id": null,
+          "className": "mt-1"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "className": "header-search-trigger-btn md:min-w-174 min-w-120 h-28px rounded-14px flex items-center px-12px border-0px gap-4px fs-15px color-text-2 cursor-pointer"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "py-10 hover:opacity-80"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "search-container flex items-center justify-end relative bitunix-header-desktop-flash-guard"
+        },
+        {
+          "tag": "SECTION",
+          "id": null,
+          "className": "max-md:gap-x-16 header-right relative z-1 h-100% flex shrink-0 items-center justify-end color-text-head-1 pe-12 max-md:pe-0"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "header-wrapper-dark h-48 header-wrapper-main--pc-bg-layer is-header-at-top header-wrapper-main--desktop-blur header-wrapper-main--compact max-md:py-0 max-md:px-15 max-md:impact-border header-wrapper-main flex-row-between"
+        },
+        {
+          "tag": "HEADER",
+          "id": null,
+          "className": "position-initial"
+        }
+      ]
+    },
+    {
+      "tag": "svg",
+      "id": null,
+      "className": "",
+      "text": "",
+      "rect": {
+        "x": 1479,
+        "y": 15,
+        "width": 18,
+        "height": 18
+      },
+      "style": {
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "static",
+        "overflow": "hidden",
+        "zIndex": "auto",
+        "width": "18px",
+        "height": "18px",
+        "transform": "none"
+      },
+      "visible": true,
+      "attributes": {
+        "data-v-aed9adc2": "",
+        "xmlns": "http://www.w3.org/2000/svg",
+        "viewBox": "0 0 1024 1024",
+        "width": "18",
+        "height": "18",
+        "preserveAspectRatio": "xMidYMid meet"
+      },
+      "parents": [
+        {
+          "tag": "svg",
+          "id": null,
+          "className": ""
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "hover-opacity-80 h-100% px-12 flex-center cursor-pointer"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "nav-asset-trigger relative h-100% bitunix-header-desktop-flash-guard"
+        },
+        {
+          "tag": "SECTION",
+          "id": null,
+          "className": "max-md:gap-x-16 header-right relative z-1 h-100% flex shrink-0 items-center justify-end color-text-head-1 pe-12 max-md:pe-0"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "header-wrapper-dark h-48 header-wrapper-main--pc-bg-layer is-header-at-top header-wrapper-main--desktop-blur header-wrapper-main--compact max-md:py-0 max-md:px-15 max-md:impact-border header-wrapper-main flex-row-between"
+        },
+        {
+          "tag": "HEADER",
+          "id": null,
+          "className": "position-initial"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "bitunix-layout bitunix-layout-contract-only bx-color-bg-fg bitunix-layout--bg-big-page"
+        }
+      ]
+    },
+    {
+      "tag": "svg",
+      "id": null,
+      "className": "",
+      "text": "",
+      "rect": {
+        "x": 1571,
+        "y": 15,
+        "width": 18,
+        "height": 18
+      },
+      "style": {
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "static",
+        "overflow": "hidden",
+        "zIndex": "auto",
+        "width": "18px",
+        "height": "18px",
+        "transform": "none"
+      },
+      "visible": true,
+      "attributes": {
+        "data-v-0ac77fd8": "",
+        "width": "18",
+        "height": "18",
+        "viewBox": "0 0 18 18",
+        "fill": "none",
+        "xmlns": "http://www.w3.org/2000/svg"
+      },
+      "parents": [
+        {
+          "tag": "svg",
+          "id": null,
+          "className": ""
+        },
+        {
+          "tag": "A",
+          "id": null,
+          "className": "hover-opacity-80 h-100% px-12 flex-center cursor-pointer"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "nav-download-trigger relative h-100% bitunix-header-desktop-flash-guard"
+        },
+        {
+          "tag": "SECTION",
+          "id": null,
+          "className": "max-md:gap-x-16 header-right relative z-1 h-100% flex shrink-0 items-center justify-end color-text-head-1 pe-12 max-md:pe-0"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "header-wrapper-dark h-48 header-wrapper-main--pc-bg-layer is-header-at-top header-wrapper-main--desktop-blur header-wrapper-main--compact max-md:py-0 max-md:px-15 max-md:impact-border header-wrapper-main flex-row-between"
+        },
+        {
+          "tag": "HEADER",
+          "id": null,
+          "className": "position-initial"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "bitunix-layout bitunix-layout-contract-only bx-color-bg-fg bitunix-layout--bg-big-page"
+        }
+      ]
+    },
+    {
+      "tag": "svg",
+      "id": null,
+      "className": "w-20 h-20",
+      "text": "",
+      "rect": {
+        "x": 1613,
+        "y": 14,
+        "width": 20,
+        "height": 20
+      },
+      "style": {
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "static",
+        "overflow": "hidden",
+        "zIndex": "auto",
+        "width": "20px",
+        "height": "20px",
+        "transform": "none"
+      },
+      "visible": true,
+      "attributes": {
+        "data-v-2a9fd158": "",
+        "viewBox": "0 0 1024 1024",
+        "xmlns": "http://www.w3.org/2000/svg",
+        "width": "100%",
+        "height": "100%",
+        "preserveAspectRatio": "xMidYMid meet",
+        "fill": "#fff",
+        "class": "w-20 h-20"
+      },
+      "parents": [
+        {
+          "tag": "svg",
+          "id": null,
+          "className": "w-20 h-20"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "hover-opacity-80 h-100% cursor-pointer flex-center px-12"
+        },
+        {
+          "tag": "DIV",
+          "id": "correspondence-parentNode",
+          "className": "correspondence-dom color-text-1 relative"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "header-right-mobile-cluster--compact header-right-mobile-cluster flex-center"
+        },
+        {
+          "tag": "SECTION",
+          "id": null,
+          "className": "max-md:gap-x-16 header-right relative z-1 h-100% flex shrink-0 items-center justify-end color-text-head-1 pe-12 max-md:pe-0"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "header-wrapper-dark h-48 header-wrapper-main--pc-bg-layer is-header-at-top header-wrapper-main--desktop-blur header-wrapper-main--compact max-md:py-0 max-md:px-15 max-md:impact-border header-wrapper-main flex-row-between"
+        },
+        {
+          "tag": "HEADER",
+          "id": null,
+          "className": "position-initial"
+        }
+      ]
+    },
+    {
+      "tag": "svg",
+      "id": null,
+      "className": "animated-icon animated-icon--menu",
+      "text": "",
+      "rect": {
+        "x": 1657,
+        "y": 14,
+        "width": 20,
+        "height": 20
+      },
+      "style": {
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "static",
+        "overflow": "visible",
+        "zIndex": "auto",
+        "width": "20px",
+        "height": "20px",
+        "transform": "none"
+      },
+      "visible": true,
+      "attributes": {
+        "class": "animated-icon animated-icon--menu",
+        "width": "20",
+        "height": "20",
+        "viewBox": "6 7 20 18",
+        "fill": "none",
+        "xmlns": "http://www.w3.org/2000/svg",
+        "aria-hidden": "true",
+        "data-v-78c88d35": "",
+        "data-v-8fe11832": ""
+      },
+      "parents": [
+        {
+          "tag": "svg",
+          "id": null,
+          "className": "animated-icon animated-icon--menu"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "hover-opacity-80 h-100% px-12 flex-center cursor-pointer"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "nav-setting-trigger relative h-100%"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "bitunix-header-desktop-flash-guard header-setting-slot h-100% lg:mx-12"
+        },
+        {
+          "tag": "SECTION",
+          "id": null,
+          "className": "max-md:gap-x-16 header-right relative z-1 h-100% flex shrink-0 items-center justify-end color-text-head-1 pe-12 max-md:pe-0"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "header-wrapper-dark h-48 header-wrapper-main--pc-bg-layer is-header-at-top header-wrapper-main--desktop-blur header-wrapper-main--compact max-md:py-0 max-md:px-15 max-md:impact-border header-wrapper-main flex-row-between"
+        },
+        {
+          "tag": "HEADER",
+          "id": null,
+          "className": "position-initial"
+        }
+      ]
+    },
+    {
+      "tag": "svg",
+      "id": null,
+      "className": "arco-icon arco-icon-up",
+      "text": "",
+      "rect": {
+        "x": 25,
+        "y": 73,
+        "width": 14,
+        "height": 14
+      },
+      "style": {
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "static",
+        "overflow": "hidden",
+        "zIndex": "auto",
+        "width": "14px",
+        "height": "14px",
+        "transform": "none"
+      },
+      "visible": true,
+      "attributes": {
+        "data-v-f351f95b": "",
+        "viewBox": "0 0 48 48",
+        "fill": "none",
+        "xmlns": "http://www.w3.org/2000/svg",
+        "stroke": "currentColor",
+        "class": "arco-icon arco-icon-up",
+        "stroke-width": "4",
+        "stroke-linecap": "butt",
+        "stroke-linejoin": "miter"
+      },
+      "parents": [
+        {
+          "tag": "svg",
+          "id": null,
+          "className": "arco-icon arco-icon-up"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "w28 h28 b-r8 color-bg-1 flex-center color-text-2"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "w32 h32 flex-center m-e-4 cursor-pointer"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "flex flex-row flex-nowrap items-center me-1 m-s-16"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "info-main c2dfda99 flex flex-row flex-nowrap flex-1"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "ae21b19e chart-header-container h60 w100% flex flex-row flex-nowrap items-center justify-between p-t9 p-b9 color-bg-2"
+        },
+        {
+          "tag": "DIV",
+          "id": "Header",
+          "className": "draggable-resizable"
+        }
+      ]
+    },
+    {
+      "tag": "svg",
+      "id": null,
+      "className": "ml-1px",
+      "text": "",
+      "rect": {
+        "x": 229,
+        "y": 65,
+        "width": 8,
+        "height": 8
+      },
+      "style": {
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "static",
+        "overflow": "hidden",
+        "zIndex": "auto",
+        "width": "8px",
+        "height": "8px",
+        "transform": "none"
+      },
+      "visible": true,
+      "attributes": {
+        "data-v-85b9b830": "",
+        "xmlns": "http://www.w3.org/2000/svg",
+        "viewBox": "0 0 10 10",
+        "fill": "none",
+        "width": "8px",
+        "height": "8px",
+        "preserveAspectRatio": "xMidYMid meet",
+        "class": "ml-1px"
+      },
+      "parents": [
+        {
+          "tag": "svg",
+          "id": null,
+          "className": "ml-1px"
+        },
+        {
+          "tag": "SPAN",
+          "id": null,
+          "className": "zero-fee-badge zero-fee-badge--dark"
+        },
+        {
+          "tag": "SPAN",
+          "id": null,
+          "className": "inline-flex items-center gap-x-4"
+        },
+        {
+          "tag": "H1",
+          "id": null,
+          "className": "m-0 p-0 fs-18 fw-700 inline-block lh-100% fs-18!"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "kline-title color-text-1 font-700 fs-18 leh-40 relative text-nowrap cursor-pointer flex items-center ps8"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "flex items-center gap-16px"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "flex flex-row flex-nowrap items-center me-1 m-s-16"
+        }
+      ]
+    },
+    {
+      "tag": "svg",
+      "id": null,
+      "className": "rotate-180",
+      "text": "",
+      "rect": {
+        "x": 251,
+        "y": 72,
+        "width": 14,
+        "height": 14
+      },
+      "style": {
+        "display": "inline",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "static",
+        "overflow": "hidden",
+        "zIndex": "auto",
+        "width": "14px",
+        "height": "14px",
+        "transform": "matrix(-1, 0, 0, -1, 0, 0)"
+      },
+      "visible": true,
+      "attributes": {
+        "xmlns": "http://www.w3.org/2000/svg",
+        "viewBox": "0 0 14 13",
+        "fill": "none",
+        "width": "14",
+        "height": "14",
+        "preserveAspectRatio": "xMidYMid meet",
+        "class": "rotate-180"
+      },
+      "parents": [
+        {
+          "tag": "svg",
+          "id": null,
+          "className": "rotate-180"
+        },
+        {
+          "tag": "SPAN",
+          "id": null,
+          "className": "p-l8"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "kline-title color-text-1 font-700 fs-18 leh-40 relative text-nowrap cursor-pointer flex items-center ps8"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "flex items-center gap-16px"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "flex flex-row flex-nowrap items-center me-1 m-s-16"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "info-main c2dfda99 flex flex-row flex-nowrap flex-1"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "ae21b19e chart-header-container h60 w100% flex flex-row flex-nowrap items-center justify-between p-t9 p-b9 color-bg-2"
+        }
+      ]
+    },
+    {
+      "tag": "svg",
+      "id": "multiAsset-step1",
+      "className": "icon relative inline-block color-text-1 cursor-pointer relative h16 w16",
+      "text": "",
+      "rect": {
+        "x": 289,
+        "y": 72,
+        "width": 16,
+        "height": 16
+      },
+      "style": {
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "relative",
+        "overflow": "hidden",
+        "zIndex": "auto",
+        "width": "16px",
+        "height": "16px",
+        "transform": "none"
+      },
+      "visible": true,
+      "attributes": {
+        "data-v-f351f95b": "",
+        "xmlns": "http://www.w3.org/2000/svg",
+        "viewBox": "0 0 1024 1024",
+        "width": "16",
+        "height": "16",
+        "preserveAspectRatio": "xMidYMid meet",
+        "id": "multiAsset-step1",
+        "class": "icon relative inline-block color-text-1 cursor-pointer relative h16 w16"
+      },
+      "parents": [
+        {
+          "tag": "svg",
+          "id": "multiAsset-step1",
+          "className": "icon relative inline-block color-text-1 cursor-pointer relative h16 w16"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "ms-24 flex-row-center-center"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "flex flex-row flex-nowrap items-center me-1 m-s-16"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "info-main c2dfda99 flex flex-row flex-nowrap flex-1"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "ae21b19e chart-header-container h60 w100% flex flex-row flex-nowrap items-center justify-between p-t9 p-b9 color-bg-2"
+        },
+        {
+          "tag": "DIV",
+          "id": "Header",
+          "className": "draggable-resizable"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "drag-resize-container color-bg-1"
+        }
+      ]
+    },
+    {
+      "tag": "svg",
+      "id": null,
+      "className": "icon inline-block color-text-1 weekly-report-icon h16 w16",
+      "text": "",
+      "rect": {
+        "x": 1539,
+        "y": 72,
+        "width": 16,
+        "height": 16
+      },
+      "style": {
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "static",
+        "overflow": "hidden",
+        "zIndex": "auto",
+        "width": "16px",
+        "height": "16px",
+        "transform": "none"
+      },
+      "visible": true,
+      "attributes": {
+        "data-v-c6f9e688": "",
+        "xmlns": "http://www.w3.org/2000/svg",
+        "viewBox": "0 0 36 36",
+        "fill": "none",
+        "width": "16",
+        "height": "16",
+        "preserveAspectRatio": "xMidYMid meet",
+        "class": "icon inline-block color-text-1 weekly-report-icon h16 w16"
+      },
+      "parents": [
+        {
+          "tag": "svg",
+          "id": null,
+          "className": "icon inline-block color-text-1 weekly-report-icon h16 w16"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "className": "weekly-report-icon-entry"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "ms-24 flex-row-center-center gap-24"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "info-operate pe-24 flex flex-row flex-nowrap items-center text-nowrap"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "ae21b19e chart-header-container h60 w100% flex flex-row flex-nowrap items-center justify-between p-t9 p-b9 color-bg-2"
+        },
+        {
+          "tag": "DIV",
+          "id": "Header",
+          "className": "draggable-resizable"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "drag-resize-container color-bg-1"
+        }
+      ]
+    },
+    {
+      "tag": "svg",
+      "id": null,
+      "className": "icon relative inline-block color-text-1 calculate-icon cursor-pointer relative h16 w16",
+      "text": "",
+      "rect": {
+        "x": 1579,
+        "y": 72,
+        "width": 16,
+        "height": 16
+      },
+      "style": {
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "relative",
+        "overflow": "hidden",
+        "zIndex": "auto",
+        "width": "16px",
+        "height": "16px",
+        "transform": "none"
+      },
+      "visible": true,
+      "attributes": {
+        "data-v-46e5cdbb": "",
+        "xmlns": "http://www.w3.org/2000/svg",
+        "viewBox": "0 0 1024 1024",
+        "width": "16",
+        "height": "16",
+        "preserveAspectRatio": "xMidYMid meet",
+        "class": "icon relative inline-block color-text-1 calculate-icon cursor-pointer relative h16 w16"
+      },
+      "parents": [
+        {
+          "tag": "svg",
+          "id": null,
+          "className": "icon relative inline-block color-text-1 calculate-icon cursor-pointer relative h16 w16"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "ms-24 flex-row-center-center gap-24"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "info-operate pe-24 flex flex-row flex-nowrap items-center text-nowrap"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "ae21b19e chart-header-container h60 w100% flex flex-row flex-nowrap items-center justify-between p-t9 p-b9 color-bg-2"
+        },
+        {
+          "tag": "DIV",
+          "id": "Header",
+          "className": "draggable-resizable"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "drag-resize-container color-bg-1"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": ""
+        }
+      ]
+    },
+    {
+      "tag": "svg",
+      "id": null,
+      "className": "cursor-pointer outline-none",
+      "text": "",
+      "rect": {
+        "x": 1619,
+        "y": 72,
+        "width": 16,
+        "height": 16
+      },
+      "style": {
+        "display": "inline",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "static",
+        "overflow": "hidden",
+        "zIndex": "auto",
+        "width": "16px",
+        "height": "16px",
+        "transform": "none"
+      },
+      "visible": true,
+      "attributes": {
+        "xmlns": "http://www.w3.org/2000/svg",
+        "viewBox": "0 0 1024 1024",
+        "width": "16",
+        "height": "16",
+        "preserveAspectRatio": "xMidYMid meet",
+        "class": "cursor-pointer outline-none"
+      },
+      "parents": [
+        {
+          "tag": "svg",
+          "id": null,
+          "className": "cursor-pointer outline-none"
+        },
+        {
+          "tag": "SPAN",
+          "id": null,
+          "className": "max-md:hidden"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "price-reminder-main w-16 h-16"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "ms-24"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "info-operate pe-24 flex flex-row flex-nowrap items-center text-nowrap"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "ae21b19e chart-header-container h60 w100% flex flex-row flex-nowrap items-center justify-between p-t9 p-b9 color-bg-2"
+        },
+        {
+          "tag": "DIV",
+          "id": "Header",
+          "className": "draggable-resizable"
+        }
+      ]
+    },
+    {
+      "tag": "svg",
+      "id": null,
+      "className": "icon relative inline-block color-text-1 calculate-icon cursor-pointer h18 w18",
+      "text": "",
+      "rect": {
+        "x": 1659,
+        "y": 71,
+        "width": 18,
+        "height": 18
+      },
+      "style": {
+        "display": "inline-block",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "relative",
+        "overflow": "hidden",
+        "zIndex": "auto",
+        "width": "18px",
+        "height": "18px",
+        "transform": "none"
+      },
+      "visible": true,
+      "attributes": {
+        "viewBox": "0 0 1024 1024",
+        "xmlns": "http://www.w3.org/2000/svg",
+        "width": "18",
+        "height": "18",
+        "preserveAspectRatio": "xMidYMid meet",
+        "fill": "currentColor",
+        "class": "icon relative inline-block color-text-1 calculate-icon cursor-pointer h18 w18"
+      },
+      "parents": [
+        {
+          "tag": "svg",
+          "id": null,
+          "className": "icon relative inline-block color-text-1 calculate-icon cursor-pointer h18 w18"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "h18 w18"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "ms-24 flex-row-center-center"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "info-operate pe-24 flex flex-row flex-nowrap items-center text-nowrap"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "ae21b19e chart-header-container h60 w100% flex flex-row flex-nowrap items-center justify-between p-t9 p-b9 color-bg-2"
+        },
+        {
+          "tag": "DIV",
+          "id": "Header",
+          "className": "draggable-resizable"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "drag-resize-container color-bg-1"
+        }
+      ]
+    },
+    {
+      "tag": "svg",
+      "id": null,
+      "className": "w100% h100%",
+      "text": "",
+      "rect": {
+        "x": 983,
+        "y": 113,
+        "width": 20,
+        "height": 36
+      },
+      "style": {
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "static",
+        "overflow": "hidden",
+        "zIndex": "auto",
+        "width": "20px",
+        "height": "36px",
+        "transform": "none"
+      },
+      "visible": true,
+      "attributes": {
+        "data-v-ba6dedb7": "",
+        "viewBox": "0 0 20 36",
+        "xmlns": "http://www.w3.org/2000/svg",
+        "width": "100%",
+        "height": "100%",
+        "preserveAspectRatio": "xMidYMid meet",
+        "fill": "none",
+        "class": "w100% h100%"
+      },
+      "parents": [
+        {
+          "tag": "svg",
+          "id": null,
+          "className": "w100% h100%"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "absolute right-0 cursor-pointer flex justify-end items-center w20"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "flex relative overflow-hidden"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "w100% flex overflow-hidden select-none"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "w100% color-bg-1 flex [transition:height_0.1s_ease-out] ps16 h36 max-md:hidden"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "trade-view-tab-wrapper"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "contract-info-area tradview-container"
+        }
+      ]
+    },
+    {
+      "tag": "svg",
+      "id": null,
+      "className": "arco-icon arco-icon-undo [transform:rotateX(180deg)]",
+      "text": "",
+      "rect": {
+        "x": 1045,
+        "y": 121,
+        "width": 20,
+        "height": 20
+      },
+      "style": {
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "static",
+        "overflow": "hidden",
+        "zIndex": "auto",
+        "width": "20px",
+        "height": "20px",
+        "transform": "matrix3d(1, 0, 0, 0, 0, -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1)"
+      },
+      "visible": true,
+      "attributes": {
+        "data-v-ba6dedb7": "",
+        "viewBox": "0 0 48 48",
+        "fill": "none",
+        "xmlns": "http://www.w3.org/2000/svg",
+        "stroke": "currentColor",
+        "class": "arco-icon arco-icon-undo [transform:rotateX(180deg)]",
+        "stroke-width": "4",
+        "stroke-linecap": "butt",
+        "stroke-linejoin": "miter"
+      },
+      "parents": [
+        {
+          "tag": "svg",
+          "id": null,
+          "className": "arco-icon arco-icon-undo [transform:rotateX(180deg)]"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "w32 h100% fs-20 color-text-3 flex-center operation-item back-item disabled"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "h-100% pr-6 pl-6 flex items-center cursor-pointer"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "w100% flex overflow-hidden select-none"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "w100% color-bg-1 flex [transition:height_0.1s_ease-out] ps16 h36 max-md:hidden"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "trade-view-tab-wrapper"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "contract-info-area tradview-container"
+        }
+      ]
+    },
+    {
+      "tag": "svg",
+      "id": null,
+      "className": "",
+      "text": "",
+      "rect": {
+        "x": 1057,
+        "y": 163,
+        "width": 12,
+        "height": 12
+      },
+      "style": {
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "static",
+        "overflow": "hidden",
+        "zIndex": "auto",
+        "width": "12px",
+        "height": "12px",
+        "transform": "none"
+      },
+      "visible": true,
+      "attributes": {
+        "data-v-b236e72e": "",
+        "viewBox": "0 0 8 16",
+        "xmlns": "http://www.w3.org/2000/svg",
+        "width": "12",
+        "height": "12",
+        "preserveAspectRatio": "xMidYMid meet",
+        "fill": "none",
+        "style": "cursor: grab; margin-right: 8px;"
+      },
+      "parents": [
+        {
+          "tag": "svg",
+          "id": null,
+          "className": ""
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "arco-tabs-nav-extra"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "arco-tabs-nav arco-tabs-nav-horizontal arco-tabs-nav-top arco-tabs-nav-size-medium arco-tabs-nav-type-line"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "arco-tabs arco-tabs-horizontal arco-tabs-top arco-tabs-type-line arco-tabs-size-medium arco-tabs-justify v_0-2-79-0 chart-tabs"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "trade-view-tab-wrapper"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "contract-info-area tradview-container"
+        },
+        {
+          "tag": "DIV",
+          "id": "ExchangeChart",
+          "className": "draggable-resizable"
+        }
+      ]
+    },
+    {
+      "tag": "svg",
+      "id": null,
+      "className": "",
+      "text": "",
+      "rect": {
+        "x": 175,
+        "y": 203,
+        "width": 12,
+        "height": 12
+      },
+      "style": {
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "static",
+        "overflow": "hidden",
+        "zIndex": "auto",
+        "width": "12px",
+        "height": "12px",
+        "transform": "none"
+      },
+      "visible": true,
+      "attributes": {
+        "xmlns": "http://www.w3.org/2000/svg",
+        "viewBox": "0 0 1024 1024",
+        "width": "12",
+        "height": "12",
+        "preserveAspectRatio": "xMidYMid meet"
+      },
+      "parents": [
+        {
+          "tag": "svg",
+          "id": null,
+          "className": ""
+        },
+        {
+          "tag": "SPAN",
+          "id": null,
+          "className": "flex items-center justify-center transition-transform"
+        },
+        {
+          "tag": "BUTTON",
+          "id": "reka-popover-trigger-v-0-2-79-24",
+          "className": "flex items-center justify-center w-20px h-20px p-0 border-none bg-transparent cursor-pointer bx-color-text-2 hover:bx-color-text-1 transition-colors focus:outline-none focus-visible:outline-auto"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "flex items-center"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "relative flex items-center"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "flex items-center space-x-16px"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "inline-flex items-center h-full min-w-max"
+        }
+      ]
+    },
+    {
+      "tag": "svg",
+      "id": null,
+      "className": "",
+      "text": "",
+      "rect": {
+        "x": 216,
+        "y": 201,
+        "width": 16,
+        "height": 16
+      },
+      "style": {
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "static",
+        "overflow": "hidden",
+        "zIndex": "auto",
+        "width": "16px",
+        "height": "16px",
+        "transform": "none"
+      },
+      "visible": true,
+      "attributes": {
+        "xmlns": "http://www.w3.org/2000/svg",
+        "viewBox": "0 0 16 16",
+        "fill": "currentColor",
+        "aria-hidden": "true",
+        "width": "16",
+        "height": "16",
+        "preserveAspectRatio": "xMidYMid meet"
+      },
+      "parents": [
+        {
+          "tag": "svg",
+          "id": null,
+          "className": ""
+        },
+        {
+          "tag": "SPAN",
+          "id": null,
+          "className": "flex items-center justify-center w-16px h-16px"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "className": "flex items-center justify-center w-24px h-24px -m-4px shrink-0 p-0 rounded-4px border-none cursor-pointer transition-colors focus:outline-none focus-visible:outline-auto bx-color-bg-btn-secondary bx-color-text-1"
+        },
+        {
+          "tag": "SPAN",
+          "id": null,
+          "className": "inline-flex items-center justify-center"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "inline-flex items-center"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "space-x-16 flex items-center"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "relative flex items-center h-full space-x-4px"
+        }
+      ]
+    },
+    {
+      "tag": "svg",
+      "id": null,
+      "className": "",
+      "text": "",
+      "rect": {
+        "x": 242,
+        "y": 203,
+        "width": 12,
+        "height": 12
+      },
+      "style": {
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "static",
+        "overflow": "hidden",
+        "zIndex": "auto",
+        "width": "12px",
+        "height": "12px",
+        "transform": "none"
+      },
+      "visible": true,
+      "attributes": {
+        "xmlns": "http://www.w3.org/2000/svg",
+        "viewBox": "0 0 1024 1024",
+        "width": "12",
+        "height": "12",
+        "preserveAspectRatio": "xMidYMid meet"
+      },
+      "parents": [
+        {
+          "tag": "svg",
+          "id": null,
+          "className": ""
+        },
+        {
+          "tag": "SPAN",
+          "id": null,
+          "className": "flex items-center justify-center transition-transform"
+        },
+        {
+          "tag": "BUTTON",
+          "id": "reka-popover-trigger-v-0-2-79-26",
+          "className": "flex items-center justify-center w-24px h-24px -m-4px shrink-0 p-0 rounded-4px border-none bg-transparent cursor-pointer transition-colors focus:outline-none focus-visible:outline-auto bx-color-text-2 hover:bx-color-text"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "relative flex items-center h-full space-x-4px"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "inline-flex items-center h-full min-w-max"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "inline-block min-w-max h-full"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "flex-1 min-w-0 h-full overflow-x-auto overflow-y-hidden [scrollbar-width:none] [&::-webkit-scrollbar]:hidden focus:outline-none focus-visible:outline-auto"
+        }
+      ]
+    },
+    {
+      "tag": "svg",
+      "id": null,
+      "className": "w-16px h-16px",
+      "text": "",
+      "rect": {
+        "x": 285,
+        "y": 201,
+        "width": 16,
+        "height": 16
+      },
+      "style": {
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "static",
+        "overflow": "hidden",
+        "zIndex": "auto",
+        "width": "16px",
+        "height": "16px",
+        "transform": "none"
+      },
+      "visible": true,
+      "attributes": {
+        "data-v-9a404a01": "",
+        "xmlns": "http://www.w3.org/2000/svg",
+        "viewBox": "0 0 16 16",
+        "fill": "none",
+        "aria-hidden": "true",
+        "width": "100%",
+        "height": "100%",
+        "preserveAspectRatio": "xMidYMid meet",
+        "class": "w-16px h-16px"
+      },
+      "parents": [
+        {
+          "tag": "svg",
+          "id": null,
+          "className": "w-16px h-16px"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "className": "flex items-center justify-center w-24px h-24px -m-4px shrink-0 p-0 rounded-4px border-none bg-transparent cursor-pointer transition-colors bx-color-text-2 hover:bx-color-bg-btn-secondary hover:bx-color-text-1 focus:outli"
+        },
+        {
+          "tag": "SPAN",
+          "id": null,
+          "className": "inline-flex items-center justify-center"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "inline-flex items-center"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "flex items-center space-x-16px"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "inline-flex items-center h-full min-w-max"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "inline-block min-w-max h-full"
+        }
+      ]
+    },
+    {
+      "tag": "svg",
+      "id": null,
+      "className": "w-16px h-16px",
+      "text": "",
+      "rect": {
+        "x": 317,
+        "y": 201,
+        "width": 16,
+        "height": 16
+      },
+      "style": {
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "static",
+        "overflow": "hidden",
+        "zIndex": "auto",
+        "width": "16px",
+        "height": "16px",
+        "transform": "none"
+      },
+      "visible": true,
+      "attributes": {
+        "xmlns": "http://www.w3.org/2000/svg",
+        "viewBox": "0 0 16 16",
+        "fill": "none",
+        "width": "100%",
+        "height": "100%",
+        "preserveAspectRatio": "xMidYMid meet",
+        "class": "w-16px h-16px"
+      },
+      "parents": [
+        {
+          "tag": "svg",
+          "id": null,
+          "className": "w-16px h-16px"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "className": "flex items-center justify-center w-24px h-24px -m-4px shrink-0 p-0 rounded-4px border-none cursor-pointer transition-colors focus:outline-none focus-visible:outline-auto bg-transparent bx-color-text-2 hover:bx-color-bg-b"
+        },
+        {
+          "tag": "SPAN",
+          "id": null,
+          "className": "inline-flex items-center justify-center"
+        },
+        {
+          "tag": "DIV",
+          "id": "reka-popover-trigger-v-0-2-79-2",
+          "className": "inline-flex items-center"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "flex items-center h-full space-x-16"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "flex items-center space-x-16px"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "inline-flex items-center h-full min-w-max"
+        }
+      ]
+    },
+    {
+      "tag": "svg",
+      "id": null,
+      "className": "w-16px h-16px",
+      "text": "",
+      "rect": {
+        "x": 358,
+        "y": 201,
+        "width": 16,
+        "height": 16
+      },
+      "style": {
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "static",
+        "overflow": "visible",
+        "zIndex": "auto",
+        "width": "16px",
+        "height": "16px",
+        "transform": "none"
+      },
+      "visible": true,
+      "attributes": {
+        "data-v-9a404a01": "",
+        "xmlns": "http://www.w3.org/2000/svg",
+        "viewBox": "0 0 16 16",
+        "fill": "none",
+        "overflow": "visible",
+        "width": "100%",
+        "height": "100%",
+        "preserveAspectRatio": "xMidYMid meet",
+        "class": "w-16px h-16px"
+      },
+      "parents": [
+        {
+          "tag": "svg",
+          "id": null,
+          "className": "w-16px h-16px"
+        },
+        {
+          "tag": "SPAN",
+          "id": null,
+          "className": "relative flex items-center justify-center w-16px h-16px"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "className": "relative overflow-visible flex items-center justify-center w-24px h-24px -m-4px shrink-0 p-0 rounded-4px border-none bg-transparent cursor-pointer transition-colors bx-color-text-2 hover:bx-color-bg-btn-secondary hover:b"
+        },
+        {
+          "tag": "SPAN",
+          "id": null,
+          "className": "inline-flex items-center justify-center"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "inline-flex items-center"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "flex items-center space-x-12px"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "inline-flex items-center h-full min-w-max"
+        }
+      ]
+    },
+    {
+      "tag": "svg",
+      "id": null,
+      "className": "w-16px h-16px",
+      "text": "",
+      "rect": {
+        "x": 386,
+        "y": 201,
+        "width": 16,
+        "height": 16
+      },
+      "style": {
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "static",
+        "overflow": "hidden",
+        "zIndex": "auto",
+        "width": "16px",
+        "height": "16px",
+        "transform": "none"
+      },
+      "visible": true,
+      "attributes": {
+        "xmlns": "http://www.w3.org/2000/svg",
+        "viewBox": "0 0 16 16",
+        "fill": "none",
+        "width": "100%",
+        "height": "100%",
+        "preserveAspectRatio": "xMidYMid meet",
+        "class": "w-16px h-16px"
+      },
+      "parents": [
+        {
+          "tag": "svg",
+          "id": null,
+          "className": "w-16px h-16px"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "className": "flex items-center justify-center w-24px h-24px -m-4px shrink-0 p-0 rounded-4px border-none cursor-pointer transition-colors focus:outline-none focus-visible:outline-auto bg-transparent bx-color-text-2 hover:bx-color-bg-b"
+        },
+        {
+          "tag": "SPAN",
+          "id": null,
+          "className": "inline-flex items-center justify-center"
+        },
+        {
+          "tag": "DIV",
+          "id": "reka-popover-trigger-v-0-2-79-6",
+          "className": "inline-flex items-center"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "inline-flex items-center"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "flex items-center space-x-12px"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "inline-flex items-center h-full min-w-max"
+        }
+      ]
+    },
+    {
+      "tag": "svg",
+      "id": null,
+      "className": "w-16px h-16px",
+      "text": "",
+      "rect": {
+        "x": 427,
+        "y": 201,
+        "width": 16,
+        "height": 16
+      },
+      "style": {
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "static",
+        "overflow": "hidden",
+        "zIndex": "auto",
+        "width": "16px",
+        "height": "16px",
+        "transform": "none"
+      },
+      "visible": true,
+      "attributes": {
+        "data-v-9a404a01": "",
+        "xmlns": "http://www.w3.org/2000/svg",
+        "viewBox": "0 0 36 36",
+        "fill": "none",
+        "width": "100%",
+        "height": "100%",
+        "preserveAspectRatio": "xMidYMid meet",
+        "class": "w-16px h-16px"
+      },
+      "parents": [
+        {
+          "tag": "svg",
+          "id": null,
+          "className": "w-16px h-16px"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "className": "flex items-center justify-center w-24px h-24px -m-4px shrink-0 p-0 rounded-4px border-none bg-transparent cursor-pointer transition-colors bx-color-text-2 hover:bx-color-bg-btn-secondary hover:bx-color-text-1 focus:outli"
+        },
+        {
+          "tag": "SPAN",
+          "id": null,
+          "className": "inline-flex items-center justify-center"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "inline-flex items-center !ml-0"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "flex items-center space-x-12px"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "inline-flex items-center h-full min-w-max"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "inline-block min-w-max h-full"
+        }
+      ]
+    },
+    {
+      "tag": "svg",
+      "id": null,
+      "className": "w-12px h-12px",
+      "text": "",
+      "rect": {
+        "x": 528,
+        "y": 203,
+        "width": 12,
+        "height": 12
+      },
+      "style": {
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "static",
+        "overflow": "hidden",
+        "zIndex": "auto",
+        "width": "12px",
+        "height": "12px",
+        "transform": "none"
+      },
+      "visible": true,
+      "attributes": {
+        "class": "w-12px h-12px",
+        "width": "12",
+        "height": "12",
+        "xmlns": "http://www.w3.org/2000/svg",
+        "viewBox": "0 0 1024 1024",
+        "fill": "currentColor"
+      },
+      "parents": [
+        {
+          "tag": "svg",
+          "id": null,
+          "className": "w-12px h-12px"
+        },
+        {
+          "tag": "BUTTON",
+          "id": "reka-popover-trigger-v-0-2-79-9",
+          "className": "flex items-center gap-4px shrink-0 px-0 py-0 border-none bg-transparent bx-color-text-2 hover:bx-color-primary cursor-pointer focus:outline-none focus-visible:outline-auto text-12px leading-14px"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "inline-flex items-center"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "flex items-center space-x-12px"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "inline-flex items-center h-full min-w-max"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "inline-block min-w-max h-full"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "flex-1 min-w-0 h-full overflow-x-auto overflow-y-hidden [scrollbar-width:none] [&::-webkit-scrollbar]:hidden focus:outline-none focus-visible:outline-auto"
+        }
+      ]
+    },
+    {
+      "tag": "svg",
+      "id": null,
+      "className": "w-16px h-16px",
+      "text": "",
+      "rect": {
+        "x": 565,
+        "y": 201,
+        "width": 16,
+        "height": 16
+      },
+      "style": {
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "static",
+        "overflow": "hidden",
+        "zIndex": "auto",
+        "width": "16px",
+        "height": "16px",
+        "transform": "none"
+      },
+      "visible": true,
+      "attributes": {
+        "xmlns": "http://www.w3.org/2000/svg",
+        "viewBox": "0 0 16 16",
+        "fill": "none",
+        "width": "100%",
+        "height": "100%",
+        "preserveAspectRatio": "xMidYMid meet",
+        "class": "w-16px h-16px"
+      },
+      "parents": [
+        {
+          "tag": "svg",
+          "id": null,
+          "className": "w-16px h-16px"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "className": "flex items-center justify-center w-24px h-24px -m-4px shrink-0 p-0 rounded-4px border-none bg-transparent transition-colors bx-color-text-2 focus:outline-none focus-visible:outline-auto opacity-40 cursor-not-allowed"
+        },
+        {
+          "tag": "SPAN",
+          "id": null,
+          "className": "inline-flex items-center justify-center"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "inline-flex items-center"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "flex items-center space-x-16px"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "inline-flex items-center h-full shrink-0"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "inline-flex items-center h-full min-w-max"
+        }
+      ]
+    },
+    {
+      "tag": "svg",
+      "id": null,
+      "className": "w-16px h-16px",
+      "text": "",
+      "rect": {
+        "x": 597,
+        "y": 201,
+        "width": 16,
+        "height": 16
+      },
+      "style": {
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "static",
+        "overflow": "hidden",
+        "zIndex": "auto",
+        "width": "16px",
+        "height": "16px",
+        "transform": "none"
+      },
+      "visible": true,
+      "attributes": {
+        "xmlns": "http://www.w3.org/2000/svg",
+        "viewBox": "0 0 16 16",
+        "fill": "none",
+        "width": "100%",
+        "height": "100%",
+        "preserveAspectRatio": "xMidYMid meet",
+        "class": "w-16px h-16px"
+      },
+      "parents": [
+        {
+          "tag": "svg",
+          "id": null,
+          "className": "w-16px h-16px"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "className": "flex items-center justify-center w-24px h-24px -m-4px shrink-0 p-0 rounded-4px border-none bg-transparent transition-colors bx-color-text-2 focus:outline-none focus-visible:outline-auto opacity-40 cursor-not-allowed"
+        },
+        {
+          "tag": "SPAN",
+          "id": null,
+          "className": "inline-flex items-center justify-center"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "inline-flex items-center"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "flex items-center space-x-16px"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "inline-flex items-center h-full shrink-0"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "inline-flex items-center h-full min-w-max"
+        }
+      ]
+    },
+    {
+      "tag": "svg",
+      "id": null,
+      "className": "",
+      "text": "",
+      "rect": {
+        "x": 804,
+        "y": 201,
+        "width": 16,
+        "height": 16
+      },
+      "style": {
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "static",
+        "overflow": "hidden",
+        "zIndex": "auto",
+        "width": "16px",
+        "height": "16px",
+        "transform": "none"
+      },
+      "visible": true,
+      "attributes": {
+        "data-v-195e935b": "",
+        "xmlns": "http://www.w3.org/2000/svg",
+        "viewBox": "0 0 16 14",
+        "fill": "none",
+        "width": "16px",
+        "height": "16px",
+        "preserveAspectRatio": "xMidYMid meet"
+      },
+      "parents": [
+        {
+          "tag": "svg",
+          "id": null,
+          "className": ""
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "feedback-icon-wrap"
+        },
+        {
+          "tag": "SPAN",
+          "id": null,
+          "className": "inline-flex items-center justify-center"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "inline-flex items-center"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "flex items-center justify-center space-x-16px"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "flex items-center gap-16px shrink-0 h-full ml-16px"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "flex items-center justify-between h-full max-w-full overflow-hidden px-10px"
+        }
+      ]
+    },
+    {
+      "tag": "svg",
+      "id": null,
+      "className": "flex items-center justify-center w-16px h-16px [&_path]:[stroke:currentColor] [&_path]:[stroke-width:0.9]",
+      "text": "",
+      "rect": {
+        "x": 836,
+        "y": 201,
+        "width": 16,
+        "height": 16
+      },
+      "style": {
+        "display": "flex",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "static",
+        "overflow": "hidden",
+        "zIndex": "auto",
+        "width": "16px",
+        "height": "16px",
+        "transform": "none"
+      },
+      "visible": true,
+      "attributes": {
+        "xmlns": "http://www.w3.org/2000/svg",
+        "viewBox": "0 0 16 16",
+        "fill": "none",
+        "width": "100%",
+        "height": "100%",
+        "preserveAspectRatio": "xMidYMid meet",
+        "class": "flex items-center justify-center w-16px h-16px [&_path]:[stroke:currentColor] [&_path]:[stroke-width:0.9]"
+      },
+      "parents": [
+        {
+          "tag": "svg",
+          "id": null,
+          "className": "flex items-center justify-center w-16px h-16px [&_path]:[stroke:currentColor] [&_path]:[stroke-width:0.9]"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "className": "flex items-center justify-center w-24px h-24px -m-4px shrink-0 p-0 rounded-4px border-none cursor-pointer transition-colors focus:outline-none focus-visible:outline-auto bg-transparent bx-color-text-2 hover:bx-color-bg-b"
+        },
+        {
+          "tag": "SPAN",
+          "id": null,
+          "className": "inline-flex items-center justify-center"
+        },
+        {
+          "tag": "DIV",
+          "id": "reka-popover-trigger-v-0-2-79-13",
+          "className": "inline-flex items-center"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "flex items-center gap-16px shrink-0 h-full ml-16px"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "flex items-center justify-between h-full max-w-full overflow-hidden px-10px"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "relative w-full bx-color-bg-fg bx-color-border border-b-1px border-b-solid select-none h-40px"
+        }
+      ]
+    },
+    {
+      "tag": "svg",
+      "id": null,
+      "className": "w-16px h-16px",
+      "text": "",
+      "rect": {
+        "x": 868,
+        "y": 201,
+        "width": 16,
+        "height": 16
+      },
+      "style": {
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "static",
+        "overflow": "hidden",
+        "zIndex": "auto",
+        "width": "16px",
+        "height": "16px",
+        "transform": "none"
+      },
+      "visible": true,
+      "attributes": {
+        "data-v-9a404a01": "",
+        "xmlns": "http://www.w3.org/2000/svg",
+        "viewBox": "0 0 16 14",
+        "fill": "none",
+        "width": "100%",
+        "height": "100%",
+        "preserveAspectRatio": "xMidYMid meet",
+        "class": "w-16px h-16px"
+      },
+      "parents": [
+        {
+          "tag": "svg",
+          "id": null,
+          "className": "w-16px h-16px"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "className": "flex items-center justify-center w-24px h-24px -m-4px shrink-0 p-0 rounded-4px border-none bg-transparent cursor-pointer transition-colors bx-color-text-2 hover:bx-color-bg-btn-secondary hover:bx-color-text-1 focus:outli"
+        },
+        {
+          "tag": "SPAN",
+          "id": null,
+          "className": "inline-flex items-center justify-center"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "inline-flex items-center"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "flex items-center gap-16px shrink-0 h-full ml-16px"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "flex items-center justify-between h-full max-w-full overflow-hidden px-10px"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "relative w-full bx-color-bg-fg bx-color-border border-b-1px border-b-solid select-none h-40px"
+        }
+      ]
+    },
+    {
+      "tag": "svg",
+      "id": null,
+      "className": "cursor-pointer",
+      "text": "",
+      "rect": {
+        "x": 909,
+        "y": 201,
+        "width": 30,
+        "height": 15
+      },
+      "style": {
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "static",
+        "overflow": "hidden",
+        "zIndex": "auto",
+        "width": "30px",
+        "height": "15px",
+        "transform": "none"
+      },
+      "visible": true,
+      "attributes": {
+        "width": "30",
+        "height": "15",
+        "viewBox": "0 0 30 15",
+        "fill": "none",
+        "xmlns": "http://www.w3.org/2000/svg",
+        "class": "cursor-pointer"
+      },
+      "parents": [
+        {
+          "tag": "svg",
+          "id": null,
+          "className": "cursor-pointer"
+        },
+        {
+          "tag": "SPAN",
+          "id": null,
+          "className": "inline-flex"
+        },
+        {
+          "tag": "SPAN",
+          "id": null,
+          "className": "inline-flex items-center justify-center"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "inline-flex items-center"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "flex items-center"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "flex items-center justify-between h-full max-w-full overflow-hidden px-10px"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "relative w-full bx-color-bg-fg bx-color-border border-b-1px border-b-solid select-none h-40px"
+        }
+      ]
+    },
+    {
+      "tag": "svg",
+      "id": null,
+      "className": "w-16px h-16px",
+      "text": "",
+      "rect": {
+        "x": 964,
+        "y": 201,
+        "width": 16,
+        "height": 16
+      },
+      "style": {
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "static",
+        "overflow": "hidden",
+        "zIndex": "auto",
+        "width": "16px",
+        "height": "16px",
+        "transform": "none"
+      },
+      "visible": true,
+      "attributes": {
+        "data-v-9a404a01": "",
+        "xmlns": "http://www.w3.org/2000/svg",
+        "viewBox": "0 0 16 16",
+        "fill": "none",
+        "width": "100%",
+        "height": "100%",
+        "preserveAspectRatio": "xMidYMid meet",
+        "class": "w-16px h-16px"
+      },
+      "parents": [
+        {
+          "tag": "svg",
+          "id": null,
+          "className": "w-16px h-16px"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "className": "flex items-center justify-center w-24px h-24px -m-4px shrink-0 p-0 rounded-4px border-none bg-transparent cursor-pointer transition-colors bx-color-text-2 hover:bx-color-bg-btn-secondary hover:bx-color-text-1 focus:outli"
+        },
+        {
+          "tag": "SPAN",
+          "id": null,
+          "className": "inline-flex items-center justify-center"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "inline-flex items-center"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "flex items-center"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "flex items-center justify-between h-full max-w-full overflow-hidden px-10px"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "relative w-full bx-color-bg-fg bx-color-border border-b-1px border-b-solid select-none h-40px"
+        }
+      ]
+    },
+    {
+      "tag": "svg",
+      "id": null,
+      "className": "block w-34px h-10px",
+      "text": "",
+      "rect": {
+        "x": 1019,
+        "y": 204,
+        "width": 34,
+        "height": 10
+      },
+      "style": {
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "static",
+        "overflow": "hidden",
+        "zIndex": "auto",
+        "width": "34px",
+        "height": "10px",
+        "transform": "none"
+      },
+      "visible": true,
+      "attributes": {
+        "class": "block w-34px h-10px",
+        "viewBox": "0 0 34.0568 9.9997",
+        "fill": "currentColor",
+        "aria-hidden": "true",
+        "data-v-f3ecd6b9": ""
+      },
+      "parents": [
+        {
+          "tag": "svg",
+          "id": null,
+          "className": "block w-34px h-10px"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "className": "bx-chart-header-ultra-entry inline-flex shrink-0 items-center justify-center w-62px h-24px p-0 cursor-pointer appearance-none rounded-100px shadow-none outline-none focus:outline-none focus-visible:outline-none"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "inline-flex items-center"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "flex items-center"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "flex items-center justify-between h-full max-w-full overflow-hidden px-10px"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "relative w-full bx-color-bg-fg bx-color-border border-b-1px border-b-solid select-none h-40px"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "kline-business-wrap h-full w-full relative flex flex-col"
+        }
+      ]
+    },
+    {
+      "tag": "svg",
+      "id": null,
+      "className": "resize-icon",
+      "text": "",
+      "rect": {
+        "x": 1069,
+        "y": 716,
+        "width": 6,
+        "height": 6
+      },
+      "style": {
+        "display": "inline",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "static",
+        "overflow": "hidden",
+        "zIndex": "5",
+        "width": "6px",
+        "height": "6px",
+        "transform": "none"
+      },
+      "visible": true,
+      "attributes": {
+        "data-v-ee9f709a": "",
+        "viewBox": "0 0 1024 1024",
+        "xmlns": "http://www.w3.org/2000/svg",
+        "width": "6",
+        "height": "6",
+        "preserveAspectRatio": "xMidYMid meet",
+        "fill": "currentColor",
+        "class": "resize-icon"
+      },
+      "parents": [
+        {
+          "tag": "svg",
+          "id": null,
+          "className": "resize-icon"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "resize-handle bottom-right"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": ""
+        },
+        {
+          "tag": "DIV",
+          "id": "ExchangeChart",
+          "className": "draggable-resizable"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "drag-resize-container color-bg-1"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": ""
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "contract-trade-main-page contract-container-ce3daf1823ef color-bg-1 fm-text"
+        }
+      ]
+    },
+    {
+      "tag": "svg",
+      "id": null,
+      "className": "",
+      "text": "",
+      "rect": {
+        "x": 1318,
+        "y": 125,
+        "width": 16,
+        "height": 16
+      },
+      "style": {
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "static",
+        "overflow": "hidden",
+        "zIndex": "auto",
+        "width": "16px",
+        "height": "16px",
+        "transform": "none"
+      },
+      "visible": true,
+      "attributes": {
+        "data-v-73cabe11": "",
+        "xmlns": "http://www.w3.org/2000/svg",
+        "viewBox": "0 0 12 12",
+        "fill": "none",
+        "width": "16",
+        "height": "16",
+        "preserveAspectRatio": "xMidYMid meet"
+      },
+      "parents": [
+        {
+          "tag": "svg",
+          "id": null,
+          "className": ""
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "className": "switcher-btn active"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "view-switcher"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "bit-unix-extra flex items-center"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "bitunix-tab-nav flex-row-between-center border-bottom draggable-area max-md:py-0! overflow-hidden max-md:border-none! border-b-1px border-solid border-0 border-[var(--color-border)]"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "bitunix-tab-container max-md:overflow-hidden!"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "orderbook-view h-100%"
+        }
+      ]
+    },
+    {
+      "tag": "svg",
+      "id": null,
+      "className": "",
+      "text": "",
+      "rect": {
+        "x": 1342,
+        "y": 125,
+        "width": 16,
+        "height": 16
+      },
+      "style": {
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "static",
+        "overflow": "hidden",
+        "zIndex": "auto",
+        "width": "16px",
+        "height": "16px",
+        "transform": "none"
+      },
+      "visible": true,
+      "attributes": {
+        "data-v-73cabe11": "",
+        "viewBox": "0 0 1024 1024",
+        "xmlns": "http://www.w3.org/2000/svg",
+        "width": "16",
+        "height": "16",
+        "preserveAspectRatio": "xMidYMid meet",
+        "fill": "var(--color_text_2)"
+      },
+      "parents": [
+        {
+          "tag": "svg",
+          "id": null,
+          "className": ""
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "className": "switcher-btn"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "view-switcher"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "bit-unix-extra flex items-center"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "bitunix-tab-nav flex-row-between-center border-bottom draggable-area max-md:py-0! overflow-hidden max-md:border-none! border-b-1px border-solid border-0 border-[var(--color-border)]"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "bitunix-tab-container max-md:overflow-hidden!"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "orderbook-view h-100%"
+        }
+      ]
+    },
+    {
+      "tag": "svg",
+      "id": null,
+      "className": "drag-icon",
+      "text": "",
+      "rect": {
+        "x": 1372,
+        "y": 127,
+        "width": 12,
+        "height": 12
+      },
+      "style": {
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "static",
+        "overflow": "hidden",
+        "zIndex": "auto",
+        "width": "12px",
+        "height": "12px",
+        "transform": "none"
+      },
+      "visible": true,
+      "attributes": {
+        "data-v-5ab74309": "",
+        "viewBox": "0 0 8 16",
+        "xmlns": "http://www.w3.org/2000/svg",
+        "width": "12",
+        "height": "12",
+        "preserveAspectRatio": "xMidYMid meet",
+        "fill": "none",
+        "class": "drag-icon",
+        "style": "cursor: grab; margin-inline-end: 6px;"
+      },
+      "parents": [
+        {
+          "tag": "svg",
+          "id": null,
+          "className": "drag-icon"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "bit-unix-extra flex items-center"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "bitunix-tab-nav flex-row-between-center border-bottom draggable-area max-md:py-0! overflow-hidden max-md:border-none! border-b-1px border-solid border-0 border-[var(--color-border)]"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "bitunix-tab-container max-md:overflow-hidden!"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "orderbook-view h-100%"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "orderbook-container-7E807388 color-bg-2"
+        },
+        {
+          "tag": "DIV",
+          "id": "ExchangeList",
+          "className": "draggable-resizable"
+        }
+      ]
+    },
+    {
+      "tag": "svg",
+      "id": null,
+      "className": "",
+      "text": "",
+      "rect": {
+        "x": 1362,
+        "y": 165,
+        "width": 12,
+        "height": 12
+      },
+      "style": {
+        "display": "inline",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "static",
+        "overflow": "hidden",
+        "zIndex": "auto",
+        "width": "12px",
+        "height": "12px",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      "visible": true,
+      "attributes": {
+        "xmlns": "http://www.w3.org/2000/svg",
+        "viewBox": "0 0 1024 1024",
+        "width": "12",
+        "height": "12",
+        "preserveAspectRatio": "xMidYMid meet",
+        "style": "transform: rotate(0deg);"
+      },
+      "parents": [
+        {
+          "tag": "svg",
+          "id": null,
+          "className": ""
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": ""
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "color-text-1 fs-12 cursor-pointer flex items-center gap4"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "pe-16"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "h40 a88593b2 flex flex-row flex-nowrap justify-between items-center py-0"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "flex flex-col h100% w100% c8beeb859"
+        },
+        {
+          "tag": "SPAN",
+          "id": null,
+          "className": ""
+        }
+      ]
+    },
+    {
+      "tag": "svg",
+      "id": null,
+      "className": "m-r4",
+      "text": "",
+      "rect": {
+        "x": 1187,
+        "y": 447,
+        "width": 14,
+        "height": 14
+      },
+      "style": {
+        "display": "inline",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "relative",
+        "overflow": "hidden",
+        "zIndex": "auto",
+        "width": "14px",
+        "height": "14px",
+        "transform": "matrix(-1, 0, 0, -1, 0, 0)"
+      },
+      "visible": true,
+      "attributes": {
+        "data-v-c7222c0d": "",
+        "viewBox": "0 0 14 15",
+        "xmlns": "http://www.w3.org/2000/svg",
+        "width": "100%",
+        "height": "100%",
+        "preserveAspectRatio": "xMidYMid meet",
+        "fill": "none",
+        "class": "m-r4",
+        "style": "width: 14px; height: 14px; color: rgb(241, 75, 63); position: relative; top: 1px; margin-left: 4px; transform: rotate(180deg);"
+      },
+      "parents": [
+        {
+          "tag": "svg",
+          "id": null,
+          "className": "m-r4"
+        },
+        {
+          "tag": "SPAN",
+          "id": null,
+          "className": ""
+        },
+        {
+          "tag": "SPAN",
+          "id": null,
+          "className": "fs-20 fw700 max-md:fs-17"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "handicap-live-container h36 fs-18 color-text-1 md:p-l16 md:p-r16 flex flex-row items-center justify-between max-md:justify-around max-md:items-start max-md:flex-col"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "max-md:flex max-md:justify-between max-md:items-center"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "custom-content"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "bitunix-orderbook orderbook-6ce6e899"
+        }
+      ]
+    },
+    {
+      "tag": "svg",
+      "id": null,
+      "className": "color-text-3 max-md:hidden",
+      "text": "",
+      "rect": {
+        "x": 1310,
+        "y": 447,
+        "width": 11,
+        "height": 12
+      },
+      "style": {
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "static",
+        "overflow": "hidden",
+        "zIndex": "auto",
+        "width": "11px",
+        "height": "12px",
+        "transform": "none"
+      },
+      "visible": true,
+      "attributes": {
+        "data-v-c7222c0d": "",
+        "class": "color-text-3 max-md:hidden",
+        "width": "11",
+        "height": "12",
+        "viewBox": "0 0 11 12",
+        "fill": "none",
+        "xmlns": "http://www.w3.org/2000/svg"
+      },
+      "parents": [
+        {
+          "tag": "svg",
+          "id": null,
+          "className": "color-text-3 max-md:hidden"
+        },
+        {
+          "tag": "SPAN",
+          "id": null,
+          "className": "flex flex-row items-center"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "handicap-live-container h36 fs-18 color-text-1 md:p-l16 md:p-r16 flex flex-row items-center justify-between max-md:justify-around max-md:items-start max-md:flex-col"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "max-md:flex max-md:justify-between max-md:items-center"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "custom-content"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "bitunix-orderbook orderbook-6ce6e899"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "content-443E9745"
+        }
+      ]
+    },
+    {
+      "tag": "svg",
+      "id": null,
+      "className": "resize-icon",
+      "text": "",
+      "rect": {
+        "x": 1382,
+        "y": 716,
+        "width": 6,
+        "height": 6
+      },
+      "style": {
+        "display": "inline",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "static",
+        "overflow": "hidden",
+        "zIndex": "5",
+        "width": "6px",
+        "height": "6px",
+        "transform": "none"
+      },
+      "visible": true,
+      "attributes": {
+        "data-v-ee9f709a": "",
+        "viewBox": "0 0 1024 1024",
+        "xmlns": "http://www.w3.org/2000/svg",
+        "width": "6",
+        "height": "6",
+        "preserveAspectRatio": "xMidYMid meet",
+        "fill": "currentColor",
+        "class": "resize-icon"
+      },
+      "parents": [
+        {
+          "tag": "svg",
+          "id": null,
+          "className": "resize-icon"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "resize-handle bottom-right"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": ""
+        },
+        {
+          "tag": "DIV",
+          "id": "ExchangeList",
+          "className": "draggable-resizable"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "drag-resize-container color-bg-1"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": ""
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "contract-trade-main-page contract-container-ce3daf1823ef color-bg-1 fm-text"
+        }
+      ]
+    },
+    {
+      "tag": "svg",
+      "id": null,
+      "className": "",
+      "text": "",
+      "rect": {
+        "x": 1507,
+        "y": 189,
+        "width": 12,
+        "height": 12
+      },
+      "style": {
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "static",
+        "overflow": "hidden",
+        "zIndex": "auto",
+        "width": "12px",
+        "height": "12px",
+        "transform": "none"
+      },
+      "visible": true,
+      "attributes": {
+        "xmlns": "http://www.w3.org/2000/svg",
+        "viewBox": "0 0 1024 1024",
+        "width": "12",
+        "height": "12",
+        "preserveAspectRatio": "xMidYMid meet"
+      },
+      "parents": [
+        {
+          "tag": "svg",
+          "id": null,
+          "className": ""
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "h30 flex items-center justify-center flex-1 fs-12 cursor-pointer fm-medium margin-mode color-text-1"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "flex items-center w100% flex-row color-bg-4 rounded-full h28 md:mt-16"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "exchange-info-container color-bg-2 overflow-hidden"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "px-0px max-md:px-0 p-t12"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "bitunix-tab-panel"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "bitunix-tabs-content"
+        }
+      ]
+    },
+    {
+      "tag": "svg",
+      "id": null,
+      "className": "",
+      "text": "",
+      "rect": {
+        "x": 1626,
+        "y": 189,
+        "width": 12,
+        "height": 12
+      },
+      "style": {
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "static",
+        "overflow": "hidden",
+        "zIndex": "auto",
+        "width": "12px",
+        "height": "12px",
+        "transform": "none"
+      },
+      "visible": true,
+      "attributes": {
+        "xmlns": "http://www.w3.org/2000/svg",
+        "viewBox": "0 0 1024 1024",
+        "width": "12",
+        "height": "12",
+        "preserveAspectRatio": "xMidYMid meet"
+      },
+      "parents": [
+        {
+          "tag": "svg",
+          "id": null,
+          "className": ""
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "flex items-center justify-center fs-12 color-text-1 h30 flex-1 cursor-pointer fm-medium gap-4"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "flex items-center w100% flex-row color-bg-4 rounded-full h28 md:mt-16"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "exchange-info-container color-bg-2 overflow-hidden"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "px-0px max-md:px-0 p-t12"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "bitunix-tab-panel"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "bitunix-tabs-content"
+        }
+      ]
+    },
+    {
+      "tag": "svg",
+      "id": null,
+      "className": "drag-icon",
+      "text": "",
+      "rect": {
+        "x": 1680,
+        "y": 126,
+        "width": 14,
+        "height": 14
+      },
+      "style": {
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "absolute",
+        "overflow": "hidden",
+        "zIndex": "auto",
+        "width": "14px",
+        "height": "14px",
+        "transform": "none"
+      },
+      "visible": true,
+      "attributes": {
+        "data-v-ebedb2cb": "",
+        "viewBox": "0 0 8 16",
+        "xmlns": "http://www.w3.org/2000/svg",
+        "width": "14",
+        "height": "14",
+        "preserveAspectRatio": "xMidYMid meet",
+        "fill": "none",
+        "class": "drag-icon",
+        "style": "cursor: grab; top: 13px;"
+      },
+      "parents": [
+        {
+          "tag": "svg",
+          "id": null,
+          "className": "drag-icon"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "exchange-info-container color-bg-2 overflow-hidden"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "px-0px max-md:px-0 p-t12"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "bitunix-tab-panel"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "bitunix-tabs-content"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "bitunix-tabs-scoped futures-tab max-md:futures-tab-mini"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "color-bg-2 overflow-x-auto overflow-y-scroll trading-panel-container-new"
+        }
+      ]
+    },
+    {
+      "tag": "svg",
+      "id": null,
+      "className": "w12 h12",
+      "text": "",
+      "rect": {
+        "x": 1571,
+        "y": 225,
+        "width": 12,
+        "height": 12
+      },
+      "style": {
+        "display": "inline",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "static",
+        "overflow": "hidden",
+        "zIndex": "auto",
+        "width": "12px",
+        "height": "12px",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      "visible": true,
+      "attributes": {
+        "xmlns": "http://www.w3.org/2000/svg",
+        "viewBox": "0 0 1024 1024",
+        "width": "12",
+        "height": "12",
+        "preserveAspectRatio": "xMidYMid meet",
+        "class": "w12 h12",
+        "style": "transform: rotate(0deg);"
+      },
+      "parents": [
+        {
+          "tag": "svg",
+          "id": null,
+          "className": "w12 h12"
+        },
+        {
+          "tag": "SPAN",
+          "id": null,
+          "className": "fs-14 cursor-pointer ml-4"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "color-text-2 cursor-pointer nav-link fm-medium shrink-0 tab-item-id-other items-start! mx-8px! first:ml-0! slider-tab-other-price"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "nav-item relative color-text-2 flex-row-start-center h39 overflow-x-auto h-28px!"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "nav-content relative max-md:w-full max-md:overflow-x-auto overflow-hidden"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "bitunix-tab-nav flex-row-between-center border-bottom draggable-area max-md:py-0! overflow-hidden max-md:border-none! border-b-1px border-solid border-0 border-[var(--color-border)] items-start!"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "bitunix-tab-container max-md:overflow-hidden! price-tap price-tap-large"
+        }
+      ]
+    },
+    {
+      "tag": "svg",
+      "id": null,
+      "className": "icon relative cursor-help relative md:top-2",
+      "text": "",
+      "rect": {
+        "x": 1664,
+        "y": 227,
+        "width": 15,
+        "height": 15
+      },
+      "style": {
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "relative",
+        "overflow": "hidden",
+        "zIndex": "auto",
+        "width": "15px",
+        "height": "15px",
+        "transform": "none"
+      },
+      "visible": true,
+      "attributes": {
+        "data-v-6306efde": "",
+        "xmlns": "http://www.w3.org/2000/svg",
+        "viewBox": "0 0 1024 1024",
+        "width": "15",
+        "height": "15",
+        "preserveAspectRatio": "xMidYMid meet",
+        "class": "icon relative cursor-help relative md:top-2"
+      },
+      "parents": [
+        {
+          "tag": "svg",
+          "id": null,
+          "className": "icon relative cursor-help relative md:top-2"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "bit-unix-extra flex items-center"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "bitunix-tab-nav flex-row-between-center border-bottom draggable-area max-md:py-0! overflow-hidden max-md:border-none! border-b-1px border-solid border-0 border-[var(--color-border)] items-start!"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "bitunix-tab-container max-md:overflow-hidden! price-tap price-tap-large"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "exchange-info-item-padding mt-16px"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "exchange-info-container color-bg-2 overflow-hidden"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "px-0px max-md:px-0 p-t12"
+        }
+      ]
+    },
+    {
+      "tag": "svg",
+      "id": null,
+      "className": "cursor-pointer flex-row-start-center",
+      "text": "",
+      "rect": {
+        "x": 1667,
+        "y": 272,
+        "width": 12,
+        "height": 12
+      },
+      "style": {
+        "display": "flex",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "static",
+        "overflow": "hidden",
+        "zIndex": "auto",
+        "width": "12px",
+        "height": "12px",
+        "transform": "none"
+      },
+      "visible": true,
+      "attributes": {
+        "data-v-71ffcea5": "",
+        "viewBox": "0 0 1024 1024",
+        "xmlns": "http://www.w3.org/2000/svg",
+        "width": "12",
+        "height": "12",
+        "preserveAspectRatio": "xMidYMid meet",
+        "fill": "var(--color-text-1)",
+        "class": "cursor-pointer flex-row-start-center"
+      },
+      "parents": [
+        {
+          "tag": "svg",
+          "id": null,
+          "className": "cursor-pointer flex-row-start-center"
+        },
+        {
+          "tag": "SPAN",
+          "id": null,
+          "className": "available-field-action"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "available-field-value"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "available-field fs-12 min-h-16px mt-16px"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": ""
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "bitunix-tabs-content"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "bitunix-tab-container max-md:overflow-hidden! price-tap price-tap-large"
+        }
+      ]
+    },
+    {
+      "tag": "svg",
+      "id": null,
+      "className": "",
+      "text": "",
+      "rect": {
+        "x": 1654,
+        "y": 406,
+        "width": 12,
+        "height": 12
+      },
+      "style": {
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "static",
+        "overflow": "hidden",
+        "zIndex": "auto",
+        "width": "12px",
+        "height": "12px",
+        "transform": "none"
+      },
+      "visible": true,
+      "attributes": {
+        "xmlns": "http://www.w3.org/2000/svg",
+        "viewBox": "0 0 1024 1024",
+        "width": "12",
+        "height": "12",
+        "preserveAspectRatio": "xMidYMid meet"
+      },
+      "parents": [
+        {
+          "tag": "svg",
+          "id": null,
+          "className": ""
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "color-text-1 cursor-pointer fs-12 block h30 box-border p-t4 p-b8 p-t8 flex items-center gap4 mt-2px"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "volume-input-suffix flex shrink-0 items-center"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "volume-input-main flex flex-1 items-center min-w-0 px-12"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "volume-input-container amount-input box-border disable-hover"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "volume-input-wrap m-t12"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": ""
+        }
+      ]
+    },
+    {
+      "tag": "svg",
+      "id": null,
+      "className": "",
+      "text": "",
+      "rect": {
+        "x": 1408,
+        "y": 495,
+        "width": 12,
+        "height": 12
+      },
+      "style": {
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "static",
+        "overflow": "hidden",
+        "zIndex": "auto",
+        "width": "12px",
+        "height": "12px",
+        "transform": "none"
+      },
+      "visible": true,
+      "attributes": {
+        "data-v-54db050b": "",
+        "viewBox": "0 0 1024 1024",
+        "xmlns": "http://www.w3.org/2000/svg",
+        "width": "12px",
+        "height": "12px",
+        "preserveAspectRatio": "xMidYMid meet",
+        "fill": "var(--default-border-color, var(--color-text-2))"
+      },
+      "parents": [
+        {
+          "tag": "svg",
+          "id": null,
+          "className": ""
+        },
+        {
+          "tag": "SPAN",
+          "id": null,
+          "className": "check-icon-group"
+        },
+        {
+          "tag": "SPAN",
+          "id": null,
+          "className": "arco-radio-group arco-radio-group-size-medium arco-radio-group-direction-horizontal check-radio customer-radio"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "line-height-100% flex flex-nowrap"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "taps flex-row-between-center max-xss:flex-row-between-center max-md:ms-5px md:ms-2px"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": "profit-group-item m-t10 m-b16 ml--2 f3108a9680d5"
+        },
+        {
+          "tag": "DIV",
+          "id": null,
+          "className": ""
+        }
+      ]
+    }
+  ],
+  "chartGlobals": {
+    "TradingView": {
+      "found": true,
+      "type": "object",
+      "constructor": "Object",
+      "ownProperties": [
+        "version"
+      ],
+      "functionName": null
+    },
+    "TradingViewApi": {
+      "found": false
+    },
+    "tvWidget": {
+      "found": false
+    },
+    "tvChart": {
+      "found": false
+    },
+    "_exposed_chartWidgetCollection": {
+      "found": false
+    },
+    "__INITIAL_STATE__": {
+      "found": false
+    },
+    "__VUE__": {
+      "found": true,
+      "type": "boolean",
+      "constructor": "Boolean",
+      "ownProperties": [],
+      "functionName": null
+    },
+    "__vue_app__": {
+      "found": false
+    },
+    "__nuxt": {
+      "found": false
+    },
+    "MockSocketClient": {
+      "found": false
+    }
+  },
+  "resources": [
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/openPalmVerificationModal-W1OuRVOJ.js",
+      "type": "script",
+      "durationMs": 3118,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/createSumsubFaceModal-Czb5BvH-.js",
+      "type": "script",
+      "durationMs": 3116,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/index-CoCKWXOO.js",
+      "type": "script",
+      "durationMs": 3127,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/index.D9yGRZnF.css",
+      "type": "link",
+      "durationMs": 127,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/third-party-auth-entry.DFp3Gwey.css",
+      "type": "link",
+      "durationMs": 158,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/account-input-eaPWozg-.js",
+      "type": "script",
+      "durationMs": 3123,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/base-area-uIitJtmm.js",
+      "type": "script",
+      "durationMs": 3131,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/base-area.DrlrfmPE.css",
+      "type": "link",
+      "durationMs": 156,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/account-input.C0URHfIc.css",
+      "type": "link",
+      "durationMs": 156,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/pass-input-DICbrMM6.js",
+      "type": "script",
+      "durationMs": 3128,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/pass-input.SVO31tFl.css",
+      "type": "link",
+      "durationMs": 205,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/loginEntrySource-G8uglw8h.js",
+      "type": "script",
+      "durationMs": 3123,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/loginEntrySource.DDxy4PIA.css",
+      "type": "link",
+      "durationMs": 204,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/base-nav.vue-Co5AOq1x.js",
+      "type": "script",
+      "durationMs": 3121,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/IconBackIcon-BXZ2wHXO.js",
+      "type": "script",
+      "durationMs": 3122,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/LoginView.DGmVLpc8.css",
+      "type": "link",
+      "durationMs": 197,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/RegisterView-DUfebXoA.js",
+      "type": "script",
+      "durationMs": 3107,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/CommonLeftPanel-PeGWlWbC.js",
+      "type": "script",
+      "durationMs": 3102,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/CommonLeftPanel.qF383I0n.css",
+      "type": "link",
+      "durationMs": 188,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/utility-types-DuYdohau.js",
+      "type": "script",
+      "durationMs": 3125,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/invite-input-CvwRQgbu.js",
+      "type": "script",
+      "durationMs": 3123,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/invite-input.CqHCWMWK.css",
+      "type": "link",
+      "durationMs": 200,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/useCountdown-BjhSCwz3.js",
+      "type": "script",
+      "durationMs": 3120,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/verification-code-C1vybajy.js",
+      "type": "script",
+      "durationMs": 3121,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/verification-code.BNbc3OAh.css",
+      "type": "link",
+      "durationMs": 202,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/RegisterView.DzSOibjj.css",
+      "type": "link",
+      "durationMs": 201,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/browser-XquSN495.js",
+      "type": "script",
+      "durationMs": 2332,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/dist-DQri4ocf.js",
+      "type": "script",
+      "durationMs": 862,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/index-mZoFg4nl.js",
+      "type": "script",
+      "durationMs": 856,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/resolveKlineInsightsDeepLink-QU2BBFO0.js",
+      "type": "script",
+      "durationMs": 854,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/useAlertReadState-C89iQrvg.js",
+      "type": "script",
+      "durationMs": 859,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/kline-feedback-icon-DjnL43FL.js",
+      "type": "script",
+      "durationMs": 859,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/index-kv-_gGye.js",
+      "type": "script",
+      "durationMs": 857,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/index-m1nLOpq3.js",
+      "type": "script",
+      "durationMs": 857,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/changePriceReminder-Bc9oKt8h.js",
+      "type": "script",
+      "durationMs": 855,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/useNumberFormatData-DwZWiseP.js",
+      "type": "script",
+      "durationMs": 852,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/useSortable-DRatAHru.js",
+      "type": "script",
+      "durationMs": 850,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/symbolBaseInfo.vue-_wG0aM33.js",
+      "type": "script",
+      "durationMs": 849,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/useInitSymbol-CwUZaZMb.js",
+      "type": "script",
+      "durationMs": 848,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/coin-info-BynpcBCm.js",
+      "type": "script",
+      "durationMs": 848,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/limits-table-Dlu60u05.js",
+      "type": "script",
+      "durationMs": 847,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/index-BrIhfed2.js",
+      "type": "script",
+      "durationMs": 845,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/descriptions-item.vue-B_MiGiF4.js",
+      "type": "script",
+      "durationMs": 844,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/fund-fee-popup-DSQHdoA3.js",
+      "type": "script",
+      "durationMs": 846,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/table-DPN1n-JE.js",
+      "type": "script",
+      "durationMs": 848,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/useElementObserve-D7h4eeKa.js",
+      "type": "script",
+      "durationMs": 847,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/install-DsfXdfs3.js",
+      "type": "script",
+      "durationMs": 850,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/index-D73vpu7X.js",
+      "type": "script",
+      "durationMs": 846,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/index-CXgl_9Pb.js",
+      "type": "script",
+      "durationMs": 611,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/index-KanB45pw.js",
+      "type": "script",
+      "durationMs": 632,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/useSetDefaultCoin-C3mpkQ0m.js",
+      "type": "script",
+      "durationMs": 629,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/Geist-SemiBold.BwpolxJF.woff2",
+      "type": "css",
+      "durationMs": 598,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/ContractTradeNewUserTaskHasHistoryBanner-nxM21xvA.js",
+      "type": "script",
+      "durationMs": 489,
+      "transferSize": 0
+    },
+    {
+      "url": "https://api.bitunix.com/futures-toc/api/private/v1/market/symbol/tags",
+      "type": "fetch",
+      "durationMs": 1779,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/_...slug_-4C-WgaF9.js",
+      "type": "script",
+      "durationMs": 507,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/_...BJfmsOFx.css",
+      "type": "link",
+      "durationMs": 506,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/fee-rate-time-tip-CctmKfsJ.js",
+      "type": "script",
+      "durationMs": 355,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/desktop-info-panel-ByfQdty3.js",
+      "type": "script",
+      "durationMs": 348,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/useFeeDiscountModal-D34Oub1a.js",
+      "type": "script",
+      "durationMs": 358,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/prize-info-wrapper.vue-CNUfXKmp.js",
+      "type": "script",
+      "durationMs": 356,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/index.vue-fn0j6Sbf.js",
+      "type": "script",
+      "durationMs": 353,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/useRiskRequest-Cmz54P-j.js",
+      "type": "script",
+      "durationMs": 352,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/roughUnPnlRate.vue-BU4Xzxtw.js",
+      "type": "script",
+      "durationMs": 350,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/createGrid-C1AwmRD0.js",
+      "type": "script",
+      "durationMs": 347,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/session-modal-CCkDRYa-.js",
+      "type": "script",
+      "durationMs": 321,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/calculate-Cdo-ngYC.js",
+      "type": "script",
+      "durationMs": 317,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/avg-entry-w3H2fRET.js",
+      "type": "script",
+      "durationMs": 314,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/PriceReminder-DAjcN7sD.js",
+      "type": "script",
+      "durationMs": 313,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/setting-Dyg_g1uc.js",
+      "type": "script",
+      "durationMs": 308,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/order-confirm-BvvSCdQJ.js",
+      "type": "script",
+      "durationMs": 67,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/liveDealList-Cc9tVMjn.js",
+      "type": "script",
+      "durationMs": 580,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/liveDealList-DNHwJHNT.js",
+      "type": "script",
+      "durationMs": 579,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/infiniteList-DXDMv46i.js",
+      "type": "script",
+      "durationMs": 580,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/watchlist-panel-ghueHWDU.js",
+      "type": "script",
+      "durationMs": 576,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/conversions-modal-BgIDGHm0.js",
+      "type": "script",
+      "durationMs": 514,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/edit-tpsl-BGD2gUbY.js",
+      "type": "script",
+      "durationMs": 646,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/edit-tpsl.vue-eVZKxZzT.js",
+      "type": "script",
+      "durationMs": 748,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/index-CuGG6_0A.js",
+      "type": "script",
+      "durationMs": 743,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/position-sort-BDX1C_cG.js",
+      "type": "script",
+      "durationMs": 742,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/marketCloseAllModal-kb_Nit9t.js",
+      "type": "script",
+      "durationMs": 735,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/grid-bot-tab-BVRlBQhE.js",
+      "type": "script",
+      "durationMs": 376,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/table-empty-0rQfM1K1.js",
+      "type": "script",
+      "durationMs": 377,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/dateFormat.vue-D70lXvlm.js",
+      "type": "script",
+      "durationMs": 373,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/pagination.vue-w1jgtuVs.js",
+      "type": "script",
+      "durationMs": 370,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/useGetGridLine-PjOY7qxI.js",
+      "type": "script",
+      "durationMs": 366,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/useScreenSize-CFk7JGG-.js",
+      "type": "script",
+      "durationMs": 365,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/bitunix_wasm_bg.Et81KNsY.wasm",
+      "type": "fetch",
+      "durationMs": 2180,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/vendor.es-DEy481_o.js",
+      "type": "script",
+      "durationMs": 875,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/701d15.DiI8PPnI.webp",
+      "type": "img",
+      "durationMs": 1419,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/a3fbf0.DrBxfNMn.webp",
+      "type": "img",
+      "durationMs": 1380,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/e931bd.DzzPzUfZ.webp",
+      "type": "img",
+      "durationMs": 1347,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/e27a1d.JrIKu7ba.webp",
+      "type": "img",
+      "durationMs": 1337,
+      "transferSize": 0
+    },
+    {
+      "url": "https://api.bitunix.com/futures-toc/api/private/v1/fee-discount/card/query",
+      "type": "fetch",
+      "durationMs": 1756,
+      "transferSize": 0
+    },
+    {
+      "url": "https://api.bitunix.com/futures-toc-core/api/public/v1/market/symbol/base-info",
+      "type": "fetch",
+      "durationMs": 1756,
+      "transferSize": 0
+    },
+    {
+      "url": "https://api.bitunix.com/futures-toc/api/private/v1/position/coupon/list",
+      "type": "fetch",
+      "durationMs": 1410,
+      "transferSize": 0
+    },
+    {
+      "url": "https://api.bitunix.com/futures-toc/api/private/v1/assets/exp-money/info",
+      "type": "fetch",
+      "durationMs": 1687,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/collection-all-star.CtqnyoRZ.png",
+      "type": "img",
+      "durationMs": 177,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/piping-golden.D8zZJXNl.webp",
+      "type": "img",
+      "durationMs": 180,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/piping-sliver.Bk07f6kp.webp",
+      "type": "img",
+      "durationMs": 187,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/piping-yellow.cYnZzucL.webp",
+      "type": "img",
+      "durationMs": 193,
+      "transferSize": 0
+    },
+    {
+      "url": "https://api.bitunix.com/kline/history/futures",
+      "type": "fetch",
+      "durationMs": 1319,
+      "transferSize": 0
+    },
+    {
+      "url": "https://api.bitunix.com/kline/api/public/v1/agg/realtime/futures",
+      "type": "fetch",
+      "durationMs": 1209,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/DetailModals-DJn0W3PW.js",
+      "type": "script",
+      "durationMs": 543,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/LiquidationDetailModal-zuL7Rcjz.js",
+      "type": "script",
+      "durationMs": 556,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/index-BGvhcZVl.js",
+      "type": "script",
+      "durationMs": 538,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/index-CryhAzQO.js",
+      "type": "script",
+      "durationMs": 537,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/dealRecord-CVBsVsnY.js",
+      "type": "script",
+      "durationMs": 53,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/empty_cover_dark.CWjZYNuD.png",
+      "type": "img",
+      "durationMs": 622,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/empty_card_1.BK_LeQaf.png",
+      "type": "img",
+      "durationMs": 628,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/quick-coin-select-chart-BVPSO35y.js",
+      "type": "script",
+      "durationMs": 98,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/alertvoice.CYW8HOv7.mp3",
+      "type": "audio",
+      "durationMs": 16,
+      "transferSize": 0
+    },
+    {
+      "url": "https://api.bitunix.com/futures/order/history/scroll",
+      "type": "fetch",
+      "durationMs": 1022,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/1.DNw8CwRQ.mp4",
+      "type": "video",
+      "durationMs": 34,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/footer-swiper-Bj_Kx6yH.js",
+      "type": "script",
+      "durationMs": 18,
+      "transferSize": 0
+    },
+    {
+      "url": "https://api.bitunix.com/futures/futures/market/filter/symbols",
+      "type": "fetch",
+      "durationMs": 1735,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/2.By-C1TCE.mp4",
+      "type": "video",
+      "durationMs": 20,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/3.DcvFPVFJ.mp4",
+      "type": "video",
+      "durationMs": 11,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/4.CZXXYCG_.mp4",
+      "type": "video",
+      "durationMs": 7,
+      "transferSize": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/5.Dn5ojJjz.mp4",
+      "type": "video",
+      "durationMs": 22,
+      "transferSize": 0
+    },
+    {
+      "url": "https://api.bitunix.com/futures/futures/user/collection/queryV2",
+      "type": "fetch",
+      "durationMs": 1609,
+      "transferSize": 0
+    }
+  ],
+  "result": {
+    "viewportWidth": 1707,
+    "viewportHeight": 781,
+    "desktopViewportLikely": true,
+    "totalDOMElements": 3285,
+    "chartMatches": 24,
+    "visibleChartElements": 14,
+    "hiddenChartElements": 10,
+    "iframeCount": 3,
+    "canvasCount": 4,
+    "svgCount": 50,
+    "resourceCount": 120,
+    "recommendation": "Desktop width detected. Inspect chart candidates and loaded resources."
+  },
+  "safety": {
+    "readOnly": true,
+    "noClicks": true,
+    "noInputValuesRead": true,
+    "noStorageRead": true,
+    "noCookiesOrTokensRead": true,
+    "noNetworkInterception": true,
+    "noFetchRequests": true,
+    "noWebSocketCreated": true,
+    "noChartSettingsChanged": true
+  },
+  "finishedAt": "2026-11-14T16:40:53.083Z"
+}
