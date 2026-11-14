@@ -1,0 +1,2252 @@
+{
+  "reportName": "BITUNIX_HOVER_AUDIT",
+  "version": "2.2.1",
+  "generatedAt": "2026-11-14T20:52:43.306Z",
+  "page": "https://www.bitunix.com/contract-trade/XAUTUSDT",
+  "documentsScanned": [
+    {
+      "frame": "top",
+      "isChart": true,
+      "url": "https://www.bitunix.com/contract-trade/XAUTUSDT",
+      "frameRectangle": null
+    },
+    {
+      "frame": "top > iframe[0]",
+      "isChart": true,
+      "url": "blob:https://www.bitunix.com/c2790129-6a3c-4366-b863-871ba79af37e",
+      "frameRectangle": {
+        "x": 0,
+        "y": 229,
+        "width": 1077,
+        "height": 494
+      }
+    },
+    {
+      "frame": "top > iframe[1]",
+      "isChart": false,
+      "url": "about:blank",
+      "frameRectangle": {
+        "x": 0,
+        "y": -9999,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "frame": "top > iframe[2]",
+      "isChart": false,
+      "url": "about:blank",
+      "frameRectangle": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    }
+  ],
+  "safety": {
+    "readOnly": true,
+    "exchangeButtonsClicked": 0,
+    "ordersSubmitted": 0,
+    "networkRequestsMade": 0,
+    "inputValuesRead": false,
+    "privateAccountDataRead": false
+  },
+  "captureSummary": {
+    "totalCaptures": 2,
+    "labels": [
+      "Close",
+      "Reverse"
+    ]
+  },
+  "captures": [
+    {
+      "label": "Close",
+      "capturedAt": "2026-11-14T20:52:24.939Z",
+      "snapshot": {
+        "snapshotAt": "2026-11-14T20:52:23.236Z",
+        "sequenceStartedAt": "2026-11-14T20:52:17.210Z",
+        "frames": [
+          {
+            "frame": "top",
+            "isChart": true,
+            "pointerCaptured": false,
+            "frameRectangle": null
+          },
+          {
+            "frame": "top > iframe[0]",
+            "isChart": true,
+            "frameUrl": "blob:https://www.bitunix.com/c2790129-6a3c-4366-b863-871ba79af37e",
+            "frameRectangle": {
+              "x": 0,
+              "y": 229,
+              "width": 1077,
+              "height": 494
+            },
+            "pointerCaptured": true,
+            "pointerEvent": {
+              "type": "pointermove",
+              "time": "2026-11-14T20:52:18.941Z",
+              "ageMs": 4279,
+              "x": 938,
+              "y": 224
+            },
+            "elementAtPointer": {
+              "tag": "canvas",
+              "id": "",
+              "class": "",
+              "text": "",
+              "attributes": {
+                "aria-label": "Chart for XAUTUSDT, 1 minute"
+              },
+              "selector": "div.chart-markup-table.pane.pane--cursor-pointer:nth-of-type(2) > div.chart-gui-wrapper > canvas:nth-of-type(2)",
+              "selectorMatchCount": 1,
+              "rect": {
+                "x": 56,
+                "y": 0,
+                "width": 957,
+                "height": 366
+              },
+              "computedStyle": {
+                "display": "block",
+                "visibility": "visible",
+                "opacity": "1",
+                "pointerEvents": "auto",
+                "cursor": "pointer",
+                "position": "absolute",
+                "zIndex": "auto"
+              },
+              "outerHTML": "<canvas aria-label=\"Chart for XAUTUSDT, 1 minute\" width=\"1077\" height=\"412\" style=\"user-select: none; -webkit-tap-highlight-color: transparent; width: 957px; height: 366.222px; position: absolute; left: 0px; top: 0px;\"></canvas>"
+            },
+            "elementsStack": [
+              {
+                "tag": "canvas",
+                "id": "",
+                "class": "",
+                "text": "",
+                "attributes": {
+                  "aria-label": "Chart for XAUTUSDT, 1 minute"
+                },
+                "selector": "div.chart-markup-table.pane.pane--cursor-pointer:nth-of-type(2) > div.chart-gui-wrapper > canvas:nth-of-type(2)",
+                "selectorMatchCount": 1,
+                "rect": {
+                  "x": 56,
+                  "y": 0,
+                  "width": 957,
+                  "height": 366
+                },
+                "computedStyle": {
+                  "display": "block",
+                  "visibility": "visible",
+                  "opacity": "1",
+                  "pointerEvents": "auto",
+                  "cursor": "pointer",
+                  "position": "absolute",
+                  "zIndex": "auto"
+                },
+                "outerHTML": "<canvas aria-label=\"Chart for XAUTUSDT, 1 minute\" width=\"1077\" height=\"412\" style=\"user-select: none; -webkit-tap-highlight-color: transparent; width: 957px; height: 366.222px; position: absolute; left: 0px; top: 0px;\"></canvas>"
+              },
+              {
+                "tag": "canvas",
+                "id": "",
+                "class": "",
+                "text": "",
+                "attributes": {},
+                "selector": "div.chart-markup-table.pane.pane--cursor-pointer:nth-of-type(2) > div.chart-gui-wrapper > canvas:nth-of-type(1)",
+                "selectorMatchCount": 1,
+                "rect": {
+                  "x": 56,
+                  "y": 0,
+                  "width": 957,
+                  "height": 366
+                },
+                "computedStyle": {
+                  "display": "block",
+                  "visibility": "visible",
+                  "opacity": "1",
+                  "pointerEvents": "auto",
+                  "cursor": "pointer",
+                  "position": "absolute",
+                  "zIndex": "auto"
+                },
+                "outerHTML": "<canvas aria-hidden=\"true\" width=\"1077\" height=\"412\" style=\"user-select: none; -webkit-tap-highlight-color: transparent; width: 957px; height: 366.222px; position: absolute; left: 0px; top: 0px;\"></canvas>"
+              },
+              {
+                "tag": "div",
+                "id": "",
+                "class": "chart-gui-wrapper",
+                "text": "XAUTUSDT 1 Bitunix O3,817.85H3,818.81L3,817.85C3,818.810.96 (+0.03%)",
+                "attributes": {
+                  "data-name": "pane-widget-chart-gui-wrapper"
+                },
+                "selector": "div.chart-markup-table.pane.pane--cursor-pointer:nth-of-type(2) > div.chart-gui-wrapper",
+                "selectorMatchCount": 1,
+                "rect": {
+                  "x": 56,
+                  "y": 0,
+                  "width": 957,
+                  "height": 366
+                },
+                "computedStyle": {
+                  "display": "flex",
+                  "visibility": "visible",
+                  "opacity": "1",
+                  "pointerEvents": "auto",
+                  "cursor": "pointer",
+                  "position": "relative",
+                  "zIndex": "auto"
+                },
+                "outerHTML": "<div class=\"chart-gui-wrapper\" data-name=\"pane-widget-chart-gui-wrapper\" style=\"width: 957px; height: 366.222px;\"><canvas aria-hidden=\"true\" width=\"1077\" height=\"412\" style=\"user-select: none; -webkit-tap-highlight-color: transparent; width: 957px; height: 366.222px; position: absolute; left: 0px; top: 0px;\"></canvas><canvas aria-label=\"Chart for XAUTUSDT, 1 minute\" width=\"1077\" height=\"412\" style=\"user-select: none; -webkit-tap-highlight-color: transparent; width: 957px; height: 366.222px; position: absolute; left: 0px; top: 0px;\"></canvas><div class=\"errorCardRendererContainer-S9sXvhAu\" style=\"--backgroundColor: linear-gradient(#0f0f0f, #0f0f0f); --textColor: #9598A1;\"></div><div class=\"legend-l31H9iuA noWrap-l31H9iuA wrappable-l31H9iuA\" data-name=\"legend\" aria-hidden=\"true\" style=\"--legend-source-item-button-width: 28px; color: rgba(15, 15, 15, 0.5); max-width: calc(100% - 96.3281px);\"><div class=\"legendMainSourceWrapper-l31H9iuA\"><div data-status=\"undefined\" class=\"item-l31H9iuA series-l31H9iuA onlyOneButtonCanBeStick-l31H9iuA withCustomTextColor-l31H9iuA\" data-name=\"legend-series-item\"><div class=\"noWrapWrapper-l31H9iuA\"><div class=\"titlesWrapper-l31H9iuA\"><div class=\"titleWrapper-l31H9iuA mainTitle-l31H9iuA apply-overflow-tooltip apply-common-tooltip withAction-l31H9iuA wit"
+              },
+              {
+                "tag": "div",
+                "id": "",
+                "class": "chart-markup-table pane pane--cursor-pointer",
+                "text": "XAUTUSDT 1 Bitunix O3,817.85H3,818.81L3,817.85C3,818.810.96 (+0.03%)",
+                "attributes": {},
+                "selector": "div.chart-markup-table.pane.pane--cursor-pointer:nth-of-type(2)",
+                "selectorMatchCount": 1,
+                "rect": {
+                  "x": 56,
+                  "y": 0,
+                  "width": 957,
+                  "height": 366
+                },
+                "computedStyle": {
+                  "display": "block",
+                  "visibility": "visible",
+                  "opacity": "1",
+                  "pointerEvents": "auto",
+                  "cursor": "pointer",
+                  "position": "static",
+                  "zIndex": "auto"
+                },
+                "outerHTML": "<div class=\"chart-markup-table pane pane--cursor-pointer\" style=\"width: 957px; height: 366.222px;\"><div class=\"chart-gui-wrapper\" data-name=\"pane-widget-chart-gui-wrapper\" style=\"width: 957px; height: 366.222px;\"><canvas aria-hidden=\"true\" width=\"1077\" height=\"412\" style=\"user-select: none; -webkit-tap-highlight-color: transparent; width: 957px; height: 366.222px; position: absolute; left: 0px; top: 0px;\"></canvas><canvas aria-label=\"Chart for XAUTUSDT, 1 minute\" width=\"1077\" height=\"412\" style=\"user-select: none; -webkit-tap-highlight-color: transparent; width: 957px; height: 366.222px; position: absolute; left: 0px; top: 0px;\"></canvas><div class=\"errorCardRendererContainer-S9sXvhAu\" style=\"--backgroundColor: linear-gradient(#0f0f0f, #0f0f0f); --textColor: #9598A1;\"></div><div class=\"legend-l31H9iuA noWrap-l31H9iuA wrappable-l31H9iuA\" data-name=\"legend\" aria-hidden=\"true\" style=\"--legend-source-item-button-width: 28px; color: rgba(15, 15, 15, 0.5); max-width: calc(100% - 96.3281px);\"><div class=\"legendMainSourceWrapper-l31H9iuA\"><div data-status=\"undefined\" class=\"item-l31H9iuA series-l31H9iuA onlyOneButtonCanBeStick-l31H9iuA withCustomTextColor-l31H9iuA\" data-name=\"legend-series-item\"><div class=\"noWrapWrapper-l31H9iuA\"><div class=\"titlesWrapper-l31H9iuA\"><div class=\"titleWrap"
+              },
+              {
+                "tag": "div",
+                "id": "",
+                "class": "",
+                "text": "XAUTUSDT 1 Bitunix O3,817.85H3,818.81L3,817.85C3,818.810.96 (+0.03%)",
+                "attributes": {},
+                "selector": "div.chart-widget.chart-widget--themed-dark.chart-widget__top--themed-dark.chart-widget__bottom--themed-dark:nth-of-type(2) > div.chart-markup-table:nth-of-type(2) > div:nth-of-type(1)",
+                "selectorMatchCount": 1,
+                "rect": {
+                  "x": 56,
+                  "y": 0,
+                  "width": 1021,
+                  "height": 366
+                },
+                "computedStyle": {
+                  "display": "flex",
+                  "visibility": "visible",
+                  "opacity": "1",
+                  "pointerEvents": "auto",
+                  "cursor": "auto",
+                  "position": "static",
+                  "zIndex": "auto"
+                },
+                "outerHTML": "<div style=\"display: flex;\"><div class=\"chart-markup-table price-axis-container\" style=\"width: 0px; position: relative; min-width: 0px; height: 366.222px;\"></div><div class=\"chart-markup-table pane pane--cursor-pointer\" style=\"width: 957px; height: 366.222px;\"><div class=\"chart-gui-wrapper\" data-name=\"pane-widget-chart-gui-wrapper\" style=\"width: 957px; height: 366.222px;\"><canvas aria-hidden=\"true\" width=\"1077\" height=\"412\" style=\"user-select: none; -webkit-tap-highlight-color: transparent; width: 957px; height: 366.222px; position: absolute; left: 0px; top: 0px;\"></canvas><canvas aria-label=\"Chart for XAUTUSDT, 1 minute\" width=\"1077\" height=\"412\" style=\"user-select: none; -webkit-tap-highlight-color: transparent; width: 957px; height: 366.222px; position: absolute; left: 0px; top: 0px;\"></canvas><div class=\"errorCardRendererContainer-S9sXvhAu\" style=\"--backgroundColor: linear-gradient(#0f0f0f, #0f0f0f); --textColor: #9598A1;\"></div><div class=\"legend-l31H9iuA noWrap-l31H9iuA wrappable-l31H9iuA\" data-name=\"legend\" aria-hidden=\"true\" style=\"--legend-source-item-button-width: 28px; color: rgba(15, 15, 15, 0.5); max-width: calc(100% - 96.3281px);\"><div class=\"legendMainSourceWrapper-l31H9iuA\"><div data-status=\"undefined\" class=\"item-l31H9iuA series-l31H9iuA onlyOneButtonCanBeStick-l"
+              },
+              {
+                "tag": "div",
+                "id": "",
+                "class": "chart-markup-table",
+                "text": "XAUTUSDT 1 Bitunix O3,817.85H3,818.81L3,817.85C3,818.810.96 (+0.03%) %R 6 −78.18 A",
+                "attributes": {},
+                "selector": "div.chart-widget.chart-widget--themed-dark.chart-widget__top--themed-dark.chart-widget__bottom--themed-dark:nth-of-type(2) > div.chart-markup-table:nth-of-type(2)",
+                "selectorMatchCount": 1,
+                "rect": {
+                  "x": 56,
+                  "y": 0,
+                  "width": 1021,
+                  "height": 455
+                },
+                "computedStyle": {
+                  "display": "block",
+                  "visibility": "visible",
+                  "opacity": "1",
+                  "pointerEvents": "auto",
+                  "cursor": "auto",
+                  "position": "static",
+                  "zIndex": "auto"
+                },
+                "outerHTML": "<div class=\"chart-markup-table\" style=\"height: 455px; width: 1021px; user-select: none; -webkit-tap-highlight-color: transparent;\"><div style=\"display: flex;\"><div class=\"chart-markup-table price-axis-container\" style=\"width: 0px; position: relative; min-width: 0px; height: 366.222px;\"></div><div class=\"chart-markup-table pane pane--cursor-pointer\" style=\"width: 957px; height: 366.222px;\"><div class=\"chart-gui-wrapper\" data-name=\"pane-widget-chart-gui-wrapper\" style=\"width: 957px; height: 366.222px;\"><canvas aria-hidden=\"true\" width=\"1077\" height=\"412\" style=\"user-select: none; -webkit-tap-highlight-color: transparent; width: 957px; height: 366.222px; position: absolute; left: 0px; top: 0px;\"></canvas><canvas aria-label=\"Chart for XAUTUSDT, 1 minute\" width=\"1077\" height=\"412\" style=\"user-select: none; -webkit-tap-highlight-color: transparent; width: 957px; height: 366.222px; position: absolute; left: 0px; top: 0px;\"></canvas><div class=\"errorCardRendererContainer-S9sXvhAu\" style=\"--backgroundColor: linear-gradient(#0f0f0f, #0f0f0f); --textColor: #9598A1;\"></div><div class=\"legend-l31H9iuA noWrap-l31H9iuA wrappable-l31H9iuA\" data-name=\"legend\" aria-hidden=\"true\" style=\"--legend-source-item-button-width: 28px; color: rgba(15, 15, 15, 0.5); max-width: calc(100% - 96.3281px);\"><div c"
+              },
+              {
+                "tag": "div",
+                "id": "",
+                "class": "chart-widget chart-widget--themed-dark chart-widget__top--themed-dark chart-widget__bottom--themed-dark",
+                "text": "XAUTUSDT 1 Bitunix O3,817.85H3,818.81L3,817.85C3,818.810.96 (+0.03%) %R 6 −78.18 A",
+                "attributes": {
+                  "aria-label": "Chart #1",
+                  "role": "region"
+                },
+                "selector": "div.chart-widget.chart-widget--themed-dark.chart-widget__top--themed-dark.chart-widget__bottom--themed-dark:nth-of-type(2)",
+                "selectorMatchCount": 1,
+                "rect": {
+                  "x": 56,
+                  "y": 0,
+                  "width": 1021,
+                  "height": 455
+                },
+                "computedStyle": {
+                  "display": "block",
+                  "visibility": "visible",
+                  "opacity": "1",
+                  "pointerEvents": "auto",
+                  "cursor": "auto",
+                  "position": "absolute",
+                  "zIndex": "auto"
+                },
+                "outerHTML": "<div class=\"chart-widget chart-widget--themed-dark chart-widget__top--themed-dark chart-widget__bottom--themed-dark\" role=\"region\" aria-label=\"Chart #1\" style=\"height: 455px; width: 1021px;\"><div class=\"tooltip-wrapper\"></div><div class=\"chart-markup-table\" style=\"height: 455px; width: 1021px; user-select: none; -webkit-tap-highlight-color: transparent;\"><div style=\"display: flex;\"><div class=\"chart-markup-table price-axis-container\" style=\"width: 0px; position: relative; min-width: 0px; height: 366.222px;\"></div><div class=\"chart-markup-table pane pane--cursor-pointer\" style=\"width: 957px; height: 366.222px;\"><div class=\"chart-gui-wrapper\" data-name=\"pane-widget-chart-gui-wrapper\" style=\"width: 957px; height: 366.222px;\"><canvas aria-hidden=\"true\" width=\"1077\" height=\"412\" style=\"user-select: none; -webkit-tap-highlight-color: transparent; width: 957px; height: 366.222px; position: absolute; left: 0px; top: 0px;\"></canvas><canvas aria-label=\"Chart for XAUTUSDT, 1 minute\" width=\"1077\" height=\"412\" style=\"user-select: none; -webkit-tap-highlight-color: transparent; width: 957px; height: 366.222px; position: absolute; left: 0px; top: 0px;\"></canvas><div class=\"errorCardRendererContainer-S9sXvhAu\" style=\"--backgroundColor: linear-gradient(#0f0f0f, #0f0f0f); --textColor: #9598A1;\"></"
+              },
+              {
+                "tag": "div",
+                "id": "",
+                "class": "chart-container-border",
+                "text": "XAUTUSDT 1 Bitunix O3,817.85H3,818.81L3,817.85C3,818.810.96 (+0.03%) %R 6 −78.18 A",
+                "attributes": {},
+                "selector": "div.chart-container-border:nth-of-type(1)",
+                "selectorMatchCount": 1,
+                "rect": {
+                  "x": 56,
+                  "y": 0,
+                  "width": 1021,
+                  "height": 455
+                },
+                "computedStyle": {
+                  "display": "block",
+                  "visibility": "visible",
+                  "opacity": "1",
+                  "pointerEvents": "auto",
+                  "cursor": "auto",
+                  "position": "relative",
+                  "zIndex": "0"
+                },
+                "outerHTML": "<div class=\"chart-container-border\"><div class=\"screen-otjoFNF2\"></div><div class=\"chart-widget chart-widget--themed-dark chart-widget__top--themed-dark chart-widget__bottom--themed-dark\" role=\"region\" aria-label=\"Chart #1\" style=\"height: 455px; width: 1021px;\"><div class=\"tooltip-wrapper\"></div><div class=\"chart-markup-table\" style=\"height: 455px; width: 1021px; user-select: none; -webkit-tap-highlight-color: transparent;\"><div style=\"display: flex;\"><div class=\"chart-markup-table price-axis-container\" style=\"width: 0px; position: relative; min-width: 0px; height: 366.222px;\"></div><div class=\"chart-markup-table pane pane--cursor-pointer\" style=\"width: 957px; height: 366.222px;\"><div class=\"chart-gui-wrapper\" data-name=\"pane-widget-chart-gui-wrapper\" style=\"width: 957px; height: 366.222px;\"><canvas aria-hidden=\"true\" width=\"1077\" height=\"412\" style=\"user-select: none; -webkit-tap-highlight-color: transparent; width: 957px; height: 366.222px; position: absolute; left: 0px; top: 0px;\"></canvas><canvas aria-label=\"Chart for XAUTUSDT, 1 minute\" width=\"1077\" height=\"412\" style=\"user-select: none; -webkit-tap-highlight-color: transparent; width: 957px; height: 366.222px; position: absolute; left: 0px; top: 0px;\"></canvas><div class=\"errorCardRendererContainer-S9sXvhAu\" style=\"--backgr"
+              },
+              {
+                "tag": "div",
+                "id": "",
+                "class": "chart-container top-full-width-chart active",
+                "text": "XAUTUSDT 1 Bitunix O3,817.85H3,818.81L3,817.85C3,818.810.96 (+0.03%) %R 6 −78.18 A",
+                "attributes": {},
+                "selector": "div.chart-container.top-full-width-chart.active:nth-of-type(2)",
+                "selectorMatchCount": 1,
+                "rect": {
+                  "x": 56,
+                  "y": 0,
+                  "width": 1021,
+                  "height": 455
+                },
+                "computedStyle": {
+                  "display": "block",
+                  "visibility": "visible",
+                  "opacity": "1",
+                  "pointerEvents": "auto",
+                  "cursor": "auto",
+                  "position": "absolute",
+                  "zIndex": "auto"
+                },
+                "outerHTML": "<div class=\"chart-container top-full-width-chart active\" style=\"position: absolute; overflow: hidden; width: 1021px; height: 455px; top: 0px; left: 0px;\"><div class=\"chart-container-border\"><div class=\"screen-otjoFNF2\"></div><div class=\"chart-widget chart-widget--themed-dark chart-widget__top--themed-dark chart-widget__bottom--themed-dark\" role=\"region\" aria-label=\"Chart #1\" style=\"height: 455px; width: 1021px;\"><div class=\"tooltip-wrapper\"></div><div class=\"chart-markup-table\" style=\"height: 455px; width: 1021px; user-select: none; -webkit-tap-highlight-color: transparent;\"><div style=\"display: flex;\"><div class=\"chart-markup-table price-axis-container\" style=\"width: 0px; position: relative; min-width: 0px; height: 366.222px;\"></div><div class=\"chart-markup-table pane pane--cursor-pointer\" style=\"width: 957px; height: 366.222px;\"><div class=\"chart-gui-wrapper\" data-name=\"pane-widget-chart-gui-wrapper\" style=\"width: 957px; height: 366.222px;\"><canvas aria-hidden=\"true\" width=\"1077\" height=\"412\" style=\"user-select: none; -webkit-tap-highlight-color: transparent; width: 957px; height: 366.222px; position: absolute; left: 0px; top: 0px;\"></canvas><canvas aria-label=\"Chart for XAUTUSDT, 1 minute\" width=\"1077\" height=\"412\" style=\"user-select: none; -webkit-tap-highlight-color: transpa"
+              },
+              {
+                "tag": "div",
+                "id": "",
+                "class": "layout__area--center no-border-bottom-left-radius no-border-bottom-right-radius no-border-top-right-radius",
+                "text": "00:22:21 (UTC+3:30) log auto XAUTUSDT 1 Bitunix O3,817.85H3,818.81L3,817.85C3,818.810.96 (+0.03%) %R 6 −78.18 A",
+                "attributes": {},
+                "selector": "div.layout__area--center.no-border-bottom-left-radius.no-border-bottom-right-radius.no-border-top-right-radius:nth-of-type(3)",
+                "selectorMatchCount": 1,
+                "rect": {
+                  "x": 56,
+                  "y": 0,
+                  "width": 1021,
+                  "height": 494
+                },
+                "computedStyle": {
+                  "display": "block",
+                  "visibility": "visible",
+                  "opacity": "1",
+                  "pointerEvents": "auto",
+                  "cursor": "auto",
+                  "position": "absolute",
+                  "zIndex": "auto"
+                },
+                "outerHTML": "<div class=\"layout__area--center no-border-bottom-left-radius no-border-bottom-right-radius no-border-top-right-radius\" style=\"position: absolute; top: 0px; left: 56px; width: 1021px; height: 494px;\"><div class=\"chart-toolbar chart-controls-bar\" data-is-chart-toolbar-component=\"true\" data-initialized=\"true\" style=\"left: 0px; right: 0px; bottom: 0px;\"><div class=\"toolbar-BXXUwft2\" role=\"toolbar\"><div class=\"dateRangeWrapper-BXXUwft2\"><div class=\"dateRangeCollapsed-BXXUwft2\"><button type=\"button\" class=\"button-Hfju7pW_ dateRange-BXXUwft2 button-merBkM5y apply-common-tooltip accessible-merBkM5y\" tabindex=\"-1\" data-name=\"date-ranges-menu\">Date Range<div class=\"arrow-merBkM5y\"><div class=\"arrowWrap-merBkM5y\"><span class=\"icon-WB2y0EnP\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 8\" width=\"16\" height=\"8\"><path fill=\"currentColor\" d=\"M0 1.475l7.396 6.04.596.485.593-.49L16 1.39 14.807 0 7.393 6.122 8.58 6.12 1.186.08z\"></path></svg></span></div></div></button></div></div><div class=\"dateRangeWrapper-BXXUwft2 collapsed-BXXUwft2\"><div class=\"dateRangeExpanded-BXXUwft2\"><div class=\"sliderRow-k2h4OAz8 dateRange-BXXUwft2 tabs-NGf0gcnH\" data-name=\"date-ranges-tabs\"><button aria-label=\"5 years in 1 week intervals\" value=\"60M\" tabindex=\"-1\" type=\"button\" class=\"item-SqYYy1zF button-G"
+              }
+            ],
+            "ancestorChain": [
+              {
+                "depth": 0,
+                "tag": "canvas",
+                "id": "",
+                "class": "",
+                "text": "",
+                "attributes": {
+                  "aria-label": "Chart for XAUTUSDT, 1 minute"
+                },
+                "cursor": "pointer",
+                "buttonLike": true,
+                "selector": "div.chart-markup-table.pane.pane--cursor-pointer:nth-of-type(2) > div.chart-gui-wrapper > canvas:nth-of-type(2)",
+                "rect": {
+                  "x": 56,
+                  "y": 0,
+                  "width": 957,
+                  "height": 366
+                },
+                "outerHTML": "<canvas aria-label=\"Chart for XAUTUSDT, 1 minute\" width=\"1077\" height=\"412\" style=\"user-select: none; -webkit-tap-highlight-color: transparent; width: 957px; height: 366.222px; position: absolute; left: 0px; top: 0px;\"></canvas>"
+              },
+              {
+                "depth": 1,
+                "tag": "div",
+                "id": "",
+                "class": "chart-gui-wrapper",
+                "text": "XAUTUSDT 1 Bitunix O3,817.85H3,818.81L3,817.85C3,818.810.96 (+0.03%)",
+                "attributes": {
+                  "data-name": "pane-widget-chart-gui-wrapper"
+                },
+                "cursor": "pointer",
+                "buttonLike": true,
+                "selector": "div.chart-markup-table.pane.pane--cursor-pointer:nth-of-type(2) > div.chart-gui-wrapper",
+                "rect": {
+                  "x": 56,
+                  "y": 0,
+                  "width": 957,
+                  "height": 366
+                },
+                "outerHTML": "<div class=\"chart-gui-wrapper\" data-name=\"pane-widget-chart-gui-wrapper\" style=\"width: 957px; height: 366.222px;\"><canvas aria-hidden=\"true\" width=\"1077\" height=\"412\" style=\"user-select: none; -webkit-tap-highlight-color: transparent; width: 957px; height: 366.222px; position: absolute; left: 0px; top: 0px;\"></canvas><canvas aria-label=\"Chart for XAUTUSDT, 1 minute\" width=\"1077\" height=\"412\" style=\"user-select: none; -webkit-tap-highlight-color: transparent; width: 957px; height: 366.222px; position: absolute; left: 0px; top: 0px;\"></canvas><div class=\"errorCardRendererContainer-S9sXvhAu\" style=\"--backgroundColor: linear-gradient(#0f0f0f, #0f0f0f); --textColor: #9598A1;\"></div><div class=\"legend-l31H9iuA noWrap-l31H9iuA wrappable-l31H9iuA\" data-name=\"legend\" aria-hidden=\"true\" style=\"--legend-source-item-button-width: 28px; color: rgba(15, 15, 15, 0.5); max-width: calc(100% - 96.3281px);"
+              },
+              {
+                "depth": 2,
+                "tag": "div",
+                "id": "",
+                "class": "chart-markup-table pane pane--cursor-pointer",
+                "text": "XAUTUSDT 1 Bitunix O3,817.85H3,818.81L3,817.85C3,818.810.96 (+0.03%)",
+                "attributes": {},
+                "cursor": "pointer",
+                "buttonLike": true,
+                "selector": "div.chart-markup-table.pane.pane--cursor-pointer:nth-of-type(2)",
+                "rect": {
+                  "x": 56,
+                  "y": 0,
+                  "width": 957,
+                  "height": 366
+                },
+                "outerHTML": "<div class=\"chart-markup-table pane pane--cursor-pointer\" style=\"width: 957px; height: 366.222px;\"><div class=\"chart-gui-wrapper\" data-name=\"pane-widget-chart-gui-wrapper\" style=\"width: 957px; height: 366.222px;\"><canvas aria-hidden=\"true\" width=\"1077\" height=\"412\" style=\"user-select: none; -webkit-tap-highlight-color: transparent; width: 957px; height: 366.222px; position: absolute; left: 0px; top: 0px;\"></canvas><canvas aria-label=\"Chart for XAUTUSDT, 1 minute\" width=\"1077\" height=\"412\" style=\"user-select: none; -webkit-tap-highlight-color: transparent; width: 957px; height: 366.222px; position: absolute; left: 0px; top: 0px;\"></canvas><div class=\"errorCardRendererContainer-S9sXvhAu\" style=\"--backgroundColor: linear-gradient(#0f0f0f, #0f0f0f); --textColor: #9598A1;\"></div><div class=\"legend-l31H9iuA noWrap-l31H9iuA wrappable-l31H9iuA\" data-name=\"legend\" aria-hidden=\"true\" style=\"--lege"
+              },
+              {
+                "depth": 3,
+                "tag": "div",
+                "id": "",
+                "class": "",
+                "text": "XAUTUSDT 1 Bitunix O3,817.85H3,818.81L3,817.85C3,818.810.96 (+0.03%)",
+                "attributes": {},
+                "cursor": "auto",
+                "buttonLike": false,
+                "selector": "div.chart-widget.chart-widget--themed-dark.chart-widget__top--themed-dark.chart-widget__bottom--themed-dark:nth-of-type(2) > div.chart-markup-table:nth-of-type(2) > div:nth-of-type(1)",
+                "rect": {
+                  "x": 56,
+                  "y": 0,
+                  "width": 1021,
+                  "height": 366
+                },
+                "outerHTML": "<div style=\"display: flex;\"><div class=\"chart-markup-table price-axis-container\" style=\"width: 0px; position: relative; min-width: 0px; height: 366.222px;\"></div><div class=\"chart-markup-table pane pane--cursor-pointer\" style=\"width: 957px; height: 366.222px;\"><div class=\"chart-gui-wrapper\" data-name=\"pane-widget-chart-gui-wrapper\" style=\"width: 957px; height: 366.222px;\"><canvas aria-hidden=\"true\" width=\"1077\" height=\"412\" style=\"user-select: none; -webkit-tap-highlight-color: transparent; width: 957px; height: 366.222px; position: absolute; left: 0px; top: 0px;\"></canvas><canvas aria-label=\"Chart for XAUTUSDT, 1 minute\" width=\"1077\" height=\"412\" style=\"user-select: none; -webkit-tap-highlight-color: transparent; width: 957px; height: 366.222px; position: absolute; left: 0px; top: 0px;\"></canvas><div class=\"errorCardRendererContainer-S9sXvhAu\" style=\"--backgroundColor: linear-gradient(#"
+              },
+              {
+                "depth": 4,
+                "tag": "div",
+                "id": "",
+                "class": "chart-markup-table",
+                "text": "XAUTUSDT 1 Bitunix O3,817.85H3,818.81L3,817.85C3,818.810.96 (+0.03%) %R 6 −78.18 A",
+                "attributes": {},
+                "cursor": "auto",
+                "buttonLike": false,
+                "selector": "div.chart-widget.chart-widget--themed-dark.chart-widget__top--themed-dark.chart-widget__bottom--themed-dark:nth-of-type(2) > div.chart-markup-table:nth-of-type(2)",
+                "rect": {
+                  "x": 56,
+                  "y": 0,
+                  "width": 1021,
+                  "height": 455
+                },
+                "outerHTML": "<div class=\"chart-markup-table\" style=\"height: 455px; width: 1021px; user-select: none; -webkit-tap-highlight-color: transparent;\"><div style=\"display: flex;\"><div class=\"chart-markup-table price-axis-container\" style=\"width: 0px; position: relative; min-width: 0px; height: 366.222px;\"></div><div class=\"chart-markup-table pane pane--cursor-pointer\" style=\"width: 957px; height: 366.222px;\"><div class=\"chart-gui-wrapper\" data-name=\"pane-widget-chart-gui-wrapper\" style=\"width: 957px; height: 366.222px;\"><canvas aria-hidden=\"true\" width=\"1077\" height=\"412\" style=\"user-select: none; -webkit-tap-highlight-color: transparent; width: 957px; height: 366.222px; position: absolute; left: 0px; top: 0px;\"></canvas><canvas aria-label=\"Chart for XAUTUSDT, 1 minute\" width=\"1077\" height=\"412\" style=\"user-select: none; -webkit-tap-highlight-color: transparent; width: 957px; height: 366.222px; position: ab"
+              },
+              {
+                "depth": 5,
+                "tag": "div",
+                "id": "",
+                "class": "chart-widget chart-widget--themed-dark chart-widget__top--themed-dark chart-widget__bottom--themed-dark",
+                "text": "XAUTUSDT 1 Bitunix O3,817.85H3,818.81L3,817.85C3,818.810.96 (+0.03%) %R 6 −78.18 A",
+                "attributes": {
+                  "aria-label": "Chart #1",
+                  "role": "region"
+                },
+                "cursor": "auto",
+                "buttonLike": true,
+                "selector": "div.chart-widget.chart-widget--themed-dark.chart-widget__top--themed-dark.chart-widget__bottom--themed-dark:nth-of-type(2)",
+                "rect": {
+                  "x": 56,
+                  "y": 0,
+                  "width": 1021,
+                  "height": 455
+                },
+                "outerHTML": "<div class=\"chart-widget chart-widget--themed-dark chart-widget__top--themed-dark chart-widget__bottom--themed-dark\" role=\"region\" aria-label=\"Chart #1\" style=\"height: 455px; width: 1021px;\"><div class=\"tooltip-wrapper\"></div><div class=\"chart-markup-table\" style=\"height: 455px; width: 1021px; user-select: none; -webkit-tap-highlight-color: transparent;\"><div style=\"display: flex;\"><div class=\"chart-markup-table price-axis-container\" style=\"width: 0px; position: relative; min-width: 0px; height: 366.222px;\"></div><div class=\"chart-markup-table pane pane--cursor-pointer\" style=\"width: 957px; height: 366.222px;\"><div class=\"chart-gui-wrapper\" data-name=\"pane-widget-chart-gui-wrapper\" style=\"width: 957px; height: 366.222px;\"><canvas aria-hidden=\"true\" width=\"1077\" height=\"412\" style=\"user-select: none; -webkit-tap-highlight-color: transparent; width: 957px; height: 366.222px; position: abso"
+              },
+              {
+                "depth": 6,
+                "tag": "div",
+                "id": "",
+                "class": "chart-container-border",
+                "text": "XAUTUSDT 1 Bitunix O3,817.85H3,818.81L3,817.85C3,818.810.96 (+0.03%) %R 6 −78.18 A",
+                "attributes": {},
+                "cursor": "auto",
+                "buttonLike": true,
+                "selector": "div.chart-container-border:nth-of-type(1)",
+                "rect": {
+                  "x": 56,
+                  "y": 0,
+                  "width": 1021,
+                  "height": 455
+                },
+                "outerHTML": "<div class=\"chart-container-border\"><div class=\"screen-otjoFNF2\"></div><div class=\"chart-widget chart-widget--themed-dark chart-widget__top--themed-dark chart-widget__bottom--themed-dark\" role=\"region\" aria-label=\"Chart #1\" style=\"height: 455px; width: 1021px;\"><div class=\"tooltip-wrapper\"></div><div class=\"chart-markup-table\" style=\"height: 455px; width: 1021px; user-select: none; -webkit-tap-highlight-color: transparent;\"><div style=\"display: flex;\"><div class=\"chart-markup-table price-axis-container\" style=\"width: 0px; position: relative; min-width: 0px; height: 366.222px;\"></div><div class=\"chart-markup-table pane pane--cursor-pointer\" style=\"width: 957px; height: 366.222px;\"><div class=\"chart-gui-wrapper\" data-name=\"pane-widget-chart-gui-wrapper\" style=\"width: 957px; height: 366.222px;\"><canvas aria-hidden=\"true\" width=\"1077\" height=\"412\" style=\"user-select: none; -webkit-tap-highli"
+              },
+              {
+                "depth": 7,
+                "tag": "div",
+                "id": "",
+                "class": "chart-container top-full-width-chart active",
+                "text": "XAUTUSDT 1 Bitunix O3,817.85H3,818.81L3,817.85C3,818.810.96 (+0.03%) %R 6 −78.18 A",
+                "attributes": {},
+                "cursor": "auto",
+                "buttonLike": false,
+                "selector": "div.chart-container.top-full-width-chart.active:nth-of-type(2)",
+                "rect": {
+                  "x": 56,
+                  "y": 0,
+                  "width": 1021,
+                  "height": 455
+                },
+                "outerHTML": "<div class=\"chart-container top-full-width-chart active\" style=\"position: absolute; overflow: hidden; width: 1021px; height: 455px; top: 0px; left: 0px;\"><div class=\"chart-container-border\"><div class=\"screen-otjoFNF2\"></div><div class=\"chart-widget chart-widget--themed-dark chart-widget__top--themed-dark chart-widget__bottom--themed-dark\" role=\"region\" aria-label=\"Chart #1\" style=\"height: 455px; width: 1021px;\"><div class=\"tooltip-wrapper\"></div><div class=\"chart-markup-table\" style=\"height: 455px; width: 1021px; user-select: none; -webkit-tap-highlight-color: transparent;\"><div style=\"display: flex;\"><div class=\"chart-markup-table price-axis-container\" style=\"width: 0px; position: relative; min-width: 0px; height: 366.222px;\"></div><div class=\"chart-markup-table pane pane--cursor-pointer\" style=\"width: 957px; height: 366.222px;\"><div class=\"chart-gui-wrapper\" data-name=\"pane-widget-cha"
+              },
+              {
+                "depth": 8,
+                "tag": "div",
+                "id": "",
+                "class": "layout__area--center no-border-bottom-left-radius no-border-bottom-right-radius no-border-top-right-radius",
+                "text": "00:22:21 (UTC+3:30) log auto XAUTUSDT 1 Bitunix O3,817.85H3,818.81L3,817.85C3,818.810.96 (+0.03%) %R 6 −78.18 A",
+                "attributes": {},
+                "cursor": "auto",
+                "buttonLike": true,
+                "selector": "div.layout__area--center.no-border-bottom-left-radius.no-border-bottom-right-radius.no-border-top-right-radius:nth-of-type(3)",
+                "rect": {
+                  "x": 56,
+                  "y": 0,
+                  "width": 1021,
+                  "height": 494
+                },
+                "outerHTML": "<div class=\"layout__area--center no-border-bottom-left-radius no-border-bottom-right-radius no-border-top-right-radius\" style=\"position: absolute; top: 0px; left: 56px; width: 1021px; height: 494px;\"><div class=\"chart-toolbar chart-controls-bar\" data-is-chart-toolbar-component=\"true\" data-initialized=\"true\" style=\"left: 0px; right: 0px; bottom: 0px;\"><div class=\"toolbar-BXXUwft2\" role=\"toolbar\"><div class=\"dateRangeWrapper-BXXUwft2\"><div class=\"dateRangeCollapsed-BXXUwft2\"><button type=\"button\" class=\"button-Hfju7pW_ dateRange-BXXUwft2 button-merBkM5y apply-common-tooltip accessible-merBkM5y\" tabindex=\"-1\" data-name=\"date-ranges-menu\">Date Range<div class=\"arrow-merBkM5y\"><div class=\"arrowWrap-merBkM5y\"><span class=\"icon-WB2y0EnP\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 8\" width=\"16\" height=\"8\"><path fill=\"currentColor\" d=\"M0 1.475l7.396 6.04.596.485.593-.49L16 1.39 14.80"
+              },
+              {
+                "depth": 9,
+                "tag": "div",
+                "id": "",
+                "class": "js-rootresizer__contents",
+                "text": "1m Indicators default Save 00:22:21 (UTC+3:30) log auto XAUTUSDT 1 Bitunix O3,817.85H3,818.81L3,817.85C3,818.810.96 (+0.",
+                "attributes": {},
+                "cursor": "auto",
+                "buttonLike": false,
+                "selector": "div.js-rootresizer__contents:nth-of-type(3)",
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 1077,
+                  "height": 494
+                },
+                "outerHTML": "<div class=\"js-rootresizer__contents\" style=\"position: relative; width: 100%; height: 100%;\"><div class=\"layout__area--top\" style=\"position: absolute; top: 0px; left: 0px; width: 1077px; height: 0px;\"><div class=\"toolbar-qqNP9X6e\"><div class=\"overflowWrap-qqNP9X6e\"><div class=\"inner-OhqNVIYA fake-OhqNVIYA\" data-is-fake-main-panel=\"true\" aria-hidden=\"true\" role=\"toolbar\"><div class=\"wrapOverflow-wXGVFOC9\"><div class=\"wrap-wXGVFOC9\"><div class=\"scrollWrap-wXGVFOC9 noScrollBar-wXGVFOC9\"><div class=\"content-OhqNVIYA\" role=\"none\"><div class=\"innerWrap-OhqNVIYA\"><div class=\"separatorWrap-MBOVGQRI\"><div class=\"separator-xVhBjD5m separator-MBOVGQRI\"></div></div><div class=\"group-MBOVGQRI\"><div class=\"wrap-n5bmFxyX\"><button type=\"button\" class=\"menu-S_1OCXUK button-merBkM5y apply-common-tooltip accessible-merBkM5y\" tabindex=\"-1\" data-tooltip=\"1 minute\" aria-label=\"1 minute\"><div class=\"menuConten"
+              },
+              {
+                "depth": 10,
+                "tag": "body",
+                "id": "",
+                "class": "chart-page unselectable on-widget",
+                "text": "TradingView is interactive and has commands to use with a screen reader. The following is a list of keyboard commands av",
+                "attributes": {},
+                "cursor": "auto",
+                "buttonLike": false,
+                "selector": "body.chart-page.unselectable.on-widget",
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 1077,
+                  "height": 494
+                },
+                "outerHTML": "<body class=\"chart-page unselectable on-widget\"><div role=\"contentinfo\" aria-hidden=\"false\" style=\"font-size: 0px;\"><p>TradingView is interactive and has commands to use with a screen reader. The following is a list of keyboard commands available to interact on the platform</p><ul><li>Start using keyboard navigation mode. Press Alt + Z</li><li>Quick search. Press Ctrl + K</li><li>Change symbol. Start typing symbol name</li><li>Change interval. Press number or comma</li><li>Indicators, Metrics and Strategies. Press slash</li><li>Load layout. Press period</li></ul></div><div id=\"layout-size-sensor\" style=\"position: fixed; inset: 0px; pointer-events: none; visibility: hidden;\"></div><div class=\"js-rootresizer__contents\" style=\"position: relative; width: 100%; height: 100%;\"><div class=\"layout__area--top\" style=\"position: absolute; top: 0px; left: 0px; width: 1077px; height: 0px;\"><div class"
+              },
+              {
+                "depth": 11,
+                "tag": "html",
+                "id": "",
+                "class": "feature-no-touch feature-no-mobiletouch theme-dark",
+                "text": "TradingView is interactive and has commands to use with a screen reader. The following is a list of keyboard commands av",
+                "attributes": {},
+                "cursor": "auto",
+                "buttonLike": false,
+                "selector": "html.feature-no-touch.feature-no-mobiletouch.theme-dark",
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 1077,
+                  "height": 494
+                },
+                "outerHTML": "<html lang=\"en\" dir=\"ltr\" class=\"feature-no-touch feature-no-mobiletouch theme-dark\"><head><base href=\"https://static.bitunix.com/assets/v609af3bf12/\"><meta charset=\"utf-8\"><script nonce=\"\">window.__tvCspNonce=\"3u5uSWB+uP/hT+WCw7tDDw==\";window===window.parent&&(location.href=\"about:blank\")</script> \n<script nonce=\"\" defer=\"\" crossorigin=\"anonymous\" src=\"bundles/runtime.26e30f0ec7606e36012b.js\"></script>\n<script nonce=\"\" defer=\"\" crossorigin=\"anonymous\" src=\"bundles/en.9173.5b6fb0f669b139b53c7c.js\"></script>\n<script nonce=\"\" defer=\"\" crossorigin=\"anonymous\" src=\"bundles/7326.a0fd7439af8a4c2cfaf5.js\"></script>\n<script nonce=\"\" defer=\"\" crossorigin=\"anonymous\" src=\"bundles/library.c5a1639e504413c38fde.js\"></script>\n<link type=\"text/css\" href=\"bundles/5640.55f97e27c6d611da3f9c.css\" rel=\"stylesheet\">\n <link rel=\"stylesheet\" type=\"text/css\" href=\"https://static.bitunix.com/assets/v609af3bf12/b"
+              }
+            ],
+            "relatedVisibleTooltips": [
+              {
+                "tag": "div",
+                "class": "common-tooltip-EJBD96zX common-tooltip--farther-EJBD96zX common-tooltip--vertical-EJBD96zX common-tooltip--horizontal-EJBD96zX common-tooltip--direction_normal-EJBD96zX",
+                "text": "Market close",
+                "attributes": {},
+                "selector": "#common-tooltip-wrapper",
+                "rect": {
+                  "x": 891,
+                  "y": 181,
+                  "width": 91,
+                  "height": 24
+                },
+                "outerHTML": "<div id=\"common-tooltip-wrapper\" class=\"common-tooltip-EJBD96zX common-tooltip--farther-EJBD96zX common-tooltip--vertical-EJBD96zX common-tooltip--horizontal-EJBD96zX common-tooltip--direction_normal-EJBD96zX\" style=\"left: 891px; bottom: 281px; width: 91px;\">\n\t\t<div class=\"common-tooltip__ear-holder-EJBD96zX common-tooltip__ear-holder--above-EJBD96zX\">\n\t\t\t<div class=\"common-tooltip__body-EJBD96zX js-tooltip-body common-tooltip__body--no-buttons-EJBD96zX\" style=\"left: 0px; width: 91px;\">Market close</div>\n\t\t</div>\n\t\t<div class=\"common-tooltip__button-container-EJBD96zX\" style=\"left: 0px;\"></div>\n\t</div>"
+              },
+              {
+                "tag": "div",
+                "class": "common-tooltip__ear-holder-EJBD96zX common-tooltip__ear-holder--above-EJBD96zX",
+                "text": "Market close",
+                "attributes": {},
+                "selector": "div.common-tooltip__ear-holder-EJBD96zX.common-tooltip__ear-holder--above-EJBD96zX:nth-of-type(1)",
+                "rect": {
+                  "x": 891,
+                  "y": 181,
+                  "width": 91,
+                  "height": 24
+                },
+                "outerHTML": "<div class=\"common-tooltip__ear-holder-EJBD96zX common-tooltip__ear-holder--above-EJBD96zX\">\n\t\t\t<div class=\"common-tooltip__body-EJBD96zX js-tooltip-body common-tooltip__body--no-buttons-EJBD96zX\" style=\"left: 0px; width: 91px;\">Market close</div>\n\t\t</div>"
+              },
+              {
+                "tag": "div",
+                "class": "common-tooltip__body-EJBD96zX js-tooltip-body common-tooltip__body--no-buttons-EJBD96zX",
+                "text": "Market close",
+                "attributes": {},
+                "selector": "div.common-tooltip__body-EJBD96zX.js-tooltip-body.common-tooltip__body--no-buttons-EJBD96zX",
+                "rect": {
+                  "x": 891,
+                  "y": 181,
+                  "width": 91,
+                  "height": 24
+                },
+                "outerHTML": "<div class=\"common-tooltip__body-EJBD96zX js-tooltip-body common-tooltip__body--no-buttons-EJBD96zX\" style=\"left: 0px; width: 91px;\">Market close</div>"
+              }
+            ],
+            "traceDuringHold": [
+              {
+                "elapsedMs": 0,
+                "eventAgeMs": 1278,
+                "x": 938,
+                "y": 224,
+                "frame": "top > iframe[0]",
+                "element": {
+                  "tag": "canvas",
+                  "class": "",
+                  "text": "",
+                  "attributes": {
+                    "aria-label": "Chart for XAUTUSDT, 1 minute"
+                  }
+                }
+              },
+              {
+                "elapsedMs": 103,
+                "eventAgeMs": 1380,
+                "x": 938,
+                "y": 224,
+                "frame": "top > iframe[0]",
+                "element": {
+                  "tag": "canvas",
+                  "class": "",
+                  "text": "",
+                  "attributes": {
+                    "aria-label": "Chart for XAUTUSDT, 1 minute"
+                  }
+                }
+              },
+              {
+                "elapsedMs": 216,
+                "eventAgeMs": 1492,
+                "x": 938,
+                "y": 224,
+                "frame": "top > iframe[0]",
+                "element": {
+                  "tag": "canvas",
+                  "class": "",
+                  "text": "",
+                  "attributes": {
+                    "aria-label": "Chart for XAUTUSDT, 1 minute"
+                  }
+                }
+              },
+              {
+                "elapsedMs": 304,
+                "eventAgeMs": 1580,
+                "x": 938,
+                "y": 224,
+                "frame": "top > iframe[0]",
+                "element": {
+                  "tag": "canvas",
+                  "class": "",
+                  "text": "",
+                  "attributes": {
+                    "aria-label": "Chart for XAUTUSDT, 1 minute"
+                  }
+                }
+              },
+              {
+                "elapsedMs": 404,
+                "eventAgeMs": 1680,
+                "x": 938,
+                "y": 224,
+                "frame": "top > iframe[0]",
+                "element": {
+                  "tag": "canvas",
+                  "class": "",
+                  "text": "",
+                  "attributes": {
+                    "aria-label": "Chart for XAUTUSDT, 1 minute"
+                  }
+                }
+              },
+              {
+                "elapsedMs": 502,
+                "eventAgeMs": 1779,
+                "x": 938,
+                "y": 224,
+                "frame": "top > iframe[0]",
+                "element": {
+                  "tag": "canvas",
+                  "class": "",
+                  "text": "",
+                  "attributes": {
+                    "aria-label": "Chart for XAUTUSDT, 1 minute"
+                  }
+                }
+              },
+              {
+                "elapsedMs": 604,
+                "eventAgeMs": 1880,
+                "x": 938,
+                "y": 224,
+                "frame": "top > iframe[0]",
+                "element": {
+                  "tag": "canvas",
+                  "class": "",
+                  "text": "",
+                  "attributes": {
+                    "aria-label": "Chart for XAUTUSDT, 1 minute"
+                  }
+                }
+              },
+              {
+                "elapsedMs": 703,
+                "eventAgeMs": 1979,
+                "x": 938,
+                "y": 224,
+                "frame": "top > iframe[0]",
+                "element": {
+                  "tag": "canvas",
+                  "class": "",
+                  "text": "",
+                  "attributes": {
+                    "aria-label": "Chart for XAUTUSDT, 1 minute"
+                  }
+                }
+              },
+              {
+                "elapsedMs": 803,
+                "eventAgeMs": 2079,
+                "x": 938,
+                "y": 224,
+                "frame": "top > iframe[0]",
+                "element": {
+                  "tag": "canvas",
+                  "class": "",
+                  "text": "",
+                  "attributes": {
+                    "aria-label": "Chart for XAUTUSDT, 1 minute"
+                  }
+                }
+              },
+              {
+                "elapsedMs": 902,
+                "eventAgeMs": 2178,
+                "x": 938,
+                "y": 224,
+                "frame": "top > iframe[0]",
+                "element": {
+                  "tag": "canvas",
+                  "class": "",
+                  "text": "",
+                  "attributes": {
+                    "aria-label": "Chart for XAUTUSDT, 1 minute"
+                  }
+                }
+              },
+              {
+                "elapsedMs": 1022,
+                "eventAgeMs": 2298,
+                "x": 938,
+                "y": 224,
+                "frame": "top > iframe[0]",
+                "element": {
+                  "tag": "canvas",
+                  "class": "",
+                  "text": "",
+                  "attributes": {
+                    "aria-label": "Chart for XAUTUSDT, 1 minute"
+                  }
+                }
+              },
+              {
+                "elapsedMs": 1110,
+                "eventAgeMs": 2386,
+                "x": 938,
+                "y": 224,
+                "frame": "top > iframe[0]",
+                "element": {
+                  "tag": "canvas",
+                  "class": "",
+                  "text": "",
+                  "attributes": {
+                    "aria-label": "Chart for XAUTUSDT, 1 minute"
+                  }
+                }
+              },
+              {
+                "elapsedMs": 1203,
+                "eventAgeMs": 2479,
+                "x": 938,
+                "y": 224,
+                "frame": "top > iframe[0]",
+                "element": {
+                  "tag": "canvas",
+                  "class": "",
+                  "text": "",
+                  "attributes": {
+                    "aria-label": "Chart for XAUTUSDT, 1 minute"
+                  }
+                }
+              },
+              {
+                "elapsedMs": 1310,
+                "eventAgeMs": 2586,
+                "x": 938,
+                "y": 224,
+                "frame": "top > iframe[0]",
+                "element": {
+                  "tag": "canvas",
+                  "class": "",
+                  "text": "",
+                  "attributes": {
+                    "aria-label": "Chart for XAUTUSDT, 1 minute"
+                  }
+                }
+              },
+              {
+                "elapsedMs": 1403,
+                "eventAgeMs": 2679,
+                "x": 938,
+                "y": 224,
+                "frame": "top > iframe[0]",
+                "element": {
+                  "tag": "canvas",
+                  "class": "",
+                  "text": "",
+                  "attributes": {
+                    "aria-label": "Chart for XAUTUSDT, 1 minute"
+                  }
+                }
+              },
+              {
+                "elapsedMs": 1503,
+                "eventAgeMs": 2779,
+                "x": 938,
+                "y": 224,
+                "frame": "top > iframe[0]",
+                "element": {
+                  "tag": "canvas",
+                  "class": "",
+                  "text": "",
+                  "attributes": {
+                    "aria-label": "Chart for XAUTUSDT, 1 minute"
+                  }
+                }
+              },
+              {
+                "elapsedMs": 1603,
+                "eventAgeMs": 2879,
+                "x": 938,
+                "y": 224,
+                "frame": "top > iframe[0]",
+                "element": {
+                  "tag": "canvas",
+                  "class": "",
+                  "text": "",
+                  "attributes": {
+                    "aria-label": "Chart for XAUTUSDT, 1 minute"
+                  }
+                }
+              },
+              {
+                "elapsedMs": 1703,
+                "eventAgeMs": 2979,
+                "x": 938,
+                "y": 224,
+                "frame": "top > iframe[0]",
+                "element": {
+                  "tag": "canvas",
+                  "class": "",
+                  "text": "",
+                  "attributes": {
+                    "aria-label": "Chart for XAUTUSDT, 1 minute"
+                  }
+                }
+              },
+              {
+                "elapsedMs": 1803,
+                "eventAgeMs": 3079,
+                "x": 938,
+                "y": 224,
+                "frame": "top > iframe[0]",
+                "element": {
+                  "tag": "canvas",
+                  "class": "",
+                  "text": "",
+                  "attributes": {
+                    "aria-label": "Chart for XAUTUSDT, 1 minute"
+                  }
+                }
+              },
+              {
+                "elapsedMs": 1904,
+                "eventAgeMs": 3180,
+                "x": 938,
+                "y": 224,
+                "frame": "top > iframe[0]",
+                "element": {
+                  "tag": "canvas",
+                  "class": "",
+                  "text": "",
+                  "attributes": {
+                    "aria-label": "Chart for XAUTUSDT, 1 minute"
+                  }
+                }
+              },
+              {
+                "elapsedMs": 2004,
+                "eventAgeMs": 3280,
+                "x": 938,
+                "y": 224,
+                "frame": "top > iframe[0]",
+                "element": {
+                  "tag": "canvas",
+                  "class": "",
+                  "text": "",
+                  "attributes": {
+                    "aria-label": "Chart for XAUTUSDT, 1 minute"
+                  }
+                }
+              },
+              {
+                "elapsedMs": 2103,
+                "eventAgeMs": 3380,
+                "x": 938,
+                "y": 224,
+                "frame": "top > iframe[0]",
+                "element": {
+                  "tag": "canvas",
+                  "class": "",
+                  "text": "",
+                  "attributes": {
+                    "aria-label": "Chart for XAUTUSDT, 1 minute"
+                  }
+                }
+              },
+              {
+                "elapsedMs": 2204,
+                "eventAgeMs": 3480,
+                "x": 938,
+                "y": 224,
+                "frame": "top > iframe[0]",
+                "element": {
+                  "tag": "canvas",
+                  "class": "",
+                  "text": "",
+                  "attributes": {
+                    "aria-label": "Chart for XAUTUSDT, 1 minute"
+                  }
+                }
+              },
+              {
+                "elapsedMs": 2303,
+                "eventAgeMs": 3579,
+                "x": 938,
+                "y": 224,
+                "frame": "top > iframe[0]",
+                "element": {
+                  "tag": "canvas",
+                  "class": "",
+                  "text": "",
+                  "attributes": {
+                    "aria-label": "Chart for XAUTUSDT, 1 minute"
+                  }
+                }
+              },
+              {
+                "elapsedMs": 2405,
+                "eventAgeMs": 3682,
+                "x": 938,
+                "y": 224,
+                "frame": "top > iframe[0]",
+                "element": {
+                  "tag": "canvas",
+                  "class": "",
+                  "text": "",
+                  "attributes": {
+                    "aria-label": "Chart for XAUTUSDT, 1 minute"
+                  }
+                }
+              },
+              {
+                "elapsedMs": 2503,
+                "eventAgeMs": 3779,
+                "x": 938,
+                "y": 224,
+                "frame": "top > iframe[0]",
+                "element": {
+                  "tag": "canvas",
+                  "class": "",
+                  "text": "",
+                  "attributes": {
+                    "aria-label": "Chart for XAUTUSDT, 1 minute"
+                  }
+                }
+              },
+              {
+                "elapsedMs": 2615,
+                "eventAgeMs": 3891,
+                "x": 938,
+                "y": 224,
+                "frame": "top > iframe[0]",
+                "element": {
+                  "tag": "canvas",
+                  "class": "",
+                  "text": "",
+                  "attributes": {
+                    "aria-label": "Chart for XAUTUSDT, 1 minute"
+                  }
+                }
+              },
+              {
+                "elapsedMs": 2712,
+                "eventAgeMs": 3988,
+                "x": 938,
+                "y": 224,
+                "frame": "top > iframe[0]",
+                "element": {
+                  "tag": "canvas",
+                  "class": "",
+                  "text": "",
+                  "attributes": {
+                    "aria-label": "Chart for XAUTUSDT, 1 minute"
+                  }
+                }
+              },
+              {
+                "elapsedMs": 2816,
+                "eventAgeMs": 4092,
+                "x": 938,
+                "y": 224,
+                "frame": "top > iframe[0]",
+                "element": {
+                  "tag": "canvas",
+                  "class": "",
+                  "text": "",
+                  "attributes": {
+                    "aria-label": "Chart for XAUTUSDT, 1 minute"
+                  }
+                }
+              },
+              {
+                "elapsedMs": 2903,
+                "eventAgeMs": 4179,
+                "x": 938,
+                "y": 224,
+                "frame": "top > iframe[0]",
+                "element": {
+                  "tag": "canvas",
+                  "class": "",
+                  "text": "",
+                  "attributes": {
+                    "aria-label": "Chart for XAUTUSDT, 1 minute"
+                  }
+                }
+              },
+              {
+                "elapsedMs": 3002,
+                "eventAgeMs": 4279,
+                "x": 938,
+                "y": 224,
+                "frame": "top > iframe[0]",
+                "element": {
+                  "tag": "canvas",
+                  "class": "",
+                  "text": "",
+                  "attributes": {
+                    "aria-label": "Chart for XAUTUSDT, 1 minute"
+                  }
+                }
+              },
+              {
+                "elapsedMs": 3000,
+                "eventAgeMs": 4279,
+                "x": 938,
+                "y": 224,
+                "frame": "top > iframe[0]",
+                "element": {
+                  "tag": "canvas",
+                  "class": "",
+                  "text": "",
+                  "attributes": {
+                    "aria-label": "Chart for XAUTUSDT, 1 minute"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[1]",
+            "isChart": false,
+            "pointerCaptured": false,
+            "frameRectangle": {
+              "x": 0,
+              "y": -9999,
+              "width": 0,
+              "height": 0
+            }
+          },
+          {
+            "frame": "top > iframe[2]",
+            "isChart": false,
+            "pointerCaptured": false,
+            "frameRectangle": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "label": "Reverse",
+      "capturedAt": "2026-11-14T20:52:36.262Z",
+      "snapshot": {
+        "snapshotAt": "2026-11-14T20:52:33.713Z",
+        "sequenceStartedAt": "2026-11-14T20:52:27.686Z",
+        "frames": [
+          {
+            "frame": "top",
+            "isChart": true,
+            "pointerCaptured": false,
+            "frameRectangle": null
+          },
+          {
+            "frame": "top > iframe[0]",
+            "isChart": true,
+            "frameUrl": "blob:https://www.bitunix.com/c2790129-6a3c-4366-b863-871ba79af37e",
+            "frameRectangle": {
+              "x": 0,
+              "y": 229,
+              "width": 1077,
+              "height": 494
+            },
+            "pointerCaptured": true,
+            "pointerEvent": {
+              "type": "pointermove",
+              "time": "2026-11-14T20:52:29.114Z",
+              "ageMs": 4587,
+              "x": 911,
+              "y": 224
+            },
+            "elementAtPointer": {
+              "tag": "canvas",
+              "id": "",
+              "class": "",
+              "text": "",
+              "attributes": {
+                "aria-label": "Chart for XAUTUSDT, 1 minute"
+              },
+              "selector": "div.chart-markup-table.pane.pane--cursor-pointer:nth-of-type(2) > div.chart-gui-wrapper > canvas:nth-of-type(2)",
+              "selectorMatchCount": 1,
+              "rect": {
+                "x": 56,
+                "y": 0,
+                "width": 957,
+                "height": 366
+              },
+              "computedStyle": {
+                "display": "block",
+                "visibility": "visible",
+                "opacity": "1",
+                "pointerEvents": "auto",
+                "cursor": "pointer",
+                "position": "absolute",
+                "zIndex": "auto"
+              },
+              "outerHTML": "<canvas aria-label=\"Chart for XAUTUSDT, 1 minute\" width=\"1077\" height=\"412\" style=\"user-select: none; -webkit-tap-highlight-color: transparent; width: 957px; height: 366.222px; position: absolute; left: 0px; top: 0px;\"></canvas>"
+            },
+            "elementsStack": [
+              {
+                "tag": "canvas",
+                "id": "",
+                "class": "",
+                "text": "",
+                "attributes": {
+                  "aria-label": "Chart for XAUTUSDT, 1 minute"
+                },
+                "selector": "div.chart-markup-table.pane.pane--cursor-pointer:nth-of-type(2) > div.chart-gui-wrapper > canvas:nth-of-type(2)",
+                "selectorMatchCount": 1,
+                "rect": {
+                  "x": 56,
+                  "y": 0,
+                  "width": 957,
+                  "height": 366
+                },
+                "computedStyle": {
+                  "display": "block",
+                  "visibility": "visible",
+                  "opacity": "1",
+                  "pointerEvents": "auto",
+                  "cursor": "pointer",
+                  "position": "absolute",
+                  "zIndex": "auto"
+                },
+                "outerHTML": "<canvas aria-label=\"Chart for XAUTUSDT, 1 minute\" width=\"1077\" height=\"412\" style=\"user-select: none; -webkit-tap-highlight-color: transparent; width: 957px; height: 366.222px; position: absolute; left: 0px; top: 0px;\"></canvas>"
+              },
+              {
+                "tag": "canvas",
+                "id": "",
+                "class": "",
+                "text": "",
+                "attributes": {},
+                "selector": "div.chart-markup-table.pane.pane--cursor-pointer:nth-of-type(2) > div.chart-gui-wrapper > canvas:nth-of-type(1)",
+                "selectorMatchCount": 1,
+                "rect": {
+                  "x": 56,
+                  "y": 0,
+                  "width": 957,
+                  "height": 366
+                },
+                "computedStyle": {
+                  "display": "block",
+                  "visibility": "visible",
+                  "opacity": "1",
+                  "pointerEvents": "auto",
+                  "cursor": "pointer",
+                  "position": "absolute",
+                  "zIndex": "auto"
+                },
+                "outerHTML": "<canvas aria-hidden=\"true\" width=\"1077\" height=\"412\" style=\"user-select: none; -webkit-tap-highlight-color: transparent; width: 957px; height: 366.222px; position: absolute; left: 0px; top: 0px;\"></canvas>"
+              },
+              {
+                "tag": "div",
+                "id": "",
+                "class": "chart-gui-wrapper",
+                "text": "XAUTUSDT 1 Bitunix O3,817.85H3,818.81L3,817.85C3,818.810.96 (+0.03%)",
+                "attributes": {
+                  "data-name": "pane-widget-chart-gui-wrapper"
+                },
+                "selector": "div.chart-markup-table.pane.pane--cursor-pointer:nth-of-type(2) > div.chart-gui-wrapper",
+                "selectorMatchCount": 1,
+                "rect": {
+                  "x": 56,
+                  "y": 0,
+                  "width": 957,
+                  "height": 366
+                },
+                "computedStyle": {
+                  "display": "flex",
+                  "visibility": "visible",
+                  "opacity": "1",
+                  "pointerEvents": "auto",
+                  "cursor": "pointer",
+                  "position": "relative",
+                  "zIndex": "auto"
+                },
+                "outerHTML": "<div class=\"chart-gui-wrapper\" data-name=\"pane-widget-chart-gui-wrapper\" style=\"width: 957px; height: 366.222px;\"><canvas aria-hidden=\"true\" width=\"1077\" height=\"412\" style=\"user-select: none; -webkit-tap-highlight-color: transparent; width: 957px; height: 366.222px; position: absolute; left: 0px; top: 0px;\"></canvas><canvas aria-label=\"Chart for XAUTUSDT, 1 minute\" width=\"1077\" height=\"412\" style=\"user-select: none; -webkit-tap-highlight-color: transparent; width: 957px; height: 366.222px; position: absolute; left: 0px; top: 0px;\"></canvas><div class=\"errorCardRendererContainer-S9sXvhAu\" style=\"--backgroundColor: linear-gradient(#0f0f0f, #0f0f0f); --textColor: #9598A1;\"></div><div class=\"legend-l31H9iuA noWrap-l31H9iuA wrappable-l31H9iuA\" data-name=\"legend\" aria-hidden=\"true\" style=\"--legend-source-item-button-width: 28px; color: rgba(15, 15, 15, 0.5); max-width: calc(100% - 96.3281px);\"><div class=\"legendMainSourceWrapper-l31H9iuA\"><div data-status=\"undefined\" class=\"item-l31H9iuA series-l31H9iuA onlyOneButtonCanBeStick-l31H9iuA withCustomTextColor-l31H9iuA\" data-name=\"legend-series-item\"><div class=\"noWrapWrapper-l31H9iuA\"><div class=\"titlesWrapper-l31H9iuA\"><div class=\"titleWrapper-l31H9iuA mainTitle-l31H9iuA apply-overflow-tooltip apply-common-tooltip withAction-l31H9iuA wit"
+              },
+              {
+                "tag": "div",
+                "id": "",
+                "class": "chart-markup-table pane pane--cursor-pointer",
+                "text": "XAUTUSDT 1 Bitunix O3,817.85H3,818.81L3,817.85C3,818.810.96 (+0.03%)",
+                "attributes": {},
+                "selector": "div.chart-markup-table.pane.pane--cursor-pointer:nth-of-type(2)",
+                "selectorMatchCount": 1,
+                "rect": {
+                  "x": 56,
+                  "y": 0,
+                  "width": 957,
+                  "height": 366
+                },
+                "computedStyle": {
+                  "display": "block",
+                  "visibility": "visible",
+                  "opacity": "1",
+                  "pointerEvents": "auto",
+                  "cursor": "pointer",
+                  "position": "static",
+                  "zIndex": "auto"
+                },
+                "outerHTML": "<div class=\"chart-markup-table pane pane--cursor-pointer\" style=\"width: 957px; height: 366.222px;\"><div class=\"chart-gui-wrapper\" data-name=\"pane-widget-chart-gui-wrapper\" style=\"width: 957px; height: 366.222px;\"><canvas aria-hidden=\"true\" width=\"1077\" height=\"412\" style=\"user-select: none; -webkit-tap-highlight-color: transparent; width: 957px; height: 366.222px; position: absolute; left: 0px; top: 0px;\"></canvas><canvas aria-label=\"Chart for XAUTUSDT, 1 minute\" width=\"1077\" height=\"412\" style=\"user-select: none; -webkit-tap-highlight-color: transparent; width: 957px; height: 366.222px; position: absolute; left: 0px; top: 0px;\"></canvas><div class=\"errorCardRendererContainer-S9sXvhAu\" style=\"--backgroundColor: linear-gradient(#0f0f0f, #0f0f0f); --textColor: #9598A1;\"></div><div class=\"legend-l31H9iuA noWrap-l31H9iuA wrappable-l31H9iuA\" data-name=\"legend\" aria-hidden=\"true\" style=\"--legend-source-item-button-width: 28px; color: rgba(15, 15, 15, 0.5); max-width: calc(100% - 96.3281px);\"><div class=\"legendMainSourceWrapper-l31H9iuA\"><div data-status=\"undefined\" class=\"item-l31H9iuA series-l31H9iuA onlyOneButtonCanBeStick-l31H9iuA withCustomTextColor-l31H9iuA\" data-name=\"legend-series-item\"><div class=\"noWrapWrapper-l31H9iuA\"><div class=\"titlesWrapper-l31H9iuA\"><div class=\"titleWrap"
+              },
+              {
+                "tag": "div",
+                "id": "",
+                "class": "",
+                "text": "XAUTUSDT 1 Bitunix O3,817.85H3,818.81L3,817.85C3,818.810.96 (+0.03%)",
+                "attributes": {},
+                "selector": "div.chart-widget.chart-widget--themed-dark.chart-widget__top--themed-dark.chart-widget__bottom--themed-dark:nth-of-type(2) > div.chart-markup-table:nth-of-type(2) > div:nth-of-type(1)",
+                "selectorMatchCount": 1,
+                "rect": {
+                  "x": 56,
+                  "y": 0,
+                  "width": 1021,
+                  "height": 366
+                },
+                "computedStyle": {
+                  "display": "flex",
+                  "visibility": "visible",
+                  "opacity": "1",
+                  "pointerEvents": "auto",
+                  "cursor": "auto",
+                  "position": "static",
+                  "zIndex": "auto"
+                },
+                "outerHTML": "<div style=\"display: flex;\"><div class=\"chart-markup-table price-axis-container\" style=\"width: 0px; position: relative; min-width: 0px; height: 366.222px;\"></div><div class=\"chart-markup-table pane pane--cursor-pointer\" style=\"width: 957px; height: 366.222px;\"><div class=\"chart-gui-wrapper\" data-name=\"pane-widget-chart-gui-wrapper\" style=\"width: 957px; height: 366.222px;\"><canvas aria-hidden=\"true\" width=\"1077\" height=\"412\" style=\"user-select: none; -webkit-tap-highlight-color: transparent; width: 957px; height: 366.222px; position: absolute; left: 0px; top: 0px;\"></canvas><canvas aria-label=\"Chart for XAUTUSDT, 1 minute\" width=\"1077\" height=\"412\" style=\"user-select: none; -webkit-tap-highlight-color: transparent; width: 957px; height: 366.222px; position: absolute; left: 0px; top: 0px;\"></canvas><div class=\"errorCardRendererContainer-S9sXvhAu\" style=\"--backgroundColor: linear-gradient(#0f0f0f, #0f0f0f); --textColor: #9598A1;\"></div><div class=\"legend-l31H9iuA noWrap-l31H9iuA wrappable-l31H9iuA\" data-name=\"legend\" aria-hidden=\"true\" style=\"--legend-source-item-button-width: 28px; color: rgba(15, 15, 15, 0.5); max-width: calc(100% - 96.3281px);\"><div class=\"legendMainSourceWrapper-l31H9iuA\"><div data-status=\"undefined\" class=\"item-l31H9iuA series-l31H9iuA onlyOneButtonCanBeStick-l"
+              },
+              {
+                "tag": "div",
+                "id": "",
+                "class": "chart-markup-table",
+                "text": "XAUTUSDT 1 Bitunix O3,817.85H3,818.81L3,817.85C3,818.810.96 (+0.03%) %R 6 −78.18 A",
+                "attributes": {},
+                "selector": "div.chart-widget.chart-widget--themed-dark.chart-widget__top--themed-dark.chart-widget__bottom--themed-dark:nth-of-type(2) > div.chart-markup-table:nth-of-type(2)",
+                "selectorMatchCount": 1,
+                "rect": {
+                  "x": 56,
+                  "y": 0,
+                  "width": 1021,
+                  "height": 455
+                },
+                "computedStyle": {
+                  "display": "block",
+                  "visibility": "visible",
+                  "opacity": "1",
+                  "pointerEvents": "auto",
+                  "cursor": "auto",
+                  "position": "static",
+                  "zIndex": "auto"
+                },
+                "outerHTML": "<div class=\"chart-markup-table\" style=\"height: 455px; width: 1021px; user-select: none; -webkit-tap-highlight-color: transparent;\"><div style=\"display: flex;\"><div class=\"chart-markup-table price-axis-container\" style=\"width: 0px; position: relative; min-width: 0px; height: 366.222px;\"></div><div class=\"chart-markup-table pane pane--cursor-pointer\" style=\"width: 957px; height: 366.222px;\"><div class=\"chart-gui-wrapper\" data-name=\"pane-widget-chart-gui-wrapper\" style=\"width: 957px; height: 366.222px;\"><canvas aria-hidden=\"true\" width=\"1077\" height=\"412\" style=\"user-select: none; -webkit-tap-highlight-color: transparent; width: 957px; height: 366.222px; position: absolute; left: 0px; top: 0px;\"></canvas><canvas aria-label=\"Chart for XAUTUSDT, 1 minute\" width=\"1077\" height=\"412\" style=\"user-select: none; -webkit-tap-highlight-color: transparent; width: 957px; height: 366.222px; position: absolute; left: 0px; top: 0px;\"></canvas><div class=\"errorCardRendererContainer-S9sXvhAu\" style=\"--backgroundColor: linear-gradient(#0f0f0f, #0f0f0f); --textColor: #9598A1;\"></div><div class=\"legend-l31H9iuA noWrap-l31H9iuA wrappable-l31H9iuA\" data-name=\"legend\" aria-hidden=\"true\" style=\"--legend-source-item-button-width: 28px; color: rgba(15, 15, 15, 0.5); max-width: calc(100% - 96.3281px);\"><div c"
+              },
+              {
+                "tag": "div",
+                "id": "",
+                "class": "chart-widget chart-widget--themed-dark chart-widget__top--themed-dark chart-widget__bottom--themed-dark",
+                "text": "XAUTUSDT 1 Bitunix O3,817.85H3,818.81L3,817.85C3,818.810.96 (+0.03%) %R 6 −78.18 A",
+                "attributes": {
+                  "aria-label": "Chart #1",
+                  "role": "region"
+                },
+                "selector": "div.chart-widget.chart-widget--themed-dark.chart-widget__top--themed-dark.chart-widget__bottom--themed-dark:nth-of-type(2)",
+                "selectorMatchCount": 1,
+                "rect": {
+                  "x": 56,
+                  "y": 0,
+                  "width": 1021,
+                  "height": 455
+                },
+                "computedStyle": {
+                  "display": "block",
+                  "visibility": "visible",
+                  "opacity": "1",
+                  "pointerEvents": "auto",
+                  "cursor": "auto",
+                  "position": "absolute",
+                  "zIndex": "auto"
+                },
+                "outerHTML": "<div class=\"chart-widget chart-widget--themed-dark chart-widget__top--themed-dark chart-widget__bottom--themed-dark\" role=\"region\" aria-label=\"Chart #1\" style=\"height: 455px; width: 1021px;\"><div class=\"tooltip-wrapper\"></div><div class=\"chart-markup-table\" style=\"height: 455px; width: 1021px; user-select: none; -webkit-tap-highlight-color: transparent;\"><div style=\"display: flex;\"><div class=\"chart-markup-table price-axis-container\" style=\"width: 0px; position: relative; min-width: 0px; height: 366.222px;\"></div><div class=\"chart-markup-table pane pane--cursor-pointer\" style=\"width: 957px; height: 366.222px;\"><div class=\"chart-gui-wrapper\" data-name=\"pane-widget-chart-gui-wrapper\" style=\"width: 957px; height: 366.222px;\"><canvas aria-hidden=\"true\" width=\"1077\" height=\"412\" style=\"user-select: none; -webkit-tap-highlight-color: transparent; width: 957px; height: 366.222px; position: absolute; left: 0px; top: 0px;\"></canvas><canvas aria-label=\"Chart for XAUTUSDT, 1 minute\" width=\"1077\" height=\"412\" style=\"user-select: none; -webkit-tap-highlight-color: transparent; width: 957px; height: 366.222px; position: absolute; left: 0px; top: 0px;\"></canvas><div class=\"errorCardRendererContainer-S9sXvhAu\" style=\"--backgroundColor: linear-gradient(#0f0f0f, #0f0f0f); --textColor: #9598A1;\"></"
+              },
+              {
+                "tag": "div",
+                "id": "",
+                "class": "chart-container-border",
+                "text": "XAUTUSDT 1 Bitunix O3,817.85H3,818.81L3,817.85C3,818.810.96 (+0.03%) %R 6 −78.18 A",
+                "attributes": {},
+                "selector": "div.chart-container-border:nth-of-type(1)",
+                "selectorMatchCount": 1,
+                "rect": {
+                  "x": 56,
+                  "y": 0,
+                  "width": 1021,
+                  "height": 455
+                },
+                "computedStyle": {
+                  "display": "block",
+                  "visibility": "visible",
+                  "opacity": "1",
+                  "pointerEvents": "auto",
+                  "cursor": "auto",
+                  "position": "relative",
+                  "zIndex": "0"
+                },
+                "outerHTML": "<div class=\"chart-container-border\"><div class=\"screen-otjoFNF2\"></div><div class=\"chart-widget chart-widget--themed-dark chart-widget__top--themed-dark chart-widget__bottom--themed-dark\" role=\"region\" aria-label=\"Chart #1\" style=\"height: 455px; width: 1021px;\"><div class=\"tooltip-wrapper\"></div><div class=\"chart-markup-table\" style=\"height: 455px; width: 1021px; user-select: none; -webkit-tap-highlight-color: transparent;\"><div style=\"display: flex;\"><div class=\"chart-markup-table price-axis-container\" style=\"width: 0px; position: relative; min-width: 0px; height: 366.222px;\"></div><div class=\"chart-markup-table pane pane--cursor-pointer\" style=\"width: 957px; height: 366.222px;\"><div class=\"chart-gui-wrapper\" data-name=\"pane-widget-chart-gui-wrapper\" style=\"width: 957px; height: 366.222px;\"><canvas aria-hidden=\"true\" width=\"1077\" height=\"412\" style=\"user-select: none; -webkit-tap-highlight-color: transparent; width: 957px; height: 366.222px; position: absolute; left: 0px; top: 0px;\"></canvas><canvas aria-label=\"Chart for XAUTUSDT, 1 minute\" width=\"1077\" height=\"412\" style=\"user-select: none; -webkit-tap-highlight-color: transparent; width: 957px; height: 366.222px; position: absolute; left: 0px; top: 0px;\"></canvas><div class=\"errorCardRendererContainer-S9sXvhAu\" style=\"--backgr"
+              },
+              {
+                "tag": "div",
+                "id": "",
+                "class": "chart-container top-full-width-chart active",
+                "text": "XAUTUSDT 1 Bitunix O3,817.85H3,818.81L3,817.85C3,818.810.96 (+0.03%) %R 6 −78.18 A",
+                "attributes": {},
+                "selector": "div.chart-container.top-full-width-chart.active:nth-of-type(2)",
+                "selectorMatchCount": 1,
+                "rect": {
+                  "x": 56,
+                  "y": 0,
+                  "width": 1021,
+                  "height": 455
+                },
+                "computedStyle": {
+                  "display": "block",
+                  "visibility": "visible",
+                  "opacity": "1",
+                  "pointerEvents": "auto",
+                  "cursor": "auto",
+                  "position": "absolute",
+                  "zIndex": "auto"
+                },
+                "outerHTML": "<div class=\"chart-container top-full-width-chart active\" style=\"position: absolute; overflow: hidden; width: 1021px; height: 455px; top: 0px; left: 0px;\"><div class=\"chart-container-border\"><div class=\"screen-otjoFNF2\"></div><div class=\"chart-widget chart-widget--themed-dark chart-widget__top--themed-dark chart-widget__bottom--themed-dark\" role=\"region\" aria-label=\"Chart #1\" style=\"height: 455px; width: 1021px;\"><div class=\"tooltip-wrapper\"></div><div class=\"chart-markup-table\" style=\"height: 455px; width: 1021px; user-select: none; -webkit-tap-highlight-color: transparent;\"><div style=\"display: flex;\"><div class=\"chart-markup-table price-axis-container\" style=\"width: 0px; position: relative; min-width: 0px; height: 366.222px;\"></div><div class=\"chart-markup-table pane pane--cursor-pointer\" style=\"width: 957px; height: 366.222px;\"><div class=\"chart-gui-wrapper\" data-name=\"pane-widget-chart-gui-wrapper\" style=\"width: 957px; height: 366.222px;\"><canvas aria-hidden=\"true\" width=\"1077\" height=\"412\" style=\"user-select: none; -webkit-tap-highlight-color: transparent; width: 957px; height: 366.222px; position: absolute; left: 0px; top: 0px;\"></canvas><canvas aria-label=\"Chart for XAUTUSDT, 1 minute\" width=\"1077\" height=\"412\" style=\"user-select: none; -webkit-tap-highlight-color: transpa"
+              },
+              {
+                "tag": "div",
+                "id": "",
+                "class": "layout__area--center no-border-bottom-left-radius no-border-bottom-right-radius no-border-top-right-radius",
+                "text": "00:22:31 (UTC+3:30) log auto XAUTUSDT 1 Bitunix O3,817.85H3,818.81L3,817.85C3,818.810.96 (+0.03%) %R 6 −78.18 A",
+                "attributes": {},
+                "selector": "div.layout__area--center.no-border-bottom-left-radius.no-border-bottom-right-radius.no-border-top-right-radius:nth-of-type(3)",
+                "selectorMatchCount": 1,
+                "rect": {
+                  "x": 56,
+                  "y": 0,
+                  "width": 1021,
+                  "height": 494
+                },
+                "computedStyle": {
+                  "display": "block",
+                  "visibility": "visible",
+                  "opacity": "1",
+                  "pointerEvents": "auto",
+                  "cursor": "auto",
+                  "position": "absolute",
+                  "zIndex": "auto"
+                },
+                "outerHTML": "<div class=\"layout__area--center no-border-bottom-left-radius no-border-bottom-right-radius no-border-top-right-radius\" style=\"position: absolute; top: 0px; left: 56px; width: 1021px; height: 494px;\"><div class=\"chart-toolbar chart-controls-bar\" data-is-chart-toolbar-component=\"true\" data-initialized=\"true\" style=\"left: 0px; right: 0px; bottom: 0px;\"><div class=\"toolbar-BXXUwft2\" role=\"toolbar\"><div class=\"dateRangeWrapper-BXXUwft2\"><div class=\"dateRangeCollapsed-BXXUwft2\"><button type=\"button\" class=\"button-Hfju7pW_ dateRange-BXXUwft2 button-merBkM5y apply-common-tooltip accessible-merBkM5y\" tabindex=\"-1\" data-name=\"date-ranges-menu\">Date Range<div class=\"arrow-merBkM5y\"><div class=\"arrowWrap-merBkM5y\"><span class=\"icon-WB2y0EnP\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 8\" width=\"16\" height=\"8\"><path fill=\"currentColor\" d=\"M0 1.475l7.396 6.04.596.485.593-.49L16 1.39 14.807 0 7.393 6.122 8.58 6.12 1.186.08z\"></path></svg></span></div></div></button></div></div><div class=\"dateRangeWrapper-BXXUwft2 collapsed-BXXUwft2\"><div class=\"dateRangeExpanded-BXXUwft2\"><div class=\"sliderRow-k2h4OAz8 dateRange-BXXUwft2 tabs-NGf0gcnH\" data-name=\"date-ranges-tabs\"><button aria-label=\"5 years in 1 week intervals\" value=\"60M\" tabindex=\"-1\" type=\"button\" class=\"item-SqYYy1zF button-G"
+              }
+            ],
+            "ancestorChain": [
+              {
+                "depth": 0,
+                "tag": "canvas",
+                "id": "",
+                "class": "",
+                "text": "",
+                "attributes": {
+                  "aria-label": "Chart for XAUTUSDT, 1 minute"
+                },
+                "cursor": "pointer",
+                "buttonLike": true,
+                "selector": "div.chart-markup-table.pane.pane--cursor-pointer:nth-of-type(2) > div.chart-gui-wrapper > canvas:nth-of-type(2)",
+                "rect": {
+                  "x": 56,
+                  "y": 0,
+                  "width": 957,
+                  "height": 366
+                },
+                "outerHTML": "<canvas aria-label=\"Chart for XAUTUSDT, 1 minute\" width=\"1077\" height=\"412\" style=\"user-select: none; -webkit-tap-highlight-color: transparent; width: 957px; height: 366.222px; position: absolute; left: 0px; top: 0px;\"></canvas>"
+              },
+              {
+                "depth": 1,
+                "tag": "div",
+                "id": "",
+                "class": "chart-gui-wrapper",
+                "text": "XAUTUSDT 1 Bitunix O3,817.85H3,818.81L3,817.85C3,818.810.96 (+0.03%)",
+                "attributes": {
+                  "data-name": "pane-widget-chart-gui-wrapper"
+                },
+                "cursor": "pointer",
+                "buttonLike": true,
+                "selector": "div.chart-markup-table.pane.pane--cursor-pointer:nth-of-type(2) > div.chart-gui-wrapper",
+                "rect": {
+                  "x": 56,
+                  "y": 0,
+                  "width": 957,
+                  "height": 366
+                },
+                "outerHTML": "<div class=\"chart-gui-wrapper\" data-name=\"pane-widget-chart-gui-wrapper\" style=\"width: 957px; height: 366.222px;\"><canvas aria-hidden=\"true\" width=\"1077\" height=\"412\" style=\"user-select: none; -webkit-tap-highlight-color: transparent; width: 957px; height: 366.222px; position: absolute; left: 0px; top: 0px;\"></canvas><canvas aria-label=\"Chart for XAUTUSDT, 1 minute\" width=\"1077\" height=\"412\" style=\"user-select: none; -webkit-tap-highlight-color: transparent; width: 957px; height: 366.222px; position: absolute; left: 0px; top: 0px;\"></canvas><div class=\"errorCardRendererContainer-S9sXvhAu\" style=\"--backgroundColor: linear-gradient(#0f0f0f, #0f0f0f); --textColor: #9598A1;\"></div><div class=\"legend-l31H9iuA noWrap-l31H9iuA wrappable-l31H9iuA\" data-name=\"legend\" aria-hidden=\"true\" style=\"--legend-source-item-button-width: 28px; color: rgba(15, 15, 15, 0.5); max-width: calc(100% - 96.3281px);"
+              },
+              {
+                "depth": 2,
+                "tag": "div",
+                "id": "",
+                "class": "chart-markup-table pane pane--cursor-pointer",
+                "text": "XAUTUSDT 1 Bitunix O3,817.85H3,818.81L3,817.85C3,818.810.96 (+0.03%)",
+                "attributes": {},
+                "cursor": "pointer",
+                "buttonLike": true,
+                "selector": "div.chart-markup-table.pane.pane--cursor-pointer:nth-of-type(2)",
+                "rect": {
+                  "x": 56,
+                  "y": 0,
+                  "width": 957,
+                  "height": 366
+                },
+                "outerHTML": "<div class=\"chart-markup-table pane pane--cursor-pointer\" style=\"width: 957px; height: 366.222px;\"><div class=\"chart-gui-wrapper\" data-name=\"pane-widget-chart-gui-wrapper\" style=\"width: 957px; height: 366.222px;\"><canvas aria-hidden=\"true\" width=\"1077\" height=\"412\" style=\"user-select: none; -webkit-tap-highlight-color: transparent; width: 957px; height: 366.222px; position: absolute; left: 0px; top: 0px;\"></canvas><canvas aria-label=\"Chart for XAUTUSDT, 1 minute\" width=\"1077\" height=\"412\" style=\"user-select: none; -webkit-tap-highlight-color: transparent; width: 957px; height: 366.222px; position: absolute; left: 0px; top: 0px;\"></canvas><div class=\"errorCardRendererContainer-S9sXvhAu\" style=\"--backgroundColor: linear-gradient(#0f0f0f, #0f0f0f); --textColor: #9598A1;\"></div><div class=\"legend-l31H9iuA noWrap-l31H9iuA wrappable-l31H9iuA\" data-name=\"legend\" aria-hidden=\"true\" style=\"--lege"
+              },
+              {
+                "depth": 3,
+                "tag": "div",
+                "id": "",
+                "class": "",
+                "text": "XAUTUSDT 1 Bitunix O3,817.85H3,818.81L3,817.85C3,818.810.96 (+0.03%)",
+                "attributes": {},
+                "cursor": "auto",
+                "buttonLike": false,
+                "selector": "div.chart-widget.chart-widget--themed-dark.chart-widget__top--themed-dark.chart-widget__bottom--themed-dark:nth-of-type(2) > div.chart-markup-table:nth-of-type(2) > div:nth-of-type(1)",
+                "rect": {
+                  "x": 56,
+                  "y": 0,
+                  "width": 1021,
+                  "height": 366
+                },
+                "outerHTML": "<div style=\"display: flex;\"><div class=\"chart-markup-table price-axis-container\" style=\"width: 0px; position: relative; min-width: 0px; height: 366.222px;\"></div><div class=\"chart-markup-table pane pane--cursor-pointer\" style=\"width: 957px; height: 366.222px;\"><div class=\"chart-gui-wrapper\" data-name=\"pane-widget-chart-gui-wrapper\" style=\"width: 957px; height: 366.222px;\"><canvas aria-hidden=\"true\" width=\"1077\" height=\"412\" style=\"user-select: none; -webkit-tap-highlight-color: transparent; width: 957px; height: 366.222px; position: absolute; left: 0px; top: 0px;\"></canvas><canvas aria-label=\"Chart for XAUTUSDT, 1 minute\" width=\"1077\" height=\"412\" style=\"user-select: none; -webkit-tap-highlight-color: transparent; width: 957px; height: 366.222px; position: absolute; left: 0px; top: 0px;\"></canvas><div class=\"errorCardRendererContainer-S9sXvhAu\" style=\"--backgroundColor: linear-gradient(#"
+              },
+              {
+                "depth": 4,
+                "tag": "div",
+                "id": "",
+                "class": "chart-markup-table",
+                "text": "XAUTUSDT 1 Bitunix O3,817.85H3,818.81L3,817.85C3,818.810.96 (+0.03%) %R 6 −78.18 A",
+                "attributes": {},
+                "cursor": "auto",
+                "buttonLike": false,
+                "selector": "div.chart-widget.chart-widget--themed-dark.chart-widget__top--themed-dark.chart-widget__bottom--themed-dark:nth-of-type(2) > div.chart-markup-table:nth-of-type(2)",
+                "rect": {
+                  "x": 56,
+                  "y": 0,
+                  "width": 1021,
+                  "height": 455
+                },
+                "outerHTML": "<div class=\"chart-markup-table\" style=\"height: 455px; width: 1021px; user-select: none; -webkit-tap-highlight-color: transparent;\"><div style=\"display: flex;\"><div class=\"chart-markup-table price-axis-container\" style=\"width: 0px; position: relative; min-width: 0px; height: 366.222px;\"></div><div class=\"chart-markup-table pane pane--cursor-pointer\" style=\"width: 957px; height: 366.222px;\"><div class=\"chart-gui-wrapper\" data-name=\"pane-widget-chart-gui-wrapper\" style=\"width: 957px; height: 366.222px;\"><canvas aria-hidden=\"true\" width=\"1077\" height=\"412\" style=\"user-select: none; -webkit-tap-highlight-color: transparent; width: 957px; height: 366.222px; position: absolute; left: 0px; top: 0px;\"></canvas><canvas aria-label=\"Chart for XAUTUSDT, 1 minute\" width=\"1077\" height=\"412\" style=\"user-select: none; -webkit-tap-highlight-color: transparent; width: 957px; height: 366.222px; position: ab"
+              },
+              {
+                "depth": 5,
+                "tag": "div",
+                "id": "",
+                "class": "chart-widget chart-widget--themed-dark chart-widget__top--themed-dark chart-widget__bottom--themed-dark",
+                "text": "XAUTUSDT 1 Bitunix O3,817.85H3,818.81L3,817.85C3,818.810.96 (+0.03%) %R 6 −78.18 A",
+                "attributes": {
+                  "aria-label": "Chart #1",
+                  "role": "region"
+                },
+                "cursor": "auto",
+                "buttonLike": true,
+                "selector": "div.chart-widget.chart-widget--themed-dark.chart-widget__top--themed-dark.chart-widget__bottom--themed-dark:nth-of-type(2)",
+                "rect": {
+                  "x": 56,
+                  "y": 0,
+                  "width": 1021,
+                  "height": 455
+                },
+                "outerHTML": "<div class=\"chart-widget chart-widget--themed-dark chart-widget__top--themed-dark chart-widget__bottom--themed-dark\" role=\"region\" aria-label=\"Chart #1\" style=\"height: 455px; width: 1021px;\"><div class=\"tooltip-wrapper\"></div><div class=\"chart-markup-table\" style=\"height: 455px; width: 1021px; user-select: none; -webkit-tap-highlight-color: transparent;\"><div style=\"display: flex;\"><div class=\"chart-markup-table price-axis-container\" style=\"width: 0px; position: relative; min-width: 0px; height: 366.222px;\"></div><div class=\"chart-markup-table pane pane--cursor-pointer\" style=\"width: 957px; height: 366.222px;\"><div class=\"chart-gui-wrapper\" data-name=\"pane-widget-chart-gui-wrapper\" style=\"width: 957px; height: 366.222px;\"><canvas aria-hidden=\"true\" width=\"1077\" height=\"412\" style=\"user-select: none; -webkit-tap-highlight-color: transparent; width: 957px; height: 366.222px; position: abso"
+              },
+              {
+                "depth": 6,
+                "tag": "div",
+                "id": "",
+                "class": "chart-container-border",
+                "text": "XAUTUSDT 1 Bitunix O3,817.85H3,818.81L3,817.85C3,818.810.96 (+0.03%) %R 6 −78.18 A",
+                "attributes": {},
+                "cursor": "auto",
+                "buttonLike": true,
+                "selector": "div.chart-container-border:nth-of-type(1)",
+                "rect": {
+                  "x": 56,
+                  "y": 0,
+                  "width": 1021,
+                  "height": 455
+                },
+                "outerHTML": "<div class=\"chart-container-border\"><div class=\"screen-otjoFNF2\"></div><div class=\"chart-widget chart-widget--themed-dark chart-widget__top--themed-dark chart-widget__bottom--themed-dark\" role=\"region\" aria-label=\"Chart #1\" style=\"height: 455px; width: 1021px;\"><div class=\"tooltip-wrapper\"></div><div class=\"chart-markup-table\" style=\"height: 455px; width: 1021px; user-select: none; -webkit-tap-highlight-color: transparent;\"><div style=\"display: flex;\"><div class=\"chart-markup-table price-axis-container\" style=\"width: 0px; position: relative; min-width: 0px; height: 366.222px;\"></div><div class=\"chart-markup-table pane pane--cursor-pointer\" style=\"width: 957px; height: 366.222px;\"><div class=\"chart-gui-wrapper\" data-name=\"pane-widget-chart-gui-wrapper\" style=\"width: 957px; height: 366.222px;\"><canvas aria-hidden=\"true\" width=\"1077\" height=\"412\" style=\"user-select: none; -webkit-tap-highli"
+              },
+              {
+                "depth": 7,
+                "tag": "div",
+                "id": "",
+                "class": "chart-container top-full-width-chart active",
+                "text": "XAUTUSDT 1 Bitunix O3,817.85H3,818.81L3,817.85C3,818.810.96 (+0.03%) %R 6 −78.18 A",
+                "attributes": {},
+                "cursor": "auto",
+                "buttonLike": false,
+                "selector": "div.chart-container.top-full-width-chart.active:nth-of-type(2)",
+                "rect": {
+                  "x": 56,
+                  "y": 0,
+                  "width": 1021,
+                  "height": 455
+                },
+                "outerHTML": "<div class=\"chart-container top-full-width-chart active\" style=\"position: absolute; overflow: hidden; width: 1021px; height: 455px; top: 0px; left: 0px;\"><div class=\"chart-container-border\"><div class=\"screen-otjoFNF2\"></div><div class=\"chart-widget chart-widget--themed-dark chart-widget__top--themed-dark chart-widget__bottom--themed-dark\" role=\"region\" aria-label=\"Chart #1\" style=\"height: 455px; width: 1021px;\"><div class=\"tooltip-wrapper\"></div><div class=\"chart-markup-table\" style=\"height: 455px; width: 1021px; user-select: none; -webkit-tap-highlight-color: transparent;\"><div style=\"display: flex;\"><div class=\"chart-markup-table price-axis-container\" style=\"width: 0px; position: relative; min-width: 0px; height: 366.222px;\"></div><div class=\"chart-markup-table pane pane--cursor-pointer\" style=\"width: 957px; height: 366.222px;\"><div class=\"chart-gui-wrapper\" data-name=\"pane-widget-cha"
+              },
+              {
+                "depth": 8,
+                "tag": "div",
+                "id": "",
+                "class": "layout__area--center no-border-bottom-left-radius no-border-bottom-right-radius no-border-top-right-radius",
+                "text": "00:22:31 (UTC+3:30) log auto XAUTUSDT 1 Bitunix O3,817.85H3,818.81L3,817.85C3,818.810.96 (+0.03%) %R 6 −78.18 A",
+                "attributes": {},
+                "cursor": "auto",
+                "buttonLike": true,
+                "selector": "div.layout__area--center.no-border-bottom-left-radius.no-border-bottom-right-radius.no-border-top-right-radius:nth-of-type(3)",
+                "rect": {
+                  "x": 56,
+                  "y": 0,
+                  "width": 1021,
+                  "height": 494
+                },
+                "outerHTML": "<div class=\"layout__area--center no-border-bottom-left-radius no-border-bottom-right-radius no-border-top-right-radius\" style=\"position: absolute; top: 0px; left: 56px; width: 1021px; height: 494px;\"><div class=\"chart-toolbar chart-controls-bar\" data-is-chart-toolbar-component=\"true\" data-initialized=\"true\" style=\"left: 0px; right: 0px; bottom: 0px;\"><div class=\"toolbar-BXXUwft2\" role=\"toolbar\"><div class=\"dateRangeWrapper-BXXUwft2\"><div class=\"dateRangeCollapsed-BXXUwft2\"><button type=\"button\" class=\"button-Hfju7pW_ dateRange-BXXUwft2 button-merBkM5y apply-common-tooltip accessible-merBkM5y\" tabindex=\"-1\" data-name=\"date-ranges-menu\">Date Range<div class=\"arrow-merBkM5y\"><div class=\"arrowWrap-merBkM5y\"><span class=\"icon-WB2y0EnP\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 8\" width=\"16\" height=\"8\"><path fill=\"currentColor\" d=\"M0 1.475l7.396 6.04.596.485.593-.49L16 1.39 14.80"
+              },
+              {
+                "depth": 9,
+                "tag": "div",
+                "id": "",
+                "class": "js-rootresizer__contents",
+                "text": "1m Indicators default Save 00:22:31 (UTC+3:30) log auto XAUTUSDT 1 Bitunix O3,817.85H3,818.81L3,817.85C3,818.810.96 (+0.",
+                "attributes": {},
+                "cursor": "auto",
+                "buttonLike": false,
+                "selector": "div.js-rootresizer__contents:nth-of-type(3)",
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 1077,
+                  "height": 494
+                },
+                "outerHTML": "<div class=\"js-rootresizer__contents\" style=\"position: relative; width: 100%; height: 100%;\"><div class=\"layout__area--top\" style=\"position: absolute; top: 0px; left: 0px; width: 1077px; height: 0px;\"><div class=\"toolbar-qqNP9X6e\"><div class=\"overflowWrap-qqNP9X6e\"><div class=\"inner-OhqNVIYA fake-OhqNVIYA\" data-is-fake-main-panel=\"true\" aria-hidden=\"true\" role=\"toolbar\"><div class=\"wrapOverflow-wXGVFOC9\"><div class=\"wrap-wXGVFOC9\"><div class=\"scrollWrap-wXGVFOC9 noScrollBar-wXGVFOC9\"><div class=\"content-OhqNVIYA\" role=\"none\"><div class=\"innerWrap-OhqNVIYA\"><div class=\"separatorWrap-MBOVGQRI\"><div class=\"separator-xVhBjD5m separator-MBOVGQRI\"></div></div><div class=\"group-MBOVGQRI\"><div class=\"wrap-n5bmFxyX\"><button type=\"button\" class=\"menu-S_1OCXUK button-merBkM5y apply-common-tooltip accessible-merBkM5y\" tabindex=\"-1\" data-tooltip=\"1 minute\" aria-label=\"1 minute\"><div class=\"menuConten"
+              },
+              {
+                "depth": 10,
+                "tag": "body",
+                "id": "",
+                "class": "chart-page unselectable on-widget",
+                "text": "TradingView is interactive and has commands to use with a screen reader. The following is a list of keyboard commands av",
+                "attributes": {},
+                "cursor": "auto",
+                "buttonLike": false,
+                "selector": "body.chart-page.unselectable.on-widget",
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 1077,
+                  "height": 494
+                },
+                "outerHTML": "<body class=\"chart-page unselectable on-widget\"><div role=\"contentinfo\" aria-hidden=\"false\" style=\"font-size: 0px;\"><p>TradingView is interactive and has commands to use with a screen reader. The following is a list of keyboard commands available to interact on the platform</p><ul><li>Start using keyboard navigation mode. Press Alt + Z</li><li>Quick search. Press Ctrl + K</li><li>Change symbol. Start typing symbol name</li><li>Change interval. Press number or comma</li><li>Indicators, Metrics and Strategies. Press slash</li><li>Load layout. Press period</li></ul></div><div id=\"layout-size-sensor\" style=\"position: fixed; inset: 0px; pointer-events: none; visibility: hidden;\"></div><div class=\"js-rootresizer__contents\" style=\"position: relative; width: 100%; height: 100%;\"><div class=\"layout__area--top\" style=\"position: absolute; top: 0px; left: 0px; width: 1077px; height: 0px;\"><div class"
+              },
+              {
+                "depth": 11,
+                "tag": "html",
+                "id": "",
+                "class": "feature-no-touch feature-no-mobiletouch theme-dark",
+                "text": "TradingView is interactive and has commands to use with a screen reader. The following is a list of keyboard commands av",
+                "attributes": {},
+                "cursor": "auto",
+                "buttonLike": false,
+                "selector": "html.feature-no-touch.feature-no-mobiletouch.theme-dark",
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 1077,
+                  "height": 494
+                },
+                "outerHTML": "<html lang=\"en\" dir=\"ltr\" class=\"feature-no-touch feature-no-mobiletouch theme-dark\"><head><base href=\"https://static.bitunix.com/assets/v609af3bf12/\"><meta charset=\"utf-8\"><script nonce=\"\">window.__tvCspNonce=\"3u5uSWB+uP/hT+WCw7tDDw==\";window===window.parent&&(location.href=\"about:blank\")</script> \n<script nonce=\"\" defer=\"\" crossorigin=\"anonymous\" src=\"bundles/runtime.26e30f0ec7606e36012b.js\"></script>\n<script nonce=\"\" defer=\"\" crossorigin=\"anonymous\" src=\"bundles/en.9173.5b6fb0f669b139b53c7c.js\"></script>\n<script nonce=\"\" defer=\"\" crossorigin=\"anonymous\" src=\"bundles/7326.a0fd7439af8a4c2cfaf5.js\"></script>\n<script nonce=\"\" defer=\"\" crossorigin=\"anonymous\" src=\"bundles/library.c5a1639e504413c38fde.js\"></script>\n<link type=\"text/css\" href=\"bundles/5640.55f97e27c6d611da3f9c.css\" rel=\"stylesheet\">\n <link rel=\"stylesheet\" type=\"text/css\" href=\"https://static.bitunix.com/assets/v609af3bf12/b"
+              }
+            ],
+            "relatedVisibleTooltips": [
+              {
+                "tag": "div",
+                "class": "common-tooltip-EJBD96zX common-tooltip--farther-EJBD96zX common-tooltip--vertical-EJBD96zX common-tooltip--horizontal-EJBD96zX common-tooltip--direction_normal-EJBD96zX",
+                "text": "Reverse",
+                "attributes": {},
+                "selector": "#common-tooltip-wrapper",
+                "rect": {
+                  "x": 877,
+                  "y": 181,
+                  "width": 63,
+                  "height": 24
+                },
+                "outerHTML": "<div id=\"common-tooltip-wrapper\" class=\"common-tooltip-EJBD96zX common-tooltip--farther-EJBD96zX common-tooltip--vertical-EJBD96zX common-tooltip--horizontal-EJBD96zX common-tooltip--direction_normal-EJBD96zX\" style=\"left: 877px; bottom: 281px; width: 63px;\">\n\t\t<div class=\"common-tooltip__ear-holder-EJBD96zX common-tooltip__ear-holder--above-EJBD96zX\">\n\t\t\t<div class=\"common-tooltip__body-EJBD96zX js-tooltip-body common-tooltip__body--no-buttons-EJBD96zX\" style=\"left: 0px; width: 63px;\">Reverse</div>\n\t\t</div>\n\t\t<div class=\"common-tooltip__button-container-EJBD96zX\" style=\"left: 0px;\"></div>\n\t</div>"
+              },
+              {
+                "tag": "div",
+                "class": "common-tooltip__ear-holder-EJBD96zX common-tooltip__ear-holder--above-EJBD96zX",
+                "text": "Reverse",
+                "attributes": {},
+                "selector": "div.common-tooltip__ear-holder-EJBD96zX.common-tooltip__ear-holder--above-EJBD96zX:nth-of-type(1)",
+                "rect": {
+                  "x": 877,
+                  "y": 181,
+                  "width": 63,
+                  "height": 24
+                },
+                "outerHTML": "<div class=\"common-tooltip__ear-holder-EJBD96zX common-tooltip__ear-holder--above-EJBD96zX\">\n\t\t\t<div class=\"common-tooltip__body-EJBD96zX js-tooltip-body common-tooltip__body--no-buttons-EJBD96zX\" style=\"left: 0px; width: 63px;\">Reverse</div>\n\t\t</div>"
+              },
+              {
+                "tag": "div",
+                "class": "common-tooltip__body-EJBD96zX js-tooltip-body common-tooltip__body--no-buttons-EJBD96zX",
+                "text": "Reverse",
+                "attributes": {},
+                "selector": "div.common-tooltip__body-EJBD96zX.js-tooltip-body.common-tooltip__body--no-buttons-EJBD96zX",
+                "rect": {
+                  "x": 877,
+                  "y": 181,
+                  "width": 63,
+                  "height": 24
+                },
+                "outerHTML": "<div class=\"common-tooltip__body-EJBD96zX js-tooltip-body common-tooltip__body--no-buttons-EJBD96zX\" style=\"left: 0px; width: 63px;\">Reverse</div>"
+              }
+            ],
+            "traceDuringHold": [
+              {
+                "elapsedMs": 0,
+                "eventAgeMs": 1585,
+                "x": 911,
+                "y": 224,
+                "frame": "top > iframe[0]",
+                "element": {
+                  "tag": "canvas",
+                  "class": "",
+                  "text": "",
+                  "attributes": {
+                    "aria-label": "Chart for XAUTUSDT, 1 minute"
+                  }
+                }
+              },
+              {
+                "elapsedMs": 102,
+                "eventAgeMs": 1686,
+                "x": 911,
+                "y": 224,
+                "frame": "top > iframe[0]",
+                "element": {
+                  "tag": "canvas",
+                  "class": "",
+                  "text": "",
+                  "attributes": {
+                    "aria-label": "Chart for XAUTUSDT, 1 minute"
+                  }
+                }
+              },
+              {
+                "elapsedMs": 201,
+                "eventAgeMs": 1785,
+                "x": 911,
+                "y": 224,
+                "frame": "top > iframe[0]",
+                "element": {
+                  "tag": "canvas",
+                  "class": "",
+                  "text": "",
+                  "attributes": {
+                    "aria-label": "Chart for XAUTUSDT, 1 minute"
+                  }
+                }
+              },
+              {
+                "elapsedMs": 302,
+                "eventAgeMs": 1886,
+                "x": 911,
+                "y": 224,
+                "frame": "top > iframe[0]",
+                "element": {
+                  "tag": "canvas",
+                  "class": "",
+                  "text": "",
+                  "attributes": {
+                    "aria-label": "Chart for XAUTUSDT, 1 minute"
+                  }
+                }
+              },
+              {
+                "elapsedMs": 404,
+                "eventAgeMs": 1988,
+                "x": 911,
+                "y": 224,
+                "frame": "top > iframe[0]",
+                "element": {
+                  "tag": "canvas",
+                  "class": "",
+                  "text": "",
+                  "attributes": {
+                    "aria-label": "Chart for XAUTUSDT, 1 minute"
+                  }
+                }
+              },
+              {
+                "elapsedMs": 501,
+                "eventAgeMs": 2085,
+                "x": 911,
+                "y": 224,
+                "frame": "top > iframe[0]",
+                "element": {
+                  "tag": "canvas",
+                  "class": "",
+                  "text": "",
+                  "attributes": {
+                    "aria-label": "Chart for XAUTUSDT, 1 minute"
+                  }
+                }
+              },
+              {
+                "elapsedMs": 602,
+                "eventAgeMs": 2186,
+                "x": 911,
+                "y": 224,
+                "frame": "top > iframe[0]",
+                "element": {
+                  "tag": "canvas",
+                  "class": "",
+                  "text": "",
+                  "attributes": {
+                    "aria-label": "Chart for XAUTUSDT, 1 minute"
+                  }
+                }
+              },
+              {
+                "elapsedMs": 702,
+                "eventAgeMs": 2286,
+                "x": 911,
+                "y": 224,
+                "frame": "top > iframe[0]",
+                "element": {
+                  "tag": "canvas",
+                  "class": "",
+                  "text": "",
+                  "attributes": {
+                    "aria-label": "Chart for XAUTUSDT, 1 minute"
+                  }
+                }
+              },
+              {
+                "elapsedMs": 804,
+                "eventAgeMs": 2388,
+                "x": 911,
+                "y": 224,
+                "frame": "top > iframe[0]",
+                "element": {
+                  "tag": "canvas",
+                  "class": "",
+                  "text": "",
+                  "attributes": {
+                    "aria-label": "Chart for XAUTUSDT, 1 minute"
+                  }
+                }
+              },
+              {
+                "elapsedMs": 908,
+                "eventAgeMs": 2492,
+                "x": 911,
+                "y": 224,
+                "frame": "top > iframe[0]",
+                "element": {
+                  "tag": "canvas",
+                  "class": "",
+                  "text": "",
+                  "attributes": {
+                    "aria-label": "Chart for XAUTUSDT, 1 minute"
+                  }
+                }
+              },
+              {
+                "elapsedMs": 1018,
+                "eventAgeMs": 2602,
+                "x": 911,
+                "y": 224,
+                "frame": "top > iframe[0]",
+                "element": {
+                  "tag": "canvas",
+                  "class": "",
+                  "text": "",
+                  "attributes": {
+                    "aria-label": "Chart for XAUTUSDT, 1 minute"
+                  }
+                }
+              },
+              {
+                "elapsedMs": 1105,
+                "eventAgeMs": 2689,
+                "x": 911,
+                "y": 224,
+                "frame": "top > iframe[0]",
+                "element": {
+                  "tag": "canvas",
+                  "class": "",
+                  "text": "",
+                  "attributes": {
+                    "aria-label": "Chart for XAUTUSDT, 1 minute"
+                  }
+                }
+              },
+              {
+                "elapsedMs": 1202,
+                "eventAgeMs": 2786,
+                "x": 911,
+                "y": 224,
+                "frame": "top > iframe[0]",
+                "element": {
+                  "tag": "canvas",
+                  "class": "",
+                  "text": "",
+                  "attributes": {
+                    "aria-label": "Chart for XAUTUSDT, 1 minute"
+                  }
+                }
+              },
+              {
+                "elapsedMs": 1306,
+                "eventAgeMs": 2890,
+                "x": 911,
+                "y": 224,
+                "frame": "top > iframe[0]",
+                "element": {
+                  "tag": "canvas",
+                  "class": "",
+                  "text": "",
+                  "attributes": {
+                    "aria-label": "Chart for XAUTUSDT, 1 minute"
+                  }
+                }
+              },
+              {
+                "elapsedMs": 1402,
+                "eventAgeMs": 2986,
+                "x": 911,
+                "y": 224,
+                "frame": "top > iframe[0]",
+                "element": {
+                  "tag": "canvas",
+                  "class": "",
+                  "text": "",
+                  "attributes": {
+                    "aria-label": "Chart for XAUTUSDT, 1 minute"
+                  }
+                }
+              },
+              {
+                "elapsedMs": 1502,
+                "eventAgeMs": 3086,
+                "x": 911,
+                "y": 224,
+                "frame": "top > iframe[0]",
+                "element": {
+                  "tag": "canvas",
+                  "class": "",
+                  "text": "",
+                  "attributes": {
+                    "aria-label": "Chart for XAUTUSDT, 1 minute"
+                  }
+                }
+              },
+              {
+                "elapsedMs": 1602,
+                "eventAgeMs": 3186,
+                "x": 911,
+                "y": 224,
+                "frame": "top > iframe[0]",
+                "element": {
+                  "tag": "canvas",
+                  "class": "",
+                  "text": "",
+                  "attributes": {
+                    "aria-label": "Chart for XAUTUSDT, 1 minute"
+                  }
+                }
+              },
+              {
+                "elapsedMs": 1701,
+                "eventAgeMs": 3285,
+                "x": 911,
+                "y": 224,
+                "frame": "top > iframe[0]",
+                "element": {
+                  "tag": "canvas",
+                  "class": "",
+                  "text": "",
+                  "attributes": {
+                    "aria-label": "Chart for XAUTUSDT, 1 minute"
+                  }
+                }
+              },
+              {
+                "elapsedMs": 1802,
+                "eventAgeMs": 3386,
+                "x": 911,
+                "y": 224,
+                "frame": "top > iframe[0]",
+                "element": {
+                  "tag": "canvas",
+                  "class": "",
+                  "text": "",
+                  "attributes": {
+                    "aria-label": "Chart for XAUTUSDT, 1 minute"
+                  }
+                }
+              },
+              {
+                "elapsedMs": 1902,
+                "eventAgeMs": 3486,
+                "x": 911,
+                "y": 224,
+                "frame": "top > iframe[0]",
+                "element": {
+                  "tag": "canvas",
+                  "class": "",
+                  "text": "",
+                  "attributes": {
+                    "aria-label": "Chart for XAUTUSDT, 1 minute"
+                  }
+                }
+              },
+              {
+                "elapsedMs": 2001,
+                "eventAgeMs": 3585,
+                "x": 911,
+                "y": 224,
+                "frame": "top > iframe[0]",
+                "element": {
+                  "tag": "canvas",
+                  "class": "",
+                  "text": "",
+                  "attributes": {
+                    "aria-label": "Chart for XAUTUSDT, 1 minute"
+                  }
+                }
+              },
+              {
+                "elapsedMs": 2103,
+                "eventAgeMs": 3687,
+                "x": 911,
+                "y": 224,
+                "frame": "top > iframe[0]",
+                "element": {
+                  "tag": "canvas",
+                  "class": "",
+                  "text": "",
+                  "attributes": {
+                    "aria-label": "Chart for XAUTUSDT, 1 minute"
+                  }
+                }
+              },
+              {
+                "elapsedMs": 2208,
+                "eventAgeMs": 3792,
+                "x": 911,
+                "y": 224,
+                "frame": "top > iframe[0]",
+                "element": {
+                  "tag": "canvas",
+                  "class": "",
+                  "text": "",
+                  "attributes": {
+                    "aria-label": "Chart for XAUTUSDT, 1 minute"
+                  }
+                }
+              },
+              {
+                "elapsedMs": 2302,
+                "eventAgeMs": 3886,
+                "x": 911,
+                "y": 224,
+                "frame": "top > iframe[0]",
+                "element": {
+                  "tag": "canvas",
+                  "class": "",
+                  "text": "",
+                  "attributes": {
+                    "aria-label": "Chart for XAUTUSDT, 1 minute"
+                  }
+                }
+              },
+              {
+                "elapsedMs": 2402,
+                "eventAgeMs": 3986,
+                "x": 911,
+                "y": 224,
+                "frame": "top > iframe[0]",
+                "element": {
+                  "tag": "canvas",
+                  "class": "",
+                  "text": "",
+                  "attributes": {
+                    "aria-label": "Chart for XAUTUSDT, 1 minute"
+                  }
+                }
+              },
+              {
+                "elapsedMs": 2502,
+                "eventAgeMs": 4086,
+                "x": 911,
+                "y": 224,
+                "frame": "top > iframe[0]",
+                "element": {
+                  "tag": "canvas",
+                  "class": "",
+                  "text": "",
+                  "attributes": {
+                    "aria-label": "Chart for XAUTUSDT, 1 minute"
+                  }
+                }
+              },
+              {
+                "elapsedMs": 2615,
+                "eventAgeMs": 4199,
+                "x": 911,
+                "y": 224,
+                "frame": "top > iframe[0]",
+                "element": {
+                  "tag": "canvas",
+                  "class": "",
+                  "text": "",
+                  "attributes": {
+                    "aria-label": "Chart for XAUTUSDT, 1 minute"
+                  }
+                }
+              },
+              {
+                "elapsedMs": 2702,
+                "eventAgeMs": 4286,
+                "x": 911,
+                "y": 224,
+                "frame": "top > iframe[0]",
+                "element": {
+                  "tag": "canvas",
+                  "class": "",
+                  "text": "",
+                  "attributes": {
+                    "aria-label": "Chart for XAUTUSDT, 1 minute"
+                  }
+                }
+              },
+              {
+                "elapsedMs": 2801,
+                "eventAgeMs": 4385,
+                "x": 911,
+                "y": 224,
+                "frame": "top > iframe[0]",
+                "element": {
+                  "tag": "canvas",
+                  "class": "",
+                  "text": "",
+                  "attributes": {
+                    "aria-label": "Chart for XAUTUSDT, 1 minute"
+                  }
+                }
+              },
+              {
+                "elapsedMs": 2902,
+                "eventAgeMs": 4486,
+                "x": 911,
+                "y": 224,
+                "frame": "top > iframe[0]",
+                "element": {
+                  "tag": "canvas",
+                  "class": "",
+                  "text": "",
+                  "attributes": {
+                    "aria-label": "Chart for XAUTUSDT, 1 minute"
+                  }
+                }
+              },
+              {
+                "elapsedMs": 3002,
+                "eventAgeMs": 4586,
+                "x": 911,
+                "y": 224,
+                "frame": "top > iframe[0]",
+                "element": {
+                  "tag": "canvas",
+                  "class": "",
+                  "text": "",
+                  "attributes": {
+                    "aria-label": "Chart for XAUTUSDT, 1 minute"
+                  }
+                }
+              },
+              {
+                "elapsedMs": 3000,
+                "eventAgeMs": 4587,
+                "x": 911,
+                "y": 224,
+                "frame": "top > iframe[0]",
+                "element": {
+                  "tag": "canvas",
+                  "class": "",
+                  "text": "",
+                  "attributes": {
+                    "aria-label": "Chart for XAUTUSDT, 1 minute"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[1]",
+            "isChart": false,
+            "pointerCaptured": false,
+            "frameRectangle": {
+              "x": 0,
+              "y": -9999,
+              "width": 0,
+              "height": 0
+            }
+          },
+          {
+            "frame": "top > iframe[2]",
+            "isChart": false,
+            "pointerCaptured": false,
+            "frameRectangle": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
