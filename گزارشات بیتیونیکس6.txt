@@ -1,0 +1,3944 @@
+{
+  "diagnostic": "BITUNIX_CANDLE_ENGINE_SCAN_06",
+  "startedAt": "2026-11-14T16:56:40.071Z",
+  "errors": [],
+  "iframe": {
+    "id": "tradingview_44299",
+    "accessible": true,
+    "readyState": "complete"
+  },
+  "chart": {
+    "widgetFound": true,
+    "collectionFound": true,
+    "tradingViewApiFound": true,
+    "chartApiFound": true
+  },
+  "series": {
+    "found": true,
+    "modelFound": true,
+    "modelDetails": {
+      "path": "chartWidget.model()",
+      "constructor": "",
+      "ownPropertyCount": 16,
+      "properties": [
+        {
+          "name": "_createLineCommand",
+          "type": "object",
+          "constructor": null,
+          "value": null
+        },
+        {
+          "name": "_initialTimeScrollState",
+          "type": "object",
+          "constructor": null,
+          "value": null
+        },
+        {
+          "name": "_initialTimeScrollPos",
+          "type": "object",
+          "constructor": null,
+          "value": null
+        },
+        {
+          "name": "_scalePriceInfo",
+          "type": "object",
+          "constructor": null,
+          "value": null
+        },
+        {
+          "name": "_currentSourceMoveCommand",
+          "type": "object",
+          "constructor": null,
+          "value": null
+        },
+        {
+          "name": "_currentLineChangeCommand",
+          "type": "object",
+          "constructor": null,
+          "value": null
+        },
+        {
+          "name": "_currentCustomMoveCommand",
+          "type": "object",
+          "constructor": null,
+          "value": null
+        },
+        {
+          "name": "_zoomStack",
+          "type": "object",
+          "constructor": "o"
+        },
+        {
+          "name": "_chartWidget",
+          "type": "object",
+          "constructor": ""
+        },
+        {
+          "name": "m_model",
+          "type": "object",
+          "constructor": "x"
+        },
+        {
+          "name": "_undoHistory",
+          "type": "object",
+          "constructor": "Object"
+        },
+        {
+          "name": "_lineToolsGroupController",
+          "type": "object",
+          "constructor": "He"
+        },
+        {
+          "name": "beginUndoMacro",
+          "type": "function",
+          "constructor": "Function",
+          "arguments": 2
+        },
+        {
+          "name": "endUndoMacro",
+          "type": "function",
+          "constructor": "Function",
+          "arguments": 0
+        },
+        {
+          "name": "createUndoCheckpoint",
+          "type": "function",
+          "constructor": "Function",
+          "arguments": 0
+        },
+        {
+          "name": "undoToCheckpoint",
+          "type": "function",
+          "constructor": "Function",
+          "arguments": 1
+        }
+      ],
+      "prototypeMethods": [
+        {
+          "name": "constructor",
+          "arguments": 11
+        },
+        {
+          "name": "version",
+          "arguments": 0
+        },
+        {
+          "name": "createPane",
+          "arguments": 1
+        },
+        {
+          "name": "restart",
+          "arguments": 0
+        },
+        {
+          "name": "disconnect",
+          "arguments": 0
+        },
+        {
+          "name": "studyVersioning",
+          "arguments": 0
+        },
+        {
+          "name": "chartModel",
+          "arguments": 0
+        },
+        {
+          "name": "_model",
+          "arguments": 0
+        },
+        {
+          "name": "pushUndoCommand",
+          "arguments": 1
+        },
+        {
+          "name": "_pushUndoCommand",
+          "arguments": 1
+        },
+        {
+          "name": "startScrollPrice",
+          "arguments": 3
+        },
+        {
+          "name": "scrollPriceTo",
+          "arguments": 3
+        },
+        {
+          "name": "endScrollPrice",
+          "arguments": 2
+        },
+        {
+          "name": "setPriceAutoScale",
+          "arguments": 3
+        },
+        {
+          "name": "setWidth",
+          "arguments": 1
+        },
+        {
+          "name": "setPaneHeight",
+          "arguments": 2
+        },
+        {
+          "name": "gridSource",
+          "arguments": 0
+        },
+        {
+          "name": "watermarkSource",
+          "arguments": 0
+        },
+        {
+          "name": "publishedChartsTimelineSource",
+          "arguments": 0
+        },
+        {
+          "name": "crossHairSource",
+          "arguments": 0
+        },
+        {
+          "name": "model",
+          "arguments": 0
+        },
+        {
+          "name": "chartWidget",
+          "arguments": 0
+        },
+        {
+          "name": "mainSeries",
+          "arguments": 0
+        },
+        {
+          "name": "mainSeriesScaleRatioProperty",
+          "arguments": 0
+        },
+        {
+          "name": "timeScale",
+          "arguments": 0
+        },
+        {
+          "name": "selectionMacro",
+          "arguments": 2
+        },
+        {
+          "name": "setHoveredSource",
+          "arguments": 2
+        },
+        {
+          "name": "selection",
+          "arguments": 0
+        },
+        {
+          "name": "onSelectedSourceChanged",
+          "arguments": 0
+        },
+        {
+          "name": "activeStrategySource",
+          "arguments": 0
+        },
+        {
+          "name": "invalidate",
+          "arguments": 1
+        },
+        {
+          "name": "setCurrentPosition",
+          "arguments": 4
+        },
+        {
+          "name": "setAndSaveCurrentPosition",
+          "arguments": 4
+        },
+        {
+          "name": "setProperties",
+          "arguments": 3
+        },
+        {
+          "name": "setPriceScaleMode",
+          "arguments": 3
+        },
+        {
+          "name": "setPriceScaleSelectionStrategy",
+          "arguments": 1
+        },
+        {
+          "name": "setScaleRatioProperty",
+          "arguments": 3
+        },
+        {
+          "name": "lineBeingCreated",
+          "arguments": 0
+        },
+        {
+          "name": "paneBeingCreatedLineOn",
+          "arguments": 0
+        },
+        {
+          "name": "cancelCreatingLine",
+          "arguments": 0
+        },
+        {
+          "name": "lineCancelled",
+          "arguments": 0
+        },
+        {
+          "name": "lineBeingEdited",
+          "arguments": 0
+        },
+        {
+          "name": "sourcesBeingMoved",
+          "arguments": 0
+        },
+        {
+          "name": "dataSources",
+          "arguments": 0
+        },
+        {
+          "name": "orderedDataSources",
+          "arguments": 1
+        },
+        {
+          "name": "dataSourceForId",
+          "arguments": 1
+        },
+        {
+          "name": "state",
+          "arguments": 4
+        },
+        {
+          "name": "calculateDefaultTags",
+          "arguments": 0
+        },
+        {
+          "name": "onTagsChanged",
+          "arguments": 0
+        },
+        {
+          "name": "moveLeft",
+          "arguments": 0
+        },
+        {
+          "name": "moveRight",
+          "arguments": 0
+        },
+        {
+          "name": "scrollChart",
+          "arguments": 1
+        },
+        {
+          "name": "restorePreferences",
+          "arguments": 0
+        },
+        {
+          "name": "applyPreferences",
+          "arguments": 1
+        },
+        {
+          "name": "applyLineToolTemplate",
+          "arguments": 3
+        },
+        {
+          "name": "isInReplay",
+          "arguments": 0
+        },
+        {
+          "name": "switchToReplay",
+          "arguments": 2
+        },
+        {
+          "name": "switchToRealtime",
+          "arguments": 0
+        },
+        {
+          "name": "togglePriceScaleAutoScaleMode",
+          "arguments": 1
+        },
+        {
+          "name": "togglePriceScaleLockScaleMode",
+          "arguments": 1
+        },
+        {
+          "name": "setPriceScaleRegularScaleMode",
+          "arguments": 1
+        },
+        {
+          "name": "togglePriceScaleIndexedTo100ScaleMode",
+          "arguments": 1
+        },
+        {
+          "name": "togglePriceScalePercentageScaleMode",
+          "arguments": 1
+        },
+        {
+          "name": "togglePriceScaleLogScaleMode",
+          "arguments": 1
+        },
+        {
+          "name": "invertPriceScale",
+          "arguments": 1
+        },
+        {
+          "name": "removePane",
+          "arguments": 1
+        },
+        {
+          "name": "constructor",
+          "arguments": 11
+        },
+        {
+          "name": "id",
+          "arguments": 0
+        },
+        {
+          "name": "undoHistory",
+          "arguments": 0
+        },
+        {
+          "name": "setWatchedValue",
+          "arguments": 3
+        },
+        {
+          "name": "lineToolsGroupController",
+          "arguments": 0
+        },
+        {
+          "name": "mergeAllScales",
+          "arguments": 1
+        },
+        {
+          "name": "movePriceScale",
+          "arguments": 4
+        },
+        {
+          "name": "createLineTool",
+          "arguments": 1
+        },
+        {
+          "name": "continueCreatingLine",
+          "arguments": 4
+        },
+        {
+          "name": "continueExternalLine",
+          "arguments": 3
+        },
+        {
+          "name": "finishLineTool",
+          "arguments": 1
+        },
+        {
+          "name": "pasteImageAsLineTool",
+          "arguments": 4
+        },
+        {
+          "name": "loadRange",
+          "arguments": 1
+        },
+        {
+          "name": "unlinkLines",
+          "arguments": 1
+        },
+        {
+          "name": "zoomFromViewport",
+          "arguments": 0
+        },
+        {
+          "name": "zoomToViewport",
+          "arguments": 5
+        },
+        {
+          "name": "zoomStack",
+          "arguments": 0
+        },
+        {
+          "name": "hoveredSource",
+          "arguments": 0
+        },
+        {
+          "name": "setProperty",
+          "arguments": 4
+        },
+        {
+          "name": "withMacro",
+          "arguments": 3
+        },
+        {
+          "name": "barsMarksSources",
+          "arguments": 0
+        },
+        {
+          "name": "removeAllDrawingTools",
+          "arguments": 0
+        },
+        {
+          "name": "removeAllStudiesAndDrawingTools",
+          "arguments": 0
+        },
+        {
+          "name": "removeAllStudies",
+          "arguments": 0
+        },
+        {
+          "name": "scrollChartByBar",
+          "arguments": 1
+        },
+        {
+          "name": "canZoomIn",
+          "arguments": 0
+        },
+        {
+          "name": "canZoomOut",
+          "arguments": 0
+        },
+        {
+          "name": "zoomOut",
+          "arguments": 0
+        },
+        {
+          "name": "zoomIn",
+          "arguments": 0
+        },
+        {
+          "name": "startMovingSources",
+          "arguments": 4
+        },
+        {
+          "name": "moveSources",
+          "arguments": 2
+        },
+        {
+          "name": "endMovingSource",
+          "arguments": 2
+        },
+        {
+          "name": "startChangingLinetool",
+          "arguments": 5
+        },
+        {
+          "name": "changeLinePoint",
+          "arguments": 2
+        },
+        {
+          "name": "endChangingLinetool",
+          "arguments": 1
+        },
+        {
+          "name": "setChartStyleProperty",
+          "arguments": 3
+        },
+        {
+          "name": "restorePropertiesForSource",
+          "arguments": 1
+        },
+        {
+          "name": "restoreLineToolsFactoryDefaults",
+          "arguments": 1
+        },
+        {
+          "name": "restoreState",
+          "arguments": 3
+        },
+        {
+          "name": "clipboardCopy",
+          "arguments": 1
+        },
+        {
+          "name": "clipboardCut",
+          "arguments": 1
+        },
+        {
+          "name": "clipboardPaste",
+          "arguments": 2
+        },
+        {
+          "name": "applyStudyTemplate",
+          "arguments": 2
+        },
+        {
+          "name": "createStudyInserter",
+          "arguments": 2
+        },
+        {
+          "name": "replayStatus",
+          "arguments": 0
+        },
+        {
+          "name": "setReplayStatus",
+          "arguments": 1
+        },
+        {
+          "name": "getSymbolString",
+          "arguments": 0
+        },
+        {
+          "name": "interval",
+          "arguments": 0
+        },
+        {
+          "name": "startCustomMoving",
+          "arguments": 3
+        },
+        {
+          "name": "customMoveBeingProcessed",
+          "arguments": 0
+        },
+        {
+          "name": "processCustomMove",
+          "arguments": 1
+        },
+        {
+          "name": "endCustomMoving",
+          "arguments": 0
+        },
+        {
+          "name": "panes",
+          "arguments": 0
+        },
+        {
+          "name": "cloneLineTools",
+          "arguments": 2
+        },
+        {
+          "name": "removeSource",
+          "arguments": 3
+        },
+        {
+          "name": "removeSelectedSources",
+          "arguments": 0
+        },
+        {
+          "name": "removeSources",
+          "arguments": 4
+        },
+        {
+          "name": "removeUnloadedLineTool",
+          "arguments": 1
+        },
+        {
+          "name": "scrollToLineTool",
+          "arguments": 1
+        },
+        {
+          "name": "mergeSourceUp",
+          "arguments": 1
+        },
+        {
+          "name": "mergeSourceDown",
+          "arguments": 1
+        },
+        {
+          "name": "mergeToPane",
+          "arguments": 3
+        },
+        {
+          "name": "unmergeSourceUp",
+          "arguments": 1
+        },
+        {
+          "name": "unmergeSourceDown",
+          "arguments": 1
+        },
+        {
+          "name": "unmergeToNewBottomPane",
+          "arguments": 1
+        },
+        {
+          "name": "availableZOrderOperations",
+          "arguments": 1
+        },
+        {
+          "name": "sendToBack",
+          "arguments": 1
+        },
+        {
+          "name": "bringToFront",
+          "arguments": 1
+        },
+        {
+          "name": "sendBackward",
+          "arguments": 1
+        },
+        {
+          "name": "bringForward",
+          "arguments": 1
+        },
+        {
+          "name": "insertAfter",
+          "arguments": 2
+        },
+        {
+          "name": "insertBefore",
+          "arguments": 2
+        },
+        {
+          "name": "detachToRight",
+          "arguments": 2
+        },
+        {
+          "name": "detachToLeft",
+          "arguments": 2
+        },
+        {
+          "name": "detachNoScale",
+          "arguments": 2
+        },
+        {
+          "name": "moveToScale",
+          "arguments": 5
+        },
+        {
+          "name": "setLinkingGroupIndex",
+          "arguments": 1
+        },
+        {
+          "name": "startScrollTime",
+          "arguments": 1
+        },
+        {
+          "name": "scrollTimeTo",
+          "arguments": 1
+        },
+        {
+          "name": "endScrollTime",
+          "arguments": 0
+        },
+        {
+          "name": "startScaleTime",
+          "arguments": 1
+        },
+        {
+          "name": "scaleTimeTo",
+          "arguments": 1
+        },
+        {
+          "name": "endScaleTime",
+          "arguments": 0
+        },
+        {
+          "name": "resetTimeScale",
+          "arguments": 0
+        },
+        {
+          "name": "changeTimeScale",
+          "arguments": 1
+        },
+        {
+          "name": "startScalePrice",
+          "arguments": 4
+        },
+        {
+          "name": "scalePriceTo",
+          "arguments": 3
+        },
+        {
+          "name": "endScalePrice",
+          "arguments": 2
+        },
+        {
+          "name": "startTwoPointsScalePrice",
+          "arguments": 5
+        },
+        {
+          "name": "twoPointsScalePriceTo",
+          "arguments": 4
+        },
+        {
+          "name": "endTwoPointsScalePrice",
+          "arguments": 2
+        },
+        {
+          "name": "resetPriceScale",
+          "arguments": 2
+        },
+        {
+          "name": "rearrangePanes",
+          "arguments": 2
+        },
+        {
+          "name": "movePane",
+          "arguments": 2
+        },
+        {
+          "name": "toggleCollapsedPane",
+          "arguments": 1
+        },
+        {
+          "name": "readOnly",
+          "arguments": 0
+        },
+        {
+          "name": "checkIfFeatureAvailable",
+          "arguments": 2
+        },
+        {
+          "name": "pasteSourceFromClip",
+          "arguments": 3
+        },
+        {
+          "name": "pasteLineTool",
+          "arguments": 4
+        },
+        {
+          "name": "pasteStudy",
+          "arguments": 2
+        },
+        {
+          "name": "setPriceScaleCurrency",
+          "arguments": 2
+        },
+        {
+          "name": "setPriceScaleUnit",
+          "arguments": 2
+        },
+        {
+          "name": "setSymbol",
+          "arguments": 2
+        },
+        {
+          "name": "setResolution",
+          "arguments": 2
+        },
+        {
+          "name": "chartLoadTheme",
+          "arguments": 3
+        },
+        {
+          "name": "isJustClonedChart",
+          "arguments": 0
+        },
+        {
+          "name": "isMultipleLayout",
+          "arguments": 0
+        },
+        {
+          "name": "addPaneStretchFactorUndoCommand",
+          "arguments": 4
+        },
+        {
+          "name": "paneForSource",
+          "arguments": 1
+        },
+        {
+          "name": "destroy",
+          "arguments": 0
+        },
+        {
+          "name": "moveSelectedToolsLeft",
+          "arguments": 0
+        },
+        {
+          "name": "moveSelectedToolsUp",
+          "arguments": 0
+        },
+        {
+          "name": "moveSelectedToolsRight",
+          "arguments": 0
+        },
+        {
+          "name": "moveSelectedToolsDown",
+          "arguments": 0
+        },
+        {
+          "name": "insertStudyWithoutCheck",
+          "arguments": 4
+        },
+        {
+          "name": "saveLineToolState",
+          "arguments": 2
+        },
+        {
+          "name": "resetScales",
+          "arguments": 0
+        },
+        {
+          "name": "shareLineTools",
+          "arguments": 2
+        },
+        {
+          "name": "canCreateStudy",
+          "arguments": 1
+        },
+        {
+          "name": "studiesMetaData",
+          "arguments": 0
+        },
+        {
+          "name": "fullSourceId",
+          "arguments": 1
+        },
+        {
+          "name": "chartWidgetCollectionLock",
+          "arguments": 0
+        },
+        {
+          "name": "_isCountedStudy",
+          "arguments": 1
+        },
+        {
+          "name": "_mergeUnmergeSource",
+          "arguments": 2
+        },
+        {
+          "name": "_insertStudy",
+          "arguments": 12
+        },
+        {
+          "name": "_processSpecialLineToolsContents",
+          "arguments": 3
+        },
+        {
+          "name": "_insertAfterOrBefore",
+          "arguments": 4
+        },
+        {
+          "name": "_sendBackOrBringForward",
+          "arguments": 3
+        },
+        {
+          "name": "_moveSelectedTools",
+          "arguments": 1
+        },
+        {
+          "name": "_restoreStudyFactoryDefaults",
+          "arguments": 1
+        },
+        {
+          "name": "_restoreLineToolFactoryDefaults",
+          "arguments": 1
+        },
+        {
+          "name": "_removeAllDrawingToolsImpl",
+          "arguments": 1
+        },
+        {
+          "name": "_removeAllStudiesImpl",
+          "arguments": 0
+        },
+        {
+          "name": "constructor",
+          "arguments": 0
+        },
+        {
+          "name": "getListeners",
+          "arguments": 1
+        },
+        {
+          "name": "flattenListeners",
+          "arguments": 1
+        },
+        {
+          "name": "getListenersAsObject",
+          "arguments": 1
+        },
+        {
+          "name": "addListener",
+          "arguments": 2
+        },
+        {
+          "name": "on",
+          "arguments": 0
+        },
+        {
+          "name": "addOnceListener",
+          "arguments": 2
+        },
+        {
+          "name": "once",
+          "arguments": 0
+        },
+        {
+          "name": "defineEvent",
+          "arguments": 1
+        },
+        {
+          "name": "defineEvents",
+          "arguments": 1
+        },
+        {
+          "name": "removeListener",
+          "arguments": 2
+        },
+        {
+          "name": "off",
+          "arguments": 0
+        },
+        {
+          "name": "addListeners",
+          "arguments": 2
+        },
+        {
+          "name": "removeListeners",
+          "arguments": 2
+        },
+        {
+          "name": "manipulateListeners",
+          "arguments": 3
+        },
+        {
+          "name": "removeEvent",
+          "arguments": 1
+        },
+        {
+          "name": "removeAllListeners",
+          "arguments": 0
+        },
+        {
+          "name": "emitEvent",
+          "arguments": 2
+        },
+        {
+          "name": "trigger",
+          "arguments": 0
+        },
+        {
+          "name": "emit",
+          "arguments": 1
+        },
+        {
+          "name": "setOnceReturnValue",
+          "arguments": 1
+        },
+        {
+          "name": "_getOnceReturnValue",
+          "arguments": 0
+        },
+        {
+          "name": "_getEvents",
+          "arguments": 0
+        },
+        {
+          "name": "constructor",
+          "arguments": 1
+        },
+        {
+          "name": "__defineGetter__",
+          "arguments": 2
+        },
+        {
+          "name": "__defineSetter__",
+          "arguments": 2
+        },
+        {
+          "name": "hasOwnProperty",
+          "arguments": 1
+        },
+        {
+          "name": "__lookupGetter__",
+          "arguments": 1
+        },
+        {
+          "name": "__lookupSetter__",
+          "arguments": 1
+        },
+        {
+          "name": "isPrototypeOf",
+          "arguments": 1
+        },
+        {
+          "name": "propertyIsEnumerable",
+          "arguments": 1
+        },
+        {
+          "name": "toString",
+          "arguments": 0
+        },
+        {
+          "name": "valueOf",
+          "arguments": 0
+        },
+        {
+          "name": "toLocaleString",
+          "arguments": 0
+        }
+      ]
+    },
+    "seriesDetails": {
+      "path": "model.mainSeries()",
+      "constructor": "c",
+      "ownPropertyCount": 126,
+      "properties": [
+        {
+          "name": "_isDestroyed",
+          "type": "boolean",
+          "constructor": "Boolean",
+          "value": false
+        },
+        {
+          "name": "_hasAlert",
+          "type": "object",
+          "constructor": "o"
+        },
+        {
+          "name": "_alertCreationAvailable",
+          "type": "object",
+          "constructor": "o"
+        },
+        {
+          "name": "_zorder",
+          "type": "number",
+          "constructor": "Number",
+          "value": 0
+        },
+        {
+          "name": "_priceScale",
+          "type": "object",
+          "constructor": "Ae"
+        },
+        {
+          "name": "_ownerSource",
+          "type": "object",
+          "constructor": null,
+          "value": null
+        },
+        {
+          "name": "_userEditEnabled",
+          "type": "boolean",
+          "constructor": "Boolean",
+          "value": true
+        },
+        {
+          "name": "_priceScaleChanged",
+          "type": "object",
+          "constructor": "n"
+        },
+        {
+          "name": "_isSelectionEnabled",
+          "type": "boolean",
+          "constructor": "Boolean",
+          "value": true
+        },
+        {
+          "name": "_instanceId",
+          "type": "string",
+          "constructor": "String",
+          "value": "faIgxQ"
+        },
+        {
+          "name": "_ownerSourceChanged",
+          "type": "object",
+          "constructor": "n"
+        },
+        {
+          "name": "_zOrderChanged",
+          "type": "object",
+          "constructor": "n"
+        },
+        {
+          "name": "_id",
+          "type": "string",
+          "constructor": "String",
+          "value": "_seriesId"
+        },
+        {
+          "name": "_formatterChanged",
+          "type": "object",
+          "constructor": "n"
+        },
+        {
+          "name": "_priceStepChanged",
+          "type": "object",
+          "constructor": "n"
+        },
+        {
+          "name": "_currencyChanged",
+          "type": "object",
+          "constructor": "n"
+        },
+        {
+          "name": "_unitChanged",
+          "type": "object",
+          "constructor": "n"
+        },
+        {
+          "name": "_priceRangeReadyChanged",
+          "type": "object",
+          "constructor": "n"
+        },
+        {
+          "name": "_priceStep",
+          "type": "number",
+          "constructor": "Number",
+          "value": 0.01
+        },
+        {
+          "name": "_priceRangeReady",
+          "type": "boolean",
+          "constructor": "Boolean",
+          "value": true
+        },
+        {
+          "name": "_model",
+          "type": "object",
+          "constructor": "x"
+        },
+        {
+          "name": "requestingTicksWhenNotSupported",
+          "type": "object",
+          "constructor": "n"
+        },
+        {
+          "name": "requestingIntradayWhenNotSupported",
+          "type": "object",
+          "constructor": "n"
+        },
+        {
+          "name": "requestingStyleIsNotSupported",
+          "type": "object",
+          "constructor": "n"
+        },
+        {
+          "name": "requestingStyleSupportRecovered",
+          "type": "object",
+          "constructor": "n"
+        },
+        {
+          "name": "requestingResolutionLessThanFrequency",
+          "type": "object",
+          "constructor": "n",
+          "keys": [
+            "fire",
+            "_listeners"
+          ]
+        },
+        {
+          "name": "_paneView",
+          "type": "object",
+          "constructor": "l"
+        },
+        {
+          "name": "_futureBarsPaneView",
+          "type": "object",
+          "constructor": null,
+          "value": null
+        },
+        {
+          "name": "_projectionBarsPaneView",
+          "type": "object",
+          "constructor": null,
+          "value": null
+        },
+        {
+          "name": "_waterlineView",
+          "type": "object",
+          "constructor": null,
+          "value": null
+        },
+        {
+          "name": "_priceLineView",
+          "type": "object",
+          "constructor": "yt"
+        },
+        {
+          "name": "_gotoDateView",
+          "type": "object",
+          "constructor": null,
+          "value": null
+        },
+        {
+          "name": "_baseHorizontalLineView",
+          "type": "object",
+          "constructor": "r"
+        },
+        {
+          "name": "_symbolInfo",
+          "type": "object",
+          "constructor": "Object",
+          "keys": [
+            "name",
+            "ticker",
+            "description",
+            "symbol",
+            "full_name",
+            "exchange",
+            "listed_exchange",
+            "type",
+            "session",
+            "timezone",
+            "supports_time",
+            "minmov",
+            "minmove2",
+            "pricescale",
+            "format",
+            "supported_resolutions",
+            "intraday_multipliers",
+            "data_status",
+            "has_intraday",
+            "has_empty_bars",
+            "has_daily",
+            "daily_multipliers",
+            "has_weekly_and_monthly",
+            "weekly_multipliers",
+            "monthly_multipliers",
+            "volume_precision",
+            "currency_code",
+            "base_name",
+            "legs",
+            "pro_name",
+            "currency_id",
+            "price_sources",
+            "is-tickbars-available"
+          ]
+        },
+        {
+          "name": "_isPrePostMarketPricesAvailableProperty",
+          "type": "object",
+          "constructor": "a"
+        },
+        {
+          "name": "_isBackAdjustmentForbiddenProperty",
+          "type": "object",
+          "constructor": "a"
+        },
+        {
+          "name": "_isSettlementAsCloseForbiddenProperty",
+          "type": "object",
+          "constructor": "a"
+        },
+        {
+          "name": "_highLowPriceCache",
+          "type": "object",
+          "constructor": "Map"
+        },
+        {
+          "name": "_averagePriceCache",
+          "type": "object",
+          "constructor": "Map"
+        },
+        {
+          "name": "_prevClosePriceAxisView",
+          "type": "object",
+          "constructor": "fe"
+        },
+        {
+          "name": "_priceScaleAboutToBeChanged",
+          "type": "object",
+          "constructor": "n"
+        },
+        {
+          "name": "_onRestarted",
+          "type": "object",
+          "constructor": "n"
+        },
+        {
+          "name": "_onStatusChanged",
+          "type": "object",
+          "constructor": "n"
+        },
+        {
+          "name": "_tagsChanged",
+          "type": "object",
+          "constructor": "n"
+        },
+        {
+          "name": "_intervalChanged",
+          "type": "object",
+          "constructor": "n",
+          "keys": [
+            "fire",
+            "_listeners"
+          ]
+        },
+        {
+          "name": "_requestMoreDataAvailable",
+          "type": "boolean",
+          "constructor": "Boolean",
+          "value": true
+        },
+        {
+          "name": "_lineStyleLastPriceCirclePaneView",
+          "type": "object",
+          "constructor": "st"
+        },
+        {
+          "name": "_prevClosePriceLineView",
+          "type": "object",
+          "constructor": "ye"
+        },
+        {
+          "name": "_dataPoweredBy",
+          "type": "object",
+          "constructor": null,
+          "value": null
+        },
+        {
+          "name": "_symbolResolvingActive",
+          "type": "object",
+          "constructor": "o",
+          "keys": [
+            "_listeners",
+            "_value"
+          ]
+        },
+        {
+          "name": "_predictBars",
+          "type": "number",
+          "constructor": "Number",
+          "value": 0
+        },
+        {
+          "name": "_syncModel",
+          "type": "object",
+          "constructor": "Y"
+        },
+        {
+          "name": "_data",
+          "type": "object",
+          "constructor": null,
+          "value": null
+        },
+        {
+          "name": "_lastCompleteFlags",
+          "type": "object",
+          "constructor": null,
+          "value": null
+        },
+        {
+          "name": "_haStyle",
+          "type": "object",
+          "constructor": "Object"
+        },
+        {
+          "name": "_renkoStyle",
+          "type": "object",
+          "constructor": "Object"
+        },
+        {
+          "name": "_pbStyle",
+          "type": "object",
+          "constructor": "Object"
+        },
+        {
+          "name": "_kagiStyle",
+          "type": "object",
+          "constructor": "Object"
+        },
+        {
+          "name": "_pnfStyle",
+          "type": "object",
+          "constructor": "Object"
+        },
+        {
+          "name": "_rangeStyle",
+          "type": "object",
+          "constructor": "Object"
+        },
+        {
+          "name": "_volFootprintStyle",
+          "type": "object",
+          "constructor": "Object"
+        },
+        {
+          "name": "_barColorerCache",
+          "type": "object",
+          "constructor": "p",
+          "keys": [
+            "_backColorers",
+            "_series"
+          ]
+        },
+        {
+          "name": "_boxSizeValue",
+          "type": "object",
+          "constructor": "o"
+        },
+        {
+          "name": "_base",
+          "type": "number",
+          "constructor": "Number",
+          "value": 100
+        },
+        {
+          "name": "_pointValue",
+          "type": "number",
+          "constructor": "Number",
+          "value": 1
+        },
+        {
+          "name": "_formattingDeps",
+          "type": "object",
+          "constructor": "Object"
+        },
+        {
+          "name": "_formatter",
+          "type": "object",
+          "constructor": "Object"
+        },
+        {
+          "name": "_ignoreMinMoveFormatter",
+          "type": "object",
+          "constructor": "Object"
+        },
+        {
+          "name": "_ignoreMinMovePriceStep",
+          "type": "number",
+          "constructor": "Number",
+          "value": 0.01
+        },
+        {
+          "name": "_lastBarCloseTime",
+          "type": "object",
+          "constructor": null,
+          "value": null
+        },
+        {
+          "name": "_textSourceIsAlwaysTickerRestrictionEnabled",
+          "type": "boolean",
+          "constructor": "Boolean",
+          "value": false
+        },
+        {
+          "name": "_lastPriceAnimationActive",
+          "type": "boolean",
+          "constructor": "Boolean",
+          "value": false
+        },
+        {
+          "name": "_currentSession",
+          "type": "string",
+          "constructor": "String",
+          "value": "market"
+        },
+        {
+          "name": "_onStyleChanged",
+          "type": "object",
+          "constructor": "n"
+        },
+        {
+          "name": "_intervalObj",
+          "type": "object",
+          "constructor": "Object",
+          "keys": [
+            "resolutionString",
+            "interval"
+          ]
+        },
+        {
+          "name": "_obsoleteZOrder",
+          "type": "number",
+          "constructor": "Number",
+          "value": 0
+        },
+        {
+          "name": "_seriesErrorMessage",
+          "type": "object",
+          "constructor": null,
+          "value": null
+        },
+        {
+          "name": "_seriesAlwaysFalseHibernatedVW",
+          "type": "object",
+          "constructor": "o",
+          "keys": [
+            "_listeners",
+            "_value"
+          ]
+        },
+        {
+          "name": "_styleToRecover",
+          "type": "object",
+          "constructor": null,
+          "value": null
+        },
+        {
+          "name": "_precomputedBarStyles",
+          "type": "object",
+          "constructor": "WeakMap",
+          "keys": []
+        },
+        {
+          "name": "_doNotShowLastAvailableBar",
+          "type": "boolean",
+          "constructor": "Boolean",
+          "value": false
+        },
+        {
+          "name": "_gotoDateResultCleared",
+          "type": "boolean",
+          "constructor": "Boolean",
+          "value": false
+        },
+        {
+          "name": "_endOfDataPaneView",
+          "type": "object",
+          "constructor": null,
+          "value": null
+        },
+        {
+          "name": "_pendingTimeRange",
+          "type": "object",
+          "constructor": null,
+          "value": null
+        },
+        {
+          "name": "_replaySubscriber",
+          "type": "object",
+          "constructor": null,
+          "value": null
+        },
+        {
+          "name": "_symbolIntervalChanged",
+          "type": "object",
+          "constructor": "n",
+          "keys": [
+            "fire",
+            "_listeners"
+          ]
+        },
+        {
+          "name": "_isReplayResolutionAvailableForUser",
+          "type": "object",
+          "constructor": null,
+          "value": null
+        },
+        {
+          "name": "_onInReplayStateChanged",
+          "type": "object",
+          "constructor": "n"
+        },
+        {
+          "name": "_replayExitedDueUnsupportedInterval",
+          "type": "object",
+          "constructor": "n",
+          "keys": [
+            "fire",
+            "_listeners"
+          ]
+        },
+        {
+          "name": "_replayExitedDueUnavailableForUserInterval",
+          "type": "object",
+          "constructor": "n",
+          "keys": [
+            "fire",
+            "_listeners"
+          ]
+        },
+        {
+          "name": "_onTimeFrameApplied",
+          "type": "object",
+          "constructor": "n"
+        },
+        {
+          "name": "_loading",
+          "type": "boolean",
+          "constructor": "Boolean",
+          "value": false
+        },
+        {
+          "name": "_seriesLoaded",
+          "type": "boolean",
+          "constructor": "Boolean",
+          "value": true
+        },
+        {
+          "name": "_seriesCompleted",
+          "type": "boolean",
+          "constructor": "Boolean",
+          "value": true
+        },
+        {
+          "name": "_status",
+          "type": "number",
+          "constructor": "Number",
+          "value": 3
+        },
+        {
+          "name": "_prevRequestedInterval",
+          "type": "string",
+          "constructor": "String",
+          "value": "1"
+        },
+        {
+          "name": "_isActingAsSymbolSource",
+          "type": "object",
+          "constructor": "o",
+          "keys": [
+            "_listeners",
+            "_value",
+            "_readonlyInstance"
+          ]
+        },
+        {
+          "name": "_deferredDestroyed",
+          "type": "object",
+          "constructor": "Object"
+        },
+        {
+          "name": "_volumePointWeights",
+          "type": "object",
+          "constructor": null,
+          "value": null
+        },
+        {
+          "name": "_volFootprintStudy",
+          "type": "object",
+          "constructor": null,
+          "value": null
+        },
+        {
+          "name": "_updateTimeScaleTimePointWeights",
+          "type": "function",
+          "constructor": "Function",
+          "arguments": 0
+        },
+        {
+          "name": "_seriesSource",
+          "type": "object",
+          "constructor": "ft",
+          "keys": [
+            "_extSymbol",
+            "_lastResolvedSymbol",
+            "_createSeriesOverriddenParams",
+            "_instanceId",
+            "_symbolInstanceId",
+            "_resolution",
+            "_timeFrame",
+            "_data",
+            "_dataEvents",
+            "_status",
+            "_turnaroundCounter",
+            "_boundOnGatewayIsConnectedChanged",
+            "_ongoingDataUpdate",
+            "_gateway",
+            "_turnaroundPrefix",
+            "_createSeriesParams"
+          ]
+        },
+        {
+          "name": "_quotesProvider",
+          "type": "object",
+          "constructor": "o"
+        },
+        {
+          "name": "_properties",
+          "type": "object",
+          "constructor": "p"
+        },
+        {
+          "name": "_symbolTextSourceProxyProperty",
+          "type": "object",
+          "constructor": "a",
+          "keys": [
+            "_listeners",
+            "_muteChildChanges",
+            "_childs",
+            "_value"
+          ]
+        },
+        {
+          "name": "_options",
+          "type": "object",
+          "constructor": "Object"
+        },
+        {
+          "name": "_prevChartStyle",
+          "type": "number",
+          "constructor": "Number",
+          "value": 1
+        },
+        {
+          "name": "_priceAxisView",
+          "type": "object",
+          "constructor": "me"
+        },
+        {
+          "name": "_priceLinePriceAxisView",
+          "type": "object",
+          "constructor": "c"
+        },
+        {
+          "name": "_priceLineAxisViews",
+          "type": "object",
+          "constructor": "Array"
+        },
+        {
+          "name": "_priceAxisViews",
+          "type": "object",
+          "constructor": "Array"
+        },
+        {
+          "name": "_panePriceAxisView",
+          "type": "object",
+          "constructor": "n"
+        },
+        {
+          "name": "_historyPricePanePriceAxisView",
+          "type": "object",
+          "constructor": "n"
+        },
+        {
+          "name": "_projectionPriceAxisView",
+          "type": "object",
+          "constructor": "n"
+        },
+        {
+          "name": "_labelPaneViews",
+          "type": "object",
+          "constructor": "Array"
+        },
+        {
+          "name": "_highLowAvgPaneViews",
+          "type": "object",
+          "constructor": "Array"
+        },
+        {
+          "name": "_averagePaneViews",
+          "type": "object",
+          "constructor": "Array"
+        },
+        {
+          "name": "_dataWindowView",
+          "type": "object",
+          "constructor": "_",
+          "keys": [
+            "_items",
+            "_header",
+            "_title",
+            "_invalidated",
+            "_series",
+            "_model",
+            "_valuesProvider"
+          ]
+        },
+        {
+          "name": "_legendView",
+          "type": "object",
+          "constructor": "z"
+        },
+        {
+          "name": "_statusView",
+          "type": "object",
+          "constructor": "B"
+        },
+        {
+          "name": "_marketStatusModel",
+          "type": "object",
+          "constructor": "l"
+        },
+        {
+          "name": "_dataUpdatedModeModel",
+          "type": "object",
+          "constructor": null,
+          "value": null
+        },
+        {
+          "name": "_dataProblemModel",
+          "type": "object",
+          "constructor": "se",
+          "keys": [
+            "_mainDataProblem",
+            "_supportPortalProblems",
+            "_allDataProblems",
+            "_pushStreamHandler",
+            "_destroyed",
+            "_quotesProvider",
+            "_resetSubscription"
+          ]
+        },
+        {
+          "name": "_isDWMProperty",
+          "type": "object",
+          "constructor": "a"
+        },
+        {
+          "name": "_barFunction",
+          "type": "function",
+          "constructor": "Function",
+          "arguments": 2
+        },
+        {
+          "name": "_countdownUpdateTimer",
+          "type": "number",
+          "constructor": "Number",
+          "value": 98
+        }
+      ],
+      "prototypeMethods": [
+        {
+          "name": "constructor",
+          "arguments": 4
+        },
+        {
+          "name": "_onChangeShowCountdown",
+          "arguments": 1
+        },
+        {
+          "name": "_createIsDWMProperty",
+          "arguments": 0
+        },
+        {
+          "name": "isDWMProperty",
+          "arguments": 0
+        },
+        {
+          "name": "_onSeriesTimeFrame",
+          "arguments": 5
+        },
+        {
+          "name": "purgeSymbolInfo",
+          "arguments": 0
+        },
+        {
+          "name": "bindStyleChange",
+          "arguments": 0
+        },
+        {
+          "name": "bindJapChartsInputs",
+          "arguments": 0
+        },
+        {
+          "name": "createDividendsAdjustmentProperty",
+          "arguments": 0
+        },
+        {
+          "name": "onInputChanged",
+          "arguments": 0
+        },
+        {
+          "name": "getStyleShortName",
+          "arguments": 0
+        },
+        {
+          "name": "getStyleProperties",
+          "arguments": 0
+        },
+        {
+          "name": "getInputsProperties",
+          "arguments": 0
+        },
+        {
+          "name": "getInputsInfoProperties",
+          "arguments": 0
+        },
+        {
+          "name": "getSourceIcon",
+          "arguments": 0
+        },
+        {
+          "name": "constructor",
+          "arguments": 4
+        },
+        {
+          "name": "setId",
+          "arguments": 1
+        },
+        {
+          "name": "supportsPressedChunks",
+          "arguments": 0
+        },
+        {
+          "name": "pressedChunks",
+          "arguments": 2
+        },
+        {
+          "name": "seriesErrorMessage",
+          "arguments": 0
+        },
+        {
+          "name": "destroy",
+          "arguments": 0
+        },
+        {
+          "name": "isActingAsSymbolSource",
+          "arguments": 0
+        },
+        {
+          "name": "barColorer",
+          "arguments": 0
+        },
+        {
+          "name": "createPaneView",
+          "arguments": 0
+        },
+        {
+          "name": "properties",
+          "arguments": 0
+        },
+        {
+          "name": "zorder",
+          "arguments": 0
+        },
+        {
+          "name": "quotesProvider",
+          "arguments": 0
+        },
+        {
+          "name": "currentSession",
+          "arguments": 0
+        },
+        {
+          "name": "syncModel",
+          "arguments": 0
+        },
+        {
+          "name": "labelPaneViews",
+          "arguments": 0
+        },
+        {
+          "name": "topPaneViews",
+          "arguments": 0
+        },
+        {
+          "name": "paneViews",
+          "arguments": 1
+        },
+        {
+          "name": "priceAxisViews",
+          "arguments": 2
+        },
+        {
+          "name": "clearHighLowPriceCache",
+          "arguments": 0
+        },
+        {
+          "name": "clearAveragePriceCache",
+          "arguments": 0
+        },
+        {
+          "name": "priceScale",
+          "arguments": 0
+        },
+        {
+          "name": "setPriceScale",
+          "arguments": 1
+        },
+        {
+          "name": "priceScaleChanged",
+          "arguments": 0
+        },
+        {
+          "name": "priceScaleAboutToBeChanged",
+          "arguments": 0
+        },
+        {
+          "name": "applyPreferences",
+          "arguments": 1
+        },
+        {
+          "name": "disconnect",
+          "arguments": 0
+        },
+        {
+          "name": "isStarted",
+          "arguments": 0
+        },
+        {
+          "name": "isCompleted",
+          "arguments": 0
+        },
+        {
+          "name": "restart",
+          "arguments": 0
+        },
+        {
+          "name": "isSymbolInvalid",
+          "arguments": 0
+        },
+        {
+          "name": "getSymbolString",
+          "arguments": 0
+        },
+        {
+          "name": "invalidateBarStylesCache",
+          "arguments": 1
+        },
+        {
+          "name": "isLoading",
+          "arguments": 0
+        },
+        {
+          "name": "isFailed",
+          "arguments": 0
+        },
+        {
+          "name": "isStatusError",
+          "arguments": 0
+        },
+        {
+          "name": "actualSymbol",
+          "arguments": 0
+        },
+        {
+          "name": "proSymbol",
+          "arguments": 0
+        },
+        {
+          "name": "onStyleChanged",
+          "arguments": 0
+        },
+        {
+          "name": "style",
+          "arguments": 0
+        },
+        {
+          "name": "setStyle",
+          "arguments": 1
+        },
+        {
+          "name": "isRangeBasedStyle",
+          "arguments": 0
+        },
+        {
+          "name": "symbolSameAsCurrent",
+          "arguments": 1
+        },
+        {
+          "name": "symbolSameAsResolved",
+          "arguments": 1
+        },
+        {
+          "name": "status",
+          "arguments": 0
+        },
+        {
+          "name": "symbol",
+          "arguments": 0
+        },
+        {
+          "name": "symbolChanged",
+          "arguments": 0
+        },
+        {
+          "name": "seriesSource",
+          "arguments": 0
+        },
+        {
+          "name": "symbolInfo",
+          "arguments": 0
+        },
+        {
+          "name": "symbolResolved",
+          "arguments": 0
+        },
+        {
+          "name": "symbolResolvingActive",
+          "arguments": 0
+        },
+        {
+          "name": "symbolHibernated",
+          "arguments": 0
+        },
+        {
+          "name": "getSymbolName",
+          "arguments": 0
+        },
+        {
+          "name": "firstValue",
+          "arguments": 0
+        },
+        {
+          "name": "firstBar",
+          "arguments": 0
+        },
+        {
+          "name": "formatter",
+          "arguments": 0
+        },
+        {
+          "name": "priceStep",
+          "arguments": 0
+        },
+        {
+          "name": "bars",
+          "arguments": 0
+        },
+        {
+          "name": "nsBars",
+          "arguments": 0
+        },
+        {
+          "name": "interval",
+          "arguments": 0
+        },
+        {
+          "name": "setInterval",
+          "arguments": 1
+        },
+        {
+          "name": "intervalObj",
+          "arguments": 0
+        },
+        {
+          "name": "prevClose",
+          "arguments": 0
+        },
+        {
+          "name": "priceLineColor",
+          "arguments": 1
+        },
+        {
+          "name": "hasClosePrice",
+          "arguments": 0
+        },
+        {
+          "name": "lastValueData",
+          "arguments": 3
+        },
+        {
+          "name": "isDWM",
+          "arguments": 0
+        },
+        {
+          "name": "data",
+          "arguments": 0
+        },
+        {
+          "name": "clearData",
+          "arguments": 0
+        },
+        {
+          "name": "nearestData",
+          "arguments": 2
+        },
+        {
+          "name": "nearestIndex",
+          "arguments": 2
+        },
+        {
+          "name": "nearestValue",
+          "arguments": 3
+        },
+        {
+          "name": "onSymbolIntervalChanged",
+          "arguments": 0
+        },
+        {
+          "name": "onIntervalChanged",
+          "arguments": 0
+        },
+        {
+          "name": "onStatusChanged",
+          "arguments": 0
+        },
+        {
+          "name": "onRestarted",
+          "arguments": 0
+        },
+        {
+          "name": "fixLastBar",
+          "arguments": 1
+        },
+        {
+          "name": "requestMoreData",
+          "arguments": 1
+        },
+        {
+          "name": "isNeedRestart",
+          "arguments": 1
+        },
+        {
+          "name": "isStyleSupported",
+          "arguments": 1
+        },
+        {
+          "name": "isStyleSupportedForReplay",
+          "arguments": 1
+        },
+        {
+          "name": "priceRange",
+          "arguments": 2
+        },
+        {
+          "name": "autoScaleInfo",
+          "arguments": 2
+        },
+        {
+          "name": "onChartStyleChanged",
+          "arguments": 0
+        },
+        {
+          "name": "setChartStyleWithIntervalIfNeeded",
+          "arguments": 2
+        },
+        {
+          "name": "idForAlert",
+          "arguments": 0
+        },
+        {
+          "name": "hasStateForAlert",
+          "arguments": 0
+        },
+        {
+          "name": "stateForAlert",
+          "arguments": 0
+        },
+        {
+          "name": "styleStudyInfos",
+          "arguments": 0
+        },
+        {
+          "name": "dataEvents",
+          "arguments": 0
+        },
+        {
+          "name": "isSpread",
+          "arguments": 0
+        },
+        {
+          "name": "isYield",
+          "arguments": 0
+        },
+        {
+          "name": "dividendsAdjustmentProperty",
+          "arguments": 0
+        },
+        {
+          "name": "symbolTextSourceProxyProperty",
+          "arguments": 0
+        },
+        {
+          "name": "setTextSourceIsAlwaysTickerRestrictionEnabled",
+          "arguments": 1
+        },
+        {
+          "name": "isPrePostMarketPricesAvailableProperty",
+          "arguments": 0
+        },
+        {
+          "name": "isSettlementAsCloseForbiddenProperty",
+          "arguments": 0
+        },
+        {
+          "name": "isBackAdjustmentForbiddenProperty",
+          "arguments": 0
+        },
+        {
+          "name": "invalidateBarColorerCache",
+          "arguments": 0
+        },
+        {
+          "name": "replayExitedDueUnsupportedInterval",
+          "arguments": 0
+        },
+        {
+          "name": "replayExitedDueUnavailableForUserInterval",
+          "arguments": 0
+        },
+        {
+          "name": "onTimeFrameApplied",
+          "arguments": 0
+        },
+        {
+          "name": "onInReplayStateChanged",
+          "arguments": 0
+        },
+        {
+          "name": "dataWindowView",
+          "arguments": 0
+        },
+        {
+          "name": "statusView",
+          "arguments": 0
+        },
+        {
+          "name": "legendView",
+          "arguments": 0
+        },
+        {
+          "name": "marketStatusModel",
+          "arguments": 0
+        },
+        {
+          "name": "isMainSeries",
+          "arguments": 0
+        },
+        {
+          "name": "dataUpdatedModeModel",
+          "arguments": 0
+        },
+        {
+          "name": "dataProblemModel",
+          "arguments": 0
+        },
+        {
+          "name": "setDefaultTimeframe",
+          "arguments": 1
+        },
+        {
+          "name": "loadDataTo",
+          "arguments": 1
+        },
+        {
+          "name": "isInReplay",
+          "arguments": 0
+        },
+        {
+          "name": "quotes",
+          "arguments": 0
+        },
+        {
+          "name": "base",
+          "arguments": 0
+        },
+        {
+          "name": "pointValue",
+          "arguments": 0
+        },
+        {
+          "name": "barCloseTime",
+          "arguments": 0
+        },
+        {
+          "name": "priceSource",
+          "arguments": 0
+        },
+        {
+          "name": "updateAllViews",
+          "arguments": 1
+        },
+        {
+          "name": "styleStudyInfo",
+          "arguments": 1
+        },
+        {
+          "name": "barFunction",
+          "arguments": 0
+        },
+        {
+          "name": "precomputedBarStyle",
+          "arguments": 1
+        },
+        {
+          "name": "setPrecomputedBarStyle",
+          "arguments": 2
+        },
+        {
+          "name": "symbolParams",
+          "arguments": 0
+        },
+        {
+          "name": "compareSymbolParams",
+          "arguments": 1
+        },
+        {
+          "name": "setSymbolParams",
+          "arguments": 1
+        },
+        {
+          "name": "setSymbol",
+          "arguments": 1
+        },
+        {
+          "name": "currency",
+          "arguments": 0
+        },
+        {
+          "name": "setCurrency",
+          "arguments": 1
+        },
+        {
+          "name": "isConvertedToOtherCurrency",
+          "arguments": 0
+        },
+        {
+          "name": "unit",
+          "arguments": 0
+        },
+        {
+          "name": "setUnit",
+          "arguments": 1
+        },
+        {
+          "name": "measureUnitId",
+          "arguments": 0
+        },
+        {
+          "name": "isConvertedToOtherUnit",
+          "arguments": 0
+        },
+        {
+          "name": "valueAt",
+          "arguments": 2
+        },
+        {
+          "name": "symbolSource",
+          "arguments": 0
+        },
+        {
+          "name": "barsProvider",
+          "arguments": 0
+        },
+        {
+          "name": "title",
+          "arguments": 1
+        },
+        {
+          "name": "name",
+          "arguments": 0
+        },
+        {
+          "name": "symbolTitle",
+          "arguments": 3
+        },
+        {
+          "name": "setObsoleteZOrder",
+          "arguments": 1
+        },
+        {
+          "name": "obsoleteZOrder",
+          "arguments": 0
+        },
+        {
+          "name": "valuesProvider",
+          "arguments": 0
+        },
+        {
+          "name": "statusProvider",
+          "arguments": 1
+        },
+        {
+          "name": "moveItem",
+          "arguments": 3
+        },
+        {
+          "name": "rerequestData",
+          "arguments": 0
+        },
+        {
+          "name": "switchToReplay",
+          "arguments": 2
+        },
+        {
+          "name": "switchToRealtime",
+          "arguments": 0
+        },
+        {
+          "name": "requestMoreDataAvailable",
+          "arguments": 0
+        },
+        {
+          "name": "seriesLoaded",
+          "arguments": 0
+        },
+        {
+          "name": "endOfData",
+          "arguments": 0
+        },
+        {
+          "name": "endOfDataType",
+          "arguments": 0
+        },
+        {
+          "name": "dataPoweredBy",
+          "arguments": 0
+        },
+        {
+          "name": "boxSizeValue",
+          "arguments": 0
+        },
+        {
+          "name": "isUserDeletable",
+          "arguments": 0
+        },
+        {
+          "name": "changeTimeFrame",
+          "arguments": 0
+        },
+        {
+          "name": "onTagsChanged",
+          "arguments": 0
+        },
+        {
+          "name": "state",
+          "arguments": 1
+        },
+        {
+          "name": "restoreState",
+          "arguments": 2
+        },
+        {
+          "name": "restoreData",
+          "arguments": 6
+        },
+        {
+          "name": "setGotoDateResult",
+          "arguments": 2
+        },
+        {
+          "name": "clearGotoDateResult",
+          "arguments": 0
+        },
+        {
+          "name": "doNotShowLastAvailableBar",
+          "arguments": 1
+        },
+        {
+          "name": "dataUpdated",
+          "arguments": 0
+        },
+        {
+          "name": "moveData",
+          "arguments": 1
+        },
+        {
+          "name": "getSupportedResolution",
+          "arguments": 1
+        },
+        {
+          "name": "seriesCreated",
+          "arguments": 0
+        },
+        {
+          "name": "_updateBarFunction",
+          "arguments": 0
+        },
+        {
+          "name": "_setProperties",
+          "arguments": 1
+        },
+        {
+          "name": "_onSymbolResolved",
+          "arguments": 1
+        },
+        {
+          "name": "_onSymbolError",
+          "arguments": 1
+        },
+        {
+          "name": "_sendTelemetryCounter",
+          "arguments": 2
+        },
+        {
+          "name": "_getTelemetryAdditionalData",
+          "arguments": 2
+        },
+        {
+          "name": "_onSeriesError",
+          "arguments": 1
+        },
+        {
+          "name": "_onSeriesLoading",
+          "arguments": 1
+        },
+        {
+          "name": "_onDataUpdated",
+          "arguments": 4
+        },
+        {
+          "name": "_setStatus",
+          "arguments": 1
+        },
+        {
+          "name": "_onBarReceived",
+          "arguments": 1
+        },
+        {
+          "name": "_recreateFormatter",
+          "arguments": 0
+        },
+        {
+          "name": "_recreatePriceStep",
+          "arguments": 0
+        },
+        {
+          "name": "_recreatePriceFormattingDependencies",
+          "arguments": 0
+        },
+        {
+          "name": "_onQuotesUpdate",
+          "arguments": 2
+        },
+        {
+          "name": "_updateIsPrePostMarketPricesForbiddenProperty",
+          "arguments": 0
+        },
+        {
+          "name": "_updateSettlementAsCloseForbiddenProperty",
+          "arguments": 0
+        },
+        {
+          "name": "_updateBackAdjustmentForbiddenProperty",
+          "arguments": 0
+        },
+        {
+          "name": "_removeReplaySubscriber",
+          "arguments": 0
+        },
+        {
+          "name": "_getSymbolForApi",
+          "arguments": 0
+        },
+        {
+          "name": "_getSymbolObject",
+          "arguments": 1
+        },
+        {
+          "name": "_getExtendedSymbolObject",
+          "arguments": 1
+        },
+        {
+          "name": "_checkChartStyle",
+          "arguments": 0
+        },
+        {
+          "name": "_updateSymbolInfo",
+          "arguments": 1
+        },
+        {
+          "name": "_createHighLowAvgViews",
+          "arguments": 0
+        },
+        {
+          "name": "_createAverageViews",
+          "arguments": 0
+        },
+        {
+          "name": "_getHighLowPrice",
+          "arguments": 1
+        },
+        {
+          "name": "_getAveragePrice",
+          "arguments": 1
+        },
+        {
+          "name": "_onSeriesCompleted",
+          "arguments": 1
+        },
+        {
+          "name": "_notifyIntervalChanged",
+          "arguments": 1
+        },
+        {
+          "name": "_onCurrencyChanged",
+          "arguments": 0
+        },
+        {
+          "name": "_onUnitChanged",
+          "arguments": 0
+        },
+        {
+          "name": "_applySymbolParamsChanges",
+          "arguments": 1
+        },
+        {
+          "name": "_isIntervalSupported",
+          "arguments": 1
+        },
+        {
+          "name": "_onBeforeModifySeries",
+          "arguments": 2
+        },
+        {
+          "name": "_getResolvingSymbolObject",
+          "arguments": 0
+        },
+        {
+          "name": "_updateLastPriceAnimationActive",
+          "arguments": 0
+        },
+        {
+          "name": "_onPropertiesChanged",
+          "arguments": 1
+        },
+        {
+          "name": "_recalcSymbolTextSourceProxyProperty",
+          "arguments": 0
+        },
+        {
+          "name": "_clearStylePlot",
+          "arguments": 2
+        },
+        {
+          "name": "_visibleBarsCount",
+          "arguments": 0
+        },
+        {
+          "name": "_symbolForResolve",
+          "arguments": 0
+        },
+        {
+          "name": "_shouldDefineNumberOfBarsForModifySeries",
+          "arguments": 1
+        },
+        {
+          "name": "_syncFootprintStudy",
+          "arguments": 0
+        },
+        {
+          "name": "_onMinTickChanged",
+          "arguments": 0
+        },
+        {
+          "name": "constructor",
+          "arguments": 2
+        },
+        {
+          "name": "base",
+          "arguments": 0
+        },
+        {
+          "name": "model",
+          "arguments": 0
+        },
+        {
+          "name": "currencyChanged",
+          "arguments": 0
+        },
+        {
+          "name": "isCurrencySource",
+          "arguments": 0
+        },
+        {
+          "name": "isDisplayedInLegend",
+          "arguments": 0
+        },
+        {
+          "name": "unitChanged",
+          "arguments": 0
+        },
+        {
+          "name": "isUnitSource",
+          "arguments": 0
+        },
+        {
+          "name": "priceRange",
+          "arguments": 2
+        },
+        {
+          "name": "isDraggable",
+          "arguments": 0
+        },
+        {
+          "name": "priceLineColor",
+          "arguments": 1
+        },
+        {
+          "name": "formatterChanged",
+          "arguments": 0
+        },
+        {
+          "name": "priceStep",
+          "arguments": 1
+        },
+        {
+          "name": "priceStepChanged",
+          "arguments": 0
+        },
+        {
+          "name": "isIncludedInAutoScale",
+          "arguments": 0
+        },
+        {
+          "name": "correctScaleMargins",
+          "arguments": 1
+        },
+        {
+          "name": "priceRangeReady",
+          "arguments": 0
+        },
+        {
+          "name": "priceRangeReadyChanged",
+          "arguments": 0
+        },
+        {
+          "name": "disablePriceRangeReady",
+          "arguments": 0
+        },
+        {
+          "name": "statusView",
+          "arguments": 0
+        },
+        {
+          "name": "legendView",
+          "arguments": 0
+        },
+        {
+          "name": "marketStatusModel",
+          "arguments": 0
+        },
+        {
+          "name": "dataUpdatedModeModel",
+          "arguments": 0
+        },
+        {
+          "name": "dataProblemModel",
+          "arguments": 0
+        },
+        {
+          "name": "_enablePriceRangeReady",
+          "arguments": 0
+        },
+        {
+          "name": "_onSourceCurrencyChanged",
+          "arguments": 0
+        },
+        {
+          "name": "_onSourceUnitChanged",
+          "arguments": 0
+        },
+        {
+          "name": "_onSourcePriceRangeReadyChanged",
+          "arguments": 1
+        },
+        {
+          "name": "constructor",
+          "arguments": 1
+        },
+        {
+          "name": "destroy",
+          "arguments": 0
+        },
+        {
+          "name": "id",
+          "arguments": 0
+        },
+        {
+          "name": "instanceId",
+          "arguments": 0
+        },
+        {
+          "name": "preferNoScale",
+          "arguments": 0
+        },
+        {
+          "name": "setId",
+          "arguments": 1
+        },
+        {
+          "name": "zorder",
+          "arguments": 0
+        },
+        {
+          "name": "setZorder",
+          "arguments": 1
+        },
+        {
+          "name": "preferredZOrder",
+          "arguments": 0
+        },
+        {
+          "name": "isSpeciallyZOrderedSource",
+          "arguments": 0
+        },
+        {
+          "name": "title",
+          "arguments": 1
+        },
+        {
+          "name": "priceScale",
+          "arguments": 0
+        },
+        {
+          "name": "setPriceScale",
+          "arguments": 1
+        },
+        {
+          "name": "priceScaleChanged",
+          "arguments": 0
+        },
+        {
+          "name": "ownerSource",
+          "arguments": 0
+        },
+        {
+          "name": "setOwnerSource",
+          "arguments": 1
+        },
+        {
+          "name": "ownerSourceChanged",
+          "arguments": 0
+        },
+        {
+          "name": "zOrderChanged",
+          "arguments": 0
+        },
+        {
+          "name": "isSavedInChart",
+          "arguments": 1
+        },
+        {
+          "name": "isSavedInStudyTemplates",
+          "arguments": 0
+        },
+        {
+          "name": "isRemovedByStudyTemplates",
+          "arguments": 0
+        },
+        {
+          "name": "hasContextMenu",
+          "arguments": 0
+        },
+        {
+          "name": "showInObjectTree",
+          "arguments": 0
+        },
+        {
+          "name": "setUserEditEnabled",
+          "arguments": 1
+        },
+        {
+          "name": "userEditEnabled",
+          "arguments": 0
+        },
+        {
+          "name": "canBeHidden",
+          "arguments": 0
+        },
+        {
+          "name": "isUserDeletable",
+          "arguments": 0
+        },
+        {
+          "name": "properties",
+          "arguments": 0
+        },
+        {
+          "name": "isVisible",
+          "arguments": 0
+        },
+        {
+          "name": "dataWindowView",
+          "arguments": 0
+        },
+        {
+          "name": "priceAxisViews",
+          "arguments": 2
+        },
+        {
+          "name": "timeAxisViews",
+          "arguments": 0
+        },
+        {
+          "name": "updateAllViews",
+          "arguments": 1
+        },
+        {
+          "name": "paneViews",
+          "arguments": 1
+        },
+        {
+          "name": "labelPaneViews",
+          "arguments": 0
+        },
+        {
+          "name": "isFailed",
+          "arguments": 0
+        },
+        {
+          "name": "isLoading",
+          "arguments": 0
+        },
+        {
+          "name": "isPhantom",
+          "arguments": 0
+        },
+        {
+          "name": "isChildStudy",
+          "arguments": 0
+        },
+        {
+          "name": "hasChildren",
+          "arguments": 0
+        },
+        {
+          "name": "canHaveChildren",
+          "arguments": 0
+        },
+        {
+          "name": "onClickOutside",
+          "arguments": 1
+        },
+        {
+          "name": "getSourceIcon",
+          "arguments": 0
+        },
+        {
+          "name": "state",
+          "arguments": 1
+        },
+        {
+          "name": "doesMovingAffectsUndo",
+          "arguments": 0
+        },
+        {
+          "name": "isMultiPaneAvailable",
+          "arguments": 0
+        },
+        {
+          "name": "isMultiPaneEnabled",
+          "arguments": 0
+        },
+        {
+          "name": "copiable",
+          "arguments": 0
+        },
+        {
+          "name": "cloneable",
+          "arguments": 0
+        },
+        {
+          "name": "movable",
+          "arguments": 0
+        },
+        {
+          "name": "isIncludedInAutoScale",
+          "arguments": 0
+        },
+        {
+          "name": "isHoveredEnabled",
+          "arguments": 0
+        },
+        {
+          "name": "showOnTopOnHovering",
+          "arguments": 0
+        },
+        {
+          "name": "isSelectionEnabled",
+          "arguments": 0
+        },
+        {
+          "name": "setSelectionEnabled",
+          "arguments": 1
+        },
+        {
+          "name": "firstValue",
+          "arguments": 0
+        },
+        {
+          "name": "priceRange",
+          "arguments": 2
+        },
+        {
+          "name": "autoScaleInfo",
+          "arguments": 2
+        },
+        {
+          "name": "stateForAlert",
+          "arguments": 0
+        },
+        {
+          "name": "canHasAlert",
+          "arguments": 0
+        },
+        {
+          "name": "hasAlert",
+          "arguments": 0
+        },
+        {
+          "name": "alertCreationAvailable",
+          "arguments": 0
+        },
+        {
+          "name": "hasStateForAlert",
+          "arguments": 0
+        },
+        {
+          "name": "idForAlert",
+          "arguments": 0
+        },
+        {
+          "name": "_getAlertCreationAvailable",
+          "arguments": 0
+        },
+        {
+          "name": "_updateAlertCreationAvailable",
+          "arguments": 0
+        }
+      ]
+    },
+    "symbol": "XAUTUSDT",
+    "resolution": "1",
+    "dataSource": {
+      "sourceFound": true,
+      "sourceKeys": [
+        "_extSymbol",
+        "_lastResolvedSymbol",
+        "_createSeriesOverriddenParams",
+        "_instanceId",
+        "_symbolInstanceId",
+        "_resolution",
+        "_timeFrame",
+        "_data",
+        "_dataEvents",
+        "_status",
+        "_turnaroundCounter",
+        "_boundOnGatewayIsConnectedChanged",
+        "_ongoingDataUpdate",
+        "_gateway",
+        "_turnaroundPrefix",
+        "_createSeriesParams"
+      ],
+      "eventsFound": true,
+      "eventKeys": [
+        "_created",
+        "_modified",
+        "_loading",
+        "_completed",
+        "_error",
+        "_symbolError",
+        "_symbolResolved",
+        "_seriesError",
+        "_symbolNotPermitted",
+        "_symbolInvalid",
+        "_symbolGroupNotPermitted",
+        "_chartTypeNotPermitted",
+        "_intradaySpreadNotPermitted",
+        "_intradayExchangeNotPermitted",
+        "_customIntervalNotPermitted",
+        "_secondsIntervalNotPermitted",
+        "_ticksIntervalNotPermitted",
+        "_tickMarksRangeChanged",
+        "_barReceived",
+        "_seriesTimeFrame",
+        "_dataUpdated"
+      ],
+      "fireDataUpdatedFound": true
+    }
+  },
+  "data": {
+    "found": true,
+    "getterFound": true,
+    "constructor": "p",
+    "details": {
+      "path": "mainSeries.data()",
+      "constructor": "p",
+      "ownPropertyCount": 5,
+      "properties": [
+        {
+          "name": "_pressedChunks",
+          "type": "object",
+          "constructor": "Object"
+        },
+        {
+          "name": "m_bars",
+          "type": "object",
+          "constructor": "u",
+          "keys": [
+            "_items",
+            "_start",
+            "_end",
+            "_shareRead",
+            "_minMaxCache",
+            "_rowSearchCacheByIndex",
+            "_rowSearchCacheByIndexWithoutEmptyValues",
+            "_rowSearchCacheByTime",
+            "_rowSearchCacheByTimeWithoutEmptyValues",
+            "_plotFunctions",
+            "_emptyValuePredicate"
+          ]
+        },
+        {
+          "name": "m_nsBars",
+          "type": "object",
+          "constructor": "u",
+          "keys": [
+            "_items",
+            "_start",
+            "_end",
+            "_shareRead",
+            "_minMaxCache",
+            "_rowSearchCacheByIndex",
+            "_rowSearchCacheByIndexWithoutEmptyValues",
+            "_rowSearchCacheByTime",
+            "_rowSearchCacheByTimeWithoutEmptyValues",
+            "_plotFunctions",
+            "_emptyValuePredicate"
+          ]
+        },
+        {
+          "name": "lastProjectionPrice",
+          "type": "undefined",
+          "constructor": null
+        },
+        {
+          "name": "reversalAmount",
+          "type": "undefined",
+          "constructor": null
+        }
+      ],
+      "prototypeMethods": [
+        {
+          "name": "constructor",
+          "arguments": 0
+        },
+        {
+          "name": "bars",
+          "arguments": 0
+        },
+        {
+          "name": "nsBars",
+          "arguments": 0
+        },
+        {
+          "name": "pressedChunks",
+          "arguments": 2
+        },
+        {
+          "name": "mergeRegularBars",
+          "arguments": 1
+        },
+        {
+          "name": "size",
+          "arguments": 0
+        },
+        {
+          "name": "each",
+          "arguments": 1
+        },
+        {
+          "name": "clear",
+          "arguments": 0
+        },
+        {
+          "name": "isEmpty",
+          "arguments": 0
+        },
+        {
+          "name": "first",
+          "arguments": 0
+        },
+        {
+          "name": "last",
+          "arguments": 0
+        },
+        {
+          "name": "search",
+          "arguments": 3
+        },
+        {
+          "name": "valueAt",
+          "arguments": 1
+        },
+        {
+          "name": "plotValueToTimePointIndex",
+          "arguments": 3
+        },
+        {
+          "name": "moveData",
+          "arguments": 1
+        },
+        {
+          "name": "_rebuildPressedChunks",
+          "arguments": 1
+        },
+        {
+          "name": "_updateLatestChunks",
+          "arguments": 0
+        },
+        {
+          "name": "_clearPressedChunks",
+          "arguments": 0
+        },
+        {
+          "name": "constructor",
+          "arguments": 1
+        },
+        {
+          "name": "__defineGetter__",
+          "arguments": 2
+        },
+        {
+          "name": "__defineSetter__",
+          "arguments": 2
+        },
+        {
+          "name": "hasOwnProperty",
+          "arguments": 1
+        },
+        {
+          "name": "__lookupGetter__",
+          "arguments": 1
+        },
+        {
+          "name": "__lookupSetter__",
+          "arguments": 1
+        },
+        {
+          "name": "isPrototypeOf",
+          "arguments": 1
+        },
+        {
+          "name": "propertyIsEnumerable",
+          "arguments": 1
+        },
+        {
+          "name": "toString",
+          "arguments": 0
+        },
+        {
+          "name": "valueOf",
+          "arguments": 0
+        },
+        {
+          "name": "toLocaleString",
+          "arguments": 0
+        }
+      ]
+    }
+  },
+  "bars": {
+    "found": true,
+    "getterFound": true,
+    "constructor": "u",
+    "hasItemsArray": true,
+    "count": 312,
+    "details": {
+      "path": "data.bars()",
+      "constructor": "u",
+      "ownPropertyCount": 11,
+      "properties": [
+        {
+          "name": "_items",
+          "type": "object",
+          "constructor": "Array"
+        },
+        {
+          "name": "_start",
+          "type": "number",
+          "constructor": "Number",
+          "value": 0
+        },
+        {
+          "name": "_end",
+          "type": "number",
+          "constructor": "Number",
+          "value": 312
+        },
+        {
+          "name": "_shareRead",
+          "type": "boolean",
+          "constructor": "Boolean",
+          "value": false
+        },
+        {
+          "name": "_minMaxCache",
+          "type": "object",
+          "constructor": "Map"
+        },
+        {
+          "name": "_rowSearchCacheByIndex",
+          "type": "object",
+          "constructor": "Map"
+        },
+        {
+          "name": "_rowSearchCacheByIndexWithoutEmptyValues",
+          "type": "object",
+          "constructor": "Map"
+        },
+        {
+          "name": "_rowSearchCacheByTime",
+          "type": "object",
+          "constructor": "Map"
+        },
+        {
+          "name": "_rowSearchCacheByTimeWithoutEmptyValues",
+          "type": "object",
+          "constructor": "Map"
+        },
+        {
+          "name": "_plotFunctions",
+          "type": "object",
+          "constructor": "Map",
+          "keys": []
+        },
+        {
+          "name": "_emptyValuePredicate",
+          "type": "function",
+          "constructor": "Function",
+          "arguments": 2
+        }
+      ],
+      "prototypeMethods": [
+        {
+          "name": "constructor",
+          "arguments": 0
+        },
+        {
+          "name": "clear",
+          "arguments": 0
+        },
+        {
+          "name": "first",
+          "arguments": 0
+        },
+        {
+          "name": "last",
+          "arguments": 0
+        },
+        {
+          "name": "firstIndex",
+          "arguments": 0
+        },
+        {
+          "name": "lastIndex",
+          "arguments": 0
+        },
+        {
+          "name": "size",
+          "arguments": 0
+        },
+        {
+          "name": "isEmpty",
+          "arguments": 0
+        },
+        {
+          "name": "contains",
+          "arguments": 1
+        },
+        {
+          "name": "valueAt",
+          "arguments": 1
+        },
+        {
+          "name": "add",
+          "arguments": 2
+        },
+        {
+          "name": "search",
+          "arguments": 1
+        },
+        {
+          "name": "searchByTime",
+          "arguments": 1
+        },
+        {
+          "name": "fold",
+          "arguments": 2
+        },
+        {
+          "name": "findFirst",
+          "arguments": 2
+        },
+        {
+          "name": "findLast",
+          "arguments": 2
+        },
+        {
+          "name": "each",
+          "arguments": 1
+        },
+        {
+          "name": "reduce",
+          "arguments": 2
+        },
+        {
+          "name": "range",
+          "arguments": 2
+        },
+        {
+          "name": "plottableRange",
+          "arguments": 1
+        },
+        {
+          "name": "rangeIterator",
+          "arguments": 2
+        },
+        {
+          "name": "fullRangeIterator",
+          "arguments": 0
+        },
+        {
+          "name": "minMaxOnRangeCached",
+          "arguments": 3
+        },
+        {
+          "name": "minMaxOnRange",
+          "arguments": 3
+        },
+        {
+          "name": "merge",
+          "arguments": 1
+        },
+        {
+          "name": "addTail",
+          "arguments": 1
+        },
+        {
+          "name": "move",
+          "arguments": 1
+        },
+        {
+          "name": "remove",
+          "arguments": 1
+        },
+        {
+          "name": "state",
+          "arguments": 0
+        },
+        {
+          "name": "restoreState",
+          "arguments": 1
+        },
+        {
+          "name": "_indexAt",
+          "arguments": 1
+        },
+        {
+          "name": "_valueAt",
+          "arguments": 1
+        },
+        {
+          "name": "_length",
+          "arguments": 0
+        },
+        {
+          "name": "_searchImpl",
+          "arguments": 6
+        },
+        {
+          "name": "_nonCachedSearch",
+          "arguments": 4
+        },
+        {
+          "name": "_nonEmptyNearestRight",
+          "arguments": 2
+        },
+        {
+          "name": "_nonEmptyNearestLeft",
+          "arguments": 2
+        },
+        {
+          "name": "_searchNearestLeft",
+          "arguments": 2
+        },
+        {
+          "name": "_searchNearestRight",
+          "arguments": 2
+        },
+        {
+          "name": "_bsearch",
+          "arguments": 2
+        },
+        {
+          "name": "_lowerbound",
+          "arguments": 2
+        },
+        {
+          "name": "_upperbound",
+          "arguments": 1
+        },
+        {
+          "name": "_plotMinMax",
+          "arguments": 3
+        },
+        {
+          "name": "_invalidateCacheForRow",
+          "arguments": 1
+        },
+        {
+          "name": "_prepend",
+          "arguments": 1
+        },
+        {
+          "name": "_append",
+          "arguments": 1
+        },
+        {
+          "name": "_updateLast",
+          "arguments": 1
+        },
+        {
+          "name": "_merge",
+          "arguments": 1
+        },
+        {
+          "name": "_minMaxOnRangeCachedImpl",
+          "arguments": 3
+        },
+        {
+          "name": "_minMaxOnRange",
+          "arguments": 3
+        },
+        {
+          "name": "_rangeIteratorImpl",
+          "arguments": 2
+        },
+        {
+          "name": "_invalidateSearchCaches",
+          "arguments": 0
+        },
+        {
+          "name": "constructor",
+          "arguments": 1
+        },
+        {
+          "name": "__defineGetter__",
+          "arguments": 2
+        },
+        {
+          "name": "__defineSetter__",
+          "arguments": 2
+        },
+        {
+          "name": "hasOwnProperty",
+          "arguments": 1
+        },
+        {
+          "name": "__lookupGetter__",
+          "arguments": 1
+        },
+        {
+          "name": "__lookupSetter__",
+          "arguments": 1
+        },
+        {
+          "name": "isPrototypeOf",
+          "arguments": 1
+        },
+        {
+          "name": "propertyIsEnumerable",
+          "arguments": 1
+        },
+        {
+          "name": "toString",
+          "arguments": 0
+        },
+        {
+          "name": "valueOf",
+          "arguments": 0
+        },
+        {
+          "name": "toLocaleString",
+          "arguments": 0
+        }
+      ]
+    },
+    "mergeMethodFound": true,
+    "mergeArgumentCount": 1
+  },
+  "builder": {
+    "found": false,
+    "constructor": null,
+    "keys": [],
+    "details": null,
+    "mergeDataFound": false,
+    "mergeDataArgumentCount": null,
+    "plotsFound": false,
+    "plotsSameAsBars": false,
+    "plotsKeys": [],
+    "stateKeys": []
+  },
+  "supportedResolutions": {
+    "found": true,
+    "values": [
+      "1",
+      "2",
+      "3",
+      "5",
+      "6",
+      "9",
+      "10",
+      "12",
+      "15",
+      "24",
+      "27",
+      "30",
+      "45",
+      "60",
+      "120",
+      "240",
+      "360",
+      "480",
+      "720",
+      "1D",
+      "3D",
+      "1W",
+      "1M"
+    ],
+    "count": 23
+  },
+  "externalDatafeed": {
+    "found": true,
+    "keys": [
+      "onReady",
+      "searchSymbols",
+      "getServerTime",
+      "getQuotes",
+      "subscribeQuotes",
+      "unsubscribeQuotes",
+      "resolveSymbol",
+      "getBars",
+      "subscribeBars",
+      "unsubscribeBars"
+    ],
+    "methods": [
+      {
+        "name": "onReady",
+        "found": true,
+        "argumentCount": 1,
+        "type": "Function"
+      },
+      {
+        "name": "resolveSymbol",
+        "found": true,
+        "argumentCount": 4,
+        "type": "AsyncFunction"
+      },
+      {
+        "name": "getBars",
+        "found": true,
+        "argumentCount": 5,
+        "type": "AsyncFunction"
+      },
+      {
+        "name": "subscribeBars",
+        "found": true,
+        "argumentCount": 5,
+        "type": "Function"
+      },
+      {
+        "name": "unsubscribeBars",
+        "found": true,
+        "argumentCount": 1,
+        "type": "Function"
+      },
+      {
+        "name": "getServerTime",
+        "found": true,
+        "argumentCount": 1,
+        "type": "Function"
+      },
+      {
+        "name": "searchSymbols",
+        "found": true,
+        "argumentCount": 1,
+        "type": "AsyncFunction"
+      }
+    ]
+  },
+  "candleSamples": [
+    {
+      "positionFromEnd": 304,
+      "index": 304,
+      "valueType": "Array",
+      "valueLength": 7,
+      "values": [
+        1794674940,
+        3828.18,
+        3829.07,
+        3828.18,
+        3829.07,
+        0.113,
+        null
+      ]
+    },
+    {
+      "positionFromEnd": 305,
+      "index": 305,
+      "valueType": "Array",
+      "valueLength": 7,
+      "values": [
+        1794675000,
+        3829.07,
+        3831.13,
+        3829.06,
+        3831.13,
+        0.339,
+        null
+      ]
+    },
+    {
+      "positionFromEnd": 306,
+      "index": 306,
+      "valueType": "Array",
+      "valueLength": 7,
+      "values": [
+        1794675060,
+        3831.13,
+        3831.43,
+        3831,
+        3831.43,
+        8.924,
+        null
+      ]
+    },
+    {
+      "positionFromEnd": 307,
+      "index": 307,
+      "valueType": "Array",
+      "valueLength": 7,
+      "values": [
+        1794675120,
+        3831.43,
+        3831.94,
+        3830.85,
+        3831.24,
+        0.466,
+        null
+      ]
+    },
+    {
+      "positionFromEnd": 308,
+      "index": 308,
+      "valueType": "Array",
+      "valueLength": 7,
+      "values": [
+        1794675180,
+        3831.24,
+        3832.69,
+        3831.24,
+        3831.89,
+        3.902,
+        null
+      ]
+    },
+    {
+      "positionFromEnd": 309,
+      "index": 309,
+      "valueType": "Array",
+      "valueLength": 7,
+      "values": [
+        1794675240,
+        3831.89,
+        3831.89,
+        3830.48,
+        3830.49,
+        5.526,
+        null
+      ]
+    },
+    {
+      "positionFromEnd": 310,
+      "index": 310,
+      "valueType": "Array",
+      "valueLength": 7,
+      "values": [
+        1794675300,
+        3830.49,
+        3830.49,
+        3830.48,
+        3830.49,
+        0.069,
+        null
+      ]
+    },
+    {
+      "positionFromEnd": 311,
+      "index": 311,
+      "valueType": "Array",
+      "valueLength": 7,
+      "values": [
+        1794675360,
+        3830.49,
+        3830.49,
+        3830.48,
+        3830.49,
+        0.033,
+        null
+      ]
+    }
+  ],
+  "result": {
+    "symbol": "XAUTUSDT",
+    "resolution": "1",
+    "dataFound": true,
+    "barsFound": true,
+    "barsCount": 312,
+    "builderFound": false,
+    "builderMergeDataFound": false,
+    "plotsSameAsBars": false,
+    "supportedResolutionCount": 23,
+    "externalDatafeedFound": true,
+    "sourceFound": true,
+    "dataEventsFound": true,
+    "alignmentStructureMatchesPrevious": false
+  },
+  "safety": {
+    "readOnly": true,
+    "noOrdersSent": true,
+    "noClicks": true,
+    "noCandleChanges": true,
+    "noDatafeedCalls": true,
+    "noMergeCalls": true,
+    "noNetworkRequests": true,
+    "noWebSocketsCreated": true,
+    "noStorageOrCookiesRead": true
+  },
+  "finishedAt": "2026-11-14T16:56:40.075Z"
+}
