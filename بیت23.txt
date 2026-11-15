@@ -1,0 +1,4532 @@
+{
+  "reportName": "BITUNIX_BATCH_PLATFORM_AUDIT",
+  "version": "1.0",
+  "startedAt": "2026-11-15T08:11:55.353Z",
+  "safety": {
+    "readOnly": true,
+    "tradingMethodsCalled": 0,
+    "eventBusPublished": 0,
+    "networkRequestsMade": 0,
+    "domControlsClicked": 0,
+    "keyboardEventsDispatched": 0,
+    "positionIdsExposed": false,
+    "exactQuantitiesExposed": false,
+    "balancesExposed": false,
+    "credentialsOrTokensRead": false,
+    "storageValuesRead": false
+  },
+  "page": {
+    "url": "https://www.bitunix.com/contract-trade/XAUTUSDT",
+    "title": "3,815.44 | XAUTUSDT Futures Exchange - Crypto Futures | Bitunix",
+    "readyState": "complete",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1707,
+      "height": 781,
+      "devicePixelRatio": 1.125
+    }
+  },
+  "frames": [
+    {
+      "frame": "top",
+      "accessible": true,
+      "url": "https://www.bitunix.com/contract-trade/XAUTUSDT",
+      "title": "3,815.44 | XAUTUSDT Futures Exchange - Crypto Futures | Bitunix",
+      "iframeCount": 3
+    },
+    {
+      "frame": "top > iframe[0]",
+      "accessible": true,
+      "url": "https://www.bitunix.comhttps://www.bitunix.com/[id]",
+      "title": "",
+      "iframeCount": 0
+    },
+    {
+      "frame": "top > iframe[1]",
+      "accessible": true,
+      "url": "nullblank",
+      "title": "",
+      "iframeCount": 0
+    },
+    {
+      "frame": "top > iframe[2]",
+      "accessible": true,
+      "url": "nullblank",
+      "title": "Button to launch messaging window",
+      "iframeCount": 0
+    }
+  ],
+  "chartContexts": [
+    {
+      "frame": "top",
+      "hasBitunixTv": true,
+      "hasTvWidget": true,
+      "hasTradingHost": true,
+      "hasTrading": true,
+      "hasAdapter": true,
+      "hasBrokerConnection": true,
+      "hasEventBus": true,
+      "hasTradingViewApi": false,
+      "hasActiveChartWidget": false,
+      "hasChartWidget": false,
+      "hasChartModel": false,
+      "hasPositionService": true
+    },
+    {
+      "frame": "top > iframe[0]",
+      "hasBitunixTv": false,
+      "hasTvWidget": false,
+      "hasTradingHost": false,
+      "hasTrading": false,
+      "hasAdapter": false,
+      "hasBrokerConnection": false,
+      "hasEventBus": false,
+      "hasTradingViewApi": true,
+      "hasActiveChartWidget": false,
+      "hasChartWidget": false,
+      "hasChartModel": false,
+      "hasPositionService": false
+    },
+    {
+      "frame": "top > iframe[1]",
+      "hasBitunixTv": false,
+      "hasTvWidget": false,
+      "hasTradingHost": false,
+      "hasTrading": false,
+      "hasAdapter": false,
+      "hasBrokerConnection": false,
+      "hasEventBus": false,
+      "hasTradingViewApi": false,
+      "hasActiveChartWidget": false,
+      "hasChartWidget": false,
+      "hasChartModel": false,
+      "hasPositionService": false
+    },
+    {
+      "frame": "top > iframe[2]",
+      "hasBitunixTv": false,
+      "hasTvWidget": false,
+      "hasTradingHost": false,
+      "hasTrading": false,
+      "hasAdapter": false,
+      "hasBrokerConnection": false,
+      "hasEventBus": false,
+      "hasTradingViewApi": false,
+      "hasActiveChartWidget": false,
+      "hasChartWidget": false,
+      "hasChartModel": false,
+      "hasPositionService": false
+    }
+  ],
+  "chartObjects": [
+    {
+      "frame": "top",
+      "name": "bitunixTv",
+      "present": true,
+      "type": "Object",
+      "ownKeyCount": 5,
+      "keys": [
+        "eventBus",
+        "transform",
+        "onRequest",
+        "get",
+        "tvWidget"
+      ],
+      "methods": [
+        "onRequest",
+        "get",
+        "constructor",
+        "__defineGetter__",
+        "__defineSetter__",
+        "hasOwnProperty",
+        "__lookupGetter__",
+        "__lookupSetter__",
+        "isPrototypeOf",
+        "propertyIsEnumerable",
+        "toString",
+        "valueOf",
+        "toLocaleString"
+      ],
+      "relevantMethods": []
+    },
+    {
+      "frame": "top",
+      "name": "tvWidget",
+      "present": true,
+      "type": "Vb",
+      "ownKeyCount": 20,
+      "keys": [
+        "_id",
+        "_ready",
+        "_readyHandlers",
+        "_onWindowResize",
+        "_options",
+        "_iFrame",
+        "_innerWindowLoaded",
+        "onDlay",
+        "listenerGuids",
+        "ticks",
+        "resetCacheFn",
+        "barDelay",
+        "lastBarTime",
+        "host",
+        "_callbackMap",
+        "historyOrderMarksCache",
+        "barDelayVisibilityHandler",
+        "barDelayInterval",
+        "getPriceAxis",
+        "kline_delay"
+      ],
+      "methods": [
+        "_onWindowResize",
+        "onDlay",
+        "barDelayVisibilityHandler",
+        "getPriceAxis",
+        "constructor",
+        "setDebugMode",
+        "onChartReady",
+        "headerReady",
+        "onGrayedObjectClicked",
+        "onShortcut",
+        "subscribe",
+        "unsubscribe",
+        "chart",
+        "getLanguage",
+        "setSymbol",
+        "remove",
+        "closePopupsAndDialogs",
+        "selectLineTool",
+        "selectedLineTool",
+        "save",
+        "load",
+        "getSavedCharts",
+        "loadChartFromServer",
+        "saveChartToServer",
+        "removeChartFromServer",
+        "onContextMenu",
+        "createButton",
+        "createDropdown",
+        "showNoticeDialog",
+        "showConfirmDialog",
+        "showLoadChartDialog",
+        "showSaveAsChartDialog",
+        "symbolInterval",
+        "mainSeriesPriceFormatter",
+        "getIntervals",
+        "getStudiesList",
+        "getStudyInputs",
+        "getStudyStyles",
+        "addCustomCSSFile",
+        "applyOverrides",
+        "applyStudiesOverrides",
+        "watchList",
+        "news",
+        "widgetbar",
+        "activeChart",
+        "activeChartIndex",
+        "setActiveChart",
+        "chartsCount",
+        "layout",
+        "setLayout",
+        "layoutName",
+        "changeTheme",
+        "getTheme",
+        "takeScreenshot",
+        "lockAllDrawingTools",
+        "hideAllDrawingTools",
+        "drawOnAllCharts",
+        "magnetEnabled",
+        "magnetMode",
+        "undoRedoState",
+        "setIntervalLinkingEnabled",
+        "setDateRangeLinkingEnabled",
+        "setTimeFrame",
+        "symbolSync",
+        "intervalSync",
+        "crosshairSync",
+        "timeSync",
+        "dateRangeSync",
+        "setFeatureEnabled",
+        "getAllFeatures",
+        "clearUndoHistory",
+        "undo",
+        "redo",
+        "startFullscreen",
+        "exitFullscreen",
+        "takeClientScreenshot",
+        "navigationButtonsVisibility",
+        "paneButtonsVisibility",
+        "dateFormat",
+        "timeHoursFormat",
+        "currencyAndUnitVisibility",
+        "supportedChartTypes",
+        "watermark",
+        "customSymbolStatus",
+        "setCSSCustomProperty",
+        "getCSSCustomPropertyValue",
+        "linking",
+        "_innerAPI",
+        "_innerWindow",
+        "_doWhenInnerWindowLoaded"
+      ],
+      "relevantMethods": [
+        "barDelayVisibilityHandler",
+        "getPriceAxis",
+        "onChartReady",
+        "onShortcut",
+        "subscribe",
+        "unsubscribe",
+        "chart",
+        "setSymbol",
+        "closePopupsAndDialogs",
+        "getSavedCharts",
+        "loadChartFromServer",
+        "saveChartToServer",
+        "removeChartFromServer",
+        "showLoadChartDialog",
+        "showSaveAsChartDialog",
+        "symbolInterval",
+        "mainSeriesPriceFormatter",
+        "getIntervals",
+        "getStudyInputs",
+        "getStudyStyles",
+        "widgetbar",
+        "activeChart",
+        "activeChartIndex",
+        "setActiveChart",
+        "chartsCount",
+        "drawOnAllCharts",
+        "setIntervalLinkingEnabled",
+        "setTimeFrame",
+        "symbolSync",
+        "intervalSync",
+        "timeSync",
+        "clearUndoHistory",
+        "timeHoursFormat",
+        "supportedChartTypes",
+        "customSymbolStatus"
+      ]
+    },
+    {
+      "frame": "top",
+      "name": "tradingHost",
+      "present": true,
+      "type": "Se",
+      "ownKeyCount": 15,
+      "keys": [
+        "_setDefaultDropdownActionsBound",
+        "_qtyChangedSubscriptions",
+        "serverLogger",
+        "orderPartialUpdate",
+        "positionPartialUpdate",
+        "individualPositionPartialUpdate",
+        "createMapperAsync",
+        "createMapperSync",
+        "_trading",
+        "_metainfo",
+        "_serverLogger",
+        "_defaultDropdownActions",
+        "_credentialsStorage",
+        "_buttonDropdownActions",
+        "_adapter"
+      ],
+      "methods": [
+        "_setDefaultDropdownActionsBound",
+        "serverLogger",
+        "orderPartialUpdate",
+        "positionPartialUpdate",
+        "individualPositionPartialUpdate",
+        "createMapperAsync",
+        "createMapperSync",
+        "constructor",
+        "createPLEmitter",
+        "getLogger",
+        "translate",
+        "setBrokerConnectionAdapter",
+        "patchConfig",
+        "showOrderDialog",
+        "showPositionBracketsDialog",
+        "showCancelOrderDialog",
+        "showCancelMultipleOrdersDialog",
+        "showCancelBracketsDialog",
+        "showCancelMultipleBracketsDialog",
+        "showReversePositionDialog",
+        "showMessageDialog",
+        "showConfirmDialog",
+        "showSimpleConfirmDialog",
+        "showSimpleConfirmDialogAndRespectAbort",
+        "setDurations",
+        "setSymbolSearchId",
+        "activateBottomWidget",
+        "bottomWidgetMode",
+        "trackEvent",
+        "defaultFormatter",
+        "numericFormatter",
+        "quantityFormatter",
+        "selectBroker",
+        "showTradingProperties",
+        "getSymbolTypespecs",
+        "getSymbolType",
+        "getSymbolMinTick",
+        "silentOrdersPlacement",
+        "sellBuyButtonsVisibility",
+        "domPanelVisibility",
+        "orderPanelVisibility",
+        "showPricesWithZeroVolume",
+        "showNotification",
+        "connectionStatusUpdate",
+        "orderUpdate",
+        "positionUpdate",
+        "individualPositionUpdate",
+        "executionUpdate",
+        "currentAccountUpdate",
+        "realtimeUpdate",
+        "domUpdate",
+        "pipValueUpdate",
+        "tradePLUpdate",
+        "positionEstLiqPriceUpdate",
+        "setQty",
+        "getQty",
+        "subscribeSuggestedQtyChange",
+        "unsubscribeSuggestedQtyChange",
+        "plUpdate",
+        "individualPositionPLUpdate",
+        "equityUpdate",
+        "marginAvailableUpdate",
+        "cryptoBalanceUpdate",
+        "setButtonDropdownActions",
+        "buttonDropdownActions",
+        "defaultContextMenuActions",
+        "defaultDropdownMenuActions",
+        "convertTimezone",
+        "language",
+        "getUserSpecificHash",
+        "activateFXCMCFD",
+        "isFractional",
+        "_makeServerLoggerWithFilledInfo",
+        "_makeServerLoggerEventAdditionalInfo",
+        "_setDefaultDropdownActions",
+        "__defineGetter__",
+        "__defineSetter__",
+        "hasOwnProperty",
+        "__lookupGetter__",
+        "__lookupSetter__",
+        "isPrototypeOf",
+        "propertyIsEnumerable",
+        "toString",
+        "valueOf",
+        "toLocaleString"
+      ],
+      "relevantMethods": [
+        "orderPartialUpdate",
+        "positionPartialUpdate",
+        "individualPositionPartialUpdate",
+        "showOrderDialog",
+        "showPositionBracketsDialog",
+        "showCancelOrderDialog",
+        "showCancelMultipleOrdersDialog",
+        "showReversePositionDialog",
+        "setSymbolSearchId",
+        "getSymbolTypespecs",
+        "getSymbolType",
+        "getSymbolMinTick",
+        "silentOrdersPlacement",
+        "orderPanelVisibility",
+        "showPricesWithZeroVolume",
+        "orderUpdate",
+        "positionUpdate",
+        "individualPositionUpdate",
+        "realtimeUpdate",
+        "tradePLUpdate",
+        "positionEstLiqPriceUpdate",
+        "subscribeSuggestedQtyChange",
+        "unsubscribeSuggestedQtyChange",
+        "individualPositionPLUpdate",
+        "convertTimezone"
+      ]
+    },
+    {
+      "frame": "top",
+      "name": "trading",
+      "present": true,
+      "type": "Qi",
+      "ownKeyCount": 81,
+      "keys": [
+        "accountType",
+        "onBrokerChange",
+        "onBrokerLoading",
+        "onConnectionStatusChange",
+        "onNewNotification",
+        "onNeedSelectBroker",
+        "onNotificationsChanged",
+        "showTradedSources",
+        "showSellBuyButtons",
+        "noConfirmEnabled",
+        "showOnlyRejectionNotifications",
+        "showPricesWithZeroVolume",
+        "showSpread",
+        "orderExecutedSoundParams",
+        "_activeBroker",
+        "_orderViewController",
+        "_orderControllerPromise",
+        "_brokerCommandsUI",
+        "_showPricesWithZeroVolume",
+        "_showSpread",
+        "_closePositionDialogVisibility",
+        "_orderDialogVisibility",
+        "_loginDialogVisibility",
+        "_tradingPanelPopupVisibility",
+        "_tradingSettingsStorage",
+        "_offlineListener",
+        "_onlineListener",
+        "_notifications",
+        "_account",
+        "_domPanelVisibility",
+        "_orderPanelVisibility",
+        "_pipValueType$",
+        "_switchingBroker",
+        "_isReconnectNeeded",
+        "_accountVerificationPromise",
+        "_chartWidgetCollection",
+        "_tradedItemsChartCollectionFacadePromise",
+        "_tradeNowBrokerId",
+        "getBrokerTradingSettingsStorage",
+        "trackEvent",
+        "showErrorNotification",
+        "setDOMPanelVisibility",
+        "setOrderPanelVisibility",
+        "getTradeNowBrokerId",
+        "clearTradeNowBrokerId",
+        "toggleTradingPanelVisibility",
+        "_handleVisibilityChange",
+        "_tryReconnectLastBroker",
+        "_onCurrentAccountUpdate",
+        "_onFullScreenDialogOpen",
+        "_setPipValueType",
+        "_trackNonTradableSymbol",
+        "_onBrokerChanged",
+        "_tradeNow",
+        "_updateTradingPanelVisibility",
+        "_toggleTradingPanelPage",
+        "_onLinkingSymbolChange",
+        "_linking",
+        "_abortController",
+        "_selectBrokerInternal",
+        "_showSellBuyButtonsKey",
+        "_resizerBridge",
+        "_realtimeProvider",
+        "_positionService",
+        "_ordersService",
+        "_tradingStat",
+        "_serverLogger",
+        "_tradedContextLinking",
+        "tradingPanelPopup",
+        "tradingPanel",
+        "_qtySuggester",
+        "_qtySuggesterWithOrderSizeCalculatorResetting",
+        "_orderPanelHeaderState",
+        "closePositionDialogVisibility",
+        "orderDialogVisibility",
+        "loginDialogVisibility",
+        "possibleFullScreenDialogsVisibility",
+        "_guiAccessor",
+        "_hotkeys",
+        "_linkingSubscription",
+        "_closePositionDialogVisibilitySubscription"
+      ],
+      "methods": [
+        "_offlineListener",
+        "_onlineListener",
+        "getBrokerTradingSettingsStorage",
+        "trackEvent",
+        "showErrorNotification",
+        "setDOMPanelVisibility",
+        "setOrderPanelVisibility",
+        "getTradeNowBrokerId",
+        "clearTradeNowBrokerId",
+        "toggleTradingPanelVisibility",
+        "_handleVisibilityChange",
+        "_tryReconnectLastBroker",
+        "_onCurrentAccountUpdate",
+        "_onFullScreenDialogOpen",
+        "_setPipValueType",
+        "_trackNonTradableSymbol",
+        "_onBrokerChanged",
+        "_tradeNow",
+        "_updateTradingPanelVisibility",
+        "_toggleTradingPanelPage",
+        "_onLinkingSymbolChange",
+        "_selectBrokerInternal",
+        "constructor",
+        "setChartWidgetCollection",
+        "showPricesWith",
+        "domPanelVisibility",
+        "orderPanelVisibility",
+        "realtimeProvider",
+        "toggleTradingPanelPopup",
+        "toggleTradingWidget",
+        "toggleMinimizeBottomWidgetBar",
+        "bottomWidgetBarMode",
+        "tradingWizard",
+        "showTradingProperties",
+        "linking",
+        "brokersMetainfo",
+        "brokersList",
+        "brokersPlans",
+        "activeBroker",
+        "brokerCommandsUI",
+        "selectBroker",
+        "pickDefaultBroker",
+        "makeNewOrderContextMenuAction",
+        "defaultContextMenuActions",
+        "defaultDropdownMenuActions",
+        "chartContextMenuActions",
+        "connectStatus",
+        "bindShortcuts",
+        "formatter",
+        "showSuccessNotification",
+        "getNotifications",
+        "orderViewController",
+        "tradingStat",
+        "verifyBrokerLiveAccount",
+        "pipValueType",
+        "tradedItemsChartCollectionFacade",
+        "checkRealtimeDataPermissions",
+        "removeRealtimeDataPermissions",
+        "makeActualSymbolObservable",
+        "getActualSymbol",
+        "getQtySuggester",
+        "_getInstantTradingEventLabel",
+        "_getOrderViewController",
+        "_selectBroker",
+        "_destroyContinuousFrontContractTrading",
+        "_initContinuousFrontContractTrading",
+        "_makeTradingPanelTabsConfig",
+        "_makeBrokerDependantWarningMessageObservable",
+        "_initBroker",
+        "_showBrokerSideMaintenanceWarning",
+        "_makeDialogVisibilityHandler",
+        "_gui",
+        "_addNotificationRow",
+        "_offlineHandler",
+        "_onlineHandler",
+        "_showNotification",
+        "_showReviewDialogIfNeeded",
+        "_connectionListener",
+        "_selectLastBroker",
+        "_updateOrderPanelSpinnerState",
+        "_updateConnectionStatus",
+        "_checkOrRemoveRealtimeDataIfNeeded",
+        "_verifyLiveAccount",
+        "_save",
+        "_loadState",
+        "_makeShowSellBuyButtonsKey",
+        "_log",
+        "_makeSureCanTrade",
+        "_checkAndPlaceOrder",
+        "_checkAndOpenOrderDialog"
+      ],
+      "relevantMethods": [
+        "setOrderPanelVisibility",
+        "getTradeNowBrokerId",
+        "clearTradeNowBrokerId",
+        "_trackNonTradableSymbol",
+        "_tradeNow",
+        "_onLinkingSymbolChange",
+        "setChartWidgetCollection",
+        "showPricesWith",
+        "orderPanelVisibility",
+        "realtimeProvider",
+        "toggleMinimizeBottomWidgetBar",
+        "bottomWidgetBarMode",
+        "makeNewOrderContextMenuAction",
+        "chartContextMenuActions",
+        "bindShortcuts",
+        "orderViewController",
+        "tradedItemsChartCollectionFacade",
+        "checkRealtimeDataPermissions",
+        "removeRealtimeDataPermissions",
+        "makeActualSymbolObservable",
+        "getActualSymbol",
+        "_getOrderViewController",
+        "_updateOrderPanelSpinnerState",
+        "_checkOrRemoveRealtimeDataIfNeeded",
+        "_makeSureCanTrade",
+        "_checkAndPlaceOrder",
+        "_checkAndOpenOrderDialog"
+      ]
+    },
+    {
+      "frame": "top",
+      "name": "adapter",
+      "present": true,
+      "type": "ae",
+      "ownKeyCount": 38,
+      "keys": [
+        "connectionStatusUpdate",
+        "executionUpdate",
+        "tradingOperationFinished",
+        "currentAccountUpdate",
+        "_brokerPlan",
+        "_subscriptions",
+        "_lastFireResult",
+        "_fakeDOMSubscriptions",
+        "_formattersCache",
+        "_spreadFormattersCache",
+        "_quantityFormattersCache",
+        "_individualPositionsCache",
+        "_fakePositionUpdateDelegate",
+        "_realtimeSubscriptionState",
+        "_loggedInManually",
+        "_pendingSubscriptions",
+        "_sessionId",
+        "createAccount",
+        "accountSettingsInfo",
+        "resetAccount",
+        "changeAccountSettings",
+        "deleteAccount",
+        "leverageInfo",
+        "setLeverage",
+        "previewLeverage",
+        "maintenanceStatus",
+        "_handleStatusChange",
+        "config",
+        "_brokerMetainfo",
+        "_brokerConnection",
+        "_host",
+        "_tradingStat",
+        "_getTradingSettingsStorage",
+        "_brokerLogger",
+        "_positionsCache",
+        "_ordersCache",
+        "_originalDOMSubscriptionMethods",
+        "_brokerRealtimeAdapter"
+      ],
+      "methods": [
+        "createAccount",
+        "accountSettingsInfo",
+        "resetAccount",
+        "changeAccountSettings",
+        "deleteAccount",
+        "leverageInfo",
+        "setLeverage",
+        "previewLeverage",
+        "maintenanceStatus",
+        "_handleStatusChange",
+        "_getTradingSettingsStorage",
+        "constructor",
+        "tryRestoreSession",
+        "onOrderUpdate",
+        "onOrderPartialUpdate",
+        "onPositionUpdate",
+        "onPositionPartialUpdate",
+        "onIndividualPositionUpdate",
+        "onIndividualPositionPartialUpdate",
+        "onCurrentAccountChanged",
+        "patchConfig",
+        "getOrderDialogOptions",
+        "getPositionDialogOptions",
+        "getSymbolSpecificTradingOptions",
+        "getValidationRules",
+        "chartContextMenuActions",
+        "buttonDropdownActions",
+        "connectionStatus",
+        "isConnected",
+        "signIn",
+        "loggedInManually",
+        "disconnect",
+        "currentAccount",
+        "currentAccountType",
+        "checkUserHasLiveAccount",
+        "metainfo",
+        "brokerPlan",
+        "bro",
+        "fireSubscription",
+        "positions",
+        "disconnectWarningMessage",
+        "connectWarningMessage",
+        "individualPositions",
+        "positionById",
+        "individualPositionById",
+        "orders",
+        "ordersHistory",
+        "executions",
+        "allExecutions",
+        "orderById",
+        "accountManagerInfo",
+        "isTradable",
+        "formatter",
+        "spreadFormatter",
+        "quantityFormatter",
+        "createInitialPreOrder",
+        "createPlaceOrderContext",
+        "createEditOrderContext",
+        "placeOrder",
+        "previewOrder",
+        "modifyOrder",
+        "cancelOrder",
+        "cancelOrders",
+        "closePosition",
+        "closeIndividualPosition",
+        "reversePosition",
+        "editPositionBrackets",
+        "editIndividualPositionBrackets",
+        "subscribeRealtime",
+        "quotesSnapshot",
+        "subscribeDOM",
+        "subscribePipValue",
+        "subscribePositionEstLiqPrice",
+        "subscribeTradePL",
+        "subscribePL",
+        "subscribeIndividualPositionPL",
+        "subscribeCryptoBalance",
+        "subscribeEquity",
+        "subscribeMarginAvailable",
+        "unsubscribeRealtime",
+        "unsubscribeDOM",
+        "unsubscribePipValue",
+        "unsubscribePL",
+        "unsubscribeIndividualPositionPL",
+        "unsubscribeCryptoBalance",
+        "unsubscribeEquity",
+        "unsubscribeMarginAvailable",
+        "accountMetainfo",
+        "accountsMetainfo",
+        "setCurrentAccount"
+      ],
+      "relevantMethods": [
+        "onOrderUpdate",
+        "onOrderPartialUpdate",
+        "onPositionUpdate",
+        "onPositionPartialUpdate",
+        "onIndividualPositionUpdate",
+        "onIndividualPositionPartialUpdate",
+        "getOrderDialogOptions",
+        "getPositionDialogOptions",
+        "getSymbolSpecificTradingOptions",
+        "chartContextMenuActions",
+        "positions",
+        "individualPositions",
+        "positionById",
+        "individualPositionById",
+        "orders",
+        "ordersHistory",
+        "orderById",
+        "createInitialPreOrder",
+        "createPlaceOrderContext",
+        "createEditOrderContext",
+        "placeOrder",
+        "previewOrder",
+        "modifyOrder",
+        "cancelOrder",
+        "cancelOrders",
+        "closePosition",
+        "closeIndividualPosition",
+        "reversePosition",
+        "editPositionBrackets",
+        "editIndividualPositionBrackets",
+        "subscribeRealtime",
+        "quotesSnapshot",
+        "subscribeDOM",
+        "subscribePipValue",
+        "subscribePositionEstLiqPrice",
+        "subscribeTradePL",
+        "subscribePL",
+        "subscribeIndividualPositionPL",
+        "subscribeCryptoBalance",
+        "subscribeEquity",
+        "subscribeMarginAvailable",
+        "unsubscribeRealtime",
+        "unsubscribeDOM",
+        "unsubscribePipValue",
+        "unsubscribePL",
+        "unsubscribeIndividualPositionPL",
+        "unsubscribeCryptoBalance",
+        "unsubscribeEquity",
+        "unsubscribeMarginAvailable"
+      ]
+    },
+    {
+      "frame": "top",
+      "name": "brokerConnection",
+      "present": true,
+      "type": "aF",
+      "ownKeyCount": 9,
+      "keys": [
+        "_positions",
+        "_orders",
+        "_baseConfig",
+        "_eventBus",
+        "_tvWidget",
+        "subscribeRealtime",
+        "unsubscribeRealtime",
+        "subscribeDOM",
+        "unsubscribeDOM"
+      ],
+      "methods": [
+        "subscribeRealtime",
+        "unsubscribeRealtime",
+        "subscribeDOM",
+        "unsubscribeDOM",
+        "constructor",
+        "chartContextMenuActions",
+        "connectionStatus",
+        "accountManagerInfo",
+        "orders",
+        "positions",
+        "reversePosition",
+        "symbolInfo",
+        "isTradable",
+        "accountsMetainfo",
+        "currentAccount",
+        "_subscribe",
+        "__defineGetter__",
+        "__defineSetter__",
+        "hasOwnProperty",
+        "__lookupGetter__",
+        "__lookupSetter__",
+        "isPrototypeOf",
+        "propertyIsEnumerable",
+        "toString",
+        "valueOf",
+        "toLocaleString"
+      ],
+      "relevantMethods": [
+        "subscribeRealtime",
+        "unsubscribeRealtime",
+        "subscribeDOM",
+        "unsubscribeDOM",
+        "chartContextMenuActions",
+        "orders",
+        "positions",
+        "reversePosition",
+        "symbolInfo",
+        "_subscribe"
+      ]
+    },
+    {
+      "frame": "top",
+      "name": "positionService",
+      "present": true,
+      "type": "h",
+      "ownKeyCount": 10,
+      "keys": [
+        "_activeBroker",
+        "_trading",
+        "_existingPositionIds",
+        "_positions",
+        "_positionUpdate",
+        "_positionsRemoved",
+        "_displayMode",
+        "_updatePositionPLHandler",
+        "_updatePositionEstLiqPriceHandler",
+        "_lastAccountId"
+      ],
+      "methods": [
+        "_updatePositionPLHandler",
+        "_updatePositionEstLiqPriceHandler",
+        "constructor",
+        "destroy",
+        "positions",
+        "find",
+        "realIdFromBroker",
+        "positionUpdate",
+        "positionsRemoved",
+        "isDisplayModeIndividualPositions",
+        "getCurrency",
+        "supportBrackets",
+        "supportReverse",
+        "stopService",
+        "startService",
+        "_clearPositions",
+        "_requestPositions",
+        "_addPosition",
+        "_updatePositionEstLiqPrice",
+        "_updatePositionPL",
+        "_getPositionData",
+        "_firePositionUpdate",
+        "_updateType",
+        "_logPositionUpdate",
+        "activeBroker",
+        "trading",
+        "_stopService",
+        "_startService",
+        "_onStatusChange",
+        "_onCurrentAccountUpdate",
+        "__defineGetter__",
+        "__defineSetter__",
+        "hasOwnProperty",
+        "__lookupGetter__",
+        "__lookupSetter__",
+        "isPrototypeOf",
+        "propertyIsEnumerable",
+        "toString",
+        "valueOf",
+        "toLocaleString"
+      ],
+      "relevantMethods": [
+        "_updatePositionPLHandler",
+        "_updatePositionEstLiqPriceHandler",
+        "positions",
+        "positionUpdate",
+        "positionsRemoved",
+        "isDisplayModeIndividualPositions",
+        "supportReverse",
+        "_clearPositions",
+        "_requestPositions",
+        "_addPosition",
+        "_updatePositionEstLiqPrice",
+        "_updatePositionPL",
+        "_getPositionData",
+        "_firePositionUpdate",
+        "_logPositionUpdate"
+      ]
+    },
+    {
+      "frame": "top > iframe[0]",
+      "name": "TradingViewApi",
+      "present": true,
+      "type": "Object",
+      "ownKeyCount": 1,
+      "keys": [
+        "linking"
+      ],
+      "methods": [
+        "constructor",
+        "__defineGetter__",
+        "__defineSetter__",
+        "hasOwnProperty",
+        "__lookupGetter__",
+        "__lookupSetter__",
+        "isPrototypeOf",
+        "propertyIsEnumerable",
+        "toString",
+        "valueOf",
+        "toLocaleString"
+      ],
+      "relevantMethods": []
+    }
+  ],
+  "chartMethods": [],
+  "resolutions": [
+    {
+      "frame": "top",
+      "candidates": [
+        "1m",
+        "5m",
+        "15m",
+        "30m",
+        "1H"
+      ],
+      "matchingElements": [
+        {
+          "label": "1m",
+          "tag": "BUTTON",
+          "role": null,
+          "disabled": false
+        },
+        {
+          "label": "5m",
+          "tag": "BUTTON",
+          "role": null,
+          "disabled": false
+        },
+        {
+          "label": "15m",
+          "tag": "BUTTON",
+          "role": null,
+          "disabled": false
+        },
+        {
+          "label": "30m",
+          "tag": "BUTTON",
+          "role": null,
+          "disabled": false
+        },
+        {
+          "label": "1H",
+          "tag": "BUTTON",
+          "role": null,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "frame": "top > iframe[0]",
+      "candidates": [
+        "1 minute | 1m",
+        "3 months in 1 hour intervals | 3m",
+        "1 month in 30 minutes intervals | 1m",
+        "1 day in 1 minute intervals | 1d"
+      ],
+      "matchingElements": [
+        {
+          "label": "1 minute | 1m",
+          "tag": "BUTTON",
+          "role": null,
+          "disabled": false
+        },
+        {
+          "label": "1 minute | 1m",
+          "tag": "BUTTON",
+          "role": null,
+          "disabled": false
+        },
+        {
+          "label": "1 minute | 1m",
+          "tag": "BUTTON",
+          "role": null,
+          "disabled": false
+        },
+        {
+          "label": "3 months in 1 hour intervals | 3m",
+          "tag": "BUTTON",
+          "role": null,
+          "disabled": false
+        },
+        {
+          "label": "1 month in 30 minutes intervals | 1m",
+          "tag": "BUTTON",
+          "role": null,
+          "disabled": false
+        },
+        {
+          "label": "1 day in 1 minute intervals | 1d",
+          "tag": "BUTTON",
+          "role": null,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "frame": "top > iframe[1]",
+      "candidates": [],
+      "matchingElements": []
+    },
+    {
+      "frame": "top > iframe[2]",
+      "candidates": [],
+      "matchingElements": []
+    }
+  ],
+  "datafeeds": [
+    {
+      "frame": "top",
+      "path": "tvWidget.options",
+      "name": "tvWidget.options",
+      "present": true,
+      "type": "Object",
+      "ownKeyCount": 10,
+      "keys": [
+        "onReady",
+        "searchSymbols",
+        "getServerTime",
+        "getQuotes",
+        "subscribeQuotes",
+        "unsubscribeQuotes",
+        "resolveSymbol",
+        "getBars",
+        "subscribeBars",
+        "unsubscribeBars"
+      ],
+      "methods": [
+        "onReady",
+        "searchSymbols",
+        "getServerTime",
+        "getQuotes",
+        "subscribeQuotes",
+        "unsubscribeQuotes",
+        "resolveSymbol",
+        "getBars",
+        "subscribeBars",
+        "unsubscribeBars",
+        "constructor",
+        "__defineGetter__",
+        "__defineSetter__",
+        "hasOwnProperty",
+        "__lookupGetter__",
+        "__lookupSetter__",
+        "isPrototypeOf",
+        "propertyIsEnumerable",
+        "toString",
+        "valueOf",
+        "toLocaleString"
+      ],
+      "relevantMethods": [
+        "searchSymbols",
+        "getServerTime",
+        "getQuotes",
+        "subscribeQuotes",
+        "unsubscribeQuotes",
+        "resolveSymbol",
+        "getBars",
+        "subscribeBars",
+        "unsubscribeBars"
+      ]
+    }
+  ],
+  "historyStructures": [
+    {
+      "frame": "top",
+      "root": "tvWidget",
+      "property": "barDelay",
+      "structure": {
+        "present": true,
+        "type": "Object",
+        "keys": [
+          "XAUTUSDT_1min_market"
+        ]
+      }
+    },
+    {
+      "frame": "top",
+      "root": "tvWidget",
+      "property": "lastBarTime",
+      "structure": {
+        "present": true,
+        "type": "Object",
+        "keys": [
+          "XAUTUSDT_1min_market"
+        ]
+      }
+    },
+    {
+      "frame": "top",
+      "root": "tvWidget",
+      "property": "historyOrderMarksCache",
+      "structure": {
+        "present": true,
+        "type": "Map",
+        "count": 4
+      }
+    },
+    {
+      "frame": "top",
+      "root": "tvWidget",
+      "property": "barDelayInterval",
+      "structure": {
+        "present": true,
+        "type": "Number",
+        "keys": []
+      }
+    }
+  ],
+  "studies": [],
+  "overlays": [
+    {
+      "frame": "top",
+      "canvases": [
+        {
+          "index": 0,
+          "width": 0,
+          "height": 0,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            "visible": false
+          }
+        },
+        {
+          "index": 1,
+          "width": 0,
+          "height": 0,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            "visible": false
+          }
+        },
+        {
+          "index": 2,
+          "width": 0,
+          "height": 0,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            "visible": false
+          }
+        },
+        {
+          "index": 3,
+          "width": 0,
+          "height": 0,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            "visible": false
+          }
+        },
+        {
+          "index": 4,
+          "width": 0,
+          "height": 0,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            "visible": false
+          }
+        },
+        {
+          "index": 5,
+          "width": 347,
+          "height": 536,
+          "rect": {
+            "x": 1081,
+            "y": 215,
+            "width": 309,
+            "height": 477,
+            "visible": true
+          }
+        },
+        {
+          "index": 6,
+          "width": 347,
+          "height": 536,
+          "rect": {
+            "x": 1081,
+            "y": 215,
+            "width": 309,
+            "height": 477,
+            "visible": true
+          }
+        }
+      ],
+      "timerElements": []
+    },
+    {
+      "frame": "top > iframe[0]",
+      "canvases": [
+        {
+          "index": 0,
+          "width": 1077,
+          "height": 412,
+          "rect": {
+            "x": 56,
+            "y": 0,
+            "width": 957,
+            "height": 366,
+            "visible": true
+          }
+        },
+        {
+          "index": 1,
+          "width": 1077,
+          "height": 412,
+          "rect": {
+            "x": 56,
+            "y": 0,
+            "width": 957,
+            "height": 366,
+            "visible": true
+          }
+        },
+        {
+          "index": 2,
+          "width": 72,
+          "height": 412,
+          "rect": {
+            "x": 1013,
+            "y": 0,
+            "width": 64,
+            "height": 366,
+            "visible": true
+          }
+        },
+        {
+          "index": 3,
+          "width": 72,
+          "height": 412,
+          "rect": {
+            "x": 1013,
+            "y": 0,
+            "width": 64,
+            "height": 366,
+            "visible": true
+          }
+        },
+        {
+          "index": 4,
+          "width": 1077,
+          "height": 68,
+          "rect": {
+            "x": 56,
+            "y": 367,
+            "width": 957,
+            "height": 60,
+            "visible": true
+          }
+        },
+        {
+          "index": 5,
+          "width": 1077,
+          "height": 68,
+          "rect": {
+            "x": 56,
+            "y": 367,
+            "width": 957,
+            "height": 60,
+            "visible": true
+          }
+        },
+        {
+          "index": 6,
+          "width": 72,
+          "height": 68,
+          "rect": {
+            "x": 1013,
+            "y": 367,
+            "width": 64,
+            "height": 60,
+            "visible": true
+          }
+        },
+        {
+          "index": 7,
+          "width": 72,
+          "height": 68,
+          "rect": {
+            "x": 1013,
+            "y": 367,
+            "width": 64,
+            "height": 60,
+            "visible": true
+          }
+        },
+        {
+          "index": 8,
+          "width": 1077,
+          "height": 32,
+          "rect": {
+            "x": 56,
+            "y": 428,
+            "width": 957,
+            "height": 28,
+            "visible": true
+          }
+        },
+        {
+          "index": 9,
+          "width": 1077,
+          "height": 32,
+          "rect": {
+            "x": 56,
+            "y": 428,
+            "width": 957,
+            "height": 28,
+            "visible": true
+          }
+        },
+        {
+          "index": 10,
+          "width": 72,
+          "height": 32,
+          "rect": {
+            "x": 1013,
+            "y": 428,
+            "width": 64,
+            "height": 28,
+            "visible": true
+          }
+        }
+      ],
+      "timerElements": []
+    },
+    {
+      "frame": "top > iframe[1]",
+      "canvases": [],
+      "timerElements": []
+    },
+    {
+      "frame": "top > iframe[2]",
+      "canvases": [],
+      "timerElements": []
+    }
+  ],
+  "chartDom": [
+    {
+      "frame": "top",
+      "relevantControls": [
+        {
+          "tag": "DIV",
+          "role": "button",
+          "label": "Close",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            "visible": false
+          }
+        },
+        {
+          "tag": "DIV",
+          "role": "button",
+          "label": "Markets",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            "visible": false
+          }
+        },
+        {
+          "tag": "BUTTON",
+          "role": null,
+          "label": "Candles",
+          "rect": {
+            "x": 212,
+            "y": 197,
+            "width": 24,
+            "height": 24,
+            "visible": true
+          }
+        },
+        {
+          "tag": "BUTTON",
+          "role": null,
+          "label": "Candles",
+          "rect": {
+            "x": 236,
+            "y": 197,
+            "width": 24,
+            "height": 24,
+            "visible": true
+          }
+        },
+        {
+          "tag": "BUTTON",
+          "role": null,
+          "label": "Technical Indicators",
+          "rect": {
+            "x": 281,
+            "y": 197,
+            "width": 24,
+            "height": 24,
+            "visible": true
+          }
+        },
+        {
+          "tag": "BUTTON",
+          "role": null,
+          "label": "Indicator Template",
+          "rect": {
+            "x": 313,
+            "y": 197,
+            "width": 24,
+            "height": 24,
+            "visible": true
+          }
+        },
+        {
+          "tag": "IFRAME",
+          "role": null,
+          "label": "Financial Chart",
+          "rect": {
+            "x": 0,
+            "y": 229,
+            "width": 1077,
+            "height": 494,
+            "visible": true
+          }
+        },
+        {
+          "tag": "BUTTON",
+          "role": null,
+          "label": "Open Long",
+          "rect": {
+            "x": 1408,
+            "y": 526,
+            "width": 130,
+            "height": 40,
+            "visible": true
+          }
+        },
+        {
+          "tag": "BUTTON",
+          "role": null,
+          "label": "Open Short",
+          "rect": {
+            "x": 1548,
+            "y": 526,
+            "width": 130,
+            "height": 40,
+            "visible": true
+          }
+        },
+        {
+          "tag": "DIV",
+          "role": "button",
+          "label": "Close",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            "visible": false
+          }
+        },
+        {
+          "tag": "DIV",
+          "role": "button",
+          "label": "Close",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            "visible": false
+          }
+        },
+        {
+          "tag": "DIV",
+          "role": "button",
+          "label": "Close",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            "visible": false
+          }
+        },
+        {
+          "tag": "DIV",
+          "role": "button",
+          "label": "Close",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            "visible": false
+          }
+        },
+        {
+          "tag": "BUTTON",
+          "role": null,
+          "label": "Close",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            "visible": false
+          }
+        },
+        {
+          "tag": "BUTTON",
+          "role": null,
+          "label": "Close",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            "visible": false
+          }
+        },
+        {
+          "tag": "DIV",
+          "role": "button",
+          "label": "Close",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            "visible": false
+          }
+        },
+        {
+          "tag": "DIV",
+          "role": "button",
+          "label": "Close",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            "visible": false
+          }
+        },
+        {
+          "tag": "BUTTON",
+          "role": null,
+          "label": "Open long 3,815.44",
+          "rect": {
+            "x": 623,
+            "y": 136,
+            "width": 88,
+            "height": 42,
+            "visible": true
+          }
+        },
+        {
+          "tag": "BUTTON",
+          "role": null,
+          "label": "Open short 3,815.45",
+          "rect": {
+            "x": 845,
+            "y": 136,
+            "width": 88,
+            "height": 42,
+            "visible": true
+          }
+        }
+      ]
+    },
+    {
+      "frame": "top",
+      "chartContainers": [
+        {
+          "tag": "DIV",
+          "id": "",
+          "className": "ae21b19e chart-header-container h60 w100% flex flex-row flex-nowrap items-center justify-between p-t9 p-b9 color-bg-2",
+          "rect": {
+            "x": 0,
+            "y": 50,
+            "width": 1701,
+            "height": 60,
+            "visible": true
+          }
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "className": "kline-title color-text-1 font-700 fs-18 leh-40 relative text-nowrap cursor-pointer flex items-center ps8",
+          "rect": {
+            "x": 52,
+            "y": 60,
+            "width": 213,
+            "height": 40,
+            "visible": true
+          }
+        },
+        {
+          "tag": "DIV",
+          "id": "ExchangeChart",
+          "className": "draggable-resizable",
+          "rect": {
+            "x": 0,
+            "y": 113,
+            "width": 1077,
+            "height": 610,
+            "visible": true
+          }
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "className": "arco-tabs arco-tabs-horizontal arco-tabs-top arco-tabs-type-line arco-tabs-size-medium arco-tabs-justify v_0-2-79-0 chart-tabs",
+          "rect": {
+            "x": 0,
+            "y": 149,
+            "width": 1077,
+            "height": 574,
+            "visible": true
+          }
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "className": "kline-business-wrap h-full w-full relative flex flex-col",
+          "rect": {
+            "x": 0,
+            "y": 189,
+            "width": 1077,
+            "height": 534,
+            "visible": true
+          }
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "className": "bx-chart-header-ultra-entry inline-flex shrink-0 items-center justify-center w-62px h-24px p-0 cursor-pointer appearance-none rounded-100px shadow-none outline-none focus:outline-n",
+          "rect": {
+            "x": 1005,
+            "y": 197,
+            "width": 62,
+            "height": 24,
+            "visible": true
+          }
+        },
+        {
+          "tag": "DIV",
+          "id": "futures-trade-tchart",
+          "className": "tv-container-chart",
+          "rect": {
+            "x": 0,
+            "y": 229,
+            "width": 1077,
+            "height": 494,
+            "visible": true
+          }
+        },
+        {
+          "tag": "IFRAME",
+          "id": "tradingview_f7b60",
+          "className": "",
+          "rect": {
+            "x": 0,
+            "y": 229,
+            "width": 1077,
+            "height": 494,
+            "visible": true
+          }
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "className": "bitunix-tabs-header-inner use-indicator",
+          "rect": {
+            "x": 1392,
+            "y": 114,
+            "width": 303,
+            "height": 38,
+            "visible": true
+          }
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "className": "bitunix-tab-item-wrapper bitunix-tab-item-active indicator-active",
+          "rect": {
+            "x": 1408,
+            "y": 114,
+            "width": 51,
+            "height": 38,
+            "visible": true
+          }
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "className": "bitunix-tab-item-wrapper indicator-active",
+          "rect": {
+            "x": 1491,
+            "y": 114,
+            "width": 27,
+            "height": 38,
+            "visible": true
+          }
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "className": "bitunix-tab-indicator ready",
+          "rect": {
+            "x": 1408,
+            "y": 149,
+            "width": 51,
+            "height": 2,
+            "visible": true
+          }
+        }
+      ]
+    },
+    {
+      "frame": "top > iframe[0]",
+      "relevantControls": [
+        {
+          "tag": "BUTTON",
+          "role": null,
+          "label": "1 minute | 1m",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 39,
+            "height": 38,
+            "visible": true
+          }
+        },
+        {
+          "tag": "BUTTON",
+          "role": null,
+          "label": "Candles",
+          "rect": {
+            "x": 48,
+            "y": 0,
+            "width": 38,
+            "height": 38,
+            "visible": true
+          }
+        },
+        {
+          "tag": "BUTTON",
+          "role": null,
+          "label": "Indicators & Strategies | Indicators",
+          "rect": {
+            "x": 95,
+            "y": 0,
+            "width": 107,
+            "height": 38,
+            "visible": true
+          }
+        },
+        {
+          "tag": "BUTTON",
+          "role": null,
+          "label": "Indicator Templates",
+          "rect": {
+            "x": 202,
+            "y": 0,
+            "width": 38,
+            "height": 38,
+            "visible": true
+          }
+        },
+        {
+          "tag": "BUTTON",
+          "role": null,
+          "label": "Chart settings",
+          "rect": {
+            "x": 457,
+            "y": 0,
+            "width": 38,
+            "height": 38,
+            "visible": true
+          }
+        },
+        {
+          "tag": "BUTTON",
+          "role": null,
+          "label": "1 minute | 1m",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 39,
+            "height": 38,
+            "visible": true
+          }
+        },
+        {
+          "tag": "BUTTON",
+          "role": null,
+          "label": "Candles",
+          "rect": {
+            "x": 48,
+            "y": 0,
+            "width": 38,
+            "height": 38,
+            "visible": true
+          }
+        },
+        {
+          "tag": "BUTTON",
+          "role": null,
+          "label": "Indicators & Strategies",
+          "rect": {
+            "x": 95,
+            "y": 0,
+            "width": 38,
+            "height": 38,
+            "visible": true
+          }
+        },
+        {
+          "tag": "BUTTON",
+          "role": null,
+          "label": "Indicator Templates",
+          "rect": {
+            "x": 133,
+            "y": 0,
+            "width": 38,
+            "height": 38,
+            "visible": true
+          }
+        },
+        {
+          "tag": "BUTTON",
+          "role": null,
+          "label": "Chart settings",
+          "rect": {
+            "x": 388,
+            "y": 0,
+            "width": 38,
+            "height": 38,
+            "visible": true
+          }
+        },
+        {
+          "tag": "BUTTON",
+          "role": null,
+          "label": "1 minute | 1m",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 39,
+            "height": 38,
+            "visible": true
+          }
+        },
+        {
+          "tag": "BUTTON",
+          "role": null,
+          "label": "Candles",
+          "rect": {
+            "x": 48,
+            "y": 0,
+            "width": 38,
+            "height": 38,
+            "visible": true
+          }
+        },
+        {
+          "tag": "BUTTON",
+          "role": null,
+          "label": "Indicators & Strategies | Indicators",
+          "rect": {
+            "x": 95,
+            "y": 0,
+            "width": 107,
+            "height": 38,
+            "visible": true
+          }
+        },
+        {
+          "tag": "BUTTON",
+          "role": null,
+          "label": "Indicator Templates",
+          "rect": {
+            "x": 202,
+            "y": 0,
+            "width": 38,
+            "height": 38,
+            "visible": true
+          }
+        },
+        {
+          "tag": "BUTTON",
+          "role": null,
+          "label": "Chart settings",
+          "rect": {
+            "x": 1001,
+            "y": 0,
+            "width": 38,
+            "height": 38,
+            "visible": true
+          }
+        },
+        {
+          "tag": "BUTTON",
+          "role": null,
+          "label": "Long Position",
+          "rect": {
+            "x": 0,
+            "y": 150,
+            "width": 52,
+            "height": 36,
+            "visible": true
+          }
+        },
+        {
+          "tag": "BUTTON",
+          "role": null,
+          "label": "Magnet Mode snaps drawings placed near price bars to the closest OHLC value",
+          "rect": {
+            "x": 0,
+            "y": 392,
+            "width": 52,
+            "height": 36,
+            "visible": true
+          }
+        },
+        {
+          "tag": "BUTTON",
+          "role": null,
+          "label": "5 years in 1 week intervals | 5y",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            "visible": false
+          }
+        },
+        {
+          "tag": "BUTTON",
+          "role": null,
+          "label": "1 year in 1 week intervals | 1y",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            "visible": false
+          }
+        },
+        {
+          "tag": "BUTTON",
+          "role": null,
+          "label": "6 months in 2 hours intervals | 6m",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            "visible": false
+          }
+        },
+        {
+          "tag": "BUTTON",
+          "role": null,
+          "label": "3 months in 1 hour intervals | 3m",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            "visible": false
+          }
+        },
+        {
+          "tag": "BUTTON",
+          "role": null,
+          "label": "1 month in 30 minutes intervals | 1m",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            "visible": false
+          }
+        },
+        {
+          "tag": "BUTTON",
+          "role": null,
+          "label": "5 days in 5 minutes intervals | 5d",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            "visible": false
+          }
+        },
+        {
+          "tag": "BUTTON",
+          "role": null,
+          "label": "1 day in 1 minute intervals | 1d",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            "visible": false
+          }
+        },
+        {
+          "tag": "DIV",
+          "role": "region",
+          "label": "Chart #1 | XAUTUSDT 1 Bitunix O3,816.09H3,816.09L3,815.44C3,815.44-0.65 (−0.02%) %R 6 −81.98 A",
+          "rect": {
+            "x": 56,
+            "y": 0,
+            "width": 1021,
+            "height": 455,
+            "visible": true
+          }
+        },
+        {
+          "tag": "CANVAS",
+          "role": null,
+          "label": "Chart for XAUTUSDT, 1 minute",
+          "rect": {
+            "x": 56,
+            "y": 0,
+            "width": 957,
+            "height": 366,
+            "visible": true
+          }
+        },
+        {
+          "tag": "DIV",
+          "role": null,
+          "label": "Change interval | 1",
+          "rect": {
+            "x": 140,
+            "y": 6,
+            "width": 20,
+            "height": 20,
+            "visible": true
+          }
+        },
+        {
+          "tag": "DIV",
+          "role": null,
+          "label": "Hide Indicator Legend | 1",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            "visible": false
+          }
+        },
+        {
+          "tag": "DIV",
+          "role": null,
+          "label": "Show interval settings",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            "visible": false
+          }
+        },
+        {
+          "tag": "DIV",
+          "role": null,
+          "label": "Maximize chart",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            "visible": false
+          }
+        },
+        {
+          "tag": "DIV",
+          "role": null,
+          "label": "Restore chart",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            "visible": false
+          }
+        },
+        {
+          "tag": "DIV",
+          "role": null,
+          "label": "Reset chart view",
+          "rect": {
+            "x": 608,
+            "y": 310,
+            "width": 24,
+            "height": 24,
+            "visible": true
+          }
+        },
+        {
+          "tag": "SPAN",
+          "role": null,
+          "label": "Long Position",
+          "rect": {
+            "x": 1001,
+            "y": 81,
+            "width": 38,
+            "height": 38,
+            "visible": true
+          }
+        },
+        {
+          "tag": "SPAN",
+          "role": null,
+          "label": "Short Position",
+          "rect": {
+            "x": 1039,
+            "y": 81,
+            "width": 38,
+            "height": 38,
+            "visible": true
+          }
+        }
+      ]
+    },
+    {
+      "frame": "top > iframe[0]",
+      "chartContainers": [
+        {
+          "tag": "BODY",
+          "id": "",
+          "className": "chart-page unselectable on-widget",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 1077,
+            "height": 494,
+            "visible": true
+          }
+        },
+        {
+          "tag": "DIV",
+          "id": "header-toolbar-intervals",
+          "className": "wrap-n5bmFxyX",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 39,
+            "height": 38,
+            "visible": true
+          }
+        },
+        {
+          "tag": "DIV",
+          "id": "header-toolbar-chart-styles",
+          "className": "wrap-n5bmFxyX",
+          "rect": {
+            "x": 48,
+            "y": 0,
+            "width": 38,
+            "height": 38,
+            "visible": true
+          }
+        },
+        {
+          "tag": "DIV",
+          "id": "header-toolbar-indicators",
+          "className": "wrap-n5bmFxyX",
+          "rect": {
+            "x": 95,
+            "y": 0,
+            "width": 107,
+            "height": 38,
+            "visible": true
+          }
+        },
+        {
+          "tag": "DIV",
+          "id": "header-toolbar-study-templates",
+          "className": "wrap-jiC5bgmi full-jiC5bgmi wrap-n5bmFxyX",
+          "rect": {
+            "x": 202,
+            "y": 0,
+            "width": 38,
+            "height": 38,
+            "visible": true
+          }
+        },
+        {
+          "tag": "DIV",
+          "id": "header-toolbar-undo-redo",
+          "className": "wrap-n5bmFxyX",
+          "rect": {
+            "x": 249,
+            "y": 0,
+            "width": 76,
+            "height": 38,
+            "visible": true
+          }
+        },
+        {
+          "tag": "BUTTON",
+          "id": "header-toolbar-save-load",
+          "className": "button-yyMUOAN9 buttonSmallPadding-yyMUOAN9 button-ptpAHg8E withText-ptpAHg8E button-GwQQdU8S button-ZuDkGGhF apply-common-tooltip accessible-GwQQdU8S",
+          "rect": {
+            "x": 869,
+            "y": 0,
+            "width": 65,
+            "height": 38,
+            "visible": true
+          }
+        },
+        {
+          "tag": "BUTTON",
+          "id": "header-toolbar-quick-search",
+          "className": "iconButton-OhqNVIYA button-xNqEcuN2 button-GwQQdU8S apply-common-tooltip isInteractive-GwQQdU8S accessible-GwQQdU8S",
+          "rect": {
+            "x": 963,
+            "y": 0,
+            "width": 38,
+            "height": 38,
+            "visible": true
+          }
+        },
+        {
+          "tag": "BUTTON",
+          "id": "header-toolbar-properties",
+          "className": "iconButton-OhqNVIYA button-xNqEcuN2 button-GwQQdU8S apply-common-tooltip isInteractive-GwQQdU8S accessible-GwQQdU8S",
+          "rect": {
+            "x": 1001,
+            "y": 0,
+            "width": 38,
+            "height": 38,
+            "visible": true
+          }
+        },
+        {
+          "tag": "DIV",
+          "id": "header-toolbar-screenshot",
+          "className": "iconButton-OhqNVIYA button-GwQQdU8S",
+          "rect": {
+            "x": 1039,
+            "y": 0,
+            "width": 38,
+            "height": 38,
+            "visible": true
+          }
+        },
+        {
+          "tag": "DIV",
+          "id": "drawing-toolbar",
+          "className": "drawingToolbar-BfVZxb4b",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 52,
+            "height": 494,
+            "visible": true
+          }
+        },
+        {
+          "tag": "BUTTON",
+          "id": "drawing-toolbar-favorite-drawings",
+          "className": "button-KTgbfaP5 apply-common-tooltip common-tooltip-vertical isActive-KTgbfaP5 accessible-KTgbfaP5",
+          "rect": {
+            "x": 0,
+            "y": 597,
+            "width": 52,
+            "height": 36,
+            "visible": true
+          }
+        },
+        {
+          "tag": "BUTTON",
+          "id": "drawing-toolbar-object-tree",
+          "className": "button-KTgbfaP5 apply-common-tooltip common-tooltip-vertical accessible-KTgbfaP5",
+          "rect": {
+            "x": 0,
+            "y": 633,
+            "width": 52,
+            "height": 36,
+            "visible": true
+          }
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "className": "chart-toolbar chart-controls-bar",
+          "rect": {
+            "x": 56,
+            "y": 455,
+            "width": 1021,
+            "height": 39,
+            "visible": true
+          }
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "className": "toolbar-BXXUwft2",
+          "rect": {
+            "x": 56,
+            "y": 456,
+            "width": 1021,
+            "height": 38,
+            "visible": true
+          }
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "className": "chart-container top-full-width-chart active",
+          "rect": {
+            "x": 56,
+            "y": 0,
+            "width": 1021,
+            "height": 455,
+            "visible": true
+          }
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "className": "chart-container-border",
+          "rect": {
+            "x": 56,
+            "y": 0,
+            "width": 1021,
+            "height": 455,
+            "visible": true
+          }
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "className": "chart-widget chart-widget--themed-dark chart-widget__top--themed-dark chart-widget__bottom--themed-dark",
+          "rect": {
+            "x": 56,
+            "y": 0,
+            "width": 1021,
+            "height": 455,
+            "visible": true
+          }
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "className": "chart-markup-table",
+          "rect": {
+            "x": 56,
+            "y": 0,
+            "width": 1021,
+            "height": 455,
+            "visible": true
+          }
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "className": "chart-markup-table pane",
+          "rect": {
+            "x": 56,
+            "y": 0,
+            "width": 957,
+            "height": 366,
+            "visible": true
+          }
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "className": "chart-gui-wrapper",
+          "rect": {
+            "x": 56,
+            "y": 0,
+            "width": 957,
+            "height": 366,
+            "visible": true
+          }
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "className": "chart-markup-table price-axis-container",
+          "rect": {
+            "x": 1013,
+            "y": 0,
+            "width": 64,
+            "height": 366,
+            "visible": true
+          }
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "className": "chart-markup-table pane",
+          "rect": {
+            "x": 56,
+            "y": 367,
+            "width": 957,
+            "height": 60,
+            "visible": true
+          }
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "className": "chart-gui-wrapper",
+          "rect": {
+            "x": 56,
+            "y": 367,
+            "width": 957,
+            "height": 60,
+            "visible": true
+          }
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "className": "item-l31H9iuA study-l31H9iuA withCustomTextColor-l31H9iuA",
+          "rect": {
+            "x": 60,
+            "y": 371,
+            "width": 837,
+            "height": 24,
+            "visible": true
+          }
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "className": "chart-markup-table price-axis-container",
+          "rect": {
+            "x": 1013,
+            "y": 367,
+            "width": 64,
+            "height": 60,
+            "visible": true
+          }
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "className": "chart-markup-table time-axis",
+          "rect": {
+            "x": 56,
+            "y": 428,
+            "width": 957,
+            "height": 28,
+            "visible": true
+          }
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "className": "chart-markup-table price-axis-container",
+          "rect": {
+            "x": 1013,
+            "y": 428,
+            "width": 64,
+            "height": 28,
+            "visible": true
+          }
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "className": "tv-floating-toolbar ui-draggable",
+          "rect": {
+            "x": 825,
+            "y": 81,
+            "width": 252,
+            "height": 38,
+            "visible": true
+          }
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "className": "tv-floating-toolbar__widget-wrapper",
+          "rect": {
+            "x": 825,
+            "y": 81,
+            "width": 252,
+            "height": 38,
+            "visible": true
+          }
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "className": "tv-floating-toolbar__drag js-drag ui-draggable-handle",
+          "rect": {
+            "x": 825,
+            "y": 81,
+            "width": 24,
+            "height": 38,
+            "visible": true
+          }
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "className": "tv-floating-toolbar__content js-content",
+          "rect": {
+            "x": 849,
+            "y": 81,
+            "width": 228,
+            "height": 38,
+            "visible": true
+          }
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "className": "tv-floating-toolbar__widget js-widget",
+          "rect": {
+            "x": 849,
+            "y": 81,
+            "width": 38,
+            "height": 38,
+            "visible": true
+          }
+        },
+        {
+          "tag": "SPAN",
+          "id": "",
+          "className": "tv-favorited-drawings-toolbar__widget apply-common-tooltip ",
+          "rect": {
+            "x": 849,
+            "y": 81,
+            "width": 38,
+            "height": 38,
+            "visible": true
+          }
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "className": "tv-floating-toolbar__widget js-widget",
+          "rect": {
+            "x": 887,
+            "y": 81,
+            "width": 38,
+            "height": 38,
+            "visible": true
+          }
+        },
+        {
+          "tag": "SPAN",
+          "id": "",
+          "className": "tv-favorited-drawings-toolbar__widget apply-common-tooltip ",
+          "rect": {
+            "x": 887,
+            "y": 81,
+            "width": 38,
+            "height": 38,
+            "visible": true
+          }
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "className": "tv-floating-toolbar__widget js-widget",
+          "rect": {
+            "x": 925,
+            "y": 81,
+            "width": 38,
+            "height": 38,
+            "visible": true
+          }
+        },
+        {
+          "tag": "SPAN",
+          "id": "",
+          "className": "tv-favorited-drawings-toolbar__widget apply-common-tooltip ",
+          "rect": {
+            "x": 925,
+            "y": 81,
+            "width": 38,
+            "height": 38,
+            "visible": true
+          }
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "className": "tv-floating-toolbar__widget js-widget",
+          "rect": {
+            "x": 963,
+            "y": 81,
+            "width": 38,
+            "height": 38,
+            "visible": true
+          }
+        },
+        {
+          "tag": "SPAN",
+          "id": "",
+          "className": "tv-favorited-drawings-toolbar__widget apply-common-tooltip ",
+          "rect": {
+            "x": 963,
+            "y": 81,
+            "width": 38,
+            "height": 38,
+            "visible": true
+          }
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "className": "tv-floating-toolbar__widget js-widget",
+          "rect": {
+            "x": 1001,
+            "y": 81,
+            "width": 38,
+            "height": 38,
+            "visible": true
+          }
+        },
+        {
+          "tag": "SPAN",
+          "id": "",
+          "className": "tv-favorited-drawings-toolbar__widget apply-common-tooltip ",
+          "rect": {
+            "x": 1001,
+            "y": 81,
+            "width": 38,
+            "height": 38,
+            "visible": true
+          }
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "className": "tv-floating-toolbar__widget js-widget",
+          "rect": {
+            "x": 1039,
+            "y": 81,
+            "width": 38,
+            "height": 38,
+            "visible": true
+          }
+        },
+        {
+          "tag": "SPAN",
+          "id": "",
+          "className": "tv-favorited-drawings-toolbar__widget apply-common-tooltip ",
+          "rect": {
+            "x": 1039,
+            "y": 81,
+            "width": 38,
+            "height": 38,
+            "visible": true
+          }
+        }
+      ]
+    },
+    {
+      "frame": "top > iframe[1]",
+      "relevantControls": []
+    },
+    {
+      "frame": "top > iframe[1]",
+      "chartContainers": []
+    },
+    {
+      "frame": "top > iframe[2]",
+      "relevantControls": []
+    },
+    {
+      "frame": "top > iframe[2]",
+      "chartContainers": []
+    }
+  ],
+  "keyboard": [
+    {
+      "frame": "top",
+      "target": "document",
+      "eventCounts": {
+        "keydown": 12,
+        "keyup": 0,
+        "keypress": 0
+      },
+      "keyHandlers": [
+        {
+          "event": "keydown",
+          "listenerName": "s",
+          "capture": false,
+          "passive": false,
+          "once": false,
+          "source": "function s(i){i.key===\"Escape\"&&e.value&&t?.()}"
+        },
+        {
+          "event": "keydown",
+          "listenerName": "v",
+          "capture": false,
+          "passive": false,
+          "once": false,
+          "source": "function v(y){var M;if(!(y.key!==\"Escape\"||Kse(y.target))){if(o){(M=o.onEscape)==null||M.call(o),d();return}l.value&&s()}}"
+        },
+        {
+          "event": "keydown",
+          "listenerName": "anonymous",
+          "capture": false,
+          "passive": false,
+          "once": false,
+          "source": "p=>{Ase(p,R4(vd()))}"
+        },
+        {
+          "event": "keydown",
+          "listenerName": "f",
+          "capture": true,
+          "passive": true,
+          "once": false,
+          "source": "d=>r(Ex(d))"
+        },
+        {
+          "event": "keydown",
+          "listenerName": "S",
+          "capture": false,
+          "passive": false,
+          "once": false,
+          "source": "c=>{c.key===\"Escape\"&&a.visible&&i()}"
+        },
+        {
+          "event": "keydown",
+          "listenerName": "S",
+          "capture": false,
+          "passive": false,
+          "once": false,
+          "source": "c=>{c.key===\"Escape\"&&a.visible&&i()}"
+        },
+        {
+          "event": "keydown",
+          "listenerName": "S",
+          "capture": false,
+          "passive": false,
+          "once": false,
+          "source": "c=>{c.key===\"Escape\"&&a.visible&&i()}"
+        },
+        {
+          "event": "keydown",
+          "listenerName": "S",
+          "capture": false,
+          "passive": false,
+          "once": false,
+          "source": "c=>{c.key===\"Escape\"&&a.visible&&i()}"
+        },
+        {
+          "event": "keydown",
+          "listenerName": "S",
+          "capture": false,
+          "passive": false,
+          "once": false,
+          "source": "c=>{c.key===\"Escape\"&&a.visible&&i()}"
+        },
+        {
+          "event": "keydown",
+          "listenerName": "S",
+          "capture": false,
+          "passive": false,
+          "once": false,
+          "source": "c=>{c.key===\"Escape\"&&a.visible&&i()}"
+        },
+        {
+          "event": "keydown",
+          "listenerName": "S",
+          "capture": false,
+          "passive": false,
+          "once": false,
+          "source": "c=>{c.key===\"Escape\"&&a.visible&&i()}"
+        },
+        {
+          "event": "keydown",
+          "listenerName": "S",
+          "capture": false,
+          "passive": false,
+          "once": false,
+          "source": "c=>{c.key===\"Escape\"&&a.visible&&i()}"
+        }
+      ]
+    },
+    {
+      "frame": "top",
+      "target": "window",
+      "eventCounts": {
+        "keydown": 3,
+        "keyup": 0,
+        "keypress": 0
+      },
+      "keyHandlers": [
+        {
+          "event": "keydown",
+          "listenerName": "te",
+          "capture": false,
+          "passive": false,
+          "once": false,
+          "source": "H=>{const P=H.target;P.tagName===\"INPUT\"||P.tagName===\"TEXTAREA\"||P.isContentEditable||(H.key===\"/\"?(H.preventDefault(),_e()):H.key===\"Escape\"&&_e(!1))}"
+        },
+        {
+          "event": "keydown",
+          "listenerName": "te",
+          "capture": false,
+          "passive": false,
+          "once": false,
+          "source": "H=>{const P=H.target;P.tagName===\"INPUT\"||P.tagName===\"TEXTAREA\"||P.isContentEditable||(H.key===\"/\"?(H.preventDefault(),_e()):H.key===\"Escape\"&&_e(!1))}"
+        },
+        {
+          "event": "keydown",
+          "listenerName": "Vt",
+          "capture": false,
+          "passive": false,
+          "once": false,
+          "source": "ie=>{ie.key===\"Escape\"&&Y.pickArmed&&(Y.pickArmed=!1)}"
+        }
+      ]
+    },
+    {
+      "frame": "top > iframe[0]",
+      "target": "document",
+      "eventCounts": {
+        "keydown": 0,
+        "keyup": 0,
+        "keypress": 0
+      },
+      "keyHandlers": []
+    },
+    {
+      "frame": "top > iframe[0]",
+      "target": "window",
+      "eventCounts": {
+        "keydown": 0,
+        "keyup": 0,
+        "keypress": 0
+      },
+      "keyHandlers": []
+    },
+    {
+      "frame": "top > iframe[1]",
+      "target": "document",
+      "eventCounts": {
+        "keydown": 0,
+        "keyup": 0,
+        "keypress": 0
+      },
+      "keyHandlers": []
+    },
+    {
+      "frame": "top > iframe[1]",
+      "target": "window",
+      "eventCounts": {
+        "keydown": 0,
+        "keyup": 0,
+        "keypress": 0
+      },
+      "keyHandlers": []
+    },
+    {
+      "frame": "top > iframe[2]",
+      "target": "document",
+      "eventCounts": {
+        "keydown": 0,
+        "keyup": 0,
+        "keypress": 0
+      },
+      "keyHandlers": []
+    },
+    {
+      "frame": "top > iframe[2]",
+      "target": "window",
+      "eventCounts": {
+        "keydown": 0,
+        "keyup": 0,
+        "keypress": 0
+      },
+      "keyHandlers": []
+    }
+  ],
+  "keyboardConflicts": [
+    {
+      "frame": "top",
+      "target": "document",
+      "event": "keydown",
+      "source": "function s(i){i.key===\"Escape\"&&e.value&&t?.()}"
+    },
+    {
+      "frame": "top",
+      "target": "document",
+      "event": "keydown",
+      "source": "function v(y){var M;if(!(y.key!==\"Escape\"||Kse(y.target))){if(o){(M=o.onEscape)==null||M.call(o),d();return}l.value&&s()}}"
+    },
+    {
+      "frame": "top",
+      "target": "document",
+      "event": "keydown",
+      "source": "c=>{c.key===\"Escape\"&&a.visible&&i()}"
+    },
+    {
+      "frame": "top",
+      "target": "document",
+      "event": "keydown",
+      "source": "c=>{c.key===\"Escape\"&&a.visible&&i()}"
+    },
+    {
+      "frame": "top",
+      "target": "document",
+      "event": "keydown",
+      "source": "c=>{c.key===\"Escape\"&&a.visible&&i()}"
+    },
+    {
+      "frame": "top",
+      "target": "document",
+      "event": "keydown",
+      "source": "c=>{c.key===\"Escape\"&&a.visible&&i()}"
+    },
+    {
+      "frame": "top",
+      "target": "document",
+      "event": "keydown",
+      "source": "c=>{c.key===\"Escape\"&&a.visible&&i()}"
+    },
+    {
+      "frame": "top",
+      "target": "document",
+      "event": "keydown",
+      "source": "c=>{c.key===\"Escape\"&&a.visible&&i()}"
+    },
+    {
+      "frame": "top",
+      "target": "document",
+      "event": "keydown",
+      "source": "c=>{c.key===\"Escape\"&&a.visible&&i()}"
+    },
+    {
+      "frame": "top",
+      "target": "document",
+      "event": "keydown",
+      "source": "c=>{c.key===\"Escape\"&&a.visible&&i()}"
+    },
+    {
+      "frame": "top",
+      "target": "window",
+      "event": "keydown",
+      "source": "H=>{const P=H.target;P.tagName===\"INPUT\"||P.tagName===\"TEXTAREA\"||P.isContentEditable||(H.key===\"/\"?(H.preventDefault(),_e()):H.key===\"Escape\"&&_e(!1))}"
+    },
+    {
+      "frame": "top",
+      "target": "window",
+      "event": "keydown",
+      "source": "H=>{const P=H.target;P.tagName===\"INPUT\"||P.tagName===\"TEXTAREA\"||P.isContentEditable||(H.key===\"/\"?(H.preventDefault(),_e()):H.key===\"Escape\"&&_e(!1))}"
+    },
+    {
+      "frame": "top",
+      "target": "window",
+      "event": "keydown",
+      "source": "ie=>{ie.key===\"Escape\"&&Y.pickArmed&&(Y.pickArmed=!1)}"
+    }
+  ],
+  "positionInfrastructure": [
+    {
+      "frame": "top",
+      "positionServicePresent": true,
+      "cacheStructures": {
+        "_positions": {
+          "present": true,
+          "type": "Map",
+          "keys": []
+        },
+        "positions": {
+          "present": true,
+          "type": "Function",
+          "keys": [
+            "length",
+            "name"
+          ]
+        }
+      },
+      "serviceMethods": [
+        "_updatePositionPLHandler",
+        "_updatePositionEstLiqPriceHandler",
+        "positions",
+        "positionUpdate",
+        "positionsRemoved",
+        "isDisplayModeIndividualPositions",
+        "_clearPositions",
+        "_requestPositions",
+        "_addPosition",
+        "_updatePositionEstLiqPrice",
+        "_updatePositionPL",
+        "_getPositionData",
+        "_firePositionUpdate",
+        "_updateType",
+        "_logPositionUpdate",
+        "_onCurrentAccountUpdate"
+      ],
+      "note": "No position method invoked. No IDs or quantities read."
+    }
+  ],
+  "brokerCapabilities": [
+    {
+      "frame": "top",
+      "flags": {
+        "supportDemoLiveSwitcher": true,
+        "supportModifyOrderPrice": true,
+        "supportEditAmount": false,
+        "supportModifyBrackets": true,
+        "supportMarketBrackets": true,
+        "supportMarketOrders": true,
+        "supportStopOrders": true,
+        "supportLimitOrders": true,
+        "supportLeverageButton": false,
+        "supportStopLimitOrders": true,
+        "supportPositions": true,
+        "supportDOM": true,
+        "supportModifyTrailingStop": true,
+        "supportAddBracketsToExistingOrder": true,
+        "supportVerifyLiveAccount": true,
+        "supportReversePosition": true,
+        "supportPLUpdate": true,
+        "supportTwoFactorAuthorization": false,
+        "supportDisplayBrokerNameInSymbolSearch": true,
+        "supportCurrencyInOrderPreview": true,
+        "supportRiskControls": true,
+        "supportCreateAccount": false,
+        "supportDeleteAccount": false,
+        "checkBracketsAfterOrderModification": true,
+        "supportStrictCheckingLimitOrderPrice": false,
+        "supportNativeReversePosition": true,
+        "supportClosePosition": true,
+        "supportMargin": true,
+        "supportPositionBrackets": true,
+        "supportTrailingStop": true,
+        "closePositionCancelsOrders": true,
+        "supportOrderBrackets": true
+      },
+      "configKeys": [
+        "isSuspended",
+        "supportDemoLiveSwitcher",
+        "supportModifyOrderPrice",
+        "supportEditAmount",
+        "supportModifyBrackets",
+        "supportMarketBrackets",
+        "supportMarketOrders",
+        "supportStopOrders",
+        "supportLimitOrders",
+        "supportLeverageButton",
+        "supportStopLimitOrders",
+        "supportPositions",
+        "supportDOM",
+        "supportModifyTrailingStop",
+        "supportAddBracketsToExistingOrder",
+        "supportVerifyLiveAccount",
+        "supportReversePosition",
+        "showNotificationsLog",
+        "supportPLUpdate",
+        "supportTwoFactorAuthorization",
+        "supportDisplayBrokerNameInSymbolSearch",
+        "supportCurrencyInOrderPreview",
+        "supportRiskControls",
+        "supportCreateAccount",
+        "supportDeleteAccount",
+        "checkBracketsAfterOrderModification",
+        "supportStrictCheckingLimitOrderPrice",
+        "supportNativeReversePosition",
+        "supportClosePosition",
+        "showQuantityInsteadOfAmount",
+        "supportMargin",
+        "supportPositionBrackets",
+        "supportTrailingStop",
+        "closePositionCancelsOrders",
+        "supportOrderBrackets"
+      ],
+      "adapterMethods": [
+        "onOrderUpdate",
+        "onOrderPartialUpdate",
+        "onPositionUpdate",
+        "onPositionPartialUpdate",
+        "onIndividualPositionUpdate",
+        "onIndividualPositionPartialUpdate",
+        "getOrderDialogOptions",
+        "getPositionDialogOptions",
+        "getSymbolSpecificTradingOptions",
+        "positions",
+        "individualPositions",
+        "positionById",
+        "individualPositionById",
+        "orders",
+        "ordersHistory",
+        "orderById",
+        "createInitialPreOrder",
+        "createPlaceOrderContext",
+        "createEditOrderContext",
+        "placeOrder",
+        "previewOrder",
+        "modifyOrder",
+        "cancelOrder",
+        "cancelOrders",
+        "closePosition",
+        "closeIndividualPosition",
+        "reversePosition",
+        "editPositionBrackets",
+        "editIndividualPositionBrackets",
+        "subscribeRealtime",
+        "quotesSnapshot",
+        "subscribeDOM",
+        "subscribePipValue",
+        "subscribePositionEstLiqPrice",
+        "subscribeTradePL",
+        "subscribePL",
+        "subscribeIndividualPositionPL",
+        "subscribeCryptoBalance",
+        "subscribeEquity",
+        "subscribeMarginAvailable",
+        "unsubscribeRealtime",
+        "unsubscribeDOM",
+        "unsubscribePipValue",
+        "unsubscribePL",
+        "unsubscribeIndividualPositionPL",
+        "unsubscribeCryptoBalance",
+        "unsubscribeEquity",
+        "unsubscribeMarginAvailable"
+      ],
+      "brokerMethods": [
+        "subscribeRealtime",
+        "unsubscribeRealtime",
+        "subscribeDOM",
+        "unsubscribeDOM",
+        "orders",
+        "positions",
+        "reversePosition",
+        "symbolInfo",
+        "_subscribe"
+      ]
+    }
+  ],
+  "eventBus": [
+    {
+      "frame": "top",
+      "event": "historyOrder",
+      "listenerCount": 1,
+      "listenerSources": [
+        "ie=>{const ee=n,re=o;Object[re(5001,\"xivW\")](ie)[ee(3395)](fe=>{const ye=re;O[ye(4302,\"J4o(\")][fe]=ie[fe]}),R0(z[re(1031,\"oi]q\")],y[re(3203,\"phWK\")],ie,id(),!1,v),z[re(505,\"P0pz\")][re(1621,\"ABC8\")]&&console[re(5466,\"th7g\")](O[re(5053,\"%sAI\")])}"
+      ]
+    },
+    {
+      "frame": "top",
+      "event": "positionUpdate",
+      "listenerCount": 1,
+      "listenerSources": [
+        "c=>{const a=d,p=u;if(t[p(1790)+p(4149)](c),s[p(4460)]&&console[a(5072,\"CiQI\")](p(1790)+a(5525,\"Tfof\"),c),c[a(5006,\"W]Rd\")]===zs[a(706,\"P0pz\")]){const f=this[a(1361,\"EoVv\")][a(4812,\"J4o(\")](v=>v.id===c.id);if(f[p(1049)]){const{id:v}=f[0];r[a(724,\"%sAI\")](p(4527)+\"e\",{id:p(1673)+v,status:1}),this[p(259)][p(4182)](g=>g[p(2880)]===2&&g[a(1312,\"th7g\")]===v)[p(3395)](g=>{const y=p;r[y(2296)](y(4527)+\"e\",{id:g.id,status:1})})}}o[p(1649)]=o[a(410,\"fvAC\")][a(4812,\"J4o(\")](f=>f.id!==c.id&&f[p(1216)]!==zs[a(3890,\"rbNu\")]),c[p(1216)]!==zs[a(707,\"W4QN\")]&&o[a(3978,\"phWK\")][p(3543)](c),this[p(5426)]=o[p(1649)]}"
+      ]
+    },
+    {
+      "frame": "top",
+      "event": "orderUpdate",
+      "listenerCount": 1,
+      "listenerSources": [
+        "c=>{const a=u,p=d,f=g=>{const y=cr,M=vr;s[M(2912,\"Lx5g\")]&&console[y(3473)](y(4527)+\"e\",g||c),t[M(2321,\"E8df\")+\"e\"](g||c),this[M(5470,\"P0pz\")]=n[M(2471,\"qK)]\")]},v=n[p(4122,\"T8GW\")][p(4812,\"J4o(\")](g=>g.id===c.id&&c[p(4817,\"JzFR\")]===zs[p(4398,\"@c^K\")]);if(v[a(1049)]){v[p(2918,\"oi]q\")](g=>{const y=p,M=a;n[M(1649)]=n[y(4816,\"wCo4\")][y(3915,\"T8GW\")](S=>S.id!==g.id),f({...g,...c})});return}n[p(3850,\"JzFR\")]=n[a(1649)][p(5213,\"arIE\")](g=>g.id!==c.id&&g[p(2125,\"7&Au\")]!==zs[a(5229)]),n[p(2816,\"un3p\")][p(907,\"ABC8\")](c),c[a(2200)]===Jo[a(1901)]&&i[a(1649)][p(4173,\"Tyar\")+a(2589)]&&f(),c[p(2348,\"qK)]\")]===Jo[p(2235,\"14xW\")]&&i[p(969,\"TM]V\")][a(2485)+a(2594)+\"ne\"]&&f(),c[p(1143,\"7&Au\")]===Jo[a(623)+\"l\"]&&i[p(3885,\"@c^K\")][a(1470)+p(3447,\"hAKa\")]&&f(),c[a(2200)]===Jo[p(5555,\"Tyar\")]&&i[p(3569,\"xivW\")][p(1788,\"ySJ%\")+p(4186,\"E8df\")]&&f(),c[p(180,\"k"
+      ]
+    },
+    {
+      "frame": "top",
+      "event": "orderTypeFilter",
+      "listenerCount": 1,
+      "listenerSources": [
+        "()=>{const c=u,a=d;this[a(4375,\"phWK\")]=n[c(1649)],i[a(1115,\"ySJ%\")][a(3091,\"7&Au\")+a(1496,\"rbNu\")]||(this[c(259)]=this[a(4241,\"YYPc\")][a(2236,\"N!o7\")](p=>p[c(2200)]===Jo[c(1901)]?{...p,status:1}:p)),i[a(1366,\"hAKa\")][c(2485)+c(2594)+\"ne\"]||(this[a(1420,\"14xW\")]=this[c(259)][a(4625,\"rbNu\")](p=>p[c(2200)]===Jo[a(564,\"s0OD\")]?{...p,status:1}:p)),i[c(1649)][a(4666,\"T8GW\")+c(3178)]||(this[c(259)]=this[a(708,\"%lb@\")][c(4932)](p=>p[a(1636,\"ABC8\")]===Jo[c(623)+\"l\"]?{...p,status:1}:p)),i[a(5053,\"%sAI\")][a(2033,\"TM]V\")+a(3967,\"Tyar\")]||(this[a(889,\"th7g\")]=this[c(259)][c(4932)](p=>p[a(2451,\"oi]q\")]===Jo[a(843,\"YYPc\")]?{...p,status:1}:p)),i[a(4740,\"th7g\")][c(4148)+a(3415,\"[mGR\")]||(this[a(2400,\"Lx5g\")]=this[c(259)][a(1200,\"2l1f\")](p=>p[a(4579,\"Lx5g\")]===Jo[a(3703,\"oi]q\")]?{...p,status:1}:p)),i[c(1649)][c(4347)+c(687)]||(this[c(259)]=this[a(4994,\"Tf"
+      ]
+    },
+    {
+      "frame": "top",
+      "event": "priceRangeToolClose",
+      "listenerCount": 1,
+      "listenerSources": [
+        "()=>{const s=o,d=r;i[d(4950,\"Tfof\")]=!1,i[s(4872)]=null,l[s(864)]()}"
+      ]
+    },
+    {
+      "frame": "top",
+      "event": "positionOrderSelected",
+      "listenerCount": 1,
+      "listenerSources": [
+        "o=>t(\"positionOrderSelected\",o)"
+      ]
+    },
+    {
+      "frame": "top",
+      "event": "marketClose",
+      "listenerCount": 2,
+      "listenerSources": [
+        "()=>i1({orderQuickMarket:!1})",
+        "()=>l(\"orderQuickMarket\",!1)"
+      ]
+    },
+    {
+      "frame": "top",
+      "event": "clickPositionSize",
+      "listenerCount": 1,
+      "listenerSources": [
+        "({resolve:s,position:d})=>{const u=ro(d.id);u&&($e(\"click_position_kline_buttons\",{position_button:\"share_profit\"}),t(\"sharePosition\",{...u,avgPrice:d.avgPrice})),s()}"
+      ]
+    },
+    {
+      "frame": "top",
+      "event": "reversePosition",
+      "listenerCount": 1,
+      "listenerSources": [
+        "({position:r,resolve:o})=>{const n=r.positionId,i=ro(n);if(_t(\"futures_reverse_position_entry_click\",{futures_from:\"kline_position\",symbol:i?.symbol,futures_need_confirm:String(t?.()??!0)},{tradeType:!0,market:!0,klineFullscreen:!0}),$e(\"futures_reverse_position\",{kline_id:n}),!i)throw _1(n),o(),new Error(\"Position information that can be reversed is not found\");e(\"reversePosition\",i,l=>{o(),l&&($e(\"futures_reverse_position_success\",{kline_id:n}),e(\"tips\",_(\"notification.success\"),\"success\"))})}"
+      ]
+    },
+    {
+      "frame": "top",
+      "event": "closePosition",
+      "listenerCount": 2,
+      "listenerSources": [
+        "async({position:t,resolve:r,reject:o})=>{bn(t.id)||b_e(t,e,{resolve:r})}",
+        "ie=>{var ee,re;const fe=String(((ee=ie?.position)==null?void 0:ee.id)??\"\");fe.startsWith(\"replay_pos_\")&&(aU(fe.endsWith(\"short\")?\"short\":\"long\"),(re=ie.resolve)==null||re.call(ie))}"
+      ]
+    },
+    {
+      "frame": "top",
+      "event": "cancelOrder",
+      "listenerCount": 2,
+      "listenerSources": [
+        "async({order:i,resolve:l,reject:s})=>{var d;const{orderBusinessType:u,id:c,orderType:a}=i;if(!bn(c)){if(a===Ot.Liq){const p=i.parentId??\"\",f=ro(p);return _t(\"futures_adjust_margin_entry_click\",{futures_from:\"kline_liq\",futures_position_id:p,symbol:f?.symbol??i.symbol},{tradeType:!0,market:!0}),n&&e(\"increaseMargin\",{positionId:p}),f&&e(\"appendMargin\",f),l()}if(a===Ot.BreakEven){C_e(i,e,{resolve:l});return}switch(u){case Ue.POSITIION_LIEN_TPSL:k_e(i,e,{resolve:()=>{i.tpslType===gr.TPSL&&o?.(),l()}});break;case Ue.LIMIT_ORDER:f_e(i,e,{resolve:l});break;case Ue.LIMIT_ORDER_TPSL:h_e(i,e,{resolve:l});break;case Ue.PLAN_ORDER:m_e(i,e,{resolve:l});break;case Ue.TRAILING_STOP_ORDER:y_e(i,e,{resolve:l});break;case Ue.PLAN_ORDER_TPSL:v_e(i,e,{resolve:l});break;case Ue.PLAN_ORDER_RRECREATE:cj(),Pc(),l();break;case Ue.PLAN_ORDER_RRECREATE_TPSL:uj(i.i",
+        "ie=>{var ee,re;const fe=String(((ee=ie?.order)==null?void 0:ee.id)??\"\");fe.startsWith(\"replay_\")&&(cU(fe),(re=ie.resolve)==null||re.call(ie))}"
+      ]
+    },
+    {
+      "frame": "top",
+      "event": "createTPSLOrder",
+      "listenerCount": 2,
+      "listenerSources": [
+        "({position:n,brackets:i,resolve:l})=>{const{id:s,symbol:d,side:u,_:c,qty:a}=n,{takeProfit:p,stopLoss:f}=i;if(bn(s))return;const{riseDownColor:v,visibilityConfig:g}=Ft(),{tpslExtendRight:y,tpslLineStyle:M,tpslLineWidth:S,positionLineColor:q}=g,W=q??v,D=yp(s),{stopProfitPrice:H,stopProfitType:z=ir.LATEST,stopLossPrice:E,stopLossType:T=ir.LATEST,prizeRecordId:b,guaranteed:N}=D||{},B={symbol:d,positionId:s,side:u,prizeRecordId:b,guaranteed:N};if(p?(Object.assign(B,{stopProfitPrice:String(p),stopProfitType:z}),E&&Object.assign(B,{stopLossPrice:E,stopLossType:T})):(Object.assign(B,{stopLossPrice:String(f),stopLossType:T}),H&&Object.assign(B,{stopProfitPrice:H,stopProfitType:z})),c===\"p\"){xl({symbol:d,futuresFrom:\"kline_position\",futuresActionType:\"create\",futuresOrderType:\"market\",futuresTpslType:\"batch\"});const A=`profit_${s}`,R=`loss_${s}`,V=",
+        "ie=>{var ee,re;const fe=String(((ee=ie?.position)==null?void 0:ee.id)??\"\");if(!fe.startsWith(\"replay_pos_\"))return;const{takeProfit:ye,stopLoss:Re}=ie.brackets??{},Ie=b4({id:fe,takeProfit:ye,stopLoss:Re});Ie&&dt.error(_(Ie)),(re=ie.resolve)==null||re.call(ie)}"
+      ]
+    },
+    {
+      "frame": "top",
+      "event": "clickOrder",
+      "listenerCount": 2,
+      "listenerSources": [
+        "({resolve:n,order:i})=>{n();const{orderBusinessType:l,parentId:s,id:d,symbol:u,tpslType:c,side:a,isTriggerByMove:p}=i;if(l!==Ue.POSITIION_LIEN_TPSL||bn(d)||bn(s))return;if(p){t?.();return}const f=d.replace(/^.*_/,\"\");if(c===gr.POSITION_TPSL){const v=yp(s);if(!v)throw\"[modify position tpsl error]: No tpsl list found\";const{stopLossPrice:g,stopLossType:y=ir.LATEST,stopProfitPrice:M,stopProfitType:S=ir.LATEST,guaranteed:q,prizeRecordId:W}=v;e(\"editPositionTPSL\",{symbol:u,positionId:s,side:a,stopLossPrice:g,stopLossType:y,stopProfitPrice:M,stopProfitType:S,guaranteed:q,prizeRecordId:W,orderId:f}),$e(\"kline_edit_order\",{orderId:f,exType:\"contract\",orderType:2})}else if(c===gr.TPSL){const v=wi(f),g=ro(s);if(!v)throw\"[modify position tpsl error]: No tpsl list found\";const{tpOrderPrice:y,stopProfitType:M=ir.LATEST,tpOrderType:S,tpQty:q,guaranteed",
+        "({resolve:o,order:n})=>{o();const{orderBusinessType:i,id:l}=n;if(bn(l))return;const s=l.replace(/^.*_/,\"\");if([Ue.LIMIT_ORDER,Ue.LIMIT_ORDER_TPSL].includes(i)){const d=i===Ue.LIMIT_ORDER_TPSL,u=da(s);if(!u)throw new Error(\"[edit order error]: No corresponding order order found\");e(\"editLimitOrder\",u9(n,u,s,d)),$e(\"kline_edit_order\",{orderId:s,exType:\"contract\",orderType:d?1:0})}}"
+      ]
+    },
+    {
+      "frame": "top",
+      "event": "modifyOrder",
+      "listenerCount": 3,
+      "listenerSources": [
+        "({order:n,resolve:i,reject:l})=>{bn(n.id)||bn(n.parentId)||(n.orderBusinessType===Ue.POSITIION_LIEN_TPSL&&t?.(),__e(n,e,{resolve:i}))}",
+        "async({order:o,resolve:n,reject:i})=>{const{orderBusinessType:l,id:s,price:d}=o;if(bn(s))return;const u=s.replace(/^.*_/,\"\");switch(l){case Ue.LIMIT_ORDER:ky(o,e,{resolve:n});break;case Ue.LIMIT_ORDER_TPSL:ky(o,e,{resolve:n},!0);break;case Ue.TRAILING_STOP_ORDER:g_e(o,e,{resolve:n});break;case Ue.PLAN_ORDER_PRICE:case Ue.PLAN_ORDER:wy(o,e,{resolve:n});break;case Ue.PLAN_ORDER_TPSL:wy(o,e,{resolve:n},!0);break;case Ue.PLAN_ORDER_RRECREATE:const c=B0(),a=c?.type===ir.MARKET,p={symbol:o.symbol,triggerPrice:a?o.price:c.triggerPrice,side:o.side,id:o.id,...o.takeProfit?{stopProfitPrice:String(o.takeProfit)}:{},...o.stopLoss?{stopLossPrice:String(o.stopLoss)}:{}};a||Object.assign(p,{stopPrice:o.price}),Lc(p),n();break;case Ue.PLAN_ORDER_RRECREATE_TPSL:pj(o.id,String(o.price)),n();break;case Ue.PLAN_ORDER_SPOT_PRICE_RRECREATE:Lc({symbol:o.symbol,",
+        "ie=>{var ee,re;const fe=ie?.order;if(!fe)return;if(!String(fe.id??\"\").startsWith(\"replay_ord_\")){if(!bn(fe.id)&&!bn(fe.parentId))return;const Re=b4(fe);Re&&dt.error(_(Re)),(ee=ie.resolve)==null||ee.call(ie);return}const ye=qae(fe);ye&&!ye.ok&&dt.warning(_(ye.reason===\"tpsl\"?ye.tipKey:ye.reason===\"limit\"?\"kline.replay.trade_limit\":ye.reason===\"insufficient\"?\"kline.replay.insufficient_margin\":\"kline.replay.invalid_order\")),(re=ie.resolve)==null||re.call(ie)}"
+      ]
+    },
+    {
+      "frame": "top",
+      "event": "scaledOrderBoundaryMoved",
+      "listenerCount": 1,
+      "listenerSources": [
+        "A=>N(A)"
+      ]
+    },
+    {
+      "frame": "top",
+      "event": "scaledOrderBoundaryClosed",
+      "listenerCount": 1,
+      "listenerSources": [
+        "({id:A})=>{A!==i.value&&A!==l.value||b()}"
+      ]
+    }
+  ],
+  "websocketResources": [],
+  "scriptResources": [
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/entry.fMs1Hnai.css",
+      "initiatorType": "link",
+      "durationMs": 44
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/styles-global.BPVzBGvS.css",
+      "initiatorType": "link",
+      "durationMs": 43
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/default-29a1f5cd.css",
+      "initiatorType": "link",
+      "durationMs": 43
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/bitunix-layout.Dp0V_fiX.css",
+      "initiatorType": "link",
+      "durationMs": 97
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/styles-contract-trade.BwuP9yJF.css",
+      "initiatorType": "link",
+      "durationMs": 135
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/Geist-Regular.gqFrH2sa.woff2",
+      "initiatorType": "link",
+      "durationMs": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/Geist-Medium.ei0swZHc.woff2",
+      "initiatorType": "link",
+      "durationMs": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/Geist-Bold.BqNYMUzs.woff2",
+      "initiatorType": "link",
+      "durationMs": 0
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/entry-DUW8vMQn.js",
+      "initiatorType": "other",
+      "durationMs": 248
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/bitunix_wasm.CQJeGgK9.js",
+      "initiatorType": "other",
+      "durationMs": 389
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/shared/vue-bd62459817.js",
+      "initiatorType": "other",
+      "durationMs": 363
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/shared/lib-ee5ce7e076.js",
+      "initiatorType": "other",
+      "durationMs": 363
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/cookie-domain-bvwyK4-F.js",
+      "initiatorType": "other",
+      "durationMs": 401
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/url-C-2xLetd.js",
+      "initiatorType": "other",
+      "durationMs": 409
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/index-Bd5xVq1M.js",
+      "initiatorType": "other",
+      "durationMs": 417
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/routes-D9WFIyoC.js",
+      "initiatorType": "other",
+      "durationMs": 428
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/defu-CmaNJ8u8.js",
+      "initiatorType": "other",
+      "durationMs": 433
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/state-B1n7zguO.js",
+      "initiatorType": "other",
+      "durationMs": 445
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/ipx-D2xrFLeG.js",
+      "initiatorType": "other",
+      "durationMs": 445
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/useDayjs-DtcgVO4Z.js",
+      "initiatorType": "other",
+      "durationMs": 461
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/shared/track-26f66b2b2b.js",
+      "initiatorType": "other",
+      "durationMs": 465
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/index-Dr7J_qkc.js",
+      "initiatorType": "other",
+      "durationMs": 477
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/index-CXchsjV2.js",
+      "initiatorType": "other",
+      "durationMs": 487
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/navigation-Dmisbj3a.js",
+      "initiatorType": "other",
+      "durationMs": 489
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/route-BjwoMSSs.js",
+      "initiatorType": "other",
+      "durationMs": 496
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/useFuturesSymbolStore-877Zsd_J.js",
+      "initiatorType": "other",
+      "durationMs": 509
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/futures-BRHIYJIE.js",
+      "initiatorType": "other",
+      "durationMs": 514
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/index-BVxYtIor.js",
+      "initiatorType": "other",
+      "durationMs": 520
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/index-qfvUVIAg.js",
+      "initiatorType": "other",
+      "durationMs": 537
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/index-i0HRSYnF.js",
+      "initiatorType": "other",
+      "durationMs": 538
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/use-popup-manager-Bku3Mg8X.js",
+      "initiatorType": "other",
+      "durationMs": 548
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/index-BjJ5wSiN.js",
+      "initiatorType": "other",
+      "durationMs": 562
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/tools-DGVjDDzT.js",
+      "initiatorType": "other",
+      "durationMs": 563
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/preload-B-FWMNWA.js",
+      "initiatorType": "other",
+      "durationMs": 567
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/useJsonldContext-6vX-irlv.js",
+      "initiatorType": "other",
+      "durationMs": 583
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/index-D0-LWj14.js",
+      "initiatorType": "other",
+      "durationMs": 597
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/keyboard-DaTNT0x_.js",
+      "initiatorType": "other",
+      "durationMs": 601
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/index-BuhXsb38.js",
+      "initiatorType": "other",
+      "durationMs": 607
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/use-size-C4if0kLU.js",
+      "initiatorType": "other",
+      "durationMs": 625
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/use-overflow-BzzYdA3v.js",
+      "initiatorType": "other",
+      "durationMs": 646
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/navigate-DythSDrk.js",
+      "initiatorType": "other",
+      "durationMs": 679
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/_plugin-vue_export-helper-CMDoiiiz.js",
+      "initiatorType": "other",
+      "durationMs": 755
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/useNumberFormatCache-Du1-vAax.js",
+      "initiatorType": "other",
+      "durationMs": 756
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/index-MsdRGBlt.js",
+      "initiatorType": "other",
+      "durationMs": 758
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/useTheme-BMVL_Lgt.js",
+      "initiatorType": "other",
+      "durationMs": 842
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/tools-DSV-z9Xe.js",
+      "initiatorType": "other",
+      "durationMs": 842
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/tools-DFfG57tC.js",
+      "initiatorType": "other",
+      "durationMs": 843
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/format-tQNuS-7Q.js",
+      "initiatorType": "other",
+      "durationMs": 901
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/resolve-format-preference-IuOPh_3D.js",
+      "initiatorType": "other",
+      "durationMs": 912
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/injection-keys-C9visxZz.js",
+      "initiatorType": "other",
+      "durationMs": 916
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/useShowIdCookie-BGNjrfD4.js",
+      "initiatorType": "other",
+      "durationMs": 941
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/useSocket-HcyCVwJg.js",
+      "initiatorType": "other",
+      "durationMs": 954
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/useTradeSocket-D9GbsCkT.js",
+      "initiatorType": "other",
+      "durationMs": 971
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/index-DKSvliMq.js",
+      "initiatorType": "other",
+      "durationMs": 984
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/useDeviceResolution-CS5u47B7.js",
+      "initiatorType": "other",
+      "durationMs": 1009
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/index-Dfs5As6n.js",
+      "initiatorType": "other",
+      "durationMs": 1018
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/usePoc-B4YCToZv.js",
+      "initiatorType": "other",
+      "durationMs": 1036
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/methods-Dvn8S8f_.js",
+      "initiatorType": "other",
+      "durationMs": 1044
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/getScriptNonce-BCl13AaF.js",
+      "initiatorType": "other",
+      "durationMs": 1052
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/useLcpSettled-CmI0jLty.js",
+      "initiatorType": "other",
+      "durationMs": 1058
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/mode-CLJofnR7.js",
+      "initiatorType": "other",
+      "durationMs": 1077
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/1f2c68-BGxu_-KF.js",
+      "initiatorType": "other",
+      "durationMs": 1077
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/__vite-browser-external-BA6av6Jr.js",
+      "initiatorType": "other",
+      "durationMs": 1142
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/loading-pull-mI8Zgeee.js",
+      "initiatorType": "other",
+      "durationMs": 1142
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/useFuturesUserData-DKQBYa-t.js",
+      "initiatorType": "other",
+      "durationMs": 1268
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/usePositionRemark-BCEPb2BV.js",
+      "initiatorType": "other",
+      "durationMs": 1275
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/useFutureReady-BED-pOVF.js",
+      "initiatorType": "other",
+      "durationMs": 1316
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/useFuturesPlaceOrderStore-Brr-GB5f.js",
+      "initiatorType": "other",
+      "durationMs": 1340
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/useBaseStore-exnakry6.js",
+      "initiatorType": "other",
+      "durationMs": 1342
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/trade-weekly-report-9F6FNs0n.js",
+      "initiatorType": "other",
+      "durationMs": 1369
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/useSymbolDetail-DFdo6GuF.js",
+      "initiatorType": "other",
+      "durationMs": 1413
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/formula-Co-ff3L7.js",
+      "initiatorType": "other",
+      "durationMs": 1417
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/calculateResult-xlIifjy0.js",
+      "initiatorType": "other",
+      "durationMs": 1438
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/logger-CKdqD390.js",
+      "initiatorType": "other",
+      "durationMs": 1451
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/calculate-DvSzPfnO.js",
+      "initiatorType": "other",
+      "durationMs": 1507
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/useFuturesPositionsStore-sM2vEJFa.js",
+      "initiatorType": "other",
+      "durationMs": 1511
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/format-CTGl_2qz.js",
+      "initiatorType": "other",
+      "durationMs": 1512
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/useFutureMaintainMarginStore-BuytadYL.js",
+      "initiatorType": "other",
+      "durationMs": 1527
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/converters-CdwonYnm.js",
+      "initiatorType": "other",
+      "durationMs": 1533
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/interval-7DDrBCcK.js",
+      "initiatorType": "other",
+      "durationMs": 1536
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/useFuturesUserOrdersStore-Czz9iq5l.js",
+      "initiatorType": "other",
+      "durationMs": 1546
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/useFuturesTpslStore-C-f0Nxkz.js",
+      "initiatorType": "other",
+      "durationMs": 1558
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/useFuturesTrackStore-Bag55HYo.js",
+      "initiatorType": "other",
+      "durationMs": 1560
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/index-CXuIacEo.js",
+      "initiatorType": "other",
+      "durationMs": 1567
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/useDeals-CjPFlvL5.js",
+      "initiatorType": "other",
+      "durationMs": 1575
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/useAddListener-DT1icsM1.js",
+      "initiatorType": "other",
+      "durationMs": 1639
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/useTradeSocketReconnect-DhAGujdw.js",
+      "initiatorType": "other",
+      "durationMs": 1640
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/index-CQT-Nuyx.js",
+      "initiatorType": "other",
+      "durationMs": 1642
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/useLocaleCache-DQTIvbSS.js",
+      "initiatorType": "other",
+      "durationMs": 1676
+    },
+    {
+      "url": "https://www.bitunix.com/web/bitunix-assets/futures/useLocale-DhVaXrv5.js",
+      "initiatorType": "other",
+      "durationMs": 1680
+    }
+  ],
+  "webpackModules": [
+    {
+      "frame": "top",
+      "scanSummary": {
+        "chunkGlobals": [],
+        "modulesScanned": 0,
+        "recordsCollected": 0
+      }
+    },
+    {
+      "frame": "top > iframe[0]",
+      "chunkName": "webpackChunktradingview",
+      "moduleId": "111706",
+      "sourceLength": 88,
+      "groups": [
+        "keyboardAndControls"
+      ],
+      "excerpts": [
+        {
+          "group": "keyboardAndControls",
+          "matchedTerm": "Keyboard",
+          "excerpt": "(e,t,o)=>{\"use strict\";function n(e){return 0===e.detail}o.d(t,{isKeyboardClick:()=>n})}"
+        }
+      ]
+    },
+    {
+      "frame": "top > iframe[0]",
+      "chunkName": "webpackChunktradingview",
+      "moduleId": "137869",
+      "sourceLength": 739,
+      "groups": [
+        "keyboardAndControls"
+      ],
+      "excerpts": [
+        {
+          "group": "keyboardAndControls",
+          "matchedTerm": "KeyDown",
+          "excerpt": "\";function n(e){const{className:t,...o}=e,[n,s]=(0,r.useRovingTabindexElement)(null);return i.createElement(u.PopupMenuItem,{...o,className:a()(c.PLATFORM_ACCESSIBILITY_ENABLED&&d.accessible,e.isActive&&d.active,t),reference:n,tabIndex:s,onKeyDown:function(e){if(!c.PLATFORM_ACCESSIBILITY_ENABLED||e.target!==e.currentTarget)return;const t=(0,l.hashFromEvent)(e);13!==t&&32!==t||(e.preventDefault(),n.current instanceof HTMLElement&&n.current.click())},\"data-role\":c.PLATFORM_ACCESSIBILITY_ENABLED?\"menuitem\":void 0,\"aria-disabled\":c.PLATFORM_ACCESSIBILITY_ENABLED&&e.isDisabled||void 0})}o.d(t,{AccessibleMenuItem:()=>n});var i=o(50959),s=o(497754),a=o.n(s),l=o(930202),r=o(865266),c=o(892932),u=o(192063),d=o(47102)}"
+        }
+      ]
+    },
+    {
+      "frame": "top > iframe[0]",
+      "chunkName": "webpackChunktradingview",
+      "moduleId": "192063",
+      "sourceLength": 2453,
+      "groups": [
+        "keyboardAndControls"
+      ],
+      "excerpts": [
+        {
+          "group": "keyboardAndControls",
+          "matchedTerm": "shortcut",
+          "excerpt": "(e,t,o)=>{\"use strict\";function n(e){e.stopPropagation()}function i(e){const{id:t,role:o,className:i,title:d,labelRowClassName:h,labelClassName:m,toolboxClassName:v,shortcut:p,forceShowShortcuts:g,icon:b,iconClassname:f,isActive:_,isDisabled:C,isHovered:T,appearAsDisabled:E,label:w,link:x,showToolboxOnHover:k,showToolboxOnFocus:S,target:F,rel:y,toolbox:A,reference:M,onMouseOut:I,onMouseOver:N,onKeyDown:L,suppressToolboxClick:D=!0,theme:B=u,tabIndex:V,tagName:O,renderComponent:W,roundedIcon:R,iconAriaProps:P,circleLogo:H,dontClosePopup:j,onClick:z,onClickArg:U,trackEventObject:Z,trackMouseWheelClick:G,trackRightClick:K,...J}=e,q=(0,s.useRef)(null),Y=(0,s.useMemo)(()=>(function(e){function t(t){const{reference:o,...n}=t,i=null!=e?e:n.href?\"a\":\"div\",a=\"a\"===i?n:function(e){cons"
+        }
+      ]
+    },
+    {
+      "frame": "top > iframe[0]",
+      "chunkName": "webpackChunktradingview",
+      "moduleId": "578601",
+      "sourceLength": 2535,
+      "groups": [
+        "keyboardAndControls"
+      ],
+      "excerpts": [
+        {
+          "group": "keyboardAndControls",
+          "matchedTerm": "keyboard",
+          "excerpt": "ull)(t.current)));if(!o)return null;const n=Array.from(o.children);return n.length?n[0]:null}(e);if(null===n)return;if((0,h.becomeMainElement)(n),o.length>0)for(const e of o)(0,h.becomeSecondaryElement)(e)}};return window.addEventListener(\"keyboard-navigation-activation\",o),o(),()=>window.removeEventListener(\"keyboard-navigation-activation\",o)},[]),[t,function(t){if(!u.PLATFORM_ACCESSIBILITY_ENABLED)return;if(t.defaultPrevented)return;const o=(0,d.hashFromEvent)(t);if(!m.includes(o))return;const n=document.activeElement;if(!(n instanceof HTMLElement))return;const a=t.currentTarget;let r,c;if(e){const e=n.parentElement;r=e?Array.from(e.children):[],c=r.indexOf(n)}else r=(h=a,Array.from(h.querySelectorAll(\"button:not([disabled]):not([aria-disabled])\")).filter((0,u.createScopedVisibleElementFilter)(h))).sort(u.navigationOrderComparator),c=r.indexOf(n)"
+        }
+      ]
+    },
+    {
+      "frame": "top > iframe[0]",
+      "chunkName": "webpackChunktradingview",
+      "moduleId": "624216",
+      "sourceLength": 1134,
+      "groups": [
+        "keyboardAndControls"
+      ],
+      "excerpts": [
+        {
+          "group": "keyboardAndControls",
+          "matchedTerm": "Keyboard",
+          "excerpt": "(e,t,o)=>{\"use strict\";function n(e){const{controller:t,children:o,isOpened:n,closeOnClickOutside:m=!0,doNotCloseOn:v,onClickOutside:p,onClose:g,onKeyboardClose:b,\"data-name\":f=\"popup-menu-container\",..._}=e,C=(0,i.useContext)(c.CloseDelegateContext),T=i.useContext(h),E=(0,i.useContext)(u),w=(0,d.useOutsideEvent)({handler:function(e){if(p&&p(e),!m)return;const t=(0,a.default)(v)?v():null==v?[]:[v];if(t.length>0&&e.target instanceof Node)for(const o of t){const t=s.findDOMNode(o);if(t instanceof Node&&t.contains(e.target))return}g()},mouseDown:!0,touchStart:!0});return n?i.createElement(l.Portal,{top:\"0\",left:\"0\",right:\"0\",bottom:\"0\",pointerEvents:\"none\"},i.createElement(\"span\",{ref:w,style:{pointerEvents:\"auto\"}},i.createElement(r.Menu,{..._,onClose:g,onKey"
+        }
+      ]
+    },
+    {
+      "frame": "top > iframe[0]",
+      "chunkName": "webpackChunktradingview",
+      "moduleId": "667990",
+      "sourceLength": 38768,
+      "groups": [
+        "marketDataAndHistory",
+        "studiesAndIndicators",
+        "keyboardAndControls"
+      ],
+      "excerpts": [
+        {
+          "group": "marketDataAndHistory",
+          "matchedTerm": "getbarS",
+          "excerpt": "tState({isHovered:!0})}),this._handleMouseOut=(e=>{(0,Rt.hoverMouseEventFilter)(e)&&this.setState({isHovered:!1})}),this._handleChangeVisibility=(e=>{this.setState({isVisible:e})}),this._handleEsc=(()=>{A.resetToCursor(!0)}),this._handleWidgetbarSettled=(e=>{var t;this.setState({isWidgetbarVisible:Boolean(null===(t=window.widgetbar)||void 0===t?void 0:t.visible().value()),widgetbarSettled:e})}),this._handleWidgetbarVisible=(e=>{this.setState({isWidgetbarVisible:e})}),A.init(),this._toolsFilter=new B(this.props.drawingsAccess),this._filteredLineTools=O.lineTools.reduce((e,t)=>{const{id:o,title:n,trackLabel:i}=t,s=e=>this._toolsFilter.isToolEnabled(D.lineToolsInfo[e.name].localizedName),a=[];return(0,O.isLineToolsGroupWithSections)(t)?t.sections.forEach(e=>{const t=e.items.filter(s);t.length&&a.push({title:e.title},...t)}):a.push(...t.items.filter(s)"
+        },
+        {
+          "group": "studiesAndIndicators",
+          "matchedTerm": "indicator",
+          "excerpt": "ick=(()=>{S.mobiletouch||this._handleRemoveDrawings(),v()}),this._handleRemoveDrawings=(()=>{m(\"remove drawing\"),this.props.chartWidgetCollection.activeChartWidget.value().removeAllDrawingTools()}),this._handleRemoveStudies=(()=>{m(\"remove indicator\"),this.props.chartWidgetCollection.activeChartWidget.value().removeAllStudies()}),this._handleRemoveAll=(()=>{m(\"remove all\"),this.props.chartWidgetCollection.activeChartWidget.value().removeAllStudiesDrawingTools()}),TradingView.__._handleRemoveDrawings=this._handleRemoveDrawings,TradingView.__._handleRemoveStudies=this._handleRemoveStudies,TradingView.__._handleRemoveAll=this._handleRemoveAll,this._handleActiveChartWidgetChanged=(e=>{this._activeChartWidget&&this._unsubscribeToModelChanges(this._activeChartWidget),e&&this._subscribeToModelChanges(e),this._activeChartWidget=e,this._handleCollectionChan"
+        },
+        {
+          "group": "keyboardAndControls",
+          "matchedTerm": "KeyDown",
+          "excerpt": ":o,isSmallTablet:n,onClickButton:function(){t()},onClickWhenGrayed:()=>(0,M.emit)(\"onGrayedObjectClicked\",{type:\"drawing\",name:D.lineToolsInfo[u].localizedName}),onArrowClick:function(){t(\"menu\")},openDropdownByClick:!0,onMenuFocus:d,onMenuKeyDown:function(e){if(!z.PLATFORM_ACCESSIBILITY_ENABLED)return;if(e.defaultPrevented)return;const t=(0,Xe.hashFromEvent)(e);9!==t&&t!==Xe.Modifiers.Shift+9||(0,z.updateTabIndexes)()},...i},T.createElement(r,{isSmallTablet:n,maxHeight:n?Math.min(679,window.innerHeight-it):679,activeTab:a,setActiveTab:l}))}function d(e){if(!e.target||!z.PLATFORM_ACCESSIBILITY_ENABLED)return;const t=e.currentTarget;e.target===t&&((0,z.updateTabIndexes)(),setTimeout(()=>{if(document.activeElement!==t)return;const[e]=(0,z.queryTabbableElements)(t).sort(z.navigationOrderComparator);e&&e.focus()}))}function h(e){return\"name\"in e}functi"
+        }
+      ]
+    },
+    {
+      "frame": "top > iframe[0]",
+      "chunkName": "webpackChunktradingview",
+      "moduleId": "671986",
+      "sourceLength": 516,
+      "groups": [
+        "keyboardAndControls"
+      ],
+      "excerpts": [
+        {
+          "group": "keyboardAndControls",
+          "matchedTerm": "shortcut",
+          "excerpt": "e=>{e.exports={\"tablet-small-breakpoint\":\"screen and (max-width: 430px)\",item:\"item-jFqVJoPk\",hovered:\"hovered-jFqVJoPk\",isDisabled:\"isDisabled-jFqVJoPk\",isActive:\"isActive-jFqVJoPk\",shortcut:\"shortcut-jFqVJoPk\",toolbox:\"toolbox-jFqVJoPk\",withIcon:\"withIcon-jFqVJoPk\",\"round-icon\":\"round-icon-jFqVJoPk\",icon:\"icon-jFqVJoPk\",labelRow:\"labelRow-jFqVJoPk\",label:\"label-jFqVJoPk\",showOnHover:\"showOnHover-jFqVJoPk\",\"disclosure-item-circle-logo\":\"disclosure-item-circle-logo-jFqVJoPk\",showOnFocus:\"showOnFocus-jFqVJoPk\"}}"
+        }
+      ]
+    },
+    {
+      "frame": "top > iframe[0]",
+      "chunkName": "webpackChunktradingview",
+      "moduleId": "864549",
+      "sourceLength": 955,
+      "groups": [
+        "keyboardAndControls"
+      ],
+      "excerpts": [
+        {
+          "group": "keyboardAndControls",
+          "matchedTerm": "KeyDown",
+          "excerpt": "ict\";o.d(t,{ToolButton:()=>l});var n=o(50959),i=o(497754),s=o(72571),a=o(154784);const l=(0,n.forwardRef)((e,t)=>{const{id:o,activeClass:l,children:r,className:c,icon:u,isActive:d,isGrayed:h,isHidden:m,isTransparent:v,theme:p=a,onClick:g,onKeyDown:b,buttonHotKey:f,tooltipPosition:_=\"vertical\",tag:C=\"div\",tabIndex:T,tooltip:E,...w}=e,x=\"button\"===e.tag;return n.createElement(C,{\"aria-label\":x?E:void 0,...w,id:o,type:x?\"button\":void 0,className:i(p.button,c,d&&l,{\"apply-common-tooltip\":Boolean(E),\"common-tooltip-vertical\":Boolean(E)&&\"vertical\"===_,[p.isActive]:d,[p.isGrayed]:h,[p.isHidden]:m,[p.isTransparent]:v},x&&p.accessible),onClick:g,onKeyDown:b,\"data-role\":x?void 0:\"button\",ref:t,tabIndex:T,\"data-tooltip-hotkey\":f,\"aria-pressed\":x?d:void 0,\"data-tooltip\":E},n.createElement(\"div\",{className:p.bg},u&&(\"string\"==typeof u?n.createElement(s.Icon,{c"
+        }
+      ]
+    },
+    {
+      "frame": "top > iframe[0]",
+      "chunkName": "webpackChunktradingview",
+      "moduleId": "53955",
+      "sourceLength": 1763,
+      "groups": [
+        "timerAndOverlay"
+      ],
+      "excerpts": [
+        {
+          "group": "timerAndOverlay",
+          "matchedTerm": "timeScale",
+          "excerpt": "dated=!1);const t=new a.CompositeRenderer;for(const e of this._data){const i=new l.PolygonRenderer(this._hitTestResult);i.setData(e),t.append(i)}return t}_updateViewInternal(){this._data=[];const t=this._provider.priceScale(),e=this._model.timeScale();if(!t||t.isEmpty()||e.isEmpty())return;const i=this._provider.graphics().polygons();if(0===i.size)return;const n=this._model.timeScale().visibleBarsStrictRange();if(null===n)return;const a=this._provider.firstValue();if(null===a)return;const l=n.firstBar(),d=n.lastBar(),h=(0,s.ensureDefined)(this._provider.properties().childs().graphics.childs().polygons),c=(0,s.ensureDefined)(this._provider.graphicsInfo().polygons);i.forEach(((i,n)=>{const u=(0,s.ensureDefined)(h.childs()[n]).childs(),p=(0,s.ensureDefined)(c[n]);100!==u.transparency.value()&&i.forEach((i=>{let n=1/0,h=-1/0;for(const t of i.points){co"
+        }
+      ]
+    },
+    {
+      "frame": "top > iframe[0]",
+      "chunkName": "webpackChunktradingview",
+      "moduleId": "131539",
+      "sourceLength": 1674,
+      "groups": [
+        "timerAndOverlay"
+      ],
+      "excerpts": [
+        {
+          "group": "timerAndOverlay",
+          "matchedTerm": "timeScale",
+          "excerpt": "new a.CompositeRenderer;for(const e of this._data){const i=new o.VerticalLineRenderer;i.setData(e),i.setHitTest(this._hitTestResult),t.append(i)}return t}_updateViewInternal(){this._data=[];const t=this._provider.priceScale(),e=this._model.timeScale();if(!t||t.isEmpty()||e.isEmpty())return;const i=this._provider.graphicsInfo().vertlines,r=this._provider.graphics().vertlines();if(0===r.size||void 0===i)return;const a=this._model.timeScale().visibleBarsStrictRange();if(null===a)return;const o=this._provider.firstValue();if(null===o)return;const l=a.firstBar(),d=a.lastBar(),h=(0,s.ensureDefined)(this._provider.properties().childs().graphics.childs().vertlines);r.forEach(((r,a)=>{const c=(0,s.ensureDefined)(h.childs()[a]).childs(),u=(0,s.ensureDefined)(i[a]);if(!c.visible.value())return;let p=0;switch(u.halign){case n.HAlign.Left:p=-e.barSpacing()/2;br"
+        }
+      ]
+    },
+    {
+      "frame": "top > iframe[0]",
+      "chunkName": "webpackChunktradingview",
+      "moduleId": "145802",
+      "sourceLength": 1584,
+      "groups": [
+        "timerAndOverlay"
+      ],
+      "excerpts": [
+        {
+          "group": "timerAndOverlay",
+          "matchedTerm": "timeScale",
+          "excerpt": "w n.CompositeRenderer;for(const e of this._data){const i=new a.HorizontalLineRenderer;i.setData(e),i.setHitTest(this._hitTestResult),t.append(i)}return t}_updateViewInternal(){this._data=[];const t=this._provider.priceScale(),e=this._model.timeScale();if(!t||t.isEmpty()||e.isEmpty())return;const i=this._provider.graphics().horizlines();if(0===i.size)return;const r=this._model.timeScale().visibleBarsStrictRange();if(null===r)return;const n=this._provider.firstValue();if(null===n)return;const a=r.firstBar(),o=r.lastBar(),l=this._extendToBarsEndings?e.barSpacing()/2:0,d=(0,s.ensureDefined)(this._provider.properties().childs().graphics.childs().horizlines);i.forEach(((i,r)=>{const h=(0,s.ensureDefined)(d.childs()[r]).childs();h.visible.value()&&i.forEach((i=>{const r=i.startIndex,d=i.endIndex;!i.extendRight&&Math.max(r,d)<a||!i.extendLeft&&Math.min(r,d"
+        }
+      ]
+    },
+    {
+      "frame": "top > iframe[0]",
+      "chunkName": "webpackChunktradingview",
+      "moduleId": "470393",
+      "sourceLength": 1583,
+      "groups": [
+        "timerAndOverlay"
+      ],
+      "excerpts": [
+        {
+          "group": "timerAndOverlay",
+          "matchedTerm": "timeScale",
+          "excerpt": "his._invalidated&&(this._updateViewInternal(),this._invalidated=!1);const t=new r.CompositeRenderer;for(const e of this._data)t.append(new o(e));return t}_updateViewInternal(){this._data=[];const t=this._provider.priceScale(),e=this._model.timeScale();if(!t||t.isEmpty()||e.isEmpty())return;const i=this._provider.graphics().backgrounds();if(0===i.size)return;const r=this._model.timeScale().visibleBarsStrictRange();if(null===r)return;const n=r.firstBar(),a=r.lastBar(),o=(0,s.ensureDefined)(this._provider.properties().childs().graphics.childs().backgrounds);i.forEach(((t,i)=>{const r=(0,s.ensureDefined)(o.childs()[i]).childs();if(!r.visible.value())return;let l,d;t.forEach((t=>{const i=null!==t.start?t.start:(0,s.ensureNotNull)(e.points().range().value()).firstIndex,o=t.stop;if(o<n||a<i)return;let h=e.indexToCoordinate(i)-.5*e.barSpacing();const c=e.i"
+        }
+      ]
+    },
+    {
+      "frame": "top > iframe[0]",
+      "chunkName": "webpackChunktradingview",
+      "moduleId": "635135",
+      "sourceLength": 8094,
+      "groups": [
+        "timerAndOverlay"
+      ],
+      "excerpts": [
+        {
+          "group": "timerAndOverlay",
+          "matchedTerm": "timeScale",
+          "excerpt": "gStyle){const t=this._histBoxBgStyle.childs();this._rendererData.histBoxBgColor=(0,x.generateColor)(t.color.value(),t.transparency.value())}}_updateViewInternal(){this._resetRenderersData();const t=this._provider.priceScale(),e=this._model.timeScale();if(!t||t.isEmpty()||e.isEmpty())return;if(null===this._provider.firstValue())return;const i=this._provider.graphics().hhistsByTimePointIndex();if(0===i.size)return;const s=e.visibleBarsStrictRange();if(null===s)return;const n=s.firstBar(),a=s.lastBar();this._prepareStyles(),(0,r.ensureDefined)(i).forEach(((i,s)=>{let r=1/0,o=-1/0;i.forEach((t=>{r=Math.min(r,t.firstBarTime),o=Math.max(o,t.lastBarTime)})),!this._alwaysVisible&&(o<n||r>a)||this._updateDataForRenderers(i,t,e)}))}_updateDataForRenderers(t,e,i){var s,n;if(t.size<=0)return;let o=null;if(t.forEach((t=>{o=o||t})),null===o)return;let l=o;t.forE"
+        }
+      ]
+    },
+    {
+      "frame": "top > iframe[0]",
+      "chunkName": "webpackChunktradingview",
+      "moduleId": "44807",
+      "sourceLength": 7028,
+      "groups": [
+        "keyboardAndControls"
+      ],
+      "excerpts": [
+        {
+          "group": "keyboardAndControls",
+          "matchedTerm": "KeyDown",
+          "excerpt": "useOutsideEvent)({mouseDown:!0,touchStart:!0,handler:function(e){null!==s.current&&C&&e.target instanceof Node&&null!==r.current&&!r.current.contains(e.target)&&s.current.blur()}});return a.createElement(\"div\",{className:i()(e.className),onKeyDown:function(e){if(e.defaultPrevented)return;const t=(0,F.hashFromEvent)(e.nativeEvent);if(38===t){e.preventDefault();const t=(I.indexOf(w)+I.length-1)%I.length;b(I[t])}if(40===t){e.preventDefault();const t=(I.indexOf(w)+I.length+1)%I.length;b(I[t])}},onFocus:function(e){z(e)||d.onFocus(e)},onBlur:function(e){z(e)||d.onBlur(e)},ref:P},a.createElement(_,{disabled:e.disabled,name:e.name,endSlot:a.createElement(u.EndSlot,{icon:!0},a.createElement(g,null)),reference:s,containerReference:n,mask:\"09:00\",value:h,onFocus:function(t){var n;setTimeout(K,0),null===(n=e.onFocus)||void 0===n||n.call(e,t)},onBlur:function("
+        }
+      ]
+    },
+    {
+      "frame": "top > iframe[0]",
+      "chunkName": "webpackChunktradingview",
+      "moduleId": "614793",
+      "sourceLength": 9160,
+      "groups": [
+        "keyboardAndControls"
+      ],
+      "excerpts": [
+        {
+          "group": "keyboardAndControls",
+          "matchedTerm": "KeyDown",
+          "excerpt": ".height)return void(e.style.top=`${n.bottom}px`);e.style.top=\"auto\",e.style.bottom=a<t.height?\"0\":`${s+n.height}px`}},this._onChange=()=>{const e=(0,c.ensureNotNull)(this._input).value;this.setState({value:e}),this.props.onType(e)},this._onKeyDown=e=>{this.props.hideOnKeyDown&&this.props.onHidePicker(),this.props.onKeyDown&&this.props.onKeyDown(e)},this._onKeyPress=e=>{if(e.charCode){const t=String.fromCharCode(e.charCode);this.props.inputRegex.test(t)||e.preventDefault()}},this._onKeyUp=e=>{if(8!==e.keyCode){const e=(0,c.ensureNotNull)(this._input).value,t=this.props.fixValue(e);t!==e&&this.setState({value:t})}},this._handleDropdownKeydown=e=>{var t;27===(0,v.hashFromEvent)(e)&&(null===(t=this._input)||void 0===t||t.focus(),this.props.onHidePicker())},this.state={value:e.value,valueFromProps:e.value}}render(){const{position:e=\"fixed\",className:t,s"
+        }
+      ]
+    },
+    {
+      "frame": "top > iframe[0]",
+      "chunkName": "webpackChunktradingview",
+      "moduleId": "626458",
+      "sourceLength": 18510,
+      "groups": [
+        "keyboardAndControls",
+        "timerAndOverlay"
+      ],
+      "excerpts": [
+        {
+          "group": "keyboardAndControls",
+          "matchedTerm": "KeyDown",
+          "excerpt": "17140),o=n(837287);function l(e){const{prevAriaLabel:t,nextAriaLabel:n,currentAriaLabel:a,currentVisibleTitle:l,isNextDisabled:u,isPrevDisabled:c,isViewModeDisabled:d,prevRef:h,middleRef:p,onPrevClick:g,onNextClick:f,onCurrentClick:m,onPrevKeyDown:v,onMiddleKeyDown:D,onHeaderKeyDown:y}=e;return s.createElement(\"div\",{className:o.header,onKeyDown:y},s.createElement(r.LightButton,{startIcon:i,onClick:g,size:\"small\",variant:\"ghost\",\"aria-label\":t,disabled:c,onKeyDown:v,reference:h}),s.createElement(r.LightButton,{size:\"small\",variant:\"ghost\",\"aria-label\":a,onClick:m,disabled:d,onKeyDown:D,reference:p},l),s.createElement(r.LightButton,{startIcon:i,onClick:f,size:\"small\",variant:\"ghost\",\"aria-label\":n,disabled:u,className:o[\"flip-horizontal\"]}))}var u=n(508550),c=n(325314),d=n(906355);class h extends s.PureComponent{constructor(){super(...arguments),thi"
+        },
+        {
+          "group": "timerAndOverlay",
+          "matchedTerm": "Timer",
+          "excerpt": "ueue.push(s),this._renderedMessage||this._renderMessage(),{...s,type:this._type,destroy:this._getDestroyMessageCallback(n)}}destroyAll(){var e;this._messagesQueue=[],clearTimeout(null===(e=this._renderedMessage)||void 0===e?void 0:e.destroyTimer),this._containers.forEach((e=>{e.innerText=\"\"})),this._renderedMessage=null,this._alternate=!1}_generateId(){return`live-region-${this._type}-${this._idCounter++}`}_calculateDestroyTimeout(e,t=0){const n=50*e.trim().length+200,s=250*e.trim().length;return Math.min(Math.max(n,t),s)}_findById(e){var t;return(null===(t=this._renderedMessage)||void 0===t?void 0:t.id)===e?this._renderedMessage:this._messagesQueue.find((t=>t.id===e))}_getDestroyMessageCallback(e){return async t=>{const n=this._findById(e);return!!n&&(n.renderedTo?!!t&&(this._removeRenderedMessage(),this._renderMessage(),!0):(this._removeFromQueue"
+        }
+      ]
+    },
+    {
+      "frame": "top > iframe[0]",
+      "chunkName": "webpackChunktradingview",
+      "moduleId": "904925",
+      "sourceLength": 1146,
+      "groups": [
+        "keyboardAndControls"
+      ],
+      "excerpts": [
+        {
+          "group": "keyboardAndControls",
+          "matchedTerm": "KeyDown",
+          "excerpt": "c(e){const{button:t,popupChildren:n,buttonRef:r,listboxId:i,listboxClassName:l,listboxTabIndex:c,matchButtonAndListboxWidths:d,isOpened:h,scrollWrapReference:p,listboxReference:g,onClose:f,onOpen:m,onListboxFocus:v,onListboxBlur:D,onListboxKeyDown:y,listboxAria:w,repositionOnScroll:b=!0,closeOnHeaderOverlap:C=!1,popupPositionCorrection:_={x:0,y:0},popupPosition:F}=e,E=o(r,d,_),S=C?u:0;return s.createElement(s.Fragment,null,t,s.createElement(a.PopupMenu,{...w,id:i,className:l,tabIndex:c,isOpened:h,position:F||E,repositionOnScroll:b,onClose:f,onOpen:m,doNotCloseOn:r.current,reference:g,scrollWrapReference:p,onFocus:v,onBlur:D,onKeyDown:y,closeOnScrollOutsideOffset:S},n))}}"
+        }
+      ]
+    },
+    {
+      "frame": "top > iframe[0]",
+      "chunkName": "webpackChunktradingview",
+      "moduleId": "953517",
+      "sourceLength": 279,
+      "groups": [
+        "keyboardAndControls"
+      ],
+      "excerpts": [
+        {
+          "group": "keyboardAndControls",
+          "matchedTerm": "Keyboard",
+          "excerpt": "(e,t,n)=>{\"use strict\";n.d(t,{useKeyboardActionHandler:()=>s.useKeyboardActionHandler,useKeyboardClose:()=>s.useKeyboardClose,\nuseKeyboardEventHandler:()=>s.useKeyboardEventHandler,useKeyboardOpen:()=>s.useKeyboardOpen,useKeyboardToggle:()=>s.useKeyboardToggle});var s=n(865968)}"
+        }
+      ]
+    },
+    {
+      "frame": "top > iframe[0]",
+      "chunkName": "webpackChunktradingview",
+      "moduleId": "873637",
+      "sourceLength": 8611,
+      "groups": [
+        "keyboardAndControls"
+      ],
+      "excerpts": [
+        {
+          "group": "keyboardAndControls",
+          "matchedTerm": "KeyDown",
+          "excerpt": "id)))&&void 0!==t?t:{}}),[re]),he=(0,a.useCallback)((()=>{ne(),ve(),O.current=!0}),[ne,ve]),pe=(0,a.useCallback)((()=>{be&&(ue(be),de(be,200))}),[ue,de,be]);ce.ref=(0,o.useMergedRefs)([ce.ref,Z]),oe.ref=(0,o.useMergedRefs)([oe.ref,V]),oe.onKeyDown=(0,c.createSafeMulticastEventHandler)((0,m.useKeyboardEventHandler)([(0,m.useKeyboardClose)(ae,he),(0,m.useKeyboardActionHandler)([13,32],pe,(0,a.useCallback)((()=>Boolean(be)),[be]))]),oe.onKeyDown);const xe=(0,a.useCallback)((e=>{O.current=!0,ie(e)}),[O,ie]),Ce=(0,a.useCallback)((e=>{e&&ue(e)}),[ue]);(0,a.useEffect)((()=>{O.current?O.current=!1:(be&&!ae&&se(),!be&&ae&&ne())}),[be,ae,se,ne]);const ke=function(e,t,l){const[s,n]=(0,a.useState)(),i=(0,a.useRef)(),r=e=>{var t;const l=null!==(t=e.parentElement)&&void 0!==t?t:void 0;if(void 0===l)return;const{left:a,right:s,width:i}=e.getBoundingClientRect(),{"
+        }
+      ]
+    },
+    {
+      "frame": "top > iframe[0]",
+      "chunkName": "webpackChunktradingview",
+      "moduleId": "444144",
+      "sourceLength": 1389,
+      "groups": [
+        "keyboardAndControls"
+      ],
+      "excerpts": [
+        {
+          "group": "keyboardAndControls",
+          "matchedTerm": "KeyDown",
+          "excerpt": "owButton:b,matchButtonAndListboxWidths:p,popupPosition:v,disabled:g,isOpened:f,scrollWrapReference:C,repositionOnScroll:w,closeOnHeaderOverlap:x,listboxReference:E,size:y=\"small\",onClose:P,onOpen:T,onListboxFocus:K,onListboxBlur:I,onListboxKeyDown:L,buttonChildren:M,children:S,caretClassName:O,listboxAria:N,...k}=e,H=(0,o.useRef)(null),B=!b&&o.createElement(i.EndSlot,null,o.createElement(u.Caret,{isDropped:f,disabled:g,className:O}));return o.createElement(c.PopupMenuDisclosureView,{buttonRef:H,listboxId:n,listboxClassName:h,listboxTabIndex:m,isOpened:f,onClose:P,onOpen:T,listboxReference:E,scrollWrapReference:C,onListboxFocus:K,onListboxBlur:I,onListboxKeyDown:L,listboxAria:N,matchButtonAndListboxWidths:p,popupPosition:v,button:o.createElement(s.ControlSkeleton,{...k,\"data-role\":\"listbox\",disabled:g,className:a()(d.button,l),size:y,ref:(0,r.useMer"
+        }
+      ]
+    },
+    {
+      "frame": "top > iframe[0]",
+      "chunkName": "webpackChunktradingview",
+      "moduleId": "529631",
+      "sourceLength": 4133,
+      "groups": [
+        "keyboardAndControls"
+      ],
+      "excerpts": [
+        {
+          "group": "keyboardAndControls",
+          "matchedTerm": "KeyDown",
+          "excerpt": ".forwardRef(((e,t)=>{const{id:n,menuClassName:v,menuItemClassName:w,tabIndex:x,disabled:E,highlight:y,intent:P,hideArrowButton:T,placeholder:K,addPlaceholderToItems:I=!1,value:L,\"aria-labelledby\":M,onFocus:S,onBlur:O,onClick:N,onChange:k,onKeyDown:H,repositionOnScroll:B=!0,openMenuOnEnter:A=!0,\"aria-describedby\":F,\"aria-invalid\":D,...Q}=e;let{items:R}=e;if(K&&I){R=[{value:void 0,content:K,id:(0,a.createDomId)(n,\"placeholder\")},...R]}const{listboxId:W,isOpened:V,isFocused:$,buttonTabIndex:U,listboxTabIndex:Z,highlight:Y,intent:z,open:X,onOpen:j,close:_,toggle:q,buttonFocusBindings:G,onButtonClick:J,buttonRef:ee,listboxRef:te,buttonAria:ne}=(0,b.useControlDisclosure)({id:n,disabled:E,buttonTabIndex:x,intent:P,highlight:y,onFocus:S,onBlur:O,onClick:N}),oe=R.filter(g),le=oe.find((e=>e.value===L)),[ae,re]=o.useState(K&&I?oe[0].value:null==le?void 0:le.v"
+        }
+      ]
+    },
+    {
+      "frame": "top > iframe[0]",
+      "chunkName": "webpackChunktradingview",
+      "moduleId": "129018",
+      "sourceLength": 4718,
+      "groups": [
+        "keyboardAndControls"
+      ],
+      "excerpts": [
+        {
+          "group": "keyboardAndControls",
+          "matchedTerm": "KeyDown",
+          "excerpt": ":s.msg;I(i),T(a)}),[x,t,o,n]);function L(e,t){var r;null===(r=F.current)||void 0===r||r.blur(),P(e,t)}return(0,s.useEffect)((()=>{H(c)}),[H,c]),s.createElement(\"div\",{className:u()(S.calculator,l&&S.calculatorWithInput),tabIndex:-1,ref:a,onKeyDown:e=>{c&&!N&&13===(0,p.hashFromEvent)(e)&&O()}},l&&s.createElement(s.Fragment,null,s.createElement(m.Label,{htmlFor:\"calculator-input\"},d.t(null,void 0,r(766596))),s.createElement(g.NumberInput,{id:\"calculator-input\",inputReference:e=>F.current=e,className:S.input,value:c,max:o,min:t,step:n,uiStep:i,mode:\"float\",error:N,errorMessage:B,errorHandler:function(e){D(e)},onValueChange:k,onClick:M,alwaysUpdateValueFromProps:!0})),s.createElement(v.ControlGroupContext.Provider,{value:w},s.createElement(\"div\",{className:S.buttonsWrapper},s.createElement(b.Button,{value:-n,buttonType:b.ButtonType.IncDec,icon:s.create"
+        }
+      ]
+    },
+    {
+      "frame": "top > iframe[0]",
+      "chunkName": "webpackChunktradingview",
+      "moduleId": "327871",
+      "sourceLength": 1952,
+      "groups": [
+        "keyboardAndControls"
+      ],
+      "excerpts": [
+        {
+          "group": "keyboardAndControls",
+          "matchedTerm": "Keyboard",
+          "excerpt": "(e,t,r)=>{\"use strict\";r.d(t,{KeyCode:()=>s,makeKeyboardListener:()=>i});var s,o=r(50959);!function(e){e[e.Enter=13]=\"Enter\",e[e.Space=32]=\"Space\",e[e.Backspace=8]=\"Backspace\",e[e.DownArrow=40]=\"DownArrow\",e[e.UpArrow=38]=\"UpArrow\",e[e.RightArrow=39]=\"RightArrow\",e[e.LeftArrow=37]=\"LeftArrow\",e[e.Escape=27]=\"Escape\",e[e.Tab=9]=\"Tab\"}(s||(s={}));class n{constructor(){this._handlers=new Map}registerHandlers(e){Object.keys(e).forEach((t=>{const r=parseInt(t);let s=e[r];if(Array.isArray(s)||(s=[s]),this._handlers.has(r)){const e=this._handlers.get(r);e&&s.forEach((t=>e.add(t)))}else this._handlers.set(r,new Set(s))}))}unregisterHandlers(e){Object.keys(e).forEach(("
+        }
+      ]
+    },
+    {
+      "frame": "top > iframe[0]",
+      "chunkName": "webpackChunktradingview",
+      "moduleId": "618997",
+      "sourceLength": 53699,
+      "groups": [
+        "keyboardAndControls"
+      ],
+      "excerpts": [
+        {
+          "group": "keyboardAndControls",
+          "matchedTerm": "KeyDown",
+          "excerpt": "ntalDropDirection.FromRightToLeft}),this._handleCalculatorFocus=()=>{ae.mobiletouch||null===this._input||this._input.focus()},this._setRef=e=>{this._control=e},this._setCalcRef=e=>{this._calc=e},this._setInputRef=e=>{this._input=e},this._onKeyDown=e=>{!this.state.isOpened||13!==e.keyCode&&27!==e.keyCode||(e.stopPropagation(),this.setState({isOpened:!1})),Object.values(_.CalculatorDecKeyCodes).includes(e.keyCode)||Object.values(_.CalculatorIncKeyCodes).includes(e.keyCode)||this.setState({isOpened:!1}),this.props.onKeyDown&&this.props.onKeyDown(e)},this._onClickOutside=e=>{this._calc&&!this._calc.contains(e.target)&&this.setState({isOpened:!1})},this._updateValue=e=>{this.props.onValueChange(e)},this._toggle=()=>{this.setState((e=>({isOpened:!e.isOpened})))},this._setInputFocus=e=>{null!==e&&(e.focus(),e.setSelectionRange(e.value.length,e.value.lengt"
+        }
+      ]
+    },
+    {
+      "frame": "top > iframe[0]",
+      "chunkName": "webpackChunktradingview",
+      "moduleId": "788865",
+      "sourceLength": 8534,
+      "groups": [
+        "keyboardAndControls"
+      ],
+      "excerpts": [
+        {
+          "group": "keyboardAndControls",
+          "matchedTerm": "KeyDown",
+          "excerpt": ",disabled:b,fontSizeStyle:k})}var m=s(895318),b=s(885004);function k(e){const{theme:t=b}=e;return o.createElement(\"span\",{className:r(b.clickableText,t.clickableTextColor,e.className),ref:e.reference,tabIndex:e.tabIndex,onClick:e.onClick,onKeyDown:e.onKeyDown},e.text)}var C=s(101614),v=s(738036),g=s(651109);const y={[a.BracketType.StopLoss]:n.t(null,void 0,s(241648)),[a.BracketType.TakeProfit]:n.t(null,void 0,s(129266)),[a.BracketType.TrailingStop]:n.t(null,void 0,s(86430))},f=n.t(null,void 0,s(782806));class T extends o.PureComponent{constructor(e){super(e),this._slTypeElement=null,this._slTypeDropdown=null,this._setSLTypeElement=e=>{this._slTypeElement=e},this._setSlTypeDropdownRef=e=>{this._slTypeDropdown=e},this._typeToggle=()=>{this.setState((e=>({isSLTypeOpened:!e.isSLTypeOpened}))),this.props.enabled||this.props.onToggleEnabled()},this._onSL"
+        }
+      ]
+    },
+    {
+      "frame": "top > iframe[0]",
+      "chunkName": "webpackChunktradingview",
+      "moduleId": "34735",
+      "sourceLength": 2477,
+      "groups": [
+        "keyboardAndControls"
+      ],
+      "excerpts": [
+        {
+          "group": "keyboardAndControls",
+          "matchedTerm": "KeyDown",
+          "excerpt": "dium:(0,o.ensureDefined)(u()[\"font-size-medium\"]),FontSizeLarge:(0,o.ensureDefined)(u()[\"font-size-large\"])},f={passive:!1};function v(e,t){const{style:n,id:r,role:o,onFocus:c,onBlur:h,onMouseOver:u,onMouseOut:d,onMouseDown:g,onMouseUp:v,onKeyDown:b,onClick:S,tabIndex:w,startSlot:C,middleSlot:R,endSlot:y,onWheel:M,onWheelNoPassive:E=null,size:D}=e,{isGrouped:N,cellState:F,disablePositionAdjustment:W=!1}=(0,s.useContext)(l.ControlGroupContext),P=function(e,t=null,n){const r=(0,s.useRef)(null),o=(0,s.useRef)(null),a=(0,s.useCallback)((()=>{if(null===r.current||null===o.current)return;const[e,t,n]=o.current;null!==t&&r.current.addEventListener(e,t,n)}),[]),i=(0,s.useCallback)((()=>{if(null===r.current||null===o.current)return;const[e,t,n]=o.current;null!==t&&r.current.removeEventListener(e,t,n)}),[]),l=(0,s.useCallback)((e=>{i(),r.current=e,a()}),[]);"
+        }
+      ]
+    },
+    {
+      "frame": "top > iframe[0]",
+      "chunkName": "webpackChunktradingview",
+      "moduleId": "576805",
+      "sourceLength": 2972,
+      "groups": [
+        "keyboardAndControls"
+      ],
+      "excerpts": [
+        {
+          "group": "keyboardAndControls",
+          "matchedTerm": "KeyDown",
+          "excerpt": "nce:(0,a.useMergedRefs)([c,e.containerReference]),inputReference:e.inputReference,inputMode:e.inputMode,type:e.type,warning:e.warning,error:e.error,errorMessage:e.errorMessage,onClick:e.onClick,onFocus:h,onBlur:u,onChange:e.onValueChange,onKeyDown:function(t){if(e.disabled||0!==(0,v.modifiersFromEvent)(t.nativeEvent))return;let n=b,s=S;e.controlDecKeyCodes&&(s=s.concat(e.controlDecKeyCodes));e.controlIncKeyCodes&&(n=n.concat(e.controlIncKeyCodes));(s.includes(t.keyCode)||n.includes(t.keyCode))&&(t.preventDefault(),e.onValueByStepChange(s.includes(t.keyCode)?-1:1));e.onKeyDown&&e.onKeyDown(t)},onWheelNoPassive:d,stretch:e.stretch,intent:e.intent,highlight:e.highlight,highlightRemoveRoundBorder:e.highlightRemoveRoundBorder,autoSelectOnFocus:e.autoSelectOnFocus,\"data-property-id\":e[\"data-name\"]});function w(){var t;e.disabled||(null===(t=c.current)||v"
+        }
+      ]
+    },
+    {
+      "frame": "top > iframe[0]",
+      "chunkName": "webpackChunktradingview",
+      "moduleId": "587125",
+      "sourceLength": 4319,
+      "groups": [
+        "keyboardAndControls"
+      ],
+      "excerpts": [
+        {
+          "group": "keyboardAndControls",
+          "matchedTerm": "KeyDown",
+          "excerpt": "nValueChange:this._onValueChange,onValueByStepChange:this._onValueByStepChange,containerReference:this.props.containerReference,inputReference:this.props.inputReference,onClick:this.props.onClick,onFocus:this._onFocus,onBlur:this._onBlur,onKeyDown:this.props.onKeyDown,controlDecKeyCodes:this.props.controlDecKeyCodes,controlIncKeyCodes:this.props.controlIncKeyCodes,title:this.props.title,intent:this.props.intent,highlight:this.props.highlight,highlightRemoveRoundBorder:this.props.highlightRemoveRoundBorder,stretch:this.props.stretch,autoSelectOnFocus:!a.CheckMobile.any(),\"data-name\":this.props[\"data-name\"]})}componentDidMount(){this.setState({inputMode:a.CheckMobile.iOS()?void 0:\"numeric\"})}getClampedValue(){const{min:e=-1/0,max:t=p}=this.props,n=f(this.state.displayValue,this.props.formatter);return n.res?(0,h.clamp)(n.value,e,t):null}static getDer"
+        }
+      ]
+    },
+    {
+      "frame": "top > iframe[0]",
+      "scanSummary": {
+        "chunkGlobals": [
+          "webpackChunktradingview"
+        ],
+        "modulesScanned": 284,
+        "recordsCollected": 28
+      }
+    }
+  ],
+  "storageKeys": [
+    {
+      "storage": "localStorage",
+      "keyCount": 135,
+      "keys": [
+        "pageSize",
+        "tv.logger.loglevel",
+        "chart.favoriteDrawingsPosition",
+        "reslot_slot_exposure_guest",
+        "hideHistory",
+        "loglevel",
+        "thirdEmail",
+        "orderbook_watchlist_new_tip_dismissed",
+        "stocks-collection",
+        "_bmfopr3_v5",
+        "bitunix_adstate",
+        "limitedAccessTime",
+        "markets-spot-sortOrder",
+        "preferences",
+        "KLINE_ULTRA_LAYOUT_ENTRY_PROMO",
+        "__USDT-M_FUTURES_UNIT__",
+        "weekly-report-entry-dot-dismissed-week",
+        "_arms_session",
+        "stack",
+        "CHART_BUSINESS_VISIBILITY_CACHE",
+        "BITUNIX_GUIDE_kline-indicator",
+        "futures-rust-sdk-debug-panel",
+        "spot-collection",
+        "markets-spot-sortKey",
+        "KLINE_REPLAY_ACCOUNT_SETTINGS",
+        "_arms_uid",
+        "layoutStrategy",
+        "setShareConfig-shareElement",
+        "lastTransferSuccessDontShowModal",
+        "markets-futures-sortKey",
+        "bx-navbar-personalization",
+        "__BX_COOKIE_SCOPE_MIGRATED__",
+        "reslot_slot_exposure_909153882",
+        "tvlocalstorage.available",
+        "FEATURE_QUICK_COIN_INFO",
+        "open-margin-tips-modal-local",
+        "BITUNIX_GUIDE_kline-ultra-intro",
+        "FUTURES_ADD_FUNC_SPLIT_POSITION_ADD",
+        "__scdn_ga_sid",
+        "searchModalVisible",
+        "pro_right",
+        "nav:v1:guest",
+        "7d445eefb9fb880540ca24cea46ed37c",
+        "trade-recent-visits-last-login",
+        "reslot_ad_exposure_guest",
+        "kline_close_position_amount_input_mode",
+        "trading.active_broker",
+        "tradingview.drawings",
+        "AF_SESSION",
+        "network-detection-silent",
+        "checked_favorite_tips",
+        "hideZeroVal",
+        "nav:v1:user",
+        "fb772c8000fdaec3a971baa554a5d2d1",
+        "markets-spot-active-tag",
+        "KLINE_REPLAY_PAUSE_ON_CLOSE",
+        "tradingview.chart.lastUsedTimeBasedResolution",
+        "guidedContractGrid",
+        "weekly-report-entry-dismissed-week",
+        "_ahk3d4a2f_v2",
+        "thirdEmailBoundLimit",
+        "Bitunix_Display_Setting_Cache_V3",
+        "BITUNIX_KLINE_market_order_pos",
+        "isOpenPositionSizeCard",
+        "BITUNIX_LOGIN_HASH",
+        "636389e279439001033e273c.clientId",
+        "historicalSearch",
+        "weekly-report-entry-dot-dismissed",
+        "company-appsflyer-attribution",
+        "futures-transaction-notification",
+        "bu_tracker_server_correlation_v1",
+        "_gcl_ls",
+        "SUPER_ALERT_HEADER_TAB",
+        "pic_token",
+        "ZD-suid",
+        "FINGER_ID",
+        "ZD-buid",
+        "smidV2",
+        "p2pSelectObj",
+        "createContractGrid",
+        "footerSwiperPopoverType",
+        ".thumbcache_8d4e649b7d1be23d7cbf1791ee560ff1",
+        "isShowLongShortPercentage",
+        "styleSetting",
+        "thirdInfo",
+        "isCustomLayout",
+        "markets-tradeFi-active-tag",
+        "KLINE_REPLAY_ORDER_KIND",
+        "KLINE_REPLAY_ORDER_UNIT",
+        "tradingview.symboledit.dialog_last_entry",
+        "markets-tradeFi-sortKey",
+        "vitepress-theme-appearance",
+        "tradingview.trading.orderWidgetMode.",
+        "p2pOrderId",
+        "636389e279439001033e273c.appUserId",
+        "layoutAlertType",
+        "colorSetting",
+        "network-detection-simple",
+        "markets-futures-sortOrder",
+        "tradingview.widgetbar.widget.watchlistterminal",
+        "hideLogoUidList",
+        "trade-recent-visits",
+        "ChartFavoriteDrawingToolbarWidget.visible",
+        "__futures_position_view_type__",
+        "tradingview.trading.tradingPanelOpened",
+        "markets-futures-active-tag",
+        "collection-top-symbol",
+        "floating_ad_sec",
+        "futures_sample_break_even_column_new_dot_seen",
+        "33863505549b28234ee15e4636a985f5",
+        "hasInstallPrompt",
+        "ZD-lastPlayedTimestamp",
+        "tradfi-collection",
+        "tradingview.chart.favoriteDrawings",
+        "tradingview.hint.startFocusedZoom",
+        "assets_showInfo",
+        "anonymity_UID",
+        "636389e279439001033e273c.conversationStartedAt",
+        "tv.logger.logHighRate",
+        "tradingview.BarsMarksContainer.visibile",
+        "__contract_trade_deep_selected__",
+        "contextMenuCache",
+        "futures-collection",
+        "POSITION_SHOW_CURRENT_SYMBOL_ONLY",
+        "markets-tradeFi-sortOrder",
+        "reslot_ad_exposure_909153882",
+        "setStocksShareConfig-shareElement",
+        "tradingview.loadChartDialog.favorites",
+        "displayUID",
+        "futures-currentPositionShareTextStorage",
+        "_gdpr_state",
+        "contractOpened",
+        "collection-tags",
+        "futures_active_order_type",
+        "recentSymbols"
+      ]
+    },
+    {
+      "storage": "sessionStorage",
+      "keyCount": 20,
+      "keys": [
+        "BITUNIX_TRACK_SESSION_ID",
+        "BITUNIX_TRACK_TIME_SYNC_QUEUE_SEQ",
+        "bu_tracker_page_route",
+        "language-list",
+        "bu_tracker_activation_entry_v1",
+        "bu_tracker_page_name",
+        "Bitunix_ExType_Cache",
+        "__bbm_seo_attribution_first_touch__",
+        "__bitunix_track_db_name__",
+        "BU_SESSION_IDS",
+        "ZD-widgetOpen",
+        "noticeStatus",
+        "noticeVisible",
+        "BITUNIX_TRACK_TIME_OFFSET",
+        "bu_tracker_channel_entry_v1",
+        "__bitunix_tab_id__",
+        "bitunix-layout-breakpoint-scroll",
+        "transferClickedInUserHeader",
+        "url-params-storage",
+        "VISIBLE_VOUCHER_REMINDER"
+      ]
+    }
+  ],
+  "errors": [],
+  "summary": {
+    "accessibleFrames": 4,
+    "chartContextCount": 2,
+    "adapterFound": true,
+    "brokerConnectionFound": true,
+    "resolutionCandidates": 9,
+    "datafeedObjectsFound": 1,
+    "historyStructuresFound": 4,
+    "chartDomGroups": 8,
+    "canvasCount": 18,
+    "keyboardInspectionAvailable": true,
+    "keyboardConflictCandidates": 13,
+    "positionInfrastructureFound": 1,
+    "brokerCapabilityReports": 1,
+    "eventTypesFound": 16,
+    "websocketResourcesFound": 0,
+    "scriptResourcesFound": 90,
+    "webpackModulesFound": 28,
+    "errors": 0,
+    "topHasTradingView": false,
+    "topHasAdapter": true
+  },
+  "finishedAt": "2026-11-15T08:11:55.397Z",
+  "durationMs": 44
+}
