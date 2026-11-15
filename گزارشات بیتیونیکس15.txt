@@ -1,0 +1,3840 @@
+{
+  "reportName": "BITUNIX_CLOSE_REVERSE_API_AUDIT",
+  "version": "1.0",
+  "startedAt": "2026-11-15T07:11:56.295Z",
+  "scanStartedAt": "2026-11-15T07:11:56.370Z",
+  "scanCompletedAt": "2026-11-15T07:11:56.506Z",
+  "safety": {
+    "readOnly": true,
+    "exchangeButtonsClicked": 0,
+    "formsSubmitted": 0,
+    "networkRequestsMadeByAudit": 0,
+    "fetchOrXHRUsed": false,
+    "websocketDataRead": false,
+    "privateWebSocketDataRead": false,
+    "inputValuesRead": false,
+    "localStorageRead": false,
+    "credentialsRead": false,
+    "orderActionsExecuted": false,
+    "accessorsInvoked": false
+  },
+  "summary": {
+    "documentsFound": 4,
+    "accessibleDocuments": 4,
+    "chartDocuments": 1,
+    "functionMatches": 51,
+    "reactHandlerMatches": 0,
+    "scriptMatches": 0
+  },
+  "documents": [
+    {
+      "path": "top",
+      "url": "https://www.bitunix.com/contract-trade/XAUTUSDT",
+      "title": "3,816.26 | XAUTUSDT Futures Exchange - Crypto Futures | Bitunix",
+      "isChart": false,
+      "canvasCount": 7,
+      "chartMarkers": [],
+      "canvases": [
+        {
+          "index": 0,
+          "ariaLabel": "",
+          "className": "",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "index": 1,
+          "ariaLabel": "",
+          "className": "",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "index": 2,
+          "ariaLabel": "",
+          "className": "",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "index": 3,
+          "ariaLabel": "",
+          "className": "",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "index": 4,
+          "ariaLabel": "",
+          "className": "",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "index": 5,
+          "ariaLabel": "",
+          "className": "bitunix-orderbook-canvas",
+          "rect": {
+            "x": 1081,
+            "y": 215,
+            "width": 309,
+            "height": 477
+          }
+        },
+        {
+          "index": 6,
+          "ariaLabel": "",
+          "className": "bitunix-orderbook-canvas",
+          "rect": {
+            "x": 1081,
+            "y": 215,
+            "width": 309,
+            "height": 477
+          }
+        }
+      ],
+      "objectScan": {
+        "globalRootCandidates": [
+          "SVGTextPositioningElement",
+          "MediaRecorder",
+          "IDBObjectStore",
+          "GeolocationPositionError",
+          "GeolocationPosition",
+          "CompositionEvent",
+          "CaretPosition",
+          "CSSPositionValue",
+          "CSSPositionTryRule",
+          "CSSPositionTryDescriptors",
+          "GPUShaderModule",
+          "NotRestoredReasonDetails",
+          "NotRestoredReasons",
+          "XRCompositionLayer",
+          "XREquirectLayer",
+          "RESOURCE_SLOT_WIDGET_MANIFEST",
+          "RESOURCE_SLOT_WIDGET_MANIFEST_FALLBACK_HOSTS",
+          "bitunix_tracking_sdk",
+          "TradingView",
+          "__BITUNIX_LCP_SETTLER__",
+          "__BITUNIX_CUSTOMER_SERVICE__",
+          "zEWebpackACJsonp",
+          "bitunixTv",
+          "tradingview_0f462"
+        ],
+        "inspectedObjects": 1287,
+        "inspectedFunctions": 632,
+        "objectMatches": [
+          {
+            "frame": "top",
+            "path": "window.CompositionEvent.prototype",
+            "matchingKeys": [
+              {
+                "key": "initCompositionEvent",
+                "type": "function"
+              }
+            ]
+          },
+          {
+            "frame": "top",
+            "path": "window.bitunix_tracking_sdk.plugins[8]",
+            "matchingKeys": [
+              {
+                "key": "submitTimers",
+                "type": "object"
+              },
+              {
+                "key": "boundHandleSubmit",
+                "type": "function"
+              }
+            ]
+          },
+          {
+            "frame": "top",
+            "path": "window.bitunixTv.tvWidget",
+            "matchingKeys": [
+              {
+                "key": "historyOrderMarksCache",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top",
+            "path": "window.tradingview_0f462.tradingCustomization",
+            "matchingKeys": [
+              {
+                "key": "position",
+                "type": "object"
+              },
+              {
+                "key": "order",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top",
+            "path": "window.bitunixTv.eventBus.events",
+            "matchingKeys": [
+              {
+                "key": "historyOrder",
+                "type": "array"
+              },
+              {
+                "key": "positionUpdate",
+                "type": "array"
+              },
+              {
+                "key": "orderUpdate",
+                "type": "array"
+              },
+              {
+                "key": "orderTypeFilter",
+                "type": "array"
+              },
+              {
+                "key": "priceRangeToolClose",
+                "type": "array"
+              },
+              {
+                "key": "positionOrderSelected",
+                "type": "array"
+              },
+              {
+                "key": "marketClose",
+                "type": "array"
+              },
+              {
+                "key": "clickPositionSize",
+                "type": "array"
+              },
+              {
+                "key": "reversePosition",
+                "type": "array"
+              },
+              {
+                "key": "closePosition",
+                "type": "array"
+              },
+              {
+                "key": "cancelOrder",
+                "type": "array"
+              },
+              {
+                "key": "createTPSLOrder",
+                "type": "array"
+              },
+              {
+                "key": "clickOrder",
+                "type": "array"
+              },
+              {
+                "key": "modifyOrder",
+                "type": "array"
+              },
+              {
+                "key": "scaledOrderBoundaryMoved",
+                "type": "array"
+              },
+              {
+                "key": "scaledOrderBoundaryClosed",
+                "type": "array"
+              }
+            ]
+          },
+          {
+            "frame": "top",
+            "path": "window.bitunixTv.tvWidget.host",
+            "matchingKeys": [
+              {
+                "key": "orderPartialUpdate",
+                "type": "function"
+              },
+              {
+                "key": "positionPartialUpdate",
+                "type": "function"
+              },
+              {
+                "key": "individualPositionPartialUpdate",
+                "type": "function"
+              }
+            ]
+          },
+          {
+            "frame": "top",
+            "path": "window.bitunixTv.tvWidget._callbackMap",
+            "matchingKeys": [
+              {
+                "key": "positionUpdate",
+                "type": "function"
+              },
+              {
+                "key": "orderUpdate",
+                "type": "function"
+              },
+              {
+                "key": "orderTypeFilter",
+                "type": "function"
+              }
+            ]
+          },
+          {
+            "frame": "top",
+            "path": "window.tradingview_0f462.brokerConfig.customUI",
+            "matchingKeys": [
+              {
+                "key": "showOrderDialog",
+                "type": "function"
+              },
+              {
+                "key": "showPositionDialog",
+                "type": "function"
+              },
+              {
+                "key": "showCancelOrderDialog",
+                "type": "function"
+              },
+              {
+                "key": "showClosePositionDialog",
+                "type": "function"
+              },
+              {
+                "key": "showReversePositionDialog",
+                "type": "function"
+              }
+            ]
+          },
+          {
+            "frame": "top",
+            "path": "window.bitunixTv.tvWidget._options.tipsy",
+            "matchingKeys": [
+              {
+                "key": "order",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top",
+            "path": "window.bitunixTv.tvWidget.host._trading",
+            "matchingKeys": [
+              {
+                "key": "showTradedSources",
+                "type": "object"
+              },
+              {
+                "key": "orderExecutedSoundParams",
+                "type": "object"
+              },
+              {
+                "key": "_orderViewController",
+                "type": "object"
+              },
+              {
+                "key": "_closePositionDialogVisibility",
+                "type": "object"
+              },
+              {
+                "key": "_orderDialogVisibility",
+                "type": "object"
+              },
+              {
+                "key": "_orderPanelVisibility",
+                "type": "object"
+              },
+              {
+                "key": "_tradedItemsChartCollectionFacadePromise",
+                "type": "object"
+              },
+              {
+                "key": "setOrderPanelVisibility",
+                "type": "function"
+              },
+              {
+                "key": "getTradeNowBrokerId",
+                "type": "function"
+              },
+              {
+                "key": "clearTradeNowBrokerId",
+                "type": "function"
+              },
+              {
+                "key": "_tradeNow",
+                "type": "function"
+              },
+              {
+                "key": "_positionService",
+                "type": "object"
+              },
+              {
+                "key": "_ordersService",
+                "type": "object"
+              },
+              {
+                "key": "_tradedContextLinking",
+                "type": "object"
+              },
+              {
+                "key": "_qtySuggesterWithOrderSizeCalculatorResetting",
+                "type": "object"
+              },
+              {
+                "key": "_orderPanelHeaderState",
+                "type": "object"
+              },
+              {
+                "key": "closePositionDialogVisibility",
+                "type": "object"
+              },
+              {
+                "key": "orderDialogVisibility",
+                "type": "object"
+              },
+              {
+                "key": "_closePositionDialogVisibilitySubscription",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top",
+            "path": "window.bitunixTv.tvWidget.host._adapter",
+            "matchingKeys": [
+              {
+                "key": "_positionsCache",
+                "type": "object"
+              },
+              {
+                "key": "_ordersCache",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top",
+            "path": "window.bitunixTv.tvWidget.host._trading._orderViewController",
+            "matchingKeys": [
+              {
+                "key": "closePanel",
+                "type": "function"
+              },
+              {
+                "key": "_recreateOrderViewModel",
+                "type": "function"
+              },
+              {
+                "key": "_updateTradedContextLinking",
+                "type": "function"
+              },
+              {
+                "key": "_updateOrderValues",
+                "type": "function"
+              },
+              {
+                "key": "_onOrderWidgetModeChanged",
+                "type": "function"
+              },
+              {
+                "key": "_onOrderWidgetInputStateChanged",
+                "type": "function"
+              },
+              {
+                "key": "_onOrderWidgetCloseButtonClicked",
+                "type": "function"
+              },
+              {
+                "key": "_onOrderWidgetStatusChanged",
+                "type": "function"
+              },
+              {
+                "key": "_onOrderWidgetBackButtonClicked",
+                "type": "function"
+              },
+              {
+                "key": "_onPositionWidgetModeChanged",
+                "type": "function"
+              },
+              {
+                "key": "_onPositionWidgetBackButtonClicked",
+                "type": "function"
+              },
+              {
+                "key": "_onPositionWidgetCloseButtonClicked",
+                "type": "function"
+              },
+              {
+                "key": "_onOrderTypeChanged",
+                "type": "function"
+              },
+              {
+                "key": "_orderViewHeaderState",
+                "type": "object"
+              },
+              {
+                "key": "_orderViewDataStorage",
+                "type": "object"
+              },
+              {
+                "key": "_closeTradingPanel",
+                "type": "function"
+              }
+            ]
+          },
+          {
+            "frame": "top",
+            "path": "window.bitunixTv.tvWidget.host._trading._brokerCommandsUI",
+            "matchingKeys": [
+              {
+                "key": "_closePositionDialogVisibility",
+                "type": "object"
+              },
+              {
+                "key": "_onClosePositionDialogOpen",
+                "type": "function"
+              },
+              {
+                "key": "_onClosePositionDialogClose",
+                "type": "function"
+              },
+              {
+                "key": "_orderViewController",
+                "type": "function"
+              },
+              {
+                "key": "closePositionDialogVisibility",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top",
+            "path": "window.bitunixTv.tvWidget.host._trading._positionService",
+            "matchingKeys": [
+              {
+                "key": "_existingPositionIds",
+                "type": "object"
+              },
+              {
+                "key": "_positions",
+                "type": "object"
+              },
+              {
+                "key": "_positionUpdate",
+                "type": "object"
+              },
+              {
+                "key": "_positionsRemoved",
+                "type": "object"
+              },
+              {
+                "key": "_updatePositionPLHandler",
+                "type": "function"
+              },
+              {
+                "key": "_updatePositionEstLiqPriceHandler",
+                "type": "function"
+              }
+            ]
+          },
+          {
+            "frame": "top",
+            "path": "window.bitunixTv.tvWidget.host._trading._ordersService",
+            "matchingKeys": [
+              {
+                "key": "_existingOrdersIds",
+                "type": "object"
+              },
+              {
+                "key": "_activeOrders",
+                "type": "object"
+              },
+              {
+                "key": "_activeOrderUpdate",
+                "type": "object"
+              },
+              {
+                "key": "_activeOrdersRemoved",
+                "type": "object"
+              },
+              {
+                "key": "_ordersRejected",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top",
+            "path": "window.bitunixTv.tvWidget.host._trading.tradingPanelPopup",
+            "matchingKeys": [
+              {
+                "key": "_handleClose",
+                "type": "function"
+              }
+            ]
+          },
+          {
+            "frame": "top",
+            "path": "window.bitunixTv.tvWidget.host._trading.tradingPanel",
+            "matchingKeys": [
+              {
+                "key": "close",
+                "type": "function"
+              }
+            ]
+          },
+          {
+            "frame": "top",
+            "path": "window.bitunixTv.tvWidget.host._trading._orderPanelHeaderState",
+            "matchingKeys": [
+              {
+                "key": "_closeFunction$",
+                "type": "object"
+              },
+              {
+                "key": "closeFunction$",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top",
+            "path": "window.bitunixTv.tvWidget.host._adapter._brokerConnection",
+            "matchingKeys": [
+              {
+                "key": "_positions",
+                "type": "array"
+              },
+              {
+                "key": "_orders",
+                "type": "array"
+              }
+            ]
+          },
+          {
+            "frame": "top",
+            "path": "window.bitunixTv.tvWidget._options.baseConfig.i18n.zh_CN",
+            "matchingKeys": [
+              {
+                "key": "order",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top",
+            "path": "window.bitunixTv.tvWidget._options.baseConfig.i18n.es_ES",
+            "matchingKeys": [
+              {
+                "key": "order",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top",
+            "path": "window.bitunixTv.tvWidget._options.baseConfig.i18n.fa_IR",
+            "matchingKeys": [
+              {
+                "key": "order",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top",
+            "path": "window.bitunixTv.tvWidget._options.baseConfig.i18n.fr_FR",
+            "matchingKeys": [
+              {
+                "key": "order",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top",
+            "path": "window.bitunixTv.tvWidget._options.baseConfig.i18n.id_ID",
+            "matchingKeys": [
+              {
+                "key": "order",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top",
+            "path": "window.bitunixTv.tvWidget._options.baseConfig.i18n.it_IT",
+            "matchingKeys": [
+              {
+                "key": "order",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top",
+            "path": "window.bitunixTv.tvWidget._options.baseConfig.i18n.ja_JP",
+            "matchingKeys": [
+              {
+                "key": "order",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top",
+            "path": "window.bitunixTv.tvWidget._options.baseConfig.i18n.ko_KR",
+            "matchingKeys": [
+              {
+                "key": "order",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top",
+            "path": "window.bitunixTv.tvWidget._options.baseConfig.i18n.pl_PL",
+            "matchingKeys": [
+              {
+                "key": "order",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top",
+            "path": "window.bitunixTv.tvWidget._options.baseConfig.i18n.pt_BR",
+            "matchingKeys": [
+              {
+                "key": "order",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top",
+            "path": "window.bitunixTv.tvWidget._options.baseConfig.i18n.pt_PT",
+            "matchingKeys": [
+              {
+                "key": "order",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top",
+            "path": "window.bitunixTv.tvWidget._options.baseConfig.i18n.ru_RU",
+            "matchingKeys": [
+              {
+                "key": "order",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top",
+            "path": "window.bitunixTv.tvWidget._options.baseConfig.i18n.th_TH",
+            "matchingKeys": [
+              {
+                "key": "order",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top",
+            "path": "window.bitunixTv.tvWidget._options.baseConfig.i18n.tr_TR",
+            "matchingKeys": [
+              {
+                "key": "order",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top",
+            "path": "window.bitunixTv.tvWidget._options.baseConfig.i18n.uk_UA",
+            "matchingKeys": [
+              {
+                "key": "order",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top",
+            "path": "window.bitunixTv.tvWidget._options.baseConfig.i18n.vi_VN",
+            "matchingKeys": [
+              {
+                "key": "order",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top",
+            "path": "window.bitunixTv.tvWidget._options.baseConfig.i18n.zh_TW",
+            "matchingKeys": [
+              {
+                "key": "order",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top",
+            "path": "window.bitunixTv.tvWidget._options.baseConfig.i18n.de_DE",
+            "matchingKeys": [
+              {
+                "key": "order",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top",
+            "path": "window.bitunixTv.tvWidget._options.baseConfig.i18n.ar_AR",
+            "matchingKeys": [
+              {
+                "key": "order",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top",
+            "path": "window.bitunixTv.tvWidget._options.baseConfig.i18n.hi_IN",
+            "matchingKeys": [
+              {
+                "key": "order",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top",
+            "path": "window.bitunixTv.tvWidget._options.baseConfig.i18n.uz_UZ",
+            "matchingKeys": [
+              {
+                "key": "order",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top",
+            "path": "window.bitunixTv.tvWidget._options.baseConfig.i18n.ur_PK",
+            "matchingKeys": [
+              {
+                "key": "order",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top",
+            "path": "window.bitunixTv.tvWidget._options.tipsy.displayMenus.children",
+            "matchingKeys": [
+              {
+                "key": "takeProfitStopLossOrders",
+                "type": "object"
+              },
+              {
+                "key": "limitOrders",
+                "type": "object"
+              },
+              {
+                "key": "positionCost",
+                "type": "object"
+              },
+              {
+                "key": "orderQuick",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top",
+            "path": "window.bitunixTv.tvWidget.host._trading.tradingPanel._pages",
+            "matchingKeys": [
+              {
+                "key": "orderPanel",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top",
+            "path": "window.bitunixTv.tvWidget.host._adapter._subscriptions.XAUTUSDT",
+            "matchingKeys": [
+              {
+                "key": "PositionEstLiqPrice",
+                "type": "array"
+              },
+              {
+                "key": "TradePL",
+                "type": "array"
+              },
+              {
+                "key": "IndividualPositionPL",
+                "type": "array"
+              }
+            ]
+          },
+          {
+            "frame": "top",
+            "path": "window.bitunixTv.tvWidget.host._adapter._brokerMetainfo.customUI",
+            "matchingKeys": [
+              {
+                "key": "showOrderDialog",
+                "type": "function"
+              },
+              {
+                "key": "showPositionDialog",
+                "type": "function"
+              },
+              {
+                "key": "showCancelOrderDialog",
+                "type": "function"
+              },
+              {
+                "key": "showClosePositionDialog",
+                "type": "function"
+              },
+              {
+                "key": "showReversePositionDialog",
+                "type": "function"
+              }
+            ]
+          },
+          {
+            "frame": "top",
+            "path": "window.bitunixTv.tvWidget.host._adapter._brokerConnection._tvWidget",
+            "matchingKeys": [
+              {
+                "key": "historyOrderMarksCache",
+                "type": "object"
+              }
+            ]
+          }
+        ],
+        "functionMatches": [
+          {
+            "frame": "top",
+            "score": 20,
+            "path": "window.bitunixTv.tvWidget.host.[[Prototype]].showReversePositionDialog",
+            "functionName": "showReversePositionDialog",
+            "functionLength": 171,
+            "matches": [
+              "path-reverse-position",
+              "path-reverse",
+              "source-reverse-position",
+              "source-reverse"
+            ],
+            "sourceSnippets": [
+              "showReversePositionDialog(e,t){return(0,ke.reversePositionDialog)({positionId:e,showErrorNotification:(0,C.ensureNotNull)(this._trading).showErrorNotification,handler:t})}"
+            ]
+          },
+          {
+            "frame": "top",
+            "score": 20,
+            "path": "window.bitunixTv.eventBus.events.reversePosition[0]",
+            "functionName": "(anonymous)",
+            "functionLength": 500,
+            "matches": [
+              "path-reverse-position",
+              "path-reverse",
+              "source-reverse-position",
+              "source-reverse"
+            ],
+            "sourceSnippets": [
+              "({position:r,resolve:o})=>{const n=r.positionId,i=ro(n);if(_t(\"futures_reverse_position_entry_click\",{futures_from:\"kline_position\",symbol:i?.symbol,futures_need_confirm:String(t?.()??!0)},{tradeType:!0,market:!0,klineFullscreen:!0}),$e(\"futures_reverse_position\",{kline_id:n}),!i)throw _1(n),o(),new Error(\"Position information that can be revers",
+              ",{tradeType:!0,market:!0,klineFullscreen:!0}),$e(\"futures_reverse_position\",{kline_id:n}),!i)throw _1(n),o(),new Error(\"Position information that can be reversed is not found\");e(\"reversePosition\",i,l=>{o(),l&&($e(\"futures_reverse_position_success\",{kline_id:n}),e(\"tips\",_(\"notification.success\"),\"success\"))})}"
+            ]
+          },
+          {
+            "frame": "top",
+            "score": 19,
+            "path": "window.bitunixTv.tvWidget.host._trading._brokerCommandsUI._onClosePositionDialogOpen",
+            "functionName": "(anonymous)",
+            "functionLength": 80,
+            "matches": [
+              "path-close-position",
+              "path-close",
+              "source-close-position",
+              "source-close"
+            ],
+            "sourceSnippets": [
+              "e=>{this._closePositionDialogVisibility.setValue({isVisible:!0,isFullScreen:e})}"
+            ]
+          },
+          {
+            "frame": "top",
+            "score": 19,
+            "path": "window.bitunixTv.tvWidget.host._trading._brokerCommandsUI._onClosePositionDialogClose",
+            "functionName": "(anonymous)",
+            "functionLength": 66,
+            "matches": [
+              "path-close-position",
+              "path-close",
+              "source-close-position",
+              "source-close"
+            ],
+            "sourceSnippets": [
+              "()=>{this._closePositionDialogVisibility.setValue({isVisible:!1})}"
+            ]
+          },
+          {
+            "frame": "top",
+            "score": 13,
+            "path": "window.bitunixTv.tvWidget.host._trading._orderViewController._onPositionWidgetCloseButtonClicked",
+            "functionName": "(anonymous)",
+            "functionLength": 103,
+            "matches": [
+              "path-close",
+              "source-close-position",
+              "source-close"
+            ],
+            "sourceSnippets": [
+              "()=>{this._mode.value()===T.OrderEditorDisplayMode.Panel?this.closePanel():this._closePositionDialog()}"
+            ]
+          },
+          {
+            "frame": "top",
+            "score": 12,
+            "path": "window.tradingview_0f462.brokerConfig.customUI.showClosePositionDialog",
+            "functionName": "showClosePositionDialog",
+            "functionLength": 145,
+            "matches": [
+              "path-close-position",
+              "path-close"
+            ],
+            "sourceSnippets": []
+          },
+          {
+            "frame": "top",
+            "score": 12,
+            "path": "window.tradingview_0f462.brokerConfig.customUI.showReversePositionDialog",
+            "functionName": "showReversePositionDialog",
+            "functionLength": 121,
+            "matches": [
+              "path-reverse-position",
+              "path-reverse"
+            ],
+            "sourceSnippets": []
+          },
+          {
+            "frame": "top",
+            "score": 12,
+            "path": "window.bitunixTv.eventBus.events.closePosition[0]",
+            "functionName": "(anonymous)",
+            "functionLength": 72,
+            "matches": [
+              "path-close-position",
+              "path-close"
+            ],
+            "sourceSnippets": []
+          },
+          {
+            "frame": "top",
+            "score": 12,
+            "path": "window.bitunixTv.eventBus.events.closePosition[1]",
+            "functionName": "le",
+            "functionLength": 182,
+            "matches": [
+              "path-close-position",
+              "path-close"
+            ],
+            "sourceSnippets": []
+          },
+          {
+            "frame": "top",
+            "score": 12,
+            "path": "window.bitunixTv.tvWidget.host._trading.closePositionDialogVisibility.operator",
+            "functionName": "(anonymous)",
+            "functionLength": 57,
+            "matches": [
+              "path-close-position",
+              "path-close"
+            ],
+            "sourceSnippets": []
+          },
+          {
+            "frame": "top",
+            "score": 12,
+            "path": "window.bitunixTv.tvWidget.host._trading._brokerCommandsUI.closePositionDialogVisibility.operator",
+            "functionName": "(anonymous)",
+            "functionLength": 57,
+            "matches": [
+              "path-close-position",
+              "path-close"
+            ],
+            "sourceSnippets": []
+          },
+          {
+            "frame": "top",
+            "score": 12,
+            "path": "window.bitunixTv.tvWidget.host._trading._closePositionDialogVisibilitySubscription._teardowns[0]._next",
+            "functionName": "(anonymous)",
+            "functionLength": 42,
+            "matches": [
+              "path-close-position",
+              "path-close"
+            ],
+            "sourceSnippets": []
+          },
+          {
+            "frame": "top",
+            "score": 12,
+            "path": "window.bitunixTv.tvWidget.host._trading._closePositionDialogVisibilitySubscription._teardowns[0]._error",
+            "functionName": "(anonymous)",
+            "functionLength": 70,
+            "matches": [
+              "path-close-position",
+              "path-close"
+            ],
+            "sourceSnippets": []
+          },
+          {
+            "frame": "top",
+            "score": 12,
+            "path": "window.bitunixTv.tvWidget.host._trading._closePositionDialogVisibilitySubscription._teardowns[0]._complete",
+            "functionName": "(anonymous)",
+            "functionLength": 72,
+            "matches": [
+              "path-close-position",
+              "path-close"
+            ],
+            "sourceSnippets": []
+          },
+          {
+            "frame": "top",
+            "score": 12,
+            "path": "window.bitunixTv.tvWidget.host._trading._closePositionDialogVisibilitySubscription.destination.next",
+            "functionName": "(anonymous)",
+            "functionLength": 241,
+            "matches": [
+              "path-close-position",
+              "path-close"
+            ],
+            "sourceSnippets": []
+          },
+          {
+            "frame": "top",
+            "score": 12,
+            "path": "window.bitunixTv.tvWidget.host._trading._closePositionDialogVisibilitySubscription.destination.error",
+            "functionName": "(anonymous)",
+            "functionLength": 241,
+            "matches": [
+              "path-close-position",
+              "path-close"
+            ],
+            "sourceSnippets": []
+          },
+          {
+            "frame": "top",
+            "score": 11,
+            "path": "window.bitunixTv.eventBus.events.marketClose[0]",
+            "functionName": "(anonymous)",
+            "functionLength": 29,
+            "matches": [
+              "path-close-position",
+              "path-close"
+            ],
+            "sourceSnippets": []
+          },
+          {
+            "frame": "top",
+            "score": 11,
+            "path": "window.bitunixTv.eventBus.events.marketClose[1]",
+            "functionName": "(anonymous)",
+            "functionLength": 28,
+            "matches": [
+              "path-close-position",
+              "path-close"
+            ],
+            "sourceSnippets": []
+          },
+          {
+            "frame": "top",
+            "score": 10,
+            "path": "window.bitunixTv.tvWidget.host._trading._orderViewController._onOrderWidgetCloseButtonClicked",
+            "functionName": "(anonymous)",
+            "functionLength": 101,
+            "matches": [
+              "path-close",
+              "source-close-order",
+              "source-close"
+            ],
+            "sourceSnippets": [
+              "()=>{ this._mode.value()===T.OrderEditorDisplayMode.Panel?this.closePanel():this._closeOrderDialog()}"
+            ]
+          },
+          {
+            "frame": "top",
+            "score": 9,
+            "path": "window.bitunixTv.tvWidget.host._trading._orderViewController._onPositionWidgetModeChanged",
+            "functionName": "(anonymous)",
+            "functionLength": 205,
+            "matches": [
+              "source-close-position",
+              "source-close"
+            ],
+            "sourceSnippets": [
+              "async e=>{e===T.OrderEditorDisplayMode.Panel?(await this._closePositionDialog(),await this._openPositionPanel()):(await this._closePositionPanel(),await this._showPositionDialog()),this._setDisplayMode(e)}"
+            ]
+          },
+          {
+            "frame": "top",
+            "score": 6,
+            "path": "window.bitunixTv.tvWidget.host._trading._orderViewController.closePanel",
+            "functionName": "(anonymous)",
+            "functionLength": 361,
+            "matches": [
+              "path-close",
+              "source-close"
+            ],
+            "sourceSnippets": []
+          },
+          {
+            "frame": "top",
+            "score": 6,
+            "path": "window.bitunixTv.tvWidget.host._trading._orderViewController._onOrderWidgetModeChanged",
+            "functionName": "(anonymous)",
+            "functionLength": 193,
+            "matches": [
+              "source-close-order",
+              "source-close"
+            ],
+            "sourceSnippets": [
+              "async e=>{e===T.OrderEditorDisplayMode.Panel?(await this._closeOrderDialog(),await this._openOrderPanel()):(await this._closeOrderPanel(),await this._showOrderDialog()),this._setDisplayMode(e)}"
+            ]
+          },
+          {
+            "frame": "top",
+            "score": 5,
+            "path": "window.bitunixTv.eventBus.events.scaledOrderBoundaryClosed[0]",
+            "functionName": "(anonymous)",
+            "functionLength": 41,
+            "matches": [
+              "path-close"
+            ],
+            "sourceSnippets": []
+          },
+          {
+            "frame": "top",
+            "score": 4,
+            "path": "window.bitunixTv.tvWidget.[[Prototype]].closePopupsAndDialogs",
+            "functionName": "closePopupsAndDialogs",
+            "functionLength": 118,
+            "matches": [
+              "path-close"
+            ],
+            "sourceSnippets": []
+          },
+          {
+            "frame": "top",
+            "score": 4,
+            "path": "window.bitunixTv.eventBus.events.priceRangeToolClose[0]",
+            "functionName": "(anonymous)",
+            "functionLength": 68,
+            "matches": [
+              "path-close"
+            ],
+            "sourceSnippets": []
+          },
+          {
+            "frame": "top",
+            "score": 4,
+            "path": "window.bitunixTv.tvWidget.host._trading.tradingPanelPopup._handleClose",
+            "functionName": "(anonymous)",
+            "functionLength": 72,
+            "matches": [
+              "path-close"
+            ],
+            "sourceSnippets": []
+          },
+          {
+            "frame": "top",
+            "score": 4,
+            "path": "window.bitunixTv.tvWidget.host._trading.tradingPanel.close",
+            "functionName": "(anonymous)",
+            "functionLength": 174,
+            "matches": [
+              "path-close"
+            ],
+            "sourceSnippets": []
+          },
+          {
+            "frame": "top",
+            "score": 3,
+            "path": "window.bitunixTv.eventBus.events.createTPSLOrder[0]",
+            "functionName": "(anonymous)",
+            "functionLength": 2645,
+            "matches": [
+              "source-reverse"
+            ],
+            "sourceSnippets": []
+          }
+        ]
+      },
+      "reactScan": {
+        "scannedElements": 130,
+        "reactReferences": [],
+        "handlerFunctions": []
+      },
+      "scriptScan": {
+        "totalScripts": 22,
+        "externalScripts": [
+          {
+            "index": 3,
+            "src": "https://www.bitunix.com/web/bitunix-assets/futures/entry-DUW8vMQn.js"
+          }
+        ],
+        "inlineScriptMatches": []
+      },
+      "loadedResourceNames": [
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/entry.fMs1Hnai.css",
+          "initiatorType": "link",
+          "durationMs": 181
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/styles-global.BPVzBGvS.css",
+          "initiatorType": "link",
+          "durationMs": 815
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/default-29a1f5cd.css",
+          "initiatorType": "link",
+          "durationMs": 135
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/bitunix-layout.Dp0V_fiX.css",
+          "initiatorType": "link",
+          "durationMs": 554
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/styles-contract-trade.BwuP9yJF.css",
+          "initiatorType": "link",
+          "durationMs": 293
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/Geist-Regular.gqFrH2sa.woff2",
+          "initiatorType": "link",
+          "durationMs": 532
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/Geist-Medium.ei0swZHc.woff2",
+          "initiatorType": "link",
+          "durationMs": 818
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/Geist-Bold.BqNYMUzs.woff2",
+          "initiatorType": "link",
+          "durationMs": 537
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/bitunix_wasm.CQJeGgK9.js",
+          "initiatorType": "other",
+          "durationMs": 535
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/entry-DUW8vMQn.js",
+          "initiatorType": "other",
+          "durationMs": 990
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/cookie-domain-bvwyK4-F.js",
+          "initiatorType": "other",
+          "durationMs": 538
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/url-C-2xLetd.js",
+          "initiatorType": "other",
+          "durationMs": 540
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/index-Bd5xVq1M.js",
+          "initiatorType": "other",
+          "durationMs": 541
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/routes-D9WFIyoC.js",
+          "initiatorType": "other",
+          "durationMs": 551
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/defu-CmaNJ8u8.js",
+          "initiatorType": "other",
+          "durationMs": 552
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/state-B1n7zguO.js",
+          "initiatorType": "other",
+          "durationMs": 553
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/ipx-D2xrFLeG.js",
+          "initiatorType": "other",
+          "durationMs": 554
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/useDayjs-DtcgVO4Z.js",
+          "initiatorType": "other",
+          "durationMs": 553
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/index-CXchsjV2.js",
+          "initiatorType": "other",
+          "durationMs": 430
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/index-Dr7J_qkc.js",
+          "initiatorType": "other",
+          "durationMs": 560
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/navigation-Dmisbj3a.js",
+          "initiatorType": "other",
+          "durationMs": 430
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/route-BjwoMSSs.js",
+          "initiatorType": "other",
+          "durationMs": 456
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/futures-BRHIYJIE.js",
+          "initiatorType": "other",
+          "durationMs": 344
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/index-BVxYtIor.js",
+          "initiatorType": "other",
+          "durationMs": 381
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/useFuturesSymbolStore-877Zsd_J.js",
+          "initiatorType": "other",
+          "durationMs": 456
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/index-qfvUVIAg.js",
+          "initiatorType": "other",
+          "durationMs": 344
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/index-i0HRSYnF.js",
+          "initiatorType": "other",
+          "durationMs": 344
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/use-popup-manager-Bku3Mg8X.js",
+          "initiatorType": "other",
+          "durationMs": 378
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/index-BjJ5wSiN.js",
+          "initiatorType": "other",
+          "durationMs": 379
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/tools-DGVjDDzT.js",
+          "initiatorType": "other",
+          "durationMs": 379
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/preload-B-FWMNWA.js",
+          "initiatorType": "other",
+          "durationMs": 380
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/useJsonldContext-6vX-irlv.js",
+          "initiatorType": "other",
+          "durationMs": 380
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/index-D0-LWj14.js",
+          "initiatorType": "other",
+          "durationMs": 380
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/keyboard-DaTNT0x_.js",
+          "initiatorType": "other",
+          "durationMs": 379
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/index-BuhXsb38.js",
+          "initiatorType": "other",
+          "durationMs": 379
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/use-size-C4if0kLU.js",
+          "initiatorType": "other",
+          "durationMs": 379
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/use-overflow-BzzYdA3v.js",
+          "initiatorType": "other",
+          "durationMs": 379
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/navigate-DythSDrk.js",
+          "initiatorType": "other",
+          "durationMs": 379
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/_plugin-vue_export-helper-CMDoiiiz.js",
+          "initiatorType": "other",
+          "durationMs": 379
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/useNumberFormatCache-Du1-vAax.js",
+          "initiatorType": "other",
+          "durationMs": 379
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/index-MsdRGBlt.js",
+          "initiatorType": "other",
+          "durationMs": 379
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/useTheme-BMVL_Lgt.js",
+          "initiatorType": "other",
+          "durationMs": 379
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/tools-DSV-z9Xe.js",
+          "initiatorType": "other",
+          "durationMs": 474
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/tools-DFfG57tC.js",
+          "initiatorType": "other",
+          "durationMs": 379
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/format-tQNuS-7Q.js",
+          "initiatorType": "other",
+          "durationMs": 388
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/resolve-format-preference-IuOPh_3D.js",
+          "initiatorType": "other",
+          "durationMs": 379
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/injection-keys-C9visxZz.js",
+          "initiatorType": "other",
+          "durationMs": 379
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/useShowIdCookie-BGNjrfD4.js",
+          "initiatorType": "other",
+          "durationMs": 379
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/useSocket-HcyCVwJg.js",
+          "initiatorType": "other",
+          "durationMs": 393
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/useTradeSocket-D9GbsCkT.js",
+          "initiatorType": "other",
+          "durationMs": 664
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/index-DKSvliMq.js",
+          "initiatorType": "other",
+          "durationMs": 378
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/useDeviceResolution-CS5u47B7.js",
+          "initiatorType": "other",
+          "durationMs": 379
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/index-Dfs5As6n.js",
+          "initiatorType": "other",
+          "durationMs": 379
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/usePoc-B4YCToZv.js",
+          "initiatorType": "other",
+          "durationMs": 393
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/methods-Dvn8S8f_.js",
+          "initiatorType": "other",
+          "durationMs": 380
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/getScriptNonce-BCl13AaF.js",
+          "initiatorType": "other",
+          "durationMs": 414
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/useLcpSettled-CmI0jLty.js",
+          "initiatorType": "other",
+          "durationMs": 379
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/mode-CLJofnR7.js",
+          "initiatorType": "other",
+          "durationMs": 415
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/1f2c68-BGxu_-KF.js",
+          "initiatorType": "other",
+          "durationMs": 425
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/loading-pull-mI8Zgeee.js",
+          "initiatorType": "other",
+          "durationMs": 415
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/__vite-browser-external-BA6av6Jr.js",
+          "initiatorType": "other",
+          "durationMs": 425
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/useFuturesUserData-DKQBYa-t.js",
+          "initiatorType": "other",
+          "durationMs": 425
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/usePositionRemark-BCEPb2BV.js",
+          "initiatorType": "other",
+          "durationMs": 442
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/useFutureReady-BED-pOVF.js",
+          "initiatorType": "other",
+          "durationMs": 425
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/useFuturesPlaceOrderStore-Brr-GB5f.js",
+          "initiatorType": "script",
+          "durationMs": 670
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/useBaseStore-exnakry6.js",
+          "initiatorType": "script",
+          "durationMs": 655
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/trade-weekly-report-9F6FNs0n.js",
+          "initiatorType": "script",
+          "durationMs": 659
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/useSymbolDetail-DFdo6GuF.js",
+          "initiatorType": "script",
+          "durationMs": 853
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/formula-Co-ff3L7.js",
+          "initiatorType": "script",
+          "durationMs": 752
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/calculateResult-xlIifjy0.js",
+          "initiatorType": "script",
+          "durationMs": 1050
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/logger-CKdqD390.js",
+          "initiatorType": "script",
+          "durationMs": 858
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/calculate-DvSzPfnO.js",
+          "initiatorType": "script",
+          "durationMs": 855
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/useFuturesPositionsStore-sM2vEJFa.js",
+          "initiatorType": "script",
+          "durationMs": 1052
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/format-CTGl_2qz.js",
+          "initiatorType": "script",
+          "durationMs": 854
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/useFutureMaintainMarginStore-BuytadYL.js",
+          "initiatorType": "script",
+          "durationMs": 1052
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/converters-CdwonYnm.js",
+          "initiatorType": "script",
+          "durationMs": 1054
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/interval-7DDrBCcK.js",
+          "initiatorType": "script",
+          "durationMs": 1058
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/useFuturesUserOrdersStore-Czz9iq5l.js",
+          "initiatorType": "script",
+          "durationMs": 1087
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/useFuturesTpslStore-C-f0Nxkz.js",
+          "initiatorType": "script",
+          "durationMs": 1058
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/useFuturesTrackStore-Bag55HYo.js",
+          "initiatorType": "script",
+          "durationMs": 1061
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/index-CXuIacEo.js",
+          "initiatorType": "script",
+          "durationMs": 1061
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/useDeals-CjPFlvL5.js",
+          "initiatorType": "script",
+          "durationMs": 1063
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/useAddListener-DT1icsM1.js",
+          "initiatorType": "script",
+          "durationMs": 1064
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/useTradeSocketReconnect-DhAGujdw.js",
+          "initiatorType": "script",
+          "durationMs": 1066
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/index-CQT-Nuyx.js",
+          "initiatorType": "script",
+          "durationMs": 1069
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/useLocaleCache-DQTIvbSS.js",
+          "initiatorType": "script",
+          "durationMs": 1071
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/useLocale-DhVaXrv5.js",
+          "initiatorType": "script",
+          "durationMs": 1073
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/rewardCenterTrack-rau_SvJJ.js",
+          "initiatorType": "script",
+          "durationMs": 1075
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/index-CY9KmJYx.js",
+          "initiatorType": "script",
+          "durationMs": 1072
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/type-BxlYLisx.js",
+          "initiatorType": "script",
+          "durationMs": 1075
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/cfdCoinShowName-C_CH7HLm.js",
+          "initiatorType": "script",
+          "durationMs": 1079
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/LoadMeter-D0QvSWvv.js",
+          "initiatorType": "script",
+          "durationMs": 1080
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/switch-transition-DLXJ5g5L.js",
+          "initiatorType": "script",
+          "durationMs": 1080
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/default-WaRjUsx7.js",
+          "initiatorType": "script",
+          "durationMs": 1081
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/NuxtLinkLocale-DhgZsO6l.js",
+          "initiatorType": "script",
+          "durationMs": 1083
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/index-DQr_U2TS.js",
+          "initiatorType": "script",
+          "durationMs": 1916
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/index-BBNmYrGq.js",
+          "initiatorType": "script",
+          "durationMs": 1915
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/index-Dz728see.js",
+          "initiatorType": "script",
+          "durationMs": 1916
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/index-DHE86b2d.js",
+          "initiatorType": "script",
+          "durationMs": 1929
+        },
+        {
+          "name": "https://www.bitunix.com/web/bitunix-assets/futures/pick-CPpC6gXT.js",
+          "initiatorType": "script",
+          "durationMs": 1657
+        }
+      ]
+    },
+    {
+      "path": "top > iframe[0]",
+      "url": "nullblank",
+      "title": "",
+      "isChart": false,
+      "canvasCount": 0,
+      "chartMarkers": [],
+      "canvases": [],
+      "objectScan": {
+        "globalRootCandidates": [
+          "SVGTextPositioningElement",
+          "MediaRecorder",
+          "IDBObjectStore",
+          "GeolocationPositionError",
+          "GeolocationPosition",
+          "CompositionEvent",
+          "CaretPosition",
+          "CSSPositionValue",
+          "CSSPositionTryRule",
+          "CSSPositionTryDescriptors",
+          "GPUShaderModule",
+          "NotRestoredReasonDetails",
+          "NotRestoredReasons",
+          "XRCompositionLayer",
+          "XREquirectLayer",
+          "webpackChunk_zendesk_web_widget_messenger"
+        ],
+        "inspectedObjects": 48,
+        "inspectedFunctions": 143,
+        "objectMatches": [
+          {
+            "frame": "top > iframe[0]",
+            "path": "window.CompositionEvent.prototype",
+            "matchingKeys": [
+              {
+                "key": "initCompositionEvent",
+                "type": "function"
+              }
+            ]
+          }
+        ],
+        "functionMatches": [
+          {
+            "frame": "top > iframe[0]",
+            "score": 3,
+            "path": "window.webpackChunk_zendesk_web_widget_messenger.5[1].97519",
+            "functionName": "97519",
+            "functionLength": 12000,
+            "matches": [
+              "source-close",
+              "source-reverse"
+            ],
+            "sourceSnippets": []
+          }
+        ]
+      },
+      "reactScan": {
+        "scannedElements": 0,
+        "reactReferences": [],
+        "handlerFunctions": []
+      },
+      "scriptScan": {
+        "totalScripts": 1,
+        "externalScripts": [],
+        "inlineScriptMatches": []
+      },
+      "loadedResourceNames": []
+    },
+    {
+      "path": "top > iframe[1]",
+      "url": "nullblank",
+      "title": "Button to launch messaging window",
+      "isChart": false,
+      "canvasCount": 0,
+      "chartMarkers": [],
+      "canvases": [],
+      "objectScan": {
+        "globalRootCandidates": [
+          "SVGTextPositioningElement",
+          "MediaRecorder",
+          "IDBObjectStore",
+          "GeolocationPositionError",
+          "GeolocationPosition",
+          "CompositionEvent",
+          "CaretPosition",
+          "CSSPositionValue",
+          "CSSPositionTryRule",
+          "CSSPositionTryDescriptors",
+          "GPUShaderModule",
+          "NotRestoredReasonDetails",
+          "NotRestoredReasons",
+          "XRCompositionLayer",
+          "XREquirectLayer"
+        ],
+        "inspectedObjects": 29,
+        "inspectedFunctions": 43,
+        "objectMatches": [
+          {
+            "frame": "top > iframe[1]",
+            "path": "window.CompositionEvent.prototype",
+            "matchingKeys": [
+              {
+                "key": "initCompositionEvent",
+                "type": "function"
+              }
+            ]
+          }
+        ],
+        "functionMatches": []
+      },
+      "reactScan": {
+        "scannedElements": 0,
+        "reactReferences": [],
+        "handlerFunctions": []
+      },
+      "scriptScan": {
+        "totalScripts": 0,
+        "externalScripts": [],
+        "inlineScriptMatches": []
+      },
+      "loadedResourceNames": []
+    },
+    {
+      "path": "top > iframe[2]",
+      "url": "https://www.bitunix.comhttps://www.bitunix.com/5785e274-c2ac-4ae1-b883-4f173e6cf073",
+      "title": "",
+      "isChart": true,
+      "canvasCount": 11,
+      "chartMarkers": [
+        {
+          "selector": ".chart-markup-table",
+          "count": 10
+        },
+        {
+          "selector": ".chart-gui-wrapper",
+          "count": 2
+        },
+        {
+          "selector": ".pane",
+          "count": 2
+        },
+        {
+          "selector": "[class*='chart-container']",
+          "count": 2
+        }
+      ],
+      "canvases": [
+        {
+          "index": 0,
+          "ariaLabel": "",
+          "className": "",
+          "rect": {
+            "x": 56,
+            "y": 0,
+            "width": 957,
+            "height": 366
+          }
+        },
+        {
+          "index": 1,
+          "ariaLabel": "Chart for XAUTUSDT, 1 minute",
+          "className": "",
+          "rect": {
+            "x": 56,
+            "y": 0,
+            "width": 957,
+            "height": 366
+          }
+        },
+        {
+          "index": 2,
+          "ariaLabel": "",
+          "className": "",
+          "rect": {
+            "x": 1013,
+            "y": 0,
+            "width": 64,
+            "height": 366
+          }
+        },
+        {
+          "index": 3,
+          "ariaLabel": "",
+          "className": "",
+          "rect": {
+            "x": 1013,
+            "y": 0,
+            "width": 64,
+            "height": 366
+          }
+        },
+        {
+          "index": 4,
+          "ariaLabel": "",
+          "className": "",
+          "rect": {
+            "x": 56,
+            "y": 367,
+            "width": 957,
+            "height": 60
+          }
+        },
+        {
+          "index": 5,
+          "ariaLabel": "",
+          "className": "",
+          "rect": {
+            "x": 56,
+            "y": 367,
+            "width": 957,
+            "height": 60
+          }
+        },
+        {
+          "index": 6,
+          "ariaLabel": "",
+          "className": "",
+          "rect": {
+            "x": 1013,
+            "y": 367,
+            "width": 64,
+            "height": 60
+          }
+        },
+        {
+          "index": 7,
+          "ariaLabel": "",
+          "className": "",
+          "rect": {
+            "x": 1013,
+            "y": 367,
+            "width": 64,
+            "height": 60
+          }
+        },
+        {
+          "index": 8,
+          "ariaLabel": "",
+          "className": "",
+          "rect": {
+            "x": 56,
+            "y": 428,
+            "width": 957,
+            "height": 28
+          }
+        },
+        {
+          "index": 9,
+          "ariaLabel": "",
+          "className": "",
+          "rect": {
+            "x": 56,
+            "y": 428,
+            "width": 957,
+            "height": 28
+          }
+        },
+        {
+          "index": 10,
+          "ariaLabel": "",
+          "className": "",
+          "rect": {
+            "x": 1013,
+            "y": 428,
+            "width": 64,
+            "height": 28
+          }
+        }
+      ],
+      "objectScan": {
+        "globalRootCandidates": [
+          "SVGTextPositioningElement",
+          "MediaRecorder",
+          "IDBObjectStore",
+          "GeolocationPositionError",
+          "GeolocationPosition",
+          "CompositionEvent",
+          "CaretPosition",
+          "CSSPositionValue",
+          "CSSPositionTryRule",
+          "CSSPositionTryDescriptors",
+          "GPUShaderModule",
+          "NotRestoredReasonDetails",
+          "NotRestoredReasons",
+          "XRCompositionLayer",
+          "XREquirectLayer",
+          "webpackChunktradingview",
+          "TradingView",
+          "loginRequiredDelegate",
+          "TradingViewApi",
+          "widgetReady",
+          "doWhenApiIsReady",
+          "ChartApiInstance",
+          "chartWidgetCollection",
+          "studyMarket",
+          "chartWidget",
+          "tradingViewApi"
+        ],
+        "inspectedObjects": 4200,
+        "inspectedFunctions": 5082,
+        "objectMatches": [
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.CompositionEvent.prototype",
+            "matchingKeys": [
+              {
+                "key": "initCompositionEvent",
+                "type": "function"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._paneWidgets[0]",
+            "matchingKeys": [
+              {
+                "key": "_prevMoveEventPosition",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._actions",
+            "matchingKeys": [
+              {
+                "key": "showSeriesPrevCloseValue",
+                "type": "object"
+              },
+              {
+                "key": "showSeriesPrevCloseLine",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._model.m_model",
+            "matchingKeys": [
+              {
+                "key": "_sourceZOrderChanged",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._paneWidgets[0]._paneControls",
+            "matchingKeys": [
+              {
+                "key": "_closeButtonVisibility",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._paneWidgets[0]._state",
+            "matchingKeys": [
+              {
+                "key": "_cachedOrderedSources",
+                "type": "object"
+              },
+              {
+                "key": "_sourcesZOrderChanged",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._paneWidgets[0]._mouseEventHandler",
+            "matchingKeys": [
+              {
+                "key": "_clickPosition",
+                "type": "object"
+              },
+              {
+                "key": "_tapPosition",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._paneWidgets[1]._paneControls",
+            "matchingKeys": [
+              {
+                "key": "_closeButtonVisibility",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._paneWidgets[1]._state",
+            "matchingKeys": [
+              {
+                "key": "_cachedOrderedSources",
+                "type": "object"
+              },
+              {
+                "key": "_sourcesZOrderChanged",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._paneWidgets[1]._mouseEventHandler",
+            "matchingKeys": [
+              {
+                "key": "_clickPosition",
+                "type": "object"
+              },
+              {
+                "key": "_tapPosition",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._timeAxisWidget._properties",
+            "matchingKeys": [
+              {
+                "key": "showSeriesPrevCloseValue",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._timeAxisWidget._mouseEventHandler",
+            "matchingKeys": [
+              {
+                "key": "_clickPosition",
+                "type": "object"
+              },
+              {
+                "key": "_tapPosition",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._paneSeparators[0]._mouseEventHandler",
+            "matchingKeys": [
+              {
+                "key": "_clickPosition",
+                "type": "object"
+              },
+              {
+                "key": "_tapPosition",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._properties.mainSeriesProperties",
+            "matchingKeys": [
+              {
+                "key": "showPrevClosePriceLine",
+                "type": "object"
+              },
+              {
+                "key": "prevClosePriceLineWidth",
+                "type": "object"
+              },
+              {
+                "key": "prevClosePriceLineColor",
+                "type": "object"
+              },
+              {
+                "key": "settlementAsClose",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._properties.tradingProperties",
+            "matchingKeys": [
+              {
+                "key": "showPositions",
+                "type": "object"
+              },
+              {
+                "key": "positionPL",
+                "type": "object"
+              },
+              {
+                "key": "showOrders",
+                "type": "object"
+              },
+              {
+                "key": "showReverse",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._showDataWindowAction._options",
+            "matchingKeys": [
+              {
+                "key": "onExecute",
+                "type": "function"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._model.m_model._gridSource",
+            "matchingKeys": [
+              {
+                "key": "_zOrderChanged",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._paneWidgets[0]._legendWidget._mainSeriesStatusWidget",
+            "matchingKeys": [
+              {
+                "key": "_handleDropdownMenuClose",
+                "type": "function"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._paneWidgets[0]._paneControls._actions",
+            "matchingKeys": [
+              {
+                "key": "close",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._paneWidgets[0]._state.m_dataSources[0]",
+            "matchingKeys": [
+              {
+                "key": "_zOrderChanged",
+                "type": "object"
+              },
+              {
+                "key": "_isSettlementAsCloseForbiddenProperty",
+                "type": "object"
+              },
+              {
+                "key": "_prevClosePriceAxisView",
+                "type": "object"
+              },
+              {
+                "key": "_prevClosePriceLineView",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._paneWidgets[0]._state.m_dataSources[1]",
+            "matchingKeys": [
+              {
+                "key": "_zOrderChanged",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._paneWidgets[0]._state.m_dataSources[2]",
+            "matchingKeys": [
+              {
+                "key": "_zOrderChanged",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._paneWidgets[0]._state._rightPriceScales[0]",
+            "matchingKeys": [
+              {
+                "key": "_cachedOrderedSoruces",
+                "type": "array"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._paneWidgets[1]._legendWidget._dataSourcesStatusesWidgets[0]",
+            "matchingKeys": [
+              {
+                "key": "_handleDropdownMenuClose",
+                "type": "function"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._paneWidgets[1]._paneControls._actions",
+            "matchingKeys": [
+              {
+                "key": "close",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._paneWidgets[1]._state.m_dataSources[0]",
+            "matchingKeys": [
+              {
+                "key": "_zOrderChanged",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._paneWidgets[1]._state._rightPriceScales[0]",
+            "matchingKeys": [
+              {
+                "key": "_cachedOrderedSoruces",
+                "type": "array"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._properties.mainSeriesProperties.highLowAvgPrice",
+            "matchingKeys": [
+              {
+                "key": "averageClosePriceLineVisible",
+                "type": "object"
+              },
+              {
+                "key": "averageClosePriceLabelVisible",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._properties.mainSeriesProperties.candleStyle",
+            "matchingKeys": [
+              {
+                "key": "drawBorder",
+                "type": "object"
+              },
+              {
+                "key": "borderColor",
+                "type": "object"
+              },
+              {
+                "key": "borderUpColor",
+                "type": "object"
+              },
+              {
+                "key": "borderDownColor",
+                "type": "object"
+              },
+              {
+                "key": "barColorsOnPrevClose",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._properties.mainSeriesProperties.hollowCandleStyle",
+            "matchingKeys": [
+              {
+                "key": "drawBorder",
+                "type": "object"
+              },
+              {
+                "key": "borderColor",
+                "type": "object"
+              },
+              {
+                "key": "borderUpColor",
+                "type": "object"
+              },
+              {
+                "key": "borderDownColor",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._properties.mainSeriesProperties.haStyle",
+            "matchingKeys": [
+              {
+                "key": "drawBorder",
+                "type": "object"
+              },
+              {
+                "key": "borderColor",
+                "type": "object"
+              },
+              {
+                "key": "borderUpColor",
+                "type": "object"
+              },
+              {
+                "key": "borderDownColor",
+                "type": "object"
+              },
+              {
+                "key": "barColorsOnPrevClose",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._properties.mainSeriesProperties.barStyle",
+            "matchingKeys": [
+              {
+                "key": "barColorsOnPrevClose",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._properties.mainSeriesProperties.hiloStyle",
+            "matchingKeys": [
+              {
+                "key": "showBorders",
+                "type": "object"
+              },
+              {
+                "key": "borderColor",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._properties.mainSeriesProperties.columnStyle",
+            "matchingKeys": [
+              {
+                "key": "barColorsOnPrevClose",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._properties.mainSeriesProperties.hlcAreaStyle",
+            "matchingKeys": [
+              {
+                "key": "closeLineColor",
+                "type": "object"
+              },
+              {
+                "key": "closeLineStyle",
+                "type": "object"
+              },
+              {
+                "key": "closeLineWidth",
+                "type": "object"
+              },
+              {
+                "key": "highCloseFillColor",
+                "type": "object"
+              },
+              {
+                "key": "closeLowFillColor",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._properties.mainSeriesProperties.renkoStyle",
+            "matchingKeys": [
+              {
+                "key": "borderUpColor",
+                "type": "object"
+              },
+              {
+                "key": "borderDownColor",
+                "type": "object"
+              },
+              {
+                "key": "borderUpColorProjection",
+                "type": "object"
+              },
+              {
+                "key": "borderDownColorProjection",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._properties.mainSeriesProperties.pbStyle",
+            "matchingKeys": [
+              {
+                "key": "borderUpColor",
+                "type": "object"
+              },
+              {
+                "key": "borderDownColor",
+                "type": "object"
+              },
+              {
+                "key": "borderUpColorProjection",
+                "type": "object"
+              },
+              {
+                "key": "borderDownColorProjection",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._properties.mainSeriesProperties.rangeStyle",
+            "matchingKeys": [
+              {
+                "key": "candlesBorderUpColor",
+                "type": "object"
+              },
+              {
+                "key": "candlesBorderDownColor",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._properties.mainSeriesProperties.volFootprintStyle",
+            "matchingKeys": [
+              {
+                "key": "drawBorder",
+                "type": "object"
+              },
+              {
+                "key": "borderColor",
+                "type": "object"
+              },
+              {
+                "key": "borderUpColor",
+                "type": "object"
+              },
+              {
+                "key": "borderDownColor",
+                "type": "object"
+              },
+              {
+                "key": "barColorsOnPrevClose",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._content.chartProperties.tradingProperties",
+            "matchingKeys": [
+              {
+                "key": "positionPL",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._actions.chartProperties._options",
+            "matchingKeys": [
+              {
+                "key": "onExecute",
+                "type": "function"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._actions.mainSeriesPropertiesAction._options",
+            "matchingKeys": [
+              {
+                "key": "onExecute",
+                "type": "function"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._actions.scalesProperties._options",
+            "matchingKeys": [
+              {
+                "key": "onExecute",
+                "type": "function"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._actions.timeScaleReset._options",
+            "matchingKeys": [
+              {
+                "key": "onExecute",
+                "type": "function"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._actions.invertSeriesScale._options",
+            "matchingKeys": [
+              {
+                "key": "onExecute",
+                "type": "function"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._actions.logSeriesScale._options",
+            "matchingKeys": [
+              {
+                "key": "onExecute",
+                "type": "function"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._actions.autoSeriesScale._options",
+            "matchingKeys": [
+              {
+                "key": "onExecute",
+                "type": "function"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._actions.lockSeriesScale._options",
+            "matchingKeys": [
+              {
+                "key": "onExecute",
+                "type": "function"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._actions.regularSeriesScale._options",
+            "matchingKeys": [
+              {
+                "key": "onExecute",
+                "type": "function"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._actions.percentSeriesScale._options",
+            "matchingKeys": [
+              {
+                "key": "onExecute",
+                "type": "function"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._actions.indexedTo100SeriesScale._options",
+            "matchingKeys": [
+              {
+                "key": "onExecute",
+                "type": "function"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._actions.compareOrAdd._options",
+            "matchingKeys": [
+              {
+                "key": "onExecute",
+                "type": "function"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._actions.paneObjectTree._options",
+            "matchingKeys": [
+              {
+                "key": "onExecute",
+                "type": "function"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._actions.insertIndicator._options",
+            "matchingKeys": [
+              {
+                "key": "onExecute",
+                "type": "function"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._actions.symbolSearch._options",
+            "matchingKeys": [
+              {
+                "key": "onExecute",
+                "type": "function"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._actions.showSymbolInfoDialog._options",
+            "matchingKeys": [
+              {
+                "key": "onExecute",
+                "type": "function"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._actions.changeInterval._options",
+            "matchingKeys": [
+              {
+                "key": "onExecute",
+                "type": "function"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._actions.seriesHide._options",
+            "matchingKeys": [
+              {
+                "key": "onExecute",
+                "type": "function"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._actions.lineToggleLock._options",
+            "matchingKeys": [
+              {
+                "key": "onExecute",
+                "type": "function"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._actions.scaleSeriesOnly._options",
+            "matchingKeys": [
+              {
+                "key": "onExecute",
+                "type": "function"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._actions.drawingToolbarAction._options",
+            "matchingKeys": [
+              {
+                "key": "onExecute",
+                "type": "function"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._actions.stayInDrawingModeAction._options",
+            "matchingKeys": [
+              {
+                "key": "onExecute",
+                "type": "function"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._actions.hideAllMarks._options",
+            "matchingKeys": [
+              {
+                "key": "onExecute",
+                "type": "function"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._actions.showCountdown._options",
+            "matchingKeys": [
+              {
+                "key": "onExecute",
+                "type": "function"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._actions.addPlusButton._options",
+            "matchingKeys": [
+              {
+                "key": "onExecute",
+                "type": "function"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._actions.showSeriesLastValue._options",
+            "matchingKeys": [
+              {
+                "key": "onExecute",
+                "type": "function"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._actions.showSeriesPrevCloseValue._options",
+            "matchingKeys": [
+              {
+                "key": "onExecute",
+                "type": "function"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._actions.showSeriesPrevCloseLine._options",
+            "matchingKeys": [
+              {
+                "key": "onExecute",
+                "type": "function"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._actions.showBidAskLabels._options",
+            "matchingKeys": [
+              {
+                "key": "onExecute",
+                "type": "function"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._actions.showBidAskLines._options",
+            "matchingKeys": [
+              {
+                "key": "onExecute",
+                "type": "function"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._actions.showHighLowPriceLabels._options",
+            "matchingKeys": [
+              {
+                "key": "onExecute",
+                "type": "function"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._actions.showHighLowPriceLines._options",
+            "matchingKeys": [
+              {
+                "key": "onExecute",
+                "type": "function"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._actions.showSymbolLabelsAction._options",
+            "matchingKeys": [
+              {
+                "key": "onExecute",
+                "type": "function"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._actions.showStudyLastValue._options",
+            "matchingKeys": [
+              {
+                "key": "onExecute",
+                "type": "function"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._actions.showStudyPlotNamesAction._options",
+            "matchingKeys": [
+              {
+                "key": "onExecute",
+                "type": "function"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._actions.undo._options",
+            "matchingKeys": [
+              {
+                "key": "onExecute",
+                "type": "function"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._actions.redo._options",
+            "matchingKeys": [
+              {
+                "key": "onExecute",
+                "type": "function"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._actions.mergeLeftScalesAction._options",
+            "matchingKeys": [
+              {
+                "key": "onExecute",
+                "type": "function"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._actions.mergeRightScalesAction._options",
+            "matchingKeys": [
+              {
+                "key": "onExecute",
+                "type": "function"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._actions.moveScaleToLeft._options",
+            "matchingKeys": [
+              {
+                "key": "onExecute",
+                "type": "function"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._actions.moveScaleToRight._options",
+            "matchingKeys": [
+              {
+                "key": "onExecute",
+                "type": "function"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._actions.chartReset._options",
+            "matchingKeys": [
+              {
+                "key": "onExecute",
+                "type": "function"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._actions.addToWatchlist._options",
+            "matchingKeys": [
+              {
+                "key": "onExecute",
+                "type": "function"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._actions.sessionBreaks._options",
+            "matchingKeys": [
+              {
+                "key": "onExecute",
+                "type": "function"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._actions.paneRemoveAllStudies._options",
+            "matchingKeys": [
+              {
+                "key": "onExecute",
+                "type": "function"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._actions.paneRemoveAllDrawingTools._options",
+            "matchingKeys": [
+              {
+                "key": "onExecute",
+                "type": "function"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._actions.paneRemoveAllStudiesDrawingTools._options",
+            "matchingKeys": [
+              {
+                "key": "onExecute",
+                "type": "function"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._actions.applyStudiesToAllCharts._options",
+            "matchingKeys": [
+              {
+                "key": "onExecute",
+                "type": "function"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._actions.studyRemove._options",
+            "matchingKeys": [
+              {
+                "key": "onExecute",
+                "type": "function"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._actions.format._options",
+            "matchingKeys": [
+              {
+                "key": "onExecute",
+                "type": "function"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._actions.showPriceLine._options",
+            "matchingKeys": [
+              {
+                "key": "onExecute",
+                "type": "function"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._paneWidgets[0]._legendWidget._renderer._mouseEventHandler",
+            "matchingKeys": [
+              {
+                "key": "_clickPosition",
+                "type": "object"
+              },
+              {
+                "key": "_tapPosition",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._paneWidgets[0]._paneControls._renderer._actionsSpawns",
+            "matchingKeys": [
+              {
+                "key": "close",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._paneWidgets[0]._rhsPriceAxisesContainer._axises[0]._mouseEventHandler",
+            "matchingKeys": [
+              {
+                "key": "_clickPosition",
+                "type": "object"
+              },
+              {
+                "key": "_tapPosition",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._paneWidgets[1]._legendWidget._renderer._mouseEventHandler",
+            "matchingKeys": [
+              {
+                "key": "_clickPosition",
+                "type": "object"
+              },
+              {
+                "key": "_tapPosition",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._paneWidgets[1]._paneControls._renderer._actionsSpawns",
+            "matchingKeys": [
+              {
+                "key": "close",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._paneWidgets[1]._rhsPriceAxisesContainer._axises[0]._mouseEventHandler",
+            "matchingKeys": [
+              {
+                "key": "_clickPosition",
+                "type": "object"
+              },
+              {
+                "key": "_tapPosition",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._timeAxisWidget._rhsStubContainer._stubs[0]._mouseEventHandler",
+            "matchingKeys": [
+              {
+                "key": "_clickPosition",
+                "type": "object"
+              },
+              {
+                "key": "_tapPosition",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.TradingView.__.c.onSync._listeners[7].object",
+            "matchingKeys": [
+              {
+                "key": "showTradedSources",
+                "type": "object"
+              },
+              {
+                "key": "orderExecutedSoundParams",
+                "type": "object"
+              },
+              {
+                "key": "_orderViewController",
+                "type": "object"
+              },
+              {
+                "key": "_closePositionDialogVisibility",
+                "type": "object"
+              },
+              {
+                "key": "_orderDialogVisibility",
+                "type": "object"
+              },
+              {
+                "key": "_orderPanelVisibility",
+                "type": "object"
+              },
+              {
+                "key": "_tradedItemsChartCollectionFacadePromise",
+                "type": "object"
+              },
+              {
+                "key": "setOrderPanelVisibility",
+                "type": "function"
+              },
+              {
+                "key": "getTradeNowBrokerId",
+                "type": "function"
+              },
+              {
+                "key": "clearTradeNowBrokerId",
+                "type": "function"
+              },
+              {
+                "key": "_tradeNow",
+                "type": "function"
+              },
+              {
+                "key": "_positionService",
+                "type": "object"
+              },
+              {
+                "key": "_ordersService",
+                "type": "object"
+              },
+              {
+                "key": "_tradedContextLinking",
+                "type": "object"
+              },
+              {
+                "key": "_qtySuggesterWithOrderSizeCalculatorResetting",
+                "type": "object"
+              },
+              {
+                "key": "_orderPanelHeaderState",
+                "type": "object"
+              },
+              {
+                "key": "closePositionDialogVisibility",
+                "type": "object"
+              },
+              {
+                "key": "orderDialogVisibility",
+                "type": "object"
+              },
+              {
+                "key": "_closePositionDialogVisibilitySubscription",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidgetCollection.onAboutToBeDestroyed._listeners[3].object._floatingToolbar._options",
+            "matchingKeys": [
+              {
+                "key": "defaultPosition",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._model.m_model._fgCustomSources[0]._realtimeProvider._currentBroker",
+            "matchingKeys": [
+              {
+                "key": "_positionsCache",
+                "type": "object"
+              },
+              {
+                "key": "_ordersCache",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._paneWidgets[0]._legendWidget._renderer._mainDataSourceRenderer._mouseEventHandlers[0]",
+            "matchingKeys": [
+              {
+                "key": "_clickPosition",
+                "type": "object"
+              },
+              {
+                "key": "_tapPosition",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._paneWidgets[0]._legendWidget._renderer._mainDataSourceRenderer._mouseEventHandlers[1]",
+            "matchingKeys": [
+              {
+                "key": "_clickPosition",
+                "type": "object"
+              },
+              {
+                "key": "_tapPosition",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._paneWidgets[0]._legendWidget._renderer._mainDataSourceRenderer._mouseEventHandlers[2]",
+            "matchingKeys": [
+              {
+                "key": "_clickPosition",
+                "type": "object"
+              },
+              {
+                "key": "_tapPosition",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._paneWidgets[0]._legendWidget._renderer._mainDataSourceRenderer._mouseEventHandlers[3]",
+            "matchingKeys": [
+              {
+                "key": "_clickPosition",
+                "type": "object"
+              },
+              {
+                "key": "_tapPosition",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._paneWidgets[0]._state.m_dataSources[1]._paneViews[0]._tooltip",
+            "matchingKeys": [
+              {
+                "key": "_updatePosition",
+                "type": "function"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._paneWidgets[0]._state._destroyed._listeners[1].object",
+            "matchingKeys": [
+              {
+                "key": "_zOrderChanged",
+                "type": "object"
+              }
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "path": "window.chartWidget._paneWidgets[1]._legendWidget._renderer._dataSourceRenderers[0]._mouseEventHandlers[0]",
+            "matchingKeys": [
+              {
+                "key": "_clickPosition",
+                "type": "object"
+              },
+              {
+                "key": "_tapPosition",
+                "type": "object"
+              }
+            ]
+          }
+        ],
+        "functionMatches": [
+          {
+            "frame": "top > iframe[2]",
+            "score": 19,
+            "path": "window.webpackChunktradingview.11[1].66786",
+            "functionName": "66786",
+            "functionLength": 739,
+            "matches": [
+              "source-close-position",
+              "source-reverse-position",
+              "source-close-order",
+              "source-close",
+              "source-reverse"
+            ],
+            "sourceSnippets": [
+              "(e,t,i)=>{\"use strict\";async function r(e){const{positionId:t,showErrorNotification:r,handler:n,closePositionCancelsOrders:a,abortSignal:l}=e;if(!await(0,o.showSimpleConfirmDialog)({title:s.t(null,void 0,i(172361)).replace(\"{positionId}\",t),text:s.t(null,void 0,i(492698)).replace(\"{positionId}\",t)+(a?\" \"+s.t(null,void 0,i(893827)):\"\"),mainButtonText:s.t(null,void 0,i",
+              "await n()}catch(e){return r(s.t(null,void 0,i(945593)),function(e){let t=\"\";return null!==e&&\"object\"==typeof e&&e.message?t=e.message:\"string\"==typeof e&&(t=e),t}(e)),!1}}i.d(t,{reversePositionDialog:()=>r});var s=i(609838),o=i(252546)}",
+              "(e,t,i)=>{\"use strict\";async function r(e){const{positionId:t,showErrorNotification:r,handler:n,closePositionCancelsOrders:a,abortSignal:l}=e;if(!await(0,o.showSimpleConfirmDialog)({title:s.t(null,void 0,i(172361)).replace(\"{positionId}\",t),text:s.t(null,void 0,i(492698)).replace(\"{positionId}\",t)+(a?\" \"+s.t(null,void 0,i(893827)):\"\"),mainButtonText:s.t(null,void 0,i(920848)),ma"
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "score": 15,
+            "path": "window.webpackChunktradingview.11[1].583705",
+            "functionName": "583705",
+            "functionLength": 5426,
+            "matches": [
+              "source-close-position",
+              "source-reverse-position",
+              "source-close",
+              "source-reverse"
+            ],
+            "sourceSnippets": [
+              "e(){this._clearPositions(),this._displayMode=function(e){if(null===e)return 1;const t=e.metainfo().configFlags;return t.supportPositionNetting?t.supportPositionBrackets?1:t.supportCloseIndividualPosition?0:1:1}(this.activeBroker()),this._requestPositions()}_clearPositions(){const e=(0,s.ensureNotNull)(this.activeBroker()),t=Array.from(this._positions.keys());for(const i of t)this.isDisplayModeIndividualPositions()?e.unsubscribeIndividualPositionPL(i,this._upd",
+              "DisplayModeIndividualPositions()?e.supportIndividualPositionBrackets:e.supportPositionBrackets)}supportReverse(e){return Boolean(!this.isDisplayModeIndividualPositions()&&e.supportReversePosition)}stopService(){this._clearPositions();const e=(0,s.ensureNotNull)(this.activeBroker());this.isDisplayModeIndividualPositions()?e.individualPositionUpdate.unsubscribeAll(this):e.positionUpdate.unsubscribeAll(this)}startService(){this._clearPositions(),this._di",
+              "t:r.calculatePLUsingLast||!1,price:Math.abs((0,s.ensureDefined)(l)),qtyBySide:Math.abs(e.qty)*(1===e.side?1:-1),supportClose:Boolean(n?r.supportCloseIndividualPosition&&d:r.supportClosePosition),supportReverse:Boolean(!n&&r.supportReversePosition),supportBrackets:a,supportOnlyPairBrackets:Boolean(r.supportOnlyPairPositionBrackets),supportTrailingStop:(0,c.checkTrailingStopAvailability)(r)}}_firePositionUpdate(e,t){this._positionUpdate.fire({data:e,t"
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "score": 15,
+            "path": "window.webpackChunktradingview.44[1].25412",
+            "functionName": "25412",
+            "functionLength": 3644,
+            "matches": [
+              "source-close-position",
+              "source-reverse-position",
+              "source-close",
+              "source-reverse"
+            ],
+            "sourceSnippets": [
+              "endEllipsis)(u.t(null,void 0,o(888310))),u.t(null,void 0,o(424356)),u.t(null,void 0,o(920848));var p=o(397728);const _=(0,n.getLogger)(\"Trading.Positions\"),y=s.enabled(\"chart_hide_close_position_button\");class m extends h.BaseItem{constructor(t,e,o,r,i,s){super(t,e,o,r,\"Chart Position\",i,s),this._source.positionDisplayMode().subscribe(this,this.fireProfitLossChange)}destroy(){this._source.positionDisplayMode().unsubscribe(this,this.fireProfitLossChan",
+              "}supportReverse(){return this._symbolDataProvider.supportPositionReverse()}async onReverse(t={}){t=(0,c.mergeGaParams)(t,{event:\"Reverse Position\"}),await this._doActionWithBlock(\"reversePosition\",!0,t)}supportClose(){return!y&&this._data.supportClose}async onClose(t={}){t=(0,c.mergeGaParams)(t,{event:\"Close Position\"}),await this._doActionWithBlock(\"closePosition\",!0,t)}supportModify(){return this.supportBrackets()}async onModify(t={}){return t=(0,c.",
+              "this._data.qtyBySide)}qty(){return this._data.qtyBySide}supportOnlyPairBrackets(){return this._data.supportOnlyPairBrackets}supportReverse(){return this._symbolDataProvider.supportPositionReverse()}async onReverse(t={}){t=(0,c.mergeGaParams)(t,{event:\"Reverse Position\"}),await this._doActionWithBlock(\"reversePosition\",!0,t)}supportClose(){return!y&&this._data.supportClose}async onClose(t={}){t=(0,c.mergeGaParams)(t,{event:\"Close Position\"}),await this",
+              "Block(\"reversePosition\",!0,t)}supportClose(){return!y&&this._data.supportClose}async onClose(t={}){t=(0,c.mergeGaParams)(t,{event:\"Close Position\"}),await this._doActionWithBlock(\"closePosition\",!0,t)}supportModify(){return this.supportBrackets()}async onModify(t={}){return t=(0,c.mergeGaParams)(t,{event:\"Edit Position\"}),this._doActionWithBlock(\"modifyPosition\",!0,t,void 0,void 0,!1)}useMinTickFormatter(){return!1}async onModifyWithBracket(t={},e={"
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "score": 11,
+            "path": "window.TradingView.factoryDefaults",
+            "functionName": "Re",
+            "functionLength": 12000,
+            "matches": [
+              "source-close-order",
+              "source-reverse-order",
+              "source-close",
+              "source-reverse"
+            ],
+            "sourceSnippets": [
+              "verseButtonBorderSellColor:\"#e75656\",reverseButtonBackgroundColor:k,reverseButtonBackgroundTransparency:25,reverseButtonIconBuyColor:\"#4094e8\",reverseButtonIconSellColor:\"#e75656\",closeButtonBorderBuyColor:\"#4094e8\",closeButtonBorderSellColor:\"#e75656\",closeButtonBackgroundColor:k,closeButtonBackgroundTransparency:25,closeButtonIconBuyColor:\"#4094e8\",closeButtonIconSellColor:\"#e75656\",tooltip:\"\",protectTooltip:\"\",closeTooltip:\"\",reverseTooltip:\"\"},linet",
+              "4e8\",quantityBackgroundSellColor:\"#e75656\",quantityTextColor:A,quantityTextTransparency:0,quantityFontFamily:\"Verdana\",quantityFontSize:9,quantityFontBold:!0,quantityFontItalic:!1,reverseButtonBorderBuyColor:\"#4094e8\",reverseButtonBorderSellColor:\"#e75656\",reverseButtonBackgroundColor:k,reverseButtonBackgroundTransparency:25,reverseButtonIconBuyColor:\"#4094e8\",reverseButtonIconSellColor:\"#e75656\",closeButtonBorderBuyColor:\"#4094e8\",closeButtonBorderSellCo"
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "score": 11,
+            "path": "window.webpackChunktradingview.1[1].156963",
+            "functionName": "156963",
+            "functionLength": 12000,
+            "matches": [
+              "source-close-position",
+              "source-close-order",
+              "source-close"
+            ],
+            "sourceSnippets": [
+              "ing_library_single_symbol_request\":{},\"use_ticker_on_symbol_info_update\":{},\"show_zoom_and_move_buttons_on_touch\":{},\"hide_main_series_symbol_from_indicator_legend\":{},\"chart_hide_close_position_button\":{},\"chart_hide_close_order_button\":{},\"hide_price_scale_global_last_bar_value\":{\"subsets\":[\"use_last_visible_bar_value_in_legend\"]},\"keep_object_tree_widget_in_right_toolbar\":{},\"show_average_close_price_line_and_label\":{},\"hide_image_invalid_symbol\":",
+              "\"use_ticker_on_symbol_info_update\":{},\"show_zoom_and_move_buttons_on_touch\":{},\"hide_main_series_symbol_from_indicator_legend\":{},\"chart_hide_close_position_button\":{},\"chart_hide_close_order_button\":{},\"hide_price_scale_global_last_bar_value\":{\"subsets\":[\"use_last_visible_bar_value_in_legend\"]},\"keep_object_tree_widget_in_right_toolbar\":{},\"show_average_close_price_line_and_label\":{},\"hide_image_invalid_symbol\":{},\"hide_object_tree_and_price_scal"
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "score": 11,
+            "path": "window.webpackChunktradingview.2[1].13510",
+            "functionName": "13510",
+            "functionLength": 12000,
+            "matches": [
+              "source-close-order",
+              "source-reverse-order",
+              "source-close",
+              "source-reverse"
+            ],
+            "sourceSnippets": [
+              "n this._line.properties().reverseButtonIconBuyColor.setValue(e),this}setReverseButtonIconSellColor(e){return this._line.properties().reverseButtonIconSellColor.setValue(e),this}getCloseButtonBorderColor(){var e=this._line.properties();return(\"buy\"===this._direction?e.closeButtonBorderBuyColor:e.closeButtonBorderSellColor).value()}setCloseButtonBorderColor(e){return\"buy\"===this._direction?this.setCloseButtonBorderBuyColor(e):this.setCloseButtonBorderSell",
+              "(e,this._line.properties().quantityFontFamily,this._line.properties().quantityFontSize,this._line.properties().quantityFontBold,this._line.properties().quantityFontItalic),this}getReverseButtonBorderColor(){var e=this._line.properties();return(\"buy\"===this._direction?e.reverseButtonBorderBuyColor:e.reverseButtonBorderSellColor).value()}setReverseButtonBorderColor(e){return\"buy\"===this._direction?this.setReverseButtonBorderBuyColor(e):this.setReverseButton"
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "score": 9,
+            "path": "window.webpackChunktradingview.42[1].16951",
+            "functionName": "16951",
+            "functionLength": 12000,
+            "matches": [
+              "source-reverse-position",
+              "source-close",
+              "source-reverse"
+            ],
+            "sourceSnippets": [
+              "hilds()}}(t),a=function(e,t){return e.has(t)||e.set(t,new P),(0,d.ensureDefined)(e.get(t))}(r,t),{realtimeProvider:n,qtySuggester:l,pipValueType$:c,positionSupportBracketsGetter:h,positionSupportReverseGetter:p,positionCurrencyGetter:_,orderCurrencyGetter:m,symbolSpecificTradingOptionsGetter:y,makeActualTradingSymbolObservable:b}=i,v=new D(t.mainSeries(),n,c,b,{positionSupportReverseGetter:p,positionSupportBracketsGetter:h,positionCurrencyGetter:_,orderCurre"
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "score": 8,
+            "path": "window.webpackChunktradingview.9[1].302946",
+            "functionName": "302946",
+            "functionLength": 691,
+            "matches": [
+              "source-reverse-position",
+              "source-reverse"
+            ],
+            "sourceSnippets": [
+              "n(a);class c extends o.PureComponent{render(){const{inputClassName:e,labelClassName:t,...n}=this.props,s=r(this.props.className,l().checkbox,{[l().reverse]:Boolean(this.props.labelPositionReverse),[l().baseline]:Boolean(this.props.labelAlignBaseline) }),a=r(l().label,t,{[l().disabled]:this.props.disabled});let c=null;return this.props.label&&(c=o.createElement(\"span\",{className:a,title:this.props.title},this.props.label)),o.createElement(\"label\",{clas"
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "score": 7,
+            "path": "window.webpackChunktradingview.11[1].326285",
+            "functionName": "326285",
+            "functionLength": 12000,
+            "matches": [
+              "source-close-position",
+              "source-close"
+            ],
+            "sourceSnippets": [
+              "dividualPositions(this._objectsCache().filter(e=>0!==e.qty)),super._onAllObjectsUpdated()}_patchIndividualPositions(e,t,i){const n=this._brokerConfigGetter();let a;a=n.requiresFIFOCloseIndividualPositions?n.fifoOnlyForSameQty?o:s:r;const l=a(e);for(const e of l)t!==e&&super._onObjectUpdated(e,i)}}const O=(0,B.getLogger)(\"Trading.Migrations\");var D=i(637401),I=i(311757),x=i(508334),M=i(189904),A=i(481330),L=i(864348);class N{constructor(){this._validators=new"
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "score": 6,
+            "path": "window.webpackChunktradingview.28[1].364123",
+            "functionName": "364123",
+            "functionLength": 1238,
+            "matches": [
+              "source-market-close",
+              "source-close"
+            ],
+            "sourceSnippets": [
+              "1OtS\",medium:\"medium-Lgtz1OtS\",large:\"large-Lgtz1OtS\",blinking:\"blinking-Lgtz1OtS\",\"blinking-animation\":\"blinking-animation-Lgtz1OtS\", marketStatusOpen:\"marketStatusOpen-Lgtz1OtS\",marketStatusClose:\"marketStatusClose-Lgtz1OtS\",marketStatusPre:\"marketStatusPre-Lgtz1OtS\",marketStatusPost:\"marketStatusPost-Lgtz1OtS\",marketStatusHoliday:\"marketStatusHoliday-Lgtz1OtS\",marketStatusExpired:\"marketStatusExpired-Lgtz1OtS\",marketStatusCustom:\"marketStatusCustom-L"
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "score": 5,
+            "path": "window.tradingViewApi.[[Prototype]].closePopupsAndDialogs",
+            "functionName": "closePopupsAndDialogs",
+            "functionLength": 46,
+            "matches": [
+              "path-close",
+              "source-close"
+            ],
+            "sourceSnippets": []
+          },
+          {
+            "frame": "top > iframe[2]",
+            "score": 5,
+            "path": "window.tradingViewApi.[[Prototype]].closeMobileChartPicker",
+            "functionName": "closeMobileChartPicker",
+            "functionLength": 60,
+            "matches": [
+              "path-close",
+              "source-close"
+            ],
+            "sourceSnippets": []
+          },
+          {
+            "frame": "top > iframe[2]",
+            "score": 5,
+            "path": "window.webpackChunktradingview.44[1].962881",
+            "functionName": "962881",
+            "functionLength": 1943,
+            "matches": [
+              "source-close-order",
+              "source-close"
+            ],
+            "sourceSnippets": [
+              "(t,e,o)=>{\"use strict\";o.d(e,{OrderItem:()=>c});var r=o(650151),i=o(372605),s=o(156963),a=o(656846),l=o(11933),n=o(182665);o(74516);const d=s.enabled(\"chart_hide_close_order_button\");class c extends n.OrderBaseItem{style(){return this._infoGetters.style(this)}isMovingEnabled(){const t=this._source.items().main,e=t&&t._data||{};return(!this._data||!this._data.orderType||![7,8].includes(this._data.orderType))&&(null!=e.draggable?e."
+            ]
+          },
+          {
+            "frame": "top > iframe[2]",
+            "score": 5,
+            "path": "window.chartWidget._paneWidgets[0]._paneControls.[[Prototype]]._getCloseButtonVisibility",
+            "functionName": "_getCloseButtonVisibility",
+            "functionLength": 177,
+            "matches": [
+              "path-close",
+              "source-close"
+            ],
+            "sourceSnippets": []
+          },
+          {
+            "frame": "top > iframe[2]",
+            "score": 5,
+            "path": "window.chartWidget._paneWidgets[0]._paneControls.[[Prototype]]._onCloseButton",
+            "functionName": "_onCloseButton",
+            "functionLength": 145,
+            "matches": [
+              "path-close",
+              "source-close"
+            ],
+            "sourceSnippets": []
+          },
+          {
+            "frame": "top > iframe[2]",
+            "score": 5,
+            "path": "window.chartWidget._paneWidgets[0]._legendWidget._mainSeriesStatusWidget._handleDropdownMenuClose",
+            "functionName": "(anonymous)",
+            "functionLength": 149,
+            "matches": [
+              "path-close",
+              "source-close"
+            ],
+            "sourceSnippets": []
+          },
+          {
+            "frame": "top > iframe[2]",
+            "score": 5,
+            "path": "window.chartWidget._paneWidgets[1]._legendWidget._dataSourcesStatusesWidgets[0]._handleDropdownMenuClose",
+            "functionName": "(anonymous)",
+            "functionLength": 149,
+            "matches": [
+              "path-close",
+              "source-close"
+            ],
+            "sourceSnippets": []
+          },
+          {
+            "frame": "top > iframe[2]",
+            "score": 4,
+            "path": "window.chartWidget._timeAxisWidget._properties.showSeriesPrevCloseValue._listeners._listeners[0].member",
+            "functionName": "(anonymous)",
+            "functionLength": 43,
+            "matches": [
+              "path-close"
+            ],
+            "sourceSnippets": []
+          },
+          {
+            "frame": "top > iframe[2]",
+            "score": 3,
+            "path": "window.webpackChunktradingview.44[1].281969",
+            "functionName": "281969",
+            "functionLength": 12000,
+            "matches": [
+              "source-close",
+              "source-reverse"
+            ],
+            "sourceSnippets": []
+          },
+          {
+            "frame": "top > iframe[2]",
+            "score": 3,
+            "path": "window.webpackChunktradingview.44[1].355710",
+            "functionName": "355710",
+            "functionLength": 10393,
+            "matches": [
+              "source-close",
+              "source-reverse"
+            ],
+            "sourceSnippets": []
+          },
+          {
+            "frame": "top > iframe[2]",
+            "score": 3,
+            "path": "window.webpackChunktradingview.44[1].423757",
+            "functionName": "423757",
+            "functionLength": 6277,
+            "matches": [
+              "source-close",
+              "source-reverse"
+            ],
+            "sourceSnippets": []
+          },
+          {
+            "frame": "top > iframe[2]",
+            "score": 3,
+            "path": "window.chartWidget._model.m_model.[[Prototype]].orderedDataSources",
+            "functionName": "orderedDataSources",
+            "functionLength": 190,
+            "matches": [
+              "source-reverse"
+            ],
+            "sourceSnippets": []
+          }
+        ]
+      },
+      "reactScan": {
+        "scannedElements": 29,
+        "reactReferences": [],
+        "handlerFunctions": []
+      },
+      "scriptScan": {
+        "totalScripts": 7,
+        "externalScripts": [],
+        "inlineScriptMatches": []
+      },
+      "loadedResourceNames": [
+        {
+          "name": "https://static.bitunix.com/assets/v609af3bf12/style/chart.css",
+          "initiatorType": "link",
+          "durationMs": 37
+        },
+        {
+          "name": "https://static.bitunix.com/assets/v609af3bf12/bundles/order-view-controller.ab9203ca9b2103bfaafb.js",
+          "initiatorType": "script",
+          "durationMs": 450
+        },
+        {
+          "name": "https://static.bitunix.com/assets/v609af3bf12/bundles/chart-bottom-toolbar.5b95e2a4699874d8ab96.js",
+          "initiatorType": "script",
+          "durationMs": 248
+        },
+        {
+          "name": "https://static.bitunix.com/assets/v609af3bf12/bundles/chart-widget-gui.f8dcce72f5784277c786.js",
+          "initiatorType": "script",
+          "durationMs": 395
+        },
+        {
+          "name": "https://static.bitunix.com/assets/v609af3bf12/bundles/chart-storage-external-adapter.be0fcd2667b4f0a36e03.js",
+          "initiatorType": "script",
+          "durationMs": 281
+        }
+      ]
+    }
+  ]
+}
