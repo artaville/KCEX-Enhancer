@@ -1,0 +1,1629 @@
+{
+  "reportName": "BITUNIX_BATCH_AUDIT_1.0",
+  "generatedAt": "2026-11-15T11:37:20.523Z",
+  "page": {
+    "origin": "https://www.bitunix.com",
+    "path": "/contract-trade/XAUTUSDT",
+    "title": "3,822.72 | XAUTUSDT Futures Exchange - Crypto Futures | Bitunix",
+    "readyState": "complete",
+    "viewport": {
+      "width": 1707,
+      "height": 781,
+      "dpr": 1.125
+    }
+  },
+  "safety": {
+    "readOnly": true,
+    "ordersSent": 0,
+    "tradingMethodsInvoked": 0,
+    "buttonsClicked": 0,
+    "formsSubmitted": 0,
+    "chartResolutionChanged": false,
+    "chartDataMutated": false,
+    "networkRequestsMadeByAudit": 0,
+    "websocketCreatedOrIntercepted": false,
+    "cookiesOrStorageRead": false,
+    "inputValuesRead": false,
+    "positionIdsOrQuantitiesRead": false,
+    "accountBalancesOrPnlRead": false,
+    "credentialsOrTokensRead": false,
+    "diagnosticUiCreated": true
+  },
+  "frames": [
+    {
+      "frame": "top",
+      "accessible": true,
+      "title": "3,822.72 | XAUTUSDT Futures Exchange - Crypto Futures | Bitunix",
+      "path": "/contract-trade/XAUTUSDT",
+      "viewport": {
+        "width": 1707,
+        "height": 781
+      },
+      "urlKind": "top"
+    },
+    {
+      "frame": "top > iframe[0]",
+      "accessible": true,
+      "title": "",
+      "viewport": {
+        "width": 1077,
+        "height": 494
+      },
+      "urlKind": "blob"
+    },
+    {
+      "frame": "top > iframe[1]",
+      "accessible": true,
+      "title": "",
+      "viewport": {
+        "width": 0,
+        "height": 0
+      },
+      "urlKind": "same-origin"
+    },
+    {
+      "frame": "top > iframe[2]",
+      "accessible": true,
+      "title": "Button to launch messaging window",
+      "viewport": {
+        "width": 0,
+        "height": 0
+      },
+      "urlKind": "same-origin"
+    }
+  ],
+  "chart": {
+    "topObjectsFound": {
+      "bitunixTv": true,
+      "tvWidget": true,
+      "host": true,
+      "adapter": true,
+      "brokerConnection": true,
+      "eventBus": true
+    },
+    "chartFrame": "top > iframe[0]",
+    "chartObjectsFound": {
+      "tradingViewApi": true,
+      "chartWidgetCollection": true,
+      "activeChartWidget": true,
+      "model": false,
+      "mainSeries": false,
+      "chartApiInstance": true,
+      "studyEngine": true
+    },
+    "activeSymbol": {},
+    "interval": {},
+    "chartWidget": {
+      "type": "o",
+      "keys": [
+        "_listeners",
+        "_value"
+      ],
+      "methods": [
+        {
+          "name": "destroy",
+          "args": 0
+        },
+        {
+          "name": "value",
+          "args": 0
+        },
+        {
+          "name": "setValue",
+          "args": 2
+        },
+        {
+          "name": "deleteValue",
+          "args": 0
+        },
+        {
+          "name": "subscribe",
+          "args": 2
+        },
+        {
+          "name": "unsubscribe",
+          "args": 1
+        },
+        {
+          "name": "readonly",
+          "args": 0
+        },
+        {
+          "name": "spawn",
+          "args": 1
+        },
+        {
+          "name": "when",
+          "args": 1
+        },
+        {
+          "name": "assertNoSubscriptions",
+          "args": 0
+        },
+        {
+          "name": "ownership",
+          "args": 0
+        },
+        {
+          "name": "spawnOwnership",
+          "args": 0
+        },
+        {
+          "name": "weakReference",
+          "args": 0
+        },
+        {
+          "name": "__defineGetter__",
+          "args": 2
+        },
+        {
+          "name": "__defineSetter__",
+          "args": 2
+        },
+        {
+          "name": "hasOwnProperty",
+          "args": 1
+        },
+        {
+          "name": "__lookupGetter__",
+          "args": 1
+        },
+        {
+          "name": "__lookupSetter__",
+          "args": 1
+        },
+        {
+          "name": "isPrototypeOf",
+          "args": 1
+        },
+        {
+          "name": "propertyIsEnumerable",
+          "args": 1
+        },
+        {
+          "name": "toString",
+          "args": 0
+        },
+        {
+          "name": "valueOf",
+          "args": 0
+        },
+        {
+          "name": "toLocaleString",
+          "args": 0
+        }
+      ]
+    },
+    "model": {
+      "type": "undefined"
+    },
+    "mainSeries": {
+      "type": "undefined"
+    },
+    "adapterMethods": [
+      {
+        "name": "closePosition",
+        "found": true,
+        "args": 2,
+        "source": "async closePosition(e,t){let i;l(e),this._makeSureBrokerIsConnected(),(0,C.assert)(void 0===t||!!this.config.supportPartialClosePosition,\"Broker doesn`t support partial position closing\");const r=new Promise(async(r,s)=>{try{const s=await this._positionCopyById(e);i=e=>{void 0!==s&&e.id===s.id&&e.symbol===s.symbol&&e.qty!==s.qty&&(this.positionUpdate.unsubscribe(this,i),r(!0))},this.positionUpdate.subscribe(this,i),await this._closePosition(e,t)}catch(e){s(e)}});return(0,T.makeTimeLimited)(r,3e4"
+      },
+      {
+        "name": "reversePosition",
+        "found": true,
+        "args": 1,
+        "source": "reversePosition(e){if(l(e),this._makeSureBrokerIsConnected(),this.config.supportMultiposition&&!this.config.supportNativeReversePosition)throw new Error(\"Cannot reverse position on multiposition account\");let t;const i=new Promise(async(i,r)=>{try{const r=await this._positionCopyById(e);t=e=>{void 0!==r&&e.symbol===r.symbol&&e.side!==r.side&&(this.positionUpdate.unsubscribe(this,t),i(!0))},this.positionUpdate.subscribe(this,t),await this._reversePosition(e)}catch(e){r(e)}});return(0,T.makeTimeLi"
+      },
+      {
+        "name": "positions",
+        "found": true,
+        "args": 1,
+        "source": "positions(e){return this.config.supportPositions?(this._makeSureBrokerIsConnected(),this._positions().then(t=>t.filter(t=>void 0===e||t.symbol===e))):Promise.resolve([])}"
+      },
+      {
+        "name": "placeOrder",
+        "found": true,
+        "args": 2,
+        "source": "placeOrder(e,t){return this._placeOrder(e,t)}"
+      },
+      {
+        "name": "createOrder",
+        "found": false,
+        "args": null
+      },
+      {
+        "name": "modifyOrder",
+        "found": true,
+        "args": 2,
+        "source": "modifyOrder(e,t){return this._modifyOrder(e,t)}"
+      },
+      {
+        "name": "cancelOrder",
+        "found": true,
+        "args": 1,
+        "source": "cancelOrder(e){return l(e),this._makeSureBrokerIsConnected(),this.processErrors(this._brokerConnection.cancelOrder(e),!0,m.t(null,void 0,i(915926)))}"
+      }
+    ],
+    "brokerConnectionMethods": {
+      "type": "aF",
+      "keys": [
+        "_positions",
+        "_orders",
+        "_baseConfig",
+        "_eventBus",
+        "_tvWidget",
+        "subscribeRealtime",
+        "unsubscribeRealtime",
+        "subscribeDOM",
+        "unsubscribeDOM"
+      ],
+      "methods": [
+        {
+          "name": "chartContextMenuActions",
+          "args": 0
+        },
+        {
+          "name": "connectionStatus",
+          "args": 0
+        },
+        {
+          "name": "accountManagerInfo",
+          "args": 0
+        },
+        {
+          "name": "orders",
+          "args": 0
+        },
+        {
+          "name": "positions",
+          "args": 0
+        },
+        {
+          "name": "reversePosition",
+          "args": 1
+        },
+        {
+          "name": "symbolInfo",
+          "args": 1
+        },
+        {
+          "name": "isTradable",
+          "args": 1
+        },
+        {
+          "name": "accountsMetainfo",
+          "args": 0
+        },
+        {
+          "name": "currentAccount",
+          "args": 0
+        },
+        {
+          "name": "_subscribe",
+          "args": 2
+        },
+        {
+          "name": "__defineGetter__",
+          "args": 2
+        },
+        {
+          "name": "__defineSetter__",
+          "args": 2
+        },
+        {
+          "name": "hasOwnProperty",
+          "args": 1
+        },
+        {
+          "name": "__lookupGetter__",
+          "args": 1
+        },
+        {
+          "name": "__lookupSetter__",
+          "args": 1
+        },
+        {
+          "name": "isPrototypeOf",
+          "args": 1
+        },
+        {
+          "name": "propertyIsEnumerable",
+          "args": 1
+        },
+        {
+          "name": "toString",
+          "args": 0
+        },
+        {
+          "name": "valueOf",
+          "args": 0
+        },
+        {
+          "name": "toLocaleString",
+          "args": 0
+        }
+      ]
+    },
+    "eventBus": {
+      "found": true,
+      "eventNames": [
+        "clearKlineData",
+        "rerenderChart",
+        "wsPublish",
+        "historyOrder",
+        "updateShowSetMenuState",
+        "activeChartChanged",
+        "chartLayoutSwitch",
+        "wsSubscribe",
+        "wsUnsubscribe",
+        "kline.charts.contract",
+        "kline.charts.spot",
+        "kline.drawings.contract",
+        "kline.drawings.spot",
+        "kline.chartTemplates",
+        "kline.studyTemplates",
+        "kline.drawingTemplates",
+        "kline.chartType",
+        "kline.resolutions",
+        "kline.drawingTools",
+        "updateQuote",
+        "positionUpdate",
+        "orderUpdate",
+        "plUpdate",
+        "orderTypeFilter",
+        "reloadAllLineTools",
+        "resetScales",
+        "triggerPlusButton",
+        "objectTree",
+        "lockAllDrawings",
+        "drawginmode",
+        "triggerFavoriteTool",
+        "addFavoriteTool",
+        "removeFavoriteTool",
+        "recoverFavoriteTool",
+        "clearAllFavoriteTools",
+        "triggerMagnetTool",
+        "triggerMagnetChange",
+        "triggerShowHideTool",
+        "triggerRemoveDrawings",
+        "triggerRemoveStudies",
+        "triggerRemoveAll",
+        "triggerBaseTool",
+        "priceRangeTool",
+        "priceRangeToolClose",
+        "triggerSetIconsEmojisStickers",
+        "toggleCrosshairAlert",
+        "setResolution",
+        "setTimeFrame",
+        "triggerChartLayout",
+        "triggerChartFavorite",
+        "saveIndicatorTemplate",
+        "setChartLayout",
+        "setIndicatorTemplate",
+        "triggerIndicatorTemplate",
+        "triggerTvModal",
+        "setChartType",
+        "setPriceType",
+        "plusClick",
+        "positionOrderSelected",
+        "resetChartState",
+        "clickHeaderButton",
+        "chartClick",
+        "studyClick",
+        "crossHairMove",
+        "toolsChange",
+        "symbolPeriodChanged",
+        "chartSaved",
+        "showSetClick",
+        "marketClose",
+        "clickSaveLayout",
+        "menuClick",
+        "layout_changed",
+        "clickPositionSize",
+        "reversePosition",
+        "closePosition",
+        "cancelOrder",
+        "createTPSLOrder",
+        "clickOrder",
+        "modifyOrder",
+        "updatePriceType",
+        "addDrawingAlert",
+        "contextMenu",
+        "scaledOrderBoundaryMoved",
+        "scaledOrderBoundaryClosed",
+        "addIndicatorAlert",
+        "setLayoutSymbols"
+      ],
+      "watched": {
+        "wsPublish": {
+          "found": true,
+          "listeners": null
+        },
+        "wsSubscribe": {
+          "found": true,
+          "listeners": null
+        },
+        "wsUnsubscribe": {
+          "found": true,
+          "listeners": null
+        },
+        "positionUpdate": {
+          "found": true,
+          "listeners": null
+        },
+        "orderUpdate": {
+          "found": true,
+          "listeners": null
+        },
+        "setResolution": {
+          "found": true,
+          "listeners": null
+        },
+        "setTimeFrame": {
+          "found": true,
+          "listeners": null
+        },
+        "activeChartChanged": {
+          "found": true,
+          "listeners": null
+        }
+      }
+    }
+  },
+  "historyAndTimeframes": {
+    "supportedResolutions": null,
+    "chartGetIntervals": [
+      "1",
+      "2",
+      "3",
+      "5",
+      "6",
+      "9",
+      "10",
+      "12",
+      "15",
+      "24",
+      "27",
+      "30",
+      "45",
+      "60",
+      "120",
+      "240",
+      "360",
+      "480",
+      "720",
+      "1D",
+      "3D",
+      "1W",
+      "1M"
+    ],
+    "datafeedDefaultResolutions": "not_function",
+    "symbolInfoFlags": {},
+    "externalDatafeedFound": true,
+    "optionDatafeedFound": false,
+    "datafeed": {
+      "type": "Object",
+      "keys": [
+        "onReady",
+        "searchSymbols",
+        "getServerTime",
+        "getQuotes",
+        "subscribeQuotes",
+        "unsubscribeQuotes",
+        "resolveSymbol",
+        "getBars",
+        "subscribeBars",
+        "unsubscribeBars"
+      ],
+      "methods": [
+        {
+          "name": "__defineGetter__",
+          "args": 2
+        },
+        {
+          "name": "__defineSetter__",
+          "args": 2
+        },
+        {
+          "name": "hasOwnProperty",
+          "args": 1
+        },
+        {
+          "name": "__lookupGetter__",
+          "args": 1
+        },
+        {
+          "name": "__lookupSetter__",
+          "args": 1
+        },
+        {
+          "name": "isPrototypeOf",
+          "args": 1
+        },
+        {
+          "name": "propertyIsEnumerable",
+          "args": 1
+        },
+        {
+          "name": "toString",
+          "args": 0
+        },
+        {
+          "name": "valueOf",
+          "args": 0
+        },
+        {
+          "name": "toLocaleString",
+          "args": 0
+        }
+      ]
+    },
+    "datafeedMethods": [
+      {
+        "name": "onReady",
+        "found": true,
+        "args": 1,
+        "source": "e=>setTimeout(()=>e(pb))"
+      },
+      {
+        "name": "searchSymbols",
+        "found": true,
+        "args": 1,
+        "source": "async e=>{const t=w,r=k,{tvWidget:o,eventBus:n}=window[r(2583)],i=o[t(828,\"83UK\")][r(2854)][t(1120,\"i#a&\")];return n[r(2296)](et[r(1670)+t(4058,\"Lx5g\")],{symbol:e,type:i}),null}"
+      },
+      {
+        "name": "resolveSymbol",
+        "found": true,
+        "args": 4,
+        "source": "async(e,t,r,o)=>{setTimeout(()=>{const n=vr,i=cr;if(!e){r(i(4730)+i(3495)+n(5239,\"oi]q\")+i(888)+n(5172,\"HQG8\")+n(1729,\"i#a&\"));return}const l=ub(e[n(1141,\"HQG8\")+\"e\"]());if(!l){r(n(5134,\"un3p\")+i(3268)+i(660)+i(5444));return}t(l)},0)}"
+      },
+      {
+        "name": "getBars",
+        "found": true,
+        "args": 5,
+        "source": "async(e,t,r,o,n)=>{const i=k,l=w;var s,d;if(di(l(3830,\"kcA1\")+l(3436,\"Tyar\")),window&&(d=(s=window[l(1444,\"wCo4\")])==null?void 0:s[i(5297)])!=null&&d[i(1367)+\"s\"])e[i(2211)]=Er(e[i(2211)]),window[i(2583)][l(4563,\"qK)]\")][l(4721,\"Lx5g\")+\"s\"](e,t,r,o,n);else if(window){const{onRequest:u}=window[l(3030,\"9MkJ\")],{firstDataRequest:c,countBack:a,to:p}=r,f=zm[t];let v=[];const g={noData:!1};if(di(l(2104,\"fwxQ\")+i(3334)+l(1417,\"83UK\")),a>$a){let y=p-$a*f;v=(await Promise[i(3760)]([I2(c,$a,p,e[i(2211)],t"
+      },
+      {
+        "name": "subscribeBars",
+        "found": true,
+        "args": 5,
+        "source": "(e,t,r,o,n)=>{const i=k,l=w;var s,d;if(di(l(3831,\"**au\")+l(3841,\"**au\")+l(3941,\"qK)]\")),window&&(d=(s=window[l(3872,\"arIE\")])==null?void 0:s[l(274,\"W4QN\")])!=null&&d[i(3902)+i(343)])e[l(4166,\"ahu)\")]=Er(e[l(2734,\"un3p\")]),window[i(2583)][l(3271,\"Tyar\")][l(408,\"xu8q\")+i(343)](e,t,r,o,n);else if(window){const{eventBus:u,tvWidget:c}=window[i(2583)];if(!u||!c)return;const a=Er(e[l(1804,\"J4o(\")]),p=Zp(t),f=xn(e[i(2211)]),v={symbol:a,resolution:p,type:f};c[l(3153,\"kcA1\")]&&console[l(932,\"%sAI\")](et[i("
+      },
+      {
+        "name": "unsubscribeBars",
+        "found": true,
+        "args": 1,
+        "source": "e=>{const t=w,r=k;var o,n;if(window&&(n=(o=window[r(2583)])==null?void 0:o[r(5297)])!=null&&n[r(1932)+r(445)])window[r(2583)][r(5297)][r(1932)+r(445)](e);else if(window){di(t(1294,\"P0pz\")+r(4271)+r(235));const{eventBus:i,tvWidget:l}=window[r(2583)];if(!i||!l)return;if(l[r(4460)]&&console[t(3737,\"TM]V\")](et[t(4772,\"Tyar\")+r(444)],l[r(5705)+r(3283)],e),di(r(1932)+r(651)+r(2704)+t(2677,\"xivW\")),l[t(1983,\"Tyar\")+t(2170,\"arIE\")][e]&&i[t(1977,\"2l1f\")](et[r(2239)+r(444)],l[r(5705)+t(131,\"phWK\")][e]),l["
+      },
+      {
+        "name": "getServerTime",
+        "found": true,
+        "args": 1,
+        "source": "getServerTime(e){const t=k,r=w,{onRequest:o}=window[r(3892,\"EoVv\")];o({type:Vm[t(245)],params:{},resolve:n=>e(typeof n!=r(4466,\"[mGR\")?bc():n),reject:()=>e(bc())})}"
+      },
+      {
+        "name": "getQuotes",
+        "found": true,
+        "args": 3,
+        "source": "(e,t,r)=>$q(e,t)"
+      },
+      {
+        "name": "subscribeQuotes",
+        "found": true,
+        "args": 4,
+        "source": "subscribeQuotes(e,t,r,o){const n=w,i=k;var l;const s=(l=window[i(2583)])==null?void 0:l[i(3710)];if(!s)return;const d=t[n(5578,\"**au\")]?t:e,u=a=>xb(a,r,d),c=Ks[n(3272,\"YYPc\")](o);c&&s[n(452,\"JzFR\")+\"e\"](et[n(2092,\"phWK\")+\"e\"],c),Ks[i(753)](o,u),s[i(934)](et[n(5205,\"T8GW\")+\"e\"],u)}"
+      },
+      {
+        "name": "unsubscribeQuotes",
+        "found": true,
+        "args": 1,
+        "source": "unsubscribeQuotes(e){const t=k,r=w;var o,n;const i=Ks[r(3672,\"JzFR\")](e);i&&((n=(o=window[t(2583)])==null?void 0:o[t(3710)])==null||n[t(1932)+\"e\"](et[r(809,\")v]F\")+\"e\"],i),Ks[r(1321,\"T8GW\")](e))}"
+      }
+    ],
+    "mainSeriesDataFound": false,
+    "barStoreFound": false,
+    "barStore": {
+      "shape": {
+        "type": "undefined"
+      },
+      "itemCount": null,
+      "firstIndex": null,
+      "lastIndex": null,
+      "firstItemShape": {
+        "type": "null"
+      },
+      "lastItemShape": {
+        "type": "null"
+      },
+      "lastItemPrimitiveFields": {}
+    },
+    "seriesSource": {
+      "type": "undefined"
+    },
+    "dataEvents": {
+      "type": "undefined"
+    },
+    "eventListeners": {
+      "_barReceived": {
+        "found": false,
+        "listeners": null
+      },
+      "_dataUpdated": {
+        "found": false,
+        "listeners": null
+      },
+      "_completed": {
+        "found": false,
+        "listeners": null
+      },
+      "_loading": {
+        "found": false,
+        "listeners": null
+      },
+      "_error": {
+        "found": false,
+        "listeners": null
+      },
+      "_secondsIntervalNotPermitted": {
+        "found": false,
+        "listeners": null
+      },
+      "_customIntervalNotPermitted": {
+        "found": false,
+        "listeners": null
+      }
+    },
+    "historyRequestExecuted": false,
+    "secondsIntervalsRequested": false
+  },
+  "studiesAndDrawings": {
+    "activeChartApiFound": true,
+    "activeChartApi": {
+      "type": "O",
+      "keys": [
+        "_visibleBarsChanged",
+        "_crosshairMoved",
+        "_dataSourceHovered",
+        "_ranges",
+        "_panes",
+        "_studies",
+        "_lineDataSources",
+        "_selectionApi",
+        "_prevVisibleRange",
+        "_prevHoveredSourceId",
+        "_chartWidget",
+        "_activateChart",
+        "_timezoneApi",
+        "_widgetLinkingGroupIndex",
+        "_apiLinkingGroupIndex"
+      ],
+      "methods": [
+        {
+          "name": "executeActionById",
+          "args": 1
+        },
+        {
+          "name": "getCheckableActionState",
+          "args": 1
+        },
+        {
+          "name": "setZoomEnabled",
+          "args": 1
+        },
+        {
+          "name": "setScrollEnabled",
+          "args": 1
+        },
+        {
+          "name": "refreshMarks",
+          "args": 0
+        },
+        {
+          "name": "clearMarks",
+          "args": 1
+        },
+        {
+          "name": "setEntityVisibility",
+          "args": 2
+        },
+        {
+          "name": "availableZOrderOperations",
+          "args": 1
+        },
+        {
+          "name": "sendToBack",
+          "args": 1
+        },
+        {
+          "name": "bringToFront",
+          "args": 1
+        },
+        {
+          "name": "insertAfter",
+          "args": 2
+        },
+        {
+          "name": "insertBefore",
+          "args": 2
+        },
+        {
+          "name": "bringForward",
+          "args": 1
+        },
+        {
+          "name": "sendBackward",
+          "args": 1
+        },
+        {
+          "name": "showPropertiesDialog",
+          "args": 1
+        },
+        {
+          "name": "getAllShapes",
+          "args": 0
+        },
+        {
+          "name": "removeEntity",
+          "args": 2
+        },
+        {
+          "name": "removeEntityWithUndo",
+          "args": 1
+        },
+        {
+          "name": "drawOnAllCharts",
+          "args": 1
+        },
+        {
+          "name": "getVisiblePriceRange",
+          "args": 0
+        },
+        {
+          "name": "scrollPosition",
+          "args": 0
+        },
+        {
+          "name": "defaultScrollPosition",
+          "args": 0
+        },
+        {
+          "name": "_createTradingPrimitive",
+          "args": 2
+        },
+        {
+          "name": "createOrderLine",
+          "args": 1
+        },
+        {
+          "name": "createPositionLine",
+          "args": 1
+        },
+        {
+          "name": "createExecutionShape",
+          "args": 1
+        },
+        {
+          "name": "createShape",
+          "args": 2
+        },
+        {
+          "name": "createMultipointShape",
+          "args": 2
+        },
+        {
+          "name": "chartType",
+          "args": 0
+        },
+        {
+          "name": "priceFormatter",
+          "args": 0
+        },
+        {
+          "name": "setTimezone",
+          "args": 1
+        },
+        {
+          "name": "getTimezone",
+          "args": 0
+        },
+        {
+          "name": "canZoomOut",
+          "args": 0
+        },
+        {
+          "name": "zoomOut",
+          "args": 0
+        },
+        {
+          "name": "shapesGroupController",
+          "args": 0
+        },
+        {
+          "name": "requestSelectBar",
+          "args": 0
+        },
+        {
+          "name": "cancelSelectBar",
+          "args": 0
+        },
+        {
+          "name": "setActive",
+          "args": 0
+        },
+        {
+          "name": "getPriceToBarRatio",
+          "args": 0
+        },
+        {
+          "name": "setPriceToBarRatio",
+          "args": 2
+        },
+        {
+          "name": "isPriceToBarRatioLocked",
+          "args": 0
+        },
+        {
+          "name": "setPriceToBarRatioLocked",
+          "args": 2
+        },
+        {
+          "name": "id",
+          "args": 0
+        },
+        {
+          "name": "onDataLoaded",
+          "args": 0
+        },
+        {
+          "name": "onSymbolChanged",
+          "args": 0
+        },
+        {
+          "name": "onIntervalChanged",
+          "args": 0
+        },
+        {
+          "name": "onVisibleRangeChanged",
+          "args": 0
+        },
+        {
+          "name": "onChartTypeChanged",
+          "args": 0
+        },
+        {
+          "name": "onSeriesTimeframe",
+          "args": 0
+        },
+        {
+          "name": "dataReady",
+          "args": 1
+        },
+        {
+          "name": "whenChartReady",
+          "args": 1
+        },
+        {
+          "name": "crossHairMoved",
+          "args": 0
+        },
+        {
+          "name": "onHoveredSourceChanged",
+          "args": 0
+        },
+        {
+          "name": "setVisibleRange",
+          "args": 2
+        },
+        {
+          "name": "setSymbol",
+          "args": 2
+        },
+        {
+          "name": "setResolution",
+          "args": 2
+        },
+        {
+          "name": "setChartType",
+          "args": 2
+        },
+        {
+          "name": "resetData",
+          "args": 0
+        },
+        {
+          "name": "getBarsMarksSources",
+          "args": 0
+        },
+        {
+          "name": "getAllStudies",
+          "args": 0
+        },
+        {
+          "name": "getAllPanesHeight",
+          "args": 0
+        },
+        {
+          "name": "setAllPanesHeight",
+          "args": 1
+        },
+        {
+          "name": "maximizeChart",
+          "args": 0
+        },
+        {
+          "name": "isMaximized",
+          "args": 0
+        },
+        {
+          "name": "restoreChart",
+          "args": 0
+        },
+        {
+          "name": "sessions",
+          "args": 0
+        },
+        {
+          "name": "chartModel",
+          "args": 0
+        },
+        {
+          "name": "getTimeScaleLogicalRange",
+          "args": 0
+        },
+        {
+          "name": "createStudy",
+          "args": 6
+        },
+        {
+          "name": "getStudyById",
+          "args": 1
+        },
+        {
+          "name": "getSeries",
+          "args": 0
+        },
+        {
+          "name": "getShapeById",
+          "args": 1
+        },
+        {
+          "name": "removeAllShapes",
+          "args": 0
+        },
+        {
+          "name": "removeAllStudies",
+          "args": 0
+        },
+        {
+          "name": "selection",
+          "args": 0
+        },
+        {
+          "name": "createStudyTemplate",
+          "args": 1
+        },
+        {
+          "name": "applyStudyTemplate",
+          "args": 1
+        },
+        {
+          "name": "symbol",
+          "args": 0
+        },
+        {
+          "name": "symbolExt",
+          "args": 0
+        },
+        {
+          "name": "resolution",
+          "args": 0
+        },
+        {
+          "name": "marketStatus",
+          "args": 0
+        },
+        {
+          "name": "getVisibleRange",
+          "args": 0
+        },
+        {
+          "name": "getTimezoneApi",
+          "args": 0
+        },
+        {
+          "name": "getPanes",
+          "args": 0
+        },
+        {
+          "name": "exportData",
+          "args": 1
+        },
+        {
+          "name": "isSelectBarRequested",
+          "args": 0
+        },
+        {
+          "name": "barTimeToEndOfPeriod",
+          "args": 1
+        },
+        {
+          "name": "endOfPeriodToBarTime",
+          "args": 1
+        },
+        {
+          "name": "createAnchoredShape",
+          "args": 2
+        },
+        {
+          "name": "properties",
+          "args": 0
+        },
+        {
+          "name": "setBarSpacing",
+          "args": 1
+        },
+        {
+          "name": "scrollChartByBar",
+          "args": 1
+        },
+        {
+          "name": "mergeAllScales",
+          "args": 1
+        },
+        {
+          "name": "chartPainted",
+          "args": 0
+        },
+        {
+          "name": "applyOverrides",
+          "args": 1
+        },
+        {
+          "name": "addOverlayStudy",
+          "args": 3
+        },
+        {
+          "name": "lineToolsSynchronizer",
+          "args": 0
+        },
+        {
+          "name": "cloneLineTool",
+          "args": 1
+        },
+        {
+          "name": "shareLineTools",
+          "args": 2
+        },
+        {
+          "name": "linkingGroupIndex",
+          "args": 0
+        }
+      ]
+    },
+    "studies": {
+      "methodFound": true,
+      "count": 1,
+      "items": [
+        {
+          "name": "Williams %R",
+          "type": "",
+          "idPresent": true,
+          "shape": {
+            "type": "Object",
+            "keys": [
+              "id",
+              "name"
+            ],
+            "methods": [
+              {
+                "name": "__defineGetter__",
+                "args": 2
+              },
+              {
+                "name": "__defineSetter__",
+                "args": 2
+              },
+              {
+                "name": "hasOwnProperty",
+                "args": 1
+              },
+              {
+                "name": "__lookupGetter__",
+                "args": 1
+              },
+              {
+                "name": "__lookupSetter__",
+                "args": 1
+              },
+              {
+                "name": "isPrototypeOf",
+                "args": 1
+              },
+              {
+                "name": "propertyIsEnumerable",
+                "args": 1
+              },
+              {
+                "name": "toString",
+                "args": 0
+              },
+              {
+                "name": "valueOf",
+                "args": 0
+              },
+              {
+                "name": "toLocaleString",
+                "args": 0
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drawings": {
+      "getAllShapesFound": true,
+      "count": 0,
+      "items": []
+    },
+    "chartApiStudyMethods": [
+      {
+        "name": "allStudiesMetadata",
+        "found": true,
+        "args": 0,
+        "source": "function(){return this._studyEngine.studiesMetadata()}"
+      },
+      {
+        "name": "canCreateStudy",
+        "found": true,
+        "args": 0,
+        "source": "function(){return this.studyCounter<TradingView.STUDY_COUNT_LIMIT}"
+      },
+      {
+        "name": "createStudy",
+        "found": true,
+        "args": 7,
+        "source": "function(e,t,i,s,r,n,o){if(!this.canCreateStudy()){const e=new Error(\"Exceeded the limit of studies\");throw e.cause=\"TooManyStudies\",e}this._notificationHandlers[e][t]=new c(o,t),this._studyEngine.createStudy(e,t,s,i,r,n),this.studyCounter++}"
+      },
+      {
+        "name": "modifyStudy",
+        "found": true,
+        "args": 5,
+        "source": "function(e,t,i,s,r){this._notificationHandlers[e][t]=new c(r,t),this._studyEngine.modifyStudy(e,t,i,s)}"
+      },
+      {
+        "name": "removeStudy",
+        "found": true,
+        "args": 3,
+        "source": "function(e,t,i){this._notificationHandlers[e][t]&&(delete this._notificationHandlers[e][t],this._studyEngine.removeStudy(e,t),this.studyCounter--)}"
+      }
+    ],
+    "note": "No study or drawing was created, edited, removed, or moved; coordinates and drawing IDs were not exported."
+  },
+  "recentTrades": {
+    "uiScans": [
+      {
+        "frame": "top",
+        "labelMatches": [
+          {
+            "text": "Trades",
+            "tag": "span",
+            "selector": "div.bitunix-tab-nav.flex-row-between-center > div.nav-content.relative > div.nav-item.relative > div.color-text-2.cursor-pointer > span.nav-link-text"
+          }
+        ],
+        "rowCandidateCount": 0,
+        "rows": [],
+        "classCandidates": [
+          {
+            "tag": "div",
+            "className": "deal-list-container-AB8EDE91",
+            "text": "TimePrice (USDT) Quantity (USDT)",
+            "selector": "div.orderbook-view.h-100 > div.bitunix-tab-container.max-mdoverflow-hidden > div.bitunix-tabs-content.h100-percent > span > div.deal-list-container-AB8EDE91"
+          },
+          {
+            "tag": "div",
+            "className": "deal-list-header h40 color-text-2 fs-12",
+            "text": "TimePrice (USDT) Quantity (USDT)",
+            "selector": "div.bitunix-tab-container.max-mdoverflow-hidden > div.bitunix-tabs-content.h100-percent > span > div.deal-list-container-AB8EDE91 > div.deal-list-header.h40"
+          },
+          {
+            "tag": "div",
+            "className": "deal-list-content-A344BFA8",
+            "text": "",
+            "selector": "div.bitunix-tab-container.max-mdoverflow-hidden > div.bitunix-tabs-content.h100-percent > span > div.deal-list-container-AB8EDE91 > div.deal-list-content-A344BFA8"
+          }
+        ]
+      },
+      {
+        "frame": "top > iframe[0]",
+        "labelMatches": [],
+        "rowCandidateCount": 0,
+        "rows": [],
+        "classCandidates": []
+      },
+      {
+        "frame": "top > iframe[1]",
+        "labelMatches": [],
+        "rowCandidateCount": 0,
+        "rows": [],
+        "classCandidates": []
+      },
+      {
+        "frame": "top > iframe[2]",
+        "labelMatches": [],
+        "rowCandidateCount": 0,
+        "rows": [],
+        "classCandidates": []
+      }
+    ],
+    "note": "Only visible market-trade rows and labels are inspected. Position history, personal fills, order IDs, and account values are excluded."
+  },
+  "orderAndRiskUi": {
+    "documents": [
+      {
+        "frame": "top",
+        "buttons": [
+          {
+            "tag": "button",
+            "text": "",
+            "ariaLabel": "Candles",
+            "title": "",
+            "dataName": "",
+            "className": "flex items-center justify-center w-24px h-24px -m-4px shrink-0 p-0 rounded-4px border-none cursor-pointer transition-colors focus:outline-none focus-v",
+            "selector": "div.relative.flex > div.space-x-16.flex > div.inline-flex.items-center > span.inline-flex.items-center > button.flex.items-center"
+          },
+          {
+            "tag": "button",
+            "text": "",
+            "ariaLabel": "Candles",
+            "title": "",
+            "dataName": "",
+            "className": "flex items-center justify-center w-24px h-24px -m-4px shrink-0 p-0 rounded-4px border-none bg-transparent cursor-pointer transition-colors focus:outli",
+            "selector": "button#reka-popover-trigger-v-0-2-79-26"
+          },
+          {
+            "tag": "button",
+            "text": "Open Long",
+            "ariaLabel": "",
+            "title": "",
+            "dataName": "",
+            "className": "arco-btn arco-btn-secondary arco-btn-shape-square arco-btn-size-medium arco-btn-status-normal btn h40 color-text-1 items-center justify-center flex-co",
+            "selector": "div.bitunix-tabs-content > div > div.place-order-container.flex > div.item.flex-1 > button.arco-btn.arco-btn-secondary"
+          },
+          {
+            "tag": "button",
+            "text": "Open Short",
+            "ariaLabel": "",
+            "title": "",
+            "dataName": "",
+            "className": "arco-btn arco-btn-secondary arco-btn-shape-square arco-btn-size-medium arco-btn-status-normal btn h40 color-text-1 items-center justify-center flex-co",
+            "selector": "div.bitunix-tabs-content > div > div.place-order-container.flex > div.item.flex-1 > button.arco-btn.arco-btn-secondary"
+          },
+          {
+            "tag": "button",
+            "text": "Open long 3,822.72",
+            "ariaLabel": "",
+            "title": "",
+            "dataName": "",
+            "className": "flex flex-1 flex-col items-center justify-center select-none border-none px-10px leading-16px py-4px min-w-88px cursor-pointer transition-colors durat",
+            "selector": "html > body.zendesk-launcher-hidden > div.focusoutline-none.border-1px > div.flex.flex-1 > button.flex.flex-1"
+          },
+          {
+            "tag": "button",
+            "text": "Open short 3,822.73",
+            "ariaLabel": "",
+            "title": "",
+            "dataName": "",
+            "className": "flex flex-1 items-center justify-center flex-col select-none border-none px-10px leading-16px py-4px min-w-88px cursor-pointer transition-colors durat",
+            "selector": "html > body.zendesk-launcher-hidden > div.focusoutline-none.border-1px > div.flex.flex-1 > button.flex.flex-1"
+          }
+        ],
+        "inputs": [
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "id": "",
+            "placeholder": "Min 1.22",
+            "ariaLabel": "",
+            "title": "",
+            "className": "arco-input arco-input-size-medium",
+            "min": "",
+            "max": "",
+            "step": "",
+            "disabled": false,
+            "selector": "div.volume-input-wrap.m-t12 > div.volume-input-container.amount-input > div.volume-input-main.flex > span.arco-input-wrapper.flex-1 > input.arco-input.arco-input-size-medium"
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "bitunix_market",
+            "id": "",
+            "placeholder": "Enter Quantity",
+            "ariaLabel": "",
+            "title": "",
+            "className": "arco-input arco-input-size-medium",
+            "min": "",
+            "max": "",
+            "step": "",
+            "disabled": false,
+            "selector": "div.focusoutline-none.border-1px > div.flex.flex-1 > label.w-134px.bx-color-bg-input > span.market-order-number-input.arco-input-wrapper > input.arco-input.arco-input-size-medium"
+          }
+        ],
+        "timeframeAndRiskLabels": [
+          {
+            "text": "1m",
+            "tag": "button",
+            "className": "border-none py-4px cursor-pointer select-none px-6px rounded-4px transition-colors focus:outline-none focus-visible:outl",
+            "selector": "div.inline-flex.items-center > div.flex.items-center > div.relative.flex > div.flex.items-center > button.border-none.py-4px"
+          }
+        ]
+      },
+      {
+        "frame": "top > iframe[0]",
+        "buttons": [
+          {
+            "tag": "button",
+            "text": "",
+            "ariaLabel": "Candles",
+            "title": "",
+            "dataName": "",
+            "className": "menu-b3Cgff6l button-merBkM5y apply-common-tooltip accessible-merBkM5y",
+            "selector": "div#header-toolbar-chart-styles > button.menu-b3Cgff6l.button-merBkM5y"
+          },
+          {
+            "tag": "button",
+            "text": "",
+            "ariaLabel": "Magnet Mode snaps drawings placed near price bars to the closest OHLC value",
+            "title": "",
+            "dataName": "",
+            "className": "button-KTgbfaP5 apply-common-tooltip common-tooltip-vertical isActive-KTgbfaP5 accessible-KTgbfaP5",
+            "selector": "div.toolButtonMagnet-wg76fIbD > div.dropdown-pbhJWNrt.undefined > div.control-pbhJWNrt > div.buttonWrap-pbhJWNrt.accessible-pbhJWNrt > button.button-KTgbfaP5.apply-common-tooltip"
+          }
+        ],
+        "inputs": [],
+        "timeframeAndRiskLabels": [
+          {
+            "text": "1m",
+            "tag": "button",
+            "className": "menu-S_1OCXUK button-merBkM5y apply-common-tooltip accessible-merBkM5y",
+            "selector": "div#header-toolbar-intervals > button.menu-S_1OCXUK.button-merBkM5y"
+          },
+          {
+            "text": "Chart for XAUTUSDT, 1 minute",
+            "tag": "canvas",
+            "className": "",
+            "selector": "div.chart-markup-table > div > div.chart-markup-table.pane > div.chart-gui-wrapper > canvas"
+          }
+        ]
+      },
+      {
+        "frame": "top > iframe[1]",
+        "buttons": [],
+        "inputs": [],
+        "timeframeAndRiskLabels": []
+      },
+      {
+        "frame": "top > iframe[2]",
+        "buttons": [],
+        "inputs": [],
+        "timeframeAndRiskLabels": []
+      }
+    ],
+    "positionServiceRead": false,
+    "inputValuesIncluded": false,
+    "note": "This section records control names and attributes only. It never reads input values, account balances, position quantities, PnL, or submits forms."
+  },
+  "keyboard": {
+    "documents": [
+      {
+        "frame": "top",
+        "available": true,
+        "targets": [
+          {
+            "target": "document",
+            "event": "keydown",
+            "count": 4,
+            "listeners": [
+              {
+                "name": "s",
+                "capture": false,
+                "passive": false,
+                "once": false,
+                "mentionsCtrl": false,
+                "mentionsArrowRight": false,
+                "mentionsArrowLeft": false,
+                "source": "function s(i){i.key===\"Escape\"&&e.value&&t?.()}"
+              },
+              {
+                "name": "v",
+                "capture": false,
+                "passive": false,
+                "once": false,
+                "mentionsCtrl": false,
+                "mentionsArrowRight": false,
+                "mentionsArrowLeft": false,
+                "source": "function v(y){var M;if(!(y.key!==\"Escape\"||Kse(y.target))){if(o){(M=o.onEscape)==null||M.call(o),d();return}l.value&&s()}}"
+              },
+              {
+                "name": "",
+                "capture": false,
+                "passive": false,
+                "once": false,
+                "mentionsCtrl": false,
+                "mentionsArrowRight": false,
+                "mentionsArrowLeft": false,
+                "source": "p=>{Ase(p,R4(vd()))}"
+              },
+              {
+                "name": "f",
+                "capture": true,
+                "passive": true,
+                "once": false,
+                "mentionsCtrl": false,
+                "mentionsArrowRight": false,
+                "mentionsArrowLeft": false,
+                "source": "d=>r(Ex(d))"
+              }
+            ]
+          },
+          {
+            "target": "window",
+            "event": "keydown",
+            "count": 3,
+            "listeners": [
+              {
+                "name": "te",
+                "capture": false,
+                "passive": false,
+                "once": false,
+                "mentionsCtrl": false,
+                "mentionsArrowRight": false,
+                "mentionsArrowLeft": false,
+                "source": "H=>{const P=H.target;P.tagName===\"INPUT\"||P.tagName===\"TEXTAREA\"||P.isContentEditable||(H.key===\"/\"?(H.preventDefault(),_e()):H.key===\"Escape\"&&_e(!1))}"
+              },
+              {
+                "name": "te",
+                "capture": false,
+                "passive": false,
+                "once": false,
+                "mentionsCtrl": false,
+                "mentionsArrowRight": false,
+                "mentionsArrowLeft": false,
+                "source": "H=>{const P=H.target;P.tagName===\"INPUT\"||P.tagName===\"TEXTAREA\"||P.isContentEditable||(H.key===\"/\"?(H.preventDefault(),_e()):H.key===\"Escape\"&&_e(!1))}"
+              },
+              {
+                "name": "Vt",
+                "capture": false,
+                "passive": false,
+                "once": false,
+                "mentionsCtrl": false,
+                "mentionsArrowRight": false,
+                "mentionsArrowLeft": false,
+                "source": "ie=>{ie.key===\"Escape\"&&Y.pickArmed&&(Y.pickArmed=!1)}"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "frame": "top > iframe[0]",
+        "available": true,
+        "targets": []
+      },
+      {
+        "frame": "top > iframe[1]",
+        "available": true,
+        "targets": []
+      },
+      {
+        "frame": "top > iframe[2]",
+        "available": true,
+        "targets": []
+      }
+    ],
+    "requestedShortcuts": {
+      "close": "Ctrl+ArrowRight",
+      "reverse": "Ctrl+ArrowLeft"
+    },
+    "dispatchedEvents": 0,
+    "note": "No keyboard event is dispatched. Only existing listener metadata is inspected."
+  },
+  "liveObservation": {
+    "durationMs": 20000,
+    "candleSamples": [
+      {
+        "at": "2026-11-15T11:37:20.968Z",
+        "barCount": null,
+        "lastBarShape": {
+          "type": "null"
+        },
+        "lastBarTime": null,
+        "lastClose": null,
+        "dataUpdatedListeners": null,
+        "barReceivedListeners": null
+      },
+      {
+        "at": "2026-11-15T11:37:23.476Z",
+        "barCount": null,
+        "lastBarShape": {
+          "type": "null"
+        },
+        "lastBarTime": null,
+        "lastClose": null,
+        "dataUpdatedListeners": null,
+        "barReceivedListeners": null
+      },
+      {
+        "at": "2026-11-15T11:37:25.990Z",
+        "barCount": null,
+        "lastBarShape": {
+          "type": "null"
+        },
+        "lastBarTime": null,
+        "lastClose": null,
+        "dataUpdatedListeners": null,
+        "barReceivedListeners": null
+      },
+      {
+        "at": "2026-11-15T11:37:28.491Z",
+        "barCount": null,
+        "lastBarShape": {
+          "type": "null"
+        },
+        "lastBarTime": null,
+        "lastClose": null,
+        "dataUpdatedListeners": null,
+        "barReceivedListeners": null
+      },
+      {
+        "at": "2026-11-15T11:37:30.992Z",
+        "barCount": null,
+        "lastBarShape": {
+          "type": "null"
+        },
+        "lastBarTime": null,
+        "lastClose": null,
+        "dataUpdatedListeners": null,
+        "barReceivedListeners": null
+      },
+      {
+        "at": "2026-11-15T11:37:33.494Z",
+        "barCount": null,
+        "lastBarShape": {
+          "type": "null"
+        },
+        "lastBarTime": null,
+        "lastClose": null,
+        "dataUpdatedListeners": null,
+        "barReceivedListeners": null
+      },
+      {
+        "at": "2026-11-15T11:37:35.994Z",
+        "barCount": null,
+        "lastBarShape": {
+          "type": "null"
+        },
+        "lastBarTime": null,
+        "lastClose": null,
+        "dataUpdatedListeners": null,
+        "barReceivedListeners": null
+      },
+      {
+        "at": "2026-11-15T11:37:38.495Z",
+        "barCount": null,
+        "lastBarShape": {
+          "type": "null"
+        },
+        "lastBarTime": null,
+        "lastClose": null,
+        "dataUpdatedListeners": null,
+        "barReceivedListeners": null
+      }
+    ],
+    "tradeDomChanges": [],
+    "actualDurationMs": 20028,
+    "tradeDomObserverRoots": 4
+  },
+  "warnings": [],
+  "errors": [],
+  "finishedAt": "2026-11-15T11:37:40.996Z"
+}
