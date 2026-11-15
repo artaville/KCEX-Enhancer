@@ -1,0 +1,1035 @@
+{
+  "reportName": "BITUNIX_NATIVE_INTERVAL_FAVORITES_AUDIT_1.0",
+  "createdAt": "2026-11-15T12:32:21.074Z",
+  "safety": {
+    "readOnly": true,
+    "favoritesChanged": false,
+    "intervalsChanged": false,
+    "buttonsClicked": false,
+    "storageRead": false,
+    "networkRequests": 0
+  },
+  "chart": {
+    "frame": "iframe[0]",
+    "apiFound": true,
+    "apiMethods": {
+      "found": true,
+      "type": "object",
+      "keys": [
+        "linking",
+        "_studyTemplatesDrawer",
+        "_fontIconsSettingsDrawer",
+        "_favoriteDrawingsToolbar",
+        "_webview",
+        "_themesApi",
+        "_newsApiDeferredPromise",
+        "_newsApiRejectionReason",
+        "_watchlistApiDeferredPromise",
+        "_watchlistApiRejectionReason",
+        "_widgetbarApiDeferredPromise",
+        "_widgetbarApiRejectionReason",
+        "_isDestroyed",
+        "_widgebarApi",
+        "_chartWidgets",
+        "_layoutSettingsDrawer",
+        "_magnetEnabledWatchedValue",
+        "_magnetModeWatchedValue",
+        "_activateChart",
+        "_chartWidgetCollection",
+        "_studyMarket",
+        "_saveChartService",
+        "_sharingChartService",
+        "_loadChartLayoutDialog",
+        "_intervalsService",
+        "_alertsWidgetDialog",
+        "_detailsDialogController",
+        "_supportedChartStylesSpawn",
+        "_chartChangesWatcher",
+        "_chartHasChanged",
+        "_symbolSync",
+        "_intervalSync",
+        "_dateRangeSync",
+        "_crosshairSync",
+        "_timeSync",
+        "_chartApiInstance",
+        "_loadChartService",
+        "_alertsDispatcher",
+        "_supportTicketData",
+        "_favoriteServices",
+        "_alertsFacadeChannelPushApi",
+        "_proxyWatchListChangedDelegate",
+        "_lockDrawingsWatchedValue",
+        "_hideDrawingsWatchedValue",
+        "_hideIndicatorsWatchedValue",
+        "_replayApi",
+        "_getDataSourceHub",
+        "_alertService",
+        "_activeChangedChangedDelegate"
+      ],
+      "methods": [
+        {
+          "name": "_activateChart",
+          "args": 1,
+          "source": "e=>{this.setActiveChart(this._chartIndex(e))}"
+        },
+        {
+          "name": "_getDataSourceHub",
+          "args": 0,
+          "source": "function(){return t.activeChartWidget.value().model().model()}"
+        },
+        {
+          "name": "onContextMenu",
+          "args": 1,
+          "source": "onContextMenu(e){n.subscribe(\"onContextMenu\",(function(t){t.callback(e(t.unixtime,t.price,t.e))}))}"
+        },
+        {
+          "name": "onGrayedObjectClicked",
+          "args": 1,
+          "source": "onGrayedObjectClicked(e){n.subscribe(\"onGrayedObjectClicked\",e)}"
+        },
+        {
+          "name": "onActiveChartChanged",
+          "args": 0,
+          "source": "onActiveChartChanged(){return this._activeChangedChangedDelegate}"
+        },
+        {
+          "name": "viewMode",
+          "args": 0,
+          "source": "viewMode(){throw new Error(\"not implemented\")}"
+        },
+        {
+          "name": "viewModeWatchedValue",
+          "args": 0,
+          "source": "viewModeWatchedValue(){throw new Error(\"not implemented\")}"
+        },
+        {
+          "name": "saveChart",
+          "args": 2,
+          "source": "saveChart(e,t){if(this._saveChartService){var i=this._saveChartService.saveToJSON(t);return e&&e(JSON.parse(i.content))}}"
+        },
+        {
+          "name": "loadChart",
+          "args": 1,
+          "source": "loadChart(e){this._chartApiInstance.disconnect(),e.extendedData&&(this._chartWidgetCollection.metaInfo.id.setValue(e.extendedData.uid),this._chartWidgetCollection.metaInfo.uid.setValue(e.extendedData.uid),this._chartWidgetCollection.metaInfo.name.setValue(e.extendedData.name)),this._chartWidgetCollection.loadContent(e.json),this._chartWidgetCollection.purgeUnusedWidgets(),this._chartApiInstance.connect(),s.setSymbolAndLogInitiator(this.activeChart().symbol(),\"API\"),n.emit(\"chart_loaded\")}"
+        },
+        {
+          "name": "getStudiesList",
+          "args": 0,
+          "source": "getStudiesList(){return this._chartApiInstance.allStudiesMetadata().filter((function(e){return!e.is_hidden_study})).map((function(e){return e.description}))}"
+        },
+        {
+          "name": "getStudyInputs",
+          "args": 1,
+          "source": "getStudyInputs(e){{const t=g.findStudyMetaInfoByDescription(this._chartApiInstance.allStudiesMetadata(),e);return f(t)}}"
+        },
+        {
+          "name": "getStudyStyles",
+          "args": 1,
+          "source": "getStudyStyles(e){{\nconst t=g.findStudyMetaInfoByDescription(this._chartApiInstance.allStudiesMetadata(),e);return v(t)}}"
+        },
+        {
+          "name": "getSavedCharts",
+          "args": 1,
+          "source": "getSavedCharts(e){c.getCharts().then(e)}"
+        },
+        {
+          "name": "loadChartFromServer",
+          "args": 1,
+          "source": "loadChartFromServer(e){c.loadChart(e)}"
+        },
+        {
+          "name": "saveChartToServer",
+          "args": 3,
+          "source": "saveChartToServer(e,t,i){this._saveChartService&&this._saveChartService.saveChartSilently(e,t,i)}"
+        },
+        {
+          "name": "setAutosave",
+          "args": 1,
+          "source": "setAutosave(e){this._saveChartService&&this._saveChartService.autoSaveEnabled().setValue(e)}"
+        },
+        {
+          "name": "removeChartFromServer",
+          "args": 2,
+          "source": "removeChartFromServer(e,t){c.removeChart(e).then(t)}"
+        },
+        {
+          "name": "getIntervals",
+          "args": 0,
+          "source": "getIntervals(){var e=[],t=l.getCustomResolutions();return null!==this._chartApiInstance&&(e=this._chartApiInstance.defaultResolutions()),l.mergeResolutions(e,t)}"
+        },
+        {
+          "name": "closePopupsAndDialogs",
+          "args": 0,
+          "source": "closePopupsAndDialogs(){o.hideAll(),n.emit(_)}"
+        },
+        {
+          "name": "selectedLineTool",
+          "args": 0,
+          "source": "selectedLineTool(){for(var e=Object.keys(p.supportedLineTools),t=a.tool.value(),i=0;i<e.length;++i)if(p.supportedLineTools[e[i]].name===t)return e[i];return\"\"}"
+        },
+        {
+          "name": "lockAllDrawingTools",
+          "args": 0,
+          "source": "lockAllDrawingTools(){return null===this._lockDrawingsWatchedValue&&(this._lockDrawingsWatchedValue=new y(a.lockDrawings().value()),this._lockDrawingsWatchedValue.subscribe((function(e){a.lockDrawings().setValue(e)})),a.lockDrawings().subscribe(this,(function(){this._lockDrawingsWatchedValue.setValue(a.lockDrawings().value())}))),this._lockDrawingsWatchedValue}"
+        },
+        {
+          "name": "hideAllDrawingTools",
+          "args": 0,
+          "source": "hideAllDrawingTools(){return null===this._hideDrawingsWatchedValue&&(this._hideDrawingsWatchedValue=new y(a.hideAllDrawings().value()),this._hideDrawingsWatchedValue.subscribe((function(e){a.hideAllDrawings().setValue(e)})),a.hideAllDrawings().subscribe(this,(function(){this._hideDrawingsWatchedValue.setValue(a.hideAllDrawings().value())}))),this._hideDrawingsWatchedValue}"
+        },
+        {
+          "name": "hideAllIndicators",
+          "args": 0,
+          "source": "hideAllIndicators(){return null===this._hideIndicatorsWatchedValue&&(this._hideIndicatorsWatchedValue=new y(a.hideAllIndicators().value()),this._hideIndicatorsWatchedValue.subscribe((function(e){a.hideAllIndicators().setValue(e)})),a.hideAllIndicators().subscribe(this,(function(){this._hideIndicatorsWatchedValue.setValue(a.hideAllIndicators().value())}))),this._hideIndicatorsWatchedValue}"
+        },
+        {
+          "name": "mainSeriesPriceFormatter",
+          "args": 0,
+          "source": "mainSeriesPriceFormatter(){return this._chartWidgetCollection.activeChartWidget.value().model().mainSeries().priceScale().formatter()}"
+        },
+        {
+          "name": "showNoticeDialog",
+          "args": 1,
+          "source": "showNoticeDialog(e){d({title:(e=e||{}).title,text:e.body||\"\",onClose:e.callback})}"
+        },
+        {
+          "name": "showConfirmDialog",
+          "args": 1,
+          "source": "showConfirmDialog(e){if(!(e=e||{}).callback)throw Error(\"callback must be exist\");var t=e.callback;function i(e){t&&(t(e),t=null)}u({title:e.title,text:e.body||\"\",onClose:function(){i(!1)},onConfirm:function(e){i(!0),e.dialogClose()}})}"
+        },
+        {
+          "name": "logs",
+          "args": 0,
+          "source": "logs(){return{getLogHistory:h.getLogHistory,enable:h.loggingOn,disable:h.loggingOff}}"
+        },
+        {
+          "name": "showLoadChartDialog",
+          "args": 0,
+          "source": "showLoadChartDialog(){var e=this._loadChartService;e&&e.showLoadDialog()}"
+        },
+        {
+          "name": "showSaveAsChartDialog",
+          "args": 0,
+          "source": "showSaveAsChartDialog(){var e=this._saveChartService;e&&window.runOrSignIn((function(){e.saveChartAs()}),{source:\"Save as chart dialogue\"})}"
+        },
+        {
+          "name": "trading",
+          "args": 0,
+          "source": "trading(){throw new Error(\"Not implemented\")}"
+        },
+        {
+          "name": "waitTrading",
+          "args": 0,
+          "source": "waitTrading(){throw new Error(\"Not implemented\")}"
+        },
+        {
+          "name": "symbolSearch",
+          "args": 0,
+          "source": "symbolSearch(){throw new Error(\"Not implemented\")}"
+        },
+        {
+          "name": "saveChartOrShowTitleDialog",
+          "args": 3,
+          "source": "saveChartOrShowTitleDialog(e,t,i){throw new Error(\"Not implemented\")}"
+        },
+        {
+          "name": "showRenameChartDialog",
+          "args": 0,
+          "source": "showRenameChartDialog(){throw new Error(\"Not implemented\")}"
+        },
+        {
+          "name": "setUserInfo",
+          "args": 1,
+          "source": "setUserInfo(e){throw new Error(\"Not implemented\")}"
+        },
+        {
+          "name": "connect",
+          "args": 0,
+          "source": "connect(){throw new Error(\"Not implemented\")}"
+        },
+        {
+          "name": "disconnect",
+          "args": 0,
+          "source": "disconnect(){\nthrow new Error(\"Not implemented\")}"
+        },
+        {
+          "name": "loginRequired",
+          "args": 0,
+          "source": "loginRequired(){throw new Error(\"Not implemented\")}"
+        },
+        {
+          "name": "onConnectionStatusChanged",
+          "args": 1,
+          "source": "onConnectionStatusChanged(e){throw new Error(\"Not implemented\")}"
+        },
+        {
+          "name": "isConnected",
+          "args": 0,
+          "source": "isConnected(){throw new Error(\"Not implemented\")}"
+        },
+        {
+          "name": "showCreateAlertDialog",
+          "args": 0,
+          "source": "showCreateAlertDialog(){throw new Error(\"Not implemented\")}"
+        },
+        {
+          "name": "alertService",
+          "args": 0,
+          "source": "alertService(){throw new Error(\"Not implemented\")}"
+        },
+        {
+          "name": "publishChart",
+          "args": 1,
+          "source": "publishChart(e){throw new Error(\"Not implemented\")}"
+        },
+        {
+          "name": "setPublishChartOptions",
+          "args": 1,
+          "source": "setPublishChartOptions(e){throw new Error(\"Not implemented\")}"
+        },
+        {
+          "name": "showSupportDialog",
+          "args": 0,
+          "source": "showSupportDialog(){throw new Error(\"Not implemented\")}"
+        },
+        {
+          "name": "openMobileChartPicker",
+          "args": 0,
+          "source": "openMobileChartPicker(){throw new Error(\"Not implemented\")}"
+        },
+        {
+          "name": "closeMobileChartPicker",
+          "args": 0,
+          "source": "closeMobileChartPicker(){throw new Error(\"Not implemented\")}"
+        },
+        {
+          "name": "replayApi",
+          "args": 0,
+          "source": "replayApi(){throw new Error(\"Not implemented\")}"
+        },
+        {
+          "name": "takeScreenshot",
+          "args": 0,
+          "source": "takeScreenshot(){return this._chartWidgetCollection.takeScreenshot()}"
+        },
+        {
+          "name": "setIntervalLinkingEnabled",
+          "args": 1,
+          "source": "setIntervalLinkingEnabled(e){this._chartWidgetCollection.lock.interval.setValue(e)}"
+        },
+        {
+          "name": "setTimeFrame",
+          "args": 1,
+          "source": "setTimeFrame(e){this._chartWidgetCollection.setTimeFrame(e)}"
+        },
+        {
+          "name": "startFullscreen",
+          "args": 0,
+          "source": "startFullscreen(){return this._chartWidgetCollection.startFullscreen()}"
+        },
+        {
+          "name": "exitFullscreen",
+          "args": 0,
+          "source": "exitFullscreen(){return this._chartWidgetCollection.exitFullscreen()}"
+        },
+        {
+          "name": "takeClientScreenshot",
+          "args": 1,
+          "source": "takeClientScreenshot(e){return this._chartWidgetCollection.clientSnapshot(e)}"
+        },
+        {
+          "name": "getFavoriteIntervalsService",
+          "args": 0,
+          "source": "getFavoriteIntervalsService(){throw new Error(\"not implemented\")}"
+        },
+        {
+          "name": "getFavoriteChartStylesService",
+          "args": 0,
+          "source": "getFavoriteChartStylesService(){throw new Error(\"not implemented\")}"
+        },
+        {
+          "name": "getLinetoolsFavoritesStore",
+          "args": 0,
+          "source": "getLinetoolsFavoritesStore(){throw new Error(\"not implemented\")}"
+        },
+        {
+          "name": "supportTicketData",
+          "args": 0,
+          "source": "supportTicketData(){return this._supportTicketData}"
+        },
+        {
+          "name": "createGoProDialog",
+          "args": 1,
+          "source": "createGoProDialog(e){throw new Error(\"Not implemented\")}"
+        },
+        {
+          "name": "onGoProDialog",
+          "args": 2,
+          "source": "onGoProDialog(e,t){throw new Error(\"Not implemented\")}"
+        },
+        {
+          "name": "destroy",
+          "args": 0,
+          "source": "destroy(){var e,t,i;this._chartHasChanged.destroy(),this._chartChangesWatcher.destroy(),this._supportedChartStylesSpawn.destroy(),null===(e=this._intervalsService)||void 0===e||e.destroy(),null===(t=this._themesApi)||void 0===t||t.destroy(),null===(i=this._widgebarApi)||void 0===i||i.destroy(),this._widgetbarApiRejectionReason=\"This ITradingViewApi instance has been destroyed\",this._symbolSync.destroy(),this._intervalSync.destroy(),this._dateRangeSync.destroy(),this._crosshairSync.destroy(),this._timeSync.destroy(),this._isDestroyed=!0,(0,g.properties)().childs().magnet.unsubscribeAll(this),(0,g.properties)().childs().magnetMode.unsubscribeAll(this)}"
+        },
+        {
+          "name": "themes",
+          "args": 0,
+          "source": "themes(){return null===this._themesApi&&(this._themesApi=new _({chartWidgetCollection:this._chartWidgetCollection})),this._themesApi}"
+        },
+        {
+          "name": "dialogs",
+          "args": 0,
+          "source": "dialogs(){var e,t,i,s,r,n;return{Indicators:this._studyMarket,Compare:this._chartWidgetCollection.getCompareDialogRenderer(),ObjectsTree:l.ObjectTreeDialogController.getInstance(),ChartProperties:this._chartWidgetCollection.getChartPropertiesDialogRenderer(),ChartLayoutSaveAs:null!==(t=null===(e=this._saveChartService)||void 0===e?void 0:e.getSaveAsController())&&void 0!==t?t:null,ChartLayoutRename:null!==(s=null===(i=this._saveChartService)||void 0===i?void 0:i.getRenameController())&&void 0!==s?s:null,ChartLayoutCreate:null!==(n=null===(r=this._saveChartService)||void 0===r?void 0:r.getCreateController())&&void 0!==n?n:null,ChartLayoutLoad:this._loadChartLayoutDialog,Alerts:this._alertsWidgetDialog,Details:this._detailsDialogController,FinancialsCharts:null,Technicals:null,Forecast:null}}"
+        },
+        {
+          "name": "subscribe",
+          "args": 2,
+          "source": "subscribe(e,t){n.subscribe(e,t,void 0)}"
+        },
+        {
+          "name": "unsubscribe",
+          "args": 2,
+          "source": "unsubscribe(e,t){n.unsubscribe(e,t,void 0)}"
+        },
+        {
+          "name": "webview",
+          "args": 0,
+          "source": "webview(){return j(),this._webview}"
+        },
+        {
+          "name": "studyTemplatesDrawerApi",
+          "args": 0,
+          "source": "studyTemplatesDrawerApi(){j()}"
+        },
+        {
+          "name": "fontIconsSettingsDrawer",
+          "args": 0,
+          "source": "fontIconsSettingsDrawer(){j()}"
+        },
+        {
+          "name": "intervalsService",
+          "args": 0,
+          "source": "intervalsService(){j()}"
+        },
+        {
+          "name": "supportedChartTypes",
+          "args": 0,
+          "source": "supportedChartTypes(){return this._supportedChartStylesSpawn}"
+        },
+        {
+          "name": "setBrokerName",
+          "args": 1,
+          "source": "setBrokerName(e){this._chartWidgetCollection.setBroker(e)}"
+        },
+        {
+          "name": "getDrawOnAllCharts",
+          "args": 0,
+          "source": "getDrawOnAllCharts(){return(0,g.drawOnAllCharts)().value()}"
+        },
+        {
+          "name": "drawOnAllCharts",
+          "args": 1,
+          "source": "drawOnAllCharts(e){return(0,g.drawOnAllCharts)().setValue(e)}"
+        },
+        {
+          "name": "getDrawOnAllChartsMode",
+          "args": 0,
+          "source": "getDrawOnAllChartsMode(){return(0,g.drawOnAllChartsMode)().value()}"
+        },
+        {
+          "name": "drawOnAllChartsMode",
+          "args": 1,
+          "source": "drawOnAllChartsMode(e){(0,g.drawOnAllChartsMode)().setValue(e)}"
+        },
+        {
+          "name": "disableTrackingEvents",
+          "args": 0,
+          "source": "disableTrackingEvents(){(0,h.disableTrackingEvents)()}"
+        },
+        {
+          "name": "getSaveChartService",
+          "args": 0,
+          "source": "getSaveChartService(){return this._saveChartService}"
+        },
+        {
+          "name": "symbolSync",
+          "args": 0,
+          "source": "symbolSync(){return this._symbolSync}"
+        },
+        {
+          "name": "intervalSync",
+          "args": 0,
+          "source": "intervalSync(){return this._intervalSync}"
+        },
+        {
+          "name": "dateRangeSync",
+          "args": 0,
+          "source": "dateRangeSync(){return this._dateRangeSync}"
+        },
+        {
+          "name": "crosshairSync",
+          "args": 0,
+          "source": "crosshairSync(){return this._crosshairSync}"
+        },
+        {
+          "name": "timeSync",
+          "args": 0,
+          "source": "timeSync(){return this._timeSync}"
+        },
+        {
+          "name": "setSymbolSearchUI",
+          "args": 1,
+          "source": "setSymbolSearchUI(e){j()}"
+        },
+        {
+          "name": "chart",
+          "args": 0,
+          "source": "chart(e=0){if(e<0||e>=this.chartsCount())throw Error(\"Incorrect index: \"+e);return this._getChartWidgetApi(this._chartWidgetCollection.getAll()[e])}"
+        },
+        {
+          "name": "activeChart",
+          "args": 0,
+          "source": "activeChart(){return this._getChartWidgetApi(this._activeChartWidget())}"
+        },
+        {
+          "name": "setActiveChart",
+          "args": 1,
+          "source": "setActiveChart(e){if(e>=0&&e<this.chartsCount()){const t=this._chartWidgetCollection.getAll()[e]\n;t&&(this._activeChartWidget().inFullscreen()?t.requestFullscreen():this._chartWidgetCollection.activeChartWidget.setValue(t))}}"
+        },
+        {
+          "name": "activeChartIndex",
+          "args": 0,
+          "source": "activeChartIndex(){return this._chartIndex(this._activeChartWidget())}"
+        },
+        {
+          "name": "chartsCount",
+          "args": 0,
+          "source": "chartsCount(){return c.layouts[this.layout()].count}"
+        },
+        {
+          "name": "layout",
+          "args": 0,
+          "source": "layout(){return this._chartWidgetCollection.layout.value()}"
+        },
+        {
+          "name": "layoutName",
+          "args": 0,
+          "source": "layoutName(){return this._chartWidgetCollection.metaInfo.name.value()}"
+        },
+        {
+          "name": "layoutNameWatchedValue",
+          "args": 0,
+          "source": "layoutNameWatchedValue(){return this._chartWidgetCollection.metaInfo.name.readonly()}"
+        },
+        {
+          "name": "layoutSettingsDrawer",
+          "args": 0,
+          "source": "async layoutSettingsDrawer(){throw new Error(\"not implemented\")}"
+        },
+        {
+          "name": "setLayout",
+          "args": 2,
+          "source": "setLayout(e,t){(null==t?void 0:t.withUndo)?this._chartWidgetCollection.setChartLayoutWithUndo(e):this._chartWidgetCollection.setLayout(e)}"
+        },
+        {
+          "name": "undoRedoState",
+          "args": 0,
+          "source": "undoRedoState(){return this._chartWidgetCollection.undoHistory.state()}"
+        },
+        {
+          "name": "clearUndoHistory",
+          "args": 0,
+          "source": "clearUndoHistory(){return this._chartWidgetCollection.undoHistory.clearStack()}"
+        },
+        {
+          "name": "undo",
+          "args": 0,
+          "source": "undo(){this._chartWidgetCollection.undoHistory.undo()}"
+        },
+        {
+          "name": "redo",
+          "args": 0,
+          "source": "redo(){this._chartWidgetCollection.undoHistory.redo()}"
+        },
+        {
+          "name": "selectLineTool",
+          "args": 2,
+          "source": "async selectLineTool(e,t){if(!(0,m.isSupportedLineTool)(e))return;const i=m.supportedLineTools[e].name;if(\"icon\"===e){const e=null==t?void 0:t.icon;void 0!==e&&g.iconTool.setValue(e)}if(\"emoji\"===e){const e=null==t?void 0:t.emoji;void 0!==e&&g.emojiTool.setValue(e)}if(\"sticker\"===e){const e=null==t?void 0:t.sticker;void 0!==e&&g.stickerTool.setValue(e)}g.tool.setValue(i)}"
+        },
+        {
+          "name": "favoriteDrawingsToolbar",
+          "args": 0,
+          "source": "favoriteDrawingsToolbar(){return i.e(5551).then(i.bind(i,54977)).then((e=>(this._favoriteDrawingsToolbar||(this._favoriteDrawingsToolbar=new e.FavoriteDrawingsApi),this._favoriteDrawingsToolbar)))}"
+        },
+        {
+          "name": "sharingChart",
+          "args": 0,
+          "source": "sharingChart(){return this._sharingChartService}"
+        },
+        {
+          "name": "watchlist",
+          "args": 0,
+          "source": "watchlist(){return null!==this._watchlistApiRejectionReason&&((0,s.ensureNotNull)(this._watchlistApiDeferredPromise).reject(this._watchlistApiRejectionReason),this._watchlistApiRejectionReason=null),(0,s.ensureNotNull)(this._watchlistApiDeferredPromise).promise}"
+        },
+        {
+          "name": "setWatchlistApiPromise",
+          "args": 1,
+          "source": "setWatchlistApiPromise(e){e.then((e=>{(0,s.ensureNotNull)(this._watchlistApiDeferredPromise).resolve(e)})).catch((e=>{this._watchlistApiRejectionReason=e}))}"
+        },
+        {
+          "name": "news",
+          "args": 0,
+          "source": "news(){return this._isDestroyed&&(0,s.ensureNotNull)(this._newsApiDeferredPromise).reject(\"This ITradingViewApi instance has been destroyed\"),null!==this._newsApiRejectionReason&&((0,s.ensureNotNull)(this._newsApiDeferredPromise).reject(this._newsApiRejectionReason),this._newsApiRejectionReason=null),(0,s.ensureNotNull)(this._newsApiDeferredPromise).promise}"
+        },
+        {
+          "name": "setNewsApiPromise",
+          "args": 1,
+          "source": "setNewsApiPromise(e){e.then((e=>{(0,s.ensureNotNull)(this._newsApiDeferredPromise).resolve(e)})).catch((e=>{this._newsApiRejectionReason=e}))}"
+        },
+        {
+          "name": "widgetbar",
+          "args": 0,
+          "source": "widgetbar(){return this._isDestroyed&&(0,s.ensureNotNull)(this._widgetbarApiDeferredPromise).reject(\"This ITradingViewApi instance has been destroyed\"),null!==this._widgetbarApiRejectionReason&&((0,s.ensureNotNull)(this._widgetbarApiDeferredPromise).reject(this._widgetbarApiRejectionReason),this._widgetbarApiRejectionReason=null),(0,s.ensureNotNull)(this._widgetbarApiDeferredPromise).promise}"
+        },
+        {
+          "name": "setWidgetbarApiPromise",
+          "args": 1,
+          "source": "setWidgetbarApiPromise(e){e.then((e=>{this._isDestroyed||(this._widgebarApi=e,(0,s.ensureNotNull)(this._widgetbarApiDeferredPromise).resolve(e))})).catch((e=>{this._widgetbarApiRejectionReason=e}))}"
+        },
+        {
+          "name": "getChartStorage",
+          "args": 0,
+          "source": "getChartStorage(){return getChartStorage()}"
+        },
+        {
+          "name": "setDebugMode",
+          "args": 1,
+          "source": "setDebugMode(e){o.setEnabled(\"charting_library_debug_mode\",e)}"
+        },
+        {
+          "name": "setFeatureEnabled",
+          "args": 2,
+          "source": "setFeatureEnabled(e,t){\"chart_crosshair_menu\"!==e?o.setEnabled(e,t):z.addPlusButtonProperty.setValue(t)}"
+        },
+        {
+          "name": "magnetEnabled",
+          "args": 0,
+          "source": "magnetEnabled(){return null===this._magnetEnabledWatchedValue&&(this._magnetEnabledWatchedValue=new v.WatchedValue((0,g.properties)().childs().magnet.value()),this._magnetEnabledWatchedValue.subscribe((e=>{(0,S.saveDefaultProperties)(!0),(0,g.properties)().childs().magnet.setValue(e),(0,S.saveDefaultProperties)(!1)})),(0,g.properties)().childs().magnet.subscribe(this,(()=>{(0,s.ensureNotNull)(this._magnetEnabledWatchedValue).setValue((0,g.properties)().childs().magnet.value())}))),this._magnetEnabledWatchedValue}"
+        },
+        {
+          "name": "magnetMode",
+          "args": 0,
+          "source": "magnetMode(){return null===this._magnetModeWatchedValue&&(this._magnetModeWatchedValue=new v.WatchedValue((0,g.properties)().childs().magnetMode.value()),this._magnetModeWatchedValue.subscribe((e=>{(0,S.saveDefaultProperties)(!0),(0,g.properties)().childs().magnetMode.setValue(e),(0,S.saveDefaultProperties)(!1)})),(0,g.properties)().childs().magnetMode.subscribe(this,(()=>{(0,s.ensureNotNull)(this._magnetModeWatchedValue).setValue((0,g.properties)().childs().magnetMode.value())}))),this._magnetModeWatchedValue}"
+        },
+        {
+          "name": "flushBufferedData",
+          "args": 0,
+          "source": "flushBufferedData(){C.fire()}"
+        },
+        {
+          "name": "chartWidgetCollectionState",
+          "args": 0,
+          "source": "chartWidgetCollectionState(...e){return this._chartWidgetCollection.state(...e)}"
+        },
+        {
+          "name": "chartWidgetCollectionSeriesStatuses",
+          "args": 0,
+          "source": "chartWidgetCollectionSeriesStatuses(){return this._chartWidgetCollection.chartSeriesStatuses()}"
+        },
+        {
+          "name": "initAllLineTools",
+          "args": 0,
+          "source": "initAllLineTools(){return Promise.all(Object.keys(w).filter((e=>!w[e])).map((e=>(0,y.initLineTool)(e)))).then((()=>{}))}"
+        },
+        {
+          "name": "watermark",
+          "args": 0,
+          "source": "watermark(){{const e=W.WatermarkApi.getInstance();if(!e.ready())throw new Error(\"Watermark API is not initialised yet.\");return e}}"
+        },
+        {
+          "name": "setContextMenuOptions",
+          "args": 1,
+          "source": "setContextMenuOptions(e){G.setContextMenuOptions(e)}"
+        },
+        {
+          "name": "changeSymbol",
+          "args": 3,
+          "source": "changeSymbol(e,t,i){r.linking.interval.setValue((0,s.ensureNotNull)(F.Interval.normalize(t))),r.linking.setSymbolAndLogInitiator(e,\"API\"),i&&this.activeChart().onDataLoaded().subscribe(null,i,!0)}"
+        },
+        {
+          "name": "getSymbolInterval",
+          "args": 1,
+          "source": "getSymbolInterval(e){const t={symbol:this.linking.proSymbol.value(),interval:this.linking.interval.value()};return null==e||e(t),t}"
+        },
+        {
+          "name": "hasChartChanges",
+          "args": 0,
+          "source": "hasChartChanges(){return this._chartHasChanged}"
+        },
+        {
+          "name": "setForceFullscreenMode",
+          "args": 0,
+          "source": "setForceFullscreenMode(){j()}"
+        },
+        {
+          "name": "setMultichartMode",
+          "args": 0,
+          "source": "setMultichartMode(){j()}"
+        },
+        {
+          "name": "setDateRangeLinkingEnabled",
+          "args": 1,
+          "source": "setDateRangeLinkingEnabled(e){this._chartWidgetCollection.lock.dateRange.setValue(e)}"
+        },
+        {
+          "name": "_getChartWidgetApi",
+          "args": 1,
+          "source": "_getChartWidgetApi(e){let t=this._chartWidgets.get(e);return void 0===t&&(t=new O(e,this._activateChart.bind(null,e)),this._chartWidgets.set(e,t)),t}"
+        },
+        {
+          "name": "_chartIndex",
+          "args": 1,
+          "source": "_chartIndex(e){return this._chartWidgetCollection.getAll().indexOf(e)}"
+        },
+        {
+          "name": "_activeChartWidget",
+          "args": 0,
+          "source": "_activeChartWidget(){return this._chartWidgetCollection.activeChartWidget.value()}"
+        },
+        {
+          "name": "__defineGetter__",
+          "args": 2,
+          "source": "function __defineGetter__() { [native code] }"
+        },
+        {
+          "name": "__defineSetter__",
+          "args": 2,
+          "source": "function __defineSetter__() { [native code] }"
+        },
+        {
+          "name": "hasOwnProperty",
+          "args": 1,
+          "source": "function hasOwnProperty() { [native code] }"
+        },
+        {
+          "name": "__lookupGetter__",
+          "args": 1,
+          "source": "function __lookupGetter__() { [native code] }"
+        },
+        {
+          "name": "__lookupSetter__",
+          "args": 1,
+          "source": "function __lookupSetter__() { [native code] }"
+        },
+        {
+          "name": "isPrototypeOf",
+          "args": 1,
+          "source": "function isPrototypeOf() { [native code] }"
+        },
+        {
+          "name": "propertyIsEnumerable",
+          "args": 1,
+          "source": "function propertyIsEnumerable() { [native code] }"
+        },
+        {
+          "name": "toString",
+          "args": 0,
+          "source": "function toString() { [native code] }"
+        },
+        {
+          "name": "valueOf",
+          "args": 0,
+          "source": "function valueOf() { [native code] }"
+        },
+        {
+          "name": "toLocaleString",
+          "args": 0,
+          "source": "function toLocaleString() { [native code] }"
+        }
+      ]
+    },
+    "activeChartFound": true,
+    "symbol": "XAUTUSDT",
+    "resolution": "1",
+    "intervals": [
+      "1",
+      "2",
+      "3",
+      "5",
+      "6",
+      "9",
+      "10",
+      "12",
+      "15",
+      "24",
+      "27",
+      "30",
+      "45",
+      "60",
+      "120",
+      "240",
+      "360",
+      "480",
+      "720",
+      "1D",
+      "3D",
+      "1W",
+      "1M"
+    ]
+  },
+  "intervalService": {
+    "getterResult": false,
+    "service": {
+      "found": false
+    },
+    "ownValues": null
+  },
+  "favoriteService": {
+    "getterResult": false,
+    "service": {
+      "found": false
+    },
+    "ownValues": null,
+    "container": {
+      "shape": {
+        "found": false
+      },
+      "values": null
+    }
+  },
+  "widgetOptions": {
+    "widgetFound": true,
+    "optionsFound": true,
+    "favorites": {
+      "intervals": [],
+      "chartTypes": [],
+      "indicators": [],
+      "drawingTools": [
+        "LineToolTrendLine",
+        "LineToolRay",
+        "LineToolHorzRay",
+        "LineToolVertLine",
+        "LineToolRiskRewardLong",
+        "LineToolRiskRewardShort"
+      ]
+    },
+    "intervals": {
+      "0": {
+        "text": "5y",
+        "resolution": "1W"
+      },
+      "1": {
+        "text": "1y",
+        "resolution": "1W"
+      },
+      "2": {
+        "text": "6m",
+        "resolution": "120"
+      },
+      "3": {
+        "text": "3m",
+        "resolution": "60"
+      },
+      "4": {
+        "text": "1m",
+        "resolution": "30"
+      },
+      "5": {
+        "text": "5d",
+        "resolution": "5"
+      },
+      "6": {
+        "text": "1d",
+        "resolution": "1"
+      },
+      "length": 7
+    }
+  },
+  "timeframeDom": [
+    {
+      "frame": "top",
+      "inspectedElements": 96,
+      "matchingElements": [
+        {
+          "tag": "BUTTON",
+          "text": "1m",
+          "aria": null,
+          "title": null,
+          "dataName": null,
+          "className": "border-none py-4px cursor-pointer select-none px-6px rounded-4px transition-colors focus:outline-none focus-visible:outline-auto text-12px leading-14px bx-color-text-1 bx-color-bg-",
+          "parentClass": "flex items-center",
+          "outerHTML": "<button type=\"button\" class=\"border-none py-4px cursor-pointer select-none px-6px rounded-4px transition-colors focus:outline-none focus-visible:outline-auto text-12px leading-14px bx-color-text-1 bx-color-bg-btn-secondary\">1m</button>"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "5m",
+          "aria": null,
+          "title": null,
+          "dataName": null,
+          "className": "border-none py-4px cursor-pointer select-none px-6px rounded-4px transition-colors focus:outline-none focus-visible:outline-auto text-12px leading-14px bg-transparent bx-color-text",
+          "parentClass": "flex items-center",
+          "outerHTML": "<button type=\"button\" class=\"border-none py-4px cursor-pointer select-none px-6px rounded-4px transition-colors focus:outline-none focus-visible:outline-auto text-12px leading-14px bg-transparent bx-color-text-2 hover:bx-color-text-1\">5m</button>"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "15m",
+          "aria": null,
+          "title": null,
+          "dataName": null,
+          "className": "border-none py-4px cursor-pointer select-none px-6px rounded-4px transition-colors focus:outline-none focus-visible:outline-auto text-12px leading-14px bg-transparent bx-color-text",
+          "parentClass": "flex items-center",
+          "outerHTML": "<button type=\"button\" class=\"border-none py-4px cursor-pointer select-none px-6px rounded-4px transition-colors focus:outline-none focus-visible:outline-auto text-12px leading-14px bg-transparent bx-color-text-2 hover:bx-color-text-1\">15m</button>"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "30m",
+          "aria": null,
+          "title": null,
+          "dataName": null,
+          "className": "border-none py-4px cursor-pointer select-none px-6px rounded-4px transition-colors focus:outline-none focus-visible:outline-auto text-12px leading-14px bg-transparent bx-color-text",
+          "parentClass": "flex items-center",
+          "outerHTML": "<button type=\"button\" class=\"border-none py-4px cursor-pointer select-none px-6px rounded-4px transition-colors focus:outline-none focus-visible:outline-auto text-12px leading-14px bg-transparent bx-color-text-2 hover:bx-color-text-1\">30m</button>"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "1H",
+          "aria": null,
+          "title": null,
+          "dataName": null,
+          "className": "border-none py-4px cursor-pointer select-none px-6px rounded-4px transition-colors focus:outline-none focus-visible:outline-auto text-12px leading-14px bg-transparent bx-color-text",
+          "parentClass": "flex items-center",
+          "outerHTML": "<button type=\"button\" class=\"border-none py-4px cursor-pointer select-none px-6px rounded-4px transition-colors focus:outline-none focus-visible:outline-auto text-12px leading-14px bg-transparent bx-color-text-2 hover:bx-color-text-1\">1H</button>"
+        }
+      ]
+    },
+    {
+      "frame": "iframe[0]",
+      "inspectedElements": 144,
+      "matchingElements": [
+        {
+          "tag": "BUTTON",
+          "text": "1m",
+          "aria": "1 minute",
+          "title": null,
+          "dataName": null,
+          "className": "menu-S_1OCXUK button-merBkM5y apply-common-tooltip accessible-merBkM5y",
+          "parentClass": "wrap-n5bmFxyX",
+          "outerHTML": "<button type=\"button\" class=\"menu-S_1OCXUK button-merBkM5y apply-common-tooltip accessible-merBkM5y\" tabindex=\"-1\" data-tooltip=\"1 minute\" aria-label=\"1 minute\"><div class=\"menuContent-S_1OCXUK wrap-n5bmFxyX\"><div class=\"value-gwXludjS\">1m</div></div></button>"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "1m",
+          "aria": "1 minute",
+          "title": null,
+          "dataName": null,
+          "className": "menu-S_1OCXUK button-merBkM5y apply-common-tooltip accessible-merBkM5y",
+          "parentClass": "wrap-n5bmFxyX",
+          "outerHTML": "<button type=\"button\" class=\"menu-S_1OCXUK button-merBkM5y apply-common-tooltip accessible-merBkM5y\" tabindex=\"-1\" data-tooltip=\"1 minute\" aria-label=\"1 minute\"><div class=\"menuContent-S_1OCXUK wrap-n5bmFxyX\"><div class=\"value-gwXludjS\">1m</div></div></button>"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "1m",
+          "aria": "1 minute",
+          "title": null,
+          "dataName": null,
+          "className": "menu-S_1OCXUK button-merBkM5y apply-common-tooltip accessible-merBkM5y",
+          "parentClass": "wrap-n5bmFxyX",
+          "outerHTML": "<button type=\"button\" class=\"menu-S_1OCXUK button-merBkM5y apply-common-tooltip accessible-merBkM5y\" tabindex=\"-1\" data-tooltip=\"1 minute\" aria-label=\"1 minute\"><div class=\"menuContent-S_1OCXUK wrap-n5bmFxyX\"><div class=\"value-gwXludjS\">1m</div></div></button>"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Show Favorite Drawing Tools Toolbar",
+          "aria": "Show Favorite Drawing Tools Toolbar",
+          "title": null,
+          "dataName": null,
+          "className": "button-KTgbfaP5 apply-common-tooltip common-tooltip-vertical isActive-KTgbfaP5 accessible-KTgbfaP5",
+          "parentClass": "group-BfVZxb4b lastGroup-BfVZxb4b",
+          "outerHTML": "<button aria-label=\"Show Favorite Drawing Tools Toolbar\" id=\"drawing-toolbar-favorite-drawings\" type=\"button\" class=\"button-KTgbfaP5 apply-common-tooltip common-tooltip-vertical isActive-KTgbfaP5 accessible-KTgbfaP5\" tabindex=\"-1\" aria-pressed=\"true\" data-tooltip=\"Show Favorite Drawing Tools Toolbar\"><div class=\"bg-KTgbfaP5\"><span class=\"icon-KTgbfaP5\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"19\" fill=\"currentColor\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M9.103.687a1 1 0 0 1 1.794 0l2.374 4.81 5.309.772a1 1 0 0 1 .554 1.706l-3.841 3.745.906 5.287a1 1 0 0 1-1.45 1.054L10 15.565 5.252 18.06A1 1 0 0 1 3.8 17.007l.907-"
+        },
+        {
+          "tag": "DIV",
+          "text": "1",
+          "aria": null,
+          "title": "Change interval",
+          "dataName": "legend-source-interval",
+          "className": "titleWrapper-l31H9iuA intervalTitle-l31H9iuA apply-overflow-tooltip apply-common-tooltip withAction-l31H9iuA withDot-l31H9iuA",
+          "parentClass": "titlesWrapper-l31H9iuA",
+          "outerHTML": "<div class=\"titleWrapper-l31H9iuA intervalTitle-l31H9iuA apply-overflow-tooltip apply-common-tooltip withAction-l31H9iuA withDot-l31H9iuA\" data-name=\"legend-source-interval\" title=\"Change interval\" style=\"color: rgb(204, 204, 204);\"><div class=\"title-l31H9iuA\">1</div></div>"
+        },
+        {
+          "tag": "SPAN",
+          "text": "",
+          "aria": null,
+          "title": null,
+          "dataName": "FavoriteToolbarLineToolTrendLine",
+          "className": "tv-favorited-drawings-toolbar__widget apply-common-tooltip ",
+          "parentClass": "tv-floating-toolbar__widget js-widget",
+          "outerHTML": "<span class=\"tv-favorited-drawings-toolbar__widget apply-common-tooltip \" data-name=\"FavoriteToolbarLineToolTrendLine\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 28 28\" width=\"28\" height=\"28\"><g fill=\"currentColor\" fill-rule=\"nonzero\"><path d=\"M7.354 21.354l14-14-.707-.707-14 14z\"></path><path d=\"M22.5 7c.828 0 1.5-.672 1.5-1.5s-.672-1.5-1.5-1.5-1.5.672-1.5 1.5.672 1.5 1.5 1.5zm0 1c-1.381 0-2.5-1.119-2.5-2.5s1.119-2.5 2.5-2.5 2.5 1.119 2.5 2.5-1.119 2.5-2.5 2.5zM5.5 24c.828 0 1.5-.672 1.5-1.5s-.672-1.5-1.5-1.5-1.5.672-1.5 1.5.672 1.5 1.5 1.5zm0 1c-1.381 0-2.5-1.119-2.5-2.5s1.119-2.5 2.5-2.5 2.5 1.119 2.5 2.5-1.119 2.5-2.5 2.5z\"></pa"
+        },
+        {
+          "tag": "SPAN",
+          "text": "",
+          "aria": null,
+          "title": null,
+          "dataName": "FavoriteToolbarLineToolRay",
+          "className": "tv-favorited-drawings-toolbar__widget apply-common-tooltip ",
+          "parentClass": "tv-floating-toolbar__widget js-widget",
+          "outerHTML": "<span class=\"tv-favorited-drawings-toolbar__widget apply-common-tooltip \" data-name=\"FavoriteToolbarLineToolRay\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 28 28\" width=\"28\" height=\"28\"><g fill=\"currentColor\" fill-rule=\"nonzero\"><path d=\"M8.354 20.354l5-5-.707-.707-5 5z\"></path><path d=\"M16.354 12.354l8-8-.707-.707-8 8z\"></path><path d=\"M14.5 15c.828 0 1.5-.672 1.5-1.5s-.672-1.5-1.5-1.5-1.5.672-1.5 1.5.672 1.5 1.5 1.5zm0 1c-1.381 0-2.5-1.119-2.5-2.5s1.119-2.5 2.5-2.5 2.5 1.119 2.5 2.5-1.119 2.5-2.5 2.5zM6.5 23c.828 0 1.5-.672 1.5-1.5s-.672-1.5-1.5-1.5-1.5.672-1.5 1.5.672 1.5 1.5 1.5zm0 1c-1.381 0-2.5-1.119-2.5-2.5s1.119-2.5 2.5-2.5 "
+        },
+        {
+          "tag": "SPAN",
+          "text": "",
+          "aria": null,
+          "title": null,
+          "dataName": "FavoriteToolbarLineToolHorzRay",
+          "className": "tv-favorited-drawings-toolbar__widget apply-common-tooltip ",
+          "parentClass": "tv-floating-toolbar__widget js-widget",
+          "outerHTML": "<span class=\"tv-favorited-drawings-toolbar__widget apply-common-tooltip \" data-name=\"FavoriteToolbarLineToolHorzRay\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 28 28\" width=\"28\" height=\"28\"><g fill=\"currentColor\" fill-rule=\"nonzero\"><path d=\"M8.5 15h16.5v-1h-16.5z\"></path><path d=\"M6.5 16c.828 0 1.5-.672 1.5-1.5s-.672-1.5-1.5-1.5-1.5.672-1.5 1.5.672 1.5 1.5 1.5zm0 1c-1.381 0-2.5-1.119-2.5-2.5s1.119-2.5 2.5-2.5 2.5 1.119 2.5 2.5-1.119 2.5-2.5 2.5z\"></path></g></svg></span>"
+        },
+        {
+          "tag": "SPAN",
+          "text": "",
+          "aria": null,
+          "title": null,
+          "dataName": "FavoriteToolbarLineToolVertLine",
+          "className": "tv-favorited-drawings-toolbar__widget apply-common-tooltip ",
+          "parentClass": "tv-floating-toolbar__widget js-widget",
+          "outerHTML": "<span class=\"tv-favorited-drawings-toolbar__widget apply-common-tooltip \" data-name=\"FavoriteToolbarLineToolVertLine\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 28 28\" width=\"28\" height=\"28\"><g fill=\"currentColor\" fill-rule=\"nonzero\"><path d=\"M15 12.5v-8.5h-1v8.5zM14 16.5v8.5h1v-8.5z\"></path><path d=\"M14.5 16c.828 0 1.5-.672 1.5-1.5s-.672-1.5-1.5-1.5-1.5.672-1.5 1.5.672 1.5 1.5 1.5zm0 1c-1.381 0-2.5-1.119-2.5-2.5s1.119-2.5 2.5-2.5 2.5 1.119 2.5 2.5-1.119 2.5-2.5 2.5z\"></path></g></svg></span>"
+        },
+        {
+          "tag": "SPAN",
+          "text": "",
+          "aria": null,
+          "title": null,
+          "dataName": "FavoriteToolbarLineToolRiskRewardLong",
+          "className": "tv-favorited-drawings-toolbar__widget apply-common-tooltip",
+          "parentClass": "tv-floating-toolbar__widget js-widget",
+          "outerHTML": "<span class=\"tv-favorited-drawings-toolbar__widget apply-common-tooltip\" data-name=\"FavoriteToolbarLineToolRiskRewardLong\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 28 28\" width=\"28\" height=\"28\" fill=\"none\"><path fill=\"currentColor\" fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M4.5 5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM2 6.5A2.5 2.5 0 0 1 6.95 6H24v1H6.95A2.5 2.5 0 0 1 2 6.5zM4.5 15a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM2 16.5a2.5 2.5 0 0 1 4.95-.5h13.1a2.5 2.5 0 1 1 0 1H6.95A2.5 2.5 0 0 1 2 16.5zM22.5 15a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm-18 6a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM2 22.5a2.5 2.5 0 0 1 4.95-.5H24v1H6.95A2.5 2.5 0 0"
+        },
+        {
+          "tag": "SPAN",
+          "text": "",
+          "aria": null,
+          "title": null,
+          "dataName": "FavoriteToolbarLineToolRiskRewardShort",
+          "className": "tv-favorited-drawings-toolbar__widget apply-common-tooltip ",
+          "parentClass": "tv-floating-toolbar__widget js-widget",
+          "outerHTML": "<span class=\"tv-favorited-drawings-toolbar__widget apply-common-tooltip \" data-name=\"FavoriteToolbarLineToolRiskRewardShort\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 28 28\" width=\"28\" height=\"28\" fill=\"none\"><path fill=\"currentColor\" fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M4.5 24a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zM2 22.5a2.5 2.5 0 0 0 4.95.5H24v-1H6.95a2.5 2.5 0 0 0-4.95.5zM4.5 14a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zM2 12.5a2.5 2.5 0 0 0 4.95.5h13.1a2.5 2.5 0 1 0 0-1H6.95a2.5 2.5 0 0 0-4.95.5zM22.5 14a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm-18-6a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zM2 6.5a2.5 2.5 0 0 0 4.95.5H24V6H6.95A2.5 2.5 "
+        }
+      ]
+    },
+    {
+      "frame": "iframe[1]",
+      "inspectedElements": 0,
+      "matchingElements": []
+    },
+    {
+      "frame": "iframe[2]",
+      "inspectedElements": 1,
+      "matchingElements": []
+    }
+  ],
+  "errors": [],
+  "finishedAt": "2026-11-15T12:32:21.083Z"
+}
