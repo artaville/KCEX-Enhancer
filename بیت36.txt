@@ -1,0 +1,4365 @@
+{
+  "reportName": "BITUNIX_BATCH_AUDIT_2.0",
+  "version": "2.0.0",
+  "generatedAt": "2026-11-15T14:27:16.452Z",
+  "page": {
+    "url": "https://www.bitunix.com/contract-trade/XAUTUSDT",
+    "title": "3,821.77 | XAUTUSDT Futures Exchange - Crypto Futures | Bitunix",
+    "readyState": "complete",
+    "viewport": {
+      "width": 1707,
+      "height": 781,
+      "dpr": 1.125
+    }
+  },
+  "safety": {
+    "readOnly": true,
+    "ordersSent": 0,
+    "tradingMethodsInvoked": 0,
+    "buttonsClicked": 0,
+    "keyboardEventsDispatched": 0,
+    "formsSubmitted": 0,
+    "chartResolutionChanged": false,
+    "chartDataChanged": false,
+    "datafeedMethodsCalled": false,
+    "websocketCreatedOrSubscribed": false,
+    "networkRequestsAdded": 0,
+    "storageOrCookiesRead": false,
+    "accountBalancesOrPnlRead": false,
+    "openPositionDataRead": false,
+    "credentialsOrTokensRead": false
+  },
+  "frames": [
+    {
+      "name": "top",
+      "accessible": true,
+      "title": "3,821.77 | XAUTUSDT Futures Exchange - Crypto Futures | Bitunix",
+      "url": "https://www.bitunix.com/contract-trade/XAUTUSDT"
+    },
+    {
+      "name": "iframe[0]",
+      "accessible": true,
+      "title": "",
+      "url": "https://www.bitunix.comhttps://www.bitunix.com/3902a5e4-3e1c-40ef-b1b3-44d93b16ba03"
+    },
+    {
+      "name": "iframe[1]",
+      "accessible": true,
+      "title": "",
+      "url": "nullblank"
+    },
+    {
+      "name": "iframe[2]",
+      "accessible": true,
+      "title": "Button to launch messaging window",
+      "url": "nullblank"
+    }
+  ],
+  "chartAndDatafeed": {
+    "found": {
+      "bitunixTv": true,
+      "tvWidget": true,
+      "hostApi": true,
+      "adapter": true,
+      "eventBus": true,
+      "chartFrame": "iframe[0]",
+      "chartApi": true,
+      "chartApiInstance": true,
+      "activeChart": true,
+      "series": true,
+      "seriesData": true,
+      "barStore": true,
+      "modelBarStore": false,
+      "conflatedChunksBuilder": false,
+      "datafeed": true
+    },
+    "symbol": "XAUTUSDT",
+    "resolution": "1",
+    "intervals": [
+      "1",
+      "2",
+      "3",
+      "5",
+      "6",
+      "9",
+      "10",
+      "12",
+      "15",
+      "24",
+      "27",
+      "30",
+      "45",
+      "60",
+      "120",
+      "240",
+      "360",
+      "480",
+      "720",
+      "1D",
+      "3D",
+      "1W",
+      "1M"
+    ],
+    "supportedResolutions": null,
+    "symbolInfoDetails": {
+      "name": null,
+      "ticker": null,
+      "full_name": null,
+      "type": null,
+      "exchange": null,
+      "timezone": null,
+      "minmov": null,
+      "pricescale": null,
+      "volume_precision": null,
+      "data_status": null
+    },
+    "symbolInfoFlags": {
+      "has_seconds": null,
+      "seconds_multipliers": null,
+      "has_intraday": null,
+      "intraday_multipliers": null,
+      "data_status": null
+    },
+    "datafeedMethods": {
+      "onReady": {
+        "found": true,
+        "args": 1,
+        "source": "e=>setTimeout(()=>e(pb))"
+      },
+      "resolveSymbol": {
+        "found": true,
+        "args": 4,
+        "source": "async(e,t,r,o)=>{setTimeout(()=>{const n=vr,i=cr;if(!e){r(i(4730)+i(3495)+n(5239,\"oi]q\")+i(888)+n(5172,\"HQG8\")+n(1729,\"i#a&\"));return}const l=ub(e[n(1141,\"HQG8\")+\"e\"]());if(!l){r(n(5134,\"un3p\")+i(3268)+i(660)+i(5444));return}t(l)},0)}"
+      },
+      "getBars": {
+        "found": true,
+        "args": 5,
+        "source": "async(e,t,r,o,n)=>{const i=k,l=w;var s,d;if(di(l(3830,\"kcA1\")+l(3436,\"Tyar\")),window&&(d=(s=window[l(1444,\"wCo4\")])==null?void 0:s[i(5297)])!=null&&d[i(1367)+\"s\"])e[i(2211)]=Er(e[i(2211)]),window[i(2583)][l(4563,\"qK)]\")][l(4721,\"Lx5g\")+\"s\"](e,t,r,o,n);else if(window){const{onRequest:u}=window[l(3030,\"9MkJ\")],{firstDataRequest:c,countBack:a,to:p}=r,f=zm[t];let v=[];const g={noData:!1};if(di(l(2104,\"fwxQ\")+i(3334)+l(1417,\"83UK\")),a>$a){let y=p-$a*f;v=(await Promise[i(3760)]([I2(c,$a,p,e[i(2211)],t,u,g),...Eq(a)[i(3734)](1)[l(5660,\"wCo4\")](M=>{const S=i,q=I2(!1,M,y,e[S(2211)],t,u,g);return y-=M*f,q})]))[i(3084)]()[i(378)]((M,S)=>M[i(2753)]-S[l(3789,\"JzFR\")])}else v=await I2(c,a,p,e[i(2211)],t,u,g);di(l(5365,\"**au\")+l(2288,\"fvAC\")+i(4041)),o(v[l(2685,\"xivW\")](y=>({time:y[i(2753)]*1e3,low:Number(y[i(5387)]),high:Number(y[i(5703)]),open:Number(y[i(3182)]),close:Number(y[i(4896)]),volume:Number(y[i(4700)])})),g),di(i(262)+i(1504))}else console[i(3473)](l(4152,\"JzFR\")+l(2387,\"W]Rd\")+l(4293,\"s0OD\")+l(4381,\"P0pz\"))}"
+      },
+      "subscribeBars": {
+        "found": true,
+        "args": 5,
+        "source": "(e,t,r,o,n)=>{const i=k,l=w;var s,d;if(di(l(3831,\"**au\")+l(3841,\"**au\")+l(3941,\"qK)]\")),window&&(d=(s=window[l(3872,\"arIE\")])==null?void 0:s[l(274,\"W4QN\")])!=null&&d[i(3902)+i(343)])e[l(4166,\"ahu)\")]=Er(e[l(2734,\"un3p\")]),window[i(2583)][l(3271,\"Tyar\")][l(408,\"xu8q\")+i(343)](e,t,r,o,n);else if(window){const{eventBus:u,tvWidget:c}=window[i(2583)];if(!u||!c)return;const a=Er(e[l(1804,\"J4o(\")]),p=Zp(t),f=xn(e[i(2211)]),v={symbol:a,resolution:p,type:f};c[l(3153,\"kcA1\")]&&console[l(932,\"%sAI\")](et[i(4888)+\"e\"],v),di(i(3902)+i(2581)+l(636,\"W]Rd\")+i(444)),u[l(4595,\"xu8q\")](et[l(1419,\"7&Au\")+\"e\"],v),!c[l(4484,\"xu8q\")+i(3283)]&&(c[i(5705)+i(3283)]={}),!c[l(4415,\"#eY9\")]&&(c[i(4979)]={}),!c[i(3927)+\"Fn\"]&&(c[i(3927)+\"Fn\"]={}),!c[l(3479,\"TM]V\")]&&(c[i(1280)]={}),!c[l(5233,\"wCo4\")+\"e\"]&&(c[l(5235,\"YYPc\")+\"e\"]={});const g=a+\"_\"+p+\"_\"+f;c[i(5396)+\"e\"][g]=0,c[l(2902,\"**au\")][g]=Date[i(3730)](),c[l(5345,\"fwxQ\")][g]=r,c[i(3927)+\"Fn\"][g]=n,c[l(4436,\"HQG8\")+i(3283)][o]=v}else console[l(1743,\"xivW\")](l(2625,\"P0pz\")+i(2991)+i(5257)+l(2133,\"EoVv\"))}"
+      },
+      "unsubscribeBars": {
+        "found": true,
+        "args": 1,
+        "source": "e=>{const t=w,r=k;var o,n;if(window&&(n=(o=window[r(2583)])==null?void 0:o[r(5297)])!=null&&n[r(1932)+r(445)])window[r(2583)][r(5297)][r(1932)+r(445)](e);else if(window){di(t(1294,\"P0pz\")+r(4271)+r(235));const{eventBus:i,tvWidget:l}=window[r(2583)];if(!i||!l)return;if(l[r(4460)]&&console[t(3737,\"TM]V\")](et[t(4772,\"Tyar\")+r(444)],l[r(5705)+r(3283)],e),di(r(1932)+r(651)+r(2704)+t(2677,\"xivW\")),l[t(1983,\"Tyar\")+t(2170,\"arIE\")][e]&&i[t(1977,\"2l1f\")](et[r(2239)+r(444)],l[r(5705)+t(131,\"phWK\")][e]),l[t(5638,\"9MkJ\")+t(5187,\"TM]V\")][e]){const{symbol:s,resolution:d,type:u}=l[r(5705)+r(3283)][e],c=s+\"_\"+d+\"_\"+u;delete l[r(4979)][c],delete l[t(4030,\"7&Au\")+\"Fn\"][c],delete l[t(521,\"ahu)\")][c],delete l[r(5396)+\"e\"][c],delete l[r(5705)+r(3283)][e]}}else console[r(722)](t(4366,\"9MkJ\")+t(851,\"@c^K\")+r(2446)+t(5231,\"YYPc\")+\"d\")}"
+      }
+    },
+    "datafeedShape": {
+      "found": true,
+      "type": "Object",
+      "keys": [
+        "onReady",
+        "searchSymbols",
+        "getServerTime",
+        "getQuotes",
+        "subscribeQuotes",
+        "unsubscribeQuotes",
+        "resolveSymbol",
+        "getBars",
+        "subscribeBars",
+        "unsubscribeBars"
+      ],
+      "methods": [
+        {
+          "name": "onReady",
+          "args": 1
+        },
+        {
+          "name": "searchSymbols",
+          "args": 1
+        },
+        {
+          "name": "getServerTime",
+          "args": 1
+        },
+        {
+          "name": "getQuotes",
+          "args": 3
+        },
+        {
+          "name": "subscribeQuotes",
+          "args": 4
+        },
+        {
+          "name": "unsubscribeQuotes",
+          "args": 1
+        },
+        {
+          "name": "resolveSymbol",
+          "args": 4
+        },
+        {
+          "name": "getBars",
+          "args": 5
+        },
+        {
+          "name": "subscribeBars",
+          "args": 5
+        },
+        {
+          "name": "unsubscribeBars",
+          "args": 1
+        },
+        {
+          "name": "__defineGetter__",
+          "args": 2
+        },
+        {
+          "name": "__defineSetter__",
+          "args": 2
+        },
+        {
+          "name": "hasOwnProperty",
+          "args": 1
+        },
+        {
+          "name": "__lookupGetter__",
+          "args": 1
+        },
+        {
+          "name": "__lookupSetter__",
+          "args": 1
+        },
+        {
+          "name": "isPrototypeOf",
+          "args": 1
+        },
+        {
+          "name": "propertyIsEnumerable",
+          "args": 1
+        },
+        {
+          "name": "toString",
+          "args": 0
+        },
+        {
+          "name": "valueOf",
+          "args": 0
+        },
+        {
+          "name": "toLocaleString",
+          "args": 0
+        }
+      ]
+    },
+    "chartApiShape": {
+      "found": true,
+      "type": "",
+      "keys": [
+        "linking",
+        "_studyTemplatesDrawer",
+        "_fontIconsSettingsDrawer",
+        "_favoriteDrawingsToolbar",
+        "_webview",
+        "_themesApi",
+        "_newsApiDeferredPromise",
+        "_newsApiRejectionReason",
+        "_watchlistApiDeferredPromise",
+        "_watchlistApiRejectionReason",
+        "_widgetbarApiDeferredPromise",
+        "_widgetbarApiRejectionReason",
+        "_isDestroyed",
+        "_widgebarApi",
+        "_chartWidgets",
+        "_layoutSettingsDrawer",
+        "_magnetEnabledWatchedValue",
+        "_magnetModeWatchedValue",
+        "_activateChart",
+        "_chartWidgetCollection",
+        "_studyMarket",
+        "_saveChartService",
+        "_sharingChartService",
+        "_loadChartLayoutDialog",
+        "_intervalsService",
+        "_alertsWidgetDialog",
+        "_detailsDialogController",
+        "_supportedChartStylesSpawn",
+        "_chartChangesWatcher",
+        "_chartHasChanged",
+        "_symbolSync",
+        "_intervalSync",
+        "_dateRangeSync",
+        "_crosshairSync",
+        "_timeSync",
+        "_chartApiInstance",
+        "_loadChartService",
+        "_alertsDispatcher",
+        "_supportTicketData",
+        "_favoriteServices",
+        "_alertsFacadeChannelPushApi",
+        "_proxyWatchListChangedDelegate",
+        "_lockDrawingsWatchedValue",
+        "_hideDrawingsWatchedValue",
+        "_hideIndicatorsWatchedValue",
+        "_replayApi",
+        "_getDataSourceHub",
+        "_alertService",
+        "_activeChangedChangedDelegate"
+      ],
+      "methods": [
+        {
+          "name": "_activateChart",
+          "args": 1
+        },
+        {
+          "name": "_getDataSourceHub",
+          "args": 0
+        },
+        {
+          "name": "onContextMenu",
+          "args": 1
+        },
+        {
+          "name": "onGrayedObjectClicked",
+          "args": 1
+        },
+        {
+          "name": "onActiveChartChanged",
+          "args": 0
+        },
+        {
+          "name": "viewMode",
+          "args": 0
+        },
+        {
+          "name": "viewModeWatchedValue",
+          "args": 0
+        },
+        {
+          "name": "saveChart",
+          "args": 2
+        },
+        {
+          "name": "loadChart",
+          "args": 1
+        },
+        {
+          "name": "getStudiesList",
+          "args": 0
+        },
+        {
+          "name": "getStudyInputs",
+          "args": 1
+        },
+        {
+          "name": "getStudyStyles",
+          "args": 1
+        },
+        {
+          "name": "getSavedCharts",
+          "args": 1
+        },
+        {
+          "name": "loadChartFromServer",
+          "args": 1
+        },
+        {
+          "name": "saveChartToServer",
+          "args": 3
+        },
+        {
+          "name": "setAutosave",
+          "args": 1
+        },
+        {
+          "name": "removeChartFromServer",
+          "args": 2
+        },
+        {
+          "name": "getIntervals",
+          "args": 0
+        },
+        {
+          "name": "closePopupsAndDialogs",
+          "args": 0
+        },
+        {
+          "name": "selectedLineTool",
+          "args": 0
+        },
+        {
+          "name": "lockAllDrawingTools",
+          "args": 0
+        },
+        {
+          "name": "hideAllDrawingTools",
+          "args": 0
+        },
+        {
+          "name": "hideAllIndicators",
+          "args": 0
+        },
+        {
+          "name": "mainSeriesPriceFormatter",
+          "args": 0
+        },
+        {
+          "name": "showNoticeDialog",
+          "args": 1
+        },
+        {
+          "name": "showConfirmDialog",
+          "args": 1
+        },
+        {
+          "name": "logs",
+          "args": 0
+        },
+        {
+          "name": "showLoadChartDialog",
+          "args": 0
+        },
+        {
+          "name": "showSaveAsChartDialog",
+          "args": 0
+        },
+        {
+          "name": "trading",
+          "args": 0
+        },
+        {
+          "name": "waitTrading",
+          "args": 0
+        },
+        {
+          "name": "symbolSearch",
+          "args": 0
+        },
+        {
+          "name": "saveChartOrShowTitleDialog",
+          "args": 3
+        },
+        {
+          "name": "showRenameChartDialog",
+          "args": 0
+        },
+        {
+          "name": "setUserInfo",
+          "args": 1
+        },
+        {
+          "name": "connect",
+          "args": 0
+        },
+        {
+          "name": "disconnect",
+          "args": 0
+        },
+        {
+          "name": "loginRequired",
+          "args": 0
+        },
+        {
+          "name": "onConnectionStatusChanged",
+          "args": 1
+        },
+        {
+          "name": "isConnected",
+          "args": 0
+        },
+        {
+          "name": "showCreateAlertDialog",
+          "args": 0
+        },
+        {
+          "name": "alertService",
+          "args": 0
+        },
+        {
+          "name": "publishChart",
+          "args": 1
+        },
+        {
+          "name": "setPublishChartOptions",
+          "args": 1
+        },
+        {
+          "name": "showSupportDialog",
+          "args": 0
+        },
+        {
+          "name": "openMobileChartPicker",
+          "args": 0
+        },
+        {
+          "name": "closeMobileChartPicker",
+          "args": 0
+        },
+        {
+          "name": "replayApi",
+          "args": 0
+        },
+        {
+          "name": "takeScreenshot",
+          "args": 0
+        },
+        {
+          "name": "setIntervalLinkingEnabled",
+          "args": 1
+        },
+        {
+          "name": "setTimeFrame",
+          "args": 1
+        },
+        {
+          "name": "startFullscreen",
+          "args": 0
+        },
+        {
+          "name": "exitFullscreen",
+          "args": 0
+        },
+        {
+          "name": "takeClientScreenshot",
+          "args": 1
+        },
+        {
+          "name": "getFavoriteIntervalsService",
+          "args": 0
+        },
+        {
+          "name": "getFavoriteChartStylesService",
+          "args": 0
+        },
+        {
+          "name": "getLinetoolsFavoritesStore",
+          "args": 0
+        },
+        {
+          "name": "supportTicketData",
+          "args": 0
+        },
+        {
+          "name": "createGoProDialog",
+          "args": 1
+        },
+        {
+          "name": "onGoProDialog",
+          "args": 2
+        },
+        {
+          "name": "destroy",
+          "args": 0
+        },
+        {
+          "name": "themes",
+          "args": 0
+        },
+        {
+          "name": "dialogs",
+          "args": 0
+        },
+        {
+          "name": "subscribe",
+          "args": 2
+        },
+        {
+          "name": "unsubscribe",
+          "args": 2
+        },
+        {
+          "name": "webview",
+          "args": 0
+        },
+        {
+          "name": "studyTemplatesDrawerApi",
+          "args": 0
+        },
+        {
+          "name": "fontIconsSettingsDrawer",
+          "args": 0
+        },
+        {
+          "name": "intervalsService",
+          "args": 0
+        },
+        {
+          "name": "supportedChartTypes",
+          "args": 0
+        },
+        {
+          "name": "setBrokerName",
+          "args": 1
+        },
+        {
+          "name": "getDrawOnAllCharts",
+          "args": 0
+        },
+        {
+          "name": "drawOnAllCharts",
+          "args": 1
+        },
+        {
+          "name": "getDrawOnAllChartsMode",
+          "args": 0
+        },
+        {
+          "name": "drawOnAllChartsMode",
+          "args": 1
+        },
+        {
+          "name": "disableTrackingEvents",
+          "args": 0
+        },
+        {
+          "name": "getSaveChartService",
+          "args": 0
+        },
+        {
+          "name": "symbolSync",
+          "args": 0
+        },
+        {
+          "name": "intervalSync",
+          "args": 0
+        },
+        {
+          "name": "dateRangeSync",
+          "args": 0
+        },
+        {
+          "name": "crosshairSync",
+          "args": 0
+        },
+        {
+          "name": "timeSync",
+          "args": 0
+        },
+        {
+          "name": "setSymbolSearchUI",
+          "args": 1
+        },
+        {
+          "name": "chart",
+          "args": 0
+        },
+        {
+          "name": "activeChart",
+          "args": 0
+        },
+        {
+          "name": "setActiveChart",
+          "args": 1
+        },
+        {
+          "name": "activeChartIndex",
+          "args": 0
+        },
+        {
+          "name": "chartsCount",
+          "args": 0
+        },
+        {
+          "name": "layout",
+          "args": 0
+        },
+        {
+          "name": "layoutName",
+          "args": 0
+        },
+        {
+          "name": "layoutNameWatchedValue",
+          "args": 0
+        },
+        {
+          "name": "layoutSettingsDrawer",
+          "args": 0
+        },
+        {
+          "name": "setLayout",
+          "args": 2
+        },
+        {
+          "name": "undoRedoState",
+          "args": 0
+        },
+        {
+          "name": "clearUndoHistory",
+          "args": 0
+        },
+        {
+          "name": "undo",
+          "args": 0
+        },
+        {
+          "name": "redo",
+          "args": 0
+        },
+        {
+          "name": "selectLineTool",
+          "args": 2
+        },
+        {
+          "name": "favoriteDrawingsToolbar",
+          "args": 0
+        },
+        {
+          "name": "sharingChart",
+          "args": 0
+        },
+        {
+          "name": "watchlist",
+          "args": 0
+        },
+        {
+          "name": "setWatchlistApiPromise",
+          "args": 1
+        },
+        {
+          "name": "news",
+          "args": 0
+        },
+        {
+          "name": "setNewsApiPromise",
+          "args": 1
+        },
+        {
+          "name": "widgetbar",
+          "args": 0
+        },
+        {
+          "name": "setWidgetbarApiPromise",
+          "args": 1
+        },
+        {
+          "name": "getChartStorage",
+          "args": 0
+        },
+        {
+          "name": "setDebugMode",
+          "args": 1
+        },
+        {
+          "name": "setFeatureEnabled",
+          "args": 2
+        },
+        {
+          "name": "magnetEnabled",
+          "args": 0
+        }
+      ]
+    },
+    "chartApiInstanceShape": {
+      "found": true,
+      "type": "",
+      "keys": [
+        "_notificationHandlers",
+        "_sessions",
+        "studyCounter",
+        "_metadataRequestNextNumber",
+        "_connected",
+        "_enabled",
+        "_studyEngine",
+        "_callbacks",
+        "_serverTimeOffset",
+        "_setVisibleRangeTimeout",
+        "studiesAccessController",
+        "sessionid"
+      ],
+      "methods": [
+        {
+          "name": "destroy",
+          "args": 0
+        },
+        {
+          "name": "purgeCache",
+          "args": 1
+        },
+        {
+          "name": "defaultResolutions",
+          "args": 0
+        },
+        {
+          "name": "availableCurrencies",
+          "args": 0
+        },
+        {
+          "name": "availableUnits",
+          "args": 0
+        },
+        {
+          "name": "availablePriceSources",
+          "args": 1
+        },
+        {
+          "name": "supportedSymbolsTypes",
+          "args": 0
+        },
+        {
+          "name": "symbolsGrouping",
+          "args": 0
+        },
+        {
+          "name": "start",
+          "args": 0
+        },
+        {
+          "name": "unsubscribe",
+          "args": 2
+        },
+        {
+          "name": "on",
+          "args": 2
+        },
+        {
+          "name": "_fireEvent",
+          "args": 3
+        },
+        {
+          "name": "chartCreateSession",
+          "args": 2
+        },
+        {
+          "name": "chartDeleteSession",
+          "args": 1
+        },
+        {
+          "name": "createSession",
+          "args": 2
+        },
+        {
+          "name": "removeSession",
+          "args": 1
+        },
+        {
+          "name": "connected",
+          "args": 0
+        },
+        {
+          "name": "connect",
+          "args": 0
+        },
+        {
+          "name": "disconnect",
+          "args": 0
+        },
+        {
+          "name": "switchTimezone",
+          "args": 2
+        },
+        {
+          "name": "receiveLocalResponse",
+          "args": 1
+        },
+        {
+          "name": "getMarks",
+          "args": 5
+        },
+        {
+          "name": "getTimescaleMarks",
+          "args": 5
+        },
+        {
+          "name": "resolveSymbol",
+          "args": 4
+        },
+        {
+          "name": "createSeries",
+          "args": 8
+        },
+        {
+          "name": "removeSeries",
+          "args": 2
+        },
+        {
+          "name": "setVisibleTimeRange",
+          "args": 9
+        },
+        {
+          "name": "_applyTimeFrame",
+          "args": 5
+        },
+        {
+          "name": "modifySeries",
+          "args": 8
+        },
+        {
+          "name": "requestMoreData",
+          "args": 2
+        },
+        {
+          "name": "setStudiesAccessController",
+          "args": 1
+        },
+        {
+          "name": "allStudiesMetadata",
+          "args": 0
+        },
+        {
+          "name": "requestMetadata",
+          "args": 0
+        },
+        {
+          "name": "_makeNextRequestId",
+          "args": 0
+        },
+        {
+          "name": "canCreateStudy",
+          "args": 0
+        },
+        {
+          "name": "getStudyCounter",
+          "args": 0
+        },
+        {
+          "name": "createStudy",
+          "args": 7
+        },
+        {
+          "name": "rebindStudy",
+          "args": 8
+        },
+        {
+          "name": "removeStudy",
+          "args": 3
+        },
+        {
+          "name": "modifyStudy",
+          "args": 5
+        },
+        {
+          "name": "createPointset",
+          "args": 7
+        },
+        {
+          "name": "modifyPointset",
+          "args": 5
+        },
+        {
+          "name": "removePointset",
+          "args": 3
+        },
+        {
+          "name": "requestMoreTickmarks",
+          "args": 2
+        },
+        {
+          "name": "requestFirstBarTime",
+          "args": 4
+        },
+        {
+          "name": "_invokeHandler",
+          "args": 2
+        },
+        {
+          "name": "_sendRequest",
+          "args": 2
+        },
+        {
+          "name": "_onMessage",
+          "args": 1
+        },
+        {
+          "name": "_dispatchNotification",
+          "args": 1
+        },
+        {
+          "name": "_invokeNotificationHandler",
+          "args": 3
+        },
+        {
+          "name": "searchSymbols",
+          "args": 10
+        },
+        {
+          "name": "_notifySessions",
+          "args": 1
+        },
+        {
+          "name": "unpack",
+          "args": 1
+        },
+        {
+          "name": "quoteCreateSession",
+          "args": 1
+        },
+        {
+          "name": "quoteDeleteSession",
+          "args": 1
+        },
+        {
+          "name": "quoteSetFields",
+          "args": 2
+        },
+        {
+          "name": "quoteAddSymbols",
+          "args": 2
+        },
+        {
+          "name": "quoteRemoveSymbols",
+          "args": 2
+        },
+        {
+          "name": "quoteFastSymbols",
+          "args": 2
+        },
+        {
+          "name": "quoteHibernateAll",
+          "args": 1
+        },
+        {
+          "name": "depthCreateSession",
+          "args": 1
+        },
+        {
+          "name": "depthDeleteSession",
+          "args": 1
+        },
+        {
+          "name": "depthSetSymbol",
+          "args": 2
+        },
+        {
+          "name": "depthClearSymbol",
+          "args": 1
+        },
+        {
+          "name": "depthSetScale",
+          "args": 2
+        },
+        {
+          "name": "createStudiesAccessController",
+          "args": 3
+        },
+        {
+          "name": "StudiesAccessController",
+          "args": 2
+        },
+        {
+          "name": "serverTimeOffset",
+          "args": 0
+        },
+        {
+          "name": "serverTime",
+          "args": 0
+        },
+        {
+          "name": "disconnectCount",
+          "args": 0
+        },
+        {
+          "name": "__defineGetter__",
+          "args": 2
+        },
+        {
+          "name": "__defineSetter__",
+          "args": 2
+        },
+        {
+          "name": "hasOwnProperty",
+          "args": 1
+        },
+        {
+          "name": "__lookupGetter__",
+          "args": 1
+        },
+        {
+          "name": "__lookupSetter__",
+          "args": 1
+        },
+        {
+          "name": "isPrototypeOf",
+          "args": 1
+        },
+        {
+          "name": "propertyIsEnumerable",
+          "args": 1
+        },
+        {
+          "name": "toString",
+          "args": 0
+        },
+        {
+          "name": "valueOf",
+          "args": 0
+        },
+        {
+          "name": "toLocaleString",
+          "args": 0
+        }
+      ]
+    },
+    "activeChartMethods": [
+      {
+        "name": "getSeries",
+        "found": true,
+        "args": 0,
+        "source": "getSeries(){const e=this._chartWidget.model(),t=e.mainSeries();return new O(t,e)}"
+      },
+      {
+        "name": "symbol",
+        "found": true,
+        "args": 0,
+        "source": "symbol(){return this._chartWidget.symbolWV().value()}"
+      },
+      {
+        "name": "resolution",
+        "found": true,
+        "args": 0,
+        "source": "resolution(){return this._chartWidget.model().mainSeries().interval()}"
+      },
+      {
+        "name": "setResolution",
+        "found": true,
+        "args": 2,
+        "source": "async setResolution(e,t){(0,v.isFunction)(t)&&(t={dataReady:t}) ;const{dataReady:i,doNotActivateChart:s}=t||{};let r=a.Interval.normalize(e);if(null!==r&&(r=this._chartWidget.model().mainSeries().getSupportedResolution(r)),null===r||r===this.resolution())return null==i||i(),!0;s||this._activateChart();const n=this._chartWidget.chartWidgetCollection().setResolution(r,void 0,this._chartWidget);return j(this._chartWidget.model().mainSeries(),(e=>{!e&&i&&i()})),n}"
+      },
+      {
+        "name": "createStudy",
+        "found": true,
+        "args": 6,
+        "source": "createStudy(e,t,i,s,r,n){if(\"function\"==typeof r)return console.warn('\"createStudy\" does not take \"callback\" parameter anymore'),Promise.resolve(null);if(n=n||{},\"string\"!=typeof e)return this._createStudy(e);if(n.checkLimit&&!this._chartWidget.model().canCreateStudy())return(0,G.showTooManyStudiesNotice)(),Promise.resolve(null);e=e.toLowerCase();const o=n.disableUndo?this._chartWidget.model().model():this._chartWidget.model(),a=q.StudyMetaInfo.findStudyMetaInfoByDescription(o.studiesMetaData(),e),c=o.createStudyInserter({type:\"java\",studyId:a.id},[]);if(c.setForceOverlay(!!t),n.priceScale&&c.setPreferredPriceScale(function(e){switch(e){case\"no-scale\":return\"overlay\";case\"as-series\":return\"as-series\";case\"new-left\":return\"left\";case\"new-right\":return\"right\";default:throw new Error('The pricescale \"'+e+'\" is invalid, the only valid options are \"no-scale\", \"as-series\", \"new-left\" and \"new-right\".')}}(n.priceScale)),n.allowChangeCurrency&&c.setAllowChangeCurrency(!0),n.allowChangeUnit&&c.setAllowChangeUnit(!0),Array.isArray(s)){ console.warn(\"Passing study inputs as an ordered array is now deprecated. Please use an object where keys correspond to the inputs of your study instead.\");const e={};for(let t=0;t<a.inputs.length;++t)e[a.inputs[t].id]=s[t];s=e}return c.insert((()=>Promise.r"
+      },
+      {
+        "name": "getAllStudies",
+        "found": true,
+        "args": 0,
+        "source": "getAllStudies(){return this._chartWidget.model().model().allStudies(!0).map(f.studyEntityInfo)}"
+      },
+      {
+        "name": "onIntervalChanged",
+        "found": true,
+        "args": 0,
+        "source": "onIntervalChanged(){return this._makeSubscriptionFromDelegate(this._chartWidget.model().mainSeries().onIntervalChanged())}"
+      },
+      {
+        "name": "onSymbolChanged",
+        "found": true,
+        "args": 0,
+        "source": "onSymbolChanged(){return this._makeSubscriptionFromDelegate(this._chartWidget.model().mainSeries().dataEvents().symbolResolved())}"
+      }
+    ],
+    "chartStore": {
+      "shape": {
+        "found": true,
+        "type": "u",
+        "keys": [
+          "_items",
+          "_start",
+          "_end",
+          "_shareRead",
+          "_minMaxCache",
+          "_rowSearchCacheByIndex",
+          "_rowSearchCacheByIndexWithoutEmptyValues",
+          "_rowSearchCacheByTime",
+          "_rowSearchCacheByTimeWithoutEmptyValues",
+          "_plotFunctions",
+          "_emptyValuePredicate"
+        ],
+        "methods": [
+          {
+            "name": "_emptyValuePredicate",
+            "args": 2
+          },
+          {
+            "name": "clear",
+            "args": 0
+          },
+          {
+            "name": "first",
+            "args": 0
+          },
+          {
+            "name": "last",
+            "args": 0
+          },
+          {
+            "name": "firstIndex",
+            "args": 0
+          },
+          {
+            "name": "lastIndex",
+            "args": 0
+          },
+          {
+            "name": "size",
+            "args": 0
+          },
+          {
+            "name": "isEmpty",
+            "args": 0
+          },
+          {
+            "name": "contains",
+            "args": 1
+          },
+          {
+            "name": "valueAt",
+            "args": 1
+          },
+          {
+            "name": "add",
+            "args": 2
+          },
+          {
+            "name": "search",
+            "args": 1
+          },
+          {
+            "name": "searchByTime",
+            "args": 1
+          },
+          {
+            "name": "fold",
+            "args": 2
+          },
+          {
+            "name": "findFirst",
+            "args": 2
+          },
+          {
+            "name": "findLast",
+            "args": 2
+          },
+          {
+            "name": "each",
+            "args": 1
+          },
+          {
+            "name": "reduce",
+            "args": 2
+          },
+          {
+            "name": "range",
+            "args": 2
+          },
+          {
+            "name": "plottableRange",
+            "args": 1
+          },
+          {
+            "name": "rangeIterator",
+            "args": 2
+          },
+          {
+            "name": "fullRangeIterator",
+            "args": 0
+          },
+          {
+            "name": "minMaxOnRangeCached",
+            "args": 3
+          },
+          {
+            "name": "minMaxOnRange",
+            "args": 3
+          },
+          {
+            "name": "merge",
+            "args": 1
+          },
+          {
+            "name": "addTail",
+            "args": 1
+          },
+          {
+            "name": "move",
+            "args": 1
+          },
+          {
+            "name": "remove",
+            "args": 1
+          },
+          {
+            "name": "state",
+            "args": 0
+          },
+          {
+            "name": "restoreState",
+            "args": 1
+          },
+          {
+            "name": "_indexAt",
+            "args": 1
+          },
+          {
+            "name": "_valueAt",
+            "args": 1
+          },
+          {
+            "name": "_length",
+            "args": 0
+          },
+          {
+            "name": "_searchImpl",
+            "args": 6
+          },
+          {
+            "name": "_nonCachedSearch",
+            "args": 4
+          },
+          {
+            "name": "_nonEmptyNearestRight",
+            "args": 2
+          },
+          {
+            "name": "_nonEmptyNearestLeft",
+            "args": 2
+          },
+          {
+            "name": "_searchNearestLeft",
+            "args": 2
+          },
+          {
+            "name": "_searchNearestRight",
+            "args": 2
+          },
+          {
+            "name": "_bsearch",
+            "args": 2
+          },
+          {
+            "name": "_lowerbound",
+            "args": 2
+          },
+          {
+            "name": "_upperbound",
+            "args": 1
+          },
+          {
+            "name": "_plotMinMax",
+            "args": 3
+          },
+          {
+            "name": "_invalidateCacheForRow",
+            "args": 1
+          },
+          {
+            "name": "_prepend",
+            "args": 1
+          },
+          {
+            "name": "_append",
+            "args": 1
+          },
+          {
+            "name": "_updateLast",
+            "args": 1
+          },
+          {
+            "name": "_merge",
+            "args": 1
+          },
+          {
+            "name": "_minMaxOnRangeCachedImpl",
+            "args": 3
+          },
+          {
+            "name": "_minMaxOnRange",
+            "args": 3
+          },
+          {
+            "name": "_rangeIteratorImpl",
+            "args": 2
+          },
+          {
+            "name": "_invalidateSearchCaches",
+            "args": 0
+          },
+          {
+            "name": "__defineGetter__",
+            "args": 2
+          },
+          {
+            "name": "__defineSetter__",
+            "args": 2
+          },
+          {
+            "name": "hasOwnProperty",
+            "args": 1
+          },
+          {
+            "name": "__lookupGetter__",
+            "args": 1
+          },
+          {
+            "name": "__lookupSetter__",
+            "args": 1
+          },
+          {
+            "name": "isPrototypeOf",
+            "args": 1
+          },
+          {
+            "name": "propertyIsEnumerable",
+            "args": 1
+          },
+          {
+            "name": "toString",
+            "args": 0
+          },
+          {
+            "name": "valueOf",
+            "args": 0
+          },
+          {
+            "name": "toLocaleString",
+            "args": 0
+          }
+        ]
+      },
+      "count": 302,
+      "first": {
+        "index": 0,
+        "timeMs": 1794734760000,
+        "time": 1794734760,
+        "open": 3823.05,
+        "high": 3825.06,
+        "low": 3823.54,
+        "close": 3825.06,
+        "volume": 0.743,
+        "valueLength": 7
+      },
+      "previous": {
+        "index": 300,
+        "timeMs": 1794752760000,
+        "time": 1794752760,
+        "open": 3822.62,
+        "high": 3822.63,
+        "low": 3821.41,
+        "close": 3821.54,
+        "volume": 0.065,
+        "valueLength": 7
+      },
+      "last": {
+        "index": 301,
+        "timeMs": 1794752820000,
+        "time": 1794752820,
+        "open": 3821.54,
+        "high": 3821.77,
+        "low": 3821.54,
+        "close": 3821.77,
+        "volume": 0.005,
+        "valueLength": 7
+      },
+      "builderShape": {
+        "found": false,
+        "type": "undefined"
+      },
+      "builderMergeData": {
+        "found": false
+      },
+      "storeMerge": {
+        "found": true,
+        "args": 1,
+        "source": "merge(e){return this._shareRead?(l.logDebug(\"merge: readonly collection modification attempt\"),null):0===e.length?null:this.isEmpty()||e[e.length-1].index<this._items[0].index?this._prepend(e):e[0].index>this._items[this._items.length-1].index?this._append(e):1===e.length&&e[0].index===this._items[this._items.length-1].index?(this._updateLast(e[0]),e[0]):this._merge(e)}"
+      },
+      "storeAdd": {
+        "found": true,
+        "args": 2,
+        "source": "add(e,t){if(this._shareRead)return l.logDebug(\"add: readonly collection modification attempt\"),!1;const i={index:e,value:t},s=this._nonCachedSearch(e,a.PlotRowSearchMode.Exact,h);return this._invalidateSearchCaches(),null===s?(this._items.splice(this._lowerbound(e,h),0,i),this._start=0,this._end=this._items.length,!0):(this._items[s]=i,!1)}"
+      },
+      "storeAddTail": {
+        "found": true,
+        "args": 1,
+        "source": "addTail(e,t=!1){if(0===e.length)return;let i=0;t&&this._end-this._start>0&&(i=1,this._items[this._end-this._start-1].value=e[0].value);for(let t=i;t<e.length;++t){const i=e[t],s=this.lastIndex();if(null===s){l.logError(\"Can't add tail to the empty plotlist\");break}this.add(s+1,i.value)}this._invalidateSearchCaches()}"
+      }
+    },
+    "seriesSourceShape": {
+      "found": false,
+      "type": "undefined"
+    },
+    "dataEventsShape": {
+      "found": false,
+      "type": "undefined"
+    },
+    "chartOptionsKeys": [],
+    "eventBus": {
+      "keys": [
+        "clearKlineData",
+        "rerenderChart",
+        "wsPublish",
+        "historyOrder",
+        "updateShowSetMenuState",
+        "activeChartChanged",
+        "chartLayoutSwitch",
+        "wsSubscribe",
+        "wsUnsubscribe",
+        "kline.charts.contract",
+        "kline.charts.spot",
+        "kline.drawings.contract",
+        "kline.drawings.spot",
+        "kline.chartTemplates",
+        "kline.studyTemplates",
+        "kline.drawingTemplates",
+        "kline.chartType",
+        "kline.resolutions",
+        "kline.drawingTools",
+        "updateQuote",
+        "positionUpdate",
+        "orderUpdate",
+        "plUpdate",
+        "orderTypeFilter",
+        "reloadAllLineTools",
+        "resetScales",
+        "triggerPlusButton",
+        "objectTree",
+        "lockAllDrawings",
+        "drawginmode",
+        "triggerFavoriteTool",
+        "addFavoriteTool",
+        "removeFavoriteTool",
+        "recoverFavoriteTool",
+        "clearAllFavoriteTools",
+        "triggerMagnetTool",
+        "triggerMagnetChange",
+        "triggerShowHideTool",
+        "triggerRemoveDrawings",
+        "triggerRemoveStudies",
+        "triggerRemoveAll",
+        "triggerBaseTool",
+        "priceRangeTool",
+        "priceRangeToolClose",
+        "triggerSetIconsEmojisStickers",
+        "toggleCrosshairAlert",
+        "setResolution",
+        "setTimeFrame",
+        "triggerChartLayout",
+        "triggerChartFavorite",
+        "saveIndicatorTemplate",
+        "setChartLayout",
+        "setIndicatorTemplate",
+        "triggerIndicatorTemplate",
+        "triggerTvModal",
+        "setChartType",
+        "setPriceType",
+        "plusClick",
+        "positionOrderSelected",
+        "resetChartState",
+        "clickHeaderButton",
+        "chartClick",
+        "studyClick",
+        "crossHairMove",
+        "toolsChange",
+        "symbolPeriodChanged",
+        "chartSaved",
+        "showSetClick",
+        "marketClose",
+        "clickSaveLayout",
+        "menuClick",
+        "layout_changed",
+        "clickPositionSize",
+        "reversePosition",
+        "closePosition",
+        "cancelOrder",
+        "createTPSLOrder",
+        "clickOrder",
+        "modifyOrder",
+        "updatePriceType",
+        "addDrawingAlert",
+        "contextMenu",
+        "scaledOrderBoundaryMoved",
+        "scaledOrderBoundaryClosed",
+        "addIndicatorAlert",
+        "setLayoutSymbols"
+      ],
+      "watched": [
+        {
+          "name": "wsPublish",
+          "found": true
+        },
+        {
+          "name": "wsSubscribe",
+          "found": true
+        },
+        {
+          "name": "wsUnsubscribe",
+          "found": true
+        },
+        {
+          "name": "setResolution",
+          "found": true
+        },
+        {
+          "name": "setTimeFrame",
+          "found": true
+        },
+        {
+          "name": "positionUpdate",
+          "found": true
+        },
+        {
+          "name": "orderUpdate",
+          "found": true
+        }
+      ]
+    }
+  },
+  "alignCandleOpens": {
+    "purpose": "Identify safe DataFeed boundaries and Bar Store row structure for Align Candle Opens. No rows are altered.",
+    "rowSchema": [
+      "index",
+      "value",
+      "timeMs"
+    ],
+    "valueArraySchema": "[time, open, high, low, close, volume, ...]",
+    "candidateHooks": {
+      "datafeedGetBars": true,
+      "datafeedSubscribeBars": true,
+      "builderMergeData": false,
+      "barStoreMerge": true,
+      "seriesSourceDataUpdated": false,
+      "seriesSourceBarReceived": false
+    },
+    "note": "The audit only inspects function source, shape and sample OHLC rows. It does not invoke getBars/subscribeBars/mergeData/merge or alter candles."
+  },
+  "shortcutsAndOrderButtons": {
+    "documents": [
+      {
+        "frame": "top",
+        "buttons": [
+          {
+            "frame": "top",
+            "text": "Add Funds",
+            "attributes": {
+              "type": "button",
+              "className": "arco-btn arco-btn-secondary arco-btn-shape-round arco-btn-size-medium arco-btn-status-normal arco-btn-long deposit-button hover:opacity-80 deposit-button-dark"
+            },
+            "selector": "header.position-initial > div.header-wrapper-dark.h-48 > section.max-mdgap-x-16.header-right > div.deposit-drawer-container.ml-24 > button.arco-btn.arco-btn-secondary",
+            "context": "Add Funds | Add Funds | Add Funds INITUSDT /",
+            "react": {
+              "reactNodes": [],
+              "nativeListeners": [
+                {
+                  "event": "click",
+                  "count": 1,
+                  "listeners": [
+                    {
+                      "name": "n",
+                      "source": "s=>{if(!s._vts)s._vts=Date.now();else if(s._vts<=n.attached)return;const r=n.value;if(J(r)){const i=s.stopImmediatePropagation;s.stopImmediatePropagation=()=>{i.call(s),s._stopped=!0};const o=r.slice(),l=[s];for(let c=0;c<o.length&&!s._stopped;c++){const a=o[c];a&&it(a,t,5,l)}}else it(r,t,5,[s])}"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "frame": "top",
+            "text": "Open Long",
+            "attributes": {
+              "type": "button",
+              "className": "arco-btn arco-btn-secondary arco-btn-shape-square arco-btn-size-medium arco-btn-status-normal btn h40 color-text-1 items-center justify-center flex-col cursor-pointer rou"
+            },
+            "selector": "div.bitunix-tabs-content > div > div.place-order-container.flex > div.item.flex-1 > button.arco-btn.arco-btn-secondary",
+            "context": "Open Long | Open Long | Open Long Open Short",
+            "react": {
+              "reactNodes": [],
+              "nativeListeners": [
+                {
+                  "event": "click",
+                  "count": 1,
+                  "listeners": [
+                    {
+                      "name": "n",
+                      "source": "s=>{if(!s._vts)s._vts=Date.now();else if(s._vts<=n.attached)return;const r=n.value;if(J(r)){const i=s.stopImmediatePropagation;s.stopImmediatePropagation=()=>{i.call(s),s._stopped=!0};const o=r.slice(),l=[s];for(let c=0;c<o.length&&!s._stopped;c++){const a=o[c];a&&it(a,t,5,l)}}else it(r,t,5,[s])}"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "frame": "top",
+            "text": "Open Short",
+            "attributes": {
+              "type": "button",
+              "className": "arco-btn arco-btn-secondary arco-btn-shape-square arco-btn-size-medium arco-btn-status-normal btn h40 color-text-1 items-center justify-center flex-col cursor-pointer rou"
+            },
+            "selector": "div.bitunix-tabs-content > div > div.place-order-container.flex > div.item.flex-1 > button.arco-btn.arco-btn-secondary",
+            "context": "Open Short | Open Short | Open Long Open Short",
+            "react": {
+              "reactNodes": [],
+              "nativeListeners": [
+                {
+                  "event": "click",
+                  "count": 1,
+                  "listeners": [
+                    {
+                      "name": "n",
+                      "source": "s=>{if(!s._vts)s._vts=Date.now();else if(s._vts<=n.attached)return;const r=n.value;if(J(r)){const i=s.stopImmediatePropagation;s.stopImmediatePropagation=()=>{i.call(s),s._stopped=!0};const o=r.slice(),l=[s];for(let c=0;c<o.length&&!s._stopped;c++){const a=o[c];a&&it(a,t,5,l)}}else it(r,t,5,[s])}"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "frame": "top",
+            "text": "Open long 3,821.76",
+            "attributes": {
+              "className": "flex flex-1 flex-col items-center justify-center select-none border-none px-10px leading-16px py-4px min-w-88px cursor-pointer transition-colors duration-300 ease-in-out "
+            },
+            "selector": "html > body.zendesk-launcher-hidden > div.focusoutline-none.border-1px > div.flex.flex-1 > button.flex.flex-1",
+            "context": "Open long 3,821.76 | Open long 3,821.76 By Cost (‪USDT‬) Open short 3,821.77",
+            "react": {
+              "reactNodes": [],
+              "nativeListeners": [
+                {
+                  "event": "click",
+                  "count": 1,
+                  "listeners": [
+                    {
+                      "name": "n",
+                      "source": "s=>{if(!s._vts)s._vts=Date.now();else if(s._vts<=n.attached)return;const r=n.value;if(J(r)){const i=s.stopImmediatePropagation;s.stopImmediatePropagation=()=>{i.call(s),s._stopped=!0};const o=r.slice(),l=[s];for(let c=0;c<o.length&&!s._stopped;c++){const a=o[c];a&&it(a,t,5,l)}}else it(r,t,5,[s])}"
+                    }
+                  ]
+                },
+                {
+                  "event": "mousedown",
+                  "count": 1,
+                  "listeners": [
+                    {
+                      "name": "n",
+                      "source": "s=>{if(!s._vts)s._vts=Date.now();else if(s._vts<=n.attached)return;const r=n.value;if(J(r)){const i=s.stopImmediatePropagation;s.stopImmediatePropagation=()=>{i.call(s),s._stopped=!0};const o=r.slice(),l=[s];for(let c=0;c<o.length&&!s._stopped;c++){const a=o[c];a&&it(a,t,5,l)}}else it(r,t,5,[s])}"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "frame": "top",
+            "text": "Open short 3,821.77",
+            "attributes": {
+              "className": "flex flex-1 items-center justify-center flex-col select-none border-none px-10px leading-16px py-4px min-w-88px cursor-pointer transition-colors duration-300 ease-in-out "
+            },
+            "selector": "html > body.zendesk-launcher-hidden > div.focusoutline-none.border-1px > div.flex.flex-1 > button.flex.flex-1",
+            "context": "Open short 3,821.77 | Open long 3,821.76 By Cost (‪USDT‬) Open short 3,821.77",
+            "react": {
+              "reactNodes": [],
+              "nativeListeners": [
+                {
+                  "event": "click",
+                  "count": 1,
+                  "listeners": [
+                    {
+                      "name": "n",
+                      "source": "s=>{if(!s._vts)s._vts=Date.now();else if(s._vts<=n.attached)return;const r=n.value;if(J(r)){const i=s.stopImmediatePropagation;s.stopImmediatePropagation=()=>{i.call(s),s._stopped=!0};const o=r.slice(),l=[s];for(let c=0;c<o.length&&!s._stopped;c++){const a=o[c];a&&it(a,t,5,l)}}else it(r,t,5,[s])}"
+                    }
+                  ]
+                },
+                {
+                  "event": "mousedown",
+                  "count": 1,
+                  "listeners": [
+                    {
+                      "name": "n",
+                      "source": "s=>{if(!s._vts)s._vts=Date.now();else if(s._vts<=n.attached)return;const r=n.value;if(J(r)){const i=s.stopImmediatePropagation;s.stopImmediatePropagation=()=>{i.call(s),s._stopped=!0};const o=r.slice(),l=[s];for(let c=0;c<o.length&&!s._stopped;c++){const a=o[c];a&&it(a,t,5,l)}}else it(r,t,5,[s])}"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "riskFields": [
+          {
+            "frame": "top",
+            "tag": "input",
+            "attributes": {
+              "type": "text",
+              "placeholder": "TP",
+              "className": "arco-input arco-input-size-medium"
+            },
+            "labels": "",
+            "context": " | Price (USDT)",
+            "disabled": false,
+            "checked": false,
+            "selector": "div.tab1 > div.future-exchange-profit > div.profit.flex-row-between-center > span.arco-input-wrapper.flex-1 > input.arco-input.arco-input-size-medium",
+            "react": {
+              "reactNodes": [],
+              "nativeListeners": [
+                {
+                  "event": "input",
+                  "count": 1,
+                  "listeners": [
+                    {
+                      "name": "n",
+                      "source": "s=>{if(!s._vts)s._vts=Date.now();else if(s._vts<=n.attached)return;const r=n.value;if(J(r)){const i=s.stopImmediatePropagation;s.stopImmediatePropagation=()=>{i.call(s),s._stopped=!0};const o=r.slice(),l=[s];for(let c=0;c<o.length&&!s._stopped;c++){const a=o[c];a&&it(a,t,5,l)}}else it(r,t,5,[s])}"
+                    }
+                  ]
+                },
+                {
+                  "event": "keydown",
+                  "count": 1,
+                  "listeners": [
+                    {
+                      "name": "n",
+                      "source": "s=>{if(!s._vts)s._vts=Date.now();else if(s._vts<=n.attached)return;const r=n.value;if(J(r)){const i=s.stopImmediatePropagation;s.stopImmediatePropagation=()=>{i.call(s),s._stopped=!0};const o=r.slice(),l=[s];for(let c=0;c<o.length&&!s._stopped;c++){const a=o[c];a&&it(a,t,5,l)}}else it(r,t,5,[s])}"
+                    }
+                  ]
+                }
+              ]
+            },
+            "displayedValue": ""
+          },
+          {
+            "frame": "top",
+            "tag": "input",
+            "attributes": {
+              "type": "text",
+              "placeholder": "SL",
+              "className": "arco-input arco-input-size-medium"
+            },
+            "labels": "",
+            "context": " | Price (USDT)",
+            "disabled": false,
+            "checked": false,
+            "selector": "div.tab1 > div.future-exchange-profit > div.profit.flex-row-between-center > span.arco-input-wrapper.flex-1 > input.arco-input.arco-input-size-medium",
+            "react": {
+              "reactNodes": [],
+              "nativeListeners": [
+                {
+                  "event": "input",
+                  "count": 1,
+                  "listeners": [
+                    {
+                      "name": "n",
+                      "source": "s=>{if(!s._vts)s._vts=Date.now();else if(s._vts<=n.attached)return;const r=n.value;if(J(r)){const i=s.stopImmediatePropagation;s.stopImmediatePropagation=()=>{i.call(s),s._stopped=!0};const o=r.slice(),l=[s];for(let c=0;c<o.length&&!s._stopped;c++){const a=o[c];a&&it(a,t,5,l)}}else it(r,t,5,[s])}"
+                    }
+                  ]
+                },
+                {
+                  "event": "keydown",
+                  "count": 1,
+                  "listeners": [
+                    {
+                      "name": "n",
+                      "source": "s=>{if(!s._vts)s._vts=Date.now();else if(s._vts<=n.attached)return;const r=n.value;if(J(r)){const i=s.stopImmediatePropagation;s.stopImmediatePropagation=()=>{i.call(s),s._stopped=!0};const o=r.slice(),l=[s];for(let c=0;c<o.length&&!s._stopped;c++){const a=o[c];a&&it(a,t,5,l)}}else it(r,t,5,[s])}"
+                    }
+                  ]
+                }
+              ]
+            },
+            "displayedValue": ""
+          },
+          {
+            "frame": "top",
+            "tag": "input",
+            "attributes": {
+              "type": "text",
+              "name": "bitunix_market",
+              "placeholder": "Enter Quantity",
+              "className": "arco-input arco-input-size-medium"
+            },
+            "labels": "By Cost (‪USDT‬)",
+            "context": " |  | By Cost (‪USDT‬)",
+            "disabled": false,
+            "checked": false,
+            "selector": "div.focusoutline-none.border-1px > div.flex.flex-1 > label.w-134px.bx-color-bg-input > span.market-order-number-input.arco-input-wrapper > input.arco-input.arco-input-size-medium",
+            "react": {
+              "reactNodes": [],
+              "nativeListeners": [
+                {
+                  "event": "input",
+                  "count": 1,
+                  "listeners": [
+                    {
+                      "name": "G",
+                      "source": "j=>{!o&&n===P&&r===x&&Q(j)}"
+                    }
+                  ]
+                },
+                {
+                  "event": "keydown",
+                  "count": 1,
+                  "listeners": [
+                    {
+                      "name": "G",
+                      "source": "j=>{!o&&n===P&&r===x&&Q(j)}"
+                    }
+                  ]
+                },
+                {
+                  "event": "keyup",
+                  "count": 1,
+                  "listeners": [
+                    {
+                      "name": "G",
+                      "source": "j=>{!o&&n===P&&r===x&&Q(j)}"
+                    }
+                  ]
+                }
+              ]
+            },
+            "displayedValue": ""
+          }
+        ],
+        "forms": []
+      },
+      {
+        "frame": "iframe[0]",
+        "buttons": [
+          {
+            "frame": "iframe[0]",
+            "text": "",
+            "attributes": {
+              "type": "button",
+              "aria-label": "Long Position",
+              "className": "button-KTgbfaP5 apply-common-tooltip common-tooltip-vertical isTransparent-KTgbfaP5 accessible-KTgbfaP5"
+            },
+            "selector": "span > div.dropdown-pbhJWNrt > div.control-pbhJWNrt > div.buttonWrap-pbhJWNrt.accessible-pbhJWNrt > button.button-KTgbfaP5.apply-common-tooltip",
+            "context": " |  |  |  | ",
+            "react": {
+              "reactNodes": [
+                {
+                  "depth": 0,
+                  "tag": "button",
+                  "selector": "span > div.dropdown-pbhJWNrt > div.control-pbhJWNrt > div.buttonWrap-pbhJWNrt.accessible-pbhJWNrt > button.button-KTgbfaP5.apply-common-tooltip",
+                  "propKeys": [
+                    "aria-label",
+                    "data-tooltip-delay",
+                    "id",
+                    "type",
+                    "className",
+                    "onClick",
+                    "onKeyDown",
+                    "data-role",
+                    "tabIndex",
+                    "data-tooltip-hotkey",
+                    "aria-pressed",
+                    "data-tooltip",
+                    "children"
+                  ],
+                  "handlers": {
+                    "onClick": {
+                      "name": "onClick",
+                      "args": 1,
+                      "source": "function(e){(0,Ee.isKeyboardClick)(e)&&(F?o(!0,!0):null==w||w())}"
+                    }
+                  }
+                },
+                {
+                  "depth": 1,
+                  "tag": "div",
+                  "selector": "div.group-BfVZxb4b > span > div.dropdown-pbhJWNrt > div.control-pbhJWNrt > div.buttonWrap-pbhJWNrt.accessible-pbhJWNrt",
+                  "propKeys": [
+                    "onMouseDown",
+                    "onMouseUp",
+                    "className",
+                    "children"
+                  ],
+                  "handlers": {
+                    "onMouseDown": {
+                      "name": "s",
+                      "args": 0,
+                      "source": "function s(){if(S.mobiletouch&&!_)!H.current&&w&&w();else{if(P.current)return clearTimeout(P.current),P.current=0,void o(!0);P.current=setTimeout(()=>{P.current=0,!H.current&&w&&w()},175)}H.current=setTimeout(()=>{H.current=0,o(!0)},300)}"
+                    }
+                  }
+                },
+                {
+                  "depth": 2,
+                  "tag": "div",
+                  "selector": "div.inner-BfVZxb4b > div.group-BfVZxb4b > span > div.dropdown-pbhJWNrt > div.control-pbhJWNrt",
+                  "propKeys": [
+                    "className",
+                    "children"
+                  ],
+                  "handlers": {}
+                },
+                {
+                  "depth": 3,
+                  "tag": "div",
+                  "selector": "div.content-Z4M3tWHb > div.inner-BfVZxb4b > div.group-BfVZxb4b > span > div.dropdown-pbhJWNrt",
+                  "propKeys": [
+                    "data-name",
+                    "className",
+                    "onClick",
+                    "onKeyDown",
+                    "children"
+                  ],
+                  "handlers": {
+                    "onKeyDown": {
+                      "name": "onKeyDown",
+                      "args": 1,
+                      "source": "function(e){var t;if(e.defaultPrevented||!(e.target instanceof Node)||!z.PLATFORM_ACCESSIBILITY_ENABLED)return;const n=(0,_e.hashFromEvent)(e);e.currentTarget.contains(e.target)||27!==n||(e.preventDefault(),o(!1),B&&(null===(t=null==K?void 0:K.current)||void 0===t||t.focus()))}"
+                    }
+                  }
+                }
+              ],
+              "nativeListeners": [],
+              "fiber": [
+                {
+                  "component": "",
+                  "propKeys": [
+                    "aria-label",
+                    "data-tooltip-delay",
+                    "id",
+                    "type",
+                    "className",
+                    "onClick",
+                    "onKeyDown",
+                    "data-role",
+                    "tabIndex",
+                    "data-tooltip-hotkey",
+                    "aria-pressed",
+                    "data-tooltip",
+                    "children"
+                  ]
+                },
+                {
+                  "component": "",
+                  "propKeys": [
+                    "activeClass",
+                    "className",
+                    "icon",
+                    "isActive",
+                    "isGrayed",
+                    "isTransparent",
+                    "tag",
+                    "tabIndex",
+                    "onClick",
+                    "tooltip",
+                    "buttonHotKey",
+                    "data-tooltip-delay",
+                    "tooltipPosition"
+                  ]
+                },
+                {
+                  "component": "",
+                  "propKeys": [
+                    "onMouseDown",
+                    "onMouseUp",
+                    "className",
+                    "children"
+                  ]
+                },
+                {
+                  "component": "",
+                  "propKeys": [
+                    "className",
+                    "children"
+                  ]
+                },
+                {
+                  "component": "",
+                  "propKeys": [
+                    "data-name",
+                    "className",
+                    "onClick",
+                    "onKeyDown",
+                    "children"
+                  ]
+                },
+                {
+                  "component": "",
+                  "propKeys": [
+                    "buttonIcon",
+                    "buttonTitle",
+                    "buttonHotKey",
+                    "dropdownTooltip",
+                    "isActive",
+                    "onClickButton",
+                    "onArrowClick",
+                    "isSmallTablet",
+                    "data-name",
+                    "children"
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "frame": "iframe[0]",
+            "text": "",
+            "attributes": {
+              "type": "button",
+              "aria-label": "Magnet Mode snaps drawings placed near price bars to the closest OHLC value",
+              "className": "button-KTgbfaP5 apply-common-tooltip common-tooltip-vertical isActive-KTgbfaP5 accessible-KTgbfaP5"
+            },
+            "selector": "div.toolButtonMagnet-wg76fIbD > div.dropdown-pbhJWNrt.undefined > div.control-pbhJWNrt > div.buttonWrap-pbhJWNrt.accessible-pbhJWNrt > button.button-KTgbfaP5.apply-common-tooltip",
+            "context": " |  |  |  | ",
+            "react": {
+              "reactNodes": [
+                {
+                  "depth": 0,
+                  "tag": "button",
+                  "selector": "div.toolButtonMagnet-wg76fIbD > div.dropdown-pbhJWNrt.undefined > div.control-pbhJWNrt > div.buttonWrap-pbhJWNrt.accessible-pbhJWNrt > button.button-KTgbfaP5.apply-common-tooltip",
+                  "propKeys": [
+                    "aria-label",
+                    "data-tooltip-delay",
+                    "id",
+                    "type",
+                    "className",
+                    "onClick",
+                    "onKeyDown",
+                    "data-role",
+                    "tabIndex",
+                    "data-tooltip-hotkey",
+                    "aria-pressed",
+                    "data-tooltip",
+                    "children"
+                  ],
+                  "handlers": {
+                    "onClick": {
+                      "name": "onClick",
+                      "args": 1,
+                      "source": "function(e){(0,Ee.isKeyboardClick)(e)&&(F?o(!0,!0):null==w||w())}"
+                    }
+                  }
+                },
+                {
+                  "depth": 1,
+                  "tag": "div",
+                  "selector": "div.group-BfVZxb4b > div.toolButtonMagnet-wg76fIbD > div.dropdown-pbhJWNrt.undefined > div.control-pbhJWNrt > div.buttonWrap-pbhJWNrt.accessible-pbhJWNrt",
+                  "propKeys": [
+                    "onMouseDown",
+                    "onMouseUp",
+                    "className",
+                    "children"
+                  ],
+                  "handlers": {
+                    "onMouseDown": {
+                      "name": "s",
+                      "args": 0,
+                      "source": "function s(){if(S.mobiletouch&&!_)!H.current&&w&&w();else{if(P.current)return clearTimeout(P.current),P.current=0,void o(!0);P.current=setTimeout(()=>{P.current=0,!H.current&&w&&w()},175)}H.current=setTimeout(()=>{H.current=0,o(!0)},300)}"
+                    }
+                  }
+                },
+                {
+                  "depth": 2,
+                  "tag": "div",
+                  "selector": "div.inner-BfVZxb4b > div.group-BfVZxb4b > div.toolButtonMagnet-wg76fIbD > div.dropdown-pbhJWNrt.undefined > div.control-pbhJWNrt",
+                  "propKeys": [
+                    "className",
+                    "children"
+                  ],
+                  "handlers": {}
+                },
+                {
+                  "depth": 3,
+                  "tag": "div",
+                  "selector": "div.content-Z4M3tWHb > div.inner-BfVZxb4b > div.group-BfVZxb4b > div.toolButtonMagnet-wg76fIbD > div.dropdown-pbhJWNrt.undefined",
+                  "propKeys": [
+                    "data-name",
+                    "className",
+                    "onClick",
+                    "onKeyDown",
+                    "children"
+                  ],
+                  "handlers": {
+                    "onKeyDown": {
+                      "name": "onKeyDown",
+                      "args": 1,
+                      "source": "function(e){var t;if(e.defaultPrevented||!(e.target instanceof Node)||!z.PLATFORM_ACCESSIBILITY_ENABLED)return;const n=(0,_e.hashFromEvent)(e);e.currentTarget.contains(e.target)||27!==n||(e.preventDefault(),o(!1),B&&(null===(t=null==K?void 0:K.current)||void 0===t||t.focus()))}"
+                    }
+                  }
+                }
+              ],
+              "nativeListeners": [],
+              "fiber": [
+                {
+                  "component": "",
+                  "propKeys": [
+                    "aria-label",
+                    "data-tooltip-delay",
+                    "id",
+                    "type",
+                    "className",
+                    "onClick",
+                    "onKeyDown",
+                    "data-role",
+                    "tabIndex",
+                    "data-tooltip-hotkey",
+                    "aria-pressed",
+                    "data-tooltip",
+                    "children"
+                  ]
+                },
+                {
+                  "component": "",
+                  "propKeys": [
+                    "activeClass",
+                    "className",
+                    "icon",
+                    "isActive",
+                    "isGrayed",
+                    "isTransparent",
+                    "tag",
+                    "tabIndex",
+                    "onClick",
+                    "tooltip",
+                    "buttonHotKey",
+                    "data-tooltip-delay",
+                    "tooltipPosition"
+                  ]
+                },
+                {
+                  "component": "",
+                  "propKeys": [
+                    "onMouseDown",
+                    "onMouseUp",
+                    "className",
+                    "children"
+                  ]
+                },
+                {
+                  "component": "",
+                  "propKeys": [
+                    "className",
+                    "children"
+                  ]
+                },
+                {
+                  "component": "",
+                  "propKeys": [
+                    "data-name",
+                    "className",
+                    "onClick",
+                    "onKeyDown",
+                    "children"
+                  ]
+                },
+                {
+                  "component": "",
+                  "propKeys": [
+                    "data-name",
+                    "buttonIcon",
+                    "buttonTitle",
+                    "isActive",
+                    "onClickButton",
+                    "buttonHotKey",
+                    "checkable",
+                    "isSmallTablet",
+                    "onArrowClick",
+                    "children"
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "riskFields": [],
+        "forms": []
+      },
+      {
+        "frame": "iframe[1]",
+        "buttons": [],
+        "riskFields": [],
+        "forms": []
+      },
+      {
+        "frame": "iframe[2]",
+        "buttons": [],
+        "riskFields": [],
+        "forms": []
+      }
+    ],
+    "knownBitunixPositionMethods": [
+      {
+        "name": "positions",
+        "found": true,
+        "args": 1,
+        "source": "positions(e){return this.config.supportPositions?(this._makeSureBrokerIsConnected(),this._positions().then(t=>t.filter(t=>void 0===e||t.symbol===e))):Promise.resolve([])}"
+      },
+      {
+        "name": "getPositions",
+        "found": false
+      },
+      {
+        "name": "placeOrder",
+        "found": true,
+        "args": 2,
+        "source": "placeOrder(e,t){return this._placeOrder(e,t)}"
+      },
+      {
+        "name": "createOrder",
+        "found": false
+      },
+      {
+        "name": "createMarketOrder",
+        "found": false
+      },
+      {
+        "name": "openPosition",
+        "found": false
+      },
+      {
+        "name": "closePosition",
+        "found": true,
+        "args": 2,
+        "source": "async closePosition(e,t){let i;l(e),this._makeSureBrokerIsConnected(),(0,C.assert)(void 0===t||!!this.config.supportPartialClosePosition,\"Broker doesn`t support partial position closing\");const r=new Promise(async(r,s)=>{try{const s=await this._positionCopyById(e);i=e=>{void 0!==s&&e.id===s.id&&e.symbol===s.symbol&&e.qty!==s.qty&&(this.positionUpdate.unsubscribe(this,i),r(!0))},this.positionUpdate.subscribe(this,i),await this._closePosition(e,t)}catch(e){s(e)}});return(0,T.makeTimeLimited)(r,3e4,\"Position closing timeout\").catch(e=>(this._brokerLogger.logError(`${oe}: ${(0,D.getLoggerMessage)(e)}`),this.positionUpdate.unsubscribe(this,i),!1))}"
+      },
+      {
+        "name": "reversePosition",
+        "found": true,
+        "args": 1,
+        "source": "reversePosition(e){if(l(e),this._makeSureBrokerIsConnected(),this.config.supportMultiposition&&!this.config.supportNativeReversePosition)throw new Error(\"Cannot reverse position on multiposition account\");let t;const i=new Promise(async(i,r)=>{try{const r=await this._positionCopyById(e);t=e=>{void 0!==r&&e.symbol===r.symbol&&e.side!==r.side&&(this.positionUpdate.unsubscribe(this,t),i(!0))},this.positionUpdate.subscribe(this,t),await this._reversePosition(e)}catch(e){r(e)}});return(0,T.makeTimeLimited)(i,3e4,\"Position reversing timeout\").catch(e=>(this._brokerLogger.logError(`${ne}: ${(0,D.getLoggerMessage)(e)}`),this.positionUpdate.unsubscribe(this,t),!1))}"
+      },
+      {
+        "name": "modifyOrder",
+        "found": true,
+        "args": 2,
+        "source": "modifyOrder(e,t){return this._modifyOrder(e,t)}"
+      },
+      {
+        "name": "cancelOrder",
+        "found": true,
+        "args": 1,
+        "source": "cancelOrder(e){return l(e),this._makeSureBrokerIsConnected(),this.processErrors(this._brokerConnection.cancelOrder(e),!0,m.t(null,void 0,i(915926)))}"
+      }
+    ],
+    "brokerConnectionMethods": {
+      "found": true,
+      "type": "aF",
+      "keys": [
+        "_positions",
+        "_orders",
+        "_baseConfig",
+        "_eventBus",
+        "_tvWidget",
+        "subscribeRealtime",
+        "unsubscribeRealtime",
+        "subscribeDOM",
+        "unsubscribeDOM"
+      ],
+      "methods": [
+        {
+          "name": "subscribeRealtime",
+          "args": 1
+        },
+        {
+          "name": "unsubscribeRealtime",
+          "args": 1
+        },
+        {
+          "name": "subscribeDOM",
+          "args": 1
+        },
+        {
+          "name": "unsubscribeDOM",
+          "args": 1
+        },
+        {
+          "name": "chartContextMenuActions",
+          "args": 0
+        },
+        {
+          "name": "connectionStatus",
+          "args": 0
+        },
+        {
+          "name": "accountManagerInfo",
+          "args": 0
+        },
+        {
+          "name": "orders",
+          "args": 0
+        },
+        {
+          "name": "positions",
+          "args": 0
+        },
+        {
+          "name": "reversePosition",
+          "args": 1
+        },
+        {
+          "name": "symbolInfo",
+          "args": 1
+        },
+        {
+          "name": "isTradable",
+          "args": 1
+        },
+        {
+          "name": "accountsMetainfo",
+          "args": 0
+        },
+        {
+          "name": "currentAccount",
+          "args": 0
+        },
+        {
+          "name": "_subscribe",
+          "args": 2
+        },
+        {
+          "name": "__defineGetter__",
+          "args": 2
+        },
+        {
+          "name": "__defineSetter__",
+          "args": 2
+        },
+        {
+          "name": "hasOwnProperty",
+          "args": 1
+        },
+        {
+          "name": "__lookupGetter__",
+          "args": 1
+        },
+        {
+          "name": "__lookupSetter__",
+          "args": 1
+        },
+        {
+          "name": "isPrototypeOf",
+          "args": 1
+        },
+        {
+          "name": "propertyIsEnumerable",
+          "args": 1
+        },
+        {
+          "name": "toString",
+          "args": 0
+        },
+        {
+          "name": "valueOf",
+          "args": 0
+        },
+        {
+          "name": "toLocaleString",
+          "args": 0
+        }
+      ]
+    },
+    "adapterShape": {
+      "found": true,
+      "type": "ae",
+      "keys": [
+        "connectionStatusUpdate",
+        "executionUpdate",
+        "tradingOperationFinished",
+        "currentAccountUpdate",
+        "_brokerPlan",
+        "_subscriptions",
+        "_lastFireResult",
+        "_fakeDOMSubscriptions",
+        "_formattersCache",
+        "_spreadFormattersCache",
+        "_quantityFormattersCache",
+        "_individualPositionsCache",
+        "_fakePositionUpdateDelegate",
+        "_realtimeSubscriptionState",
+        "_loggedInManually",
+        "_pendingSubscriptions",
+        "_sessionId",
+        "createAccount",
+        "accountSettingsInfo",
+        "resetAccount",
+        "changeAccountSettings",
+        "deleteAccount",
+        "leverageInfo",
+        "setLeverage",
+        "previewLeverage",
+        "maintenanceStatus",
+        "_handleStatusChange",
+        "config",
+        "_brokerMetainfo",
+        "_brokerConnection",
+        "_host",
+        "_tradingStat",
+        "_getTradingSettingsStorage",
+        "_brokerLogger",
+        "_positionsCache",
+        "_ordersCache",
+        "_originalDOMSubscriptionMethods",
+        "_brokerRealtimeAdapter"
+      ],
+      "methods": [
+        {
+          "name": "createAccount",
+          "args": 1
+        },
+        {
+          "name": "accountSettingsInfo",
+          "args": 1
+        },
+        {
+          "name": "resetAccount",
+          "args": 1
+        },
+        {
+          "name": "changeAccountSettings",
+          "args": 1
+        },
+        {
+          "name": "deleteAccount",
+          "args": 1
+        },
+        {
+          "name": "leverageInfo",
+          "args": 1
+        },
+        {
+          "name": "setLeverage",
+          "args": 1
+        },
+        {
+          "name": "previewLeverage",
+          "args": 1
+        },
+        {
+          "name": "maintenanceStatus",
+          "args": 0
+        },
+        {
+          "name": "_handleStatusChange",
+          "args": 1
+        },
+        {
+          "name": "_getTradingSettingsStorage",
+          "args": 0
+        },
+        {
+          "name": "tryRestoreSession",
+          "args": 0
+        },
+        {
+          "name": "onOrderUpdate",
+          "args": 1
+        },
+        {
+          "name": "onOrderPartialUpdate",
+          "args": 2
+        },
+        {
+          "name": "onPositionUpdate",
+          "args": 2
+        },
+        {
+          "name": "onPositionPartialUpdate",
+          "args": 2
+        },
+        {
+          "name": "onIndividualPositionUpdate",
+          "args": 2
+        },
+        {
+          "name": "onIndividualPositionPartialUpdate",
+          "args": 2
+        },
+        {
+          "name": "onCurrentAccountChanged",
+          "args": 0
+        },
+        {
+          "name": "patchConfig",
+          "args": 1
+        },
+        {
+          "name": "getOrderDialogOptions",
+          "args": 1
+        },
+        {
+          "name": "getPositionDialogOptions",
+          "args": 0
+        },
+        {
+          "name": "getSymbolSpecificTradingOptions",
+          "args": 1
+        },
+        {
+          "name": "getValidationRules",
+          "args": 1
+        },
+        {
+          "name": "chartContextMenuActions",
+          "args": 2
+        },
+        {
+          "name": "buttonDropdownActions",
+          "args": 0
+        },
+        {
+          "name": "connectionStatus",
+          "args": 0
+        },
+        {
+          "name": "isConnected",
+          "args": 0
+        },
+        {
+          "name": "signIn",
+          "args": 4
+        },
+        {
+          "name": "loggedInManually",
+          "args": 0
+        },
+        {
+          "name": "disconnect",
+          "args": 0
+        },
+        {
+          "name": "currentAccount",
+          "args": 0
+        },
+        {
+          "name": "currentAccountType",
+          "args": 0
+        },
+        {
+          "name": "checkUserHasLiveAccount",
+          "args": 0
+        },
+        {
+          "name": "metainfo",
+          "args": 0
+        },
+        {
+          "name": "brokerPlan",
+          "args": 0
+        },
+        {
+          "name": "bro",
+          "args": 0
+        },
+        {
+          "name": "fireSubscription",
+          "args": 6
+        },
+        {
+          "name": "positions",
+          "args": 1
+        },
+        {
+          "name": "disconnectWarningMessage",
+          "args": 0
+        },
+        {
+          "name": "connectWarningMessage",
+          "args": 0
+        },
+        {
+          "name": "individualPositions",
+          "args": 1
+        },
+        {
+          "name": "positionById",
+          "args": 1
+        },
+        {
+          "name": "individualPositionById",
+          "args": 1
+        },
+        {
+          "name": "orders",
+          "args": 1
+        },
+        {
+          "name": "ordersHistory",
+          "args": 0
+        },
+        {
+          "name": "executions",
+          "args": 1
+        },
+        {
+          "name": "allExecutions",
+          "args": 0
+        },
+        {
+          "name": "orderById",
+          "args": 1
+        },
+        {
+          "name": "accountManagerInfo",
+          "args": 0
+        },
+        {
+          "name": "isTradable",
+          "args": 1
+        },
+        {
+          "name": "formatter",
+          "args": 1
+        },
+        {
+          "name": "spreadFormatter",
+          "args": 1
+        },
+        {
+          "name": "quantityFormatter",
+          "args": 1
+        },
+        {
+          "name": "createInitialPreOrder",
+          "args": 1
+        },
+        {
+          "name": "createPlaceOrderContext",
+          "args": 2
+        },
+        {
+          "name": "createEditOrderContext",
+          "args": 2
+        },
+        {
+          "name": "placeOrder",
+          "args": 2
+        },
+        {
+          "name": "previewOrder",
+          "args": 1
+        },
+        {
+          "name": "modifyOrder",
+          "args": 2
+        },
+        {
+          "name": "cancelOrder",
+          "args": 1
+        },
+        {
+          "name": "cancelOrders",
+          "args": 3
+        },
+        {
+          "name": "closePosition",
+          "args": 2
+        },
+        {
+          "name": "closeIndividualPosition",
+          "args": 2
+        },
+        {
+          "name": "reversePosition",
+          "args": 1
+        },
+        {
+          "name": "editPositionBrackets",
+          "args": 3
+        },
+        {
+          "name": "editIndividualPositionBrackets",
+          "args": 2
+        },
+        {
+          "name": "subscribeRealtime",
+          "args": 2
+        },
+        {
+          "name": "quotesSnapshot",
+          "args": 1
+        },
+        {
+          "name": "subscribeDOM",
+          "args": 2
+        },
+        {
+          "name": "subscribePipValue",
+          "args": 2
+        },
+        {
+          "name": "subscribePositionEstLiqPrice",
+          "args": 2
+        },
+        {
+          "name": "subscribeTradePL",
+          "args": 2
+        },
+        {
+          "name": "subscribePL",
+          "args": 2
+        },
+        {
+          "name": "subscribeIndividualPositionPL",
+          "args": 2
+        },
+        {
+          "name": "subscribeCryptoBalance",
+          "args": 2
+        },
+        {
+          "name": "subscribeEquity",
+          "args": 1
+        },
+        {
+          "name": "subscribeMarginAvailable",
+          "args": 1
+        },
+        {
+          "name": "unsubscribeRealtime",
+          "args": 2
+        },
+        {
+          "name": "unsubscribeDOM",
+          "args": 2
+        },
+        {
+          "name": "unsubscribePipValue",
+          "args": 2
+        },
+        {
+          "name": "unsubscribePL",
+          "args": 2
+        },
+        {
+          "name": "unsubscribeIndividualPositionPL",
+          "args": 2
+        },
+        {
+          "name": "unsubscribeCryptoBalance",
+          "args": 2
+        },
+        {
+          "name": "unsubscribeEquity",
+          "args": 1
+        },
+        {
+          "name": "unsubscribeMarginAvailable",
+          "args": 1
+        },
+        {
+          "name": "accountMetainfo",
+          "args": 0
+        },
+        {
+          "name": "accountsMetainfo",
+          "args": 0
+        },
+        {
+          "name": "setCurrentAccount",
+          "args": 1
+        },
+        {
+          "name": "symbolInfo",
+          "args": 1
+        },
+        {
+          "name": "getPositionCurrency",
+          "args": 1
+        },
+        {
+          "name": "sessionId",
+          "args": 0
+        },
+        {
+          "name": "bugReportInfo",
+          "args": 0
+        },
+        {
+          "name": "processErrors",
+          "args": 4
+        },
+        {
+          "name": "setDurations",
+          "args": 1
+        },
+        {
+          "name": "setSymbolSearchId",
+          "args": 1
+        },
+        {
+          "name": "getRealtimeDataCheckParams",
+          "args": 0
+        },
+        {
+          "name": "getVerifyLiveAccountParams",
+          "args": 0
+        },
+        {
+          "name": "unhideSymbolSearchGroups",
+          "args": 0
+        },
+        {
+          "name": "destroy",
+          "args": 0
+        },
+        {
+          "name": "currentBroker",
+          "args": 0
+        },
+        {
+          "name": "_showErrorNotification",
+          "args": 2
+        },
+        {
+          "name": "_makeContextErrorHandler",
+          "args": 1
+        },
+        {
+          "name": "_createEditOrderContext",
+          "args": 2
+        },
+        {
+          "name": "_createPlaceOrderContext",
+          "args": 2
+        },
+        {
+          "name": "_createInitialPreOrder",
+          "args": 3
+        },
+        {
+          "name": "_getSavedCustomFields",
+          "args": 3
+        },
+        {
+          "name": "_placeOrder",
+          "args": 2
+        },
+        {
+          "name": "_modifyOrder",
+          "args": 2
+        },
+        {
+          "name": "_previewOrder",
+          "args": 1
+        }
+      ]
+    },
+    "requestedKeyMap": {
+      "long": "Ctrl+ArrowUp (proposed; verify with user)",
+      "short": "Ctrl+ArrowDown (proposed; verify with user)",
+      "close": "Ctrl+ArrowRight",
+      "reverse": "Ctrl+ArrowLeft"
+    },
+    "note": "Button and React handler metadata are read only. No click, callback, order method, position getter or form submit is executed."
+  },
+  "positionSizeSlTp": {
+    "fieldsByFrame": [
+      {
+        "frame": "top",
+        "fields": [
+          {
+            "frame": "top",
+            "tag": "input",
+            "attributes": {
+              "type": "text",
+              "placeholder": "TP",
+              "className": "arco-input arco-input-size-medium"
+            },
+            "labels": "",
+            "context": " | Price (USDT)",
+            "disabled": false,
+            "checked": false,
+            "selector": "div.tab1 > div.future-exchange-profit > div.profit.flex-row-between-center > span.arco-input-wrapper.flex-1 > input.arco-input.arco-input-size-medium",
+            "react": {
+              "reactNodes": [],
+              "nativeListeners": [
+                {
+                  "event": "input",
+                  "count": 1,
+                  "listeners": [
+                    {
+                      "name": "n",
+                      "source": "s=>{if(!s._vts)s._vts=Date.now();else if(s._vts<=n.attached)return;const r=n.value;if(J(r)){const i=s.stopImmediatePropagation;s.stopImmediatePropagation=()=>{i.call(s),s._stopped=!0};const o=r.slice(),l=[s];for(let c=0;c<o.length&&!s._stopped;c++){const a=o[c];a&&it(a,t,5,l)}}else it(r,t,5,[s])}"
+                    }
+                  ]
+                },
+                {
+                  "event": "keydown",
+                  "count": 1,
+                  "listeners": [
+                    {
+                      "name": "n",
+                      "source": "s=>{if(!s._vts)s._vts=Date.now();else if(s._vts<=n.attached)return;const r=n.value;if(J(r)){const i=s.stopImmediatePropagation;s.stopImmediatePropagation=()=>{i.call(s),s._stopped=!0};const o=r.slice(),l=[s];for(let c=0;c<o.length&&!s._stopped;c++){const a=o[c];a&&it(a,t,5,l)}}else it(r,t,5,[s])}"
+                    }
+                  ]
+                }
+              ]
+            },
+            "displayedValue": ""
+          },
+          {
+            "frame": "top",
+            "tag": "input",
+            "attributes": {
+              "type": "text",
+              "placeholder": "SL",
+              "className": "arco-input arco-input-size-medium"
+            },
+            "labels": "",
+            "context": " | Price (USDT)",
+            "disabled": false,
+            "checked": false,
+            "selector": "div.tab1 > div.future-exchange-profit > div.profit.flex-row-between-center > span.arco-input-wrapper.flex-1 > input.arco-input.arco-input-size-medium",
+            "react": {
+              "reactNodes": [],
+              "nativeListeners": [
+                {
+                  "event": "input",
+                  "count": 1,
+                  "listeners": [
+                    {
+                      "name": "n",
+                      "source": "s=>{if(!s._vts)s._vts=Date.now();else if(s._vts<=n.attached)return;const r=n.value;if(J(r)){const i=s.stopImmediatePropagation;s.stopImmediatePropagation=()=>{i.call(s),s._stopped=!0};const o=r.slice(),l=[s];for(let c=0;c<o.length&&!s._stopped;c++){const a=o[c];a&&it(a,t,5,l)}}else it(r,t,5,[s])}"
+                    }
+                  ]
+                },
+                {
+                  "event": "keydown",
+                  "count": 1,
+                  "listeners": [
+                    {
+                      "name": "n",
+                      "source": "s=>{if(!s._vts)s._vts=Date.now();else if(s._vts<=n.attached)return;const r=n.value;if(J(r)){const i=s.stopImmediatePropagation;s.stopImmediatePropagation=()=>{i.call(s),s._stopped=!0};const o=r.slice(),l=[s];for(let c=0;c<o.length&&!s._stopped;c++){const a=o[c];a&&it(a,t,5,l)}}else it(r,t,5,[s])}"
+                    }
+                  ]
+                }
+              ]
+            },
+            "displayedValue": ""
+          },
+          {
+            "frame": "top",
+            "tag": "input",
+            "attributes": {
+              "type": "text",
+              "name": "bitunix_market",
+              "placeholder": "Enter Quantity",
+              "className": "arco-input arco-input-size-medium"
+            },
+            "labels": "By Cost (‪USDT‬)",
+            "context": " |  | By Cost (‪USDT‬)",
+            "disabled": false,
+            "checked": false,
+            "selector": "div.focusoutline-none.border-1px > div.flex.flex-1 > label.w-134px.bx-color-bg-input > span.market-order-number-input.arco-input-wrapper > input.arco-input.arco-input-size-medium",
+            "react": {
+              "reactNodes": [],
+              "nativeListeners": [
+                {
+                  "event": "input",
+                  "count": 1,
+                  "listeners": [
+                    {
+                      "name": "G",
+                      "source": "j=>{!o&&n===P&&r===x&&Q(j)}"
+                    }
+                  ]
+                },
+                {
+                  "event": "keydown",
+                  "count": 1,
+                  "listeners": [
+                    {
+                      "name": "G",
+                      "source": "j=>{!o&&n===P&&r===x&&Q(j)}"
+                    }
+                  ]
+                },
+                {
+                  "event": "keyup",
+                  "count": 1,
+                  "listeners": [
+                    {
+                      "name": "G",
+                      "source": "j=>{!o&&n===P&&r===x&&Q(j)}"
+                    }
+                  ]
+                }
+              ]
+            },
+            "displayedValue": ""
+          }
+        ]
+      },
+      {
+        "frame": "iframe[0]",
+        "fields": []
+      },
+      {
+        "frame": "iframe[1]",
+        "fields": []
+      },
+      {
+        "frame": "iframe[2]",
+        "fields": []
+      }
+    ],
+    "fieldsRead": true,
+    "scope": "Only visible inputs whose labels/nearby context indicate size, quantity, amount, TP, SL or trigger price. Account balances, PnL, open-position values and credentials are excluded."
+  },
+  "indicatorIntegration": {
+    "customIndicatorsGetter": null,
+    "widgetOptions": {
+      "custom_indicators_getter": null,
+      "studies_overrides": null,
+      "enabled_features": null,
+      "disabled_features": null,
+      "studies": null,
+      "indicators_file_name": null
+    },
+    "pineCandidates": [
+      {
+        "frame": "top",
+        "globalCandidates": [
+          "TradingView",
+          "tradingview_f56d3"
+        ],
+        "pineJSFound": false,
+        "pineJSKeys": []
+      },
+      {
+        "frame": "iframe[0]",
+        "globalCandidates": [
+          "webpackChunktradingview",
+          "TradingView",
+          "TradingViewApi",
+          "tradingViewApi"
+        ],
+        "pineJSFound": false,
+        "pineJSKeys": []
+      },
+      {
+        "frame": "iframe[1]",
+        "globalCandidates": [],
+        "pineJSFound": false,
+        "pineJSKeys": []
+      },
+      {
+        "frame": "iframe[2]",
+        "globalCandidates": [],
+        "pineJSFound": false,
+        "pineJSKeys": []
+      }
+    ],
+    "bridgeGlobals": [
+      {
+        "frame": "top",
+        "keys": [
+          "bitunix_tracking_sdk",
+          "sensorsdata_app_js_bridge_call_js",
+          "__BITUNIX_LCP_SETTLER__",
+          "__BITUNIX_CUSTOMER_SERVICE__",
+          "bitunixTv",
+          "__BITUNIX_BATCH_AUDIT_20__"
+        ]
+      },
+      {
+        "frame": "iframe[0]",
+        "keys": []
+      },
+      {
+        "frame": "iframe[1]",
+        "keys": []
+      },
+      {
+        "frame": "iframe[2]",
+        "keys": []
+      }
+    ],
+    "studyEngine": {
+      "found": true,
+      "type": "V",
+      "keys": [
+        "_studiesCache",
+        "_objectsDataCache",
+        "_studiesNonSeriesTimes",
+        "_metainfoCache",
+        "_barsCoefficientsCache",
+        "_externalDatafeed",
+        "_datafeedConfiguration",
+        "_marketStatusWatchers",
+        "_resolveRequests",
+        "_resolvePromisesBySymbolId",
+        "_symbolIdToSymbolRequestString",
+        "_callbacks",
+        "_serverTimeOffset",
+        "_invalidatedPointsetSessions",
+        "_refreshPointsetsTimerId",
+        "_pointsetsManagers",
+        "_quotesInfo",
+        "_depthInfo",
+        "_endOfData",
+        "_computeStudyCounter",
+        "_symbolExtrapolators",
+        "_timeScales",
+        "_cachedDatafeed"
+      ],
+      "methods": [
+        {
+          "name": "_getSymbolExtrapolator",
+          "args": 3
+        },
+        {
+          "name": "_barsCoefficients",
+          "args": 2
+        },
+        {
+          "name": "destroy",
+          "args": 0
+        },
+        {
+          "name": "purgeCache",
+          "args": 0
+        },
+        {
+          "name": "purgeDataCache",
+          "args": 0
+        },
+        {
+          "name": "_logMessage",
+          "args": 1
+        },
+        {
+          "name": "on",
+          "args": 2
+        },
+        {
+          "name": "_fireEvent",
+          "args": 3
+        },
+        {
+          "name": "_adoptConfigurationData",
+          "args": 1
+        },
+        {
+          "name": "supportedResolutions",
+          "args": 0
+        },
+        {
+          "name": "supportedCurrencies",
+          "args": 0
+        },
+        {
+          "name": "supportedUnits",
+          "args": 0
+        },
+        {
+          "name": "supportedPriceSources",
+          "args": 1
+        },
+        {
+          "name": "supportedSymbolsTypes",
+          "args": 0
+        },
+        {
+          "name": "symbolsGrouping",
+          "args": 0
+        },
+        {
+          "name": "_findStudyObject",
+          "args": 1
+        },
+        {
+          "name": "getMarks",
+          "args": 5
+        },
+        {
+          "name": "getTimescaleMarks",
+          "args": 5
+        },
+        {
+          "name": "getSeriesLastBarTime",
+          "args": 2
+        },
+        {
+          "name": "getSeriesInterval",
+          "args": 2
+        },
+        {
+          "name": "getSeriesSymbolInfo",
+          "args": 2
+        },
+        {
+          "name": "_getSeriesData",
+          "args": 2
+        },
+        {
+          "name": "_computeStudy",
+          "args": 10
+        },
+        {
+          "name": "_createStudy",
+          "args": 8
+        },
+        {
+          "name": "onSessionSeriesError",
+          "args": 1
+        },
+        {
+          "name": "modifySeries",
+          "args": 6
+        },
+        {
+          "name": "_modifyMainSeries",
+          "args": 5
+        },
+        {
+          "name": "stopSources",
+          "args": 1
+        },
+        {
+          "name": "_stopSourcesTree",
+          "args": 2
+        },
+        {
+          "name": "_recreateSourcesForDataRange",
+          "args": 2
+        },
+        {
+          "name": "_startSourcesTree",
+          "args": 3
+        },
+        {
+          "name": "removeStudy",
+          "args": 2
+        },
+        {
+          "name": "removeSeries",
+          "args": 2
+        },
+        {
+          "name": "modifyStudy",
+          "args": 4
+        },
+        {
+          "name": "createStudy",
+          "args": 6
+        },
+        {
+          "name": "sessionTimeScale",
+          "args": 1
+        },
+        {
+          "name": "isTimeScaleExtendedTo",
+          "args": 2
+        },
+        {
+          "name": "ensureExtendedTo",
+          "args": 3
+        },
+        {
+          "name": "extendSeriesRange",
+          "args": 2
+        },
+        {
+          "name": "seriesTurnaround",
+          "args": 2
+        },
+        {
+          "name": "_seriesDataRange",
+          "args": 2
+        },
+        {
+          "name": "_applyTimeScaleUpdate",
+          "args": 2
+        },
+        {
+          "name": "_updateMainTsBuilder",
+          "args": 1
+        },
+        {
+          "name": "_updateTimeScaleState",
+          "args": 1
+        },
+        {
+          "name": "_mainSeriesRecord",
+          "args": 1
+        },
+        {
+          "name": "_seriesCount",
+          "args": 1
+        },
+        {
+          "name": "_prepareSeriesNonSeriesData",
+          "args": 3
+        },
+        {
+          "name": "createSeries",
+          "args": 7
+        },
+        {
+          "name": "_clearSeriesData",
+          "args": 2
+        },
+        {
+          "name": "requestMoreTickmarks",
+          "args": 2
+        },
+        {
+          "name": "chartCreateSession",
+          "args": 1
+        },
+        {
+          "name": "chartDeleteSession",
+          "args": 1
+        },
+        {
+          "name": "removePointset",
+          "args": 2
+        },
+        {
+          "name": "createPointset",
+          "args": 5
+        },
+        {
+          "name": "_refreshPointsets",
+          "args": 1
+        },
+        {
+          "name": "studiesMetadata",
+          "args": 0
+        },
+        {
+          "name": "searchSymbols",
+          "args": 4
+        },
+        {
+          "name": "resolveSymbol",
+          "args": 3
+        },
+        {
+          "name": "_resolveSymbolImpl",
+          "args": 3
+        },
+        {
+          "name": "_resolveSymbolByName",
+          "args": 4
+        },
+        {
+          "name": "_resolveSymbolInternal",
+          "args": 4
+        },
+        {
+          "name": "_createMarketStatusWatchers",
+          "args": 2
+        },
+        {
+          "name": "_removeMarketStatusWatchers",
+          "args": 1
+        },
+        {
+          "name": "_stopQuotesSubscription",
+          "args": 1
+        },
+        {
+          "name": "_startQuotesSubscription",
+          "args": 1
+        },
+        {
+          "name": "_restartQuotesSubscription",
+          "args": 1
+        },
+        {
+          "name": "quoteCreateSession",
+          "args": 1
+        },
+        {
+          "name": "quoteDeleteSession",
+          "args": 1
+        },
+        {
+          "name": "quoteSetFields",
+          "args": 2
+        },
+        {
+          "name": "quoteAddSymbols",
+          "args": 2
+        },
+        {
+          "name": "quoteRemoveSymbols",
+          "args": 2
+        },
+        {
+          "name": "quoteFastSymbols",
+          "args": 2
+        },
+        {
+          "name": "quoteHibernateAll",
+          "args": 1
+        },
+        {
+          "name": "_stopDepthSubscription",
+          "args": 1
+        },
+        {
+          "name": "_startDepthSubscription",
+          "args": 1
+        },
+        {
+          "name": "_restartDepthSubscription",
+          "args": 1
+        },
+        {
+          "name": "depthCreateSession",
+          "args": 1
+        },
+        {
+          "name": "depthDeleteSession",
+          "args": 1
+        },
+        {
+          "name": "depthSetSymbol",
+          "args": 2
+        },
+        {
+          "name": "_filteredSymbols",
+          "args": 1
+        },
+        {
+          "name": "_isEndOfData",
+          "args": 3
+        },
+        {
+          "name": "_setEndOfData",
+          "args": 4
+        },
+        {
+          "name": "serverTimeOffset",
+          "args": 0
+        },
+        {
+          "name": "serverTime",
+          "args": 0
+        },
+        {
+          "name": "getCurrentUTCTime",
+          "args": 0
+        },
+        {
+          "name": "switchTimezone",
+          "args": 2
+        },
+        {
+          "name": "_studyCanExtendTimeScale",
+          "args": 2
+        },
+        {
+          "name": "__defineGetter__",
+          "args": 2
+        },
+        {
+          "name": "__defineSetter__",
+          "args": 2
+        },
+        {
+          "name": "hasOwnProperty",
+          "args": 1
+        },
+        {
+          "name": "__lookupGetter__",
+          "args": 1
+        },
+        {
+          "name": "__lookupSetter__",
+          "args": 1
+        },
+        {
+          "name": "isPrototypeOf",
+          "args": 1
+        },
+        {
+          "name": "propertyIsEnumerable",
+          "args": 1
+        },
+        {
+          "name": "toString",
+          "args": 0
+        },
+        {
+          "name": "valueOf",
+          "args": 0
+        },
+        {
+          "name": "toLocaleString",
+          "args": 0
+        }
+      ]
+    },
+    "activeChartCreateStudy": {
+      "found": true,
+      "args": 6,
+      "source": "createStudy(e,t,i,s,r,n){if(\"function\"==typeof r)return console.warn('\"createStudy\" does not take \"callback\" parameter anymore'),Promise.resolve(null);if(n=n||{},\"string\"!=typeof e)return this._createStudy(e);if(n.checkLimit&&!this._chartWidget.model().canCreateStudy())return(0,G.showTooManyStudiesNotice)(),Promise.resolve(null);e=e.toLowerCase();const o=n.disableUndo?this._chartWidget.model().model():this._chartWidget.model(),a=q.StudyMetaInfo.findStudyMetaInfoByDescription(o.studiesMetaData(),e),c=o.createStudyInserter({type:\"java\",studyId:a.id},[]);if(c.setForceOverlay(!!t),n.priceScale&&c.setPreferredPriceScale(function(e){switch(e){case\"no-scale\":return\"overlay\";case\"as-series\":return\"as-series\";case\"new-left\":return\"left\";case\"new-right\":return\"right\";default:throw new Error('The pricescale \"'+e+'\" is invalid, the only valid options are \"no-scale\", \"as-series\", \"new-left\" and \"new-right\".')}}(n.priceScale)),n.allowChangeCurrency&&c.setAllowChangeCurrency(!0),n.allowChangeUnit&&c.setAllowChangeUnit(!0),Array.isArray(s)){ console.warn(\"Passing study inputs as an ordered array is now deprecated. Please use an object where keys correspond to the inputs of your study instead.\");const e={};for(let t=0;t<a.inputs.length;++t)e[a.inputs[t].id]=s[t];s=e}return c.insert((()=>Promise.r"
+    },
+    "activeChartGetAllStudies": {
+      "found": true,
+      "args": 0,
+      "source": "getAllStudies(){return this._chartWidget.model().model().allStudies(!0).map(f.studyEntityInfo)}"
+    },
+    "existingStudies": [
+      {
+        "name": "Williams %R",
+        "type": "",
+        "idPresent": true
+      }
+    ],
+    "chartApiCreateStudy": {
+      "found": true,
+      "args": 7,
+      "source": "function(e,t,i,s,r,n,o){if(!this.canCreateStudy()){const e=new Error(\"Exceeded the limit of studies\");throw e.cause=\"TooManyStudies\",e}this._notificationHandlers[e][t]=new c(o,t),this._studyEngine.createStudy(e,t,s,i,r,n),this.studyCounter++}"
+    },
+    "chartApiMethods": {
+      "found": true,
+      "type": "",
+      "keys": [
+        "_notificationHandlers",
+        "_sessions",
+        "studyCounter",
+        "_metadataRequestNextNumber",
+        "_connected",
+        "_enabled",
+        "_studyEngine",
+        "_callbacks",
+        "_serverTimeOffset",
+        "_setVisibleRangeTimeout",
+        "studiesAccessController",
+        "sessionid"
+      ],
+      "methods": [
+        {
+          "name": "destroy",
+          "args": 0
+        },
+        {
+          "name": "purgeCache",
+          "args": 1
+        },
+        {
+          "name": "defaultResolutions",
+          "args": 0
+        },
+        {
+          "name": "availableCurrencies",
+          "args": 0
+        },
+        {
+          "name": "availableUnits",
+          "args": 0
+        },
+        {
+          "name": "availablePriceSources",
+          "args": 1
+        },
+        {
+          "name": "supportedSymbolsTypes",
+          "args": 0
+        },
+        {
+          "name": "symbolsGrouping",
+          "args": 0
+        },
+        {
+          "name": "start",
+          "args": 0
+        },
+        {
+          "name": "unsubscribe",
+          "args": 2
+        },
+        {
+          "name": "on",
+          "args": 2
+        },
+        {
+          "name": "_fireEvent",
+          "args": 3
+        },
+        {
+          "name": "chartCreateSession",
+          "args": 2
+        },
+        {
+          "name": "chartDeleteSession",
+          "args": 1
+        },
+        {
+          "name": "createSession",
+          "args": 2
+        },
+        {
+          "name": "removeSession",
+          "args": 1
+        },
+        {
+          "name": "connected",
+          "args": 0
+        },
+        {
+          "name": "connect",
+          "args": 0
+        },
+        {
+          "name": "disconnect",
+          "args": 0
+        },
+        {
+          "name": "switchTimezone",
+          "args": 2
+        },
+        {
+          "name": "receiveLocalResponse",
+          "args": 1
+        },
+        {
+          "name": "getMarks",
+          "args": 5
+        },
+        {
+          "name": "getTimescaleMarks",
+          "args": 5
+        },
+        {
+          "name": "resolveSymbol",
+          "args": 4
+        },
+        {
+          "name": "createSeries",
+          "args": 8
+        },
+        {
+          "name": "removeSeries",
+          "args": 2
+        },
+        {
+          "name": "setVisibleTimeRange",
+          "args": 9
+        },
+        {
+          "name": "_applyTimeFrame",
+          "args": 5
+        },
+        {
+          "name": "modifySeries",
+          "args": 8
+        },
+        {
+          "name": "requestMoreData",
+          "args": 2
+        },
+        {
+          "name": "setStudiesAccessController",
+          "args": 1
+        },
+        {
+          "name": "allStudiesMetadata",
+          "args": 0
+        },
+        {
+          "name": "requestMetadata",
+          "args": 0
+        },
+        {
+          "name": "_makeNextRequestId",
+          "args": 0
+        },
+        {
+          "name": "canCreateStudy",
+          "args": 0
+        },
+        {
+          "name": "getStudyCounter",
+          "args": 0
+        },
+        {
+          "name": "createStudy",
+          "args": 7
+        },
+        {
+          "name": "rebindStudy",
+          "args": 8
+        },
+        {
+          "name": "removeStudy",
+          "args": 3
+        },
+        {
+          "name": "modifyStudy",
+          "args": 5
+        },
+        {
+          "name": "createPointset",
+          "args": 7
+        },
+        {
+          "name": "modifyPointset",
+          "args": 5
+        },
+        {
+          "name": "removePointset",
+          "args": 3
+        },
+        {
+          "name": "requestMoreTickmarks",
+          "args": 2
+        },
+        {
+          "name": "requestFirstBarTime",
+          "args": 4
+        },
+        {
+          "name": "_invokeHandler",
+          "args": 2
+        },
+        {
+          "name": "_sendRequest",
+          "args": 2
+        },
+        {
+          "name": "_onMessage",
+          "args": 1
+        },
+        {
+          "name": "_dispatchNotification",
+          "args": 1
+        },
+        {
+          "name": "_invokeNotificationHandler",
+          "args": 3
+        },
+        {
+          "name": "searchSymbols",
+          "args": 10
+        },
+        {
+          "name": "_notifySessions",
+          "args": 1
+        },
+        {
+          "name": "unpack",
+          "args": 1
+        },
+        {
+          "name": "quoteCreateSession",
+          "args": 1
+        },
+        {
+          "name": "quoteDeleteSession",
+          "args": 1
+        },
+        {
+          "name": "quoteSetFields",
+          "args": 2
+        },
+        {
+          "name": "quoteAddSymbols",
+          "args": 2
+        },
+        {
+          "name": "quoteRemoveSymbols",
+          "args": 2
+        },
+        {
+          "name": "quoteFastSymbols",
+          "args": 2
+        },
+        {
+          "name": "quoteHibernateAll",
+          "args": 1
+        },
+        {
+          "name": "depthCreateSession",
+          "args": 1
+        },
+        {
+          "name": "depthDeleteSession",
+          "args": 1
+        },
+        {
+          "name": "depthSetSymbol",
+          "args": 2
+        },
+        {
+          "name": "depthClearSymbol",
+          "args": 1
+        },
+        {
+          "name": "depthSetScale",
+          "args": 2
+        },
+        {
+          "name": "createStudiesAccessController",
+          "args": 3
+        },
+        {
+          "name": "StudiesAccessController",
+          "args": 2
+        },
+        {
+          "name": "serverTimeOffset",
+          "args": 0
+        },
+        {
+          "name": "serverTime",
+          "args": 0
+        },
+        {
+          "name": "disconnectCount",
+          "args": 0
+        },
+        {
+          "name": "__defineGetter__",
+          "args": 2
+        },
+        {
+          "name": "__defineSetter__",
+          "args": 2
+        },
+        {
+          "name": "hasOwnProperty",
+          "args": 1
+        },
+        {
+          "name": "__lookupGetter__",
+          "args": 1
+        },
+        {
+          "name": "__lookupSetter__",
+          "args": 1
+        },
+        {
+          "name": "isPrototypeOf",
+          "args": 1
+        },
+        {
+          "name": "propertyIsEnumerable",
+          "args": 1
+        },
+        {
+          "name": "toString",
+          "args": 0
+        },
+        {
+          "name": "valueOf",
+          "args": 0
+        },
+        {
+          "name": "toLocaleString",
+          "args": 0
+        }
+      ]
+    },
+    "note": "No study is created or removed. Only existing study metadata, PineJS/global availability and registration hooks are inspected."
+  },
+  "keyboardListeners": {
+    "documents": [
+      {
+        "frame": "top",
+        "available": true,
+        "targets": [
+          {
+            "target": "document",
+            "event": "keydown",
+            "count": 12,
+            "listeners": [
+              {
+                "name": "s",
+                "capture": false,
+                "passive": false,
+                "mentionsCtrl": false,
+                "mentionsArrowUp": false,
+                "mentionsArrowDown": false,
+                "mentionsArrowRight": false,
+                "mentionsArrowLeft": false,
+                "source": "function s(i){i.key===\"Escape\"&&e.value&&t?.()}"
+              },
+              {
+                "name": "f",
+                "capture": true,
+                "passive": true,
+                "mentionsCtrl": false,
+                "mentionsArrowUp": false,
+                "mentionsArrowDown": false,
+                "mentionsArrowRight": false,
+                "mentionsArrowLeft": false,
+                "source": "d=>r(Ex(d))"
+              },
+              {
+                "name": "v",
+                "capture": false,
+                "passive": false,
+                "mentionsCtrl": false,
+                "mentionsArrowUp": false,
+                "mentionsArrowDown": false,
+                "mentionsArrowRight": false,
+                "mentionsArrowLeft": false,
+                "source": "function v(y){var M;if(!(y.key!==\"Escape\"||Kse(y.target))){if(o){(M=o.onEscape)==null||M.call(o),d();return}l.value&&s()}}"
+              },
+              {
+                "name": "",
+                "capture": false,
+                "passive": false,
+                "mentionsCtrl": false,
+                "mentionsArrowUp": false,
+                "mentionsArrowDown": false,
+                "mentionsArrowRight": false,
+                "mentionsArrowLeft": false,
+                "source": "p=>{Ase(p,R4(vd()))}"
+              },
+              {
+                "name": "S",
+                "capture": false,
+                "passive": false,
+                "mentionsCtrl": false,
+                "mentionsArrowUp": false,
+                "mentionsArrowDown": false,
+                "mentionsArrowRight": false,
+                "mentionsArrowLeft": false,
+                "source": "c=>{c.key===\"Escape\"&&a.visible&&i()}"
+              },
+              {
+                "name": "S",
+                "capture": false,
+                "passive": false,
+                "mentionsCtrl": false,
+                "mentionsArrowUp": false,
+                "mentionsArrowDown": false,
+                "mentionsArrowRight": false,
+                "mentionsArrowLeft": false,
+                "source": "c=>{c.key===\"Escape\"&&a.visible&&i()}"
+              },
+              {
+                "name": "S",
+                "capture": false,
+                "passive": false,
+                "mentionsCtrl": false,
+                "mentionsArrowUp": false,
+                "mentionsArrowDown": false,
+                "mentionsArrowRight": false,
+                "mentionsArrowLeft": false,
+                "source": "c=>{c.key===\"Escape\"&&a.visible&&i()}"
+              },
+              {
+                "name": "S",
+                "capture": false,
+                "passive": false,
+                "mentionsCtrl": false,
+                "mentionsArrowUp": false,
+                "mentionsArrowDown": false,
+                "mentionsArrowRight": false,
+                "mentionsArrowLeft": false,
+                "source": "c=>{c.key===\"Escape\"&&a.visible&&i()}"
+              },
+              {
+                "name": "S",
+                "capture": false,
+                "passive": false,
+                "mentionsCtrl": false,
+                "mentionsArrowUp": false,
+                "mentionsArrowDown": false,
+                "mentionsArrowRight": false,
+                "mentionsArrowLeft": false,
+                "source": "c=>{c.key===\"Escape\"&&a.visible&&i()}"
+              },
+              {
+                "name": "S",
+                "capture": false,
+                "passive": false,
+                "mentionsCtrl": false,
+                "mentionsArrowUp": false,
+                "mentionsArrowDown": false,
+                "mentionsArrowRight": false,
+                "mentionsArrowLeft": false,
+                "source": "c=>{c.key===\"Escape\"&&a.visible&&i()}"
+              },
+              {
+                "name": "S",
+                "capture": false,
+                "passive": false,
+                "mentionsCtrl": false,
+                "mentionsArrowUp": false,
+                "mentionsArrowDown": false,
+                "mentionsArrowRight": false,
+                "mentionsArrowLeft": false,
+                "source": "c=>{c.key===\"Escape\"&&a.visible&&i()}"
+              },
+              {
+                "name": "S",
+                "capture": false,
+                "passive": false,
+                "mentionsCtrl": false,
+                "mentionsArrowUp": false,
+                "mentionsArrowDown": false,
+                "mentionsArrowRight": false,
+                "mentionsArrowLeft": false,
+                "source": "c=>{c.key===\"Escape\"&&a.visible&&i()}"
+              }
+            ]
+          },
+          {
+            "target": "window",
+            "event": "keydown",
+            "count": 3,
+            "listeners": [
+              {
+                "name": "te",
+                "capture": false,
+                "passive": false,
+                "mentionsCtrl": false,
+                "mentionsArrowUp": false,
+                "mentionsArrowDown": false,
+                "mentionsArrowRight": false,
+                "mentionsArrowLeft": false,
+                "source": "H=>{const P=H.target;P.tagName===\"INPUT\"||P.tagName===\"TEXTAREA\"||P.isContentEditable||(H.key===\"/\"?(H.preventDefault(),_e()):H.key===\"Escape\"&&_e(!1))}"
+              },
+              {
+                "name": "te",
+                "capture": false,
+                "passive": false,
+                "mentionsCtrl": false,
+                "mentionsArrowUp": false,
+                "mentionsArrowDown": false,
+                "mentionsArrowRight": false,
+                "mentionsArrowLeft": false,
+                "source": "H=>{const P=H.target;P.tagName===\"INPUT\"||P.tagName===\"TEXTAREA\"||P.isContentEditable||(H.key===\"/\"?(H.preventDefault(),_e()):H.key===\"Escape\"&&_e(!1))}"
+              },
+              {
+                "name": "Vt",
+                "capture": false,
+                "passive": false,
+                "mentionsCtrl": false,
+                "mentionsArrowUp": false,
+                "mentionsArrowDown": false,
+                "mentionsArrowRight": false,
+                "mentionsArrowLeft": false,
+                "source": "ie=>{ie.key===\"Escape\"&&Y.pickArmed&&(Y.pickArmed=!1)}"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "frame": "iframe[0]",
+        "available": true,
+        "targets": []
+      },
+      {
+        "frame": "iframe[1]",
+        "available": true,
+        "targets": []
+      },
+      {
+        "frame": "iframe[2]",
+        "available": true,
+        "targets": []
+      }
+    ],
+    "requested": {
+      "long": "Ctrl+ArrowUp",
+      "short": "Ctrl+ArrowDown",
+      "close": "Ctrl+ArrowRight",
+      "reverse": "Ctrl+ArrowLeft"
+    },
+    "eventsDispatched": 0
+  },
+  "liveObservation": {
+    "durationMs": 12000,
+    "samples": [
+      {
+        "at": "2026-11-15T14:27:16.485Z",
+        "symbol": "XAUTUSDT",
+        "resolution": "1",
+        "barCount": 302,
+        "last": {
+          "index": 301,
+          "timeMs": 1794752820000,
+          "value": [
+            1794752820,
+            3821.54,
+            3821.77,
+            3821.54,
+            3821.77,
+            0.005,
+            null
+          ]
+        },
+        "previous": {
+          "index": 300,
+          "timeMs": 1794752760000,
+          "value": [
+            1794752760,
+            3822.62,
+            3822.63,
+            3821.41,
+            3821.54,
+            0.065,
+            null
+          ]
+        }
+      },
+      {
+        "at": "2026-11-15T14:27:18.486Z",
+        "symbol": "XAUTUSDT",
+        "resolution": "1",
+        "barCount": 302,
+        "last": {
+          "index": 301,
+          "timeMs": 1794752820000,
+          "value": [
+            1794752820,
+            3821.54,
+            3821.77,
+            3821.54,
+            3821.77,
+            0.005,
+            null
+          ]
+        },
+        "previous": {
+          "index": 300,
+          "timeMs": 1794752760000,
+          "value": [
+            1794752760,
+            3822.62,
+            3822.63,
+            3821.41,
+            3821.54,
+            0.065,
+            null
+          ]
+        }
+      },
+      {
+        "at": "2026-11-15T14:27:20.488Z",
+        "symbol": "XAUTUSDT",
+        "resolution": "1",
+        "barCount": 302,
+        "last": {
+          "index": 301,
+          "timeMs": 1794752820000,
+          "value": [
+            1794752820,
+            3821.54,
+            3821.77,
+            3821.54,
+            3821.77,
+            0.005,
+            null
+          ]
+        },
+        "previous": {
+          "index": 300,
+          "timeMs": 1794752760000,
+          "value": [
+            1794752760,
+            3822.62,
+            3822.63,
+            3821.41,
+            3821.54,
+            0.065,
+            null
+          ]
+        }
+      },
+      {
+        "at": "2026-11-15T14:27:22.492Z",
+        "symbol": "XAUTUSDT",
+        "resolution": "1",
+        "barCount": 302,
+        "last": {
+          "index": 301,
+          "timeMs": 1794752820000,
+          "value": [
+            1794752820,
+            3821.54,
+            3821.77,
+            3821.54,
+            3821.77,
+            0.005,
+            null
+          ]
+        },
+        "previous": {
+          "index": 300,
+          "timeMs": 1794752760000,
+          "value": [
+            1794752760,
+            3822.62,
+            3822.63,
+            3821.41,
+            3821.54,
+            0.065,
+            null
+          ]
+        }
+      },
+      {
+        "at": "2026-11-15T14:27:24.493Z",
+        "symbol": "XAUTUSDT",
+        "resolution": "1",
+        "barCount": 302,
+        "last": {
+          "index": 301,
+          "timeMs": 1794752820000,
+          "value": [
+            1794752820,
+            3821.54,
+            3821.77,
+            3821.54,
+            3821.77,
+            0.005,
+            null
+          ]
+        },
+        "previous": {
+          "index": 300,
+          "timeMs": 1794752760000,
+          "value": [
+            1794752760,
+            3822.62,
+            3822.63,
+            3821.41,
+            3821.54,
+            0.065,
+            null
+          ]
+        }
+      },
+      {
+        "at": "2026-11-15T14:27:26.493Z",
+        "symbol": "XAUTUSDT",
+        "resolution": "1",
+        "barCount": 302,
+        "last": {
+          "index": 301,
+          "timeMs": 1794752820000,
+          "value": [
+            1794752820,
+            3821.54,
+            3821.77,
+            3821.54,
+            3821.77,
+            0.059,
+            null
+          ]
+        },
+        "previous": {
+          "index": 300,
+          "timeMs": 1794752760000,
+          "value": [
+            1794752760,
+            3822.62,
+            3822.63,
+            3821.41,
+            3821.54,
+            0.065,
+            null
+          ]
+        }
+      },
+      {
+        "at": "2026-11-15T14:27:28.485Z",
+        "symbol": "XAUTUSDT",
+        "resolution": "1",
+        "barCount": 302,
+        "last": {
+          "index": 301,
+          "timeMs": 1794752820000,
+          "value": [
+            1794752820,
+            3821.54,
+            3821.77,
+            3821.54,
+            3821.77,
+            0.059,
+            null
+          ]
+        },
+        "previous": {
+          "index": 300,
+          "timeMs": 1794752760000,
+          "value": [
+            1794752760,
+            3822.62,
+            3822.63,
+            3821.41,
+            3821.54,
+            0.065,
+            null
+          ]
+        }
+      }
+    ]
+  },
+  "warnings": [],
+  "errors": [],
+  "finishedAt": "2026-11-15T14:27:28.485Z",
+  "durationMs": 12033
+}
