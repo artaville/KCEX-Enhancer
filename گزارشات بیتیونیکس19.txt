@@ -1,0 +1,758 @@
+{
+  "reportName": "BITUNIX_CLOSE_EVENT_TRACE",
+  "version": "1.2",
+  "timestamp": "2026-11-15T07:43:52.862Z",
+  "safety": {
+    "readOnly": true,
+    "functionsInvoked": 0,
+    "tradingMethodsInvoked": 0,
+    "eventBusEventsEmitted": 0,
+    "exchangeButtonsClicked": 0,
+    "networkRequests": 0,
+    "credentialsRead": false,
+    "positionIdsIncluded": false,
+    "exactQuantitiesIncluded": false,
+    "accessorsInvoked": false
+  },
+  "discovery": {
+    "bitunixTvFound": true,
+    "tvWidgetFound": true,
+    "hostFound": true,
+    "adapterFound": true,
+    "brokerConnectionFound": true,
+    "brokerMetainfoFound": true,
+    "bitunixEventBusFound": true,
+    "connectionEventBusFound": true,
+    "customUIFound": true
+  },
+  "busComparison": {
+    "sameObject": true,
+    "bitunixBusType": "object",
+    "connectionBusType": "object",
+    "conclusion": "Both references point to the same EventBus object."
+  },
+  "bitunixEventBus": {
+    "found": true,
+    "path": "window.bitunixTv.eventBus",
+    "ownKeys": [
+      "events",
+      "queue"
+    ],
+    "eventNames": [
+      "clearKlineData",
+      "rerenderChart",
+      "wsPublish",
+      "historyOrder",
+      "updateShowSetMenuState",
+      "activeChartChanged",
+      "chartLayoutSwitch",
+      "wsSubscribe",
+      "wsUnsubscribe",
+      "kline.charts.contract",
+      "kline.charts.spot",
+      "kline.drawings.contract",
+      "kline.drawings.spot",
+      "kline.chartTemplates",
+      "kline.studyTemplates",
+      "kline.drawingTemplates",
+      "kline.chartType",
+      "kline.resolutions",
+      "kline.drawingTools",
+      "updateQuote",
+      "positionUpdate",
+      "orderUpdate",
+      "plUpdate",
+      "orderTypeFilter",
+      "reloadAllLineTools",
+      "resetScales",
+      "triggerPlusButton",
+      "objectTree",
+      "lockAllDrawings",
+      "drawginmode",
+      "triggerFavoriteTool",
+      "addFavoriteTool",
+      "removeFavoriteTool",
+      "recoverFavoriteTool",
+      "clearAllFavoriteTools",
+      "triggerMagnetTool",
+      "triggerMagnetChange",
+      "triggerShowHideTool",
+      "triggerRemoveDrawings",
+      "triggerRemoveStudies",
+      "triggerRemoveAll",
+      "triggerBaseTool",
+      "priceRangeTool",
+      "priceRangeToolClose",
+      "triggerSetIconsEmojisStickers",
+      "toggleCrosshairAlert",
+      "setResolution",
+      "setTimeFrame",
+      "triggerChartLayout",
+      "triggerChartFavorite",
+      "saveIndicatorTemplate",
+      "setChartLayout",
+      "setIndicatorTemplate",
+      "triggerIndicatorTemplate",
+      "triggerTvModal",
+      "setChartType",
+      "setPriceType",
+      "plusClick",
+      "positionOrderSelected",
+      "resetChartState",
+      "clickHeaderButton",
+      "chartClick",
+      "studyClick",
+      "crossHairMove",
+      "toolsChange",
+      "symbolPeriodChanged",
+      "chartSaved",
+      "showSetClick",
+      "marketClose",
+      "clickSaveLayout",
+      "menuClick",
+      "layout_changed",
+      "clickPositionSize",
+      "reversePosition",
+      "closePosition",
+      "cancelOrder",
+      "createTPSLOrder",
+      "clickOrder",
+      "modifyOrder",
+      "updatePriceType",
+      "addDrawingAlert",
+      "contextMenu",
+      "scaledOrderBoundaryMoved",
+      "scaledOrderBoundaryClosed",
+      "addIndicatorAlert",
+      "setLayoutSymbols"
+    ],
+    "selectedEvents": {
+      "closePosition": {
+        "eventName": "closePosition",
+        "busPath": "window.bitunixTv.eventBus.events",
+        "found": true,
+        "listenerCount": 2,
+        "listeners": [
+          {
+            "index": 0,
+            "name": "(anonymous)",
+            "argumentCount": 1,
+            "source": "async({position:t,resolve:r,reject:o})=>{bn(t.id)||b_e(t,e,{resolve:r})}"
+          },
+          {
+            "index": 1,
+            "name": "le",
+            "argumentCount": 1,
+            "source": "ie=>{var ee,re;const fe=String(((ee=ie?.position)==null?void 0:ee.id)??\"\");fe.startsWith(\"replay_pos_\")&&(aU(fe.endsWith(\"short\")?\"short\":\"long\"),(re=ie.resolve)==null||re.call(ie))}"
+          }
+        ]
+      },
+      "reversePosition": {
+        "eventName": "reversePosition",
+        "busPath": "window.bitunixTv.eventBus.events",
+        "found": true,
+        "listenerCount": 1,
+        "listeners": [
+          {
+            "index": 0,
+            "name": "(anonymous)",
+            "argumentCount": 1,
+            "source": "({position:r,resolve:o})=>{const n=r.positionId,i=ro(n);if(_t(\"futures_reverse_position_entry_click\",{futures_from:\"kline_position\",symbol:i?.symbol,futures_need_confirm:String(t?.()??!0)},{tradeType:!0,market:!0,klineFullscreen:!0}),$e(\"futures_reverse_position\",{kline_id:n}),!i)throw _1(n),o(),new Error(\"Position information that can be reversed is not found\");e(\"reversePosition\",i,l=>{o(),l&&($e(\"futures_reverse_position_success\",{kline_id:n}),e(\"tips\",_(\"notification.success\"),\"success\"))})}"
+          }
+        ]
+      },
+      "marketClose": {
+        "eventName": "marketClose",
+        "busPath": "window.bitunixTv.eventBus.events",
+        "found": true,
+        "listenerCount": 2,
+        "listeners": [
+          {
+            "index": 0,
+            "name": "(anonymous)",
+            "argumentCount": 0,
+            "source": "()=>i1({orderQuickMarket:!1})"
+          },
+          {
+            "index": 1,
+            "name": "(anonymous)",
+            "argumentCount": 0,
+            "source": "()=>l(\"orderQuickMarket\",!1)"
+          }
+        ]
+      },
+      "positionUpdate": {
+        "eventName": "positionUpdate",
+        "busPath": "window.bitunixTv.eventBus.events",
+        "found": true,
+        "listenerCount": 1,
+        "listeners": [
+          {
+            "index": 0,
+            "name": "(anonymous)",
+            "argumentCount": 1,
+            "source": "c=>{const a=d,p=u;if(t[p(1790)+p(4149)](c),s[p(4460)]&&console[a(5072,\"CiQI\")](p(1790)+a(5525,\"Tfof\"),c),c[a(5006,\"W]Rd\")]===zs[a(706,\"P0pz\")]){const f=this[a(1361,\"EoVv\")][a(4812,\"J4o(\")](v=>v.id===c.id);if(f[p(1049)]){const{id:v}=f[0];r[a(724,\"%sAI\")](p(4527)+\"e\",{id:p(1673)+v,status:1}),this[p(259)][p(4182)](g=>g[p(2880)]===2&&g[a(1312,\"th7g\")]===v)[p(3395)](g=>{const y=p;r[y(2296)](y(4527)+\"e\",{id:g.id,status:1})})}}o[p(1649)]=o[a(410,\"fvAC\")][a(4812,\"J4o(\")](f=>f.id!==c.id&&f[p(1216)]!==zs[a(3890,\"rbNu\")]),c[p(1216)]!==zs[a(707,\"W4QN\")]&&o[a(3978,\"phWK\")][p(3543)](c),this[p(5426)]=o[p(1649)]}"
+          }
+        ]
+      },
+      "positionOrderSelected": {
+        "eventName": "positionOrderSelected",
+        "busPath": "window.bitunixTv.eventBus.events",
+        "found": true,
+        "listenerCount": 1,
+        "listeners": [
+          {
+            "index": 0,
+            "name": "(anonymous)",
+            "argumentCount": 1,
+            "source": "o=>t(\"positionOrderSelected\",o)"
+          }
+        ]
+      }
+    },
+    "prototypeMethods": [
+      {
+        "ownerLevel": 1,
+        "name": "constructor",
+        "argumentCount": 0,
+        "source": "class lF{constructor(){const t=k,r=w;this[r(3405,\"CiQI\")]={},this[t(1037)]=[]}[w(3931,\"**au\")](t,r){const o=w,n=k;this[n(3007)][t]||(this[o(412,\"JzFR\")][t]=[]),this[n(3007)][t][o(2442,\"oi]q\")](r)}[k(2296)](t,r){const o=k,n=w;var i;const l=(i=window[n(821,\"p&(x\")])==null?void 0:i[n(4776,\"N!o7\")];l&&l[o(1529)]?this[n(4732,\"@c^K\")][t]&&this[o(3007)][t][n(5436,\"Tfof\")](s=>s(r)):this[o(1037)][o(3543)]({event:t,data:r})}[k(1932)+\"e\"](t,r){const o=k,n=w;if(this[n(1860,\"9!Cm\")][t]){const i=this[o(3007)][t][o(4517)](r);i!==-1&&this[n(5680,\"th7g\")][t][o(3928)](i,1)}}}"
+      },
+      {
+        "ownerLevel": 1,
+        "name": "subscribe",
+        "argumentCount": 2,
+        "source": "[w(3931,\"**au\")](t,r){const o=w,n=k;this[n(3007)][t]||(this[o(412,\"JzFR\")][t]=[]),this[n(3007)][t][o(2442,\"oi]q\")](r)}"
+      },
+      {
+        "ownerLevel": 1,
+        "name": "publish",
+        "argumentCount": 2,
+        "source": "[k(2296)](t,r){const o=k,n=w;var i;const l=(i=window[n(821,\"p&(x\")])==null?void 0:i[n(4776,\"N!o7\")];l&&l[o(1529)]?this[n(4732,\"@c^K\")][t]&&this[o(3007)][t][n(5436,\"Tfof\")](s=>s(r)):this[o(1037)][o(3543)]({event:t,data:r})}"
+      },
+      {
+        "ownerLevel": 1,
+        "name": "unsubscribe",
+        "argumentCount": 2,
+        "source": "[k(1932)+\"e\"](t,r){const o=k,n=w;if(this[n(1860,\"9!Cm\")][t]){const i=this[o(3007)][t][o(4517)](r);i!==-1&&this[n(5680,\"th7g\")][t][o(3928)](i,1)}}"
+      },
+      {
+        "ownerLevel": 2,
+        "name": "constructor",
+        "argumentCount": 1,
+        "source": null
+      },
+      {
+        "ownerLevel": 2,
+        "name": "__defineGetter__",
+        "argumentCount": 2,
+        "source": null
+      },
+      {
+        "ownerLevel": 2,
+        "name": "__defineSetter__",
+        "argumentCount": 2,
+        "source": null
+      },
+      {
+        "ownerLevel": 2,
+        "name": "hasOwnProperty",
+        "argumentCount": 1,
+        "source": null
+      },
+      {
+        "ownerLevel": 2,
+        "name": "__lookupGetter__",
+        "argumentCount": 1,
+        "source": null
+      },
+      {
+        "ownerLevel": 2,
+        "name": "__lookupSetter__",
+        "argumentCount": 1,
+        "source": null
+      },
+      {
+        "ownerLevel": 2,
+        "name": "isPrototypeOf",
+        "argumentCount": 1,
+        "source": null
+      },
+      {
+        "ownerLevel": 2,
+        "name": "propertyIsEnumerable",
+        "argumentCount": 1,
+        "source": null
+      },
+      {
+        "ownerLevel": 2,
+        "name": "toString",
+        "argumentCount": 0,
+        "source": null
+      },
+      {
+        "ownerLevel": 2,
+        "name": "valueOf",
+        "argumentCount": 0,
+        "source": null
+      },
+      {
+        "ownerLevel": 2,
+        "name": "toLocaleString",
+        "argumentCount": 0,
+        "source": null
+      }
+    ],
+    "queue": {
+      "found": true,
+      "path": "window.bitunixTv.eventBus.queue",
+      "type": "array",
+      "keys": [
+        "length"
+      ],
+      "length": 0
+    },
+    "eventsFound": true,
+    "relevantEvents": [
+      "historyOrder",
+      "positionUpdate",
+      "orderUpdate",
+      "orderTypeFilter",
+      "priceRangeToolClose",
+      "positionOrderSelected",
+      "marketClose",
+      "clickPositionSize",
+      "reversePosition",
+      "closePosition",
+      "cancelOrder",
+      "createTPSLOrder",
+      "clickOrder",
+      "modifyOrder",
+      "scaledOrderBoundaryMoved",
+      "scaledOrderBoundaryClosed"
+    ]
+  },
+  "brokerEventBus": {
+    "found": true,
+    "path": "window.bitunixTv.tvWidget.host._adapter._brokerConnection._eventBus",
+    "ownKeys": [
+      "events",
+      "queue"
+    ],
+    "eventNames": [
+      "clearKlineData",
+      "rerenderChart",
+      "wsPublish",
+      "historyOrder",
+      "updateShowSetMenuState",
+      "activeChartChanged",
+      "chartLayoutSwitch",
+      "wsSubscribe",
+      "wsUnsubscribe",
+      "kline.charts.contract",
+      "kline.charts.spot",
+      "kline.drawings.contract",
+      "kline.drawings.spot",
+      "kline.chartTemplates",
+      "kline.studyTemplates",
+      "kline.drawingTemplates",
+      "kline.chartType",
+      "kline.resolutions",
+      "kline.drawingTools",
+      "updateQuote",
+      "positionUpdate",
+      "orderUpdate",
+      "plUpdate",
+      "orderTypeFilter",
+      "reloadAllLineTools",
+      "resetScales",
+      "triggerPlusButton",
+      "objectTree",
+      "lockAllDrawings",
+      "drawginmode",
+      "triggerFavoriteTool",
+      "addFavoriteTool",
+      "removeFavoriteTool",
+      "recoverFavoriteTool",
+      "clearAllFavoriteTools",
+      "triggerMagnetTool",
+      "triggerMagnetChange",
+      "triggerShowHideTool",
+      "triggerRemoveDrawings",
+      "triggerRemoveStudies",
+      "triggerRemoveAll",
+      "triggerBaseTool",
+      "priceRangeTool",
+      "priceRangeToolClose",
+      "triggerSetIconsEmojisStickers",
+      "toggleCrosshairAlert",
+      "setResolution",
+      "setTimeFrame",
+      "triggerChartLayout",
+      "triggerChartFavorite",
+      "saveIndicatorTemplate",
+      "setChartLayout",
+      "setIndicatorTemplate",
+      "triggerIndicatorTemplate",
+      "triggerTvModal",
+      "setChartType",
+      "setPriceType",
+      "plusClick",
+      "positionOrderSelected",
+      "resetChartState",
+      "clickHeaderButton",
+      "chartClick",
+      "studyClick",
+      "crossHairMove",
+      "toolsChange",
+      "symbolPeriodChanged",
+      "chartSaved",
+      "showSetClick",
+      "marketClose",
+      "clickSaveLayout",
+      "menuClick",
+      "layout_changed",
+      "clickPositionSize",
+      "reversePosition",
+      "closePosition",
+      "cancelOrder",
+      "createTPSLOrder",
+      "clickOrder",
+      "modifyOrder",
+      "updatePriceType",
+      "addDrawingAlert",
+      "contextMenu",
+      "scaledOrderBoundaryMoved",
+      "scaledOrderBoundaryClosed",
+      "addIndicatorAlert",
+      "setLayoutSymbols"
+    ],
+    "selectedEvents": {
+      "closePosition": {
+        "eventName": "closePosition",
+        "busPath": "window.bitunixTv.tvWidget.host._adapter._brokerConnection._eventBus.events",
+        "found": true,
+        "listenerCount": 2,
+        "listeners": [
+          {
+            "index": 0,
+            "name": "(anonymous)",
+            "argumentCount": 1,
+            "source": "async({position:t,resolve:r,reject:o})=>{bn(t.id)||b_e(t,e,{resolve:r})}"
+          },
+          {
+            "index": 1,
+            "name": "le",
+            "argumentCount": 1,
+            "source": "ie=>{var ee,re;const fe=String(((ee=ie?.position)==null?void 0:ee.id)??\"\");fe.startsWith(\"replay_pos_\")&&(aU(fe.endsWith(\"short\")?\"short\":\"long\"),(re=ie.resolve)==null||re.call(ie))}"
+          }
+        ]
+      },
+      "reversePosition": {
+        "eventName": "reversePosition",
+        "busPath": "window.bitunixTv.tvWidget.host._adapter._brokerConnection._eventBus.events",
+        "found": true,
+        "listenerCount": 1,
+        "listeners": [
+          {
+            "index": 0,
+            "name": "(anonymous)",
+            "argumentCount": 1,
+            "source": "({position:r,resolve:o})=>{const n=r.positionId,i=ro(n);if(_t(\"futures_reverse_position_entry_click\",{futures_from:\"kline_position\",symbol:i?.symbol,futures_need_confirm:String(t?.()??!0)},{tradeType:!0,market:!0,klineFullscreen:!0}),$e(\"futures_reverse_position\",{kline_id:n}),!i)throw _1(n),o(),new Error(\"Position information that can be reversed is not found\");e(\"reversePosition\",i,l=>{o(),l&&($e(\"futures_reverse_position_success\",{kline_id:n}),e(\"tips\",_(\"notification.success\"),\"success\"))})}"
+          }
+        ]
+      },
+      "marketClose": {
+        "eventName": "marketClose",
+        "busPath": "window.bitunixTv.tvWidget.host._adapter._brokerConnection._eventBus.events",
+        "found": true,
+        "listenerCount": 2,
+        "listeners": [
+          {
+            "index": 0,
+            "name": "(anonymous)",
+            "argumentCount": 0,
+            "source": "()=>i1({orderQuickMarket:!1})"
+          },
+          {
+            "index": 1,
+            "name": "(anonymous)",
+            "argumentCount": 0,
+            "source": "()=>l(\"orderQuickMarket\",!1)"
+          }
+        ]
+      },
+      "positionUpdate": {
+        "eventName": "positionUpdate",
+        "busPath": "window.bitunixTv.tvWidget.host._adapter._brokerConnection._eventBus.events",
+        "found": true,
+        "listenerCount": 1,
+        "listeners": [
+          {
+            "index": 0,
+            "name": "(anonymous)",
+            "argumentCount": 1,
+            "source": "c=>{const a=d,p=u;if(t[p(1790)+p(4149)](c),s[p(4460)]&&console[a(5072,\"CiQI\")](p(1790)+a(5525,\"Tfof\"),c),c[a(5006,\"W]Rd\")]===zs[a(706,\"P0pz\")]){const f=this[a(1361,\"EoVv\")][a(4812,\"J4o(\")](v=>v.id===c.id);if(f[p(1049)]){const{id:v}=f[0];r[a(724,\"%sAI\")](p(4527)+\"e\",{id:p(1673)+v,status:1}),this[p(259)][p(4182)](g=>g[p(2880)]===2&&g[a(1312,\"th7g\")]===v)[p(3395)](g=>{const y=p;r[y(2296)](y(4527)+\"e\",{id:g.id,status:1})})}}o[p(1649)]=o[a(410,\"fvAC\")][a(4812,\"J4o(\")](f=>f.id!==c.id&&f[p(1216)]!==zs[a(3890,\"rbNu\")]),c[p(1216)]!==zs[a(707,\"W4QN\")]&&o[a(3978,\"phWK\")][p(3543)](c),this[p(5426)]=o[p(1649)]}"
+          }
+        ]
+      },
+      "positionOrderSelected": {
+        "eventName": "positionOrderSelected",
+        "busPath": "window.bitunixTv.tvWidget.host._adapter._brokerConnection._eventBus.events",
+        "found": true,
+        "listenerCount": 1,
+        "listeners": [
+          {
+            "index": 0,
+            "name": "(anonymous)",
+            "argumentCount": 1,
+            "source": "o=>t(\"positionOrderSelected\",o)"
+          }
+        ]
+      }
+    },
+    "prototypeMethods": [
+      {
+        "ownerLevel": 1,
+        "name": "constructor",
+        "argumentCount": 0,
+        "source": "class lF{constructor(){const t=k,r=w;this[r(3405,\"CiQI\")]={},this[t(1037)]=[]}[w(3931,\"**au\")](t,r){const o=w,n=k;this[n(3007)][t]||(this[o(412,\"JzFR\")][t]=[]),this[n(3007)][t][o(2442,\"oi]q\")](r)}[k(2296)](t,r){const o=k,n=w;var i;const l=(i=window[n(821,\"p&(x\")])==null?void 0:i[n(4776,\"N!o7\")];l&&l[o(1529)]?this[n(4732,\"@c^K\")][t]&&this[o(3007)][t][n(5436,\"Tfof\")](s=>s(r)):this[o(1037)][o(3543)]({event:t,data:r})}[k(1932)+\"e\"](t,r){const o=k,n=w;if(this[n(1860,\"9!Cm\")][t]){const i=this[o(3007)][t][o(4517)](r);i!==-1&&this[n(5680,\"th7g\")][t][o(3928)](i,1)}}}"
+      },
+      {
+        "ownerLevel": 1,
+        "name": "subscribe",
+        "argumentCount": 2,
+        "source": "[w(3931,\"**au\")](t,r){const o=w,n=k;this[n(3007)][t]||(this[o(412,\"JzFR\")][t]=[]),this[n(3007)][t][o(2442,\"oi]q\")](r)}"
+      },
+      {
+        "ownerLevel": 1,
+        "name": "publish",
+        "argumentCount": 2,
+        "source": "[k(2296)](t,r){const o=k,n=w;var i;const l=(i=window[n(821,\"p&(x\")])==null?void 0:i[n(4776,\"N!o7\")];l&&l[o(1529)]?this[n(4732,\"@c^K\")][t]&&this[o(3007)][t][n(5436,\"Tfof\")](s=>s(r)):this[o(1037)][o(3543)]({event:t,data:r})}"
+      },
+      {
+        "ownerLevel": 1,
+        "name": "unsubscribe",
+        "argumentCount": 2,
+        "source": "[k(1932)+\"e\"](t,r){const o=k,n=w;if(this[n(1860,\"9!Cm\")][t]){const i=this[o(3007)][t][o(4517)](r);i!==-1&&this[n(5680,\"th7g\")][t][o(3928)](i,1)}}"
+      },
+      {
+        "ownerLevel": 2,
+        "name": "constructor",
+        "argumentCount": 1,
+        "source": null
+      },
+      {
+        "ownerLevel": 2,
+        "name": "__defineGetter__",
+        "argumentCount": 2,
+        "source": null
+      },
+      {
+        "ownerLevel": 2,
+        "name": "__defineSetter__",
+        "argumentCount": 2,
+        "source": null
+      },
+      {
+        "ownerLevel": 2,
+        "name": "hasOwnProperty",
+        "argumentCount": 1,
+        "source": null
+      },
+      {
+        "ownerLevel": 2,
+        "name": "__lookupGetter__",
+        "argumentCount": 1,
+        "source": null
+      },
+      {
+        "ownerLevel": 2,
+        "name": "__lookupSetter__",
+        "argumentCount": 1,
+        "source": null
+      },
+      {
+        "ownerLevel": 2,
+        "name": "isPrototypeOf",
+        "argumentCount": 1,
+        "source": null
+      },
+      {
+        "ownerLevel": 2,
+        "name": "propertyIsEnumerable",
+        "argumentCount": 1,
+        "source": null
+      },
+      {
+        "ownerLevel": 2,
+        "name": "toString",
+        "argumentCount": 0,
+        "source": null
+      },
+      {
+        "ownerLevel": 2,
+        "name": "valueOf",
+        "argumentCount": 0,
+        "source": null
+      },
+      {
+        "ownerLevel": 2,
+        "name": "toLocaleString",
+        "argumentCount": 0,
+        "source": null
+      }
+    ],
+    "queue": {
+      "found": true,
+      "path": "window.bitunixTv.tvWidget.host._adapter._brokerConnection._eventBus.queue",
+      "type": "array",
+      "keys": [
+        "length"
+      ],
+      "length": 0
+    },
+    "eventsFound": true
+  },
+  "brokerConnection": {
+    "found": true,
+    "ownKeys": [
+      "_positions",
+      "_orders",
+      "_baseConfig",
+      "_eventBus",
+      "_tvWidget",
+      "subscribeRealtime",
+      "unsubscribeRealtime",
+      "subscribeDOM",
+      "unsubscribeDOM"
+    ],
+    "constructorSource": "class aF{constructor(t,r,o,n,i,l,s){const d=w,u=k;this[u(5426)]=[],this[u(259)]=[],this[d(1874,\"arIE\")+\"g\"]=l,this[u(4871)]=r,this[d(1954,\"wCo4\")]=s,this[u(1899)](et[u(1790)+d(183,\"Tyar\")],c=>{const a=d,p=u;if(t[p(1790)+p(4149)](c),s[p(4460)]&&console[a(5072,\"CiQI\")](p(1790)+a(5525,\"Tfof\"),c),c[a(5006,\"W]Rd\")]===zs[a(706,\"P0pz\")]){const f=this[a(1361,\"EoVv\")][a(4812,\"J4o(\")](v=>v.id===c.id);if(f[p(1049)]){const{id:v}=f[0];r[a(724,\"%sAI\")](p(4527)+\"e\",{id:p(1673)+v,status:1}),this[p(259)][p(4182)](g=>g[p(2880)]===2&&g[a(1312,\"th7g\")]===v)[p(3395)](g=>{const y=p;r[y(2296)](y(4527)+\"e\",{id:g.id,status:1})})}}o[p(1649)]=o[a(410,\"fvAC\")][a(4812,\"J4o(\")](f=>f.id!==c.id&&f[p(1216)]!==zs[a(3890,\"rbNu\")]),c[p(1216)]!==zs[a(707,\"W4QN\")]&&o[a(3978,\"phWK\")][p(3543)](c),this[p(5426)]=o[p(1649)]}),this[d(3228,\"W4QN\")](et[d(4599,\"J4o(\")+\"e\"],c=>{const a=u,p=d,f=g=>{const y=cr,M=vr;s[M(2912,\"Lx5g\")]&&console[y(3473)](y(4527)+\"e\",g||c),t[M(2321,\"E8df\")+\"e\"](g||c),this[M(5470,\"P0pz\")]=n[M(2471,\"qK)]\")]},v=n[p(4122,\"T8GW\")][p(4812,\"J4o(\")](g=>g.id===c.id&&c[p(4817,\"JzFR\")]===zs[p(4398,\"@c^K\")]);if(v[a(1049)]){v[p(2918,\"oi]q\")](g=>{const y=p,M=a;n[M(1649)]=n[y(4816,\"wCo4\")][y(3915,\"T8GW\")](S=>S.id!==g.id),f({...g,...c})});return}n[p(3850,\"JzFR\")]=n[a(1649)][p(5213,\"arIE\")](g=>g.id!==c.id&&g[p(2125,\"7&Au\")]!==zs[a(5229)]),n[p(2816,\"un3p\")][p(907,\"ABC8\")](c),c[a(2200)]===Jo[a(1901)]&&i[a(1649)][p(4173,\"Tyar\")+a(2589)]&&f(),c[p(2348,\"qK)]\")]===Jo[p(2235,\"14xW\")]&&i[p(969,\"TM]V\")][a(2485)+a(2594)+\"ne\"]&&f(),c[p(1143,\"7&Au\")]===Jo[a(623)+\"l\"]&&i[p(3885,\"@c^K\")][a(1470)+p(3447,\"hAKa\")]&&f(),c[a(2200)]===Jo[p(5555,\"Tyar\")]&&i[p(3569,\"xivW\")][p(1788,\"ySJ%\")+p(4186,\"E8df\")]&&f(),c[p(180,\"kcA1\")]===Jo[p(3039,\"hAKa\")]&&i[p(3393,\"HQG8\")][p(3996,\"83UK\")+p(4054,\"arIE\")]&&f(),c[a(2200)]===Jo[a(1551)]&&i[a(1649)][p(4048,\"E8df\")+a(687)]&&f(),c[a(2200)]===Jo[a(5486)]&&i[p(3393,\"HQG8\")][p(4574,\"W4QN\")+p(1925,\"arIE\")]&&f(),c[p(1500,\"rbNu\")]===Jo[p(734,\"W]Rd\")]&&f()}),this[d(1951,\"oi]q\")](et[d(1357,\"8[pN\")],c=>{const a=d,p=u;t[p(1943)](c[a(2405,\"N!o7\")],c.pl,c[p(1235)+\"p\"],c[p(4948)],c[p(5240)]),s[a(4421,\"8[pN\")]&&console[p(3473)](p(1943),c);const f=o[a(2005,\"W]Rd\")][p(4917)](v=>v.id===c[p(681)]);f&&(f.pl=c.pl,f[p(1235)+\"p\"]=c[a(319,\"#eY9\")+\"p\"],f[p(4948)]=c[p(4948)],f[a(1835,\"CiQI\")]=c[p(5240)])}),this[d(5355,\"HQG8\")](et[d(1817,\"wCo4\")+u(5655)],()=>{const c=u,a=d;this[a(4375,\"phWK\")]=n[c(1649)],i[a(1115,\"ySJ%\")][a(3091,\"7&Au\")+a(1496,\"rbNu\")]||(this[c(259)]=this[a(4241,\"YYPc\")][a(2236,\"N!o7\")](p=>p[c(2200)]===Jo[c(1901)]?{...p,status:1}:p)),i[a(1366,\"hAKa\")][c(2485)+c(2594)+\"ne\"]||(this[a(1420,\"14xW\")]=this[c(259)][a(4625,\"rbNu\")](p=>p[c(2200)]===Jo[a(564,\"s0OD\")]?{...p,status:1}:p)),i[c(1649)][a(4666,\"T8GW\")+c(3178)]||(this[c(259)]=this[a(708,\"%lb@\")][c(4932)](p=>p[a(1636,\"ABC8\")]===Jo[c(623)+\"l\"]?{...p,status:1}:p)),i[a(5053,\"%sAI\")][a(2033,\"TM]V\")+a(3967,\"Tyar\")]||(this[a(889,\"th7g\")]=this[c(259)][c(4932)](p=>p[a(2451,\"oi]q\")]===Jo[a(843,\"YYPc\")]?{...p,status:1}:p)),i[a(4740,\"th7g\")][c(4148)+a(3415,\"[mGR\")]||(this[a(2400,\"Lx5g\")]=this[c(259)][a(1200,\"2l1f\")](p=>p[a(4579,\"Lx5g\")]===Jo[a(3703,\"oi]q\")]?{...p,status:1}:p)),i[c(1649)][c(4347)+c(687)]||(this[c(259)]=this[a(4994,\"Tfof\")][a(1200,\"2l1f\")](p=>p[c(2200)]===Jo[a(2138,\"7&Au\")]?{...p,status:1}:p)),i[a(5536,\"E8df\")][c(1168)+c(687)]||(this[c(259)]=this[c(259)][a(800,\"un3p\")](p=>p[c(2200)]===Jo[c(5486)]?{...p,status:1}:p)),this[a(3421,\"HQG8\")][c(3395)](p=>t[c(4527)+\"e\"](p)),s[a(808,\"W4QN\")]&&console[a(1207,\"un3p\")](a(5590,\"Tfof\")+\"e\",this[a(214,\"ySJ%\")])}),this[d(1283,\"phWK\")]=o[d(3393,\"HQG8\")],this[d(2047,\"un3p\")]=n[u(1649)]}async[w(5269,\"ahu)\")+w(1569,\"9!Cm\")+k(2509)](){return[]}[k(3329)+k(5728)](){return 1}[k(911)+k(2812)](){return{}}async[w(2251,\"p&(x\")](){return this[w(176,\"p&(x\")]}async[k(1764)](){const t=k;return Promise[w(2312,\"phWK\")](this[t(5426)])}async[w(1939,\"83UK\")+w(1495,\"fvAC\")](t){const r=k,o=w;this[o(3256,\"kcA1\")][r(2296)](et[o(4229,\"YYPc\")+o(4447,\"kcA1\")],t)}async[k(1683)](t){const r=k,o=w,n=this[o(4847,\"ySJ%\")+\"g\"][r(2119)+\"o\"][Er(t)],{pricePrecision:i}=t&&n?n:{pricePrecision:jd};return Promise[o(4968,\"qK)]\")]({description:\"\",minTick:1/Math[o(1730,\"**au\")](10,i),pipSize:1,pipValue:1,qty:{default:1,min:1,max:Number[o(924,\"hAKa\")],step:1}})}async[w(351,\"wCo4\")](t){return!0}async[k(4647)+k(5266)](){return[{id:\"1\",currency:k(1772)}]}[k(2136)+w(985,\"TM]V\")](){return\"1\"}[w(4117,\"CiQI\")](t,r){const o=k,n=w;!this[n(2450,\"W4QN\")][n(2987,\"phWK\")+\"ap\"]&&(this[n(3997,\"arIE\")][n(4276,\"9!Cm\")+\"ap\"]={}),this[o(5723)][o(423)+\"ap\"][t]&&this[o(4871)][o(1932)+\"e\"](t,this[o(5723)][n(4713,\"kcA1\")+\"ap\"][t]),this[n(4113,\"%lb@\")][n(1412,\"s0OD\")](t,r),this[o(5723)][o(423)+\"ap\"][t]=r}}",
+    "constructorArgumentCount": 7,
+    "privatePositions": {
+      "found": true,
+      "path": "connection._positions",
+      "type": "array",
+      "ownKeys": [
+        "length"
+      ]
+    },
+    "privateOrders": {
+      "found": true,
+      "path": "connection._orders",
+      "type": "array",
+      "ownKeys": [
+        "0",
+        "length"
+      ]
+    },
+    "baseConfigKeys": [],
+    "namedMethods": {
+      "reversePosition": {
+        "found": true,
+        "path": "brokerConnection.reversePosition",
+        "ownerLevel": 1,
+        "type": "function",
+        "functionName": "reversePosition",
+        "argumentCount": 1,
+        "source": "async[w(1939,\"83UK\")+w(1495,\"fvAC\")](t){const r=k,o=w;this[o(3256,\"kcA1\")][r(2296)](et[o(4229,\"YYPc\")+o(4447,\"kcA1\")],t)}"
+      },
+      "closePosition": {
+        "found": false,
+        "path": "brokerConnection.closePosition"
+      },
+      "placeOrder": {
+        "found": false,
+        "path": "brokerConnection.placeOrder"
+      },
+      "positions": {
+        "found": true,
+        "path": "brokerConnection.positions",
+        "ownerLevel": 1,
+        "type": "function",
+        "functionName": "positions",
+        "argumentCount": 0,
+        "source": "async[k(1764)](){const t=k;return Promise[w(2312,\"phWK\")](this[t(5426)])}"
+      }
+    }
+  },
+  "closeReverseMethods": {
+    "adapterClosePosition": {
+      "found": true,
+      "path": "adapter.closePosition",
+      "ownerLevel": 1,
+      "type": "function",
+      "functionName": "closePosition",
+      "argumentCount": 2,
+      "source": "async closePosition(e,t){let i;l(e),this._makeSureBrokerIsConnected(),(0,C.assert)(void 0===t||!!this.config.supportPartialClosePosition,\"Broker doesn`t support partial position closing\");const r=new Promise(async(r,s)=>{try{const s=await this._positionCopyById(e);i=e=>{void 0!==s&&e.id===s.id&&e.symbol===s.symbol&&e.qty!==s.qty&&(this.positionUpdate.unsubscribe(this,i),r(!0))},this.positionUpdate.subscribe(this,i),await this._closePosition(e,t)}catch(e){s(e)}});return(0,T.makeTimeLimited)(r,3e4,\"Position closing timeout\").catch(e=>(this._brokerLogger.logError(`${oe}: ${(0,D.getLoggerMessage)(e)}`),this.positionUpdate.unsubscribe(this,i),!1))}"
+    },
+    "adapterReversePosition": {
+      "found": true,
+      "path": "adapter.reversePosition",
+      "ownerLevel": 1,
+      "type": "function",
+      "functionName": "reversePosition",
+      "argumentCount": 1,
+      "source": "reversePosition(e){if(l(e),this._makeSureBrokerIsConnected(),this.config.supportMultiposition&&!this.config.supportNativeReversePosition)throw new Error(\"Cannot reverse position on multiposition account\");let t;const i=new Promise(async(i,r)=>{try{const r=await this._positionCopyById(e);t=e=>{void 0!==r&&e.symbol===r.symbol&&e.side!==r.side&&(this.positionUpdate.unsubscribe(this,t),i(!0))},this.positionUpdate.subscribe(this,t),await this._reversePosition(e)}catch(e){r(e)}});return(0,T.makeTimeLimited)(i,3e4,\"Position reversing timeout\").catch(e=>(this._brokerLogger.logError(`${ne}: ${(0,D.getLoggerMessage)(e)}`),this.positionUpdate.unsubscribe(this,t),!1))}"
+    },
+    "internalClose": {
+      "found": true,
+      "path": "adapter._closePosition",
+      "ownerLevel": 1,
+      "type": "function",
+      "functionName": "_closePosition",
+      "argumentCount": 2,
+      "source": "async _closePosition(e,t){const r=(0,C.ensureDefined)(await this.positionById(e));if(!(0,A.checkIsExistingPosition)(r)){const e=m.t(null,void 0,i(715842));throw this._host.showNotification(oe,e,0),new Error(e)}if(!(void 0===t||t<=Math.abs(r.qty))){const e=m.t(null,void 0,i(365389));throw this._host.showNotification(oe,e,0),new Error(e)}{const i=n(null!=t?t:Math.abs(r.qty),r);if(this.config.supportClosePosition&&this._brokerConnection.closePosition){if(!await this.processErrors(this._brokerConnection.closePosition(e,t),!0,oe,()=>(0,C.ensureNotNull)(this._tradingStat).trackOrderPlaced(i)))throw new Error(oe)}else if(!await this.processErrors(this._brokerConnection.placeOrder(i),!0,oe,()=>(0,C.ensureNotNull)(this._tradingStat).trackOrderPlaced(i)))throw new Error(oe)}}"
+    },
+    "internalReverse": {
+      "found": true,
+      "path": "adapter._reversePosition",
+      "ownerLevel": 1,
+      "type": "function",
+      "functionName": "_reversePosition",
+      "argumentCount": 1,
+      "source": "async _reversePosition(e){const t=(0,C.ensureDefined)(await this.positionById(e));if(0===t.qty){const e=m.t(null,void 0,i(726500));throw this._host.showNotification(ne,e,0),new Error(e)}this.config.supportNativeReversePosition&&this._brokerConnection.reversePosition?await this.processErrors(this._brokerConnection.reversePosition(e),!0,ne):await this.processErrors(this._placeReversePositionOrder(t),!0,ne,()=>(0,C.ensureNotNull)(this._tradingStat).trackOrderPlaced())}"
+    },
+    "reverseFallback": {
+      "found": true,
+      "path": "adapter._placeReversePositionOrder",
+      "ownerLevel": 1,
+      "type": "function",
+      "functionName": "_placeReversePositionOrder",
+      "argumentCount": 1,
+      "source": "_placeReversePositionOrder(e){const t=n(2*e.qty,e);return this._placeOrder(t)}"
+    }
+  },
+  "customUI": {
+    "found": true,
+    "showClosePositionDialog": {
+      "found": true,
+      "path": "brokerConfig.customUI.showClosePositionDialog",
+      "ownerLevel": 0,
+      "type": "function",
+      "functionName": "showClosePositionDialog",
+      "argumentCount": 1,
+      "source": "o=>{const n=r,i=t,l=nd();return e[i(559,\"s0OD\")](et[n(4523)+i(4688,\"qK)]\")],{position:o,resolve:l[i(5724,\"#eY9\")],reject:l[n(3408)]}),l[n(5108)]}"
+    },
+    "showReversePositionDialog": {
+      "found": true,
+      "path": "brokerConfig.customUI.showReversePositionDialog",
+      "ownerLevel": 0,
+      "type": "function",
+      "functionName": "showReversePositionDialog",
+      "argumentCount": 1,
+      "source": "o=>{const n=t,i=r,l=nd();e[i(2296)](et[i(1296)+i(2343)],{position:o,resolve:l[n(5222,\"s0OD\")],reject:l[n(1884,\"xu8q\")]})}"
+    }
+  },
+  "warnings": [],
+  "summary": {
+    "sameEventBus": true,
+    "bitunixCloseListenerCount": 2,
+    "bitunixReverseListenerCount": 1,
+    "brokerEventBusFound": true,
+    "brokerReverseMethodFound": true,
+    "brokerCloseMethodFound": false,
+    "customCloseDialogFound": true,
+    "customReverseDialogFound": true
+  },
+  "completedAt": "2026-11-15T07:43:52.864Z"
+}
