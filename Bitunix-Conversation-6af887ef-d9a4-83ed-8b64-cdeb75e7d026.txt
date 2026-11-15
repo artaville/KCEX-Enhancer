@@ -1,0 +1,6672 @@
+﻿BITUNIX CONVERSATION EXPORT
+Conversation ID: 6af887ef-d9a4-83ed-8b64-cdeb75e7d026
+Conversation URL: https://chatgpt.com/c/6af887ef-d9a4-83ed-8b64-cdeb75e7d026
+Conversation Title: برنامه ساخت افزونه Bitunix
+Export Date: 2026-11-15T10:24:16.775Z
+API Type: current
+Pages: 1
+Raw Messages: 244
+User Messages: 12
+Assistant Messages: 66
+Extracted Text Messages: 78
+History Complete: YES
+======================================================================
+
+
+کاربر | پیام 1 | 11/14/2026, 7:47:31 PM
+------------------------------------------------------------
+
+یادت هست چندتا اکستنشن زدی برام برای صرافی kcex که قابلیت های بیشتری رو برای من فراهم میکرد برای ترید؟ حالا همون اکستنشن رو میخوام برای صرافی bitunix
+در واقع اینا رو داشته باشه:
+1.شورتکات برای باز کردن لانگ و شورت و بستن پوزیشن(با تیک روشن خاموش)
+2.چارت های تایم فریم های ثانیه ای 1 و 5 و 10 و 15 و 20 و 30 و 45 (با تیک روشن خاموش)
+3.اضافه کردن اندیکاتور مورد نظرم که قبلا ترجمه کردی به جاوااسکریپت (با تیک روشن خاموش)
+4.الرت صدا برای تشکیل خط روی چارت (با تیک روشن خاموش)
+5.ستینگ ترید برای پوزیشن سایز و استاپ و تیپی با تیک ها (با تیک روشن خاموش)
+
+همه اینا رو قبلا برام انجام دادی و توی اکستنشن های مختلف وجود داره. حالا توی اینجا در بیتیونیکس میخوام همه ی جا باشه با تیک روشن خاموش. بعضیا توی لایبرری هستند و بعضیا هم در مخزن برات لینک فرستادم. 
+
+1.اسم اکستنشن Bitunix Enhancer
+نسخه 1.0
+عکس اکستنشن رو هم اینجا میفرستم. ایکون. پاپ اپ اکستنشن دارک شیشه ای باشه یکمم با رنگ ایکون مچ باشه
+
+حالا نیاز هست که که اول همه این موارد رو بررسی بکنی و بعد بنویسی. چند مرحله ای میخوای بریم جلو؟ 
+و اینکه میخوام هر کدوم از اینا داخل یک فایل جدا داخل زیپ باشن که با هم قاطی نشن موقع دیباگ
+
+اگر کدی میدی بهم که قرار بدم توی کنسول، کد قابل کپی بفرس اینجا و وقتی قرار دام توی کنسول یک پنجره جدا باز بشه و یک دکمه کپی داشته باشه برای کپی کردن و برات فرستادن
+
+نظرتو بگو
+
+
+دستیار | پیام 2 | 11/14/2026, 7:47:43 PM
+------------------------------------------------------------
+
+من این را به‌صورت یک پروژه‌ی یکپارچه و ماژولار جلو می‌برم؛ قبل از نوشتن کد، نسخه‌های قبلی را از لایبرری و مخزن بررسی می‌کنم، منطق هر قابلیت را جداگانه استخراج می‌کنم و بعد سازگاری آن‌ها را با رابط Bitunix می‌سنجم. هدف این است که هر قابلیت فایل مستقل، کلید روشن/خاموش جداگانه و گزارش دیباگ مخصوص خودش داشته باشد.
+
+
+دستیار | پیام 3 | 11/14/2026, 7:47:54 PM
+------------------------------------------------------------
+
+{"path":"/files/search","args":{"search_query":[{"q":"KCEX Enhancer extension source code versions v2.12 and earlier including seconds timeframe candle engine and trade shortcuts"},{"q":"TV Line Alert extension source code line detection sound alert and TradingView chart"},{"q":"JavaScript translated indicator code previously converted from Pine Script for TradingView"},{"q":"TradingView extension trade settings position size stop loss take profit controls"},{"q":"TV to KCEX extension Align Candle Opens TradingView Floating Timer source"}],"scope":{"surfaces":["library"]},"top_k":10}}
+
+
+دستیار | پیام 4 | 11/14/2026, 7:48:13 PM
+------------------------------------------------------------
+
+{"path":"/files/search","args":{"search_query":[{"q":"\"KCEX Enhancer\" \"2.12\""},{"q":"\"TV Line Alert\" \"1.2\" extension"},{"q":"\"TV to KCEX\" \"Align Candle Opens\""},{"q":"Pine Script indicator converted JavaScript for extension TradingView custom indicator"},{"q":"extension source code shortcut long short close position stop loss take profit size"}],"scope":{"surfaces":["library"]},"top_k":15}}
+
+
+دستیار | پیام 5 | 11/14/2026, 7:48:13 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/search","args":{"query":"manifest.json","repository_name":"artaville/KCEX-Enhancer","topn":15}}
+
+
+دستیار | پیام 6 | 11/14/2026, 7:48:13 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/search","args":{"query":"seconds timeframe","repository_name":"artaville/KCEX-Enhancer","topn":15}}
+
+
+دستیار | پیام 7 | 11/14/2026, 7:48:21 PM
+------------------------------------------------------------
+
+{"path":"/files/list","args":{"surface":"library","recursive":true,"limit":100,"sort":"created_at","sort_order":"desc"}}
+
+
+دستیار | پیام 8 | 11/14/2026, 7:48:29 PM
+------------------------------------------------------------
+
+از لایبرری چند نسخه‌ی مهم را پیدا کردم: `KCEX Enhancer v4.0.4`، ماژول شورتکات جداگانه، `KCEX Live Line Alarm 1.2` و `TV Line Alert 1.3`؛ همچنین فایل‌های نسخه‌ی پایدارتر `v2.12` هم موجود است. این‌ها را به‌عنوان منابع مقایسه‌ای بررسی می‌کنم، نه اینکه صرفاً کدهای KCEX را بدون تغییر روی Bitunix کپی کنم؛ چون بخش‌های وابسته به صرافی، مخصوصاً سفارش‌گذاری، باید جداگانه بازنویسی و آزمایش شوند.
+
+
+دستیار | پیام 9 | 11/14/2026, 7:48:36 PM
+------------------------------------------------------------
+
+{"path":"/files/materialize","args":{"items":[{"file_ref":{"file_id":"file_000000002cf08210b4d6b148a8878176"},"outputs":[{"representation":"raw_file"}]},{"file_ref":{"file_id":"file_000000000a90821099c1b8d429969291"},"outputs":[{"representation":"raw_file"}]},{"file_ref":{"file_id":"file_000000007088820aabf94b5f5dfe515e"},"outputs":[{"representation":"raw_file"}]},{"file_ref":{"file_id":"file_000000009f5c82438e27ea5d2c72c109"},"outputs":[{"representation":"raw_file"}]},{"file_ref":{"file_id":"file_0000000066a481f49508d3ff4a998fe0"},"outputs":[{"representation":"raw_file"}]}]}}
+
+
+دستیار | پیام 10 | 11/14/2026, 7:48:42 PM
+------------------------------------------------------------
+
+bash -lc python - <<'PY'
+import zipfile, os
+paths=[
+'/mnt/data/files/KCEX-Enhancer-v4.0.4.zip',
+'/mnt/data/files/KCEX-Enhancer-v4.0.4-Control-Shortcuts-Toggle.zip',
+'/mnt/data/files/KCEX-Live-Line-Alarm-1.2.zip',
+'/mnt/data/files/TV-Line-Alert-1.3.zip',
+'/mnt/data/files/TV-to-KCEX-Automation-Bot-v1.2.zip']
+for p in paths:
+ print('\n###',os.path.basename(p))
+ with zipfile.ZipFile(p) as z:
+  for i in z.infolist():
+   print(f'{i.file_size:8d}  {i.filename}')
+PY
+
+
+دستیار | پیام 11 | 11/14/2026, 7:48:59 PM
+------------------------------------------------------------
+
+bash -lc python - <<'PY'
+import zipfile, pathlib, re, json, os
+base=pathlib.Path('/mnt/data/work_bitunix_review'); base.mkdir(exist_ok=True)
+archives={
+'kcex404':'/mnt/data/files/KCEX-Enhancer-v4.0.4.zip',
+'kcex_shortcuts':'/mnt/data/files/KCEX-Enhancer-v4.0.4-Control-Shortcuts-Toggle.zip',
+'line_alarm':'/mnt/data/files/KCEX-Live-Line-Alarm-1.2.zip',
+'tv_line_alert':'/mnt/data/files/TV-Line-Alert-1.3.zip',
+'bot':'/mnt/data/files/TV-to-KCEX-Automation-Bot-v1.2.zip'}
+for name,p in archives.items():
+ d=base/name; d.mkdir(exist_ok=True)
+ with zipfile.ZipFile(p) as z: z.extractall(d)
+ print('\n###',name)
+ for f in d.rglob('*'):
+  if f.is_file() and f.suffix.lower() in ['.json','.html','.css','.txt','.js']:
+   print('\n--',f.relative_to(d),'--')
+   if f.name in ['manifest.json','popup.html','popup.js','popup.css','README-FA.txt','README_FA.txt','CHANGELOG.txt'] or f.name in ['shortcuts.js']:
+    txt=f.read_text(errors='replace')
+    print(txt[:12000])
+PY
+
+
+دستیار | پیام 12 | 11/14/2026, 7:49:15 PM
+------------------------------------------------------------
+
+bash -lc python - <<'PY'
+from pathlib import Path
+import re
+base=Path('/mnt/data/work_bitunix_review')
+# custom indicator modules
+for rel in ['kcex404/custom-indicators.js','kcex_shortcuts/custom-indicators.js']:
+ p=base/rel
+ if p.exists():
+  t=p.read_text(errors='replace')
+  print('\n###',rel,'bytes',len(t))
+  for i,line in enumerate(t.splitlines(),1):
+   if re.search(r'Williams|RSI|CCI|ADX|QQE|HalfTrend|Trend|LaRSI|Pivot|Swing|indicator|study|name:|title:|shorttitle',line,re.I):
+    print(f'{i}: {line[:240]}')
+# manifests and popup data for core + alarms
+for rel in ['kcex404/manifest.json','kcex404/popup.html','kcex404/popup.js','kcex404/popup.css',
+            'kcex_shortcuts/popup.html','kcex_shortcuts/popup.js',
+            'line_alarm/KCEX-Live-Line-Alarm/manifest.json','line_alarm/KCEX-Live-Line-Alarm/README_FA.txt',
+            'tv_line_alert/manifest.json','tv_line_alert/README_FA.txt','tv_line_alert/popup.html','tv_line_alert/popup.js']:
+ p=base/rel
+ if p.exists():
+  t=p.read_text(errors='replace')
+  print('\n###',rel,'\n',t[:6500])
+PY
+
+
+دستیار | پیام 13 | 11/14/2026, 7:49:58 PM
+------------------------------------------------------------
+
+bash -lc python - <<'PY'
+from pathlib import Path
+import re
+base=Path('/mnt/data/work_bitunix_review')
+# Print key snippets from shortcut module and alert observers
+for rel, pats, cap in [
+ ('kcex404/shortcuts.js', r'addEventListener|keydown|place|order|slPrice|tpPrice|positionSize|sizePercent|price|WebSocket|confirm|function |const .*Selector|data-', 55),
+ ('kcex404/injected.js', r'WebSocket|/fapi|deal|kline|IndexedDB|indexedDB|resolution|SECOND|Second|function |class ', 55),
+ ('tv_line_alert/main-observer.js', r'itemsByColor|line|study|Williams|Pivot|alert|scan|MutationObserver|function |const .*KEY', 70),
+ ('line_alarm/KCEX-Live-Line-Alarm/main-observer.js', r'line|chart|alert|scan|MutationObserver|function |canvas|svg', 60),
+ ('tv_line_alert/README_FA.txt', r'.', 150),
+ ('line_alarm/KCEX-Live-Line-Alarm/README_FA.txt', r'.', 80),
+]:
+ p=base/rel
+ if not p.exists(): continue
+ lines=p.read_text(errors='replace').splitlines()
+ print('\n###',rel,'(lines',len(lines),')')
+ shown=0
+ for i,line in enumerate(lines,1):
+  if re.search(pats,line,re.I):
+   lo=max(1,i-2); hi=min(len(lines),i+2)
+   print(f'-- {lo}-{hi} --')
+   for j in range(lo,hi+1): print(f'{j}: {lines[j-1][:220]}')
+   shown += 1
+   if shown>=cap: break
+PY
+
+
+دستیار | پیام 14 | 11/14/2026, 7:50:08 PM
+------------------------------------------------------------
+
+bash -lc python - <<'PY'
+from pathlib import Path
+for rel in ['kcex404/popup.html','kcex404/popup.js','kcex404/popup.css','kcex404/manifest.json',
+            'kcex_shortcuts/popup.html','kcex_shortcuts/popup.js',
+            'tv_line_alert/README_FA.txt','tv_line_alert/main-observer.js',
+            'line_alarm/KCEX-Live-Line-Alarm/main-observer.js']:
+ p=Path('/mnt/data/work_bitunix_review')/rel
+ if not p.exists(): continue
+ lines=p.read_text(errors='replace').splitlines()
+ print('\n###',rel,'lines=',len(lines))
+ if len(lines)>150:
+  # selected focused range for observers, otherwise search first 60 lines and all config
+  if 'main-observer' in rel:
+   print('\n'.join(f'{i+1}: {x[:220]}' for i,x in enumerate(lines[:180])))
+  else:
+   print('\n'.join(f'{i+1}: {x[:220]}' for i,x in enumerate(lines[:150])))
+ else:
+  print('\n'.join(f'{i+1}: {x[:220]}' for i,x in enumerate(lines)))
+PY
+
+
+دستیار | پیام 15 | 11/14/2026, 7:50:33 PM
+------------------------------------------------------------
+
+bash -lc python - <<'PY'
+from pathlib import Path
+import re
+for rel in ['kcex404/shortcuts.js','tv_line_alert/main-observer.js','line_alarm/KCEX-Live-Line-Alarm/main-observer.js','tv_line_alert/service-worker.js','tv_line_alert/content.js','tv_line_alert/offscreen.js']:
+ p=Path('/mnt/data/work_bitunix_review')/rel
+ if not p.exists(): continue
+ lines=p.read_text(errors='replace').splitlines()
+ print('\n###',rel,'lines=',len(lines))
+ for i,x in enumerate(lines,1):
+  if re.match(r'\s*(async\s+)?function\s+\w+|\s*(const|let|class)\s+\w+\s*=\s*(async\s*)?\(',x):
+   print(f'{i}: {x.strip()[:200]}')
+PY
+
+
+دستیار | پیام 16 | 11/14/2026, 7:50:45 PM
+------------------------------------------------------------
+
+یک نکته‌ی مهم از بررسی کدها مشخص شد: ماژول اندیکاتوری که در نسخه‌ی `KCEX Enhancer v4.0.4` پیدا کردم، همان مجموعه‌ی **Williams %R + Swing Breakout + Pivot Channel** است؛ و منطق هشدار خط هم در نسخه‌ی `TV Line Alert 1.3` جداگانه قرار دارد. اما هشدار آن نسخه به ساختار داخلی چارت TradingView وابسته است، پس برای Bitunix باید اول ببینیم چارتش همان API/آبجکت‌ها را در اختیار می‌گذارد یا نه؛ کپی مستقیم این فایل احتمالاً کافی نیست.
+
+
+دستیار | پیام 17 | 11/14/2026, 7:50:57 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/search_installed_repositories_streaming","args":{"query":"KCEX-Enhancer","limit":10}}
+
+
+دستیار | پیام 18 | 11/14/2026, 7:50:57 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/search","args":{"query":"TV-Line-Alert","repository_name":"artaville/KCEX-Enhancer","topn":10}}
+
+
+دستیار | پیام 19 | 11/14/2026, 7:52:40 PM
+------------------------------------------------------------
+
+Worked for 5m 7s
+
+
+کاربر | پیام 20 | 11/14/2026, 7:52:40 PM
+------------------------------------------------------------
+
+اره برای تکت به تک اینها تقریبا بازم نیاز داریم که کدهای پشت سایت رو در کنسول استخرااج بکنیم. نیاز به استخراج های زیادی داریم. برای هر کدوم در جلو برام کد بفرس برای کنسول و برات بفرستم نتیجه رو
+
+
+دستیار | پیام 21 | 11/14/2026, 7:52:51 PM
+------------------------------------------------------------
+
+bash -lc python - <<'PY'
+import zipfile, os
+paths=[
+'/mnt/data/files/KCEX-Enhancer-v4.0.4.zip',
+'/mnt/data/files/KCEX-Enhancer-v4.0.4-Control-Shortcuts-Toggle.zip',
+'/mnt/data/files/KCEX-Live-Line-Alarm-1.2.zip',
+'/mnt/data/files/TV-Line-Alert-1.3.zip',
+'/mnt/data/files/TV-to-KCEX-Automation-Bot-v1.2.zip'
+]
+for p in paths:
+ print('\n###',os.path.basename(p))
+ with zipfile.ZipFile(p) as z:
+  for i in z.infolist():
+   print(i.filename, i.file_size)
+PY
+
+
+دستیار | پیام 22 | 11/14/2026, 7:53:04 PM
+------------------------------------------------------------
+
+bash -lc python - <<'PY'
+import zipfile, re, os
+p='/mnt/data/files/KCEX-Enhancer-v4.0.4-Control-Shortcuts-Toggle.zip'
+with zipfile.ZipFile(p) as z:
+ for fn in ['manifest.json','popup.html','popup.js','shortcuts.js','custom-indicators.js']:
+  s=z.read(fn).decode('utf-8','replace')
+  print('\n\n########',fn,'LEN',len(s),'########')
+  if fn=='custom-indicators.js':
+   for pat in ['Williams','Swing','Pivot','function ','class ','__KCEX_CUSTOM_PINE']:
+    print('\nPAT',pat)
+    for m in list(re.finditer(re.escape(pat),s,re.I))[:12]: print(s[max(0,m.start()-140):m.start()+260].replace('\n',' ')[:400])
+  elif fn=='shortcuts.js':
+   for pat in ['LONG','SHORT','CLOSE','placeOrder','createOrder','stopLoss','takeProfit','positionSize','addEventListener','keydown','fetch(']:
+    print('\nPAT',pat)
+    for m in list(re.finditer(re.escape(pat),s,re.I))[:8]: print(s[max(0,m.start()-110):m.start()+230].replace('\n',' ')[:350])
+  else: print(s[:8000])
+
+p='/mnt/data/files/TV-Line-Alert-1.3.zip'
+with zipfile.ZipFile(p) as z:
+ for fn in ['manifest.json','popup.html','popup.js','main-observer.js','content.js']:
+  s=z.read(fn).decode('utf-8','replace')
+  print('\n\n######## TVLINE',fn,'LEN',len(s),'########')
+  if fn in ['main-observer.js','content.js']:
+   for pat in ['getElementsBy','querySelector','LineTool','lineTool','study','alert','postMessage','message','getSourceById','drawing','shape','localStorage']:
+    print('\nPAT',pat)
+    for m in list(re.finditer(re.escape(pat),s,re.I))[:8]: print(s[max(0,m.start()-100):m.start()+200].replace('\n',' ')[:320])
+  else: print(s[:5000])
+PY
+
+
+دستیار | پیام 23 | 11/14/2026, 7:53:24 PM
+------------------------------------------------------------
+
+Worked for 44s
+
+
+کاربر | پیام 24 | 11/14/2026, 7:53:24 PM
+------------------------------------------------------------
+
+و بگو به تریتب از کدوم شروع بکنیم و بریم جلو بهتره. جوری باشه ک اگر دومیو انجام دادیم اولی به باگ نخوره و مستقل از هم باشن
+
+
+دستیار | پیام 25 | 11/14/2026, 7:53:31 PM
+------------------------------------------------------------
+
+کاملاً موافقم. بهتر است استخراج‌ها را مرحله‌ای و **کاملاً خواندنی (Read-only)** انجام بدهیم؛ هر اسکریپت فقط اطلاعات همان بخش را جمع کند، پنجره‌ی گزارش و دکمه‌ی کپی مستقل داشته باشد و بعد از اتمام، listenerها و hookهای خودش را پاک کند. ترتیب پیشنهادی من این است: اول شناسایی محیط و چارت Bitunix، بعد مسیرهای داده و کندل، سپس اجزای سفارش‌گذاری، بعد اندیکاتور، تشخیص خطوط و در پایان تنظیمات مدیریت ریسک. این ترتیب باعث می‌شود تست یک قابلیت، وضعیت قابلیت قبلی را دست‌کاری نکند.
+
+
+دستیار | پیام 26 | 11/14/2026, 7:53:37 PM
+------------------------------------------------------------
+
+bash -lc python - <<'PY'
+import zipfile, os
+files=[
+'/mnt/data/files/KCEX-Enhancer-v4.0.4.zip',
+'/mnt/data/files/KCEX-Enhancer-v4.0.4-Control-Shortcuts-Toggle.zip',
+'/mnt/data/files/KCEX-Live-Line-Alarm-1.2.zip',
+'/mnt/data/files/TV-Line-Alert-1.3.zip',
+'/mnt/data/files/TV-to-KCEX-Automation-Bot-v1.2.zip'
+]
+for f in files:
+ print('\n###',os.path.basename(f))
+ with zipfile.ZipFile(f) as z:
+  for i in z.infolist():
+   print(i.filename, i.file_size)
+PY
+
+
+دستیار | پیام 27 | 11/14/2026, 7:54:09 PM
+------------------------------------------------------------
+
+bash -lc python - <<'PY'
+import zipfile
+f='/mnt/data/files/KCEX-Enhancer-v4.0.4-Control-Shortcuts-Toggle.zip'
+with zipfile.ZipFile(f) as z:
+ for n in ['manifest.json','README-FA.txt','popup.html','popup.js']:
+  print('\n===== '+n+' =====')
+  s=z.read(n).decode('utf-8','replace')
+  print(s[:9000])
+f='/mnt/data/files/TV-Line-Alert-1.3.zip'
+with zipfile.ZipFile(f) as z:
+ for n in ['manifest.json','README_FA.txt','main-observer.js']:
+  print('\n===== '+n+' =====')
+  s=z.read(n).decode('utf-8','replace')
+  print(s[:8500])
+PY
+
+
+دستیار | پیام 28 | 11/14/2026, 7:55:31 PM
+------------------------------------------------------------
+
+Worked for 2m 6s
+
+
+دستیار | پیام 29 | 11/14/2026, 7:55:31 PM
+------------------------------------------------------------
+
+دقیقاً همین روش را اجرا می‌کنیم. من ترجیح می‌دهم قبل از ساخت هر ماژول، چند مرحله استخراج و شناخت ساختار داخلی Bitunix انجام بدهیم تا از همان ابتدا کدنویسی بر اساس اطلاعات واقعی سایت باشد.
+
+### ترتیب پیشنهادی پروژه
+
+<box border radius="lg" gap={3} padding={3}>
+  <list connector="solid" marker="number" gap={3}>
+    <list-item>
+      **شناسایی اولیه Bitunix**
+
+      <badge color="success">شروع از این مرحله</badge>
+
+      شناسایی ساختار سایت، چارت، iframeها، کتابخانه‌های جاوااسکریپت و متغیرهای داخلی.
+    </list-item>
+    <list-item>
+      **استخراج موتور چارت و اطلاعات معاملات**
+
+      بررسی REST، WebSocket، اطلاعات معاملات لحظه‌ای، کندل‌ها و امکان ساخت تایم‌فریم‌های ثانیه‌ای.
+    </list-item>
+    <list-item>
+      **استخراج ساختار اندیکاتور**
+
+      شناسایی API چارت، محل ثبت اندیکاتورها، ساختار داده‌ها و روش رسم خروجی اندیکاتور JavaScript قبلی.
+    </list-item>
+    <list-item>
+      **استخراج ساختار خطوط چارت**
+
+      بررسی آبجکت خطوط، رندرر و تغییرات واقعی خطوط برای ساخت هشدار صوتی بدون آلارم کاذب هنگام زوم و جابه‌جایی.
+    </list-item>
+    <list-item>
+      **استخراج سیستم سفارش‌گذاری**
+
+      شناسایی باز کردن لانگ، شورت، بستن پوزیشن، دکمه‌های تأیید و نحوه ارسال سفارش.
+    </list-item>
+    <list-item>
+      **استخراج تنظیمات مدیریت ریسک**
+
+      بررسی Position Size، اسلایدرها، Stop Loss و Take Profit و ارتباطشان با پنل سفارش.
+    </list-item>
+    <list-item>
+      **ساخت و ادغام نهایی**
+
+      ساخت پنج ماژول مستقل، پنل کنترل، تست جداگانه و در نهایت بسته ZIP نسخه 1.0.
+    </list-item>
+  </list>
+</box>
+
+یک نکته مهم: مستندات رسمی Bitunix در حال حاضر برای API عمومی کندل‌ها بازه‌های دقیقه‌ای و بالاتر را مستند کرده‌اند و در کانال‌های کندلی WebSocket نیز تایم‌فریم ثانیه‌ای فهرست نشده است. بنابراین برای ساخت ثانیه‌ای احتمالاً باید معاملات واقعی لحظه‌ای را دریافت و خودمان تجمیع کنیم؛ البته این را در مرحله دوم با استخراج واقعی سایت تأیید می‌کنیم. <Cite refs={["turn655076search9","turn655076search2"]}/>
+
+### ساختار نهایی افزونه
+
+من فایل‌ها را این‌طور جدا نگه می‌دارم:
+
+```text
+Bitunix-Enhancer-v1.0/
+│
+├── manifest.json
+├── popup.html
+├── popup.css
+├── popup.js
+├── background.js
+│
+├── shared/
+│   ├── settings.js
+│   └── logger.js
+│
+├── modules/
+│   ├── trade-shortcuts/
+│   ├── seconds-chart/
+│   ├── custom-indicator/
+│   ├── line-alert/
+│   └── trade-settings/
+│
+├── icons/
+│
+└── README_FA.txt
+```
+
+هر ماژول:
+- فایل‌های اختصاصی خودش را دارد.
+- کلید روشن و خاموش مستقل دارد.
+- تنظیماتش جدا ذخیره می‌شود.
+- خطاهایش جداگانه ثبت می‌شوند.
+- بدون نیاز به فعال بودن ماژول‌های دیگر کار می‌کند.
+
+حتی برای خاموش‌کردن یک قابلیت، تمام listenerها و تایمرهای متعلق به همان قابلیت متوقف می‌شوند.
+
+---
+
+## مرحله اول: استخراج اولیه Bitunix
+
+<badge color="success">کد شماره ۱ — فقط خواندن اطلاعات</badge>
+
+ابتدا وارد Bitunix شو و یک صفحه Futures باز کن. بهتر است روی BTCUSDT باشی و چارت به‌طور کامل نمایش داده شده باشد.
+
+هیچ سفارشی ثبت نکن و تنظیمات چارت را هم تغییر نده.
+
+سپس F12 را بزن، وارد Console شو و کد زیر را اجرا کن.
+
+این کد:
+- ساختار چارت را بررسی می‌کند.
+- Canvas و iframeها را پیدا می‌کند.
+- کتابخانه‌های چارت را شناسایی می‌کند.
+- متغیرهای داخلی مرتبط با TradingView و Chart را پیدا می‌کند.
+- آدرس منابع شبکه و فایل‌های بارگذاری‌شده را ثبت می‌کند.
+- هیچ سفارشی نمی‌فرستد و هیچ تنظیمی را تغییر نمی‌دهد.
+- در پایان یک پنجره گزارش با دکمه کپی باز می‌کند.
+
+<CodeBlock language="javascript" editable>
+(() => {
+  'use strict';
+
+  const TAG = '__BITUNIX_DIAG_01__';
+  const PANEL_ID = '__bitunix_diag_01_panel__';
+
+  const previous = document.getElementById(PANEL_ID);
+  if (previous) previous.remove();
+
+  const startedAt = new Date().toISOString();
+
+  const safe = (fn, fallback = null) => {
+    try {
+      const value = fn();
+      return value === undefined ? fallback : value;
+    } catch (_) {
+      return fallback;
+    }
+  };
+
+  const clean = (value, max = 180) =>
+    String(value || '').replace(/\s+/g, ' ').trim().slice(0, max);
+
+  function safeURL(raw) {
+    try {
+      const u = new URL(raw, location.href);
+      return u.origin + u.pathname;
+    } catch (_) {
+      return '[unavailable]';
+    }
+  }
+
+  function visible(el) {
+    return safe(() => {
+      const r = el.getBoundingClientRect();
+      const s = getComputedStyle(el);
+      return r.width > 3 && r.height > 3 &&
+        s.display !== 'none' &&
+        s.visibility !== 'hidden';
+    }, false);
+  }
+
+  function rect(el) {
+    const r = safe(() => el.getBoundingClientRect());
+    if (!r) return null;
+
+    return {
+      x: Math.round(r.x),
+      y: Math.round(r.y),
+      width: Math.round(r.width),
+      height: Math.round(r.height)
+    };
+  }
+
+  function describe(el) {
+    return {
+      tag: el.tagName,
+      id: el.id || null,
+      className: clean(
+        typeof el.className === 'string'
+          ? el.className
+          : ''
+      ),
+      role: el.getAttribute('role'),
+      ariaLabel: clean(el.getAttribute('aria-label')),
+      title: clean(el.getAttribute('title')),
+      testId: el.getAttribute('data-testid'),
+      visible: visible(el),
+      rect: rect(el),
+      canvas: el.tagName === 'CANVAS'
+        ? {
+            width: el.width,
+            height: el.height
+          }
+        : undefined
+    };
+  }
+
+  function describeParents(el) {
+    const result = [];
+    let current = el;
+
+    for (let i = 0; current && i < 6; i++) {
+      result.push({
+        tag: current.tagName,
+        id: current.id || null,
+        className: clean(
+          typeof current.className === 'string'
+            ? current.className
+            : ''
+        )
+      });
+      current = current.parentElement;
+    }
+
+    return result;
+  }
+
+  const report = {
+    diagnostic: TAG,
+    startedAt,
+    page: {},
+    chartCandidates: [],
+    chartParents: [],
+    iframes: [],
+    canvases: [],
+    buttons: [],
+    inputs: [],
+    scripts: [],
+    chartGlobals: [],
+    globalNames: [],
+    networkResources: [],
+    errors: [],
+    safety: {
+      readOnly: true,
+      noOrdersSent: true,
+      noDOMInteractions: true,
+      noStorageRead: true,
+      noCookiesRead: true,
+      noFetchOrWebSocketInterception: true,
+      sensitiveInputValuesExcluded: true,
+      queryStringsRemovedFromURLs: true
+    }
+  };
+
+  // 1. Page information
+  report.page = {
+    host: location.host,
+    origin: location.origin,
+    path: location.pathname,
+    title: document.title,
+    readyState: document.readyState,
+    language: navigator.language,
+    online: navigator.onLine,
+    userAgent: navigator.userAgent,
+    viewport: {
+      width: innerWidth,
+      height: innerHeight,
+      devicePixelRatio
+    }
+  };
+
+  // 2. Find chart-related DOM elements
+  const selectors = [
+    'canvas',
+    'iframe',
+    '[id*="chart" i]',
+    '[class*="chart" i]',
+    '[id*="kline" i]',
+    '[class*="kline" i]',
+    '[id*="tradingview" i]',
+    '[class*="tradingview" i]'
+  ];
+
+  const found = new Set();
+
+  for (const selector of selectors) {
+    try {
+      document.querySelectorAll(selector).forEach(el => {
+        if (found.size < 180) found.add(el);
+      });
+    } catch (_) {}
+  }
+
+  const candidates = Array.from(found)
+    .filter(visible)
+    .slice(0, 140);
+
+  report.chartCandidates = candidates.map(describe);
+
+  report.chartParents = candidates
+    .slice(0, 14)
+    .map(el => ({
+      element: describe(el),
+      parents: describeParents(el)
+    }));
+
+  // 3. Canvases
+  report.canvases = Array.from(
+    document.querySelectorAll('canvas')
+  ).slice(0, 60).map(describe);
+
+  // 4. Iframes
+  report.iframes = Array.from(
+    document.querySelectorAll('iframe')
+  ).slice(0, 30).map(frame => ({
+    ...describe(frame),
+    src: safeURL(frame.getAttribute('src') || ''),
+    sameOrigin: safe(() => {
+      void frame.contentWindow.document.location.href;
+      return true;
+    }, false)
+  }));
+
+  // 5. Visible buttons
+  report.buttons = Array.from(
+    document.querySelectorAll('button,[role="button"]')
+  )
+    .filter(visible)
+    .slice(0, 120)
+    .map(el => ({
+      tag: el.tagName,
+      text: clean(el.innerText || el.textContent, 65),
+      ariaLabel: clean(el.getAttribute('aria-label')),
+      title: clean(el.title),
+      className: clean(
+        typeof el.className === 'string' ? el.className : ''
+      ),
+      disabled: !!el.disabled,
+      rect: rect(el)
+    }));
+
+  // 6. Inputs: metadata only, never values
+  report.inputs = Array.from(
+    document.querySelectorAll(
+      'input,textarea,[role="spinbutton"],[contenteditable="true"]'
+    )
+  )
+    .filter(visible)
+    .slice(0, 80)
+    .map(el => ({
+      tag: el.tagName,
+      type: el.getAttribute('type'),
+      name: clean(el.getAttribute('name')),
+      placeholder: clean(el.getAttribute('placeholder')),
+      ariaLabel: clean(el.getAttribute('aria-label')),
+      role: el.getAttribute('role'),
+      className: clean(
+        typeof el.className === 'string' ? el.className : ''
+      ),
+      rect: rect(el)
+    }));
+
+  // 7. Loaded JavaScript files
+  report.scripts = Array.from(document.scripts)
+    .filter(s => s.src)
+    .slice(0, 100)
+    .map(s => safeURL(s.src));
+
+  // 8. Chart-related window globals
+  const globalNames = safe(
+    () => Object.getOwnPropertyNames(window),
+    []
+  );
+
+  const globalPattern =
+    /bitunix|tradingview|chart|kline|candle|widget|market|futures|exchange|socket|websocket|ticker/i;
+
+  report.globalNames = globalNames
+    .filter(name => globalPattern.test(name))
+    .slice(0, 120);
+
+  const knownGlobals = [
+    'TradingView',
+    'TradingViewApi',
+    'tvWidget',
+    'tvChart',
+    '_exposed_chartWidgetCollection',
+    '__INITIAL_STATE__',
+    '__NEXT_DATA__'
+  ];
+
+  const inspectGlobals = new Set([
+    ...report.globalNames,
+    ...knownGlobals
+  ]);
+
+  report.chartGlobals = Array.from(inspectGlobals)
+    .slice(0, 150)
+    .map(name => {
+      const value = safe(() => window[name]);
+
+      return {
+        name,
+        type: typeof value,
+        constructor: safe(
+          () => value?.constructor?.name,
+          null
+        ),
+        isFunction: typeof value === 'function',
+        functionName: typeof value === 'function'
+          ? value.name
+          : null
+      };
+    });
+
+  // 9. Existing network resource paths
+  const resourcePattern =
+    /bitunix|kline|candl|chart|tradingview|socket|ticker|market|contract|futures|depth|trade|deal|stream|ws/i;
+
+  const resources = safe(
+    () => performance.getEntriesByType('resource'),
+    []
+  );
+
+  const resourceMap = new Map();
+
+  for (const item of resources) {
+    const url = safeURL(item.name);
+
+    if (!resourcePattern.test(url)) continue;
+
+    const key = url + '|' + item.initiatorType;
+
+    resourceMap.set(key, {
+      url,
+      initiatorType: item.initiatorType,
+      durationMs: Math.round(item.duration),
+      transferSize: item.transferSize || 0
+    });
+  }
+
+  report.networkResources = Array.from(
+    resourceMap.values()
+  ).slice(-120);
+
+  report.finishedAt = new Date().toISOString();
+
+  // 10. Create report window
+  const output = JSON.stringify(report, null, 2);
+
+  const overlay = document.createElement('div');
+  overlay.id = PANEL_ID;
+
+  overlay.style.cssText = `
+    position:fixed;
+    inset:0;
+    z-index:2147483647;
+    background:rgba(4,8,18,.78);
+    backdrop-filter:blur(12px);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:18px;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+    color:#e8edf8;
+  `;
+
+  const box = document.createElement('div');
+
+  box.style.cssText = `
+    width:min(950px,96vw);
+    height:min(780px,92vh);
+    background:rgba(18,25,43,.96);
+    border:1px solid rgba(120,150,210,.35);
+    border-radius:16px;
+    padding:18px;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    box-sizing:border-box;
+    box-shadow:0 20px 80px rgba(0,0,0,.55);
+  `;
+
+  const header = document.createElement('div');
+  header.textContent = 'BITUNIX ENHANCER — DIAGNOSTIC 01';
+  header.style.cssText =
+    'font-size:16px;font-weight:bold;color:#90bfff;';
+
+  const description = document.createElement('div');
+  description.textContent =
+    'گزارش شناسایی اولیه آماده است. اطلاعات زیر را کپی کن و برای من بفرست.';
+  description.style.cssText =
+    'font-size:12px;color:#aab6cb;';
+
+  const area = document.createElement('textarea');
+  area.value = output;
+  area.readOnly = true;
+
+  area.style.cssText = `
+    width:100%;
+    flex:1;
+    min-height:0;
+    resize:none;
+    box-sizing:border-box;
+    background:rgba(5,10,20,.8);
+    color:#d8e6ff;
+    border:1px solid rgba(120,150,210,.25);
+    border-radius:9px;
+    padding:12px;
+    font:11px/1.5 Consolas,monospace;
+    outline:none;
+  `;
+
+  const footer = document.createElement('div');
+  footer.style.cssText =
+    'display:flex;align-items:center;gap:10px;';
+
+  const copyButton = document.createElement('button');
+  copyButton.textContent = 'کپی گزارش کامل';
+  copyButton.style.cssText = `
+    background:#3478df;
+    color:white;
+    border:0;
+    border-radius:8px;
+    padding:11px 22px;
+    cursor:pointer;
+    font-weight:bold;
+  `;
+
+  const closeButton = document.createElement('button');
+  closeButton.textContent = 'بستن';
+  closeButton.style.cssText = `
+    background:rgba(255,255,255,.08);
+    color:#ddd;
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:8px;
+    padding:11px 22px;
+    cursor:pointer;
+  `;
+
+  const status = document.createElement('span');
+  status.textContent = 'آماده';
+  status.style.cssText =
+    'font-size:12px;color:#9eb0ce;';
+
+  copyButton.onclick = async () => {
+    try {
+      await navigator.clipboard.writeText(output);
+      status.textContent = 'گزارش کپی شد؛ اینجا Paste کن.';
+      status.style.color = '#83e3a8';
+    } catch (_) {
+      area.focus();
+      area.select();
+      const ok = document.execCommand('copy');
+      status.textContent = ok
+        ? 'گزارش کپی شد.'
+        : 'متن انتخاب شد؛ Ctrl+C بزن.';
+    }
+  };
+
+  closeButton.onclick = () => overlay.remove();
+
+  footer.append(copyButton, closeButton, status);
+  box.append(header, description, area, footer);
+  overlay.append(box);
+
+  document.documentElement.append(overlay);
+
+  console.info(
+    '[BITUNIX DIAG 01] Read-only scan completed. Report panel opened.'
+  );
+
+})();
+</CodeBlock>
+
+### بعد از اجرای کد چه کار کنی؟
+
+روی «کپی گزارش کامل» بزن و کل گزارش را همین‌جا بفرست. فعلاً فقط همین کد شماره ۱ را اجرا کن.
+
+من بر اساس خروجی آن، کد شماره ۲ را دقیقاً متناسب با ساختار واقعی Bitunix می‌نویسم؛ قرار نیست از قبل برای همه مراحل کدهای عمومی و حدسی آماده کنیم.
+
+یک نکته امنیتی: کدهای استخراجی ما نباید API Key، رمز عبور، کوکی، توکن ورود یا اطلاعات حساس حساب را جمع‌آوری کنند. گزارش اول هم عمداً این موارد را نمی‌خواند.
+
+**و درباره آیکون:** تصویری که گفتی را هم بعداً در طراحی پنل شیشه‌ای تیره استفاده می‌کنیم؛ رنگ‌بندی popup را با همان هماهنگ می‌کنم.
+
+
+کاربر | پیام 30 | 11/14/2026, 7:58:48 PM
+------------------------------------------------------------
+
+یک اپشن هم یادم رفت و ان تایمر در چارت به صورت اورلی شده و بزرگ و با اون تغییر رنگ در 20 درصد پایانیه
+توی پاپ اپ هم دکمه سیو نباشه و با تغییر هر کدوم، در همون لحظه سیو بشه و بمونه
+
+الان کد را قرار میدهم و نتیجه را میگویم. به خاطر اینکه همیشه روی ارز xautusdt ترید میکنم در فیوچرز، روی این ارز نتیجه را گزارش میدهم
+
+
+دستیار | پیام 31 | 11/14/2026, 7:59:01 PM
+------------------------------------------------------------
+
+Worked for 12s
+
+
+دستیار | پیام 32 | 11/14/2026, 7:59:01 PM
+------------------------------------------------------------
+
+حتماً. این قابلیت را هم به فهرست اضافه می‌کنیم و به‌صورت یک ماژول مستقل می‌سازیم.
+
+### قابلیت ششم: Floating Candle Timer
+
+<AsyncImage query="large floating candle countdown timer overlay trading chart dark interface TradingView countdown timer" aspectRatio="16:9" maxHeight={150}/>
+
+ویژگی‌ها:
+- تایمر بزرگ و شناور روی چارت (Overlay).
+- نمایش زمان باقی‌مانده تا بسته‌شدن کندل.
+- تغییر رنگ تایمر در ۲۰ درصد پایانی عمر کندل.
+- هماهنگی ظاهری با تم افزونه.
+- کلید روشن/خاموش مستقل.
+
+### اصلاح پنل تنظیمات
+
+دکمه Save کلاً حذف می‌شود.
+
+هر تغییری که انجام بدهی، همان لحظه ذخیره می‌شود و با بستن و بازکردن مرورگر یا تغییر صفحه از بین نمی‌رود. برای این کار از ذخیره‌سازی داخلی افزونه استفاده می‌کنیم.
+
+### فهرست نهایی قابلیت‌ها
+
+| ماژول | قابلیت |
+|---|---|
+| 01 | شورتکات لانگ، شورت و بستن پوزیشن |
+| 02 | تایم‌فریم‌های ثانیه‌ای |
+| 03 | اندیکاتور اختصاصی JavaScript |
+| 04 | هشدار صوتی تشکیل خطوط |
+| 05 | تنظیمات Position Size، SL و TP |
+| 06 | تایمر شناور و تغییر رنگ ۲۰ درصد پایانی |
+
+برای تست اولیه، **XAUTUSDT در Futures** انتخاب خوبی است. تمام استخراج‌ها را روی همین نماد انجام می‌دهیم تا اطلاعات واقعی چارت و معاملاتت را داشته باشیم.
+
+منتظر گزارش کد شماره ۱ هستم. بعد از بررسی آن، کد شماره ۲ را متناسب با ساختار واقعی Bitunix می‌نویسم.
+
+
+کاربر | پیام 33 | 11/14/2026, 8:01:31 PM
+------------------------------------------------------------
+
+[گزارشات بیتیونیکس1.txt](https://github.com/artaville/KCEX-Enhancer/blob/main/%DA%AF%D8%B2%D8%A7%D8%B1%D8%B4%D8%A7%D8%AA%20%D8%A8%DB%8C%D8%AA%DB%8C%D9%88%D9%86%DB%8C%DA%A9%D8%B31.txt "گزارشات بیتیونیکس1.txt")
+
+
+دستیار | پیام 34 | 11/14/2026, 8:01:36 PM
+------------------------------------------------------------
+
+گزارش را از مخزن باز می‌کنم و بر اساس خروجی واقعی XAUTUSDT مرحله دوم را طراحی می‌کنم. در این مرحله فقط اطلاعات چارت و جریان داده را بررسی می‌کنیم؛ هیچ کد معاملاتی یا تغییردهنده‌ای اجرا نخواهد شد.
+
+
+دستیار | پیام 35 | 11/14/2026, 8:01:37 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_file","args":{"repository_full_name":"artaville/KCEX-Enhancer","path":"\u06af\u0632\u0627\u0631\u0634\u0627\u062a \u0628\u06cc\u062a\u06cc\u0648\u0646\u06cc\u06a9\u06331.txt","encoding":"utf-8"}}
+
+
+دستیار | پیام 36 | 11/14/2026, 8:01:49 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_file","args":{"repository_full_name":"artaville/KCEX-Enhancer","path":"\u06af\u0632\u0627\u0631\u0634\u0627\u062a \u0628\u06cc\u062a\u06cc\u0648\u0646\u06cc\u06a9\u06331.txt","encoding":"utf-8"}}
+
+
+دستیار | پیام 37 | 11/14/2026, 8:02:00 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_file","args":{"repository_full_name":"artaville/KCEX-Enhancer","path":"\u06af\u0632\u0627\u0631\u0634\u0627\u062a \u0628\u06cc\u062a\u06cc\u0648\u0646\u06cc\u06a9\u06331.txt","encoding":"utf-8"}}
+
+
+دستیار | پیام 38 | 11/14/2026, 8:02:42 PM
+------------------------------------------------------------
+
+Worked for 1m 8s
+
+
+دستیار | پیام 39 | 11/14/2026, 8:02:24 PM
+------------------------------------------------------------
+
+گزارش شماره ۱ را بررسی کردم. <badge color="success">استخراج موفق</badge>
+
+چند نتیجه مهم داریم:
+
+1. آدرس دقیق صفحه `www.bitunix.com/contract-trade/XAUTUSDT` است و نماد موردنظر درست شناسایی شده.
+2. سایت از کتابخانه‌ای با نام `TradingView` استفاده می‌کند و در محیط JavaScript یک آبجکت با همین نام وجود دارد.
+3. متغیرهای عمومی `tvWidget` و `tvChart` در این گزارش به‌عنوان آبجکت قابل استفاده شناسایی نشدند. باید مسیر دسترسی واقعی به چارت را پیدا کنیم.
+4. دو Canvas پیدا شده، اما متعلق به Order Book هستند، نه چارت اصلی.
+5. دکمه‌های واقعی `Open Long` و `Open Short` شناسایی شده‌اند.
+6. مسیرهای درخواست سفارش Market و ایجاد Stop Loss / Take Profit هم در منابع شبکه دیده می‌شوند. فعلاً فقط مسیرشان را داریم، نه ساختار درخواست و پارامترهایشان.
+
+**نتیجه:** هنوز نباید سراغ ساخت تایم‌فریم یا سفارش‌گذاری برویم. اول باید موتور واقعی چارت را پیدا کنیم؛ چون اندیکاتور، هشدار خطوط، تایمر و کندل‌های ثانیه‌ای همگی به همین مرحله وابسته‌اند.
+
+## مرحله دوم: شناسایی موتور اصلی چارت
+
+<badge color="success">کد شماره ۲ — Bitunix Chart Inspector</badge>
+
+قبل از اجرا، یک کار کوچک انجام بده: پنجره Chrome را موقتاً Maximize کن تا چارت در حالت دسکتاپ کامل نمایش داده شود. نماد را همان XAUTUSDT نگه دار.
+
+این کد نسبت به اولی تخصصی‌تر است و موارد زیر را استخراج می‌کند:
+
+- آبجکت‌های داخلی TradingView و متدهای قابل دسترسی آن‌ها.
+- ساختار DOM و اجزای پنهان چارت.
+- Canvas و SVGهای مربوط به نمودار قیمت.
+- Shadow DOMهای قابل دسترسی.
+- کنترل‌های تایم‌فریم و تنظیمات چارت.
+- فایل‌های JavaScript مرتبط با موتور نمودار.
+- ارتباط احتمالی اجزای چارت با Vue و React.
+
+این اسکریپت هم فقط خواندنی است و هیچ تغییری در سایت ایجاد نمی‌کند.
+
+<CodeBlock language="javascript" editable>
+(() => {
+  'use strict';
+
+  const TAG = 'BITUNIX_CHART_INSPECTOR_02';
+  const PANEL_ID = '__bitunix_chart_inspector_02__';
+
+  document.getElementById(PANEL_ID)?.remove();
+
+  const startedAt = new Date().toISOString();
+
+  const safe = (fn, fallback = null) => {
+    try {
+      const v = fn();
+      return v === undefined ? fallback : v;
+    } catch (_) {
+      return fallback;
+    }
+  };
+
+  const clean = (v, max = 160) =>
+    String(v ?? '').replace(/\s+/g, ' ').trim().slice(0, max);
+
+  const chartPattern =
+    /chart|tradingview|trading-view|kline|candle|lightweight|tv-widget|series|pane|plot|pricechart|datafeed/i;
+
+  const relevantKey =
+    /chart|widget|study|series|symbol|resolution|interval|time|pane|price|tv|trading|datafeed|feed|kline|candle|model|source|scale|renderer/i;
+
+  function typeOf(v) {
+    if (v === null) return 'null';
+    if (Array.isArray(v)) return 'Array';
+    if (typeof v !== 'object' && typeof v !== 'function') {
+      return typeof v;
+    }
+
+    return safe(() => {
+      const p = Object.getPrototypeOf(v);
+      const d = p && Object.getOwnPropertyDescriptor(p, 'constructor');
+      return d && typeof d.value === 'function'
+        ? d.value.name || 'Object'
+        : 'Object';
+    }, 'Object');
+  }
+
+  function getOwnProperties(obj) {
+    return safe(() => Object.getOwnPropertyNames(obj), []);
+  }
+
+  function getDataValue(obj, key) {
+    const d = safe(() => Object.getOwnPropertyDescriptor(obj, key));
+
+    if (!d || !Object.prototype.hasOwnProperty.call(d, 'value')) {
+      return undefined;
+    }
+
+    return d.value;
+  }
+
+  function inspectObject(obj, path, depth = 0, seen = new WeakSet()) {
+    if (obj === null || obj === undefined) {
+      return { path, type: String(obj) };
+    }
+
+    if (
+      (typeof obj !== 'object' && typeof obj !== 'function') ||
+      depth > 3
+    ) {
+      return {
+        path,
+        type: typeof obj,
+        value: typeof obj === 'string'
+          ? clean(obj, 100)
+          : undefined
+      };
+    }
+
+    if (seen.has(obj)) {
+      return { path, circular: true };
+    }
+
+    seen.add(obj);
+
+    const keys = getOwnProperties(obj).slice(0, 100);
+
+    const node = {
+      path,
+      type: typeOf(obj),
+      keyCount: keys.length,
+      properties: [],
+      relevantChildren: []
+    };
+
+    for (const key of keys) {
+      if (
+        /token|secret|password|cookie|authorization|signature|api.?key/i.test(key)
+      ) continue;
+
+      const desc = safe(
+        () => Object.getOwnPropertyDescriptor(obj, key)
+      );
+
+      if (!desc) continue;
+
+      const value = getDataValue(obj, key);
+
+      const entry = {
+        name: key,
+        type: desc.get || desc.set
+          ? 'accessor'
+          : typeof value,
+        constructor: value !== undefined
+          ? typeOf(value)
+          : null,
+        functionName: typeof value === 'function'
+          ? clean(value.name, 80)
+          : undefined
+      };
+
+      if (
+        relevantKey.test(key) &&
+        value !== null &&
+        value !== undefined &&
+        (typeof value === 'object' ||
+         typeof value === 'function')
+      ) {
+        node.relevantChildren.push(
+          inspectObject(
+            value,
+            path + '.' + key,
+            depth + 1,
+            seen
+          )
+        );
+      }
+
+      node.properties.push(entry);
+    }
+
+    return node;
+  }
+
+  function rect(el) {
+    const r = safe(() => el.getBoundingClientRect());
+
+    if (!r) return null;
+
+    return {
+      x: Math.round(r.x),
+      y: Math.round(r.y),
+      width: Math.round(r.width),
+      height: Math.round(r.height)
+    };
+  }
+
+  function classText(el) {
+    return clean(
+      typeof el.className === 'string'
+        ? el.className
+        : el.getAttribute('class') || '',
+      220
+    );
+  }
+
+  function ancestors(el, count = 7) {
+    const result = [];
+    let current = el;
+
+    while (current && result.length < count) {
+      result.push({
+        tag: current.tagName,
+        id: current.id || null,
+        className: classText(current)
+      });
+
+      current = current.parentElement;
+    }
+
+    return result;
+  }
+
+  function elementInfo(el) {
+    const attributes = {};
+
+    for (const attr of safe(
+      () => Array.from(el.attributes),
+      []
+    ).slice(0, 15)) {
+      if (
+        /token|secret|password|cookie|authorization/i.test(attr.name)
+      ) continue;
+
+      attributes[attr.name] = clean(attr.value, 110);
+    }
+
+    return {
+      tag: el.tagName,
+      id: el.id || null,
+      className: classText(el),
+      role: el.getAttribute('role'),
+      title: clean(el.getAttribute('title')),
+      ariaLabel: clean(el.getAttribute('aria-label')),
+      text: clean(el.innerText || el.textContent, 100),
+      rect: rect(el),
+      attributes,
+      parents: ancestors(el, 5)
+    };
+  }
+
+  const report = {
+    diagnostic: TAG,
+    startedAt,
+    page: {},
+    chartNamespace: null,
+    chartGlobals: [],
+    dom: {
+      totalScanned: 0,
+      shadowRoots: 0,
+      chartCandidates: [],
+      largeContainers: [],
+      canvases: [],
+      svgs: [],
+      buttons: [],
+      timeframeControls: [],
+      frameworkRoots: []
+    },
+    resources: {
+      scriptFiles: [],
+      chartRelatedFiles: []
+    },
+    result: {},
+    safety: {
+      readOnly: true,
+      noOrdersSent: true,
+      noClickActions: true,
+      noInputValuesRead: true,
+      noCookiesOrTokensRead: true,
+      noDOMMutation: true,
+      noNetworkInterception: true,
+      noChartSettingsChanged: true
+    }
+  };
+
+  // 1. Page information
+
+  report.page = {
+    host: location.host,
+    path: location.pathname,
+    title: document.title,
+    readyState: document.readyState,
+    viewport: {
+      width: innerWidth,
+      height: innerHeight,
+      devicePixelRatio
+    },
+    scroll: {
+      x: scrollX,
+      y: scrollY
+    }
+  };
+
+  // 2. TradingView namespace inspection
+
+  const tv = getDataValue(window, 'TradingView');
+
+  report.chartNamespace = tv !== undefined
+    ? inspectObject(tv, 'window.TradingView')
+    : { found: false };
+
+  // 3. Inspect selected chart globals
+
+  const globalNames = getOwnProperties(window);
+
+  const selectedNames = new Set([
+    'TradingView',
+    'TradingViewApi',
+    'tvWidget',
+    'tvChart',
+    '_exposed_chartWidgetCollection',
+    'MockSocketClient',
+    '__INITIAL_STATE__',
+    '__NEXT_DATA__',
+    '__VUE__',
+    '__vue_app__',
+    '__REACT_DEVTOOLS_GLOBAL_HOOK__'
+  ]);
+
+  for (const name of globalNames) {
+    if (chartPattern.test(name)) selectedNames.add(name);
+  }
+
+  for (const name of selectedNames) {
+    const desc = safe(
+      () => Object.getOwnPropertyDescriptor(window, name)
+    );
+
+    if (!desc) continue;
+
+    const value = getDataValue(window, name);
+
+    report.chartGlobals.push({
+      name,
+      propertyType: desc.get || desc.set
+        ? 'accessor'
+        : typeof value,
+      constructor: value !== undefined
+        ? typeOf(value)
+        : null,
+      functionName: typeof value === 'function'
+        ? clean(value.name)
+        : null,
+      objectTree:
+        value !== null &&
+        value !== undefined &&
+        (typeof value === 'object' ||
+         typeof value === 'function') &&
+        name !== '__INITIAL_STATE__' &&
+        name !== '__NEXT_DATA__'
+          ? inspectObject(value, 'window.' + name, 0)
+          : undefined
+    });
+  }
+
+  // 4. DOM scanning, including open Shadow DOM
+
+  const roots = [document];
+  const seenRoots = new WeakSet();
+  const seenElements = new WeakSet();
+
+  const candidates = [];
+  const largeContainers = [];
+  const canvases = [];
+  const svgs = [];
+
+  let scanned = 0;
+
+  while (roots.length && scanned < 14000) {
+    const root = roots.shift();
+
+    if (!root || seenRoots.has(root)) continue;
+    seenRoots.add(root);
+
+    const elements = safe(
+      () => Array.from(root.querySelectorAll('*')),
+      []
+    );
+
+    for (const el of elements) {
+      if (scanned++ >= 14000) break;
+      if (seenElements.has(el)) continue;
+
+      seenElements.add(el);
+
+      if (el.shadowRoot) {
+        roots.push(el.shadowRoot);
+      }
+
+      const cls = classText(el);
+      const label = clean(
+        (el.id || '') + ' ' +
+        cls + ' ' +
+        (el.getAttribute('data-testid') || '') + ' ' +
+        (el.getAttribute('aria-label') || '')
+      );
+
+      const r = rect(el);
+
+      if (
+        !r ||
+        r.width < 2 ||
+        r.height < 2
+      ) continue;
+
+      const isCanvas = el.tagName === 'CANVAS';
+      const isSvg = el.tagName === 'SVG';
+      const chartRelated = chartPattern.test(label);
+
+      const isLarge = r.width >= 260 && r.height >= 150;
+
+      if (isCanvas) {
+        canvases.push({
+          ...elementInfo(el),
+          canvas: {
+            width: el.width,
+            height: el.height
+          },
+          orderbookRelated:
+            /orderbook|order-book/i.test(label)
+        });
+      }
+
+      if (isSvg) {
+        svgs.push(elementInfo(el));
+      }
+
+      if (
+        chartRelated ||
+        isCanvas ||
+        isSvg
+      ) {
+        if (candidates.length < 140) {
+          candidates.push(elementInfo(el));
+        }
+      }
+
+      if (isLarge && largeContainers.length < 90) {
+        largeContainers.push({
+          ...elementInfo(el),
+          chartRelated
+        });
+      }
+    }
+  }
+
+  report.dom.totalScanned = scanned;
+  report.dom.shadowRoots = seenRoots.size - 1;
+
+  report.dom.chartCandidates = candidates.slice(0, 140);
+  report.dom.largeContainers = largeContainers.slice(0, 70);
+  report.dom.canvases = canvases.slice(0, 55);
+  report.dom.svgs = svgs.slice(0, 40);
+
+  // 5. Framework root metadata
+
+  const frameworkSelectors = [
+    '#app',
+    '#root',
+    '[data-v-app]',
+    '[data-reactroot]',
+    '[id*="chart" i]'
+  ];
+
+  for (const selector of frameworkSelectors) {
+    const els = safe(
+      () => document.querySelectorAll(selector),
+      []
+    );
+
+    for (const el of els) {
+      if (report.dom.frameworkRoots.length >= 35) break;
+
+      report.dom.frameworkRoots.push({
+        selector,
+        tag: el.tagName,
+        id: el.id || null,
+        className: classText(el),
+        vueMounted: !!getDataValue(el, '__vue_app__'),
+        vueComponent: !!getDataValue(el, '__vueParentComponent'),
+        reactProps: getOwnProperties(el).some(
+          key => key.startsWith('__reactProps')
+        ),
+        rect: rect(el)
+      });
+    }
+  }
+
+  // 6. Buttons and timeframe labels
+
+  const buttons = safe(
+    () => document.querySelectorAll(
+      'button,[role="button"],[role="tab"]'
+    ),
+    []
+  );
+
+  for (const el of buttons) {
+    const text = clean(
+      el.innerText || el.textContent,
+      80
+    );
+
+    const r = rect(el);
+
+    if (!r || r.width < 2 || r.height < 2) continue;
+
+    const item = {
+      text,
+      title: clean(el.title),
+      ariaLabel: clean(el.getAttribute('aria-label')),
+      className: classText(el),
+      disabled: !!el.disabled,
+      rect: r
+    };
+
+    if (report.dom.buttons.length < 130) {
+      report.dom.buttons.push(item);
+    }
+
+    if (
+      /^(1s|5s|10s|15s|20s|30s|45s|1m|3m|5m|15m|30m|1h|4h|1d|time|interval|minute|second)$/i.test(text) ||
+      /interval|resolution|timeframe/i.test(
+        item.title + ' ' + item.ariaLabel + ' ' + item.className
+      )
+    ) {
+      report.dom.timeframeControls.push(item);
+    }
+  }
+
+  // 7. Loaded scripts and resource files
+
+  const resourceEntries = safe(
+    () => performance.getEntriesByType('resource'),
+    []
+  );
+
+  function cleanURL(raw) {
+    try {
+      const u = new URL(raw, location.href);
+      return u.origin + u.pathname;
+    } catch (_) {
+      return '[unavailable]';
+    }
+  }
+
+  const scriptsMap = new Map();
+
+  for (const item of resourceEntries) {
+    if (
+      item.initiatorType !== 'script' &&
+      !/\.js(?:$|[?#])/i.test(item.name)
+    ) continue;
+
+    const url = cleanURL(item.name);
+
+    scriptsMap.set(url, {
+      url,
+      initiatorType: item.initiatorType,
+      durationMs: Math.round(item.duration),
+      chartRelated: chartPattern.test(url)
+    });
+  }
+
+  report.resources.scriptFiles = Array
+    .from(scriptsMap.values())
+    .slice(-150);
+
+  report.resources.chartRelatedFiles =
+    report.resources.scriptFiles.filter(
+      x => x.chartRelated
+    );
+
+  // 8. Final result
+
+  report.finishedAt = new Date().toISOString();
+
+  report.result = {
+    tradingViewGlobalFound: tv !== undefined,
+    tradingViewRootType: tv !== undefined
+      ? typeOf(tv)
+      : 'not found',
+    candidateCount: candidates.length,
+    canvasCount: canvases.length,
+    svgCount: svgs.length,
+    largeContainerCount: largeContainers.length,
+    chartRelatedScriptCount:
+      report.resources.chartRelatedFiles.length,
+    shadowRootCount: report.dom.shadowRoots,
+    totalScriptFiles:
+      report.resources.scriptFiles.length,
+    viewportWidth: innerWidth,
+    viewportHeight: innerHeight
+  };
+
+  // 9. Report panel
+
+  const output = JSON.stringify(report, null, 2);
+
+  const overlay = document.createElement('div');
+  overlay.id = PANEL_ID;
+
+  overlay.style.cssText = `
+    position:fixed;
+    inset:0;
+    z-index:2147483647;
+    background:rgba(2,6,18,.83);
+    backdrop-filter:blur(14px);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:16px;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+    color:#e5efff;
+  `;
+
+  const box = document.createElement('div');
+
+  box.style.cssText = `
+    width:min(1000px,96vw);
+    height:min(820px,94vh);
+    background:rgba(16,25,44,.97);
+    border:1px solid rgba(100,160,235,.32);
+    border-radius:16px;
+    box-shadow:0 20px 90px rgba(0,0,0,.6);
+    padding:18px;
+    box-sizing:border-box;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+  `;
+
+  const header = document.createElement('div');
+  header.textContent =
+    'BITUNIX ENHANCER — CHART INSPECTOR 02';
+
+  header.style.cssText =
+    'font-size:16px;font-weight:bold;color:#8fbcff;';
+
+  const info = document.createElement('div');
+  info.textContent =
+    'بررسی ساختار موتور چارت انجام شد. گزارش کامل را کپی کن.';
+
+  info.style.cssText =
+    'font-size:12px;color:#aab8d2;';
+
+  const area = document.createElement('textarea');
+  area.value = output;
+  area.readOnly = true;
+
+  area.style.cssText = `
+    flex:1;
+    width:100%;
+    min-height:0;
+    box-sizing:border-box;
+    resize:none;
+    outline:none;
+    border:1px solid rgba(125,160,220,.25);
+    border-radius:9px;
+    padding:12px;
+    background:rgba(4,9,20,.85);
+    color:#d8e7ff;
+    font:11px/1.5 Consolas,monospace;
+  `;
+
+  const footer = document.createElement('div');
+  footer.style.cssText =
+    'display:flex;align-items:center;gap:12px;';
+
+  const copyButton = document.createElement('button');
+  copyButton.textContent = 'کپی گزارش کامل';
+
+  copyButton.style.cssText = `
+    background:#397ee6;
+    border:0;
+    border-radius:8px;
+    color:white;
+    font-weight:bold;
+    padding:11px 22px;
+    cursor:pointer;
+  `;
+
+  const closeButton = document.createElement('button');
+  closeButton.textContent = 'بستن';
+
+  closeButton.style.cssText = `
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:8px;
+    color:white;
+    padding:11px 22px;
+    cursor:pointer;
+  `;
+
+  const status = document.createElement('span');
+  status.textContent = 'آماده';
+  status.style.cssText =
+    'font-size:12px;color:#9fb2d0;';
+
+  copyButton.onclick = async () => {
+    try {
+      await navigator.clipboard.writeText(output);
+      status.textContent = 'گزارش کپی شد.';
+      status.style.color = '#83e3a8';
+    } catch (_) {
+      area.focus();
+      area.select();
+
+      status.textContent =
+        document.execCommand('copy')
+          ? 'گزارش کپی شد.'
+          : 'Ctrl+C را بزن.';
+    }
+  };
+
+  closeButton.onclick = () => overlay.remove();
+
+  footer.append(copyButton, closeButton, status);
+  box.append(header, info, area, footer);
+  overlay.append(box);
+
+  document.documentElement.append(overlay);
+
+  console.info(
+    '[BITUNIX CHART INSPECTOR 02] Completed. Read-only.'
+  );
+
+})();
+</CodeBlock>
+
+**بعد از اجرا:** گزارش شماره ۲ را کامل کپی و همین‌جا ارسال کن.
+
+فعلاً سراغ کد شماره ۳ نمی‌رویم تا مشخص شود چارت از چه نوع موتور و چه APIای استفاده می‌کند. این جداسازی کمک می‌کند در مراحل بعد، استخراج اندیکاتور یا سفارش‌گذاری روی نتایج قبلی اثر نگذارد.
+
+
+کاربر | پیام 40 | 11/14/2026, 8:04:56 PM
+------------------------------------------------------------
+
+[گزارشات بیتیونیکس2.txt](https://github.com/artaville/KCEX-Enhancer/blob/main/%DA%AF%D8%B2%D8%A7%D8%B1%D8%B4%D8%A7%D8%AA%20%D8%A8%DB%8C%D8%AA%DB%8C%D9%88%D9%86%DB%8C%DA%A9%D8%B32.txt "گزارشات بیتیونیکس2.txt")
+
+
+دستیار | پیام 41 | 11/14/2026, 8:05:01 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_file","args":{"repository_full_name":"artaville/KCEX-Enhancer","path":"\u06af\u0632\u0627\u0631\u0634\u0627\u062a \u0628\u06cc\u062a\u06cc\u0648\u0646\u06cc\u06a9\u06332.txt","encoding":"utf-8"}}
+
+
+دستیار | پیام 42 | 11/14/2026, 8:05:09 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_file","args":{"repository_full_name":"artaville/KCEX-Enhancer","path":"\u06af\u0632\u0627\u0631\u0634\u0627\u062a \u0628\u06cc\u062a\u06cc\u0648\u0646\u06cc\u06a9\u06332.txt","encoding":"utf-8"}}
+
+
+دستیار | پیام 43 | 11/14/2026, 8:05:40 PM
+------------------------------------------------------------
+
+Worked for 42s
+
+
+دستیار | پیام 44 | 11/14/2026, 8:05:29 PM
+------------------------------------------------------------
+
+گزارش شماره ۲ را کامل بررسی کردم. یک موضوع مهم مشخص شد که بهتر است قبل از ادامه حلش کنیم.
+
+<badge color="warning">نیاز به اصلاح شرایط استخراج</badge>
+
+### نتیجه استخراج دوم
+
+- `window.TradingView` وجود دارد، اما فقط یک متد با نام `version` در آن قابل مشاهده است.
+- `tvWidget` و `tvChart` در دسترس عمومی نیستند.
+- دو Canvas شناسایی‌شده مربوط به Order Book هستند، نه نمودار قیمت.
+- هیچ کنترل تایم‌فریم در DOM استخراج‌شده پیدا نشده است.
+- سایت از Vue/Nuxt استفاده می‌کند و فایل‌های JavaScript آن به‌صورت ماژول‌های جداگانه بارگذاری می‌شوند.
+- چند فایل مرتبط با Kline و نمودار پیدا شده، اما هنوز فایل اصلی موتور چارت مشخص نیست.
+
+**مشکل اصلی:** عرض محیط مرورگرت هنگام استخراج فقط ۷۱۰ پیکسل بوده است. احتمالاً سایت در حالت Responsive قرار گرفته و نمودار اصلی در این چیدمان نمایش داده نشده است.
+
+نمی‌خواهم بر اساس ساختار ناقص، کد تایم‌فریم ثانیه‌ای بنویسم و بعد مجبور شویم دوباره همه‌چیز را اصلاح کنیم.
+
+### قبل از کد شماره ۳
+
+لطفاً این کارها را انجام بده:
+
+1. Chrome را Maximize کن.
+2. در DevTools روی سه‌نقطه بالا کلیک کن.
+3. از قسمت **Dock side** گزینه Undock into separate window را انتخاب کن.
+4. صفحه Bitunix را Refresh کن.
+5. مطمئن شو نمودار اصلی XAUTUSDT در اندازه کامل دسکتاپ دیده می‌شود.
+
+## کد شماره ۳ — شناسایی نمودار اصلی
+
+این نسخه حتی عناصر مخفی چارت، iframeها و فایل‌های بارگذاری‌شده را بررسی می‌کند تا علت پیدا نشدن نمودار در گزارش قبلی مشخص شود.
+
+<CodeBlock language="javascript" editable>
+(() => {
+  'use strict';
+
+  const TAG = 'BITUNIX_CHART_DEEP_SCAN_03';
+  const PANEL = '__bitunix_chart_deep_scan_03__';
+
+  document.getElementById(PANEL)?.remove();
+
+  const safe = (fn, fallback = null) => {
+    try {
+      const v = fn();
+      return v === undefined ? fallback : v;
+    } catch (_) {
+      return fallback;
+    }
+  };
+
+  const clean = (v, n = 180) =>
+    String(v ?? '').replace(/\s+/g, ' ').trim().slice(0, n);
+
+  const pattern =
+    /chart|kline|tradingview|trading-view|candlestick|candle|tv-chart|price-chart|market-chart|plot-area|chart-container/i;
+
+  const isSensitive = k =>
+    /token|password|secret|authorization|cookie|signature|api.?key/i.test(k);
+
+  function safeURL(raw) {
+    try {
+      const u = new URL(raw, location.href);
+      return u.origin + u.pathname;
+    } catch (_) {
+      return '[unavailable]';
+    }
+  }
+
+  function bounds(el) {
+    return safe(() => {
+      const r = el.getBoundingClientRect();
+      return {
+        x: Math.round(r.x),
+        y: Math.round(r.y),
+        width: Math.round(r.width),
+        height: Math.round(r.height)
+      };
+    });
+  }
+
+  function cls(el) {
+    return clean(
+      typeof el.className === 'string'
+        ? el.className
+        : el.getAttribute('class') || '',
+      220
+    );
+  }
+
+  function styleInfo(el) {
+    return safe(() => {
+      const s = getComputedStyle(el);
+      return {
+        display: s.display,
+        visibility: s.visibility,
+        opacity: s.opacity,
+        position: s.position,
+        overflow: s.overflow,
+        zIndex: s.zIndex,
+        width: s.width,
+        height: s.height,
+        transform: s.transform
+      };
+    });
+  }
+
+  function parentChain(el) {
+    const out = [];
+    let p = el;
+
+    for (let i = 0; p && i < 7; i++) {
+      out.push({
+        tag: p.tagName,
+        id: p.id || null,
+        className: cls(p)
+      });
+      p = p.parentElement;
+    }
+
+    return out;
+  }
+
+  function attributes(el) {
+    const out = {};
+
+    for (const a of safe(
+      () => Array.from(el.attributes),
+      []
+    ).slice(0, 18)) {
+      if (isSensitive(a.name)) continue;
+      out[a.name] = clean(a.value, 130);
+    }
+
+    return out;
+  }
+
+  function describe(el) {
+    const r = bounds(el);
+    const s = styleInfo(el);
+
+    return {
+      tag: el.tagName,
+      id: el.id || null,
+      className: cls(el),
+      text: clean(el.innerText || el.textContent, 120),
+      rect: r,
+      style: s,
+      visible: !!(
+        r &&
+        r.width > 2 &&
+        r.height > 2 &&
+        s?.display !== 'none' &&
+        s?.visibility !== 'hidden' &&
+        Number(s?.opacity ?? 1) > 0
+      ),
+      attributes: attributes(el),
+      parents: parentChain(el)
+    };
+  }
+
+  const report = {
+    diagnostic: TAG,
+    startedAt: new Date().toISOString(),
+
+    environment: {},
+
+    chartElements: [],
+    hiddenChartElements: [],
+    frames: [],
+    canvases: [],
+    svgElements: [],
+    chartGlobals: {},
+    resources: [],
+
+    result: {},
+    safety: {
+      readOnly: true,
+      noClicks: true,
+      noInputValuesRead: true,
+      noStorageRead: true,
+      noCookiesOrTokensRead: true,
+      noNetworkInterception: true,
+      noFetchRequests: true,
+      noWebSocketCreated: true,
+      noChartSettingsChanged: true
+    }
+  };
+
+  // 1. Browser viewport
+
+  report.environment = {
+    page: location.origin + location.pathname,
+    title: document.title,
+
+    window: {
+      innerWidth,
+      innerHeight,
+      outerWidth,
+      outerHeight,
+      devicePixelRatio
+    },
+
+    document: {
+      clientWidth: document.documentElement.clientWidth,
+      clientHeight: document.documentElement.clientHeight,
+      bodyWidth: document.body?.clientWidth || null,
+      bodyHeight: document.body?.clientHeight || null
+    },
+
+    screen: {
+      width: screen.width,
+      height: screen.height,
+      availableWidth: screen.availWidth,
+      availableHeight: screen.availHeight
+    },
+
+    readyState: document.readyState
+  };
+
+  // 2. Scan chart-related DOM nodes
+
+  const all = safe(
+    () => Array.from(document.querySelectorAll('*')),
+    []
+  );
+
+  const matched = [];
+
+  for (const el of all) {
+    const label = [
+      el.id,
+      cls(el),
+      el.getAttribute('data-testid'),
+      el.getAttribute('aria-label'),
+      el.getAttribute('role')
+    ].join(' ');
+
+    if (!pattern.test(label)) continue;
+
+    if (matched.length < 180) {
+      matched.push(el);
+    }
+  }
+
+  for (const el of matched) {
+    const data = describe(el);
+
+    if (data.visible) {
+      report.chartElements.push(data);
+    } else {
+      report.hiddenChartElements.push(data);
+    }
+  }
+
+  // 3. Inspect iframes
+
+  for (const frame of document.querySelectorAll('iframe')) {
+    const info = describe(frame);
+
+    info.src = safeURL(frame.getAttribute('src') || '');
+
+    info.sameOrigin = safe(() => {
+      void frame.contentWindow.document.body;
+      return true;
+    }, false);
+
+    info.frameDocument = null;
+
+    if (info.sameOrigin) {
+      info.frameDocument = safe(() => {
+        const doc = frame.contentDocument;
+
+        return {
+          title: doc.title,
+          readyState: doc.readyState,
+          width: doc.documentElement.clientWidth,
+          height: doc.documentElement.clientHeight,
+
+          chartMatches: Array.from(
+            doc.querySelectorAll(
+              '[class*="chart" i],[id*="chart" i],[class*="kline" i]'
+            )
+          ).slice(0, 20).map(el => ({
+            tag: el.tagName,
+            id: el.id || null,
+            className: cls(el),
+            rect: bounds(el)
+          }))
+        };
+      });
+    }
+
+    report.frames.push(info);
+  }
+
+  // 4. Inspect canvases
+
+  for (const el of document.querySelectorAll('canvas')) {
+    report.canvases.push({
+      ...describe(el),
+      canvas: {
+        width: el.width,
+        height: el.height
+      }
+    });
+  }
+
+  // 5. SVGs
+
+  for (const el of document.querySelectorAll('svg')) {
+    const info = describe(el);
+
+    if (
+      info.visible ||
+      pattern.test(info.className + ' ' + info.id)
+    ) {
+      report.svgElements.push(info);
+    }
+
+    if (report.svgElements.length >= 50) break;
+  }
+
+  // 6. Chart globals: safe shallow inspection
+
+  const globalNames = [
+    'TradingView',
+    'TradingViewApi',
+    'tvWidget',
+    'tvChart',
+    '_exposed_chartWidgetCollection',
+    '__INITIAL_STATE__',
+    '__VUE__',
+    '__vue_app__',
+    '__nuxt',
+    'MockSocketClient'
+  ];
+
+  for (const name of globalNames) {
+    const desc = safe(
+      () => Object.getOwnPropertyDescriptor(window, name)
+    );
+
+    if (!desc) {
+      report.chartGlobals[name] = {
+        found: false
+      };
+      continue;
+    }
+
+    const value = desc.value;
+
+    report.chartGlobals[name] = {
+      found: true,
+      type: typeof value,
+      constructor: safe(
+        () => value?.constructor?.name
+      ),
+      ownProperties: value &&
+        (typeof value === 'object' ||
+         typeof value === 'function')
+        ? safe(
+            () => Object.getOwnPropertyNames(value)
+              .filter(k => !isSensitive(k))
+              .slice(0, 80),
+            []
+          )
+        : [],
+      functionName: typeof value === 'function'
+        ? value.name
+        : null
+    };
+  }
+
+  // 7. Network resources already loaded (no requests)
+
+  const entries = safe(
+    () => performance.getEntriesByType('resource'),
+    []
+  );
+
+  const resourceMap = new Map();
+
+  for (const item of entries) {
+    const url = safeURL(item.name);
+
+    const relevant =
+      pattern.test(url) ||
+      /tradingview|charting_library|lightweight-charts|kline|market-data|futures/i.test(url);
+
+    if (!relevant) continue;
+
+    resourceMap.set(
+      url,
+      {
+        url,
+        type: item.initiatorType,
+        durationMs: Math.round(item.duration),
+        transferSize: item.transferSize || 0
+      }
+    );
+  }
+
+  report.resources = Array.from(
+    resourceMap.values()
+  ).slice(-120);
+
+  // 8. Result summary
+
+  report.finishedAt = new Date().toISOString();
+
+  report.result = {
+    viewportWidth: innerWidth,
+    viewportHeight: innerHeight,
+
+    desktopViewportLikely:
+      innerWidth >= 1200,
+
+    totalDOMElements: all.length,
+    chartMatches: matched.length,
+
+    visibleChartElements:
+      report.chartElements.length,
+
+    hiddenChartElements:
+      report.hiddenChartElements.length,
+
+    iframeCount: report.frames.length,
+    canvasCount: report.canvases.length,
+    svgCount: report.svgElements.length,
+
+    resourceCount: report.resources.length,
+
+    recommendation:
+      innerWidth < 1200
+        ? 'Viewport is narrow. Undock DevTools and maximize Chrome before inspecting the chart.'
+        : 'Desktop width detected. Inspect chart candidates and loaded resources.'
+  };
+
+  // 9. Copyable report panel
+
+  const output = JSON.stringify(report, null, 2);
+
+  const overlay = document.createElement('div');
+  overlay.id = PANEL;
+
+  overlay.style.cssText = `
+    position:fixed;
+    inset:0;
+    z-index:2147483647;
+    background:rgba(3,8,20,.82);
+    backdrop-filter:blur(13px);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:18px;
+    box-sizing:border-box;
+    color:#e7efff;
+    font-family:Arial,sans-serif;
+  `;
+
+  const box = document.createElement('div');
+
+  box.style.cssText = `
+    width:min(1000px,96vw);
+    height:min(820px,94vh);
+    background:rgba(17,25,44,.97);
+    border:1px solid rgba(110,155,230,.35);
+    border-radius:15px;
+    padding:17px;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    box-sizing:border-box;
+    box-shadow:0 20px 80px rgba(0,0,0,.6);
+  `;
+
+  const title = document.createElement('div');
+  title.textContent = TAG;
+  title.style.cssText =
+    'font-size:15px;font-weight:bold;color:#8ebcff;';
+
+  const summary = document.createElement('div');
+
+  summary.textContent =
+    `Width: ${innerWidth}px | Visible: ${report.chartElements.length} | Hidden: ${report.hiddenChartElements.length} | Canvases: ${report.canvases.length}`;
+
+  summary.style.cssText =
+    'font-size:12px;color:#b3c2da;';
+
+  const area = document.createElement('textarea');
+  area.value = output;
+  area.readOnly = true;
+
+  area.style.cssText = `
+    flex:1;
+    min-height:0;
+    width:100%;
+    resize:none;
+    box-sizing:border-box;
+    border:1px solid rgba(120,160,220,.25);
+    border-radius:9px;
+    padding:12px;
+    background:rgba(4,9,20,.85);
+    color:#dce9ff;
+    outline:none;
+    font:11px/1.5 Consolas,monospace;
+  `;
+
+  const footer = document.createElement('div');
+
+  footer.style.cssText =
+    'display:flex;align-items:center;gap:10px;';
+
+  const copy = document.createElement('button');
+  copy.textContent = 'کپی گزارش کامل';
+  copy.style.cssText = `
+    padding:11px 22px;
+    border:0;
+    border-radius:8px;
+    background:#397ee6;
+    color:#fff;
+    cursor:pointer;
+    font-weight:bold;
+  `;
+
+  const close = document.createElement('button');
+  close.textContent = 'بستن';
+  close.style.cssText = `
+    padding:11px 22px;
+    border-radius:8px;
+    background:rgba(255,255,255,.08);
+    color:#fff;
+    border:1px solid rgba(255,255,255,.15);
+    cursor:pointer;
+  `;
+
+  const status = document.createElement('span');
+  status.textContent = 'آماده';
+  status.style.cssText =
+    'font-size:12px;color:#a9b9d2;';
+
+  copy.onclick = async () => {
+    try {
+      await navigator.clipboard.writeText(output);
+      status.textContent = 'گزارش کپی شد.';
+      status.style.color = '#83e3a8';
+    } catch (_) {
+      area.focus();
+      area.select();
+
+      status.textContent =
+        document.execCommand('copy')
+          ? 'گزارش کپی شد.'
+          : 'Ctrl+C را بزن.';
+    }
+  };
+
+  close.onclick = () => overlay.remove();
+
+  footer.append(copy, close, status);
+  box.append(title, summary, area, footer);
+  overlay.append(box);
+
+  document.documentElement.append(overlay);
+
+  console.info(
+    '[BITUNIX DEEP SCAN 03] Read-only scan completed.'
+  );
+
+})();
+</CodeBlock>
+
+لطفاً گزارش شماره ۳ را برایم بفرست.
+
+**هدف این مرحله:** پیدا کردن چارت واقعی، نه Order Book. وقتی آن را پیدا کنیم، می‌توانیم استخراج‌های تخصصی کندل ثانیه‌ای، اندیکاتور، خطوط و تایمر را بر اساس همان موتور طراحی کنیم.
+
+
+کاربر | پیام 45 | 11/14/2026, 8:08:13 PM
+------------------------------------------------------------
+
+# Selected text:
+
+## Selection 1
+در DevTools روی سه‌نقطه بالا کلیک کن.
+
+
+
+از قسمت Dock side گزینه Undock into separate window را انتخاب
+
+## My request:
+کروم من ماکزیمایز هست الان. این یک عکس از صفحه صرافی و چارتش
+و اینجا رو متوجه نشدم کجاس
+
+
+دستیار | پیام 46 | 11/14/2026, 8:08:32 PM
+------------------------------------------------------------
+
+Worked for 18s
+
+
+دستیار | پیام 47 | 11/14/2026, 8:08:32 PM
+------------------------------------------------------------
+
+تصویر را دیدم. صفحه Bitunix درست باز است و چارت XAUTUSDT هم در حالت دسکتاپ نمایش داده می‌شود. مشکلی از سمت ماکزیمایز بودن Chrome نمی‌بینم.
+
+منظورم از Undock کردن، جدا کردن پنجره Developer Tools از پنجره اصلی Chrome است، نه تغییر تنظیمات صرافی.
+
+### دقیقاً این کارها را انجام بده:
+
+1. کلید **F12** را بزن تا Developer Tools باز شود.
+2. به گوشه بالا سمت راست پنجره Developer Tools نگاه کن.
+3. روی سه‌نقطه عمودی `⋮` کلیک کن.
+4. گزینه **Dock side** را پیدا کن.
+5. از گزینه‌های نمایش‌داده‌شده، آیکون **Undock into separate window** را انتخاب کن.
+
+<AsyncImage query="Chrome DevTools Customize and control DevTools Dock side Undock into separate window menu screenshot" aspectRatio="16:9" width="100%" maxHeight={260} fit="contain"/>
+
+<text color="secondary" size="xs">محل منو در Chrome DevTools؛ ممکن است چیدمان آیکون‌ها کمی متفاوت باشد.</text>
+
+با این کار:
+- پنجره Bitunix تمام عرض خودش را حفظ می‌کند.
+- Developer Tools در پنجره‌ای جدا باز می‌شود.
+- می‌توانی Console را در پنجره جدا استفاده کنی، بدون اینکه چارت کوچک شود.
+
+**نکته:** گزارش قبلی عرض ۷۱۰ پیکسل ثبت کرده بود؛ احتمالاً DevTools هنگام استخراج فضای صفحه را محدود کرده بود.
+
+بعد از انجام این کار، صفحه Bitunix را Refresh کن و کد شماره ۳ را دوباره اجرا کن. همان XAUTUSDT را نگه دار.
+
+
+کاربر | پیام 48 | 11/14/2026, 8:12:09 PM
+------------------------------------------------------------
+
+[گزارشات بیتیونیکس3.txt](https://github.com/artaville/KCEX-Enhancer/blob/main/%DA%AF%D8%B2%D8%A7%D8%B1%D8%B4%D8%A7%D8%AA%20%D8%A8%DB%8C%D8%AA%DB%8C%D9%88%D9%86%DB%8C%DA%A9%D8%B33.txt "گزارشات بیتیونیکس3.txt") &#x20;
+انجلم دادم و بعد از انجام اینو گرفتم ببین درست شده
+
+
+دستیار | پیام 49 | 11/14/2026, 8:12:15 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_file","args":{"repository_full_name":"artaville/KCEX-Enhancer","path":"\u06af\u0632\u0627\u0631\u0634\u0627\u062a \u0628\u06cc\u062a\u06cc\u0648\u0646\u06cc\u06a9\u06333.txt","encoding":"utf-8"}}
+
+
+دستیار | پیام 50 | 11/14/2026, 8:12:22 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_file","args":{"repository_full_name":"artaville/KCEX-Enhancer","path":"\u06af\u0632\u0627\u0631\u0634\u0627\u062a \u0628\u06cc\u062a\u06cc\u0648\u0646\u06cc\u06a9\u06333.txt","encoding":"utf-8"}}
+
+
+دستیار | پیام 51 | 11/14/2026, 8:12:55 PM
+------------------------------------------------------------
+
+Worked for 44s
+
+
+دستیار | پیام 52 | 11/14/2026, 8:12:41 PM
+------------------------------------------------------------
+
+بله، این بار کاملاً درست انجام شده! <badge color="success">چارت اصلی پیدا شد</badge>
+
+گزارش شماره ۳ مهم‌ترین پیشرفت تا اینجای پروژه است.
+
+### چه چیزی پیدا کردیم؟
+
+<box border radius="lg" padding={3} gap={2}>
+  <row align="center" justify="between">
+    **ابعاد صفحه**
+    <badge color="success">مناسب دسکتاپ</badge>
+  </row>
+  <title size="2xl" color="success" tabularNums>1707 × 781</title>
+  <divider color="subtle"/>
+  **موتور واقعی نمودار**
+  - شناسه چارت: `futures-trade-tchart`
+  - شناسه iframe: `tradingview_1d6ac`
+  - کلاس داخلی: `chart-widget`
+  - عنوان iframe: `Financial Chart`
+  - نماد: `XAUTUSDT`
+  - دسترسی به محتوای iframe: موفق
+  <divider color="subtle"/>
+  **منابع داده شناسایی‌شده**
+  - `/kline/history/futures`
+  - `/kline/api/public/v1/agg/realtime/futures`
+</box>
+
+یک نکته بسیار امیدوارکننده: داخل iframe واقعاً ساختار داخلی چارت TradingView وجود دارد؛ بنابراین دیگر لازم نیست حدس بزنیم چارت از چه چیزی ساخته شده است.
+
+همچنین درخواست‌های تاریخچه کندل و داده تجمیعی لحظه‌ای شناسایی شده‌اند. هنوز جزئیات پیام‌های دریافتی و فرمت کندل‌ها را نداریم.
+
+## مرحله بعد: کد شماره ۴ — استخراج API داخلی چارت
+
+این مرحله مهم‌تر از مراحل قبلی است. می‌خواهیم وارد همان iframe واقعی چارت شویم و ببینیم چه متدهایی برای کنترل و دریافت اطلاعات در اختیارمان قرار گرفته است.
+
+مواردی که بررسی می‌کنیم:
+
+1. آبجکت‌های TradingView داخل iframe.
+2. متدهای `chart()`، `activeChart()`، `getSeries()` و متدهای مرتبط، در صورت وجود.
+3. موتور رسم کندل، محور زمان و قیمت.
+4. Canvas و ساختار Paneهای اصلی.
+5. تایم‌فریم‌های قابل انتخاب و کنترل‌های داخلی.
+6. DataFeed و توابع احتمالی `getBars` و `subscribeBars`.
+7. فایل‌های JS بارگذاری‌شده درون iframe.
+
+<badge color="success">کد شماره ۴ — Read Only</badge>
+
+کد را در همان صفحه XAUTUSDT و Console اصلی Chrome اجرا کن:
+
+<CodeBlock language="javascript" editable>
+(() => {
+  'use strict';
+
+  const TAG = 'BITUNIX_IFRAME_API_SCAN_04';
+  const PANEL = '__bitunix_iframe_api_scan_04__';
+
+  document.getElementById(PANEL)?.remove();
+
+  const safe = (fn, fallback = null) => {
+    try {
+      const v = fn();
+      return v === undefined ? fallback : v;
+    } catch (e) {
+      return fallback;
+    }
+  };
+
+  const clean = (v, n = 150) =>
+    String(v ?? '').replace(/\s+/g, ' ').trim().slice(0, n);
+
+  const sensitive = /token|password|secret|cookie|authorization|signature|api.?key/i;
+
+  const relevant = /chart|widget|series|pane|model|datafeed|feed|interval|resolution|time|scale|bar|candle|study|renderer|tradingview|symbol|source|price/i;
+
+  const report = {
+    diagnostic: TAG,
+    startedAt: new Date().toISOString(),
+
+    iframe: {},
+    chartWindow: {},
+    chartGlobals: [],
+    objects: [],
+    dom: {
+      chartContainers: [],
+      canvases: [],
+      svgs: [],
+      buttons: [],
+      timeframeControls: [],
+      panes: []
+    },
+    scripts: [],
+    chartResources: [],
+    result: {},
+    safety: {
+      readOnly: true,
+      noOrdersSent: true,
+      noClickActions: true,
+      noPageFetch: true,
+      noWebSocketCreated: true,
+      noStorageRead: true,
+      noCookiesRead: true,
+      noInputValuesRead: true,
+      noChartMutation: true,
+      sensitivePropertyNamesExcluded: true
+    }
+  };
+
+  function propertyNames(obj) {
+    return safe(
+      () => Object.getOwnPropertyNames(obj),
+      []
+    );
+  }
+
+  function descriptor(obj, key) {
+    return safe(
+      () => Object.getOwnPropertyDescriptor(obj, key)
+    );
+  }
+
+  function rect(el) {
+    return safe(() => {
+      const r = el.getBoundingClientRect();
+
+      return {
+        x: Math.round(r.x),
+        y: Math.round(r.y),
+        width: Math.round(r.width),
+        height: Math.round(r.height)
+      };
+    });
+  }
+
+  function classes(el) {
+    return clean(
+      typeof el.className === 'string'
+        ? el.className
+        : el.getAttribute('class') || '',
+      200
+    );
+  }
+
+  function info(el) {
+    const a = {};
+
+    for (const attr of safe(
+      () => Array.from(el.attributes),
+      []
+    ).slice(0, 18)) {
+      if (sensitive.test(attr.name)) continue;
+      a[attr.name] = clean(attr.value, 130);
+    }
+
+    return {
+      tag: el.tagName,
+      id: el.id || null,
+      className: classes(el),
+      text: clean(el.innerText || el.textContent, 100),
+      aria: clean(el.getAttribute('aria-label')),
+      title: clean(el.getAttribute('title')),
+      rect: rect(el),
+      attributes: a
+    };
+  }
+
+  // ------------------------------------------------
+  // 1. Find the actual TradingView iframe
+  // ------------------------------------------------
+
+  const iframe = document.getElementById(
+    'tradingview_1d6ac'
+  ) || document.querySelector(
+    '#futures-trade-tchart iframe'
+  );
+
+  if (!iframe) {
+    report.result.error = 'TradingView iframe not found';
+  } else {
+
+    const cw = safe(() => iframe.contentWindow);
+    const doc = safe(() => iframe.contentDocument);
+
+    report.iframe = {
+      id: iframe.id,
+      name: iframe.name,
+      src: clean(iframe.getAttribute('src'), 200),
+      title: iframe.title,
+      rect: rect(iframe),
+
+      sameOrigin: !!doc,
+
+      documentReady: safe(
+        () => doc.readyState
+      ),
+
+      documentTitle: safe(
+        () => doc.title
+      ),
+
+      documentSize: {
+        width: safe(() => doc.documentElement.clientWidth),
+        height: safe(() => doc.documentElement.clientHeight)
+      },
+
+      frameLocation: safe(
+        () => cw.location.origin + cw.location.pathname,
+        'Not accessible'
+      )
+    };
+
+    // ----------------------------------------------
+    // 2. Inspect iframe window globals
+    // ----------------------------------------------
+
+    if (cw && doc) {
+
+      const names = propertyNames(cw);
+
+      report.chartWindow = {
+        totalGlobalNames: names.length,
+        selectedGlobalNames: names
+          .filter(k => relevant.test(k) && !sensitive.test(k))
+          .slice(0, 200)
+      };
+
+      const knownNames = [
+        'TradingView',
+        'TradingViewApi',
+        'tvWidget',
+        'tvChart',
+        'widget',
+        'chart',
+        'Datafeeds',
+        'datafeed',
+        'ChartingLibraryWidget',
+        '_exposed_chartWidgetCollection'
+      ];
+
+      const selected = new Set([
+        ...knownNames,
+        ...names.filter(k => relevant.test(k) && !sensitive.test(k))
+      ]);
+
+      // --------------------------------------------
+      // 3. Inspect object properties and methods
+      // --------------------------------------------
+
+      function inspectObject(obj, path) {
+        if (
+          !obj ||
+          (typeof obj !== 'object' &&
+           typeof obj !== 'function')
+        ) {
+          return {
+            path,
+            type: typeof obj
+          };
+        }
+
+        const own = propertyNames(obj)
+          .filter(k => !sensitive.test(k))
+          .slice(0, 180);
+
+        const properties = [];
+        const functions = [];
+        const childObjects = [];
+
+        for (const key of own) {
+          const d = descriptor(obj, key);
+
+          if (!d) continue;
+
+          const value = Object.prototype.hasOwnProperty.call(d, 'value')
+            ? d.value
+            : undefined;
+
+          const type = d.get || d.set
+            ? 'accessor'
+            : typeof value;
+
+          const entry = {
+            name: key,
+            type,
+            constructor: value !== undefined
+              ? safe(() => value.constructor?.name)
+              : null
+          };
+
+          if (typeof value === 'function') {
+            entry.functionName = clean(value.name, 80);
+            functions.push(entry);
+          }
+
+          if (
+            value !== null &&
+            value !== undefined &&
+            (typeof value === 'object' ||
+             typeof value === 'function') &&
+            relevant.test(key)
+          ) {
+            childObjects.push({
+              name: key,
+              type,
+              constructor: entry.constructor,
+              keys: propertyNames(value)
+                .filter(k => !sensitive.test(k))
+                .slice(0, 60)
+            });
+          }
+
+          properties.push(entry);
+        }
+
+        // Inspect prototype methods without executing them.
+        const prototypeMethods = [];
+        let p = safe(() => Object.getPrototypeOf(obj));
+        let depth = 0;
+
+        while (p && depth < 4) {
+          for (const key of propertyNames(p).slice(0, 150)) {
+            if (sensitive.test(key)) continue;
+
+            const d = descriptor(p, key);
+
+            if (d && typeof d.value === 'function') {
+              prototypeMethods.push({
+                name: key,
+                functionName: clean(d.value.name, 80)
+              });
+            }
+          }
+
+          p = safe(() => Object.getPrototypeOf(p));
+          depth++;
+        }
+
+        return {
+          path,
+          constructor: safe(() => obj.constructor?.name),
+          ownPropertyCount: properties.length,
+          properties,
+          functions,
+          relevantChildren: childObjects,
+          prototypeMethods: prototypeMethods.slice(0, 180)
+        };
+      }
+
+      for (const name of selected) {
+        const d = descriptor(cw, name);
+
+        if (!d) continue;
+
+        const value = Object.prototype.hasOwnProperty.call(d, 'value')
+          ? d.value
+          : undefined;
+
+        report.chartGlobals.push({
+          name,
+          type: d.get || d.set
+            ? 'accessor'
+            : typeof value,
+          details:
+            value !== undefined &&
+            value !== null &&
+            (typeof value === 'object' ||
+             typeof value === 'function') &&
+            name !== 'window'
+              ? inspectObject(
+                  value,
+                  'iframe.' + name
+                )
+              : undefined
+        });
+      }
+
+      // --------------------------------------------
+      // 4. Discover TradingView chart DOM
+      // --------------------------------------------
+
+      const selectors = [
+        '.chart-widget',
+        '.chart-container',
+        '.chart-markup-table',
+        '.chart-gui-wrapper',
+        '.pane',
+        '.price-axis-container',
+        '.time-axis',
+        '.chart-toolbar',
+        '.chart-controls-bar',
+        '[class*="series"]',
+        '[class*="drawing"]',
+        'canvas',
+        'svg'
+      ];
+
+      const elements = new Set();
+
+      for (const selector of selectors) {
+        for (const el of safe(
+          () => doc.querySelectorAll(selector),
+          []
+        )) {
+          if (elements.size < 300) elements.add(el);
+        }
+      }
+
+      for (const el of elements) {
+        const item = info(el);
+        const c = classes(el);
+        const tag = el.tagName;
+
+        if (tag === 'CANVAS') {
+          report.dom.canvases.push({
+            ...item,
+            width: el.width,
+            height: el.height
+          });
+        } else if (tag === 'SVG') {
+          report.dom.svgs.push(item);
+        }
+
+        if (
+          /chart-widget|chart-container|chart-markup-table|chart-gui-wrapper/i.test(c)
+        ) {
+          report.dom.chartContainers.push(item);
+        }
+
+        if (
+          /\bpane\b|price-axis-container|time-axis/i.test(c)
+        ) {
+          report.dom.panes.push(item);
+        }
+      }
+
+      // --------------------------------------------
+      // 5. Timeframe and toolbar controls
+      // --------------------------------------------
+
+      const controls = safe(
+        () => doc.querySelectorAll(
+          'button,[role="button"],[role="tab"],[data-name]'
+        ),
+        []
+      );
+
+      for (const el of controls) {
+        const item = info(el);
+
+        if (report.dom.buttons.length < 160) {
+          report.dom.buttons.push(item);
+        }
+
+        const combined = [
+          item.text,
+          item.aria,
+          item.title,
+          item.className,
+          JSON.stringify(item.attributes)
+        ].join(' ');
+
+        if (
+          /1m|3m|5m|15m|30m|1h|4h|1d|interval|resolution|timeframe|time frame/i.test(combined)
+        ) {
+          report.dom.timeframeControls.push(item);
+        }
+      }
+
+      // --------------------------------------------
+      // 6. Scripts loaded inside iframe
+      // --------------------------------------------
+
+      report.scripts = safe(
+        () => Array.from(doc.scripts)
+          .filter(s => s.src)
+          .map(s => {
+            try {
+              const u = new URL(s.src, cw.location.href);
+              return u.origin + u.pathname;
+            } catch (_) {
+              return '[unavailable]';
+            }
+          })
+          .slice(0, 100),
+        []
+      );
+
+      // --------------------------------------------
+      // 7. Resource entries in iframe context
+      // --------------------------------------------
+
+      const entries = safe(
+        () => cw.performance.getEntriesByType('resource'),
+        []
+      );
+
+      const resourceMap = new Map();
+
+      for (const entry of entries) {
+        let url;
+
+        try {
+          const u = new URL(entry.name, cw.location.href);
+          url = u.origin + u.pathname;
+        } catch (_) {
+          continue;
+        }
+
+        if (
+          !/chart|tradingview|kline|datafeed|futures|study|socket/i.test(url)
+        ) continue;
+
+        resourceMap.set(url, {
+          url,
+          type: entry.initiatorType,
+          durationMs: Math.round(entry.duration),
+          transferSize: entry.transferSize || 0
+        });
+      }
+
+      report.chartResources = Array.from(
+        resourceMap.values()
+      ).slice(-100);
+
+    } else {
+      report.result.frameAccessError =
+        'Iframe document is not accessible from the parent context';
+    }
+  }
+
+  // ----------------------------------------------
+  // 8. Summary
+  // ----------------------------------------------
+
+  report.finishedAt = new Date().toISOString();
+
+  report.result = {
+    ...report.result,
+
+    iframeFound: !!iframe,
+
+    iframeDocumentAccessible:
+      !!safe(() => iframe.contentDocument),
+
+    chartGlobalCount:
+      report.chartGlobals.length,
+
+    chartContainerCount:
+      report.dom.chartContainers.length,
+
+    canvasCount:
+      report.dom.canvases.length,
+
+    svgCount:
+      report.dom.svgs.length,
+
+    paneCount:
+      report.dom.panes.length,
+
+    timeframeControlCount:
+      report.dom.timeframeControls.length,
+
+    scriptCount:
+      report.scripts.length,
+
+    chartResourceCount:
+      report.chartResources.length
+  };
+
+  // ----------------------------------------------
+  // 9. Copyable popup
+  // ----------------------------------------------
+
+  const output = JSON.stringify(report, null, 2);
+
+  const overlay = document.createElement('div');
+  overlay.id = PANEL;
+
+  overlay.style.cssText = `
+    position:fixed;
+    inset:0;
+    z-index:2147483647;
+    background:rgba(3,8,20,.84);
+    backdrop-filter:blur(14px);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:16px;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+    color:#e5efff;
+  `;
+
+  const box = document.createElement('div');
+
+  box.style.cssText = `
+    width:min(1000px,96vw);
+    height:min(820px,94vh);
+    background:rgba(16,25,44,.97);
+    border:1px solid rgba(110,155,230,.35);
+    border-radius:16px;
+    padding:18px;
+    box-sizing:border-box;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    box-shadow:0 20px 90px rgba(0,0,0,.6);
+  `;
+
+  const title = document.createElement('div');
+  title.textContent = TAG;
+  title.style.cssText =
+    'font-size:16px;font-weight:bold;color:#8fbdff;';
+
+  const description = document.createElement('div');
+  description.textContent =
+    'گزارش API داخلی TradingView آماده است.';
+
+  description.style.cssText =
+    'font-size:12px;color:#aab8d2;';
+
+  const area = document.createElement('textarea');
+  area.value = output;
+  area.readOnly = true;
+
+  area.style.cssText = `
+    flex:1;
+    width:100%;
+    min-height:0;
+    resize:none;
+    box-sizing:border-box;
+    background:rgba(4,9,20,.85);
+    color:#dce9ff;
+    border:1px solid rgba(120,160,220,.25);
+    border-radius:9px;
+    padding:12px;
+    outline:none;
+    font:11px/1.5 Consolas,monospace;
+  `;
+
+  const footer = document.createElement('div');
+
+  footer.style.cssText =
+    'display:flex;align-items:center;gap:12px;';
+
+  const copyButton = document.createElement('button');
+  copyButton.textContent = 'کپی گزارش کامل';
+
+  copyButton.style.cssText = `
+    background:#397ee6;
+    border:0;
+    border-radius:8px;
+    color:white;
+    padding:11px 22px;
+    cursor:pointer;
+    font-weight:bold;
+  `;
+
+  const closeButton = document.createElement('button');
+  closeButton.textContent = 'بستن';
+
+  closeButton.style.cssText = `
+    background:rgba(255,255,255,.08);
+    color:white;
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:8px;
+    padding:11px 22px;
+    cursor:pointer;
+  `;
+
+  const status = document.createElement('span');
+  status.textContent = 'آماده';
+  status.style.cssText =
+    'font-size:12px;color:#aab8d2;';
+
+  copyButton.onclick = async () => {
+    try {
+      await navigator.clipboard.writeText(output);
+      status.textContent = 'گزارش کپی شد.';
+      status.style.color = '#83e3a8';
+    } catch (_) {
+      area.focus();
+      area.select();
+
+      status.textContent =
+        document.execCommand('copy')
+          ? 'گزارش کپی شد.'
+          : 'Ctrl+C را بزن.';
+    }
+  };
+
+  closeButton.onclick = () => overlay.remove();
+
+  footer.append(copyButton, closeButton, status);
+  box.append(title, description, area, footer);
+  overlay.append(box);
+
+  document.documentElement.append(overlay);
+
+  console.info(
+    '[BITUNIX IFRAME API SCAN 04] Completed. Read-only.'
+  );
+
+})();
+</CodeBlock>
+
+### بعد از دریافت گزارش شماره ۴
+
+می‌توانیم تصمیم بگیریم مرحله بعد را از کجا شروع کنیم:
+
+- اگر API اصلی چارت پیدا شود، سراغ ساخت موتور کندل‌های ۱، ۵، ۱۰، ۱۵، ۲۰، ۳۰ و ۴۵ ثانیه‌ای می‌رویم.
+- اگر DataFeed قابل دسترسی باشد، بررسی می‌کنیم آیا می‌توان کندل‌ها را مستقیماً به موتور نمودار تحویل داد.
+- اگر API چارت محدود باشد، روش جایگزین را بررسی می‌کنیم.
+
+**فعلاً هیچ‌کدام از قابلیت‌های قبلی را فعال یا تغییر نمی‌دهیم.** فقط استخراج می‌کنیم تا هر آزمایش مستقل بماند.
+
+
+کاربر | پیام 53 | 11/14/2026, 8:16:48 PM
+------------------------------------------------------------
+
+[گزارشات بیتیونیکس4.txt](https://github.com/artaville/KCEX-Enhancer/blob/main/%DA%AF%D8%B2%D8%A7%D8%B1%D8%B4%D8%A7%D8%AA%20%D8%A8%DB%8C%D8%AA%DB%8C%D9%88%D9%86%DB%8C%DA%A9%D8%B34.txt "گزارشات بیتیونیکس4.txt") &#x20;
+
+
+دستیار | پیام 54 | 11/14/2026, 8:16:50 PM
+------------------------------------------------------------
+
+گزارش چهارم را باز می‌کنم و این بار روی دسترسی واقعی به iframe و آبجکت‌های چارت تمرکز می‌کنم. می‌خواهم از خود خروجی مشخص کنم کدام APIها واقعاً پیدا شده‌اند و کدام صرفاً نامشان در صفحه وجود دارد؛ این تفاوت برای جلوگیری از کدهای حدسی مهم است.
+
+
+دستیار | پیام 55 | 11/14/2026, 8:16:53 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_file","args":{"repository_full_name":"artaville/KCEX-Enhancer","path":"\u06af\u0632\u0627\u0631\u0634\u0627\u062a \u0628\u06cc\u062a\u06cc\u0648\u0646\u06cc\u06a9\u06334.txt","encoding":"utf-8"}}
+
+
+دستیار | پیام 56 | 11/14/2026, 8:16:59 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_file","args":{"repository_full_name":"artaville/KCEX-Enhancer","path":"\u06af\u0632\u0627\u0631\u0634\u0627\u062a \u0628\u06cc\u062a\u06cc\u0648\u0646\u06cc\u06a9\u06334.txt","encoding":"utf-8"}}
+
+
+دستیار | پیام 57 | 11/14/2026, 8:17:04 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_file","args":{"repository_full_name":"artaville/KCEX-Enhancer","path":"\u06af\u0632\u0627\u0631\u0634\u0627\u062a \u0628\u06cc\u062a\u06cc\u0648\u0646\u06cc\u06a9\u06334.txt","encoding":"utf-8"}}
+
+
+دستیار | پیام 58 | 11/14/2026, 8:17:10 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_file","args":{"repository_full_name":"artaville/KCEX-Enhancer","path":"\u06af\u0632\u0627\u0631\u0634\u0627\u062a \u0628\u06cc\u062a\u06cc\u0648\u0646\u06cc\u06a9\u06334.txt","encoding":"utf-8"}}
+
+
+دستیار | پیام 59 | 11/14/2026, 8:17:53 PM
+------------------------------------------------------------
+
+Worked for 1m 4s
+
+
+دستیار | پیام 60 | 11/14/2026, 8:17:38 PM
+------------------------------------------------------------
+
+گزارش شماره ۴ را بررسی کردم. این یکی واقعاً نقطه عطف پروژه است. <badge color="success">دسترسی به موتور داخلی TradingView تأیید شد</badge>
+
+این بار به چیزی که دنبالش بودیم رسیدیم: نه فقط iframe چارت، بلکه آبجکت‌های اصلی موتور TradingView داخل iframe.
+
+## یافته‌های مهم گزارش چهارم
+
+<box border radius="lg" padding={3} gap={3}>
+  <box gap={1}>
+    **۱. آبجکت مدیریت چارت**
+    <badge color="success">پیدا شد</badge>
+    `chartWidgetCollection`
+
+    متدهای مهمی دارد:
+    - `getAll()`
+    - `setResolution()`
+    - `setTimeFrame()`
+    - `activeChartWidget`
+    - `lineToolsAndGroupsDTOs()`
+    - `applyOverrides()`
+  </box>
+  <divider color="subtle"/>
+  <box gap={1}>
+    **۲. آبجکت TradingView API**
+    <badge color="success">پیدا شد</badge>
+    `tradingViewApi`
+
+    متدهای مهم:
+    - `activeChart()`
+    - `chart()`
+    - `getIntervals()`
+    - `getFavoriteIntervalsService()`
+    - `setTimeFrame()`
+    - `getSymbolInterval()`
+    - `selectLineTool()`
+  </box>
+  <divider color="subtle"/>
+  <box gap={1}>
+    **۳. موتور داده چارت**
+    <badge color="success">پیدا شد</badge>
+    `ChartApiInstance`
+
+    متدهای شناسایی‌شده:
+    - `resolveSymbol()`
+    - `createSeries()`
+    - `removeSeries()`
+    - `requestMoreData()`
+    - `modifySeries()`
+    - `serverTime()`
+    - `serverTimeOffset()`
+  </box>
+  <divider color="subtle"/>
+  <box gap={1}>
+    **۴. ابزارهای رسم خطوط**
+    <badge color="success">پیدا شد</badge>
+    `lineToolPropertiesToolbar`
+
+    همچنین انواع ابزارهای Trend Line، Ray، Horizontal Ray، Vertical Line و ابزارهای دیگر موجود هستند.
+  </box>
+  <divider color="subtle"/>
+  <box gap={1}>
+    **۵. موتور اندیکاتورها**
+    <badge color="success">پیدا شد</badge>
+    `chartWidget`
+
+    متدهایی مثل:
+    - `insertStudy()`
+    - `addOverlayStudy()`
+    - `removeAllStudies()`
+    - `studiesMetaData()`
+  </box>
+</box>
+
+یک نکته جالب: در همین گزارش اندیکاتور `%R 6` هم روی چارت فعال بوده و ساختار Pane جداگانه آن ثبت شده است.
+
+**برداشت من:** زیرساخت لازم برای دسترسی به چارت، اندیکاتورها، خطوط و تغییر تایم‌فریم را پیدا کرده‌ایم. اما هنوز باید ببینیم موتور داده اجازه می‌دهد تایم‌فریم‌های ثانیه‌ای را با کندل‌های واقعی به‌درستی تغذیه کنیم. وجود `setResolution()` به‌تنهایی این موضوع را ثابت نمی‌کند.
+
+## مرحله پنجم: استخراج آبجکت فعال و DataFeed
+
+<badge color="success">کد شماره ۵ — فقط خواندن و شناسایی</badge>
+
+این کد قرار نیست چیزی را روی چارت اجرا یا تغییر دهد. می‌خواهیم بفهمیم آبجکت‌هایی که پیدا کردیم دقیقاً چه اطلاعاتی در اختیارمان می‌گذارند.
+
+به‌طور اختصاصی بررسی می‌کند:
+
+- کدام Chart Widget واقعاً فعال است؟
+- تایم‌فریم فعلی از API داخلی چطور خوانده می‌شود؟
+- اطلاعات Symbol و Resolution چطور دریافت می‌شوند؟
+- آبجکت Main Series و Model چه متدهایی دارند؟
+- DataFeed داخلی چه ساختاری دارد؟
+- اطلاعات Pane و اندیکاتورهای فعال چیست؟
+- سیستم رسم خطوط چه ارتباطی با Chart Widget دارد؟
+
+<CodeBlock language="javascript" editable>
+(() => {
+  'use strict';
+
+  const TAG = 'BITUNIX_ACTIVE_CHART_DATAFEED_05';
+  const PANEL_ID = '__bitunix_active_chart_datafeed_05__';
+
+  document.getElementById(PANEL_ID)?.remove();
+
+  const report = {
+    diagnostic: TAG,
+    startedAt: new Date().toISOString(),
+
+    iframe: {},
+    access: {},
+    widgetCollection: {},
+    activeWidget: {},
+    publicChartApi: {},
+    chartWidget: {},
+    chartModel: {},
+    series: {},
+    panes: [],
+    studies: [],
+    datafeed: {},
+    chartApi: {},
+    drawingSystem: {},
+    result: {},
+
+    safety: {
+      readOnly: true,
+      noOrdersSent: true,
+      noDOMClicks: true,
+      noChartMutations: true,
+      noResolutionChanges: true,
+      noStudyChanges: true,
+      noLineChanges: true,
+      noNetworkRequests: true,
+      noWebSocketCreated: true,
+      noStorageRead: true,
+      noCookiesOrTokensRead: true,
+      sensitivePropertiesExcluded: true
+    }
+  };
+
+  const safe = (fn, fallback = null) => {
+    try {
+      const value = fn();
+      return value === undefined ? fallback : value;
+    } catch (e) {
+      return fallback;
+    }
+  };
+
+  const sensitive =
+    /token|password|secret|cookie|authorization|signature|api.?key|sessionid/i;
+
+  function ownKeys(obj) {
+    return safe(
+      () => Object.getOwnPropertyNames(obj)
+        .filter(k => !sensitive.test(k)),
+      []
+    );
+  }
+
+  function ownValue(obj, key) {
+    const d = safe(
+      () => Object.getOwnPropertyDescriptor(obj, key)
+    );
+
+    if (!d || !Object.prototype.hasOwnProperty.call(d, 'value')) {
+      return undefined;
+    }
+
+    return d.value;
+  }
+
+  function findMethod(obj, name) {
+    let p = obj;
+
+    for (let i = 0; p && i < 8; i++) {
+      const d = safe(
+        () => Object.getOwnPropertyDescriptor(p, name)
+      );
+
+      if (d && typeof d.value === 'function') {
+        return d.value;
+      }
+
+      p = safe(() => Object.getPrototypeOf(p));
+    }
+
+    return null;
+  }
+
+  function callRead(obj, name, args = []) {
+    const fn = findMethod(obj, name);
+
+    if (!fn) {
+      return {
+        found: false,
+        reason: 'Method not found'
+      };
+    }
+
+    try {
+      return {
+        found: true,
+        ok: true,
+        value: fn.apply(obj, args)
+      };
+    } catch (e) {
+      return {
+        found: true,
+        ok: false,
+        error: String(e?.message || e)
+      };
+    }
+  }
+
+  function simpleValue(value, depth = 0) {
+    if (
+      value === null ||
+      typeof value === 'string' ||
+      typeof value === 'number' ||
+      typeof value === 'boolean'
+    ) {
+      return value;
+    }
+
+    if (value === undefined) return null;
+
+    if (depth > 2) return '[Object]';
+
+    if (Array.isArray(value)) {
+      return value.slice(0, 25).map(v =>
+        simpleValue(v, depth + 1)
+      );
+    }
+
+    if (typeof value === 'function') {
+      return '[Function]';
+    }
+
+    return '[Object]';
+  }
+
+  function inspect(obj, path, maxDepth = 0) {
+    if (!obj || (
+      typeof obj !== 'object' &&
+      typeof obj !== 'function'
+    )) {
+      return {
+        path,
+        type: typeof obj
+      };
+    }
+
+    const keys = ownKeys(obj);
+
+    const result = {
+      path,
+      constructor: safe(
+        () => obj.constructor?.name,
+        null
+      ),
+      ownPropertyCount: keys.length,
+      properties: [],
+      methods: [],
+      relevantChildren: []
+    };
+
+    for (const key of keys.slice(0, 180)) {
+      const d = safe(
+        () => Object.getOwnPropertyDescriptor(obj, key)
+      );
+
+      if (!d) continue;
+
+      if (
+        !Object.prototype.hasOwnProperty.call(d, 'value')
+      ) {
+        result.properties.push({
+          name: key,
+          type: 'accessor'
+        });
+        continue;
+      }
+
+      const value = d.value;
+
+      const item = {
+        name: key,
+        type: typeof value,
+        constructor: value !== null
+          ? safe(() => value?.constructor?.name)
+          : null
+      };
+
+      if (typeof value === 'function') {
+        result.methods.push({
+          name: key,
+          functionName: value.name || '',
+          argumentCount: value.length
+        });
+      }
+
+      if (
+        value !== null &&
+        value !== undefined &&
+        (typeof value === 'object' ||
+         typeof value === 'function') &&
+        /chart|series|pane|study|model|feed|scale|source|data|time|interval|resolution/i.test(key)
+      ) {
+        const child = {
+          name: key,
+          type: typeof value,
+          constructor: item.constructor,
+          keys: ownKeys(value).slice(0, 100)
+        };
+
+        if (maxDepth > 0 && typeof value === 'object') {
+          child.details = inspect(
+            value,
+            path + '.' + key,
+            maxDepth - 1
+          );
+        }
+
+        result.relevantChildren.push(child);
+      }
+
+      if (
+        value === null ||
+        ['string', 'number', 'boolean'].includes(typeof value)
+      ) {
+        item.value = simpleValue(value);
+      }
+
+      result.properties.push(item);
+    }
+
+    // Inspect prototype methods without executing them.
+
+    const protoMethods = [];
+    let p = safe(() => Object.getPrototypeOf(obj));
+
+    for (let depth = 0; p && depth < 4; depth++) {
+      for (const key of safe(() => Object.getOwnPropertyNames(p), [])) {
+        if (sensitive.test(key)) continue;
+
+        const d = safe(
+          () => Object.getOwnPropertyDescriptor(p, key)
+        );
+
+        if (d && typeof d.value === 'function') {
+          protoMethods.push({
+            name: key,
+            argumentCount: d.value.length
+          });
+        }
+      }
+
+      p = safe(() => Object.getPrototypeOf(p));
+    }
+
+    result.prototypeMethods = protoMethods.slice(0, 180);
+
+    return result;
+  }
+
+  function summarizeList(list, limit = 12) {
+    if (!Array.isArray(list)) {
+      return {
+        type: typeof list,
+        constructor: safe(() => list?.constructor?.name)
+      };
+    }
+
+    return {
+      count: list.length,
+      items: list.slice(0, limit).map((item, index) => ({
+        index,
+        constructor: safe(() => item?.constructor?.name),
+        keys: item && typeof item === 'object'
+          ? ownKeys(item).slice(0, 100)
+          : [],
+        properties: item && typeof item === 'object'
+          ? inspect(item, 'item_' + index).properties
+              .filter(x =>
+                ['string', 'number', 'boolean'].includes(x.type)
+              )
+              .slice(0, 30)
+          : simpleValue(item)
+      }))
+    };
+  }
+
+  // -----------------------------------------
+  // 1. Locate chart iframe
+  // -----------------------------------------
+
+  const iframe =
+    document.querySelector(
+      '#futures-trade-tchart iframe'
+    ) ||
+    document.querySelector(
+      'iframe[id^="tradingview_"]'
+    );
+
+  if (!iframe) {
+    report.result.error = 'Chart iframe not found';
+  } else {
+
+    const win = safe(() => iframe.contentWindow);
+    const doc = safe(() => iframe.contentDocument);
+
+    if (!win || !doc) {
+      report.result.error =
+        'Iframe content is not accessible';
+    } else {
+
+      report.iframe = {
+        id: iframe.id,
+        title: iframe.title,
+        sameOrigin: true,
+        readyState: doc.readyState,
+        width: doc.documentElement.clientWidth,
+        height: doc.documentElement.clientHeight
+      };
+
+      // ---------------------------------------
+      // 2. Resolve known TradingView objects
+      // ---------------------------------------
+
+      const globals = {};
+
+      for (const name of [
+        'TradingView',
+        'ChartApiInstance',
+        'chartWidgetCollection',
+        'chartWidget',
+        'tradingViewApi',
+        'lineToolPropertiesToolbar',
+        'studyMarket',
+        'widgetReady'
+      ]) {
+        globals[name] = ownValue(win, name);
+      }
+
+      report.access = {
+        found: Object.fromEntries(
+          Object.entries(globals).map(([k, v]) => [
+            k,
+            v !== undefined
+          ])
+        )
+      };
+
+      const collection = globals.chartWidgetCollection;
+      const tradingApi = globals.tradingViewApi;
+      const chartApiInstance = globals.ChartApiInstance;
+      const directWidget = globals.chartWidget;
+
+      // ---------------------------------------
+      // 3. Chart Widget Collection
+      // ---------------------------------------
+
+      if (collection) {
+        report.widgetCollection =
+          inspect(collection, 'chartWidgetCollection', 1);
+
+        const all = callRead(collection, 'getAll');
+
+        report.widgetCollection.getAllResult = {
+          found: all.found,
+          ok: all.ok,
+          value: all.ok
+            ? summarizeList(all.value, 10)
+            : null,
+          error: all.error || null
+        };
+
+        const activeValue = ownValue(
+          collection,
+          'activeChartWidget'
+        );
+
+        if (activeValue) {
+          report.activeWidget = {
+            type: typeof activeValue,
+            constructor: safe(
+              () => activeValue.constructor?.name
+            ),
+            keys: ownKeys(activeValue),
+            watchedValue: simpleValue(
+              ownValue(activeValue, '_value')
+            )
+          };
+        }
+      }
+
+      // ---------------------------------------
+      // 4. Public TradingView Chart API
+      // ---------------------------------------
+
+      let publicChart = null;
+
+      if (tradingApi) {
+        report.publicChartApi =
+          inspect(tradingApi, 'tradingViewApi', 0);
+
+        // These methods are read-only accessors.
+        const active = callRead(tradingApi, 'activeChart');
+        const chart = callRead(tradingApi, 'chart');
+
+        report.publicChartApi.accessors = {
+          activeChart: {
+            found: active.found,
+            ok: active.ok,
+            constructor: safe(
+              () => active.value?.constructor?.name
+            ),
+            error: active.error || null
+          },
+          chart: {
+            found: chart.found,
+            ok: chart.ok,
+            constructor: safe(
+              () => chart.value?.constructor?.name
+            ),
+            error: chart.error || null
+          }
+        };
+
+        if (
+          active.ok &&
+          active.value &&
+          typeof active.value === 'object'
+        ) {
+          publicChart = active.value;
+          report.publicChartApi.activeChartDetails =
+            inspect(publicChart, 'activeChart()', 0);
+        } else if (
+          chart.ok &&
+          chart.value &&
+          typeof chart.value === 'object'
+        ) {
+          publicChart = chart.value;
+        }
+      }
+
+      // ---------------------------------------
+      // 5. Public Chart read-only state
+      // ---------------------------------------
+
+      if (publicChart) {
+        const getterNames = [
+          'symbol',
+          'resolution',
+          'getVisibleRange',
+          'getVisiblePriceRange',
+          'getAllStudies',
+          'getPanes',
+          'getTimeScale'
+        ];
+
+        const values = {};
+
+        for (const name of getterNames) {
+          const r = callRead(publicChart, name);
+
+          values[name] = {
+            found: r.found,
+            ok: r.ok,
+            value: r.ok
+              ? simpleValue(r.value)
+              : null,
+            error: r.error || null
+          };
+
+          if (
+            r.ok &&
+            Array.isArray(r.value) &&
+            name === 'getAllStudies'
+          ) {
+            report.studies = summarizeList(r.value, 30);
+          }
+
+          if (
+            r.ok &&
+            Array.isArray(r.value) &&
+            name === 'getPanes'
+          ) {
+            report.panes = summarizeList(r.value, 15).items;
+          }
+
+          if (
+            r.ok &&
+            r.value &&
+            typeof r.value === 'object' &&
+            name === 'getTimeScale'
+          ) {
+            report.chartModel.timeScale =
+              inspect(r.value, 'getTimeScale()', 0);
+          }
+        }
+
+        report.publicChartApi.readOnlyValues = values;
+      }
+
+      // ---------------------------------------
+      // 6. Chart Widget internals
+      // ---------------------------------------
+
+      let widget = directWidget;
+
+      if (
+        !widget &&
+        collection
+      ) {
+        const all = callRead(collection, 'getAll');
+
+        if (all.ok && Array.isArray(all.value)) {
+          widget = all.value[0] || null;
+        }
+      }
+
+      if (widget) {
+        report.chartWidget = inspect(
+          widget,
+          'chartWidget',
+          1
+        );
+
+        const widgetGetters = [
+          'getSymbol',
+          'getResolution',
+          'model',
+          'getTimeScale',
+          'paneWidgets'
+        ];
+
+        report.chartWidget.readOnlyGetters = {};
+
+        for (const name of widgetGetters) {
+          const r = callRead(widget, name);
+
+          report.chartWidget.readOnlyGetters[name] = {
+            found: r.found,
+            ok: r.ok,
+            type: r.ok ? typeof r.value : null,
+            value: r.ok
+              ? simpleValue(r.value)
+              : null,
+            error: r.error || null
+          };
+
+          if (
+            r.ok &&
+            r.value &&
+            typeof r.value === 'object' &&
+            name === 'model'
+          ) {
+            report.chartModel.model =
+              inspect(r.value, 'chartWidget.model()', 1);
+
+            const model = r.value;
+
+            const mainSeries = callRead(
+              model,
+              'mainSeries'
+            );
+
+            if (
+              mainSeries.ok &&
+              mainSeries.value
+            ) {
+              report.series.mainSeries =
+                inspect(
+                  mainSeries.value,
+                  'model.mainSeries()',
+                  1
+                );
+            }
+
+            const dataSources = callRead(
+              model,
+              'dataSources'
+            );
+
+            if (dataSources.ok) {
+              report.chartModel.dataSources =
+                summarizeList(dataSources.value, 25);
+            }
+          }
+
+          if (
+            r.ok &&
+            Array.isArray(r.value) &&
+            name === 'paneWidgets'
+          ) {
+            report.panes.push(
+              ...summarizeList(r.value, 15).items
+            );
+          }
+        }
+
+        // Current symbol and resolution WatchedValues
+        for (const key of [
+          '_symbolWV',
+          '_resolutionWV'
+        ]) {
+          const watched = ownValue(widget, key);
+
+          if (watched) {
+            report.chartWidget[key] = {
+              constructor: safe(
+                () => watched.constructor?.name
+              ),
+              value: simpleValue(
+                ownValue(watched, '_value')
+              ),
+              keys: ownKeys(watched)
+            };
+          }
+        }
+
+        // Pane widgets without invoking their methods
+        const paneWidgets = ownValue(
+          widget,
+          '_paneWidgets'
+        );
+
+        if (Array.isArray(paneWidgets)) {
+          report.chartWidget.paneWidgetDetails =
+            paneWidgets.slice(0, 12).map(
+              (pane, i) =>
+                inspect(pane, 'paneWidget_' + i, 0)
+            );
+        }
+      }
+
+      // ---------------------------------------
+      // 7. ChartApiInstance / DataFeed
+      // ---------------------------------------
+
+      if (chartApiInstance) {
+        report.chartApi =
+          inspect(chartApiInstance, 'ChartApiInstance', 0);
+
+        const studyEngine = ownValue(
+          chartApiInstance,
+          '_studyEngine'
+        );
+
+        if (studyEngine) {
+          report.datafeed.studyEngine =
+            inspect(studyEngine, '_studyEngine', 0);
+
+          for (const key of [
+            '_externalDatafeed',
+            '_datafeedConfiguration',
+            '_cachedDatafeed',
+            '_resolveRequests',
+            '_resolvePromisesBySymbolId',
+            '_timeScales'
+          ]) {
+            const value = ownValue(
+              studyEngine,
+              key
+            );
+
+            if (value !== undefined) {
+              report.datafeed[key] =
+                inspect(
+                  value,
+                  '_studyEngine.' + key,
+                  0
+                );
+            }
+          }
+        }
+
+        report.datafeed.chartApiMethods =
+          report.chartApi.prototypeMethods
+            ?.map(x => x.name)
+            .filter(name =>
+              /symbol|series|data|resolution|time|study|bar|session|connect|request/i.test(name)
+            ) || [];
+      }
+
+      // ---------------------------------------
+      // 8. Drawing / Line Tools
+      // ---------------------------------------
+
+      const drawings = globals.lineToolPropertiesToolbar;
+
+      if (drawings) {
+        report.drawingSystem =
+          inspect(
+            drawings,
+            'lineToolPropertiesToolbar',
+            1
+          );
+      }
+
+      // ---------------------------------------
+      // 9. Loaded chart state summary
+      // ---------------------------------------
+
+      report.result = {
+        iframeReady: doc.readyState,
+        chartWidgetFound: !!widget,
+        widgetCollectionFound: !!collection,
+        widgetCount:
+          report.widgetCollection?.getAllResult?.value?.count ?? null,
+        publicChartApiFound: !!publicChart,
+        mainSeriesFound: !!report.series.mainSeries,
+        datafeedEngineFound: !!studyEngine,
+        externalDatafeedFound:
+          !!ownValue(studyEngine, '_externalDatafeed'),
+        activeResolution:
+          report.publicChartApi
+            ?.readOnlyValues
+            ?.resolution
+            ?.value ?? null,
+        activeSymbol:
+          report.publicChartApi
+            ?.readOnlyValues
+            ?.symbol
+            ?.value ?? null,
+        studyCount:
+          report.studies?.count ?? null,
+        chartPaneCount:
+          report.panes.length,
+        drawingSystemFound: !!drawings
+      };
+
+    }
+  }
+
+  report.finishedAt = new Date().toISOString();
+
+  // -----------------------------------------
+  // 10. Create independent copy panel
+  // -----------------------------------------
+
+  const output = JSON.stringify(report, null, 2);
+
+  const overlay = document.createElement('div');
+  overlay.id = PANEL_ID;
+
+  overlay.style.cssText = `
+    position:fixed;
+    inset:0;
+    z-index:2147483647;
+    background:rgba(3,8,20,.84);
+    backdrop-filter:blur(14px);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:16px;
+    box-sizing:border-box;
+    color:#e5efff;
+    font-family:Arial,sans-serif;
+  `;
+
+  const box = document.createElement('div');
+
+  box.style.cssText = `
+    width:min(1000px,96vw);
+    height:min(820px,94vh);
+    background:rgba(16,25,44,.97);
+    border:1px solid rgba(110,155,230,.35);
+    border-radius:16px;
+    padding:18px;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    box-sizing:border-box;
+    box-shadow:0 20px 90px rgba(0,0,0,.6);
+  `;
+
+  const title = document.createElement('div');
+  title.textContent =
+    'BITUNIX — ACTIVE CHART / DATAFEED INSPECTOR 05';
+
+  title.style.cssText =
+    'font-size:15px;font-weight:bold;color:#8fbdff;';
+
+  const description = document.createElement('div');
+  description.textContent =
+    'گزارش موتور فعال، ساختار داده و سری چارت آماده است.';
+
+  description.style.cssText =
+    'font-size:12px;color:#aab8d2;';
+
+  const area = document.createElement('textarea');
+  area.value = output;
+  area.readOnly = true;
+
+  area.style.cssText = `
+    flex:1;
+    width:100%;
+    min-height:0;
+    resize:none;
+    box-sizing:border-box;
+    background:rgba(4,9,20,.85);
+    color:#dce9ff;
+    border:1px solid rgba(120,160,220,.25);
+    border-radius:9px;
+    padding:12px;
+    outline:none;
+    font:11px/1.5 Consolas,monospace;
+  `;
+
+  const footer = document.createElement('div');
+  footer.style.cssText =
+    'display:flex;align-items:center;gap:12px;';
+
+  const copyButton = document.createElement('button');
+  copyButton.textContent = 'کپی گزارش کامل';
+
+  copyButton.style.cssText = `
+    background:#397ee6;
+    border:0;
+    border-radius:8px;
+    color:white;
+    padding:11px 22px;
+    cursor:pointer;
+    font-weight:bold;
+  `;
+
+  const closeButton = document.createElement('button');
+  closeButton.textContent = 'بستن';
+
+  closeButton.style.cssText = `
+    background:rgba(255,255,255,.08);
+    color:white;
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:8px;
+    padding:11px 22px;
+    cursor:pointer;
+  `;
+
+  const status = document.createElement('span');
+  status.textContent = 'آماده';
+  status.style.cssText =
+    'font-size:12px;color:#aab8d2;';
+
+  copyButton.onclick = async () => {
+    try {
+      await navigator.clipboard.writeText(output);
+      status.textContent = 'گزارش کپی شد.';
+      status.style.color = '#83e3a8';
+    } catch (_) {
+      area.focus();
+      area.select();
+
+      status.textContent =
+        document.execCommand('copy')
+          ? 'گزارش کپی شد.'
+          : 'Ctrl+C را بزن.';
+    }
+  };
+
+  closeButton.onclick = () => overlay.remove();
+
+  footer.append(copyButton, closeButton, status);
+  box.append(title, description, area, footer);
+  overlay.append(box);
+
+  document.documentElement.append(overlay);
+
+  console.info(
+    '[BITUNIX INSPECTOR 05] Read-only scan completed.'
+  );
+
+})();
+</CodeBlock>
+
+### بعد از گزارش پنجم چه می‌کنیم؟
+
+بر اساس نتیجه، مرحله بعد را روی یکی از این دو بخش متمرکز می‌کنم:
+
+- **استخراج شماره ۶: کندل و DataFeed**؛ بررسی جریان واقعی معاملات، تاریخچه و زمان‌بندی کندل‌ها.
+- **استخراج شماره ۶ جایگزین: ساختار خطوط**؛ اگر API چارت و DataFeed به‌اندازه کافی شناخته شده باشند، وارد بررسی رسم خطوط و تشخیص تغییراتشان می‌شویم.
+
+ترجیح من این است که اول DataFeed را کامل بشناسیم؛ چون تایم‌فریم‌های ثانیه‌ای و تایمر شناور به اطلاعات دقیق زمان کندل وابسته‌اند.
+
+گزارش پنجم را بفرست تا بر اساس آن مرحله بعد را تعیین کنم.
+
+
+کاربر | پیام 61 | 11/14/2026, 8:19:53 PM
+------------------------------------------------------------
+
+})();
+
+library.c5a1639e504413c38fde.js:403 `getVisiblePriceRange` is deprecated. Use Price Scale API instead
+VM6529:719 Uncaught ReferenceError: studyEngine is not defined
+    at <anonymous>:719:32
+    at <anonymous>:879:3
+arms-ba00c1dd9e.js:8  POST https://web-log.zouliangbu.com/rum/web/v2?workspace=default-cms-5168731498105524-ap-northeast-1&service_id=1ew5ugxa27o@fe8e759f829b3480b3994 net::ERR_NAME_NOT_RESOLVED
+
+انگار ارور داد
+
+
+دستیار | پیام 62 | 11/14/2026, 8:20:19 PM
+------------------------------------------------------------
+
+Worked for 24s
+
+
+دستیار | پیام 63 | 11/14/2026, 8:20:10 PM
+------------------------------------------------------------
+
+بله، خطا را پیدا کردم. این بار ایراد از کدی بود که من نوشتم، نه از Bitunix یا مرورگر تو. دو مورد در اسکریپت نیاز به اصلاح داشت.
+
+### بررسی سه پیام خطا
+
+| پیام | علت | اهمیت |
+|---|---|---|
+| `getVisiblePriceRange is deprecated` | استفاده از متد قدیمی TradingView | هشدار، نه خطای توقف |
+| `studyEngine is not defined` | متغیر خارج از محدوده تعریف خود استفاده شده بود | <badge color="danger">خطای اصلی</badge> |
+| `web-log.zouliangbu.com ERR_NAME_NOT_RESOLVED` | درخواست گزارش‌گیری خود سایت با خطای DNS مواجه شده | نامرتبط با اسکریپت ما |
+
+بنابراین خطای اصلی را اصلاح می‌کنم. همچنین متد قدیمی را حذف می‌کنم تا هشدار اول هم تکرار نشود.
+
+مهم‌تر اینکه این بار اسکریپت را طوری می‌نویسم که اگر یک بخش در دسترس نبود، بخش‌های دیگر همچنان گزارش شوند و خطای یک متغیر کل گزارش را متوقف نکند.
+
+## کد اصلاح‌شده شماره ۵.۱
+
+این نسخه را جایگزین کد قبلی کن. لازم نیست صفحه را Refresh کنی؛ فقط پنجره خطای قبلی را ببند و کد زیر را در Console اجرا کن.
+
+<CodeBlock language="javascript" editable>
+(() => {
+  'use strict';
+
+  const TAG = 'BITUNIX_ACTIVE_CHART_DATAFEED_05_1';
+  const PANEL = '__bitunix_inspector_05_1__';
+
+  document.getElementById(PANEL)?.remove();
+
+  const report = {
+    diagnostic: TAG,
+    startedAt: new Date().toISOString(),
+    errors: [],
+    iframe: {},
+    globals: {},
+    widgetCollection: {},
+    widgets: [],
+    activeChart: {},
+    chartModel: {},
+    mainSeries: {},
+    panes: [],
+    studies: {},
+    datafeed: {},
+    chartApi: {},
+    drawingSystem: {},
+    result: {},
+    safety: {
+      readOnly: true,
+      noOrdersSent: true,
+      noClicks: true,
+      noResolutionChanges: true,
+      noChartMutations: true,
+      noNetworkRequests: true,
+      noWebSocketsCreated: true,
+      noStorageOrCookiesRead: true,
+      noInputValuesRead: true
+    }
+  };
+
+  const safe = (fn, fallback = null) => {
+    try {
+      const value = fn();
+      return value === undefined ? fallback : value;
+    } catch (e) {
+      report.errors.push(String(e?.message || e));
+      return fallback;
+    }
+  };
+
+  const sensitive =
+    /token|password|secret|cookie|authorization|signature|api.?key|sessionid/i;
+
+  function ownKeys(obj) {
+    return safe(() =>
+      Object.getOwnPropertyNames(obj)
+        .filter(k => !sensitive.test(k))
+    , []);
+  }
+
+  function ownValue(obj, key) {
+    const d = safe(() =>
+      Object.getOwnPropertyDescriptor(obj, key)
+    );
+
+    if (
+      !d ||
+      !Object.prototype.hasOwnProperty.call(d, 'value')
+    ) return undefined;
+
+    return d.value;
+  }
+
+  function findMethod(obj, name) {
+    let p = obj;
+
+    for (let i = 0; p && i < 8; i++) {
+      const d = safe(() =>
+        Object.getOwnPropertyDescriptor(p, name)
+      );
+
+      if (d && typeof d.value === 'function') {
+        return d.value;
+      }
+
+      p = safe(() => Object.getPrototypeOf(p));
+    }
+
+    return null;
+  }
+
+  function readMethod(obj, name) {
+    const fn = findMethod(obj, name);
+
+    if (!fn) {
+      return {
+        found: false,
+        ok: false
+      };
+    }
+
+    try {
+      const value = fn.call(obj);
+
+      return {
+        found: true,
+        ok: true,
+        value
+      };
+    } catch (e) {
+      report.errors.push(
+        name + ': ' + String(e?.message || e)
+      );
+
+      return {
+        found: true,
+        ok: false,
+        error: String(e?.message || e)
+      };
+    }
+  }
+
+  function inspect(obj, path, maxMethods = 150) {
+    if (
+      !obj ||
+      (typeof obj !== 'object' &&
+       typeof obj !== 'function')
+    ) {
+      return {
+        path,
+        type: typeof obj
+      };
+    }
+
+    const keys = ownKeys(obj);
+
+    const result = {
+      path,
+      constructor: safe(
+        () => obj.constructor?.name
+      ),
+      ownPropertyCount: keys.length,
+      properties: [],
+      methods: [],
+      relevantChildren: [],
+      prototypeMethods: []
+    };
+
+    for (const key of keys.slice(0, 180)) {
+      const d = safe(() =>
+        Object.getOwnPropertyDescriptor(obj, key)
+      );
+
+      if (!d) continue;
+
+      if (!Object.prototype.hasOwnProperty.call(d, 'value')) {
+        result.properties.push({
+          name: key,
+          type: 'accessor'
+        });
+        continue;
+      }
+
+      const value = d.value;
+
+      const item = {
+        name: key,
+        type: typeof value,
+        constructor: value == null
+          ? null
+          : safe(() => value.constructor?.name)
+      };
+
+      if (typeof value === 'function') {
+        result.methods.push({
+          name: key,
+          functionName: value.name || '',
+          argumentCount: value.length
+        });
+      }
+
+      if (
+        value === null ||
+        ['string', 'number', 'boolean'].includes(typeof value)
+      ) {
+        item.value = value;
+      }
+
+      if (
+        value !== null &&
+        value !== undefined &&
+        (typeof value === 'object' ||
+         typeof value === 'function') &&
+        /chart|series|pane|study|model|feed|scale|source|data|time|interval|resolution/i.test(key)
+      ) {
+        result.relevantChildren.push({
+          name: key,
+          type: typeof value,
+          constructor: item.constructor,
+          keys: ownKeys(value).slice(0, 100)
+        });
+      }
+
+      result.properties.push(item);
+    }
+
+    let p = safe(() => Object.getPrototypeOf(obj));
+    let depth = 0;
+
+    while (p && depth < 4) {
+      for (const key of safe(
+        () => Object.getOwnPropertyNames(p),
+        []
+      )) {
+        if (sensitive.test(key)) continue;
+
+        const d = safe(() =>
+          Object.getOwnPropertyDescriptor(p, key)
+        );
+
+        if (d && typeof d.value === 'function') {
+          result.prototypeMethods.push({
+            name: key,
+            argumentCount: d.value.length
+          });
+        }
+      }
+
+      p = safe(() => Object.getPrototypeOf(p));
+      depth++;
+    }
+
+    result.methods = result.methods.slice(0, maxMethods);
+    result.prototypeMethods =
+      result.prototypeMethods.slice(0, maxMethods);
+
+    return result;
+  }
+
+  function summarizeList(list, limit = 15) {
+    if (!Array.isArray(list)) {
+      return {
+        type: typeof list,
+        constructor: safe(() => list?.constructor?.name)
+      };
+    }
+
+    return {
+      count: list.length,
+      items: list.slice(0, limit).map((item, index) => ({
+        index,
+        constructor: safe(() => item?.constructor?.name),
+        keys: item && typeof item === 'object'
+          ? ownKeys(item).slice(0, 100)
+          : [],
+        details: item && typeof item === 'object'
+          ? inspect(item, 'item_' + index, 80)
+          : item
+      }))
+    };
+  }
+
+  function readSimple(obj, methods) {
+    const out = {};
+
+    for (const name of methods) {
+      const r = readMethod(obj, name);
+
+      out[name] = {
+        found: r.found,
+        ok: r.ok,
+        value: r.ok && (
+          r.value === null ||
+          ['string', 'number', 'boolean'].includes(typeof r.value)
+        )
+          ? r.value
+          : null,
+        constructor: r.ok
+          ? safe(() => r.value?.constructor?.name)
+          : null,
+        error: r.error || null
+      };
+    }
+
+    return out;
+  }
+
+  // ----------------------------------------
+  // 1. Find the actual chart iframe
+  // ----------------------------------------
+
+  const iframe =
+    document.querySelector('#futures-trade-tchart iframe') ||
+    document.querySelector('iframe[id^="tradingview_"]');
+
+  let win = null;
+  let doc = null;
+
+  if (!iframe) {
+    report.errors.push('TradingView iframe not found');
+  } else {
+    win = safe(() => iframe.contentWindow);
+    doc = safe(() => iframe.contentDocument);
+
+    report.iframe = {
+      id: iframe.id,
+      title: iframe.title,
+      accessible: !!doc,
+      readyState: safe(() => doc.readyState),
+      width: safe(() => doc.documentElement.clientWidth),
+      height: safe(() => doc.documentElement.clientHeight)
+    };
+  }
+
+  // ----------------------------------------
+  // 2. Resolve objects
+  // ----------------------------------------
+
+  let collection = null;
+  let tradingApi = null;
+  let chartApiInstance = null;
+  let chartWidget = null;
+  let studyEngine = null;
+
+  if (win && doc) {
+    const names = [
+      'TradingView',
+      'ChartApiInstance',
+      'chartWidgetCollection',
+      'chartWidget',
+      'tradingViewApi',
+      'lineToolPropertiesToolbar',
+      'studyMarket',
+      'widgetReady'
+    ];
+
+    for (const name of names) {
+      const value = ownValue(win, name);
+
+      report.globals[name] = {
+        found: value !== undefined,
+        type: typeof value,
+        constructor: value == null
+          ? null
+          : safe(() => value.constructor?.name),
+        keys: value &&
+          (typeof value === 'object' ||
+           typeof value === 'function')
+          ? ownKeys(value).slice(0, 100)
+          : []
+      };
+    }
+
+    collection = ownValue(win, 'chartWidgetCollection');
+    tradingApi = ownValue(win, 'tradingViewApi');
+    chartApiInstance = ownValue(win, 'ChartApiInstance');
+    chartWidget = ownValue(win, 'chartWidget');
+
+    // --------------------------------------
+    // 3. Widget collection
+    // --------------------------------------
+
+    if (collection) {
+      report.widgetCollection =
+        inspect(collection, 'chartWidgetCollection');
+
+      const allResult = readMethod(collection, 'getAll');
+
+      if (allResult.ok) {
+        report.widgetCollection.getAll =
+          summarizeList(allResult.value, 10);
+
+        if (
+          Array.isArray(allResult.value) &&
+          !chartWidget
+        ) {
+          chartWidget = allResult.value[0] || null;
+        }
+      }
+    }
+
+    // --------------------------------------
+    // 4. Inspect individual chart widgets
+    // --------------------------------------
+
+    const activeWidgetValue = collection
+      ? ownValue(collection, 'activeChartWidget')
+      : null;
+
+    if (activeWidgetValue) {
+      report.widgetCollection.activeChartWidget =
+        inspect(activeWidgetValue, 'activeChartWidget');
+    }
+
+    if (chartWidget) {
+      report.widgets.push(
+        inspect(chartWidget, 'window.chartWidget')
+      );
+    }
+
+    // --------------------------------------
+    // 5. TradingView public API
+    // --------------------------------------
+
+    let publicChart = null;
+
+    if (tradingApi) {
+      report.activeChart =
+        inspect(tradingApi, 'tradingViewApi');
+
+      const activeResult =
+        readMethod(tradingApi, 'activeChart');
+
+      const chartResult =
+        readMethod(tradingApi, 'chart');
+
+      report.activeChart.accessors = {
+        activeChart: {
+          found: activeResult.found,
+          ok: activeResult.ok,
+          constructor: activeResult.ok
+            ? safe(() => activeResult.value?.constructor?.name)
+            : null,
+          error: activeResult.error || null
+        },
+        chart: {
+          found: chartResult.found,
+          ok: chartResult.ok,
+          constructor: chartResult.ok
+            ? safe(() => chartResult.value?.constructor?.name)
+            : null,
+          error: chartResult.error || null
+        }
+      };
+
+      publicChart =
+        activeResult.ok && activeResult.value
+          ? activeResult.value
+          : chartResult.ok
+            ? chartResult.value
+            : null;
+    }
+
+    // --------------------------------------
+    // 6. Public chart read-only information
+    // --------------------------------------
+
+    if (publicChart) {
+      report.activeChart.details =
+        inspect(publicChart, 'activeChart()', 100);
+
+      // Removed deprecated getVisiblePriceRange.
+      report.activeChart.readOnlyValues =
+        readSimple(publicChart, [
+          'symbol',
+          'resolution',
+          'getVisibleRange',
+          'getAllStudies',
+          'getPanes',
+          'getTimeScale'
+        ]);
+
+      const studies = readMethod(
+        publicChart,
+        'getAllStudies'
+      );
+
+      if (studies.ok) {
+        report.studies =
+          summarizeList(studies.value, 30);
+      }
+
+      const panes = readMethod(
+        publicChart,
+        'getPanes'
+      );
+
+      if (panes.ok) {
+        report.panes =
+          summarizeList(panes.value, 20);
+      }
+
+      const timeScale = readMethod(
+        publicChart,
+        'getTimeScale'
+      );
+
+      if (timeScale.ok && timeScale.value) {
+        report.activeChart.timeScale =
+          inspect(timeScale.value, 'getTimeScale()');
+      }
+    }
+
+    // --------------------------------------
+    // 7. Chart Widget model
+    // --------------------------------------
+
+    if (chartWidget) {
+      report.chartModel.widget =
+        inspect(chartWidget, 'chartWidget', 120);
+
+      const modelResult =
+        readMethod(chartWidget, 'model');
+
+      if (modelResult.ok && modelResult.value) {
+        const model = modelResult.value;
+
+        report.chartModel.model =
+          inspect(model, 'chartWidget.model()', 100);
+
+        // Main series
+        const mainSeriesResult =
+          readMethod(model, 'mainSeries');
+
+        if (mainSeriesResult.ok && mainSeriesResult.value) {
+          report.mainSeries =
+            inspect(
+              mainSeriesResult.value,
+              'model.mainSeries()',
+              100
+            );
+        }
+
+        // Data sources
+        const dataSources =
+          readMethod(model, 'dataSources');
+
+        if (dataSources.ok) {
+          report.chartModel.dataSources =
+            summarizeList(dataSources.value, 25);
+        }
+      }
+
+      // Current symbol and resolution WatchedValues
+      for (const key of [
+        '_symbolWV',
+        '_resolutionWV'
+      ]) {
+        const watched = ownValue(chartWidget, key);
+
+        if (watched) {
+          report.chartModel[key] = {
+            constructor: safe(
+              () => watched.constructor?.name
+            ),
+            value: ownValue(watched, '_value'),
+            keys: ownKeys(watched)
+          };
+        }
+      }
+
+      // Pane widget structures
+      const paneWidgets =
+        ownValue(chartWidget, '_paneWidgets');
+
+      if (Array.isArray(paneWidgets)) {
+        report.chartModel.paneWidgets =
+          paneWidgets.slice(0, 12).map(
+            (pane, i) => inspect(
+              pane,
+              'paneWidget_' + i,
+              70
+            )
+          );
+      }
+    }
+
+    // --------------------------------------
+    // 8. DataFeed engine
+    // --------------------------------------
+
+    if (chartApiInstance) {
+      report.chartApi =
+        inspect(chartApiInstance, 'ChartApiInstance', 120);
+
+      studyEngine =
+        ownValue(chartApiInstance, '_studyEngine');
+
+      if (studyEngine) {
+        report.datafeed.studyEngine =
+          inspect(studyEngine, '_studyEngine', 120);
+
+        for (const key of [
+          '_externalDatafeed',
+          '_datafeedConfiguration',
+          '_cachedDatafeed',
+          '_resolveRequests',
+          '_resolvePromisesBySymbolId',
+          '_symbolIdToSymbolRequestString',
+          '_timeScales',
+          '_barsCoefficientsCache'
+        ]) {
+          const value =
+            ownValue(studyEngine, key);
+
+          if (value !== undefined) {
+            report.datafeed[key] = {
+              type: typeof value,
+              constructor: value == null
+                ? null
+                : safe(() => value.constructor?.name),
+              keys: value &&
+                (typeof value === 'object' ||
+                 typeof value === 'function')
+                ? ownKeys(value).slice(0, 100)
+                : [],
+              details: value &&
+                (typeof value === 'object' ||
+                 typeof value === 'function')
+                ? inspect(value, '_studyEngine.' + key, 80)
+                : value
+            };
+          }
+        }
+
+        const externalDatafeed =
+          ownValue(studyEngine, '_externalDatafeed');
+
+        report.datafeed.externalDatafeedFound =
+          !!externalDatafeed;
+      } else {
+        report.datafeed.studyEngineFound = false;
+      }
+
+      report.datafeed.readOnlyMethods =
+        findMethod(chartApiInstance, 'resolveSymbol')
+          ? report.chartApi.prototypeMethods
+              .filter(x =>
+                /symbol|series|data|resolution|time|study|bar|session|connect|request/i.test(x.name)
+              )
+              .map(x => x.name)
+          : [];
+    }
+
+    // --------------------------------------
+    // 9. Drawing system
+    // --------------------------------------
+
+    const drawing =
+      ownValue(win, 'lineToolPropertiesToolbar');
+
+    if (drawing) {
+      report.drawingSystem =
+        inspect(drawing, 'lineToolPropertiesToolbar', 80);
+    }
+
+    // --------------------------------------
+    // 10. Current chart DOM / timeframe state
+    // --------------------------------------
+
+    if (doc) {
+      report.chartDOM = {
+        chartWidget: safe(() => {
+          const el = doc.querySelector('.chart-widget');
+          return el ? {
+            className: el.className,
+            width: el.getBoundingClientRect().width,
+            height: el.getBoundingClientRect().height
+          } : null;
+        }),
+        legend: safe(() =>
+          Array.from(
+            doc.querySelectorAll('[data-name="legend-source-title"],[data-name="legend-source-interval"]')
+          ).slice(0, 10).map(el => ({
+            name: el.getAttribute('data-name'),
+            text: (el.innerText || '').trim()
+          }))
+        ),
+        iframeResolutionLabel: safe(() =>
+          doc.querySelector('[data-name="legend-source-interval"]')?.textContent?.trim()
+        ),
+        timeframeButtons: safe(() =>
+          Array.from(
+            doc.querySelectorAll('button[aria-label*="minute"],button[aria-label*="second"]')
+          ).slice(0, 30).map(el => ({
+            text: (el.innerText || '').trim(),
+            ariaLabel: el.getAttribute('aria-label'),
+            tooltip: el.getAttribute('data-tooltip')
+          }))
+        )
+      };
+    }
+
+    // --------------------------------------
+    // 11. Result summary
+    // --------------------------------------
+
+    report.result = {
+      iframeAccessible: !!doc,
+      widgetCollectionFound: !!collection,
+      directChartWidgetFound: !!chartWidget,
+      tradingViewApiFound: !!tradingApi,
+      publicChartObjectFound: !!publicChart,
+      chartApiInstanceFound: !!chartApiInstance,
+      studyEngineFound: !!studyEngine,
+      externalDatafeedFound: !!(
+        studyEngine &&
+        ownValue(studyEngine, '_externalDatafeed')
+      ),
+      mainSeriesFound: !!report.mainSeries.constructor,
+      activeResolution:
+        report.chartModel._resolutionWV?.value ??
+        report.activeChart?.readOnlyValues?.resolution?.value ??
+        null,
+      activeSymbol:
+        report.chartModel._symbolWV?.value ??
+        report.activeChart?.readOnlyValues?.symbol?.value ??
+        null,
+      studyCount: report.studies.count ?? null,
+      paneCount: report.panes.length,
+      errorCount: report.errors.length
+    };
+  }
+
+  report.finishedAt = new Date().toISOString();
+
+  // ----------------------------------------
+  // 12. Copyable report popup
+  // ----------------------------------------
+
+  const output = JSON.stringify(report, null, 2);
+
+  const overlay = document.createElement('div');
+  overlay.id = PANEL;
+
+  overlay.style.cssText = `
+    position:fixed;
+    inset:0;
+    z-index:2147483647;
+    background:rgba(3,8,20,.84);
+    backdrop-filter:blur(14px);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:16px;
+    box-sizing:border-box;
+    color:#e5efff;
+    font-family:Arial,sans-serif;
+  `;
+
+  const box = document.createElement('div');
+
+  box.style.cssText = `
+    width:min(1000px,96vw);
+    height:min(820px,94vh);
+    background:rgba(16,25,44,.97);
+    border:1px solid rgba(110,155,230,.35);
+    border-radius:16px;
+    padding:18px;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    box-sizing:border-box;
+    box-shadow:0 20px 90px rgba(0,0,0,.6);
+  `;
+
+  const title = document.createElement('div');
+  title.textContent = TAG;
+  title.style.cssText =
+    'font-size:15px;font-weight:bold;color:#8fbdff;';
+
+  const description = document.createElement('div');
+  description.textContent =
+    'نسخه اصلاح‌شده: گزارش مستقل و مقاوم در برابر خطای هر بخش.';
+
+  description.style.cssText =
+    'font-size:12px;color:#aab8d2;';
+
+  const area = document.createElement('textarea');
+  area.value = output;
+  area.readOnly = true;
+
+  area.style.cssText = `
+    flex:1;
+    width:100%;
+    min-height:0;
+    resize:none;
+    box-sizing:border-box;
+    background:rgba(4,9,20,.85);
+    color:#dce9ff;
+    border:1px solid rgba(120,160,220,.25);
+    border-radius:9px;
+    padding:12px;
+    outline:none;
+    font:11px/1.5 Consolas,monospace;
+  `;
+
+  const footer = document.createElement('div');
+  footer.style.cssText =
+    'display:flex;align-items:center;gap:12px;';
+
+  const copy = document.createElement('button');
+  copy.textContent = 'کپی گزارش کامل';
+
+  copy.style.cssText = `
+    background:#397ee6;
+    border:0;
+    border-radius:8px;
+    color:white;
+    padding:11px 22px;
+    cursor:pointer;
+    font-weight:bold;
+  `;
+
+  const close = document.createElement('button');
+  close.textContent = 'بستن';
+
+  close.style.cssText = `
+    background:rgba(255,255,255,.08);
+    color:white;
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:8px;
+    padding:11px 22px;
+    cursor:pointer;
+  `;
+
+  const status = document.createElement('span');
+  status.textContent = 'آماده';
+  status.style.cssText =
+    'font-size:12px;color:#aab8d2;';
+
+  copy.onclick = async () => {
+    try {
+      await navigator.clipboard.writeText(output);
+      status.textContent = 'گزارش کپی شد.';
+      status.style.color = '#83e3a8';
+    } catch (_) {
+      area.focus();
+      area.select();
+
+      status.textContent =
+        document.execCommand('copy')
+          ? 'گزارش کپی شد.'
+          : 'Ctrl+C را بزن.';
+    }
+  };
+
+  close.onclick = () => overlay.remove();
+
+  footer.append(copy, close, status);
+  box.append(title, description, area, footer);
+  overlay.append(box);
+
+  document.documentElement.append(overlay);
+
+  console.info(
+    '[BITUNIX INSPECTOR 05.1] Completed.'
+  );
+
+})();
+</CodeBlock>
+
+### چه چیزی برای من بفرستی؟
+
+گزارش پنجره را کامل کپی کن و بفرست؛ مخصوصاً این قسمت‌ها برای مرحله بعد مهم‌اند:
+
+- `result`
+- `chartModel`
+- `mainSeries`
+- `datafeed`
+- `activeChart`
+- `errors`
+
+این بار حتی اگر DataFeed قابل دسترسی نباشد، گزارش بقیه بخش‌ها را خواهیم داشت. بعد از دریافت خروجی، می‌توانیم وارد استخراج واقعی جریان کندل‌ها و بررسی ساخت تایم‌فریم‌های ثانیه‌ای شویم.
+
+
+کاربر | پیام 64 | 11/14/2026, 8:23:30 PM
+------------------------------------------------------------
+
+[گزارشات بیتیونیکس5.txt](https://github.com/artaville/KCEX-Enhancer/blob/main/%DA%AF%D8%B2%D8%A7%D8%B1%D8%B4%D8%A7%D8%AA%20%D8%A8%DB%8C%D8%AA%DB%8C%D9%88%D9%86%DB%8C%DA%A9%D8%B35.txt "گزارشات بیتیونیکس5.txt") &#x20;
+
+بازم یک موردی یادم اومد. یک حالتی بود قبلا که برام ساخته بودی که اوپن کندل، از کلوز کندل قبلی شروع بشه. اینو هم توی صرافی kcex قرار داده بودی و هم توی خود سایت تریدینگ ویو. اینو هم نیاز دارم با تیک روشن خاموش
+
+گزارش رو ببین
+
+
+دستیار | پیام 65 | 11/14/2026, 8:23:34 PM
+------------------------------------------------------------
+
+گزارش پنجم را از مخزن می‌خوانم و قابلیت جدید را هم به فهرست پروژه اضافه می‌کنم. منظورت از این حالت را «Align Candle Opens» می‌گیرم: شروع هر کندل از قیمت کلوز کندل قبلی، با کلید روشن/خاموش مستقل؛ بعد از دیدن گزارش مشخص می‌کنم برای پیاده‌سازی‌اش چه اطلاعات دیگری لازم داریم.
+
+
+دستیار | پیام 66 | 11/14/2026, 8:23:38 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_file","args":{"repository_full_name":"artaville/KCEX-Enhancer","path":"\u06af\u0632\u0627\u0631\u0634\u0627\u062a \u0628\u06cc\u062a\u06cc\u0648\u0646\u06cc\u06a9\u06335.txt","encoding":"utf-8"}}
+
+
+دستیار | پیام 67 | 11/14/2026, 8:23:42 PM
+------------------------------------------------------------
+
+bash -lc python - <<'PY'
+import zipfile, os
+paths=['/mnt/data/files/TV-to-KCEX-Automation-Bot-v1.2.zip','/mnt/data/files/KCEX-Enhancer-v4.0.4.zip']
+for p in paths:
+ print('\n###',p,os.path.exists(p))
+ if os.path.exists(p):
+  z=zipfile.ZipFile(p)
+  for n in z.namelist():
+   if 'align' in n.lower() or n.endswith(('.js','.json','.html')):
+    print(n)
+PY
+
+
+دستیار | پیام 68 | 11/14/2026, 8:23:50 PM
+------------------------------------------------------------
+
+bash -lc python - <<'PY'
+import zipfile,re
+for p in ['/mnt/data/files/TV-to-KCEX-Automation-Bot-v1.2.zip','/mnt/data/files/KCEX-Enhancer-v4.0.4.zip']:
+ print('\n###',p)
+ z=zipfile.ZipFile(p)
+ for n in z.namelist():
+  if n.endswith('.js'):
+   s=z.read(n).decode('utf-8','replace')
+   hits=[m.start() for m in re.finditer(r'align|candle.?open|open.?align|previous.?close',s,re.I)]
+   if hits:
+    print('\n--',n,'hits',len(hits))
+    for h in hits[:10]:
+     print(s[max(0,h-500):h+900].replace('\n',' ')[:1400])
+PY
+
+
+دستیار | پیام 69 | 11/14/2026, 8:23:59 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_file","args":{"repository_full_name":"artaville/KCEX-Enhancer","path":"\u06af\u0632\u0627\u0631\u0634\u0627\u062a \u0628\u06cc\u062a\u06cc\u0648\u0646\u06cc\u06a9\u06335.txt","encoding":"utf-8"}}
+
+
+دستیار | پیام 70 | 11/14/2026, 8:24:04 PM
+------------------------------------------------------------
+
+bash -lc python - <<'PY'
+import zipfile
+p='/mnt/data/files/TV-to-KCEX-Automation-Bot-v1.2.zip'
+z=zipfile.ZipFile(p)
+for n in ['tv-open-main.js','content.js','manifest.json']:
+ print('\n===== '+n+' =====')
+ s=z.read(n).decode('utf-8','replace')
+ print(s[:30000])
+PY
+
+
+دستیار | پیام 71 | 11/14/2026, 8:24:16 PM
+------------------------------------------------------------
+
+bash -lc python - <<'PY'
+import zipfile
+p='/mnt/data/files/TV-to-KCEX-Automation-Bot-v1.2.zip'
+s=zipfile.ZipFile(p).read('tv-open-main.js').decode()
+for i,line in enumerate(s.splitlines(),1):
+ print(f'{i:04d}: {line}')
+PY
+
+
+دستیار | پیام 72 | 11/14/2026, 8:24:52 PM
+------------------------------------------------------------
+
+Worked for 1m 21s
+
+
+دستیار | پیام 73 | 11/14/2026, 8:24:42 PM
+------------------------------------------------------------
+
+گزارش شماره ۵ را بررسی کردم. این بار استخراج کاملاً موفق بوده است. <badge color="success">بدون خطا</badge>
+
+مهم‌ترین نتیجه این گزارش این است که تقریباً تمام اجزای موردنیاز برای دسترسی به اطلاعات واقعی کندل‌ها را پیدا کرده‌ایم.
+
+### نتیجه گزارش پنجم
+
+| بخش | نتیجه |
+|---|---|
+| TradingView API | پیدا شد |
+| Active Chart | پیدا شد |
+| Chart Widget | پیدا شد |
+| Chart Model | پیدا شد |
+| Main Series | پیدا شد |
+| DataFeed داخلی | پیدا شد |
+| External DataFeed | پیدا شد |
+| موتور دریافت تاریخچه و داده زنده | متدهای آن شناسایی شدند |
+| خطاهای استخراج | صفر |
+
+به‌خصوص `External DataFeed` این متدها را دارد:
+
+- `getBars`
+- `subscribeBars`
+- `unsubscribeBars`
+- `resolveSymbol`
+- `onReady`
+- `getServerTime`
+
+این یعنی مسیرهای دریافت کندل‌های تاریخی و به‌روزرسانی کندل زنده را شناسایی کرده‌ایم؛ البته هنوز جزئیات اجرای آن‌ها را بررسی نکرده‌ایم.
+
+نماد فعال هم `XAUTUSDT` و تایم‌فریم فعلی از دید API مقدار `1`، یعنی یک دقیقه است.
+
+## قابلیت جدید: Align Candle Opens
+
+این قابلیت را هم به پروژه اضافه می‌کنیم.
+
+من نسخه قبلی‌ای را که برایت در پروژه TradingView ساخته بودم بررسی کردم. منطق آن به این شکل بود:
+
+- Open هر کندل از Close کندل قبلی گرفته می‌شود.
+- High، Low و Close اصلی تغییر نمی‌کنند.
+- کندل‌های تاریخی و کندل‌های جدید هر دو اصلاح می‌شوند.
+- قیمت Open اصلی ذخیره می‌شود تا هنگام خاموش‌کردن قابلیت امکان بازگرداندن آن وجود داشته باشد.
+
+این همان رفتاری است که می‌خواهیم در Bitunix داشته باشیم؛ البته باید سازگاری موتور داخلی Bitunix با روش قبلی را بررسی کنیم.
+
+## مرحله بعد: کد شماره ۶ — استخراج ساختار واقعی کندل‌ها
+
+<badge color="success">Read Only</badge>
+
+این مرحله را برای سه قابلیت هم‌زمان انجام می‌دهیم:
+
+1. ساخت تایم‌فریم‌های ثانیه‌ای.
+2. Align Candle Opens.
+3. تایمر شناور و محاسبه زمان باقی‌مانده کندل.
+
+می‌خواهیم ساختاری را پیدا کنیم که در نسخه قبلی افزونه KCEX برای اصلاح Open استفاده کرده بودیم: `data()`، `bars()`، `_conflatedChunksBuilder` و `mergeData`.
+
+این بار کد فقط ساختار و چند ردیف نمونه را می‌خواند؛ هیچ کندلی را تغییر نمی‌دهد.
+
+<CodeBlock language="javascript" editable>
+(() => {
+  'use strict';
+
+  const TAG = 'BITUNIX_CANDLE_ENGINE_SCAN_06';
+  const PANEL = '__bitunix_candle_engine_scan_06__';
+
+  document.getElementById(PANEL)?.remove();
+
+  const report = {
+    diagnostic: TAG,
+    startedAt: new Date().toISOString(),
+    errors: [],
+    iframe: {},
+    chart: {},
+    series: {},
+    data: {},
+    bars: {},
+    builder: {},
+    supportedResolutions: [],
+    externalDatafeed: {},
+    candleSamples: [],
+    result: {},
+    safety: {
+      readOnly: true,
+      noOrdersSent: true,
+      noClicks: true,
+      noCandleChanges: true,
+      noDatafeedCalls: true,
+      noMergeCalls: true,
+      noNetworkRequests: true,
+      noWebSocketsCreated: true,
+      noStorageOrCookiesRead: true
+    }
+  };
+
+  const safe = (fn, fallback = null) => {
+    try {
+      const v = fn();
+      return v === undefined ? fallback : v;
+    } catch (e) {
+      report.errors.push(String(e?.message || e));
+      return fallback;
+    }
+  };
+
+  const sensitive =
+    /token|password|secret|cookie|authorization|signature|api.?key|sessionid/i;
+
+  function keys(obj) {
+    return safe(() =>
+      Object.getOwnPropertyNames(obj)
+        .filter(k => !sensitive.test(k))
+    , []);
+  }
+
+  function value(obj, key) {
+    const d = safe(() =>
+      Object.getOwnPropertyDescriptor(obj, key)
+    );
+
+    return d &&
+      Object.prototype.hasOwnProperty.call(d, 'value')
+        ? d.value
+        : undefined;
+  }
+
+  function method(obj, name) {
+    let p = obj;
+
+    for (let i = 0; p && i < 8; i++) {
+      const d = safe(() =>
+        Object.getOwnPropertyDescriptor(p, name)
+      );
+
+      if (d && typeof d.value === 'function') {
+        return d.value;
+      }
+
+      p = safe(() => Object.getPrototypeOf(p));
+    }
+
+    return null;
+  }
+
+  function callRead(obj, name) {
+    const fn = method(obj, name);
+
+    if (!fn) {
+      return { found: false, ok: false };
+    }
+
+    try {
+      return {
+        found: true,
+        ok: true,
+        value: fn.call(obj)
+      };
+    } catch (e) {
+      report.errors.push(
+        name + ': ' + String(e?.message || e)
+      );
+
+      return {
+        found: true,
+        ok: false,
+        error: String(e?.message || e)
+      };
+    }
+  }
+
+  function describe(obj, path) {
+    if (!obj || typeof obj !== 'object') {
+      return {
+        path,
+        type: typeof obj
+      };
+    }
+
+    const own = keys(obj);
+
+    let proto = safe(() => Object.getPrototypeOf(obj));
+    const protoMethods = [];
+    let depth = 0;
+
+    while (proto && depth < 4) {
+      for (const name of keys(proto)) {
+        const d = safe(() =>
+          Object.getOwnPropertyDescriptor(proto, name)
+        );
+
+        if (d && typeof d.value === 'function') {
+          protoMethods.push({
+            name,
+            arguments: d.value.length
+          });
+        }
+      }
+
+      proto = safe(() => Object.getPrototypeOf(proto));
+      depth++;
+    }
+
+    const properties = [];
+
+    for (const name of own.slice(0, 130)) {
+      const d = safe(() =>
+        Object.getOwnPropertyDescriptor(obj, name)
+      );
+
+      if (!d) continue;
+
+      if (!Object.prototype.hasOwnProperty.call(d, 'value')) {
+        properties.push({
+          name,
+          type: 'accessor'
+        });
+        continue;
+      }
+
+      const v = d.value;
+
+      const item = {
+        name,
+        type: typeof v,
+        constructor: v == null
+          ? null
+          : safe(() => v.constructor?.name)
+      };
+
+      if (
+        v === null ||
+        ['string', 'number', 'boolean'].includes(typeof v)
+      ) {
+        item.value = v;
+      }
+
+      if (typeof v === 'function') {
+        item.arguments = v.length;
+      }
+
+      if (
+        v &&
+        typeof v === 'object' &&
+        /data|bar|plot|builder|series|resolution|interval|symbol/i.test(name)
+      ) {
+        item.keys = keys(v).slice(0, 60);
+      }
+
+      properties.push(item);
+    }
+
+    return {
+      path,
+      constructor: safe(() => obj.constructor?.name),
+      ownPropertyCount: own.length,
+      properties,
+      prototypeMethods: protoMethods
+    };
+  }
+
+  // ---------------------------------------
+  // 1. Find chart iframe
+  // ---------------------------------------
+
+  const iframe =
+    document.querySelector('#futures-trade-tchart iframe') ||
+    document.querySelector('iframe[id^="tradingview_"]');
+
+  if (!iframe) {
+    report.errors.push('Chart iframe not found');
+  } else {
+    const win = safe(() => iframe.contentWindow);
+    const doc = safe(() => iframe.contentDocument);
+
+    report.iframe = {
+      id: iframe.id,
+      accessible: !!doc,
+      readyState: safe(() => doc.readyState)
+    };
+
+    if (win && doc) {
+
+      // -------------------------------------
+      // 2. Find active chart
+      // -------------------------------------
+
+      const collection =
+        value(win, 'chartWidgetCollection');
+
+      let widget = value(win, 'chartWidget');
+
+      if (!widget && collection) {
+        const r = callRead(collection, 'getAll');
+
+        if (r.ok && Array.isArray(r.value)) {
+          widget = r.value[0] || null;
+        }
+      }
+
+      const api = value(win, 'tradingViewApi');
+
+      const chartApi = value(win, 'ChartApiInstance');
+
+      report.chart = {
+        widgetFound: !!widget,
+        collectionFound: !!collection,
+        tradingViewApiFound: !!api,
+        chartApiFound: !!chartApi
+      };
+
+      // -------------------------------------
+      // 3. Obtain model and main series
+      // -------------------------------------
+
+      const modelResult = callRead(widget, 'model');
+
+      const model = modelResult.ok
+        ? modelResult.value
+        : null;
+
+      const seriesResult =
+        callRead(model, 'mainSeries');
+
+      const series = seriesResult.ok
+        ? seriesResult.value
+        : null;
+
+      report.series = {
+        found: !!series,
+        modelFound: !!model,
+        modelDetails: model
+          ? describe(model, 'chartWidget.model()')
+          : null,
+        seriesDetails: series
+          ? describe(series, 'model.mainSeries()')
+          : null,
+        symbol: series
+          ? (callRead(series, 'symbol').value ?? null)
+          : null,
+        resolution: series
+          ? (callRead(series, 'interval').value ?? null)
+          : null
+      };
+
+      // -------------------------------------
+      // 4. Read Series Data
+      // -------------------------------------
+
+      const dataResult =
+        callRead(series, 'data');
+
+      const data =
+        dataResult.ok
+          ? dataResult.value
+          : series
+            ? value(series, '_data')
+            : null;
+
+      report.data = {
+        found: !!data,
+        getterFound: dataResult.found,
+        constructor: safe(() => data?.constructor?.name),
+        details: data
+          ? describe(data, 'mainSeries.data()')
+          : null
+      };
+
+      // -------------------------------------
+      // 5. Read Bars Store
+      // -------------------------------------
+
+      const barsResult =
+        callRead(data, 'bars');
+
+      const bars =
+        barsResult.ok
+          ? barsResult.value
+          : data
+            ? value(data, 'm_bars')
+            : null;
+
+      const items = bars
+        ? value(bars, '_items')
+        : null;
+
+      report.bars = {
+        found: !!bars,
+        getterFound: barsResult.found,
+        constructor: safe(() => bars?.constructor?.name),
+        hasItemsArray: Array.isArray(items),
+        count: Array.isArray(items)
+          ? items.length
+          : null,
+        details: bars
+          ? describe(bars, 'data.bars()')
+          : null,
+        mergeMethodFound: !!method(bars, 'merge'),
+        mergeArgumentCount: method(bars, 'merge')?.length ?? null
+      };
+
+      // -------------------------------------
+      // 6. Read Conflated Chunks Builder
+      // -------------------------------------
+
+      const builder =
+        data
+          ? value(data, '_conflatedChunksBuilder')
+          : null;
+
+      const plots =
+        builder
+          ? value(builder, '_plots')
+          : null;
+
+      const mergeData =
+        method(builder, 'mergeData');
+
+      const builderState =
+        builder
+          ? value(builder, '_state')
+          : null;
+
+      report.builder = {
+        found: !!builder,
+        constructor: safe(() => builder?.constructor?.name),
+        keys: builder ? keys(builder) : [],
+        details: builder
+          ? describe(builder, '_conflatedChunksBuilder')
+          : null,
+        mergeDataFound: !!mergeData,
+        mergeDataArgumentCount: mergeData?.length ?? null,
+        plotsFound: !!plots,
+        plotsSameAsBars: !!bars && plots === bars,
+        plotsKeys: plots ? keys(plots) : [],
+        stateKeys: builderState
+          ? keys(builderState)
+          : []
+      };
+
+      // -------------------------------------
+      // 7. Read a few existing candle rows
+      // -------------------------------------
+
+      if (Array.isArray(items)) {
+        report.candleSamples = items
+          .slice(-8)
+          .map((row, i) => {
+            const index = value(row, 'index');
+            const ohlc = value(row, 'value');
+
+            return {
+              positionFromEnd: items.length - 8 + i,
+              index:
+                typeof index === 'number' ||
+                typeof index === 'string'
+                  ? index
+                  : null,
+              valueType: Array.isArray(ohlc)
+                ? 'Array'
+                : typeof ohlc,
+              valueLength: Array.isArray(ohlc)
+                ? ohlc.length
+                : null,
+              values: Array.isArray(ohlc)
+                ? ohlc.slice(0, 8).map(v =>
+                    typeof v === 'number' ||
+                    typeof v === 'string'
+                      ? v
+                      : null
+                  )
+                : null
+            };
+          });
+      }
+
+      // -------------------------------------
+      // 8. Read supported resolutions
+      // -------------------------------------
+
+      const engine =
+        chartApi
+          ? value(chartApi, '_studyEngine')
+          : null;
+
+      const config =
+        engine
+          ? value(engine, '_datafeedConfiguration')
+          : null;
+
+      const supported =
+        config
+          ? value(config, 'supported_resolutions')
+          : null;
+
+      report.supportedResolutions = {
+        found: Array.isArray(supported),
+        values: Array.isArray(supported)
+          ? supported.slice(0, 60)
+          : [],
+        count: Array.isArray(supported)
+          ? supported.length
+          : null
+      };
+
+      // -------------------------------------
+      // 9. External DataFeed metadata
+      // -------------------------------------
+
+      const feed =
+        engine
+          ? value(engine, '_externalDatafeed')
+          : null;
+
+      if (feed) {
+        const feedMethods = [
+          'onReady',
+          'resolveSymbol',
+          'getBars',
+          'subscribeBars',
+          'unsubscribeBars',
+          'getServerTime',
+          'searchSymbols'
+        ];
+
+        report.externalDatafeed = {
+          found: true,
+          keys: keys(feed),
+          methods: feedMethods.map(name => {
+            const fn = method(feed, name);
+
+            return {
+              name,
+              found: !!fn,
+              argumentCount: fn?.length ?? null,
+              type: fn?.constructor?.name ?? null
+            };
+          })
+        };
+      }
+
+      // -------------------------------------
+      // 10. Series source data events
+      // -------------------------------------
+
+      const source =
+        series
+          ? (
+              callRead(series, 'seriesSource').value ||
+              value(series, '_seriesSource') ||
+              null
+            )
+          : null;
+
+      const events =
+        source
+          ? (
+              value(source, '_dataEvents') ||
+              callRead(source, 'dataEvents').value ||
+              null
+            )
+          : null;
+
+      report.series.dataSource = {
+        sourceFound: !!source,
+        sourceKeys: source ? keys(source) : [],
+        eventsFound: !!events,
+        eventKeys: events ? keys(events) : [],
+        fireDataUpdatedFound:
+          !!method(events, 'fireDataUpdated')
+      };
+
+      // -------------------------------------
+      // 11. Final summary
+      // -------------------------------------
+
+      report.result = {
+        symbol: report.series.symbol,
+        resolution: report.series.resolution,
+        dataFound: !!data,
+        barsFound: !!bars,
+        barsCount: report.bars.count,
+        builderFound: !!builder,
+        builderMergeDataFound: !!mergeData,
+        plotsSameAsBars: !!report.builder.plotsSameAsBars,
+        supportedResolutionCount:
+          report.supportedResolutions.count,
+        externalDatafeedFound: !!feed,
+        sourceFound: !!source,
+        dataEventsFound: !!events,
+        alignmentStructureMatchesPrevious:
+          !!(
+            data &&
+            bars &&
+            builder &&
+            plots === bars &&
+            Array.isArray(items) &&
+            mergeData &&
+            method(bars, 'merge')
+          )
+      };
+    }
+  }
+
+  report.finishedAt = new Date().toISOString();
+
+  // ---------------------------------------
+  // 12. Copyable popup
+  // ---------------------------------------
+
+  const output = JSON.stringify(report, null, 2);
+
+  const overlay = document.createElement('div');
+  overlay.id = PANEL;
+
+  overlay.style.cssText = `
+    position:fixed;
+    inset:0;
+    z-index:2147483647;
+    background:rgba(3,8,20,.84);
+    backdrop-filter:blur(14px);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:16px;
+    box-sizing:border-box;
+    color:#e5efff;
+    font-family:Arial,sans-serif;
+  `;
+
+  const box = document.createElement('div');
+
+  box.style.cssText = `
+    width:min(1000px,96vw);
+    height:min(820px,94vh);
+    background:rgba(16,25,44,.97);
+    border:1px solid rgba(110,155,230,.35);
+    border-radius:16px;
+    padding:18px;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    box-sizing:border-box;
+    box-shadow:0 20px 90px rgba(0,0,0,.6);
+  `;
+
+  const title = document.createElement('div');
+  title.textContent = TAG;
+  title.style.cssText =
+    'font-size:15px;font-weight:bold;color:#8fbdff;';
+
+  const description = document.createElement('div');
+  description.textContent =
+    'بررسی ساختار Bar Store، Builder و DataFeed انجام شد.';
+
+  description.style.cssText =
+    'font-size:12px;color:#aab8d2;';
+
+  const area = document.createElement('textarea');
+  area.value = output;
+  area.readOnly = true;
+
+  area.style.cssText = `
+    flex:1;
+    width:100%;
+    min-height:0;
+    resize:none;
+    box-sizing:border-box;
+    background:rgba(4,9,20,.85);
+    color:#dce9ff;
+    border:1px solid rgba(120,160,220,.25);
+    border-radius:9px;
+    padding:12px;
+    outline:none;
+    font:11px/1.5 Consolas,monospace;
+  `;
+
+  const footer = document.createElement('div');
+  footer.style.cssText =
+    'display:flex;align-items:center;gap:12px;';
+
+  const copy = document.createElement('button');
+  copy.textContent = 'کپی گزارش کامل';
+
+  copy.style.cssText = `
+    background:#397ee6;
+    border:0;
+    border-radius:8px;
+    color:white;
+    padding:11px 22px;
+    cursor:pointer;
+    font-weight:bold;
+  `;
+
+  const close = document.createElement('button');
+  close.textContent = 'بستن';
+
+  close.style.cssText = `
+    background:rgba(255,255,255,.08);
+    color:white;
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:8px;
+    padding:11px 22px;
+    cursor:pointer;
+  `;
+
+  const status = document.createElement('span');
+  status.textContent = 'آماده';
+  status.style.cssText =
+    'font-size:12px;color:#aab8d2;';
+
+  copy.onclick = async () => {
+    try {
+      await navigator.clipboard.writeText(output);
+      status.textContent = 'گزارش کپی شد.';
+      status.style.color = '#83e3a8';
+    } catch (_) {
+      area.focus();
+      area.select();
+
+      status.textContent =
+        document.execCommand('copy')
+          ? 'گزارش کپی شد.'
+          : 'Ctrl+C را بزن.';
+    }
+  };
+
+  close.onclick = () => overlay.remove();
+
+  footer.append(copy, close, status);
+  box.append(title, description, area, footer);
+  overlay.append(box);
+
+  document.documentElement.append(overlay);
+
+  console.info('[BITUNIX SCAN 06] Completed. Read-only.');
+
+})();
+</CodeBlock>
+
+### بعد از دریافت گزارش ششم
+
+اگر ساختار `alignmentStructureMatchesPrevious` برابر `true` باشد، یک مسیر بسیار خوب برای انتقال منطق قبلی داریم. سپس می‌توانیم ماژول مستقل `align-candle-opens` را طراحی کنیم و برای روشن/خاموش شدن آن، تغییرات تاریخی را هم مدیریت کنیم.
+
+فهرست نهایی اکنون **۷ قابلیت مستقل** دارد؛ هرکدام فایل جدا، کلید روشن/خاموش جدا و ذخیره فوری تنظیمات در Popup.
+
+فعلاً گزارش شماره ۶ را بفرست تا پیش از هرگونه دست‌کاری کندل‌ها، سازگاری را قطعی کنیم.
+
+
+کاربر | پیام 74 | 11/14/2026, 8:27:37 PM
+------------------------------------------------------------
+
+[گزارشات بیتیونیکس6.txt](https://github.com/artaville/KCEX-Enhancer/blob/main/%DA%AF%D8%B2%D8%A7%D8%B1%D8%B4%D8%A7%D8%AA%20%D8%A8%DB%8C%D8%AA%DB%8C%D9%88%D9%86%DB%8C%DA%A9%D8%B36.txt "گزارشات بیتیونیکس6.txt") &#x20;
+ببین ترو شده؟
+
+
+دستیار | پیام 75 | 11/14/2026, 8:27:41 PM
+------------------------------------------------------------
+
+گزارش شماره ۶ را از مخزن باز می‌کنم و نتیجه را با معیارهای خود استخراج مقایسه می‌کنم: وجود Bar Store، آرایه کندل‌ها، Builder، `mergeData` و هم‌خوانی `plots` با `bars`. همین‌طور نمونه کندل‌ها و خطاهای ثبت‌شده را بررسی می‌کنم تا بگویم واقعاً کامل شده یا فقط بخشی از ساختار پیدا شده است.
+
+
+دستیار | پیام 76 | 11/14/2026, 8:27:48 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_file","args":{"repository_full_name":"artaville/KCEX-Enhancer","path":"\u06af\u0632\u0627\u0631\u0634\u0627\u062a \u0628\u06cc\u062a\u06cc\u0648\u0646\u06cc\u06a9\u06336.txt","encoding":"utf-8"}}
+
+
+دستیار | پیام 77 | 11/14/2026, 8:28:25 PM
+------------------------------------------------------------
+
+Worked for 46s
+
+
+دستیار | پیام 78 | 11/14/2026, 8:28:00 PM
+------------------------------------------------------------
+
+بله، کد شماره ۶ این بار بدون هیچ خطایی اجرا شده و گزارش کامل به دست آمده است. اما نتیجه از نظر پیدا کردن موتور کندل‌ها **نیمه‌موفق** است؛ یک بخش مهم را پیدا کردیم و یک بخش هنوز ناشناخته است.
+
+<badge color="success">استخراج موفق</badge> <badge color="warning">نیاز به بررسی بیشتر</badge>
+
+## نتایج گزارش شماره ۶
+
+### ۱. اطلاعات واقعی کندل‌ها پیدا شد
+
+<box border radius="lg" padding={3} gap={2}>
+  <grid columns={2} gap={3}>
+    <grid-item>
+      <text color="secondary" size="xs">تعداد کندل‌های موجود</text>
+      <title size="2xl" tabularNums>312</title>
+    </grid-item>
+    <grid-item>
+      <text color="secondary" size="xs">نماد</text>
+      <title size="xl">XAUTUSDT</title>
+    </grid-item>
+  </grid>
+  <divider color="subtle"/>
+  **ساختار هر کندل شناسایی شد:**
+
+  ```text
+  [
+    timestamp,
+    open,
+    high,
+    low,
+    close,
+    volume,
+    extra
+  ]
+  ```
+
+  <text color="success" size="sm" weight="medium">داده واقعی و قابل خواندن از Bar Store استخراج شد.</text>
+</box>
+
+### ۲. ساختار ذخیره‌سازی کندل‌ها
+
+این اجزا پیدا شدند:
+
+- `mainSeries.data()`
+- `m_bars`
+- `m_nsBars`
+- `_items`
+- متد `merge()` در Bar Store
+- متدهای `addTail()` و `move()`
+
+یعنی حالا آرایه واقعی کندل‌ها و ساختار نگهداری آن‌ها را داریم.
+
+### ۳. چیزی که هنوز پیدا نشده
+
+<badge color="warning">Builder ناشناخته</badge>
+
+در KCEX از ساختاری به نام `_conflatedChunksBuilder` استفاده کرده بودیم. در Bitunix این property در محل بررسی‌شده وجود ندارد.
+
+بنابراین نباید فعلاً همان روش قبلی را عیناً اجرا کنیم.
+
+### ۴. وضعیت تایم‌فریم ثانیه‌ای
+
+در تنظیمات فعلی DataFeed این ۲۳ مقدار ثبت شده‌اند:
+
+`1, 2, 3, 5, 6, 9, 10, 12, 15, 24, 27, 30, 45, 60, 120, 240, 360, 480, 720, 1D, 3D, 1W, 1M`
+
+این‌ها Resolutionهای پشتیبانی‌شده‌ای هستند که DataFeed گزارش کرده است. هنوز ثانیه‌ای بودن آن‌ها تأیید نشده؛ به‌ویژه کندل‌های نمونه با فاصله ۶۰ ثانیه ثبت شده‌اند.
+
+## مرحله هفتم: شناسایی موتور به‌روزرسانی کندل‌ها
+
+در این مرحله می‌خواهم بفهمم کندل زنده چطور به Bar Store اضافه یا اصلاح می‌شود.
+
+این موضوع برای جلوگیری از خراب‌شدن اندیکاتورها هنگام فعال‌کردن Align Candle Opens بسیار مهم است.
+
+کد شماره ۷ این موارد را استخراج می‌کند:
+
+- ساختار `_pressedChunks`
+- ارتباط `SeriesSource` با Bar Store
+- ساختار `_gateway` و متدهای آن
+- رویدادهای `_barReceived` و `_dataUpdated`
+- ساختار کندل‌های تاریخی و زنده
+- مشخصات دقیق Resolution و Symbol
+- متدهای DataFeed بدون اجرای آن‌ها
+
+<badge color="success">کد شماره ۷ — فقط خواندن اطلاعات</badge>
+
+<CodeBlock language="javascript" editable>
+(() => {
+  'use strict';
+
+  const TAG = 'BITUNIX_LIVE_BAR_ENGINE_07';
+  const PANEL = '__bitunix_live_bar_engine_07__';
+
+  document.getElementById(PANEL)?.remove();
+
+  const report = {
+    diagnostic: TAG,
+    startedAt: new Date().toISOString(),
+    errors: [],
+    symbol: {},
+    series: {},
+    interval: {},
+    barStore: {},
+    pressedChunks: {},
+    seriesSource: {},
+    gateway: {},
+    dataEvents: {},
+    datafeedMethods: {},
+    result: {},
+    safety: {
+      readOnly: true,
+      noOrdersSent: true,
+      noClicks: true,
+      noCandleChanges: true,
+      noSubscriptions: true,
+      noDatafeedCalls: true,
+      noNetworkRequests: true,
+      noWebSocketsCreated: true,
+      noStorageOrCookiesRead: true
+    }
+  };
+
+  const safe = (fn, fallback = null) => {
+    try {
+      const v = fn();
+      return v === undefined ? fallback : v;
+    } catch (e) {
+      report.errors.push(String(e?.message || e));
+      return fallback;
+    }
+  };
+
+  const sensitive =
+    /token|password|secret|cookie|authorization|signature|api.?key|sessionid/i;
+
+  function keys(obj) {
+    return safe(() =>
+      Object.getOwnPropertyNames(obj)
+        .filter(k => !sensitive.test(k))
+    , []);
+  }
+
+  function val(obj, key) {
+    const d = safe(() =>
+      Object.getOwnPropertyDescriptor(obj, key)
+    );
+
+    if (
+      !d ||
+      !Object.prototype.hasOwnProperty.call(d, 'value')
+    ) return undefined;
+
+    return d.value;
+  }
+
+  function findMethod(obj, name) {
+    let p = obj;
+
+    for (let i = 0; p && i < 8; i++) {
+      const d = safe(() =>
+        Object.getOwnPropertyDescriptor(p, name)
+      );
+
+      if (d && typeof d.value === 'function') {
+        return d.value;
+      }
+
+      p = safe(() => Object.getPrototypeOf(p));
+    }
+
+    return null;
+  }
+
+  function callRead(obj, name) {
+    const fn = findMethod(obj, name);
+
+    if (!fn) return {
+      found: false,
+      ok: false
+    };
+
+    try {
+      return {
+        found: true,
+        ok: true,
+        value: fn.call(obj)
+      };
+    } catch (e) {
+      report.errors.push(name + ': ' + String(e?.message || e));
+
+      return {
+        found: true,
+        ok: false,
+        error: String(e?.message || e)
+      };
+    }
+  }
+
+  function methods(obj) {
+    const result = [];
+    let p = obj;
+
+    for (let depth = 0; p && depth < 5; depth++) {
+      for (const name of keys(p)) {
+        const d = safe(() =>
+          Object.getOwnPropertyDescriptor(p, name)
+        );
+
+        if (d && typeof d.value === 'function') {
+          result.push({
+            name,
+            arguments: d.value.length
+          });
+        }
+      }
+
+      p = safe(() => Object.getPrototypeOf(p));
+    }
+
+    return result.slice(0, 130);
+  }
+
+  function structure(obj, path, max = 100) {
+    if (!obj || typeof obj !== 'object') {
+      return {
+        path,
+        type: typeof obj
+      };
+    }
+
+    const out = {
+      path,
+      constructor: safe(() => obj.constructor?.name),
+      keys: keys(obj).slice(0, max),
+      primitiveProperties: [],
+      methods: methods(obj)
+    };
+
+    for (const key of keys(obj).slice(0, max)) {
+      const v = val(obj, key);
+
+      if (
+        v === null ||
+        ['string', 'number', 'boolean'].includes(typeof v)
+      ) {
+        out.primitiveProperties.push({
+          name: key,
+          value: v
+        });
+      }
+    }
+
+    return out;
+  }
+
+  function sampleRows(store, count = 5) {
+    const items = val(store, '_items');
+
+    if (!Array.isArray(items)) {
+      return {
+        found: false,
+        reason: '_items is not an array'
+      };
+    }
+
+    return {
+      count: items.length,
+      first: items.slice(0, count).map((row, i) => ({
+        position: i,
+        index: val(row, 'index') ?? null,
+        value: Array.isArray(val(row, 'value'))
+          ? val(row, 'value').slice(0, 7)
+          : null
+      })),
+      last: items.slice(-count).map((row, i) => ({
+        position: items.length - count + i,
+        index: val(row, 'index') ?? null,
+        value: Array.isArray(val(row, 'value'))
+          ? val(row, 'value').slice(0, 7)
+          : null
+      }))
+    };
+  }
+
+  // 1. Find TradingView iframe
+
+  const iframe =
+    document.querySelector('#futures-trade-tchart iframe') ||
+    document.querySelector('iframe[id^="tradingview_"]');
+
+  const win = safe(() => iframe?.contentWindow);
+  const doc = safe(() => iframe?.contentDocument);
+
+  if (!win || !doc) {
+    report.errors.push('TradingView iframe inaccessible');
+  } else {
+
+    report.iframe = {
+      id: iframe.id,
+      readyState: doc.readyState
+    };
+
+    // 2. Resolve chart objects
+
+    const chartApi = val(win, 'ChartApiInstance');
+    const widget = val(win, 'chartWidget');
+
+    const collection = val(win, 'chartWidgetCollection');
+
+    const model = widget
+      ? callRead(widget, 'model').value
+      : null;
+
+    const series = model
+      ? callRead(model, 'mainSeries').value
+      : null;
+
+    if (!series) {
+      report.errors.push('Main Series not found');
+    } else {
+
+      // 3. Series identity
+
+      report.series = {
+        symbol: safe(
+          () => callRead(series, 'symbol').value
+        ),
+        interval: safe(
+          () => callRead(series, 'interval').value
+        ),
+        intervalObject: structure(
+          val(series, '_intervalObj'),
+          'series._intervalObj'
+        ),
+        symbolInfo: {
+          properties: structure(
+            val(series, '_symbolInfo'),
+            'series._symbolInfo'
+          ),
+          supportedResolutions: safe(() =>
+            val(val(series, '_symbolInfo'), 'supported_resolutions')
+          )
+        }
+      };
+
+      // 4. Series data and Bar Store
+
+      const data = callRead(series, 'data').value;
+      const bars = data
+        ? callRead(data, 'bars').value
+        : null;
+
+      const nsBars = data
+        ? callRead(data, 'nsBars').value
+        : null;
+
+      report.barStore = {
+        dataFound: !!data,
+        dataStructure: structure(
+          data,
+          'mainSeries.data()'
+        ),
+        barsStructure: structure(
+          bars,
+          'data.bars()'
+        ),
+        barsSamples: sampleRows(bars, 5),
+        nsBarsStructure: structure(
+          nsBars,
+          'data.nsBars()'
+        ),
+        nsBarsSamples: sampleRows(nsBars, 3),
+        lastIndex: safe(() =>
+          callRead(bars, 'lastIndex').value
+        ),
+        firstIndex: safe(() =>
+          callRead(bars, 'firstIndex').value
+        )
+      };
+
+      // 5. Pressed Chunks
+
+      const pressedChunks = data
+        ? val(data, '_pressedChunks')
+        : null;
+
+      report.pressedChunks = {
+        found: !!pressedChunks,
+        structure: structure(
+          pressedChunks,
+          'data._pressedChunks'
+        ),
+        entries: []
+      };
+
+      if (
+        pressedChunks &&
+        typeof pressedChunks === 'object'
+      ) {
+        for (const key of keys(pressedChunks).slice(0, 25)) {
+          const item = val(pressedChunks, key);
+
+          report.pressedChunks.entries.push({
+            name: key,
+            constructor: safe(
+              () => item?.constructor?.name
+            ),
+            keys: item && typeof item === 'object'
+              ? keys(item).slice(0, 35)
+              : [],
+            length: Array.isArray(item)
+              ? item.length
+              : null
+          });
+        }
+      }
+
+      // 6. Series Source
+
+      const source =
+        callRead(series, 'seriesSource').value ||
+        val(series, '_seriesSource');
+
+      report.seriesSource = {
+        found: !!source,
+        structure: structure(
+          source,
+          'mainSeries._seriesSource'
+        )
+      };
+
+      if (source) {
+        for (const name of [
+          '_resolution',
+          '_timeFrame',
+          '_status',
+          '_turnaroundCounter',
+          '_ongoingDataUpdate',
+          '_createSeriesParams',
+          '_extSymbol'
+        ]) {
+          const v = val(source, name);
+
+          if (
+            v === null ||
+            ['string', 'number', 'boolean'].includes(typeof v)
+          ) {
+            report.seriesSource[name] = v;
+          } else if (v && typeof v === 'object') {
+            report.seriesSource[name + '_structure'] =
+              structure(v, 'seriesSource.' + name, 60);
+          }
+        }
+
+        // 7. Gateway
+
+        const gateway = val(source, '_gateway');
+
+        report.gateway = {
+          found: !!gateway,
+          structure: structure(
+            gateway,
+            'seriesSource._gateway'
+          )
+        };
+
+        // 8. Data Events
+
+        const events =
+          val(source, '_dataEvents') ||
+          callRead(source, 'dataEvents').value;
+
+        report.dataEvents = {
+          found: !!events,
+          structure: structure(
+            events,
+            'seriesSource._dataEvents'
+          ),
+          eventDetails: []
+        };
+
+        if (events) {
+          for (const name of keys(events).slice(0, 70)) {
+            const event = val(events, name);
+
+            if (!event || typeof event !== 'object') continue;
+
+            const listeners = val(event, '_listeners');
+
+            report.dataEvents.eventDetails.push({
+              name,
+              constructor: safe(
+                () => event.constructor?.name
+              ),
+              keys: keys(event).slice(0, 20),
+              listenerCount: Array.isArray(listeners)
+                ? listeners.length
+                : listeners && typeof listeners === 'object'
+                  ? keys(listeners).length
+                  : null
+            });
+          }
+        }
+      }
+
+      // 9. DataFeed method signatures
+
+      const engine = chartApi
+        ? val(chartApi, '_studyEngine')
+        : null;
+
+      const feed = engine
+        ? val(engine, '_externalDatafeed')
+        : null;
+
+      if (feed) {
+        const names = [
+          'onReady',
+          'resolveSymbol',
+          'getBars',
+          'subscribeBars',
+          'unsubscribeBars',
+          'getServerTime',
+          'searchSymbols'
+        ];
+
+        report.datafeedMethods = {
+          found: true,
+          methods: names.map(name => {
+            const fn = findMethod(feed, name);
+
+            return {
+              name,
+              found: !!fn,
+              argumentCount: fn?.length ?? null,
+              functionType: fn?.constructor?.name ?? null
+            };
+          })
+        };
+      }
+
+      // 10. Final result
+
+      report.result = {
+        symbol: report.series.symbol,
+        resolution: report.series.interval,
+        barsCount: report.barStore.barsSamples.count,
+        nsBarsFound: !!nsBars,
+        pressedChunksFound: !!pressedChunks,
+        seriesSourceFound: !!source,
+        gatewayFound: !!val(source, '_gateway'),
+        dataEventsFound: !!val(source, '_dataEvents'),
+        liveBarReceivedEventFound:
+          !!val(
+            val(source, '_dataEvents'),
+            '_barReceived'
+          ),
+        liveDataUpdatedEventFound:
+          !!val(
+            val(source, '_dataEvents'),
+            '_dataUpdated'
+          ),
+        externalDatafeedFound: !!feed
+      };
+    }
+  }
+
+  report.finishedAt = new Date().toISOString();
+
+  // 11. Report panel
+
+  const output = JSON.stringify(report, null, 2);
+
+  const overlay = document.createElement('div');
+  overlay.id = PANEL;
+
+  overlay.style.cssText = `
+    position:fixed;
+    inset:0;
+    z-index:2147483647;
+    background:rgba(3,8,20,.84);
+    backdrop-filter:blur(14px);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:16px;
+    box-sizing:border-box;
+    color:#e5efff;
+    font-family:Arial,sans-serif;
+  `;
+
+  const box = document.createElement('div');
+
+  box.style.cssText = `
+    width:min(1000px,96vw);
+    height:min(820px,94vh);
+    background:rgba(16,25,44,.97);
+    border:1px solid rgba(110,155,230,.35);
+    border-radius:16px;
+    padding:18px;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    box-sizing:border-box;
+  `;
+
+  const title = document.createElement('div');
+  title.textContent = TAG;
+  title.style.cssText =
+    'font-size:15px;font-weight:bold;color:#8fbdff;';
+
+  const area = document.createElement('textarea');
+  area.value = output;
+  area.readOnly = true;
+
+  area.style.cssText = `
+    flex:1;
+    width:100%;
+    min-height:0;
+    resize:none;
+    box-sizing:border-box;
+    background:rgba(4,9,20,.85);
+    color:#dce9ff;
+    border:1px solid rgba(120,160,220,.25);
+    border-radius:9px;
+    padding:12px;
+    outline:none;
+    font:11px/1.5 Consolas,monospace;
+  `;
+
+  const footer = document.createElement('div');
+  footer.style.cssText =
+    'display:flex;align-items:center;gap:12px;';
+
+  const copy = document.createElement('button');
+  copy.textContent = 'کپی گزارش کامل';
+  copy.style.cssText = `
+    background:#397ee6;
+    border:0;
+    border-radius:8px;
+    color:white;
+    padding:11px 22px;
+    cursor:pointer;
+    font-weight:bold;
+  `;
+
+  const close = document.createElement('button');
+  close.textContent = 'بستن';
+  close.style.cssText = `
+    background:rgba(255,255,255,.08);
+    color:white;
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:8px;
+    padding:11px 22px;
+    cursor:pointer;
+  `;
+
+  const status = document.createElement('span');
+  status.textContent = 'آماده';
+  status.style.cssText =
+    'font-size:12px;color:#aab8d2;';
+
+  copy.onclick = async () => {
+    try {
+      await navigator.clipboard.writeText(output);
+      status.textContent = 'گزارش کپی شد.';
+      status.style.color = '#83e3a8';
+    } catch (_) {
+      area.focus();
+      area.select();
+      status.textContent =
+        document.execCommand('copy')
+          ? 'گزارش کپی شد.'
+          : 'Ctrl+C را بزن.';
+    }
+  };
+
+  close.onclick = () => overlay.remove();
+
+  footer.append(copy, close, status);
+  box.append(title, area, footer);
+  overlay.append(box);
+  document.documentElement.append(overlay);
+
+  console.info('[BITUNIX SCAN 07] Read-only completed.');
+
+})();
+</CodeBlock>
+
+**گزارش شماره ۷ را بفرست.**
+
+بعد از آن می‌توانیم درباره روش امن پیاده‌سازی Align Candle Opens تصمیم بگیریم و سپس به ساخت کندل‌های ثانیه‌ای برویم. فعلاً هیچ تغییری در کندل‌های واقعی صرافی ایجاد نمی‌کنیم.
