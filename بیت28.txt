@@ -1,0 +1,4498 @@
+{
+  "reportName": "BITUNIX_CANDLE_PIPELINE_AUDIT_1.4",
+  "startedAt": "2026-11-15T12:09:38.147Z",
+  "safety": {
+    "readOnly": true,
+    "ordersSent": 0,
+    "tradingMethodsCalled": 0,
+    "mutationMethodsExecuted": 0,
+    "callbacksExecuted": 0,
+    "subscriptionsChanged": false,
+    "chartModified": false,
+    "networkRequestsMade": 0,
+    "websocketCreated": false,
+    "websocketIntercepted": false,
+    "credentialsOrAccountDataRead": false
+  },
+  "chart": {
+    "frame": "iframe[0]",
+    "apiFound": true,
+    "chartFound": true,
+    "symbol": "XAUTUSDT",
+    "resolution": "1",
+    "modelFound": true,
+    "seriesFound": true
+  },
+  "mainSeries": {
+    "found": true,
+    "shape": {
+      "type": "c",
+      "keys": [
+        "_isDestroyed",
+        "_hasAlert",
+        "_alertCreationAvailable",
+        "_zorder",
+        "_priceScale",
+        "_ownerSource",
+        "_userEditEnabled",
+        "_priceScaleChanged",
+        "_isSelectionEnabled",
+        "_instanceId",
+        "_ownerSourceChanged",
+        "_zOrderChanged",
+        "_id",
+        "_formatterChanged",
+        "_priceStepChanged",
+        "_currencyChanged",
+        "_unitChanged",
+        "_priceRangeReadyChanged",
+        "_priceStep",
+        "_priceRangeReady",
+        "_model",
+        "requestingTicksWhenNotSupported",
+        "requestingIntradayWhenNotSupported",
+        "requestingStyleIsNotSupported",
+        "requestingStyleSupportRecovered",
+        "requestingResolutionLessThanFrequency",
+        "_paneView",
+        "_futureBarsPaneView",
+        "_projectionBarsPaneView",
+        "_waterlineView",
+        "_priceLineView",
+        "_gotoDateView",
+        "_baseHorizontalLineView",
+        "_symbolInfo",
+        "_isPrePostMarketPricesAvailableProperty",
+        "_isBackAdjustmentForbiddenProperty",
+        "_isSettlementAsCloseForbiddenProperty",
+        "_highLowPriceCache",
+        "_averagePriceCache",
+        "_prevClosePriceAxisView",
+        "_priceScaleAboutToBeChanged",
+        "_onRestarted",
+        "_onStatusChanged",
+        "_tagsChanged",
+        "_intervalChanged",
+        "_sessionIdChanged",
+        "_requestMoreDataAvailable",
+        "_lineStyleLastPriceCirclePaneView",
+        "_prevClosePriceLineView",
+        "_dataPoweredBy",
+        "_symbolResolvingActive",
+        "_predictBars",
+        "_syncModel",
+        "_data",
+        "_lastCompleteFlags",
+        "_haStyle",
+        "_renkoStyle",
+        "_pbStyle",
+        "_kagiStyle",
+        "_pnfStyle",
+        "_rangeStyle",
+        "_volFootprintStyle",
+        "_barColorerCache",
+        "_boxSizeValue",
+        "_base",
+        "_pointValue",
+        "_formattingDeps",
+        "_formatter",
+        "_ignoreMinMoveFormatter",
+        "_ignoreMinMovePriceStep",
+        "_lastBarCloseTime",
+        "_onSessionIdPropertyChangedBound",
+        "_ignoreSessionIdProxyPropertyChanges",
+        "_textSourceIsAlwaysTickerRestrictionEnabled",
+        "_lastPriceAnimationActive",
+        "_currentSession",
+        "_onStyleChanged",
+        "_intervalObj",
+        "_obsoleteZOrder",
+        "_seriesErrorMessage",
+        "_seriesAlwaysFalseHibernatedVW",
+        "_styleToRecover",
+        "_precomputedBarStyles",
+        "_doNotShowLastAvailableBar",
+        "_gotoDateResultCleared",
+        "_endOfDataPaneView",
+        "_pendingTimeRange",
+        "_replaySubscriber",
+        "_symbolIntervalChanged",
+        "_isReplayResolutionAvailableForUser",
+        "_onInReplayStateChanged",
+        "_replayExitedDueUnsupportedInterval",
+        "_replayExitedDueUnavailableForUserInterval",
+        "_onTimeFrameApplied",
+        "_loading",
+        "_seriesLoaded",
+        "_seriesCompleted",
+        "_status",
+        "_prevRequestedInterval",
+        "_isActingAsSymbolSource",
+        "_deferredDestroyed",
+        "_volumePointWeights",
+        "_volFootprintStudy",
+        "_updateTimeScaleTimePointWeights",
+        "_seriesSource",
+        "_quotesProvider",
+        "_properties",
+        "_sessionIdProxyProperty",
+        "_symbolTextSourceProxyProperty",
+        "_options",
+        "_prevChartStyle",
+        "_priceAxisView",
+        "_priceLinePriceAxisView",
+        "_priceLineAxisViews",
+        "_priceAxisViews",
+        "_panePriceAxisView",
+        "_historyPricePanePriceAxisView",
+        "_projectionPriceAxisView",
+        "_labelPaneViews",
+        "_highLowAvgPaneViews",
+        "_averagePaneViews",
+        "_dataWindowView",
+        "_legendView",
+        "_statusView",
+        "_marketStatusModel",
+        "_dataUpdatedModeModel",
+        "_dataProblemModel",
+        "_isDWMProperty",
+        "_barFunction",
+        "_countdownUpdateTimer"
+      ],
+      "methods": [
+        {
+          "name": "_onSessionIdPropertyChangedBound",
+          "args": 0
+        },
+        {
+          "name": "_updateTimeScaleTimePointWeights",
+          "args": 0
+        },
+        {
+          "name": "_barFunction",
+          "args": 2
+        },
+        {
+          "name": "_onChangeShowCountdown",
+          "args": 1
+        },
+        {
+          "name": "_createIsDWMProperty",
+          "args": 0
+        },
+        {
+          "name": "isDWMProperty",
+          "args": 0
+        },
+        {
+          "name": "_onSeriesTimeFrame",
+          "args": 5
+        },
+        {
+          "name": "purgeSymbolInfo",
+          "args": 0
+        },
+        {
+          "name": "bindStyleChange",
+          "args": 0
+        },
+        {
+          "name": "bindJapChartsInputs",
+          "args": 0
+        },
+        {
+          "name": "createDividendsAdjustmentProperty",
+          "args": 0
+        },
+        {
+          "name": "onInputChanged",
+          "args": 0
+        },
+        {
+          "name": "getStyleShortName",
+          "args": 0
+        },
+        {
+          "name": "getStyleProperties",
+          "args": 0
+        },
+        {
+          "name": "getInputsProperties",
+          "args": 0
+        },
+        {
+          "name": "getInputsInfoProperties",
+          "args": 0
+        },
+        {
+          "name": "getSourceIcon",
+          "args": 0
+        },
+        {
+          "name": "setId",
+          "args": 1
+        },
+        {
+          "name": "supportsPressedChunks",
+          "args": 0
+        },
+        {
+          "name": "pressedChunks",
+          "args": 2
+        },
+        {
+          "name": "seriesErrorMessage",
+          "args": 0
+        },
+        {
+          "name": "destroy",
+          "args": 0
+        },
+        {
+          "name": "isActingAsSymbolSource",
+          "args": 0
+        },
+        {
+          "name": "barColorer",
+          "args": 0
+        },
+        {
+          "name": "createPaneView",
+          "args": 0
+        },
+        {
+          "name": "properties",
+          "args": 0
+        },
+        {
+          "name": "zorder",
+          "args": 0
+        },
+        {
+          "name": "quotesProvider",
+          "args": 0
+        },
+        {
+          "name": "currentSession",
+          "args": 0
+        },
+        {
+          "name": "syncModel",
+          "args": 0
+        },
+        {
+          "name": "labelPaneViews",
+          "args": 0
+        },
+        {
+          "name": "topPaneViews",
+          "args": 0
+        },
+        {
+          "name": "paneViews",
+          "args": 1
+        },
+        {
+          "name": "priceAxisViews",
+          "args": 2
+        },
+        {
+          "name": "clearHighLowPriceCache",
+          "args": 0
+        },
+        {
+          "name": "clearAveragePriceCache",
+          "args": 0
+        },
+        {
+          "name": "priceScale",
+          "args": 0
+        },
+        {
+          "name": "setPriceScale",
+          "args": 1
+        },
+        {
+          "name": "priceScaleChanged",
+          "args": 0
+        },
+        {
+          "name": "priceScaleAboutToBeChanged",
+          "args": 0
+        },
+        {
+          "name": "applyPreferences",
+          "args": 1
+        },
+        {
+          "name": "disconnect",
+          "args": 0
+        },
+        {
+          "name": "isStarted",
+          "args": 0
+        },
+        {
+          "name": "isCompleted",
+          "args": 0
+        },
+        {
+          "name": "restart",
+          "args": 0
+        },
+        {
+          "name": "isSymbolInvalid",
+          "args": 0
+        },
+        {
+          "name": "getSymbolString",
+          "args": 0
+        },
+        {
+          "name": "invalidateBarStylesCache",
+          "args": 1
+        },
+        {
+          "name": "isLoading",
+          "args": 0
+        },
+        {
+          "name": "isFailed",
+          "args": 0
+        },
+        {
+          "name": "isStatusError",
+          "args": 0
+        },
+        {
+          "name": "actualSymbol",
+          "args": 0
+        },
+        {
+          "name": "proSymbol",
+          "args": 0
+        },
+        {
+          "name": "onStyleChanged",
+          "args": 0
+        },
+        {
+          "name": "style",
+          "args": 0
+        },
+        {
+          "name": "setStyle",
+          "args": 1
+        },
+        {
+          "name": "isRangeBasedStyle",
+          "args": 0
+        },
+        {
+          "name": "symbolSameAsCurrent",
+          "args": 1
+        },
+        {
+          "name": "symbolSameAsResolved",
+          "args": 1
+        },
+        {
+          "name": "status",
+          "args": 0
+        },
+        {
+          "name": "symbol",
+          "args": 0
+        },
+        {
+          "name": "symbolChanged",
+          "args": 0
+        },
+        {
+          "name": "seriesSource",
+          "args": 0
+        },
+        {
+          "name": "symbolInfo",
+          "args": 0
+        },
+        {
+          "name": "symbolResolved",
+          "args": 0
+        },
+        {
+          "name": "symbolResolvingActive",
+          "args": 0
+        },
+        {
+          "name": "symbolHibernated",
+          "args": 0
+        },
+        {
+          "name": "getSymbolName",
+          "args": 0
+        },
+        {
+          "name": "firstValue",
+          "args": 0
+        },
+        {
+          "name": "firstBar",
+          "args": 0
+        },
+        {
+          "name": "formatter",
+          "args": 0
+        },
+        {
+          "name": "priceStep",
+          "args": 0
+        },
+        {
+          "name": "bars",
+          "args": 0
+        },
+        {
+          "name": "nsBars",
+          "args": 0
+        },
+        {
+          "name": "interval",
+          "args": 0
+        },
+        {
+          "name": "setInterval",
+          "args": 1
+        },
+        {
+          "name": "intervalObj",
+          "args": 0
+        },
+        {
+          "name": "prevClose",
+          "args": 0
+        },
+        {
+          "name": "priceLineColor",
+          "args": 1
+        },
+        {
+          "name": "hasClosePrice",
+          "args": 0
+        },
+        {
+          "name": "lastValueData",
+          "args": 3
+        },
+        {
+          "name": "isDWM",
+          "args": 0
+        },
+        {
+          "name": "data",
+          "args": 0
+        },
+        {
+          "name": "clearData",
+          "args": 0
+        },
+        {
+          "name": "nearestData",
+          "args": 2
+        },
+        {
+          "name": "nearestIndex",
+          "args": 2
+        },
+        {
+          "name": "nearestValue",
+          "args": 3
+        },
+        {
+          "name": "onSymbolIntervalChanged",
+          "args": 0
+        },
+        {
+          "name": "onIntervalChanged",
+          "args": 0
+        },
+        {
+          "name": "onStatusChanged",
+          "args": 0
+        },
+        {
+          "name": "onRestarted",
+          "args": 0
+        },
+        {
+          "name": "fixLastBar",
+          "args": 1
+        },
+        {
+          "name": "requestMoreData",
+          "args": 1
+        },
+        {
+          "name": "isNeedRestart",
+          "args": 1
+        },
+        {
+          "name": "isStyleSupported",
+          "args": 1
+        },
+        {
+          "name": "isStyleSupportedForReplay",
+          "args": 1
+        },
+        {
+          "name": "sessionId",
+          "args": 0
+        },
+        {
+          "name": "sessionIdChanged",
+          "args": 0
+        },
+        {
+          "name": "priceRange",
+          "args": 2
+        },
+        {
+          "name": "autoScaleInfo",
+          "args": 2
+        }
+      ]
+    },
+    "methods": {
+      "fixLastBar": {
+        "found": true,
+        "args": 1,
+        "source": "fixLastBar(e){0}"
+      },
+      "data": {
+        "found": true,
+        "args": 0,
+        "source": "data(){var e;return null!==(e=this._data)&&void 0!==e?e:this._seriesSource.data()}"
+      },
+      "bars": {
+        "found": true,
+        "args": 0,
+        "source": "bars(){return this.data().bars()}"
+      },
+      "nsBars": {
+        "found": true,
+        "args": 0,
+        "source": "nsBars(){return this.data().nsBars()}"
+      },
+      "seriesSource": {
+        "found": true,
+        "args": 0,
+        "source": "seriesSource(){return this._seriesSource}"
+      },
+      "onDataLoaded": {
+        "found": false,
+        "args": null,
+        "source": null
+      },
+      "requestMoreData": {
+        "found": true,
+        "args": 1,
+        "source": "requestMoreData(e){if(3!==this._status&&7!==this._status&&8!==this._status&&9!==this._status&&6!==this._status&&11!==this._status)return;if(this._model.timeScale().isEmpty())return;const t=this._model.timeScale().visibleBarsStrictRange();if(null===t)return;if(0===this.bars().size())return;const i=t.lastBar()-(0,s.ensureNotNull)(this.data().last()).index;if(this._predictBars<i&&(this._predictBars=i,this._seriesSource.requestMoreTickmarks(i)),!this._requestMoreDataAvailable)return;const r=(0,s.ensureNotNull)(this.bars().firstIndex()),n=e||r-t.firstBar();n<=0||(Number.isFinite(n)?(this._requestMoreDataAvailable=!1,this._loading=!0,this._seriesSource.requestMoreData(n),this._setStatus(2)):pi.logWarn(\"requestMoreData: invalid bar count: \"+n+\", visible bars: [\"+t.firstBar()+\", \"+t.lastBar()+\"], last index: \"+(0,s.ensureNotNull)(this.data().last()).index+\", predicted bars: \"+this._predictBars+\", required bars:\"+e))}"
+      },
+      "firstBar": {
+        "found": true,
+        "args": 0,
+        "source": "firstBar(){const e=this.model().timeScale().visibleBarsStrictRange();if(null===e)return null;const t=e.firstBar(),i=this.data().search(t,u.PlotRowSearchMode.NearestRight);return null!==i?i.value:null}"
+      },
+      "lastValueData": {
+        "found": true,
+        "args": 3,
+        "source": "lastValueData(e,t,i){var s;const r={noData:!0},n=this.priceScale();if(this.model().timeScale().isEmpty()||n.isEmpty()||this.data().isEmpty())return r;const o=this.model().timeScale().visibleBarsStrictRange(),a=this.firstValue();if(null===o||null===a)return r;let l,c;if(t){const e=this.data().bars().last();if(null===e)return r;l=e.value,c=e.index}else{const e=this.data().bars().search(o.lastBar(),u.PlotRowSearchMode.NearestLeft);if(null===e)return r;l=e.value,c=e.index}const h=null!==(s=void 0!==e?l[e]:this._barFunction(l,2))&&void 0!==s?s:NaN,d=this.barColorer().barStyle(c,!1),p=n.priceToCoordinate(h,a),_={...n.getFormattedValues(h,a,!0),noData:!1,color:d.barColor,floatCoordinate:p,coordinate:p,index:c};return i&&(_.price=h),_}"
+      },
+      "status": {
+        "found": true,
+        "args": 0,
+        "source": "status(){return this._status}"
+      },
+      "onStatusChanged": {
+        "found": true,
+        "args": 0,
+        "source": "onStatusChanged(){return this._onStatusChanged}"
+      },
+      "onIntervalChanged": {
+        "found": true,
+        "args": 0,
+        "source": "onIntervalChanged(){return this._intervalChanged}"
+      },
+      "onSymbolIntervalChanged": {
+        "found": true,
+        "args": 0,
+        "source": "onSymbolIntervalChanged(){return this._symbolIntervalChanged}"
+      },
+      "restart": {
+        "found": true,
+        "args": 0,
+        "source": "restart(){if(5===this._status)return;this._loading=!0,this._seriesLoaded=!1,this._seriesCompleted=!1,this._lastCompleteFlags=null,this._onRestarted.fire(),this._setStatus(1),this._updateSymbolInfo(null);let e=this._properties.childs().interval.value()\n;j.Interval.isEqual(e,this._prevRequestedInterval)&&this._notifyIntervalChanged(e);let t=null;this._pendingTimeRange&&(t=this._pendingTimeRange,this._pendingTimeRange=null),this._onBeforeModifySeries(this.getSymbolString(),e),this._onTimeFrameApplied.fire(t),e=(0,vt.getServerInterval)(e),this._data=null,this.model().recalcVisibleRangeStudies(!0),this._seriesSource.modifySeries(this._getResolvingSymbolObject(),e,t),this._seriesSource.isStarted()||this._seriesSource.start(),this._prevRequestedInterval=this.interval(),this.updateAllViews((0,he.sourceChangeEvent)(this.id())),this._model.lightUpdate()}"
+      },
+      "isLoading": {
+        "found": true,
+        "args": 0,
+        "source": "isLoading(){return this._loading}"
+      },
+      "isCompleted": {
+        "found": true,
+        "args": 0,
+        "source": "isCompleted(){return this._seriesCompleted}"
+      }
+    },
+    "seriesDataMethod": {
+      "found": true,
+      "args": 0,
+      "source": "data(){var e;return null!==(e=this._data)&&void 0!==e?e:this._seriesSource.data()}"
+    },
+    "seriesSourceMethod": {
+      "found": true,
+      "args": 0,
+      "source": "seriesSource(){return this._seriesSource}"
+    },
+    "seriesSourceResolved": true,
+    "sourceFields": {
+      "_dataEvents": {
+        "type": "lt",
+        "keys": [
+          "_created",
+          "_modified",
+          "_loading",
+          "_completed",
+          "_error",
+          "_symbolError",
+          "_symbolResolved",
+          "_seriesError",
+          "_symbolNotPermitted",
+          "_symbolInvalid",
+          "_symbolGroupNotPermitted",
+          "_chartTypeNotPermitted",
+          "_intradaySpreadNotPermitted",
+          "_intradayExchangeNotPermitted",
+          "_customIntervalNotPermitted",
+          "_secondsIntervalNotPermitted",
+          "_ticksIntervalNotPermitted",
+          "_tickMarksRangeChanged",
+          "_barReceived",
+          "_seriesTimeFrame",
+          "_dataUpdated"
+        ],
+        "methods": [
+          {
+            "name": "destroy",
+            "args": 0
+          },
+          {
+            "name": "created",
+            "args": 0
+          },
+          {
+            "name": "modified",
+            "args": 0
+          },
+          {
+            "name": "loading",
+            "args": 0
+          },
+          {
+            "name": "completed",
+            "args": 0
+          },
+          {
+            "name": "error",
+            "args": 0
+          },
+          {
+            "name": "symbolError",
+            "args": 0
+          },
+          {
+            "name": "symbolResolved",
+            "args": 0
+          },
+          {
+            "name": "seriesError",
+            "args": 0
+          },
+          {
+            "name": "symbolInvalid",
+            "args": 0
+          },
+          {
+            "name": "symbolNotPermitted",
+            "args": 0
+          },
+          {
+            "name": "symbolGroupNotPermitted",
+            "args": 0
+          },
+          {
+            "name": "chartTypeNotPermitted",
+            "args": 0
+          },
+          {
+            "name": "intradaySpreadNotPermitted",
+            "args": 0
+          },
+          {
+            "name": "intradayExchangeNotPermitted",
+            "args": 0
+          },
+          {
+            "name": "customIntervalNotPermitted",
+            "args": 0
+          },
+          {
+            "name": "secondsIntervalNotPermitted",
+            "args": 0
+          },
+          {
+            "name": "ticksIntervalNotPermitted",
+            "args": 0
+          },
+          {
+            "name": "tickMarksRangeChanged",
+            "args": 0
+          },
+          {
+            "name": "barReceived",
+            "args": 0
+          },
+          {
+            "name": "seriesTimeFrame",
+            "args": 0
+          },
+          {
+            "name": "dataUpdated",
+            "args": 0
+          },
+          {
+            "name": "fireCompleted",
+            "args": 1
+          },
+          {
+            "name": "fireCreated",
+            "args": 1
+          },
+          {
+            "name": "fireModified",
+            "args": 0
+          },
+          {
+            "name": "fireLoading",
+            "args": 1
+          },
+          {
+            "name": "fireError",
+            "args": 0
+          },
+          {
+            "name": "fireSymbolError",
+            "args": 1
+          },
+          {
+            "name": "fireSymbolResolved",
+            "args": 1
+          },
+          {
+            "name": "fireSeriesError",
+            "args": 1
+          },
+          {
+            "name": "fireSymbolInvalid",
+            "args": 0
+          },
+          {
+            "name": "fireSymbolNotPermitted",
+            "args": 1
+          },
+          {
+            "name": "fireSymbolGroupNotPermitted",
+            "args": 1
+          },
+          {
+            "name": "fireChartTypeNotPermitted",
+            "args": 1
+          },
+          {
+            "name": "fireIntradaySpreadNotPermitted",
+            "args": 0
+          },
+          {
+            "name": "fireIntradayExchangeNotPermitted",
+            "args": 0
+          },
+          {
+            "name": "fireCustomIntervalNotPermitted",
+            "args": 1
+          },
+          {
+            "name": "fireSecondsIntervalNotPermitted",
+            "args": 0
+          },
+          {
+            "name": "fireTicksIntervalNotPermitted",
+            "args": 0
+          },
+          {
+            "name": "fireTickMarksRangeChanged",
+            "args": 1
+          },
+          {
+            "name": "fireBarReceived",
+            "args": 1
+          },
+          {
+            "name": "fireSeriesTimeFrame",
+            "args": 5
+          },
+          {
+            "name": "fireDataUpdated",
+            "args": 4
+          },
+          {
+            "name": "__defineGetter__",
+            "args": 2
+          },
+          {
+            "name": "__defineSetter__",
+            "args": 2
+          },
+          {
+            "name": "hasOwnProperty",
+            "args": 1
+          },
+          {
+            "name": "__lookupGetter__",
+            "args": 1
+          },
+          {
+            "name": "__lookupSetter__",
+            "args": 1
+          },
+          {
+            "name": "isPrototypeOf",
+            "args": 1
+          },
+          {
+            "name": "propertyIsEnumerable",
+            "args": 1
+          },
+          {
+            "name": "toString",
+            "args": 0
+          },
+          {
+            "name": "valueOf",
+            "args": 0
+          },
+          {
+            "name": "toLocaleString",
+            "args": 0
+          }
+        ]
+      },
+      "_gateway": {
+        "type": "Di",
+        "keys": [
+          "_isConnected",
+          "_state",
+          "_isConnectForbidden",
+          "_sessionId",
+          "_sessionIdChanged",
+          "_chartApi",
+          "_sessionPrefix",
+          "_shouldReconnectAfterCriticalError",
+          "_sessionDisabled",
+          "_handler",
+          "_criticalError",
+          "_symbolResolveMap",
+          "_lastSymbolResolveInfoMap",
+          "_disableStatistics"
+        ],
+        "methods": [
+          {
+            "name": "_handler",
+            "args": 1
+          },
+          {
+            "name": "destroy",
+            "args": 0
+          },
+          {
+            "name": "serverTime",
+            "args": 0
+          },
+          {
+            "name": "switchTimezone",
+            "args": 1
+          },
+          {
+            "name": "defaultResolutions",
+            "args": 0
+          },
+          {
+            "name": "availableCurrencies",
+            "args": 0
+          },
+          {
+            "name": "availableUnits",
+            "args": 0
+          },
+          {
+            "name": "availablePriceSources",
+            "args": 1
+          },
+          {
+            "name": "resolveSymbol",
+            "args": 3
+          },
+          {
+            "name": "requestFirstBarTime",
+            "args": 3
+          },
+          {
+            "name": "lastSymbolResolveInfo",
+            "args": 1
+          },
+          {
+            "name": "createSeries",
+            "args": 7
+          },
+          {
+            "name": "modifySeries",
+            "args": 7
+          },
+          {
+            "name": "removeSeries",
+            "args": 1
+          },
+          {
+            "name": "requestMoreData",
+            "args": 3
+          },
+          {
+            "name": "requestMoreTickmarks",
+            "args": 3
+          },
+          {
+            "name": "canCreateStudy",
+            "args": 1
+          },
+          {
+            "name": "getStudyCounter",
+            "args": 0
+          },
+          {
+            "name": "createStudy",
+            "args": 7
+          },
+          {
+            "name": "rebindStudy",
+            "args": 7
+          },
+          {
+            "name": "modifyStudy",
+            "args": 5
+          },
+          {
+            "name": "removeStudy",
+            "args": 2
+          },
+          {
+            "name": "createPointset",
+            "args": 6
+          },
+          {
+            "name": "modifyPointset",
+            "args": 4
+          },
+          {
+            "name": "removePointset",
+            "args": 1
+          },
+          {
+            "name": "setVisibleTimeRange",
+            "args": 6
+          },
+          {
+            "name": "criticalError",
+            "args": 0
+          },
+          {
+            "name": "connect",
+            "args": 0
+          },
+          {
+            "name": "setHandler",
+            "args": 1
+          },
+          {
+            "name": "connected",
+            "args": 0
+          },
+          {
+            "name": "disable",
+            "args": 0
+          },
+          {
+            "name": "chartApi",
+            "args": 0
+          },
+          {
+            "name": "_sendCreateSession",
+            "args": 0
+          },
+          {
+            "name": "_sendRemoveSession",
+            "args": 0
+          },
+          {
+            "name": "_onMessage",
+            "args": 1
+          },
+          {
+            "name": "_onCriticalError",
+            "args": 2
+          },
+          {
+            "name": "isConnected",
+            "args": 0
+          },
+          {
+            "name": "sessionId",
+            "args": 0
+          },
+          {
+            "name": "onSessionIdChanged",
+            "args": 0
+          },
+          {
+            "name": "disconnect",
+            "args": 0
+          },
+          {
+            "name": "onMessage",
+            "args": 1
+          },
+          {
+            "name": "_getChartApi",
+            "args": 0
+          },
+          {
+            "name": "_generateLogMessage",
+            "args": 1
+          },
+          {
+            "name": "_onChartApiConnected",
+            "args": 0
+          },
+          {
+            "name": "_onChartApiDisconnected",
+            "args": 0
+          },
+          {
+            "name": "_setSessionId",
+            "args": 1
+          },
+          {
+            "name": "_logNormal",
+            "args": 1
+          },
+          {
+            "name": "_logError",
+            "args": 1
+          },
+          {
+            "name": "_processDestroyingOnServer",
+            "args": 0
+          },
+          {
+            "name": "_forbidConnectWhile",
+            "args": 1
+          },
+          {
+            "name": "__defineGetter__",
+            "args": 2
+          },
+          {
+            "name": "__defineSetter__",
+            "args": 2
+          },
+          {
+            "name": "hasOwnProperty",
+            "args": 1
+          },
+          {
+            "name": "__lookupGetter__",
+            "args": 1
+          },
+          {
+            "name": "__lookupSetter__",
+            "args": 1
+          },
+          {
+            "name": "isPrototypeOf",
+            "args": 1
+          },
+          {
+            "name": "propertyIsEnumerable",
+            "args": 1
+          },
+          {
+            "name": "toString",
+            "args": 0
+          },
+          {
+            "name": "valueOf",
+            "args": 0
+          },
+          {
+            "name": "toLocaleString",
+            "args": 0
+          }
+        ]
+      },
+      "_data": {
+        "type": "p",
+        "keys": [
+          "_pressedChunks",
+          "m_bars",
+          "m_nsBars",
+          "lastProjectionPrice",
+          "reversalAmount"
+        ],
+        "methods": [
+          {
+            "name": "bars",
+            "args": 0
+          },
+          {
+            "name": "nsBars",
+            "args": 0
+          },
+          {
+            "name": "pressedChunks",
+            "args": 2
+          },
+          {
+            "name": "mergeRegularBars",
+            "args": 1
+          },
+          {
+            "name": "size",
+            "args": 0
+          },
+          {
+            "name": "each",
+            "args": 1
+          },
+          {
+            "name": "clear",
+            "args": 0
+          },
+          {
+            "name": "isEmpty",
+            "args": 0
+          },
+          {
+            "name": "first",
+            "args": 0
+          },
+          {
+            "name": "last",
+            "args": 0
+          },
+          {
+            "name": "search",
+            "args": 3
+          },
+          {
+            "name": "valueAt",
+            "args": 1
+          },
+          {
+            "name": "plotValueToTimePointIndex",
+            "args": 3
+          },
+          {
+            "name": "moveData",
+            "args": 1
+          },
+          {
+            "name": "_rebuildPressedChunks",
+            "args": 1
+          },
+          {
+            "name": "_updateLatestChunks",
+            "args": 0
+          },
+          {
+            "name": "_clearPressedChunks",
+            "args": 0
+          },
+          {
+            "name": "__defineGetter__",
+            "args": 2
+          },
+          {
+            "name": "__defineSetter__",
+            "args": 2
+          },
+          {
+            "name": "hasOwnProperty",
+            "args": 1
+          },
+          {
+            "name": "__lookupGetter__",
+            "args": 1
+          },
+          {
+            "name": "__lookupSetter__",
+            "args": 1
+          },
+          {
+            "name": "isPrototypeOf",
+            "args": 1
+          },
+          {
+            "name": "propertyIsEnumerable",
+            "args": 1
+          },
+          {
+            "name": "toString",
+            "args": 0
+          },
+          {
+            "name": "valueOf",
+            "args": 0
+          },
+          {
+            "name": "toLocaleString",
+            "args": 0
+          }
+        ]
+      },
+      "_status": {
+        "type": "number",
+        "value": "3"
+      }
+    }
+  },
+  "seriesSource": {
+    "found": true,
+    "shape": {
+      "type": "ft",
+      "keys": [
+        "_extSymbol",
+        "_lastResolvedSymbol",
+        "_createSeriesOverriddenParams",
+        "_instanceId",
+        "_symbolInstanceId",
+        "_resolution",
+        "_timeFrame",
+        "_data",
+        "_dataEvents",
+        "_status",
+        "_turnaroundCounter",
+        "_boundOnGatewayIsConnectedChanged",
+        "_ongoingDataUpdate",
+        "_gateway",
+        "_turnaroundPrefix",
+        "_createSeriesParams"
+      ],
+      "methods": [
+        {
+          "name": "_boundOnGatewayIsConnectedChanged",
+          "args": 1
+        },
+        {
+          "name": "destroy",
+          "args": 0
+        },
+        {
+          "name": "modifySeries",
+          "args": 2
+        },
+        {
+          "name": "requestMoreData",
+          "args": 1
+        },
+        {
+          "name": "requestMoreTickmarks",
+          "args": 1
+        },
+        {
+          "name": "isStarted",
+          "args": 0
+        },
+        {
+          "name": "isActive",
+          "args": 0
+        },
+        {
+          "name": "resolution",
+          "args": 0
+        },
+        {
+          "name": "start",
+          "args": 0
+        },
+        {
+          "name": "stop",
+          "args": 0
+        },
+        {
+          "name": "instanceId",
+          "args": 0
+        },
+        {
+          "name": "data",
+          "args": 0
+        },
+        {
+          "name": "clearData",
+          "args": 0
+        },
+        {
+          "name": "dataEvents",
+          "args": 0
+        },
+        {
+          "name": "turnaround",
+          "args": 0
+        },
+        {
+          "name": "symbolInstanceId",
+          "args": 0
+        },
+        {
+          "name": "symbol",
+          "args": 0
+        },
+        {
+          "name": "moveData",
+          "args": 1
+        },
+        {
+          "name": "setInitialRequestOptions",
+          "args": 1
+        },
+        {
+          "name": "symbolSameAsResolved",
+          "args": 1
+        },
+        {
+          "name": "resolvedSymbol",
+          "args": 0
+        },
+        {
+          "name": "_resolveSymbol",
+          "args": 0
+        },
+        {
+          "name": "_clearDataImpl",
+          "args": 0
+        },
+        {
+          "name": "_changeStatusTo",
+          "args": 1
+        },
+        {
+          "name": "_createSeries",
+          "args": 0
+        },
+        {
+          "name": "_onGatewayIsConnectedChanged",
+          "args": 1
+        },
+        {
+          "name": "_onGatewayConnected",
+          "args": 0
+        },
+        {
+          "name": "_onGatewayDisconnected",
+          "args": 0
+        },
+        {
+          "name": "_onMessage",
+          "args": 1
+        },
+        {
+          "name": "_onMessageImpl",
+          "args": 1
+        },
+        {
+          "name": "_onSeriesError",
+          "args": 1
+        },
+        {
+          "name": "_onSeriesTimeFrame",
+          "args": 5
+        },
+        {
+          "name": "_onSymbolError",
+          "args": 1
+        },
+        {
+          "name": "_onSymbolResolved",
+          "args": 1
+        },
+        {
+          "name": "_onDataUpdate",
+          "args": 3
+        },
+        {
+          "name": "_enqueueUpdate",
+          "args": 1
+        },
+        {
+          "name": "_onDataUnpacked",
+          "args": 3
+        },
+        {
+          "name": "_onSeriesLoading",
+          "args": 1
+        },
+        {
+          "name": "_onSeriesCompleted",
+          "args": 3
+        },
+        {
+          "name": "_checkTurnaround",
+          "args": 2
+        },
+        {
+          "name": "__defineGetter__",
+          "args": 2
+        },
+        {
+          "name": "__defineSetter__",
+          "args": 2
+        },
+        {
+          "name": "hasOwnProperty",
+          "args": 1
+        },
+        {
+          "name": "__lookupGetter__",
+          "args": 1
+        },
+        {
+          "name": "__lookupSetter__",
+          "args": 1
+        },
+        {
+          "name": "isPrototypeOf",
+          "args": 1
+        },
+        {
+          "name": "propertyIsEnumerable",
+          "args": 1
+        },
+        {
+          "name": "toString",
+          "args": 0
+        },
+        {
+          "name": "valueOf",
+          "args": 0
+        },
+        {
+          "name": "toLocaleString",
+          "args": 0
+        }
+      ]
+    },
+    "fields": {
+      "_dataEvents": {
+        "type": "lt",
+        "keys": [
+          "_created",
+          "_modified",
+          "_loading",
+          "_completed",
+          "_error",
+          "_symbolError",
+          "_symbolResolved",
+          "_seriesError",
+          "_symbolNotPermitted",
+          "_symbolInvalid",
+          "_symbolGroupNotPermitted",
+          "_chartTypeNotPermitted",
+          "_intradaySpreadNotPermitted",
+          "_intradayExchangeNotPermitted",
+          "_customIntervalNotPermitted",
+          "_secondsIntervalNotPermitted",
+          "_ticksIntervalNotPermitted",
+          "_tickMarksRangeChanged",
+          "_barReceived",
+          "_seriesTimeFrame",
+          "_dataUpdated"
+        ],
+        "methods": [
+          {
+            "name": "destroy",
+            "args": 0
+          },
+          {
+            "name": "created",
+            "args": 0
+          },
+          {
+            "name": "modified",
+            "args": 0
+          },
+          {
+            "name": "loading",
+            "args": 0
+          },
+          {
+            "name": "completed",
+            "args": 0
+          },
+          {
+            "name": "error",
+            "args": 0
+          },
+          {
+            "name": "symbolError",
+            "args": 0
+          },
+          {
+            "name": "symbolResolved",
+            "args": 0
+          },
+          {
+            "name": "seriesError",
+            "args": 0
+          },
+          {
+            "name": "symbolInvalid",
+            "args": 0
+          },
+          {
+            "name": "symbolNotPermitted",
+            "args": 0
+          },
+          {
+            "name": "symbolGroupNotPermitted",
+            "args": 0
+          },
+          {
+            "name": "chartTypeNotPermitted",
+            "args": 0
+          },
+          {
+            "name": "intradaySpreadNotPermitted",
+            "args": 0
+          },
+          {
+            "name": "intradayExchangeNotPermitted",
+            "args": 0
+          },
+          {
+            "name": "customIntervalNotPermitted",
+            "args": 0
+          },
+          {
+            "name": "secondsIntervalNotPermitted",
+            "args": 0
+          },
+          {
+            "name": "ticksIntervalNotPermitted",
+            "args": 0
+          },
+          {
+            "name": "tickMarksRangeChanged",
+            "args": 0
+          },
+          {
+            "name": "barReceived",
+            "args": 0
+          },
+          {
+            "name": "seriesTimeFrame",
+            "args": 0
+          },
+          {
+            "name": "dataUpdated",
+            "args": 0
+          },
+          {
+            "name": "fireCompleted",
+            "args": 1
+          },
+          {
+            "name": "fireCreated",
+            "args": 1
+          },
+          {
+            "name": "fireModified",
+            "args": 0
+          },
+          {
+            "name": "fireLoading",
+            "args": 1
+          },
+          {
+            "name": "fireError",
+            "args": 0
+          },
+          {
+            "name": "fireSymbolError",
+            "args": 1
+          },
+          {
+            "name": "fireSymbolResolved",
+            "args": 1
+          },
+          {
+            "name": "fireSeriesError",
+            "args": 1
+          },
+          {
+            "name": "fireSymbolInvalid",
+            "args": 0
+          },
+          {
+            "name": "fireSymbolNotPermitted",
+            "args": 1
+          },
+          {
+            "name": "fireSymbolGroupNotPermitted",
+            "args": 1
+          },
+          {
+            "name": "fireChartTypeNotPermitted",
+            "args": 1
+          },
+          {
+            "name": "fireIntradaySpreadNotPermitted",
+            "args": 0
+          },
+          {
+            "name": "fireIntradayExchangeNotPermitted",
+            "args": 0
+          },
+          {
+            "name": "fireCustomIntervalNotPermitted",
+            "args": 1
+          },
+          {
+            "name": "fireSecondsIntervalNotPermitted",
+            "args": 0
+          },
+          {
+            "name": "fireTicksIntervalNotPermitted",
+            "args": 0
+          },
+          {
+            "name": "fireTickMarksRangeChanged",
+            "args": 1
+          },
+          {
+            "name": "fireBarReceived",
+            "args": 1
+          },
+          {
+            "name": "fireSeriesTimeFrame",
+            "args": 5
+          },
+          {
+            "name": "fireDataUpdated",
+            "args": 4
+          },
+          {
+            "name": "__defineGetter__",
+            "args": 2
+          },
+          {
+            "name": "__defineSetter__",
+            "args": 2
+          },
+          {
+            "name": "hasOwnProperty",
+            "args": 1
+          },
+          {
+            "name": "__lookupGetter__",
+            "args": 1
+          },
+          {
+            "name": "__lookupSetter__",
+            "args": 1
+          },
+          {
+            "name": "isPrototypeOf",
+            "args": 1
+          },
+          {
+            "name": "propertyIsEnumerable",
+            "args": 1
+          },
+          {
+            "name": "toString",
+            "args": 0
+          },
+          {
+            "name": "valueOf",
+            "args": 0
+          },
+          {
+            "name": "toLocaleString",
+            "args": 0
+          }
+        ]
+      },
+      "_gateway": {
+        "type": "Di",
+        "keys": [
+          "_isConnected",
+          "_state",
+          "_isConnectForbidden",
+          "_sessionId",
+          "_sessionIdChanged",
+          "_chartApi",
+          "_sessionPrefix",
+          "_shouldReconnectAfterCriticalError",
+          "_sessionDisabled",
+          "_handler",
+          "_criticalError",
+          "_symbolResolveMap",
+          "_lastSymbolResolveInfoMap",
+          "_disableStatistics"
+        ],
+        "methods": [
+          {
+            "name": "_handler",
+            "args": 1
+          },
+          {
+            "name": "destroy",
+            "args": 0
+          },
+          {
+            "name": "serverTime",
+            "args": 0
+          },
+          {
+            "name": "switchTimezone",
+            "args": 1
+          },
+          {
+            "name": "defaultResolutions",
+            "args": 0
+          },
+          {
+            "name": "availableCurrencies",
+            "args": 0
+          },
+          {
+            "name": "availableUnits",
+            "args": 0
+          },
+          {
+            "name": "availablePriceSources",
+            "args": 1
+          },
+          {
+            "name": "resolveSymbol",
+            "args": 3
+          },
+          {
+            "name": "requestFirstBarTime",
+            "args": 3
+          },
+          {
+            "name": "lastSymbolResolveInfo",
+            "args": 1
+          },
+          {
+            "name": "createSeries",
+            "args": 7
+          },
+          {
+            "name": "modifySeries",
+            "args": 7
+          },
+          {
+            "name": "removeSeries",
+            "args": 1
+          },
+          {
+            "name": "requestMoreData",
+            "args": 3
+          },
+          {
+            "name": "requestMoreTickmarks",
+            "args": 3
+          },
+          {
+            "name": "canCreateStudy",
+            "args": 1
+          },
+          {
+            "name": "getStudyCounter",
+            "args": 0
+          },
+          {
+            "name": "createStudy",
+            "args": 7
+          },
+          {
+            "name": "rebindStudy",
+            "args": 7
+          },
+          {
+            "name": "modifyStudy",
+            "args": 5
+          },
+          {
+            "name": "removeStudy",
+            "args": 2
+          },
+          {
+            "name": "createPointset",
+            "args": 6
+          },
+          {
+            "name": "modifyPointset",
+            "args": 4
+          },
+          {
+            "name": "removePointset",
+            "args": 1
+          },
+          {
+            "name": "setVisibleTimeRange",
+            "args": 6
+          },
+          {
+            "name": "criticalError",
+            "args": 0
+          },
+          {
+            "name": "connect",
+            "args": 0
+          },
+          {
+            "name": "setHandler",
+            "args": 1
+          },
+          {
+            "name": "connected",
+            "args": 0
+          },
+          {
+            "name": "disable",
+            "args": 0
+          },
+          {
+            "name": "chartApi",
+            "args": 0
+          },
+          {
+            "name": "_sendCreateSession",
+            "args": 0
+          },
+          {
+            "name": "_sendRemoveSession",
+            "args": 0
+          },
+          {
+            "name": "_onMessage",
+            "args": 1
+          },
+          {
+            "name": "_onCriticalError",
+            "args": 2
+          },
+          {
+            "name": "isConnected",
+            "args": 0
+          },
+          {
+            "name": "sessionId",
+            "args": 0
+          },
+          {
+            "name": "onSessionIdChanged",
+            "args": 0
+          },
+          {
+            "name": "disconnect",
+            "args": 0
+          },
+          {
+            "name": "onMessage",
+            "args": 1
+          },
+          {
+            "name": "_getChartApi",
+            "args": 0
+          },
+          {
+            "name": "_generateLogMessage",
+            "args": 1
+          },
+          {
+            "name": "_onChartApiConnected",
+            "args": 0
+          },
+          {
+            "name": "_onChartApiDisconnected",
+            "args": 0
+          },
+          {
+            "name": "_setSessionId",
+            "args": 1
+          },
+          {
+            "name": "_logNormal",
+            "args": 1
+          },
+          {
+            "name": "_logError",
+            "args": 1
+          },
+          {
+            "name": "_processDestroyingOnServer",
+            "args": 0
+          },
+          {
+            "name": "_forbidConnectWhile",
+            "args": 1
+          },
+          {
+            "name": "__defineGetter__",
+            "args": 2
+          },
+          {
+            "name": "__defineSetter__",
+            "args": 2
+          },
+          {
+            "name": "hasOwnProperty",
+            "args": 1
+          },
+          {
+            "name": "__lookupGetter__",
+            "args": 1
+          },
+          {
+            "name": "__lookupSetter__",
+            "args": 1
+          },
+          {
+            "name": "isPrototypeOf",
+            "args": 1
+          },
+          {
+            "name": "propertyIsEnumerable",
+            "args": 1
+          },
+          {
+            "name": "toString",
+            "args": 0
+          },
+          {
+            "name": "valueOf",
+            "args": 0
+          },
+          {
+            "name": "toLocaleString",
+            "args": 0
+          }
+        ]
+      },
+      "_data": {
+        "type": "p",
+        "keys": [
+          "_pressedChunks",
+          "m_bars",
+          "m_nsBars",
+          "lastProjectionPrice",
+          "reversalAmount"
+        ],
+        "methods": [
+          {
+            "name": "bars",
+            "args": 0
+          },
+          {
+            "name": "nsBars",
+            "args": 0
+          },
+          {
+            "name": "pressedChunks",
+            "args": 2
+          },
+          {
+            "name": "mergeRegularBars",
+            "args": 1
+          },
+          {
+            "name": "size",
+            "args": 0
+          },
+          {
+            "name": "each",
+            "args": 1
+          },
+          {
+            "name": "clear",
+            "args": 0
+          },
+          {
+            "name": "isEmpty",
+            "args": 0
+          },
+          {
+            "name": "first",
+            "args": 0
+          },
+          {
+            "name": "last",
+            "args": 0
+          },
+          {
+            "name": "search",
+            "args": 3
+          },
+          {
+            "name": "valueAt",
+            "args": 1
+          },
+          {
+            "name": "plotValueToTimePointIndex",
+            "args": 3
+          },
+          {
+            "name": "moveData",
+            "args": 1
+          },
+          {
+            "name": "_rebuildPressedChunks",
+            "args": 1
+          },
+          {
+            "name": "_updateLatestChunks",
+            "args": 0
+          },
+          {
+            "name": "_clearPressedChunks",
+            "args": 0
+          },
+          {
+            "name": "__defineGetter__",
+            "args": 2
+          },
+          {
+            "name": "__defineSetter__",
+            "args": 2
+          },
+          {
+            "name": "hasOwnProperty",
+            "args": 1
+          },
+          {
+            "name": "__lookupGetter__",
+            "args": 1
+          },
+          {
+            "name": "__lookupSetter__",
+            "args": 1
+          },
+          {
+            "name": "isPrototypeOf",
+            "args": 1
+          },
+          {
+            "name": "propertyIsEnumerable",
+            "args": 1
+          },
+          {
+            "name": "toString",
+            "args": 0
+          },
+          {
+            "name": "valueOf",
+            "args": 0
+          },
+          {
+            "name": "toLocaleString",
+            "args": 0
+          }
+        ]
+      },
+      "_status": {
+        "type": "number",
+        "value": "3"
+      }
+    },
+    "methods": {
+      "subscribeBars": {
+        "found": false,
+        "args": null,
+        "source": null
+      },
+      "unsubscribeBars": {
+        "found": false,
+        "args": null,
+        "source": null
+      },
+      "requestMoreData": {
+        "found": true,
+        "args": 1,
+        "source": "requestMoreData(e){null!==this._instanceId&&this._gateway.requestMoreData(this._instanceId,e,this._onMessage.bind(this))}"
+      },
+      "getBars": {
+        "found": false,
+        "args": null,
+        "source": null
+      },
+      "bars": {
+        "found": false,
+        "args": null,
+        "source": null
+      },
+      "data": {
+        "found": true,
+        "args": 0,
+        "source": "data(){return this._data}"
+      },
+      "onData": {
+        "found": false,
+        "args": null,
+        "source": null
+      },
+      "_onBarsChanged": {
+        "found": false,
+        "args": null,
+        "source": null
+      },
+      "_onBarReceived": {
+        "found": false,
+        "args": null,
+        "source": null
+      },
+      "_updateData": {
+        "found": false,
+        "args": null,
+        "source": null
+      },
+      "_mergeData": {
+        "found": false,
+        "args": null,
+        "source": null
+      },
+      "merge": {
+        "found": false,
+        "args": null,
+        "source": null
+      },
+      "resetCache": {
+        "found": false,
+        "args": null,
+        "source": null
+      }
+    }
+  },
+  "dataEvents": {
+    "found": true,
+    "shape": {
+      "type": "lt",
+      "keys": [
+        "_created",
+        "_modified",
+        "_loading",
+        "_completed",
+        "_error",
+        "_symbolError",
+        "_symbolResolved",
+        "_seriesError",
+        "_symbolNotPermitted",
+        "_symbolInvalid",
+        "_symbolGroupNotPermitted",
+        "_chartTypeNotPermitted",
+        "_intradaySpreadNotPermitted",
+        "_intradayExchangeNotPermitted",
+        "_customIntervalNotPermitted",
+        "_secondsIntervalNotPermitted",
+        "_ticksIntervalNotPermitted",
+        "_tickMarksRangeChanged",
+        "_barReceived",
+        "_seriesTimeFrame",
+        "_dataUpdated"
+      ],
+      "methods": [
+        {
+          "name": "destroy",
+          "args": 0
+        },
+        {
+          "name": "created",
+          "args": 0
+        },
+        {
+          "name": "modified",
+          "args": 0
+        },
+        {
+          "name": "loading",
+          "args": 0
+        },
+        {
+          "name": "completed",
+          "args": 0
+        },
+        {
+          "name": "error",
+          "args": 0
+        },
+        {
+          "name": "symbolError",
+          "args": 0
+        },
+        {
+          "name": "symbolResolved",
+          "args": 0
+        },
+        {
+          "name": "seriesError",
+          "args": 0
+        },
+        {
+          "name": "symbolInvalid",
+          "args": 0
+        },
+        {
+          "name": "symbolNotPermitted",
+          "args": 0
+        },
+        {
+          "name": "symbolGroupNotPermitted",
+          "args": 0
+        },
+        {
+          "name": "chartTypeNotPermitted",
+          "args": 0
+        },
+        {
+          "name": "intradaySpreadNotPermitted",
+          "args": 0
+        },
+        {
+          "name": "intradayExchangeNotPermitted",
+          "args": 0
+        },
+        {
+          "name": "customIntervalNotPermitted",
+          "args": 0
+        },
+        {
+          "name": "secondsIntervalNotPermitted",
+          "args": 0
+        },
+        {
+          "name": "ticksIntervalNotPermitted",
+          "args": 0
+        },
+        {
+          "name": "tickMarksRangeChanged",
+          "args": 0
+        },
+        {
+          "name": "barReceived",
+          "args": 0
+        },
+        {
+          "name": "seriesTimeFrame",
+          "args": 0
+        },
+        {
+          "name": "dataUpdated",
+          "args": 0
+        },
+        {
+          "name": "fireCompleted",
+          "args": 1
+        },
+        {
+          "name": "fireCreated",
+          "args": 1
+        },
+        {
+          "name": "fireModified",
+          "args": 0
+        },
+        {
+          "name": "fireLoading",
+          "args": 1
+        },
+        {
+          "name": "fireError",
+          "args": 0
+        },
+        {
+          "name": "fireSymbolError",
+          "args": 1
+        },
+        {
+          "name": "fireSymbolResolved",
+          "args": 1
+        },
+        {
+          "name": "fireSeriesError",
+          "args": 1
+        },
+        {
+          "name": "fireSymbolInvalid",
+          "args": 0
+        },
+        {
+          "name": "fireSymbolNotPermitted",
+          "args": 1
+        },
+        {
+          "name": "fireSymbolGroupNotPermitted",
+          "args": 1
+        },
+        {
+          "name": "fireChartTypeNotPermitted",
+          "args": 1
+        },
+        {
+          "name": "fireIntradaySpreadNotPermitted",
+          "args": 0
+        },
+        {
+          "name": "fireIntradayExchangeNotPermitted",
+          "args": 0
+        },
+        {
+          "name": "fireCustomIntervalNotPermitted",
+          "args": 1
+        },
+        {
+          "name": "fireSecondsIntervalNotPermitted",
+          "args": 0
+        },
+        {
+          "name": "fireTicksIntervalNotPermitted",
+          "args": 0
+        },
+        {
+          "name": "fireTickMarksRangeChanged",
+          "args": 1
+        },
+        {
+          "name": "fireBarReceived",
+          "args": 1
+        },
+        {
+          "name": "fireSeriesTimeFrame",
+          "args": 5
+        },
+        {
+          "name": "fireDataUpdated",
+          "args": 4
+        },
+        {
+          "name": "__defineGetter__",
+          "args": 2
+        },
+        {
+          "name": "__defineSetter__",
+          "args": 2
+        },
+        {
+          "name": "hasOwnProperty",
+          "args": 1
+        },
+        {
+          "name": "__lookupGetter__",
+          "args": 1
+        },
+        {
+          "name": "__lookupSetter__",
+          "args": 1
+        },
+        {
+          "name": "isPrototypeOf",
+          "args": 1
+        },
+        {
+          "name": "propertyIsEnumerable",
+          "args": 1
+        },
+        {
+          "name": "toString",
+          "args": 0
+        },
+        {
+          "name": "valueOf",
+          "args": 0
+        },
+        {
+          "name": "toLocaleString",
+          "args": 0
+        }
+      ]
+    },
+    "eventInfo": {
+      "_barReceived": {
+        "found": true,
+        "shape": {
+          "type": "n",
+          "keys": [
+            "fire",
+            "_listeners"
+          ],
+          "methods": [
+            {
+              "name": "fire",
+              "args": 0
+            },
+            {
+              "name": "subscribe",
+              "args": 3
+            },
+            {
+              "name": "unsubscribe",
+              "args": 2
+            },
+            {
+              "name": "unsubscribeAll",
+              "args": 1
+            },
+            {
+              "name": "destroy",
+              "args": 0
+            },
+            {
+              "name": "_fireImpl",
+              "args": 0
+            },
+            {
+              "name": "__defineGetter__",
+              "args": 2
+            },
+            {
+              "name": "__defineSetter__",
+              "args": 2
+            },
+            {
+              "name": "hasOwnProperty",
+              "args": 1
+            },
+            {
+              "name": "__lookupGetter__",
+              "args": 1
+            },
+            {
+              "name": "__lookupSetter__",
+              "args": 1
+            },
+            {
+              "name": "isPrototypeOf",
+              "args": 1
+            },
+            {
+              "name": "propertyIsEnumerable",
+              "args": 1
+            },
+            {
+              "name": "toString",
+              "args": 0
+            },
+            {
+              "name": "valueOf",
+              "args": 0
+            },
+            {
+              "name": "toLocaleString",
+              "args": 0
+            }
+          ]
+        },
+        "listenerType": "array",
+        "listenerCount": 2
+      },
+      "_dataUpdated": {
+        "found": true,
+        "shape": {
+          "type": "n",
+          "keys": [
+            "fire",
+            "_listeners"
+          ],
+          "methods": [
+            {
+              "name": "fire",
+              "args": 0
+            },
+            {
+              "name": "subscribe",
+              "args": 3
+            },
+            {
+              "name": "unsubscribe",
+              "args": 2
+            },
+            {
+              "name": "unsubscribeAll",
+              "args": 1
+            },
+            {
+              "name": "destroy",
+              "args": 0
+            },
+            {
+              "name": "_fireImpl",
+              "args": 0
+            },
+            {
+              "name": "__defineGetter__",
+              "args": 2
+            },
+            {
+              "name": "__defineSetter__",
+              "args": 2
+            },
+            {
+              "name": "hasOwnProperty",
+              "args": 1
+            },
+            {
+              "name": "__lookupGetter__",
+              "args": 1
+            },
+            {
+              "name": "__lookupSetter__",
+              "args": 1
+            },
+            {
+              "name": "isPrototypeOf",
+              "args": 1
+            },
+            {
+              "name": "propertyIsEnumerable",
+              "args": 1
+            },
+            {
+              "name": "toString",
+              "args": 0
+            },
+            {
+              "name": "valueOf",
+              "args": 0
+            },
+            {
+              "name": "toLocaleString",
+              "args": 0
+            }
+          ]
+        },
+        "listenerType": "array",
+        "listenerCount": 4
+      },
+      "_completed": {
+        "found": true,
+        "shape": {
+          "type": "n",
+          "keys": [
+            "fire",
+            "_listeners"
+          ],
+          "methods": [
+            {
+              "name": "fire",
+              "args": 0
+            },
+            {
+              "name": "subscribe",
+              "args": 3
+            },
+            {
+              "name": "unsubscribe",
+              "args": 2
+            },
+            {
+              "name": "unsubscribeAll",
+              "args": 1
+            },
+            {
+              "name": "destroy",
+              "args": 0
+            },
+            {
+              "name": "_fireImpl",
+              "args": 0
+            },
+            {
+              "name": "__defineGetter__",
+              "args": 2
+            },
+            {
+              "name": "__defineSetter__",
+              "args": 2
+            },
+            {
+              "name": "hasOwnProperty",
+              "args": 1
+            },
+            {
+              "name": "__lookupGetter__",
+              "args": 1
+            },
+            {
+              "name": "__lookupSetter__",
+              "args": 1
+            },
+            {
+              "name": "isPrototypeOf",
+              "args": 1
+            },
+            {
+              "name": "propertyIsEnumerable",
+              "args": 1
+            },
+            {
+              "name": "toString",
+              "args": 0
+            },
+            {
+              "name": "valueOf",
+              "args": 0
+            },
+            {
+              "name": "toLocaleString",
+              "args": 0
+            }
+          ]
+        },
+        "listenerType": "array",
+        "listenerCount": 8
+      },
+      "_loading": {
+        "found": true,
+        "shape": {
+          "type": "n",
+          "keys": [
+            "fire",
+            "_listeners"
+          ],
+          "methods": [
+            {
+              "name": "fire",
+              "args": 0
+            },
+            {
+              "name": "subscribe",
+              "args": 3
+            },
+            {
+              "name": "unsubscribe",
+              "args": 2
+            },
+            {
+              "name": "unsubscribeAll",
+              "args": 1
+            },
+            {
+              "name": "destroy",
+              "args": 0
+            },
+            {
+              "name": "_fireImpl",
+              "args": 0
+            },
+            {
+              "name": "__defineGetter__",
+              "args": 2
+            },
+            {
+              "name": "__defineSetter__",
+              "args": 2
+            },
+            {
+              "name": "hasOwnProperty",
+              "args": 1
+            },
+            {
+              "name": "__lookupGetter__",
+              "args": 1
+            },
+            {
+              "name": "__lookupSetter__",
+              "args": 1
+            },
+            {
+              "name": "isPrototypeOf",
+              "args": 1
+            },
+            {
+              "name": "propertyIsEnumerable",
+              "args": 1
+            },
+            {
+              "name": "toString",
+              "args": 0
+            },
+            {
+              "name": "valueOf",
+              "args": 0
+            },
+            {
+              "name": "toLocaleString",
+              "args": 0
+            }
+          ]
+        },
+        "listenerType": "array",
+        "listenerCount": 1
+      },
+      "_error": {
+        "found": true,
+        "shape": {
+          "type": "n",
+          "keys": [
+            "fire",
+            "_listeners"
+          ],
+          "methods": [
+            {
+              "name": "fire",
+              "args": 0
+            },
+            {
+              "name": "subscribe",
+              "args": 3
+            },
+            {
+              "name": "unsubscribe",
+              "args": 2
+            },
+            {
+              "name": "unsubscribeAll",
+              "args": 1
+            },
+            {
+              "name": "destroy",
+              "args": 0
+            },
+            {
+              "name": "_fireImpl",
+              "args": 0
+            },
+            {
+              "name": "__defineGetter__",
+              "args": 2
+            },
+            {
+              "name": "__defineSetter__",
+              "args": 2
+            },
+            {
+              "name": "hasOwnProperty",
+              "args": 1
+            },
+            {
+              "name": "__lookupGetter__",
+              "args": 1
+            },
+            {
+              "name": "__lookupSetter__",
+              "args": 1
+            },
+            {
+              "name": "isPrototypeOf",
+              "args": 1
+            },
+            {
+              "name": "propertyIsEnumerable",
+              "args": 1
+            },
+            {
+              "name": "toString",
+              "args": 0
+            },
+            {
+              "name": "valueOf",
+              "args": 0
+            },
+            {
+              "name": "toLocaleString",
+              "args": 0
+            }
+          ]
+        },
+        "listenerType": "array",
+        "listenerCount": 4
+      },
+      "_statusChanged": {
+        "found": false
+      },
+      "_symbolChanged": {
+        "found": false
+      },
+      "_intervalChanged": {
+        "found": false
+      },
+      "_realtimeDataReceived": {
+        "found": false
+      },
+      "_newBar": {
+        "found": false
+      },
+      "_barsUpdated": {
+        "found": false
+      }
+    }
+  },
+  "barStore": {
+    "found": true,
+    "shape": {
+      "type": "u",
+      "keys": [
+        "_items",
+        "_start",
+        "_end",
+        "_shareRead",
+        "_minMaxCache",
+        "_rowSearchCacheByIndex",
+        "_rowSearchCacheByIndexWithoutEmptyValues",
+        "_rowSearchCacheByTime",
+        "_rowSearchCacheByTimeWithoutEmptyValues",
+        "_plotFunctions",
+        "_emptyValuePredicate"
+      ],
+      "methods": [
+        {
+          "name": "_emptyValuePredicate",
+          "args": 2
+        },
+        {
+          "name": "clear",
+          "args": 0
+        },
+        {
+          "name": "first",
+          "args": 0
+        },
+        {
+          "name": "last",
+          "args": 0
+        },
+        {
+          "name": "firstIndex",
+          "args": 0
+        },
+        {
+          "name": "lastIndex",
+          "args": 0
+        },
+        {
+          "name": "size",
+          "args": 0
+        },
+        {
+          "name": "isEmpty",
+          "args": 0
+        },
+        {
+          "name": "contains",
+          "args": 1
+        },
+        {
+          "name": "valueAt",
+          "args": 1
+        },
+        {
+          "name": "add",
+          "args": 2
+        },
+        {
+          "name": "search",
+          "args": 1
+        },
+        {
+          "name": "searchByTime",
+          "args": 1
+        },
+        {
+          "name": "fold",
+          "args": 2
+        },
+        {
+          "name": "findFirst",
+          "args": 2
+        },
+        {
+          "name": "findLast",
+          "args": 2
+        },
+        {
+          "name": "each",
+          "args": 1
+        },
+        {
+          "name": "reduce",
+          "args": 2
+        },
+        {
+          "name": "range",
+          "args": 2
+        },
+        {
+          "name": "plottableRange",
+          "args": 1
+        },
+        {
+          "name": "rangeIterator",
+          "args": 2
+        },
+        {
+          "name": "fullRangeIterator",
+          "args": 0
+        },
+        {
+          "name": "minMaxOnRangeCached",
+          "args": 3
+        },
+        {
+          "name": "minMaxOnRange",
+          "args": 3
+        },
+        {
+          "name": "merge",
+          "args": 1
+        },
+        {
+          "name": "addTail",
+          "args": 1
+        },
+        {
+          "name": "move",
+          "args": 1
+        },
+        {
+          "name": "remove",
+          "args": 1
+        },
+        {
+          "name": "state",
+          "args": 0
+        },
+        {
+          "name": "restoreState",
+          "args": 1
+        },
+        {
+          "name": "_indexAt",
+          "args": 1
+        },
+        {
+          "name": "_valueAt",
+          "args": 1
+        },
+        {
+          "name": "_length",
+          "args": 0
+        },
+        {
+          "name": "_searchImpl",
+          "args": 6
+        },
+        {
+          "name": "_nonCachedSearch",
+          "args": 4
+        },
+        {
+          "name": "_nonEmptyNearestRight",
+          "args": 2
+        },
+        {
+          "name": "_nonEmptyNearestLeft",
+          "args": 2
+        },
+        {
+          "name": "_searchNearestLeft",
+          "args": 2
+        },
+        {
+          "name": "_searchNearestRight",
+          "args": 2
+        },
+        {
+          "name": "_bsearch",
+          "args": 2
+        },
+        {
+          "name": "_lowerbound",
+          "args": 2
+        },
+        {
+          "name": "_upperbound",
+          "args": 1
+        },
+        {
+          "name": "_plotMinMax",
+          "args": 3
+        },
+        {
+          "name": "_invalidateCacheForRow",
+          "args": 1
+        },
+        {
+          "name": "_prepend",
+          "args": 1
+        },
+        {
+          "name": "_append",
+          "args": 1
+        },
+        {
+          "name": "_updateLast",
+          "args": 1
+        },
+        {
+          "name": "_merge",
+          "args": 1
+        },
+        {
+          "name": "_minMaxOnRangeCachedImpl",
+          "args": 3
+        },
+        {
+          "name": "_minMaxOnRange",
+          "args": 3
+        },
+        {
+          "name": "_rangeIteratorImpl",
+          "args": 2
+        },
+        {
+          "name": "_invalidateSearchCaches",
+          "args": 0
+        },
+        {
+          "name": "__defineGetter__",
+          "args": 2
+        },
+        {
+          "name": "__defineSetter__",
+          "args": 2
+        },
+        {
+          "name": "hasOwnProperty",
+          "args": 1
+        },
+        {
+          "name": "__lookupGetter__",
+          "args": 1
+        },
+        {
+          "name": "__lookupSetter__",
+          "args": 1
+        },
+        {
+          "name": "isPrototypeOf",
+          "args": 1
+        },
+        {
+          "name": "propertyIsEnumerable",
+          "args": 1
+        },
+        {
+          "name": "toString",
+          "args": 0
+        },
+        {
+          "name": "valueOf",
+          "args": 0
+        },
+        {
+          "name": "toLocaleString",
+          "args": 0
+        }
+      ]
+    },
+    "itemCount": 83,
+    "start": 0,
+    "end": 83,
+    "shareRead": false,
+    "firstBar": {
+      "type": "Object",
+      "index": 0,
+      "value": [
+        1794739620,
+        3822.47,
+        3822.47,
+        3822.46,
+        3822.46,
+        0.401,
+        null
+      ],
+      "timeMs": 1794739620000
+    },
+    "lastBar": {
+      "type": "Object",
+      "index": 82,
+      "value": [
+        1794744540,
+        3822.25,
+        3822.25,
+        3821.67,
+        3821.67,
+        0.014,
+        null
+      ],
+      "timeMs": 1794744540000
+    },
+    "add": {
+      "found": true,
+      "args": 2,
+      "source": "add(e,t){if(this._shareRead)return l.logDebug(\"add: readonly collection modification attempt\"),!1;const i={index:e,value:t},s=this._nonCachedSearch(e,a.PlotRowSearchMode.Exact,h);return this._invalidateSearchCaches(),null===s?(this._items.splice(this._lowerbound(e,h),0,i),this._start=0,this._end=this._items.length,!0):(this._items[s]=i,!1)}"
+    },
+    "addTail": {
+      "found": true,
+      "args": 1,
+      "source": "addTail(e,t=!1){if(0===e.length)return;let i=0;t&&this._end-this._start>0&&(i=1,this._items[this._end-this._start-1].value=e[0].value);for(let t=i;t<e.length;++t){const i=e[t],s=this.lastIndex();if(null===s){l.logError(\"Can't add tail to the empty plotlist\");break}this.add(s+1,i.value)}this._invalidateSearchCaches()}"
+    },
+    "merge": {
+      "found": true,
+      "args": 1,
+      "source": "merge(e){return this._shareRead?(l.logDebug(\"merge: readonly collection modification attempt\"),null):0===e.length?null:this.isEmpty()||e[e.length-1].index<this._items[0].index?this._prepend(e):e[0].index>this._items[this._items.length-1].index?this._append(e):1===e.length&&e[0].index===this._items[this._items.length-1].index?(this._updateLast(e[0]),e[0]):this._merge(e)}"
+    },
+    "updateLast": {
+      "found": true,
+      "args": 1,
+      "source": "_updateLast(e){(0,s.assert)(!this.isEmpty(),\"plot list should not be empty\");const t=this._items[this._end-1];(0,\ns.assert)(t.index===e.index,\"last row index should match new row index\"),this._invalidateCacheForRow(e),this._invalidateSearchCaches(),this._items[this._end-1]=e}"
+    },
+    "append": {
+      "found": true,
+      "args": 1,
+      "source": "_append(e){return(0,s.assert)(!this._shareRead,\"collection should not be readonly\"),(0,s.assert)(0!==e.length,\"plotRows should not be empty\"),this._invalidateSearchCaches(),this._minMaxCache.clear(),this._items=this._items.concat(e),this._start=0,this._end=this._items.length,e[0]}"
+    }
+  },
+  "tickPipeline": {
+    "widgetFound": true,
+    "widgetShape": {
+      "type": "Vb",
+      "keys": [
+        "_id",
+        "_ready",
+        "_readyHandlers",
+        "_onWindowResize",
+        "_options",
+        "_iFrame",
+        "_innerWindowLoaded",
+        "onDlay",
+        "listenerGuids",
+        "ticks",
+        "resetCacheFn",
+        "barDelay",
+        "lastBarTime",
+        "host",
+        "_callbackMap",
+        "historyOrderMarksCache",
+        "barDelayVisibilityHandler",
+        "barDelayInterval",
+        "getPriceAxis",
+        "kline_delay"
+      ],
+      "methods": [
+        {
+          "name": "_onWindowResize",
+          "args": 0
+        },
+        {
+          "name": "onDlay",
+          "args": 2
+        },
+        {
+          "name": "barDelayVisibilityHandler",
+          "args": 0
+        },
+        {
+          "name": "getPriceAxis",
+          "args": 0
+        },
+        {
+          "name": "setDebugMode",
+          "args": 1
+        },
+        {
+          "name": "onChartReady",
+          "args": 1
+        },
+        {
+          "name": "headerReady",
+          "args": 0
+        },
+        {
+          "name": "onGrayedObjectClicked",
+          "args": 1
+        },
+        {
+          "name": "onShortcut",
+          "args": 2
+        },
+        {
+          "name": "subscribe",
+          "args": 2
+        },
+        {
+          "name": "unsubscribe",
+          "args": 2
+        },
+        {
+          "name": "chart",
+          "args": 1
+        },
+        {
+          "name": "getLanguage",
+          "args": 0
+        },
+        {
+          "name": "setSymbol",
+          "args": 3
+        },
+        {
+          "name": "remove",
+          "args": 0
+        },
+        {
+          "name": "closePopupsAndDialogs",
+          "args": 0
+        },
+        {
+          "name": "selectLineTool",
+          "args": 2
+        },
+        {
+          "name": "selectedLineTool",
+          "args": 0
+        },
+        {
+          "name": "save",
+          "args": 2
+        },
+        {
+          "name": "load",
+          "args": 2
+        },
+        {
+          "name": "getSavedCharts",
+          "args": 1
+        },
+        {
+          "name": "loadChartFromServer",
+          "args": 1
+        },
+        {
+          "name": "saveChartToServer",
+          "args": 3
+        },
+        {
+          "name": "removeChartFromServer",
+          "args": 2
+        },
+        {
+          "name": "onContextMenu",
+          "args": 1
+        },
+        {
+          "name": "createButton",
+          "args": 1
+        },
+        {
+          "name": "createDropdown",
+          "args": 1
+        },
+        {
+          "name": "showNoticeDialog",
+          "args": 1
+        },
+        {
+          "name": "showConfirmDialog",
+          "args": 1
+        },
+        {
+          "name": "showLoadChartDialog",
+          "args": 0
+        },
+        {
+          "name": "showSaveAsChartDialog",
+          "args": 0
+        },
+        {
+          "name": "symbolInterval",
+          "args": 0
+        },
+        {
+          "name": "mainSeriesPriceFormatter",
+          "args": 0
+        },
+        {
+          "name": "getIntervals",
+          "args": 0
+        },
+        {
+          "name": "getStudiesList",
+          "args": 0
+        },
+        {
+          "name": "getStudyInputs",
+          "args": 1
+        },
+        {
+          "name": "getStudyStyles",
+          "args": 1
+        },
+        {
+          "name": "addCustomCSSFile",
+          "args": 1
+        },
+        {
+          "name": "applyOverrides",
+          "args": 1
+        },
+        {
+          "name": "applyStudiesOverrides",
+          "args": 1
+        },
+        {
+          "name": "watchList",
+          "args": 0
+        },
+        {
+          "name": "news",
+          "args": 0
+        },
+        {
+          "name": "widgetbar",
+          "args": 0
+        },
+        {
+          "name": "activeChart",
+          "args": 0
+        },
+        {
+          "name": "activeChartIndex",
+          "args": 0
+        },
+        {
+          "name": "setActiveChart",
+          "args": 1
+        },
+        {
+          "name": "chartsCount",
+          "args": 0
+        },
+        {
+          "name": "layout",
+          "args": 0
+        },
+        {
+          "name": "setLayout",
+          "args": 1
+        },
+        {
+          "name": "layoutName",
+          "args": 0
+        },
+        {
+          "name": "changeTheme",
+          "args": 2
+        },
+        {
+          "name": "getTheme",
+          "args": 0
+        },
+        {
+          "name": "takeScreenshot",
+          "args": 0
+        },
+        {
+          "name": "lockAllDrawingTools",
+          "args": 0
+        },
+        {
+          "name": "hideAllDrawingTools",
+          "args": 0
+        },
+        {
+          "name": "drawOnAllCharts",
+          "args": 1
+        },
+        {
+          "name": "magnetEnabled",
+          "args": 0
+        },
+        {
+          "name": "magnetMode",
+          "args": 0
+        },
+        {
+          "name": "undoRedoState",
+          "args": 0
+        },
+        {
+          "name": "setIntervalLinkingEnabled",
+          "args": 1
+        },
+        {
+          "name": "setDateRangeLinkingEnabled",
+          "args": 1
+        },
+        {
+          "name": "setTimeFrame",
+          "args": 1
+        },
+        {
+          "name": "symbolSync",
+          "args": 0
+        },
+        {
+          "name": "intervalSync",
+          "args": 0
+        },
+        {
+          "name": "crosshairSync",
+          "args": 0
+        },
+        {
+          "name": "timeSync",
+          "args": 0
+        },
+        {
+          "name": "dateRangeSync",
+          "args": 0
+        },
+        {
+          "name": "setFeatureEnabled",
+          "args": 2
+        },
+        {
+          "name": "getAllFeatures",
+          "args": 0
+        },
+        {
+          "name": "clearUndoHistory",
+          "args": 0
+        },
+        {
+          "name": "undo",
+          "args": 0
+        },
+        {
+          "name": "redo",
+          "args": 0
+        },
+        {
+          "name": "startFullscreen",
+          "args": 0
+        },
+        {
+          "name": "exitFullscreen",
+          "args": 0
+        },
+        {
+          "name": "takeClientScreenshot",
+          "args": 1
+        },
+        {
+          "name": "navigationButtonsVisibility",
+          "args": 0
+        },
+        {
+          "name": "paneButtonsVisibility",
+          "args": 0
+        },
+        {
+          "name": "dateFormat",
+          "args": 0
+        },
+        {
+          "name": "timeHoursFormat",
+          "args": 0
+        },
+        {
+          "name": "currencyAndUnitVisibility",
+          "args": 0
+        },
+        {
+          "name": "supportedChartTypes",
+          "args": 0
+        },
+        {
+          "name": "watermark",
+          "args": 0
+        },
+        {
+          "name": "customSymbolStatus",
+          "args": 0
+        },
+        {
+          "name": "setCSSCustomProperty",
+          "args": 2
+        },
+        {
+          "name": "getCSSCustomPropertyValue",
+          "args": 1
+        },
+        {
+          "name": "linking",
+          "args": 0
+        },
+        {
+          "name": "_innerAPI",
+          "args": 0
+        },
+        {
+          "name": "_innerWindow",
+          "args": 0
+        },
+        {
+          "name": "_doWhenInnerWindowLoaded",
+          "args": 1
+        },
+        {
+          "name": "_doWhenInnerApiLoaded",
+          "args": 1
+        },
+        {
+          "name": "_autoResizeChart",
+          "args": 0
+        },
+        {
+          "name": "_create",
+          "args": 0
+        },
+        {
+          "name": "_render",
+          "args": 1
+        },
+        {
+          "name": "__defineGetter__",
+          "args": 2
+        },
+        {
+          "name": "__defineSetter__",
+          "args": 2
+        },
+        {
+          "name": "hasOwnProperty",
+          "args": 1
+        },
+        {
+          "name": "__lookupGetter__",
+          "args": 1
+        },
+        {
+          "name": "__lookupSetter__",
+          "args": 1
+        },
+        {
+          "name": "isPrototypeOf",
+          "args": 1
+        },
+        {
+          "name": "propertyIsEnumerable",
+          "args": 1
+        }
+      ]
+    },
+    "tickMapFound": true,
+    "tickMapKeys": [
+      "XAUTUSDT_1min_market"
+    ],
+    "tickCallbacks": {
+      "XAUTUSDT_1min_market": {
+        "type": "function",
+        "args": 1,
+        "source": "e=>{null!==this._dwmAligner&&(e.time=this._dwmAligner.timeToSessionStart(e.time)),this._putToCacheNewBar(e),this._subscribers.forEach((t=>{const i=t.barset;if(null===i)throw new Error(\"subscriber.barset is null\");i.add(e),t.onHistoryCallback(i)}))}"
+      }
+    },
+    "resetMapKeys": [
+      "XAUTUSDT_1min_market"
+    ],
+    "resetCallbacks": {
+      "XAUTUSDT_1min_market": {
+        "type": "function",
+        "args": 0,
+        "source": "()=>{this._unsubscribeRealtime();const e=this._leftDate;this._purgeCache(),null===e||a.enabled(\"request_only_visible_range_on_reset\")||this._ensureRequestedTo({to:e,countBack:0})}"
+      }
+    },
+    "listenerGuids": {
+      "type": "Object",
+      "XAUTUSDT_#_USDT_#_1": {
+        "type": "market",
+        "symbol": "XAUTUSDT",
+        "resolution": "1min"
+      }
+    },
+    "timing": {
+      "barDelay": {
+        "type": "Object",
+        "XAUTUSDT_1min_market": 1794744578096
+      },
+      "lastBarTime": {
+        "type": "Object",
+        "XAUTUSDT_1min_market": 1794744540000
+      }
+    }
+  },
+  "datafeed": {
+    "found": true,
+    "shape": {
+      "type": "Object",
+      "keys": [
+        "onReady",
+        "searchSymbols",
+        "getServerTime",
+        "getQuotes",
+        "subscribeQuotes",
+        "unsubscribeQuotes",
+        "resolveSymbol",
+        "getBars",
+        "subscribeBars",
+        "unsubscribeBars"
+      ],
+      "methods": [
+        {
+          "name": "onReady",
+          "args": 1
+        },
+        {
+          "name": "searchSymbols",
+          "args": 1
+        },
+        {
+          "name": "getServerTime",
+          "args": 1
+        },
+        {
+          "name": "getQuotes",
+          "args": 3
+        },
+        {
+          "name": "subscribeQuotes",
+          "args": 4
+        },
+        {
+          "name": "unsubscribeQuotes",
+          "args": 1
+        },
+        {
+          "name": "resolveSymbol",
+          "args": 4
+        },
+        {
+          "name": "getBars",
+          "args": 5
+        },
+        {
+          "name": "subscribeBars",
+          "args": 5
+        },
+        {
+          "name": "unsubscribeBars",
+          "args": 1
+        },
+        {
+          "name": "__defineGetter__",
+          "args": 2
+        },
+        {
+          "name": "__defineSetter__",
+          "args": 2
+        },
+        {
+          "name": "hasOwnProperty",
+          "args": 1
+        },
+        {
+          "name": "__lookupGetter__",
+          "args": 1
+        },
+        {
+          "name": "__lookupSetter__",
+          "args": 1
+        },
+        {
+          "name": "isPrototypeOf",
+          "args": 1
+        },
+        {
+          "name": "propertyIsEnumerable",
+          "args": 1
+        },
+        {
+          "name": "toString",
+          "args": 0
+        },
+        {
+          "name": "valueOf",
+          "args": 0
+        },
+        {
+          "name": "toLocaleString",
+          "args": 0
+        }
+      ]
+    },
+    "getBars": {
+      "found": true,
+      "args": 5,
+      "source": "async(e,t,r,o,n)=>{const i=k,l=w;var s,d;if(di(l(3830,\"kcA1\")+l(3436,\"Tyar\")),window&&(d=(s=window[l(1444,\"wCo4\")])==null?void 0:s[i(5297)])!=null&&d[i(1367)+\"s\"])e[i(2211)]=Er(e[i(2211)]),window[i(2583)][l(4563,\"qK)]\")][l(4721,\"Lx5g\")+\"s\"](e,t,r,o,n);else if(window){const{onRequest:u}=window[l(3030,\"9MkJ\")],{firstDataRequest:c,countBack:a,to:p}=r,f=zm[t];let v=[];const g={noData:!1};if(di(l(2104,\"fwxQ\")+i(3334)+l(1417,\"83UK\")),a>$a){let y=p-$a*f;v=(await Promise[i(3760)]([I2(c,$a,p,e[i(2211)],t,u,g),...Eq(a)[i(3734)](1)[l(5660,\"wCo4\")](M=>{const S=i,q=I2(!1,M,y,e[S(2211)],t,u,g);return y-=M*f,q})]))[i(3084)]()[i(378)]((M,S)=>M[i(2753)]-S[l(3789,\"JzFR\")])}else v=await I2(c,a,p,e[i(2211)],t,u,g);di(l(5365,\"**au\")+l(2288,\"fvAC\")+i(4041)),o(v[l(2685,\"xivW\")](y=>({time:y[i(2753)]*1e3,low:Number(y[i(5387)]),high:Number(y[i(5703)]),open:Number(y[i(3182)]),close:Number(y[i(4896)]),volume:Number(y[i(4700)])})),g),di(i(262)+i(1504))}else console[i(3473)](l(4152,\"JzFR\")+l(2387,\"W]Rd\")+l(4293,\"s0OD\")+l(4381,\"P0pz\"))}"
+    },
+    "subscribeBars": {
+      "found": true,
+      "args": 5,
+      "source": "(e,t,r,o,n)=>{const i=k,l=w;var s,d;if(di(l(3831,\"**au\")+l(3841,\"**au\")+l(3941,\"qK)]\")),window&&(d=(s=window[l(3872,\"arIE\")])==null?void 0:s[l(274,\"W4QN\")])!=null&&d[i(3902)+i(343)])e[l(4166,\"ahu)\")]=Er(e[l(2734,\"un3p\")]),window[i(2583)][l(3271,\"Tyar\")][l(408,\"xu8q\")+i(343)](e,t,r,o,n);else if(window){const{eventBus:u,tvWidget:c}=window[i(2583)];if(!u||!c)return;const a=Er(e[l(1804,\"J4o(\")]),p=Zp(t),f=xn(e[i(2211)]),v={symbol:a,resolution:p,type:f};c[l(3153,\"kcA1\")]&&console[l(932,\"%sAI\")](et[i(4888)+\"e\"],v),di(i(3902)+i(2581)+l(636,\"W]Rd\")+i(444)),u[l(4595,\"xu8q\")](et[l(1419,\"7&Au\")+\"e\"],v),!c[l(4484,\"xu8q\")+i(3283)]&&(c[i(5705)+i(3283)]={}),!c[l(4415,\"#eY9\")]&&(c[i(4979)]={}),!c[i(3927)+\"Fn\"]&&(c[i(3927)+\"Fn\"]={}),!c[l(3479,\"TM]V\")]&&(c[i(1280)]={}),!c[l(5233,\"wCo4\")+\"e\"]&&(c[l(5235,\"YYPc\")+\"e\"]={});const g=a+\"_\"+p+\"_\"+f;c[i(5396)+\"e\"][g]=0,c[l(2902,\"**au\")][g]=Date[i(3730)](),c[l(5345,\"fwxQ\")][g]=r,c[i(3927)+\"Fn\"][g]=n,c[l(4436,\"HQG8\")+i(3283)][o]=v}else console[l(1743,\"xivW\")](l(2625,\"P0pz\")+i(2991)+i(5257)+l(2133,\"EoVv\"))}"
+    },
+    "unsubscribeBars": {
+      "found": true,
+      "args": 1,
+      "source": "e=>{const t=w,r=k;var o,n;if(window&&(n=(o=window[r(2583)])==null?void 0:o[r(5297)])!=null&&n[r(1932)+r(445)])window[r(2583)][r(5297)][r(1932)+r(445)](e);else if(window){di(t(1294,\"P0pz\")+r(4271)+r(235));const{eventBus:i,tvWidget:l}=window[r(2583)];if(!i||!l)return;if(l[r(4460)]&&console[t(3737,\"TM]V\")](et[t(4772,\"Tyar\")+r(444)],l[r(5705)+r(3283)],e),di(r(1932)+r(651)+r(2704)+t(2677,\"xivW\")),l[t(1983,\"Tyar\")+t(2170,\"arIE\")][e]&&i[t(1977,\"2l1f\")](et[r(2239)+r(444)],l[r(5705)+t(131,\"phWK\")][e]),l[t(5638,\"9MkJ\")+t(5187,\"TM]V\")][e]){const{symbol:s,resolution:d,type:u}=l[r(5705)+r(3283)][e],c=s+\"_\"+d+\"_\"+u;delete l[r(4979)][c],delete l[t(4030,\"7&Au\")+\"Fn\"][c],delete l[t(521,\"ahu)\")][c],delete l[r(5396)+\"e\"][c],delete l[r(5705)+r(3283)][e]}}else console[r(722)](t(4366,\"9MkJ\")+t(851,\"@c^K\")+r(2446)+t(5231,\"YYPc\")+\"d\")}"
+    }
+  },
+  "eventBus": {
+    "found": true,
+    "eventNames": [
+      "clearKlineData",
+      "rerenderChart",
+      "wsPublish",
+      "historyOrder",
+      "updateShowSetMenuState",
+      "activeChartChanged",
+      "chartLayoutSwitch",
+      "wsSubscribe",
+      "wsUnsubscribe",
+      "kline.charts.contract",
+      "kline.charts.spot",
+      "kline.drawings.contract",
+      "kline.drawings.spot",
+      "kline.chartTemplates",
+      "kline.studyTemplates",
+      "kline.drawingTemplates",
+      "kline.chartType",
+      "kline.resolutions",
+      "kline.drawingTools",
+      "updateQuote",
+      "positionUpdate",
+      "orderUpdate",
+      "plUpdate",
+      "orderTypeFilter",
+      "reloadAllLineTools",
+      "resetScales",
+      "triggerPlusButton",
+      "objectTree",
+      "lockAllDrawings",
+      "drawginmode",
+      "triggerFavoriteTool",
+      "addFavoriteTool",
+      "removeFavoriteTool",
+      "recoverFavoriteTool",
+      "clearAllFavoriteTools",
+      "triggerMagnetTool",
+      "triggerMagnetChange",
+      "triggerShowHideTool",
+      "triggerRemoveDrawings",
+      "triggerRemoveStudies",
+      "triggerRemoveAll",
+      "triggerBaseTool",
+      "priceRangeTool",
+      "priceRangeToolClose",
+      "triggerSetIconsEmojisStickers",
+      "toggleCrosshairAlert",
+      "setResolution",
+      "setTimeFrame",
+      "triggerChartLayout",
+      "triggerChartFavorite",
+      "saveIndicatorTemplate",
+      "setChartLayout",
+      "setIndicatorTemplate",
+      "triggerIndicatorTemplate",
+      "triggerTvModal",
+      "setChartType",
+      "setPriceType",
+      "plusClick",
+      "positionOrderSelected",
+      "resetChartState",
+      "clickHeaderButton",
+      "chartClick",
+      "studyClick",
+      "crossHairMove",
+      "toolsChange",
+      "symbolPeriodChanged",
+      "chartSaved",
+      "showSetClick",
+      "marketClose",
+      "clickSaveLayout",
+      "menuClick",
+      "layout_changed",
+      "clickPositionSize",
+      "reversePosition",
+      "closePosition",
+      "cancelOrder",
+      "createTPSLOrder",
+      "clickOrder",
+      "modifyOrder",
+      "updatePriceType",
+      "addDrawingAlert",
+      "contextMenu",
+      "scaledOrderBoundaryMoved",
+      "scaledOrderBoundaryClosed",
+      "addIndicatorAlert",
+      "setLayoutSymbols"
+    ],
+    "selected": {
+      "wsSubscribe": {
+        "found": true,
+        "listenerCount": 1,
+        "entries": [
+          {
+            "type": "function",
+            "shape": {
+              "type": "AsyncFunction",
+              "keys": [
+                "length",
+                "name"
+              ],
+              "methods": [
+                {
+                  "name": "apply",
+                  "args": 2
+                },
+                {
+                  "name": "bind",
+                  "args": 1
+                },
+                {
+                  "name": "call",
+                  "args": 1
+                },
+                {
+                  "name": "toString",
+                  "args": 0
+                },
+                {
+                  "name": "__defineGetter__",
+                  "args": 2
+                },
+                {
+                  "name": "__defineSetter__",
+                  "args": 2
+                },
+                {
+                  "name": "hasOwnProperty",
+                  "args": 1
+                },
+                {
+                  "name": "__lookupGetter__",
+                  "args": 1
+                },
+                {
+                  "name": "__lookupSetter__",
+                  "args": 1
+                },
+                {
+                  "name": "isPrototypeOf",
+                  "args": 1
+                },
+                {
+                  "name": "propertyIsEnumerable",
+                  "args": 1
+                },
+                {
+                  "name": "valueOf",
+                  "args": 0
+                },
+                {
+                  "name": "toLocaleString",
+                  "args": 0
+                }
+              ]
+            },
+            "source": "async R=>{const V=e.value.exType,{symbol:x}=R,P=O0(R.resolution),I=T(R),O=b(R),$=await t(Lr.REALTIME_KLINE,{...R,resolution:P,exType:V}),F=i.get(I);let Q;F?(Q=F.channel,F.klineKeys.add(O)):(Q=await t(Lr.MARKET,{exType:V,symbol:x}),i.set(I,{channel:Q,klineKeys:new Set([O])}),V===\"contract\"&&B(x)),p(R,[$,Q])}"
+          }
+        ]
+      },
+      "wsUnsubscribe": {
+        "found": true,
+        "listenerCount": 1,
+        "entries": [
+          {
+            "type": "function",
+            "shape": {
+              "type": "AsyncFunction",
+              "keys": [
+                "length",
+                "name"
+              ],
+              "methods": [
+                {
+                  "name": "apply",
+                  "args": 2
+                },
+                {
+                  "name": "bind",
+                  "args": 1
+                },
+                {
+                  "name": "call",
+                  "args": 1
+                },
+                {
+                  "name": "toString",
+                  "args": 0
+                },
+                {
+                  "name": "__defineGetter__",
+                  "args": 2
+                },
+                {
+                  "name": "__defineSetter__",
+                  "args": 2
+                },
+                {
+                  "name": "hasOwnProperty",
+                  "args": 1
+                },
+                {
+                  "name": "__lookupGetter__",
+                  "args": 1
+                },
+                {
+                  "name": "__lookupSetter__",
+                  "args": 1
+                },
+                {
+                  "name": "isPrototypeOf",
+                  "args": 1
+                },
+                {
+                  "name": "propertyIsEnumerable",
+                  "args": 1
+                },
+                {
+                  "name": "valueOf",
+                  "args": 0
+                },
+                {
+                  "name": "toLocaleString",
+                  "args": 0
+                }
+              ]
+            },
+            "source": "async R=>{await a3();const V=e.value.exType,{symbol:x}=R,P=O0(R.resolution),I=T(R),O=b(R);d=!1,q(R,e.value),r(Lr.REALTIME_KLINE,{...R,resolution:P,exType:V});const $=i.get(I);$&&($.klineKeys.delete(O),$.klineKeys.size===0&&(r(Lr.MARKET,{exType:V,symbol:x}),i.delete(I),V===\"contract\"&&A(x)))}"
+          }
+        ]
+      },
+      "wsPublish": {
+        "found": true,
+        "listenerCount": 1,
+        "entries": [
+          {
+            "type": "function",
+            "shape": {
+              "type": "Function",
+              "keys": [
+                "length",
+                "name"
+              ],
+              "methods": [
+                {
+                  "name": "apply",
+                  "args": 2
+                },
+                {
+                  "name": "bind",
+                  "args": 1
+                },
+                {
+                  "name": "call",
+                  "args": 1
+                },
+                {
+                  "name": "toString",
+                  "args": 0
+                },
+                {
+                  "name": "__defineGetter__",
+                  "args": 2
+                },
+                {
+                  "name": "__defineSetter__",
+                  "args": 2
+                },
+                {
+                  "name": "hasOwnProperty",
+                  "args": 1
+                },
+                {
+                  "name": "__lookupGetter__",
+                  "args": 1
+                },
+                {
+                  "name": "__lookupSetter__",
+                  "args": 1
+                },
+                {
+                  "name": "isPrototypeOf",
+                  "args": 1
+                },
+                {
+                  "name": "propertyIsEnumerable",
+                  "args": 1
+                },
+                {
+                  "name": "valueOf",
+                  "args": 0
+                },
+                {
+                  "name": "toLocaleString",
+                  "args": 0
+                }
+              ]
+            },
+            "source": "({symbol:e,resolution:t,type:r,bar:o})=>{const n=k,i=w,l=e+\"_\"+t+\"_\"+r,{tvWidget:s}=window[i(3971,\"xivW\")];if(s)if(s[i(4415,\"#eY9\")][l]!==void 0){const d={...o,time:o[i(4238,\"ABC8\")]*1e3};s[n(1280)][l]&&(s[n(1280)][l]=Date[i(2508,\"ahu)\")]()),s[i(4394,\"TM]V\")+\"y\"]&&rc(s),typeof d[n(2753)]==i(5549,\")v]F\")&&d[n(2753)]>=s[n(5396)+\"e\"][l]&&o[i(3099,\"14xW\")][i(1102,\"wCo4\")]()[i(5407,\"@c^K\")]===10?(s[n(1180)]&&console[i(2102,\"2l1f\")](l,d),s[i(2501,\"HQG8\")][l](d),s[i(1571,\"@c^K\")+\"e\"][l]=d[i(288,\"kcA1\")],di(i(4581,\"#eY9\")+i(4479,\"8[pN\")+n(1504))):console[i(164,\"Lx5g\")](i(2619,\"EoVv\")+i(4097,\"2l1f\"),d)}else s[n(4460)]&&console[n(3473)](i(361,\"Tyar\")+n(2015)+l)}"
+          }
+        ]
+      },
+      "symbolPeriodChanged": {
+        "found": true,
+        "listenerCount": 2,
+        "entries": [
+          {
+            "type": "function",
+            "shape": {
+              "type": "Function",
+              "keys": [
+                "length",
+                "name"
+              ],
+              "methods": [
+                {
+                  "name": "apply",
+                  "args": 2
+                },
+                {
+                  "name": "bind",
+                  "args": 1
+                },
+                {
+                  "name": "call",
+                  "args": 1
+                },
+                {
+                  "name": "toString",
+                  "args": 0
+                },
+                {
+                  "name": "__defineGetter__",
+                  "args": 2
+                },
+                {
+                  "name": "__defineSetter__",
+                  "args": 2
+                },
+                {
+                  "name": "hasOwnProperty",
+                  "args": 1
+                },
+                {
+                  "name": "__lookupGetter__",
+                  "args": 1
+                },
+                {
+                  "name": "__lookupSetter__",
+                  "args": 1
+                },
+                {
+                  "name": "isPrototypeOf",
+                  "args": 1
+                },
+                {
+                  "name": "propertyIsEnumerable",
+                  "args": 1
+                },
+                {
+                  "name": "valueOf",
+                  "args": 0
+                },
+                {
+                  "name": "toLocaleString",
+                  "args": 0
+                }
+              ]
+            },
+            "source": "o=>{o.resolution=tu(o.resolution),t(\"symbolPeriodChanged\",o),$e(\"change_symbol_period\",{ex_type:r,layoutId:o.id}),t(\"changedActiveChart\",o.symbol)}"
+          },
+          {
+            "type": "function",
+            "shape": {
+              "type": "Function",
+              "keys": [
+                "length",
+                "name",
+                "prototype"
+              ],
+              "methods": [
+                {
+                  "name": "apply",
+                  "args": 2
+                },
+                {
+                  "name": "bind",
+                  "args": 1
+                },
+                {
+                  "name": "call",
+                  "args": 1
+                },
+                {
+                  "name": "toString",
+                  "args": 0
+                },
+                {
+                  "name": "__defineGetter__",
+                  "args": 2
+                },
+                {
+                  "name": "__defineSetter__",
+                  "args": 2
+                },
+                {
+                  "name": "hasOwnProperty",
+                  "args": 1
+                },
+                {
+                  "name": "__lookupGetter__",
+                  "args": 1
+                },
+                {
+                  "name": "__lookupSetter__",
+                  "args": 1
+                },
+                {
+                  "name": "isPrototypeOf",
+                  "args": 1
+                },
+                {
+                  "name": "propertyIsEnumerable",
+                  "args": 1
+                },
+                {
+                  "name": "valueOf",
+                  "args": 0
+                },
+                {
+                  "name": "toLocaleString",
+                  "args": 0
+                }
+              ]
+            },
+            "source": "function u(){e.isReady.value&&(d(),pr(d))}"
+          }
+        ]
+      },
+      "setResolution": {
+        "found": true,
+        "listenerCount": 1,
+        "entries": [
+          {
+            "type": "function",
+            "shape": {
+              "type": "Function",
+              "keys": [
+                "length",
+                "name"
+              ],
+              "methods": [
+                {
+                  "name": "apply",
+                  "args": 2
+                },
+                {
+                  "name": "bind",
+                  "args": 1
+                },
+                {
+                  "name": "call",
+                  "args": 1
+                },
+                {
+                  "name": "toString",
+                  "args": 0
+                },
+                {
+                  "name": "__defineGetter__",
+                  "args": 2
+                },
+                {
+                  "name": "__defineSetter__",
+                  "args": 2
+                },
+                {
+                  "name": "hasOwnProperty",
+                  "args": 1
+                },
+                {
+                  "name": "__lookupGetter__",
+                  "args": 1
+                },
+                {
+                  "name": "__lookupSetter__",
+                  "args": 1
+                },
+                {
+                  "name": "isPrototypeOf",
+                  "args": 1
+                },
+                {
+                  "name": "propertyIsEnumerable",
+                  "args": 1
+                },
+                {
+                  "name": "valueOf",
+                  "args": 0
+                },
+                {
+                  "name": "toLocaleString",
+                  "args": 0
+                }
+              ]
+            },
+            "source": "n=>{typeof n==t(190)&&e(n)}"
+          }
+        ]
+      },
+      "setTimeFrame": {
+        "found": true,
+        "listenerCount": 1,
+        "entries": [
+          {
+            "type": "function",
+            "shape": {
+              "type": "Function",
+              "keys": [
+                "length",
+                "name"
+              ],
+              "methods": [
+                {
+                  "name": "apply",
+                  "args": 2
+                },
+                {
+                  "name": "bind",
+                  "args": 1
+                },
+                {
+                  "name": "call",
+                  "args": 1
+                },
+                {
+                  "name": "toString",
+                  "args": 0
+                },
+                {
+                  "name": "__defineGetter__",
+                  "args": 2
+                },
+                {
+                  "name": "__defineSetter__",
+                  "args": 2
+                },
+                {
+                  "name": "hasOwnProperty",
+                  "args": 1
+                },
+                {
+                  "name": "__lookupGetter__",
+                  "args": 1
+                },
+                {
+                  "name": "__lookupSetter__",
+                  "args": 1
+                },
+                {
+                  "name": "isPrototypeOf",
+                  "args": 1
+                },
+                {
+                  "name": "propertyIsEnumerable",
+                  "args": 1
+                },
+                {
+                  "name": "valueOf",
+                  "args": 0
+                },
+                {
+                  "name": "toLocaleString",
+                  "args": 0
+                }
+              ]
+            },
+            "source": "n=>{const i=r;e[i(2534)+\"t\"]()[i(5446)+\"me\"](yg[n]||yg[VV])}"
+          }
+        ]
+      },
+      "updateQuote": {
+        "found": true,
+        "listenerCount": 1,
+        "entries": [
+          {
+            "type": "function",
+            "shape": {
+              "type": "Function",
+              "keys": [
+                "length",
+                "name"
+              ],
+              "methods": [
+                {
+                  "name": "apply",
+                  "args": 2
+                },
+                {
+                  "name": "bind",
+                  "args": 1
+                },
+                {
+                  "name": "call",
+                  "args": 1
+                },
+                {
+                  "name": "toString",
+                  "args": 0
+                },
+                {
+                  "name": "__defineGetter__",
+                  "args": 2
+                },
+                {
+                  "name": "__defineSetter__",
+                  "args": 2
+                },
+                {
+                  "name": "hasOwnProperty",
+                  "args": 1
+                },
+                {
+                  "name": "__lookupGetter__",
+                  "args": 1
+                },
+                {
+                  "name": "__lookupSetter__",
+                  "args": 1
+                },
+                {
+                  "name": "isPrototypeOf",
+                  "args": 1
+                },
+                {
+                  "name": "propertyIsEnumerable",
+                  "args": 1
+                },
+                {
+                  "name": "valueOf",
+                  "args": 0
+                },
+                {
+                  "name": "toLocaleString",
+                  "args": 0
+                }
+              ]
+            },
+            "source": "a=>xb(a,r,d)"
+          }
+        ]
+      },
+      "kline.charts.contract": {
+        "found": true,
+        "listenerCount": 1,
+        "entries": [
+          {
+            "type": "function",
+            "shape": {
+              "type": "Function",
+              "keys": [
+                "length",
+                "name"
+              ],
+              "methods": [
+                {
+                  "name": "apply",
+                  "args": 2
+                },
+                {
+                  "name": "bind",
+                  "args": 1
+                },
+                {
+                  "name": "call",
+                  "args": 1
+                },
+                {
+                  "name": "toString",
+                  "args": 0
+                },
+                {
+                  "name": "__defineGetter__",
+                  "args": 2
+                },
+                {
+                  "name": "__defineSetter__",
+                  "args": 2
+                },
+                {
+                  "name": "hasOwnProperty",
+                  "args": 1
+                },
+                {
+                  "name": "__lookupGetter__",
+                  "args": 1
+                },
+                {
+                  "name": "__lookupSetter__",
+                  "args": 1
+                },
+                {
+                  "name": "isPrototypeOf",
+                  "args": 1
+                },
+                {
+                  "name": "propertyIsEnumerable",
+                  "args": 1
+                },
+                {
+                  "name": "valueOf",
+                  "args": 0
+                },
+                {
+                  "name": "toLocaleString",
+                  "args": 0
+                }
+              ]
+            },
+            "source": "t=>{try{o5(t.value)}finally{e(t,We.FUTURES_KLINE_CHARTS)}}"
+          }
+        ]
+      }
+    }
+  },
+  "errors": [],
+  "finishedAt": "2026-11-15T12:09:38.158Z"
+}
