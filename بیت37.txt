@@ -1,0 +1,948 @@
+{
+  "reportName": "BITUNIX_BATCH_AUDIT_3.0",
+  "version": "3.0.0",
+  "generatedAt": "2026-11-15T14:41:15.700Z",
+  "page": {
+    "url": "https://www.bitunix.com/contract-trade/XAUTUSDT",
+    "title": "3,816.33 | XAUTUSDT Futures Exchange - Crypto Futures | Bitunix",
+    "readyState": "complete",
+    "viewport": {
+      "width": 1920,
+      "height": 879,
+      "dpr": 1
+    }
+  },
+  "safety": {
+    "readOnly": true,
+    "ordersSent": 0,
+    "tradingMethodsInvoked": 0,
+    "buttonsClicked": 0,
+    "keyboardEventsDispatched": 0,
+    "formsSubmitted": 0,
+    "chartResolutionChanged": false,
+    "chartDataChanged": false,
+    "datafeedMethodsCalled": false,
+    "websocketCreatedOrSubscribed": false,
+    "networkRequestsAdded": 0,
+    "storageOrCookiesRead": false,
+    "accountBalancesOrPnlRead": false,
+    "openPositionDataRead": false,
+    "credentialsOrTokensRead": false,
+    "sliderChanged": false,
+    "inputsChanged": false,
+    "studyCreatedOrRemoved": false
+  },
+  "frames": [
+    {
+      "name": "top",
+      "accessible": true,
+      "url": "https://www.bitunix.com/contract-trade/XAUTUSDT",
+      "title": "3,816.33 | XAUTUSDT Futures Exchange - Crypto Futures | Bitunix"
+    },
+    {
+      "name": "iframe[0]",
+      "accessible": true,
+      "url": "blob:https://www.bitunix.com/f22341cb-30ba-47d1-a9f1-b5f1e97b8557",
+      "title": ""
+    },
+    {
+      "name": "iframe[1]",
+      "accessible": true,
+      "url": "about:blank",
+      "title": ""
+    },
+    {
+      "name": "iframe[2]",
+      "accessible": true,
+      "url": "about:blank",
+      "title": "Button to launch messaging window"
+    }
+  ],
+  "orderUI": {
+    "buttons": [],
+    "inputs": [],
+    "tpsl": [],
+    "orderPaneFound": true
+  },
+  "positionSizeSlider": {
+    "candidateCount": 24,
+    "relevant": [
+      {
+        "tag": "div",
+        "attrs": {
+          "class": "color-text-2 cursor-pointer nav-link fm-medium shrink-0 tab-item-id-market items-start! mx-8px! first:ml-0! slider-tab-market-price nav-item-active"
+        },
+        "className": "color-text-2 cursor-pointer nav-link fm-medium shrink-0 tab-item-id-market items-start! mx-8px! first:ml-0! slider-tab-market-price nav-item-active",
+        "selector": "div.bitunix-tab-container.max-md\\:overflow-hidden\\!.price-tap > div.bitunix-tab-nav.flex-row-between-center.border-bottom:nth-of-type(1) > div.nav-content.relative.max-md\\:w-full:nth-of-type(1) > div.nav-item.relative.color-text-2 > div.color-text-2.cursor-pointer.nav-link:nth-of-type(1)",
+        "visible": true,
+        "isNativeRange": false,
+        "roleSlider": false,
+        "current": null,
+        "min": null,
+        "max": null,
+        "step": null,
+        "rect": {
+          "x": 1612,
+          "y": 225,
+          "width": 47,
+          "height": 28
+        },
+        "contextClues": "",
+        "react": [],
+        "parentReact": []
+      },
+      {
+        "tag": "div",
+        "attrs": {
+          "class": "color-text-2 cursor-pointer nav-link fm-medium shrink-0 tab-item-id-limit items-start! mx-8px! first:ml-0! slider-tab-limit-price"
+        },
+        "className": "color-text-2 cursor-pointer nav-link fm-medium shrink-0 tab-item-id-limit items-start! mx-8px! first:ml-0! slider-tab-limit-price",
+        "selector": "div.bitunix-tab-container.max-md\\:overflow-hidden\\!.price-tap > div.bitunix-tab-nav.flex-row-between-center.border-bottom:nth-of-type(1) > div.nav-content.relative.max-md\\:w-full:nth-of-type(1) > div.nav-item.relative.color-text-2 > div.color-text-2.cursor-pointer.nav-link:nth-of-type(2)",
+        "visible": true,
+        "isNativeRange": false,
+        "roleSlider": false,
+        "current": null,
+        "min": null,
+        "max": null,
+        "step": null,
+        "rect": {
+          "x": 1675,
+          "y": 225,
+          "width": 33,
+          "height": 28
+        },
+        "contextClues": "",
+        "react": [],
+        "parentReact": []
+      },
+      {
+        "tag": "div",
+        "attrs": {
+          "class": "color-text-2 cursor-pointer nav-link fm-medium shrink-0 tab-item-id-other items-start! mx-8px! first:ml-0! slider-tab-other-price"
+        },
+        "className": "color-text-2 cursor-pointer nav-link fm-medium shrink-0 tab-item-id-other items-start! mx-8px! first:ml-0! slider-tab-other-price",
+        "selector": "div.bitunix-tab-container.max-md\\:overflow-hidden\\!.price-tap > div.bitunix-tab-nav.flex-row-between-center.border-bottom:nth-of-type(1) > div.nav-content.relative.max-md\\:w-full:nth-of-type(1) > div.nav-item.relative.color-text-2 > div.color-text-2.cursor-pointer.nav-link:nth-of-type(3)",
+        "visible": true,
+        "isNativeRange": false,
+        "roleSlider": false,
+        "current": null,
+        "min": null,
+        "max": null,
+        "step": null,
+        "rect": {
+          "x": 1724,
+          "y": 225,
+          "width": 63,
+          "height": 28
+        },
+        "contextClues": "",
+        "react": [],
+        "parentReact": []
+      },
+      {
+        "tag": "div",
+        "attrs": {
+          "class": "arco-slider arco-slider-with-marks bitunix-slider adjust-last-two-label-gap progress-5 amount-slider"
+        },
+        "className": "arco-slider arco-slider-with-marks bitunix-slider adjust-last-two-label-gap progress-5 amount-slider",
+        "selector": "div.bitunix-tabs-content:nth-of-type(2) > div > div.max-md\\:pr-4px.max-md\\:pl-2px.m-t12:nth-of-type(5) > div.arco-slider.arco-slider-with-marks.bitunix-slider",
+        "visible": true,
+        "isNativeRange": false,
+        "roleSlider": false,
+        "current": null,
+        "min": null,
+        "max": null,
+        "step": null,
+        "rect": {
+          "x": 1612,
+          "y": 448,
+          "width": 279,
+          "height": 25
+        },
+        "contextClues": "cost | 0% | 25% | 50% | 75% | 100%",
+        "react": [],
+        "parentReact": []
+      },
+      {
+        "tag": "div",
+        "attrs": {
+          "class": "arco-slider-track"
+        },
+        "className": "arco-slider-track",
+        "selector": "div.bitunix-tabs-content:nth-of-type(2) > div > div.max-md\\:pr-4px.max-md\\:pl-2px.m-t12:nth-of-type(5) > div.arco-slider.arco-slider-with-marks.bitunix-slider > div.arco-slider-track",
+        "visible": true,
+        "isNativeRange": false,
+        "roleSlider": false,
+        "current": null,
+        "min": null,
+        "max": null,
+        "step": null,
+        "rect": {
+          "x": 1618,
+          "y": 448,
+          "width": 267,
+          "height": 12
+        },
+        "contextClues": "cost | 0% | 25% | 50% | 75% | 100%",
+        "react": [],
+        "parentReact": []
+      },
+      {
+        "tag": "div",
+        "attrs": {
+          "class": "arco-slider-bar"
+        },
+        "className": "arco-slider-bar",
+        "selector": "div > div.max-md\\:pr-4px.max-md\\:pl-2px.m-t12:nth-of-type(5) > div.arco-slider.arco-slider-with-marks.bitunix-slider > div.arco-slider-track > div.arco-slider-bar:nth-of-type(1)",
+        "visible": true,
+        "isNativeRange": false,
+        "roleSlider": false,
+        "current": null,
+        "min": null,
+        "max": null,
+        "step": null,
+        "rect": {
+          "x": 1618,
+          "y": 451,
+          "width": 267,
+          "height": 6
+        },
+        "contextClues": "cost | 0% | 25% | 50% | 75% | 100%",
+        "react": [],
+        "parentReact": []
+      },
+      {
+        "tag": "div",
+        "attrs": {
+          "class": "arco-slider-dots"
+        },
+        "className": "arco-slider-dots",
+        "selector": "div > div.max-md\\:pr-4px.max-md\\:pl-2px.m-t12:nth-of-type(5) > div.arco-slider.arco-slider-with-marks.bitunix-slider > div.arco-slider-track > div.arco-slider-dots:nth-of-type(2)",
+        "visible": true,
+        "isNativeRange": false,
+        "roleSlider": false,
+        "current": null,
+        "min": null,
+        "max": null,
+        "step": null,
+        "rect": {
+          "x": 1618,
+          "y": 448,
+          "width": 267,
+          "height": 12
+        },
+        "contextClues": "cost | 0% | 25% | 50% | 75% | 100%",
+        "react": [],
+        "parentReact": []
+      },
+      {
+        "tag": "div",
+        "attrs": {
+          "class": "arco-slider-dot-wrapper"
+        },
+        "className": "arco-slider-dot-wrapper",
+        "selector": "div.max-md\\:pr-4px.max-md\\:pl-2px.m-t12:nth-of-type(5) > div.arco-slider.arco-slider-with-marks.bitunix-slider > div.arco-slider-track > div.arco-slider-dots:nth-of-type(2) > div.arco-slider-dot-wrapper:nth-of-type(1)",
+        "visible": true,
+        "isNativeRange": false,
+        "roleSlider": false,
+        "current": null,
+        "min": null,
+        "max": null,
+        "step": null,
+        "rect": {
+          "x": 1621,
+          "y": 452,
+          "width": 4,
+          "height": 4
+        },
+        "contextClues": "cost | 0% | 25% | 50% | 75% | 100%",
+        "react": [],
+        "parentReact": []
+      },
+      {
+        "tag": "div",
+        "attrs": {
+          "class": "arco-slider-dot arco-slider-dot-active"
+        },
+        "className": "arco-slider-dot arco-slider-dot-active",
+        "selector": "div.arco-slider.arco-slider-with-marks.bitunix-slider > div.arco-slider-track > div.arco-slider-dots:nth-of-type(2) > div.arco-slider-dot-wrapper:nth-of-type(1) > div.arco-slider-dot.arco-slider-dot-active",
+        "visible": true,
+        "isNativeRange": false,
+        "roleSlider": false,
+        "current": null,
+        "min": null,
+        "max": null,
+        "step": null,
+        "rect": {
+          "x": 1621,
+          "y": 452,
+          "width": 4,
+          "height": 4
+        },
+        "contextClues": "cost | 0% | 25% | 50% | 75% | 100%",
+        "react": [],
+        "parentReact": []
+      },
+      {
+        "tag": "div",
+        "attrs": {
+          "class": "arco-slider-dot-wrapper"
+        },
+        "className": "arco-slider-dot-wrapper",
+        "selector": "div.max-md\\:pr-4px.max-md\\:pl-2px.m-t12:nth-of-type(5) > div.arco-slider.arco-slider-with-marks.bitunix-slider > div.arco-slider-track > div.arco-slider-dots:nth-of-type(2) > div.arco-slider-dot-wrapper:nth-of-type(2)",
+        "visible": true,
+        "isNativeRange": false,
+        "roleSlider": false,
+        "current": null,
+        "min": null,
+        "max": null,
+        "step": null,
+        "rect": {
+          "x": 1683,
+          "y": 452,
+          "width": 4,
+          "height": 4
+        },
+        "contextClues": "cost | 0% | 25% | 50% | 75% | 100%",
+        "react": [],
+        "parentReact": []
+      },
+      {
+        "tag": "div",
+        "attrs": {
+          "class": "arco-slider-dot arco-slider-dot-active"
+        },
+        "className": "arco-slider-dot arco-slider-dot-active",
+        "selector": "div.arco-slider.arco-slider-with-marks.bitunix-slider > div.arco-slider-track > div.arco-slider-dots:nth-of-type(2) > div.arco-slider-dot-wrapper:nth-of-type(2) > div.arco-slider-dot.arco-slider-dot-active",
+        "visible": true,
+        "isNativeRange": false,
+        "roleSlider": false,
+        "current": null,
+        "min": null,
+        "max": null,
+        "step": null,
+        "rect": {
+          "x": 1683,
+          "y": 452,
+          "width": 4,
+          "height": 4
+        },
+        "contextClues": "cost | 0% | 25% | 50% | 75% | 100%",
+        "react": [],
+        "parentReact": []
+      },
+      {
+        "tag": "div",
+        "attrs": {
+          "class": "arco-slider-dot-wrapper"
+        },
+        "className": "arco-slider-dot-wrapper",
+        "selector": "div.max-md\\:pr-4px.max-md\\:pl-2px.m-t12:nth-of-type(5) > div.arco-slider.arco-slider-with-marks.bitunix-slider > div.arco-slider-track > div.arco-slider-dots:nth-of-type(2) > div.arco-slider-dot-wrapper:nth-of-type(3)",
+        "visible": true,
+        "isNativeRange": false,
+        "roleSlider": false,
+        "current": null,
+        "min": null,
+        "max": null,
+        "step": null,
+        "rect": {
+          "x": 1750,
+          "y": 452,
+          "width": 4,
+          "height": 4
+        },
+        "contextClues": "cost | 0% | 25% | 50% | 75% | 100%",
+        "react": [],
+        "parentReact": []
+      },
+      {
+        "tag": "div",
+        "attrs": {
+          "class": "arco-slider-dot arco-slider-dot-active"
+        },
+        "className": "arco-slider-dot arco-slider-dot-active",
+        "selector": "div.arco-slider.arco-slider-with-marks.bitunix-slider > div.arco-slider-track > div.arco-slider-dots:nth-of-type(2) > div.arco-slider-dot-wrapper:nth-of-type(3) > div.arco-slider-dot.arco-slider-dot-active",
+        "visible": true,
+        "isNativeRange": false,
+        "roleSlider": false,
+        "current": null,
+        "min": null,
+        "max": null,
+        "step": null,
+        "rect": {
+          "x": 1750,
+          "y": 452,
+          "width": 4,
+          "height": 4
+        },
+        "contextClues": "cost | 0% | 25% | 50% | 75% | 100%",
+        "react": [],
+        "parentReact": []
+      },
+      {
+        "tag": "div",
+        "attrs": {
+          "class": "arco-slider-dot-wrapper"
+        },
+        "className": "arco-slider-dot-wrapper",
+        "selector": "div.max-md\\:pr-4px.max-md\\:pl-2px.m-t12:nth-of-type(5) > div.arco-slider.arco-slider-with-marks.bitunix-slider > div.arco-slider-track > div.arco-slider-dots:nth-of-type(2) > div.arco-slider-dot-wrapper:nth-of-type(4)",
+        "visible": true,
+        "isNativeRange": false,
+        "roleSlider": false,
+        "current": null,
+        "min": null,
+        "max": null,
+        "step": null,
+        "rect": {
+          "x": 1816,
+          "y": 452,
+          "width": 4,
+          "height": 4
+        },
+        "contextClues": "cost | 0% | 25% | 50% | 75% | 100%",
+        "react": [],
+        "parentReact": []
+      },
+      {
+        "tag": "div",
+        "attrs": {
+          "class": "arco-slider-dot arco-slider-dot-active"
+        },
+        "className": "arco-slider-dot arco-slider-dot-active",
+        "selector": "div.arco-slider.arco-slider-with-marks.bitunix-slider > div.arco-slider-track > div.arco-slider-dots:nth-of-type(2) > div.arco-slider-dot-wrapper:nth-of-type(4) > div.arco-slider-dot.arco-slider-dot-active",
+        "visible": true,
+        "isNativeRange": false,
+        "roleSlider": false,
+        "current": null,
+        "min": null,
+        "max": null,
+        "step": null,
+        "rect": {
+          "x": 1816,
+          "y": 452,
+          "width": 4,
+          "height": 4
+        },
+        "contextClues": "cost | 0% | 25% | 50% | 75% | 100%",
+        "react": [],
+        "parentReact": []
+      },
+      {
+        "tag": "div",
+        "attrs": {
+          "class": "arco-slider-dot-wrapper"
+        },
+        "className": "arco-slider-dot-wrapper",
+        "selector": "div.max-md\\:pr-4px.max-md\\:pl-2px.m-t12:nth-of-type(5) > div.arco-slider.arco-slider-with-marks.bitunix-slider > div.arco-slider-track > div.arco-slider-dots:nth-of-type(2) > div.arco-slider-dot-wrapper:nth-of-type(5)",
+        "visible": true,
+        "isNativeRange": false,
+        "roleSlider": false,
+        "current": null,
+        "min": null,
+        "max": null,
+        "step": null,
+        "rect": {
+          "x": 1878,
+          "y": 452,
+          "width": 4,
+          "height": 4
+        },
+        "contextClues": "cost | 0% | 25% | 50% | 75% | 100%",
+        "react": [],
+        "parentReact": []
+      },
+      {
+        "tag": "div",
+        "attrs": {
+          "class": "arco-slider-dot arco-slider-dot-active"
+        },
+        "className": "arco-slider-dot arco-slider-dot-active",
+        "selector": "div.arco-slider.arco-slider-with-marks.bitunix-slider > div.arco-slider-track > div.arco-slider-dots:nth-of-type(2) > div.arco-slider-dot-wrapper:nth-of-type(5) > div.arco-slider-dot.arco-slider-dot-active",
+        "visible": true,
+        "isNativeRange": false,
+        "roleSlider": false,
+        "current": null,
+        "min": null,
+        "max": null,
+        "step": null,
+        "rect": {
+          "x": 1878,
+          "y": 452,
+          "width": 4,
+          "height": 4
+        },
+        "contextClues": "cost | 0% | 25% | 50% | 75% | 100%",
+        "react": [],
+        "parentReact": []
+      },
+      {
+        "tag": "div",
+        "attrs": {
+          "class": "arco-slider-marks"
+        },
+        "className": "arco-slider-marks",
+        "selector": "div > div.max-md\\:pr-4px.max-md\\:pl-2px.m-t12:nth-of-type(5) > div.arco-slider.arco-slider-with-marks.bitunix-slider > div.arco-slider-track > div.arco-slider-marks:nth-of-type(3)",
+        "visible": true,
+        "isNativeRange": false,
+        "roleSlider": false,
+        "current": null,
+        "min": null,
+        "max": null,
+        "step": null,
+        "rect": {
+          "x": 1618,
+          "y": 460,
+          "width": 267,
+          "height": 4
+        },
+        "contextClues": "cost | 0% | 25% | 50% | 75% | 100%",
+        "react": [],
+        "parentReact": []
+      },
+      {
+        "tag": "div",
+        "attrs": {
+          "class": "arco-slider-mark"
+        },
+        "className": "arco-slider-mark",
+        "selector": "div.max-md\\:pr-4px.max-md\\:pl-2px.m-t12:nth-of-type(5) > div.arco-slider.arco-slider-with-marks.bitunix-slider > div.arco-slider-track > div.arco-slider-marks:nth-of-type(3) > div.arco-slider-mark:nth-of-type(1)",
+        "visible": true,
+        "isNativeRange": false,
+        "roleSlider": false,
+        "current": null,
+        "min": null,
+        "max": null,
+        "step": null,
+        "rect": {
+          "x": 1616,
+          "y": 464,
+          "width": 17,
+          "height": 12
+        },
+        "contextClues": "cost | 0% | 25% | 50% | 75% | 100%",
+        "react": [],
+        "parentReact": []
+      },
+      {
+        "tag": "div",
+        "attrs": {
+          "class": "arco-slider-mark"
+        },
+        "className": "arco-slider-mark",
+        "selector": "div.max-md\\:pr-4px.max-md\\:pl-2px.m-t12:nth-of-type(5) > div.arco-slider.arco-slider-with-marks.bitunix-slider > div.arco-slider-track > div.arco-slider-marks:nth-of-type(3) > div.arco-slider-mark:nth-of-type(2)",
+        "visible": true,
+        "isNativeRange": false,
+        "roleSlider": false,
+        "current": null,
+        "min": null,
+        "max": null,
+        "step": null,
+        "rect": {
+          "x": 1673,
+          "y": 464,
+          "width": 24,
+          "height": 12
+        },
+        "contextClues": "cost | 0% | 25% | 50% | 75% | 100%",
+        "react": [],
+        "parentReact": []
+      },
+      {
+        "tag": "div",
+        "attrs": {
+          "class": "arco-slider-mark"
+        },
+        "className": "arco-slider-mark",
+        "selector": "div.max-md\\:pr-4px.max-md\\:pl-2px.m-t12:nth-of-type(5) > div.arco-slider.arco-slider-with-marks.bitunix-slider > div.arco-slider-track > div.arco-slider-marks:nth-of-type(3) > div.arco-slider-mark:nth-of-type(3)",
+        "visible": true,
+        "isNativeRange": false,
+        "roleSlider": false,
+        "current": null,
+        "min": null,
+        "max": null,
+        "step": null,
+        "rect": {
+          "x": 1739,
+          "y": 464,
+          "width": 24,
+          "height": 12
+        },
+        "contextClues": "cost | 0% | 25% | 50% | 75% | 100%",
+        "react": [],
+        "parentReact": []
+      },
+      {
+        "tag": "div",
+        "attrs": {
+          "class": "arco-slider-mark"
+        },
+        "className": "arco-slider-mark",
+        "selector": "div.max-md\\:pr-4px.max-md\\:pl-2px.m-t12:nth-of-type(5) > div.arco-slider.arco-slider-with-marks.bitunix-slider > div.arco-slider-track > div.arco-slider-marks:nth-of-type(3) > div.arco-slider-mark:nth-of-type(4)",
+        "visible": true,
+        "isNativeRange": false,
+        "roleSlider": false,
+        "current": null,
+        "min": null,
+        "max": null,
+        "step": null,
+        "rect": {
+          "x": 1806,
+          "y": 464,
+          "width": 24,
+          "height": 12
+        },
+        "contextClues": "cost | 0% | 25% | 50% | 75% | 100%",
+        "react": [],
+        "parentReact": []
+      },
+      {
+        "tag": "div",
+        "attrs": {
+          "class": "arco-slider-mark"
+        },
+        "className": "arco-slider-mark",
+        "selector": "div.max-md\\:pr-4px.max-md\\:pl-2px.m-t12:nth-of-type(5) > div.arco-slider.arco-slider-with-marks.bitunix-slider > div.arco-slider-track > div.arco-slider-marks:nth-of-type(3) > div.arco-slider-mark:nth-of-type(5)",
+        "visible": true,
+        "isNativeRange": false,
+        "roleSlider": false,
+        "current": null,
+        "min": null,
+        "max": null,
+        "step": null,
+        "rect": {
+          "x": 1859,
+          "y": 464,
+          "width": 31,
+          "height": 12
+        },
+        "contextClues": "cost | 0% | 25% | 50% | 75% | 100%",
+        "react": [],
+        "parentReact": []
+      },
+      {
+        "tag": "div",
+        "attrs": {
+          "aria-valuenow": "100",
+          "aria-valuemin": "0",
+          "aria-valuemax": "100",
+          "aria-valuetext": "100%",
+          "role": "slider",
+          "class": "arco-slider-btn"
+        },
+        "className": "arco-slider-btn",
+        "selector": "div > div.max-md\\:pr-4px.max-md\\:pl-2px.m-t12:nth-of-type(5) > div.arco-slider.arco-slider-with-marks.bitunix-slider > div.arco-slider-track > div.arco-slider-btn:nth-of-type(4)",
+        "visible": true,
+        "isNativeRange": false,
+        "roleSlider": true,
+        "current": "100",
+        "min": "0",
+        "max": "100",
+        "step": null,
+        "rect": {
+          "x": 1876,
+          "y": 445,
+          "width": 18,
+          "height": 18
+        },
+        "contextClues": "cost | 0% | 25% | 50% | 75% | 100%",
+        "react": [],
+        "parentReact": []
+      }
+    ],
+    "note": "No slider input, click, drag, value setter, or React callback was invoked."
+  },
+  "priceAndTick": {
+    "visiblePriceCandidates": [
+      {
+        "text": "Open Long ≈ 5.6100 USDT",
+        "selector": "div.place-order-container.flex.flex-row:nth-of-type(8) > div.item.flex-1.overflow-hidden:nth-of-type(1) > button.arco-btn.arco-btn-secondary.arco-btn-shape-square",
+        "numbers": [
+          "5.6100"
+        ],
+        "attrs": {
+          "type": "button",
+          "class": "arco-btn arco-btn-secondary arco-btn-shape-square arco-btn-size-medium arco-btn-status-normal btn h40 color-text-1 items-center justify-center flex-col cursor-p"
+        }
+      },
+      {
+        "text": "Open Short ≈ 5.3500 USDT",
+        "selector": "div.place-order-container.flex.flex-row:nth-of-type(8) > div.item.flex-1.overflow-hidden:nth-of-type(2) > button.arco-btn.arco-btn-secondary.arco-btn-shape-square",
+        "numbers": [
+          "5.3500"
+        ],
+        "attrs": {
+          "type": "button",
+          "class": "arco-btn arco-btn-secondary arco-btn-shape-square arco-btn-size-medium arco-btn-status-normal btn h40 color-text-1 items-center justify-center flex-col cursor-p"
+        }
+      },
+      {
+        "text": "Open long 3,816.32",
+        "selector": "html > body.zendesk-launcher-hidden > div.focus\\:outline-none.border-1px.border-solid:nth-of-type(59) > div.flex.flex-1.text-12px:nth-of-type(2) > button.flex.flex-1.flex-col:nth-of-type(1)",
+        "numbers": [
+          "3,816.32"
+        ],
+        "attrs": {
+          "class": "flex flex-1 flex-col items-center justify-center select-none border-none px-10px leading-16px py-4px min-w-88px cursor-pointer transition-colors duration-300 ea"
+        }
+      },
+      {
+        "text": "Open short 3,816.33",
+        "selector": "html > body.zendesk-launcher-hidden > div.focus\\:outline-none.border-1px.border-solid:nth-of-type(59) > div.flex.flex-1.text-12px:nth-of-type(2) > button.flex.flex-1.items-center:nth-of-type(2)",
+        "numbers": [
+          "3,816.33"
+        ],
+        "attrs": {
+          "class": "flex flex-1 items-center justify-center flex-col select-none border-none px-10px leading-16px py-4px min-w-88px cursor-pointer transition-colors duration-300 ea"
+        }
+      }
+    ],
+    "priceRelatedAttributes": [],
+    "tpslInputPrecision": [],
+    "note": "This section excludes balances, equity, margin, PnL and position fields."
+  },
+  "chartAndAlign": {
+    "found": {
+      "bitunixTv": true,
+      "chartFrame": "iframe[0]",
+      "chartApi": true,
+      "activeChart": true,
+      "datafeed": true,
+      "barStore": true
+    },
+    "bitunixKeys": [
+      "eventBus",
+      "transform",
+      "onRequest",
+      "get",
+      "tvWidget"
+    ],
+    "symbol": "XAUTUSDT",
+    "resolution": "20S",
+    "getIntervals": [
+      "1",
+      "2",
+      "3",
+      "5",
+      "6",
+      "9",
+      "10",
+      "12",
+      "15",
+      "24",
+      "27",
+      "30",
+      "45",
+      "60",
+      "120",
+      "240",
+      "360",
+      "480",
+      "720",
+      "1D",
+      "3D",
+      "1W",
+      "1M",
+      "1S",
+      "5S",
+      "10S",
+      "15S",
+      "20S",
+      "30S",
+      "45S"
+    ],
+    "getIntervalsSource": {
+      "name": "",
+      "args": 0,
+      "source": "function(...args) {\n        const base = originalGetIntervals.apply(this, args) || [];\n        return Array.from(new Set(Array.from(base, String).concat(SECOND_RESOLUTIONS)));\n      }"
+    },
+    "datafeedPath": "root.tvWidget._options.datafeed",
+    "datafeedMethods": {
+      "onReady": {
+        "name": "",
+        "args": 1,
+        "source": "function(callback) {\n          return chartOriginals.onReady.call(this, config => {\n            const next = { ...(config || {}) };\n            next.supported_resolutions = Array.from(new Set((next.supported_resolutions || []).map(String).concat(SECOND_RESOLUTIONS)));\n            next.supports_seconds = true;\n            callback(next);\n          });\n        }"
+      },
+      "resolveSymbol": {
+        "name": "",
+        "args": 0,
+        "source": "function(...args) {\n          const callbackIndex = 1;\n          if (typeof args[callbackIndex] === 'function') {\n            const originalCallback = args[callbackIndex];\n            args[callbackIndex] = info => originalCallback(patchSymbolInfo(info));\n          }\n          return chartOriginals.resolveSymbol.apply(this, args);\n        }"
+      },
+      "getBars": {
+        "name": "",
+        "args": 5,
+        "source": "function(symbolInfo, resolution, periodParams, onHistory, onError) {\n        const step = getSecondsFromResolution(resolution);\n        if (!step || !INTERVALS.includes(step)) {\n          return chartOriginals.getBars.apply(this, arguments);\n        }\n        chartBridge.getBarsCalls++;\n        try {\n          const symbol = getSymbolForFeed(symbolInfo);\n          const bars = getBridgeBars(symbol, step, periodParams);\n          chartBridge.historyBarsReturned += bars.length;\n          if (typeof onHistory === 'function') onHistory(bars, { noData: bars.length === 0 });\n          return undefined;\n        } catch (error) {\n          chartBridge.lastError = 'Seconds getBars failed: ' + String(error && error.message || error).slice(0, 180);\n          if (typeof onError === 'function') onError(chartBridge.lastError);\n          return undefined;\n        }\n      }"
+      },
+      "subscribeBars": {
+        "name": "",
+        "args": 5,
+        "source": "function(symbolInfo, resolution, onRealtime, subscriberUID, onResetCache) {\n        const step = getSecondsFromResolution(resolution);\n        if (!step || !INTERVALS.includes(step)) {\n          return chartOriginals.subscribeBars.apply(this, arguments);\n        }\n        const id = String(subscriberUID || `bsl-${Date.now()}-${Math.random().toString(36).slice(2)}`);\n        if (localSubscriptions.has(id)) clearInterval(localSubscriptions.get(id).timer);\n        const symbol = getSymbolForFeed(symbolInfo);\n        const sub = { id, symbol, step, callback: onRealtime, lastTime: -1, lastVersion: -1, timer: null };\n        const pump = () => {\n          try {\n            const store = getStore(symbol);\n            if (!store || typeof sub.callback !== 'function') return;\n            const bar = currentBridgeBar(symbol, step);\n            if (!bar) return;\n            const bucket = bar.time;"
+      },
+      "unsubscribeBars": {
+        "name": "",
+        "args": 1,
+        "source": "function(subscriberUID) {\n        const id = String(subscriberUID || '');\n        const sub = localSubscriptions.get(id);\n        if (sub) {\n          clearInterval(sub.timer);\n          localSubscriptions.delete(id);\n          chartBridge.activeSubscriptions = localSubscriptions.size;\n          return undefined;\n        }\n        return chartOriginals.unsubscribeBars.call(this, subscriberUID);\n      }"
+      }
+    },
+    "barStore": {
+      "count": 30,
+      "firstIndex": 0,
+      "lastIndex": 29,
+      "last": {
+        "index": 29,
+        "value": [
+          1794753660,
+          3816.74,
+          3816.75,
+          3816.33,
+          3816.33,
+          0.016,
+          null
+        ],
+        "timeMs": 1794753660000
+      },
+      "previous": {},
+      "storeMethods": [
+        "constructor",
+        "clear",
+        "first",
+        "last",
+        "firstIndex",
+        "lastIndex",
+        "size",
+        "isEmpty",
+        "contains",
+        "valueAt",
+        "add",
+        "search",
+        "searchByTime",
+        "fold",
+        "findFirst",
+        "findLast",
+        "each",
+        "reduce",
+        "range",
+        "plottableRange",
+        "rangeIterator",
+        "fullRangeIterator",
+        "minMaxOnRangeCached",
+        "minMaxOnRange",
+        "merge",
+        "addTail",
+        "move",
+        "remove",
+        "state",
+        "restoreState",
+        "_indexAt",
+        "_valueAt",
+        "_length",
+        "_searchImpl",
+        "_nonCachedSearch",
+        "_nonEmptyNearestRight",
+        "_nonEmptyNearestLeft",
+        "_searchNearestLeft",
+        "_searchNearestRight",
+        "_bsearch",
+        "_lowerbound",
+        "_upperbound",
+        "_plotMinMax",
+        "_invalidateCacheForRow",
+        "_prepend",
+        "_append",
+        "_updateLast",
+        "_merge",
+        "_minMaxOnRangeCachedImpl",
+        "_minMaxOnRange",
+        "_rangeIteratorImpl",
+        "_invalidateSearchCaches"
+      ]
+    },
+    "activeChartMethods": [],
+    "intervalService": null,
+    "note": "getBars/subscribeBars and all order/trading methods were inspected only as source; no feed call, WS subscription or chart mutation occurred."
+  },
+  "shortcutsAndAdapter": {
+    "requestedMapping": {
+      "long": "Ctrl+ArrowUp",
+      "short": "Ctrl+ArrowDown",
+      "close": "Ctrl+ArrowRight",
+      "reverse": "Ctrl+ArrowLeft"
+    },
+    "adapterFound": false,
+    "adapterMethods": null,
+    "symbolInfoSource": null,
+    "adapterConfigFlags": {},
+    "eventBusKeys": [],
+    "currentKeyboardDOMAttributes": []
+  },
+  "indicatorPath": {
+    "activeStudies": [
+      {
+        "name": "Williams %R",
+        "idPresent": true
+      }
+    ],
+    "pineGlobals": [
+      {
+        "frame": "top",
+        "globals": [
+          "TradingView",
+          "tradingview_7954f"
+        ],
+        "pineJS": false
+      },
+      {
+        "frame": "iframe[0]",
+        "globals": [
+          "webpackChunktradingview",
+          "TradingView",
+          "TradingViewApi",
+          "tradingViewApi"
+        ],
+        "pineJS": false
+      },
+      {
+        "frame": "iframe[1]",
+        "globals": [],
+        "pineJS": false
+      },
+      {
+        "frame": "iframe[2]",
+        "globals": [],
+        "pineJS": false
+      }
+    ],
+    "widgetKeys": [
+      "_id",
+      "_ready",
+      "_readyHandlers",
+      "_onWindowResize",
+      "_options",
+      "_iFrame",
+      "_innerWindowLoaded",
+      "onDlay",
+      "listenerGuids",
+      "ticks",
+      "resetCacheFn",
+      "barDelay",
+      "lastBarTime",
+      "host",
+      "_callbackMap",
+      "historyOrderMarksCache",
+      "barDelayVisibilityHandler",
+      "barDelayInterval",
+      "getPriceAxis",
+      "kline_delay"
+    ],
+    "customGetter": "undefined",
+    "chartApiMethods": [
+      "getStudyInputs",
+      "getStudyStyles"
+    ],
+    "studyEngine": null,
+    "note": "No study is created, changed or removed."
+  },
+  "warnings": [],
+  "errors": [],
+  "finishedAt": "2026-11-15T14:41:15.743Z",
+  "durationMs": 43
+}
