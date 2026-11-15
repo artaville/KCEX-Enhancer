@@ -1,0 +1,97 @@
+{
+  "reportName": "BITUNIX_POSITION_CAPABILITY_AUDIT",
+  "version": "1.0",
+  "timestamp": "2026-11-15T07:27:32.589Z",
+  "safety": {
+    "readOnly": true,
+    "localPositionReadMethodInvoked": true,
+    "tradingMethodsInvoked": 0,
+    "networkRequests": 0,
+    "buttonsClicked": 0,
+    "formsSubmitted": 0,
+    "credentialsRead": false,
+    "fullPositionIdsIncluded": false,
+    "exactPositionQuantitiesIncluded": false
+  },
+  "capabilities": {
+    "supportClosePosition": {
+      "value": true,
+      "source": "adapter._brokerMetainfo.configFlags",
+      "ownerLevel": 0
+    },
+    "supportNativeReversePosition": {
+      "value": true,
+      "source": "adapter._brokerMetainfo.configFlags",
+      "ownerLevel": 0
+    },
+    "supportReversePosition": {
+      "value": true,
+      "source": "adapter._brokerMetainfo.configFlags",
+      "ownerLevel": 0
+    }
+  },
+  "methods": {
+    "adapterClosePosition": {
+      "found": true,
+      "path": "bitunixTv.tvWidget.host._adapter.closePosition",
+      "ownerLevel": 1,
+      "type": "function",
+      "source": "async closePosition(e,t){let i;l(e),this._makeSureBrokerIsConnected(),(0,C.assert)(void 0===t||!!this.config.supportPartialClosePosition,\"Broker doesn`t support partial position closing\");const r=new Promise(async(r,s)=>{try{const s=await this._positionCopyById(e);i=e=>{void 0!==s&&e.id===s.id&&e.symbol===s.symbol&&e.qty!==s.qty&&(this.positionUpdate.unsubscribe(this,i),r(!0))},this.positionUpdate.subscribe(this,i),await this._closePosition(e,t)}catch(e){s(e)}});return(0,T.makeTimeLimited)(r,3e4,\"Position closing timeout\").catch(e=>(this._brokerLogger.logError(`${oe}: ${(0,D.getLoggerMessage)(e)}`),this.positionUpdate.unsubscribe(this,i),!1))}"
+    },
+    "adapterReversePosition": {
+      "found": true,
+      "path": "bitunixTv.tvWidget.host._adapter.reversePosition",
+      "ownerLevel": 1,
+      "type": "function",
+      "source": "reversePosition(e){if(l(e),this._makeSureBrokerIsConnected(),this.config.supportMultiposition&&!this.config.supportNativeReversePosition)throw new Error(\"Cannot reverse position on multiposition account\");let t;const i=new Promise(async(i,r)=>{try{const r=await this._positionCopyById(e);t=e=>{void 0!==r&&e.symbol===r.symbol&&e.side!==r.side&&(this.positionUpdate.unsubscribe(this,t),i(!0))},this.positionUpdate.subscribe(this,t),await this._reversePosition(e)}catch(e){r(e)}});return(0,T.makeTimeLimited)(i,3e4,\"Position reversing timeout\").catch(e=>(this._brokerLogger.logError(`${ne}: ${(0,D.getLoggerMessage)(e)}`),this.positionUpdate.unsubscribe(this,t),!1))}"
+    },
+    "adapterInternalClose": {
+      "found": true,
+      "path": "bitunixTv.tvWidget.host._adapter._closePosition",
+      "ownerLevel": 1,
+      "type": "function",
+      "source": "async _closePosition(e,t){const r=(0,C.ensureDefined)(await this.positionById(e));if(!(0,A.checkIsExistingPosition)(r)){const e=m.t(null,void 0,i(715842));throw this._host.showNotification(oe,e,0),new Error(e)}if(!(void 0===t||t<=Math.abs(r.qty))){const e=m.t(null,void 0,i(365389));throw this._host.showNotification(oe,e,0),new Error(e)}{const i=n(null!=t?t:Math.abs(r.qty),r);if(this.config.supportClosePosition&&this._brokerConnection.closePosition){if(!await this.processErrors(this._brokerConnection.closePosition(e,t),!0,oe,()=>(0,C.ensureNotNull)(this._tradingStat).trackOrderPlaced(i)))throw new Error(oe)}else if(!await this.processErrors(this._brokerConnection.placeOrder(i),!0,oe,()=>(0,C.ensureNotNull)(this._tradingStat).trackOrderPlaced(i)))throw new Error(oe)}}"
+    },
+    "adapterInternalReverse": {
+      "found": true,
+      "path": "bitunixTv.tvWidget.host._adapter._reversePosition",
+      "ownerLevel": 1,
+      "type": "function",
+      "source": "async _reversePosition(e){const t=(0,C.ensureDefined)(await this.positionById(e));if(0===t.qty){const e=m.t(null,void 0,i(726500));throw this._host.showNotification(ne,e,0),new Error(e)}this.config.supportNativeReversePosition&&this._brokerConnection.reversePosition?await this.processErrors(this._brokerConnection.reversePosition(e),!0,ne):await this.processErrors(this._placeReversePositionOrder(t),!0,ne,()=>(0,C.ensureNotNull)(this._tradingStat).trackOrderPlaced())}"
+    },
+    "connectionClosePosition": {
+      "found": false,
+      "path": "brokerConnection.closePosition"
+    },
+    "connectionReversePosition": {
+      "found": true,
+      "path": "brokerConnection.reversePosition",
+      "ownerLevel": 1,
+      "type": "function",
+      "source": "async[w(1939,\"83UK\")+w(1495,\"fvAC\")](t){const r=k,o=w;this[o(3256,\"kcA1\")][r(2296)](et[o(4229,\"YYPc\")+o(4447,\"kcA1\")],t)}"
+    },
+    "connectionPlaceOrder": {
+      "found": false,
+      "path": "brokerConnection.placeOrder"
+    },
+    "positionServicePositions": {
+      "found": true,
+      "path": "positionService.positions",
+      "ownerLevel": 1,
+      "type": "function",
+      "source": "positions(){return Array.from(this._positions.values())}"
+    },
+    "adapterConfigDescriptor": {
+      "found": true,
+      "type": "data",
+      "valueType": "object"
+    }
+  },
+  "positions": {
+    "sourceFound": true,
+    "count": 0,
+    "items": [],
+    "note": "Source-verified synchronous local Map read; no broker/network call."
+  },
+  "warnings": []
+}
