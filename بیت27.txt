@@ -1,0 +1,537 @@
+{
+  "reportName": "BITUNIX_CANDLE_CALLBACK_AUDIT_1.3",
+  "startedAt": "2026-11-15T12:03:52.461Z",
+  "safety": {
+    "readOnly": true,
+    "ordersSent": 0,
+    "tradingMethodsCalled": 0,
+    "buttonsClicked": 0,
+    "formsSubmitted": 0,
+    "candlesAddedOrChanged": 0,
+    "callbackExecuted": false,
+    "networkRequestsMade": 0,
+    "websocketCreated": false,
+    "websocketIntercepted": false,
+    "subscriptionsChanged": false,
+    "storageOrCredentialsRead": false
+  },
+  "chart": {
+    "frame": "iframe[0]",
+    "apiFound": true,
+    "activeChartFound": true,
+    "symbol": "XAUTUSDT",
+    "resolution": "1",
+    "modelShape": {
+      "type": "x",
+      "keys": [
+        "_onRearrangePanes",
+        "_lineToolsGroupModel",
+        "_sourcesBeingMoved",
+        "_activeItemBeingMoved",
+        "_lineBeingEdited",
+        "_linePointBeingEdited",
+        "_linePointBeingChanged",
+        "_customSourceBeingMovedHitTestData",
+        "_customSourceBeingMoved",
+        "_dataSourceCollectionChanged",
+        "_sourceProperitesChanged",
+        "_sourceZOrderChanged",
+        "_symbolSourceResolved",
+        "_symbolSourceResolvingActive",
+        "_adjustForDividendsAvailability",
+        "_adjustForDividendsEnabled",
+        "_sessions",
+        "_currentTool",
+        "_lineBeingCreated",
+        "_paneBeingCreatedLineOn",
+        "_lineCancelled",
+        "_phantomSourceContainer",
+        "_destroyed",
+        "_isSettingsExternalPosition",
+        "_isTimeScrolling",
+        "_magnet",
+        "_scrollingState",
+        "_modelIntervals",
+        "_rendererOptionsProvider",
+        "_studyInserted",
+        "_cachedStudiesMaxOffset",
+        "_replayStatus",
+        "_panes",
+        "_tagsChanged",
+        "_strategySources",
+        "_strategySourcesChange",
+        "_activeStrategySource",
+        "_paneCollapsingAvailable",
+        "_panesCollectionChanged",
+        "_scrollEnabled",
+        "_zoomEnabled",
+        "_lollipopSourcesWatcher",
+        "_alertsWatcher",
+        "_hoveredSource",
+        "_hoveredSourceChanged",
+        "_lastHoveredHittestData",
+        "_lastSelectedHittestData",
+        "_topmostCustomSources",
+        "_fgCustomSources",
+        "_bgCustomSources",
+        "_allCustomSources",
+        "_customSourcesMap",
+        "_multiPaneSources",
+        "_showLegendProperty",
+        "_id",
+        "_chartSaveTime",
+        "_availableCurrenciesList",
+        "_availableCurrencies",
+        "_availablePriceSources",
+        "_availableUnitsObject",
+        "_availableUnits",
+        "_availablePriceSourcesBySymbol",
+        "_shouldBeSavedEvenIfHidden",
+        "_watchedThemeSpawn",
+        "_gradientColorsCache",
+        "_studiesWV",
+        "_studiesExcludeInternalWV",
+        "_resetScalesAvailable",
+        "_recalcVRStudiesParams",
+        "_recalcColorStudiesParams",
+        "_recalcVisibleRangeStudiesImplDebounced",
+        "_recalcColorStudiesImplDebounced",
+        "_width",
+        "_resetScales",
+        "_chartThemeLoaded",
+        "_selection",
+        "_selectedSourceChanged",
+        "_symbolSourceCollectionChanged",
+        "_gridSource",
+        "_visibleRangeStudiesInputs",
+        "_syncPointCache",
+        "_lastAppliedGotoTimeRange",
+        "_lastGotoTimeRange",
+        "_lollipopSourcesWatcherLoader",
+        "_clearSelection",
+        "_removeSourceFromSelection",
+        "_addSourceToSelection",
+        "_recalcSymbolResolvingActive",
+        "_recalcAdjustForDividendsAvailability",
+        "_recalcAdjustForDividendsEnabled",
+        "_recalcPaneCollapsingAvailable",
+        "_updateResetScalesAvailableValue",
+        "_chartApi",
+        "_invalidateHandler",
+        "_undoModel",
+        "_properties",
+        "_options",
+        "_hibernateWV",
+        "_linkingGroupIndex",
+        "_isAutoSaveEnabled"
+      ]
+    }
+  },
+  "series": {
+    "found": true,
+    "shape": {
+      "type": "O",
+      "keys": [
+        "_series",
+        "_undoModel",
+        "_model"
+      ]
+    },
+    "dataFound": true,
+    "dataShape": {
+      "type": "p",
+      "keys": [
+        "_pressedChunks",
+        "m_bars",
+        "m_nsBars",
+        "lastProjectionPrice",
+        "reversalAmount"
+      ]
+    },
+    "dataOwnKeys": [
+      "_pressedChunks",
+      "m_bars",
+      "m_nsBars",
+      "lastProjectionPrice",
+      "reversalAmount"
+    ],
+    "mainSeriesFound": true,
+    "methods": {
+      "data": {
+        "found": true,
+        "args": 0,
+        "source": "data(){return this._series.data()}"
+      },
+      "bars": {
+        "found": false,
+        "args": null,
+        "source": null
+      },
+      "nsBars": {
+        "found": false,
+        "args": null,
+        "source": null
+      },
+      "fixLastBar": {
+        "found": false,
+        "args": null,
+        "source": null
+      },
+      "setInterval": {
+        "found": false,
+        "args": null,
+        "source": null
+      },
+      "seriesSource": {
+        "found": false,
+        "args": null,
+        "source": null
+      }
+    }
+  },
+  "barStore": {
+    "found": true,
+    "shape": {
+      "type": "u",
+      "keys": [
+        "_items",
+        "_start",
+        "_end",
+        "_shareRead",
+        "_minMaxCache",
+        "_rowSearchCacheByIndex",
+        "_rowSearchCacheByIndexWithoutEmptyValues",
+        "_rowSearchCacheByTime",
+        "_rowSearchCacheByTimeWithoutEmptyValues",
+        "_plotFunctions",
+        "_emptyValuePredicate"
+      ]
+    },
+    "itemCount": 127,
+    "start": 0,
+    "end": 127,
+    "methods": {
+      "first": {
+        "found": true,
+        "args": 0,
+        "source": "first(){return this.size()>0?this._items[this._start]:null}"
+      },
+      "last": {
+        "found": true,
+        "args": 0,
+        "source": "last(){return this.size()>0?this._items[this._end-1]:null}"
+      },
+      "firstIndex": {
+        "found": true,
+        "args": 0,
+        "source": "firstIndex(){return this.size()>0?this._indexAt(this._start):null}"
+      },
+      "lastIndex": {
+        "found": true,
+        "args": 0,
+        "source": "lastIndex(){return this.size()>0?this._indexAt(this._end-1):null}"
+      },
+      "size": {
+        "found": true,
+        "args": 0,
+        "source": "size(){return this._end-this._start}"
+      },
+      "valueAt": {
+        "found": true,
+        "args": 1,
+        "source": "valueAt(e){const t=this.search(e);return null!==t?t.value:null}"
+      },
+      "_valueAt": {
+        "found": true,
+        "args": 1,
+        "source": "_valueAt(e){return this._items[e].value}"
+      },
+      "add": {
+        "found": true,
+        "args": 2,
+        "source": "add(e,t){if(this._shareRead)return l.logDebug(\"add: readonly collection modification attempt\"),!1;const i={index:e,value:t},s=this._nonCachedSearch(e,a.PlotRowSearchMode.Exact,h);return this._invalidateSearchCaches(),null===s?(this._items.splice(this._lowerbound(e,h),0,i),this._start=0,this._end=this._items.length,!0):(this._items[s]=i,!1)}"
+      },
+      "addTail": {
+        "found": true,
+        "args": 1,
+        "source": "addTail(e,t=!1){if(0===e.length)return;let i=0;t&&this._end-this._start>0&&(i=1,this._items[this._end-this._start-1].value=e[0].value);for(let t=i;t<e.length;++t){const i=e[t],s=this.lastIndex();if(null===s){l.logError(\"Can't add tail to the empty plotlist\");break}this.add(s+1,i.value)}this._invalidateSearchCaches()}"
+      },
+      "merge": {
+        "found": true,
+        "args": 1,
+        "source": "merge(e){return this._shareRead?(l.logDebug(\"merge: readonly collection modification attempt\"),null):0===e.length?null:this.isEmpty()||e[e.length-1].index<this._items[0].index?this._prepend(e):e[0].index>this._items[this._items.length-1].index?this._append(e):1===e.length&&e[0].index===this._items[this._items.length-1].index?(this._updateLast(e[0]),e[0]):this._merge(e)}"
+      },
+      "move": {
+        "found": true,
+        "args": 1,
+        "source": "move(e){if(this._shareRead)return void l.logDebug(\"move: readonly collection modification attempt\");if(0===e.length)return;const t=this._items.slice();for(const i of e){const e=this._bsearch(i.old,h);if(null!==e&&void 0!==t[e])if(i.new===n.INVALID_TIME_POINT_INDEX)t[e]=void 0;else{t[e]={index:i.new,value:t[e].value};const s=this._bsearch(i.new,h);if(null!==s){const e=t[s];void 0!==e&&e.index===i.new&&(t[s]=void 0)}}}this._items=t.filter((e=>void 0!==e)).sort(((e,t)=>e.index-t.index)),this._invalidateSearchCaches(),this._minMaxCache.clear(),this._start=0,this._end=this._items.length}"
+      },
+      "remove": {
+        "found": true,
+        "args": 1,
+        "source": "remove(e){if(this._shareRead)return l.logDebug(\"remove: readonly collection modification attempt\"),null;const t=this._nonCachedSearch(e,a.PlotRowSearchMode.NearestRight,h);if(null===t)return null;const i=this._items.splice(t);return this._end=this._items.length,this._minMaxCache.clear(),this._invalidateSearchCaches(),i.length>0?i[0]:null}"
+      },
+      "_append": {
+        "found": true,
+        "args": 1,
+        "source": "_append(e){return(0,s.assert)(!this._shareRead,\"collection should not be readonly\"),(0,s.assert)(0!==e.length,\"plotRows should not be empty\"),this._invalidateSearchCaches(),this._minMaxCache.clear(),this._items=this._items.concat(e),this._start=0,this._end=this._items.length,e[0]}"
+      },
+      "_updateLast": {
+        "found": true,
+        "args": 1,
+        "source": "_updateLast(e){(0,s.assert)(!this.isEmpty(),\"plot list should not be empty\");const t=this._items[this._end-1];(0,\ns.assert)(t.index===e.index,\"last row index should match new row index\"),this._invalidateCacheForRow(e),this._invalidateSearchCaches(),this._items[this._end-1]=e}"
+      },
+      "_merge": {
+        "found": true,
+        "args": 1,
+        "source": "_merge(e){return(0,s.assert)(0!==e.length,\"plot rows should not be empty\"),this._invalidateSearchCaches(),this._minMaxCache.clear(),this._items=function(e,t){const i=function(e,t){const i=e.length,s=t.length;let r=i+s,n=0,o=0;for(;n<i&&o<s;)e[n].index<t[o].index?n++:e[n].index>t[o].index?o++:(n++,o++,r--);return r}(e,t),s=new Array(i);let r=0,n=0;const o=e.length,a=t.length;let l=0;for(;r<o&&n<a;)e[r].index<t[n].index?(s[l]=e[r],r++):e[r].index>t[n].index?(s[l]=t[n],n++):(s[l]=t[n],r++,n++),l++;for(;r<o;)s[l]=e[r],r++,l++;for(;n<a;)s[l]=t[n],n++,l++;return s}(this._items,e),this._start=0,this._end=this._items.length,e[0]}"
+      },
+      "restoreState": {
+        "found": true,
+        "args": 1,
+        "source": "restoreState(e){e?(this._start=e.start,this._end=e.end,this._shareRead=!1,this._items=e.data,this._minMaxCache.clear(),\nthis._invalidateSearchCaches()):this.clear()}"
+      },
+      "state": {
+        "found": true,
+        "args": 0,
+        "source": "state(){const e=this._items.slice(this._start,this._end);return{start:0,end:e.length,data:e}}"
+      }
+    }
+  },
+  "candleSamples": {
+    "first": {
+      "label": "first",
+      "index": 0,
+      "timeMs": 1794736620000,
+      "valueShape": {
+        "type": "Array",
+        "keys": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "length"
+        ]
+      },
+      "value": [
+        1794736620,
+        3823.72,
+        3823.96,
+        3823.73,
+        3823.96,
+        0.011,
+        null
+      ],
+      "valueKeys": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "length"
+      ],
+      "barKeys": [
+        "index",
+        "value",
+        "timeMs"
+      ]
+    },
+    "middle": {
+      "label": "middle",
+      "index": 63,
+      "timeMs": 1794740400000,
+      "valueShape": {
+        "type": "Array",
+        "keys": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "length"
+        ]
+      },
+      "value": [
+        1794740400,
+        3825.13,
+        3825.13,
+        3823.12,
+        3823.12,
+        0.448,
+        null
+      ],
+      "valueKeys": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "length"
+      ],
+      "barKeys": [
+        "index",
+        "value",
+        "timeMs"
+      ]
+    },
+    "last": {
+      "label": "last",
+      "index": 126,
+      "timeMs": 1794744180000,
+      "valueShape": {
+        "type": "Array",
+        "keys": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "length"
+        ]
+      },
+      "value": [
+        1794744180,
+        3820,
+        3820.86,
+        3820,
+        3820.86,
+        0.042,
+        null
+      ],
+      "valueKeys": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "length"
+      ],
+      "barKeys": [
+        "index",
+        "value",
+        "timeMs"
+      ]
+    },
+    "rawFirstValue": [
+      1794736620,
+      3823.72,
+      3823.96,
+      3823.73,
+      3823.96,
+      0.011,
+      null
+    ],
+    "rawLastValue": [
+      1794744180,
+      3820,
+      3820.86,
+      3820,
+      3820.86,
+      0.042,
+      null
+    ]
+  },
+  "tickCallbacks": {
+    "found": true,
+    "keys": [
+      "XAUTUSDT_1min_market"
+    ],
+    "entries": {
+      "XAUTUSDT_1min_market": {
+        "type": "function",
+        "name": "",
+        "args": 1,
+        "source": "e=>{null!==this._dwmAligner&&(e.time=this._dwmAligner.timeToSessionStart(e.time)),this._putToCacheNewBar(e),this._subscribers.forEach((t=>{const i=t.barset;if(null===i)throw new Error(\"subscriber.barset is null\");i.add(e),t.onHistoryCallback(i)}))}"
+      }
+    }
+  },
+  "resetCallbacks": {
+    "found": true,
+    "keys": [
+      "XAUTUSDT_1min_market"
+    ],
+    "entries": {
+      "XAUTUSDT_1min_market": {
+        "type": "function",
+        "name": "",
+        "args": 0,
+        "source": "()=>{this._unsubscribeRealtime();const e=this._leftDate;this._purgeCache(),null===e||a.enabled(\"request_only_visible_range_on_reset\")||this._ensureRequestedTo({to:e,countBack:0})}"
+      }
+    }
+  },
+  "datafeed": {
+    "found": true,
+    "subscribeBars": {
+      "subscribeBars": {
+        "found": true,
+        "args": 5,
+        "source": "(e,t,r,o,n)=>{const i=k,l=w;var s,d;if(di(l(3831,\"**au\")+l(3841,\"**au\")+l(3941,\"qK)]\")),window&&(d=(s=window[l(3872,\"arIE\")])==null?void 0:s[l(274,\"W4QN\")])!=null&&d[i(3902)+i(343)])e[l(4166,\"ahu)\")]=Er(e[l(2734,\"un3p\")]),window[i(2583)][l(3271,\"Tyar\")][l(408,\"xu8q\")+i(343)](e,t,r,o,n);else if(window){const{eventBus:u,tvWidget:c}=window[i(2583)];if(!u||!c)return;const a=Er(e[l(1804,\"J4o(\")]),p=Zp(t),f=xn(e[i(2211)]),v={symbol:a,resolution:p,type:f};c[l(3153,\"kcA1\")]&&console[l(932,\"%sAI\")](et[i(4888)+\"e\"],v),di(i(3902)+i(2581)+l(636,\"W]Rd\")+i(444)),u[l(4595,\"xu8q\")](et[l(1419,\"7&Au\")+\"e\"],v),!c[l(4484,\"xu8q\")+i(3283)]&&(c[i(5705)+i(3283)]={}),!c[l(4415,\"#eY9\")]&&(c[i(4979)]={}),!c[i(3927)+\"Fn\"]&&(c[i(3927)+\"Fn\"]={}),!c[l(3479,\"TM]V\")]&&(c[i(1280)]={}),!c[l(5233,\"wCo4\")+\"e\"]&&(c[l(5235,\"YYPc\")+\"e\"]={});const g=a+\"_\"+p+\"_\"+f;c[i(5396)+\"e\"][g]=0,c[l(2902,\"**au\")][g]=Date[i(3730)](),c[l(5345,\"fwxQ\")][g]=r,c[i(3927)+\"Fn\"][g]=n,c[l(4436,\"HQG8\")+i(3283)][o]=v}else console[l(1743,\"xivW\")](l(2625,\"P0pz\")+i(2991)+i(5257)+l(2133,\"EoVv\"))}"
+      },
+      "unsubscribeBars": {
+        "found": true,
+        "args": 1,
+        "source": "e=>{const t=w,r=k;var o,n;if(window&&(n=(o=window[r(2583)])==null?void 0:o[r(5297)])!=null&&n[r(1932)+r(445)])window[r(2583)][r(5297)][r(1932)+r(445)](e);else if(window){di(t(1294,\"P0pz\")+r(4271)+r(235));const{eventBus:i,tvWidget:l}=window[r(2583)];if(!i||!l)return;if(l[r(4460)]&&console[t(3737,\"TM]V\")](et[t(4772,\"Tyar\")+r(444)],l[r(5705)+r(3283)],e),di(r(1932)+r(651)+r(2704)+t(2677,\"xivW\")),l[t(1983,\"Tyar\")+t(2170,\"arIE\")][e]&&i[t(1977,\"2l1f\")](et[r(2239)+r(444)],l[r(5705)+t(131,\"phWK\")][e]),l[t(5638,\"9MkJ\")+t(5187,\"TM]V\")][e]){const{symbol:s,resolution:d,type:u}=l[r(5705)+r(3283)][e],c=s+\"_\"+d+\"_\"+u;delete l[r(4979)][c],delete l[t(4030,\"7&Au\")+\"Fn\"][c],delete l[t(521,\"ahu)\")][c],delete l[r(5396)+\"e\"][c],delete l[r(5705)+r(3283)][e]}}else console[r(722)](t(4366,\"9MkJ\")+t(851,\"@c^K\")+r(2446)+t(5231,\"YYPc\")+\"d\")}"
+      },
+      "getBars": {
+        "found": true,
+        "args": 5,
+        "source": "async(e,t,r,o,n)=>{const i=k,l=w;var s,d;if(di(l(3830,\"kcA1\")+l(3436,\"Tyar\")),window&&(d=(s=window[l(1444,\"wCo4\")])==null?void 0:s[i(5297)])!=null&&d[i(1367)+\"s\"])e[i(2211)]=Er(e[i(2211)]),window[i(2583)][l(4563,\"qK)]\")][l(4721,\"Lx5g\")+\"s\"](e,t,r,o,n);else if(window){const{onRequest:u}=window[l(3030,\"9MkJ\")],{firstDataRequest:c,countBack:a,to:p}=r,f=zm[t];let v=[];const g={noData:!1};if(di(l(2104,\"fwxQ\")+i(3334)+l(1417,\"83UK\")),a>$a){let y=p-$a*f;v=(await Promise[i(3760)]([I2(c,$a,p,e[i(2211)],t,u,g),...Eq(a)[i(3734)](1)[l(5660,\"wCo4\")](M=>{const S=i,q=I2(!1,M,y,e[S(2211)],t,u,g);return y-=M*f,q})]))[i(3084)]()[i(378)]((M,S)=>M[i(2753)]-S[l(3789,\"JzFR\")])}else v=await I2(c,a,p,e[i(2211)],t,u,g);di(l(5365,\"**au\")+l(2288,\"fvAC\")+i(4041)),o(v[l(2685,\"xivW\")](y=>({time:y[i(2753)]*1e3,low:Number(y[i(5387)]),high:Number(y[i(5703)]),open:Number(y[i(3182)]),close:Number(y[i(4896)]),volume:Number(y[i(4700)])})),g),di(i(262)+i(1504))}else console[i(3473)](l(4152,\"JzFR\")+l(2387,\"W]Rd\")+l(4293,\"s0OD\")+l(4381,\"P0pz\"))}"
+      }
+    }
+  },
+  "errors": [],
+  "tvWidgetTiming": {
+    "listenerGuids": {
+      "type": "Object",
+      "XAUTUSDT_#_USDT_#_1": {
+        "type": "market",
+        "symbol": "XAUTUSDT",
+        "resolution": "1min"
+      }
+    },
+    "barDelay": {
+      "type": "Object",
+      "XAUTUSDT_1min_market": 1794744230540
+    },
+    "lastBarTime": {
+      "type": "Object",
+      "XAUTUSDT_1min_market": 1794744180000
+    },
+    "widgetKeys": [
+      "_id",
+      "_ready",
+      "_readyHandlers",
+      "_onWindowResize",
+      "_options",
+      "_iFrame",
+      "_innerWindowLoaded",
+      "onDlay",
+      "listenerGuids",
+      "ticks",
+      "resetCacheFn",
+      "barDelay",
+      "lastBarTime",
+      "host",
+      "_callbackMap",
+      "historyOrderMarksCache",
+      "barDelayVisibilityHandler",
+      "barDelayInterval",
+      "getPriceAxis",
+      "kline_delay"
+    ]
+  },
+  "finishedAt": "2026-11-15T12:03:52.464Z"
+}
