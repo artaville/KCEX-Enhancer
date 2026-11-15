@@ -1,0 +1,374 @@
+{
+  "reportName": "BITUNIX_CHART_DATA_AUDIT_1.1",
+  "startedAt": "2026-11-15T11:47:54.815Z",
+  "page": {
+    "url": "https://www.bitunix.com/contract-trade/XAUTUSDT",
+    "title": "3,821.42 | XAUTUSDT Futures Exchange - Crypto Futures | Bitunix"
+  },
+  "safety": {
+    "readOnly": true,
+    "tradingMethodsCalled": 0,
+    "buttonsClicked": 0,
+    "formsSubmitted": 0,
+    "chartChanged": false,
+    "networkRequestsMadeByAudit": 0,
+    "websocketCreatedOrIntercepted": false,
+    "cookiesStorageOrCredentialsRead": false,
+    "orderOrPositionDataRead": false
+  },
+  "frameDiscovery": [
+    {
+      "name": "top",
+      "accessible": true,
+      "title": "3,821.42 | XAUTUSDT Futures Exchange - Crypto Futures | Bitunix",
+      "isChartFrame": false
+    },
+    {
+      "name": "iframe[0]",
+      "accessible": true,
+      "title": "",
+      "isChartFrame": true
+    },
+    {
+      "name": "iframe[1]",
+      "accessible": true,
+      "title": "",
+      "isChartFrame": false
+    },
+    {
+      "name": "iframe[2]",
+      "accessible": true,
+      "title": "Button to launch messaging window",
+      "isChartFrame": false
+    }
+  ],
+  "chartApi": {
+    "chartFrame": "iframe[0]",
+    "tradingViewApiFound": true,
+    "activeChartFound": false,
+    "activeChartShape": {
+      "type": "null"
+    },
+    "activeChartReadMethods": {
+      "symbol": {
+        "ok": false,
+        "reason": "not_function"
+      },
+      "resolution": {
+        "ok": false,
+        "reason": "not_function"
+      },
+      "chartType": {
+        "ok": false,
+        "reason": "not_function"
+      },
+      "getVisibleRange": {
+        "ok": false,
+        "reason": "not_function"
+      },
+      "getTimeScaleLogicalRange": {
+        "ok": false,
+        "reason": "not_function"
+      },
+      "getPanes": {
+        "ok": false,
+        "reason": "not_function"
+      },
+      "getAllStudies": {
+        "ok": false,
+        "reason": "not_function"
+      },
+      "getAllShapes": {
+        "ok": false,
+        "reason": "not_function"
+      }
+    },
+    "chartCollectionFound": false,
+    "activeChartWidgetDelegate": {
+      "type": "null"
+    },
+    "delegateValueResolved": false,
+    "activeChartWidget": {
+      "type": "undefined"
+    },
+    "widgetModelFound": false
+  },
+  "chartModelAndSeries": {
+    "chartModelCall": {
+      "ok": false,
+      "reason": "not_function"
+    },
+    "chartModelShape": {
+      "type": "null"
+    },
+    "widgetModelShape": {
+      "type": "undefined"
+    },
+    "discoveredObjects": [],
+    "seriesCandidates": [],
+    "chartGetSeriesResult": {
+      "ok": false,
+      "reason": "not_function"
+    }
+  },
+  "barStore": {
+    "found": false,
+    "path": null,
+    "shape": {
+      "type": "null"
+    },
+    "itemCount": null,
+    "firstIndex": null,
+    "lastIndex": null,
+    "firstBar": {
+      "shape": {
+        "type": "null"
+      },
+      "fields": {}
+    },
+    "lastBar": {
+      "shape": {
+        "type": "null"
+      },
+      "fields": {}
+    }
+  },
+  "datafeed": {
+    "found": true,
+    "shape": {
+      "type": "Object",
+      "ownKeys": [
+        "onReady",
+        "searchSymbols",
+        "getServerTime",
+        "getQuotes",
+        "subscribeQuotes",
+        "unsubscribeQuotes",
+        "resolveSymbol",
+        "getBars",
+        "subscribeBars",
+        "unsubscribeBars"
+      ],
+      "methods": [
+        {
+          "name": "onReady",
+          "args": 1
+        },
+        {
+          "name": "searchSymbols",
+          "args": 1
+        },
+        {
+          "name": "getServerTime",
+          "args": 1
+        },
+        {
+          "name": "getQuotes",
+          "args": 3
+        },
+        {
+          "name": "subscribeQuotes",
+          "args": 4
+        },
+        {
+          "name": "unsubscribeQuotes",
+          "args": 1
+        },
+        {
+          "name": "resolveSymbol",
+          "args": 4
+        },
+        {
+          "name": "getBars",
+          "args": 5
+        },
+        {
+          "name": "subscribeBars",
+          "args": 5
+        },
+        {
+          "name": "unsubscribeBars",
+          "args": 1
+        },
+        {
+          "name": "__defineGetter__",
+          "args": 2
+        },
+        {
+          "name": "__defineSetter__",
+          "args": 2
+        },
+        {
+          "name": "hasOwnProperty",
+          "args": 1
+        },
+        {
+          "name": "__lookupGetter__",
+          "args": 1
+        },
+        {
+          "name": "__lookupSetter__",
+          "args": 1
+        },
+        {
+          "name": "isPrototypeOf",
+          "args": 1
+        },
+        {
+          "name": "propertyIsEnumerable",
+          "args": 1
+        },
+        {
+          "name": "toString",
+          "args": 0
+        },
+        {
+          "name": "valueOf",
+          "args": 0
+        },
+        {
+          "name": "toLocaleString",
+          "args": 0
+        }
+      ]
+    },
+    "onReadyConfig": {
+      "supportedResolutions": [
+        "1",
+        "2",
+        "3",
+        "5",
+        "6",
+        "9",
+        "10",
+        "12",
+        "15",
+        "24",
+        "27",
+        "30",
+        "45",
+        "60",
+        "120",
+        "240",
+        "360",
+        "480",
+        "720",
+        "1D",
+        "3D",
+        "1W",
+        "1M"
+      ],
+      "configKeys": [
+        "supported_resolutions",
+        "exchanges"
+      ],
+      "flags": {}
+    },
+    "onReadyError": null,
+    "methods": {
+      "onReady": {
+        "found": true,
+        "args": 1,
+        "source": "e=>setTimeout(()=>e(pb))"
+      },
+      "resolveSymbol": {
+        "found": true,
+        "args": 4,
+        "source": "async(e,t,r,o)=>{setTimeout(()=>{const n=vr,i=cr;if(!e){r(i(4730)+i(3495)+n(5239,\"oi]q\")+i(888)+n(5172,\"HQG8\")+n(1729,\"i#a&\"));return}const l=ub(e[n(1141,\"HQG8\")+\"e\"]());if(!l){r(n(5134,\"un3p\")+i(3268)+i(660)+i(5444));return}t(l)},0)}"
+      },
+      "getBars": {
+        "found": true,
+        "args": 5,
+        "source": "async(e,t,r,o,n)=>{const i=k,l=w;var s,d;if(di(l(3830,\"kcA1\")+l(3436,\"Tyar\")),window&&(d=(s=window[l(1444,\"wCo4\")])==null?void 0:s[i(5297)])!=null&&d[i(1367)+\"s\"])e[i(2211)]=Er(e[i(2211)]),window[i(2583)][l(4563,\"qK)]\")][l(4721,\"Lx5g\")+\"s\"](e,t,r,o,n);else if(window){const{onRequest:u}=window[l(3030,\"9MkJ\")],{firstDataRequest:c,countBack:a,to:p}=r,f=zm[t];let v=[];const g={noData:!1};if(di(l(2104,\"fwxQ\")+i(3334)+l(1417,\"83UK\")),a>$a){let y=p-$a*f;v=(await Promise[i(3760)]([I2(c,$a,p,e[i(2211)],t,u,g),...Eq(a)[i(3734)](1)[l(5660,\"wCo4\")](M=>{const S=i,q=I2(!1,M,y,e[S(2211)],t,u,g);return y-=M*f,q})]))[i(3084)]()[i(378)]((M,S)=>M[i(2753)]-S[l(3789,\"JzFR\")])}else v=await I2(c,a,p,e[i(2211)],t,u,g);di(l(5365,\"**au\")+l(2288,\"fvAC\")+i(4041)),o(v[l(2685,\"xivW\")](y=>({time:y[i(2753)]*1e3,low:Number(y[i(5387)]),high:Number(y[i(5703)]),open:Number(y[i(3182)]),close:Number(y[i(4896)]),volume:Number(y[i(4700)])})),g),di(i(262)+i(1504))}else console[i(3473)](l(4152,\"JzFR\")+l(2387,\"W]Rd\")+l(4293,\"s0OD\")+l(4381,\"P0pz\"))}"
+      },
+      "subscribeBars": {
+        "found": true,
+        "args": 5,
+        "source": "(e,t,r,o,n)=>{const i=k,l=w;var s,d;if(di(l(3831,\"**au\")+l(3841,\"**au\")+l(3941,\"qK)]\")),window&&(d=(s=window[l(3872,\"arIE\")])==null?void 0:s[l(274,\"W4QN\")])!=null&&d[i(3902)+i(343)])e[l(4166,\"ahu)\")]=Er(e[l(2734,\"un3p\")]),window[i(2583)][l(3271,\"Tyar\")][l(408,\"xu8q\")+i(343)](e,t,r,o,n);else if(window){const{eventBus:u,tvWidget:c}=window[i(2583)];if(!u||!c)return;const a=Er(e[l(1804,\"J4o(\")]),p=Zp(t),f=xn(e[i(2211)]),v={symbol:a,resolution:p,type:f};c[l(3153,\"kcA1\")]&&console[l(932,\"%sAI\")](et[i(4888)+\"e\"],v),di(i(3902)+i(2581)+l(636,\"W]Rd\")+i(444)),u[l(4595,\"xu8q\")](et[l(1419,\"7&Au\")+\"e\"],v),!c[l(4484,\"xu8q\")+i(3283)]&&(c[i(5705)+i(3283)]={}),!c[l(4415,\"#eY9\")]&&(c[i(4979)]={}),!c[i(3927)+\"Fn\"]&&(c[i(3927)+\"Fn\"]={}),!c[l(3479,\"TM]V\")]&&(c[i(1280)]={}),!c[l(5233,\"wCo4\")+\"e\"]&&(c[l(5235,\"YYPc\")+\"e\"]={});const g=a+\"_\"+p+\"_\"+f;c[i(5396)+\"e\"][g]=0,c[l(2902,\"**au\")][g]=Date[i(3730)](),c[l(5345,\"fwxQ\")][g]=r,c[i(3927)+\"Fn\"][g]=n,c[l(4436,\"HQG8\")+i(3283)][o]=v}else console[l(1743,\"xivW\")](l(2625,\"P0pz\")+i(2991)+i(5257)+l(2133,\"EoVv\"))}"
+      },
+      "unsubscribeBars": {
+        "found": true,
+        "args": 1,
+        "source": "e=>{const t=w,r=k;var o,n;if(window&&(n=(o=window[r(2583)])==null?void 0:o[r(5297)])!=null&&n[r(1932)+r(445)])window[r(2583)][r(5297)][r(1932)+r(445)](e);else if(window){di(t(1294,\"P0pz\")+r(4271)+r(235));const{eventBus:i,tvWidget:l}=window[r(2583)];if(!i||!l)return;if(l[r(4460)]&&console[t(3737,\"TM]V\")](et[t(4772,\"Tyar\")+r(444)],l[r(5705)+r(3283)],e),di(r(1932)+r(651)+r(2704)+t(2677,\"xivW\")),l[t(1983,\"Tyar\")+t(2170,\"arIE\")][e]&&i[t(1977,\"2l1f\")](et[r(2239)+r(444)],l[r(5705)+t(131,\"phWK\")][e]),l[t(5638,\"9MkJ\")+t(5187,\"TM]V\")][e]){const{symbol:s,resolution:d,type:u}=l[r(5705)+r(3283)][e],c=s+\"_\"+d+\"_\"+u;delete l[r(4979)][c],delete l[t(4030,\"7&Au\")+\"Fn\"][c],delete l[t(521,\"ahu)\")][c],delete l[r(5396)+\"e\"][c],delete l[r(5705)+r(3283)][e]}}else console[r(722)](t(4366,\"9MkJ\")+t(851,\"@c^K\")+r(2446)+t(5231,\"YYPc\")+\"d\")}"
+      },
+      "getServerTime": {
+        "found": true,
+        "args": 1,
+        "source": "getServerTime(e){const t=k,r=w,{onRequest:o}=window[r(3892,\"EoVv\")];o({type:Vm[t(245)],params:{},resolve:n=>e(typeof n!=r(4466,\"[mGR\")?bc():n),reject:()=>e(bc())})}"
+      }
+    },
+    "note": "getBars, subscribeBars, resolveSymbol and network/history functions were not invoked."
+  },
+  "requestOwnerCandidates": [
+    {
+      "owner": "top.window.bitunixTv",
+      "ownerShape": {
+        "type": "Object",
+        "ownKeys": [
+          "eventBus",
+          "transform",
+          "onRequest",
+          "get",
+          "tvWidget"
+        ],
+        "methods": [
+          {
+            "name": "onRequest",
+            "args": 1
+          },
+          {
+            "name": "get",
+            "args": 1
+          },
+          {
+            "name": "__defineGetter__",
+            "args": 2
+          },
+          {
+            "name": "__defineSetter__",
+            "args": 2
+          },
+          {
+            "name": "hasOwnProperty",
+            "args": 1
+          },
+          {
+            "name": "__lookupGetter__",
+            "args": 1
+          },
+          {
+            "name": "__lookupSetter__",
+            "args": 1
+          },
+          {
+            "name": "isPrototypeOf",
+            "args": 1
+          },
+          {
+            "name": "propertyIsEnumerable",
+            "args": 1
+          },
+          {
+            "name": "toString",
+            "args": 0
+          },
+          {
+            "name": "valueOf",
+            "args": 0
+          },
+          {
+            "name": "toLocaleString",
+            "args": 0
+          }
+        ]
+      },
+      "onRequestArgs": 1,
+      "onRequestSource": "async({type:ce,params:xe,resolve:ze})=>{if(ce===\"history\"){const{type:ut,chartIndex:wt,...Et}=xe,Kt=await oo.prepareHistory(xe,ze);if(Kt==null)return;const br=$i(),Nr={request_id:br,kline_end:xe.end,kline_type:xe.type,kline_symbol:xe.symbol,kline_resolution:xe.interval,kline_limit:xe.limit};Ls.value&&($e(\"kline_chart_load_reday\",{},{mark:!0,nextMark:\"kline_chart_init_start\"}),$e(\"kline_chart_history_request\",Nr,{mark:!0}));try{const vo=await it(n.request(Sp(O.value.exType),{...Et,end:Kt,real:Kt===0,price_type:ut,request_id:br}));wa.value=0;const Ro=G3(vo),Ai={resolution:xe.interval,symbol:xe.symbol,type:xe.type};Kt===0&&!T(Ai)&&b(Ai,Ro[Ro.length-1]);const vi=await oo.resolveHistory(xe,Kt,Ro,br);ze(vi),ct(!0)}catch(vo){if(oo.handleHistoryError(xe)){ze([]);return}if($e(\"request_realtime_error\",Nr),ze([]),vde(vo)){Ls.value=!0;return}wa.value++,Wa();return}Ls.value&&$e(\"kline_chart_history_request_success\",Nr,{mark:!0,nextMark:\"kline_chart_history_request\"}),A.value&&(await a3(150),U3(),xe.end===0&&oo.finishExitLoading())}if(ce===\"serverTime\"){const ut=fr().unix();try{const wt=await it(n.request(\"/web/api/public/v1/health\"));ze(wt??ut)}catch{ze(ut)}}}"
+    }
+  ],
+  "warnings": [
+    "If barStore is still missing, the returned API/model may use a different private route; this is not evidence that chart candles or historical bars do not exist."
+  ],
+  "errors": [],
+  "finishedAt": "2026-11-15T11:47:55.197Z"
+}
