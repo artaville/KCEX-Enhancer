@@ -1,0 +1,422 @@
+{
+  "reportName": "BITUNIX_FINAL_API_CHECK",
+  "version": "1.1",
+  "timestamp": "2026-11-15T07:35:16.878Z",
+  "safety": {
+    "readOnly": true,
+    "localPositionsRead": true,
+    "closeMethodsInvoked": 0,
+    "reverseMethodsInvoked": 0,
+    "orderMethodsInvoked": 0,
+    "networkRequests": 0,
+    "buttonsClicked": 0,
+    "formsSubmitted": 0,
+    "credentialsRead": false,
+    "exactPositionIdIncluded": false,
+    "exactPositionQuantityIncluded": false
+  },
+  "capabilities": {
+    "supportClosePosition": {
+      "available": true,
+      "value": true
+    },
+    "supportPartialClosePosition": {
+      "available": false
+    },
+    "supportNativeReversePosition": {
+      "available": true,
+      "value": true
+    },
+    "supportReversePosition": {
+      "available": true,
+      "value": true
+    },
+    "supportMultiposition": {
+      "available": false
+    },
+    "supportPositionNetting": {
+      "available": false
+    }
+  },
+  "adapterMethods": [
+    {
+      "name": "closePosition",
+      "found": true,
+      "ownerLevel": 1,
+      "type": "function",
+      "source": "async closePosition(e,t){let i;l(e),this._makeSureBrokerIsConnected(),(0,C.assert)(void 0===t||!!this.config.supportPartialClosePosition,\"Broker doesn`t support partial position closing\");const r=new Promise(async(r,s)=>{try{const s=await this._positionCopyById(e);i=e=>{void 0!==s&&e.id===s.id&&e.symbol===s.symbol&&e.qty!==s.qty&&(this.positionUpdate.unsubscribe(this,i),r(!0))},this.positionUpdate.subscribe(this,i),await this._closePosition(e,t)}catch(e){s(e)}});return(0,T.makeTimeLimited)(r,3e4,\"Position closing timeout\").catch(e=>(this._brokerLogger.logError(`${oe}: ${(0,D.getLoggerMessage)(e)}`),this.positionUpdate.unsubscribe(this,i),!1))}"
+    },
+    {
+      "name": "reversePosition",
+      "found": true,
+      "ownerLevel": 1,
+      "type": "function",
+      "source": "reversePosition(e){if(l(e),this._makeSureBrokerIsConnected(),this.config.supportMultiposition&&!this.config.supportNativeReversePosition)throw new Error(\"Cannot reverse position on multiposition account\");let t;const i=new Promise(async(i,r)=>{try{const r=await this._positionCopyById(e);t=e=>{void 0!==r&&e.symbol===r.symbol&&e.side!==r.side&&(this.positionUpdate.unsubscribe(this,t),i(!0))},this.positionUpdate.subscribe(this,t),await this._reversePosition(e)}catch(e){r(e)}});return(0,T.makeTimeLimited)(i,3e4,\"Position reversing timeout\").catch(e=>(this._brokerLogger.logError(`${ne}: ${(0,D.getLoggerMessage)(e)}`),this.positionUpdate.unsubscribe(this,t),!1))}"
+    },
+    {
+      "name": "_closePosition",
+      "found": true,
+      "ownerLevel": 1,
+      "type": "function",
+      "source": "async _closePosition(e,t){const r=(0,C.ensureDefined)(await this.positionById(e));if(!(0,A.checkIsExistingPosition)(r)){const e=m.t(null,void 0,i(715842));throw this._host.showNotification(oe,e,0),new Error(e)}if(!(void 0===t||t<=Math.abs(r.qty))){const e=m.t(null,void 0,i(365389));throw this._host.showNotification(oe,e,0),new Error(e)}{const i=n(null!=t?t:Math.abs(r.qty),r);if(this.config.supportClosePosition&&this._brokerConnection.closePosition){if(!await this.processErrors(this._brokerConnection.closePosition(e,t),!0,oe,()=>(0,C.ensureNotNull)(this._tradingStat).trackOrderPlaced(i)))throw new Error(oe)}else if(!await this.processErrors(this._brokerConnection.placeOrder(i),!0,oe,()=>(0,C.ensureNotNull)(this._tradingStat).trackOrderPlaced(i)))throw new Error(oe)}}"
+    },
+    {
+      "name": "_reversePosition",
+      "found": true,
+      "ownerLevel": 1,
+      "type": "function",
+      "source": "async _reversePosition(e){const t=(0,C.ensureDefined)(await this.positionById(e));if(0===t.qty){const e=m.t(null,void 0,i(726500));throw this._host.showNotification(ne,e,0),new Error(e)}this.config.supportNativeReversePosition&&this._brokerConnection.reversePosition?await this.processErrors(this._brokerConnection.reversePosition(e),!0,ne):await this.processErrors(this._placeReversePositionOrder(t),!0,ne,()=>(0,C.ensureNotNull)(this._tradingStat).trackOrderPlaced())}"
+    },
+    {
+      "name": "_placeReversePositionOrder",
+      "found": true,
+      "ownerLevel": 1,
+      "type": "function",
+      "source": "_placeReversePositionOrder(e){const t=n(2*e.qty,e);return this._placeOrder(t)}"
+    },
+    {
+      "name": "positionById",
+      "found": true,
+      "ownerLevel": 1,
+      "type": "function",
+      "source": "positionById(e){return this._brokerConnection.positionById?this._brokerConnection.positionById(e):this.positions().then(t=>t.find(t=>t.id===e))}"
+    },
+    {
+      "name": "positions",
+      "found": true,
+      "ownerLevel": 1,
+      "type": "function",
+      "source": "positions(e){return this.config.supportPositions?(this._makeSureBrokerIsConnected(),this._positions().then(t=>t.filter(t=>void 0===e||t.symbol===e))):Promise.resolve([])}"
+    },
+    {
+      "name": "_positions",
+      "found": true,
+      "ownerLevel": 1,
+      "type": "function",
+      "source": "_positions(){return this._positionsCache?this._positionsCache.getObjects():Promise.resolve([])}"
+    },
+    {
+      "name": "_makeSureBrokerIsConnected",
+      "found": true,
+      "ownerLevel": 1,
+      "type": "function",
+      "source": "_makeSureBrokerIsConnected(){(0,C.assert)(1===this.connectionStatus(),\"Broker is not connected\")}"
+    }
+  ],
+  "brokerConnection": {
+    "found": true,
+    "methodCount": 27,
+    "propertyCount": 6,
+    "namedMethods": {
+      "closePosition": {
+        "found": false
+      },
+      "reversePosition": {
+        "found": true,
+        "ownerLevel": 1,
+        "type": "function",
+        "source": "async[w(1939,\"83UK\")+w(1495,\"fvAC\")](t){const r=k,o=w;this[o(3256,\"kcA1\")][r(2296)](et[o(4229,\"YYPc\")+o(4447,\"kcA1\")],t)}"
+      },
+      "placeOrder": {
+        "found": false
+      },
+      "orders": {
+        "found": true,
+        "ownerLevel": 1,
+        "type": "function",
+        "source": "async[w(2251,\"p&(x\")](){return this[w(176,\"p&(x\")]}"
+      },
+      "positions": {
+        "found": true,
+        "ownerLevel": 1,
+        "type": "function",
+        "source": "async[k(1764)](){const t=k;return Promise[w(2312,\"phWK\")](this[t(5426)])}"
+      }
+    },
+    "methods": [
+      {
+        "path": "own.subscribeRealtime",
+        "functionName": "",
+        "argumentCount": 1,
+        "sourceLength": 62,
+        "source": "i=>{e[i]=t.realtimeUpdate.bind(t),s.subscribeRealtime(i,e[i])}"
+      },
+      {
+        "path": "own.unsubscribeRealtime",
+        "functionName": "",
+        "argumentCount": 1,
+        "sourceLength": 46,
+        "source": "t=>{s.unsubscribeRealtime(t,e[t]),delete e[t]}"
+      },
+      {
+        "path": "own.subscribeDOM",
+        "functionName": "",
+        "argumentCount": 1,
+        "sourceLength": 30,
+        "source": "e=>{this._fakeSubscribeDOM(e)}"
+      },
+      {
+        "path": "own.unsubscribeDOM",
+        "functionName": "",
+        "argumentCount": 1,
+        "sourceLength": 32,
+        "source": "e=>{this._fakeUnsubscribeDOM(e)}"
+      },
+      {
+        "path": "prototype1.constructor",
+        "functionName": "aF",
+        "argumentCount": 7,
+        "sourceLength": 2200,
+        "source": "class aF{constructor(t,r,o,n,i,l,s){const d=w,u=k;this[u(5426)]=[],this[u(259)]=[],this[d(1874,\"arIE\")+\"g\"]=l,this[u(4871)]=r,this[d(1954,\"wCo4\")]=s,this[u(1899)](et[u(1790)+d(183,\"Tyar\")],c=>{const a=d,p=u;if(t[p(1790)+p(4149)](c),s[p(4460)]&&console[a(5072,\"CiQI\")](p(1790)+a(5525,\"Tfof\"),c),c[a(5006,\"W]Rd\")]===zs[a(706,\"P0pz\")]){const f=this[a(1361,\"EoVv\")][a(4812,\"J4o(\")](v=>v.id===c.id);if(f[p(1049)]){const{id:v}=f[0];r[a(724,\"%sAI\")](p(4527)+\"e\",{id:p(1673)+v,status:1}),this[p(259)][p(4182)](g=>g[p(2880)]===2&&g[a(1312,\"th7g\")]===v)[p(3395)](g=>{const y=p;r[y(2296)](y(4527)+\"e\",{id:g.id,status:1})})}}o[p(1649)]=o[a(410,\"fvAC\")][a(4812,\"J4o(\")](f=>f.id!==c.id&&f[p(1216)]!==zs[a(3890,\"rbNu\")]),c[p(1216)]!==zs[a(707,\"W4QN\")]&&o[a(3978,\"phWK\")][p(3543)](c),this[p(5426)]=o[p(1649)]}),this[d(3228,\"W4QN\")](et[d(4599,\"J4o(\")+\"e\"],c=>{const a=u,p=d,f=g=>{const y=cr,M=vr;s[M(2912,\"Lx5g\")]&&console[y(3473)](y(4527)+\"e\",g||c),t[M(2321,\"E8df\")+\"e\"](g||c),this[M(5470,\"P0pz\")]=n[M(2471,\"qK)]\")]},v=n[p(4122,\"T8GW\")][p(4812,\"J4o(\")](g=>g.id===c.id&&c[p(4817,\"JzFR\")]===zs[p(4398,\"@c^K\")]);if(v[a(1049)]){v[p(2918,\"oi]q\")](g=>{const y=p,M=a;n[M(1649)]=n[y(4816,\"wCo4\")][y(3915,\"T8GW\")](S=>S.id!==g.id),f({...g,...c})});return}n[p(3850,\"JzFR\")]=n[a(1649)][p(5213,\"arIE\")](g=>g.id!==c.id&&g[p(2125,\"7&Au\")]!==zs[a(5229)]),n[p(2816,\"un3p\")][p(907,\"ABC8\")](c),c[a(2200)]===Jo[a(1901)]&&i[a(1649)][p(4173,\"Tyar\")+a(2589)]&&f(),c[p(2348,\"qK)]\")]===Jo[p(2235,\"14xW\")]&&i[p(969,\"TM]V\")][a(2485)+a(2594)+\"ne\"]&&f(),c[p(1143,\"7&Au\")]===Jo[a(623)+\"l\"]&&i[p(3885,\"@c^K\")][a(1470)+p(3447,\"hAKa\")]&&f(),c[a(2200)]===Jo[p(5555,\"Tyar\")]&&i[p(3569,\"xivW\")][p(1788,\"ySJ%\")+p(4186,\"E8df\")]&&f(),c[p(180,\"kcA1\")]===Jo[p(3039,\"hAKa\")]&&i[p(3393,\"HQG8\")][p(3996,\"83UK\")+p(4054,\"arIE\")]&&f(),c[a(2200)]===Jo[a(1551)]&&i[a(1649)][p(4048,\"E8df\")+a(687)]&&f(),c[a(2200)]===Jo[a(5486)]&&i[p(3393,\"HQG8\")][p(4574,\"W4QN\")+p(1925,\"arIE\")]&&f(),c[p(1500,\"rbNu\")]===Jo[p(734,\"W]Rd\")]&&f()}),this[d(1951,\"oi]q\")](et[d(1357,\"8[pN\")],c=>{const a=d,p=u;t[p(1943)](c[a(2405,\"N!o7\")],c.pl,c[p(1235)+\"p\"],c[p(4948)],c[p(5240)]),s[a(4421,\"8[pN\")]&&console[p(3473)](p(1943),c);const f=o[a(2005,\"W]Rd\")][p(4917)](v=>v.id===c[p(681)]);f&&(f"
+      },
+      {
+        "path": "prototype1.chartContextMenuActions",
+        "functionName": "chartContextMenuActions",
+        "argumentCount": 0,
+        "sourceLength": 56,
+        "source": "async[w(5269,\"ahu)\")+w(1569,\"9!Cm\")+k(2509)](){return[]}"
+      },
+      {
+        "path": "prototype1.connectionStatus",
+        "functionName": "connectionStatus",
+        "argumentCount": 0,
+        "sourceLength": 29,
+        "source": "[k(3329)+k(5728)](){return 1}"
+      },
+      {
+        "path": "prototype1.accountManagerInfo",
+        "functionName": "accountManagerInfo",
+        "argumentCount": 0,
+        "sourceLength": 28,
+        "source": "[k(911)+k(2812)](){return{}}"
+      },
+      {
+        "path": "prototype1.orders",
+        "functionName": "orders",
+        "argumentCount": 0,
+        "sourceLength": 51,
+        "source": "async[w(2251,\"p&(x\")](){return this[w(176,\"p&(x\")]}"
+      },
+      {
+        "path": "prototype1.positions",
+        "functionName": "positions",
+        "argumentCount": 0,
+        "sourceLength": 73,
+        "source": "async[k(1764)](){const t=k;return Promise[w(2312,\"phWK\")](this[t(5426)])}"
+      },
+      {
+        "path": "prototype1.reversePosition",
+        "functionName": "reversePosition",
+        "argumentCount": 1,
+        "sourceLength": 121,
+        "source": "async[w(1939,\"83UK\")+w(1495,\"fvAC\")](t){const r=k,o=w;this[o(3256,\"kcA1\")][r(2296)](et[o(4229,\"YYPc\")+o(4447,\"kcA1\")],t)}"
+      },
+      {
+        "path": "prototype1.symbolInfo",
+        "functionName": "symbolInfo",
+        "argumentCount": 1,
+        "sourceLength": 287,
+        "source": "async[k(1683)](t){const r=k,o=w,n=this[o(4847,\"ySJ%\")+\"g\"][r(2119)+\"o\"][Er(t)],{pricePrecision:i}=t&&n?n:{pricePrecision:jd};return Promise[o(4968,\"qK)]\")]({description:\"\",minTick:1/Math[o(1730,\"**au\")](10,i),pipSize:1,pipValue:1,qty:{default:1,min:1,max:Number[o(924,\"hAKa\")],step:1}})}"
+      },
+      {
+        "path": "prototype1.isTradable",
+        "functionName": "isTradable",
+        "argumentCount": 1,
+        "sourceLength": 33,
+        "source": "async[w(351,\"wCo4\")](t){return!0}"
+      },
+      {
+        "path": "prototype1.accountsMetainfo",
+        "functionName": "accountsMetainfo",
+        "argumentCount": 0,
+        "sourceLength": 59,
+        "source": "async[k(4647)+k(5266)](){return[{id:\"1\",currency:k(1772)}]}"
+      },
+      {
+        "path": "prototype1.currentAccount",
+        "functionName": "currentAccount",
+        "argumentCount": 0,
+        "sourceLength": 36,
+        "source": "[k(2136)+w(985,\"TM]V\")](){return\"1\"}"
+      },
+      {
+        "path": "prototype1._subscribe",
+        "functionName": "_subscribe",
+        "argumentCount": 2,
+        "sourceLength": 300,
+        "source": "[w(4117,\"CiQI\")](t,r){const o=k,n=w;!this[n(2450,\"W4QN\")][n(2987,\"phWK\")+\"ap\"]&&(this[n(3997,\"arIE\")][n(4276,\"9!Cm\")+\"ap\"]={}),this[o(5723)][o(423)+\"ap\"][t]&&this[o(4871)][o(1932)+\"e\"](t,this[o(5723)][n(4713,\"kcA1\")+\"ap\"][t]),this[n(4113,\"%lb@\")][n(1412,\"s0OD\")](t,r),this[o(5723)][o(423)+\"ap\"][t]=r}"
+      },
+      {
+        "path": "prototype2.constructor",
+        "functionName": "Object",
+        "argumentCount": 1,
+        "sourceLength": 0,
+        "source": null
+      },
+      {
+        "path": "prototype2.__defineGetter__",
+        "functionName": "__defineGetter__",
+        "argumentCount": 2,
+        "sourceLength": 0,
+        "source": null
+      },
+      {
+        "path": "prototype2.__defineSetter__",
+        "functionName": "__defineSetter__",
+        "argumentCount": 2,
+        "sourceLength": 0,
+        "source": null
+      },
+      {
+        "path": "prototype2.hasOwnProperty",
+        "functionName": "hasOwnProperty",
+        "argumentCount": 1,
+        "sourceLength": 0,
+        "source": null
+      },
+      {
+        "path": "prototype2.__lookupGetter__",
+        "functionName": "__lookupGetter__",
+        "argumentCount": 1,
+        "sourceLength": 0,
+        "source": null
+      },
+      {
+        "path": "prototype2.__lookupSetter__",
+        "functionName": "__lookupSetter__",
+        "argumentCount": 1,
+        "sourceLength": 0,
+        "source": null
+      },
+      {
+        "path": "prototype2.isPrototypeOf",
+        "functionName": "isPrototypeOf",
+        "argumentCount": 1,
+        "sourceLength": 0,
+        "source": null
+      },
+      {
+        "path": "prototype2.propertyIsEnumerable",
+        "functionName": "propertyIsEnumerable",
+        "argumentCount": 1,
+        "sourceLength": 0,
+        "source": null
+      },
+      {
+        "path": "prototype2.toString",
+        "functionName": "toString",
+        "argumentCount": 0,
+        "sourceLength": 0,
+        "source": null
+      },
+      {
+        "path": "prototype2.valueOf",
+        "functionName": "valueOf",
+        "argumentCount": 0,
+        "sourceLength": 0,
+        "source": null
+      },
+      {
+        "path": "prototype2.toLocaleString",
+        "functionName": "toLocaleString",
+        "argumentCount": 0,
+        "sourceLength": 0,
+        "source": null
+      }
+    ],
+    "properties": [
+      {
+        "path": "own._positions",
+        "type": "array"
+      },
+      {
+        "path": "own._orders",
+        "type": "array"
+      },
+      {
+        "path": "own._baseConfig",
+        "type": "object"
+      },
+      {
+        "path": "own._eventBus",
+        "type": "object"
+      },
+      {
+        "path": "own._tvWidget",
+        "type": "object"
+      },
+      {
+        "path": "prototype2.__proto__",
+        "type": "accessor",
+        "getterInvoked": false
+      }
+    ]
+  },
+  "closeReverseImplementation": {
+    "closeMethod": {
+      "found": true,
+      "ownerLevel": 1,
+      "type": "function",
+      "source": "async _closePosition(e,t){const r=(0,C.ensureDefined)(await this.positionById(e));if(!(0,A.checkIsExistingPosition)(r)){const e=m.t(null,void 0,i(715842));throw this._host.showNotification(oe,e,0),new Error(e)}if(!(void 0===t||t<=Math.abs(r.qty))){const e=m.t(null,void 0,i(365389));throw this._host.showNotification(oe,e,0),new Error(e)}{const i=n(null!=t?t:Math.abs(r.qty),r);if(this.config.supportClosePosition&&this._brokerConnection.closePosition){if(!await this.processErrors(this._brokerConnection.closePosition(e,t),!0,oe,()=>(0,C.ensureNotNull)(this._tradingStat).trackOrderPlaced(i)))throw new Error(oe)}else if(!await this.processErrors(this._brokerConnection.placeOrder(i),!0,oe,()=>(0,C.ensureNotNull)(this._tradingStat).trackOrderPlaced(i)))throw new Error(oe)}}"
+    },
+    "reverseMethod": {
+      "found": true,
+      "ownerLevel": 1,
+      "type": "function",
+      "source": "async _reversePosition(e){const t=(0,C.ensureDefined)(await this.positionById(e));if(0===t.qty){const e=m.t(null,void 0,i(726500));throw this._host.showNotification(ne,e,0),new Error(e)}this.config.supportNativeReversePosition&&this._brokerConnection.reversePosition?await this.processErrors(this._brokerConnection.reversePosition(e),!0,ne):await this.processErrors(this._placeReversePositionOrder(t),!0,ne,()=>(0,C.ensureNotNull)(this._tradingStat).trackOrderPlaced())}"
+    },
+    "reverseFallback": {
+      "found": true,
+      "ownerLevel": 1,
+      "type": "function",
+      "source": "_placeReversePositionOrder(e){const t=n(2*e.qty,e);return this._placeOrder(t)}"
+    },
+    "brokerHasNativeClose": false,
+    "brokerHasNativeReverse": true,
+    "brokerHasNamedPlaceOrder": false,
+    "explanation": "These are structural findings only. No order function was called."
+  },
+  "currentPosition": {
+    "sourceVerified": true,
+    "count": 1,
+    "items": [
+      {
+        "index": 0,
+        "positionIdPresent": true,
+        "positionIdType": "string",
+        "positionIdHidden": true,
+        "symbol": "XAUTUSDT",
+        "side": -1,
+        "quantityPresent": true,
+        "quantityType": "number",
+        "quantityHidden": true,
+        "signedQuantityPresent": true,
+        "signedQuantitySign": "negative",
+        "supportClose": true,
+        "supportReverse": true,
+        "supportBrackets": true
+      }
+    ]
+  },
+  "warnings": [],
+  "objectDiscovery": {
+    "bitunixTv": true,
+    "tvWidget": true,
+    "host": true,
+    "adapter": true,
+    "brokerConnection": true,
+    "positionService": true,
+    "brokerMetainfo": true,
+    "configFlags": true
+  },
+  "completedAt": "2026-11-15T07:35:16.881Z",
+  "summary": {
+    "closeCapability": true,
+    "nativeReverseCapability": true,
+    "nativeCloseMethod": false,
+    "namedPlaceOrderMethod": false,
+    "reverseMethod": true,
+    "localPositionCount": 1,
+    "connectionMethodsInspected": 27
+  }
+}
