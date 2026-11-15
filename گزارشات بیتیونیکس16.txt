@@ -1,0 +1,1542 @@
+{
+  "reportName": "BITUNIX_CLOSE_REVERSE_DEEP_AUDIT",
+  "version": "2.0",
+  "startedAt": "2026-11-15T07:21:19.102Z",
+  "completedAt": "2026-11-15T07:21:19.108Z",
+  "safety": {
+    "readOnly": true,
+    "functionsInvoked": 0,
+    "tradingMethodsInvoked": 0,
+    "exchangeButtonsClicked": 0,
+    "formsSubmitted": 0,
+    "networkRequestsMade": 0,
+    "fetchUsed": false,
+    "xhrUsed": false,
+    "websocketRead": false,
+    "privateDataRead": false,
+    "inputValuesRead": false,
+    "storageRead": false,
+    "credentialsRead": false
+  },
+  "summary": {
+    "accessibleFrames": 4,
+    "discoveredEventListeners": 7,
+    "closeEventFound": true,
+    "reverseEventFound": true,
+    "marketCloseEventFound": true,
+    "positionServiceFound": true,
+    "brokerConnectionFound": true,
+    "webpackModulesFound": 4
+  },
+  "frames": [
+    {
+      "path": "top",
+      "url": "https://www.bitunix.com/contract-trade/XAUTUSDT",
+      "title": "3,818.24 | XAUTUSDT Futures Exchange - Crypto Futures | Bitunix",
+      "hasBitunixTv": true,
+      "hasTradingViewApi": false,
+      "hasChartWidget": false,
+      "hasWebpack": false
+    },
+    {
+      "path": "top > iframe[0]",
+      "url": "about:blank",
+      "title": "",
+      "hasBitunixTv": false,
+      "hasTradingViewApi": false,
+      "hasChartWidget": false,
+      "hasWebpack": false
+    },
+    {
+      "path": "top > iframe[1]",
+      "url": "about:blank",
+      "title": "Button to launch messaging window",
+      "hasBitunixTv": false,
+      "hasTradingViewApi": false,
+      "hasChartWidget": false,
+      "hasWebpack": false
+    },
+    {
+      "path": "top > iframe[2]",
+      "url": "blob:https://www.bitunix.com/5785e274-c2ac-4ae1-b883-4f173e6cf073",
+      "title": "",
+      "hasBitunixTv": false,
+      "hasTradingViewApi": true,
+      "hasChartWidget": true,
+      "hasWebpack": true
+    }
+  ],
+  "eventBus": {
+    "found": true,
+    "bus": {
+      "path": "window.bitunixTv.eventBus",
+      "type": "object",
+      "keys": [
+        "events",
+        "queue"
+      ],
+      "methods": []
+    },
+    "selectedEvents": {
+      "closePosition": {
+        "eventName": "closePosition",
+        "type": "array",
+        "listeners": [
+          {
+            "path": "events.closePosition[0]",
+            "name": "(anonymous)",
+            "sourceLength": 72,
+            "source": "async({position:t,resolve:r,reject:o})=>{bn(t.id)||b_e(t,e,{resolve:r})}"
+          },
+          {
+            "path": "events.closePosition[1]",
+            "name": "le",
+            "sourceLength": 182,
+            "source": "ie=>{var ee,re;const fe=String(((ee=ie?.position)==null?void 0:ee.id)??\"\");fe.startsWith(\"replay_pos_\")&&(aU(fe.endsWith(\"short\")?\"short\":\"long\"),(re=ie.resolve)==null||re.call(ie))}"
+          }
+        ],
+        "found": true
+      },
+      "reversePosition": {
+        "eventName": "reversePosition",
+        "type": "array",
+        "listeners": [
+          {
+            "path": "events.reversePosition[0]",
+            "name": "(anonymous)",
+            "sourceLength": 500,
+            "source": "({position:r,resolve:o})=>{const n=r.positionId,i=ro(n);if(_t(\"futures_reverse_position_entry_click\",{futures_from:\"kline_position\",symbol:i?.symbol,futures_need_confirm:String(t?.()??!0)},{tradeType:!0,market:!0,klineFullscreen:!0}),$e(\"futures_reverse_position\",{kline_id:n}),!i)throw _1(n),o(),new Error(\"Position information that can be reversed is not found\");e(\"reversePosition\",i,l=>{o(),l&&($e(\"futures_reverse_position_success\",{kline_id:n}),e(\"tips\",_(\"notification.success\"),\"success\"))})}"
+          }
+        ],
+        "found": true
+      },
+      "marketClose": {
+        "eventName": "marketClose",
+        "type": "array",
+        "listeners": [
+          {
+            "path": "events.marketClose[0]",
+            "name": "(anonymous)",
+            "sourceLength": 29,
+            "source": "()=>i1({orderQuickMarket:!1})"
+          },
+          {
+            "path": "events.marketClose[1]",
+            "name": "(anonymous)",
+            "sourceLength": 28,
+            "source": "()=>l(\"orderQuickMarket\",!1)"
+          }
+        ],
+        "found": true
+      },
+      "positionUpdate": {
+        "eventName": "positionUpdate",
+        "type": "array",
+        "listeners": [
+          {
+            "path": "events.positionUpdate[0]",
+            "name": "(anonymous)",
+            "sourceLength": 604,
+            "source": "c=>{const a=d,p=u;if(t[p(1790)+p(4149)](c),s[p(4460)]&&console[a(5072,\"CiQI\")](p(1790)+a(5525,\"Tfof\"),c),c[a(5006,\"W]Rd\")]===zs[a(706,\"P0pz\")]){const f=this[a(1361,\"EoVv\")][a(4812,\"J4o(\")](v=>v.id===c.id);if(f[p(1049)]){const{id:v}=f[0];r[a(724,\"%sAI\")](p(4527)+\"e\",{id:p(1673)+v,status:1}),this[p(259)][p(4182)](g=>g[p(2880)]===2&&g[a(1312,\"th7g\")]===v)[p(3395)](g=>{const y=p;r[y(2296)](y(4527)+\"e\",{id:g.id,status:1})})}}o[p(1649)]=o[a(410,\"fvAC\")][a(4812,\"J4o(\")](f=>f.id!==c.id&&f[p(1216)]!==zs[a(3890,\"rbNu\")]),c[p(1216)]!==zs[a(707,\"W4QN\")]&&o[a(3978,\"phWK\")][p(3543)](c),this[p(5426)]=o[p(1649)]}"
+          }
+        ],
+        "found": true
+      },
+      "positionOrderSelected": {
+        "eventName": "positionOrderSelected",
+        "type": "array",
+        "listeners": [
+          {
+            "path": "events.positionOrderSelected[0]",
+            "name": "(anonymous)",
+            "sourceLength": 31,
+            "source": "o=>t(\"positionOrderSelected\",o)"
+          }
+        ],
+        "found": true
+      }
+    }
+  },
+  "dialogMethods": {
+    "bridgeFound": true,
+    "brokerConfigFound": true,
+    "customUIFound": true,
+    "methods": [
+      {
+        "path": "tradingview_0f462.brokerConfig.customUI.showClosePositionDialog",
+        "name": "showClosePositionDialog",
+        "sourceLength": 145,
+        "source": "o=>{const n=r,i=t,l=nd();return e[i(559,\"s0OD\")](et[n(4523)+i(4688,\"qK)]\")],{position:o,resolve:l[i(5724,\"#eY9\")],reject:l[n(3408)]}),l[n(5108)]}"
+      },
+      {
+        "path": "tradingview_0f462.brokerConfig.customUI.showReversePositionDialog",
+        "name": "showReversePositionDialog",
+        "sourceLength": 121,
+        "source": "o=>{const n=t,i=r,l=nd();e[i(2296)](et[i(1296)+i(2343)],{position:o,resolve:l[n(5222,\"s0OD\")],reject:l[n(1884,\"xu8q\")]})}"
+      },
+      {
+        "path": "tradingview_0f462.brokerConfig.customUI.showPositionDialog",
+        "name": "showPositionDialog",
+        "sourceLength": 302,
+        "source": "(o,n)=>{const i=t,l=r,s=nd();return!n[l(3201)]&&!n[i(5378,\"Lx5g\")]?e[i(4868,\"xivW\")](et[i(2600,\"**au\")+i(2018,\"7&Au\")],{position:o,resolve:s[i(5031,\"fvAC\")],reject:s[l(3408)]}):e[i(4790,\"YYPc\")](et[l(2054)+l(2429)],{position:o,brackets:n,resolve:s[i(1707,\"Tyar\")],reject:s[i(3550,\"P0pz\")]}),s[l(5108)]}"
+      }
+    ]
+  },
+  "brokerMethods": {
+    "hostFound": true,
+    "adapterFound": true,
+    "brokerConnectionFound": true,
+    "hostMethods": [
+      {
+        "path": "bitunixTv.tvWidget.host.orderPartialUpdate",
+        "name": "(anonymous)",
+        "sourceLength": 48,
+        "source": "(e,t)=>{this._adapter.onOrderPartialUpdate(e,t)}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host.positionPartialUpdate",
+        "name": "(anonymous)",
+        "sourceLength": 51,
+        "source": "(e,t)=>{this._adapter.onPositionPartialUpdate(e,t)}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host.individualPositionPartialUpdate",
+        "name": "(anonymous)",
+        "sourceLength": 61,
+        "source": "(e,t)=>{this._adapter.onIndividualPositionPartialUpdate(e,t)}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host.[[Prototype]].setBrokerConnectionAdapter",
+        "name": "setBrokerConnectionAdapter",
+        "sourceLength": 46,
+        "source": "setBrokerConnectionAdapter(e){this._adapter=e}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host.[[Prototype]].showOrderDialog",
+        "name": "showOrderDialog",
+        "sourceLength": 117,
+        "source": "showOrderDialog(e,t){return(0,C.ensureNotNull)(this._trading).orderViewController().showOrderView({order:e,focus:t})}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host.[[Prototype]].showPositionBracketsDialog",
+        "name": "showPositionBracketsDialog",
+        "sourceLength": 121,
+        "source": "showPositionBracketsDialog(e,t,i){return(0,C.ensureNotNull)(this._trading).orderViewController().showPositionView(e,t,i)}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host.[[Prototype]].showCancelOrderDialog",
+        "name": "showCancelOrderDialog",
+        "sourceLength": 153,
+        "source": "showCancelOrderDialog(e,t){return ye.ConfirmOrderCancelDialog.get().open(e).then(e=>{e&&this._adapter.processErrors(t(),!0,m.t(null,void 0,i(915926)))})}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host.[[Prototype]].showCancelMultipleOrdersDialog",
+        "name": "showCancelMultipleOrdersDialog",
+        "sourceLength": 174,
+        "source": "showCancelMultipleOrdersDialog(e,t,r,s){return ye.ConfirmOrderCancelDialog.get().multiple(e,t,r).then(e=>{e&&this._adapter.processErrors(s(),!0,m.t(null,void 0,i(305140)))})}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host.[[Prototype]].showReversePositionDialog",
+        "name": "showReversePositionDialog",
+        "sourceLength": 171,
+        "source": "showReversePositionDialog(e,t){return(0,ke.reversePositionDialog)({positionId:e,showErrorNotification:(0,C.ensureNotNull)(this._trading).showErrorNotification,handler:t})}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host.[[Prototype]].selectBroker",
+        "name": "selectBroker",
+        "sourceLength": 70,
+        "source": "selectBroker(){null!==this._trading&&this._trading.selectBroker(null)}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host.[[Prototype]].silentOrdersPlacement",
+        "name": "silentOrdersPlacement",
+        "sourceLength": 82,
+        "source": "silentOrdersPlacement(){return(0,C.ensureNotNull)(this._trading).noConfirmEnabled}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host.[[Prototype]].orderPanelVisibility",
+        "name": "orderPanelVisibility",
+        "sourceLength": 93,
+        "source": "orderPanelVisibility(){return null!==this._trading?this._trading.orderPanelVisibility():null}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host.[[Prototype]].orderUpdate",
+        "name": "orderUpdate",
+        "sourceLength": 46,
+        "source": "orderUpdate(e){this._adapter.onOrderUpdate(e)}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host.[[Prototype]].positionUpdate",
+        "name": "positionUpdate",
+        "sourceLength": 56,
+        "source": "positionUpdate(e,t){this._adapter.onPositionUpdate(e,t)}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host.[[Prototype]].individualPositionUpdate",
+        "name": "individualPositionUpdate",
+        "sourceLength": 76,
+        "source": "individualPositionUpdate(e,t){this._adapter.onIndividualPositionUpdate(e,t)}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host.[[Prototype]].tradePLUpdate",
+        "name": "tradePLUpdate",
+        "sourceLength": 65,
+        "source": "tradePLUpdate(e,t){this._adapter.fireSubscription(\"TradePL\",e,t)}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host.[[Prototype]].positionEstLiqPriceUpdate",
+        "name": "positionEstLiqPriceUpdate",
+        "sourceLength": 89,
+        "source": "positionEstLiqPriceUpdate(e,t){this._adapter.fireSubscription(\"PositionEstLiqPrice\",e,t)}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host.[[Prototype]].individualPositionPLUpdate",
+        "name": "individualPositionPLUpdate",
+        "sourceLength": 91,
+        "source": "individualPositionPLUpdate(e,t){this._adapter.fireSubscription(\"IndividualPositionPL\",e,t)}"
+      }
+    ],
+    "adapterMethods": [
+      {
+        "path": "bitunixTv.tvWidget.host._adapter.[[Prototype]].onOrderUpdate",
+        "name": "onOrderUpdate",
+        "sourceLength": 45,
+        "source": "onOrderUpdate(e){this._ordersCache.update(e)}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._adapter.[[Prototype]].onOrderPartialUpdate",
+        "name": "onOrderPartialUpdate",
+        "sourceLength": 63,
+        "source": "onOrderPartialUpdate(e,t){this._ordersCache.partialUpdate(e,t)}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._adapter.[[Prototype]].onPositionUpdate",
+        "name": "onPositionUpdate",
+        "sourceLength": 213,
+        "source": "onPositionUpdate(e,t){if((0,C.assert)(!!this.config.supportPositions,\"Broker doesn`t support positions\"),0===e.qty){const t=this._lastFireResult[e.id];t&&delete t.PL}(0,C.ensure)(this._positionsCache).update(e,t)}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._adapter.[[Prototype]].onPositionPartialUpdate",
+        "name": "onPositionPartialUpdate",
+        "sourceLength": 163,
+        "source": "onPositionPartialUpdate(e,t){(0,C.assert)(!!this.config.supportPositions,\"Broker doesn`t support positions\"),(0,C.ensure)(this._positionsCache).partialUpdate(e,t)}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._adapter.[[Prototype]].onIndividualPositionUpdate",
+        "name": "onIndividualPositionUpdate",
+        "sourceLength": 272,
+        "source": "onIndividualPositionUpdate(e,t){if((0,C.assert)(!!this.config.supportPositionNetting,\"Broker doesn`t support individual positions\"),0===e.qty){const t=this._lastFireResult[e.symbol];t&&delete t.IndividualPositionPL}(0,C.ensure)(this._individualPositionsCache).update(e,t)}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._adapter.[[Prototype]].onIndividualPositionPartialUpdate",
+        "name": "onIndividualPositionPartialUpdate",
+        "sourceLength": 103,
+        "source": "onIndividualPositionPartialUpdate(e,t){(0,C.ensure)(this._individualPositionsCache).partialUpdate(e,t)}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._adapter.[[Prototype]].getOrderDialogOptions",
+        "name": "getOrderDialogOptions",
+        "sourceLength": 281,
+        "source": "async getOrderDialogOptions(e){if(void 0!==this._brokerConnection.getOrderDialogOptions)try{return await this._brokerConnection.getOrderDialogOptions(e)}catch(e){return void this._brokerLogger.logError(`Failed to fetch options for the order dialog: ${(0,D.getLoggerMessage)(e)}`)}}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._adapter.[[Prototype]].getPositionDialogOptions",
+        "name": "getPositionDialogOptions",
+        "sourceLength": 148,
+        "source": "getPositionDialogOptions(){return void 0!==this._brokerConnection.getPositionDialogOptions?this._brokerConnection.getPositionDialogOptions():void 0}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._adapter.[[Prototype]].brokerPlan",
+        "name": "brokerPlan",
+        "sourceLength": 37,
+        "source": "brokerPlan(){return this._brokerPlan}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._adapter.[[Prototype]].positions",
+        "name": "positions",
+        "sourceLength": 170,
+        "source": "positions(e){return this.config.supportPositions?(this._makeSureBrokerIsConnected(),this._positions().then(t=>t.filter(t=>void 0===e||t.symbol===e))):Promise.resolve([])}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._adapter.[[Prototype]].individualPositions",
+        "name": "individualPositions",
+        "sourceLength": 236,
+        "source": "individualPositions(e){return this._makeSureBrokerIsConnected(),(0,C.assert)(!!this.config.supportPositionNetting,\"Broker doesn`t support individual positions\"),this._individualPositions().then(t=>t.filter(t=>void 0===e||t.symbol===e))}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._adapter.[[Prototype]].positionById",
+        "name": "positionById",
+        "sourceLength": 144,
+        "source": "positionById(e){return this._brokerConnection.positionById?this._brokerConnection.positionById(e):this.positions().then(t=>t.find(t=>t.id===e))}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._adapter.[[Prototype]].individualPositionById",
+        "name": "individualPositionById",
+        "sourceLength": 185,
+        "source": "individualPositionById(e){return(0,C.assert)(!!this.config.supportPositionNetting,\"Broker doesn`t support individual positions\"),this.individualPositions().then(t=>t.find(t=>t.id===e))}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._adapter.[[Prototype]].orders",
+        "name": "orders",
+        "sourceLength": 113,
+        "source": "orders(e){return this._makeSureBrokerIsConnected(),this._orders().then(t=>t.filter(t=>void 0===e||t.symbol===e))}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._adapter.[[Prototype]].ordersHistory",
+        "name": "ordersHistory",
+        "sourceLength": 187,
+        "source": "ordersHistory(){return this._makeSureBrokerIsConnected(),this.config.supportOrdersHistory&&this._brokerConnection.ordersHistory?this._brokerConnection.ordersHistory():Promise.resolve([])}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._adapter.[[Prototype]].orderById",
+        "name": "orderById",
+        "sourceLength": 115,
+        "source": "orderById(e){return this._makeSureBrokerIsConnected(),this._brokerConnection.orders().then(t=>t.find(t=>t.id===e))}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._adapter.[[Prototype]].createInitialPreOrder",
+        "name": "createInitialPreOrder",
+        "sourceLength": 168,
+        "source": "async createInitialPreOrder(e){const[t,i]=await Promise.all([this.getOrderDialogOptions(e.symbol),this.symbolInfo(e.symbol)]);return this._createInitialPreOrder(e,i,t)}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._adapter.[[Prototype]].createPlaceOrderContext",
+        "name": "createPlaceOrderContext",
+        "sourceLength": 466,
+        "source": "async createPlaceOrderContext(e,t,i=!0){var r;const s=this._placeOrderContextWithMetaInfo;if(void 0!==s&&s.context.data().symbol===e.symbol&&s.isValidationEnabled===i)return await s.context.setData(e,t),s.context;null===(r=this._placeOrderContextWithMetaInfo)||void 0===r||r.context.destroy();const o=await this._createPlaceOrderContext(e,t,i);return s===this._placeOrderContextWithMetaInfo&&(this._placeOrderContextWithMetaInfo={context:o,isValidationEnabled:i}),o}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._adapter.[[Prototype]].createEditOrderContext",
+        "name": "createEditOrderContext",
+        "sourceLength": 367,
+        "source": "async createEditOrderContext(e,t,i=!0){const r=this._editOrderContextWithMetaInfo;if(void 0!==r&&r.context.data().id===e.id&&r.isValidationEnabled===i)return await r.context.setData(e,t),r.context;const s=await this._createEditOrderContext(e,t,i);return r===this._editOrderContextWithMetaInfo&&(this._editOrderContextWithMetaInfo={context:s,isValidationEnabled:i}),s}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._adapter.[[Prototype]].placeOrder",
+        "name": "placeOrder",
+        "sourceLength": 45,
+        "source": "placeOrder(e,t){return this._placeOrder(e,t)}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._adapter.[[Prototype]].previewOrder",
+        "name": "previewOrder",
+        "sourceLength": 45,
+        "source": "previewOrder(e){return this._previewOrder(e)}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._adapter.[[Prototype]].modifyOrder",
+        "name": "modifyOrder",
+        "sourceLength": 47,
+        "source": "modifyOrder(e,t){return this._modifyOrder(e,t)}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._adapter.[[Prototype]].cancelOrder",
+        "name": "cancelOrder",
+        "sourceLength": 149,
+        "source": "cancelOrder(e){return l(e),this._makeSureBrokerIsConnected(),this.processErrors(this._brokerConnection.cancelOrder(e),!0,m.t(null,void 0,i(915926)))}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._adapter.[[Prototype]].cancelOrders",
+        "name": "cancelOrders",
+        "sourceLength": 154,
+        "source": "cancelOrders(e,t,r){return this._makeSureBrokerIsConnected(),this.processErrors(this._brokerConnection.cancelOrders(e,t,r),!0,m.t(null,void 0,i(305140)))}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._adapter.[[Prototype]].closePosition",
+        "name": "closePosition",
+        "sourceLength": 651,
+        "source": "async closePosition(e,t){let i;l(e),this._makeSureBrokerIsConnected(),(0,C.assert)(void 0===t||!!this.config.supportPartialClosePosition,\"Broker doesn`t support partial position closing\");const r=new Promise(async(r,s)=>{try{const s=await this._positionCopyById(e);i=e=>{void 0!==s&&e.id===s.id&&e.symbol===s.symbol&&e.qty!==s.qty&&(this.positionUpdate.unsubscribe(this,i),r(!0))},this.positionUpdate.subscribe(this,i),await this._closePosition(e,t)}catch(e){s(e)}});return(0,T.makeTimeLimited)(r,3e4,\"Position closing timeout\").catch(e=>(this._brokerLogger.logError(`${oe}: ${(0,D.getLoggerMessage)(e)}`),this.positionUpdate.unsubscribe(this,i),!1))}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._adapter.[[Prototype]].closeIndividualPosition",
+        "name": "closeIndividualPosition",
+        "sourceLength": 951,
+        "source": "async closeIndividualPosition(e,t){var r;l(e),this._makeSureBrokerIsConnected(),(0,C.assert)(!!this.config.supportPositionNetting,\"Broker doesn`t support individual positions\"),(0,C.assert)(void 0===t||null!==(r=this.config.supportPartialCloseIndividualPosition)&&void 0!==r&&r,\"Broker doesn`t support partial individual position closing\");const s=(0,C.ensureDefined)(await this.individualPositionById(e));if(0===s.qty)return this._host.showNotification(m.t(null,void 0,i(791401)),m.t(null,void 0,i(715842)),0),!1;if(void 0===t||t<=Math.abs(s.qty)){if(this._brokerConnection.closeIndividualPosition){const i=n(null!=t?t:Math.abs(s.qty),s);return this.processErrors(this._brokerConnection.closeIndividualPosition(e,t),!0,oe,()=>(0,C.ensureNotNull)(this._tradingStat).trackOrderPlaced(i))}throw new Error(\"Method closeIndividualPosition is not implemented\")}return this._host.showNotification(m.t(null,void 0,i(791401)),m.t(null,void 0,i(365389)),0),!1}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._adapter.[[Prototype]].reversePosition",
+        "name": "reversePosition",
+        "sourceLength": 665,
+        "source": "reversePosition(e){if(l(e),this._makeSureBrokerIsConnected(),this.config.supportMultiposition&&!this.config.supportNativeReversePosition)throw new Error(\"Cannot reverse position on multiposition account\");let t;const i=new Promise(async(i,r)=>{try{const r=await this._positionCopyById(e);t=e=>{void 0!==r&&e.symbol===r.symbol&&e.side!==r.side&&(this.positionUpdate.unsubscribe(this,t),i(!0))},this.positionUpdate.subscribe(this,t),await this._reversePosition(e)}catch(e){r(e)}});return(0,T.makeTimeLimited)(i,3e4,\"Position reversing timeout\").catch(e=>(this._brokerLogger.logError(`${ne}: ${(0,D.getLoggerMessage)(e)}`),this.positionUpdate.unsubscribe(this,t),!1))}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._adapter.[[Prototype]].editPositionBrackets",
+        "name": "editPositionBrackets",
+        "sourceLength": 283,
+        "source": "editPositionBrackets(e,t,r){if(this._makeSureBrokerIsConnected(),this._brokerConnection.editPositionBrackets)return this.processErrors(this._brokerConnection.editPositionBrackets(e,t,r),!0,m.t(null,void 0,i(140766)));throw new Error(\"Method editPositionBrackets is not implemented\")}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._adapter.[[Prototype]].editIndividualPositionBrackets",
+        "name": "editIndividualPositionBrackets",
+        "sourceLength": 439,
+        "source": "editIndividualPositionBrackets(e,t){if(this._makeSureBrokerIsConnected(),(0,C.assert)(!!this.config.supportIndividualPositionBrackets,\"Broker doesn`t support brackets on individual positions\"),this._brokerConnection.editIndividualPositionBrackets)return this.processErrors(this._brokerConnection.editIndividualPositionBrackets(e,t),!0,m.t(null,void 0,i(140766)));throw new Error(\"Method editIndividualPositionBrackets is not implemented\")}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._adapter.[[Prototype]].subscribePositionEstLiqPrice",
+        "name": "subscribePositionEstLiqPrice",
+        "sourceLength": 117,
+        "source": "subscribePositionEstLiqPrice(e,t){this._makeSureBrokerIsConnected(),this._addSubscription(\"PositionEstLiqPrice\",e,t)}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._adapter.[[Prototype]].subscribeTradePL",
+        "name": "subscribeTradePL",
+        "sourceLength": 100,
+        "source": "subscribeTradePL(e,t){return this._makeSureBrokerIsConnected(),this._addSubscription(\"TradePL\",e,t)}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._adapter.[[Prototype]].subscribeIndividualPositionPL",
+        "name": "subscribeIndividualPositionPL",
+        "sourceLength": 126,
+        "source": "subscribeIndividualPositionPL(e,t){return this._makeSureBrokerIsConnected(),this._addSubscription(\"IndividualPositionPL\",e,t)}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._adapter.[[Prototype]].unsubscribeIndividualPositionPL",
+        "name": "unsubscribeIndividualPositionPL",
+        "sourceLength": 90,
+        "source": "unsubscribeIndividualPositionPL(e,t){this._removeSubscription(\"IndividualPositionPL\",e,t)}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._adapter.[[Prototype]].getPositionCurrency",
+        "name": "getPositionCurrency",
+        "sourceLength": 258,
+        "source": "async getPositionCurrency(e){try{const t=await this._brokerConnection.symbolInfo(e);return this._brokerMetainfo.configFlags.positionPLInInstrumentCurrency&&void 0!==t.currency?t.currency:(await this.accountMetainfo(),\"\")}catch(e){return void se.logError(e)}}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._adapter.[[Prototype]].currentBroker",
+        "name": "currentBroker",
+        "sourceLength": 47,
+        "source": "currentBroker(){return this._brokerMetainfo.id}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._adapter.[[Prototype]]._createEditOrderContext",
+        "name": "_createEditOrderContext",
+        "sourceLength": 379,
+        "source": "async _createEditOrderContext(e,t,r=!0){const s=new ie({orderData:e,source:t,callbacks:{modifyOrder:this._modifyOrder.bind(this),metainfo:this.metainfo.bind(this),symbolInfo:this.symbolInfo.bind(this),orderById:this.orderById.bind(this),previewOrder:this._previewOrder.bind(this),handleError:this._makeContextErrorHandler(m.t(null,void 0,i(54746)))}});return await s.onReady(),s}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._adapter.[[Prototype]]._createPlaceOrderContext",
+        "name": "_createPlaceOrderContext",
+        "sourceLength": 1096,
+        "source": "async _createPlaceOrderContext(e,t,r=!0){const[s,o,n]=await Promise.all([this.symbolInfo(e.symbol),this.formatter(e.symbol),this.getOrderDialogOptions(e.symbol)]),{configFlags:a}=this.metainfo(),l=a.supportBalances&&s.baseCurrency?this._cryptoBalanceObservable(s.baseCurrency):(0,v.of)(null),c=a.supportBalances&&s.quoteCurrency?this._cryptoBalanceObservable(s.quoteCurrency):(0,v.of)(null),d=(0,re.extractTakeProfitValidationRules)(this,e.symbol),u=(0,re.extractStopLossValidationRules)(this,e.symbol),h=(0,y.fromEventPattern)(t=>this.subscribeRealtime(e.symbol,t),t=>this.unsubscribeRealtime(e.symbol,t),(e,t)=>t),p=new Y({orderData:e,source:t,instrumentInfo:s,quotes$:h,configFlags:a,formatter:o,isValidationEnabled:r,orderDialogOptions:n,tpValidationRules:d,slValidationRules:u,baseCurrencyCryptoBalance$:l,quoteCurrencyCryptoBalance$:c,callbacks:{createInitialPreOrder:async e=>this._createInitialPreOrder(e,s,n),placeOrder:(e,t)=>this._placeOrder(e,t),previewOrder:e=>this._previewOrder(e),handleError:this._makeContextErrorHandler(m.t(null,void 0,i(842180)))}});return await p.onReady(),p}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._adapter.[[Prototype]]._createInitialPreOrder",
+        "name": "_createInitialPreOrder",
+        "sourceLength": 541,
+        "source": "_createInitialPreOrder(e,t,i){var r,s,o;if(void 0===e.duration){const{durations:i}=this.metainfo(),n=(0,A.getOrderDuration)({orderDuration:void 0,orderType:e.type,savedDuration:null!==(o=null===(s=null===(r=this._getTradingSettingsStorage)||void 0===r?void 0:r.call(this))||void 0===s?void 0:s.duration(e.symbol,e.type))&&void 0!==o?o:null,orderDurations:i,symbolDurations:t.allowedDurations});null!==n&&(e.duration=n)}if(void 0===e.customFields){const t=this._getSavedCustomFields(e.symbol,e.type,i);void 0!==t&&(e.customFields=t)}return e}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._adapter.[[Prototype]]._placeOrder",
+        "name": "_placeOrder",
+        "sourceLength": 322,
+        "source": "_placeOrder(e,t){return this._makeSureBrokerIsConnected(),this.processErrors(this._brokerConnection.placeOrder(e,t),!0,m.t(null,void 0,i(842180)),t=>{(0,C.ensureNotNull)(this._tradingStat).trackOrderPlaced({...e,id:t.orderId}),this._host.trackEvent(\"\",\"SilentMode\",this._host.silentOrdersPlacement().value()?\"On\":\"Off\")})}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._adapter.[[Prototype]]._modifyOrder",
+        "name": "_modifyOrder",
+        "sourceLength": 334,
+        "source": "async _modifyOrder(e,t){this._makeSureBrokerIsConnected();const r=new Set((await this._orders()).map(({id:e})=>e));return r.delete(e.id),await this.processErrors(this._brokerConnection.modifyOrder(e,t),!0,m.t(null,void 0,i(54746)),()=>(0,C.ensureNotNull)(this._tradingStat).trackOrderModified(e))&&this._waitForOrderModification(e,r)}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._adapter.[[Prototype]]._previewOrder",
+        "name": "_previewOrder",
+        "sourceLength": 153,
+        "source": "_previewOrder(e){if(!this._brokerConnection.previewOrder)throw new Error(\"Order preview is not supported\");return this._brokerConnection.previewOrder(e)}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._adapter.[[Prototype]]._isBrokerSideMaintenance",
+        "name": "_isBrokerSideMaintenance",
+        "sourceLength": 126,
+        "source": "_isBrokerSideMaintenance(){return isFeatureEnabled((0,A.makeBrokerSideMaintananceFeatureToggleName)(this._brokerMetainfo.id))}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._adapter.[[Prototype]]._positionCopyById",
+        "name": "_positionCopyById",
+        "sourceLength": 104,
+        "source": "async _positionCopyById(e){const t=await this.positionById(e);return void 0!==t?(0,_.default)(t):void 0}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._adapter.[[Prototype]]._patchBrokerSubscribeUnsubscribeDOMMethods",
+        "name": "_patchBrokerSubscribeUnsubscribeDOMMethods",
+        "sourceLength": 349,
+        "source": "_patchBrokerSubscribeUnsubscribeDOMMethods(){const e=!this._brokerMetainfo.configFlags.supportLevel2Data;this._brokerConnection.subscribeDOM=e?e=>{this._fakeSubscribeDOM(e)}:this._originalDOMSubscriptionMethods.subscribeDOM,this._brokerConnection.unsubscribeDOM=e?e=>{this._fakeUnsubscribeDOM(e)}:this._originalDOMSubscriptionMethods.unsubscribeDOM}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._adapter.[[Prototype]]._positions",
+        "name": "_positions",
+        "sourceLength": 95,
+        "source": "_positions(){return this._positionsCache?this._positionsCache.getObjects():Promise.resolve([])}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._adapter.[[Prototype]]._individualPositions",
+        "name": "_individualPositions",
+        "sourceLength": 125,
+        "source": "_individualPositions(){return this._individualPositionsCache?this._individualPositionsCache.getObjects():Promise.resolve([])}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._adapter.[[Prototype]]._orders",
+        "name": "_orders",
+        "sourceLength": 48,
+        "source": "_orders(){return this._ordersCache.getObjects()}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._adapter.[[Prototype]]._makeSureBrokerIsConnected",
+        "name": "_makeSureBrokerIsConnected",
+        "sourceLength": 97,
+        "source": "_makeSureBrokerIsConnected(){(0,C.assert)(1===this.connectionStatus(),\"Broker is not connected\")}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._adapter.[[Prototype]]._placeReversePositionOrder",
+        "name": "_placeReversePositionOrder",
+        "sourceLength": 78,
+        "source": "_placeReversePositionOrder(e){const t=n(2*e.qty,e);return this._placeOrder(t)}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._adapter.[[Prototype]]._closePosition",
+        "name": "_closePosition",
+        "sourceLength": 776,
+        "source": "async _closePosition(e,t){const r=(0,C.ensureDefined)(await this.positionById(e));if(!(0,A.checkIsExistingPosition)(r)){const e=m.t(null,void 0,i(715842));throw this._host.showNotification(oe,e,0),new Error(e)}if(!(void 0===t||t<=Math.abs(r.qty))){const e=m.t(null,void 0,i(365389));throw this._host.showNotification(oe,e,0),new Error(e)}{const i=n(null!=t?t:Math.abs(r.qty),r);if(this.config.supportClosePosition&&this._brokerConnection.closePosition){if(!await this.processErrors(this._brokerConnection.closePosition(e,t),!0,oe,()=>(0,C.ensureNotNull)(this._tradingStat).trackOrderPlaced(i)))throw new Error(oe)}else if(!await this.processErrors(this._brokerConnection.placeOrder(i),!0,oe,()=>(0,C.ensureNotNull)(this._tradingStat).trackOrderPlaced(i)))throw new Error(oe)}}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._adapter.[[Prototype]]._reversePosition",
+        "name": "_reversePosition",
+        "sourceLength": 470,
+        "source": "async _reversePosition(e){const t=(0,C.ensureDefined)(await this.positionById(e));if(0===t.qty){const e=m.t(null,void 0,i(726500));throw this._host.showNotification(ne,e,0),new Error(e)}this.config.supportNativeReversePosition&&this._brokerConnection.reversePosition?await this.processErrors(this._brokerConnection.reversePosition(e),!0,ne):await this.processErrors(this._placeReversePositionOrder(t),!0,ne,()=>(0,C.ensureNotNull)(this._tradingStat).trackOrderPlaced())}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._adapter.[[Prototype]]._waitForOrderModification",
+        "name": "_waitForOrderModification",
+        "sourceLength": 438,
+        "source": "async _waitForOrderModification(e,t){return new Promise(async i=>{const r=()=>{i(!0),o(),clearTimeout(n)},s=t=>{this._areOrdersEqual(t,e)&&r()},o=()=>this.orderUpdate.unsubscribe(this,s),n=setTimeout(()=>{i(!1),this._brokerLogger.logError(\"Failed to modify order: timeout waiting for new order\"),o()},3e4);this.orderUpdate.subscribe(this,s);for(const i of await this._orders())if(!t.has(i.id)&&this._areOrdersEqual(e,i))return void r()})}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._adapter.[[Prototype]]._areOrdersEqual",
+        "name": "_areOrdersEqual",
+        "sourceLength": 348,
+        "source": "_areOrdersEqual(e,t){const{checkBracketsAfterOrderModification:i}=this._brokerMetainfo.configFlags;return function(e,t){return e.type===t.type&&e.qty===t.qty&&e.limitPrice===t.limitPrice&&e.stopPrice===t.stopPrice}(e,t)&&(!i||function(e,t){return e.stopLoss===t.stopLoss&&e.takeProfit===t.takeProfit&&e.trailingStopPips===t.trailingStopPips}(e,t))}"
+      }
+    ],
+    "brokerConnectionMethods": [
+      {
+        "path": "bitunixTv.tvWidget.host._adapter._brokerConnection.[[Prototype]].orders",
+        "name": "orders",
+        "sourceLength": 51,
+        "source": "async[w(2251,\"p&(x\")](){return this[w(176,\"p&(x\")]}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._adapter._brokerConnection.[[Prototype]].positions",
+        "name": "positions",
+        "sourceLength": 73,
+        "source": "async[k(1764)](){const t=k;return Promise[w(2312,\"phWK\")](this[t(5426)])}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._adapter._brokerConnection.[[Prototype]].reversePosition",
+        "name": "reversePosition",
+        "sourceLength": 121,
+        "source": "async[w(1939,\"83UK\")+w(1495,\"fvAC\")](t){const r=k,o=w;this[o(3256,\"kcA1\")][r(2296)](et[o(4229,\"YYPc\")+o(4447,\"kcA1\")],t)}"
+      }
+    ]
+  },
+  "positionServices": {
+    "positionServiceFound": true,
+    "ordersServiceFound": true,
+    "positionServiceMethods": [
+      {
+        "path": "bitunixTv.tvWidget.host._trading._positionService._updatePositionPLHandler",
+        "name": "bound _updatePositionPL",
+        "sourceLength": 0,
+        "source": ""
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._positionService._updatePositionEstLiqPriceHandler",
+        "name": "bound _updatePositionEstLiqPrice",
+        "sourceLength": 0,
+        "source": ""
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._positionService.[[Prototype]].positions",
+        "name": "positions",
+        "sourceLength": 56,
+        "source": "positions(){return Array.from(this._positions.values())}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._positionService.[[Prototype]].realIdFromBroker",
+        "name": "realIdFromBroker",
+        "sourceLength": 244,
+        "source": "async realIdFromBroker(e){const t=(0,s.ensureNotNull)(this.activeBroker());if(1===this._displayMode){const i=await t.positionById(e);if(void 0!==i)return i.id}else{const i=await t.individualPositionById(e);if(void 0!==i)return i.id}return null}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._positionService.[[Prototype]].positionUpdate",
+        "name": "positionUpdate",
+        "sourceLength": 45,
+        "source": "positionUpdate(){return this._positionUpdate}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._positionService.[[Prototype]].positionsRemoved",
+        "name": "positionsRemoved",
+        "sourceLength": 49,
+        "source": "positionsRemoved(){return this._positionsRemoved}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._positionService.[[Prototype]].isDisplayModeIndividualPositions",
+        "name": "isDisplayModeIndividualPositions",
+        "sourceLength": 64,
+        "source": "isDisplayModeIndividualPositions(){return 0===this._displayMode}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._positionService.[[Prototype]].supportReverse",
+        "name": "supportReverse",
+        "sourceLength": 101,
+        "source": "supportReverse(e){return Boolean(!this.isDisplayModeIndividualPositions()&&e.supportReversePosition)}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._positionService.[[Prototype]]._clearPositions",
+        "name": "_clearPositions",
+        "sourceLength": 427,
+        "source": "_clearPositions(){const e=(0,s.ensureNotNull)(this.activeBroker()),t=Array.from(this._positions.keys());for(const i of t)this.isDisplayModeIndividualPositions()?e.unsubscribeIndividualPositionPL(i,this._updatePositionPLHandler):e.unsubscribePL(i,this._updatePositionPLHandler);this._positions.clear(),this._existingPositionIds.clear(),t.length>0&&d.logNormal(`All positions removed, id's: ${t}`),this._positionsRemoved.fire(t)}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._positionService.[[Prototype]]._requestPositions",
+        "name": "_requestPositions",
+        "sourceLength": 316,
+        "source": "async _requestPositions(){const e=this.activeBroker();if(!e)return;const t=this.isDisplayModeIndividualPositions(),i=await(t?e.individualPositions():e.positions());for(const e of i)this._addPosition(e);t?e.individualPositionUpdate.subscribe(this,this._addPosition):e.positionUpdate.subscribe(this,this._addPosition)}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._positionService.[[Prototype]]._addPosition",
+        "name": "_addPosition",
+        "sourceLength": 715,
+        "source": "_addPosition(e){const t=e.id,i=this._positions.has(t),r=(0,s.ensureNotNull)(this.activeBroker()),o=this.isDisplayModeIndividualPositions();if(!e.qty)return i&&(o?r.unsubscribeIndividualPositionPL(t,this._updatePositionPLHandler):r.unsubscribePL(t,this._updatePositionPLHandler),this._positions.delete(t),this._positionsRemoved.fire([t])),void this._logPositionUpdate(e,!0);const n=this._getPositionData(e),a=this._updateType(n);this._logPositionUpdate(n,a===u.Full),this._positions.set(t,n),this._firePositionUpdate(n,a),i||(o?r.subscribeIndividualPositionPL(t,this._updatePositionPLHandler):(r.subscribePL(t,this._updatePositionPLHandler),r.subscribePositionEstLiqPrice(t,this._updatePositionEstLiqPriceHandler)))}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._positionService.[[Prototype]]._updatePositionEstLiqPrice",
+        "name": "_updatePositionEstLiqPrice",
+        "sourceLength": 161,
+        "source": "_updatePositionEstLiqPrice(e,t){const i=(0,s.ensureDefined)(this._positions.get(e));i.estLiqPrice=(0,n.isNumber)(t)?t:null,this._firePositionUpdate(i,u.Partial)}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._positionService.[[Prototype]]._updatePositionPL",
+        "name": "_updatePositionPL",
+        "sourceLength": 187,
+        "source": "_updatePositionPL(e,t,i,r,o){const n=(0,s.ensureDefined)(this._positions.get(e));n.pl=t,n.textTooltip=i,n.qtyTooltip=r,n.plStyle=o,n.refreshWidth=!1,this._firePositionUpdate(n,u.Partial)}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._positionService.[[Prototype]]._getPositionData",
+        "name": "_getPositionData",
+        "sourceLength": 881,
+        "source": "_getPositionData(e){var t,i;const r=(0,s.ensureNotNull)(this.activeBroker()).metainfo().configFlags,o=this._positions.get(e.id),n=this.isDisplayModeIndividualPositions(),a=Boolean(n?r.supportIndividualPositionBrackets:r.supportPositionBrackets);let l,d=!1,u=null;if(n){const t=e;l=t.price,d=Boolean(t.canBeClosed)}else{const r=e;l=r.avgPrice,u=null!==(i=null!==(t=r.pl)&&void 0!==t?t:null==o?void 0:o.pl)&&void 0!==i?i:null}return{...e,pl:u,estLiqPrice:o?o.estLiqPrice:void 0,plBasedOnLast:r.calculatePLUsingLast||!1,price:Math.abs((0,s.ensureDefined)(l)),qtyBySide:Math.abs(e.qty)*(1===e.side?1:-1),supportClose:Boolean(n?r.supportCloseIndividualPosition&&d:r.supportClosePosition),supportReverse:Boolean(!n&&r.supportReversePosition),supportBrackets:a,supportOnlyPairBrackets:Boolean(r.supportOnlyPairPositionBrackets),supportTrailingStop:(0,c.checkTrailingStopAvailability)(r)}}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._positionService.[[Prototype]]._firePositionUpdate",
+        "name": "_firePositionUpdate",
+        "sourceLength": 68,
+        "source": "_firePositionUpdate(e,t){this._positionUpdate.fire({data:e,type:t})}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._positionService.[[Prototype]]._logPositionUpdate",
+        "name": "_logPositionUpdate",
+        "sourceLength": 225,
+        "source": "_logPositionUpdate(e,t){if(!t)return;const i=e.id;let s=\"update\";this._existingPositionIds.has(i)||(s=\"add\",this._existingPositionIds.add(i)),function(e,t){t(JSON.stringify(r(e)))}(e,e=>{d.logNormal(`Position  ${s}: ${e}`)})}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._positionService.[[Prototype]].activeBroker",
+        "name": "activeBroker",
+        "sourceLength": 41,
+        "source": "activeBroker(){return this._activeBroker}"
+      }
+    ],
+    "ordersServiceMethods": [
+      {
+        "path": "bitunixTv.tvWidget.host._trading._ordersService.[[Prototype]].orders",
+        "name": "orders",
+        "sourceLength": 65,
+        "source": "orders(){return(0,n.ensureNotNull)(this.activeBroker()).orders()}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._ordersService.[[Prototype]].activeOrders",
+        "name": "activeOrders",
+        "sourceLength": 62,
+        "source": "activeOrders(){return Array.from(this._activeOrders.values())}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._ordersService.[[Prototype]].activeOrdersUpdated",
+        "name": "activeOrdersUpdated",
+        "sourceLength": 53,
+        "source": "activeOrdersUpdated(){return this._activeOrderUpdate}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._ordersService.[[Prototype]].activeOrdersRemoved",
+        "name": "activeOrdersRemoved",
+        "sourceLength": 55,
+        "source": "activeOrdersRemoved(){return this._activeOrdersRemoved}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._ordersService.[[Prototype]].orderRejected",
+        "name": "orderRejected",
+        "sourceLength": 44,
+        "source": "orderRejected(){return this._ordersRejected}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._ordersService.[[Prototype]]._clearOrders",
+        "name": "_clearOrders",
+        "sourceLength": 212,
+        "source": "_clearOrders(){const e=Array.from(this._activeOrders.keys());this._activeOrders.clear(),this._existingOrdersIds.clear(),e.length>0&&p.logNormal(`All orders removed, id's: ${e}`),this._activeOrdersRemoved.fire(e)}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._ordersService.[[Prototype]]._requestOrders",
+        "name": "_requestOrders",
+        "sourceLength": 216,
+        "source": "async _requestOrders(){const e=this.activeBroker();if(!e)return;const t=await e.orders();for(const e of t)this._addActiveOrder(e);e.orderUpdate.unsubscribeAll(this),e.orderUpdate.subscribe(this,this._addActiveOrder)}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._ordersService.[[Prototype]]._addActiveOrder",
+        "name": "_addActiveOrder",
+        "sourceLength": 395,
+        "source": "_addActiveOrder(e){this._logOrderUpdate(e);const t=e.id,i=this._activeOrders.has(t),r=5===e.status,o=6!==e.status&&3!==e.status,n=2===e.type;if(i){if(o||n)return this._activeOrders.delete(t),void this._activeOrdersRemoved.fire([t])}else{if(n||o&&!r)return;if(r)return void this._ordersRejected.fire(s(e))}const a=this._getOrderData(e);this._activeOrders.set(t,a),this._activeOrderUpdate.fire(a)}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._ordersService.[[Prototype]]._logOrderUpdate",
+        "name": "_logOrderUpdate",
+        "sourceLength": 199,
+        "source": "_logOrderUpdate(e){const t=e.id;let i=\"update\";this._existingOrdersIds.has(t)||(i=\"add\",this._existingOrdersIds.add(t)),function(e,t){t(JSON.stringify(o(e)))}(e,e=>{p.logNormal(`Order ${i}: ${e}`)})}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._ordersService.[[Prototype]]._getOrderData",
+        "name": "_getOrderData",
+        "sourceLength": 454,
+        "source": "_getOrderData(e){const t=s(e);(0,l.isNumber)(t)||p.logError(\"order price is not defined\");const i=(0,n.ensureNotNull)(this.activeBroker()).metainfo().configFlags;return(0,l.merge)((0,l.clone)(e),{price:t,considerFilledQty:!0,supportModify:(0,u.isModifyOrderSupported)(e,i),supportMove:(0,u.isMoveOrderSupported)(e,i),supportCancel:!0,supportModifyOrderPrice:Boolean(i.supportModifyOrderPrice),supportTrailingStop:(0,h.checkTrailingStopAvailability)(i)})}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._ordersService.[[Prototype]].activeBroker",
+        "name": "activeBroker",
+        "sourceLength": 41,
+        "source": "activeBroker(){return this._activeBroker}"
+      }
+    ],
+    "orderViewControllerMethods": [
+      {
+        "path": "bitunixTv.tvWidget.host._trading._orderViewController.closePanel",
+        "name": "(anonymous)",
+        "sourceLength": 361,
+        "source": "()=>{null!==this._positionViewModel&&(this._positionViewModel.onDoneButtonClicked.reject(),this._unmountPositionPanel(),this._unsubscribePositionViewModel()),null!==this._orderViewModel&&(this._orderViewModel.existingOrder&&this._orderViewModel.onDoneButtonClicked.reject(),this._unmountOrderPanel(),this._unsubscribeOrderViewModel()),this._closeTradingPanel()}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._orderViewController._recreateOrderViewModel",
+        "name": "(anonymous)",
+        "sourceLength": 89,
+        "source": "async(...s)=>{i.setValue(!0),t++;try{return await e(...s)}finally{t--,i.setValue(0!==t)}}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._orderViewController._updateTradedContextLinking",
+        "name": "(anonymous)",
+        "sourceLength": 147,
+        "source": "(i,...s)=>(null==t||t.abort(),t=new AbortController,null==i||i.addEventListener(\"error\",(()=>null==t?void 0:t.abort()),{once:!0}),e(t.signal,...s))"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._orderViewController._updateOrderValues",
+        "name": "(anonymous)",
+        "sourceLength": 485,
+        "source": "(...n)=>{if(i=()=>{e(...n),i=void 0,o=!1},!o)return r=performance.now(),o=!0,void(s=function(e,t){if(window.requestIdleCallback)return window.requestIdleCallback(e,t);const i=Date.now();return setTimeout((()=>{e({didTimeout:!1,timeRemaining:()=>Math.max(0,50-(Date.now()-i))})}),1)}((()=>null==i?void 0:i()),t));void 0!==(null==t?void 0:t.timeout)&&performance.now()-r>=t.timeout&&(!function(e){if(window.cancelIdleCallback)return window.cancelIdleCallback(e);clearTimeout(e)}(s),i())}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._orderViewController._onOrderWidgetModeChanged",
+        "name": "(anonymous)",
+        "sourceLength": 193,
+        "source": "async e=>{e===T.OrderEditorDisplayMode.Panel?(await this._closeOrderDialog(),await this._openOrderPanel()):(await this._closeOrderPanel(),await this._showOrderDialog()),this._setDisplayMode(e)}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._orderViewController._onOrderWidgetInputStateChanged",
+        "name": "(anonymous)",
+        "sourceLength": 1224,
+        "source": "e=>{var t,i;this._updateTradedContextLinking(null!==(i=null===(t=this._placeOrderAbortController)||void 0===t?void 0:t.signal)&&void 0!==i?i:null);const{symbol:s,orderType:o}=this._state;if((0,w.isDefined)(e.side)&&this._setState({side:e.side}),!(0,w.isDefined)(o))return;const n=this._getTradingSettingsStorage();if(null===n)return;(0,r.ensureNotNull)(this._orderViewModel,\"Order View Model\").existingOrder;if((0,w.isDefined)(e.quantity)&&n.setSymbolQty(s,e.quantity),(0,w.isDefined)(e.takeProfitPips)&&n.setTakeProfitPips(s,e.takeProfitPips,T.BracketDefaultPips.TakeProfit),(0,w.isDefined)(e.stopLossPips)&&n.setStopLossPips(s,e.stopLossPips,T.BracketDefaultPips.StopLoss),(0,w.isDefined)(e.orderType)&&n.setOrderType(s,e.orderType),(0,w.isDefined)(e.duration)){const t=this._state.broker&&this._state.broker.metainfo().durations,i=t&&(t.find((e=>e.default))||t[0]),s=i&&i.name===e.duration.type?null:e.duration;n.setDuration(this._state.symbol,o,s)}if((0,w.isDefined)(e.customFields)&&null!==this._state.savableCustomFields){const t=function(e,t){const i={...e};if(void 0===t)return i;for(const e of Object.keys(i))t.has(e)||delete i[e];return i}(e.customFields,this._state.savableCustomFields);n.setCustomFields(s,o,t)}}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._orderViewController._onOrderWidgetCloseButtonClicked",
+        "name": "(anonymous)",
+        "sourceLength": 101,
+        "source": "()=>{\nthis._mode.value()===T.OrderEditorDisplayMode.Panel?this.closePanel():this._closeOrderDialog()}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._orderViewController._onOrderWidgetStatusChanged",
+        "name": "(anonymous)",
+        "sourceLength": 257,
+        "source": "e=>{var t;e===T.OrderPanelStatus.Wait&&(null===(t=this._tradedContextLinking)||void 0===t||t.setContext(null)),e===T.OrderPanelStatus.Active&&void 0!==this._placeOrderAbortController&&this._updateTradedContextLinking(this._placeOrderAbortController.signal)}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._orderViewController._onOrderWidgetBackButtonClicked",
+        "name": "(anonymous)",
+        "sourceLength": 304,
+        "source": "()=>{if(this._orderViewModel&&this._orderViewModel.status.value()===T.OrderPanelStatus.Preview)return this._activateOrderTicket(),void(this._mode.value()===T.OrderEditorDisplayMode.Panel?this._openOrderPanel():this._showOrderDialog());this.showOrderView({order:this._createOrderStub(),isDeactivated:!0})}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._orderViewController._onPositionWidgetModeChanged",
+        "name": "(anonymous)",
+        "sourceLength": 205,
+        "source": "async e=>{e===T.OrderEditorDisplayMode.Panel?(await this._closePositionDialog(),await this._openPositionPanel()):(await this._closePositionPanel(),await this._showPositionDialog()),this._setDisplayMode(e)}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._orderViewController._onPositionWidgetBackButtonClicked",
+        "name": "(anonymous)",
+        "sourceLength": 140,
+        "source": "()=>{this._unmountPositionPanel(),this._unsubscribePositionViewModel(),this.showOrderView({order:this._createOrderStub(),isDeactivated:!0})}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._orderViewController._onPositionWidgetCloseButtonClicked",
+        "name": "(anonymous)",
+        "sourceLength": 103,
+        "source": "()=>{this._mode.value()===T.OrderEditorDisplayMode.Panel?this.closePanel():this._closePositionDialog()}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._orderViewController._onOrderTypeChanged",
+        "name": "(anonymous)",
+        "sourceLength": 34,
+        "source": "e=>{this._setState({orderType:e})}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._orderViewController._closeTradingPanel",
+        "name": "bound",
+        "sourceLength": 0,
+        "source": ""
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._orderViewController.[[Prototype]].showOrderView",
+        "name": "showOrderView",
+        "sourceLength": 669,
+        "source": "async showOrderView(e){try{const{order:t,focus:i,forceOrderDialog:s,isDeactivated:o=!1}=e;await this._closeOrderDialog(),await this._closePositionDialog(),s&&this._setDisplayMode(T.OrderEditorDisplayMode.Popup);const n=Object.assign(this._createOrderStub(),t);return t.symbol!==this._state.symbol&&this._setState({symbol:t.symbol}),await this._recreateOrderViewModel(null,n),o&&this._deactivateOrderTicket(),this._mode.value()===T.OrderEditorDisplayMode.Panel?this._openOrderPanel(i):this._showOrderDialog(i),(0,r.ensureNotNull)(this._orderViewModel).onDoneButtonClicked.promise}catch(e){return St.logWarn(`Failed to show order view: ${(0,l.getLoggerMessage)(e)}`),!1}}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._orderViewController.[[Prototype]].showPositionView",
+        "name": "showPositionView",
+        "sourceLength": 257,
+        "source": "async showPositionView(e,t,i){try{return await this._symbolChangePromise,this._createAndShowPositionViewModel({position:e,viewType:pt.Position,brackets:t,focus:i})}catch(e){return St.logWarn(`Failed to show position view: ${(0,l.getLoggerMessage)(e)}`),!1}}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._orderViewController.[[Prototype]].showIndividualPositionView",
+        "name": "showIndividualPositionView",
+        "sourceLength": 288,
+        "source": "async showIndividualPositionView(e,t,i){try{return await this._symbolChangePromise,this._createAndShowPositionViewModel({position:e,viewType:pt.IndividualPosition,brackets:t,focus:i})}catch(e){return St.logWarn(`Failed to show individual position view: ${(0,l.getLoggerMessage)(e)}`),!1}}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._orderViewController.[[Prototype]]._createAndShowPositionViewModel",
+        "name": "_createAndShowPositionViewModel",
+        "sourceLength": 1678,
+        "source": "async _createAndShowPositionViewModel({position:e,viewType:t,brackets:i,focus:s}){await this._closeOrderDialog(),await this._closePositionDialog(),e.symbol!==this._state.symbol&&this._setState({symbol:e.symbol}),null!==this._positionViewModel&&(this._positionViewModel.onDoneButtonClicked.reject(),this._unsubscribePositionViewModel()),null!==this._orderViewModel&&(this._orderViewModel.existingOrder&&this._orderViewModel.onDoneButtonClicked.reject(),this._unsubscribeOrderViewModel());const{broker:r,symbol:o}=this._state,n=r?await r.isTradable(o):null;if(null===r||null===n||!n.tradable)return await this.showOrderView({\norder:this._createOrderStub()}),!1;const a=await r.getOrderDialogOptions(o),l=void 0!==(null==a?void 0:a.customFields)?wt(a.customFields):void 0;this._setState({savableCustomFields:l});const u=t===pt.Position?r.editPositionBrackets.bind(r):r.editIndividualPositionBrackets.bind(r),d=new _t({adapter:r,position:e,brackets:i,mode:this._mode,settings:this._settings,realtimeProvider:this._tradingCommands.realtimeProvider,isUndockAllowed:this._isOpeningTradingPanelAvailable.value(),isVisible:this._isVisible,viewType:t,pipValueType$:this._tradingCommands.pipValueType$,handler:u,trackEvent:this._tradingCommands.trackEvent,orderDialogOptions:a,headerState:this._orderViewHeaderState});return this._positionViewModel=d,await this._positionViewModel.onReady,this._positionViewModel!==d?Promise.reject(\"PositionViewModel was recreated during the initialization\"):(this._subscribePositionViewModel(),this._mode.value()===T.OrderEditorDisplayMode.Panel?this._openPositionPanel(s):this._showPositionDialog(s),this._positionViewModel.onDoneButtonClicked.promise)}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._orderViewController.[[Prototype]]._createOrderStub",
+        "name": "_createOrderStub",
+        "sourceLength": 152,
+        "source": "_createOrderStub(){return{limitPrice:void 0,stopPrice:void 0,qty:0,side:void 0,symbol:this._state.symbol,type:void 0,takeProfit:void 0,stopLoss:void 0}}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._orderViewController.[[Prototype]]._activateOrderTicket",
+        "name": "_activateOrderTicket",
+        "sourceLength": 98,
+        "source": "_activateOrderTicket(){var e;null===(e=this._orderViewModel)||void 0===e||e.activateOrderTicket()}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._orderViewController.[[Prototype]]._deactivateOrderTicket",
+        "name": "_deactivateOrderTicket",
+        "sourceLength": 102,
+        "source": "_deactivateOrderTicket(){var e;null===(e=this._orderViewModel)||void 0===e||e.deactivateOrderTicket()}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._orderViewController.[[Prototype]]._handleTradedContextChange",
+        "name": "_handleTradedContextChange",
+        "sourceLength": 299,
+        "source": "_handleTradedContextChange(e){null!==this._orderViewModel&&(null!==e?e.source()!==Tt&&(this._orderViewModel.loading.setValue(e.status()===ft.PlaceOrEditContextStatus.Loading),this._orderViewModel.status.setValue(Ct[e.type]),this._updateOrderValues(e.data())):this._orderViewModel.resetOrderPanel())}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._orderViewController.[[Prototype]]._openOrderPanel",
+        "name": "_openOrderPanel",
+        "sourceLength": 110,
+        "source": "async _openOrderPanel(e){await this._mountOrderPanel(e),this._openTradingPanelPage(vt.TradingPage.OrderPanel)}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._orderViewController.[[Prototype]]._mountOrderPanel",
+        "name": "_mountOrderPanel",
+        "sourceLength": 224,
+        "source": "async _mountOrderPanel(e){const{mountOrderPanel:t}=await Mt();null!==this._orderViewModel&&t(this._orderViewModel,this._settings,this._tradingPanelContainer,(0,r.ensureNotNull)(this._resizerBridge).width,e,this._trackEvent)}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._orderViewController.[[Prototype]]._closeOrderPanel",
+        "name": "_closeOrderPanel",
+        "sourceLength": 83,
+        "source": "async _closeOrderPanel(){await this._unmountOrderPanel(),this._closeTradingPanel()}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._orderViewController.[[Prototype]]._unmountOrderPanel",
+        "name": "_unmountOrderPanel",
+        "sourceLength": 117,
+        "source": "async _unmountOrderPanel(){const{unmountOrderPanel:e}=await Mt();e((0,r.ensureNotNull)(this._tradingPanelContainer))}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._orderViewController.[[Prototype]]._showOrderDialog",
+        "name": "_showOrderDialog",
+        "sourceLength": 324,
+        "source": "async _showOrderDialog(e){const{showOrderDialog:t}=await Mt();null!==this._orderViewModel&&t({viewModel:this._orderViewModel,settings:this._settings,focus:e,trackEvent:this._trackEvent,onOpen:e=>{this._dialogVisibility.setValue({isVisible:!0,isFullScreen:e})},onClose:()=>{this._dialogVisibility.setValue({isVisible:!1})}})}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._orderViewController.[[Prototype]]._closeOrderDialog",
+        "name": "_closeOrderDialog",
+        "sourceLength": 120,
+        "source": "async _closeOrderDialog(){const{closeOrderDialog:e}=await Mt();e((()=>this._dialogVisibility.setValue({isVisible:!1})))}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._orderViewController.[[Prototype]]._subscribeOrderViewModel",
+        "name": "_subscribeOrderViewModel",
+        "sourceLength": 821,
+        "source": "_subscribeOrderViewModel(){var e;null===(e=this._tradedContextLinking)||void 0===e||e.onContextChanged().subscribe(this,this._handleTradedContextChange),(0,r.ensureNotNull)(this._orderViewModel).onModeChanged().subscribe(this,this._onOrderWidgetModeChanged),(0,r.ensureNotNull)(this._orderViewModel).onInputStateChanged().subscribe(this,this._onOrderWidgetInputStateChanged),(0,r.ensureNotNull)(this._orderViewModel).onCloseButtonClicked().subscribe(this,this._onOrderWidgetCloseButtonClicked),(0,r.ensureNotNull)(this._orderViewModel).onBackButtonClicked().subscribe(this,this._onOrderWidgetBackButtonClicked),(0,r.ensureNotNull)(this._orderViewModel).status.subscribe(this._onOrderWidgetStatusChanged),this._orderTypeSubscription=(0,r.ensureNotNull)(this._orderViewModel).orderType$.subscribe(this._onOrderTypeChanged)}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._orderViewController.[[Prototype]]._unsubscribeOrderViewModel",
+        "name": "_unsubscribeOrderViewModel",
+        "sourceLength": 866,
+        "source": "_unsubscribeOrderViewModel(){var e,t;null===(e=this._tradedContextLinking)||void 0===e||e.onContextChanged().unsubscribe(this,this._handleTradedContextChange),(0,r.ensureNotNull)(this._orderViewModel).onModeChanged().unsubscribe(this,this._onOrderWidgetModeChanged),(0,r.ensureNotNull)(this._orderViewModel).onInputStateChanged().unsubscribe(this,this._onOrderWidgetInputStateChanged),(0,r.ensureNotNull)(this._orderViewModel).onCloseButtonClicked().unsubscribe(this,this._onOrderWidgetCloseButtonClicked),(0,r.ensureNotNull)(this._orderViewModel).onBackButtonClicked().unsubscribe(this,this._onOrderWidgetBackButtonClicked),(0,r.ensureNotNull)(this._orderViewModel).status.unsubscribe(this._onOrderWidgetStatusChanged),null===(t=this._orderTypeSubscription)||void 0===t||t.unsubscribe(),(0,r.ensureNotNull)(this._orderViewModel).destroy(),this._orderViewModel=null}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._orderViewController.[[Prototype]]._openPositionPanel",
+        "name": "_openPositionPanel",
+        "sourceLength": 116,
+        "source": "async _openPositionPanel(e){await this._mountPositionPanel(e),this._openTradingPanelPage(vt.TradingPage.OrderPanel)}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._orderViewController.[[Prototype]]._mountPositionPanel",
+        "name": "_mountPositionPanel",
+        "sourceLength": 181,
+        "source": "async _mountPositionPanel(e){const{mountPositionPanel:t}=await $t();if(null!==this._positionViewModel)return t(this._positionViewModel,this._settings,this._tradingPanelContainer,e)}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._orderViewController.[[Prototype]]._closePositionPanel",
+        "name": "_closePositionPanel",
+        "sourceLength": 89,
+        "source": "async _closePositionPanel(){await this._unmountPositionPanel(),this._closeTradingPanel()}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._orderViewController.[[Prototype]]._unmountPositionPanel",
+        "name": "_unmountPositionPanel",
+        "sourceLength": 102,
+        "source": "async _unmountPositionPanel(){const{unmountPositionPanel:e}=await $t();e(this._tradingPanelContainer)}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._orderViewController.[[Prototype]]._showPositionDialog",
+        "name": "_showPositionDialog",
+        "sourceLength": 308,
+        "source": "async _showPositionDialog(e){const{showPositionDialog:t}=await $t();null!==this._positionViewModel&&t({viewModel:this._positionViewModel,settings:this._settings,focus:e,onOpen:e=>{this._dialogVisibility.setValue({isVisible:!0,isFullScreen:e})},onClose:()=>{this._dialogVisibility.setValue({isVisible:!1})}})}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._orderViewController.[[Prototype]]._closePositionDialog",
+        "name": "_closePositionDialog",
+        "sourceLength": 126,
+        "source": "async _closePositionDialog(){const{closePositionDialog:e}=await $t();e((()=>this._dialogVisibility.setValue({isVisible:!1})))}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._orderViewController.[[Prototype]]._subscribePositionViewModel",
+        "name": "_subscribePositionViewModel",
+        "sourceLength": 389,
+        "source": "_subscribePositionViewModel(){(0,r.ensureNotNull)(this._positionViewModel).onModeChanged().subscribe(this,this._onPositionWidgetModeChanged),(0,r.ensureNotNull)(this._positionViewModel).onBackButtonClicked().subscribe(this,this._onPositionWidgetBackButtonClicked),(0,r.ensureNotNull)(this._positionViewModel).onCloseButtonClicked().subscribe(this,this._onPositionWidgetCloseButtonClicked)}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._orderViewController.[[Prototype]]._unsubscribePositionViewModel",
+        "name": "_unsubscribePositionViewModel",
+        "sourceLength": 559,
+        "source": "_unsubscribePositionViewModel(){(0,\nr.ensureNotNull)(this._positionViewModel).onModeChanged().unsubscribe(this,this._onPositionWidgetModeChanged),(0,r.ensureNotNull)(this._positionViewModel).onBackButtonClicked().unsubscribe(this,this._onPositionWidgetBackButtonClicked),(0,r.ensureNotNull)(this._positionViewModel).onCloseButtonClicked().unsubscribe(this,this._onPositionWidgetCloseButtonClicked),(0,r.ensureNotNull)(this._positionViewModel).onDoneButtonClicked.resolve(!1),(0,r.ensureNotNull)(this._positionViewModel).destroy(),this._positionViewModel=null}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._orderViewController.[[Prototype]]._makeOrderViewInputState",
+        "name": "_makeOrderViewInputState",
+        "sourceLength": 755,
+        "source": "_makeOrderViewInputState(e,t,i,s){var r,o,n,a,l;const u=null!==s&&null!==t?null===(r=this._getTradingSettingsStorage())||void 0===r?void 0:r.customFields(e,t,Array.from(s)):null,d=null!==t?null===(o=this._getTradingSettingsStorage())||void 0===o?void 0:o.duration(e,t):null;return{symbol:e,side:i,orderType:t,limitPrice:null,stopPrice:null,quantity:(null===(n=this._getTradingSettingsStorage())||void 0===n?void 0:n.symbolQty(e))||null,orderSizeCalculatorState:null,takeProfitPips:(null===(a=this._getTradingSettingsStorage())||void 0===a?void 0:a.takeProfitPips(e))||null,takeProfitPrice:null,stopLossPips:(null===(l=this._getTradingSettingsStorage())||void 0===l?void 0:l.stopLossPips(e))||null,stopLossPrice:null,duration:d||null,customFields:u||null}}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._orderViewController.[[Prototype]]._commonOrderViewModelProps",
+        "name": "_commonOrderViewModelProps",
+        "sourceLength": 680,
+        "source": "_commonOrderViewModelProps(){return{order:this._orderStub,mode:this._mode,settings:this._settings,orderWidgetStat:this._orderWidgetStat,isUndockAllowed:this._isOpeningTradingPanelAvailable.value(),pipValueType$:this._tradingCommands.pipValueType$,onNeedSelectBroker:this._tradingCommands.onNeedSelectBroker,trackEvent:this._tradingCommands.trackEvent,toggleTradingWidget:this._tradingCommands.toggleTradingWidget,toggleTradingPanelPopup:this._tradingCommands.toggleTradingPanelPopup,showErrorNotification:this._tradingCommands.showErrorNotification,qtySuggester:this._qtySuggester,isVisible:this._isVisible,headerState:this._orderViewHeaderState,isCancelButtonAlwaysHidden:false}}"
+      }
+    ],
+    "brokerCommandsUIMethods": [
+      {
+        "path": "bitunixTv.tvWidget.host._trading._brokerCommandsUI._onClosePositionDialogOpen",
+        "name": "(anonymous)",
+        "sourceLength": 80,
+        "source": "e=>{this._closePositionDialogVisibility.setValue({isVisible:!0,isFullScreen:e})}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._brokerCommandsUI._onClosePositionDialogClose",
+        "name": "(anonymous)",
+        "sourceLength": 66,
+        "source": "()=>{this._closePositionDialogVisibility.setValue({isVisible:!1})}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._brokerCommandsUI._orderViewController",
+        "name": "bound _getOrderViewController",
+        "sourceLength": 0,
+        "source": ""
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._brokerCommandsUI.[[Prototype]].placeOrder",
+        "name": "placeOrder",
+        "sourceLength": 763,
+        "source": "async placeOrder(e,t,i){const r=t&&this._noConfirmEnabled.value(),s=this._guiAccessor&&r?this._guiAccessor.showReplayConfirmationDialog():Promise.resolve(!1);try{await s}catch(e){Promise.resolve(!1)}const o=await this._activeBroker.isTradable(e.symbol);if(!(r&&o.tradable&&function(e){for(const t in Re)if(!(t in e))return!1;return!0}(e))){{const t=this._activeBroker.metainfo();if(t.customUI&&void 0!==t.customUI.showOrderDialog)return t.customUI.showOrderDialog(e)}return this._orderViewController().then(t=>this._activeBroker?t.showOrderView({order:e,focus:void 0,forceOrderDialog:i}):Promise.reject(\"Broker connection adapter is null\"))}{const t=await this._activeBroker.createPlaceOrderContext(e,\"instant\",!1);try{return await t.send()}finally{t.destroy()}}}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._brokerCommandsUI.[[Prototype]].modifyOrder",
+        "name": "modifyOrder",
+        "sourceLength": 233,
+        "source": "async modifyOrder(e,t,i,r){if(t&&this._noConfirmEnabled.value()&&1===e.parentType){const t=await this._activeBroker.createEditOrderContext(e,\"instant\");try{return await t.send()}finally{t.destroy()}}return this._modifyOrder(e,t,i,r)}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._brokerCommandsUI.[[Prototype]].closePosition",
+        "name": "closePosition",
+        "sourceLength": 1449,
+        "source": "async closePosition(e){var t,i;if(this._makeSureBrokerIsConnected(),this._isClosePositionDialogLoading)return!1;let r,s;this._isClosePositionDialogLoading=!0;try{if(r=await this._activeBroker.positionById(e),void 0===r)return!1;const{tradable:t}=await this._activeBroker.isTradable(r.symbol);if(await this._assertPositionExistsAndNotClosed(r.id),!t)return this._closePositionForNonTradableSymbol(r);if(this._noConfirmEnabled.value())return this._activeBroker.closePosition(e);s=await this._obtainPositionClosingData(r)}finally{this._isClosePositionDialogLoading=!1}if(void 0===s)return!1;const{supportPartialClosePosition:o,...l}=s,c=this._activeBroker.metainfo();if(void 0!==(null===(t=c.customUI)||void 0===t?void 0:t.showClosePositionDialog))return null===(i=c.customUI)||void 0===i?void 0:i.showClosePositionDialog(r);if(o){const t=t=>(t!==(null==r?void 0:r.qty)?this._trackEvent(\"\",\"Close Position Dialog\",\"partial\"):this._trackEvent(\"\",\"Close Position Dialog\",\"full\"),this._activeBroker.closePosition(e,t));return a({...l,positionOrIndividualPosition:r,onOpen:this._onClosePositionDialogOpen,onClose:this._onClosePositionDialogClose},t,this._showErrorNotification,this._getAbortSignal())}{const t=()=>this._activeBroker.closePosition(e);return n({showErrorNotification:this._showErrorNotification,handler:t,message:s.message,onOpen:this._onClosePositionDialogOpen,onClose:this._onClosePositionDialogClose,abortSignal:this._getAbortSignal()})}}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._brokerCommandsUI.[[Prototype]].closeIndividualPosition",
+        "name": "closeIndividualPosition",
+        "sourceLength": 1127,
+        "source": "async closeIndividualPosition(e){if(this._makeSureBrokerIsConnected(),(0,w.assert)(!!this._activeBroker.config.supportPositionNetting,\"Broker doesn`t support individual positions\"),this._noConfirmEnabled.value())return this._activeBroker.closeIndividualPosition(e);{if(this._isCloseIndividualPositionDialogLoading)return!1;const t=await this._obtainIndividualPositionClosingData(e);if(void 0===t)return!1;const{supportPartialCloseIndividualPosition:i,individualPosition:r,...s}=t;if(i){const t=async t=>(t!==r.qty?this._trackEvent(\"\",\"Close Individual Position Dialog\",\"partial\"):this._trackEvent(\"\",\"Close Individual Position Dialog\",\"full\"),this._activeBroker.closeIndividualPosition(e,t));return a({...s,positionOrIndividualPosition:r,onOpen:this._onClosePositionDialogOpen,onClose:this._onClosePositionDialogClose},t,this._showErrorNotification,this._getAbortSignal())}return n({showErrorNotification:this._showErrorNotification,handler:()=>this._activeBroker.closeIndividualPosition(e),message:t.message,onOpen:this._onClosePositionDialogOpen,onClose:this._onClosePositionDialogClose,abortSignal:this._getAbortSignal()})}}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._brokerCommandsUI.[[Prototype]].editPositionBrackets",
+        "name": "editPositionBrackets",
+        "sourceLength": 442,
+        "source": "editPositionBrackets(e,t,i,r){return this._makeSureBrokerIsConnected(),(0,w.assert)(!!this._activeBroker.config.supportPositionBrackets,\"Broker doesn`t support brackets on positions\"),r&&this._noConfirmEnabled.value()?this._activeBroker.editPositionBrackets(e,null!=t?t:{}):this._activeBroker.positionById(e).then(e=>this._activeBroker?this._showPositionDialog((0,w.ensureDefined)(e),t,i):Promise.reject(\"Broker connection adapter is null\"))}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._brokerCommandsUI.[[Prototype]].editIndividualPositionBrackets",
+        "name": "editIndividualPositionBrackets",
+        "sourceLength": 335,
+        "source": "editIndividualPositionBrackets(e,t,i,r){return r&&this._noConfirmEnabled.value()?this._activeBroker.editIndividualPositionBrackets(e,null!=t?t:{}):this._activeBroker.individualPositionById(e).then(e=>this._activeBroker?this._showIndividualPositionDialog((0,w.ensureDefined)(e),t,i):Promise.reject(\"Broker connection adapter is null\"))}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._brokerCommandsUI.[[Prototype]].reversePosition",
+        "name": "reversePosition",
+        "sourceLength": 1061,
+        "source": "reversePosition(e){return this._makeSureBrokerIsConnected(),this._activeBroker.metainfo().configFlags.supportMultiposition&&!this._activeBroker.config.supportNativeReversePosition?Promise.reject(\"Cannot reverse position on multiposition acount\"):this._noConfirmEnabled.value()?this._activeBroker.reversePosition(e):this._activeBroker.positionById(e).then(t=>{if(!this._activeBroker)return Promise.reject(\"Broker connection adapter is null\");const i=this._activeBroker.reversePosition.bind(this._activeBroker,e),r=this._activeBroker.metainfo();return r.customUI&&r.customUI.showReversePositionDialog?r.customUI&&r.customUI.showReversePositionDialog({positionId:e,showErrorNotification:this._showErrorNotification,handler:i,closePositionCancelsOrders:this._activeBroker.config.closePositionCancelsOrders,abortSignal:this._getAbortSignal()}):(0,Ee.reversePositionDialog)({positionId:e,showErrorNotification:this._showErrorNotification,handler:i,closePositionCancelsOrders:this._activeBroker.config.closePositionCancelsOrders,abortSignal:this._getAbortSignal()})})}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._brokerCommandsUI.[[Prototype]].cancelOrder",
+        "name": "cancelOrder",
+        "sourceLength": 976,
+        "source": "async cancelOrder(e){var t,i;this._makeSureBrokerIsConnected();const r=await this._activeBroker.orderById(e);if(void 0===r)return Promise.reject(\"Failed to find order\");const{tradable:s}=await this._activeBroker.isTradable(r.symbol);if(await this._assertOrderExistsAndNotCanceled(r.id),!s)return this._cancelOrderForNonTradableSymbol(r.symbol,r.id);if(this._noConfirmEnabled.value())return this._activeBroker.cancelOrder(e);{const s=this._activeBroker.cancelOrder.bind(this._activeBroker,e),o=this._activeBroker.metainfo();if(void 0!==(null===(t=o.customUI)||void 0===t?void 0:t.showCancelOrderDialog))return null===(i=o.customUI)||void 0===i?void 0:i.showCancelOrderDialog(r);if(r.parentId){const e=(await this._activeBroker.orders()).filter(e=>e.refNumber===r.refNumber);return o.configFlags.supportCancellingBothBracketsOnly&&e.length>1?this._showCancelMultipleBracketsDialog(r.parentId,s):this._showCancelBracketsDialog(r.id,s)}return this._showCancelOrderDialog(r.id,s)}}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._brokerCommandsUI.[[Prototype]].cancelOrders",
+        "name": "cancelOrders",
+        "sourceLength": 609,
+        "source": "cancelOrders(e,t){return this._makeSureBrokerIsConnected(),this._activeBroker.orders().then(i=>{if(!this._activeBroker)return Promise.reject(\"Broker connection adapter is null\");const r=i.filter(i=>i.symbol===e&&(!t||i.side===t)&&function(e){return 4===e.status||3===e.status||6===e.status}(i));if(!r.length)return Promise.resolve(!1);if(1===r.length)return this.cancelOrder(r[0].id);const s=r.map(e=>e.id);if(this._noConfirmEnabled.value())return this._activeBroker.cancelOrders(e,t,s);{const i=this._activeBroker.cancelOrders.bind(this._activeBroker);return this._showCancelMultipleOrdersDialog(e,t,s,i)}})}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._brokerCommandsUI.[[Prototype]]._modifyOrder",
+        "name": "_modifyOrder",
+        "sourceLength": 2122,
+        "source": "async _modifyOrder(e,t,r,s){const o=this._activeBroker.metainfo();if(this._makeSureBrokerIsConnected(),e.flags&&e.flags.trailingStop)return Ve.logError(\"Attempt to modify trailing stop loss order\"+e.id),this._showErrorNotification(B.t(null,void 0,i(292559)),B.t(null,void 0,i(507214))),Promise.resolve(!1);await this._setSymbol(e.symbol);const n=await this._activeBroker.symbolInfo(e.symbol);if(e.limitPrice=void 0!==n.limitPriceStep&&void 0!==e.limitPrice?(0,te.roundToStepByPriceTypeAndSide)(e.limitPrice,n.limitPriceStep,1,e.side):e.limitPrice,e.stopPrice=void 0!==n.stopPriceStep&&void 0!==e.stopPrice?(0,te.roundToStepByPriceTypeAndSide)(e.stopPrice,n.stopPriceStep,2,e.side):e.stopPrice,!o.configFlags.supportModifyTrailingStop){const t=await this._activeBroker.orderById(e.id);e.hasTrailingStopBracket=void 0!==(null==t?void 0:t.trailingStopPips)}const a=t&&this._noConfirmEnabled.value();let l=r||(1===e.type?1:2);if(e.parentId&&!se.enabled(\"always_pass_called_order_to_modify\")){const t=await this._getParentOrderOrPosition(e);if(void 0!==t){l=r||(1===e.type?3:4);const i={takeProfit:e.limitPrice||t.takeProfit,trailingStopPips:e.trailingStopPips||t.trailingStopPips,stopLoss:e.stopPrice||t.stopLoss};if(3===e.parentType)return a?this._activeBroker.editIndividualPositionBrackets(t.id,i):this._showIndividualPositionDialog(t,i,l);if(2===e.parentType&&e.qty===Math.abs(t.qty))return a?this._activeBroker.editPositionBrackets(t.id,i):this._showPositionDialog(t,i,l);1===e.parentType&&(0,X.isOrderActive)(t.status)&&((e=(0,Be.default)(t)).takeProfit=i.takeProfit,e.trailingStopPips=i.trailingStopPips,e.stopLoss=i.stopLoss,e.hasTrailingStopBracket=void 0!==t.trailingStopPips)}}return e.click=!1,1===e.type&&e.last===e.limitPrice&&(e.click=!0),3===e.type&&e.last===e.stopPrice&&(e.click=!0),e.orderType&&2!==e.orderType&&!t&&(e.click=!0),a?this._activeBroker.modifyOrder(e):o.customUI&&void 0!==o.customUI.showOrderDialog?o.customUI.showOrderDialog(e,l):this._orderViewController().then(t=>this._activeBroker?t.showOrderView({order:e,focus:l,forceOrderDialog:s}):Promise.reject(\"Broker connection adapter is null\"))}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._brokerCommandsUI.[[Prototype]]._makeSureBrokerIsConnected",
+        "name": "_makeSureBrokerIsConnected",
+        "sourceLength": 111,
+        "source": "_makeSureBrokerIsConnected(){(0,w.assert)(1===this._activeBroker.connectionStatus(),\"Broker is not connected\")}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._brokerCommandsUI.[[Prototype]]._showPositionDialog",
+        "name": "_showPositionDialog",
+        "sourceLength": 798,
+        "source": "async _showPositionDialog(e,t={},r){await this._setSymbol(e.symbol);const s=await this._activeBroker.isTradable(e.symbol);if(!s.tradable){const t=void 0!==s.reason?s.reason:(0,te.makeNonTradableSymbolText)(e.symbol,this._activeBroker.metainfo().title);return this._showErrorNotification(B.t(null,void 0,i(326704)),t),Promise.resolve(!1)}{const i=this._activeBroker.metainfo();if(i.customUI&&void 0!==i.customUI.showPositionDialog)return i.customUI.showPositionDialog(e,{stopLoss:t.stopLoss||e.stopLoss,takeProfit:t.takeProfit||e.takeProfit},r)}return this._orderViewController().then(i=>this._activeBroker?i.showPositionView(e,{stopLoss:t.stopLoss,takeProfit:t.takeProfit,trailingStopPips:t.trailingStopPips},r||e.limitPrice&&3||e.stopPrice&&4):Promise.reject(\"Broker connection adapter is null\"))}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._brokerCommandsUI.[[Prototype]]._showIndividualPositionDialog",
+        "name": "_showIndividualPositionDialog",
+        "sourceLength": 549,
+        "source": "async _showIndividualPositionDialog(e,t={},i){await this._setSymbol(e.symbol);{const r=this._activeBroker.metainfo();if(r.customUI&&void 0!==r.customUI.showPositionDialog)return r.customUI.showPositionDialog(e,{stopLoss:t.stopLoss||e.stopLoss,takeProfit:t.takeProfit||e.takeProfit},i)}return this._orderViewController().then(r=>this._activeBroker?r.showIndividualPositionView(e,{stopLoss:t.stopLoss,takeProfit:t.takeProfit,trailingStopPips:t.trailingStopPips},i||e.limitPrice&&3||e.stopPrice&&4):Promise.reject(\"Broker connection adapter is null\"))}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._brokerCommandsUI.[[Prototype]]._isBrokerSideMaintenance",
+        "name": "_isBrokerSideMaintenance",
+        "sourceLength": 135,
+        "source": "_isBrokerSideMaintenance(){return isFeatureEnabled((0,X.makeBrokerSideMaintananceFeatureToggleName)(this._activeBroker.metainfo().id))}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._brokerCommandsUI.[[Prototype]]._showCancelOrderDialog",
+        "name": "_showCancelOrderDialog",
+        "sourceLength": 136,
+        "source": "_showCancelOrderDialog(e,t){return Oe.ConfirmOrderCancelDialog.get().open(e,this._getAbortSignal()).then(i=>i?t(e):Promise.resolve(!1))}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._brokerCommandsUI.[[Prototype]]._showCancelMultipleOrdersDialog",
+        "name": "_showCancelMultipleOrdersDialog",
+        "sourceLength": 178,
+        "source": "_showCancelMultipleOrdersDialog(e,t,i,r){const s=i.length;return Oe.ConfirmOrderCancelDialog.get().multiple(e,t,s,this._getAbortSignal()).then(s=>s?r(e,t,i):Promise.resolve(!1))}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._brokerCommandsUI.[[Prototype]]._obtainPositionClosingData",
+        "name": "_obtainPositionClosingData",
+        "sourceLength": 641,
+        "source": "async _obtainPositionClosingData(e){try{const{supportLots:t,qtyStep:r,uiQtyStep:s,minQty:o,qtyLabel:n,qtyFormatter:a,priceFormatter:c}=await this._obtainPositionOrIndividualPositionClosingCommonData(e),d=this._activeBroker.metainfo().configFlags.supportPartialClosePosition,u=l({symbol:e.symbol,side:1===e.side?B.t(null,void 0,i(273064)):B.t(null,void 0,i(777851)),qty:a.format(e.qty),price:c.format(e.avgPrice),closePositionCancelsOrders:this._activeBroker.config.closePositionCancelsOrders});return{position:e,supportLots:t,qtyStep:r,uiQtyStep:s,minQty:o,qtyLabel:n,supportPartialClosePosition:d,qtyFormatter:a,message:u}}catch(e){return}}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._brokerCommandsUI.[[Prototype]]._obtainIndividualPositionClosingData",
+        "name": "_obtainIndividualPositionClosingData",
+        "sourceLength": 909,
+        "source": "async _obtainIndividualPositionClosingData(e){try{this._isCloseIndividualPositionDialogLoading=!0;const t=(0,w.ensureDefined)(await this._activeBroker.individualPositionById(e)),{supportLots:r,qtyStep:s,uiQtyStep:o,minQty:n,qtyLabel:a,qtyFormatter:c,priceFormatter:d}=await this._obtainPositionOrIndividualPositionClosingCommonData(t),u=this._activeBroker.metainfo().configFlags.supportPartialCloseIndividualPosition,h=l({symbol:t.symbol,side:1===t.side?B.t(null,void 0,i(273064)):B.t(null,void 0,i(777851)),qty:c.format(t.qty),price:d.format(t.price),id:e,closePositionCancelsOrders:this._activeBroker.config.closePositionCancelsOrders});return this._isCloseIndividualPositionDialogLoading=!1,{individualPosition:t,supportLots:r,qtyStep:s,uiQtyStep:o,minQty:n,qtyLabel:a,supportPartialCloseIndividualPosition:u,qtyFormatter:c,message:h}}catch(e){return void(this._isCloseIndividualPositionDialogLoading=!1)}}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._brokerCommandsUI.[[Prototype]]._obtainPositionOrIndividualPositionClosingCommonData",
+        "name": "_obtainPositionOrIndividualPositionClosingCommonData",
+        "sourceLength": 380,
+        "source": "async _obtainPositionOrIndividualPositionClosingCommonData(e){const t=await this._activeBroker.symbolInfo(e.symbol),i=void 0!==t.lotSize,r=t.qty.step,s=t.qty.uiStep,o=t.qty.min,n=t.units;return{supportLots:i,qtyStep:r,uiQtyStep:s,minQty:o,qtyFormatter:await this._activeBroker.quantityFormatter(e.symbol),priceFormatter:await this._activeBroker.formatter(e.symbol,!1),qtyLabel:n}}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._brokerCommandsUI.[[Prototype]]._closePositionForNonTradableSymbol",
+        "name": "_closePositionForNonTradableSymbol",
+        "sourceLength": 366,
+        "source": "async _closePositionForNonTradableSymbol(e){const{supportClosePositionForNonTradableSymbol:t,supportClosePosition:r}=this._activeBroker.metainfo().configFlags;if(!t||!r){const t=B.t(null,{replace:{symbol:e.symbol}},i(946305));return this._showErrorNotification(t,B.t(null,void 0,i(348434))),!1}return!!await xe.show(e.symbol)&&this._activeBroker.closePosition(e.id)}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._brokerCommandsUI.[[Prototype]]._cancelOrderForNonTradableSymbol",
+        "name": "_cancelOrderForNonTradableSymbol",
+        "sourceLength": 306,
+        "source": "async _cancelOrderForNonTradableSymbol(e,t){if(!this._activeBroker.metainfo().configFlags.supportCancelOrderForNonTradableSymbol){const t=B.t(null,{replace:{symbol:e}},i(993545));return this._showErrorNotification(t,B.t(null,void 0,i(30665))),!1}return!!await Me.show(e)&&this._activeBroker.cancelOrder(t)}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._brokerCommandsUI.[[Prototype]]._assertPositionExistsAndNotClosed",
+        "name": "_assertPositionExistsAndNotClosed",
+        "sourceLength": 306,
+        "source": "async _assertPositionExistsAndNotClosed(e){const t=await this._activeBroker.positionById(e);if(!(0,X.checkIsExistingPosition)(t))throw new Ne.UserFriendlyError({userFriendlyMessage:B.t(null,{replace:{positionId:e}},i(969233)),detailedErrorMessage:`Position ${e} doesn't exist or has already been closed`})}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._brokerCommandsUI.[[Prototype]]._getParentOrderOrPosition",
+        "name": "_getParentOrderOrPosition",
+        "sourceLength": 278,
+        "source": "async _getParentOrderOrPosition(e){try{return 1===e.parentType?await this._activeBroker.orderById(e.parentId):2===e.parentType?await this._activeBroker.positionById(e.parentId):3===e.parentType?await this._activeBroker.individualPositionById(e.parentId):void 0}catch(e){return}}"
+      },
+      {
+        "path": "bitunixTv.tvWidget.host._trading._brokerCommandsUI.[[Prototype]]._assertOrderExistsAndNotCanceled",
+        "name": "_assertOrderExistsAndNotCanceled",
+        "sourceLength": 289,
+        "source": "async _assertOrderExistsAndNotCanceled(e){const t=await this._activeBroker.orderById(e);if(void 0===t||1===t.status)throw new Ne.UserFriendlyError({userFriendlyMessage:B.t(null,{replace:{orderId:e}},i(579287)),detailedErrorMessage:`Order ${e} doesn't exist or has already been canceled`})}"
+      }
+    ]
+  },
+  "positionCollections": {
+    "positionServicePositions": {
+      "path": "positionService._positions",
+      "type": "object",
+      "entries": [],
+      "note": ""
+    },
+    "existingPositionIds": {
+      "path": "positionService._existingPositionIds",
+      "type": "object",
+      "entries": [],
+      "note": ""
+    },
+    "adapterPositionsCache": {
+      "path": "adapter._positionsCache",
+      "type": "object",
+      "entries": [
+        {
+          "path": "adapter._positionsCache._objects",
+          "type": "object",
+          "keys": [],
+          "selectedFields": {}
+        },
+        {
+          "key": "_started",
+          "type": "boolean"
+        },
+        {
+          "key": "_isObjectsRequestActual",
+          "type": "boolean"
+        },
+        {
+          "key": "_ordersPromise",
+          "type": "null"
+        },
+        {
+          "key": "_getter",
+          "type": "function"
+        },
+        {
+          "path": "adapter._positionsCache.updateDelegate",
+          "type": "object",
+          "keys": [
+            "fire",
+            "_listeners"
+          ],
+          "selectedFields": {}
+        },
+        {
+          "path": "adapter._positionsCache.partialUpdateDelegate",
+          "type": "object",
+          "keys": [
+            "fire",
+            "_listeners"
+          ],
+          "selectedFields": {}
+        }
+      ],
+      "note": ""
+    },
+    "brokerConnectionPositions": {
+      "path": "brokerConnection._positions",
+      "type": "array",
+      "entries": [],
+      "note": ""
+    },
+    "brokerConnectionOrders": {
+      "type": "array",
+      "keys": [
+        "length"
+      ]
+    }
+  },
+  "chartModules": [
+    {
+      "frame": "top > iframe[2]",
+      "chartWidgetFound": true,
+      "chartWidgetMethods": [
+        {
+          "path": "top > iframe[2].chartWidget.[[Prototype]].executeActionById",
+          "name": "executeActionById",
+          "sourceLength": 307,
+          "source": "executeActionById(e){if(\"takeScreenshot\"===e)return console.warn('Action \"takeScreenshot\" is deprecated. Use method \"takeScreenshot\" instead'),void this._chartWidgetCollection.takeScreenshot();e in this._actions?this._actions[e]instanceof w&&this._actions[e].execute():console.warn(\"Unknown action id: \"+e)}"
+        },
+        {
+          "path": "top > iframe[2].chartWidget.[[Prototype]]._createPrePostMarket",
+          "name": "_createPrePostMarket",
+          "sourceLength": 25,
+          "source": "_createPrePostMarket(e){}"
+        },
+        {
+          "path": "top > iframe[2].chartWidget.[[Prototype]].showReplayOrderConfirmationDialog",
+          "name": "showReplayOrderConfirmationDialog",
+          "sourceLength": 91,
+          "source": "showReplayOrderConfirmationDialog(){if(!this.model().isInReplay())return Promise.resolve()}"
+        },
+        {
+          "path": "top > iframe[2].chartWidget.[[Prototype]].updateCrossHairPositionIfNeeded",
+          "name": "updateCrossHairPositionIfNeeded",
+          "sourceLength": 608,
+          "source": "updateCrossHairPositionIfNeeded(){if(this._model){const e=Ae.tool.value();this._model.model().setCurrentTool(e);const t=(0,ce.lastMouseOrTouchEventInfo)();if(t.isTouch){const e=this._maximizedPaneWidget||this._paneWidgets[0];if(e.hasState()&&(!t.stylus&&(this._isLineToolModeExceptBrush()||(0,Ae.toolIsMeasure)(Ae.tool.value()))||this.selectPointMode().value()!==Ae.SelectPointMode.None)){const t=.5*this._model.model().timeScale().width(),i=.5*e.state().defaultPriceScale().height();e.setCursorPosition(t,i)}const i=this._model.model().crossHairSource();i.updateAllViews((0,Wt.sourceChangeEvent)(i.id()))}}}"
+        }
+      ],
+      "chartModelKeys": [
+        "_createLineCommand",
+        "_initialTimeScrollState",
+        "_initialTimeScrollPos",
+        "_scalePriceInfo",
+        "_currentSourceMoveCommand",
+        "_currentLineChangeCommand",
+        "_currentCustomMoveCommand",
+        "_zoomStack",
+        "_chartWidget",
+        "m_model",
+        "_undoHistory",
+        "_lineToolsGroupController",
+        "beginUndoMacro",
+        "endUndoMacro",
+        "createUndoCheckpoint",
+        "undoToCheckpoint"
+      ],
+      "innerModelKeys": [
+        "_onRearrangePanes",
+        "_lineToolsGroupModel",
+        "_sourcesBeingMoved",
+        "_activeItemBeingMoved",
+        "_lineBeingEdited",
+        "_linePointBeingEdited",
+        "_linePointBeingChanged",
+        "_customSourceBeingMovedHitTestData",
+        "_customSourceBeingMoved",
+        "_dataSourceCollectionChanged",
+        "_sourceProperitesChanged",
+        "_sourceZOrderChanged",
+        "_symbolSourceResolved",
+        "_symbolSourceResolvingActive",
+        "_adjustForDividendsAvailability",
+        "_adjustForDividendsEnabled",
+        "_sessions",
+        "_currentTool",
+        "_lineBeingCreated",
+        "_paneBeingCreatedLineOn",
+        "_lineCancelled",
+        "_phantomSourceContainer",
+        "_destroyed",
+        "_isSettingsExternalPosition",
+        "_isTimeScrolling",
+        "_magnet",
+        "_scrollingState",
+        "_modelIntervals",
+        "_rendererOptionsProvider",
+        "_studyInserted",
+        "_cachedStudiesMaxOffset",
+        "_replayStatus",
+        "_panes",
+        "_tagsChanged",
+        "_strategySources",
+        "_strategySourcesChange",
+        "_activeStrategySource",
+        "_paneCollapsingAvailable",
+        "_panesCollectionChanged",
+        "_scrollEnabled",
+        "_zoomEnabled",
+        "_lollipopSourcesWatcher",
+        "_alertsWatcher",
+        "_hoveredSource",
+        "_hoveredSourceChanged",
+        "_lastHoveredHittestData",
+        "_lastSelectedHittestData",
+        "_topmostCustomSources",
+        "_fgCustomSources",
+        "_bgCustomSources",
+        "_allCustomSources",
+        "_customSourcesMap",
+        "_multiPaneSources",
+        "_showLegendProperty",
+        "_id",
+        "_chartSaveTime",
+        "_availableCurrenciesList",
+        "_availableCurrencies",
+        "_availablePriceSources",
+        "_availableUnitsObject",
+        "_availableUnits",
+        "_availablePriceSourcesBySymbol",
+        "_shouldBeSavedEvenIfHidden",
+        "_watchedThemeSpawn",
+        "_gradientColorsCache",
+        "_studiesWV",
+        "_studiesExcludeInternalWV",
+        "_resetScalesAvailable",
+        "_recalcVRStudiesParams",
+        "_recalcColorStudiesParams",
+        "_recalcVisibleRangeStudiesImplDebounced",
+        "_recalcColorStudiesImplDebounced",
+        "_width",
+        "_resetScales",
+        "_chartThemeLoaded",
+        "_selection",
+        "_selectedSourceChanged",
+        "_symbolSourceCollectionChanged",
+        "_gridSource",
+        "_visibleRangeStudiesInputs",
+        "_syncPointCache",
+        "_lastAppliedGotoTimeRange",
+        "_lastGotoTimeRange",
+        "_lollipopSourcesWatcherLoader",
+        "_clearSelection",
+        "_removeSourceFromSelection",
+        "_addSourceToSelection",
+        "_recalcSymbolResolvingActive",
+        "_recalcAdjustForDividendsAvailability",
+        "_recalcAdjustForDividendsEnabled",
+        "_recalcPaneCollapsingAvailable",
+        "_updateResetScalesAvailableValue",
+        "_chartApi",
+        "_invalidateHandler",
+        "_undoModel",
+        "_properties",
+        "_options",
+        "_hibernateWV",
+        "_linkingGroupIndex",
+        "_isAutoSaveEnabled",
+        "_readOnly",
+        "_isSnapshot",
+        "_backgroundColor",
+        "_backgroundTopColor",
+        "_backgroundCounterColor",
+        "_isDark",
+        "_studiesMetaData",
+        "_studyVersioning",
+        "m_crossHairSource",
+        "_crossHairSelectPointMode",
+        "_timeScale",
+        "m_mainSeries",
+        "_boundUpdateStudiesMaxOffset",
+        "_barsMarksSources",
+        "_mainSeriesScaleRatioProperty",
+        "_watermarkSource",
+        "_studyShiftColorStartOffset",
+        "_dateFormatter",
+        "_dateTimeFormatter",
+        "_timeFormatter"
+      ],
+      "foregroundSources": {
+        "path": "top > iframe[2].chartWidget._model.m_model._fgCustomSources",
+        "type": "array",
+        "entries": [
+          {
+            "path": "top > iframe[2].chartWidget._model.m_model._fgCustomSources[0]",
+            "type": "object",
+            "keys": [
+              "_id",
+              "_model",
+              "_ask",
+              "_bid",
+              "_symbol",
+              "_realtimeProvider",
+              "_bidLinesPaneView",
+              "_askLinesPaneView",
+              "_bidPriceAxisView",
+              "_askPriceAxisView",
+              "_regularPriceAxisViews",
+              "_bidLabelPaneView",
+              "_askLabelPaneView",
+              "_bidPriceLineAxisView",
+              "_askPriceLineAxisView",
+              "_externalPriceAxisViews",
+              "_updateRealtimeDataHandler",
+              "_hibernated"
+            ],
+            "selectedFields": {}
+          },
+          {
+            "path": "top > iframe[2].chartWidget._model.m_model._fgCustomSources[1]",
+            "type": "object",
+            "keys": [
+              "_id",
+              "_model",
+              "_paneViews",
+              "_executionsPointsManager",
+              "_showExecutions",
+              "_showExecutionLabels",
+              "_globalVisibility"
+            ],
+            "selectedFields": {}
+          }
+        ],
+        "note": ""
+      }
+    },
+    {
+      "moduleId": "66786",
+      "path": "top > iframe[2].webpackChunktradingview[11][1][66786]",
+      "name": "66786",
+      "sourceLength": 739,
+      "source": "(e,t,i)=>{\"use strict\";async function r(e){const{positionId:t,showErrorNotification:r,handler:n,closePositionCancelsOrders:a,abortSignal:l}=e;if(!await(0,o.showSimpleConfirmDialog)({title:s.t(null,void 0,i(172361)).replace(\"{positionId}\",t),text:s.t(null,void 0,i(492698)).replace(\"{positionId}\",t)+(a?\" \"+s.t(null,void 0,i(893827)):\"\"),mainButtonText:s.t(null,void 0,i(920848)),mainButtonIntent:\"primary\",cancelButtonText:s.t(null,void 0,i(620036)),showBackdrop:!0,abortSignal:l}))return!1;try{return await n()}catch(e){return r(s.t(null,void 0,i(945593)),function(e){let t=\"\";return null!==e&&\"object\"==typeof e&&e.message?t=e.message:\"string\"==typeof e&&(t=e),t}(e)),!1}}i.d(t,{reversePositionDialog:()=>r});var s=i(609838),o=i(252546)}"
+    },
+    {
+      "moduleId": "583705",
+      "path": "top > iframe[2].webpackChunktradingview[11][1][583705]",
+      "name": "583705",
+      "sourceLength": 5426,
+      "source": "(e,t,i)=>{\"use strict\";function r(e){const t=e;return{id:t.id,symbol:t.symbol,side:t.side,avgPrice:t.avgPrice,pl:t.pl,price:t.price,qtyBySide:t.qtyBySide,stopType:t.stopType,takeProfit:t.takeProfit,stopLoss:t.stopLoss,trailingStopPips:t.trailingStopPips}}i.d(t,{PositionsService:()=>h,PositionsUpdateType:()=>u,cropPositionData:()=>r});var s=i(650151),o=i(466052),n=i(372605),a=i(6835),l=i(481853),c=i(397728);const d=(0,a.getLogger)(\"Trading.PositionService\");var u;!function(e){e[e.Full=0]=\"Full\",e[e.Partial=1]=\"Partial\"}(u||(u={}));class h extends l.BrokerService{constructor(){super(...arguments),this._existingPositionIds=new Set,this._positions=new Map,this._positionUpdate=new o.Delegate,this._positionsRemoved=new o.Delegate,this._displayMode=1,this._updatePositionPLHandler=this._updatePositionPL.bind(this),this._updatePositionEstLiqPriceHandler=this._updatePositionEstLiqPrice.bind(this)}destroy(){this.stopService()}positions(){return Array.from(this._positions.values())}find(e){return this._positions.get(e)||null}async realIdFromBroker(e){const t=(0,s.ensureNotNull)(this.activeBroker());if(1===this._displayMode){const i=await t.positionById(e);if(void 0!==i)return i.id}else{const i=await t.individualPositionById(e);if(void 0!==i)return i.id}return null}positionUpdate(){return this._positionUpdate}positionsRemoved(){return this._positionsRemoved}isDisplayModeIndividualPositions(){return 0===this._displayMode}async getCurrency(e){return await(0,s.ensureNotNull)(this.activeBroker()).getPositionCurrency(e)||\"\"}supportBrackets(e){return Boolean(this.isDisplayModeIndividualPositions()?e.supportIndividualPositionBrackets:e.supportPositionBrackets)}supportReverse(e){return Boolean(!this.isDisplayModeIndividualPositions()&&e.supportReversePosition)}stopService(){this._clearPositions();const e=(0,s.ensureNotNull)(this.activeBroker());this.isDisplayModeIndividualPositions()?e.individualPositionUpdate.unsubscribeAll(this):e.positionUpdate.unsubscribeAll(this)}startService(){this._clearPositions(),this._displayMode=function(e){if(null===e)return 1;const t=e.metainfo().configFlags;return t.supportPositionNetting?t.supportPositionBrackets?1:t.supportCloseIndividualPosition?0:1:1}(this.activeBroker()),this._requestPositions()}_clearPositions(){const e=(0,s.ensureNotNull)(this.activeBroker()),t=Array.from(this._positions.keys());for(const i of t)this.isDisplayModeIndividualPositions()?e.unsubscribeIndividualPositionPL(i,this._updatePositionPLHandler):e.unsubscribePL(i,this._updatePositionPLHandler);this._positions.clear(),this._existingPositionIds.clear(),t.length>0&&d.logNormal(`All positions removed, id's: ${t}`),this._positionsRemoved.fire(t)}async _requestPositions(){const e=this.activeBroker();if(!e)return;const t=this.isDisplayModeIndividualPositions(),i=await(t?e.individualPositions():e.positions());for(const e of i)this._addPosition(e);t?e.individualPositionUpdate.subscribe(this,this._addPosition):e.positionUpdate.subscribe(this,this._addPosition)}_addPosition(e){const t=e.id,i=this._positions.has(t),r=(0,s.ensureNotNull)(this.activeBroker()),o=this.isDisplayModeIndividualPositions();if(!e.qty)return i&&(o?r.unsubscribeIndividualPositionPL(t,this._updatePositionPLHandler):r.unsubscribePL(t,this._updatePositionPLHandler),this._positions.delete(t),this._positionsRemoved.fire([t])),void this._logPositionUpdate(e,!0);const n=this._getPositionData(e),a=this._updateType(n);this._logPositionUpdate(n,a===u.Full),this._positions.set(t,n),this._firePositionUpdate(n,a),i||(o?r.subscribeIndividualPositionPL(t,this._updatePositionPLHandler):(r.subscribePL(t,this._updatePositionPLHandler),r.subscribePositionEstLiqPrice(t,this._updatePositionEstLiqPriceHandler)))}_updatePositionEstLiqPrice(e,t){const i=(0,s.ensureDefined)(this._positions.get(e));i.estLiqPrice=(0,n.isNumber)(t)?t:null,this._firePositionUpdate(i,u.Partial)}_updatePositionPL(e,t,i,r,o){const n=(0,s.ensureDefined)(this._positions.get(e));n.pl=t,n.textTooltip=i,n.qtyTooltip=r,n.plStyle=o,n.refreshWidth=!1,this._firePositionUpdate(n,u.Partial)}_getPositionData(e){var t,i;const r=(0,s.ensureNotNull)(this.activeBroker()).metainfo().configFlags,o=this._positions.get(e.id),n=this.isDisplayModeIndividualPositions(),a=Boolean(n?r.supportIndividualPositionBrackets:r.supportPositionBrackets);let l,d=!1,u=null;if(n){const t=e;l=t.price,d=Boolean(t.canBeClosed)}else{const r=e;l=r.avgPrice,u=null!==(i=null!==(t=r.pl)&&void 0!==t?t:null==o?void 0:o.pl)&&void 0!==i?i:null}return{...e,pl:u,estLiqPrice:o?o.estLiqPrice:void 0,plBasedOnLast:r.calculatePLUsingLast||!1,price:Math.abs((0,s.ensureDefined)(l)),qtyBySide:Math.abs(e.qty)*(1===e.side?1:-1),supportClose:Boolean(n?r.supportCloseIndividualPosition&&d:r.supportClosePosition),supportReverse:Boolean(!n&&r.supportReversePosition),supportBrackets:a,supportOnlyPairBrackets:Boolean(r.supportOnlyPairPositionBrackets),supportTrailingStop:(0,c.checkTrailingStopAvailability)(r)}}_firePositionUpdate(e,t){this._positionUpdate.fire({data:e,type:t})}_updateType(e){const t=this._positions.get(e.id);if(void 0===t)return u.Full;for(const i of Object.keys(t)){const r=i;if(\"pl\"!==r&&\"unrealizedPl\"!==r&&t[r]!==e[r])return u.Full}return u.Partial}_logPositionUpdate(e,t){if(!t)return;const i=e.id;let s=\"update\";this._existingPositionIds.has(i)||(s=\"add\",this._existingPositionIds.add(i)),function(e,t){t(JSON.stringify(r(e)))}(e,e=>{d.logNormal(`Position  ${s}: ${e}`)})}}}"
+    },
+    {
+      "moduleId": "326285",
+      "path": "top > iframe[2].webpackChunktradingview[11][1][326285]",
+      "name": "326285",
+      "sourceLength": 16000,
+      "source": "(e,t,i)=>{\"use strict\";function r(e){const t=[];for(const i of e)i.canBeClosed||(i.canBeClosed=!0,t.push(i));return t}function s(e){const t={};for(const i of e){let e=t[i.symbol];void 0===e&&(e={oldest:null,all:[]},t[i.symbol]=e),(null===e.oldest||e.oldest.date>i.date)&&(e.oldest=i),e.all.push(i)}const i=[];for(const e of Object.keys(t)){const r=(0,C.ensureDefined)(t[e]);for(const e of r.all){const t=r.oldest===e,s=t!==e.canBeClosed;e.canBeClosed=t,s&&i.push(e)}}return i}function o(e){const t={};for(const i of e){let e=t[i.symbol];void 0===e&&(e={},t[i.symbol]=e);let r=e[i.qty];void 0===r&&(r={oldest:null,all:[]},e[i.qty]=r),(null===r.oldest||r.oldest.date>i.date)&&(r.oldest=i),r.all.push(i)}const i=[];for(const e of Object.keys(t)){const r=(0,C.ensureDefined)(t[e]);for(const e of Object.keys(r)){const t=(0,C.ensureDefined)(r[e]);for(const e of t.all){const r=t.oldest===e,s=r!==e.canBeClosed;e.canBeClosed=r,s&&i.push(e)}}}return i}function n(e,t){return{symbol:t.symbol,type:2,side:1===t.side?-1:1,qty:Math.abs(e),seenPrice:null,isClose:!0}}function a(e,t){let i;const r=(0,J.createDeferredPromise)();return{subscription:e.subscribe(e=>{var s;r.resolve(),i=e,null===(s=null==t?void 0:t.onValueChange)||void 0===s||s.call(t)}),getter:()=>i,ready:(null==t?void 0:t.timeout)?(0,T.makeTimeLimited)(r.promise,t.timeout,X).catch(e=>{if(e!==X)throw e;void 0!==(null==t?void 0:t.timeoutValue)&&(i=t.timeoutValue)}):r.promise}}function l(e){(0,C.assert)(\"object\"!=typeof e,\"Expected not an object\")}function c(e,t){return(0,ge.getQuoteSessionInstance)(\"full\").snapshot(e)}function d(e){return\"error\"===e.status}function u(e,t){var i;e.configFlags=(i=e.configFlags,Object.assign({},De,i)),xe.push({metainfo:e,createBrokerFunction:t})}function h(){return xe.map(e=>e.metainfo)}async function p(e,t,i,r,s){const o=xe.filter(e=>e.metainfo.id===t)[0];let n;if(null===r){const i=await Ee.create(t,new Ie(t),Me),r=s=>{(null==s?void 0:s.metainfo().id)!==t&&(null==e||e.onBrokerChange.unsubscribe(null,r),i.destroy())};null==e||e.onBrokerChange.subscribe(null,r),n=i}else n=r;const a=new Se(e,o.metainfo,i,n);try{const t=await o.createBrokerFunction(a,null==e?void 0:e.brokerTelemetry),i=new Oe.BrokerRealtimeAdapter(o.metainfo.id);return new ae({brokerMetainfo:o.metainfo,brokerConnection:t,host:a,brokerRealtimeAdapter:i,tradingStat:e&&e.tradingStat(),tradingSettingsStorageGetter:e&&e.getBrokerTradingSettingsStorage,brokerPlan:s})}catch(e){return Promise.reject(`${t} broker creation error: ${(0,D.getLoggerMessage)(e)}`)}}function g(e){return h().filter(t=>t.id===e)[0]}i.r(t),i.d(t,{addBroker:()=>u,brokersList:()=>h,createBrokerConnection:()=>p,getBrokerMetainfo:()=>g});var m=i(609838),_=i(116193),b=i(148442),v=i(586639),y=i(275734),f=i(156963),k=i(656846),P=i(372605),S=i(466052),C=i(650151);class w{constructor(e){this._objects={},this._started=!1,this._isObjectsRequestActual=!1,this._ordersPromise=null,this._getter=e,this.updateDelegate=new S.Delegate,this.partialUpdateDelegate=new S.Delegate}start(){this._started||(this._started=!0,this._ordersPromise=this._requestObjects())}stop(){this._objects={},this._started=!1,this._ordersPromise=null,this._isObjectsRequestActual=!1}update(e,t){this._started&&(this._isObjectsRequestActual?this._isObjectsRequestActual=!1:(this._objects[e.id]=e,this._onObjectUpdated(e,t)))}partialUpdate(e,t){if(!this._started)return;if(this._isObjectsRequestActual)return void(this._isObjectsRequestActual=!1);let i,r;(0,P.isObject)(e)?(i=e.id,r=e):(i=e,r=(0,C.ensure)(t));const s=this._objects[i];s&&(Object.assign(s,r),this.partialUpdateDelegate.fire(s,r))}fullUpdate(){this._started&&(this._isObjectsRequestActual?this._isObjectsRequestActual=!1:this._ordersPromise=this._requestObjects())}getObjects(){return this._ordersPromise||Promise.resolve(Object.values(this._objects))}_onObjectUpdated(e,t){this.updateDelegate.fire(e,t)}_onAllObjectsUpdated(){this._objectsCache().forEach(e=>this.updateDelegate.fire(e,!0))}_objectsCache(){return Object.values(this._objects)}async _requestObjects(){let e=[];do{this._isObjectsRequestActual=!0,e=await this._getter()}while(!this._isObjectsRequestActual);var t;return this._objects=(t=\"id\",e.reduce((e,i)=>(e[i[t]]=i,e),{})),this._ordersPromise=null,this._isObjectsRequestActual=!1,this._onAllObjectsUpdated(),e}}var B=i(6835),T=i(511990);class E extends w{constructor(e,t){super(e),this._brokerConfigGetter=t}_onObjectUpdated(e,t){this._patchIndividualPositions(this._objectsCache().filter(t=>t.symbol===e.symbol&&0!==t.qty),e,t),super._onObjectUpdated(e,t)}_onAllObjectsUpdated(){this._patchIndividualPositions(this._objectsCache().filter(e=>0!==e.qty)),super._onAllObjectsUpdated()}_patchIndividualPositions(e,t,i){const n=this._brokerConfigGetter();let a;a=n.requiresFIFOCloseIndividualPositions?n.fifoOnlyForSameQty?o:s:r;const l=a(e);for(const e of l)t!==e&&super._onObjectUpdated(e,i)}}const O=(0,B.getLogger)(\"Trading.Migrations\");var D=i(637401),I=i(311757),x=i(508334),M=i(189904),A=i(481330),L=i(864348);class N{constructor(){this._validators=new Map}add(e,t){this._validators.set(t,e)}validate(e){const t={};let i=!0;for(const[r,s]of this._validators.entries()){const o=s.validate(e);o.isValid||(i=!1,t[r]=o.errorMessage)}return i?{isValid:i}:{isValid:i,errorMessages:t}}}class V{constructor(e,t,i=[]){this._status=L.PlaceOrEditContextStatus.Undefined,this._onStatusChange=new S.Delegate,this._onDataChange=new S.Delegate,this._errors={},this._isValidationEnabled=t,this._source=e,this._validator=new N;for(const{validator:e,validatorName:t}of i)this._validator.add(e,t)}onReady(){return this._onReady}source(){return this._source}data(){return this._orderData}async setData(e,t){this._orderData=await this._processOrderData(e),this._assertOrderIsValid(),this._source=t,this._onDataChange.fire()}status(){return this._status}errors(){return this._errors}onStatusChange(){return this._onStatusChange}onDataChange(){return this._onDataChange}async send(e){if(this._status===L.PlaceOrEditContextStatus.Error)return this._processError(new Error(Object.values(this._errors)[0])),!1;if(this._status!==L.PlaceOrEditContextStatus.Undefined)return!1;this._setStatus(L.PlaceOrEditContextStatus.Loading),await this._onReady;const t=await this._processSend(e),i=t?L.PlaceOrEditContextStatus.Undefined:L.PlaceOrEditContextStatus.Error;return this._setStatus(i),t}async preview(){return this._status===L.PlaceOrEditContextStatus.Error?{sections:[]}:(await this._onReady,this._preview(this._orderData))}_assertOrderIsValid(){const{isValid:e,errorMessages:t}=this._validate();let i=!1;if(e)i=this._status!==L.PlaceOrEditContextStatus.Undefined,this._errors={},this._status=L.PlaceOrEditContextStatus.Undefined;else{const[e]=(0,P.deepEquals)(this._errors,t);i=!e,this._errors=t,this._status=L.PlaceOrEditContextStatus.Error}i&&this._onStatusChange.fire()}_setStatus(e){this._status!==e&&(this._status=e,this._onStatusChange.fire())}_validate(){return this._isValidationEnabled?this._validator.validate(this._orderData):{isValid:!0}}}var R=i(957877),F=i(807107);class W{constructor(e){const{priceType:t,quotesGetter:i,formatter:r,instrumentInfo:s,supportStopOrdersInBothDirections:o,supportStopLimitOrdersInBothDirections:n,supportStrictCheckingLimitOrderPrice:a}=e;this._priceType=t,this._getQuotes=i,this._formatter=r,this._supportStopOrdersInBothDirections=Boolean(o),this._supportStopLimitOrdersInBothDirections=Boolean(n),this._supportStrictCheckingLimitOrderPrice=Boolean(a),this._symbolType=s.type||\"\",this._minTick=s.minTick,this._limitPriceStep=s.limitPriceStep,this._stopPriceStep=s.stopPriceStep,this._variableMinTickData=s.variableMinTick?(0,F.makeVariableMinTickData)(this._minTick,s.variableMinTick):void 0}validate(e){const{type:t,side:r,stopPrice:s,limitPrice:o}=e,n=2===this._priceType;if(2===t||n&&1===t||!n&&3===t)return{isValid:!0};const a=n?s:o;if(void 0===a)return{isValid:!1,errorMessage:m.t(null,void 0,i(347957))};const l=(0,A.getPriceStep)({price:a,priceType:this._priceType,minTick:this._minTick,variableMinTickData:this._variableMinTickData,limitPriceStep:this._limitPriceStep,stopPriceStep:this._stopPriceStep}),c=(0,A.roundToStepRequired)({priceType:this._priceType,minTick:this._minTick,limitPriceStep:this._limitPriceStep,stopPriceStep:this._stopPriceStep}),d=(0,R.validatePrice)({price:a,askOrBid:(0,A.getQuotePrice)(this._getQuotes(),r),orderType:t,side:r,isStopPrice:n,isForex:\"forex\"===this._symbolType,formatter:this._formatter,supportStopOrdersInBothDirections:this._supportStopOrdersInBothDirections,supportStopLimitOrdersInBothDirections:this._supportStopLimitOrdersInBothDirections,supportStrictCheckingLimitOrderPrice:this._supportStrictCheckingLimitOrderPrice,step:l,roundedToStep:c});return d.res?{isValid:!1,errorMessage:d.msg}:{isValid:!0}}}var q=i(99708);class U{constructor(e){this._quantityMetainfo=e}validate(e){const t=(0,q.checkQtyError)(this._quantityMetainfo,e.qty,!0);return t.res?{isValid:!1,errorMessage:t.msg}:{isValid:!0}}}var z=i(960521),$=i(798165);class H{constructor(e){const{instrumentInfo:t,quotesGetter:i,baseCurrencyCryptoBalanceGetter:r,quoteCurrencyCryptoBalanceGetter:s}=e;this._quantityMetainfo=t.qty,this._getQuotes=i,this._getBaseCurrencyCryptoBalance=r,this._getQuoteCurrencyCryptoBalance=s}validate(e){const t=(0,q.checkQtyError)(this._quantityMetainfo,e.qty,!0);if(t.res)return{isValid:!1,errorMessage:t.msg};const r=(0,A.getOrderPrice)(e,this._getQuotes()),s=e.hasOwnProperty(\"id\");if(void 0===r)return{isValid:!1,errorMessage:m.t(null,void 0,i(347957))};const o=(0,A.getCryptoBalanceValue)({balance:this._getBaseCurrencyCryptoBalance(),side:e.side,isExistingOrder:s,qty:e.qty,orderPrice:r}),n=(0,A.getCryptoBalanceValue)({balance:this._getQuoteCurrencyCryptoBalance(),side:e.side,isExistingOrder:s,qty:e.qty,orderPrice:r}),a=(0,$.validateBalance)({side:e.side,baseValue:e.qty,baseBalanceValue:o,quoteValue:(0,z.Big)(e.qty).mul(r).toNumber(),quoteBalanceValue:n});return a.res?{isValid:!1,errorMessage:a.msg}:{isValid:!0}}}var Q=i(164530),j=i(346849),K=i(943778);class G{constructor(e){this._bracketPercentPriceRuleCheckers=[];const{bracketType:t,priceType:i,parentType:r,quotesGetter:s,formatter:o,instrumentInfo:n,validationRules:a}=e;if(this._bracketType=t,this._priceType=i,this._parentType=r,this._getQuotes=s,this._formatter=o,this._pipSize=n.pipSize,this._priceStep=(0,A.getPriceStep)({priceType:i,minTick:n.minTick||n.pipSize,limitPriceStep:n.limitPriceStep,stopPriceStep:n.stopPriceStep}),this._roundToStepRequired=(0,A.roundToStepRequired)({priceType:i,minTick:n.minTick||n.pipSize,limitPriceStep:n.limitPriceStep,stopPriceStep:n.stopPriceStep}),void 0!==a)for(const e of a)this._bracketPercentPriceRuleCheckers.push((0,j.makeBracketPercentPriceRuleChecker)(e.options.min,e.options.max))}validate(e){const{side:t,takeProfit:r,stopLoss:s,trailingStopPips:o}=e;if(this._bracketType===Q.BracketType.TakeProfit&&void 0===r||this._bracketType===Q.BracketType.StopLoss&&void 0===s||this._bracketType===Q.BracketType.TrailingStop&&void 0===o)return{isValid:!0};const n=(0,A.getOrderPrice)(e,this._getQuotes());if(void 0===n)return{isValid:!1,errorMessage:m.t(null,void 0,i(762686))};const a=(this._bracketType!==Q.BracketType.TakeProfit?-1:1)*t,l=this._getPrice(e,n,a),c=this._getPips(e,n,a),d=(0,j.checkBracketError)({quotes:this._getQuotes(),side:t,price:l,pips:c,priceType:this._priceType,priceStep:this._priceStep,parentPrice:n,parentType:this._parentType,bracketType:this._bracketType,isStatusEditing:!1,isEnabled:!0,bracketPercentPriceRuleCheckers:this._bracketPercentPriceRuleCheckers,priceFormatter:this._formatter,isRoundToPriceStep:this._roundToStepRequired});return d.res?{isValid:!1,errorMessage:d.msg}:{isValid:!0}}_getPrice(e,t,i){var r,s;switch(this._bracketType){case Q.BracketType.TakeProfit:return null!==(r=e.takeProfit)&&void 0!==r?r:null;case Q.BracketType.StopLoss:return null!==(s=e.stopLoss)&&void 0!==s?s:null;case Q.BracketType.TrailingStop:return void 0===e.trailingStopPips?null:(0,K.pipsToPrice)(e.trailingStopPips,t,i,this._pipSize);default:return null}}_getPips(e,t,i){var r;switch(this._bracketType){case Q.BracketType.TakeProfit:return void 0===e.takeProfit?null:(0,K.priceToPips)(e.takeProfit,t,i,this._pipSize);case Q.BracketType.StopLoss:return void 0===e.stopLoss?null:(0,K.priceToPips)(e.stopLoss,t,i,this._pipSize);case Q.BracketType.TrailingStop:return null!==(r=e.trailingStopPips)&&void 0!==r?r:null;default:return null}}}class Z{constructor(e){const{orderDialogOptions:t}=e;this._orderDialogOptions=t}validate(e){var t;const{customFields:r}=e;if(void 0===(null===(t=this._orderDialogOptions)||void 0===t?void 0:t.customFields)||0===this._orderDialogOptions.customFields.length)return{isValid:!0};const s=[];return this._orderDialogOptions.customFields.forEach(e=>{void 0===(null==r?void 0:r[e.id])&&s.push(e.title)}),0===s.length?{isValid:!0}:{isValid:!1,errorMessage:m.t(null,void 0,i(346881)).format({customFields:s.join(\", \")})}}}var J=i(46130);const X=\"promise rejected by time-out\";class Y extends V{constructor(e){const{orderData:t,source:i,instrumentInfo:r,quotes$:s,configFlags:o,formatter:n,tpValidationRules:l,slValidationRules:c,isValidationEnabled:d,orderDialogOptions:u,callbacks:h,baseCurrencyCryptoBalance$:p,quoteCurrencyCryptoBalance$:g}=e,m={onValueChange:()=>{}},_={...m,timeout:2e3,timeoutValue:null},{subscription:b,getter:v,ready:y}=a(s,m),{subscription:f,getter:P,ready:S}=a(p,_),{subscription:C,getter:w,ready:B}=a(g,_),T=o.supportCryptoExchangeOrderTicket||o.supportSymbolSpecificCryptoOrderTicket&&\"crypto\"===r.type?new H({instrumentInfo:r,quotesGetter:v,baseCurrencyCryptoBalanceGetter:P,quoteCurrencyCryptoBalanceGetter:w}):new U(r.qty);super(i,d,[{validator:T,validatorName:\"qty\"},{validator:new W({priceType:2,quotesGetter:v,formatter:n,instrumentInfo:r,supportStopOrdersInBothDirections:o.supportStopOrdersInBothDirections,supportStopLimitOrdersInBothDirections:o.supportStopLimitOrdersInBothDirections}),validatorName:\"stopPrice\"},{validator:new W({priceType:1,quotesGetter:v,formatter:n,instrumentInfo:r,supportStrictCheckingLimitOrderPrice:o.supportStrictCheckingLimitOrderPrice}),validatorName:\"limitPrice\"},{validator:new Z({orderDialogOptions:u}),validatorName:\"customFields\"},{validator:new G({bracketType:k.BracketType.TakeProfit,priceType:1,parentType:1,quotesGetter:v,formatter:n,instrumentInfo:r,validationRules:l}),validatorName:\"takeProfit\"},{validator:new G({bracketType:k.BracketType.StopLoss,priceType:2,parentType:1,quotesGetter:v,formatter:n,instrumentInfo:r,validationRules:c}),validatorName:\"stopLoss\"},{validator:new G({bracketType:k.BracketType.TrailingStop,priceType:2,parentType:1,quotesGetter:v,formatter:n,instrumentInfo:r,validationRules:c}),validatorName:\"trailingStopPips\"}]),this._quotesSubscription=b,this._quoteCurrencyCryptoBalanceSubscription=C,this._baseCurrencyCryptoBalanceSubscription=f,this._createInitialPreOrder=h.createInitialPreOrder,this._placeOrder=h.placeOrder,this._previewOrder=h.previewOrder,this._handleError=h.handleError,this._onReady=Promise.all([y,S,B]).then(()=>this.setData(t,i)).then(()=>{m.onValueChange=()=>this._assertOrderIsValid()})}externalContext(){return{type:L.PlaceOrEditContextType.PlaceOrder,source:()=>this.source(),data:()=>this.data(),preview:()=>this.preview(),send:()=>this.send(),status:()=>this.status(),errors:()=>this.errors()}}destroy(){this._quotesSubscription.unsubscribe(),this._quoteCurrencyCryptoBalanceSubscription.unsubscribe(),this._baseCurrencyCryptoBalanceSubscription.unsubscribe()}_processSend(e){return this._placeOrder(this._orderData,e)}_processError(e){this._handleError(e)}_processOrderData(e){return this._createInitialPreOrder(e)}_preview(e){return this._previewOrder(e)}}var ee=i(822914),te=i(282729);class ie extends V{constructor(e){const{orderData:t,source:i,callbacks:r}=e;super(i,!1),this._modifyOrder=r.modifyOrder,this._metainfo=r.metainfo,this._symbolInfo=r.symbolInfo,this._orderById=r.orderById,this._previewOrder=r.previewOrder,this._handleError=r.handleError"
+    },
+    {
+      "moduleId": "25412",
+      "path": "top > iframe[2].webpackChunktradingview[44][1][25412]",
+      "name": "25412",
+      "sourceLength": 3644,
+      "source": "(t,e,o)=>{\"use strict\";o.d(e,{PositionItem:()=>m});var r=o(650151),i=o(247905),s=(o(973602),o(156963)),a=o(372605),l=o(817680),n=o(6835),d=(o(637401),o(781585),o(113211)),c=o(11933),h=o(735415),u=o(609838);(0,o(350299).appendEllipsis)(u.t(null,void 0,o(888310))),u.t(null,void 0,o(424356)),u.t(null,void 0,o(920848));var p=o(397728);const _=(0,n.getLogger)(\"Trading.Positions\"),y=s.enabled(\"chart_hide_close_position_button\");class m extends h.BaseItem{constructor(t,e,o,r,i,s){super(t,e,o,r,\"Chart Position\",i,s),this._source.positionDisplayMode().subscribe(this,this.fireProfitLossChange)}destroy(){this._source.positionDisplayMode().unsubscribe(this,this.fireProfitLossChange),super.destroy()}supportBrackets(){return this._symbolDataProvider.supportPositionBrackets()}currency(){var t;return null!==(t=this._symbolDataProvider.positionCurrency())&&void 0!==t?t:\"\"}profitLossTextColor(){if(!this._data)return\"\";const t=this._potentialProfitLoss();return null===t?\"\":(0,p.profitLossTextColor)(this._infoGetters.style(this),t,this._infoGetters.displayMode.value()===i.PlDisplay.Money)}id(){return this._data.id}setData(t){var e;const o=null===(e=this.data())||void 0===e?void 0:e.pl;super.setData(t),this.data().pl!==o&&this.fireProfitLossChange()}qtyText(){return super._quantityText(this._data.qtyBySide)}qty(){return this._data.qtyBySide}supportOnlyPairBrackets(){return this._data.supportOnlyPairBrackets}supportReverse(){return this._symbolDataProvider.supportPositionReverse()}async onReverse(t={}){t=(0,c.mergeGaParams)(t,{event:\"Reverse Position\"}),await this._doActionWithBlock(\"reversePosition\",!0,t)}supportClose(){return!y&&this._data.supportClose}async onClose(t={}){t=(0,c.mergeGaParams)(t,{event:\"Close Position\"}),await this._doActionWithBlock(\"closePosition\",!0,t)}supportModify(){return this.supportBrackets()}async onModify(t={}){return t=(0,c.mergeGaParams)(t,{event:\"Edit Position\"}),this._doActionWithBlock(\"modifyPosition\",!0,t,void 0,void 0,!1)}useMinTickFormatter(){return!1}async onModifyWithBracket(t={},e={},o=!0,i,s=!0){var a,l;const n=this._symbolDataProvider.lastData(),c=null!==(a=null==n?void 0:n.bid)&&void 0!==a?a:null,h=null!==(l=null==n?void 0:n.ask)&&void 0!==l?l:null;if(void 0!==e.trailingStop&&c&&h){const t=1===this._data.side?c:h,{pipSize:o}=(0,r.ensureNotNull)(this._symbolDataProvider.symbolData());e.trailingStopPips=(0,d.calcPipsByPrice)(e.trailingStop,t,this._data.side,o),e.trailingStop=void 0}return this._doActionWithBlock(\"modifyPosition\",o,t,e,i,s)}hasContextMenu(){return super.hasContextMenu()||this.supportReverse()}moneyText(t,e){return\"string\"==typeof t?t:`${(0,h.plSign)(t,e)}${Math.abs(t).toFixed(2)} ${this.currency()}`}async onContextMenu(t,e){return[]}tryBasePlOnLast(){return!0}_potentialProfitLoss(){var t;if(!this._source.isPositionPLVisible().value()||!this._data)return null;const{pl:e,side:o,price:r}=this._data;if(null===e)return null;if(this._infoGetters.displayMode.value()===i.PlDisplay.Money)return e;const{trade:s,ask:l,bid:n}=this._symbolDataProvider.lastData()||{},d=null!==(t=this._data.plBasedOnLast?s:this.isBuyDirection()?n:l)&&void 0!==t?t:r;return(0,a.isNumber)(d)?(d-r)*o:null}async _doActionWithBlock(t,e,o={},i={},s,a){if(void 0===this._data.callbacks[t])return!1;e&&this._source.setIsBlocked(!0),this._trackEventGA(o);let n=!1;try{n=\"modifyPosition\"===t?await(0,r.ensureDefined)(this._data.callbacks.modifyPosition)(this._data.id,i,s,a):await(0,r.ensureDefined)(this._data.callbacks[t])(this._data.id)}catch(e){_.logWarn(`Try to ${t}, but got error: ${(0,l.errorToString)(e)}`)}finally{e&&(this._source.setIsBlocked(!1),this._source.syncData())}return n}}}"
+    }
+  ],
+  "warnings": []
+}
