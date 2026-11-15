@@ -1,0 +1,3712 @@
+﻿BITUNIX CONVERSATION EXPORT
+Conversation ID: 6af893a9-b58c-83ed-a9f8-00864a76111c
+Conversation URL: https://chatgpt.com/c/6af893a9-b58c-83ed-a9f8-00864a76111c
+Conversation Title: برنامه ساخت افزونه Bitunix (1)
+Export Date: 2026-11-15T10:30:56.749Z
+API Type: current
+Pages: 1
+Raw Messages: 290
+User Messages: 15
+Assistant Messages: 75
+Extracted Text Messages: 90
+History Complete: YES
+======================================================================
+
+
+کاربر | پیام 1 | 11/14/2026, 8:27:37 PM
+------------------------------------------------------------
+
+[گزارشات بیتیونیکس6.txt](https://github.com/artaville/KCEX-Enhancer/blob/main/%DA%AF%D8%B2%D8%A7%D8%B1%D8%B4%D8%A7%D8%AA%20%D8%A8%DB%8C%D8%AA%DB%8C%D9%88%D9%86%DB%8C%DA%A9%D8%B36.txt "گزارشات بیتیونیکس6.txt") &#x20;
+ببین ترو شده؟
+
+
+کاربر | پیام 2 | 11/14/2026, 8:32:25 PM
+------------------------------------------------------------
+
+[گزارشات بیتیونیکس7.txt](https://github.com/artaville/KCEX-Enhancer/blob/main/%DA%AF%D8%B2%D8%A7%D8%B1%D8%B4%D8%A7%D8%AA%20%D8%A8%DB%8C%D8%AA%DB%8C%D9%88%D9%86%DB%8C%DA%A9%D8%B37.txt "گزارشات بیتیونیکس7.txt") &#x20;
+تایم فریم هایی ک تو چت قبلی نوشتی از 1 دقیقه شورع میشن میرن بالا. کوچک ترین 1 دقیقه هست
+یادمه توی kcex برای ساخت کندل دیتا و معاملات رو میگرفتی و ازشون برای ساخت کندل ثانیه ای استفاده میکردی چون کندل یک ثانیه ای وجود نداشت و نمیخواستی کندل ها رو از یک دقیقه بگیری و من در اوردی بسازی. و یادمه رکوئست ک میزدی فکر کنم 200 تا معامله اخر رو برمیگردوند و بیشتر نه.
+
+اینجا هم این مدلی استفاده میکنی ؟ ایا توی گزارشاتت این رکوئست ها رو زدی و اطلاع داریم از اینا؟ یا جلوتر میزنی؟
+
+
+دستیار | پیام 3 | 11/14/2026, 8:32:30 PM
+------------------------------------------------------------
+
+گزارش‌های ۶ و ۷ را کنار هم بررسی می‌کنم؛ به‌ویژه دنبال شواهد واقعیِ درخواست معاملات اخیر، محدودیت تعداد رکوردها و وجود جریان زنده می‌گردم. بعد دقیق می‌گویم چه چیزهایی تا الان فقط شناسایی شده‌اند و چه چیزهایی هنوز باید استخراج شوند.
+
+
+دستیار | پیام 4 | 11/14/2026, 8:32:50 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_file","args":{"repository_full_name":"artaville/KCEX-Enhancer","path":"\u06af\u0632\u0627\u0631\u0634\u0627\u062a \u0628\u06cc\u062a\u06cc\u0648\u0646\u06cc\u06a9\u06336.txt","encoding":"utf-8"}}
+
+
+دستیار | پیام 5 | 11/14/2026, 8:32:51 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_file","args":{"repository_full_name":"artaville/KCEX-Enhancer","path":"\u06af\u0632\u0627\u0631\u0634\u0627\u062a \u0628\u06cc\u062a\u06cc\u0648\u0646\u06cc\u06a9\u06337.txt","encoding":"utf-8"}}
+
+
+دستیار | پیام 6 | 11/14/2026, 8:32:59 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_file","args":{"repository_full_name":"artaville/KCEX-Enhancer","path":"\u06af\u0632\u0627\u0631\u0634\u0627\u062a \u0628\u06cc\u062a\u06cc\u0648\u0646\u06cc\u06a9\u06336.txt","encoding":"utf-8","start_line":3110,"end_line":3944}}
+
+
+دستیار | پیام 7 | 11/14/2026, 8:33:00 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_file","args":{"repository_full_name":"artaville/KCEX-Enhancer","path":"\u06af\u0632\u0627\u0631\u0634\u0627\u062a \u0628\u06cc\u062a\u06cc\u0648\u0646\u06cc\u06a9\u06337.txt","encoding":"utf-8","start_line":1,"end_line":720}}
+
+
+دستیار | پیام 8 | 11/14/2026, 8:33:00 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_file","args":{"repository_full_name":"artaville/KCEX-Enhancer","path":"\u06af\u0632\u0627\u0631\u0634\u0627\u062a \u0628\u06cc\u062a\u06cc\u0648\u0646\u06cc\u06a9\u06337.txt","encoding":"utf-8","start_line":1130,"end_line":1510}}
+
+
+دستیار | پیام 9 | 11/14/2026, 8:33:01 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_file","args":{"repository_full_name":"artaville/KCEX-Enhancer","path":"\u06af\u0632\u0627\u0631\u0634\u0627\u062a \u0628\u06cc\u062a\u06cc\u0648\u0646\u06cc\u06a9\u06337.txt","encoding":"utf-8","start_line":2320,"end_line":2452}}
+
+
+دستیار | پیام 10 | 11/14/2026, 8:33:09 PM
+------------------------------------------------------------
+
+تا اینجا یک تفاوت مهم روشن شده: گزارش ۶ و ۷ **ساختار کندل‌های یک‌دقیقه‌ایِ حاضر در حافظه چارت** را خوانده‌اند، اما هیچ درخواست جدیدی برای گرفتن معاملات اخیر اجرا نکرده‌اند. در گزارش ۷ حتی صریحاً ثبت شده که هیچ DataFeed call، subscription، network request یا WebSocket جدیدی انجام نشده است. دارم گزارش‌های قبلی شبکه را هم تطبیق می‌دهم تا ببینم endpointهای واقعی فقط به‌صورت آدرس دیده شده‌اند یا جزئیات درخواست هم ثبت شده است.
+
+
+دستیار | پیام 11 | 11/14/2026, 8:33:15 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_file","args":{"repository_full_name":"artaville/KCEX-Enhancer","path":"\u06af\u0632\u0627\u0631\u0634\u0627\u062a \u0628\u06cc\u062a\u06cc\u0648\u0646\u06cc\u06a9\u06333.txt","encoding":"utf-8"}}
+
+
+دستیار | پیام 12 | 11/14/2026, 8:33:15 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_file","args":{"repository_full_name":"artaville/KCEX-Enhancer","path":"\u06af\u0632\u0627\u0631\u0634\u0627\u062a \u0628\u06cc\u062a\u06cc\u0648\u0646\u06cc\u06a9\u06331.txt","encoding":"utf-8"}}
+
+
+دستیار | پیام 13 | 11/14/2026, 8:33:23 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_file","args":{"repository_full_name":"artaville/KCEX-Enhancer","path":"\u06af\u0632\u0627\u0631\u0634\u0627\u062a \u0628\u06cc\u062a\u06cc\u0648\u0646\u06cc\u06a9\u06333.txt","encoding":"utf-8"}}
+
+
+دستیار | پیام 14 | 11/14/2026, 8:33:24 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_file","args":{"repository_full_name":"artaville/KCEX-Enhancer","path":"\u06af\u0632\u0627\u0631\u0634\u0627\u062a \u0628\u06cc\u062a\u06cc\u0648\u0646\u06cc\u06a9\u06336.txt","encoding":"utf-8"}}
+
+
+دستیار | پیام 15 | 11/14/2026, 8:33:25 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_file","args":{"repository_full_name":"artaville/KCEX-Enhancer","path":"\u06af\u0632\u0627\u0631\u0634\u0627\u062a \u0628\u06cc\u062a\u06cc\u0648\u0646\u06cc\u06a9\u06337.txt","encoding":"utf-8"}}
+
+
+دستیار | پیام 16 | 11/14/2026, 8:33:29 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_file","args":{"repository_full_name":"artaville/KCEX-Enhancer","path":"\u06af\u0632\u0627\u0631\u0634\u0627\u062a \u0628\u06cc\u062a\u06cc\u0648\u0646\u06cc\u06a9\u06333.txt","encoding":"utf-8","start_line":6488,"end_line":6525}}
+
+
+دستیار | پیام 17 | 11/14/2026, 8:33:29 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_file","args":{"repository_full_name":"artaville/KCEX-Enhancer","path":"\u06af\u0632\u0627\u0631\u0634\u0627\u062a \u0628\u06cc\u062a\u06cc\u0648\u0646\u06cc\u06a9\u06337.txt","encoding":"utf-8","start_line":245,"end_line":285}}
+
+
+دستیار | پیام 18 | 11/14/2026, 8:33:30 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_file","args":{"repository_full_name":"artaville/KCEX-Enhancer","path":"\u06af\u0632\u0627\u0631\u0634\u0627\u062a \u0628\u06cc\u062a\u06cc\u0648\u0646\u06cc\u06a9\u06337.txt","encoding":"utf-8","start_line":1620,"end_line":1800}}
+
+
+دستیار | پیام 19 | 11/14/2026, 8:33:30 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_file","args":{"repository_full_name":"artaville/KCEX-Enhancer","path":"\u06af\u0632\u0627\u0631\u0634\u0627\u062a \u0628\u06cc\u062a\u06cc\u0648\u0646\u06cc\u06a9\u06337.txt","encoding":"utf-8","start_line":2280,"end_line":2452}}
+
+
+دستیار | پیام 20 | 11/14/2026, 8:34:33 PM
+------------------------------------------------------------
+
+Worked for 2m 6s
+
+
+دستیار | پیام 21 | 11/14/2026, 8:34:33 PM
+------------------------------------------------------------
+
+بله، دقیقاً متوجه منظورت شدم. اتفاقاً به نظرم روش KCEX برای Bitunix هم بهترین مسیری است که باید بررسی کنیم؛ یعنی **ساخت کندل‌های ثانیه‌ای از معاملات واقعی (Trade-by-Trade)، نه تبدیل کندل‌های یک‌دقیقه‌ای به کندل‌های ثانیه‌ای.**
+
+گزارش ۶ و ۷ را بررسی کردم. یک نکته مهم وجود دارد: هنوز درخواست دریافت معاملات اخیر را اجرا نکرده‌ایم.
+
+## ۱. نتیجه گزارش‌های ۶ و ۷
+
+<box border radius="lg" padding={3} gap={3}>
+  <row align="center" justify="between">
+    **گزارش ۶**
+    <badge color="success">استخراج موفق</badge>
+  </row>
+  - تعداد کندل‌های موجود در حافظه: ۳۱۲
+  - تایم‌فریم: یک دقیقه
+  - ساختار Bar Store شناسایی شده.
+  - `External DataFeed` شناسایی شده.
+  - ساختار قبلی KCEX برای `mergeData` پیدا نشده.
+  - سازگاری مستقیم با روش Align قبلی تأیید نشده.
+  <divider color="subtle"/>
+  <row align="center" justify="between">
+    **گزارش ۷**
+    <badge color="success">استخراج موفق</badge>
+  </row>
+  - تعداد کندل‌های موجود: ۳۱۵
+  - تایم‌فریم: یک دقیقه
+  - ارتباط Gateway شناسایی شده.
+  - رویدادهای `barReceived` و `dataUpdated` شناسایی شده‌اند.
+  - متدهای دریافت کندل تاریخی و اشتراک داده زنده پیدا شده‌اند.
+</box>
+
+نکته جالب گزارش ۷ این است که فهرست تایم‌فریم‌های مجاز را هم داریم:
+
+`1, 2, 3, 5, 6, 9, 10, 12, 15, 24, 27, 30, 45, 60, 120, 240, 360, 480, 720`
+
+و بعد تایم‌فریم‌های روزانه، هفتگی و ماهانه.
+
+پس کوچک‌ترین تایم‌فریم رسمی فعلی یک دقیقه است. همچنین رویداد داخلی `secondsIntervalNotPermitted` وجود دارد.
+
+<Cite refs={["turn161352view0","turn161352view1"]}/>
+
+## ۲. آیا درخواست معاملات اخیر را اجرا کرده‌ایم؟
+
+خیر. این قسمت هنوز انجام نشده است.
+
+در گزارش ۳ دو درخواست واقعی سایت شناسایی شده‌اند:
+
+| آدرس درخواست | نوع |
+|---|---|
+| `/kline/history/futures` | Fetch |
+| `/kline/api/public/v1/agg/realtime/futures` | Fetch |
+
+این درخواست‌ها هنگام استفاده عادی سایت ثبت شده‌اند. اما ما هنوز پارامترهای درخواست، پاسخ سرور و محتوای داده‌های دریافتی را استخراج نکرده‌ایم.
+
+<Cite refs={["turn161352view0","turn161352view1"]}/>
+
+مهم‌تر اینکه گزارش‌های ۶ و ۷ صراحتاً نشان می‌دهند:
+
+- درخواست جدید DataFeed اجرا نشده.
+- `subscribeBars` فراخوانی نشده.
+- WebSocket جدیدی ساخته نشده.
+- درخواست شبکه جدیدی برای آزمایش ارسال نشده.
+
+بنابراین هنوز نمی‌دانیم Bitunix چند معامله آخر را برمی‌گرداند؛ ۱۰۰، ۲۰۰ یا تعداد دیگری.
+
+## ۳. روشی که می‌خواهم برای Bitunix پیاده کنیم
+
+<box border radius="lg" padding={3} gap={3}>
+  **مرحله اول: دریافت معاملات اخیر**
+
+  دریافت Snapshot از آخرین معاملات XAUTUSDT و بررسی تعداد رکورد، زمان و قیمت هر معامله.
+
+  <box background="surface-secondary" radius="md" padding={2}>
+    <text color="secondary" size="xs">نمونه فرضی ساختار معامله</text>
+    ```json
+    {
+      "price": 3830.50,
+      "quantity": 0.12,
+      "timestamp": 1794675360123,
+      "side": "buy"
+    }
+    ```
+  </box>
+  <divider color="subtle"/>
+  **مرحله دوم: دریافت معاملات زنده**
+
+  بررسی WebSocket صرافی برای دریافت معاملات جدید بدون نیاز به درخواست مکرر HTTP.
+
+  <divider color="subtle"/>
+  **مرحله سوم: تجمیع معاملات**
+
+  از روی معاملات واقعی، کندل‌ها را مستقل تولید می‌کنیم:
+
+  <box gap={2}>
+    {#each [{n:"1s",v:"۱ ثانیه"},{n:"5s",v:"۵ ثانیه"},{n:"10s",v:"۱۰ ثانیه"},{n:"15s",v:"۱۵ ثانیه"},{n:"20s",v:"۲۰ ثانیه"},{n:"30s",v:"۳۰ ثانیه"},{n:"45s",v:"۴۵ ثانیه"}] as item}
+      <row align="center" justify="between">
+        **{item.n}**
+        <text color="secondary" size="xs">{item.v}</text>
+      </row>
+    {/each}
+  </box>
+  <divider color="subtle"/>
+  **مرحله چهارم: اتصال به TradingView**
+
+  کندل‌های تولیدشده را به موتور چارت تحویل می‌دهیم تا اندیکاتورها و استراتژی‌های TradingView واقعاً روی داده‌های همان تایم‌فریم کار کنند.
+</box>
+
+نکته مهم: اگر Snapshot فقط ۲۰۰ معامله آخر را بدهد، تاریخچه کندل‌های ثانیه‌ای ما محدود به بازه زمانی پوشش‌داده‌شده توسط همان معاملات خواهد بود. برای تاریخچه طولانی‌تر باید ببینیم صرافی امکان صفحه‌بندی معاملات تاریخی را می‌دهد یا خیر.
+
+## ۴. استخراج بعدی باید چه چیزی را مشخص کند؟
+
+به نظرم مرحله بعد را کاملاً به شناسایی جریان معاملات اختصاص بدهیم.
+
+این موارد را باید دقیق استخراج کنیم:
+
+| مورد | چیزی که باید بفهمیم |
+|---|---|
+| REST معاملات | آدرس و پارامتر درخواست |
+| Limit | حداکثر تعداد معاملات قابل دریافت |
+| Trade ID | شناسه یکتای هر معامله |
+| Timestamp | دقت زمانی میلی‌ثانیه‌ای |
+| Price | قیمت هر معامله |
+| Quantity | حجم معامله |
+| Side | خرید یا فروش |
+| WebSocket | آدرس و ساختار پیام‌های زنده |
+| Latency | فاصله زمانی دریافت معامله تا رسیدن آن به مرورگر |
+
+**مخصوصاً Trade ID و Timestamp برای جلوگیری از ثبت دوباره معاملات در کندل‌ها مهم هستند.**
+
+---
+
+## پیشنهاد من برای ادامه
+
+هنوز سراغ ساخت کندل نمی‌رویم. اول باید جریان واقعی معاملات Bitunix را پیدا کنیم.
+
+اسم مرحله بعد را می‌گذاریم:
+
+<badge color="success">Extraction 08</badge> **Bitunix Live Trades & WebSocket Inspector**
+
+این استخراج باید بفهمد آیا Bitunix چیزی مشابه سیستم KCEX دارد که بتوانیم آخرین معاملات را بگیریم و سپس با جریان زنده ادامه بدهیم.
+
+به این ترتیب نه محدودیت یک‌دقیقه‌ای چارت جلوی ما را می‌گیرد و نه مجبور می‌شویم کندل‌های ساختگی از روی OHLC یک‌دقیقه‌ای تولید کنیم.
+
+**نظر قطعی من: تا وقتی این مرحله تمام نشده، هیچ کدی برای تولید کندل ثانیه‌ای ننویسیم.** ابتدا منبع داده را قطعی کنیم، بعد موتور مستقل ثانیه‌ای Bitunix را بسازیم.
+
+
+کاربر | پیام 22 | 11/14/2026, 8:37:11 PM
+------------------------------------------------------------
+
+# Selected text:
+
+## Selection 1
+همچنین رویداد داخلی secondsIntervalNotPermitted وجود دارد.
+
+## My request:
+باشه کد رو بفرس بیاد. این چیه ک گفتی اینجا؟
+
+
+دستیار | پیام 23 | 11/14/2026, 8:37:47 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_file","args":{"repository_full_name":"artaville/KCEX-Enhancer","path":"\u06af\u0632\u0627\u0631\u0634\u0627\u062a \u0628\u06cc\u062a\u06cc\u0648\u0646\u06cc\u06a9\u06337.txt","encoding":"utf-8","start_line":1630,"end_line":1960}}
+
+
+دستیار | پیام 24 | 11/14/2026, 8:42:40 PM
+------------------------------------------------------------
+
+Worked for 5m 15s
+
+
+دستیار | پیام 25 | 11/14/2026, 8:40:06 PM
+------------------------------------------------------------
+
+حتماً. قبل از کد، یک نکته را روشن کنم؛ چون این موضوع برای معماری افزونه Bitunix بسیار مهم است.
+
+### منظور از `secondsIntervalNotPermitted` چیست؟
+
+این یک رویداد داخلی در موتور چارت TradingView است که می‌گوید:
+
+«منبع داده فعلی اجازه استفاده از تایم‌فریم ثانیه‌ای را نمی‌دهد.»
+
+یعنی Bitunix در تنظیمات DataFeed خودش، تایم‌فریم یک ثانیه و سایر تایم‌فریم‌های ثانیه‌ای را به‌صورت رسمی پشتیبانی نمی‌کند.
+
+اما این به معنی غیرممکن بودن ساخت کندل ثانیه‌ای نیست!
+
+روش موردنظر ما این است:
+
+<box border radius="lg" padding={3} gap={2}>
+  <box background="surface-secondary" radius="md" padding={3} align="center">
+    **معاملات واقعی XAUTUSDT**
+    <text size="xs" color="secondary">قیمت، حجم، زمان و جهت هر معامله</text>
+  </box>
+  <box align="center">
+    <icon name="arrow-down" color="secondary" size="lg"/>
+  </box>
+  <box background="surface-secondary" radius="md" padding={3} align="center">
+    **موتور مستقل تجمیع معاملات**
+    <text size="xs" color="secondary">ساخت OHLC برای بازه‌های زمانی دلخواه</text>
+  </box>
+  <box align="center">
+    <icon name="arrow-down" color="secondary" size="lg"/>
+  </box>
+  <grid columns={4} gap={1}>
+    {#each ["1s","5s","10s","15s","20s","30s","45s"] as tf}
+      <grid-item>
+        <box background="rgba(40,150,110,0.12)" radius="md" padding={2} align="center">
+          <text weight="semibold" color="success">{tf}</text>
+        </box>
+      </grid-item>
+    {/each}
+  </grid>
+  <box align="center">
+    <icon name="arrow-down" color="secondary" size="lg"/>
+  </box>
+  <box background="surface-secondary" radius="md" padding={3} align="center">
+    **چارت و اندیکاتورهای TradingView**
+  </box>
+</box>
+
+پس محدودیت موتور اصلی را دور می‌زنیم، نه اینکه کندل‌های یک‌دقیقه‌ای را تقسیم کنیم.
+
+---
+
+## مرحله هشتم: Bitunix Live Trades & WebSocket Inspector
+
+<badge color="success">Extraction 08</badge>
+
+این کد سه مسیر را بررسی می‌کند:
+
+1. درخواست‌های HTTP مربوط به معاملات، تاریخچه کندل و داده‌های تجمیعی را ثبت می‌کند.
+2. ارتباط WebSocket موجود در موتور چارت را پیدا می‌کند و پیام‌های دریافتی بعدی را مشاهده می‌کند.
+3. اطلاعات معاملات احتمالی را از پیام‌ها جدا می‌کند تا بتوانیم تعداد رکوردها، فیلدها و زمان‌بندی را تشخیص بدهیم.
+
+این بار برخلاف استخراج‌های قبلی، یک شنودگر موقت و غیرفعال روی ارتباطات موجود قرار می‌دهیم. هیچ درخواست معاملاتی نمی‌فرستد، هیچ پیامی به WebSocket ارسال نمی‌کند و هیچ سفارش یا تنظیمی را تغییر نمی‌دهد. پس از توقف، Hookهای موقت را هم برمی‌گرداند.
+
+<CodeBlock language="javascript" editable>
+(() => {
+  'use strict';
+
+  const TAG = 'BITUNIX_LIVE_TRADES_WS_INSPECTOR_08';
+  const PANEL = '__bitunix_live_trades_08__';
+
+  document.getElementById(PANEL)?.remove();
+
+  const report = {
+    diagnostic: TAG,
+    startedAt: new Date().toISOString(),
+    durationMs: 0,
+
+    environment: {
+      page: location.origin + location.pathname,
+      symbol: 'XAUTUSDT'
+    },
+
+    existingResources: [],
+    sockets: [],
+    socketMessages: [],
+    httpRequests: [],
+    tradeCandidates: [],
+    errors: [],
+
+    counters: {
+      socketsFound: 0,
+      socketsObserved: 0,
+      websocketMessages: 0,
+      matchingWebsocketMessages: 0,
+      httpRequests: 0,
+      httpResponses: 0,
+      tradeCandidateObjects: 0,
+      binaryMessages: 0
+    },
+
+    safety: {
+      noOrdersSent: true,
+      noWebSocketMessagesSent: true,
+      noTradingActions: true,
+      noExchangeRequestsCreated: true,
+      observedExistingAndFutureTrafficOnly: true,
+      sensitiveHeadersNotCaptured: true,
+      sensitiveFieldsRedacted: true
+    }
+  };
+
+  const restorers = [];
+  const socketListeners = [];
+  const pendingTasks = [];
+  const seenSockets = new WeakSet();
+  const seenRoots = new WeakSet();
+
+  let stopped = false;
+  let timer = null;
+  let started = Date.now();
+
+  const MAX_HTTP = 100;
+  const MAX_WS = 100;
+  const MAX_TRADES = 100;
+
+  const interestingURL =
+    /kline|trade|deal|agg|realtime|market|ticker|contract|depth/i;
+
+  const sensitive =
+    /token|password|secret|cookie|authorization|signature|api.?key|session|credential|privatekey/i;
+
+  const safe = (fn, fallback = null) => {
+    try {
+      const v = fn();
+      return v === undefined ? fallback : v;
+    } catch (_) {
+      return fallback;
+    }
+  };
+
+  const clean = (v, max = 160) =>
+    String(v ?? '')
+      .replace(/\s+/g, ' ')
+      .trim()
+      .slice(0, max);
+
+  function noteError(where, error) {
+    if (report.errors.length >= 40) return;
+
+    report.errors.push({
+      where,
+      message: clean(error?.message || error, 220)
+    });
+  }
+
+  function safeURL(raw, base) {
+    try {
+      const u = new URL(raw, base || location.href);
+      const params = {};
+
+      u.searchParams.forEach((v, k) => {
+        params[k] = sensitive.test(k)
+          ? '[REDACTED]'
+          : clean(v, 100);
+      });
+
+      return {
+        origin: u.origin,
+        path: u.pathname,
+        query: params
+      };
+    } catch (_) {
+      return {
+        path: '[unavailable]',
+        query: {}
+      };
+    }
+  }
+
+  function getKeys(obj) {
+    return safe(
+      () => Object.getOwnPropertyNames(obj)
+        .filter(k => !sensitive.test(k))
+        .slice(0, 100),
+      []
+    );
+  }
+
+  function getValue(obj, key) {
+    const d = safe(
+      () => Object.getOwnPropertyDescriptor(obj, key)
+    );
+
+    if (
+      !d ||
+      !Object.prototype.hasOwnProperty.call(d, 'value')
+    ) return undefined;
+
+    return d.value;
+  }
+
+  // ------------------------------------------------
+  // Safe data summarizer
+  // Does not retain auth/account/private fields.
+  // ------------------------------------------------
+
+  const usefulKey =
+    /^(symbol|s|instId|contract|contractCode|topic|channel|ch|event|type|op|action|data|result|payload|arg|args|list|rows|items|trades|deals|records|tick|trade|deal|price|p|px|last|lastPrice|dealPrice|qty|quantity|q|size|volume|v|amount|side|direction|isBuyerMaker|m|T|t|time|timestamp|ts|tradeId|id|i|seq|sequence|count|total|code|open|high|low|close|o|h|l|c|turnover)$/i;
+
+  function summarize(value, depth = 0) {
+    if (
+      value === null ||
+      typeof value === 'number' ||
+      typeof value === 'boolean'
+    ) return value;
+
+    if (typeof value === 'string') {
+      return clean(value, 140);
+    }
+
+    if (typeof value === 'bigint') {
+      return String(value);
+    }
+
+    if (value === undefined) return null;
+
+    if (depth > 4) {
+      return '[depth-limit]';
+    }
+
+    if (Array.isArray(value)) {
+      return {
+        _type: 'array',
+        length: value.length,
+        sample: value.slice(0, 6).map(v =>
+          summarize(v, depth + 1)
+        )
+      };
+    }
+
+    if (typeof value !== 'object') {
+      return `[${typeof value}]`;
+    }
+
+    const keys = safe(
+      () => Object.keys(value),
+      []
+    ).filter(k => !sensitive.test(k));
+
+    const result = {
+      _type: 'object',
+      keys: keys.slice(0, 65)
+    };
+
+    const fields = {};
+
+    for (const key of keys.slice(0, 65)) {
+      if (!usefulKey.test(key)) continue;
+
+      const v = safe(() => value[key]);
+
+      if (
+        v === null ||
+        ['string', 'number', 'boolean'].includes(typeof v)
+      ) {
+        fields[key] = summarize(v, depth + 1);
+      } else if (
+        v !== undefined &&
+        (Array.isArray(v) || typeof v === 'object')
+      ) {
+        fields[key] = summarize(v, depth + 1);
+      }
+    }
+
+    result.fields = fields;
+
+    return result;
+  }
+
+  // ------------------------------------------------
+  // Find candidate trade objects in JSON payloads
+  // ------------------------------------------------
+
+  function findTradeCandidates(
+    value,
+    path = '$',
+    depth = 0,
+    output = []
+  ) {
+    if (!value || depth > 5 || output.length >= 12) {
+      return output;
+    }
+
+    if (Array.isArray(value)) {
+      value.slice(0, 40).forEach((item, i) => {
+        findTradeCandidates(
+          item,
+          `${path}[${i}]`,
+          depth + 1,
+          output
+        );
+      });
+
+      return output;
+    }
+
+    if (typeof value !== 'object') {
+      return output;
+    }
+
+    const keys = Object.keys(value);
+
+    const hasPrice = keys.some(k =>
+      /^(price|p|px|lastPrice|dealPrice)$/i.test(k)
+    );
+
+    const hasTime = keys.some(k =>
+      /^(timestamp|time|ts|t|T|tradeTime|createTime)$/i.test(k)
+    );
+
+    const hasQuantity = keys.some(k =>
+      /^(qty|quantity|size|volume|v|amount)$/i.test(k)
+    );
+
+    if (hasPrice && hasTime && hasQuantity) {
+      output.push({
+        path,
+        keys: keys.filter(k => !sensitive.test(k)),
+        data: summarize(value)
+      });
+    }
+
+    for (const key of keys.slice(0, 35)) {
+      if (sensitive.test(key)) continue;
+
+      const child = safe(() => value[key]);
+
+      if (
+        child &&
+        typeof child === 'object'
+      ) {
+        findTradeCandidates(
+          child,
+          path + '.' + key,
+          depth + 1,
+          output
+        );
+      }
+    }
+
+    return output;
+  }
+
+  function parsePayload(raw) {
+    if (typeof raw !== 'string') {
+      return {
+        parseable: false,
+        type: raw?.constructor?.name || typeof raw
+      };
+    }
+
+    if (raw.length > 220000) {
+      return {
+        parseable: false,
+        tooLarge: true,
+        length: raw.length
+      };
+    }
+
+    try {
+      return {
+        parseable: true,
+        json: JSON.parse(raw)
+      };
+    } catch (_) {
+      return {
+        parseable: false,
+        length: raw.length
+      };
+    }
+  }
+
+  function recordTradeCandidates(payload, source) {
+    const found = findTradeCandidates(payload);
+
+    for (const item of found) {
+      report.counters.tradeCandidateObjects++;
+
+      if (report.tradeCandidates.length < MAX_TRADES) {
+        report.tradeCandidates.push({
+          source,
+          capturedAt: new Date().toISOString(),
+          ...item
+        });
+      }
+    }
+  }
+
+  // ------------------------------------------------
+  // HTTP request capture
+  // ------------------------------------------------
+
+  function isInteresting(raw, base) {
+    try {
+      const u = new URL(raw, base || location.href);
+      return interestingURL.test(u.pathname);
+    } catch (_) {
+      return false;
+    }
+  }
+
+  function bodySummary(body) {
+    if (body === undefined || body === null) return null;
+
+    if (typeof body === 'string') {
+      if (body.length > 50000) {
+        return {
+          type: 'string',
+          length: body.length,
+          tooLarge: true
+        };
+      }
+
+      try {
+        return summarize(JSON.parse(body));
+      } catch (_) {
+        return {
+          type: 'text',
+          length: body.length,
+          sample: clean(body, 180)
+        };
+      }
+    }
+
+    if (body instanceof URLSearchParams) {
+      const result = {};
+
+      body.forEach((v, k) => {
+        result[k] = sensitive.test(k)
+          ? '[REDACTED]'
+          : clean(v, 100);
+      });
+
+      return result;
+    }
+
+    if (body instanceof FormData) {
+      return {
+        type: 'FormData',
+        keys: Array.from(body.keys())
+          .filter(k => !sensitive.test(k))
+          .slice(0, 40)
+      };
+    }
+
+    return {
+      type: body?.constructor?.name || typeof body
+    };
+  }
+
+  function addHttpRequest(info) {
+    if (report.httpRequests.length >= MAX_HTTP) return null;
+
+    const entry = {
+      capturedAt: new Date().toISOString(),
+      ...info,
+      response: null
+    };
+
+    report.httpRequests.push(entry);
+    report.counters.httpRequests++;
+
+    return entry;
+  }
+
+  function processHttpResponse(entry, responseText, status) {
+    if (!entry) return;
+
+    report.counters.httpResponses++;
+
+    let parsed;
+
+    try {
+      parsed = JSON.parse(responseText);
+    } catch (_) {
+      entry.response = {
+        status,
+        parseableJSON: false,
+        length: responseText?.length || 0
+      };
+      return;
+    }
+
+    const candidates = findTradeCandidates(parsed);
+
+    entry.response = {
+      status,
+      parseableJSON: true,
+      structure: summarize(parsed),
+      tradeCandidateCount: candidates.length,
+      tradeSamples: candidates.slice(0, 5)
+    };
+
+    for (const item of candidates) {
+      report.counters.tradeCandidateObjects++;
+
+      if (report.tradeCandidates.length < MAX_TRADES) {
+        report.tradeCandidates.push({
+          source: 'HTTP',
+          requestPath: entry.url.path,
+          capturedAt: new Date().toISOString(),
+          ...item
+        });
+      }
+    }
+  }
+
+  function addPending(promise) {
+    pendingTasks.push(
+      Promise.resolve(promise).catch(e => {
+        noteError('async-capture', e);
+      })
+    );
+  }
+
+  function patchNetwork(realm, realmName) {
+    if (!realm || stopped) return;
+
+    // Fetch
+    const originalFetch = safe(() => realm.fetch);
+
+    if (typeof originalFetch === 'function') {
+      const wrappedFetch = function(input, init) {
+        const rawURL = safe(
+          () => typeof input === 'string'
+            ? input
+            : input.url,
+          ''
+        );
+
+        const methodName = clean(
+          init?.method ||
+          safe(() => input.method) ||
+          'GET',
+          12
+        ).toUpperCase();
+
+        let entry = null;
+
+        if (isInteresting(rawURL, realm.location?.href)) {
+          entry = addHttpRequest({
+            realm: realmName,
+            transport: 'fetch',
+            method: methodName,
+            url: safeURL(rawURL, realm.location?.href),
+            requestBody: bodySummary(init?.body)
+          });
+        }
+
+        const promise = originalFetch.apply(this, arguments);
+
+        if (!entry) return promise;
+
+        return Promise.resolve(promise).then(response => {
+          try {
+            const clone = response.clone();
+
+            addPending(
+              clone.text().then(text => {
+                processHttpResponse(
+                  entry,
+                  text,
+                  response.status
+                );
+              })
+            );
+          } catch (e) {
+            noteError('fetch-response', e);
+          }
+
+          return response;
+        });
+      };
+
+      try {
+        realm.fetch = wrappedFetch;
+
+        restorers.push(() => {
+          if (realm.fetch === wrappedFetch) {
+            realm.fetch = originalFetch;
+          }
+        });
+      } catch (e) {
+        noteError('patch-fetch-' + realmName, e);
+      }
+    }
+
+    // XMLHttpRequest
+    const XHR = safe(() => realm.XMLHttpRequest);
+    const proto = safe(() => XHR.prototype);
+
+    if (!proto) return;
+
+    const originalOpen = proto.open;
+    const originalSend = proto.send;
+
+    if (
+      typeof originalOpen === 'function' &&
+      typeof originalSend === 'function'
+    ) {
+      const metadata = new WeakMap();
+
+      const wrappedOpen = function(methodName, url) {
+        metadata.set(this, {
+          method: clean(methodName, 12).toUpperCase(),
+          url: String(url || '')
+        });
+
+        return originalOpen.apply(this, arguments);
+      };
+
+      const wrappedSend = function(body) {
+        const meta = metadata.get(this);
+        let entry = null;
+
+        if (
+          meta &&
+          isInteresting(meta.url, realm.location?.href)
+        ) {
+          entry = addHttpRequest({
+            realm: realmName,
+            transport: 'xhr',
+            method: meta.method,
+            url: safeURL(meta.url, realm.location?.href),
+            requestBody: bodySummary(body)
+          });
+
+          this.addEventListener('load', () => {
+            try {
+              const type = this.responseType;
+              let responseText = '';
+
+              if (type === 'json') {
+                responseText = JSON.stringify(this.response);
+              } else if (type === '' || type === 'text') {
+                responseText = this.responseText;
+              } else {
+                entry.response = {
+                  status: this.status,
+                  responseType: type,
+                  captured: false
+                };
+                report.counters.httpResponses++;
+                return;
+              }
+
+              processHttpResponse(
+                entry,
+                responseText,
+                this.status
+              );
+            } catch (e) {
+              noteError('xhr-response', e);
+            }
+          }, { once: true });
+        }
+
+        return originalSend.apply(this, arguments);
+      };
+
+      try {
+        proto.open = wrappedOpen;
+        proto.send = wrappedSend;
+
+        restorers.push(() => {
+          if (proto.open === wrappedOpen) {
+            proto.open = originalOpen;
+          }
+
+          if (proto.send === wrappedSend) {
+            proto.send = originalSend;
+          }
+        });
+      } catch (e) {
+        noteError('patch-xhr-' + realmName, e);
+      }
+    }
+  }
+
+  // ------------------------------------------------
+  // WebSocket message capture
+  // ------------------------------------------------
+
+  function socketInfo(ws, realmName) {
+    return {
+      realm: realmName,
+      url: safeURL(
+        safe(() => ws.url, ''),
+        location.href
+      ),
+      readyState: safe(() => ws.readyState),
+      protocol: clean(safe(() => ws.protocol, ''), 70),
+      binaryType: safe(() => ws.binaryType),
+      bufferedAmount: safe(() => ws.bufferedAmount)
+    };
+  }
+
+  function isRelevantMessage(text, parsed, candidates) {
+    if (
+      typeof text === 'string' &&
+      /XAUTUSDT/i.test(text)
+    ) return true;
+
+    if (candidates.length > 0) return true;
+
+    if (
+      typeof text === 'string' &&
+      /\b(trade|deal|tick|market|ticker|agg|realtime)\b/i.test(text)
+    ) return true;
+
+    if (
+      parsed &&
+      parsed.parseable &&
+      /trade|deal|tick|market|ticker|agg|realtime/i.test(
+        JSON.stringify(parsed.json).slice(0, 5000)
+      )
+    ) return true;
+
+    return false;
+  }
+
+  function captureWSMessage(event, ws, realmName) {
+    if (stopped) return;
+
+    report.counters.websocketMessages++;
+
+    const data = event?.data;
+
+    if (typeof data !== 'string') {
+      report.counters.binaryMessages++;
+
+      const info = {
+        capturedAt: new Date().toISOString(),
+        socket: safeURL(
+          safe(() => ws.url, ''),
+          location.href
+        ),
+        type: data?.constructor?.name || typeof data,
+        byteLength: safe(() => data.byteLength, null)
+      };
+
+      if (report.socketMessages.length < MAX_WS) {
+        report.socketMessages.push(info);
+      }
+
+      return;
+    }
+
+    const decoded = parsePayload(data);
+
+    if (!decoded.parseable) return;
+
+    const candidates = findTradeCandidates(decoded.json);
+
+    if (!isRelevantMessage(data, decoded, candidates)) {
+      return;
+    }
+
+    report.counters.matchingWebsocketMessages++;
+
+    if (report.socketMessages.length < MAX_WS) {
+      report.socketMessages.push({
+        capturedAt: new Date().toISOString(),
+        realm: realmName,
+        socket: safeURL(
+          safe(() => ws.url, ''),
+          location.href
+        ),
+        messageLength: data.length,
+        structure: summarize(decoded.json),
+        tradeCandidateCount: candidates.length
+      });
+    }
+
+    recordTradeCandidates(decoded.json, 'WebSocket');
+  }
+
+  function attachSocket(ws, realmName) {
+    if (!ws || stopped || seenSockets.has(ws)) return;
+
+    const isSocket = safe(() => {
+      return (
+        typeof ws.addEventListener === 'function' &&
+        typeof ws.send === 'function' &&
+        typeof ws.readyState === 'number' &&
+        typeof ws.url === 'string'
+      );
+    }, false);
+
+    if (!isSocket) return;
+
+    seenSockets.add(ws);
+
+    const handler = event =>
+      captureWSMessage(event, ws, realmName);
+
+    try {
+      ws.addEventListener('message', handler);
+
+      socketListeners.push({
+        ws,
+        handler
+      });
+
+      report.sockets.push(socketInfo(ws, realmName));
+
+      report.counters.socketsObserved++;
+    } catch (e) {
+      noteError('attach-socket', e);
+    }
+  }
+
+  // ------------------------------------------------
+  // Search chart object graph for existing sockets
+  // ------------------------------------------------
+
+  function findChartRoots(frameWindow) {
+    const roots = [];
+
+    const get = (obj, key) => getValue(obj, key);
+
+    const collection =
+      get(frameWindow, 'chartWidgetCollection');
+
+    const widget =
+      get(frameWindow, 'chartWidget');
+
+    const chartApi =
+      get(frameWindow, 'ChartApiInstance');
+
+    const tvApi =
+      get(frameWindow, 'tradingViewApi');
+
+    if (collection) roots.push(collection);
+    if (widget) roots.push(widget);
+    if (chartApi) roots.push(chartApi);
+    if (tvApi) roots.push(tvApi);
+
+    let activeWidget = null;
+
+    if (collection) {
+      activeWidget = get(collection, 'activeChartWidget');
+
+      if (!activeWidget) {
+        const getAll = collection.getAll;
+
+        if (typeof getAll === 'function') {
+          const all = safe(() => getAll.call(collection), []);
+          if (Array.isArray(all)) {
+            activeWidget = all[0] || null;
+          }
+        }
+      }
+    }
+
+    if (activeWidget) roots.push(activeWidget);
+
+    const model =
+      widget?.model?.() ||
+      activeWidget?.model?.();
+
+    if (model) {
+      roots.push(model);
+
+      const series = safe(
+        () => model.mainSeries(),
+        null
+      );
+
+      if (series) {
+        roots.push(series);
+
+        const source =
+          get(series, '_seriesSource') ||
+          safe(() => series.seriesSource(), null);
+
+        if (source) {
+          roots.push(source);
+
+          const gateway = get(source, '_gateway');
+
+          if (gateway) {
+            roots.push(gateway);
+
+            const gatewayChartApi =
+              get(gateway, '_chartApi');
+
+            if (gatewayChartApi) {
+              roots.push(gatewayChartApi);
+            }
+          }
+        }
+      }
+    }
+
+    const engine = chartApi
+      ? get(chartApi, '_studyEngine')
+      : null;
+
+    if (engine) {
+      roots.push(engine);
+
+      const feed = get(engine, '_externalDatafeed');
+
+      if (feed) roots.push(feed);
+    }
+
+    return roots.filter(Boolean);
+  }
+
+  function scanObjectGraph(roots, frameWindow, realmName) {
+    const queue = roots.map(obj => ({
+      obj,
+      depth: 0
+    }));
+
+    const visited = new WeakSet();
+    let nodeCount = 0;
+
+    while (
+      queue.length &&
+      nodeCount < 1800 &&
+      !stopped
+    ) {
+      const current = queue.shift();
+      const obj = current.obj;
+
+      if (
+        !obj ||
+        (typeof obj !== 'object' &&
+         typeof obj !== 'function')
+      ) continue;
+
+      if (visited.has(obj)) continue;
+      visited.add(obj);
+      nodeCount++;
+
+      attachSocket(obj, realmName);
+
+      if (current.depth >= 7) continue;
+
+      if (
+        obj instanceof frameWindow.Element ||
+        obj instanceof frameWindow.Window ||
+        obj instanceof frameWindow.Document
+      ) continue;
+
+      if (obj instanceof frameWindow.Map) {
+        let n = 0;
+
+        for (const [k, v] of obj.entries()) {
+          if (n++ >= 35) break;
+
+          if (k && typeof k === 'object') {
+            queue.push({
+              obj: k,
+              depth: current.depth + 1
+            });
+          }
+
+          if (v && typeof v === 'object') {
+            queue.push({
+              obj: v,
+              depth: current.depth + 1
+            });
+          }
+        }
+
+        continue;
+      }
+
+      const names = safe(
+        () => Object.getOwnPropertyNames(obj),
+        []
+      );
+
+      for (const key of names.slice(0, 100)) {
+        if (sensitive.test(key)) continue;
+
+        const d = safe(
+          () => Object.getOwnPropertyDescriptor(obj, key)
+        );
+
+        if (
+          !d ||
+          !Object.prototype.hasOwnProperty.call(d, 'value')
+        ) continue;
+
+        const value = d.value;
+
+        if (
+          value &&
+          typeof value === 'object' &&
+          !visited.has(value)
+        ) {
+          queue.push({
+            obj: value,
+            depth: current.depth + 1
+          });
+        }
+      }
+    }
+
+    return nodeCount;
+  }
+
+  // ------------------------------------------------
+  // Temporarily observe future WebSocket instances
+  // ------------------------------------------------
+
+  function patchWebSocket(realm, realmName) {
+    const NativeWS = safe(() => realm.WebSocket);
+
+    if (typeof NativeWS !== 'function') return;
+
+    const WrappedWS = new Proxy(NativeWS, {
+      construct(target, args, newTarget) {
+        const actualTarget =
+          newTarget === WrappedWS
+            ? target
+            : newTarget;
+
+        const ws = Reflect.construct(
+          target,
+          args,
+          actualTarget
+        );
+
+        attachSocket(ws, realmName);
+
+        return ws;
+      }
+    });
+
+    try {
+      realm.WebSocket = WrappedWS;
+
+      restorers.push(() => {
+        if (realm.WebSocket === WrappedWS) {
+          realm.WebSocket = NativeWS;
+        }
+      });
+    } catch (e) {
+      noteError('patch-websocket-' + realmName, e);
+    }
+  }
+
+  // ------------------------------------------------
+  // 1. Inspect existing resources
+  // ------------------------------------------------
+
+  for (const realm of [
+    {
+      win: window,
+      name: 'main'
+    },
+    {
+      win: safe(() =>
+        document.querySelector(
+          '#futures-trade-tchart iframe'
+        )?.contentWindow
+      ),
+      name: 'chart-iframe'
+    }
+  ]) {
+    if (!realm.win) continue;
+
+    const entries = safe(
+      () => realm.win.performance.getEntriesByType('resource'),
+      []
+    );
+
+    for (const item of entries) {
+      if (!isInteresting(item.name, realm.win.location?.href)) {
+        continue;
+      }
+
+      if (report.existingResources.length >= 80) break;
+
+      report.existingResources.push({
+        realm: realm.name,
+        url: safeURL(item.name, realm.win.location?.href),
+        initiatorType: item.initiatorType,
+        durationMs: Math.round(item.duration)
+      });
+    }
+  }
+
+  // ------------------------------------------------
+  // 2. Install passive monitors in both realms
+  // ------------------------------------------------
+
+  const realms = [
+    {
+      win: window,
+      name: 'main'
+    }
+  ];
+
+  const iframe = document.querySelector(
+    '#futures-trade-tchart iframe'
+  );
+
+  const iframeWindow = safe(
+    () => iframe?.contentWindow
+  );
+
+  if (iframeWindow) {
+    realms.push({
+      win: iframeWindow,
+      name: 'chart-iframe'
+    });
+  }
+
+  for (const realm of realms) {
+    try {
+      patchNetwork(realm.win, realm.name);
+      patchWebSocket(realm.win, realm.name);
+
+      const roots = findChartRoots(realm.win);
+
+      const nodes = scanObjectGraph(
+        roots,
+        realm.win,
+        realm.name
+      );
+
+      report.sockets.push({
+        realm: realm.name,
+        scan: true,
+        objectNodesScanned: nodes
+      });
+
+    } catch (e) {
+      noteError('realm-' + realm.name, e);
+    }
+  }
+
+  report.counters.socketsFound =
+    report.sockets.filter(x => x.url).length;
+
+  report.captureStartedAt = new Date().toISOString();
+
+  // ------------------------------------------------
+  // 3. User interface
+  // ------------------------------------------------
+
+  const overlay = document.createElement('div');
+  overlay.id = PANEL;
+
+  overlay.style.cssText = `
+    position:fixed;
+    inset:0;
+    z-index:2147483647;
+    background:rgba(3,8,20,.85);
+    backdrop-filter:blur(14px);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:16px;
+    box-sizing:border-box;
+    color:#e5efff;
+    font-family:Arial,sans-serif;
+  `;
+
+  const box = document.createElement('div');
+
+  box.style.cssText = `
+    width:min(950px,96vw);
+    height:min(720px,92vh);
+    background:rgba(16,25,44,.97);
+    border:1px solid rgba(110,155,230,.35);
+    border-radius:16px;
+    padding:18px;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    box-sizing:border-box;
+    box-shadow:0 20px 90px rgba(0,0,0,.6);
+  `;
+
+  const title = document.createElement('div');
+  title.textContent = TAG;
+  title.style.cssText =
+    'font-size:15px;font-weight:bold;color:#8fbdff;';
+
+  const description = document.createElement('div');
+  description.textContent =
+    'در حال مشاهده ترافیک واقعی Bitunix؛ هیچ درخواست یا سفارش جدیدی ساخته نمی‌شود.';
+
+  description.style.cssText =
+    'font-size:12px;color:#aab8d2;';
+
+  const stats = document.createElement('div');
+  stats.style.cssText =
+    'font-size:12px;color:#9cc5ff;';
+
+  const area = document.createElement('textarea');
+  area.readOnly = true;
+  area.value =
+    'گزارش پس از توقف شنود آماده می‌شود.';
+
+  area.style.cssText = `
+    flex:1;
+    width:100%;
+    min-height:0;
+    resize:none;
+    box-sizing:border-box;
+    background:rgba(4,9,20,.85);
+    color:#dce9ff;
+    border:1px solid rgba(120,160,220,.25);
+    border-radius:9px;
+    padding:12px;
+    outline:none;
+    font:11px/1.5 Consolas,monospace;
+  `;
+
+  const footer = document.createElement('div');
+  footer.style.cssText =
+    'display:flex;align-items:center;gap:12px;flex-wrap:wrap;';
+
+  const stopCopy = document.createElement('button');
+  stopCopy.textContent = 'توقف و کپی گزارش';
+
+  stopCopy.style.cssText = `
+    background:#397ee6;
+    border:0;
+    border-radius:8px;
+    color:white;
+    padding:11px 22px;
+    cursor:pointer;
+    font-weight:bold;
+  `;
+
+  const close = document.createElement('button');
+  close.textContent = 'بستن';
+
+  close.style.cssText = `
+    background:rgba(255,255,255,.08);
+    color:white;
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:8px;
+    padding:11px 22px;
+    cursor:pointer;
+  `;
+
+  const status = document.createElement('span');
+  status.textContent = 'شنود شروع شد';
+  status.style.cssText =
+    'font-size:12px;color:#9eb4d3;';
+
+  function updateStats() {
+    stats.textContent =
+      `Socket: ${report.counters.socketsObserved} | ` +
+      `WS messages: ${report.counters.websocketMessages} | ` +
+      `Relevant WS: ${report.counters.matchingWebsocketMessages} | ` +
+      `HTTP: ${report.counters.httpRequests} | ` +
+      `Trade-like rows: ${report.counters.tradeCandidateObjects}`;
+  }
+
+  const uiTimer = setInterval(updateStats, 1000);
+
+  // ------------------------------------------------
+  // 4. Stop and restore all temporary hooks
+  // ------------------------------------------------
+
+  async function stopCapture(copyToClipboard) {
+    if (stopped) return;
+
+    stopped = true;
+
+    clearInterval(uiTimer);
+
+    if (timer) clearTimeout(timer);
+
+    for (const item of socketListeners) {
+      safe(() =>
+        item.ws.removeEventListener(
+          'message',
+          item.handler
+        )
+      );
+    }
+
+    for (const restore of restorers.reverse()) {
+      safe(() => restore());
+    }
+
+    await Promise.allSettled(pendingTasks);
+
+    report.finishedAt = new Date().toISOString();
+    report.durationMs = Date.now() - started;
+
+    report.safety.monitoringStopped = true;
+    report.safety.temporaryHooksRestored = true;
+
+    const output = JSON.stringify(report, null, 2);
+
+    area.value = output;
+    updateStats();
+
+    status.textContent =
+      'شنود متوقف شد؛ Hookهای موقت بازگردانده شدند.';
+
+    status.style.color = '#83e3a8';
+
+    stopCopy.disabled = true;
+    stopCopy.textContent = 'شنود متوقف شد';
+
+    if (copyToClipboard) {
+      try {
+        await navigator.clipboard.writeText(output);
+
+        status.textContent =
+          'گزارش کامل کپی شد؛ اینجا Paste کن.';
+
+      } catch (_) {
+        area.focus();
+        area.select();
+
+        status.textContent =
+          'متن گزارش انتخاب شد؛ Ctrl+C بزن.';
+      }
+    }
+  }
+
+  stopCopy.onclick = () => {
+    stopCapture(true);
+  };
+
+  close.onclick = () => {
+    stopCapture(false);
+    overlay.remove();
+  };
+
+  footer.append(stopCopy, close, status);
+  box.append(title, description, stats, area, footer);
+  overlay.append(box);
+
+  document.documentElement.append(overlay);
+
+  // Auto-stop after 60 seconds to avoid leaving hooks active.
+  timer = setTimeout(() => {
+    stopCapture(false);
+
+    if (!overlay.isConnected) return;
+
+    status.textContent =
+      '۶۰ ثانیه تمام شد؛ برای کپی گزارش روی دکمه کپی بزن.';
+
+    stopCopy.disabled = false;
+    stopCopy.textContent = 'کپی گزارش نهایی';
+  }, 60000);
+
+  updateStats();
+
+  console.info(
+    '[BITUNIX EXTRACTION 08] Passive monitoring started.'
+  );
+
+})();
+</CodeBlock>
+
+### نحوه اجرا
+
+1. صفحه را روی Futures و نماد XAUTUSDT نگه دار.
+2. کد را در Console اصلی صفحه اجرا کن.
+3. بعد از ظاهر شدن پنجره، حدود **۳۰ تا ۴۵ ثانیه** صبر کن.
+4. چارت را Refresh نکن و نماد یا تایم‌فریم را تغییر نده.
+5. روی «توقف و کپی گزارش» بزن و گزارش را بفرست.
+
+یک اصلاح کوچک قبل از اجرا: برای اینکه بعد از توقف خودکار ۶۰ ثانیه‌ای هم بتوانی گزارش را کپی کنی، در کد بالا تابع `stopCapture` را با نسخه زیر جایگزین کن:
+
+<CodeBlock language="javascript" editable>
+  async function stopCapture(copyToClipboard) {
+    if (!stopped) {
+      stopped = true;
+      clearInterval(uiTimer);
+
+      if (timer) clearTimeout(timer);
+
+      for (const item of socketListeners) {
+        safe(() =>
+          item.ws.removeEventListener('message', item.handler)
+        );
+      }
+
+      for (const restore of restorers.reverse()) {
+        safe(() => restore());
+      }
+
+      await Promise.allSettled(pendingTasks);
+
+      report.finishedAt = new Date().toISOString();
+      report.durationMs = Date.now() - started;
+
+      report.safety.monitoringStopped = true;
+      report.safety.temporaryHooksRestored = true;
+    }
+
+    const output = JSON.stringify(report, null, 2);
+
+    area.value = output;
+    updateStats();
+
+    stopCopy.disabled = false;
+    stopCopy.textContent = 'کپی گزارش نهایی';
+
+    if (copyToClipboard) {
+      try {
+        await navigator.clipboard.writeText(output);
+        status.textContent = 'گزارش کامل کپی شد.';
+        status.style.color = '#83e3a8';
+      } catch (_) {
+        area.focus();
+        area.select();
+        status.textContent = 'Ctrl+C را بزن.';
+      }
+    }
+  }
+</CodeBlock>
+
+**نکته مهم:** این استخراج هنوز درخواست فرضی ۲۰۰ معامله‌ای نمی‌فرستد. هدفش این است که ببینیم خود Bitunix واقعاً چه داده‌ای ارسال می‌کند. اگر درخواست تاریخچه فقط هنگام بارگذاری اولیه صفحه اجرا شده باشد و در این ۶۰ ثانیه تکرار نشود، مرحله بعد یک استخراج جداگانه با ثبت درخواست از ابتدای بارگذاری خواهیم داشت.
+
+چیزی که در گزارش بعدی برایم تعیین‌کننده است، تعداد معاملات دریافتی، محدودیت درخواست، شناسه معامله، Timestamp و ساختار پیام‌های WebSocket است.
+
+
+کاربر | پیام 26 | 11/14/2026, 8:43:57 PM
+------------------------------------------------------------
+
+این جوری شده. الان اینو کپی کنم؟ اماده شده؟
+
+
+دستیار | پیام 27 | 11/14/2026, 8:44:16 PM
+------------------------------------------------------------
+
+Worked for 17s
+
+
+دستیار | پیام 28 | 11/14/2026, 8:44:16 PM
+------------------------------------------------------------
+
+بله، زمان استخراج تمام شده و گزارش آماده کپی است. روی دکمه آبی **«کپی گزارش»** پایین پنجره بزن و متن را اینجا بفرست.
+
+اما یک نکته مهم در تصویر وجود دارد:
+
+<box border radius="lg" padding={3} gap={2}>
+  **نتیجه استخراج**
+  <grid columns={2} gap={2}>
+    <grid-item>
+      <title color="warning" size="2xl" tabularNums>0</title>
+      <text color="secondary" size="xs">WebSocket پیام</text>
+    </grid-item>
+    <grid-item>
+      <title color="warning" size="2xl" tabularNums>0</title>
+      <text color="secondary" size="xs">HTTP درخواست</text>
+    </grid-item>
+    <grid-item>
+      <title color="warning" size="2xl" tabularNums>0</title>
+      <text color="secondary" size="xs">معامله شناسایی‌شده</text>
+    </grid-item>
+    <grid-item>
+      <title color="success" size="2xl" tabularNums>60s</title>
+      <text color="secondary" size="xs">مدت استخراج</text>
+    </grid-item>
+  </grid>
+  <badge color="success">Hookهای موقت بازیابی شده‌اند</badge>
+</box>
+
+یعنی اسکریپت اجرا شده، اما نتوانسته جریان معاملات را دریافت کند.
+
+احتمالاً ارتباط WebSocket چارت پیش از اجرای اسکریپت برقرار شده و شنودگر ما نتوانسته آن را به دست بیاورد. همچنین طی این ۶۰ ثانیه درخواست HTTP مرتبط جدیدی ثبت نشده است.
+
+**گزارش را بفرست.** بعد روش استخراج را اصلاح می‌کنم تا از لحظه بارگذاری صفحه، ارتباطات واقعی Bitunix را بررسی کنیم. فعلاً لازم نیست کد قبلی را دوباره اجرا کنی.
+
+
+کاربر | پیام 29 | 11/14/2026, 8:46:34 PM
+------------------------------------------------------------
+
+دکمه کپی رو زدم ولی چیزی کپی نکرده انگار. وقتی کپی رو میزدم مثل حالات قبلی پیامی نمیداد. پنجره رو بستم رفت. رفتم دوباره کارو انجام بدم و این بار پنجره باز نشد و این پیامو داده
+  }
+
+undefined
+arms-ba00c1dd9e.js:8  POST https://web-log.zouliangbu.com/rum/web/v2?workspace=default-cms-5168731498105524-ap-northeast-1&service_id=1ew5ugxa27o@fe8e759f829b3480b3994 net::ERR_NAME_NOT_RESOLVED
+
+
+دستیار | پیام 30 | 11/14/2026, 8:47:47 PM
+------------------------------------------------------------
+
+Worked for 1m 11s
+
+
+دستیار | پیام 31 | 11/14/2026, 8:47:47 PM
+------------------------------------------------------------
+
+مشکل را پیدا کردم. این بار اشکال از کد من بوده و بابتش عذر می‌خواهم.
+
+### ۱. چرا دکمه کپی کار نکرد؟
+
+در تصویر قبلی یک عدد مهم داشتیم:
+
+`durationMs: 60033`
+
+یعنی استخراج بعد از ۶۰ ثانیه به‌صورت خودکار متوقف شده بود.
+
+در کدی که نوشته بودم یک ایراد منطقی وجود داشت:
+
+- با توقف خودکار، متغیر `stopped` برابر `true` می‌شد.
+- وقتی بعداً روی کپی می‌زدی، تابع به‌خاطر همین شرط بلافاصله خارج می‌شد.
+- در نتیجه متن کپی نمی‌شد.
+
+این اشتباه کدنویسی من بود.
+
+### ۲. پیام‌های Console چه معنایی دارند؟
+
+`undefined`
+
+این به‌تنهایی خطا نیست؛ نتیجه طبیعی اجرای یک تابع بدون خروجی است.
+
+اما این پیام:
+
+`ERR_NAME_NOT_RESOLVED`
+
+مربوط به سیستم گزارش‌گیری داخلی سایت Bitunix است و ارتباطی با کپی گزارش ما ندارد.
+
+### ۳. چرا پنجره بار دوم باز نشد؟
+
+از دو خطی که فرستادی علت قطعی مشخص نمی‌شود. نمی‌خواهم حدس بزنم.
+
+فعلاً کد شماره ۸ قبلی را دوباره اجرا نکن. یک مشکل اساسی دیگر هم داشتیم: اتصال WebSocket ممکن است قبل از اجرای اسکریپت برقرار شده باشد و روش قبلی ما الزاماً پیام‌های آن اتصال را نمی‌دید.
+
+## ۴. روش مطمئن‌تر برای استخراج بعدی
+
+این بار پیشنهاد می‌کنم ابتدا از Network خود Chrome استفاده کنیم تا درخواست‌ها و ارتباطات را از لحظه بارگذاری صفحه ثبت کنیم.
+
+<AsyncImage query="Google Chrome Developer Tools Network tab WebSocket filter Messages frames Fetch XHR panel screenshot" aspectRatio="16:9" width="100%" maxHeight={210} fit="contain"/>
+
+این مراحل را انجام بده:
+
+1. F12 را بزن و وارد **Network** شو.
+2. گزینه **Preserve log** را روشن کن.
+3. روی فیلتر **WS** کلیک کن.
+4. صفحه Bitunix را Refresh کن.
+5. پس از اتصال، روی ردیف WebSocket کلیک کن و وارد تب **Messages** شو.
+6. بعد به فیلتر **Fetch/XHR** برو و درخواست‌های حاوی `kline` را پیدا کن.
+
+به‌خصوص دنبال این دو آدرس هستیم:
+
+```text
+/kline/history/futures
+
+/kline/api/public/v1/agg/realtime/futures
+```
+
+از هر درخواست، قسمت‌های **Payload** و **Response** را برایم بفرست. از WebSocket هم URL و چند پیام دریافتی را بفرست.
+
+<badge color="warning">نکته امنیتی</badge>
+
+کوکی، Authorization، توکن ورود و اطلاعات حساب را ارسال نکن. فقط پارامترهای مربوط به نماد، تعداد معاملات و داده‌های بازار لازم‌اند.
+
+**هدفمان هنوز همان ساخت کندل از معاملات واقعی است.** نمی‌خواهیم حتی یک کندل ثانیه‌ای را از تقسیم OHLC یک‌دقیقه‌ای بسازیم.
+
+یک اصلاح مهم هم درباره گزارش قبلی: وجود نام `secondsIntervalNotPermitted` فقط نشان می‌دهد چنین رویدادی در موتور وجود دارد؛ ثابت نمی‌کند که آن رویداد واقعاً اجرا شده است. چیزی که تأیید کرده‌ایم، نبود تایم‌فریم ثانیه‌ای در فهرست Resolutionهای رسمی گزارش‌شده است.
+
+
+کاربر | پیام 32 | 11/14/2026, 8:50:02 PM
+------------------------------------------------------------
+
+یک روش دیگه انجام بدیم این سخته. تو ی کد بده من من قرار بدم توی کنسول و ران بکنم. پنجره باز بششه و بعدش سایت بیتیونیکس رو رفرش بکنم و این کد جدیدمون اطلاعاتی ک میخوای رو برداره. این طوری بهتر نیست؟
+
+
+دستیار | پیام 33 | 11/14/2026, 8:52:45 PM
+------------------------------------------------------------
+
+Worked for 2m 41s
+
+
+دستیار | پیام 34 | 11/14/2026, 8:52:45 PM
+------------------------------------------------------------
+
+بله! اتفاقاً از نظر روش استخراج، پیشنهادت بهتر است؛ چون می‌خواهیم ارتباطات را از همان لحظه‌ای که صفحه Bitunix بارگذاری می‌شود ثبت کنیم، نه بعد از اینکه WebSocket قبلاً برقرار شده باشد.
+
+اما یک محدودیت فنی وجود دارد:
+
+**کدی که در Console اجرا می‌کنی، با Refresh کامل صفحه از بین می‌رود.** پنجره، متغیرها و شنودگرهای آن همگی نابود می‌شوند. بنابراین نمی‌توانیم صرفاً یک کد Console اجرا کنیم و انتظار داشته باشیم بعد از Refresh همچنان فعال بماند.
+
+### راه‌حل پیشنهادی من
+
+یک افزونه تشخیصی موقت و مستقل بسازیم:
+
+<box border radius="lg" padding={3} gap={3}>
+  <row align="center" gap={2}>
+    <icon name="scan-search" color="#60A5FA" size="2xl"/>
+    **Bitunix Network Inspector**
+    <badge color="info">موقت</badge>
+  </row>
+  عملکرد آن:
+  1. قبل از بارگذاری سایت، شنودگرها فعال می‌شوند.
+  2. صفحه Bitunix را Refresh می‌کنی.
+  3. پنجره شناور گزارش به‌صورت خودکار ظاهر می‌شود.
+  4. درخواست‌های Kline، معاملات و پیام‌های WebSocket ثبت می‌شوند.
+  5. پس از ۳۰ تا ۴۵ ثانیه روی Stop & Copy می‌زنی.
+  6. گزارش کامل را برایم می‌فرستی.
+  <divider color="subtle"/>
+  **این افزونه هیچ سفارش یا معامله‌ای انجام نمی‌دهد و اطلاعات ورود و احراز هویت را جمع‌آوری نمی‌کند.**
+</box>
+
+مزیت دیگرش این است که دیگر نیازی نیست برای هر استخراج، کدهای طولانی را در Console قرار بدهی.
+
+این ابزار با افزونه نهایی Bitunix Enhancer متفاوت خواهد بود و بعد از استخراج می‌توانی حذفش کنی.
+
+**پیشنهاد من این است که از اینجا به بعد استخراج اولیه را با همین ابزار انجام بدهیم.** این مطمئن‌ترین مسیر برای دیدن درخواست اولیه معاملات و اتصال WebSocket است.
+
+
+کاربر | پیام 35 | 11/14/2026, 8:53:59 PM
+------------------------------------------------------------
+
+باشه بساز فایل زیپ را بفرس. داخل زیپ پوشه اضافه نذار
+
+
+دستیار | پیام 36 | 11/14/2026, 8:55:41 PM
+------------------------------------------------------------
+
+این ابزار را به شکل یک افزونه تشخیصی موقت می‌سازم، نه بخشی از Bitunix Enhancer نهایی. شنودگر در `document_start` و در دنیای اصلی صفحه اجرا می‌شود تا قبل از اسکریپت‌های Bitunix، درخواست‌های عمومی بازار و WebSocketها را ببیند؛ پنل جداگانه در لایه ایزوله افزونه ظاهر می‌شود. فایل‌های ZIP همگی در ریشه خواهند بود و پوشهٔ تو‌در‌تو ندارند.
+
+
+دستیار | پیام 37 | 11/14/2026, 8:56:34 PM
+------------------------------------------------------------
+
+bash -lc mkdir -p /mnt/data/bitunix_inspector_build && cat > /mnt/data/bitunix_inspector_build/manifest.json <<'EOF'
+{
+  "manifest_version": 3,
+  "name": "Bitunix Network Inspector",
+  "version": "1.0.0",
+  "description": "Temporary, read-only market network diagnostics for Bitunix Futures.",
+  "permissions": [
+    "clipboardWrite"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://bitunix.com/*",
+        "https://*.bitunix.com/*"
+      ],
+      "js": [
+        "main-observer.js"
+      ],
+      "run_at": "document_start",
+      "all_frames": true,
+      "match_about_blank": true,
+      "match_origin_as_fallback": true,
+      "world": "MAIN"
+    },
+    {
+      "matches": [
+        "https://bitunix.com/*",
+        "https://*.bitunix.com/*"
+      ],
+      "js": [
+        "ui.js"
+      ],
+      "run_at": "document_idle",
+      "all_frames": false,
+      "world": "ISOLATED"
+    }
+  ]
+}
+EOF
+cat > /mnt/data/bitunix_inspector_build/main-observer.js <<'EOF'
+(() => {
+  'use strict';
+
+  const BRIDGE = '__BITUNIX_NETWORK_INSPECTOR_10__';
+  const STATE_KEY = '__BITUNIX_NETWORK_INSPECTOR_STATE_10__';
+
+  try {
+    if (window[STATE_KEY] && window[STATE_KEY].installed) return;
+  } catch (_) {}
+
+  const state = {
+    installed: true,
+    active: true,
+    startedAt: new Date().toISOString(),
+    sequence: 0,
+    requestSequence: 0,
+    records: [],
+    restorers: [],
+    socketListeners: [],
+    xhrMeta: new WeakMap(),
+    observedSockets: new WeakSet(),
+    maxRecords: 900,
+    frame: {
+      origin: location.origin,
+      path: location.pathname
+    }
+  };
+
+  try {
+    Object.defineProperty(window, STATE_KEY, {
+      value: state,
+      configurable: true,
+      enumerable: false,
+      writable: false
+    });
+  } catch (_) {
+    window[STATE_KEY] = state;
+  }
+
+  const sensitiveKey = /token|password|secret|cookie|authorization|signature|api.?key|session|credential|private.?key|access.?key/i;
+  const excludedPath = /(?:^|\/)(?:order|orders|position|positions|account|asset|assets|wallet|balance|login|user|private)(?:\/|$)/i;
+  const marketPath = /kline|trade|deal|agg|realtime|market|ticker|depth|quote|public/i;
+  const tradeKey = /^(?:price|p|px|lastPrice|dealPrice|qty|quantity|size|volume|v|amount|side|direction|time|timestamp|ts|t|T|tradeTime|createTime|tradeId|dealId|id|i|symbol|s|instId|contract|contractCode)$/i;
+  const tradePriceKey = /^(?:price|p|px|lastPrice|dealPrice)$/i;
+  const tradeQtyKey = /^(?:qty|quantity|size|volume|v|amount)$/i;
+  const tradeTimeKey = /^(?:time|timestamp|ts|t|T|tradeTime|createTime)$/i;
+  const symbolKey = /^(?:symbol|s|instId|contract|contractCode)$/i;
+  const privatePayloadKey = /^(?:uid|userId|accountId|position|positions|margin|balance|wallet|equity|unrealizedPnl|realizedPnl|orderId|clientOrderId|apiKey|accessToken)$/i;
+
+  function clean(value, max = 180) {
+    return String(value == null ? '' : value).replace(/\s+/g, ' ').trim().slice(0, max);
+  }
+
+  function safeUrl(raw, base) {
+    try {
+      const url = new URL(raw, base || location.href);
+      const query = {};
+      url.searchParams.forEach((value, key) => {
+        query[key] = sensitiveKey.test(key) ? '[REDACTED]' : clean(value, 120);
+      });
+      return { origin: url.origin, path: url.pathname, query };
+    } catch (_) {
+      return { origin: '', path: '[unavailable]', query: {} };
+    }
+  }
+
+  function emit(type, payload) {
+    if (!state.active && type !== 'capture_stopped') return null;
+    const record = {
+      id: `${state.frame.path}:${++state.sequence}`,
+      type,
+      capturedAt: new Date().toISOString(),
+      frame: state.frame,
+      ...payload
+    };
+    state.records.push(record);
+    if (state.records.length > state.maxRecords) state.records.shift();
+
+    const packet = { bridge: BRIDGE, kind: 'RECORD', record };
+    try { window.postMessage(packet, '*'); } catch (_) {}
+    if (window !== window.top) {
+      try { window.parent.postMessage(packet, '*'); } catch (_) {}
+    }
+    return record;
+  }
+
+  function notifySnapshot() {
+    const packet = {
+      bridge: BRIDGE,
+      kind: 'SNAPSHOT',
+      frame: state.frame,
+      active: state.active,
+      startedAt: state.startedAt,
+      records: state.records.slice()
+    };
+    try { window.postMessage(packet, '*'); } catch (_) {}
+    if (window !== window.top) {
+      try { window.parent.postMessage(packet, '*'); } catch (_) {}
+    }
+  }
+
+  function sanitizeValue(value, depth = 0) {
+    if (value == null || typeof value === 'number' || typeof value === 'boolean') return value;
+    if (typeof value === 'string') return clean(value, 220);
+    if (depth > 4) return '[depth-limit]';
+    if (Array.isArray(value)) {
+      return {
+        _type: 'array',
+        length: value.length,
+        sample: value.slice(0, 5).map(item => sanitizeValue(item, depth + 1))
+      };
+    }
+    if (typeof value !== 'object') return `[${typeof value}]`;
+
+    const output = {};
+    let count = 0;
+    for (const key of Object.keys(value)) {
+      if (count++ >= 60) break;
+      if (sensitiveKey.test(key) || privatePayloadKey.test(key)) continue;
+      const item = value[key];
+      if (tradeKey.test(key) || /^(?:code|msg|message|data|result|payload|arg|args|topic|channel|event|type|op|action|success|count|total)$/i.test(key)) {
+        if (item == null || ['string', 'number', 'boolean'].includes(typeof item) || Array.isArray(item) || typeof item === 'object') {
+          output[key] = sanitizeValue(item, depth + 1);
+        }
+      } else if (Array.isArray(item)) {
+        output[key] = { _type: 'array', length: item.length, sample: item.slice(0, 3).map(x => sanitizeValue(x, depth + 1)) };
+      } else if (item && typeof item === 'object' && depth < 2) {
+        output[key] = sanitizeValue(item, depth + 1);
+      }
+    }
+    return output;
+  }
+
+  function hasPrivateKeys(obj, depth = 0) {
+    if (!obj || typeof obj !== 'object' || depth > 5) return false;
+    if (Array.isArray(obj)) return obj.slice(0, 40).some(x => hasPrivateKeys(x, depth + 1));
+    for (const key of Object.keys(obj)) {
+      if (privatePayloadKey.test(key) || sensitiveKey.test(key)) return true;
+      const child = obj[key];
+      if (child && typeof child === 'object' && hasPrivateKeys(child, depth + 1)) return true;
+    }
+    return false;
+  }
+
+  function extractTradeCandidates(root, pathHint = '', max = 15) {
+    const output = [];
+    const visited = new WeakSet();
+
+    function walk(value, path, depth, inheritedSymbol) {
+      if (!value || typeof value !== 'object' || depth > 6 || output.length >= max || visited.has(value)) return;
+      visited.add(value);
+
+      if (Array.isArray(value)) {
+        for (let i = 0; i < Math.min(value.length, 120); i++) {
+          walk(value[i], `${path}[${i}]`, depth + 1, inheritedSymbol);
+          if (output.length >= max) break;
+        }
+        return;
+      }
+
+      const entries = Object.entries(value);
+      let localSymbol = inheritedSymbol;
+      for (const [key, val] of entries) {
+        if (symbolKey.test(key) && typeof val === 'string') localSymbol = val;
+      }
+
+      const keys = entries.map(([key]) => key);
+      const hasPrice = keys.some(key => tradePriceKey.test(key));
+      const hasQty = keys.some(key => tradeQtyKey.test(key));
+      const hasTime = keys.some(key => tradeTimeKey.test(key));
+      const hintedTrade = /trade|deal|recent|match|execution/i.test(path);
+      const isXaut = !localSymbol || /XAUT(?:USDT)?/i.test(String(localSymbol));
+
+      if (hasPrice && hasTime && hasQty && isXaut && !hasPrivateKeys(value)) {
+        const fields = {};
+        for (const [key, val] of entries) {
+          if (sensitiveKey.test(key) || privatePayloadKey.test(key)) continue;
+          if (tradeKey.test(key) && (val == null || ['string', 'number', 'boolean'].includes(typeof val))) {
+            fields[key] = typeof val === 'string' ? clean(val, 100) : val;
+          }
+        }
+        output.push({ path, symbolContext: localSymbol || null, tradeHint: hintedTrade, fields });
+      }
+
+      for (const [key, child] of entries.slice(0, 80)) {
+        if (sensitiveKey.test(key) || privatePayloadKey.test(key)) continue;
+        if (child && typeof child === 'object') {
+          walk(child, `${path}.${key}`, depth + 1, localSymbol);
+        }
+      }
+    }
+
+    walk(root, pathHint || '$', 0, null);
+    return output;
+  }
+
+  function parseMarketJson(text) {
+    if (typeof text !== 'string' || text.length > 300000) return null;
+    try { return JSON.parse(text); } catch (_) { return null; }
+  }
+
+  function shouldTrackHttp(rawUrl, base) {
+    try {
+      const url = new URL(rawUrl, base || location.href);
+      if (excludedPath.test(url.pathname)) return false;
+      return marketPath.test(url.pathname);
+    } catch (_) {
+      return false;
+    }
+  }
+
+  function safeRequestBody(body) {
+    if (body == null) return null;
+    if (typeof body === 'string') {
+      if (body.length > 12000) return { type: 'string', length: body.length, truncated: true };
+      const parsed = parseMarketJson(body);
+      if (parsed) return sanitizeValue(parsed);
+      try {
+        const params = new URLSearchParams(body);
+        const result = {};
+        params.forEach((v, k) => {
+          if (!sensitiveKey.test(k) && !privatePayloadKey.test(k)) result[k] = clean(v, 120);
+        });
+        if (Object.keys(result).length) return result;
+      } catch (_) {}
+      return { type: 'text', length: body.length, sample: clean(body, 180) };
+    }
+    if (typeof URLSearchParams !== 'undefined' && body instanceof URLSearchParams) {
+      const result = {};
+      body.forEach((v, k) => {
+        if (!sensitiveKey.test(k) && !privatePayloadKey.test(k)) result[k] = clean(v, 120);
+      });
+      return result;
+    }
+    if (typeof FormData !== 'undefined' && body instanceof FormData) {
+      return { type: 'FormData', keys: Array.from(body.keys()).filter(k => !sensitiveKey.test(k) && !privatePayloadKey.test(k)).slice(0, 40) };
+    }
+    return { type: body.constructor?.name || typeof body };
+  }
+
+  function makeRequestId() {
+    return `${state.frame.path}:req:${++state.requestSequence}`;
+  }
+
+  function addHttpRequest(transport, method, rawUrl, body) {
+    const entry = {
+      requestId: makeRequestId(),
+      transport,
+      method: clean(method || 'GET', 12).toUpperCase(),
+      url: safeUrl(rawUrl, location.href),
+      requestBody: safeRequestBody(body)
+    };
+    emit('http_request', entry);
+    return entry.requestId;
+  }
+
+  function summarizeResponse(text, status, contentType, requestId) {
+    const parsed = parseMarketJson(text);
+    if (!parsed) {
+      emit('http_response', {
+        requestId,
+        status,
+        contentType: clean(contentType, 100),
+        json: false,
+        bodyLength: text ? text.length : 0,
+        sample: clean(text, 160)
+      });
+      return;
+    }
+    const candidates = extractTradeCandidates(parsed, '$response', 12);
+    emit('http_response', {
+      requestId,
+      status,
+      contentType: clean(contentType, 100),
+      json: true,
+      structure: sanitizeValue(parsed),
+      tradeCandidateCount: candidates.length,
+      tradeSamples: candidates
+    });
+  }
+
+  async function readLimitedResponse(response, maxBytes = 220000) {
+    try {
+      const clone = response.clone();
+      if (!clone.body || !clone.body.getReader) {
+        const text = await clone.text();
+        return { text: text.slice(0, maxBytes), truncated: text.length > maxBytes };
+      }
+      const reader = clone.body.getReader();
+      const decoder = new TextDecoder();
+      let text = '';
+      let bytes = 0;
+      let truncated = false;
+      while (true) {
+        const part = await reader.read();
+        if (part.done) break;
+        const chunk = part.value;
+        const remaining = maxBytes - bytes;
+        if (chunk.byteLength > remaining) {
+          text += decoder.decode(chunk.slice(0, Math.max(0, remaining)), { stream: true });
+          bytes = maxBytes;
+          truncated = true;
+          try { await reader.cancel(); } catch (_) {}
+          break;
+        }
+        bytes += chunk.byteLength;
+        text += decoder.decode(chunk, { stream: true });
+      }
+      text += decoder.decode();
+      return { text, truncated };
+    } catch (_) {
+      return { text: '', truncated: false, failed: true };
+    }
+  }
+
+  // ------------------------------------------------------
+  // Observe fetch requests made by the page and chart iframe
+  // ------------------------------------------------------
+  const nativeFetch = window.fetch;
+  if (typeof nativeFetch === 'function') {
+    const wrappedFetch = function(input, init) {
+      let rawUrl = '';
+      let method = init && init.method;
+      try {
+        rawUrl = typeof input === 'string' || input instanceof URL ? String(input) : input.url;
+        method = method || (input && input.method) || 'GET';
+      } catch (_) {}
+
+      if (!state.active || !shouldTrackHttp(rawUrl, location.href)) {
+        return Reflect.apply(nativeFetch, this, arguments);
+      }
+
+      const requestId = addHttpRequest('fetch', method, rawUrl, init && init.body);
+      const promise = Reflect.apply(nativeFetch, this, arguments);
+
+      return Promise.resolve(promise).then(response => {
+        readLimitedResponse(response).then(result => {
+          if (result.failed) {
+            emit('http_response', { requestId, status: response.status, captureFailed: true });
+          } else {
+            summarizeResponse(
+              result.text,
+              response.status,
+              response.headers && response.headers.get('content-type'),
+              requestId
+            );
+            if (result.truncated) emit('http_response_truncated', { requestId, maxBytes: 220000 });
+          }
+        }).catch(() => {});
+        return response;
+      }, error => {
+        emit('http_error', { requestId, error: clean(error && error.message, 180) });
+        throw error;
+      });
+    };
+
+    try {
+      window.fetch = wrappedFetch;
+      state.restorers.push(() => {
+        if (window.fetch === wrappedFetch) window.fetch = nativeFetch;
+      });
+    } catch (_) {}
+  }
+
+  // ------------------------------------------------------
+  // Observe XMLHttpRequest market endpoints
+  // ------------------------------------------------------
+  const XHR = window.XMLHttpRequest;
+  if (XHR && XHR.prototype) {
+    const proto = XHR.prototype;
+    const nativeOpen = proto.open;
+    const nativeSend = proto.send;
+
+    if (typeof nativeOpen === 'function' && typeof nativeSend === 'function') {
+      const wrappedOpen = function(method, url) {
+        state.xhrMeta.set(this, { method, url: String(url || '') });
+        return Reflect.apply(nativeOpen, this, arguments);
+      };
+
+      const wrappedSend = function(body) {
+        const meta = state.xhrMeta.get(this);
+        let requestId = null;
+        if (state.active && meta && shouldTrackHttp(meta.url, location.href)) {
+          requestId = addHttpRequest('xhr', meta.method, meta.url, body);
+          this.addEventListener('load', () => {
+            try {
+              let text = '';
+              if (this.responseType === 'json') text = JSON.stringify(this.response);
+              else if (this.responseType === '' || this.responseType === 'text') text = this.responseText;
+              else {
+                emit('http_response', { requestId, status: this.status, responseType: this.responseType, captureSkipped: true });
+                return;
+              }
+              summarizeResponse(
+                String(text || '').slice(0, 220000),
+                this.status,
+                this.getResponseHeader('content-type'),
+                requestId
+              );
+            } catch (_) {
+              emit('http_response', { requestId, captureFailed: true });
+            }
+          }, { once: true });
+          this.addEventListener('error', () => emit('http_error', { requestId, error: 'XHR network error' }), { once: true });
+        }
+        return Reflect.apply(nativeSend, this, arguments);
+      };
+
+      try {
+        proto.open = wrappedOpen;
+        proto.send = wrappedSend;
+        state.restorers.push(() => {
+          if (proto.open === wrappedOpen) proto.open = nativeOpen;
+          if (proto.send === wrappedSend) proto.send = nativeSend;
+        });
+      } catch (_) {}
+    }
+  }
+
+  // ------------------------------------------------------
+  // Observe WebSocket connections created after document_start
+  // Do not hook send(): outgoing messages may contain private data.
+  // ------------------------------------------------------
+  const NativeWebSocket = window.WebSocket;
+
+  function isRelevantSocketUrl(raw) {
+    try {
+      const url = new URL(raw, location.href);
+      return /wss?:/i.test(url.protocol) && /ws|stream|market|future|trade|quote|public|socket|push/i.test(url.pathname + ' ' + url.hostname);
+    } catch (_) {
+      return false;
+    }
+  }
+
+  function socketSafeUrl(raw) {
+    return safeUrl(raw, location.href);
+  }
+
+  function maybeMarketMessage(raw) {
+    if (typeof raw !== 'string' || raw.length > 300000) return null;
+    const parsed = parseMarketJson(raw);
+    if (!parsed) return null;
+
+    const serialized = raw.slice(0, 100000);
+    if (!/XAUT(?:USDT)?/i.test(serialized)) return null;
+    if (hasPrivateKeys(parsed)) return null;
+
+    const candidates = extractTradeCandidates(parsed, '$ws', 12);
+    const marketWords = /trade|deal|ticker|kline|candle|depth|agg|market|realtime/i.test(serialized);
+
+    if (!marketWords && candidates.length === 0) {
+      return {
+        marketCandidate: false,
+        schemaOnly: true,
+        structure: sanitizeValue(parsed),
+        tradeCandidateCount: 0,
+        tradeSamples: []
+      };
+    }
+
+    return {
+      marketCandidate: true,
+      structure: sanitizeValue(parsed),
+      tradeCandidateCount: candidates.length,
+      tradeSamples: candidates
+    };
+  }
+
+  function attachSocket(ws, source) {
+    if (!ws || state.observedSockets.has(ws)) return;
+    state.observedSockets.add(ws);
+
+    const rawUrl = (() => { try { return ws.url; } catch (_) { return ''; } })();
+    const relevant = isRelevantSocketUrl(rawUrl);
+
+    emit('websocket_open_observed', {
+      source,
+      relevantMarketUrl: relevant,
+      url: socketSafeUrl(rawUrl),
+      protocol: clean(ws.protocol, 80),
+      readyState: ws.readyState
+    });
+
+    const onOpen = () => emit('websocket_open', { url: socketSafeUrl(rawUrl), source });
+    const onClose = event => emit('websocket_close', { url: socketSafeUrl(rawUrl), code: event.code, wasClean: event.wasClean, source });
+    const onError = () => emit('websocket_error', { url: socketSafeUrl(rawUrl), source });
+    const onMessage = event => {
+      if (!state.active) return;
+      const data = event && event.data;
+      if (typeof data !== 'string') {
+        emit('websocket_binary_metadata', {
+          url: socketSafeUrl(rawUrl),
+          dataType: data && data.constructor ? data.constructor.name : typeof data,
+          byteLength: data && typeof data.byteLength === 'number' ? data.byteLength : null,
+          blobSize: data && typeof data.size === 'number' ? data.size : null,
+          source
+        });
+        return;
+      }
+      const market = maybeMarketMessage(data);
+      if (!market) return;
+      emit('websocket_market_message', {
+        url: socketSafeUrl(rawUrl),
+        messageLength: data.length,
+        ...market,
+        source
+      });
+    };
+
+    try {
+      ws.addEventListener('open', onOpen);
+      ws.addEventListener('close', onClose);
+      ws.addEventListener('error', onError);
+      ws.addEventListener('message', onMessage);
+      state.socketListeners.push({ ws, onOpen, onClose, onError, onMessage });
+    } catch (_) {}
+  }
+
+  if (typeof NativeWebSocket === 'function') {
+    const WrappedWebSocket = new Proxy(NativeWebSocket, {
+      construct(target, args, newTarget) {
+        const ws = Reflect.construct(
+          target,
+          args,
+          newTarget === WrappedWebSocket ? target : newTarget
+        );
+        attachSocket(ws, 'constructed-after-document-start');
+        return ws;
+      }
+    });
+
+    try {
+      window.WebSocket = WrappedWebSocket;
+      state.restorers.push(() => {
+        if (window.WebSocket === WrappedWebSocket) window.WebSocket = NativeWebSocket;
+      });
+    } catch (_) {}
+  }
+
+  // ------------------------------------------------------
+  // Message bridge: snapshots + STOP commands from UI
+  // ------------------------------------------------------
+  function stopCapture() {
+    if (!state.active) {
+      notifySnapshot();
+      return;
+    }
+    emit('capture_stopped', { reason: 'user-request' });
+    state.active = false;
+
+    for (const item of state.socketListeners) {
+      try {
+        item.ws.removeEventListener('open', item.onOpen);
+        item.ws.removeEventListener('close', item.onClose);
+        item.ws.removeEventListener('error', item.onError);
+        item.ws.removeEventListener('message', item.onMessage);
+      } catch (_) {}
+    }
+    state.socketListeners.length = 0;
+
+    for (const restore of state.restorers.reverse()) {
+      try { restore(); } catch (_) {}
+    }
+    state.restorers.length = 0;
+    notifySnapshot();
+  }
+
+  window.addEventListener('message', event => {
+    const data = event && event.data;
+    if (!data || data.bridge !== BRIDGE || data.target !== 'MAIN') return;
+
+    if (data.action === 'SNAPSHOT') notifySnapshot();
+    else if (data.action === 'STOP') stopCapture();
+  });
+
+  emit('observer_started', {
+    note: 'Early page-world observer active; only public market-like HTTP endpoints and market-like WebSocket messages are summarized.'
+  });
+})();
+EOF
+cat > /mnt/data/bitunix_inspector_build/ui.js <<'EOF'
+(() => {
+  'use strict';
+
+  const BRIDGE = '__BITUNIX_NETWORK_INSPECTOR_10__';
+  const HOST_ID = '__bitunix_network_inspector_ui_10__';
+
+  if (document.getElementById(HOST_ID)) return;
+
+  const state = {
+    records: new Map(),
+    frames: new Map(),
+    activeFrames: new Set(),
+    startedAt: Date.now(),
+    stopped: false
+  };
+
+  const host = document.createElement('div');
+  host.id = HOST_ID;
+  host.style.cssText = 'all:initial;position:fixed;z-index:2147483647;inset:0;pointer-events:none;';
+
+  const shadow = host.attachShadow({ mode: 'closed' });
+  const style = document.createElement('style');
+  style.textContent = `
+    :host { all: initial; }
+    .shell { position:fixed; right:18px; bottom:18px; width:min(540px, calc(100vw - 36px)); max-height:min(720px, calc(100vh - 36px)); display:flex; flex-direction:column; gap:10px; padding:15px; box-sizing:border-box; color:#e7efff; background:rgba(13,20,36,.97); border:1px solid rgba(116,160,235,.40); border-radius:15px; box-shadow:0 22px 75px rgba(0,0,0,.58); backdrop-filter:blur(16px); font:13px/1.45 Arial,sans-serif; pointer-events:auto; }
+    .head { display:flex; align-items:center; justify-content:space-between; gap:10px; }
+    .brand { font-weight:800; letter-spacing:.2px; font-size:14px; color:#9ac2ff; }
+    .version { font-size:10px; color:#9cabc3; border:1px solid rgba(150,175,220,.25); border-radius:20px; padding:3px 7px; }
+    .desc { color:#aebbd1; font-size:11px; }
+    .stats { display:grid; grid-template-columns:repeat(3,1fr); gap:7px; }
+    .stat { background:rgba(255,255,255,.045); border:1px solid rgba(130,160,215,.13); border-radius:9px; padding:8px; min-width:0; }
+    .value { font-size:19px; line-height:1.2; font-weight:800; color:#f0f5ff; font-variant-numeric:tabular-nums; }
+    .label { margin-top:3px; color:#9dacbf; font-size:10px; }
+    .progress { display:flex; justify-content:space-between; gap:10px; color:#9fb4d4; font-size:11px; }
+    .status { color:#81e0ae; }
+    textarea { width:100%; height:150px; min-height:90px; resize:vertical; box-sizing:border-box; outline:none; border:1px solid rgba(120,160,220,.23); border-radius:9px; background:#070d19; color:#dce9ff; padding:9px; font:10px/1.4 Consolas,monospace; }
+    .actions { display:flex; flex-wrap:wrap; gap:7px; }
+    button { border:0; border-radius:8px; padding:9px 13px; cursor:pointer; font:700 11px Arial,sans-serif; }
+    button.primary { background:#347ce5; color:white; }
+    button.secondary { background:rgba(255,255,255,.08); color:#e6edfa; border:1px solid rgba(255,255,255,.12); }
+    button.danger { background:rgba(200,75,88,.16); color:#ffb7be; border:1px solid rgba(240,110,125,.24); }
+    button:disabled { opacity:.55; cursor:default; }
+    .foot { display:flex; align-items:center; justify-content:space-between; gap:8px; color:#8fa1bd; font-size:10px; }
+    .small { color:#8ea4c6; font-size:10px; }
+    .collapse { position:absolute; right:11px; top:11px; opacity:.8; }
+    @media (max-width:560px) { .shell { right:8px; bottom:8px; width:calc(100vw - 16px); max-height:80vh; } }
+  `;
+
+  const shell = document.createElement('section');
+  shell.className = 'shell';
+  shell.innerHTML = `
+    <div class="head">
+      <div class="brand">BITUNIX NETWORK INSPECTOR</div>
+      <div class="version">v1.0 · READ ONLY</div>
+    </div>
+    <div class="desc">شنود از ابتدای بارگذاری صفحه فعال شده است. XAUTUSDT را روی Futures باز نگه دار و پس از ۳۰ تا ۴۵ ثانیه توقف کن.</div>
+    <div class="stats">
+      <div class="stat"><div class="value" id="httpCount">0</div><div class="label">HTTP market requests</div></div>
+      <div class="stat"><div class="value" id="wsCount">0</div><div class="label">WebSocket connections</div></div>
+      <div class="stat"><div class="value" id="msgCount">0</div><div class="label">Market WS messages</div></div>
+      <div class="stat"><div class="value" id="responseCount">0</div><div class="label">HTTP responses</div></div>
+      <div class="stat"><div class="value" id="tradeCount">0</div><div class="label">Trade-like samples</div></div>
+      <div class="stat"><div class="value" id="frameCount">1</div><div class="label">Frames observed</div></div>
+    </div>
+    <div class="progress"><span id="runStatus" class="status">● در حال ثبت ترافیک بازار</span><span id="elapsed">00:00</span></div>
+    <textarea id="preview" readonly spellcheck="false" aria-label="Report preview" placeholder="پس از دریافت داده‌ها، خلاصه گزارش اینجا نمایش داده می‌شود."></textarea>
+    <div class="actions">
+      <button class="primary" id="stopCopy">توقف و کپی گزارش</button>
+      <button class="secondary" id="copyNow">کپی گزارش فعلی</button>
+      <button class="secondary" id="download">دانلود JSON</button>
+      <button class="danger" id="stopOnly">فقط توقف</button>
+    </div>
+    <div class="foot"><span id="feedback">شنود فعال است؛ اطلاعات ورود و سفارش‌ها ثبت نمی‌شوند.</span><span class="small">پنل موقت · Refresh = شروع دوباره</span></div>
+  `;
+
+  shadow.append(style, shell);
+  (document.documentElement || document).appendChild(host);
+
+  const $ = selector => shadow.querySelector(selector);
+  const preview = $('#preview');
+  const feedback = $('#feedback');
+
+  function isTrustedSource(event) {
+    if (event.source === window) return true;
+    try {
+      return Array.from(document.querySelectorAll('iframe'))
+        .some(frame => frame.contentWindow === event.source);
+    } catch (_) {
+      return false;
+    }
+  }
+
+  function receive(event) {
+    const data = event && event.data;
+    if (!data || data.bridge !== BRIDGE || !isTrustedSource(event)) return;
+
+    if (data.kind === 'RECORD' && data.record && data.record.id) {
+      state.records.set(data.record.id, data.record);
+      if (data.record.frame) {
+        const key = `${data.record.frame.origin}${data.record.frame.path}`;
+        state.frames.set(key, data.record.frame);
+      }
+      if (data.record.type === 'capture_stopped') state.activeFrames.delete(data.record.frame?.path || '');
+      renderStats();
+    }
+
+    if (data.kind === 'SNAPSHOT') {
+      const key = `${data.frame?.origin || ''}${data.frame?.path || ''}`;
+      if (key) state.frames.set(key, data.frame);
+      if (data.active) state.activeFrames.add(key);
+      else state.activeFrames.delete(key);
+      for (const record of (Array.isArray(data.records) ? data.records : [])) {
+        if (record && record.id) state.records.set(record.id, record);
+      }
+      renderStats();
+    }
+  }
+
+  window.addEventListener('message', receive);
+
+  function sendCommand(targetWindow, action) {
+    try {
+      targetWindow.postMessage({ bridge: BRIDGE, target: 'MAIN', action }, '*');
+    } catch (_) {}
+  }
+
+  function broadcast(action) {
+    sendCommand(window, action);
+    for (const frame of document.querySelectorAll('iframe')) {
+      try { if (frame.contentWindow) sendCommand(frame.contentWindow, action); } catch (_) {}
+    }
+  }
+
+  function snapshotReport() {
+    const records = Array.from(state.records.values())
+      .sort((a, b) => String(a.capturedAt).localeCompare(String(b.capturedAt)));
+
+    const counts = {
+      httpRequests: records.filter(r => r.type === 'http_request').length,
+      httpResponses: records.filter(r => r.type === 'http_response').length,
+      websocketConnections: records.filter(r => r.type === 'websocket_open_observed').length,
+      websocketMessages: records.filter(r => r.type === 'websocket_market_message').length,
+      binaryMessages: records.filter(r => r.type === 'websocket_binary_metadata').length,
+      tradeCandidates: records.reduce((sum, r) => sum + Number(r.tradeCandidateCount || (r.tradeSamples?.length) || 0), 0)
+    };
+
+    return {
+      diagnostic: 'BITUNIX_NETWORK_INSPECTOR_1.0',
+      exportedAt: new Date().toISOString(),
+      page: location.origin + location.pathname,
+      targetSymbol: 'XAUTUSDT',
+      captureStartedAt: records.find(r => r.type === 'observer_started')?.capturedAt || null,
+      captureDurationMs: Date.now() - state.startedAt,
+      frames: Array.from(state.frames.values()),
+      counts,
+      records,
+      safety: {
+        readOnly: true,
+        noOrdersOrTradingActions: true,
+        noOutgoingWebSocketMessagesCaptured: true,
+        authHeadersAndCookiesNotCollected: true,
+        sensitivePayloadFieldsRedactedOrOmitted: true,
+        privateAccountEndpointsExcluded: true
+      }
+    };
+  }
+
+  function updatePreview() {
+    const report = snapshotReport();
+    const paths = report.records
+      .filter(r => r.type === 'http_request')
+      .slice(-8)
+      .map(r => `${r.method} ${r.url?.path || ''}`);
+    const sockets = report.records
+      .filter(r => r.type === 'websocket_open_observed')
+      .slice(-6)
+      .map(r => `WS ${r.url?.origin || ''}${r.url?.path || ''}`);
+    preview.value = [
+      `Diagnostic: ${report.diagnostic}`,
+      `HTTP requests: ${report.counts.httpRequests}`,
+      `HTTP responses: ${report.counts.httpResponses}`,
+      `WebSocket connections: ${report.counts.websocketConnections}`,
+      `Market WS messages: ${report.counts.websocketMessages}`,
+      `Trade-like samples: ${report.counts.tradeCandidates}`,
+      '', 'Recent HTTP:', ...(paths.length ? paths : ['(none captured yet)']),
+      '', 'Observed WebSockets:', ...(sockets.length ? sockets : ['(none captured yet)'])
+    ].join('\n');
+  }
+
+  function renderStats() {
+    const records = Array.from(state.records.values());
+    const count = type => records.filter(r => r.type === type).length;
+    const trade = records.reduce((sum, r) => sum + Number(r.tradeCandidateCount || (r.tradeSamples?.length) || 0), 0);
+    $('#httpCount').textContent = count('http_request');
+    $('#wsCount').textContent = count('websocket_open_observed');
+    $('#msgCount').textContent = count('websocket_market_message');
+    $('#responseCount').textContent = count('http_response');
+    $('#tradeCount').textContent = trade;
+    $('#frameCount').textContent = Math.max(1, state.frames.size);
+    updatePreview();
+  }
+
+  async function copyText(text) {
+    try {
+      await navigator.clipboard.writeText(text);
+      feedback.textContent = 'گزارش با موفقیت کپی شد؛ اینجا Paste کن.';
+      feedback.style.color = '#81e0ae';
+      return true;
+    } catch (_) {
+      preview.value = text;
+      preview.focus();
+      preview.select();
+      preview.setSelectionRange(0, preview.value.length);
+      feedback.textContent = 'دسترسی Clipboard ممکن نشد؛ متن گزارش انتخاب شده است. Ctrl+C بزن.';
+      feedback.style.color = '#ffd18a';
+      return false;
+    }
+  }
+
+  function stopAll() {
+    broadcast('STOP');
+    state.stopped = true;
+    $('#runStatus').textContent = '■ شنود متوقف شد';
+    $('#runStatus').style.color = '#ffd18a';
+    feedback.textContent = 'Hookهای موقت در صفحه و iframeها برای توقف درخواست شده‌اند.';
+  }
+
+  $('#stopCopy').addEventListener('click', async () => {
+    stopAll();
+    await new Promise(resolve => setTimeout(resolve, 500));
+    renderStats();
+    await copyText(JSON.stringify(snapshotReport(), null, 2));
+  });
+
+  $('#copyNow').addEventListener('click', async () => {
+    renderStats();
+    await copyText(JSON.stringify(snapshotReport(), null, 2));
+  });
+
+  $('#download').addEventListener('click', () => {
+    const content = JSON.stringify(snapshotReport(), null, 2);
+    const blob = new Blob([content], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const anchor = document.createElement('a');
+    anchor.href = url;
+    anchor.download = `Bitunix-Network-Inspector-${new Date().toISOString().replace(/[:.]/g, '-')}.json`;
+    anchor.style.display = 'none';
+    shadow.appendChild(anchor);
+    anchor.click();
+    anchor.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 2000);
+    feedback.textContent = 'فایل JSON گزارش دانلود شد.';
+  });
+
+  $('#stopOnly').addEventListener('click', stopAll);
+
+  // Request stored early captures from the main page and chart iframe.
+  function requestSnapshots() {
+    broadcast('SNAPSHOT');
+    setTimeout(renderStats, 250);
+  }
+
+  requestSnapshots();
+  setTimeout(requestSnapshots, 700);
+  setTimeout(requestSnapshots, 1800);
+
+  const clock = setInterval(() => {
+    const seconds = Math.floor((Date.now() - state.startedAt) / 1000);
+    const mm = String(Math.floor(seconds / 60)).padStart(2, '0');
+    const ss = String(seconds % 60).padStart(2, '0');
+    $('#elapsed').textContent = `${mm}:${ss}`;
+  }, 1000);
+
+  window.addEventListener('pagehide', () => {
+    clearInterval(clock);
+    window.removeEventListener('message', receive);
+  }, { once: true });
+})();
+EOF
+cat > /mnt/data/bitunix_inspector_build/README_FA.txt <<'EOF'
+Bitunix Network Inspector — نسخه 1.0
+====================================
+
+این یک افزونه تشخیصی موقت و فقط-خواندنی است؛ بخشی از Bitunix Enhancer نهایی نیست.
+
+محتویات ZIP در ریشه قرار دارند و پوشه داخلی ندارند:
+- manifest.json
+- main-observer.js
+- ui.js
+- README_FA.txt
+
+نصب در Chrome
+-------------
+1) ZIP را در یک پوشه دلخواه Extract کن.
+2) در Chrome آدرس chrome://extensions را باز کن.
+3) Developer mode را روشن کن.
+4) روی Load unpacked بزن.
+5) همان پوشه‌ای را انتخاب کن که manifest.json مستقیماً داخل آن قرار دارد.
+6) صفحه Futures صرافی Bitunix را باز کن و نماد XAUTUSDT را انتخاب کن.
+7) صفحه Bitunix را یک بار Refresh کن.
+
+روش استخراج
+------------
+- پنل Bitunix Network Inspector باید بعد از بارگذاری صفحه به‌صورت خودکار ظاهر شود.
+- شنودگر اصلی از document_start فعال می‌شود؛ بنابراین درخواست‌های عمومی بازار و WebSocketهایی که پس از شروع document ساخته می‌شوند قابل مشاهده‌اند.
+- حدود 30 تا 45 ثانیه صبر کن.
+- روی «توقف و کپی گزارش» بزن.
+- پیام موفقیت کپی باید پایین پنل دیده شود؛ سپس گزارش را در گفتگو Paste کن.
+- اگر Clipboard کار نکرد، متن گزارش در کادر انتخاب می‌شود؛ Ctrl+C بزن.
+- گزینه «دانلود JSON» نیز برای ذخیره محلی گزارش وجود دارد.
+
+نکات مهم
+--------
+- قبل از Refresh، افزونه باید نصب و فعال باشد.
+- بعد از Refresh، پنل به‌صورت خودکار باز می‌شود.
+- پنجره DevTools لازم نیست باز بماند.
+- هیچ کلیک، سفارش، تغییر تایم‌فریم یا پیام خروجی WebSocket انجام نمی‌شود.
+- پیام‌های خروجی WebSocket عمداً ثبت نمی‌شوند؛ ممکن است حاوی داده حساس نشست باشند.
+- مسیرهای مربوط به order/position/account/asset/wallet/balance/login/user/private عمداً کنار گذاشته می‌شوند.
+- مقادیر فیلدهایی مانند token، password، cookie، authorization و شناسه‌های خصوصی حذف یا سانسور می‌شوند.
+- فقط خلاصه ساختاری و نمونه‌های منتخب از endpointها و پیام‌های بازار ثبت می‌شود.
+- ارتباطات WebSocket که پیش از نصب/فعال‌سازی افزونه برقرار شده‌اند قابل مشاهده از لحظه قبل نیستند؛ Refresh پس از نصب برای شروع مشاهده از ابتدا ضروری است.
+
+پس از پایان کار
+----------------
+از chrome://extensions افزونه Bitunix Network Inspector را Remove کن. این ابزار فقط برای استخراج فعلی ساخته شده و لازم نیست کنار Bitunix Enhancer نهایی نصب بماند.
+EOF
+cd /mnt/data/bitunix_inspector_build && node --check main-observer.js && node --check ui.js && python -m json.tool manifest.json >/dev/null && zip -j -q /mnt/data/Bitunix-Network-Inspector-v1.0.zip manifest.json main-observer.js ui.js README_FA.txt && unzip -l /mnt/data/Bitunix-Network-Inspector-v1.0.zip
+
+
+دستیار | پیام 38 | 11/14/2026, 8:57:29 PM
+------------------------------------------------------------
+
+bash -lc unzip -t /mnt/data/Bitunix-Network-Inspector-v1.0.zip && ls -lh /mnt/data/Bitunix-Network-Inspector-v1.0.zip && sha256sum /mnt/data/Bitunix-Network-Inspector-v1.0.zip
+
+
+دستیار | پیام 39 | 11/14/2026, 8:57:36 PM
+------------------------------------------------------------
+
+Worked for 3m 34s
+
+
+دستیار | پیام 40 | 11/14/2026, 8:57:36 PM
+------------------------------------------------------------
+
+<badge color="success">آماده شد — نسخه 1.0</badge>
+
+[دانلود Bitunix Network Inspector v1.0](sandbox:/mnt/data/Bitunix-Network-Inspector-v1.0.zip)
+
+**داخل ZIP چهار فایل در ریشه قرار دارند؛ هیچ پوشه اضافه‌ای وجود ندارد.**
+
+```text
+Bitunix Network Inspector/
+├── manifest.json
+├── main-observer.js
+├── ui.js
+└── README_FA.txt
+```
+
+### نحوه نصب و اجرا
+
+1. ZIP را Extract کن.
+2. وارد `chrome://extensions` شو.
+3. Developer mode را روشن کن.
+4. روی Load unpacked کلیک کن و پوشه استخراج‌شده را انتخاب کن.
+5. صفحه Futures در Bitunix را باز کن و روی XAUTUSDT باش.
+6. صفحه را Refresh کن.
+
+<badge color="success">شروع خودکار</badge> پنجره Inspector باید پس از بارگذاری صفحه ظاهر شود.
+
+حدود ۳۰ تا ۴۵ ثانیه صبر کن و سپس روی **توقف و کپی گزارش** بزن.
+
+سه نکته:
+- درخواست‌های بازار از ابتدای بارگذاری ثبت می‌شوند.
+- اطلاعات ورود، سفارش‌ها و پیام‌های خروجی WebSocket جمع‌آوری نمی‌شوند.
+- این ابزار موقت است و بعد از استخراج می‌توانی حذفش کنی.
+
+کدهای JavaScript و صحت فایل ZIP را هم بررسی کردم. هنوز اجرای واقعی آن روی Bitunix را تست نکرده‌ایم.
+
+**گزارش JSON را برایم بفرست تا سراغ شناسایی تعداد معاملات اخیر و محدودیت دریافت آن‌ها برویم.**
+
+
+کاربر | پیام 41 | 11/14/2026, 9:13:58 PM
+------------------------------------------------------------
+
+[گزارشات بیتیونیکس9.txt](https://github.com/artaville/KCEX-Enhancer/blob/main/%DA%AF%D8%B2%D8%A7%D8%B1%D8%B4%D8%A7%D8%AA%20%D8%A8%DB%8C%D8%AA%DB%8C%D9%88%D9%86%DB%8C%DA%A9%D8%B39.txt "گزارشات بیتیونیکس9.txt")
+
+
+دستیار | پیام 42 | 11/14/2026, 9:14:10 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_file","args":{"repository_full_name":"artaville/KCEX-Enhancer","path":"\u06af\u0632\u0627\u0631\u0634\u0627\u062a \u0628\u06cc\u062a\u06cc\u0648\u0646\u06cc\u06a9\u06339.txt","encoding":"utf-8"}}
+
+
+دستیار | پیام 43 | 11/14/2026, 9:14:17 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/search","args":{"query":"BITUNIX_NETWORK_INSPECTOR","repository_name":"artaville/KCEX-Enhancer","topn":10}}
+
+
+دستیار | پیام 44 | 11/14/2026, 9:14:41 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_file","args":{"repository_full_name":"artaville/KCEX-Enhancer","path":"\u06af\u0632\u0627\u0631\u0634\u0627\u062a \u0628\u06cc\u062a\u06cc\u0648\u0646\u06cc\u06a9\u06339.txt","encoding":"base64"}}
+
+
+دستیار | پیام 45 | 11/14/2026, 9:14:58 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/search","args":{"query":"\u06af\u0632\u0627\u0631\u0634\u0627\u062a \u0628\u06cc\u062a\u06cc\u0648\u0646\u06cc\u06a9\u06339","repository_name":"artaville/KCEX-Enhancer","topn":10}}
+
+
+دستیار | پیام 46 | 11/14/2026, 9:14:58 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/search","args":{"query":"BITUNIX_LIVE_TRADES_WS_INSPECTOR_08","repository_name":"artaville/KCEX-Enhancer","topn":10}}
+
+
+دستیار | پیام 47 | 11/14/2026, 9:14:59 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/search","args":{"query":"tradeCandidateObjects","repository_name":"artaville/KCEX-Enhancer","topn":10}}
+
+
+دستیار | پیام 48 | 11/14/2026, 9:14:59 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/search","args":{"query":"matchingWebsocketMessages","repository_name":"artaville/KCEX-Enhancer","topn":10}}
+
+
+دستیار | پیام 49 | 11/14/2026, 9:15:08 PM
+------------------------------------------------------------
+
+Worked for 1m 2s
+
+
+دستیار | پیام 50 | 11/14/2026, 9:15:08 PM
+------------------------------------------------------------
+
+فایل **گزارشات بیتیونیکس ۹** را از مخزن GitHub باز کردم، اما یک مشکل وجود دارد:
+
+- نام فایل و مسیر آن درست شناسایی شده است.
+- دریافت فایل در دو حالت UTF-8 و Base64 انجام شد.
+- در هر دو حالت محتوای فایل خالی برگشت.
+- جست‌وجوی متن گزارش هم نتیجه‌ای نداشت.
+
+بنابراین هنوز نمی‌توانم نتیجه استخراج را تحلیل کنم.
+
+لطفاً فایل TXT را مستقیماً همین‌جا آپلود کن یا دوباره در مخزن ذخیره‌اش کن و لینک جدید بده.
+
+نمی‌خواهم بدون دیدن داده‌ها درباره WebSocket، تعداد معاملات یا محدودیت ۲۰۰ معامله نتیجه‌گیری کنم.
+
+
+کاربر | پیام 51 | 11/14/2026, 9:34:07 PM
+------------------------------------------------------------
+
+فایل 66 هزار خط است. به خاطر این است؟
+
+
+دستیار | پیام 52 | 11/14/2026, 9:34:14 PM
+------------------------------------------------------------
+
+ممکن است حجم ۶۶ هزار خط باعث محدودیت دریافت کامل فایل شده باشد؛ اما خالی برگشتن محتوا به‌تنهایی ثابت نمی‌کند علت همین است. می‌توانم با خواندن چند بازهٔ کوچک از همان فایل مشخص کنم آیا فایل قابل دسترسیِ تکه‌ای هست یا نه.
+
+
+دستیار | پیام 53 | 11/14/2026, 9:34:18 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_file","args":{"repository_full_name":"artaville/KCEX-Enhancer","path":"\u06af\u0632\u0627\u0631\u0634\u0627\u062a \u0628\u06cc\u062a\u06cc\u0648\u0646\u06cc\u06a9\u06339.txt","encoding":"utf-8","start_line":1,"end_line":80}}
+
+
+دستیار | پیام 54 | 11/14/2026, 9:34:19 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_file","args":{"repository_full_name":"artaville/KCEX-Enhancer","path":"\u06af\u0632\u0627\u0631\u0634\u0627\u062a \u0628\u06cc\u062a\u06cc\u0648\u0646\u06cc\u06a9\u06339.txt","encoding":"utf-8","start_line":1000,"end_line":1080}}
+
+
+دستیار | پیام 55 | 11/14/2026, 9:34:19 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_file","args":{"repository_full_name":"artaville/KCEX-Enhancer","path":"\u06af\u0632\u0627\u0631\u0634\u0627\u062a \u0628\u06cc\u062a\u06cc\u0648\u0646\u06cc\u06a9\u06339.txt","encoding":"utf-8","start_line":30000,"end_line":30080}}
+
+
+دستیار | پیام 56 | 11/14/2026, 9:34:20 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_file","args":{"repository_full_name":"artaville/KCEX-Enhancer","path":"\u06af\u0632\u0627\u0631\u0634\u0627\u062a \u0628\u06cc\u062a\u06cc\u0648\u0646\u06cc\u06a9\u06339.txt","encoding":"utf-8","start_line":65900,"end_line":66000}}
+
+
+دستیار | پیام 57 | 11/14/2026, 9:34:36 PM
+------------------------------------------------------------
+
+Worked for 27s
+
+
+دستیار | پیام 58 | 11/14/2026, 9:34:36 PM
+------------------------------------------------------------
+
+بله، احتمال زیاد همین موضوع است. فایل ۶۶ هزار خطی برای دریافت کامل از ابزار اتصال GitHub ما بیش از حد بزرگ بوده است.
+
+برای اطمینان، چهار قسمت از فایل را امتحان کردم:
+- خطوط ۱ تا ۸۰
+- خطوط ۱۰۰۰ تا ۱۰۸۰
+- خطوط ۳۰٬۰۰۰ تا ۳۰٬۰۸۰
+- خطوط ۶۵٬۹۰۰ تا ۶۶٬۰۰۰
+
+متأسفانه همه خالی برگشتند؛ بنابراین حتی دریافت تکه‌ای هم فعلاً کار نکرده است.
+
+### بهترین راه‌حل
+
+دو راه داریم:
+
+1. فایل TXT را مستقیماً همین‌جا آپلود کن؛ ترجیحاً ZIP شده.
+2. فایل را به چند قسمت ۵ تا ۱۰ هزار خطی تقسیم کن و در GitHub قرار بده.
+
+**پیشنهاد من روش اول است.** فایل اصلی را بدون حذف یا تغییر محتوا ZIP کن و همین‌جا بفرست.
+
+می‌خواهم گزارش کامل را بررسی کنم، به‌خصوص درخواست‌های HTTP، پاسخ‌های معاملات و پیام‌های WebSocket. نمی‌خواهم اطلاعات مهمی از استخراج حذف شود.
+
+
+کاربر | پیام 59 | 11/14/2026, 9:35:18 PM
+------------------------------------------------------------
+
+به محدودیت خورده ام  و نمیتوانم اینجا اپلود کنم
+
+
+دستیار | پیام 60 | 11/14/2026, 9:36:17 PM
+------------------------------------------------------------
+
+Worked for 56s
+
+
+دستیار | پیام 61 | 11/14/2026, 9:36:17 PM
+------------------------------------------------------------
+
+اشکالی ندارد؛ لازم نیست دوباره اینجا آپلود کنی. می‌توانیم گزارش را روی کامپیوتر خودت کوچک کنیم و نسخه خلاصه‌شده را در همان مخزن GitHub قرار بدهیم.
+
+پیشنهاد من این است که گزارش را به سه فایل تقسیم کنیم تا هیچ اطلاعات مهمی از دست نرود:
+
+1. `گزارش9-A-Metadata.json` — مشخصات استخراج، شمارنده‌ها و آدرس ارتباطات.
+2. `گزارش9-B-HTTP.json` — درخواست‌ها و پاسخ‌های HTTP.
+3. `گزارش9-C-WebSocket.json` — پیام‌های WebSocket و معاملات شناسایی‌شده.
+
+### کد آماده برای ویندوز
+
+فرض می‌کنیم فایل اصلی `گزارشات بیتیونیکس9.txt` در یک پوشه روی کامپیوترت قرار دارد.
+
+در همان پوشه، نوار آدرس File Explorer را انتخاب کن، بنویس `powershell` و Enter بزن.
+
+سپس کل کد زیر را Paste و اجرا کن:
+
+<CodeBlock language="powershell" editable>
+$ErrorActionPreference = "Stop"
+
+$source = ".\گزارشات بیتیونیکس9.txt"
+
+if (!(Test-Path -LiteralPath $source)) {
+    Write-Host "File not found: $source" -ForegroundColor Red
+    exit
+}
+
+Write-Host "Reading original report..." -ForegroundColor Cyan
+
+$data = Get-Content -LiteralPath $source -Raw -Encoding UTF8 |
+    ConvertFrom-Json
+
+function Select-Fields($object, $names) {
+    $result = [ordered]@{}
+
+    foreach ($name in $names) {
+        $property = $object.PSObject.Properties[$name]
+
+        if ($null -ne $property) {
+            $result[$name] = $property.Value
+        }
+    }
+
+    return $result
+}
+
+$meta = Select-Fields $data @(
+    "diagnostic",
+    "startedAt",
+    "captureStartedAt",
+    "finishedAt",
+    "durationMs",
+    "environment",
+    "counters",
+    "sockets",
+    "existingResources",
+    "errors",
+    "safety"
+)
+
+$http = Select-Fields $data @(
+    "diagnostic",
+    "counters",
+    "httpRequests"
+)
+
+$websocket = Select-Fields $data @(
+    "diagnostic",
+    "counters",
+    "sockets",
+    "socketMessages",
+    "tradeCandidates"
+)
+
+$files = @(
+    @{
+        Name = "گزارش9-A-Metadata.json"
+        Data = $meta
+    },
+    @{
+        Name = "گزارش9-B-HTTP.json"
+        Data = $http
+    },
+    @{
+        Name = "گزارش9-C-WebSocket.json"
+        Data = $websocket
+    }
+)
+
+foreach ($item in $files) {
+    $json = ConvertTo-Json -InputObject $item.Data -Depth 100
+
+    Set-Content -LiteralPath $item.Name `
+        -Value $json `
+        -Encoding UTF8
+
+    $size = (Get-Item $item.Name).Length
+
+    Write-Host "$($item.Name) - $([math]::Round($size / 1KB, 1)) KB" `
+        -ForegroundColor Green
+}
+
+Write-Host ""
+Write-Host "All 3 files created successfully." -ForegroundColor Green
+</CodeBlock>
+
+### بعدش چه کار کنی؟
+
+این سه فایل کوچک‌تر را در ریشه مخزن `KCEX-Enhancer` قرار بده و لینکشان را همین‌جا بفرست.
+
+من هر سه را جداگانه می‌خوانم و به‌خصوص بررسی می‌کنم:
+
+- Bitunix چند معامله آخر را برمی‌گرداند؟
+- آیا محدودیت ۲۰۰ معامله وجود دارد؟
+- آیا امکان دریافت معاملات قدیمی‌تر با صفحه‌بندی هست؟
+- WebSocket معاملات را با چه ساختاری ارسال می‌کند؟
+- آیا Trade ID برای جلوگیری از ثبت تکراری داریم؟
+
+**فایل اصلی ۶۶ هزار خطی را نگه دار و تغییرش نده.** ما فقط از روی آن نسخه‌های کوچک‌تر استخراج می‌کنیم.
+
+
+کاربر | پیام 62 | 11/14/2026, 9:39:38 PM
+------------------------------------------------------------
+
+اگر خروجی اصلی را به جیسون تبدیل کنیم چطور؟
+
+
+دستیار | پیام 63 | 11/14/2026, 9:39:55 PM
+------------------------------------------------------------
+
+Worked for 14s
+
+
+دستیار | پیام 64 | 11/14/2026, 9:39:55 PM
+------------------------------------------------------------
+
+اتفاقاً بله؛ به نظرم JSON بهترین فرمت برای این گزارش است.
+
+اما یک نکته: **خروجی Inspector ما از ابتدا JSON بوده، فقط با پسوند `.txt` ذخیره شده است.** چون در کد از `JSON.stringify(report, null, 2)` استفاده کردیم.
+
+پس سه حالت داریم:
+
+| روش | نتیجه |
+|---|---|
+| تغییر پسوند TXT به JSON | ساختار فایل حفظ می‌شود |
+| Minify کردن JSON | تعداد خطوط بسیار کمتر می‌شود |
+| تقسیم JSON بر اساس بخش‌ها | خواندن و تحلیل هر قسمت آسان‌تر می‌شود |
+
+### پیشنهاد من
+
+هر سه کار را انجام بدهیم:
+1. تبدیل خروجی به فایل JSON معتبر.
+2. ساخت نسخه فشرده (Minified).
+3. جدا کردن بخش‌های HTTP، WebSocket، معاملات و Metadata در فایل‌های مستقل.
+
+به این ترتیب اطلاعات اصلی حذف نمی‌شوند و لازم نیست گزارش ۶۶ هزار خطی را یکجا منتقل کنیم.
+
+**یک نکته مهم:** Minify کردن حجم محتوای واقعی را خیلی کم نمی‌کند؛ بیشتر فاصله‌ها و خطوط اضافی را حذف می‌کند. تقسیم هوشمندانه فایل راه اصلی حل محدودیت انتقال است.
+
+به نظرم این روش را برای گزارش‌های بعدی Bitunix هم استاندارد کنیم.
+
+
+کاربر | پیام 65 | 11/14/2026, 9:40:45 PM
+------------------------------------------------------------
+
+اگر پسوند رو از تکس به جیسون تغییر دهم اوکی میشه؟ بعدش اپلود کنم توی مخزن میتونی بخونی کل فایل رو؟
+
+
+دستیار | پیام 66 | 11/14/2026, 9:40:57 PM
+------------------------------------------------------------
+
+Worked for 10s
+
+
+دستیار | پیام 67 | 11/14/2026, 9:40:57 PM
+------------------------------------------------------------
+
+بله، می‌توانی پسوند را از `.txt` به `.json` تغییر بدهی؛ اما یک نکته مهم وجود دارد:
+
+**تغییر پسوند به‌تنهایی مشکل حجم فایل را حل نمی‌کند.**
+
+طبق محدودیت‌های GitHub:
+- فایل تا ۱ مگابایت: دریافت کامل از API پشتیبانی می‌شود.
+- فایل ۱ تا ۱۰۰ مگابایت: باید با روش دریافت Raw خوانده شود.
+- بیشتر از ۱۰۰ مگابایت: این روش دریافت پشتیبانی نمی‌شود. <Cite refs={["turn868994search0"]}/>
+
+### پیشنهاد من
+
+۱. اسم فایل را به `Bitunix-Report-09.json` تغییر بده.
+
+۲. آن را در مخزن قرار بده.
+
+۳. لینک جدید را بفرست.
+
+من ابتدا دریافت کامل آن را آزمایش می‌کنم. اگر موفق نشد، بدون حذف اطلاعات، روش دیگری برای انتقال انتخاب می‌کنیم.
+
+**فعلاً JSON را فشرده یا دست‌کاری نکن؛ می‌خواهم نسخه اصلی گزارش را بررسی کنم.**
+
+
+کاربر | پیام 68 | 11/14/2026, 9:41:48 PM
+------------------------------------------------------------
+
+حجم این فایل فقط 1.91 مگابایته. چطور نمیتونی بخونیش؟
+
+
+دستیار | پیام 69 | 11/14/2026, 9:41:56 PM
+------------------------------------------------------------
+
+حق داری بپرسی؛ ۱٫۹۱ مگابایت به‌خودی‌خود حجم غیرعادی یا بزرگی برای JSON نیست. من در پاسخ قبلی زود نتیجه گرفتم که مشکل از محدودیت حجم است. الان خودِ مسیر خام GitHub را هم جداگانه امتحان می‌کنم تا معلوم شود مشکل از حجم فایل است یا از روش خواندن فایل در اتصال GitHub.
+
+
+دستیار | پیام 70 | 11/14/2026, 9:42:34 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch","args":{"url":"https://raw.githubusercontent.com/artaville/KCEX-Enhancer/main/%DA%AF%D8%B2%D8%A7%D8%B1%D8%B4%D8%A7%D8%AA%20%D8%A8%DB%8C%D8%AA%DB%8C%D9%88%D9%86%DB%8C%DA%A9%D8%B39.txt"}}
+
+
+دستیار | پیام 71 | 11/14/2026, 9:42:41 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_blob","args":{"repository_full_name":"artaville/KCEX-Enhancer","blob_sha":"99b6390602aa82c9e95b2922484da4e1f61c4cfd"}}
+
+
+دستیار | پیام 72 | 11/14/2026, 9:42:48 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_blob","args":{"repository_full_name":"artaville/KCEX-Enhancer","blob_sha":"99b6390602aa82c9e95b2922484da4e1f61c4cfd"}}
+
+
+دستیار | پیام 73 | 11/14/2026, 9:42:53 PM
+------------------------------------------------------------
+
+مشخص شد علت دقیق چه بوده: فایل ۱٫۹۱ مگابایتی از سقف ۱ مگابایتیِ حالت معمول GitHub Contents API عبور کرده بود؛ در این حالت پاسخ معمولی می‌تواند `content` خالی برگرداند. اما فایل گم نشده بود. من آن را از مسیر Git Blob با SHA خود فایل دریافت کردم و کل JSON با موفقیت parse شد. حالا دارم خود داده‌های HTTP و WebSocket را تحلیل می‌کنم.
+
+
+دستیار | پیام 74 | 11/14/2026, 9:43:04 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_blob","args":{"repository_full_name":"artaville/KCEX-Enhancer","blob_sha":"99b6390602aa82c9e95b2922484da4e1f61c4cfd"}}
+
+
+دستیار | پیام 75 | 11/14/2026, 9:43:52 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_blob","args":{"repository_full_name":"artaville/KCEX-Enhancer","blob_sha":"99b6390602aa82c9e95b2922484da4e1f61c4cfd"}}
+
+
+دستیار | پیام 76 | 11/14/2026, 9:44:44 PM
+------------------------------------------------------------
+
+Worked for 2m 53s
+
+
+دستیار | پیام 77 | 11/14/2026, 9:44:44 PM
+------------------------------------------------------------
+
+الان موفق شدم کل فایل را بخوانم! اتفاقاً گزارش ۹ اطلاعات بسیار ارزشمندی دارد و بالاخره به جریان واقعی داده‌های Bitunix نزدیک شدیم.
+
+**اشتباه از محدودیت روش دریافت فایل بود، نه از حجم غیرعادی آن.**
+
+### چرا قبلاً خالی برمی‌گشت؟
+
+GitHub برای فایل‌های بین ۱ تا ۱۰۰ مگابایت در API معمولی محدودیت خاصی دارد: در حالت Object، فیلد `content` خالی برمی‌گردد و باید از روش Raw یا Git Blob استفاده شود. <Cite refs={["turn276026search0"]}/>
+
+من با روش جایگزین Git Blob فایل را دریافت کردم:
+
+<badge color="success">خواندن کامل موفق</badge>
+
+<box border radius="lg" padding={3} gap={2}>
+  <title size="2xl" tabularNums>2,011,909</title>
+  <text color="secondary" size="xs">کاراکتر دریافت‌شده</text>
+  <divider color="subtle"/>
+  | شاخص | نتیجه |
+  |---|---:|
+  | درخواست HTTP | ۵۳ |
+  | پاسخ HTTP | ۵۳ |
+  | اتصال WebSocket | ۴ |
+  | پیام باینری WebSocket | ۲۶۳۵ |
+  | پیام متنی WebSocket | صفر |
+  | معاملات شناسایی‌شده توسط اسکنر | صفر |
+  | مدت استخراج | ۱۲۷ ثانیه |
+</box>
+
+## ۱. مهم‌ترین یافته گزارش
+
+سه مسیر ارتباطی مهم پیدا شده‌اند:
+
+| مسیر | کاربرد احتمالی |
+|---|---|
+| `/ws-tide-batch/` | جریان اصلی داده‌های باینری |
+| `/ws-user/` | ارتباطات مربوط به کاربر |
+| `/message-center-ws-v2/msg_center` | مرکز پیام‌ها |
+
+از مجموع ۲۶۳۵ پیام باینری، ۲۵۹۹ پیام از مسیر `/ws-tide-batch/` دریافت شده‌اند.
+
+<badge color="success">نکته بسیار مهم</badge>
+
+این مسیر پارامترهای `transfer=pb` و `compress=2` دارد. احتمالاً Bitunix از انتقال باینری با قالب Protobuf استفاده می‌کند، ولی برای تأیید باید محتوای خود پیام‌ها را استخراج و رمزگشایی کنیم.
+
+در گزارش فعلی فقط اندازه پیام‌ها ذخیره شده، نه محتوای باینری آن‌ها.
+
+بنابراین صفر بودن معاملات شناسایی‌شده به معنی نبود معامله نیست؛ اسکنر ما پیام‌های باینری را هنوز نمی‌فهمد.
+
+## ۲. آیا درخواست ۲۰۰ معامله آخر را پیدا کردیم؟
+
+خیر. اما اکنون اطلاعات دقیق‌تری داریم.
+
+این درخواست‌ها دیده شده‌اند:
+
+| Endpoint | پارامترهای مهم |
+|---|---|
+| `/kline/history/futures` | `interval=60min` و `limit=24` |
+| `/kline/api/public/v1/agg/realtime/futures` | `interval=1min` و `limit=329` |
+| همان endpoint | `interval=15min` و `limit=329` |
+| همان endpoint | `interval=1day` و `limit=1` |
+
+پس درخواست `limit=329` مربوط به دریافت کندل است، نه ۳۲۹ معامله آخر.
+
+در این گزارش هیچ درخواست REST برای دریافت ۲۰۰ معامله عمومی آخر مشاهده نشده است.
+
+## ۳. یک کشف بهتر: Bitunix خودش کانال معاملات عمومی دارد!
+
+مستندات رسمی Bitunix را هم بررسی کردم.
+
+<badge color="success">مستندات رسمی تأیید می‌کنند</badge>
+
+Bitunix کانال WebSocket عمومی به نام `trade` دارد.
+
+آدرس اتصال مستندشده:
+
+`wss://fapi.bitunix.com/public/`
+
+برای اشتراک معاملات XAUTUSDT:
+
+```json
+{
+  "op": "subscribe",
+  "args": [
+    {
+      "symbol": "XAUTUSDT",
+      "ch": "trade"
+    }
+  ]
+}
+```
+
+پیام‌های دریافتی شامل این فیلدها هستند:
+
+| فیلد | کاربرد |
+|---|---|
+| `p` | قیمت معامله |
+| `v` | حجم معامله |
+| `s` | جهت خرید یا فروش |
+| `t` | زمان معامله |
+| `ts` | زمان پیام |
+
+مستندات: <Link ref="turn872270view0" title="Bitunix Public Trade Channel"/> و <Link ref="turn872270view1" title="WebSocket Documentation"/>.
+
+یک تفاوت مهم هم وجود دارد: API به نام `get_history_trades` در REST وجود دارد، اما مخصوص تاریخچه معاملات حساب خود کاربر است، احراز هویت می‌خواهد و حداکثر ۱۰۰ رکورد می‌دهد؛ این همان معاملات عمومی کل بازار نیست. <Cite refs={["turn872270view2"]}/>
+
+## ۴. مرحله بعد را چگونه پیش ببریم؟
+
+من دو مسیر را می‌بینم:
+
+<box border radius="lg" padding={3} gap={3}>
+  **مسیر اول: استفاده از WebSocket رسمی**
+
+  اتصال مستقیم به کانال `trade` و دریافت معاملات واقعی XAUTUSDT.
+
+  مزیت: ساختار پیام‌ها مستند است و نیازی به رمزگشایی ارتباط داخلی سایت نداریم.
+
+  <badge color="success">انتخاب پیشنهادی من</badge>
+  <divider color="subtle"/>
+  **مسیر دوم: رمزگشایی WebSocket داخلی سایت**
+
+  استخراج محتوای پیام‌های باینری `/ws-tide-batch/` و بررسی ساختار Protobuf احتمالی.
+
+  مزیت: شناخت دقیق‌تر موتور داده خود Bitunix.
+</box>
+
+**نظر من این است که اول مسیر اول را آزمایش کنیم.** چون مستندات رسمی آن را داریم و برای ساخت کندل‌های ۱، ۵، ۱۰، ۱۵، ۲۰، ۳۰ و ۴۵ ثانیه‌ای دقیقاً همان داده‌های قیمت، حجم، جهت و زمان را نیاز داریم.
+
+یک نکته امنیتی هم: در گزارش ۹، URLهای WebSocket حاوی پارامترهای شناسه کاربر و Trace ID هستند. چون مخزنت عمومی است، بهتر است نسخه عمومی گزارش را با حذف این مقادیر جایگزین کنی. این‌ها API Key یا رمز عبور نیستند، ولی شناسه‌های حساب و ردیابی‌اند.
+
+**به نظرم دیگر لازم نیست روی کندل‌های یک‌دقیقه‌ای وقت بگذاریم؛ مرحله بعد باید آزمایش دریافت معاملات زنده واقعی XAUTUSDT باشد.**
+
+
+کاربر | پیام 78 | 11/14/2026, 9:48:05 PM
+------------------------------------------------------------
+
+# Selected text:
+
+## Selection 1
+مسیر اول: استفاده از WebSocket رسمی
+
+اتصال مستقیم به کانال trade و دریافت معاملات واقعی XAUTUSDT.
+
+مزیت: ساختار پیام‌ها مستند است و نیازی به رمزگشایی ارتباط داخلی سایت نداریم.
+
+## Selection 2
+مسیر اول: استفاده از WebSocket رسمی
+
+اتصال مستقیم به کانال trade و دریافت معاملات واقعی XAUTUSDT.
+
+مزیت: ساختار پیام‌ها مستند است و نیازی به رمزگشایی ارتباط داخلی سایت نداریم.
+
+## My request:
+اینجا یعنی ان محدودیت 200 تایی را نداریم و میتوانیم کندل های تاریخی را هر تعداد ک خواستیم تولید کنیم؟
+
+
+دستیار | پیام 79 | 11/14/2026, 9:48:11 PM
+------------------------------------------------------------
+
+نه؛ اتصال WebSocket رسمی به‌تنهایی محدودیت تاریخچه را حذف نمی‌کند. تفاوت اصلی این است که WebSocket معمولاً معاملات را از لحظه اشتراک به بعد زنده می‌فرستد. دارم مستندات رسمی Bitunix را برای جدا کردن «داده زنده» از «تاریخچه قابل بازیابی» بررسی می‌کنم تا درباره تعداد کندل‌های تاریخی دقیق جواب بدهم.
+
+
+دستیار | پیام 80 | 11/14/2026, 9:48:52 PM
+------------------------------------------------------------
+
+Worked for 44s
+
+
+دستیار | پیام 81 | 11/14/2026, 9:48:52 PM
+------------------------------------------------------------
+
+نه دقیقاً. باید بین **دریافت معاملات زنده** و **بازیابی تاریخچه معاملات گذشته** تفاوت بگذاریم. این دو موضوع متفاوت‌اند.
+
+خبر خوب این است که با WebSocket رسمی، برای دریافت معاملات زنده با محدودیت ثابت ۲۰۰ معامله‌ای که در روش درخواست HTTP تصور می‌کردیم مواجه نیستیم؛ اما این به معنی دسترسی نامحدود به تاریخچه گذشته نیست.
+
+### ۱. WebSocket رسمی چه چیزی در اختیارمان می‌گذارد؟
+
+وقتی به کانال `trade` متصل شویم، Bitunix معاملات جدید XAUTUSDT را برایمان ارسال می‌کند:
+
+- قیمت هر معامله
+- حجم معامله
+- جهت خرید یا فروش
+- زمان معامله
+
+مستندات رسمی این کانال را معرفی کرده‌اند، اما هیچ تضمینی درباره ارسال تاریخچه نامحدود پیش از زمان اتصال نداده‌اند. <Cite refs={["turn834563view0"]}/>
+
+بنابراین مثلاً:
+
+<box border radius="lg" padding={3} gap={2}>
+  **مثال: شروع ضبط معاملات از ساعت ۱۰**
+  <list connector="solid" marker="number" gap={2}>
+    <list-item>
+      **۱۰:۰۰**
+
+      اتصال WebSocket و شروع ذخیره معاملات
+    </list-item>
+    <list-item>
+      **۱۱:۰۰**
+
+      یک ساعت داده واقعی جمع‌آوری شده و می‌توانیم ۳۶۰۰ کندل یک‌ثانیه‌ای بسازیم.
+    </list-item>
+    <list-item>
+      **۱۲:۰۰**
+
+      دو ساعت داده جمع‌آوری شده و امکان ساخت ۷۲۰۰ کندل یک‌ثانیه‌ای داریم.
+    </list-item>
+  </list>
+  <text color="secondary" size="xs">این اعداد در صورت وجود داده کافی و پیوسته و یک کندل برای هر ثانیه هستند.</text>
+</box>
+
+### ۲. تاریخچه قبل از اتصال چه می‌شود؟
+
+اینجا محدودیت داریم.
+
+API رسمی دریافت کندل Bitunix حداکثر ۲۰۰ کندل در هر درخواست می‌دهد و تایم‌فریم‌های مستندشده آن از یک دقیقه شروع می‌شوند. با پارامتر `endTime` می‌توانیم صفحات قبلی را هم درخواست کنیم؛ بنابراین بیش از ۲۰۰ کندل یک‌دقیقه‌ای قابل دریافت است، اما نمی‌توان از OHLC یک‌دقیقه‌ای، معاملات واقعی هر ثانیه را بازسازی کرد. <Cite refs={["turn834563view1"]}/>
+
+همچنین API تاریخچه معاملات با محدودیت ۱۰۰ رکورد وجود دارد، ولی مربوط به معاملات خود حساب است، نه تمام معاملات بازار. <Cite refs={["turn834563view2"]}/>
+
+### ۳. راهکاری که پیشنهاد می‌کنم
+
+<box border radius="lg" padding={3} gap={3}>
+  <title size="lg">موتور تاریخچه مستقل Bitunix</title>
+  <box background="surface-secondary" radius="md" padding={3} align="center">
+    **WebSocket Trade**
+    <text color="secondary" size="xs">دریافت تمام معاملات جدید</text>
+  </box>
+  <box align="center">
+    <icon name="arrow-down" color="secondary" size="lg"/>
+  </box>
+  <box background="surface-secondary" radius="md" padding={3} align="center">
+    **IndexedDB**
+    <text color="secondary" size="xs">ذخیره معاملات واقعی روی کامپیوتر</text>
+  </box>
+  <box align="center">
+    <icon name="arrow-down" color="secondary" size="lg"/>
+  </box>
+  <box background="surface-secondary" radius="md" padding={3} align="center">
+    **Historical Candle Builder**
+    <text color="secondary" size="xs">ساخت و بازیابی کندل‌ها از معاملات ذخیره‌شده</text>
+  </box>
+  <grid columns={4} gap={1}>
+    {#each ["1s","5s","10s","15s","20s","30s","45s"] as tf}
+      <grid-item>
+        <box background="rgba(40,150,110,0.12)" radius="md" padding={2} align="center">
+          **{tf}**
+        </box>
+      </grid-item>
+    {/each}
+  </grid>
+</box>
+
+با این روش، هرچقدر سیستم روشن بماند و داده‌ها را بدون وقفه ذخیره کند، به همان نسبت تاریخچه کندل‌های ثانیه‌ای بیشتری خواهیم داشت.
+
+**نتیجه نهایی:**
+- محدودیت ۲۰۰ معامله برای جریان زنده WebSocket مطرح نیست.
+- تاریخچه نامحدود قبل از اتصال تضمین نشده است.
+- می‌توانیم از زمان شروع افزونه، تاریخچه ثانیه‌ای خودمان را بسازیم و ذخیره کنیم.
+- برای جلوگیری از گم شدن داده هنگام قطع اتصال، باید سیستم تشخیص قطعی و بازیابی را هم طراحی کنیم.
+
+به نظرم این معماری از وابستگی به درخواست ۲۰۰ معامله‌ای بسیار بهتر است و برای تایم‌فریم ۲۰ ثانیه‌ای موردنیازت هم مناسب‌تر خواهد بود.
+
+
+کاربر | پیام 82 | 11/14/2026, 9:51:10 PM
+------------------------------------------------------------
+
+نه سوال دقیق من اینه ک وقتی من متصل شدم و خواستم چارت رو ببینم، حدودا چقدر از گذشته رو میتونم ببینم؟ ایا تون جدول ترید چقدر از گذشته رو میتونه نمایش بده. ایا میتونه یک ساعت قبل رو نمایش بده و بتونیم تا یک ساعت قبل دیتا دریافت بکنیم و بسازیم؟
+
+
+دستیار | پیام 83 | 11/14/2026, 9:51:21 PM
+------------------------------------------------------------
+
+نکتهٔ اصلی را جدا می‌کنم: «تاریخچه‌ای که خودِ نوار معاملات نشان می‌دهد» با «دیتایی که وب‌سوکت از لحظهٔ اتصال به بعد می‌فرستد» یکی نیست. دارم گزارش ۹ و مستندات رسمی را دوباره مبنا قرار می‌دهم تا دربارهٔ یک ساعت قبل جواب قطعی‌تری بدهم.
+
+
+دستیار | پیام 84 | 11/14/2026, 9:51:27 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_blob","args":{"repository_full_name":"artaville/KCEX-Enhancer","blob_sha":"99b6390602aa82c9e95b2922484da4e1f61c4cfd"}}
+
+
+دستیار | پیام 85 | 11/14/2026, 9:51:31 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_blob","args":{"repository_full_name":"artaville/KCEX-Enhancer","blob_sha":"99b6390602aa82c9e95b2922484da4e1f61c4cfd"}}
+
+
+دستیار | پیام 86 | 11/14/2026, 9:51:38 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_blob","args":{"repository_full_name":"artaville/KCEX-Enhancer","blob_sha":"99b6390602aa82c9e95b2922484da4e1f61c4cfd"}}
+
+
+دستیار | پیام 87 | 11/14/2026, 9:51:45 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_blob","args":{"repository_full_name":"artaville/KCEX-Enhancer","blob_sha":"99b6390602aa82c9e95b2922484da4e1f61c4cfd"}}
+
+
+دستیار | پیام 88 | 11/14/2026, 9:52:04 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_blob","args":{"repository_full_name":"artaville/KCEX-Enhancer","blob_sha":"99b6390602aa82c9e95b2922484da4e1f61c4cfd"}}
+
+
+دستیار | پیام 89 | 11/14/2026, 9:52:39 PM
+------------------------------------------------------------
+
+Worked for 1m 26s
+
+
+دستیار | پیام 90 | 11/14/2026, 9:52:39 PM
+------------------------------------------------------------
+
+الان دقیقاً متوجه منظورت شدم. نتیجهٔ بررسی این است که **برای چارت یک‌ساعتهٔ گذشته را می‌توانیم دریافت کنیم؛ اما برای ساخت کندل‌های ثانیه‌ای از معاملات واقعیِ یک ساعت قبل، هنوز مدرک کافی نداریم.**
+
+این دو موضوع را جدا کنیم:
+
+### ۱. خود چارت Bitunix چقدر تاریخچه دریافت می‌کند؟
+
+در گزارش ۹، درخواست واقعی چارت XAUTUSDT را دیدیم:
+
+- تایم‌فریم یک‌دقیقه: `limit=329` و پاسخ شامل ۳۲۹ کندل بود؛ یعنی حدود **۵ ساعت و ۲۹ دقیقه تاریخچه**.
+- تایم‌فریم ۱۵ دقیقه: باز هم ۳۲۹ کندل دریافت شده بود؛ یعنی حدود **۸۲ ساعت و ۱۵ دقیقه تاریخچه**.
+
+بنابراین برای دیدن یک ساعت قبل روی چارت یک‌دقیقه‌ای مشکلی نداریم. اما این‌ها کندل‌های یک‌دقیقه‌ای هستند، نه معاملات تکی یا اطلاعات ثانیه‌ای.
+
+### ۲. پنل معاملات اخیر (Recent Trades) چقدر به گذشته دسترسی دارد؟
+
+اینجا هنوز جواب قطعی نداریم.
+
+در گزارش ۹، هنگام بررسی صفحه، ۲۵۹۹ فریم باینری روی مسیر `/ws-tide-batch/` ثبت شد؛ اما محتوای آن‌ها رمزگشایی نشد. بنابراین هنوز نمی‌دانیم این پیام‌ها فقط معاملات جدید را منتقل می‌کنند یا هنگام اتصال، مجموعه‌ای از معاملات قبلی را هم می‌فرستند.
+
+مستندات رسمی Bitunix برای کانال عمومی معاملات، قیمت، حجم، سمت خرید یا فروش و زمان هر معامله را توضیح می‌دهد؛ اما برای این کانال، ارسال تاریخچهٔ یک ساعت گذشته را تضمین نکرده است. <Cite refs={["turn399767view0"]}/>
+
+یک API با نام `Get History Trades` هم وجود دارد، اما نیازمند احراز هویت API است و برای تاریخچهٔ معاملات حساب و سفارش‌های خود کاربر است؛ نه آرشیو عمومی تمام معاملات بازار. <Cite refs={["turn399767view3"]}/>
+
+### ۳. آیا می‌توانیم یک ساعت قبل را به کندل‌های ثانیه‌ای تبدیل کنیم؟
+
+<badge color="success">تأییدشده</badge> دریافت یک ساعت گذشته به شکل کندل‌های یک‌دقیقه‌ای امکان‌پذیر است.
+
+<badge color="warning">هنوز تأییدنشده</badge> دریافت معاملات واقعی یک ساعت گذشته و ساخت کندل‌های ۱، ۵، ۱۰، ۲۰، ۳۰ و ۴۵ ثانیه‌ای از آن‌ها.
+
+علت این است که کندل یک‌دقیقه‌ای فقط قیمت بازشدن، بالاترین، پایین‌ترین و بسته‌شدن آن دقیقه را دارد. از روی این چهار مقدار نمی‌توان ترتیب واقعی معاملات داخل آن دقیقه را بازسازی کرد.
+
+### قدم بعدی که باید انجام بدهیم
+
+باید همان کانال باینری `/ws-tide-batch/` را رمزگشایی کنیم و زمان معاملات داخل پیام‌هایش را بررسی کنیم. به‌خصوص باید بفهمیم هنگام اتصال اولیه، چه بازه‌ای از معاملات را ارسال می‌کند.
+
+برای مثال اگر هنگام اتصال در ساعت ۱۲:۰۰، سرور معاملات XAUTUSDT را از ساعت ۱۱:۰۰ هم در پیام اولیه بفرستد، دقیقاً همان چیزی است که برای ساخت یک ساعت تاریخچهٔ واقعی لازم داریم.
+
+**پس فعلاً نمی‌خواهم به تو قول بدهم که یک ساعت گذشته را از جدول معاملات می‌گیریم؛ اما مسیر فنی بررسی آن مشخص است.** مهم‌ترین کار بعدی رمزگشایی همان پیام‌های باینری است، نه ساخت کندل از داده‌های یک‌دقیقه‌ای.

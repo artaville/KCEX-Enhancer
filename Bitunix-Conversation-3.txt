@@ -1,0 +1,5558 @@
+﻿BITUNIX CONVERSATION EXPORT
+Conversation ID: 6af8ba86-8d54-83ed-be59-1320c36906fe
+Conversation URL: https://chatgpt.com/c/6af8ba86-8d54-83ed-be59-1320c36906fe
+Conversation Title: برنامه ساخت افزونه Bitunix (3)
+Export Date: 2026-11-15T10:31:54.297Z
+API Type: current
+Pages: 1
+Raw Messages: 158
+User Messages: 17
+Assistant Messages: 59
+Extracted Text Messages: 76
+History Complete: YES
+======================================================================
+
+
+دستیار | پیام 1 | 11/14/2026, 11:14:10 PM
+------------------------------------------------------------
+
+نه، کد را **بعد از باز کردن پوزیشن** اجرا کن، نه قبل از آن. بگذار دقیق و به ترتیب بگویم:
+
+### مرحله ۱: باز کردن پوزیشن
+
+۱. وارد صفحه معاملات Futures شو.
+
+۲. حتماً مطمئن شو نماد انتخاب‌شده **XAUTUSDT** است. چون در گزارش قبلی عبارت `EVAAUSDT` هم در هدر دیده می‌شد؛ نمی‌خواهیم اشتباهی روی نماد دیگری معامله کنی.
+
+۳. یک پوزیشن آزمایشی با حداقل حجم مجاز و اهرم پایین باز کن. ترجیحاً از Demo استفاده کن.
+
+### مرحله ۲: گرفتن گزارش اول
+
+وقتی پوزیشن باز شد و در قسمت Positions نمایش داده شد:
+
+۱. `F12` را بزن و وارد Console شو.
+
+۲. همان کد کامل **Bitunix Order Panel Audit v2.0** که پیام قبلی فرستادم را اجرا کن؛ نه کد WebSocket Decoder.
+
+۳. پنجره گزارش ظاهر می‌شود. روی «کپی گزارش» بزن و آن را برای من بفرست.
+
+<badge color="success">گزارش شماره ۱۱</badge> ساختار پوزیشن و دکمه‌های بستن آن را بررسی می‌کنیم.
+
+### مرحله ۳: گرفتن گزارش دوم برای Reverse
+
+حالا به چارت برگرد و نشانگر ماوس را روی خط پوزیشن باز نگه دار تا دکمه‌های شناور ظاهر شوند.
+
+دوباره همان کد **Order Panel Audit v2.0** را در Console اجرا کن و گزارش دوم را بفرست.
+
+<badge color="success">گزارش شماره ۱۲</badge> دنبال دکمه Reverse روی خط پوزیشن می‌گردیم.
+
+### خیلی مهم: کدام دکمه‌ها را نزن؟
+
+<box border radius="lg" padding={3} gap={2}>
+  <row align="center" gap={2}>
+    <icon name="eye" color="success" size="lg"/>
+    **فقط مشاهده و شناسایی**
+  </row>
+  - دکمه Close را نزن.
+  - دکمه Reverse را نزن.
+  - فقط ظاهر و ساختارشان را ثبت می‌کنیم.
+  <divider color="subtle"/>
+  بعد از گرفتن هر دو گزارش، پوزیشن را دستی ببند.
+</box>
+
+**پس ترتیب نهایی: باز کردن یک پوزیشن ← اجرای کد و گزارش ۱۱ ← مشاهدهٔ کنترل‌های روی چارت و اجرای مجدد کد و گزارش ۱۲ ← بستن دستی پوزیشن.**
+
+
+کاربر | پیام 2 | 11/14/2026, 11:16:24 PM
+------------------------------------------------------------
+
+باشه فقط نفهمیدم این کدوم کده. اینجا بفرس
+**Order Panel Audit v2.0**
+
+
+دستیار | پیام 3 | 11/14/2026, 11:17:54 PM
+------------------------------------------------------------
+
+Worked for 1m 29s
+
+
+دستیار | پیام 4 | 11/14/2026, 11:17:54 PM
+------------------------------------------------------------
+
+حتماً. این **کد کامل Order Panel Audit v2.0** است. فعلاً فقط برای بررسی پنل سفارش و پیدا کردن دکمه‌های **Close** و **Reverse** از آن استفاده می‌کنیم.
+
+**روش اجرا:** اول یک پوزیشن کوچک باز کن تا بخش Positions نمایش داده شود. بعد در همان صفحه Bitunix کلید `F12` را بزن، وارد تب **Console** شو و تمام کد زیر را یک‌جا Paste و اجرا کن.
+
+<CodeBlock language="javascript" editable>
+(() => {
+  "use strict";
+
+  const VERSION = "2.0";
+  const REPORT_NAME = "BITUNIX_ORDER_PANEL_AUDIT";
+
+  // Start from the top page whenever same-origin access is available.
+  let rootDoc = document;
+  try {
+    rootDoc = window.top.document;
+  } catch (_) {}
+
+  // Remove an older audit popup before scanning.
+  try {
+    rootDoc.getElementById("bitunix-order-audit-panel-v20")?.remove();
+  } catch (_) {}
+
+  const docs = [];
+  const seenDocs = new Set();
+
+  function addDocument(doc, frameLabel) {
+    if (!doc || seenDocs.has(doc)) return;
+    seenDocs.add(doc);
+
+    docs.push({
+      doc,
+      frame: frameLabel
+    });
+
+    let frames = [];
+    try {
+      frames = Array.from(doc.querySelectorAll("iframe"));
+    } catch (_) {}
+
+    frames.forEach((frame, index) => {
+      try {
+        if (frame.contentDocument) {
+          addDocument(
+            frame.contentDocument,
+            frameLabel + " > iframe[" + index + "]"
+          );
+        }
+      } catch (_) {
+        // Cross-origin frames are intentionally skipped.
+      }
+    });
+  }
+
+  addDocument(rootDoc, "top");
+
+  function clean(value, max = 500) {
+    return String(value ?? "")
+      .replace(/\s+/g, " ")
+      .trim()
+      .slice(0, max);
+  }
+
+  function getClass(el) {
+    if (!el) return "";
+    if (typeof el.className === "string") {
+      return clean(el.className, 500);
+    }
+    return clean(el.getAttribute?.("class"), 500);
+  }
+
+  function getText(el, max = 500) {
+    if (!el) return "";
+    return clean(el.innerText || el.textContent || "", max);
+  }
+
+  function isVisible(el, doc) {
+    try {
+      const win = doc.defaultView || window;
+      const style = win.getComputedStyle(el);
+      const rect = el.getBoundingClientRect();
+
+      return (
+        style.display !== "none" &&
+        style.visibility !== "hidden" &&
+        Number(style.opacity) !== 0 &&
+        rect.width > 0 &&
+        rect.height > 0
+      );
+    } catch (_) {
+      return false;
+    }
+  }
+
+  function getRect(el) {
+    try {
+      const r = el.getBoundingClientRect();
+      return {
+        x: Math.round(r.x),
+        y: Math.round(r.y),
+        width: Math.round(r.width),
+        height: Math.round(r.height)
+      };
+    } catch (_) {
+      return null;
+    }
+  }
+
+  function getLabels(el) {
+    try {
+      const labels = el.labels
+        ? Array.from(el.labels).map(x => getText(x, 150))
+        : [];
+
+      const parentLabel = el.closest("label");
+      if (parentLabel) labels.push(getText(parentLabel, 150));
+
+      return [...new Set(labels.filter(Boolean))];
+    } catch (_) {
+      return [];
+    }
+  }
+
+  function getReactEventNames(el) {
+    try {
+      const key = Object.keys(el).find(k =>
+        k.startsWith("__reactProps$")
+      );
+
+      if (!key) return [];
+
+      const props = el[key] || {};
+      return Object.keys(props).filter(k => /^on[A-Z]/.test(k));
+    } catch (_) {
+      return [];
+    }
+  }
+
+  function getParentChain(el, depth = 3) {
+    const result = [];
+    let node = el;
+
+    for (let i = 0; i < depth && node; i++) {
+      result.push({
+        tag: node.tagName?.toLowerCase() || "",
+        id: clean(node.id, 120),
+        class: getClass(node).slice(0, 250),
+        text: getText(node, 250),
+        html: clean(node.outerHTML, 700)
+      });
+
+      node = node.parentElement;
+    }
+
+    return result;
+  }
+
+  function getAttributes(el) {
+    const names = [
+      "type",
+      "name",
+      "placeholder",
+      "aria-label",
+      "title",
+      "role",
+      "data-testid",
+      "data-test",
+      "autocomplete"
+    ];
+
+    const result = {};
+    names.forEach(name => {
+      const value = el.getAttribute?.(name);
+      if (value !== null && value !== "") {
+        result[name] = clean(value, 200);
+      }
+    });
+
+    return result;
+  }
+
+  function scanDocument(doc, frameLabel) {
+    const result = {
+      frame: frameLabel,
+      url: "",
+      title: "",
+      buttonsFound: 0,
+      buttons: [],
+      inputsFound: 0,
+      inputs: [],
+      formsFound: 0,
+      forms: [],
+      relevantText: [],
+      closeReverseCandidates: []
+    };
+
+    try {
+      result.url = doc.location.href;
+    } catch (_) {}
+
+    result.title = clean(doc.title, 200);
+
+    // Buttons and button-like elements.
+    const buttonSelector = [
+      "button",
+      '[role="button"]',
+      'input[type="button"]',
+      'input[type="submit"]',
+      'a[role="button"]',
+      '[class*="close" i]',
+      '[class*="reverse" i]',
+      '[data-testid*="close" i]',
+      '[data-testid*="reverse" i]'
+    ].join(",");
+
+    let buttonElements = [];
+    try {
+      buttonElements = Array.from(
+        doc.querySelectorAll(buttonSelector)
+      );
+    } catch (_) {}
+
+    result.buttonsFound = buttonElements.length;
+
+    buttonElements.slice(0, 350).forEach((el, index) => {
+      const text = getText(el, 250);
+      const cls = getClass(el);
+      const aria = clean(el.getAttribute("aria-label"), 200);
+      const title = clean(el.getAttribute("title"), 200);
+
+      const hint = (
+        text + " " + cls + " " + aria + " " + title
+      ).toLowerCase();
+
+      const closeOrReverse =
+        /close|reverse|平仓|反向|关闭|全平|市价平仓/.test(hint);
+
+      const visible = isVisible(el, doc);
+
+      // Keep visible controls and hidden controls that look relevant.
+      if (!visible && !closeOrReverse) return;
+
+      const item = {
+        index,
+        tag: el.tagName?.toLowerCase() || "",
+        text,
+        class: cls,
+        id: clean(el.id, 150),
+        attributes: getAttributes(el),
+        visible,
+        disabled: Boolean(el.disabled),
+        rect: getRect(el),
+        reactEvents: getReactEventNames(el),
+        html: clean(el.outerHTML, 1000),
+        parentChain: getParentChain(el, 3)
+      };
+
+      result.buttons.push(item);
+
+      if (closeOrReverse) {
+        result.closeReverseCandidates.push(item);
+      }
+    });
+
+    // Inputs: never record current input values.
+    let inputElements = [];
+    try {
+      inputElements = Array.from(
+        doc.querySelectorAll(
+          "input, textarea, select, [contenteditable='true']"
+        )
+      );
+    } catch (_) {}
+
+    result.inputsFound = inputElements.length;
+
+    inputElements.slice(0, 250).forEach((el, index) => {
+      const visible = isVisible(el, doc);
+      const attrs = getAttributes(el);
+      const cls = getClass(el);
+
+      if (!visible && !attrs.placeholder && !attrs.name) return;
+
+      result.inputs.push({
+        index,
+        tag: el.tagName?.toLowerCase() || "",
+        type: attrs.type || "",
+        name: attrs.name || "",
+        placeholder: attrs.placeholder || "",
+        ariaLabel: attrs["aria-label"] || "",
+        title: attrs.title || "",
+        labels: getLabels(el),
+        class: cls,
+        id: clean(el.id, 150),
+        visible,
+        disabled: Boolean(el.disabled),
+        rect: getRect(el),
+        parentChain: getParentChain(el, 3)
+      });
+    });
+
+    // Forms: structure only, no values.
+    let forms = [];
+    try {
+      forms = Array.from(doc.querySelectorAll("form"));
+    } catch (_) {}
+
+    result.formsFound = forms.length;
+
+    forms.slice(0, 50).forEach((form, index) => {
+      result.forms.push({
+        index,
+        id: clean(form.id, 120),
+        class: getClass(form),
+        action: clean(form.getAttribute("action"), 250),
+        method: clean(form.getAttribute("method"), 50),
+        visible: isVisible(form, doc),
+        text: getText(form, 1000),
+        inputCount: form.querySelectorAll(
+          "input, textarea, select"
+        ).length,
+        buttons: Array.from(
+          form.querySelectorAll("button, [role='button']")
+        ).slice(0, 30).map(btn => ({
+          text: getText(btn, 150),
+          class: getClass(btn),
+          disabled: Boolean(btn.disabled)
+        }))
+      });
+    });
+
+    // Text around positions, order actions, and close/reverse controls.
+    try {
+      const lines = (doc.body?.innerText || "")
+        .split(/\n+/)
+        .map(x => clean(x, 250))
+        .filter(Boolean);
+
+      const pattern =
+        /position|positions|close|reverse|open long|open short|take profit|stop loss|\bTP\b|\bSL\b|平仓|持仓|反向|止盈|止损/i;
+
+      result.relevantText = lines
+        .filter(line => pattern.test(line))
+        .slice(0, 120);
+    } catch (_) {}
+
+    return result;
+  }
+
+  const scannedDocuments = docs.map(entry =>
+    scanDocument(entry.doc, entry.frame)
+  );
+
+  const report = {
+    reportName: REPORT_NAME,
+    version: VERSION,
+    timestamp: new Date().toISOString(),
+    page: (() => {
+      try {
+        return rootDoc.location.href;
+      } catch (_) {
+        return "";
+      }
+    })(),
+    pageTitle: clean(rootDoc.title, 200),
+    viewport: {
+      width: rootDoc.defaultView?.innerWidth || 0,
+      height: rootDoc.defaultView?.innerHeight || 0
+    },
+    safety: {
+      readOnly: true,
+      buttonsClicked: 0,
+      formsSubmitted: 0,
+      networkRequestsMade: 0,
+      inputValuesRecorded: false,
+      privateWebSocketDataRead: false
+    },
+    documentsScanned: scannedDocuments.length,
+    summary: {
+      totalButtons: scannedDocuments.reduce(
+        (n, x) => n + x.buttonsFound, 0
+      ),
+      totalInputs: scannedDocuments.reduce(
+        (n, x) => n + x.inputsFound, 0
+      ),
+      totalForms: scannedDocuments.reduce(
+        (n, x) => n + x.formsFound, 0
+      ),
+      closeReverseCandidates: scannedDocuments.reduce(
+        (n, x) => n + x.closeReverseCandidates.length, 0
+      )
+    },
+    documents: scannedDocuments
+  };
+
+  const reportText = JSON.stringify(report, null, 2);
+
+  console.log(
+    "%cBITUNIX ORDER PANEL AUDIT v" + VERSION,
+    "font-size:16px;font-weight:bold;color:#16a085"
+  );
+  console.log("Report:", report);
+  console.log("Report length:", reportText.length, "characters");
+
+  // Copyable report popup.
+  const panel = rootDoc.createElement("div");
+  panel.id = "bitunix-order-audit-panel-v20";
+
+  panel.style.cssText = [
+    "position:fixed",
+    "z-index:2147483647",
+    "top:20px",
+    "right:20px",
+    "width:min(760px,90vw)",
+    "height:min(620px,85vh)",
+    "background:#101820",
+    "color:#eaf2f5",
+    "border:1px solid #38505b",
+    "border-radius:12px",
+    "box-shadow:0 12px 45px rgba(0,0,0,.55)",
+    "padding:14px",
+    "display:flex",
+    "flex-direction:column",
+    "gap:10px",
+    "font:13px Arial,sans-serif"
+  ].join(";");
+
+  const header = rootDoc.createElement("div");
+  header.style.cssText =
+    "display:flex;align-items:center;justify-content:space-between;gap:10px";
+
+  const heading = rootDoc.createElement("strong");
+  heading.textContent =
+    "Bitunix Order Panel Audit v" + VERSION +
+    " — " + reportText.length.toLocaleString() + " characters";
+
+  const actions = rootDoc.createElement("div");
+  actions.style.cssText = "display:flex;gap:8px";
+
+  function makeButton(label, background) {
+    const button = rootDoc.createElement("button");
+    button.textContent = label;
+    button.style.cssText = [
+      "border:0",
+      "border-radius:7px",
+      "padding:8px 13px",
+      "cursor:pointer",
+      "font-weight:bold",
+      "color:white",
+      "background:" + background
+    ].join(";");
+    return button;
+  }
+
+  const copyButton = makeButton("Copy Report", "#087f69");
+  const closeButton = makeButton("Close", "#49545c");
+
+  actions.append(copyButton, closeButton);
+  header.append(heading, actions);
+
+  const status = rootDoc.createElement("div");
+  status.textContent =
+    "Read-only audit. No trading buttons were clicked and no input values were read.";
+  status.style.cssText = "color:#9fb3bd;font-size:12px";
+
+  const output = rootDoc.createElement("textarea");
+  output.value = reportText;
+  output.spellcheck = false;
+  output.style.cssText = [
+    "flex:1",
+    "width:100%",
+    "min-height:0",
+    "resize:none",
+    "box-sizing:border-box",
+    "background:#071016",
+    "color:#bce6dc",
+    "border:1px solid #344b56",
+    "border-radius:8px",
+    "padding:10px",
+    "font:12px Consolas,monospace",
+    "line-height:1.45"
+  ].join(";");
+
+  copyButton.addEventListener("click", async () => {
+    try {
+      const clipboard = rootDoc.defaultView?.navigator?.clipboard;
+      if (clipboard?.writeText) {
+        await clipboard.writeText(reportText);
+      } else {
+        output.focus();
+        output.select();
+        rootDoc.execCommand("copy");
+      }
+      status.textContent =
+        "Report copied. Paste it into a .txt file or send it to ChatGPT.";
+    } catch (_) {
+      output.focus();
+      output.select();
+      status.textContent =
+        "Automatic copy was blocked. Press Ctrl+C to copy the selected report.";
+    }
+  });
+
+  closeButton.addEventListener("click", () => panel.remove());
+
+  panel.append(header, status, output);
+  (rootDoc.body || rootDoc.documentElement).appendChild(panel);
+
+  output.focus();
+  output.select();
+
+  console.log(
+    "Audit complete. Use the Copy Report button in the popup."
+  );
+})();
+</CodeBlock>
+
+بعد از اجرا، یک پنجره باز می‌شود. روی **Copy Report** بزن و گزارش را در یک فایل متنی ذخیره کن یا همین‌جا بفرست.
+
+**فعلاً دکمه‌های Close و Reverse را اصلاً نزن.** این کد فقط ساختار صفحه را می‌خواند و هیچ سفارشی ثبت یا تغییری در پوزیشن ایجاد نمی‌کند.
+
+
+کاربر | پیام 5 | 11/14/2026, 11:24:33 PM
+------------------------------------------------------------
+
+[گزارشات بیتیونیکس11.txt](https://github.com/artaville/KCEX-Enhancer/blob/main/%DA%AF%D8%B2%D8%A7%D8%B1%D8%B4%D8%A7%D8%AA%20%D8%A8%DB%8C%D8%AA%DB%8C%D9%88%D9%86%DB%8C%DA%A9%D8%B311.txt "گزارشات بیتیونیکس11.txt") &#x20;
+[گزارشات بیتیونیکس12.txt](https://github.com/artaville/KCEX-Enhancer/blob/main/%DA%AF%D8%B2%D8%A7%D8%B1%D8%B4%D8%A7%D8%AA%20%D8%A8%DB%8C%D8%AA%DB%8C%D9%88%D9%86%DB%8C%DA%A9%D8%B312.txt "گزارشات بیتیونیکس12.txt") &#x20;
+
+در فایل 11 پوزیشن باز شده و کلوز معلومه. در فایل 12 موس روی دکمه ریورس روی چارت بوده
+
+
+دستیار | پیام 6 | 11/14/2026, 11:24:37 PM
+------------------------------------------------------------
+
+گزارش‌های ۱۱ و ۱۲ را کنار هم بررسی می‌کنم تا دکمه بستن پوزیشن و دکمه Reverse روی چارت را از نظر محل قرارگیری، ساختار و روش شناسایی مقایسه کنم. فعلاً هیچ کدی برای کلیک یا اجرای سفارش نمی‌نویسم؛ هدف فقط استخراج مطمئن کنترل‌هاست.
+
+
+دستیار | پیام 7 | 11/14/2026, 11:24:45 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_file","args":{"repository_full_name":"artaville/KCEX-Enhancer","path":"\u06af\u0632\u0627\u0631\u0634\u0627\u062a \u0628\u06cc\u062a\u06cc\u0648\u0646\u06cc\u06a9\u063311.txt","encoding":"utf-8"}}
+
+
+دستیار | پیام 8 | 11/14/2026, 11:24:45 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_file","args":{"repository_full_name":"artaville/KCEX-Enhancer","path":"\u06af\u0632\u0627\u0631\u0634\u0627\u062a \u0628\u06cc\u062a\u06cc\u0648\u0646\u06cc\u06a9\u063312.txt","encoding":"utf-8"}}
+
+
+دستیار | پیام 9 | 11/14/2026, 11:24:56 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_blob","args":{"repository_full_name":"artaville/KCEX-Enhancer","blob_sha":"269caec80e3d05fd858738a5a4dcbac7accc259f"}}
+
+
+دستیار | پیام 10 | 11/14/2026, 11:24:56 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_blob","args":{"repository_full_name":"artaville/KCEX-Enhancer","blob_sha":"c262a4b1883ac7d130406a1d6d84376e62e9ccdd"}}
+
+
+دستیار | پیام 11 | 11/14/2026, 11:25:04 PM
+------------------------------------------------------------
+
+در هر دو فایل، آدرس صفحه و نماد معاملاتی XAUTUSDT یکسان است. یک نکته مهم هم روشن شد: گزارش ۱۱ پوزیشن فعال را در بخش `Positions (1)` ثبت کرده، اما جست‌وجوی ساده‌ی کلمه‌ی `Close` به‌تنهایی کافی نیست، چون تعداد زیادی دکمه‌ی بستن پنجره و کنترل‌های نامرتبط هم وجود دارد. الان دارم کنترل درستِ مربوط به خود پوزیشن را از بقیه جدا می‌کنم.
+
+
+دستیار | پیام 12 | 11/14/2026, 11:25:18 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_blob","args":{"repository_full_name":"artaville/KCEX-Enhancer","blob_sha":"269caec80e3d05fd858738a5a4dcbac7accc259f"}}
+
+
+دستیار | پیام 13 | 11/14/2026, 11:25:18 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_blob","args":{"repository_full_name":"artaville/KCEX-Enhancer","blob_sha":"c262a4b1883ac7d130406a1d6d84376e62e9ccdd"}}
+
+
+دستیار | پیام 14 | 11/14/2026, 11:25:45 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_blob","args":{"repository_full_name":"artaville/KCEX-Enhancer","blob_sha":"269caec80e3d05fd858738a5a4dcbac7accc259f"}}
+
+
+دستیار | پیام 15 | 11/14/2026, 11:25:46 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_blob","args":{"repository_full_name":"artaville/KCEX-Enhancer","blob_sha":"c262a4b1883ac7d130406a1d6d84376e62e9ccdd"}}
+
+
+دستیار | پیام 16 | 11/14/2026, 11:26:03 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_blob","args":{"repository_full_name":"artaville/KCEX-Enhancer","blob_sha":"269caec80e3d05fd858738a5a4dcbac7accc259f"}}
+
+
+دستیار | پیام 17 | 11/14/2026, 11:26:04 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_blob","args":{"repository_full_name":"artaville/KCEX-Enhancer","blob_sha":"c262a4b1883ac7d130406a1d6d84376e62e9ccdd"}}
+
+
+دستیار | پیام 18 | 11/14/2026, 11:27:56 PM
+------------------------------------------------------------
+
+Worked for 3m 21s
+
+
+دستیار | پیام 19 | 11/14/2026, 11:27:56 PM
+------------------------------------------------------------
+
+هر دو گزارش را بررسی کردم. خبر خوب این است که **هر دو کنترل موردنظر را تا حد زیادی شناسایی کردیم.**
+
+### نتیجه گزارش ۱۱ — Close
+
+- پوزیشن باز بوده و بخش `Positions (1)` نمایش داده شده است.
+- در محتوای چارت، عبارت **Market close** ثبت شده؛ به‌احتمال زیاد همان عنوانی است که هنگام قرار گرفتن موس روی کنترل بستن پوزیشن ظاهر می‌شود.
+- دکمه `Close All` هم در صفحه وجود دارد، اما این دکمه برای بستن همه پوزیشن‌هاست و با Close پوزیشن فعلی اشتباه گرفته نمی‌شود.
+
+### نتیجه گزارش ۱۲ — Reverse
+
+- عبارت **Reverse** در همان iframe چارت ثبت شده است.
+- یعنی وقتی موس را روی کنترل Reverse بردی، متن مربوط به آن شناسایی شده.
+- محل کلی این کنترل را می‌دانیم، اما هنوز عنصر HTML دقیق و روش اجرای آن را استخراج نکرده‌ایم.
+
+### نکته فنی مهم
+
+در هر دو گزارش، کنترل‌ها به‌صورت یک دکمه استاندارد HTML با متن قابل‌جست‌وجو ثبت نشده‌اند. بنابراین هنوز نباید با یک Selector ساده روی آن‌ها کلیک کنیم.
+
+<badge color="success">شناسایی اولیه انجام شد</badge>
+
+**مرحله بعد:** یک کد تشخیصی اختصاصی می‌سازیم که وقتی موس را روی Close یا Reverse می‌بری، عنصر واقعی زیر موس، والدهای HTML، کلاس‌ها و مشخصاتش را ثبت کند. با آن می‌توانیم سلکتور دقیق هر دو کنترل را پیدا کنیم، بدون اینکه هیچ‌کدام را فشار بدهی.
+
+ضمناً یک نکته را هم حفظ می‌کنم: URL و عنوان صفحه XAUTUSDT است، ولی متن دکمه نماد در هدر هنوز `EVAAUSDT` ثبت شده؛ این مورد را قبل از پیاده‌سازی نهایی باید رفع ابهام کنیم.
+
+
+کاربر | پیام 20 | 11/14/2026, 11:29:52 PM
+------------------------------------------------------------
+
+# Selected text:
+
+## Selection 1
+EVAAUSDT
+
+## Selection 2
+: یک کد تشخیصی اختصاصی می‌سازیم که وقتی موس را روی Close یا Reverse می‌بری، عنصر واقعی زیر موس، والدهای HTML، کلاس‌ها و مشخصاتش را ثبت کند. با آن می‌توانیم سلکتور دقیق هر دو کنترل را پیدا کنیم، بدون اینکه هیچ‌کدام را فشار بدهی.
+
+## My request:
+چیزی در این مورد وجود ندارد. ارز همان است. این را الان مینویسی بفرستی؟ باید دقیقا چ کار کنم؟
+
+
+دستیار | پیام 21 | 11/14/2026, 11:33:53 PM
+------------------------------------------------------------
+
+Worked for 3m 59s
+
+
+دستیار | پیام 22 | 11/14/2026, 11:33:53 PM
+------------------------------------------------------------
+
+درست می‌گی؛ اشتباه از برداشت من بود. `EVAAUSDT` را نادیده می‌گیریم. طبق گزارش‌ها، نماد مورد بررسی همان **XAUTUSDT** است.
+
+بله، این کد تشخیصی را آماده کردم. این بار لازم نیست کد را برای Close و Reverse جداگانه اجرا کنی؛ هر دو را با یک بار اجرا ثبت می‌کنیم.
+
+### دقیقاً این کارها را انجام بده
+
+۱. وارد صفحه Bitunix شو و همان پوزیشن را باز نگه دار.
+
+۲. کل کد زیر را در `F12 → Console` وارد کن و یک‌بار اجرا کن.
+
+۳. یک پنجره کوچک باز می‌شود. موس را روی دکمه Close روی چارت ببر و صبر کن تا عنوان آن ظاهر شود.
+
+۴. موس را به پنجره تشخیصی ببر و روی `Capture Close` کلیک کن. نگران نباش؛ اطلاعات عنصر زیر موس از قبل ذخیره شده است.
+
+۵. همین کار را برای دکمه Reverse انجام بده و این بار `Capture Reverse` را بزن.
+
+۶. در پایان روی `Copy Report` بزن و گزارش را برایم بفرست.
+
+**به دکمه‌های واقعی Close و Reverse روی صرافی دست نزن. فقط دکمه‌های پنجره تشخیصی را بزن.**
+
+### کد کامل Hover Audit v1.0
+
+<CodeBlock language="javascript" editable>
+(() => {
+  "use strict";
+
+  const KEY = "__BITUNIX_HOVER_AUDIT_V1__";
+  const PANEL_ID = "bitunix-hover-audit-v1";
+
+  // Stop an older copy of this diagnostic, if present.
+  try {
+    window[KEY]?.stop?.();
+  } catch (_) {}
+
+  const rootDoc = document;
+  const docs = [];
+  const seen = new Set();
+  const captures = [];
+
+  let panel = null;
+  let statusEl = null;
+  let outputEl = null;
+  let lastHit = null;
+  let tracking = true;
+
+  function clean(value, max = 180) {
+    return String(value ?? "")
+      .replace(/\s+/g, " ")
+      .trim()
+      .slice(0, max);
+  }
+
+  function classText(el) {
+    if (!el) return "";
+    if (typeof el.className === "string") {
+      return clean(el.className, 400);
+    }
+    return clean(el.getAttribute?.("class"), 400);
+  }
+
+  function safeText(el) {
+    if (!el) return "";
+    const value = clean(el.innerText || el.textContent || "", 100);
+    return /^(close|reverse|market close|close position)$/i.test(value)
+      ? value
+      : "";
+  }
+
+  function readAttributes(el) {
+    const result = {};
+    const names = [
+      "aria-label",
+      "title",
+      "data-tooltip",
+      "data-name",
+      "data-testid",
+      "data-test",
+      "role",
+      "type"
+    ];
+
+    for (const name of names) {
+      const value = el.getAttribute?.(name);
+      if (value) result[name] = clean(value, 250);
+    }
+    return result;
+  }
+
+  function addDocument(doc, label) {
+    if (!doc || seen.has(doc)) return;
+    seen.add(doc);
+
+    docs.push({ doc, label });
+
+    let frames = [];
+    try {
+      frames = Array.from(doc.querySelectorAll("iframe"));
+    } catch (_) {}
+
+    frames.forEach((frame, index) => {
+      try {
+        if (frame.contentDocument?.documentElement) {
+          addDocument(
+            frame.contentDocument,
+            label + " > iframe[" + index + "]"
+          );
+        }
+      } catch (_) {
+        // Cross-origin frames are skipped.
+      }
+    });
+  }
+
+  addDocument(rootDoc, "top");
+
+  function nearestControl(el) {
+    let node = el;
+
+    for (let i = 0; i < 8 && node; i++) {
+      if (node.nodeType !== 1) break;
+
+      const tag = node.tagName?.toLowerCase() || "";
+      const cls = classText(node);
+
+      const interactive =
+        /^(button|a|input|select|textarea)$/.test(tag) ||
+        node.getAttribute?.("role") === "button" ||
+        node.hasAttribute?.("aria-label") ||
+        node.hasAttribute?.("title") ||
+        node.hasAttribute?.("data-tooltip") ||
+        node.hasAttribute?.("data-name") ||
+        /button|btn|control|toolbar|close|reverse|position|order|action|tooltip|icon/i.test(cls);
+
+      if (interactive) return node;
+      node = node.parentElement;
+    }
+
+    return null;
+  }
+
+  function cssEscape(value, win) {
+    try {
+      return win.CSS.escape(value);
+    } catch (_) {
+      return String(value).replace(/[^a-zA-Z0-9_-]/g, "\\$&");
+    }
+  }
+
+  function buildSelector(el, doc) {
+    if (!el || el.nodeType !== 1) return "";
+
+    const win = doc.defaultView || window;
+
+    if (el.id) {
+      const idSelector = "#" + cssEscape(el.id, win);
+      try {
+        if (doc.querySelectorAll(idSelector).length === 1) {
+          return idSelector;
+        }
+      } catch (_) {}
+    }
+
+    const parts = [];
+    let node = el;
+
+    for (let depth = 0; depth < 7 && node; depth++) {
+      let part = node.tagName.toLowerCase();
+
+      if (node.id) {
+        part += "#" + cssEscape(node.id, win);
+        parts.unshift(part);
+        break;
+      }
+
+      const classes = Array.from(node.classList || [])
+        .filter(Boolean)
+        .slice(0, 3);
+
+      classes.forEach(c => {
+        part += "." + cssEscape(c, win);
+      });
+
+      const parent = node.parentElement;
+      if (parent) {
+        const sameTag = Array.from(parent.children)
+          .filter(x => x.tagName === node.tagName);
+
+        if (sameTag.length > 1) {
+          part += ":nth-of-type(" +
+            (sameTag.indexOf(node) + 1) + ")";
+        }
+      }
+
+      parts.unshift(part);
+
+      const candidate = parts.join(" > ");
+
+      try {
+        if (doc.querySelectorAll(candidate).length === 1) {
+          return candidate;
+        }
+      } catch (_) {}
+
+      node = parent;
+    }
+
+    return parts.join(" > ");
+  }
+
+  function elementInfo(el, doc) {
+    if (!el || el.nodeType !== 1) return null;
+
+    const cls = classText(el);
+    const html = clean(el.outerHTML, 1800);
+    let rect = null;
+    let style = null;
+
+    try {
+      const r = el.getBoundingClientRect();
+      rect = {
+        x: Math.round(r.x),
+        y: Math.round(r.y),
+        width: Math.round(r.width),
+        height: Math.round(r.height)
+      };
+
+      const s = (doc.defaultView || window).getComputedStyle(el);
+      style = {
+        display: s.display,
+        visibility: s.visibility,
+        opacity: s.opacity,
+        pointerEvents: s.pointerEvents
+      };
+    } catch (_) {}
+
+    const parentChain = [];
+    let parent = el;
+
+    for (let i = 0; i < 7 && parent; i++) {
+      parentChain.push({
+        tag: parent.tagName?.toLowerCase() || "",
+        id: clean(parent.id, 120),
+        class: classText(parent),
+        attributes: readAttributes(parent)
+      });
+      parent = parent.parentElement;
+    }
+
+    return {
+      tag: el.tagName?.toLowerCase() || "",
+      id: clean(el.id, 150),
+      class: cls,
+      text: safeText(el),
+      attributes: readAttributes(el),
+      selector: buildSelector(el, doc),
+      selectorMatchCount: (() => {
+        try {
+          return doc.querySelectorAll(buildSelector(el, doc)).length;
+        } catch (_) {
+          return null;
+        }
+      })(),
+      rect,
+      style,
+      // HTML is included only for a small element, not a large position row.
+      outerHTML:
+        html.length <= 1400 && clean(el.innerText || "", 100).length <= 80
+          ? html
+          : "[omitted: element HTML too large]",
+      parentChain
+    };
+  }
+
+  function onPointer(event, entry) {
+    if (!tracking) return;
+
+    let target = event.target;
+    if (target?.nodeType !== 1) {
+      target = target?.parentElement;
+    }
+    if (!target) return;
+
+    // Ignore this diagnostic popup itself.
+    if (entry.doc === rootDoc && panel?.contains(target)) {
+      return;
+    }
+
+    // The parent document sees the iframe as one element.
+    // The chart's own document has its own listener.
+    if (
+      entry.doc === rootDoc &&
+      target.tagName?.toLowerCase() === "iframe"
+    ) {
+      return;
+    }
+
+    const control = nearestControl(target);
+    if (!control) return;
+
+    lastHit = {
+      doc: entry.doc,
+      frame: entry.label,
+      time: new Date().toISOString(),
+      x: event.clientX,
+      y: event.clientY,
+      rawTarget: target,
+      control
+    };
+
+    if (statusEl) {
+      const label =
+        control.getAttribute?.("aria-label") ||
+        control.getAttribute?.("title") ||
+        control.getAttribute?.("data-tooltip") ||
+        control.getAttribute?.("data-name") ||
+        safeText(control) ||
+        control.tagName.toLowerCase() + "." + classText(control);
+
+      statusEl.textContent =
+        "آخرین عنصر شناسایی‌شده: " +
+        entry.label + " | " + clean(label, 100);
+    }
+  }
+
+  function visibleTooltipCandidates(doc) {
+    const result = [];
+
+    let elements = [];
+    try {
+      elements = Array.from(
+        doc.querySelectorAll(
+          "[title], [aria-label], [data-tooltip], [class*='tooltip' i]"
+        )
+      );
+    } catch (_) {}
+
+    for (const el of elements.slice(0, 2500)) {
+      try {
+        const style = (doc.defaultView || window).getComputedStyle(el);
+        const rect = el.getBoundingClientRect();
+
+        if (
+          style.display === "none" ||
+          style.visibility === "hidden" ||
+          Number(style.opacity) === 0 ||
+          rect.width === 0 ||
+          rect.height === 0
+        ) continue;
+
+        const attrs = readAttributes(el);
+        const text = clean(el.innerText || el.textContent || "", 100);
+        const combined = [
+          text,
+          attrs.title,
+          attrs["aria-label"],
+          attrs["data-tooltip"]
+        ].join(" ");
+
+        if (!/reverse|market\s+close|close position/i.test(combined)) {
+          continue;
+        }
+
+        result.push({
+          tag: el.tagName.toLowerCase(),
+          class: classText(el),
+          text: safeText(el),
+          attributes: attrs,
+          selector: buildSelector(el, doc),
+          rect: {
+            x: Math.round(rect.x),
+            y: Math.round(rect.y),
+            width: Math.round(rect.width),
+            height: Math.round(rect.height)
+          }
+        });
+
+        if (result.length >= 20) break;
+      } catch (_) {}
+    }
+
+    return result;
+  }
+
+  function capture(label) {
+    if (!lastHit) {
+      statusEl.textContent =
+        "هنوز عنصری ثبت نشده است. موس را روی کنترل چارت ببر.";
+      return;
+    }
+
+    const hit = lastHit;
+    const doc = hit.doc;
+
+    let elementAtSavedPoint = null;
+    try {
+      elementAtSavedPoint = doc.elementFromPoint(hit.x, hit.y);
+    } catch (_) {}
+
+    const freshControl = nearestControl(elementAtSavedPoint);
+
+    const record = {
+      label,
+      capturedAt: new Date().toISOString(),
+      pointerEventAt: hit.time,
+      frame: hit.frame,
+      frameUrl: (() => {
+        try {
+          return doc.location.href;
+        } catch (_) {
+          return "";
+        }
+      })(),
+      savedPointer: {
+        x: Math.round(hit.x),
+        y: Math.round(hit.y)
+      },
+      hoveredElement: elementInfo(hit.rawTarget, doc),
+      nearestControl: elementInfo(hit.control, doc),
+      elementAtSavedPointer: elementInfo(elementAtSavedPoint, doc),
+      controlAtSavedPointer: elementInfo(freshControl, doc),
+      visibleRelatedTooltips: visibleTooltipCandidates(doc)
+    };
+
+    captures.push(record);
+    updateOutput();
+
+    statusEl.textContent =
+      label + " ثبت شد. تعداد ثبت‌ها: " + captures.length;
+  }
+
+  function reportObject() {
+    return {
+      reportName: "BITUNIX_HOVER_AUDIT",
+      version: "1.0",
+      generatedAt: new Date().toISOString(),
+      page: (() => {
+        try {
+          return rootDoc.location.href;
+        } catch (_) {
+          return "";
+        }
+      })(),
+      documentsScanned: docs.map(d => ({
+        frame: d.label,
+        url: (() => {
+          try {
+            return d.doc.location.href;
+          } catch (_) {
+            return "";
+          }
+        })()
+      })),
+      safety: {
+        readOnly: true,
+        buttonsOnExchangeClicked: 0,
+        ordersSubmitted: 0,
+        networkRequestsMade: 0,
+        formValuesRead: false,
+        privateAccountDataRead: false
+      },
+      captures
+    };
+  }
+
+  function updateOutput() {
+    if (outputEl) {
+      outputEl.value = JSON.stringify(reportObject(), null, 2);
+    }
+  }
+
+  // Install listeners in the main page and accessible chart frames.
+  docs.forEach(entry => {
+    entry.doc.addEventListener(
+      "pointermove",
+      event => onPointer(event, entry),
+      true
+    );
+
+    entry.doc.addEventListener(
+      "pointerover",
+      event => onPointer(event, entry),
+      true
+    );
+  });
+
+  // Build the diagnostic popup.
+  panel = rootDoc.createElement("div");
+  panel.id = PANEL_ID;
+  panel.style.cssText = [
+    "position:fixed",
+    "z-index:2147483647",
+    "top:14px",
+    "right:14px",
+    "width:min(440px,90vw)",
+    "background:#101820",
+    "color:#e8f0f3",
+    "border:1px solid #405965",
+    "border-radius:11px",
+    "box-shadow:0 8px 35px rgba(0,0,0,.5)",
+    "padding:12px",
+    "font:12px Arial,sans-serif",
+    "display:flex",
+    "flex-direction:column",
+    "gap:8px"
+  ].join(";");
+
+  const heading = rootDoc.createElement("strong");
+  heading.textContent = "Bitunix Hover Audit v1.0";
+
+  statusEl = rootDoc.createElement("div");
+  statusEl.textContent =
+    "موس را روی کنترل چارت ببر؛ سپس دکمه ثبت مربوطه را بزن.";
+  statusEl.style.cssText =
+    "color:#b8ccd4;line-height:1.5;overflow-wrap:anywhere";
+
+  const row = rootDoc.createElement("div");
+  row.style.cssText =
+    "display:flex;flex-wrap:wrap;gap:6px";
+
+  function makeButton(label, background) {
+    const button = rootDoc.createElement("button");
+    button.type = "button";
+    button.textContent = label;
+    button.style.cssText = [
+      "border:0",
+      "border-radius:6px",
+      "padding:8px 10px",
+      "cursor:pointer",
+      "color:white",
+      "font-weight:bold",
+      "background:" + background
+    ].join(";");
+    return button;
+  }
+
+  const closeCapture = makeButton("Capture Close", "#087f69");
+  const reverseCapture = makeButton("Capture Reverse", "#2767a8");
+  const copyButton = makeButton("Copy Report", "#7554a5");
+  const clearButton = makeButton("Clear", "#59636b");
+  const stopButton = makeButton("Stop Tracking", "#a34b43");
+
+  closeCapture.addEventListener("click", () => capture("Close"));
+  reverseCapture.addEventListener("click", () => capture("Reverse"));
+
+  copyButton.addEventListener("click", async () => {
+    updateOutput();
+
+    try {
+      await rootDoc.defaultView.navigator.clipboard.writeText(
+        outputEl.value
+      );
+      statusEl.textContent =
+        "گزارش کپی شد. آن را برای ChatGPT بفرست.";
+    } catch (_) {
+      outputEl.focus();
+      outputEl.select();
+      try {
+        rootDoc.execCommand("copy");
+      } catch (_) {}
+      statusEl.textContent =
+        "گزارش انتخاب شد؛ Ctrl+C را بزن و آن را کپی کن.";
+    }
+  });
+
+  clearButton.addEventListener("click", () => {
+    captures.length = 0;
+    updateOutput();
+    statusEl.textContent = "ثبت‌ها پاک شدند.";
+  });
+
+  stopButton.addEventListener("click", () => {
+    tracking = false;
+    statusEl.textContent =
+      "ردیابی متوقف شد. گزارش‌های ثبت‌شده همچنان قابل کپی هستند.";
+  });
+
+  row.append(
+    closeCapture,
+    reverseCapture,
+    copyButton,
+    clearButton,
+    stopButton
+  );
+
+  outputEl = rootDoc.createElement("textarea");
+  outputEl.readOnly = true;
+  outputEl.value = JSON.stringify(reportObject(), null, 2);
+  outputEl.style.cssText = [
+    "width:100%",
+    "height:115px",
+    "box-sizing:border-box",
+    "resize:vertical",
+    "background:#071016",
+    "color:#bce6dc",
+    "border:1px solid #344b56",
+    "border-radius:7px",
+    "padding:8px",
+    "font:11px Consolas,monospace"
+  ].join(";");
+
+  const note = rootDoc.createElement("div");
+  note.textContent =
+    "این ابزار فقط عناصر زیر موس را می‌خواند؛ هیچ دکمه معاملاتی را فشار نمی‌دهد.";
+  note.style.cssText = "color:#91a6af;font-size:11px";
+
+  const closePanel = makeButton("Close Panel", "#39464f");
+  closePanel.addEventListener("click", () => {
+    window[KEY]?.stop?.();
+  });
+
+  panel.append(
+    heading,
+    statusEl,
+    row,
+    outputEl,
+    note,
+    closePanel
+  );
+
+  (rootDoc.body || rootDoc.documentElement).appendChild(panel);
+
+  function stop() {
+    tracking = false;
+
+    docs.forEach(entry => {
+      // Listener functions are removed by closing the page or re-running
+      // this script; the panel can also be removed immediately.
+      // No trading action or page navigation is performed.
+    });
+
+    try {
+      panel?.remove();
+    } catch (_) {}
+
+    try {
+      delete window[KEY];
+    } catch (_) {}
+  }
+
+  window[KEY] = { stop };
+
+  console.log(
+    "Bitunix Hover Audit v1.0 started.",
+    "Accessible documents:", docs.length
+  );
+})();
+</CodeBlock>
+
+<text color="secondary" size="sm">نکته: این ابزار فقط اطلاعات DOM و مشخصات کنترل زیر موس را جمع می‌کند؛ هیچ درخواست شبکه‌ای، کلیک معاملاتی یا خواندن مقدار فیلدهای سفارش انجام نمی‌دهد.</text>
+
+وقتی گزارش را فرستادی، از روی آن برای هر دو کنترل Selector دقیق را استخراج می‌کنیم تا در افزونه بتوانیم Close و Reverse را مستقل و درست شناسایی کنیم.
+
+
+کاربر | پیام 23 | 11/14/2026, 11:40:30 PM
+------------------------------------------------------------
+
+{
+  "reportName": "BITUNIX_HOVER_AUDIT",
+  "version": "1.0",
+  "generatedAt": "2026-11-14T20:09:50.331Z",
+  "page": "https://www.bitunix.com/contract-trade/XAUTUSDT",
+  "documentsScanned": [
+    {
+      "frame": "top",
+      "url": "https://www.bitunix.com/contract-trade/XAUTUSDT"
+    },
+    {
+      "frame": "top > iframe[0]",
+      "url": "blob:https://www.bitunix.com/5a516649-a563-4733-b52d-78b5be644cde"
+    },
+    {
+      "frame": "top > iframe[1]",
+      "url": "about:blank"
+    },
+    {
+      "frame": "top > iframe[2]",
+      "url": "about:blank"
+    }
+  ],
+  "safety": {
+    "readOnly": true,
+    "buttonsOnExchangeClicked": 0,
+    "ordersSubmitted": 0,
+    "networkRequestsMade": 0,
+    "formValuesRead": false,
+    "privateAccountDataRead": false
+  },
+  "captures": [
+    {
+      "label": "Close",
+      "capturedAt": "2026-11-14T20:09:25.099Z",
+      "pointerEventAt": "2026-11-14T20:09:18.456Z",
+      "frame": "top",
+      "frameUrl": "https://www.bitunix.com/contract-trade/XAUTUSDT",
+      "savedPointer": {
+        "x": 1252,
+        "y": 137
+      },
+      "hoveredElement": {
+        "tag": "div",
+        "id": "",
+        "class": "nav-content relative max-md:w-full max-md:overflow-x-auto overflow-hidden px-16",
+        "text": "",
+        "attributes": {},
+        "selector": "div.orderbook-view.h-100\\%:nth-of-type(1) > div.bitunix-tab-container.max-md\\:overflow-hidden\\! > div.bitunix-tab-nav.flex-row-between-center.border-bottom:nth-of-type(1) > div.nav-content.relative.max-md\\:w-full:nth-of-type(1)",
+        "selectorMatchCount": 1,
+        "rect": {
+          "x": 1081,
+          "y": 113,
+          "width": 184,
+          "height": 39
+        },
+        "style": {
+          "display": "block",
+          "visibility": "visible",
+          "opacity": "1",
+          "pointerEvents": "auto"
+        },
+        "outerHTML": "<div data-v-5ab74309=\"\" class=\"nav-content relative max-md:w-full max-md:overflow-x-auto overflow-hidden px-16\"><div data-v-5ab74309=\"\" class=\"nav-item relative color-text-2 flex-row-start-center h39 overflow-x-auto\"><div data-v-5ab74309=\"\" data-id=\"1\" class=\"color-text-2 cursor-pointer nav-link fm-medium shrink-0 tab-item-id-1 nav-item-active\"><span data-v-5ab74309=\"\" class=\"nav-link-text\">Orderbook<!----></span><!----></div><div data-v-5ab74309=\"\" data-id=\"2\" class=\"color-text-2 cursor-pointer nav-link fm-medium shrink-0 tab-item-id-2\"><span data-v-5ab74309=\"\" class=\"nav-link-text\">Trades<!----></span><!----></div><!----><span data-v-5ab74309=\"\" class=\"nav-item-active-line\" style=\"width: 71px; left: 0px;\"></span></div><!----><!----></div>",
+        "parentChain": [
+          {
+            "tag": "div",
+            "id": "",
+            "class": "nav-content relative max-md:w-full max-md:overflow-x-auto overflow-hidden px-16",
+            "attributes": {}
+          },
+          {
+            "tag": "div",
+            "id": "",
+            "class": "bitunix-tab-nav flex-row-between-center border-bottom draggable-area max-md:py-0! overflow-hidden max-md:border-none! border-b-1px border-solid border-0 border-[var(--color-border)]",
+            "attributes": {}
+          },
+          {
+            "tag": "div",
+            "id": "",
+            "class": "bitunix-tab-container max-md:overflow-hidden!",
+            "attributes": {}
+          },
+          {
+            "tag": "div",
+            "id": "",
+            "class": "orderbook-view h-100%",
+            "attributes": {}
+          },
+          {
+            "tag": "div",
+            "id": "",
+            "class": "orderbook-container-7E807388 color-bg-2",
+            "attributes": {}
+          },
+          {
+            "tag": "div",
+            "id": "ExchangeList",
+            "class": "draggable-resizable",
+            "attributes": {}
+          },
+          {
+            "tag": "div",
+            "id": "",
+            "class": "drag-resize-container color-bg-1",
+            "attributes": {}
+          }
+        ]
+      },
+      "nearestControl": {
+        "tag": "div",
+        "id": "",
+        "class": "bitunix-tab-nav flex-row-between-center border-bottom draggable-area max-md:py-0! overflow-hidden max-md:border-none! border-b-1px border-solid border-0 border-[var(--color-border)]",
+        "text": "",
+        "attributes": {},
+        "selector": "div.orderbook-view.h-100\\%:nth-of-type(1) > div.bitunix-tab-container.max-md\\:overflow-hidden\\! > div.bitunix-tab-nav.flex-row-between-center.border-bottom:nth-of-type(1)",
+        "selectorMatchCount": 1,
+        "rect": {
+          "x": 1081,
+          "y": 113,
+          "width": 309,
+          "height": 40
+        },
+        "style": {
+          "display": "flex",
+          "visibility": "visible",
+          "opacity": "1",
+          "pointerEvents": "auto"
+        },
+        "outerHTML": "[omitted: element HTML too large]",
+        "parentChain": [
+          {
+            "tag": "div",
+            "id": "",
+            "class": "bitunix-tab-nav flex-row-between-center border-bottom draggable-area max-md:py-0! overflow-hidden max-md:border-none! border-b-1px border-solid border-0 border-[var(--color-border)]",
+            "attributes": {}
+          },
+          {
+            "tag": "div",
+            "id": "",
+            "class": "bitunix-tab-container max-md:overflow-hidden!",
+            "attributes": {}
+          },
+          {
+            "tag": "div",
+            "id": "",
+            "class": "orderbook-view h-100%",
+            "attributes": {}
+          },
+          {
+            "tag": "div",
+            "id": "",
+            "class": "orderbook-container-7E807388 color-bg-2",
+            "attributes": {}
+          },
+          {
+            "tag": "div",
+            "id": "ExchangeList",
+            "class": "draggable-resizable",
+            "attributes": {}
+          },
+          {
+            "tag": "div",
+            "id": "",
+            "class": "drag-resize-container color-bg-1",
+            "attributes": {}
+          },
+          {
+            "tag": "div",
+            "id": "",
+            "class": "",
+            "attributes": {}
+          }
+        ]
+      },
+      "elementAtSavedPointer": {
+        "tag": "div",
+        "id": "",
+        "class": "nav-content relative max-md:w-full max-md:overflow-x-auto overflow-hidden px-16",
+        "text": "",
+        "attributes": {},
+        "selector": "div.orderbook-view.h-100\\%:nth-of-type(1) > div.bitunix-tab-container.max-md\\:overflow-hidden\\! > div.bitunix-tab-nav.flex-row-between-center.border-bottom:nth-of-type(1) > div.nav-content.relative.max-md\\:w-full:nth-of-type(1)",
+        "selectorMatchCount": 1,
+        "rect": {
+          "x": 1081,
+          "y": 113,
+          "width": 184,
+          "height": 39
+        },
+        "style": {
+          "display": "block",
+          "visibility": "visible",
+          "opacity": "1",
+          "pointerEvents": "auto"
+        },
+        "outerHTML": "<div data-v-5ab74309=\"\" class=\"nav-content relative max-md:w-full max-md:overflow-x-auto overflow-hidden px-16\"><div data-v-5ab74309=\"\" class=\"nav-item relative color-text-2 flex-row-start-center h39 overflow-x-auto\"><div data-v-5ab74309=\"\" data-id=\"1\" class=\"color-text-2 cursor-pointer nav-link fm-medium shrink-0 tab-item-id-1 nav-item-active\"><span data-v-5ab74309=\"\" class=\"nav-link-text\">Orderbook<!----></span><!----></div><div data-v-5ab74309=\"\" data-id=\"2\" class=\"color-text-2 cursor-pointer nav-link fm-medium shrink-0 tab-item-id-2\"><span data-v-5ab74309=\"\" class=\"nav-link-text\">Trades<!----></span><!----></div><!----><span data-v-5ab74309=\"\" class=\"nav-item-active-line\" style=\"width: 71px; left: 0px;\"></span></div><!----><!----></div>",
+        "parentChain": [
+          {
+            "tag": "div",
+            "id": "",
+            "class": "nav-content relative max-md:w-full max-md:overflow-x-auto overflow-hidden px-16",
+            "attributes": {}
+          },
+          {
+            "tag": "div",
+            "id": "",
+            "class": "bitunix-tab-nav flex-row-between-center border-bottom draggable-area max-md:py-0! overflow-hidden max-md:border-none! border-b-1px border-solid border-0 border-[var(--color-border)]",
+            "attributes": {}
+          },
+          {
+            "tag": "div",
+            "id": "",
+            "class": "bitunix-tab-container max-md:overflow-hidden!",
+            "attributes": {}
+          },
+          {
+            "tag": "div",
+            "id": "",
+            "class": "orderbook-view h-100%",
+            "attributes": {}
+          },
+          {
+            "tag": "div",
+            "id": "",
+            "class": "orderbook-container-7E807388 color-bg-2",
+            "attributes": {}
+          },
+          {
+            "tag": "div",
+            "id": "ExchangeList",
+            "class": "draggable-resizable",
+            "attributes": {}
+          },
+          {
+            "tag": "div",
+            "id": "",
+            "class": "drag-resize-container color-bg-1",
+            "attributes": {}
+          }
+        ]
+      },
+      "controlAtSavedPointer": {
+        "tag": "div",
+        "id": "",
+        "class": "bitunix-tab-nav flex-row-between-center border-bottom draggable-area max-md:py-0! overflow-hidden max-md:border-none! border-b-1px border-solid border-0 border-[var(--color-border)]",
+        "text": "",
+        "attributes": {},
+        "selector": "div.orderbook-view.h-100\\%:nth-of-type(1) > div.bitunix-tab-container.max-md\\:overflow-hidden\\! > div.bitunix-tab-nav.flex-row-between-center.border-bottom:nth-of-type(1)",
+        "selectorMatchCount": 1,
+        "rect": {
+          "x": 1081,
+          "y": 113,
+          "width": 309,
+          "height": 40
+        },
+        "style": {
+          "display": "flex",
+          "visibility": "visible",
+          "opacity": "1",
+          "pointerEvents": "auto"
+        },
+        "outerHTML": "[omitted: element HTML too large]",
+        "parentChain": [
+          {
+            "tag": "div",
+            "id": "",
+            "class": "bitunix-tab-nav flex-row-between-center border-bottom draggable-area max-md:py-0! overflow-hidden max-md:border-none! border-b-1px border-solid border-0 border-[var(--color-border)]",
+            "attributes": {}
+          },
+          {
+            "tag": "div",
+            "id": "",
+            "class": "bitunix-tab-container max-md:overflow-hidden!",
+            "attributes": {}
+          },
+          {
+            "tag": "div",
+            "id": "",
+            "class": "orderbook-view h-100%",
+            "attributes": {}
+          },
+          {
+            "tag": "div",
+            "id": "",
+            "class": "orderbook-container-7E807388 color-bg-2",
+            "attributes": {}
+          },
+          {
+            "tag": "div",
+            "id": "ExchangeList",
+            "class": "draggable-resizable",
+            "attributes": {}
+          },
+          {
+            "tag": "div",
+            "id": "",
+            "class": "drag-resize-container color-bg-1",
+            "attributes": {}
+          },
+          {
+            "tag": "div",
+            "id": "",
+            "class": "",
+            "attributes": {}
+          }
+        ]
+      },
+      "visibleRelatedTooltips": []
+    },
+    {
+      "label": "Reverse",
+      "capturedAt": "2026-11-14T20:09:44.266Z",
+      "pointerEventAt": "2026-11-14T20:09:43.009Z",
+      "frame": "top",
+      "frameUrl": "https://www.bitunix.com/contract-trade/XAUTUSDT",
+      "savedPointer": {
+        "x": 1527,
+        "y": 10
+      },
+      "hoveredElement": {
+        "tag": "div",
+        "id": "",
+        "class": "hover-opacity-80 h-100% px-12 flex-center cursor-pointer",
+        "text": "",
+        "attributes": {},
+        "selector": "div.nav-auth-trigger.nav-auth-trigger--avatar-effect.relative:nth-of-type(5) > div.hover-opacity-80.h-100\\%.px-12:nth-of-type(1)",
+        "selectorMatchCount": 1,
+        "rect": {
+          "x": 1509,
+          "y": 0,
+          "width": 50,
+          "height": 48
+        },
+        "style": {
+          "display": "flex",
+          "visibility": "visible",
+          "opacity": "1",
+          "pointerEvents": "auto"
+        },
+        "outerHTML": "<div data-v-50fea83e=\"\" class=\"hover-opacity-80 h-100% px-12 flex-center cursor-pointer\"><img src=\"https://img.bitunix.com/config/kv/avatar_img/aa7e0b0aa2024829abaf6b5a304aae28.png?x-oss-process=image/format,webp\" width=\"26\" height=\"26\" class=\"w-26 h-26 border-rd-50%\"></div>",
+        "parentChain": [
+          {
+            "tag": "div",
+            "id": "",
+            "class": "hover-opacity-80 h-100% px-12 flex-center cursor-pointer",
+            "attributes": {}
+          },
+          {
+            "tag": "div",
+            "id": "",
+            "class": "nav-auth-trigger nav-auth-trigger--avatar-effect relative h-100% bitunix-header-desktop-flash-guard",
+            "attributes": {}
+          },
+          {
+            "tag": "section",
+            "id": "",
+            "class": "max-md:gap-x-16 header-right relative z-1 h-100% flex shrink-0 items-center justify-end color-text-head-1 pe-12 max-md:pe-0",
+            "attributes": {}
+          },
+          {
+            "tag": "div",
+            "id": "",
+            "class": "header-wrapper-main flex-row-between-center min-w-0 max-w-full header-wrapper-dark h-48 header-wrapper-main--pc-bg-layer is-header-at-top header-wrapper-main--desktop-blur header-wrapper-main--compact max-md:py-0 max-md:px-15 max-md:impact-border",
+            "attributes": {}
+          },
+          {
+            "tag": "header",
+            "id": "",
+            "class": "position-initial",
+            "attributes": {}
+          },
+          {
+            "tag": "div",
+            "id": "",
+            "class": "bitunix-layout bitunix-layout-contract-only bx-color-bg-fg bitunix-layout--bg-big-page",
+            "attributes": {}
+          },
+          {
+            "tag": "div",
+            "id": "__nuxt",
+            "class": "",
+            "attributes": {}
+          }
+        ]
+      },
+      "nearestControl": {
+        "tag": "div",
+        "id": "",
+        "class": "header-wrapper-main flex-row-between-center min-w-0 max-w-full header-wrapper-dark h-48 header-wrapper-main--pc-bg-layer is-header-at-top header-wrapper-main--desktop-blur header-wrapper-main--compact max-md:py-0 max-md:px-15 max-md:impact-border",
+        "text": "",
+        "attributes": {},
+        "selector": "div.header-wrapper-main.flex-row-between-center.min-w-0:nth-of-type(2)",
+        "selectorMatchCount": 1,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 1701,
+          "height": 48
+        },
+        "style": {
+          "display": "flex",
+          "visibility": "visible",
+          "opacity": "1",
+          "pointerEvents": "auto"
+        },
+        "outerHTML": "[omitted: element HTML too large]",
+        "parentChain": [
+          {
+            "tag": "div",
+            "id": "",
+            "class": "header-wrapper-main flex-row-between-center min-w-0 max-w-full header-wrapper-dark h-48 header-wrapper-main--pc-bg-layer is-header-at-top header-wrapper-main--desktop-blur header-wrapper-main--compact max-md:py-0 max-md:px-15 max-md:impact-border",
+            "attributes": {}
+          },
+          {
+            "tag": "header",
+            "id": "",
+            "class": "position-initial",
+            "attributes": {}
+          },
+          {
+            "tag": "div",
+            "id": "",
+            "class": "bitunix-layout bitunix-layout-contract-only bx-color-bg-fg bitunix-layout--bg-big-page",
+            "attributes": {}
+          },
+          {
+            "tag": "div",
+            "id": "__nuxt",
+            "class": "",
+            "attributes": {}
+          },
+          {
+            "tag": "body",
+            "id": "",
+            "class": "zendesk-launcher-hidden",
+            "attributes": {}
+          },
+          {
+            "tag": "html",
+            "id": "",
+            "class": "",
+            "attributes": {}
+          }
+        ]
+      },
+      "elementAtSavedPointer": {
+        "tag": "div",
+        "id": "",
+        "class": "hover-opacity-80 h-100% px-12 flex-center cursor-pointer",
+        "text": "",
+        "attributes": {},
+        "selector": "div.nav-auth-trigger.nav-auth-trigger--avatar-effect.relative:nth-of-type(5) > div.hover-opacity-80.h-100\\%.px-12:nth-of-type(1)",
+        "selectorMatchCount": 1,
+        "rect": {
+          "x": 1509,
+          "y": 0,
+          "width": 50,
+          "height": 48
+        },
+        "style": {
+          "display": "flex",
+          "visibility": "visible",
+          "opacity": "1",
+          "pointerEvents": "auto"
+        },
+        "outerHTML": "<div data-v-50fea83e=\"\" class=\"hover-opacity-80 h-100% px-12 flex-center cursor-pointer\"><img src=\"https://img.bitunix.com/config/kv/avatar_img/aa7e0b0aa2024829abaf6b5a304aae28.png?x-oss-process=image/format,webp\" width=\"26\" height=\"26\" class=\"w-26 h-26 border-rd-50%\"></div>",
+        "parentChain": [
+          {
+            "tag": "div",
+            "id": "",
+            "class": "hover-opacity-80 h-100% px-12 flex-center cursor-pointer",
+            "attributes": {}
+          },
+          {
+            "tag": "div",
+            "id": "",
+            "class": "nav-auth-trigger nav-auth-trigger--avatar-effect relative h-100% bitunix-header-desktop-flash-guard",
+            "attributes": {}
+          },
+          {
+            "tag": "section",
+            "id": "",
+            "class": "max-md:gap-x-16 header-right relative z-1 h-100% flex shrink-0 items-center justify-end color-text-head-1 pe-12 max-md:pe-0",
+            "attributes": {}
+          },
+          {
+            "tag": "div",
+            "id": "",
+            "class": "header-wrapper-main flex-row-between-center min-w-0 max-w-full header-wrapper-dark h-48 header-wrapper-main--pc-bg-layer is-header-at-top header-wrapper-main--desktop-blur header-wrapper-main--compact max-md:py-0 max-md:px-15 max-md:impact-border",
+            "attributes": {}
+          },
+          {
+            "tag": "header",
+            "id": "",
+            "class": "position-initial",
+            "attributes": {}
+          },
+          {
+            "tag": "div",
+            "id": "",
+            "class": "bitunix-layout bitunix-layout-contract-only bx-color-bg-fg bitunix-layout--bg-big-page",
+            "attributes": {}
+          },
+          {
+            "tag": "div",
+            "id": "__nuxt",
+            "class": "",
+            "attributes": {}
+          }
+        ]
+      },
+      "controlAtSavedPointer": {
+        "tag": "div",
+        "id": "",
+        "class": "header-wrapper-main flex-row-between-center min-w-0 max-w-full header-wrapper-dark h-48 header-wrapper-main--pc-bg-layer is-header-at-top header-wrapper-main--desktop-blur header-wrapper-main--compact max-md:py-0 max-md:px-15 max-md:impact-border",
+        "text": "",
+        "attributes": {},
+        "selector": "div.header-wrapper-main.flex-row-between-center.min-w-0:nth-of-type(2)",
+        "selectorMatchCount": 1,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 1701,
+          "height": 48
+        },
+        "style": {
+          "display": "flex",
+          "visibility": "visible",
+          "opacity": "1",
+          "pointerEvents": "auto"
+        },
+        "outerHTML": "[omitted: element HTML too large]",
+        "parentChain": [
+          {
+            "tag": "div",
+            "id": "",
+            "class": "header-wrapper-main flex-row-between-center min-w-0 max-w-full header-wrapper-dark h-48 header-wrapper-main--pc-bg-layer is-header-at-top header-wrapper-main--desktop-blur header-wrapper-main--compact max-md:py-0 max-md:px-15 max-md:impact-border",
+            "attributes": {}
+          },
+          {
+            "tag": "header",
+            "id": "",
+            "class": "position-initial",
+            "attributes": {}
+          },
+          {
+            "tag": "div",
+            "id": "",
+            "class": "bitunix-layout bitunix-layout-contract-only bx-color-bg-fg bitunix-layout--bg-big-page",
+            "attributes": {}
+          },
+          {
+            "tag": "div",
+            "id": "__nuxt",
+            "class": "",
+            "attributes": {}
+          },
+          {
+            "tag": "body",
+            "id": "",
+            "class": "zendesk-launcher-hidden",
+            "attributes": {}
+          },
+          {
+            "tag": "html",
+            "id": "",
+            "class": "",
+            "attributes": {}
+          }
+        ]
+      },
+      "visibleRelatedTooltips": []
+    },
+    {
+      "label": "Reverse",
+      "capturedAt": "2026-11-14T20:09:45.740Z",
+      "pointerEventAt": "2026-11-14T20:09:43.009Z",
+      "frame": "top",
+      "frameUrl": "https://www.bitunix.com/contract-trade/XAUTUSDT",
+      "savedPointer": {
+        "x": 1527,
+        "y": 10
+      },
+      "hoveredElement": {
+        "tag": "div",
+        "id": "",
+        "class": "hover-opacity-80 h-100% px-12 flex-center cursor-pointer",
+        "text": "",
+        "attributes": {},
+        "selector": "div.nav-auth-trigger.nav-auth-trigger--avatar-effect.relative:nth-of-type(5) > div.hover-opacity-80.h-100\\%.px-12:nth-of-type(1)",
+        "selectorMatchCount": 1,
+        "rect": {
+          "x": 1509,
+          "y": 0,
+          "width": 50,
+          "height": 48
+        },
+        "style": {
+          "display": "flex",
+          "visibility": "visible",
+          "opacity": "1",
+          "pointerEvents": "auto"
+        },
+        "outerHTML": "<div data-v-50fea83e=\"\" class=\"hover-opacity-80 h-100% px-12 flex-center cursor-pointer\"><img src=\"https://img.bitunix.com/config/kv/avatar_img/aa7e0b0aa2024829abaf6b5a304aae28.png?x-oss-process=image/format,webp\" width=\"26\" height=\"26\" class=\"w-26 h-26 border-rd-50%\"></div>",
+        "parentChain": [
+          {
+            "tag": "div",
+            "id": "",
+            "class": "hover-opacity-80 h-100% px-12 flex-center cursor-pointer",
+            "attributes": {}
+          },
+          {
+            "tag": "div",
+            "id": "",
+            "class": "nav-auth-trigger nav-auth-trigger--avatar-effect relative h-100% bitunix-header-desktop-flash-guard",
+            "attributes": {}
+          },
+          {
+            "tag": "section",
+            "id": "",
+            "class": "max-md:gap-x-16 header-right relative z-1 h-100% flex shrink-0 items-center justify-end color-text-head-1 pe-12 max-md:pe-0",
+            "attributes": {}
+          },
+          {
+            "tag": "div",
+            "id": "",
+            "class": "header-wrapper-main flex-row-between-center min-w-0 max-w-full header-wrapper-dark h-48 header-wrapper-main--pc-bg-layer is-header-at-top header-wrapper-main--desktop-blur header-wrapper-main--compact max-md:py-0 max-md:px-15 max-md:impact-border",
+            "attributes": {}
+          },
+          {
+            "tag": "header",
+            "id": "",
+            "class": "position-initial",
+            "attributes": {}
+          },
+          {
+            "tag": "div",
+            "id": "",
+            "class": "bitunix-layout bitunix-layout-contract-only bx-color-bg-fg bitunix-layout--bg-big-page",
+            "attributes": {}
+          },
+          {
+            "tag": "div",
+            "id": "__nuxt",
+            "class": "",
+            "attributes": {}
+          }
+        ]
+      },
+      "nearestControl": {
+        "tag": "div",
+        "id": "",
+        "class": "header-wrapper-main flex-row-between-center min-w-0 max-w-full header-wrapper-dark h-48 header-wrapper-main--pc-bg-layer is-header-at-top header-wrapper-main--desktop-blur header-wrapper-main--compact max-md:py-0 max-md:px-15 max-md:impact-border",
+        "text": "",
+        "attributes": {},
+        "selector": "div.header-wrapper-main.flex-row-between-center.min-w-0:nth-of-type(2)",
+        "selectorMatchCount": 1,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 1701,
+          "height": 48
+        },
+        "style": {
+          "display": "flex",
+          "visibility": "visible",
+          "opacity": "1",
+          "pointerEvents": "auto"
+        },
+        "outerHTML": "[omitted: element HTML too large]",
+        "parentChain": [
+          {
+            "tag": "div",
+            "id": "",
+            "class": "header-wrapper-main flex-row-between-center min-w-0 max-w-full header-wrapper-dark h-48 header-wrapper-main--pc-bg-layer is-header-at-top header-wrapper-main--desktop-blur header-wrapper-main--compact max-md:py-0 max-md:px-15 max-md:impact-border",
+            "attributes": {}
+          },
+          {
+            "tag": "header",
+            "id": "",
+            "class": "position-initial",
+            "attributes": {}
+          },
+          {
+            "tag": "div",
+            "id": "",
+            "class": "bitunix-layout bitunix-layout-contract-only bx-color-bg-fg bitunix-layout--bg-big-page",
+            "attributes": {}
+          },
+          {
+            "tag": "div",
+            "id": "__nuxt",
+            "class": "",
+            "attributes": {}
+          },
+          {
+            "tag": "body",
+            "id": "",
+            "class": "zendesk-launcher-hidden",
+            "attributes": {}
+          },
+          {
+            "tag": "html",
+            "id": "",
+            "class": "",
+            "attributes": {}
+          }
+        ]
+      },
+      "elementAtSavedPointer": {
+        "tag": "div",
+        "id": "",
+        "class": "hover-opacity-80 h-100% px-12 flex-center cursor-pointer",
+        "text": "",
+        "attributes": {},
+        "selector": "div.nav-auth-trigger.nav-auth-trigger--avatar-effect.relative:nth-of-type(5) > div.hover-opacity-80.h-100\\%.px-12:nth-of-type(1)",
+        "selectorMatchCount": 1,
+        "rect": {
+          "x": 1509,
+          "y": 0,
+          "width": 50,
+          "height": 48
+        },
+        "style": {
+          "display": "flex",
+          "visibility": "visible",
+          "opacity": "1",
+          "pointerEvents": "auto"
+        },
+        "outerHTML": "<div data-v-50fea83e=\"\" class=\"hover-opacity-80 h-100% px-12 flex-center cursor-pointer\"><img src=\"https://img.bitunix.com/config/kv/avatar_img/aa7e0b0aa2024829abaf6b5a304aae28.png?x-oss-process=image/format,webp\" width=\"26\" height=\"26\" class=\"w-26 h-26 border-rd-50%\"></div>",
+        "parentChain": [
+          {
+            "tag": "div",
+            "id": "",
+            "class": "hover-opacity-80 h-100% px-12 flex-center cursor-pointer",
+            "attributes": {}
+          },
+          {
+            "tag": "div",
+            "id": "",
+            "class": "nav-auth-trigger nav-auth-trigger--avatar-effect relative h-100% bitunix-header-desktop-flash-guard",
+            "attributes": {}
+          },
+          {
+            "tag": "section",
+            "id": "",
+            "class": "max-md:gap-x-16 header-right relative z-1 h-100% flex shrink-0 items-center justify-end color-text-head-1 pe-12 max-md:pe-0",
+            "attributes": {}
+          },
+          {
+            "tag": "div",
+            "id": "",
+            "class": "header-wrapper-main flex-row-between-center min-w-0 max-w-full header-wrapper-dark h-48 header-wrapper-main--pc-bg-layer is-header-at-top header-wrapper-main--desktop-blur header-wrapper-main--compact max-md:py-0 max-md:px-15 max-md:impact-border",
+            "attributes": {}
+          },
+          {
+            "tag": "header",
+            "id": "",
+            "class": "position-initial",
+            "attributes": {}
+          },
+          {
+            "tag": "div",
+            "id": "",
+            "class": "bitunix-layout bitunix-layout-contract-only bx-color-bg-fg bitunix-layout--bg-big-page",
+            "attributes": {}
+          },
+          {
+            "tag": "div",
+            "id": "__nuxt",
+            "class": "",
+            "attributes": {}
+          }
+        ]
+      },
+      "controlAtSavedPointer": {
+        "tag": "div",
+        "id": "",
+        "class": "header-wrapper-main flex-row-between-center min-w-0 max-w-full header-wrapper-dark h-48 header-wrapper-main--pc-bg-layer is-header-at-top header-wrapper-main--desktop-blur header-wrapper-main--compact max-md:py-0 max-md:px-15 max-md:impact-border",
+        "text": "",
+        "attributes": {},
+        "selector": "div.header-wrapper-main.flex-row-between-center.min-w-0:nth-of-type(2)",
+        "selectorMatchCount": 1,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 1701,
+          "height": 48
+        },
+        "style": {
+          "display": "flex",
+          "visibility": "visible",
+          "opacity": "1",
+          "pointerEvents": "auto"
+        },
+        "outerHTML": "[omitted: element HTML too large]",
+        "parentChain": [
+          {
+            "tag": "div",
+            "id": "",
+            "class": "header-wrapper-main flex-row-between-center min-w-0 max-w-full header-wrapper-dark h-48 header-wrapper-main--pc-bg-layer is-header-at-top header-wrapper-main--desktop-blur header-wrapper-main--compact max-md:py-0 max-md:px-15 max-md:impact-border",
+            "attributes": {}
+          },
+          {
+            "tag": "header",
+            "id": "",
+            "class": "position-initial",
+            "attributes": {}
+          },
+          {
+            "tag": "div",
+            "id": "",
+            "class": "bitunix-layout bitunix-layout-contract-only bx-color-bg-fg bitunix-layout--bg-big-page",
+            "attributes": {}
+          },
+          {
+            "tag": "div",
+            "id": "__nuxt",
+            "class": "",
+            "attributes": {}
+          },
+          {
+            "tag": "body",
+            "id": "",
+            "class": "zendesk-launcher-hidden",
+            "attributes": {}
+          },
+          {
+            "tag": "html",
+            "id": "",
+            "class": "",
+            "attributes": {}
+          }
+        ]
+      },
+      "visibleRelatedTooltips": []
+    }
+  ]
+}
+
+
+دستیار | پیام 24 | 11/14/2026, 11:45:12 PM
+------------------------------------------------------------
+
+Worked for 46s
+
+
+کاربر | پیام 25 | 11/14/2026, 11:45:13 PM
+------------------------------------------------------------
+
+نمیدانم ایا درست انجام دادم یا نه
+
+
+دستیار | پیام 26 | 11/14/2026, 11:45:48 PM
+------------------------------------------------------------
+
+Worked for 35s
+
+
+دستیار | پیام 27 | 11/14/2026, 11:45:48 PM
+------------------------------------------------------------
+
+نگران نباش؛ کد را درست اجرا کردی، اما **موس روی دکمه‌های موردنظر قرار نگرفته بود.** بنابراین گزارش را دریافت کردیم، ولی اطلاعات Close و Reverse هنوز ثبت نشده است.
+
+از روی مختصات گزارش مشخص است:
+
+- **Capture Close:** موس روی بخش بالای پنجره Orderbook و تب‌های Orderbook و Trades بوده است.
+- **Capture Reverse:** موس روی آیکون پروفایل حساب در گوشه بالای صفحه بوده است.
+
+<badge color="success">هیچ خطری ایجاد نشده</badge>
+
+طبق گزارش، هیچ دکمه‌ای در صرافی کلیک نشده و هیچ سفارشی هم ارسال نشده است.
+
+### حالا چه کار کنیم؟
+
+فعلاً کد را دوباره اجرا نکن.
+
+دو تا اسکرین‌شات برایم بفرست:
+
+۱. موس را دقیقاً روی دکمه **Close** ببر، طوری که خود دکمه و محل قرارگیری آن مشخص باشد.
+
+۲. موس را دقیقاً روی دکمه **Reverse** ببر و اسکرین‌شات بگیر.
+
+با دیدن محل دقیق این دو کنترل، کد تشخیصی را اصلاح می‌کنم تا این بار عنصر درست را ثبت کنیم. **هیچ‌کدام از دکمه‌های واقعی Close و Reverse را فشار نده.**
+
+
+کاربر | پیام 28 | 11/14/2026, 11:47:50 PM
+------------------------------------------------------------
+
+با عکس میتونی تشخیص بدی؟!
+
+
+دستیار | پیام 29 | 11/14/2026, 11:47:56 PM
+------------------------------------------------------------
+
+Worked for 5s
+
+
+دستیار | پیام 30 | 11/14/2026, 11:47:56 PM
+------------------------------------------------------------
+
+بله، حتماً. اتفاقاً با عکس خیلی راحت‌تر می‌توانم محل دقیق دکمه‌ها را تشخیص بدهم.
+
+دو اسکرین‌شات بفرست:
+
+1. تصویر چارت وقتی موس روی **Close** قرار گرفته.
+2. تصویر چارت وقتی موس روی **Reverse** قرار گرفته.
+
+بهتر است تصویر کمی بازتر باشد تا چارت، خط پوزیشن و دکمه‌ها مشخص باشند.
+
+از روی عکس راهنمایی‌ات می‌کنم دقیقاً موس را کجا ببری و بعد کد تشخیصی را درست می‌کنیم. فعلاً هیچ دکمه معاملاتی را فشار نده.
+
+
+کاربر | پیام 31 | 11/14/2026, 11:48:25 PM
+------------------------------------------------------------
+
+اگر من چارت را فردا بزرگ کردم و تمام صفحه کردم، به هم میخوره ایا؟
+
+
+دستیار | پیام 32 | 11/14/2026, 11:48:35 PM
+------------------------------------------------------------
+
+Worked for 8s
+
+
+دستیار | پیام 33 | 11/14/2026, 11:48:35 PM
+------------------------------------------------------------
+
+نه، مشکلی ایجاد نمی‌کند. اتفاقاً بهتر است بررسی را در همان حالتی انجام بدهیم که قرار است بعداً معامله کنی.
+
+فقط دو نکته:
+
+1. با بزرگ و تمام‌صفحه کردن چارت، مختصات دکمه‌های Close و Reverse تغییر می‌کند.
+2. ممکن است ساختار ظاهری بعضی عناصر هم تغییر کند؛ بنابراین نباید مختصات فعلی را مبنای کدنویسی قرار بدهیم.
+
+**پیشنهاد من:** فردا ابتدا چارت را به اندازه دلخواهت بزرگ کن، بعد از آن دو عکس از محل Close و Reverse بگیر. ما Selectorها را برای همان حالت بررسی می‌کنیم و افزونه را طوری می‌سازیم که به مختصات ثابت صفحه وابسته نباشد.
+
+
+کاربر | پیام 34 | 11/14/2026, 11:49:16 PM
+------------------------------------------------------------
+
+پس بذار 4 تا عکس بدم. دو تا چارت بزرگ شده و دو تا چارت کوچک
+
+
+دستیار | پیام 35 | 11/14/2026, 11:49:17 PM
+------------------------------------------------------------
+
+Worked for a second
+
+
+دستیار | پیام 36 | 11/14/2026, 11:49:17 PM
+------------------------------------------------------------
+
+عالیه، همین کار رو انجام بده. هر چهار عکس رو بفرست:
+
+- چارت کوچک: یک عکس از Close و یک عکس از Reverse
+- چارت بزرگ: یک عکس از Close و یک عکس از Reverse
+
+من هر چهار تصویر رو مقایسه می‌کنم تا مشخص بشه کنترل‌ها در هر دو اندازه کجا ظاهر می‌شن و آیا ساختار یا محل قرارگیری‌شون تغییر می‌کنه.
+
+فعلاً هیچ‌کدوم از دکمه‌های معاملاتی رو کلیک نکن.
+
+
+کاربر | پیام 37 | 11/14/2026, 11:54:05 PM
+------------------------------------------------------------
+
+[Screenshot (2297).png](https://github.com/artaville/KCEX-Enhancer/blob/main/Screenshot%20\(2297\).png "Screenshot (2297).png") &#x20;
+[Screenshot (2298).png](https://github.com/artaville/KCEX-Enhancer/blob/main/Screenshot%20\(2298\).png "Screenshot (2298).png") &#x20;
+[Screenshot (2299).png](https://github.com/artaville/KCEX-Enhancer/blob/main/Screenshot%20\(2299\).png "Screenshot (2299).png") &#x20;
+[Screenshot (2300).png](https://github.com/artaville/KCEX-Enhancer/blob/main/Screenshot%20\(2300\).png "Screenshot (2300).png")
+
+
+دستیار | پیام 38 | 11/14/2026, 11:54:09 PM
+------------------------------------------------------------
+
+چهار تصویر را از مخزن بررسی می‌کنم و تطبیق می‌دهم که کدام‌ها مربوط به چارت کوچک و بزرگ و کدام‌ها مربوط به Close و Reverse هستند. بعد از روی خود تصاویر، محل کنترل‌ها و تفاوت چیدمان را مشخص می‌کنم.
+
+
+دستیار | پیام 39 | 11/14/2026, 11:54:23 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_file","args":{"repository_full_name":"artaville/KCEX-Enhancer","path":"Screenshot (2297).png","encoding":"base64"}}
+
+
+دستیار | پیام 40 | 11/14/2026, 11:54:23 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_file","args":{"repository_full_name":"artaville/KCEX-Enhancer","path":"Screenshot (2298).png","encoding":"base64"}}
+
+
+دستیار | پیام 41 | 11/14/2026, 11:54:24 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_file","args":{"repository_full_name":"artaville/KCEX-Enhancer","path":"Screenshot (2299).png","encoding":"base64"}}
+
+
+دستیار | پیام 42 | 11/14/2026, 11:54:25 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_file","args":{"repository_full_name":"artaville/KCEX-Enhancer","path":"Screenshot (2300).png","encoding":"base64"}}
+
+
+دستیار | پیام 43 | 11/14/2026, 11:54:30 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_file","args":{"repository_full_name":"artaville/KCEX-Enhancer","path":"Screenshot (2297).png","encoding":"base64"}}
+
+
+دستیار | پیام 44 | 11/14/2026, 11:54:35 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_file","args":{"repository_full_name":"artaville/KCEX-Enhancer","path":"Screenshot (2297).png","encoding":"base64"}}
+
+
+دستیار | پیام 45 | 11/14/2026, 11:54:35 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_file","args":{"repository_full_name":"artaville/KCEX-Enhancer","path":"Screenshot (2298).png","encoding":"base64"}}
+
+
+دستیار | پیام 46 | 11/14/2026, 11:54:36 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_file","args":{"repository_full_name":"artaville/KCEX-Enhancer","path":"Screenshot (2299).png","encoding":"base64"}}
+
+
+دستیار | پیام 47 | 11/14/2026, 11:54:36 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_file","args":{"repository_full_name":"artaville/KCEX-Enhancer","path":"Screenshot (2300).png","encoding":"base64"}}
+
+
+دستیار | پیام 48 | 11/14/2026, 11:56:05 PM
+------------------------------------------------------------
+
+Worked for 1m 58s
+
+
+دستیار | پیام 49 | 11/14/2026, 11:56:05 PM
+------------------------------------------------------------
+
+هر چهار عکس را دیدم. عالی هستند؛ دقیقاً همان چیزی بود که برای تشخیص بصری لازم داشتیم. هر چهار عکس هم با موفقیت قابل تفکیک‌اند.
+
+## نتیجه بررسی تصاویر
+
+<box gap={3}>
+  <row align=start gap={3}>
+    <AsyncImage query=""/>
+    <box flex="1" gap={1}>
+      **تصویر 2297 — چارت کوچک**
+
+      <badge color="success">Market close</badge>
+      عنوان Market close هنگام قرار گرفتن موس روی کنترل بستن پوزیشن ظاهر شده است.
+    </box>
+  </row>
+  <divider color="subtle"/>
+  <row align=start gap={3}>
+    <box flex="1" gap={1}>
+      **تصویر 2298 — چارت کوچک**
+
+      <badge color="success">Reverse</badge>
+      عنوان Reverse روی آیکون سبزرنگ دو فلش ظاهر شده است.
+    </box>
+    <text color="secondary" size="xs"> </text>
+  </row>
+  <divider color="subtle"/>
+  <row align=start gap={3}>
+    <box flex="1" gap={1}>
+      **تصویر 2299 — چارت بزرگ**
+
+      <badge color="success">Market close</badge>
+      همان کنترل بستن پوزیشن در انتهای نوار ابزار پوزیشن.
+    </box>
+  </row>
+  <divider color="subtle"/>
+  <row align=start gap={3}>
+    <box flex="1" gap={1}>
+      **تصویر 2300 — چارت بزرگ**
+
+      <badge color="success">Reverse</badge>
+      همان آیکون سبزرنگ Reverse در کنار کنترل بستن.
+    </box>
+  </row>
+</box>
+
+## نکته مهمی که از مقایسه مشخص شد
+
+<AsyncImageGroup query={[""]} aspectRatio="16:9"/>
+
+در هر دو حالت، کنترل‌ها به خط پوزیشن متصل هستند و ترتیب کلی آن‌ها ثابت است:
+
+- `TP` برای حد سود
+- `SL` برای حد ضرر
+- دکمه Reverse با آیکون دو فلش سبز
+- دکمه Market close با علامت ضربدر در انتهای نوار
+
+با بزرگ شدن چارت، جای این نوار روی صفحه جابه‌جا می‌شود؛ بنابراین نباید از مختصات ثابت استفاده کنیم.
+
+## وضعیت پروژه
+
+<badge color="success">تشخیص بصری Close و Reverse تکمیل شد</badge>
+
+یک اصلاح هم لازم است: کد Hover Audit قبلی هنگام حرکت موس از چارت به پنجره تشخیصی، مختصات عناصر دیگری را جایگزین می‌کرد. بنابراین گزارش قبلی تو اشتباه نبود؛ ایراد از روش ثبت من بود.
+
+**مرحله بعدی:** یک نسخه اصلاح‌شده از Hover Audit می‌سازیم که اطلاعات دکمه‌های واقعی را از داخل iframe چارت ثبت کند. هنوز Selector دقیق این دو دکمه را نداریم؛ تصاویر فقط هویت بصری و محل آن‌ها را مشخص کرده‌اند.
+
+
+کاربر | پیام 50 | 11/14/2026, 11:57:00 PM
+------------------------------------------------------------
+
+انجام بده
+
+
+دستیار | پیام 51 | 11/15/2026, 12:00:18 AM
+------------------------------------------------------------
+
+Worked for 3m 16s
+
+
+دستیار | پیام 52 | 11/15/2026, 12:00:18 AM
+------------------------------------------------------------
+
+بریم سراغ نسخه اصلاح‌شده. این نسخه مشکل گزارش قبلی را برطرف می‌کند: **موقعیت آخرین حرکت موس داخل iframe چارت را جداگانه نگه می‌دارد**؛ بنابراین وقتی برای ثبت گزارش موس را روی پنجره تشخیصی می‌بری، اطلاعات چارت جایگزین نمی‌شود.
+
+### مراحل اجرا
+
+۱. صفحه Bitunix را با پوزیشن باز نگه دار.
+
+۲. کلید `F12` را بزن و وارد تب **Console** شو. مطمئن شو محیط اجرای Console روی `top` است.
+
+۳. کد کامل زیر را یک‌جا اجرا کن.
+
+۴. موس را دقیقاً روی علامت `X` در نوار پوزیشن ببر. وقتی عبارت `Market close` ظاهر شد، موس را روی دکمه `Capture Close` در پنجره تشخیصی ببر و کلیک کن.
+
+۵. سپس موس را روی آیکون دو فلش سبزرنگ ببر. وقتی عبارت `Reverse` ظاهر شد، در پنجره تشخیصی روی `Capture Reverse` کلیک کن.
+
+۶. در پایان `Copy Report` را بزن و گزارش را برایم بفرست.
+
+### Hover Audit v2.0
+
+<CodeBlock language="javascript" editable>
+(() => {
+  "use strict";
+
+  const STATE_KEY = "__BITUNIX_HOVER_AUDIT_V2__";
+  const PANEL_ID = "bitunix-hover-audit-v2";
+
+  // Clean up an older run.
+  try {
+    window[STATE_KEY]?.destroy?.();
+  } catch (_) {}
+
+  const rootWin = window.top;
+  const rootDoc = rootWin.document;
+
+  const docs = [];
+  const seenDocs = new WeakSet();
+  const attachedDocs = new WeakSet();
+  const listeners = [];
+  const lastHits = new Map();
+  const captures = [];
+
+  let panel = null;
+  let statusEl = null;
+  let outputEl = null;
+  let tracking = true;
+
+  function clean(value, max = 180) {
+    return String(value ?? "")
+      .replace(/\s+/g, " ")
+      .trim()
+      .slice(0, max);
+  }
+
+  function classText(el) {
+    if (!el) return "";
+
+    if (typeof el.className === "string") {
+      return clean(el.className, 500);
+    }
+
+    return clean(el.getAttribute?.("class"), 500);
+  }
+
+  function safeText(el, max = 120) {
+    if (!el) return "";
+    return clean(el.innerText || el.textContent || "", max);
+  }
+
+  function readAttributes(el) {
+    const result = {};
+
+    const names = [
+      "aria-label",
+      "aria-describedby",
+      "title",
+      "data-tooltip",
+      "data-name",
+      "data-testid",
+      "data-test",
+      "role",
+      "type",
+      "tabindex",
+      "onclick"
+    ];
+
+    names.forEach(name => {
+      try {
+        const value = el.getAttribute?.(name);
+        if (value) result[name] = clean(value, 250);
+      } catch (_) {}
+    });
+
+    return result;
+  }
+
+  function getRect(el) {
+    try {
+      const r = el.getBoundingClientRect();
+
+      return {
+        x: Math.round(r.x),
+        y: Math.round(r.y),
+        width: Math.round(r.width),
+        height: Math.round(r.height)
+      };
+    } catch (_) {
+      return null;
+    }
+  }
+
+  function getFrameRect(frame) {
+    if (!frame) return null;
+
+    try {
+      const r = frame.getBoundingClientRect();
+
+      return {
+        x: Math.round(r.x),
+        y: Math.round(r.y),
+        width: Math.round(r.width),
+        height: Math.round(r.height)
+      };
+    } catch (_) {
+      return null;
+    }
+  }
+
+  function cssEscape(value, win) {
+    try {
+      return win.CSS.escape(value);
+    } catch (_) {
+      return String(value).replace(/[^a-zA-Z0-9_-]/g, "\\$&");
+    }
+  }
+
+  function buildSelector(el, doc) {
+    if (!el || el.nodeType !== 1) return "";
+
+    const win = doc.defaultView || rootWin;
+
+    if (el.id) {
+      const idSelector = "#" + cssEscape(el.id, win);
+
+      try {
+        if (doc.querySelectorAll(idSelector).length === 1) {
+          return idSelector;
+        }
+      } catch (_) {}
+    }
+
+    const parts = [];
+    let node = el;
+
+    for (let depth = 0; depth < 9 && node; depth++) {
+      let part = node.tagName.toLowerCase();
+
+      if (node.id) {
+        part += "#" + cssEscape(node.id, win);
+        parts.unshift(part);
+        break;
+      }
+
+      const classes = Array.from(node.classList || [])
+        .filter(Boolean)
+        .slice(0, 4);
+
+      classes.forEach(cls => {
+        part += "." + cssEscape(cls, win);
+      });
+
+      const parent = node.parentElement;
+
+      if (parent) {
+        const sameTag = Array.from(parent.children)
+          .filter(child => child.tagName === node.tagName);
+
+        if (sameTag.length > 1) {
+          part += ":nth-of-type(" +
+            (sameTag.indexOf(node) + 1) + ")";
+        }
+      }
+
+      parts.unshift(part);
+
+      const candidate = parts.join(" > ");
+
+      try {
+        if (doc.querySelectorAll(candidate).length === 1) {
+          return candidate;
+        }
+      } catch (_) {}
+
+      node = parent;
+    }
+
+    return parts.join(" > ");
+  }
+
+  function isDiagnosticPanel(target) {
+    try {
+      return Boolean(panel && panel.contains(target));
+    } catch (_) {
+      return false;
+    }
+  }
+
+  function addDocument(doc, label, frameElement = null) {
+    if (!doc || seenDocs.has(doc)) return;
+
+    seenDocs.add(doc);
+
+    const entry = {
+      doc,
+      label,
+      frameElement
+    };
+
+    docs.push(entry);
+    attachPointerListeners(entry);
+
+    let frames = [];
+
+    try {
+      frames = Array.from(doc.querySelectorAll("iframe"));
+    } catch (_) {}
+
+    frames.forEach((frame, index) => {
+      try {
+        if (frame.contentDocument?.documentElement) {
+          addDocument(
+            frame.contentDocument,
+            label + " > iframe[" + index + "]",
+            frame
+          );
+        }
+      } catch (_) {
+        // Cross-origin frames are intentionally skipped.
+      }
+    });
+  }
+
+  function attachPointerListeners(entry) {
+    if (attachedDocs.has(entry.doc)) return;
+
+    attachedDocs.add(entry.doc);
+
+    function handler(event) {
+      if (!tracking) return;
+
+      const target = event.target;
+
+      if (!target) return;
+
+      // Ignore interactions with our own popup.
+      if (
+        entry.doc === rootDoc &&
+        isDiagnosticPanel(target)
+      ) {
+        return;
+      }
+
+      // The parent document should not replace chart-frame data
+      // with pointer events on the iframe element itself.
+      if (
+        entry.doc === rootDoc &&
+        target.tagName?.toLowerCase() === "iframe"
+      ) {
+        return;
+      }
+
+      lastHits.set(entry.label, {
+        entry,
+        time: Date.now(),
+        eventType: event.type,
+        clientX: event.clientX,
+        clientY: event.clientY,
+        pointerType: event.pointerType || "unknown"
+      });
+
+      if (statusEl && entry.frameElement) {
+        statusEl.textContent =
+          "موس داخل چارت ثبت شد: " +
+          entry.label +
+          " | مختصات " +
+          Math.round(event.clientX) +
+          ", " +
+          Math.round(event.clientY);
+      }
+    }
+
+    entry.doc.addEventListener("pointermove", handler, true);
+    entry.doc.addEventListener("pointerover", handler, true);
+
+    listeners.push({
+      doc: entry.doc,
+      handler
+    });
+  }
+
+  function elementInfo(el, doc) {
+    if (!el || el.nodeType !== 1) return null;
+
+    const win = doc.defaultView || rootWin;
+
+    let computed = {};
+
+    try {
+      const s = win.getComputedStyle(el);
+
+      computed = {
+        display: s.display,
+        visibility: s.visibility,
+        opacity: s.opacity,
+        pointerEvents: s.pointerEvents,
+        cursor: s.cursor,
+        position: s.position,
+        zIndex: s.zIndex
+      };
+    } catch (_) {}
+
+    const selector = buildSelector(el, doc);
+
+    let selectorMatchCount = null;
+
+    try {
+      selectorMatchCount = doc.querySelectorAll(selector).length;
+    } catch (_) {}
+
+    let html = "";
+
+    try {
+      html = String(el.outerHTML || "").slice(0, 1100);
+    } catch (_) {}
+
+    return {
+      tag: el.tagName?.toLowerCase() || "",
+      id: clean(el.id, 150),
+      class: classText(el),
+      text: safeText(el),
+      attributes: readAttributes(el),
+      selector,
+      selectorMatchCount,
+      rect: getRect(el),
+      computedStyle: computed,
+      outerHTML: html
+    };
+  }
+
+  function getElementStack(doc, x, y) {
+    let elements = [];
+
+    try {
+      if (typeof doc.elementsFromPoint === "function") {
+        elements = doc.elementsFromPoint(x, y);
+      } else {
+        const el = doc.elementFromPoint(x, y);
+        elements = el ? [el] : [];
+      }
+    } catch (_) {}
+
+    const unique = [];
+    const seen = new Set();
+
+    for (const el of elements) {
+      if (!el || seen.has(el)) continue;
+      seen.add(el);
+
+      unique.push(elementInfo(el, doc));
+
+      if (unique.length >= 12) break;
+    }
+
+    return unique;
+  }
+
+  function getAncestorChain(doc, x, y) {
+    let node = null;
+
+    try {
+      node = doc.elementFromPoint(x, y);
+    } catch (_) {}
+
+    const chain = [];
+    let depth = 0;
+
+    while (node && node.nodeType === 1 && depth < 15) {
+      const win = doc.defaultView || rootWin;
+
+      let cursor = "";
+
+      try {
+        cursor = win.getComputedStyle(node).cursor;
+      } catch (_) {}
+
+      const tag = node.tagName?.toLowerCase() || "";
+      const attrs = readAttributes(node);
+
+      const buttonLike =
+        /^(button|a|input|select)$/.test(tag) ||
+        attrs.role === "button" ||
+        attrs["aria-label"] ||
+        attrs.title ||
+        attrs["data-tooltip"] ||
+        attrs["data-name"] ||
+        cursor === "pointer" ||
+        /button|btn|control|action|close|reverse|position|order/i.test(
+          classText(node)
+        );
+
+      chain.push({
+        depth,
+        tag,
+        id: clean(node.id, 120),
+        class: classText(node),
+        text: safeText(node, 100),
+        attributes: attrs,
+        cursor,
+        buttonLike,
+        selector: buildSelector(node, doc),
+        rect: getRect(node),
+        outerHTML: String(node.outerHTML || "").slice(0, 900)
+      });
+
+      node = node.parentElement;
+      depth++;
+    }
+
+    return chain;
+  }
+
+  function scanRelatedTooltips(doc) {
+    const result = [];
+    let elements = [];
+
+    try {
+      elements = Array.from(
+        doc.querySelectorAll(
+          "[title], [aria-label], [data-tooltip], " +
+          "[role='tooltip'], [class*='tooltip']"
+        )
+      );
+    } catch (_) {}
+
+    for (const el of elements.slice(0, 3000)) {
+      try {
+        const win = doc.defaultView || rootWin;
+        const style = win.getComputedStyle(el);
+        const rect = el.getBoundingClientRect();
+
+        if (
+          style.display === "none" ||
+          style.visibility === "hidden" ||
+          Number(style.opacity) === 0 ||
+          rect.width === 0 ||
+          rect.height === 0
+        ) {
+          continue;
+        }
+
+        const attrs = readAttributes(el);
+        const text = safeText(el, 160);
+
+        const allText = [
+          text,
+          attrs.title,
+          attrs["aria-label"],
+          attrs["data-tooltip"]
+        ].join(" ");
+
+        if (!/market\s*close|reverse/i.test(allText)) {
+          continue;
+        }
+
+        result.push({
+          tag: el.tagName.toLowerCase(),
+          class: classText(el),
+          text,
+          attributes: attrs,
+          selector: buildSelector(el, doc),
+          rect: getRect(el),
+          outerHTML: String(el.outerHTML || "").slice(0, 800)
+        });
+
+        if (result.length >= 25) break;
+      } catch (_) {}
+    }
+
+    return result;
+  }
+
+  function selectChartHit() {
+    const now = Date.now();
+
+    const candidates = [];
+
+    for (const hit of lastHits.values()) {
+      if (!hit.entry.frameElement) continue;
+
+      const age = now - hit.time;
+
+      if (age > 120000) continue;
+
+      candidates.push(hit);
+    }
+
+    if (!candidates.length) return null;
+
+    // Prefer the known TradingView chart iframe (iframe[0]).
+    candidates.sort((a, b) => {
+      const aPreferred =
+        a.entry.label.includes("iframe[0]") ? 1 : 0;
+
+      const bPreferred =
+        b.entry.label.includes("iframe[0]") ? 1 : 0;
+
+      if (aPreferred !== bPreferred) {
+        return bPreferred - aPreferred;
+      }
+
+      return b.time - a.time;
+    });
+
+    return candidates[0];
+  }
+
+  function buildCapture(label) {
+    const hit = selectChartHit();
+
+    if (!hit) {
+      statusEl.textContent =
+        "هنوز حرکت موس داخل iframe چارت ثبت نشده است. " +
+        "دوباره موس را روی کنترل چارت ببر و امتحان کن.";
+
+      return null;
+    }
+
+    const entry = hit.entry;
+    const doc = entry.doc;
+
+    const x = hit.clientX;
+    const y = hit.clientY;
+
+    let underPointer = null;
+
+    try {
+      underPointer = doc.elementFromPoint(x, y);
+    } catch (_) {}
+
+    const result = {
+      label,
+      capturedAt: new Date().toISOString(),
+      pointerEventAt: new Date(hit.time).toISOString(),
+      pointerAgeMs: Date.now() - hit.time,
+      eventType: hit.eventType,
+      pointerType: hit.pointerType,
+      frame: entry.label,
+
+      frameUrl: (() => {
+        try {
+          return doc.location.href;
+        } catch (_) {
+          return "";
+        }
+      })(),
+
+      frameRectangleInPage: getFrameRect(entry.frameElement),
+
+      savedPointer: {
+        x: Math.round(x),
+        y: Math.round(y)
+      },
+
+      elementStackAtPointer: getElementStack(doc, x, y),
+
+      ancestorChainAtPointer: getAncestorChain(doc, x, y),
+
+      relatedVisibleTooltips: scanRelatedTooltips(doc)
+    };
+
+    return result;
+  }
+
+  function reportObject() {
+    return {
+      reportName: "BITUNIX_HOVER_AUDIT",
+      version: "2.0",
+      generatedAt: new Date().toISOString(),
+
+      page: (() => {
+        try {
+          return rootDoc.location.href;
+        } catch (_) {
+          return "";
+        }
+      })(),
+
+      documentsScanned: docs.map(entry => ({
+        frame: entry.label,
+        url: (() => {
+          try {
+            return entry.doc.location.href;
+          } catch (_) {
+            return "";
+          }
+        })(),
+        frameRect: getFrameRect(entry.frameElement)
+      })),
+
+      safety: {
+        readOnly: true,
+        exchangeButtonsClicked: 0,
+        ordersSubmitted: 0,
+        networkRequestsMade: 0,
+        inputValuesRead: false,
+        privateAccountDataRead: false
+      },
+
+      captureSummary: {
+        totalCaptures: captures.length,
+        labels: captures.map(x => x.label)
+      },
+
+      captures
+    };
+  }
+
+  function updateOutput() {
+    if (outputEl) {
+      outputEl.value = JSON.stringify(reportObject(), null, 2);
+    }
+  }
+
+  function capture(label) {
+    const result = buildCapture(label);
+
+    if (!result) return;
+
+    captures.push(result);
+    updateOutput();
+
+    statusEl.textContent =
+      label +
+      " ثبت شد. قاب چارت: " +
+      result.frame +
+      " | سن داده: " +
+      result.pointerAgeMs +
+      "ms";
+  }
+
+  function rescanFrames() {
+    addDocument(rootDoc, "top", null);
+
+    statusEl.textContent =
+      "اسکن مجدد انجام شد. تعداد اسناد قابل دسترسی: " +
+      docs.length;
+  }
+
+  function makeButton(label, color) {
+    const button = rootDoc.createElement("button");
+
+    button.type = "button";
+    button.textContent = label;
+
+    button.style.cssText = [
+      "border:0",
+      "border-radius:6px",
+      "padding:8px 10px",
+      "cursor:pointer",
+      "color:#fff",
+      "font-weight:bold",
+      "font-size:12px",
+      "background:" + color
+    ].join(";");
+
+    return button;
+  }
+
+  // Create the diagnostic popup.
+  panel = rootDoc.createElement("div");
+  panel.id = PANEL_ID;
+
+  panel.style.cssText = [
+    "position:fixed",
+    "z-index:2147483647",
+    "top:58px",
+    "left:12px",
+    "width:min(390px,88vw)",
+    "background:#101820",
+    "color:#eaf2f5",
+    "border:1px solid #405965",
+    "border-radius:11px",
+    "box-shadow:0 8px 35px rgba(0,0,0,.55)",
+    "padding:12px",
+    "font:12px Arial,sans-serif",
+    "display:flex",
+    "flex-direction:column",
+    "gap:9px"
+  ].join(";");
+
+  const heading = rootDoc.createElement("strong");
+  heading.textContent = "Bitunix Hover Audit v2.0";
+
+  statusEl = rootDoc.createElement("div");
+  statusEl.textContent =
+    "ابتدا موس را روی Close یا Reverse در داخل چارت ببر.";
+
+  statusEl.style.cssText =
+    "color:#b8ccd4;line-height:1.5;overflow-wrap:anywhere";
+
+  const buttonRow = rootDoc.createElement("div");
+  buttonRow.style.cssText =
+    "display:flex;flex-wrap:wrap;gap:6px";
+
+  const closeButton = makeButton("Capture Close", "#087f69");
+  const reverseButton = makeButton("Capture Reverse", "#2767a8");
+  const copyButton = makeButton("Copy Report", "#7554a5");
+  const rescanButton = makeButton("Rescan Frames", "#59636b");
+  const clearButton = makeButton("Clear", "#59636b");
+  const stopButton = makeButton("Stop", "#a34b43");
+
+  closeButton.addEventListener("click", () => capture("Close"));
+  reverseButton.addEventListener("click", () => capture("Reverse"));
+
+  rescanButton.addEventListener("click", rescanFrames);
+
+  clearButton.addEventListener("click", () => {
+    captures.length = 0;
+    updateOutput();
+    statusEl.textContent = "ثبت‌ها پاک شدند.";
+  });
+
+  stopButton.addEventListener("click", () => {
+    tracking = false;
+    statusEl.textContent =
+      "ردیابی متوقف شد؛ گزارش‌های قبلی همچنان قابل کپی هستند.";
+  });
+
+  copyButton.addEventListener("click", async () => {
+    updateOutput();
+
+    try {
+      await rootWin.navigator.clipboard.writeText(outputEl.value);
+
+      statusEl.textContent =
+        "گزارش کپی شد. آن را همین‌جا برای ChatGPT بفرست.";
+    } catch (_) {
+      outputEl.focus();
+      outputEl.select();
+
+      try {
+        rootDoc.execCommand("copy");
+      } catch (_) {}
+
+      statusEl.textContent =
+        "متن انتخاب شد؛ Ctrl+C را بزن و گزارش را کپی کن.";
+    }
+  });
+
+  buttonRow.append(
+    closeButton,
+    reverseButton,
+    copyButton,
+    rescanButton,
+    clearButton,
+    stopButton
+  );
+
+  outputEl = rootDoc.createElement("textarea");
+  outputEl.readOnly = true;
+  outputEl.value = JSON.stringify(reportObject(), null, 2);
+
+  outputEl.style.cssText = [
+    "width:100%",
+    "height:105px",
+    "box-sizing:border-box",
+    "resize:vertical",
+    "background:#071016",
+    "color:#bce6dc",
+    "border:1px solid #344b56",
+    "border-radius:7px",
+    "padding:8px",
+    "font:11px Consolas,monospace"
+  ].join(";");
+
+  const note = rootDoc.createElement("div");
+  note.textContent =
+    "اطلاعات آخرین نقطه موس در iframe چارت نگهداری می‌شود. " +
+    "پس از Hover می‌توانی موس را به این پنجره بیاوری و Capture را بزنی.";
+
+  note.style.cssText =
+    "color:#91a6af;font-size:11px;line-height:1.5";
+
+  const closePanelButton = makeButton("Close Panel", "#39464f");
+
+  closePanelButton.addEventListener("click", () => {
+    rootWin[STATE_KEY]?.destroy?.();
+  });
+
+  panel.append(
+    heading,
+    statusEl,
+    buttonRow,
+    outputEl,
+    note,
+    closePanelButton
+  );
+
+  (rootDoc.body || rootDoc.documentElement).appendChild(panel);
+
+  function destroy() {
+    tracking = false;
+
+    listeners.forEach(item => {
+      try {
+        item.doc.removeEventListener(
+          "pointermove",
+          item.handler,
+          true
+        );
+
+        item.doc.removeEventListener(
+          "pointerover",
+          item.handler,
+          true
+        );
+      } catch (_) {}
+    });
+
+    try {
+      panel?.remove();
+    } catch (_) {}
+
+    try {
+      delete rootWin[STATE_KEY];
+    } catch (_) {}
+  }
+
+  rootWin[STATE_KEY] = { destroy };
+
+  console.log(
+    "BITUNIX HOVER AUDIT v2.0 started.",
+    "Documents scanned:",
+    docs.length,
+    docs.map(x => x.label)
+  );
+
+  statusEl.textContent =
+    "آماده است. موس را روی کنترل واقعی در iframe چارت ببر.";
+})();
+</CodeBlock>
+
+**یک نکته مهم:** این بار گزارش باید در بخش `frame` نام `top > iframe[0]` را نشان بدهد، نه `top`. اگر این اتفاق نیفتاد، فعلاً گزارش ناقص است و لازم نیست دوباره پوزیشن باز کنی.
+
+این ابزار فقط اطلاعات DOM را می‌خواند؛ هیچ سفارشی ارسال نمی‌کند و Close یا Reverse را فشار نمی‌دهد.
+
+
+کاربر | پیام 53 | 11/15/2026, 12:04:32 AM
+------------------------------------------------------------
+
+حی میکنم کلوز رو گرفت و واکنش نشون داد ولی واسه ریورس واکنشی ندیدم. امیدوارم درست کار کرده باشه
+
+{
+  "reportName": "BITUNIX_HOVER_AUDIT",
+  "version": "2.0",
+  "generatedAt": "2026-11-14T20:33:19.656Z",
+  "page": "https://www.bitunix.com/contract-trade/XAUTUSDT",
+  "documentsScanned": [],
+  "safety": {
+    "readOnly": true,
+    "exchangeButtonsClicked": 0,
+    "ordersSubmitted": 0,
+    "networkRequestsMade": 0,
+    "inputValuesRead": false,
+    "privateAccountDataRead": false
+  },
+  "captureSummary": {
+    "totalCaptures": 0,
+    "labels": []
+  },
+  "captures": []
+}
+
+
+دستیار | پیام 54 | 11/15/2026, 12:06:20 AM
+------------------------------------------------------------
+
+Worked for 1m 47s
+
+
+دستیار | پیام 55 | 11/15/2026, 12:06:20 AM
+------------------------------------------------------------
+
+گزارشت را بررسی کردم. متأسفانه این فایل نشان می‌دهد که **هیچ‌کدام از دو کنترل واقعاً ثبت نشده‌اند**:
+
+- `documentsScanned: []` یعنی کد هیچ سندی از صفحه و چارت ثبت نکرده است.
+- `totalCaptures: 0` یعنی حتی یک نمونه از موس ذخیره نشده است.
+
+پس ممکن است هنگام رفتن روی Close واکنشی دیده باشی، اما گزارش فعلی آن را تأیید نمی‌کند. برای Reverse هم هنوز اطلاعاتی نداریم.
+
+احتمالاً مشکل از Context اجرای کد یا اتصال به iframe چارت بوده، نه از کاری که انجام دادی.
+
+## نسخه اصلاح‌شده Hover Audit v2.1
+
+این نسخه فقط iframe اصلی TradingView را پیدا می‌کند و حرکت موس را مستقیماً در همان iframe ثبت می‌کند. اطلاعات آخرین نقطه موس هم تا زمان فشردن دکمه Capture باقی می‌ماند.
+
+**مراحل اجرا:**
+
+۱. همان صفحه Bitunix را باز نگه دار.
+
+۲. `F12` را بزن و وارد Console شو. در منوی انتخاب Context بالای Console حتماً گزینه `top` را انتخاب کن.
+
+۳. کد زیر را کامل Paste و اجرا کن.
+
+۴. باید در پنجره تشخیصی پیام پیدا شدن چارت را ببینی.
+
+۵. روی کنترل Close موس را ببر، سپس در پنجره تشخیصی `Capture Close` را بزن. همین کار را برای Reverse تکرار کن.
+
+۶. در پایان `Copy Report` را بزن و گزارش را بفرست.
+
+<CodeBlock language="javascript" editable>
+(() => {
+  "use strict";
+
+  if (window !== window.top) {
+    console.error(
+      "لطفاً در Console گزینه top را انتخاب کن و کد را دوباره اجرا کن."
+    );
+    return;
+  }
+
+  const KEY = "__BITUNIX_HOVER_AUDIT_V21__";
+  const PANEL_ID = "bitunix-hover-audit-v21";
+
+  try {
+    window[KEY]?.destroy?.();
+  } catch (_) {}
+
+  const topDoc = document;
+  const frames = Array.from(topDoc.querySelectorAll("iframe"));
+  const frameRecords = [];
+
+  let chartFrame = null;
+  let chartDoc = null;
+
+  for (let i = 0; i < frames.length; i++) {
+    const frame = frames[i];
+
+    try {
+      const doc = frame.contentDocument;
+
+      if (!doc || !doc.documentElement) continue;
+
+      const url = (() => {
+        try { return doc.location.href; }
+        catch (_) { return ""; }
+      })();
+
+      const isTradingView = Boolean(
+        doc.querySelector(
+          '[aria-label="Candles"],' +
+          '[aria-label="Indicators & Strategies"],' +
+          '[aria-label^="Magnet Mode"],' +
+          '.chart-container'
+        )
+      );
+
+      frameRecords.push({
+        index: i,
+        url,
+        isTradingView,
+        buttons: doc.querySelectorAll("button").length
+      });
+
+      if (isTradingView && !chartDoc) {
+        chartFrame = frame;
+        chartDoc = doc;
+      }
+    } catch (_) {
+      frameRecords.push({
+        index: i,
+        accessible: false
+      });
+    }
+  }
+
+  if (!chartDoc) {
+    console.error("TradingView iframe پیدا نشد.", frameRecords);
+    alert(
+      "چارت پیدا نشد. مطمئن شو صفحه کامل بارگذاری شده و Console روی top است."
+    );
+    return;
+  }
+
+  const captures = [];
+  let lastHit = null;
+  let tracking = true;
+  let panel = null;
+  let status = null;
+  let output = null;
+
+  function clean(v, max = 250) {
+    return String(v ?? "")
+      .replace(/\s+/g, " ")
+      .trim()
+      .slice(0, max);
+  }
+
+  function cls(el) {
+    if (!el) return "";
+    return typeof el.className === "string"
+      ? clean(el.className, 500)
+      : clean(el.getAttribute?.("class"), 500);
+  }
+
+  function attrs(el) {
+    const result = {};
+
+    [
+      "aria-label",
+      "title",
+      "data-tooltip",
+      "data-name",
+      "data-testid",
+      "data-test",
+      "role",
+      "type"
+    ].forEach(name => {
+      const value = el.getAttribute?.(name);
+      if (value) result[name] = clean(value);
+    });
+
+    return result;
+  }
+
+  function selector(el) {
+    if (!el || el.nodeType !== 1) return "";
+
+    if (el.id) return "#" + CSS.escape(el.id);
+
+    const parts = [];
+    let node = el;
+
+    for (let i = 0; i < 8 && node; i++) {
+      let part = node.tagName.toLowerCase();
+
+      const classes = Array.from(node.classList || []).slice(0, 3);
+      for (const c of classes) {
+        part += "." + CSS.escape(c
+
+
+کاربر | پیام 56 | 11/15/2026, 12:07:58 AM
+------------------------------------------------------------
+
+ی کاری کن. یدونه دکمه استارت بذار. وقتی زدم 3 ثانیه فرصت بده و توی این سه ثانیه برم روی کلوز و سه ثانیه بشمره و بعد تموم بشه و کپچر کلوز رو بزنم و دوباره استارت بزنم برای ریورس و 3 ثانیه بشمره فرصت بده و برم روی ریورس و 3 ثانیه نگه دارم بشمره و بیام کپچر ریورس رو بزنم و کپی گزارشات
+
+
+دستیار | پیام 57 | 11/15/2026, 12:11:07 AM
+------------------------------------------------------------
+
+Worked for 3m 7s
+
+
+دستیار | پیام 58 | 11/15/2026, 12:11:07 AM
+------------------------------------------------------------
+
+دقیقاً همین‌طور انجامش می‌دهیم. این نسخه فقط **یک دکمه Start** دارد و برای هر دو کنترل از همان دکمه استفاده می‌کنی.
+
+ترتیب کار:
+
+<box border radius="lg" padding={3} gap={3}>
+  <list connector="solid" marker="number" gap={2}>
+    <list-item>
+      **روی Start کلیک می‌کنی.**
+
+      <text color="secondary" size="sm">۳ ثانیه فرصت داری موس را روی Close ببری.</text>
+    </list-item>
+    <list-item>
+      **شمارش دوم شروع می‌شود.**
+
+      <text color="secondary" size="sm">۳ ثانیه موس را روی Close ثابت نگه می‌داری.</text>
+    </list-item>
+    <list-item>
+      **Capture Close را می‌زنی.**
+
+      <text color="secondary" size="sm">اطلاعات کنترل Close ذخیره می‌شود.</text>
+    </list-item>
+    <list-item>
+      **دوباره Start را می‌زنی.**
+
+      <text color="secondary" size="sm">۳ ثانیه برای رفتن روی Reverse فرصت داری و سپس ۳ ثانیه آن را نگه می‌داری.</text>
+    </list-item>
+    <list-item>
+      **Capture Reverse و سپس Copy Report را می‌زنی.**
+    </list-item>
+  </list>
+</box>
+
+## کد کامل Bitunix Hover Audit v2.2
+
+این کد را در Console صفحه اصلی Bitunix، با Context روی `top` اجرا کن.
+
+<CodeBlock language="javascript" editable>
+(() => {
+  "use strict";
+
+  if (window !== window.top) {
+    alert("لطفاً Context کنسول را روی top قرار بده.");
+    return;
+  }
+
+  const W = window.top;
+  const D = W.document;
+  const KEY = "__BITUNIX_HOVER_AUDIT_V22__";
+
+  try {
+    W[KEY]?.destroy?.();
+  } catch (_) {}
+
+  const docs = [];
+  const docMap = new WeakMap();
+  const listeners = [];
+  const lastHits = new Map();
+  const traces = new Map();
+  const captures = [];
+
+  let panel = null;
+  let statusBox = null;
+  let countdownBox = null;
+  let output = null;
+  let startButton = null;
+
+  let running = false;
+  let phaseTimer = null;
+  let pendingSnapshot = null;
+  let sequenceStartedAt = 0;
+
+  function clean(value, max = 250) {
+    return String(value ?? "")
+      .replace(/\s+/g, " ")
+      .trim()
+      .slice(0, max);
+  }
+
+  function getClass(el) {
+    if (!el) return "";
+
+    if (typeof el.className === "string") {
+      return clean(el.className, 500);
+    }
+
+    return clean(el.getAttribute?.("class"), 500);
+  }
+
+  function getAttrs(el) {
+    const result = {};
+
+    [
+      "aria-label",
+      "aria-describedby",
+      "title",
+      "data-tooltip",
+      "data-name",
+      "data-testid",
+      "data-test",
+      "role",
+      "type"
+    ].forEach(name => {
+      try {
+        const value = el.getAttribute?.(name);
+        if (value) result[name] = clean(value, 300);
+      } catch (_) {}
+    });
+
+    return result;
+  }
+
+  function getRect(el) {
+    try {
+      const r = el.getBoundingClientRect();
+
+      return {
+        x: Math.round(r.x),
+        y: Math.round(r.y),
+        width: Math.round(r.width),
+        height: Math.round(r.height)
+      };
+    } catch (_) {
+      return null;
+    }
+  }
+
+  function frameRect(frame) {
+    if (!frame) return null;
+
+    try {
+      const r = frame.getBoundingClientRect();
+
+      return {
+        x: Math.round(r.x),
+        y: Math.round(r.y),
+        width: Math.round(r.width),
+        height: Math.round(r.height)
+      };
+    } catch (_) {
+      return null;
+    }
+  }
+
+  function getSelector(el, doc) {
+    if (!el || el.nodeType !== 1) return "";
+
+    const win = doc.defaultView || W;
+
+    if (el.id) {
+      const id = "#" + win.CSS.escape(el.id);
+
+      try {
+        if (doc.querySelectorAll(id).length === 1) {
+          return id;
+        }
+      } catch (_) {}
+    }
+
+    const parts = [];
+    let node = el;
+
+    for (let i = 0; i < 9 && node; i++) {
+      let part = node.tagName.toLowerCase();
+
+      if (node.id) {
+        part += "#" + win.CSS.escape(node.id);
+        parts.unshift(part);
+        break;
+      }
+
+      Array.from(node.classList || [])
+        .filter(Boolean)
+        .slice(0, 4)
+        .forEach(c => {
+          part += "." + win.CSS.escape(c);
+        });
+
+      const parent = node.parentElement;
+
+      if (parent) {
+        const siblings = Array.from(parent.children)
+          .filter(x => x.tagName === node.tagName);
+
+        if (siblings.length > 1) {
+          part += ":nth-of-type(" +
+            (siblings.indexOf(node) + 1) + ")";
+        }
+      }
+
+      parts.unshift(part);
+
+      const candidate = parts.join(" > ");
+
+      try {
+        if (doc.querySelectorAll(candidate).length === 1) {
+          return candidate;
+        }
+      } catch (_) {}
+
+      node = parent;
+    }
+
+    return parts.join(" > ");
+  }
+
+  function addDoc(doc, label, frame = null) {
+    if (!doc || docMap.has(doc)) return;
+
+    const entry = {
+      doc,
+      label,
+      frame,
+      isChart: false
+    };
+
+    try {
+      entry.isChart = Boolean(
+        doc.querySelector(
+          '[aria-label="Candles"],' +
+          '[aria-label="Indicators & Strategies"],' +
+          '[aria-label^="Magnet Mode"],' +
+          '.chart-container'
+        )
+      );
+    } catch (_) {}
+
+    docs.push(entry);
+    docMap.set(doc, entry);
+
+    attachListeners(entry);
+
+    let frames = [];
+
+    try {
+      frames = Array.from(doc.querySelectorAll("iframe"));
+    } catch (_) {}
+
+    frames.forEach((child, index) => {
+      try {
+        if (child.contentDocument?.documentElement) {
+          addDoc(
+            child.contentDocument,
+            label + " > iframe[" + index + "]",
+            child
+          );
+        }
+      } catch (_) {
+        // Cross-origin frame skipped.
+      }
+    });
+  }
+
+  function scanFrames() {
+    addDoc(D, "top", null);
+  }
+
+  function attachListeners(entry) {
+    const doc = entry.doc;
+
+    function handler(event) {
+      if (!running) return;
+
+      const target = event.target;
+      if (!target) return;
+
+      if (
+        entry.label === "top" &&
+        panel &&
+        panel.contains(target)
+      ) {
+        return;
+      }
+
+      if (
+        entry.label === "top" &&
+        target.tagName?.toLowerCase() === "iframe"
+      ) {
+        return;
+      }
+
+      const hit = {
+        entry,
+        time: Date.now(),
+        x: event.clientX,
+        y: event.clientY,
+        eventType: event.type,
+        target
+      };
+
+      lastHits.set(entry.label, hit);
+    }
+
+    ["pointermove", "pointerover"].forEach(type => {
+      doc.addEventListener(type, handler, true);
+
+      listeners.push({
+        doc,
+        type,
+        handler
+      });
+    });
+  }
+
+  function describeElement(el, doc) {
+    if (!el || el.nodeType !== 1) return null;
+
+    const win = doc.defaultView || W;
+    let styleInfo = {};
+
+    try {
+      const s = win.getComputedStyle(el);
+
+      styleInfo = {
+        display: s.display,
+        visibility: s.visibility,
+        opacity: s.opacity,
+        pointerEvents: s.pointerEvents,
+        cursor: s.cursor,
+        position: s.position,
+        zIndex: s.zIndex
+      };
+    } catch (_) {}
+
+    const selector = getSelector(el, doc);
+
+    let matchCount = null;
+
+    try {
+      matchCount = doc.querySelectorAll(selector).length;
+    } catch (_) {}
+
+    let outerHTML = "";
+
+    try {
+      outerHTML = String(el.outerHTML || "").slice(0, 1300);
+    } catch (_) {}
+
+    return {
+      tag: el.tagName?.toLowerCase() || "",
+      id: clean(el.id, 150),
+      class: getClass(el),
+      text: clean(el.innerText || el.textContent || "", 140),
+      attributes: getAttrs(el),
+      selector,
+      selectorMatchCount: matchCount,
+      rect: getRect(el),
+      computedStyle: styleInfo,
+      outerHTML
+    };
+  }
+
+  function getStack(doc, x, y) {
+    let elements = [];
+
+    try {
+      elements = doc.elementsFromPoint(x, y);
+    } catch (_) {
+      try {
+        const el = doc.elementFromPoint(x, y);
+        elements = el ? [el] : [];
+      } catch (_) {}
+    }
+
+    return elements
+      .filter(Boolean)
+      .slice(0, 10)
+      .map(el => describeElement(el, doc));
+  }
+
+  function getAncestors(doc, x, y) {
+    let node = null;
+
+    try {
+      node = doc.elementFromPoint(x, y);
+    } catch (_) {}
+
+    const result = [];
+    let depth = 0;
+
+    while (node && node.nodeType === 1 && depth < 14) {
+      const win = doc.defaultView || W;
+
+      let cursor = "";
+
+      try {
+        cursor = win.getComputedStyle(node).cursor;
+      } catch (_) {}
+
+      const tag = node.tagName.toLowerCase();
+      const attributes = getAttrs(node);
+      const classes = getClass(node);
+
+      const interactive =
+        /^(button|a|input|select)$/.test(tag) ||
+        attributes.role === "button" ||
+        Boolean(attributes["aria-label"]) ||
+        Boolean(attributes.title) ||
+        Boolean(attributes["data-tooltip"]) ||
+        Boolean(attributes["data-name"]) ||
+        cursor === "pointer" ||
+        /button|btn|control|action|close|reverse|position|order|icon/i.test(
+          classes
+        );
+
+      result.push({
+        depth,
+        tag,
+        id: clean(node.id, 120),
+        class: classes,
+        text: clean(node.innerText || node.textContent || "", 120),
+        attributes,
+        cursor,
+        interactive,
+        selector: getSelector(node, doc),
+        rect: getRect(node),
+        outerHTML: String(node.outerHTML || "").slice(0, 900)
+      });
+
+      node = node.parentElement;
+      depth++;
+    }
+
+    return result;
+  }
+
+  function scanTooltips(doc) {
+    let elements = [];
+
+    try {
+      elements = Array.from(
+        doc.querySelectorAll(
+          "[title], [aria-label], [data-tooltip], " +
+          "[role='tooltip'], [class*='tooltip']"
+        )
+      );
+    } catch (_) {}
+
+    const results = [];
+
+    for (const el of elements.slice(0, 2500)) {
+      try {
+        const win = doc.defaultView || W;
+        const s = win.getComputedStyle(el);
+        const r = el.getBoundingClientRect();
+
+        if (
+          s.display === "none" ||
+          s.visibility === "hidden" ||
+          Number(s.opacity) === 0 ||
+          !r.width ||
+          !r.height
+        ) continue;
+
+        const attributes = getAttrs(el);
+        const text = clean(el.innerText || el.textContent || "", 150);
+
+        const combined = [
+          text,
+          attributes.title,
+          attributes["aria-label"],
+          attributes["data-tooltip"]
+        ].join(" ");
+
+        if (!/market\s*close|reverse/i.test(combined)) continue;
+
+        results.push({
+          tag: el.tagName.toLowerCase(),
+          class: getClass(el),
+          text,
+          attributes,
+          selector: getSelector(el, doc),
+          rect: getRect(el),
+          outerHTML: String(el.outerHTML || "").slice(0, 800)
+        });
+
+        if (results.length >= 20) break;
+      } catch (_) {}
+    }
+
+    return results;
+  }
+
+  function sampleAll(holdElapsed) {
+    for (const entry of docs) {
+      const hit = lastHits.get(entry.label);
+      if (!hit) continue;
+
+      let underPointer = null;
+
+      try {
+        underPointer = entry.doc.elementFromPoint(hit.x, hit.y);
+      } catch (_) {}
+
+      const trace = {
+        elapsedMs: Math.round(holdElapsed),
+        eventAgeMs: Date.now() - hit.time,
+        x: Math.round(hit.x),
+        y: Math.round(hit.y),
+        frame: entry.label,
+        target: underPointer
+          ? {
+              tag: underPointer.tagName?.toLowerCase() || "",
+              class: getClass(underPointer),
+              text: clean(
+                underPointer.innerText ||
+                underPointer.textContent || "",
+                80
+              ),
+              attributes: getAttrs(underPointer)
+            }
+          : null
+      };
+
+      if (!traces.has(entry.label)) {
+        traces.set(entry.label, []);
+      }
+
+      const list = traces.get(entry.label);
+      list.push(trace);
+
+      if (list.length > 35) list.shift();
+    }
+  }
+
+  function makeSnapshot() {
+    const result = [];
+
+    for (const entry of docs) {
+      const hit = lastHits.get(entry.label);
+
+      if (!hit) {
+        result.push({
+          frame: entry.label,
+          isChart: entry.isChart,
+          pointerCaptured: false,
+          frameRectangle: frameRect(entry.frame)
+        });
+        continue;
+      }
+
+      const doc = entry.doc;
+      const x = hit.x;
+      const y = hit.y;
+
+      let underPointer = null;
+
+      try {
+        underPointer = doc.elementFromPoint(x, y);
+      } catch (_) {}
+
+      result.push({
+        frame: entry.label,
+        isChart: entry.isChart,
+        frameUrl: (() => {
+          try {
+            return doc.location.href;
+          } catch (_) {
+            return "";
+          }
+        })(),
+        frameRectangle: frameRect(entry.frame),
+        pointerCaptured: true,
+        pointerEvent: {
+          type: hit.eventType,
+          time: new Date(hit.time).toISOString(),
+          ageMs: Date.now() - hit.time,
+          x: Math.round(x),
+          y: Math.round(y)
+        },
+        elementAtPointer: describeElement(underPointer, doc),
+        elementsStack: getStack(doc, x, y),
+        ancestorChain: getAncestors(doc, x, y),
+        relatedVisibleTooltips: scanTooltips(doc),
+        traceDuringHold: traces.get(entry.label) || []
+      });
+    }
+
+    return {
+      snapshotAt: new Date().toISOString(),
+      sequenceStartedAt: new Date(sequenceStartedAt).toISOString(),
+      frames: result
+    };
+  }
+
+  function updateReport() {
+    if (!output) return;
+
+    const report = {
+      reportName: "BITUNIX_HOVER_AUDIT",
+      version: "2.2",
+      generatedAt: new Date().toISOString(),
+      page: (() => {
+        try {
+          return D.location.href;
+        } catch (_) {
+          return "";
+        }
+      })(),
+      documentsScanned: docs.map(entry => ({
+        frame: entry.label,
+        isChart: entry.isChart,
+        url: (() => {
+          try {
+            return entry.doc.location.href;
+          } catch (_) {
+            return "";
+          }
+        })(),
+        frameRectangle: frameRect(entry.frame)
+      })),
+      safety: {
+        readOnly: true,
+        exchangeButtonsClicked: 0,
+        ordersSubmitted: 0,
+        networkRequestsMade: 0,
+        inputValuesRead: false,
+        privateAccountDataRead: false
+      },
+      captureSummary: {
+        totalCaptures: captures.length,
+        labels: captures.map(x => x.label)
+      },
+      captures
+    };
+
+    output.value = JSON.stringify(report, null, 2);
+  }
+
+  function setStatus(message) {
+    if (statusBox) statusBox.textContent = message;
+  }
+
+  function setCountdown(message) {
+    if (countdownBox) countdownBox.textContent = message;
+  }
+
+  function stopTimer() {
+    if (phaseTimer !== null) {
+      clearInterval(phaseTimer);
+      phaseTimer = null;
+    }
+  }
+
+  function beginHoldPhase() {
+    const holdStarted = Date.now();
+    const holdEnds = holdStarted + 3000;
+
+    setStatus("حالا موس را ۳ ثانیه روی کنترل ثابت نگه دار.");
+    setCountdown("۳");
+
+    sampleAll(0);
+
+    phaseTimer = setInterval(() => {
+      const now = Date.now();
+      const remaining = Math.max(0, holdEnds - now);
+
+      sampleAll(now - holdStarted);
+
+      setCountdown(
+        remaining > 0
+          ? String(Math.ceil(remaining / 1000))
+          : "۰"
+      );
+
+      if (now >= holdEnds) {
+        stopTimer();
+
+        sampleAll(3000);
+        pendingSnapshot = makeSnapshot();
+
+        running = false;
+        startButton.disabled = false;
+        startButton.textContent = "Start Again";
+
+        const chartHits = pendingSnapshot.frames.filter(
+          f => f.isChart && f.pointerCaptured
+        ).length;
+
+        setCountdown("تمام شد");
+
+        setStatus(
+          "ثبت زمان به پایان رسید. " +
+          "برای ذخیره اطلاعات، Capture Close یا Capture Reverse را بزن. " +
+          "داده چارت: " + chartHits + " قاب"
+        );
+      }
+    }, 100);
+  }
+
+  function startSequence() {
+    if (running) return;
+
+    if (pendingSnapshot) {
+      setStatus(
+        "ابتدا Capture Close یا Capture Reverse را بزن تا نمونه قبلی ذخیره شود."
+      );
+      return;
+    }
+
+    scanFrames();
+
+    lastHits.clear();
+    traces.clear();
+
+    running = true;
+    sequenceStartedAt = Date.now();
+
+    startButton.disabled = true;
+    startButton.textContent = "در حال شمارش...";
+
+    setStatus("۳ ثانیه فرصت داری موس را روی کنترل موردنظر ببری.");
+    setCountdown("۳");
+
+    const moveEnds = Date.now() + 3000;
+
+    phaseTimer = setInterval(() => {
+      const now = Date.now();
+      const remaining = Math.max(0, moveEnds - now);
+
+      setCountdown(
+        remaining > 0
+          ? String(Math.ceil(remaining / 1000))
+          : "۰"
+      );
+
+      if (now >= moveEnds) {
+        stopTimer();
+        beginHoldPhase();
+      }
+    }, 100);
+  }
+
+  function captureLabel(label) {
+    if (!pendingSnapshot) {
+      setStatus(
+        "هنوز شمارش تمام نشده است. ابتدا Start را اجرا کن."
+      );
+      return;
+    }
+
+    const exists = captures.some(x => x.label === label);
+
+    if (exists) {
+      setStatus(
+        label + " قبلاً ذخیره شده است. برای ثبت دوباره ابتدا Clear را بزن."
+      );
+      return;
+    }
+
+    captures.push({
+      label,
+      capturedAt: new Date().toISOString(),
+      snapshot: pendingSnapshot
+    });
+
+    pendingSnapshot = null;
+
+    updateReport();
+
+    startButton.disabled = false;
+    startButton.textContent = "Start Again";
+
+    setStatus(
+      label + " با موفقیت ذخیره شد. برای نمونه بعدی Start را بزن."
+    );
+
+    setCountdown("آماده");
+  }
+
+  function makeButton(text, background) {
+    const b = D.createElement("button");
+
+    b.type = "button";
+    b.textContent = text;
+
+    b.style.cssText = [
+      "border:0",
+      "border-radius:7px",
+      "padding:9px 12px",
+      "color:white",
+      "font-weight:bold",
+      "font-size:12px",
+      "cursor:pointer",
+      "background:" + background
+    ].join(";");
+
+    return b;
+  }
+
+  // User interface.
+  panel = D.createElement("div");
+
+  panel.id = PANEL_ID;
+
+  panel.style.cssText = [
+    "position:fixed",
+    "z-index:2147483647",
+    "bottom:14px",
+    "left:14px",
+    "width:min(430px,90vw)",
+    "padding:13px",
+    "background:#101820",
+    "color:#eaf2f5",
+    "border:1px solid #405965",
+    "border-radius:12px",
+    "box-shadow:0 10px 40px rgba(0,0,0,.55)",
+    "font:13px Arial,sans-serif",
+    "display:flex",
+    "flex-direction:column",
+    "gap:9px"
+  ].join(";");
+
+  const heading = D.createElement("strong");
+  heading.textContent = "BITUNIX HOVER AUDIT v2.2";
+
+  statusBox = D.createElement("div");
+  statusBox.style.cssText =
+    "font-size:12px;line-height:1.6;color:#b8ccd4";
+  statusBox.textContent =
+    "برای شروع، Start را بزن و موس را روی کنترل موردنظر ببر.";
+
+  countdownBox = D.createElement("div");
+  countdownBox.style.cssText = [
+    "font-size:28px",
+    "font-weight:bold",
+    "text-align:center",
+    "padding:5px",
+    "color:#69d8b5"
+  ].join(";");
+  countdownBox.textContent = "آماده";
+
+  const row1 = D.createElement("div");
+  row1.style.cssText = "display:flex;gap:7px;flex-wrap:wrap";
+
+  startButton = makeButton("Start", "#087f69");
+  const closeCapture = makeButton("Capture Close", "#2767a8");
+  const reverseCapture = makeButton("Capture Reverse", "#7554a5");
+
+  startButton.addEventListener("click", startSequence);
+
+  closeCapture.addEventListener("click", () => {
+    captureLabel("Close");
+  });
+
+  reverseCapture.addEventListener("click", () => {
+    captureLabel("Reverse");
+  });
+
+  row1.append(startButton, closeCapture, reverseCapture);
+
+  const row2 = D.createElement("div");
+  row2.style.cssText = "display:flex;gap:7px;flex-wrap:wrap";
+
+  const copyButton = makeButton("Copy Report", "#087f69");
+  const clearButton = makeButton("Clear", "#59636b");
+
+  copyButton.addEventListener("click", async () => {
+    updateReport();
+
+    try {
+      await W.navigator.clipboard.writeText(output.value);
+
+      setStatus("گزارش کپی شد. آن را برای ChatGPT بفرست.");
+    } catch (_) {
+      output.focus();
+      output.select();
+
+      try {
+        D.execCommand("copy");
+      } catch (_) {}
+
+      setStatus("گزارش انتخاب شد؛ Ctrl+C را بزن.");
+    }
+  });
+
+  clearButton.addEventListener("click", () => {
+    captures.length = 0;
+    pendingSnapshot = null;
+    lastHits.clear();
+    traces.clear();
+
+    updateReport();
+
+    startButton.disabled = false;
+    startButton.textContent = "Start";
+
+    setCountdown("آماده");
+    setStatus("گزارش‌ها پاک شدند. آماده شروع مجدد است.");
+  });
+
+  row2.append(copyButton, clearButton);
+
+  output = D.createElement("textarea");
+  output.readOnly = true;
+  output.style.cssText = [
+    "width:100%",
+    "height:85px",
+    "box-sizing:border-box",
+    "resize:vertical",
+    "background:#071016",
+    "color:#bce6dc",
+    "border:1px solid #344b56",
+    "border-radius:7px",
+    "padding:8px",
+    "font:11px Consolas,monospace"
+  ].join(";");
+
+  const note = D.createElement("div");
+  note.style.cssText =
+    "color:#91a6af;font-size:11px;line-height:1.6";
+  note.textContent =
+    "Start: سه ثانیه برای حرکت موس + سه ثانیه نگه داشتن روی کنترل. " +
+    "پس از پایان شمارش، Capture مربوطه را بزن.";
+
+  const closePanel = makeButton("Close Panel", "#39464f");
+  closePanel.addEventListener("click", () => {
+    W[KEY]?.destroy?.();
+  });
+
+  panel.append(
+    heading,
+    statusBox,
+    countdownBox,
+    row1,
+    row2,
+    output,
+    note,
+    closePanel
+  );
+
+  (D.body || D.documentElement).appendChild(panel);
+
+  function destroy() {
+    running = false;
+    stopTimer();
+
+    listeners.forEach(item => {
+      try {
+        item.doc.removeEventListener(
+          item.type,
+          item.handler,
+          true
+        );
+      } catch (_) {}
+    });
+
+    try {
+      panel?.remove();
+    } catch (_) {}
+
+    try {
+      delete W[KEY];
+    } catch (_) {}
+  }
+
+  W[KEY] = { destroy };
+
+  updateReport();
+
+  const chartCount = docs.filter(x => x.isChart).length;
+
+  setStatus(
+    "آماده است. اسناد قابل دسترسی: " +
+    docs.length +
+    " | قاب‌های تشخیص‌داده‌شده به‌عنوان چارت: " +
+    chartCount
+  );
+
+  console.log(
+    "BITUNIX HOVER AUDIT v2.2 ready",
+    docs.map(x => ({
+      frame: x.label,
+      isChart: x.isChart
+    }))
+  );
+})();
+</CodeBlock>
+
+### یک نکته برای اجرای درست
+
+در طول دو شمارش، موس را روی خود آیکون نگه دار؛ نه روی نوشته‌ای که به‌عنوان Tooltip ظاهر می‌شود.
+
+بعد از پایان شمارش می‌توانی موس را به پنجره تشخیصی منتقل کنی و Capture را بزنی. اطلاعات نقطه قبلی ذخیره شده است.
+
+<text color="secondary" size="sm">این نسخه هیچ دکمه معاملاتی را کلیک نمی‌کند، هیچ سفارشی ارسال نمی‌کند و مقدار فیلدهای سفارش را نمی‌خواند.</text>
+
+وقتی گزارش را فرستادی، بررسی می‌کنم آیا Selector واقعی Close و Reverse با موفقیت استخراج شده‌اند یا هنوز به یک مرحله تشخیص دیگر نیاز داریم.
+
+
+کاربر | پیام 59 | 11/15/2026, 12:18:31 AM
+------------------------------------------------------------
+
+.
+
+
+دستیار | پیام 60 | 11/15/2026, 12:18:36 AM
+------------------------------------------------------------
+
+Worked for a couple of seconds
+
+
+دستیار | پیام 61 | 11/15/2026, 12:18:36 AM
+------------------------------------------------------------
+
+آماده‌ام. کد v2.2 را اجرا کردی؟ پنجره تشخیصی باز شد یا خطایی دیدی؟
+
+
+کاربر | پیام 62 | 11/15/2026, 12:18:54 AM
+------------------------------------------------------------
+
+VM13885:757 Uncaught ReferenceError: PANEL_ID is not defined
+    at <anonymous>:757:14
+    at <anonymous>:940:3
+arms-ba00c1dd9e.js:8 
+ POST https://web-log.zouliangbu.com/rum/web/v2?workspace=default-cms-5168731498105524-ap-northeast-1&service_id=1ew5ugxa27o@fe8e759… net::ERR_NAME_NOT_RESOLVED
+web-log.zouliangbu.c…759f829b3480b3994:1 
+ Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+arms-ba00c1dd9e.js:8 
+ POST https://web-log.zouliangbu.com/rum/web/v2?workspace=default-cms-5168731498105524-ap-northeast-1&service_id=1ew5ugxa27o@fe8e759… net::ERR_NAME_NOT_RESOLVED
+arms-ba00c1dd9e.js:8 
+ POST https://web-log.zouliangbu.com/rum/web/v2?workspace=default-cms-5168731498105524-ap-northeast-1&service_id=1ew5ugxa27o@fe8e759… net::ERR_NAME_NOT_RESOLVED
+﻿
+
+ارور داد
+
+
+دستیار | پیام 63 | 11/15/2026, 12:20:04 AM
+------------------------------------------------------------
+
+Worked for 1m 8s
+
+
+دستیار | پیام 64 | 11/15/2026, 12:20:04 AM
+------------------------------------------------------------
+
+حق با توست؛ این خطا از اشتباه من در کد بود. متغیر `PANEL_ID` را استفاده کرده بودم، اما تعریفش را جا انداخته بودم.
+
+خطاهای `web-log.zouliangbu.com` هم مربوط به درخواست گزارش‌گیری سایت هستند و ارتباطی با خطای کد تشخیصی ندارند.
+
+این نسخه اصلاح‌شده است: **Hover Audit v2.2.1**. همان روندی که خواستی را دارد: یک دکمه Start، سه ثانیه برای بردن موس روی کنترل و سه ثانیه ثبت آن.
+
+### قبل از اجرا
+صفحه Bitunix را یک‌بار Refresh کن. پوزیشن باز با Refresh صفحه بسته نمی‌شود، ولی مطمئن شو بعد از بارگذاری مجدد همچنان در بخش Positions نمایش داده می‌شود.
+
+سپس F12 → Console و Context روی `top`.
+
+<CodeBlock language="javascript" editable>
+(() => {
+  "use strict";
+
+  const W = window.top;
+  const D = W.document;
+  const KEY = "__BITUNIX_HOVER_AUDIT_V221__";
+  const PANEL_ID = "bitunix-hover-audit-v221";
+
+  if (window !== W) {
+    alert("لطفاً Console را روی top قرار بده.");
+    return;
+  }
+
+  try {
+    W[KEY]?.destroy?.();
+  } catch (_) {}
+
+  const docs = [];
+  const docMap = new WeakMap();
+  const listeners = [];
+  const lastHits = new Map();
+  const traces = new Map();
+  const captures = [];
+
+  let panel = null;
+  let statusBox = null;
+  let countdownBox = null;
+  let output = null;
+  let startButton = null;
+
+  let running = false;
+  let timer = null;
+  let pendingSnapshot = null;
+  let sequenceStartedAt = 0;
+
+  function clean(v, max = 250) {
+    return String(v ?? "").replace(/\s+/g, " ").trim().slice(0, max);
+  }
+
+  function getClass(el) {
+    if (!el) return "";
+    return typeof el.className === "string"
+      ? clean(el.className, 500)
+      : clean(el.getAttribute?.("class"), 500);
+  }
+
+  function getAttrs(el) {
+    const out = {};
+    [
+      "aria-label", "aria-describedby", "title",
+      "data-tooltip", "data-name", "data-testid",
+      "data-test", "role", "type"
+    ].forEach(name => {
+      try {
+        const v = el.getAttribute?.(name);
+        if (v) out[name] = clean(v, 300);
+      } catch (_) {}
+    });
+    return out;
+  }
+
+  function rectOf(el) {
+    try {
+      const r = el.getBoundingClientRect();
+      return {
+        x: Math.round(r.x),
+        y: Math.round(r.y),
+        width: Math.round(r.width),
+        height: Math.round(r.height)
+      };
+    } catch (_) {
+      return null;
+    }
+  }
+
+  function frameRect(frame) {
+    return frame ? rectOf(frame) : null;
+  }
+
+  function getSelector(el, doc) {
+    if (!el || el.nodeType !== 1) return "";
+
+    const win = doc.defaultView || W;
+    const esc = s => win.CSS?.escape
+      ? win.CSS.escape(s)
+      : String(s).replace(/[^a-zA-Z0-9_-]/g, "\\$&");
+
+    if (el.id) {
+      const id = "#" + esc(el.id);
+      try {
+        if (doc.querySelectorAll(id).length === 1) return id;
+      } catch (_) {}
+    }
+
+    const parts = [];
+    let node = el;
+
+    for (let i = 0; i < 9 && node; i++) {
+      let part = node.tagName.toLowerCase();
+
+      if (node.id) {
+        part += "#" + esc(node.id);
+        parts.unshift(part);
+        break;
+      }
+
+      Array.from(node.classList || [])
+        .filter(Boolean)
+        .slice(0, 4)
+        .forEach(c => part += "." + esc(c));
+
+      const parent = node.parentElement;
+      if (parent) {
+        const siblings = Array.from(parent.children)
+          .filter(x => x.tagName === node.tagName);
+
+        if (siblings.length > 1) {
+          part += ":nth-of-type(" +
+            (siblings.indexOf(node) + 1) + ")";
+        }
+      }
+
+      parts.unshift(part);
+      const candidate = parts.join(" > ");
+
+      try {
+        if (doc.querySelectorAll(candidate).length === 1) {
+          return candidate;
+        }
+      } catch (_) {}
+
+      node = parent;
+    }
+
+    return parts.join(" > ");
+  }
+
+  function describe(el, doc) {
+    if (!el || el.nodeType !== 1) return null;
+
+    const win = doc.defaultView || W;
+    let style = {};
+
+    try {
+      const s = win.getComputedStyle(el);
+      style = {
+        display: s.display,
+        visibility: s.visibility,
+        opacity: s.opacity,
+        pointerEvents: s.pointerEvents,
+        cursor: s.cursor,
+        position: s.position,
+        zIndex: s.zIndex
+      };
+    } catch (_) {}
+
+    const sel = getSelector(el, doc);
+    let matchCount = null;
+
+    try {
+      matchCount = doc.querySelectorAll(sel).length;
+    } catch (_) {}
+
+    return {
+      tag: el.tagName?.toLowerCase() || "",
+      id: clean(el.id, 150),
+      class: getClass(el),
+      text: clean(el.innerText || el.textContent || "", 140),
+      attributes: getAttrs(el),
+      selector: sel,
+      selectorMatchCount: matchCount,
+      rect: rectOf(el),
+      computedStyle: style,
+      outerHTML: String(el.outerHTML || "").slice(0, 1300)
+    };
+  }
+
+  function getStack(doc, x, y) {
+    let elements = [];
+    try {
+      elements = doc.elementsFromPoint(x, y);
+    } catch (_) {
+      try {
+        const el = doc.elementFromPoint(x, y);
+        if (el) elements = [el];
+      } catch (_) {}
+    }
+
+    return elements.slice(0, 10).map(el => describe(el, doc));
+  }
+
+  function getAncestors(doc, x, y) {
+    let node = null;
+    try {
+      node = doc.elementFromPoint(x, y);
+    } catch (_) {}
+
+    const result = [];
+    let depth = 0;
+
+    while (node && node.nodeType === 1 && depth < 14) {
+      const win = doc.defaultView || W;
+      let cursor = "";
+
+      try {
+        cursor = win.getComputedStyle(node).cursor;
+      } catch (_) {}
+
+      const attributes = getAttrs(node);
+      const tag = node.tagName.toLowerCase();
+      const classes = getClass(node);
+
+      result.push({
+        depth,
+        tag,
+        id: clean(node.id, 120),
+        class: classes,
+        text: clean(node.innerText || node.textContent || "", 120),
+        attributes,
+        cursor,
+        buttonLike:
+          /^(button|a|input|select)$/.test(tag) ||
+          attributes.role === "button" ||
+          Boolean(attributes["aria-label"]) ||
+          Boolean(attributes.title) ||
+          Boolean(attributes["data-tooltip"]) ||
+          cursor === "pointer" ||
+          /button|btn|control|action|close|reverse|position|order|icon/i.test(classes),
+        selector: getSelector(node, doc),
+        rect: rectOf(node),
+        outerHTML: String(node.outerHTML || "").slice(0, 900)
+      });
+
+      node = node.parentElement;
+      depth++;
+    }
+
+    return result;
+  }
+
+  function scanTooltips(doc) {
+    let elements = [];
+    try {
+      elements = Array.from(doc.querySelectorAll(
+        "[title], [aria-label], [data-tooltip], " +
+        "[role='tooltip'], [class*='tooltip']"
+      ));
+    } catch (_) {}
+
+    const result = [];
+
+    for (const el of elements.slice(0, 2500)) {
+      try {
+        const win = doc.defaultView || W;
+        const s = win.getComputedStyle(el);
+        const r = el.getBoundingClientRect();
+
+        if (
+          s.display === "none" ||
+          s.visibility === "hidden" ||
+          Number(s.opacity) === 0 ||
+          !r.width || !r.height
+        ) continue;
+
+        const attributes = getAttrs(el);
+        const text = clean(el.innerText || el.textContent || "", 150);
+        const combined = [
+          text,
+          attributes.title,
+          attributes["aria-label"],
+          attributes["data-tooltip"]
+        ].join(" ");
+
+        if (!/market\s*close|reverse/i.test(combined)) continue;
+
+        result.push({
+          tag: el.tagName.toLowerCase(),
+          class: getClass(el),
+          text,
+          attributes,
+          selector: getSelector(el, doc),
+          rect: rectOf(el),
+          outerHTML: String(el.outerHTML || "").slice(0, 800)
+        });
+
+        if (result.length >= 20) break;
+      } catch (_) {}
+    }
+
+    return result;
+  }
+
+  function attachDoc(doc, label, frame) {
+    let entry = docMap.get(doc);
+
+    if (!entry) {
+      entry = {
+        doc,
+        label,
+        frame,
+        isChart: false
+      };
+
+      try {
+        entry.isChart = Boolean(doc.querySelector(
+          '[aria-label="Candles"],' +
+          '[aria-label="Indicators & Strategies"],' +
+          '[aria-label^="Magnet Mode"],' +
+          '.chart-container'
+        ));
+      } catch (_) {}
+
+      docs.push(entry);
+      docMap.set(doc, entry);
+
+      function handler(event) {
+        if (!running) return;
+
+        const target = event.target;
+        if (!target) return;
+
+        if (entry.label === "top" && panel?.contains(target)) {
+          return;
+        }
+
+        if (
+          entry.label === "top" &&
+          target.tagName?.toLowerCase() === "iframe"
+        ) return;
+
+        lastHits.set(entry.label, {
+          entry,
+          time: Date.now(),
+          x: event.clientX,
+          y: event.clientY,
+          eventType: event.type
+        });
+      }
+
+      ["pointermove", "pointerover"].forEach(type => {
+        doc.addEventListener(type, handler, true);
+        listeners.push({ doc, type, handler });
+      });
+    }
+
+    // Also inspect children on every scan, even if this document
+    // was already registered.
+    let frames = [];
+    try {
+      frames = Array.from(doc.querySelectorAll("iframe"));
+    } catch (_) {}
+
+    frames.forEach((child, index) => {
+      try {
+        if (child.contentDocument?.documentElement) {
+          attachDoc(
+            child.contentDocument,
+            label + " > iframe[" + index + "]",
+            child
+          );
+        }
+      } catch (_) {}
+    });
+  }
+
+  function scanFrames() {
+    attachDoc(D, "top", null);
+  }
+
+  function sampleAll(elapsed) {
+    for (const entry of docs) {
+      const hit = lastHits.get(entry.label);
+      if (!hit) continue;
+
+      let el = null;
+      try {
+        el = entry.doc.elementFromPoint(hit.x, hit.y);
+      } catch (_) {}
+
+      if (!traces.has(entry.label)) {
+        traces.set(entry.label, []);
+      }
+
+      const list = traces.get(entry.label);
+      list.push({
+        elapsedMs: Math.round(elapsed),
+        eventAgeMs: Date.now() - hit.time,
+        x: Math.round(hit.x),
+        y: Math.round(hit.y),
+        frame: entry.label,
+        element: el ? {
+          tag: el.tagName?.toLowerCase() || "",
+          class: getClass(el),
+          text: clean(el.innerText || el.textContent || "", 80),
+          attributes: getAttrs(el)
+        } : null
+      });
+
+      if (list.length > 40) list.shift();
+    }
+  }
+
+  function makeSnapshot() {
+    const result = [];
+
+    for (const entry of docs) {
+      const hit = lastHits.get(entry.label);
+
+      if (!hit) {
+        result.push({
+          frame: entry.label,
+          isChart: entry.isChart,
+          pointerCaptured: false,
+          frameRectangle: frameRect(entry.frame)
+        });
+        continue;
+      }
+
+      let underPointer = null;
+      try {
+        underPointer = entry.doc.elementFromPoint(hit.x, hit.y);
+      } catch (_) {}
+
+      result.push({
+        frame: entry.label,
+        isChart: entry.isChart,
+        frameUrl: (() => {
+          try { return entry.doc.location.href; }
+          catch (_) { return ""; }
+        })(),
+        frameRectangle: frameRect(entry.frame),
+        pointerCaptured: true,
+        pointerEvent: {
+          type: hit.eventType,
+          time: new Date(hit.time).toISOString(),
+          ageMs: Date.now() - hit.time,
+          x: Math.round(hit.x),
+          y: Math.round(hit.y)
+        },
+        elementAtPointer: describe(underPointer, entry.doc),
+        elementsStack: getStack(entry.doc, hit.x, hit.y),
+        ancestorChain: getAncestors(entry.doc, hit.x, hit.y),
+        relatedVisibleTooltips: scanTooltips(entry.doc),
+        traceDuringHold: traces.get(entry.label) || []
+      });
+    }
+
+    return {
+      snapshotAt: new Date().toISOString(),
+      sequenceStartedAt: new Date(sequenceStartedAt).toISOString(),
+      frames: result
+    };
+  }
+
+  function updateReport() {
+    if (!output) return;
+
+    output.value = JSON.stringify({
+      reportName: "BITUNIX_HOVER_AUDIT",
+      version: "2.2.1",
+      generatedAt: new Date().toISOString(),
+      page: (() => {
+        try { return D.location.href; }
+        catch (_) { return ""; }
+      })(),
+      documentsScanned: docs.map(entry => ({
+        frame: entry.label,
+        isChart: entry.isChart,
+        url: (() => {
+          try { return entry.doc.location.href; }
+          catch (_) { return ""; }
+        })(),
+        frameRectangle: frameRect(entry.frame)
+      })),
+      safety: {
+        readOnly: true,
+        exchangeButtonsClicked: 0,
+        ordersSubmitted: 0,
+        networkRequestsMade: 0,
+        inputValuesRead: false,
+        privateAccountDataRead: false
+      },
+      captureSummary: {
+        totalCaptures: captures.length,
+        labels: captures.map(x => x.label)
+      },
+      captures
+    }, null, 2);
+  }
+
+  function setStatus(text) {
+    if (statusBox) statusBox.textContent = text;
+  }
+
+  function setCountdown(text) {
+    if (countdownBox) countdownBox.textContent = text;
+  }
+
+  function stopTimer() {
+    if (timer !== null) {
+      clearInterval(timer);
+      timer = null;
+    }
+  }
+
+  function beginHoldPhase() {
+    const started = Date.now();
+    const ends = started + 3000;
+
+    setStatus("حالا موس را ۳ ثانیه روی کنترل ثابت نگه دار.");
+    setCountdown("۳");
+    sampleAll(0);
+
+    timer = setInterval(() => {
+      const now = Date.now();
+      const remaining = Math.max(0, ends - now);
+
+      sampleAll(now - started);
+
+      setCountdown(
+        remaining > 0 ? String(Math.ceil(remaining / 1000)) : "۰"
+      );
+
+      if (now >= ends) {
+        stopTimer();
+        sampleAll(3000);
+
+        pendingSnapshot = makeSnapshot();
+        running = false;
+
+        startButton.disabled = false;
+        startButton.textContent = "Start Again";
+
+        const count = pendingSnapshot.frames.filter(
+          f => f.isChart && f.pointerCaptured
+        ).length;
+
+        setCountdown("تمام شد");
+        setStatus(
+          "شمارش تمام شد. حالا Capture مربوطه را بزن. " +
+          "قاب چارت ثبت‌شده: " + count
+        );
+      }
+    }, 100);
+  }
+
+  function startSequence() {
+    if (running) return;
+
+    if (pendingSnapshot) {
+      setStatus(
+        "ابتدا Capture مربوط به نمونه قبلی را بزن."
+      );
+      return;
+    }
+
+    scanFrames();
+    lastHits.clear();
+    traces.clear();
+
+    running = true;
+    sequenceStartedAt = Date.now();
+
+    startButton.disabled = true;
+    startButton.textContent = "در حال شمارش...";
+
+    setStatus("۳ ثانیه فرصت داری موس را روی کنترل ببری.");
+    setCountdown("۳");
+
+    const ends = Date.now() + 3000;
+
+    timer = setInterval(() => {
+      const now = Date.now();
+      const remaining = Math.max(0, ends - now);
+
+      setCountdown(
+        remaining > 0 ? String(Math.ceil(remaining / 1000)) : "۰"
+      );
+
+      if (now >= ends) {
+        stopTimer();
+        beginHoldPhase();
+      }
+    }, 100);
+  }
+
+  function captureLabel(label) {
+    if (!pendingSnapshot) {
+      setStatus("ابتدا Start را بزن و تا پایان شمارش صبر کن.");
+      return;
+    }
+
+    if (captures.some(x => x.label === label)) {
+      setStatus(label + " قبلاً ثبت شده است. برای ثبت مجدد Clear را بزن.");
+      return;
+    }
+
+    captures.push({
+      label,
+      capturedAt: new Date().toISOString(),
+      snapshot: pendingSnapshot
+    });
+
+    pendingSnapshot = null;
+    updateReport();
+
+    startButton.disabled = false;
+    startButton.textContent = "Start Again";
+
+    setCountdown("آماده");
+    setStatus(
+      label + " ذخیره شد. برای کنترل بعدی دوباره Start را بزن."
+    );
+  }
+
+  function makeButton(text, color) {
+    const b = D.createElement("button");
+    b.type = "button";
+    b.textContent = text;
+    b.style.cssText =
+      "border:0;border-radius:7px;padding:9px 11px;" +
+      "color:white;font-weight:bold;font-size:12px;" +
+      "cursor:pointer;background:" + color;
+    return b;
+  }
+
+  // Popup
+  panel = D.createElement("div");
+  panel.id = PANEL_ID;
+  panel.style.cssText =
+    "position:fixed;z-index:2147483647;bottom:14px;left:14px;" +
+    "width:min(430px,90vw);padding:13px;background:#101820;" +
+    "color:#eaf2f5;border:1px solid #405965;border-radius:12px;" +
+    "box-shadow:0 10px 40px rgba(0,0,0,.55);" +
+    "font:13px Arial,sans-serif;display:flex;flex-direction:column;gap:9px";
+
+  const heading = D.createElement("strong");
+  heading.textContent = "BITUNIX HOVER AUDIT v2.2.1";
+
+  statusBox = D.createElement("div");
+  statusBox.style.cssText = "font-size:12px;line-height:1.6;color:#b8ccd4";
+  statusBox.textContent = "برای شروع، Start را بزن.";
+
+  countdownBox = D.createElement("div");
+  countdownBox.style.cssText =
+    "font-size:28px;font-weight:bold;text-align:center;" +
+    "padding:5px;color:#69d8b5";
+  countdownBox.textContent = "آماده";
+
+  const row1 = D.createElement("div");
+  row1.style.cssText = "display:flex;gap:7px;flex-wrap:wrap";
+
+  startButton = makeButton("Start", "#087f69");
+  const closeCapture = makeButton("Capture Close", "#2767a8");
+  const reverseCapture = makeButton("Capture Reverse", "#7554a5");
+
+  startButton.addEventListener("click", startSequence);
+  closeCapture.addEventListener("click", () => captureLabel("Close"));
+  reverseCapture.addEventListener("click", () => captureLabel("Reverse"));
+
+  row1.append(startButton, closeCapture, reverseCapture);
+
+  const row2 = D.createElement("div");
+  row2.style.cssText = "display:flex;gap:7px;flex-wrap:wrap";
+
+  const copyButton = makeButton("Copy Report", "#087f69");
+  const clearButton = makeButton("Clear", "#59636b");
+
+  copyButton.addEventListener("click", async () => {
+    updateReport();
+
+    try {
+      await W.navigator.clipboard.writeText(output.value);
+      setStatus("گزارش کپی شد. آن را برای ChatGPT بفرست.");
+    } catch (_) {
+      output.focus();
+      output.select();
+      try { D.execCommand("copy"); } catch (_) {}
+      setStatus("گزارش انتخاب شد؛ Ctrl+C را بزن.");
+    }
+  });
+
+  clearButton.addEventListener("click", () => {
+    captures.length = 0;
+    pendingSnapshot = null;
+    lastHits.clear();
+    traces.clear();
+
+    updateReport();
+
+    startButton.disabled = false;
+    startButton.textContent = "Start";
+    setCountdown("آماده");
+    setStatus("گزارش‌ها پاک شدند.");
+  });
+
+  row2.append(copyButton, clearButton);
+
+  output = D.createElement("textarea");
+  output.readOnly = true;
+  output.style.cssText =
+    "width:100%;height:85px;box-sizing:border-box;resize:vertical;" +
+    "background:#071016;color:#bce6dc;border:1px solid #344b56;" +
+    "border-radius:7px;padding:8px;font:11px Consolas,monospace";
+
+  const note = D.createElement("div");
+  note.style.cssText = "color:#91a6af;font-size:11px;line-height:1.6";
+  note.textContent =
+    "Start: ۳ ثانیه برای رفتن روی کنترل + ۳ ثانیه نگه داشتن موس. " +
+    "پس از پایان شمارش، Capture مربوطه را بزن.";
+
+  const closePanel = makeButton("Close Panel", "#39464f");
+  closePanel.addEventListener("click", () => W[KEY]?.destroy?.());
+
+  panel.append(
+    heading,
+    statusBox,
+    countdownBox,
+    row1,
+    row2,
+    output,
+    note,
+    closePanel
+  );
+
+  (D.body || D.documentElement).appendChild(panel);
+
+  function destroy() {
+    running = false;
+    stopTimer();
+
+    listeners.forEach(item => {
+      try {
+        item.doc.removeEventListener(item.type, item.handler, true);
+      } catch (_) {}
+    });
+
+    try { panel?.remove(); } catch (_) {}
+    try { delete W[KEY]; } catch (_) {}
+  }
+
+  W[KEY] = { destroy };
+
+  scanFrames();
+  updateReport();
+
+  const chartCount = docs.filter(x => x.isChart).length;
+
+  setStatus(
+    "آماده است. اسناد قابل دسترسی: " + docs.length +
+    " | قاب‌های تشخیص‌داده‌شده به‌عنوان چارت: " + chartCount
+  );
+
+  console.log("BITUNIX HOVER AUDIT v2.2.1 ready", docs.map(x => ({
+    frame: x.label,
+    isChart: x.isChart
+  })));
+})();
+</CodeBlock>
+
+**ترتیب ثبت را فراموش نکن:**
+
+- Start → رفتن روی Close → ۳ ثانیه نگه‌داشتن → Capture Close
+- Start → رفتن روی Reverse → ۳ ثانیه نگه‌داشتن → Capture Reverse
+- Copy Report
+
+اگر بعد از اجرا تعداد قاب‌های چارت صفر بود، فعلاً Capture نزن؛ همان پیام پنجره را برایم بفرست.
+
+
+کاربر | پیام 65 | 11/15/2026, 12:23:59 AM
+------------------------------------------------------------
+
+[گزارشات بیتیونیکس14.txt](https://github.com/artaville/KCEX-Enhancer/blob/main/%DA%AF%D8%B2%D8%A7%D8%B1%D8%B4%D8%A7%D8%AA%20%D8%A8%DB%8C%D8%AA%DB%8C%D9%88%D9%86%DB%8C%DA%A9%D8%B314.txt "گزارشات بیتیونیکس14.txt") &#x20;
+ببین نتیجه چی شده؟
+
+
+دستیار | پیام 66 | 11/15/2026, 12:24:04 AM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_file","args":{"repository_full_name":"artaville/KCEX-Enhancer","path":"\u06af\u0632\u0627\u0631\u0634\u0627\u062a \u0628\u06cc\u062a\u06cc\u0648\u0646\u06cc\u06a9\u063314.txt","encoding":"utf-8"}}
+
+
+دستیار | پیام 67 | 11/15/2026, 12:24:14 AM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_blob","args":{"repository_full_name":"artaville/KCEX-Enhancer","blob_sha":"8b455c98f94a26454ec3ebb08090426ce7a6f3c4"}}
+
+
+دستیار | پیام 68 | 11/15/2026, 12:24:24 AM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_blob","args":{"repository_full_name":"artaville/KCEX-Enhancer","blob_sha":"8b455c98f94a26454ec3ebb08090426ce7a6f3c4"}}
+
+
+دستیار | پیام 69 | 11/15/2026, 12:25:09 AM
+------------------------------------------------------------
+
+Worked for 1m 8s
+
+
+دستیار | پیام 70 | 11/15/2026, 12:25:09 AM
+------------------------------------------------------------
+
+عالی! این بار گزارش درست ثبت شده و نتیجه موفقیت‌آمیز است. هر دو کنترل Close و Reverse را شناسایی کردیم. <badge color="success">هر دو Capture موفق</badge>
+
+### نتیجه گزارش ۱۴
+
+<box border radius="lg" padding={3} gap={3}>
+  <row align="center" justify="between">
+    **Close**
+    <badge color="success">تأیید شد</badge>
+  </row>
+  <text color="secondary" size="sm">Tooltip واقعی: Market close</text>
+  <text tabularNums size="sm">مختصات داخل iframe: X=938 ، Y=224</text>
+  <divider color="subtle"/>
+  <row align="center" justify="between">
+    **Reverse**
+    <badge color="success">تأیید شد</badge>
+  </row>
+  <text color="secondary" size="sm">Tooltip واقعی: Reverse</text>
+  <text tabularNums size="sm">مختصات داخل iframe: X=911 ، Y=224</text>
+</box>
+
+### یک کشف فنی مهم
+
+هر دو کنترل روی یک Canvas متعلق به TradingView رسم شده‌اند:
+
+```css
+div.chart-markup-table.pane.pane--cursor-pointer
+> div.chart-gui-wrapper
+> canvas:nth-of-type(2)
+```
+
+یعنی دکمه‌های Close و Reverse دو عنصر HTML مستقل نیستند؛ برای همین جست‌وجوی Selector جداگانه نتیجه نمی‌دهد.
+
+اما نکته مثبت این است که خود TradingView هنگام قرار گرفتن موس روی آن‌ها Tooltip متفاوت نشان می‌دهد:
+
+- `Market close`
+- `Reverse`
+
+پس می‌توانیم از همین Tooltip برای تشخیص دقیق کنترل استفاده کنیم.
+
+### چه چیزهایی را قطعی کردیم؟
+
+۱. هر دو کنترل داخل iframe اصلی چارت هستند.
+
+۲. ابزار v2.2.1 هر دو را با موفقیت ثبت کرده است.
+
+۳. هیچ دکمه معاملاتی کلیک نشده و هیچ سفارشی ارسال نشده است.
+
+۴. مختصات اولیه هر دو کنترل را در حالت چارت کوچک داریم.
+
+**مرحله بعدی پروژه:** استخراج مختصات نسبی و روش شناسایی این دو کنترل در حالت چارت بزرگ، تا افزونه به مختصات ثابت وابسته نباشد. هنوز روش کلیک امن و اجرای واقعی سفارش را اعتبارسنجی نکرده‌ایم.
+
+
+کاربر | پیام 71 | 11/15/2026, 12:26:27 AM
+------------------------------------------------------------
+
+یعنی اگر جای این دو تا تغییر بکنه، از کار میفتن؟
+
+
+دستیار | پیام 72 | 11/15/2026, 12:26:50 AM
+------------------------------------------------------------
+
+Worked for 21s
+
+
+دستیار | پیام 73 | 11/15/2026, 12:26:51 AM
+------------------------------------------------------------
+
+نه، لزوماً از کار نمی‌افتند؛ اما بستگی دارد چطور پیاده‌سازی‌شان کنیم.
+
+الان دو روش داریم:
+
+**روش اول: مختصات ثابت**
+
+مثلاً Close در مختصات `938, 224` و Reverse در `911, 224` قرار دارد. اگر چارت بزرگ یا کوچک شود یا نوار پوزیشن جابه‌جا شود، این روش ممکن است اشتباه عمل کند. من این روش را پیشنهاد نمی‌کنم.
+
+**روش دوم: تشخیص تطبیقی (روش پیشنهادی)**
+
+افزونه به اندازه و موقعیت فعلی iframe چارت توجه می‌کند، مختصات کنترل‌ها را متناسب با اندازه چارت محاسبه می‌کند و قبل از هر اقدام، هویت کنترل را بررسی می‌کند.
+
+یک نکته مهم: چون هر دو کنترل روی Canvas رسم شده‌اند، Selector مستقل HTML برایشان نداریم. باید راهکار تشخیص و کلیک را متناسب با ساختار Canvas طراحی کنیم.
+
+**پیشنهاد من:** هر چهار حالت تصویر (Close و Reverse در چارت کوچک و بزرگ) را مبنای محاسبه قرار بدهیم. بعد کاری کنیم که با تغییر اندازه چارت، کنترل‌ها همچنان قابل شناسایی باشند و اگر تشخیص قطعی نبود، افزونه اصلاً کلیک نکند.
+
+این‌طوری هدفمان وابسته نبودن به مختصات ثابت خواهد بود.
+
+
+کاربر | پیام 74 | 11/15/2026, 12:28:27 AM
+------------------------------------------------------------
+
+الان از روی چارت ک برات مشخصاتشو فرستادم و با اکستنشن برداشتی، ایا میتونی کلوز بکنی پوزیشن رو؟ خارج از این دو تا دکمه کلوز و ریورس
+
+
+دستیار | پیام 75 | 11/15/2026, 12:29:06 AM
+------------------------------------------------------------
+
+Worked for 38s
+
+
+دستیار | پیام 76 | 11/15/2026, 12:29:06 AM
+------------------------------------------------------------
+
+بله. اتفاقاً به نظرم بهتر است برای افزونه یک روش جایگزین داشته باشیم که اصلاً به دکمه‌های Close و Reverse روی چارت وابسته نباشد.
+
+سه مسیر فنی داریم:
+
+### ۱. بستن از جدول Positions — پیشنهاد اصلی
+از ردیف پوزیشن باز، کنترل `Close Position` را پیدا کنیم و افزونه همان را اجرا کند.
+
+مزیتش این است که:
+- به Canvas چارت وابسته نیست.
+- با بزرگ و کوچک شدن چارت مختل نمی‌شود.
+- می‌توانیم فقط پوزیشن موردنظر را ببندیم.
+
+در گزارش ۱۱ عبارت `Close Position` وجود داشت، اما هنوز عنصر قابل‌کلیک دقیق آن را استخراج نکرده‌ایم.
+
+### ۲. ثبت سفارش مخالف با Reduce-Only
+مثلاً اگر پوزیشن Long باشد، سفارش Sell با حجم دقیق پوزیشن ثبت شود؛ با تنظیم Reduce-Only تا پوزیشن معکوس باز نشود.
+
+این روش نیازمند بررسی دقیق رفتار سفارش در Bitunix است.
+
+### ۳. استفاده مستقیم از API صرافی
+می‌توانیم مسیر درخواست بستن پوزیشن را بررسی کنیم؛ ولی هنوز درخواست واقعی Close را استخراج نکرده‌ایم.
+
+**پیشنهاد قطعی من:** اول مسیر شماره ۱ را بررسی کنیم. هم ساده‌تر است و هم احتمال خطای ناشی از تغییر اندازه چارت را حذف می‌کند.
+
+فعلاً هیچ سفارشی اجرا نمی‌کنیم؛ فقط عنصر Close داخل ردیف پوزیشن و روش شناسایی آن را استخراج می‌کنیم.

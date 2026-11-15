@@ -1,0 +1,5650 @@
+﻿BITUNIX CONVERSATION EXPORT
+Conversation ID: 6af95809-6094-83ed-bea2-321c8e805df0
+Conversation URL: https://chatgpt.com/c/6af95809-6094-83ed-bea2-321c8e805df0
+Conversation Title: برنامه ساخت افزونه Bitunix (4)
+Export Date: 2026-11-15T10:32:23.967Z
+API Type: current
+Pages: 1
+Raw Messages: 155
+User Messages: 16
+Assistant Messages: 49
+Extracted Text Messages: 65
+History Complete: YES
+======================================================================
+
+
+دستیار | پیام 1 | 11/15/2026, 12:29:06 AM
+------------------------------------------------------------
+
+بله. اتفاقاً به نظرم بهتر است برای افزونه یک روش جایگزین داشته باشیم که اصلاً به دکمه‌های Close و Reverse روی چارت وابسته نباشد.
+
+سه مسیر فنی داریم:
+
+### ۱. بستن از جدول Positions — پیشنهاد اصلی
+از ردیف پوزیشن باز، کنترل `Close Position` را پیدا کنیم و افزونه همان را اجرا کند.
+
+مزیتش این است که:
+- به Canvas چارت وابسته نیست.
+- با بزرگ و کوچک شدن چارت مختل نمی‌شود.
+- می‌توانیم فقط پوزیشن موردنظر را ببندیم.
+
+در گزارش ۱۱ عبارت `Close Position` وجود داشت، اما هنوز عنصر قابل‌کلیک دقیق آن را استخراج نکرده‌ایم.
+
+### ۲. ثبت سفارش مخالف با Reduce-Only
+مثلاً اگر پوزیشن Long باشد، سفارش Sell با حجم دقیق پوزیشن ثبت شود؛ با تنظیم Reduce-Only تا پوزیشن معکوس باز نشود.
+
+این روش نیازمند بررسی دقیق رفتار سفارش در Bitunix است.
+
+### ۳. استفاده مستقیم از API صرافی
+می‌توانیم مسیر درخواست بستن پوزیشن را بررسی کنیم؛ ولی هنوز درخواست واقعی Close را استخراج نکرده‌ایم.
+
+**پیشنهاد قطعی من:** اول مسیر شماره ۱ را بررسی کنیم. هم ساده‌تر است و هم احتمال خطای ناشی از تغییر اندازه چارت را حذف می‌کند.
+
+فعلاً هیچ سفارشی اجرا نمی‌کنیم؛ فقط عنصر Close داخل ردیف پوزیشن و روش شناسایی آن را استخراج می‌کنیم.
+
+
+کاربر | پیام 2 | 11/15/2026, 10:29:02 AM
+------------------------------------------------------------
+
+روش یک این مدلیه که وقتی پوزیشن بازه و توی نوار پایینی داره نشون میده، باید سه نقطه شو بزنی و بعدش پر کنی که چند درصد از پوزیشن رو میخوای ببندی و بعدش کلوز رو بزنی. این راحت تره یا دکمه روی چارت ک کانواس هست؟
+
+
+دستیار | پیام 3 | 11/15/2026, 10:29:02 AM
+------------------------------------------------------------
+
+به نظرم برای افزونه، **روش اول (سه‌نقطه در نوار پایین و بستن درصدی پوزیشن) مطمئن‌تر و کاربردی‌تر است**؛ اما از نظر سرعت، دکمه Close روی چارت برتری دارد.
+
+مقایسه:
+
+| معیار | سه‌نقطه در نوار پوزیشن | دکمه Close روی چارت |
+|---|---|---|
+| شناسایی با افزونه | احتمالاً ساده‌تر | دشوارتر؛ Canvas |
+| بستن درصدی | دارد | باید بررسی شود |
+| سرعت اجرا | چند مرحله | یک کلیک |
+| وابستگی به مختصات چارت | ندارد | دارد |
+| ریسک کلیک اشتباه | با شناسایی ردیف پوزیشن کمتر | نیازمند تشخیص دقیق آیکون |
+
+### پیشنهاد من
+
+بهتر است هر دو روش را داشته باشیم:
+
+1. **روش اصلی:** سه‌نقطه ← تعیین درصد بستن ← Close.
+2. **روش سریع:** دکمه Market Close روی چارت، برای زمانی که می‌خواهی سریع کل پوزیشن را ببندی.
+3. **روش جایگزین:** سفارش Reduce-Only، در صورت امکان و پس از بررسی دقیق سازوکار Bitunix.
+
+یک نکته مهم: در روش اول باید بررسی کنیم که بعد از زدن سه‌نقطه، پنجره درصد بستن چگونه ساخته می‌شود و آیا می‌توانیم مقدار درصد را مستقیماً از طریق افزونه تنظیم کنیم.
+
+**پیشنهاد من این است که اول روش سه‌نقطه را بررسی کنیم.** چون اگر بتوانیم بدون کلیک‌های اضافی، درصد را تنظیم و Close را اجرا کنیم، هم قابلیت بستن درصدی داریم و هم دیگر وابسته به مختصات Canvas نیستیم.
+
+
+کاربر | پیام 4 | 11/15/2026, 10:30:19 AM
+------------------------------------------------------------
+
+کانواس چالش هاش چیه؟ باید دوباره بررسی بکنیمش چارتو جاشو پیدا کنیم؟ یدونه ادرس روی سایت هست که موس رو میبری روش و ادرس رو مشخص میکنه. اونو نمیتونیم انجام بدیم؟
+
+
+دستیار | پیام 5 | 11/15/2026, 10:30:19 AM
+------------------------------------------------------------
+
+بله، اتفاقاً می‌توانیم از همان روشی که گفتی استفاده کنیم؛ اما یک تفاوت مهم وجود دارد: **دکمه‌های Close و Reverse روی چارت Bitunix دکمه HTML معمولی نیستند؛ داخل Canvas رسم شده‌اند.**
+
+### ۱. چرا Canvas کمی چالش دارد؟
+
+در دکمه HTML معمولی، مرورگر می‌تواند اطلاعاتی مثل این‌ها را در اختیارمان بگذارد:
+
+- آدرس یا Selector عنصر
+- متن دکمه
+- مختصات دقیق دکمه
+- رویداد کلیک
+
+اما در Canvas، چندین دکمه و علامت ممکن است داخل یک عنصر واحد رسم شده باشند. بنابراین وقتی موس را روی Close می‌بری، مرورگر فقط خود Canvas را به‌عنوان عنصر زیر موس تشخیص می‌دهد، نه آیکون Close را.
+
+### ۲. آیا ابزار Inspect می‌تواند آدرس دکمه را پیدا کند؟
+
+<AsyncImage query="Chrome DevTools inspect element select element hover canvas website developer tools" aspectRatio="16:9" width="100%" />
+
+اگر منظورت ابزار Inspect Element کروم است، بله، می‌توانیم امتحان کنیم؛ ولی احتمالاً آدرس اختصاصی دکمه را نمی‌دهد.
+
+در گزارش ۱۴ که فرستادی، همین کار را تا حدی انجام دادیم:
+
+- موس روی Close قرار گرفت و Tooltip برابر `Market close` شد.
+- موس روی Reverse قرار گرفت و Tooltip برابر `Reverse` شد.
+- هر دو روی همان Canvas بودند.
+- مختصات هر دو در iframe چارت ثبت شد.
+
+یعنی هویت دکمه‌ها را با Tooltip تشخیص داده‌ایم، اما هنوز عنصر مستقل یا مختصات پایدار آن‌ها را استخراج نکرده‌ایم.
+
+### ۳. آیا باید دوباره چارت را بررسی کنیم؟
+
+نه از صفر. اطلاعات گزارش ۱۴ را داریم. فقط باید یک مرحله دقیق‌تر انجام بدهیم:
+
+1. محل Close و Reverse را در حالت چارت کوچک ثبت کنیم.
+2. همین کار را در حالت چارت بزرگ انجام بدهیم.
+3. بررسی کنیم آیا مختصات آن‌ها نسبت به محدوده Canvas ثابت می‌ماند.
+4. بررسی کنیم آیا می‌توانیم از API داخلی چارت، اطلاعات ابزارها و رویدادهای آن‌ها را پیدا کنیم.
+
+<badge color="success">نکته مهم</badge> اگر مختصات نسبی دکمه‌ها در تغییر اندازه چارت پایدار باشد، لازم نیست Selector اختصاصی داشته باشیم. می‌توانیم با تشخیص موقعیت نسبی و تأیید Tooltip، دکمه را شناسایی کنیم.
+
+### نتیجه
+
+من فعلاً روش Canvas را کنار نمی‌گذارم. چون اگر بتوانیم آن را درست شناسایی کنیم، بستن پوزیشن با یک کلیک بسیار سریع‌تر از روش سه‌نقطه خواهد بود.
+
+به نظرم قبل از پیاده‌سازی، یک گزارش تشخیصی دیگر بسازیم که هم مختصات نسبی دکمه‌ها و هم ساختار داخلی Canvas و رویدادهای چارت را بررسی کند؛ بدون اینکه هیچ دکمه معاملاتی را کلیک کند.
+
+
+کاربر | پیام 6 | 11/15/2026, 10:32:44 AM
+------------------------------------------------------------
+
+# Selected text:
+
+## Selection 1
+بررسی کنیم آیا می‌توانیم از API داخلی چارت، اطلاعات ابزارها و رویدادهای آن‌ها را پیدا کنیم.
+
+## My request:
+این خارج از کانواس هست؟ چالش این چیه؟
+
+
+دستیار | پیام 7 | 11/15/2026, 10:32:51 AM
+------------------------------------------------------------
+
+Worked for 7s
+
+
+دستیار | پیام 8 | 11/15/2026, 10:32:51 AM
+------------------------------------------------------------
+
+بله. **منظورم این است که به‌جای شناسایی دکمه روی تصویر Canvas، مستقیماً سراغ کد JavaScript داخلی چارت برویم.** این یک مسیر متفاوت از کار با مختصات Canvas است.
+
+برای روشن شدن موضوع، دو مسیر داریم:
+
+### مسیر اول: خود Canvas
+موس را روی آیکون Close می‌بریم، موقعیت آن را پیدا می‌کنیم و با کلیک روی همان مختصات عمل می‌کنیم.
+
+چالش: تغییر اندازه چارت، جابه‌جایی نوار ابزار و احتمال کلیک اشتباه.
+
+### مسیر دوم: API داخلی چارت
+چارت برای نمایش کندل‌ها، ابزارها، خطوط و کنترل‌های معاملاتی از کدهای JavaScript استفاده می‌کند. ما می‌توانیم این کدها و آبجکت‌های داخلی را بررسی کنیم تا ببینیم آیا فرمانی برای Close یا Reverse وجود دارد یا نه.
+
+در گزارش‌های قبلی تو، تعدادی از این آبجکت‌ها را پیدا کرده بودیم:
+
+- `tradingViewApi`
+- `ChartApiInstance`
+- `chartWidget`
+- `lineToolPropertiesToolbar`
+
+اما هنوز مشخص نکرده‌ایم که کدام‌یک، یا کدام بخش دیگر از کد چارت، مسئول اجرای Close و Reverse است.
+
+### چالش اصلی چیست؟
+
+سه مورد:
+
+1. **مستند نبودن API داخلی:** ممکن است متدهای موردنیاز وجود داشته باشند، ولی نام و نحوه استفاده‌شان مشخص نباشد.
+2. **محدود بودن دسترسی:** API چارت ممکن است اطلاعات نمودار را بدهد، اما فرمان‌های معاملاتی را به بخش دیگری از سایت بسپارد.
+3. **شناسایی فرمان واقعی:** حتی اگر متد Close پیدا شود، باید بفهمیم دقیقاً چه پوزیشنی را با چه حجمی می‌بندد و آیا امکان تعیین درصد وجود دارد.
+
+<badge color="success">نکته مثبت</badge> چارت ما داخل یک iframe قابل‌دسترسی قرار دارد؛ بنابراین برای بررسی JavaScript داخلی آن، مانع دسترسی بین‌دامنه‌ای نداریم.
+
+**پیشنهاد من:** ابتدا فقط کدهای داخلی را به‌صورت Read-only بررسی کنیم و دنبال عبارت‌ها و متدهای مرتبط با `closePosition`، `marketClose`، `reversePosition` و رویدادهای مربوط به کنترل‌های پوزیشن بگردیم. اگر فرمان مستقیم پیدا شود، ممکن است بتوانیم بدون وابستگی به مختصات Canvas کار کنیم. اگر پیدا نشود، مسیر Canvas همچنان گزینه جایگزین ماست.
+
+
+کاربر | پیام 9 | 11/15/2026, 10:35:00 AM
+------------------------------------------------------------
+
+باشه با api بررسی بکنیم و با api این دو تا رو انجام بدیم. یک کد کامل و تمام و کمال برای پیدا کردن این api برای کلوز و ریورس بفرس بیاد قابل کپی کردن باشه و نتیجه توی پنجره جدا باز بشه و دکمه کپی داشته باشه
+
+
+دستیار | پیام 10 | 11/15/2026, 10:37:44 AM
+------------------------------------------------------------
+
+Worked for 2m 43s
+
+
+دستیار | پیام 11 | 11/15/2026, 10:37:44 AM
+------------------------------------------------------------
+
+این کد را برای بررسی عمیق‌تر Bitunix آماده کردم. هدفش پیدا کردن API یا متدهای داخلی مرتبط با **Market Close و Reverse** است؛ نه صرفاً پیدا کردن جای دکمه‌ها روی چارت.
+
+کد چند مسیر را هم‌زمان بررسی می‌کند:
+
+1. آبجکت‌های سراسری سایت و چارت، از جمله `tradingViewApi` و `ChartApiInstance`.
+2. متدهای داخلی آبجکت‌ها و Prototype آن‌ها.
+3. توابع و کدهای مرتبط با `closePosition`، `marketClose`، `reversePosition`، `reduceOnly` و عبارات مشابه.
+4. ماژول‌های قابل‌دسترسی Webpack و کدهای JavaScript بارگذاری‌شده.
+5. هندلرهای React متصل به عناصر چارت و صفحه.
+
+<badge color="success">فقط خواندنی (Read-only)</badge> هیچ دکمه‌ای را کلیک نمی‌کند، هیچ سفارشی نمی‌فرستد، هیچ درخواستی به سرور ایجاد نمی‌کند و اطلاعات خصوصی WebSocket، موجودی، رمز عبور یا مقادیر ورودی‌ها را نمی‌خواند.
+
+### روش اجرا
+
+- وارد صفحه معاملات Bitunix و چارت XAUTUSDT شو.
+- `F12` را بزن و وارد Console شو.
+- از منوی انتخاب Context در بالای Console، گزینه `top` را انتخاب کن.
+- کل کد زیر را یک‌جا Paste کن و Enter بزن.
+- پنجره گزارش باز می‌شود. اجازه بده بررسی تمام شود و سپس روی **Copy Report** کلیک کن.
+
+### کد کامل Bitunix Close & Reverse API Audit v1.0
+
+<CodeBlock language="javascript" editable>
+(() => {
+  "use strict";
+
+  /* ============================================================
+     BITUNIX CLOSE & REVERSE API AUDIT v1.0
+     Read-only diagnostic
+     - No clicks on exchange controls
+     - No order submission
+     - No fetch / XHR / WebSocket
+     - No private WebSocket inspection
+     - No form values, credentials or account balances
+     ============================================================ */
+
+  const PANEL_ID = "__BITUNIX_CLOSE_REVERSE_API_AUDIT_V1__";
+  const VERSION = "1.0";
+  const STARTED_AT = new Date().toISOString();
+
+  const STRONG_TERMS = [
+    "closePosition",
+    "positionClose",
+    "marketClose",
+    "closeOrder",
+    "close_position",
+    "close-position",
+    "reversePosition",
+    "positionReverse",
+    "reverse_position",
+    "reverse-position",
+    "reduceOnly",
+    "reduce_only",
+    "closeTrade",
+    "reverseTrade",
+    "closeAllPosition",
+    "closeAllPositions",
+    "closeByMarket",
+    "market_close"
+  ];
+
+  const FUNCTION_HINTS =
+    /close|reverse|reduce.?only|position|order|trade|market.?close|submit|execute/i;
+
+  const ROOT_HINTS =
+    /chart|trading.?view|widget|position|order|future|contract|exchange|bitunix|market|api|store|redux|zustand|pinia|webpack.?chunk|webpack|require|module/i;
+
+  const SENSITIVE_KEY =
+    /user|account|auth|token|credential|secret|password|balance|wallet|private|socket|websocket|cookie|localstorage|sessionstorage/i;
+
+  const SOURCE_PATTERNS = [
+    /close[\w$.-]{0,35}position/ig,
+    /position[\w$.-]{0,35}close/ig,
+    /market[\w$.-]{0,25}close/ig,
+    /reverse[\w$.-]{0,35}position/ig,
+    /position[\w$.-]{0,35}reverse/ig,
+    /reduce[\w$.-]{0,15}only/ig,
+    /close[\w$.-]{0,20}order/ig,
+    /reverse[\w$.-]{0,20}order/ig,
+    /closePosition/ig,
+    /reversePosition/ig
+  ];
+
+  // ------------------------------------------------------------
+  // Remove a previous audit panel if it exists.
+  // ------------------------------------------------------------
+
+  const rootWindow = (() => {
+    try {
+      return window.top || window;
+    } catch (_) {
+      return window;
+    }
+  })();
+
+  const rootDocument = rootWindow.document;
+
+  const previousPanel = rootDocument.getElementById(PANEL_ID);
+  if (previousPanel) previousPanel.remove();
+
+  // ------------------------------------------------------------
+  // Safe property access:
+  // Never call getters while exploring page objects.
+  // ------------------------------------------------------------
+
+  function getOwnValue(obj, key) {
+    try {
+      const d = Object.getOwnPropertyDescriptor(obj, key);
+      if (d && Object.prototype.hasOwnProperty.call(d, "value")) {
+        return d.value;
+      }
+    } catch (_) {}
+    return undefined;
+  }
+
+  function getSafeProperty(obj, key) {
+    let current = obj;
+
+    for (let i = 0; current && i < 3; i++) {
+      const value = getOwnValue(current, key);
+      if (value !== undefined) return value;
+
+      try {
+        current = Object.getPrototypeOf(current);
+      } catch (_) {
+        break;
+      }
+    }
+
+    return undefined;
+  }
+
+  function safeFunctionSource(fn) {
+    try {
+      const source = Function.prototype.toString.call(fn);
+      if (!source || source.includes("[native code]")) return "";
+      return source.slice(0, 12000);
+    } catch (_) {
+      return "";
+    }
+  }
+
+  function cleanText(value, max = 700) {
+    return String(value || "")
+      .replace(/\s+/g, " ")
+      .trim()
+      .slice(0, max);
+  }
+
+  function sanitizeURL(value) {
+    try {
+      const u = new URL(String(value));
+      return u.origin + u.pathname;
+    } catch (_) {
+      return String(value || "").split("?")[0].split("#")[0];
+    }
+  }
+
+  function isDOMObject(value, win) {
+    try {
+      return !!(
+        value &&
+        win.Node &&
+        value instanceof win.Node
+      );
+    } catch (_) {
+      return false;
+    }
+  }
+
+  // ------------------------------------------------------------
+  // Find all accessible frames.
+  // ------------------------------------------------------------
+
+  function collectFrames(startWindow) {
+    const frames = [];
+    const queue = [{ win: startWindow, path: "top", depth: 0 }];
+    const seen = new WeakSet();
+
+    while (queue.length && frames.length < 25) {
+      const item = queue.shift();
+      const win = item.win;
+
+      if (!win || seen.has(win)) continue;
+      seen.add(win);
+
+      let doc;
+      let url = "";
+      let title = "";
+
+      try {
+        doc = win.document;
+        url = sanitizeURL(win.location.href);
+        title = doc.title || "";
+      } catch (error) {
+        frames.push({
+          path: item.path,
+          accessible: false,
+          reason: String(error).slice(0, 180)
+        });
+        continue;
+      }
+
+      if (!doc) continue;
+
+      let canvasCount = 0;
+      let chartMarkers = [];
+      let canvases = [];
+
+      try {
+        canvasCount = doc.querySelectorAll("canvas").length;
+
+        const selectors = [
+          ".chart-markup-table",
+          ".chart-gui-wrapper",
+          ".pane",
+          "[class*='tradingview']",
+          "[class*='chart-container']"
+        ];
+
+        for (const selector of selectors) {
+          try {
+            const count = doc.querySelectorAll(selector).length;
+            if (count) chartMarkers.push({
+              selector,
+              count
+            });
+          } catch (_) {}
+        }
+
+        const canvasNodes = Array.from(
+          doc.querySelectorAll("canvas")
+        ).slice(0, 12);
+
+        canvases = canvasNodes.map((el, index) => {
+          let rect = null;
+
+          try {
+            const r = el.getBoundingClientRect();
+            rect = {
+              x: Math.round(r.x),
+              y: Math.round(r.y),
+              width: Math.round(r.width),
+              height: Math.round(r.height)
+            };
+          } catch (_) {}
+
+          return {
+            index,
+            ariaLabel: el.getAttribute("aria-label") || "",
+            className: String(el.className || "").slice(0, 180),
+            rect
+          };
+        });
+      } catch (_) {}
+
+      const isChart =
+        chartMarkers.length > 0 ||
+        /chart|tradingview/i.test(title) ||
+        canvases.some(c => /chart/i.test(c.ariaLabel));
+
+      frames.push({
+        path: item.path,
+        accessible: true,
+        url,
+        title,
+        isChart,
+        canvasCount,
+        chartMarkers,
+        canvases,
+        win,
+        doc
+      });
+
+      if (item.depth >= 3) continue;
+
+      let childCount = 0;
+
+      try {
+        childCount = win.frames.length;
+      } catch (_) {}
+
+      for (let i = 0; i < childCount; i++) {
+        try {
+          queue.push({
+            win: win.frames[i],
+            path: item.path + " > iframe[" + i + "]",
+            depth: item.depth + 1
+          });
+        } catch (_) {}
+      }
+    }
+
+    return frames;
+  }
+
+  // ------------------------------------------------------------
+  // Analyze a function and calculate relevance score.
+  // ------------------------------------------------------------
+
+  function analyzeFunction(fn, path) {
+    const source = safeFunctionSource(fn);
+    const name = cleanText(
+      getSafeProperty(fn, "name") || "(anonymous)",
+      100
+    );
+
+    if (!source) return null;
+
+    let score = 0;
+    const matches = [];
+
+    if (/close.?position|position.?close|market.?close/i.test(path)) {
+      score += 7;
+      matches.push("path-close-position");
+    }
+
+    if (/reverse.?position|position.?reverse/i.test(path)) {
+      score += 7;
+      matches.push("path-reverse-position");
+    }
+
+    if (/reduce.?only/i.test(path)) {
+      score += 7;
+      matches.push("path-reduce-only");
+    }
+
+    if (/close/i.test(path)) {
+      score += 4;
+      matches.push("path-close");
+    }
+
+    if (/reverse/i.test(path)) {
+      score += 4;
+      matches.push("path-reverse");
+    }
+
+    if (/position/i.test(path)) {
+      score += 1;
+    }
+
+    if (/order|trade/i.test(path)) {
+      score += 1;
+    }
+
+    const sourceTests = [
+      {
+        re: /close[\w$.-]{0,35}position|position[\w$.-]{0,35}close/i,
+        weight: 6,
+        tag: "source-close-position"
+      },
+      {
+        re: /market[\w$.-]{0,25}close/i,
+        weight: 5,
+        tag: "source-market-close"
+      },
+      {
+        re: /reverse[\w$.-]{0,35}position|position[\w$.-]{0,35}reverse/i,
+        weight: 6,
+        tag: "source-reverse-position"
+      },
+      {
+        re: /reduce[\w$.-]{0,15}only/i,
+        weight: 6,
+        tag: "source-reduce-only"
+      },
+      {
+        re: /close[\w$.-]{0,20}order/i,
+        weight: 4,
+        tag: "source-close-order"
+      },
+      {
+        re: /reverse[\w$.-]{0,20}order/i,
+        weight: 4,
+        tag: "source-reverse-order"
+      },
+      {
+        re: /close/i,
+        weight: 1,
+        tag: "source-close"
+      },
+      {
+        re: /reverse/i,
+        weight: 2,
+        tag: "source-reverse"
+      }
+    ];
+
+    for (const test of sourceTests) {
+      if (test.re.test(source)) {
+        score += test.weight;
+        matches.push(test.tag);
+      }
+    }
+
+    if (score < 3) return null;
+
+    const snippets = [];
+
+    for (const pattern of SOURCE_PATTERNS) {
+      pattern.lastIndex = 0;
+      const match = pattern.exec(source);
+
+      if (match) {
+        const start = Math.max(0, match.index - 180);
+        const end = Math.min(
+          source.length,
+          match.index + match[0].length + 260
+        );
+
+        const snippet = cleanText(source.slice(start, end), 550);
+
+        if (snippet && !snippets.includes(snippet)) {
+          snippets.push(snippet);
+        }
+      }
+    }
+
+    return {
+      score,
+      path: cleanText(path, 350),
+      functionName: name,
+      functionLength: source.length,
+      matches: [...new Set(matches)],
+      sourceSnippets: snippets.slice(0, 5)
+    };
+  }
+
+  // ------------------------------------------------------------
+  // Scan JavaScript object trees without invoking their methods.
+  // ------------------------------------------------------------
+
+  function scanObjectRoots(win, doc, framePath) {
+    const functionResults = [];
+    const objectResults = [];
+    const rootNames = [];
+    const seenObjects = new WeakSet();
+    const seenFunctions = new WeakSet();
+    const queue = [];
+
+    let inspectedObjects = 0;
+    let inspectedFunctions = 0;
+
+    const MAX_OBJECTS = 4200;
+    const MAX_FUNCTIONS = 9000;
+    const MAX_DEPTH = 5;
+    const MAX_KEYS_PER_OBJECT = 100;
+
+    function addQueue(value, path, depth) {
+      if (!value || depth > MAX_DEPTH) return;
+
+      if (
+        typeof value !== "object" &&
+        typeof value !== "function"
+      ) return;
+
+      if (isDOMObject(value, win)) return;
+
+      if (typeof value === "object") {
+        try {
+          if (value === win || value === doc) return;
+        } catch (_) {}
+      }
+
+      queue.push({ value, path, depth });
+    }
+
+    function addFunction(fn, path) {
+      if (typeof fn !== "function") return;
+      if (seenFunctions.has(fn)) return;
+
+      seenFunctions.add(fn);
+      inspectedFunctions++;
+
+      const result = analyzeFunction(fn, path);
+
+      if (result) {
+        functionResults.push({
+          frame: framePath,
+          ...result
+        });
+      }
+    }
+
+    // Find relevant global roots by name.
+    let globalNames = [];
+
+    try {
+      globalNames = Object.getOwnPropertyNames(win);
+    } catch (_) {}
+
+    const selectedNames = globalNames.filter(name =>
+      ROOT_HINTS.test(name) &&
+      !SENSITIVE_KEY.test(name)
+    );
+
+    const knownNames = [
+      "tradingViewApi",
+      "ChartApiInstance",
+      "chartWidget",
+      "chartWidgetCollection",
+      "chartWidgetCollectionApi",
+      "tradingView",
+      "widget",
+      "store"
+    ];
+
+    for (const name of knownNames) {
+      if (globalNames.includes(name) && !selectedNames.includes(name)) {
+        selectedNames.push(name);
+      }
+    }
+
+    for (const name of selectedNames.slice(0, 180)) {
+      const value = getOwnValue(win, name);
+
+      if (
+        value === undefined ||
+        SENSITIVE_KEY.test(name)
+      ) continue;
+
+      rootNames.push(name);
+      addQueue(value, "window." + name, 0);
+
+      if (typeof value === "function") {
+        addFunction(value, "window." + name);
+      }
+    }
+
+    // Inspect selected roots and their descendants.
+    while (queue.length && inspectedObjects < MAX_OBJECTS) {
+      const item = queue.shift();
+      const obj = item.value;
+
+      if (!obj) continue;
+
+      if (typeof obj === "object") {
+        if (seenObjects.has(obj)) continue;
+        seenObjects.add(obj);
+      } else if (typeof obj === "function") {
+        addFunction(obj, item.path);
+        if (seenObjects.has(obj)) continue;
+        seenObjects.add(obj);
+      }
+
+      inspectedObjects++;
+
+      let keys = [];
+
+      try {
+        keys = Object.getOwnPropertyNames(obj).slice(
+          0,
+          MAX_KEYS_PER_OBJECT
+        );
+      } catch (_) {
+        continue;
+      }
+
+      const relevantKeys = [];
+
+      for (const key of keys) {
+        if (SENSITIVE_KEY.test(key)) continue;
+
+        const descriptor = (() => {
+          try {
+            return Object.getOwnPropertyDescriptor(obj, key);
+          } catch (_) {
+            return null;
+          }
+        })();
+
+        // Accessor properties are deliberately not invoked.
+        if (!descriptor ||
+            !Object.prototype.hasOwnProperty.call(descriptor, "value")) {
+          continue;
+        }
+
+        const value = descriptor.value;
+        const childPath = item.path + "." + key;
+
+        if (typeof value === "function") {
+          if (inspectedFunctions < MAX_FUNCTIONS) {
+            addFunction(value, childPath);
+          }
+
+          if (FUNCTION_HINTS.test(key)) {
+            relevantKeys.push({
+              key,
+              type: "function"
+            });
+          }
+
+          // Do not recursively explore arbitrary function internals.
+          continue;
+        }
+
+        if (
+          value &&
+          typeof value === "object" &&
+          !isDOMObject(value, win)
+        ) {
+          if (FUNCTION_HINTS.test(key)) {
+            relevantKeys.push({
+              key,
+              type: Array.isArray(value) ? "array" : "object"
+            });
+          }
+
+          if (Array.isArray(value)) {
+            // Limited inspection of module arrays.
+            for (let i = 0; i < Math.min(value.length, 45); i++) {
+              const entry = getOwnValue(value, String(i));
+
+              if (
+                entry &&
+                (typeof entry === "object" ||
+                 typeof entry === "function")
+              ) {
+                addQueue(
+                  entry,
+                  childPath + "[" + i + "]",
+                  item.depth + 1
+                );
+              }
+            }
+          } else {
+            addQueue(value, childPath, item.depth + 1);
+          }
+        }
+      }
+
+      if (relevantKeys.length) {
+        objectResults.push({
+          frame: framePath,
+          path: cleanText(item.path, 350),
+          matchingKeys: relevantKeys.slice(0, 60)
+        });
+      }
+
+      // Inspect a small number of prototype levels.
+      if (item.depth <= 2) {
+        let proto = null;
+
+        try {
+          proto = Object.getPrototypeOf(obj);
+        } catch (_) {}
+
+        for (let level = 0; proto && level < 2; level++) {
+          let protoKeys = [];
+
+          try {
+            protoKeys = Object.getOwnPropertyNames(proto);
+          } catch (_) {}
+
+          for (const key of protoKeys) {
+            if (SENSITIVE_KEY.test(key)) continue;
+
+            const value = getOwnValue(proto, key);
+
+            if (typeof value === "function") {
+              if (FUNCTION_HINTS.test(key)) {
+                addFunction(
+                  value,
+                  item.path + ".[[Prototype]]." + key
+                );
+              }
+            }
+          }
+
+          try {
+            proto = Object.getPrototypeOf(proto);
+          } catch (_) {
+            break;
+          }
+        }
+      }
+    }
+
+    functionResults.sort((a, b) => b.score - a.score);
+
+    return {
+      globalRootCandidates: rootNames,
+      inspectedObjects,
+      inspectedFunctions,
+      objectMatches: objectResults.slice(0, 180),
+      functionMatches: functionResults.slice(0, 160)
+    };
+  }
+
+  // ------------------------------------------------------------
+  // Inspect React props/fibers attached to relevant DOM nodes.
+  // No handlers are called.
+  // ------------------------------------------------------------
+
+  function scanReactReferences(doc, framePath) {
+    const results = [];
+    const roots = [];
+    let scannedElements = 0;
+
+    let elements = [];
+
+    try {
+      elements = Array.from(
+        doc.querySelectorAll(
+          "canvas, [class*='chart'], [class*='position'], [class*='trade'], [class*='order']"
+        )
+      ).slice(0, 160);
+    } catch (_) {}
+
+    for (let i = 0; i < elements.length; i++) {
+      const el = elements[i];
+      scannedElements++;
+
+      let keys = [];
+
+      try {
+        keys = Object.getOwnPropertyNames(el);
+      } catch (_) {
+        continue;
+      }
+
+      const reactKeys = keys.filter(key =>
+        key.startsWith("__reactProps$") ||
+        key.startsWith("__reactFiber$")
+      );
+
+      for (const key of reactKeys) {
+        const value = getOwnValue(el, key);
+        if (!value || typeof value !== "object") continue;
+
+        if (key.startsWith("__reactProps$")) {
+          roots.push({
+            value,
+            path: framePath + ".DOM[" + i + "].ReactProps"
+          });
+        }
+
+        if (key.startsWith("__reactFiber$")) {
+          for (const propName of ["memoizedProps", "pendingProps"]) {
+            const props = getSafeProperty(value, propName);
+
+            if (props && typeof props === "object") {
+              roots.push({
+                value: props,
+                path: framePath + ".DOM[" + i + "].Fiber." + propName
+              });
+            }
+          }
+        }
+
+        results.push({
+          frame: framePath,
+          elementIndex: i,
+          tagName: el.tagName || "",
+          className: String(el.className || "").slice(0, 160),
+          reactReference: key.startsWith("__reactProps$")
+            ? "React props"
+            : "React fiber"
+        });
+      }
+    }
+
+    const functions = [];
+    const seen = new WeakSet();
+    let visited = 0;
+
+    function walk(obj, path, depth) {
+      if (!obj || depth > 4 || visited > 800) return;
+      if (typeof obj !== "object" && typeof obj !== "function") return;
+      if (seen.has(obj)) return;
+
+      seen.add(obj);
+      visited++;
+
+      let keys = [];
+
+      try {
+        keys = Object.getOwnPropertyNames(obj).slice(0, 100);
+      } catch (_) {
+        return;
+      }
+
+      for (const key of keys) {
+        if (SENSITIVE_KEY.test(key)) continue;
+
+        const value = getOwnValue(obj, key);
+        if (value === undefined) continue;
+
+        const nextPath = path + "." + key;
+
+        if (typeof value === "function") {
+          if (
+            /onClick|onPointer|onMouse|close|reverse|position|order|trade|submit/i.test(key)
+          ) {
+            const info = analyzeFunction(value, nextPath);
+
+            if (info) {
+              functions.push({
+                frame: framePath,
+                ...info
+              });
+            }
+          }
+        } else if (
+          value &&
+          typeof value === "object" &&
+          !isDOMObject(value, doc.defaultView)
+        ) {
+          walk(value, nextPath, depth + 1);
+        }
+      }
+    }
+
+    for (const root of roots.slice(0, 100)) {
+      walk(root.value, root.path, 0);
+    }
+
+    return {
+      scannedElements,
+      reactReferences: results.slice(0, 150),
+      handlerFunctions: functions.slice(0, 100)
+    };
+  }
+
+  // ------------------------------------------------------------
+  // Search already-loaded inline JavaScript only.
+  // No external files are downloaded.
+  // ------------------------------------------------------------
+
+  function scanInlineScripts(doc, framePath) {
+    const matches = [];
+    const externalScripts = [];
+
+    let scripts = [];
+
+    try {
+      scripts = Array.from(doc.scripts || []);
+    } catch (_) {}
+
+    for (let i = 0; i < scripts.length; i++) {
+      const script = scripts[i];
+
+      if (script.src) {
+        const src = sanitizeURL(script.src);
+
+        if (
+          /chart|trading|position|order|trade|contract|future|api|chunk/i.test(src)
+        ) {
+          externalScripts.push({
+            index: i,
+            src
+          });
+        }
+
+        continue;
+      }
+
+      let source = "";
+
+      try {
+        source = script.textContent || "";
+      } catch (_) {}
+
+      if (!source || source.length > 1800000) continue;
+
+      let count = 0;
+
+      for (const pattern of SOURCE_PATTERNS) {
+        pattern.lastIndex = 0;
+
+        let match;
+
+        while ((match = pattern.exec(source)) !== null) {
+          const start = Math.max(0, match.index - 220);
+          const end = Math.min(
+            source.length,
+            match.index + match[0].length + 300
+          );
+
+          matches.push({
+            frame: framePath,
+            scriptIndex: i,
+            matchedTerm: match[0],
+            snippet: cleanText(source.slice(start, end), 650)
+          });
+
+          count++;
+
+          if (count >= 15) break;
+        }
+
+        if (count >= 15) break;
+      }
+    }
+
+    return {
+      totalScripts: scripts.length,
+      externalScripts: externalScripts.slice(0, 100),
+      inlineScriptMatches: matches.slice(0, 100)
+    };
+  }
+
+  // ------------------------------------------------------------
+  // Capture loaded resource names only.
+  // No request is made and no response body is read.
+  // ------------------------------------------------------------
+
+  function scanResourceNames(win) {
+    const results = [];
+
+    try {
+      const entries = win.performance.getEntriesByType("resource");
+
+      for (const entry of entries) {
+        if (
+          /position|order|trade|contract|future|market|chart|kline|api|chunk/i.test(entry.name)
+        ) {
+          results.push({
+            name: sanitizeURL(entry.name),
+            initiatorType: entry.initiatorType || "",
+            durationMs: Math.round(entry.duration || 0)
+          });
+        }
+
+        if (results.length >= 100) break;
+      }
+    } catch (_) {}
+
+    return results;
+  }
+
+  // ------------------------------------------------------------
+  // Full scan.
+  // ------------------------------------------------------------
+
+  function runAudit() {
+    const auditStarted = new Date().toISOString();
+    const frameItems = collectFrames(rootWindow);
+
+    const report = {
+      reportName: "BITUNIX_CLOSE_REVERSE_API_AUDIT",
+      version: VERSION,
+      startedAt: STARTED_AT,
+      scanStartedAt: auditStarted,
+      scanCompletedAt: null,
+
+      safety: {
+        readOnly: true,
+        exchangeButtonsClicked: 0,
+        formsSubmitted: 0,
+        networkRequestsMadeByAudit: 0,
+        fetchOrXHRUsed: false,
+        websocketDataRead: false,
+        privateWebSocketDataRead: false,
+        inputValuesRead: false,
+        localStorageRead: false,
+        credentialsRead: false,
+        orderActionsExecuted: false,
+        accessorsInvoked: false
+      },
+
+      summary: {
+        documentsFound: frameItems.length,
+        accessibleDocuments: 0,
+        chartDocuments: 0,
+        functionMatches: 0,
+        reactHandlerMatches: 0,
+        scriptMatches: 0
+      },
+
+      documents: []
+    };
+
+    for (const item of frameItems) {
+      if (!item.accessible) {
+        report.documents.push(item);
+        continue;
+      }
+
+      report.summary.accessibleDocuments++;
+
+      if (item.isChart) {
+        report.summary.chartDocuments++;
+      }
+
+      const objectScan = scanObjectRoots(
+        item.win,
+        item.doc,
+        item.path
+      );
+
+      const reactScan = scanReactReferences(
+        item.doc,
+        item.path
+      );
+
+      const scriptScan = scanInlineScripts(
+        item.doc,
+        item.path
+      );
+
+      const resources = scanResourceNames(item.win);
+
+      report.summary.functionMatches +=
+        objectScan.functionMatches.length;
+
+      report.summary.reactHandlerMatches +=
+        reactScan.handlerFunctions.length;
+
+      report.summary.scriptMatches +=
+        scriptScan.inlineScriptMatches.length;
+
+      report.documents.push({
+        path: item.path,
+        url: item.url,
+        title: item.title,
+        isChart: item.isChart,
+        canvasCount: item.canvasCount,
+        chartMarkers: item.chartMarkers,
+        canvases: item.canvases,
+
+        objectScan,
+        reactScan,
+        scriptScan,
+        loadedResourceNames: resources
+      });
+    }
+
+    report.scanCompletedAt = new Date().toISOString();
+
+    return report;
+  }
+
+  // ------------------------------------------------------------
+  // Popup UI.
+  // ------------------------------------------------------------
+
+  const host = rootDocument.createElement("div");
+  host.id = PANEL_ID;
+
+  host.style.position = "fixed";
+  host.style.top = "18px";
+  host.style.right = "18px";
+  host.style.zIndex = "2147483647";
+  host.style.width = "min(680px, calc(100vw - 36px))";
+  host.style.height = "min(780px, calc(100vh - 36px))";
+
+  rootDocument.documentElement.appendChild(host);
+
+  const shadow = host.attachShadow({ mode: "open" });
+
+  shadow.innerHTML = `
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .panel {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        color: #e8edf5;
+        background: rgba(12, 17, 27, 0.97);
+        border: 1px solid rgba(120, 145, 180, 0.32);
+        border-radius: 14px;
+        box-shadow: 0 18px 60px rgba(0,0,0,.55);
+        font-family: Arial, sans-serif;
+      }
+
+      .header {
+        padding: 14px 16px;
+        border-bottom: 1px solid rgba(140,160,190,.2);
+        background: rgba(28, 39, 57, .8);
+      }
+
+      .title {
+        font-size: 15px;
+        font-weight: 700;
+        letter-spacing: .2px;
+      }
+
+      .subtitle {
+        margin-top: 5px;
+        color: #9eacc1;
+        font-size: 11px;
+        line-height: 1.5;
+      }
+
+      .status {
+        padding: 10px 16px;
+        font-size: 12px;
+        color: #d8e5f5;
+        border-bottom: 1px solid rgba(140,160,190,.16);
+      }
+
+      .buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        padding: 10px 14px;
+        border-bottom: 1px solid rgba(140,160,190,.16);
+      }
+
+      button {
+        border: 1px solid rgba(130,155,190,.35);
+        background: #26364c;
+        color: #f5f8ff;
+        padding: 8px 12px;
+        border-radius: 7px;
+        font-size: 12px;
+        font-weight: 600;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: #354c68;
+      }
+
+      button.primary {
+        background: #176b55;
+        border-color: #279779;
+      }
+
+      button.close {
+        background: #613b45;
+        border-color: #a65c68;
+      }
+
+      .output {
+        flex: 1;
+        min-height: 0;
+        width: 100%;
+        resize: none;
+        border: 0;
+        outline: none;
+        padding: 13px;
+        color: #d5e2f2;
+        background: #0b111b;
+        font: 11px/1.5 Consolas, monospace;
+        white-space: pre;
+        tab-size: 2;
+      }
+
+      .footer {
+        padding: 8px 13px;
+        color: #8999af;
+        font-size: 10px;
+        border-top: 1px solid rgba(140,160,190,.16);
+      }
+    </style>
+
+    <div class="panel">
+      <div class="header">
+        <div class="title">Bitunix Close / Reverse API Audit v1.0</div>
+        <div class="subtitle">
+          Read-only runtime inspection · No trading actions · No network requests
+        </div>
+      </div>
+
+      <div class="status" id="status">
+        Initializing audit...
+      </div>
+
+      <div class="buttons">
+        <button class="primary" id="scan">Run Scan Again</button>
+        <button class="primary" id="copy">Copy Report</button>
+        <button id="select">Select Report</button>
+        <button class="close" id="close">Close</button>
+      </div>
+
+      <textarea class="output" id="output" readonly
+        spellcheck="false"
+        placeholder="Audit report will appear here..."></textarea>
+
+      <div class="footer">
+        Keep this panel open until scanning completes. Copy the full report and send it back.
+      </div>
+    </div>
+  `;
+
+  const $ = selector => shadow.querySelector(selector);
+
+  const statusEl = $("#status");
+  const outputEl = $("#output");
+
+  let latestReport = null;
+  let scanning = false;
+
+  function showReport(report) {
+    latestReport = report;
+    outputEl.value = JSON.stringify(report, null, 2);
+
+    statusEl.textContent =
+      "Completed · Documents: " +
+      report.summary.documentsFound +
+      " · Accessible: " +
+      report.summary.accessibleDocuments +
+      " · Chart frames: " +
+      report.summary.chartDocuments +
+      " · Matching functions: " +
+      report.summary.functionMatches +
+      " · React handlers: " +
+      report.summary.reactHandlerMatches +
+      " · Script matches: " +
+      report.summary.scriptMatches;
+  }
+
+  function runFromPanel() {
+    if (scanning) return;
+
+    scanning = true;
+    statusEl.textContent = "Scanning accessible page objects and chart APIs...";
+    outputEl.value = "";
+
+    // Allow the status to render before the synchronous inspection.
+    rootWindow.setTimeout(() => {
+      try {
+        const result = runAudit();
+        showReport(result);
+      } catch (error) {
+        statusEl.textContent = "Scan failed: " + String(error);
+
+        outputEl.value = JSON.stringify({
+          reportName: "BITUNIX_CLOSE_REVERSE_API_AUDIT",
+          version: VERSION,
+          error: String(error),
+          stack: error && error.stack ? String(error.stack) : "",
+          safety: {
+            readOnly: true,
+            orderActionsExecuted: false
+          }
+        }, null, 2);
+      } finally {
+        scanning = false;
+      }
+    }, 50);
+  }
+
+  async function copyReport() {
+    if (!outputEl.value) return;
+
+    try {
+      await rootWindow.navigator.clipboard.writeText(outputEl.value);
+      statusEl.textContent = "Report copied to clipboard.";
+      return;
+    } catch (_) {}
+
+    try {
+      outputEl.focus();
+      outputEl.select();
+      outputEl.setSelectionRange(0, outputEl.value.length);
+
+      const success = rootDocument.execCommand("copy");
+
+      statusEl.textContent = success
+        ? "Report copied to clipboard."
+        : "Select the report manually and copy it.";
+    } catch (_) {
+      statusEl.textContent = "Clipboard unavailable. Select and copy manually.";
+    }
+  }
+
+  $("#scan").addEventListener("click", runFromPanel);
+  $("#copy").addEventListener("click", copyReport);
+
+  $("#select").addEventListener("click", () => {
+    outputEl.focus();
+    outputEl.select();
+    outputEl.setSelectionRange(0, outputEl.value.length);
+    statusEl.textContent = "Report selected. Press Ctrl+C.";
+  });
+
+  $("#close").addEventListener("click", () => {
+    host.remove();
+  });
+
+  runFromPanel();
+
+  console.log(
+    "[Bitunix API Audit] Panel opened. Read-only scan started."
+  );
+})();
+</CodeBlock>
+
+### بعد از اجرا
+
+گزارش را کامل بفرست؛ ترجیحاً از طریق دکمه `Copy Report`، نه اسکرین‌شات.
+
+در گزارش دنبال این موارد هستیم:
+
+- آیا متد واقعی برای بستن پوزیشن پیدا شده؟
+- آیا متد مستقلی برای Reverse وجود دارد؟
+- آیا هر دو از یک سرویس یا API مشترک استفاده می‌کنند؟
+- آیا می‌توانیم به متدها پارامترهایی مثل نماد، سمت پوزیشن و حجم بدهیم؟
+- آیا فرمان‌ها واقعاً در دسترس صفحه هستند یا داخل Closureهای غیرقابل‌دسترسی مخفی شده‌اند؟
+
+**نکته مهم:** پیدا شدن نام یک تابع به‌تنهایی به معنی آماده‌بودن آن برای استفاده نیست. بعد از گزارش، باید مسیر فراخوانی و پارامترهای آن را بدون اجرای سفارش بررسی کنیم. فعلاً هیچ Close یا Reverseای را در صرافی نزن.
+
+
+کاربر | پیام 12 | 11/15/2026, 10:40:51 AM
+------------------------------------------------------------
+
+# Selected text:
+
+## Selection 1
+از منوی انتخاب Context در بالای Console، گزینه top را انتخاب کن.
+
+## My request:
+این با قبلیا ک توی کنسول پیست میکردم فرق داره؟
+
+
+دستیار | پیام 13 | 11/15/2026, 10:40:58 AM
+------------------------------------------------------------
+
+Worked for 7s
+
+
+دستیار | پیام 14 | 11/15/2026, 10:40:58 AM
+------------------------------------------------------------
+
+نه، تفاوتی در روش اجرای کد ندارد. همچنان مثل کدهای قبلی:
+
+1. وارد صفحه معاملات Bitunix می‌شوی.
+2. `F12` و سپس Console را باز می‌کنی.
+3. کد را کامل Paste می‌کنی و Enter می‌زنی.
+
+فقط باید Context روی **`top`** باشد.
+
+این گزینه مشخص می‌کند کد در کدام بخش صفحه اجرا شود:
+
+- `top`: صفحه اصلی Bitunix
+- `top > iframe[0]`: محیط داخلی چارت
+
+چون کد جدید قرار است هم صفحه اصلی و هم iframe چارت را بررسی کند، باید از `top` اجرا شود.
+
+**اگر در تست‌های قبلی هم روی `top` بودی، هیچ تغییری لازم نیست؛ دقیقاً مثل قبل کد را اجرا کن.**
+
+
+کاربر | پیام 15 | 11/15/2026, 10:43:34 AM
+------------------------------------------------------------
+
+[گزارشات بیتیونیکس15.txt](https://github.com/artaville/KCEX-Enhancer/blob/main/%DA%AF%D8%B2%D8%A7%D8%B1%D8%B4%D8%A7%D8%AA%20%D8%A8%DB%8C%D8%AA%DB%8C%D9%88%D9%86%DB%8C%DA%A9%D8%B315.txt "گزارشات بیتیونیکس15.txt") &#x20;
+ببین چطوره
+
+
+دستیار | پیام 16 | 11/15/2026, 10:43:39 AM
+------------------------------------------------------------
+
+گزارش ۱۵ را از مخزن باز می‌کنم و به‌خصوص دنبال متدهای واقعی Close و Reverse، مسیر فراخوانی آن‌ها و پارامترهای احتمالی‌شان می‌گردم؛ صرفاً وجود اسم تابع را به‌عنوان API قابل‌استفاده تأیید نمی‌کنم.
+
+
+دستیار | پیام 17 | 11/15/2026, 10:43:44 AM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_file","args":{"repository_full_name":"artaville/KCEX-Enhancer","path":"\u06af\u0632\u0627\u0631\u0634\u0627\u062a \u0628\u06cc\u062a\u06cc\u0648\u0646\u06cc\u06a9\u063315.txt","encoding":"utf-8"}}
+
+
+دستیار | پیام 18 | 11/15/2026, 10:43:58 AM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_file","args":{"repository_full_name":"artaville/KCEX-Enhancer","path":"\u06af\u0632\u0627\u0631\u0634\u0627\u062a \u0628\u06cc\u062a\u06cc\u0648\u0646\u06cc\u06a9\u063315.txt","encoding":"utf-8","start_line":1,"end_line":420}}
+
+
+دستیار | پیام 19 | 11/15/2026, 10:44:01 AM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_file","args":{"repository_full_name":"artaville/KCEX-Enhancer","path":"\u06af\u0632\u0627\u0631\u0634\u0627\u062a \u0628\u06cc\u062a\u06cc\u0648\u0646\u06cc\u06a9\u063315.txt","encoding":"utf-8","start_line":420,"end_line":900}}
+
+
+دستیار | پیام 20 | 11/15/2026, 10:44:06 AM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_file","args":{"repository_full_name":"artaville/KCEX-Enhancer","path":"\u06af\u0632\u0627\u0631\u0634\u0627\u062a \u0628\u06cc\u062a\u06cc\u0648\u0646\u06cc\u06a9\u063315.txt","encoding":"utf-8","start_line":900,"end_line":1450}}
+
+
+دستیار | پیام 21 | 11/15/2026, 10:44:10 AM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_file","args":{"repository_full_name":"artaville/KCEX-Enhancer","path":"\u06af\u0632\u0627\u0631\u0634\u0627\u062a \u0628\u06cc\u062a\u06cc\u0648\u0646\u06cc\u06a9\u063315.txt","encoding":"utf-8","start_line":1450,"end_line":2050}}
+
+
+دستیار | پیام 22 | 11/15/2026, 10:44:14 AM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_file","args":{"repository_full_name":"artaville/KCEX-Enhancer","path":"\u06af\u0632\u0627\u0631\u0634\u0627\u062a \u0628\u06cc\u062a\u06cc\u0648\u0646\u06cc\u06a9\u063315.txt","encoding":"utf-8","start_line":2050,"end_line":2600}}
+
+
+دستیار | پیام 23 | 11/15/2026, 10:44:18 AM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_file","args":{"repository_full_name":"artaville/KCEX-Enhancer","path":"\u06af\u0632\u0627\u0631\u0634\u0627\u062a \u0628\u06cc\u062a\u06cc\u0648\u0646\u06cc\u06a9\u063315.txt","encoding":"utf-8","start_line":2600,"end_line":3200}}
+
+
+دستیار | پیام 24 | 11/15/2026, 10:44:35 AM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_file","args":{"repository_full_name":"artaville/KCEX-Enhancer","path":"\u06af\u0632\u0627\u0631\u0634\u0627\u062a \u0628\u06cc\u062a\u06cc\u0648\u0646\u06cc\u06a9\u063315.txt","encoding":"utf-8","start_line":3200,"end_line":3900}}
+
+
+دستیار | پیام 25 | 11/15/2026, 10:45:53 AM
+------------------------------------------------------------
+
+Worked for 2m 19s
+
+
+دستیار | پیام 26 | 11/15/2026, 10:45:53 AM
+------------------------------------------------------------
+
+گزارش ۱۵ خیلی خوب است؛ این بار به چیزی رسیدیم که دنبالش بودیم. **مسیرهای داخلی Close و Reverse در کد Bitunix و TradingView پیدا شده‌اند.** بنابراین دیگر لازم نیست برای اجرای این دو عملیات حتماً به مختصات Canvas وابسته باشیم.
+
+<badge color="success">کشف مهم</badge> هر دو عملیات در ساختار داخلی برنامه شناسایی شده‌اند.
+
+## ۱. چه چیزهایی پیدا کردیم؟
+
+در صفحه اصلی Bitunix این مسیرها پیدا شده‌اند:
+
+| مسیر داخلی | چیزی که پیدا شده |
+|---|---|
+| `window.bitunixTv.eventBus.events.closePosition` | رویداد مربوط به Close |
+| `window.bitunixTv.eventBus.events.reversePosition` | رویداد مربوط به Reverse |
+| `window.bitunixTv.eventBus.events.marketClose` | رویداد Market Close |
+| `window.tradingview_0f462.brokerConfig.customUI.showClosePositionDialog` | رابط داخلی پنجره Close |
+| `window.tradingview_0f462.brokerConfig.customUI.showReversePositionDialog` | رابط داخلی پنجره Reverse |
+
+این یعنی صفحه اصلی صرافی برای این عملیات مسیرهای مشخصی دارد.
+
+## ۲. مهم‌تر از همه: متدهای واقعی چارت
+
+در کد داخلی TradingView هم این دو متد را پیدا کردیم:
+
+<box border radius="lg" padding={3} gap={3}>
+  <box gap={1}>
+    **Close**
+    ```javascript
+    async onClose(t={}) {
+      await this._doActionWithBlock(
+        "closePosition", true, t
+      );
+    }
+    ```
+    <badge color="success">متد داخلی پیدا شد</badge>
+  </box>
+  <divider color="subtle"/>
+  <box gap={1}>
+    **Reverse**
+    ```javascript
+    async onReverse(t={}) {
+      await this._doActionWithBlock(
+        "reversePosition", true, t
+      );
+    }
+    ```
+    <badge color="success">متد داخلی پیدا شد</badge>
+  </box>
+</box>
+
+این دو متد در ماژول داخلی TradingView با شناسه `25412` پیدا شده‌اند.
+
+همچنین کد پنجره تأیید Reverse را هم پیدا کردیم. این پنجره بعد از تأیید کاربر، تابع `handler` را اجرا می‌کند.
+
+## ۳. آیا یعنی الان API آماده استفاده است؟
+
+هنوز نه؛ ولی فاصله‌مان خیلی کمتر شده است.
+
+سه موضوع باقی مانده:
+
+1. پیدا کردن شیء واقعی پوزیشن باز و شناسه `positionId` آن.
+2. مشخص کردن اینکه متدهای Close و Reverse را از کدام آبجکت می‌توان فراخوانی کرد.
+3. پیدا کردن پارامترهای لازم و مسیر اجرای فرمان نهایی؛ بدون ارسال سفارش واقعی.
+
+یک نکته مهم دیگر: در گزارش جدید، iframe چارت در `top > iframe[2]` قرار دارد، نه `iframe[0]` گزارش‌های قبلی. اما آبجکت‌های اصلی ارتباط معاملاتی را در `top` هم پیدا کرده‌ایم.
+
+## ۴. قدم بعدی پیشنهادی
+
+به‌جای جست‌وجوی دوباره در کل سایت، یک بررسی محدود و دقیق انجام دهیم:
+
+- استخراج کامل کد توابع `closePosition` و `reversePosition` در Event Bus.
+- بررسی ساختار `positionService` و `currentBroker`.
+- پیدا کردن شیء پوزیشن باز و `positionId` آن.
+- بررسی پارامترهای موردنیاز متدها، بدون فراخوانی آن‌ها.
+
+**نتیجه فعلی:** مسیر Canvas دیگر تنها راه ما نیست. به احتمال زیاد می‌توانیم Close و Reverse را از طریق لایه داخلی Bitunix/TradingView پیاده کنیم؛ فقط باید مسیر اجرای دقیق و امن آن‌ها را تأیید کنیم. هنوز هیچ سفارش واقعی آزمایش نشده است.
+
+
+کاربر | پیام 27 | 11/15/2026, 10:47:17 AM
+------------------------------------------------------------
+
+کد قابل کپی را بفرست
+
+
+دستیار | پیام 28 | 11/15/2026, 10:48:52 AM
+------------------------------------------------------------
+
+Worked for 1m 35s
+
+
+دستیار | پیام 29 | 11/15/2026, 10:48:52 AM
+------------------------------------------------------------
+
+این مرحله کد را دقیق‌تر کرده‌ام تا به‌جای جست‌وجوی عمومی، روی مسیرهایی تمرکز کند که در گزارش ۱۵ پیدا کردیم.
+
+**Bitunix Close & Reverse Deep Audit v2.0**
+
+این نسخه بررسی می‌کند:
+- کد کامل‌تر توابع Event Bus مربوط به `closePosition` و `reversePosition`.
+- متدهای `showClosePositionDialog` و `showReversePositionDialog`.
+- توابع داخلی Broker و Position Service.
+- ساختار پوزیشن‌های موجود و فیلدهای مرتبط با شناسه، نماد، سمت و حجم.
+- کد ماژول‌های TradingView با شناسه‌های `25412`، `66786` و `583705`.
+
+<badge color="success">Read-only</badge> هیچ تابع معاملاتی اجرا نمی‌شود، هیچ سفارشی ارسال نمی‌شود و هیچ دکمه‌ای کلیک نمی‌شود. فقط ساختار آبجکت‌ها و متن کد توابع خوانده می‌شود.
+
+### کد کامل و قابل کپی
+
+مثل گزارش قبلی، در Console صفحه Bitunix و Context برابر `top`، کل کد را یک‌جا اجرا کن.
+
+<CodeBlock language="javascript" editable>
+(() => {
+  "use strict";
+
+  /* ==========================================================
+     BITUNIX CLOSE & REVERSE DEEP AUDIT v2.0
+     READ ONLY — NEVER CALLS TRADING METHODS
+     ========================================================== */
+
+  const PANEL_ID = "__BITUNIX_CLOSE_REVERSE_DEEP_AUDIT_V2__";
+  const VERSION = "2.0";
+  const STARTED_AT = new Date().toISOString();
+
+  const root = (() => {
+    try { return window.top || window; }
+    catch (_) { return window; }
+  })();
+
+  const rootDoc = root.document;
+
+  const previous = rootDoc.getElementById(PANEL_ID);
+  if (previous) previous.remove();
+
+  const SENSITIVE =
+    /token|password|secret|credential|cookie|authorization|privatekey|wallet|balance|availablebalance|marginbalance|websocket|socket|localstorage|sessionstorage|email|phone/i;
+
+  const METHOD_HINT =
+    /close|reverse|position|order|trade|broker|command|execute|submit|market/i;
+
+  const POSITION_FIELDS =
+    /^(id|positionId|position_id|symbol|contract|side|direction|qty|quantity|size|positionSide|positionType|status|isOpen|openTime|positionMode|type)$/i;
+
+  const TARGET_MODULES = [
+    "25412",
+    "66786",
+    "583705",
+    "326285"
+  ];
+
+  const report = {
+    reportName: "BITUNIX_CLOSE_REVERSE_DEEP_AUDIT",
+    version: VERSION,
+    startedAt: STARTED_AT,
+    completedAt: null,
+
+    safety: {
+      readOnly: true,
+      functionsInvoked: 0,
+      tradingMethodsInvoked: 0,
+      exchangeButtonsClicked: 0,
+      formsSubmitted: 0,
+      networkRequestsMade: 0,
+      fetchUsed: false,
+      xhrUsed: false,
+      websocketRead: false,
+      privateDataRead: false,
+      inputValuesRead: false,
+      storageRead: false,
+      credentialsRead: false
+    },
+
+    summary: {},
+
+    frames: [],
+    eventBus: {},
+    dialogMethods: {},
+    brokerMethods: {},
+    positionServices: {},
+    positionCollections: {},
+    chartModules: [],
+    warnings: []
+  };
+
+  // ----------------------------------------------------------
+  // Safe descriptor access. Getters are never executed.
+  // ----------------------------------------------------------
+
+  function ownValue(obj, key) {
+    if (!obj || (
+      typeof obj !== "object" &&
+      typeof obj !== "function"
+    )) return undefined;
+
+    try {
+      const d = Object.getOwnPropertyDescriptor(obj, key);
+
+      if (
+        d &&
+        Object.prototype.hasOwnProperty.call(d, "value")
+      ) {
+        return d.value;
+      }
+    } catch (_) {}
+
+    return undefined;
+  }
+
+  function propertyValue(obj, key, levels = 5) {
+    let current = obj;
+
+    for (let i = 0; current && i < levels; i++) {
+      const value = ownValue(current, key);
+      if (value !== undefined) return value;
+
+      try {
+        current = Object.getPrototypeOf(current);
+      } catch (_) {
+        break;
+      }
+    }
+
+    return undefined;
+  }
+
+  function safeKeys(obj, limit = 150) {
+    try {
+      return Object.getOwnPropertyNames(obj).slice(0, limit);
+    } catch (_) {
+      return [];
+    }
+  }
+
+  function typeOfValue(value) {
+    if (value === null) return "null";
+    if (Array.isArray(value)) return "array";
+    if (typeof value === "function") return "function";
+    if (typeof value === "object") {
+      try {
+        if (value instanceof Map) return "Map";
+        if (value instanceof Set) return "Set";
+      } catch (_) {}
+      return "object";
+    }
+    return typeof value;
+  }
+
+  function shortString(value, max = 500) {
+    return String(value ?? "")
+      .replace(/\s+/g, " ")
+      .trim()
+      .slice(0, max);
+  }
+
+  function safeFunctionSource(fn, max = 6000) {
+    if (typeof fn !== "function") return "";
+
+    try {
+      const source = Function.prototype.toString.call(fn);
+      if (!source || source.includes("[native code]")) return "";
+      return source.slice(0, max);
+    } catch (_) {
+      return "";
+    }
+  }
+
+  function functionInfo(fn, path, max = 6000) {
+    if (typeof fn !== "function") return null;
+
+    let name = "(anonymous)";
+
+    try {
+      name = propertyValue(fn, "name") || name;
+    } catch (_) {}
+
+    const source = safeFunctionSource(fn, max);
+
+    return {
+      path,
+      name: shortString(name, 120),
+      sourceLength: source.length,
+      source
+    };
+  }
+
+  // ----------------------------------------------------------
+  // Frame discovery.
+  // ----------------------------------------------------------
+
+  function collectFrames() {
+    const result = [];
+    const queue = [{
+      win: root,
+      path: "top",
+      depth: 0
+    }];
+
+    const seen = new WeakSet();
+
+    while (queue.length && result.length < 20) {
+      const item = queue.shift();
+      const win = item.win;
+
+      if (!win || seen.has(win)) continue;
+      seen.add(win);
+
+      let doc;
+      let url = "";
+      let title = "";
+
+      try {
+        doc = win.document;
+        url = shortString(win.location.href, 350);
+        title = shortString(doc.title, 180);
+      } catch (e) {
+        result.push({
+          path: item.path,
+          accessible: false,
+          error: String(e).slice(0, 180)
+        });
+        continue;
+      }
+
+      if (!doc) continue;
+
+      const frameInfo = {
+        win,
+        doc,
+        path: item.path,
+        accessible: true,
+        url,
+        title,
+        hasBitunixTv: !!ownValue(win, "bitunixTv"),
+        hasTradingViewApi: !!ownValue(win, "tradingViewApi"),
+        hasChartWidget: !!ownValue(win, "chartWidget"),
+        hasWebpack: !!ownValue(win, "webpackChunktradingview")
+      };
+
+      result.push(frameInfo);
+
+      if (item.depth >= 4) continue;
+
+      let count = 0;
+
+      try {
+        count = win.frames.length;
+      } catch (_) {}
+
+      for (let i = 0; i < count; i++) {
+        try {
+          queue.push({
+            win: win.frames[i],
+            path: item.path + " > iframe[" + i + "]",
+            depth: item.depth + 1
+          });
+        } catch (_) {}
+      }
+    }
+
+    return result;
+  }
+
+  const frames = collectFrames();
+
+  function findFrameWith(name) {
+    return frames.find(f =>
+      f.accessible &&
+      ownValue(f.win, name) !== undefined
+    );
+  }
+
+  function getPath(obj, parts) {
+    let current = obj;
+
+    for (const part of parts) {
+      if (current == null) return undefined;
+      current = propertyValue(current, part);
+    }
+
+    return current;
+  }
+
+  // ----------------------------------------------------------
+  // Inspect only relevant function properties.
+  // No function is invoked.
+  // ----------------------------------------------------------
+
+  function inspectMethods(obj, path, max = 100) {
+    const output = [];
+    if (!obj) return output;
+
+    let current = obj;
+    const seen = new WeakSet();
+    let level = 0;
+
+    while (current && level < 5 && output.length < max) {
+      if (seen.has(current)) break;
+      seen.add(current);
+
+      const keys = safeKeys(current, 400);
+
+      for (const key of keys) {
+        if (SENSITIVE.test(key)) continue;
+        if (!METHOD_HINT.test(key)) continue;
+
+        const fn = ownValue(current, key);
+        if (typeof fn !== "function") continue;
+
+        const info = functionInfo(
+          fn,
+          path + (level ? ".[[Prototype]]" : "") + "." + key,
+          6500
+        );
+
+        if (info) {
+          output.push(info);
+        }
+      }
+
+      try {
+        current = Object.getPrototypeOf(current);
+      } catch (_) {
+        break;
+      }
+
+      level++;
+    }
+
+    return output;
+  }
+
+  // ----------------------------------------------------------
+  // Inspect EventBus arrays and listener functions.
+  // ----------------------------------------------------------
+
+  function inspectEvent(name, events) {
+    const eventArray = propertyValue(events, name);
+
+    const item = {
+      eventName: name,
+      type: typeOfValue(eventArray),
+      listeners: []
+    };
+
+    if (!eventArray) {
+      item.found = false;
+      return item;
+    }
+
+    item.found = true;
+
+    if (Array.isArray(eventArray)) {
+      const length = Math.min(
+        Number(propertyValue(eventArray, "length") || 0),
+        40
+      );
+
+      for (let i = 0; i < length; i++) {
+        const listener = ownValue(eventArray, String(i));
+
+        if (typeof listener === "function") {
+          item.listeners.push(
+            functionInfo(
+              listener,
+              "events." + name + "[" + i + "]",
+              9000
+            )
+          );
+        } else {
+          item.listeners.push({
+            index: i,
+            type: typeOfValue(listener)
+          });
+        }
+      }
+    } else {
+      item.keys = safeKeys(eventArray, 80);
+    }
+
+    return item;
+  }
+
+  // ----------------------------------------------------------
+  // Inspect methods on EventBus itself.
+  // ----------------------------------------------------------
+
+  function inspectBus(bus, path) {
+    return {
+      path,
+      type: typeOfValue(bus),
+      keys: safeKeys(bus, 160).filter(k => !SENSITIVE.test(k)),
+      methods: inspectMethods(bus, path, 80)
+    };
+  }
+
+  // ----------------------------------------------------------
+  // Describe position objects without dumping account data.
+  // ----------------------------------------------------------
+
+  function safePositionObject(obj, path) {
+    const result = {
+      path,
+      type: typeOfValue(obj),
+      keys: safeKeys(obj, 160).filter(k => !SENSITIVE.test(k)),
+      selectedFields: {}
+    };
+
+    if (!obj || typeof obj !== "object") return result;
+
+    for (const key of safeKeys(obj, 160)) {
+      if (!POSITION_FIELDS.test(key)) continue;
+
+      const value = ownValue(obj, key);
+
+      if (
+        value === null ||
+        ["string", "number", "boolean"].includes(typeof value)
+      ) {
+        result.selectedFields[key] =
+          typeof value === "string"
+            ? shortString(value, 150)
+            : value;
+      } else if (value !== undefined) {
+        result.selectedFields[key] = {
+          type: typeOfValue(value)
+        };
+      }
+    }
+
+    return result;
+  }
+
+  function inspectCollection(collection, path) {
+    const result = {
+      path,
+      type: typeOfValue(collection),
+      entries: [],
+      note: ""
+    };
+
+    if (!collection) {
+      result.note = "Not found";
+      return result;
+    }
+
+    // Plain arrays: read indexed data descriptors only.
+    if (Array.isArray(collection)) {
+      const len = Math.min(
+        Number(propertyValue(collection, "length") || 0),
+        30
+      );
+
+      for (let i = 0; i < len; i++) {
+        const value = ownValue(collection, String(i));
+
+        if (value && typeof value === "object") {
+          result.entries.push(
+            safePositionObject(value, path + "[" + i + "]")
+          );
+        } else {
+          result.entries.push({
+            index: i,
+            type: typeOfValue(value)
+          });
+        }
+      }
+
+      return result;
+    }
+
+    // Native Map iteration is read-only.
+    try {
+      if (collection instanceof Map) {
+        let i = 0;
+
+        for (const [key, value] of Map.prototype.entries.call(collection)) {
+          if (i >= 30) break;
+
+          result.entries.push({
+            mapKey: shortString(key, 100),
+            value: value && typeof value === "object"
+              ? safePositionObject(value, path + ".MapValue[" + i + "]")
+              : { type: typeOfValue(value) }
+          });
+
+          i++;
+        }
+
+        return result;
+      }
+    } catch (_) {
+      result.note = "Map entries could not be inspected";
+    }
+
+    // Plain object collection.
+    const keys = safeKeys(collection, 40);
+
+    for (const key of keys) {
+      if (SENSITIVE.test(key)) continue;
+
+      const value = ownValue(collection, key);
+
+      if (value && typeof value === "object") {
+        result.entries.push(
+          safePositionObject(value, path + "." + key)
+        );
+      } else {
+        result.entries.push({
+          key,
+          type: typeOfValue(value)
+        });
+      }
+
+      if (result.entries.length >= 30) break;
+    }
+
+    return result;
+  }
+
+  // ----------------------------------------------------------
+  // 1. Main Bitunix TradingView bridge.
+  // ----------------------------------------------------------
+
+  const topBitunix = ownValue(root, "bitunixTv");
+
+  if (topBitunix) {
+    const eventBus = propertyValue(topBitunix, "eventBus");
+    const events = propertyValue(eventBus, "events");
+
+    report.eventBus = {
+      found: !!eventBus,
+      bus: eventBus
+        ? inspectBus(eventBus, "window.bitunixTv.eventBus")
+        : null,
+      selectedEvents: {}
+    };
+
+    if (events) {
+      for (const name of [
+        "closePosition",
+        "reversePosition",
+        "marketClose",
+        "positionUpdate",
+        "positionOrderSelected"
+      ]) {
+        report.eventBus.selectedEvents[name] =
+          inspectEvent(name, events);
+      }
+    } else {
+      report.eventBus.warning = "eventBus.events not found";
+    }
+
+    const tvWidget = propertyValue(topBitunix, "tvWidget");
+    const host = propertyValue(tvWidget, "host");
+    const trading = propertyValue(host, "_trading");
+    const adapter = propertyValue(host, "_adapter");
+    const brokerConnection =
+      propertyValue(adapter, "_brokerConnection");
+
+    report.brokerMethods = {
+      hostFound: !!host,
+      adapterFound: !!adapter,
+      brokerConnectionFound: !!brokerConnection,
+
+      hostMethods: inspectMethods(
+        host,
+        "bitunixTv.tvWidget.host",
+        80
+      ),
+
+      adapterMethods: inspectMethods(
+        adapter,
+        "bitunixTv.tvWidget.host._adapter",
+        100
+      ),
+
+      brokerConnectionMethods: inspectMethods(
+        brokerConnection,
+        "bitunixTv.tvWidget.host._adapter._brokerConnection",
+        150
+      )
+    };
+
+    const positionService =
+      propertyValue(trading, "_positionService");
+
+    const ordersService =
+      propertyValue(trading, "_ordersService");
+
+    const orderViewController =
+      propertyValue(trading, "_orderViewController");
+
+    const brokerCommandsUI =
+      propertyValue(trading, "_brokerCommandsUI");
+
+    report.positionServices = {
+      positionServiceFound: !!positionService,
+      ordersServiceFound: !!ordersService,
+
+      positionServiceMethods: inspectMethods(
+        positionService,
+        "bitunixTv.tvWidget.host._trading._positionService",
+        120
+      ),
+
+      ordersServiceMethods: inspectMethods(
+        ordersService,
+        "bitunixTv.tvWidget.host._trading._ordersService",
+        100
+      ),
+
+      orderViewControllerMethods: inspectMethods(
+        orderViewController,
+        "bitunixTv.tvWidget.host._trading._orderViewController",
+        120
+      ),
+
+      brokerCommandsUIMethods: inspectMethods(
+        brokerCommandsUI,
+        "bitunixTv.tvWidget.host._trading._brokerCommandsUI",
+        100
+      )
+    };
+
+    report.positionCollections = {
+      positionServicePositions: inspectCollection(
+        propertyValue(positionService, "_positions"),
+        "positionService._positions"
+      ),
+
+      existingPositionIds: inspectCollection(
+        propertyValue(positionService, "_existingPositionIds"),
+        "positionService._existingPositionIds"
+      ),
+
+      adapterPositionsCache: inspectCollection(
+        propertyValue(adapter, "_positionsCache"),
+        "adapter._positionsCache"
+      ),
+
+      brokerConnectionPositions: inspectCollection(
+        propertyValue(brokerConnection, "_positions"),
+        "brokerConnection._positions"
+      ),
+
+      brokerConnectionOrders: {
+        type: typeOfValue(
+          propertyValue(brokerConnection, "_orders")
+        ),
+        keys: safeKeys(
+          propertyValue(brokerConnection, "_orders"),
+          80
+        ).filter(k => !SENSITIVE.test(k))
+      }
+    };
+  } else {
+    report.warnings.push(
+      "window.bitunixTv was not found in top context."
+    );
+  }
+
+  // ----------------------------------------------------------
+  // 2. TradingView custom dialog functions.
+  // ----------------------------------------------------------
+
+  const tvBridge = ownValue(root, "tradingview_0f462");
+  const brokerConfig = propertyValue(tvBridge, "brokerConfig");
+  const customUI = propertyValue(brokerConfig, "customUI");
+
+  report.dialogMethods = {
+    bridgeFound: !!tvBridge,
+    brokerConfigFound: !!brokerConfig,
+    customUIFound: !!customUI,
+    methods: []
+  };
+
+  if (customUI) {
+    for (const name of [
+      "showClosePositionDialog",
+      "showReversePositionDialog",
+      "showPositionDialog"
+    ]) {
+      const fn = propertyValue(customUI, name);
+
+      if (typeof fn === "function") {
+        report.dialogMethods.methods.push(
+          functionInfo(
+            fn,
+            "tradingview_0f462.brokerConfig.customUI." + name,
+            9000
+          )
+        );
+      } else {
+        report.dialogMethods.methods.push({
+          name,
+          found: false
+        });
+      }
+    }
+  }
+
+  // ----------------------------------------------------------
+  // 3. Inspect Chart-side position / broker references.
+  // ----------------------------------------------------------
+
+  for (const frame of frames) {
+    if (!frame.accessible) continue;
+
+    report.frames.push({
+      path: frame.path,
+      url: frame.url,
+      title: frame.title,
+      hasBitunixTv: frame.hasBitunixTv,
+      hasTradingViewApi: frame.hasTradingViewApi,
+      hasChartWidget: frame.hasChartWidget,
+      hasWebpack: frame.hasWebpack
+    });
+
+    const chartWidget = ownValue(frame.win, "chartWidget");
+
+    if (!chartWidget) continue;
+
+    const model = propertyValue(chartWidget, "_model");
+    const innerModel = propertyValue(model, "m_model");
+    const customSources = propertyValue(innerModel, "_fgCustomSources");
+
+    report.chartModules.push({
+      frame: frame.path,
+      chartWidgetFound: true,
+
+      chartWidgetMethods: inspectMethods(
+        chartWidget,
+        frame.path + ".chartWidget",
+        80
+      ),
+
+      chartModelKeys: safeKeys(model, 120),
+
+      innerModelKeys: safeKeys(innerModel, 120),
+
+      foregroundSources: inspectCollection(
+        customSources,
+        frame.path + ".chartWidget._model.m_model._fgCustomSources"
+      )
+    });
+  }
+
+  // ----------------------------------------------------------
+  // 4. Extract selected TradingView webpack module factories.
+  // This reads source only; it does not execute module factories.
+  // ----------------------------------------------------------
+
+  function inspectWebpackModules(win, framePath) {
+    const chunks = ownValue(win, "webpackChunktradingview");
+
+    if (!Array.isArray(chunks)) return [];
+
+    const found = [];
+
+    const chunkCount = Math.min(chunks.length, 250);
+
+    for (let i = 0; i < chunkCount; i++) {
+      const chunk = ownValue(chunks, String(i));
+      if (!Array.isArray(chunk)) continue;
+
+      const modules = ownValue(chunk, "1");
+      if (!modules || typeof modules !== "object") continue;
+
+      for (const moduleId of TARGET_MODULES) {
+        const factory = ownValue(modules, moduleId);
+
+        if (typeof factory !== "function") continue;
+
+        const info = functionInfo(
+          factory,
+          framePath +
+            ".webpackChunktradingview[" + i + "][1][" +
+            moduleId + "]",
+          16000
+        );
+
+        if (!info) continue;
+
+        found.push({
+          moduleId,
+          ...info
+        });
+      }
+    }
+
+    return found;
+  }
+
+  for (const frame of frames) {
+    if (!frame.accessible) continue;
+
+    const modules = inspectWebpackModules(
+      frame.win,
+      frame.path
+    );
+
+    report.chartModules.push(...modules);
+  }
+
+  // ----------------------------------------------------------
+  // 5. Inspect close/reverse functions reachable by name from
+  //    known page bridges, but never invoke them.
+  // ----------------------------------------------------------
+
+  const directRoots = [
+    {
+      obj: topBitunix,
+      path: "window.bitunixTv"
+    },
+    {
+      obj: tvWidgetFromRoot(),
+      path: "window.bitunixTv.tvWidget"
+    },
+    {
+      obj: customUI,
+      path: "window.tradingview_0f462.brokerConfig.customUI"
+    }
+  ];
+
+  function tvWidgetFromRoot() {
+    return propertyValue(topBitunix, "tvWidget");
+  }
+
+  report.summary = {
+    accessibleFrames: frames.filter(f => f.accessible).length,
+    discoveredEventListeners: Object.values(
+      report.eventBus.selectedEvents || {}
+    ).reduce((sum, e) => sum + (e.listeners?.length || 0), 0),
+
+    closeEventFound:
+      !!report.eventBus.selectedEvents?.closePosition?.found,
+
+    reverseEventFound:
+      !!report.eventBus.selectedEvents?.reversePosition?.found,
+
+    marketCloseEventFound:
+      !!report.eventBus.selectedEvents?.marketClose?.found,
+
+    positionServiceFound:
+      !!report.positionServices.positionServiceFound,
+
+    brokerConnectionFound:
+      !!report.brokerMethods.brokerConnectionFound,
+
+    webpackModulesFound:
+      report.chartModules.filter(x => x.moduleId).length
+  };
+
+  report.completedAt = new Date().toISOString();
+
+  // ----------------------------------------------------------
+  // Popup UI with Copy Report button.
+  // ----------------------------------------------------------
+
+  const host = rootDoc.createElement("div");
+  host.id = PANEL_ID;
+
+  host.style.cssText = [
+    "position:fixed",
+    "top:16px",
+    "right:16px",
+    "z-index:2147483647",
+    "width:min(760px,calc(100vw - 32px))",
+    "height:min(820px,calc(100vh - 32px))"
+  ].join(";");
+
+  rootDoc.documentElement.appendChild(host);
+
+  const shadow = host.attachShadow({ mode: "open" });
+
+  shadow.innerHTML = `
+    <style>
+      * { box-sizing:border-box; }
+      .panel {
+        height:100%;
+        display:flex;
+        flex-direction:column;
+        overflow:hidden;
+        color:#e9eff8;
+        background:rgba(12,17,27,.98);
+        border:1px solid #34445c;
+        border-radius:13px;
+        box-shadow:0 20px 65px rgba(0,0,0,.55);
+        font-family:Arial,sans-serif;
+      }
+      .header {
+        padding:14px 16px;
+        background:#1b293d;
+        border-bottom:1px solid #34445c;
+      }
+      .title { font-size:15px;font-weight:700; }
+      .sub {
+        margin-top:5px;
+        color:#9eafc5;
+        font-size:11px;
+        line-height:1.5;
+      }
+      .status {
+        padding:10px 14px;
+        color:#cce8dc;
+        font-size:12px;
+        line-height:1.5;
+        border-bottom:1px solid #28374b;
+      }
+      .actions {
+        display:flex;
+        gap:8px;
+        flex-wrap:wrap;
+        padding:10px 14px;
+        border-bottom:1px solid #28374b;
+      }
+      button {
+        cursor:pointer;
+        color:#f5f8fd;
+        background:#293c55;
+        border:1px solid #526984;
+        border-radius:7px;
+        padding:8px 12px;
+        font-size:12px;
+        font-weight:600;
+      }
+      button:hover { background:#3a526f; }
+      button.primary {
+        background:#176d55;
+        border-color:#299579;
+      }
+      button.danger {
+        background:#5e3b48;
+        border-color:#965d6e;
+      }
+      textarea {
+        flex:1;
+        min-height:0;
+        width:100%;
+        resize:none;
+        padding:13px;
+        color:#d6e3f3;
+        background:#080e17;
+        border:0;
+        outline:0;
+        font:11px/1.5 Consolas,monospace;
+        white-space:pre;
+      }
+      .footer {
+        padding:8px 13px;
+        color:#8294aa;
+        font-size:10px;
+        border-top:1px solid #28374b;
+      }
+    </style>
+
+    <div class="panel">
+      <div class="header">
+        <div class="title">Bitunix Close / Reverse Deep Audit v2.0</div>
+        <div class="sub">
+          Inspecting Event Bus, Broker, Position Service and TradingView modules.
+          No trading functions are executed.
+        </div>
+      </div>
+
+      <div class="status" id="status">Audit completed.</div>
+
+      <div class="actions">
+        <button class="primary" id="copy">Copy Report</button>
+        <button id="select">Select All</button>
+        <button id="close" class="danger">Close</button>
+      </div>
+
+      <textarea id="output" readonly spellcheck="false"></textarea>
+
+      <div class="footer">
+        Read-only inspection. Function source is displayed, never executed.
+      </div>
+    </div>
+  `;
+
+  const $ = s => shadow.querySelector(s);
+  const output = $("#output");
+  const status = $("#status");
+
+  output.value = JSON.stringify(report, null, 2);
+
+  status.textContent =
+    "Completed · Frames: " +
+    report.summary.accessibleFrames +
+    " · Close event: " +
+    report.summary.closeEventFound +
+    " · Reverse event: " +
+    report.summary.reverseEventFound +
+    " · Position service: " +
+    report.summary.positionServiceFound +
+    " · Broker connection: " +
+    report.summary.brokerConnectionFound +
+    " · Webpack modules: " +
+    report.summary.webpackModulesFound;
+
+  $("#copy").addEventListener("click", async () => {
+    try {
+      await root.navigator.clipboard.writeText(output.value);
+      status.textContent = "Report copied to clipboard.";
+    } catch (_) {
+      output.focus();
+      output.select();
+      output.setSelectionRange(0, output.value.length);
+      status.textContent = "Clipboard unavailable. Press Ctrl+C.";
+    }
+  });
+
+  $("#select").addEventListener("click", () => {
+    output.focus();
+    output.select();
+    output.setSelectionRange(0, output.value.length);
+    status.textContent = "Report selected. Press Ctrl+C.";
+  });
+
+  $("#close").addEventListener("click", () => host.remove());
+
+  console.log(
+    "[Bitunix Deep Audit v2.0] Completed. No trading methods invoked."
+  );
+})();
+</CodeBlock>
+
+### بعد از اجرا
+
+گزارش را با دکمه **Copy Report** کپی کن و مثل گزارش ۱۵ در GitHub قرار بده و لینک را بفرست.
+
+این بار مهم‌ترین چیزی که می‌خواهیم مشخص کنیم این است که آیا مسیر مستقیم و قابل‌فراخوانی برای بستن و Reverse وجود دارد یا اینکه متدهای پیدا‌شده فقط رابط پنجره تأیید هستند.
+
+**تا قبل از بررسی گزارش، هیچ‌کدام از متدهای پیدا‌شده را دستی در Console اجرا نکن؛ ممکن است مستقیماً عملیات معاملاتی انجام دهند.**
+
+
+کاربر | پیام 30 | 11/15/2026, 10:52:23 AM
+------------------------------------------------------------
+
+[گزارشات بیتیونیکس16.txt](https://github.com/artaville/KCEX-Enhancer/blob/main/%DA%AF%D8%B2%D8%A7%D8%B1%D8%B4%D8%A7%D8%AA%20%D8%A8%DB%8C%D8%AA%DB%8C%D9%88%D9%86%DB%8C%DA%A9%D8%B316.txt "گزارشات بیتیونیکس16.txt")
+
+
+دستیار | پیام 31 | 11/15/2026, 10:52:24 AM
+------------------------------------------------------------
+
+گزارش ۱۶ را می‌خوانم و بررسی می‌کنم آیا حالا شناسه پوزیشن، ساختار Broker و پارامترهای لازم برای مسیرهای Close و Reverse روشن‌تر شده‌اند یا نه.
+
+
+دستیار | پیام 32 | 11/15/2026, 10:52:28 AM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_file","args":{"repository_full_name":"artaville/KCEX-Enhancer","path":"\u06af\u0632\u0627\u0631\u0634\u0627\u062a \u0628\u06cc\u062a\u06cc\u0648\u0646\u06cc\u06a9\u063316.txt","encoding":"utf-8"}}
+
+
+دستیار | پیام 33 | 11/15/2026, 10:52:32 AM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_file","args":{"repository_full_name":"artaville/KCEX-Enhancer","path":"\u06af\u0632\u0627\u0631\u0634\u0627\u062a \u0628\u06cc\u062a\u06cc\u0648\u0646\u06cc\u06a9\u063316.txt","encoding":"utf-8","start_line":1,"end_line":800}}
+
+
+دستیار | پیام 34 | 11/15/2026, 10:52:42 AM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_file","args":{"repository_full_name":"artaville/KCEX-Enhancer","path":"\u06af\u0632\u0627\u0631\u0634\u0627\u062a \u0628\u06cc\u062a\u06cc\u0648\u0646\u06cc\u06a9\u063316.txt","encoding":"utf-8"}}
+
+
+دستیار | پیام 35 | 11/15/2026, 10:55:59 AM
+------------------------------------------------------------
+
+Worked for 3m 36s
+
+
+دستیار | پیام 36 | 11/15/2026, 10:55:05 AM
+------------------------------------------------------------
+
+گزارش ۱۶ پیشرفت بسیار مهمی دارد. این بار فقط اسم توابع را پیدا نکردیم؛ **منطق داخلی اجرای هر دو عملیات را هم استخراج کردیم.**
+
+<badge color="success">هر دو مسیر معاملاتی شناسایی شدند</badge>
+
+### ۱. مسیر واقعی Close
+
+متد زیر در Broker Adapter وجود دارد:
+
+```javascript
+adapter.closePosition(positionId, quantity)
+```
+
+طبق کد استخراج‌شده:
+
+- ورودی اول شناسه پوزیشن است.
+- ورودی دوم اختیاری است و مقدار حجمی است که باید بسته شود، نه درصد.
+- اگر مقدار دوم ارسال نشود، کل پوزیشن بسته می‌شود.
+- بستن درصدی به فعال بودن قابلیت `supportPartialClosePosition` وابسته است.
+- اگر Broker متد اختصاصی Close نداشته باشد، سیستم سفارش مخالف با ویژگی بستن پوزیشن ایجاد می‌کند.
+
+پس از نظر ساختار نرم‌افزار، می‌توانیم در افزونه درصد دلخواه را به حجم تبدیل کنیم و مسیر بستن جزئی را استفاده کنیم؛ البته ابتدا باید فعال بودن قابلیت آن را تأیید کنیم.
+
+### ۲. مسیر واقعی Reverse
+
+این متد هم وجود دارد:
+
+```javascript
+adapter.reversePosition(positionId)
+```
+
+منطق آن به این شکل است:
+- پوزیشن را با شناسه پیدا می‌کند.
+- اگر Reverse بومی صرافی پشتیبانی شود، از آن استفاده می‌کند.
+- در غیر این صورت، سفارش مخالف با حجم دو برابر حجم فعلی ایجاد می‌کند تا پوزیشن در جهت معکوس قرار بگیرد.
+
+این دقیقاً همان مسیری است که می‌خواستیم پیدا کنیم.
+
+### ۳. یک نکته مهم
+
+این دو متد، متدهای واقعی معاملاتی هستند؛ اجرای مستقیمشان می‌تواند سفارش واقعی ارسال کند. بنابراین هنوز نباید آن‌ها را در Console آزمایش کنیم.
+
+تنها اطلاعاتی که هنوز کم داریم، قابلیت‌های فعال حساب و مشخصات پوزیشن جاری در حافظه داخلی Broker است. گزارش ۱۶ نتوانسته محتوای Map داخلی پوزیشن‌ها را استخراج کند؛ چون ساختار آن از طریق اسکن ساده قابل پیمایش نبوده است.
+
+## ۴. کد مرحله بعد: بررسی قابلیت‌ها و پوزیشن جاری
+
+این نسخه فقط دو کار می‌کند: قابلیت‌های Partial Close و Native Reverse را از تنظیمات داخلی می‌خواند و از حافظه محلی TradingView فهرست پوزیشن‌ها را استخراج می‌کند.
+
+برای استخراج پوزیشن از متد `positionService.positions()` استفاده می‌کند؛ کد داخلی این متد در گزارش ۱۶ مشخص بود و فقط داده‌های Map حافظه را برمی‌گرداند.
+
+شناسه کامل پوزیشن و حجم دقیق در گزارش ذخیره نمی‌شوند تا هنگام انتشار گزارش در GitHub اطلاعات معاملاتی‌ات افشا نشود.
+
+<CodeBlock language="javascript" editable>
+(() => {
+  "use strict";
+
+  /* BITUNIX POSITION CAPABILITY AUDIT v1.0
+     Read-only. Only calls source-verified local positions().
+     Does NOT call closePosition, reversePosition or any API.
+  */
+
+  const PANEL_ID = "__BITUNIX_POSITION_CAPABILITY_AUDIT_V1__";
+  const W = window.top || window;
+  const D = W.document;
+
+  const old = D.getElementById(PANEL_ID);
+  if (old) old.remove();
+
+  const report = {
+    reportName: "BITUNIX_POSITION_CAPABILITY_AUDIT",
+    version: "1.0",
+    timestamp: new Date().toISOString(),
+    safety: {
+      readOnly: true,
+      localPositionReadMethodInvoked: false,
+      tradingMethodsInvoked: 0,
+      networkRequests: 0,
+      buttonsClicked: 0,
+      formsSubmitted: 0,
+      credentialsRead: false,
+      fullPositionIdsIncluded: false,
+      exactPositionQuantitiesIncluded: false
+    },
+    capabilities: {},
+    methods: {},
+    positions: {
+      sourceFound: false,
+      count: null,
+      items: [],
+      note: ""
+    },
+    warnings: []
+  };
+
+  function descriptor(obj, key, levels = 6) {
+    let current = obj;
+
+    for (let i = 0; current && i < levels; i++) {
+      try {
+        const d = Object.getOwnPropertyDescriptor(current, key);
+        if (d) {
+          return {
+            found: true,
+            ownerLevel: i,
+            descriptor: d,
+            value: Object.prototype.hasOwnProperty.call(d, "value")
+              ? d.value
+              : undefined
+          };
+        }
+        current = Object.getPrototypeOf(current);
+      } catch (_) {
+        break;
+      }
+    }
+
+    return { found: false };
+  }
+
+  function val(obj, key) {
+    const d = descriptor(obj, key);
+    return d.found &&
+      Object.prototype.hasOwnProperty.call(d.descriptor, "value")
+      ? d.value
+      : undefined;
+  }
+
+  function fnSource(fn, max = 5000) {
+    if (typeof fn !== "function") return null;
+
+    try {
+      const s = Function.prototype.toString.call(fn);
+      return s.includes("[native code]") ? null : s.slice(0, max);
+    } catch (_) {
+      return null;
+    }
+  }
+
+  function describeMethod(obj, name, path) {
+    const d = descriptor(obj, name);
+
+    if (!d.found) {
+      return { found: false, path };
+    }
+
+    if (Object.prototype.hasOwnProperty.call(d.descriptor, "value")) {
+      const fn = d.value;
+
+      return {
+        found: true,
+        path,
+        ownerLevel: d.ownerLevel,
+        type: typeof fn,
+        source: typeof fn === "function" ? fnSource(fn, 7000) : null
+      };
+    }
+
+    return {
+      found: true,
+      path,
+      ownerLevel: d.ownerLevel,
+      type: "accessor",
+      getterSource: fnSource(d.descriptor.get, 1200),
+      getterInvoked: false
+    };
+  }
+
+  function safeFlagScan(objects) {
+    const names = [
+      "supportClosePosition",
+      "supportPartialClosePosition",
+      "supportNativeReversePosition",
+      "supportReversePosition",
+      "supportMultiposition",
+      "supportPositionNetting",
+      "supportCloseIndividualPosition",
+      "supportPartialCloseIndividualPosition"
+    ];
+
+    const found = {};
+
+    for (const item of objects) {
+      if (!item.obj) continue;
+
+      for (const name of names) {
+        const d = descriptor(item.obj, name, 3);
+
+        if (!d.found) continue;
+
+        if (
+          Object.prototype.hasOwnProperty.call(d.descriptor, "value") &&
+          ["boolean", "number", "string"].includes(typeof d.value)
+        ) {
+          found[name] = {
+            value: d.value,
+            source: item.path,
+            ownerLevel: d.ownerLevel
+          };
+        } else if (!found[name]) {
+          found[name] = {
+            found: true,
+            type: "accessor-or-nonprimitive",
+            source: item.path,
+            getterInvoked: false
+          };
+        }
+      }
+    }
+
+    return found;
+  }
+
+  function simpleField(obj, key) {
+    const d = descriptor(obj, key, 2);
+
+    if (
+      !d.found ||
+      !Object.prototype.hasOwnProperty.call(d.descriptor, "value")
+    ) return { present: false };
+
+    const v = d.value;
+
+    return {
+      present: true,
+      type: v === null ? "null" : typeof v,
+      isEmpty: v === null || v === undefined || v === ""
+    };
+  }
+
+  function positionSummary(p, index) {
+    const id = val(p, "id");
+    const symbol = val(p, "symbol");
+    const side = val(p, "side");
+    const qty = val(p, "qty");
+    const qtyBySide = val(p, "qtyBySide");
+
+    return {
+      index,
+      positionId: {
+        present: id !== undefined && id !== null,
+        type: id === null ? "null" : typeof id,
+        length: typeof id === "string" ? id.length : null,
+        valueHidden: true
+      },
+      symbol: typeof symbol === "string" ? symbol : null,
+      side: typeof side === "number" || typeof side === "string"
+        ? side
+        : null,
+      quantity: {
+        present: qty !== undefined && qty !== null,
+        type: qty === null ? "null" : typeof qty,
+        numeric: typeof qty === "number",
+        valueHidden: true
+      },
+      signedQuantity: {
+        present: qtyBySide !== undefined && qtyBySide !== null,
+        type: qtyBySide === null ? "null" : typeof qtyBySide,
+        sign: typeof qtyBySide === "number"
+          ? qtyBySide > 0 ? "positive" : qtyBySide < 0 ? "negative" : "zero"
+          : null,
+        valueHidden: true
+      },
+      supportClose: val(p, "supportClose") ?? null,
+      supportReverse: val(p, "supportReverse") ?? null,
+      supportBrackets: val(p, "supportBrackets") ?? null,
+      fieldsPresent: {
+        id: simpleField(p, "id").present,
+        symbol: simpleField(p, "symbol").present,
+        side: simpleField(p, "side").present,
+        qty: simpleField(p, "qty").present,
+        qtyBySide: simpleField(p, "qtyBySide").present
+      }
+    };
+  }
+
+  try {
+    const bridge = val(W, "bitunixTv");
+    const widget = val(bridge, "tvWidget");
+    const host = val(widget, "host");
+    const trading = val(host, "_trading");
+    const adapter = val(host, "_adapter");
+    const connection = val(adapter, "_brokerConnection");
+    const brokerMeta = val(adapter, "_brokerMetainfo");
+    const positionService = val(trading, "_positionService");
+
+    report.methods.adapterClosePosition = describeMethod(
+      adapter,
+      "closePosition",
+      "bitunixTv.tvWidget.host._adapter.closePosition"
+    );
+
+    report.methods.adapterReversePosition = describeMethod(
+      adapter,
+      "reversePosition",
+      "bitunixTv.tvWidget.host._adapter.reversePosition"
+    );
+
+    report.methods.adapterInternalClose = describeMethod(
+      adapter,
+      "_closePosition",
+      "bitunixTv.tvWidget.host._adapter._closePosition"
+    );
+
+    report.methods.adapterInternalReverse = describeMethod(
+      adapter,
+      "_reversePosition",
+      "bitunixTv.tvWidget.host._adapter._reversePosition"
+    );
+
+    report.methods.connectionClosePosition = describeMethod(
+      connection,
+      "closePosition",
+      "brokerConnection.closePosition"
+    );
+
+    report.methods.connectionReversePosition = describeMethod(
+      connection,
+      "reversePosition",
+      "brokerConnection.reversePosition"
+    );
+
+    report.methods.connectionPlaceOrder = describeMethod(
+      connection,
+      "placeOrder",
+      "brokerConnection.placeOrder"
+    );
+
+    report.methods.positionServicePositions = describeMethod(
+      positionService,
+      "positions",
+      "positionService.positions"
+    );
+
+    const config = val(adapter, "config");
+    const configFlags = val(brokerMeta, "configFlags");
+
+    report.capabilities = safeFlagScan([
+      { obj: config, path: "adapter.config" },
+      { obj: configFlags, path: "adapter._brokerMetainfo.configFlags" },
+      { obj: brokerMeta, path: "adapter._brokerMetainfo" },
+      { obj: connection, path: "adapter._brokerConnection" },
+      { obj: adapter, path: "adapter" }
+    ]);
+
+    report.methods.adapterConfigDescriptor = (() => {
+      const d = descriptor(adapter, "config");
+      if (!d.found) return { found: false };
+
+      if (Object.prototype.hasOwnProperty.call(d.descriptor, "value")) {
+        return {
+          found: true,
+          type: "data",
+          valueType: typeof d.value
+        };
+      }
+
+      return {
+        found: true,
+        type: "accessor",
+        getterSource: fnSource(d.descriptor.get, 1500),
+        getterInvoked: false
+      };
+    })();
+
+    // The source was verified in report 16:
+    // positions(){return Array.from(this._positions.values())}
+    // Invoke only if the live method still matches that read-only body.
+
+    const positionsFn =
+      descriptor(positionService, "positions").value;
+
+    const positionsSource = fnSource(positionsFn, 1000);
+    const normalizedSource = String(positionsSource || "")
+      .replace(/\s+/g, "");
+
+    const safePositionsMethod =
+      typeof positionsFn === "function" &&
+      normalizedSource.includes(
+        "returnArray.from(this._positions.values())"
+      );
+
+    if (safePositionsMethod) {
+      report.positions.sourceFound = true;
+      report.positions.note =
+        "Source-verified synchronous local Map read; no broker/network call.";
+
+      const list = positionsFn.call(positionService);
+
+      report.safety.localPositionReadMethodInvoked = true;
+
+      if (Array.isArray(list)) {
+        report.positions.count = list.length;
+        report.positions.items = list
+          .slice(0, 25)
+          .map(positionSummary);
+      } else {
+        report.positions.note =
+          "Method did not return an array. No further inspection performed.";
+      }
+    } else {
+      report.positions.note =
+        "The source-verified local positions() method was not available or its source changed. It was not invoked.";
+    }
+
+    if (!adapter) {
+      report.warnings.push("Broker adapter not found.");
+    }
+
+    if (!positionService) {
+      report.warnings.push("Position service not found.");
+    }
+
+  } catch (err) {
+    report.warnings.push(
+      "Audit error: " + String(err).slice(0, 500)
+    );
+  }
+
+  // ----------------------------------------------------------
+  // Popup
+  // ----------------------------------------------------------
+
+  const host = D.createElement("div");
+  host.id = PANEL_ID;
+  host.style.cssText =
+    "position:fixed;top:16px;right:16px;z-index:2147483647;" +
+    "width:min(720px,calc(100vw - 32px));" +
+    "height:min(780px,calc(100vh - 32px));";
+
+  D.documentElement.appendChild(host);
+
+  const shadow = host.attachShadow({ mode: "open" });
+
+  shadow.innerHTML = `
+    <style>
+      *{box-sizing:border-box}
+      .panel{
+        height:100%;display:flex;flex-direction:column;
+        overflow:hidden;color:#e8edf5;background:#101722;
+        border:1px solid #43536a;border-radius:13px;
+        box-shadow:0 20px 60px #0009;
+        font-family:Arial,sans-serif
+      }
+      .header{padding:14px 16px;background:#1c2b40}
+      .title{font-size:15px;font-weight:700}
+      .sub{font-size:11px;color:#a8b8cc;margin-top:5px;line-height:1.5}
+      .status{padding:10px 14px;font-size:12px;color:#b8e5d3}
+      .actions{display:flex;gap:8px;padding:10px 14px}
+      button{
+        cursor:pointer;padding:8px 12px;border-radius:7px;
+        border:1px solid #536982;background:#293d55;
+        color:white;font-size:12px;font-weight:600
+      }
+      button.primary{background:#176b54;border-color:#2d9779}
+      button.danger{background:#613b48;border-color:#a05c6d}
+      textarea{
+        flex:1;min-height:0;width:100%;resize:none;
+        padding:13px;background:#080e17;color:#d8e5f3;
+        border:0;outline:0;font:11px/1.5 Consolas,monospace
+      }
+      .footer{padding:8px 13px;color:#8799b0;font-size:10px}
+    </style>
+    <div class="panel">
+      <div class="header">
+        <div class="title">Bitunix Position Capability Audit v1.0</div>
+        <div class="sub">
+          Checks partial-close / reverse capabilities and local position metadata.
+          No order methods are called.
+        </div>
+      </div>
+      <div class="status" id="status">Audit completed.</div>
+      <div class="actions">
+        <button class="primary" id="copy">Copy Report</button>
+        <button id="select">Select All</button>
+        <button class="danger" id="close">Close</button>
+      </div>
+      <textarea id="out" readonly spellcheck="false"></textarea>
+      <div class="footer">
+        Position IDs and exact quantities are hidden in this report.
+      </div>
+    </div>
+  `;
+
+  const $ = s => shadow.querySelector(s);
+  const output = $("#out");
+  const status = $("#status");
+
+  output.value = JSON.stringify(report, null, 2);
+
+  status.textContent =
+    "Done · Positions: " +
+    (report.positions.count ?? "not available") +
+    " · Partial close flag: " +
+    (report.capabilities.supportPartialClosePosition?.value ?? "unknown") +
+    " · Native reverse flag: " +
+    (report.capabilities.supportNativeReversePosition?.value ?? "unknown");
+
+  $("#copy").addEventListener("click", async () => {
+    try {
+      await W.navigator.clipboard.writeText(output.value);
+      status.textContent = "Report copied.";
+    } catch (_) {
+      output.focus();
+      output.select();
+      status.textContent = "Press Ctrl+C to copy.";
+    }
+  });
+
+  $("#select").addEventListener("click", () => {
+    output.focus();
+    output.select();
+    status.textContent = "Report selected. Press Ctrl+C.";
+  });
+
+  $("#close").addEventListener("click", () => host.remove());
+
+  console.log("[Bitunix Position Capability Audit] Completed. Read-only.");
+})();
+</CodeBlock>
+
+بعد از اجرا، گزارش جدید را بفرست. با آن می‌توانیم بفهمیم بستن درصدی واقعاً برای Broker فعلی فعال است یا نه، و آیا پوزیشن جاری از همان سرویس داخلی قابل‌دسترسی است. **این کد هیچ Close یا Reverse واقعی انجام نمی‌دهد.**
+
+
+کاربر | پیام 37 | 11/15/2026, 10:57:10 AM
+------------------------------------------------------------
+
+برای کلوز  و ریورس من فقط به همه پوزیشن نیاز دارم. درصدی ازشون رو نیاز ندارم. دیگه درصد احتیاج نیست. اگر کلوز زدم همه رو ببنده و اگر ریورس زدم همه رو ریورس بکنه
+
+
+دستیار | پیام 38 | 11/15/2026, 10:58:03 AM
+------------------------------------------------------------
+
+Worked for 52s
+
+
+دستیار | پیام 39 | 11/15/2026, 10:58:03 AM
+------------------------------------------------------------
+
+متوجه شدم. پس قابلیت بستن درصدی را کاملاً از طراحی حذف می‌کنیم. فقط دو عملیات لازم داریم:
+
+<box border radius="lg" gap={3} padding={3}>
+  <row align="center" gap={2}>
+    <icon name="x-circle" color="danger" size="xl"/>
+    **CLOSE ALL**
+  </row>
+  با یک کلیک، تمام پوزیشن‌های باز را به‌طور کامل ببندد.
+  <divider color="subtle"/>
+  <row align="center" gap={2}>
+    <icon name="repeat" color="success" size="xl"/>
+    **REVERSE ALL**
+  </row>
+  با یک کلیک، تمام پوزیشن‌های باز را به جهت مخالف برگرداند.
+</box>
+
+### از نظر API وضعیت چطور است؟
+
+طبق گزارش ۱۶:
+
+- `adapter.closePosition(positionId)` یک پوزیشن را کامل می‌بندد؛ چون پارامتر حجم حذف شده است.
+- `adapter.reversePosition(positionId)` یک پوزیشن را Reverse می‌کند.
+- هنوز متد Bulk مستقلی با نام Close All یا Reverse All پیدا نکرده‌ایم.
+
+بنابراین راهکار ما این است که ابتدا فهرست پوزیشن‌های باز را بگیریم و سپس عملیات را برای هر پوزیشن جداگانه اجرا کنیم.
+
+**دو نکته مهم در پیاده‌سازی:**
+
+1. عملیات‌ها را ترتیبی اجرا می‌کنیم، نه هم‌زمان؛ تا وضعیت پوزیشن‌ها بعد از هر عملیات بررسی شود.
+2. قبل از اجرا، تعداد پوزیشن‌ها و نمادهایشان را بررسی می‌کنیم و نتیجه موفق یا ناموفق هرکدام را نمایش می‌دهیم.
+
+یک نکته برای جلوگیری از اشتباه معاملاتی: فعلاً محدوده را **تمام پوزیشن‌های باز نماد فعلی چارت** در نظر می‌گیرم، نه تمام نمادهای حساب.
+
+این مشخصات مبنای ساخت ماژول Close All و Reverse All خواهد بود.
+
+
+کاربر | پیام 40 | 11/15/2026, 10:59:06 AM
+------------------------------------------------------------
+
+نتیجه گزارش کد بالا و اینکه من همزمان چندتا پوزیشن باز نخواهم داشت. فقط یک پوزیشن باز دارم. همین
+
+{\
+&#x20; "reportName": "BITUNIX_POSITION_CAPABILITY_AUDIT",\
+&#x20; "version": "1.0",\
+&#x20; "timestamp": "2026-11-15T07:27:32.589Z",\
+&#x20; "safety": {\
+&#x20;   "readOnly": true,\
+&#x20;   "localPositionReadMethodInvoked": true,\
+&#x20;   "tradingMethodsInvoked": 0,\
+&#x20;   "networkRequests": 0,\
+&#x20;   "buttonsClicked": 0,\
+&#x20;   "formsSubmitted": 0,\
+&#x20;   "credentialsRead": false,\
+&#x20;   "fullPositionIdsIncluded": false,\
+&#x20;   "exactPositionQuantitiesIncluded": false\
+&#x20; },\
+&#x20; "capabilities": {\
+&#x20;   "supportClosePosition": {\
+&#x20;     "value": true,\
+&#x20;     "source": "adapter.\_brokerMetainfo.configFlags",\
+&#x20;     "ownerLevel": 0\
+&#x20;   },\
+&#x20;   "supportNativeReversePosition": {\
+&#x20;     "value": true,\
+&#x20;     "source": "adapter.\_brokerMetainfo.configFlags",\
+&#x20;     "ownerLevel": 0\
+&#x20;   },\
+&#x20;   "supportReversePosition": {\
+&#x20;     "value": true,\
+&#x20;     "source": "adapter.\_brokerMetainfo.configFlags",\
+&#x20;     "ownerLevel": 0\
+&#x20;   }\
+&#x20; },\
+&#x20; "methods": {\
+&#x20;   "adapterClosePosition": {\
+&#x20;     "found": true,\
+&#x20;     "path": "bitunixTv.tvWidget.host.\_adapter.closePosition",\
+&#x20;     "ownerLevel": 1,\
+&#x20;     "type": "function",\
+&#x20;     "source": "async closePosition(e,t){let i;l(e),this.\_makeSureBrokerIsConnected(),(0,C.assert)(void 0===t||!!this.config.supportPartialClosePosition,\\"Broker doesn\`t support partial position closing\\");const r=new Promise(async(r,s)=>{try{const s=await this.\_positionCopyById(e);i=e=>{void 0!==s&&e.id===s.id&&e.symbol===s.symbol&&e.qty!==s.qty&&(this.positionUpdate.unsubscribe(this,i),r(!0))},this.positionUpdate.subscribe(this,i),await this.\_closePosition(e,t)}catch(e){s(e)}});return(0,T.makeTimeLimited)(r,3e4,\\"Position closing timeout\\").catch(e=>(this.\_brokerLogger.logError(\`${oe}: ${(0,D.getLoggerMessage)(e)}\`),this.positionUpdate.unsubscribe(this,i),!1))}"\
+&#x20;   },\
+&#x20;   "adapterReversePosition": {\
+&#x20;     "found": true,\
+&#x20;     "path": "bitunixTv.tvWidget.host.\_adapter.reversePosition",\
+&#x20;     "ownerLevel": 1,\
+&#x20;     "type": "function",\
+&#x20;     "source": "reversePosition(e){if(l(e),this.\_makeSureBrokerIsConnected(),this.config.supportMultiposition&&!this.config.supportNativeReversePosition)throw new Error(\\"Cannot reverse position on multiposition account\\");let t;const i=new Promise(async(i,r)=>{try{const r=await this.\_positionCopyById(e);t=e=>{void 0!==r&&e.symbol===r.symbol&&e.side!==r.side&&(this.positionUpdate.unsubscribe(this,t),i(!0))},this.positionUpdate.subscribe(this,t),await this.\_reversePosition(e)}catch(e){r(e)}});return(0,T.makeTimeLimited)(i,3e4,\\"Position reversing timeout\\").catch(e=>(this.\_brokerLogger.logError(\`${ne}: ${(0,D.getLoggerMessage)(e)}\`),this.positionUpdate.unsubscribe(this,t),!1))}"\
+&#x20;   },\
+&#x20;   "adapterInternalClose": {\
+&#x20;     "found": true,\
+&#x20;     "path": "bitunixTv.tvWidget.host.\_adapter.\_closePosition",\
+&#x20;     "ownerLevel": 1,\
+&#x20;     "type": "function",\
+&#x20;     "source": "async \_closePosition(e,t){const r=(0,C.ensureDefined)(await this.positionById(e));if(!(0,A.checkIsExistingPosition)(r)){const e=m.t(null,void 0,i(715842));throw this.\_host.showNotification(oe,e,0),new Error(e)}if(!(void 0===t||t<=Math.abs(r.qty))){const e=m.t(null,void 0,i(365389));throw this.\_host.showNotification(oe,e,0),new Error(e)}{const i=n(null!=t?t:Math.abs(r.qty),r);if(this.config.supportClosePosition&&this.\_brokerConnection.closePosition){if(!await this.processErrors(this.\_brokerConnection.closePosition(e,t),!0,oe,()=>(0,C.ensureNotNull)(this.\_tradingStat).trackOrderPlaced(i)))throw new Error(oe)}else if(!await this.processErrors(this.\_brokerConnection.placeOrder(i),!0,oe,()=>(0,C.ensureNotNull)(this.\_tradingStat).trackOrderPlaced(i)))throw new Error(oe)}}"\
+&#x20;   },\
+&#x20;   "adapterInternalReverse": {\
+&#x20;     "found": true,\
+&#x20;     "path": "bitunixTv.tvWidget.host.\_adapter.\_reversePosition",\
+&#x20;     "ownerLevel": 1,\
+&#x20;     "type": "function",\
+&#x20;     "source": "async \_reversePosition(e){const t=(0,C.ensureDefined)(await this.positionById(e));if(0===t.qty){const e=m.t(null,void 0,i(726500));throw this.\_host.showNotification(ne,e,0),new Error(e)}this.config.supportNativeReversePosition&&this.\_brokerConnection.reversePosition?await this.processErrors(this.\_brokerConnection.reversePosition(e),!0,ne):await this.processErrors(this.\_placeReversePositionOrder(t),!0,ne,()=>(0,C.ensureNotNull)(this.\_tradingStat).trackOrderPlaced())}"\
+&#x20;   },\
+&#x20;   "connectionClosePosition": {\
+&#x20;     "found": false,\
+&#x20;     "path": "brokerConnection.closePosition"\
+&#x20;   },\
+&#x20;   "connectionReversePosition": {\
+&#x20;     "found": true,\
+&#x20;     "path": "brokerConnection.reversePosition",\
+&#x20;     "ownerLevel": 1,\
+&#x20;     "type": "function",\
+&#x20;     "source": "async[w(1939,\\"83UK\\")+w(1495,\\"fvAC\\")]\(t){const r=k,o=w;this[o(3256,\\"kcA1\\")][r(2296)]\(et[o(4229,\\"YYPc\\")+o(4447,\\"kcA1\\")],t)}"\
+&#x20;   },\
+&#x20;   "connectionPlaceOrder": {\
+&#x20;     "found": false,\
+&#x20;     "path": "brokerConnection.placeOrder"\
+&#x20;   },\
+&#x20;   "positionServicePositions": {\
+&#x20;     "found": true,\
+&#x20;     "path": "positionService.positions",\
+&#x20;     "ownerLevel": 1,\
+&#x20;     "type": "function",\
+&#x20;     "source": "positions(){return Array.from(this.\_positions.values())}"\
+&#x20;   },\
+&#x20;   "adapterConfigDescriptor": {\
+&#x20;     "found": true,\
+&#x20;     "type": "data",\
+&#x20;     "valueType": "object"\
+&#x20;   }\
+&#x20; },\
+&#x20; "positions": {\
+&#x20;   "sourceFound": true,\
+&#x20;   "count": 0,\
+&#x20;   "items": [],\
+&#x20;   "note": "Source-verified synchronous local Map read; no broker/network call."\
+&#x20; },\
+&#x20; "warnings": []\
+}
+
+
+دستیار | پیام 41 | 11/15/2026, 10:59:52 AM
+------------------------------------------------------------
+
+Worked for 45s
+
+
+دستیار | پیام 42 | 11/15/2026, 10:59:52 AM
+------------------------------------------------------------
+
+خیلی خوب. پس طراحی را ساده‌تر می‌کنیم: **در هر لحظه فقط یک پوزیشن باز داریم و نیازی به مدیریت چند پوزیشن نیست.**
+
+گزارش ۱۶ هم نتایج مهمی دارد:
+
+| قابلیت | نتیجه |
+|---|---|
+| پشتیبانی Close | <badge color="success">فعال</badge> |
+| پشتیبانی Native Reverse | <badge color="success">فعال</badge> |
+| متد کامل Close | پیدا شده |
+| متد کامل Reverse | پیدا شده |
+| دریافت شناسه پوزیشن | مسیر آن پیدا شده |
+| تعداد پوزیشن هنگام گزارش | ۰ |
+
+صفر بودن تعداد پوزیشن‌ها یعنی هنگام اجرای گزارش، حافظه داخلی Position Service پوزیشن فعالی نداشته است؛ اگر آن لحظه پوزیشن باز نداشتی، کاملاً طبیعی است.
+
+### طراحی نهایی افزونه
+
+**دکمه CLOSE**
+1. پوزیشن فعلی را پیدا می‌کند.
+2. شناسه آن را استخراج می‌کند.
+3. متد `adapter.closePosition(positionId)` را بدون پارامتر حجم فراخوانی می‌کند.
+4. بسته‌شدن پوزیشن را بررسی می‌کند.
+
+**دکمه REVERSE**
+1. پوزیشن فعلی را پیدا می‌کند.
+2. شناسه آن را استخراج می‌کند.
+3. متد `adapter.reversePosition(positionId)` را فراخوانی می‌کند.
+4. تغییر جهت پوزیشن را تأیید می‌کند.
+
+اگر پوزیشن پیدا نشود، هیچ عملیاتی انجام نمی‌شود.
+
+### فقط یک بررسی فنی باقی مانده
+
+برای Close، کد داخلی نشان می‌دهد که در نبود متد مستقیم `brokerConnection.closePosition`، سیستم از مسیر سفارش مخالف استفاده می‌کند. باید این مسیر جایگزین را هم تأیید کنیم. Reverse مسیر بومی مشخص‌تری دارد و پشتیبانی آن فعال است.
+
+**دیگر نیازی به بررسی چند پوزیشن، درصد بستن یا حلقه اجرای چند سفارش نداریم.** طراحی دقیقاً برای یک پوزیشن باز خواهد بود.
+
+
+کاربر | پیام 43 | 11/15/2026, 11:01:07 AM
+------------------------------------------------------------
+
+خب الان چ کنیم؟ بازم مونده؟ بفرس
+
+
+دستیار | پیام 44 | 11/15/2026, 11:03:15 AM
+------------------------------------------------------------
+
+Worked for 2m 7s
+
+
+دستیار | پیام 45 | 11/15/2026, 11:03:11 AM
+------------------------------------------------------------
+
+با گزارش ۱۶ تقریباً همه مسیرهای لازم را پیدا کردیم. با توجه به اینکه همیشه فقط **یک پوزیشن باز** داری و فقط بستن کامل یا Reverse کامل می‌خواهی، دیگر نیازی به بررسی چند پوزیشن و درصد بستن نداریم.
+
+فقط یک بررسی فنی باقی مانده: مشخص کردن مسیر دقیق سفارش Close در Broker، چون متد مستقیم `closePosition` در Broker Connection پیدا نشده و کد Bitunix از مسیر جایگزین سفارش مخالف استفاده می‌کند.
+
+کد زیر آخرین بررسی خواندنی را انجام می‌دهد. همچنین اگر پوزیشن باز داشته باشی، مشخصات لازم آن را از حافظه محلی استخراج می‌کند.
+
+### Bitunix Final API Check v1.1
+
+<badge color="success">فقط خواندنی</badge> هیچ سفارش یا عملیات معاملاتی اجرا نمی‌شود.
+
+<CodeBlock language="javascript" editable>
+(() => {
+  "use strict";
+
+  /* BITUNIX FINAL API CHECK v1.1
+     READ ONLY
+     Only invokes the verified local positionService.positions()
+     Never invokes closePosition, reversePosition or order methods.
+  */
+
+  const PANEL_ID = "__BITUNIX_FINAL_API_CHECK_V11__";
+  const W = window.top || window;
+  const D = W.document;
+
+  const old = D.getElementById(PANEL_ID);
+  if (old) old.remove();
+
+  const report = {
+    reportName: "BITUNIX_FINAL_API_CHECK",
+    version: "1.1",
+    timestamp: new Date().toISOString(),
+
+    safety: {
+      readOnly: true,
+      localPositionsRead: false,
+      closeMethodsInvoked: 0,
+      reverseMethodsInvoked: 0,
+      orderMethodsInvoked: 0,
+      networkRequests: 0,
+      buttonsClicked: 0,
+      formsSubmitted: 0,
+      credentialsRead: false,
+      exactPositionIdIncluded: false,
+      exactPositionQuantityIncluded: false
+    },
+
+    capabilities: {},
+    adapterMethods: [],
+    brokerConnection: {},
+    closeReverseImplementation: {},
+    currentPosition: {},
+    warnings: []
+  };
+
+  // ------------------------------------------------
+  // Safe property access. Never invoke getters.
+  // ------------------------------------------------
+
+  function findDescriptor(obj, key, maxLevels = 6) {
+    let current = obj;
+
+    for (let level = 0; current && level < maxLevels; level++) {
+      try {
+        const d = Object.getOwnPropertyDescriptor(current, key);
+
+        if (d) {
+          return {
+            found: true,
+            descriptor: d,
+            ownerLevel: level,
+            value: Object.prototype.hasOwnProperty.call(d, "value")
+              ? d.value
+              : undefined
+          };
+        }
+
+        current = Object.getPrototypeOf(current);
+      } catch (_) {
+        break;
+      }
+    }
+
+    return { found: false };
+  }
+
+  function getValue(obj, key) {
+    const result = findDescriptor(obj, key);
+
+    if (
+      result.found &&
+      Object.prototype.hasOwnProperty.call(result.descriptor, "value")
+    ) {
+      return result.value;
+    }
+
+    return undefined;
+  }
+
+  function getKeys(obj) {
+    try {
+      return Object.getOwnPropertyNames(obj);
+    } catch (_) {
+      return [];
+    }
+  }
+
+  function safeSource(fn, maxLength = 3500) {
+    if (typeof fn !== "function") return null;
+
+    try {
+      const source = Function.prototype.toString.call(fn);
+      if (source.includes("[native code]")) return null;
+      return source.slice(0, maxLength);
+    } catch (_) {
+      return null;
+    }
+  }
+
+  function getMethodInfo(obj, name) {
+    const d = findDescriptor(obj, name);
+
+    if (!d.found) {
+      return { found: false };
+    }
+
+    if (!Object.prototype.hasOwnProperty.call(d.descriptor, "value")) {
+      return {
+        found: true,
+        type: "accessor",
+        getterInvoked: false
+      };
+    }
+
+    const value = d.value;
+
+    return {
+      found: true,
+      ownerLevel: d.ownerLevel,
+      type: typeof value,
+      source: typeof value === "function"
+        ? safeSource(value, 6500)
+        : null
+    };
+  }
+
+  function primitiveValue(obj, key) {
+    const d = findDescriptor(obj, key, 2);
+
+    if (
+      !d.found ||
+      !Object.prototype.hasOwnProperty.call(d.descriptor, "value")
+    ) return undefined;
+
+    const value = d.value;
+
+    if (
+      value === null ||
+      ["string", "number", "boolean"].includes(typeof value)
+    ) return value;
+
+    return undefined;
+  }
+
+  // ------------------------------------------------
+  // Locate verified Bitunix objects.
+  // ------------------------------------------------
+
+  try {
+    const bridge = getValue(W, "bitunixTv");
+    const widget = getValue(bridge, "tvWidget");
+    const host = getValue(widget, "host");
+    const adapter = getValue(host, "_adapter");
+    const connection = getValue(adapter, "_brokerConnection");
+    const trading = getValue(host, "_trading");
+    const positionService = getValue(trading, "_positionService");
+    const brokerMeta = getValue(adapter, "_brokerMetainfo");
+    const flags = getValue(brokerMeta, "configFlags");
+
+    report.objectDiscovery = {
+      bitunixTv: !!bridge,
+      tvWidget: !!widget,
+      host: !!host,
+      adapter: !!adapter,
+      brokerConnection: !!connection,
+      positionService: !!positionService,
+      brokerMetainfo: !!brokerMeta,
+      configFlags: !!flags
+    };
+
+    if (!adapter || !connection) {
+      report.warnings.push(
+        "Required adapter or broker connection was not found."
+      );
+    }
+
+    // ------------------------------------------------
+    // 1. Trading capability flags.
+    // ------------------------------------------------
+
+    const flagNames = [
+      "supportClosePosition",
+      "supportPartialClosePosition",
+      "supportNativeReversePosition",
+      "supportReversePosition",
+      "supportMultiposition",
+      "supportPositionNetting"
+    ];
+
+    for (const name of flagNames) {
+      const value = primitiveValue(flags, name);
+
+      report.capabilities[name] =
+        value === undefined
+          ? { available: false }
+          : { available: true, value };
+    }
+
+    // ------------------------------------------------
+    // 2. Adapter methods.
+    // ------------------------------------------------
+
+    const adapterMethodNames = [
+      "closePosition",
+      "reversePosition",
+      "_closePosition",
+      "_reversePosition",
+      "_placeReversePositionOrder",
+      "positionById",
+      "positions",
+      "_positions",
+      "_makeSureBrokerIsConnected"
+    ];
+
+    for (const name of adapterMethodNames) {
+      report.adapterMethods.push({
+        name,
+        ...getMethodInfo(adapter, name)
+      });
+    }
+
+    // ------------------------------------------------
+    // 3. Broker Connection method inventory.
+    // Includes obfuscated method names, without calling.
+    // ------------------------------------------------
+
+    const connectionMethods = [];
+    const connectionProperties = [];
+    const seenFunctions = new WeakSet();
+
+    let current = connection;
+    let level = 0;
+
+    while (current && level < 4) {
+      const keys = getKeys(current);
+
+      for (const key of keys) {
+        if (
+          /token|password|secret|credential|cookie|authorization|balance|wallet|private|user/i.test(key)
+        ) continue;
+
+        const d = (() => {
+          try {
+            return Object.getOwnPropertyDescriptor(current, key);
+          } catch (_) {
+            return null;
+          }
+        })();
+
+        if (!d) continue;
+
+        const path = (level === 0 ? "own." : "prototype" + level + ".") + key;
+
+        if (!Object.prototype.hasOwnProperty.call(d, "value")) {
+          connectionProperties.push({
+            path,
+            type: "accessor",
+            getterInvoked: false
+          });
+          continue;
+        }
+
+        const value = d.value;
+
+        if (typeof value === "function") {
+          if (seenFunctions.has(value)) continue;
+          seenFunctions.add(value);
+
+          const source = safeSource(value, 2200);
+
+          connectionMethods.push({
+            path,
+            functionName: (() => {
+              try { return value.name || ""; }
+              catch (_) { return ""; }
+            })(),
+            argumentCount: value.length,
+            sourceLength: source ? source.length : 0,
+            source: source || null
+          });
+        } else {
+          connectionProperties.push({
+            path,
+            type: Array.isArray(value) ? "array" : typeof value
+          });
+        }
+
+        if (
+          connectionMethods.length >= 120 &&
+          connectionProperties.length >= 150
+        ) break;
+      }
+
+      try {
+        current = Object.getPrototypeOf(current);
+      } catch (_) {
+        break;
+      }
+
+      level++;
+    }
+
+    report.brokerConnection = {
+      found: !!connection,
+      methodCount: connectionMethods.length,
+      propertyCount: connectionProperties.length,
+
+      namedMethods: {
+        closePosition: getMethodInfo(connection, "closePosition"),
+        reversePosition: getMethodInfo(connection, "reversePosition"),
+        placeOrder: getMethodInfo(connection, "placeOrder"),
+        orders: getMethodInfo(connection, "orders"),
+        positions: getMethodInfo(connection, "positions")
+      },
+
+      methods: connectionMethods,
+      properties: connectionProperties
+    };
+
+    // ------------------------------------------------
+    // 4. Verify close/reverse implementation.
+    // ------------------------------------------------
+
+    report.closeReverseImplementation = {
+      closeMethod: getMethodInfo(adapter, "_closePosition"),
+      reverseMethod: getMethodInfo(adapter, "_reversePosition"),
+      reverseFallback: getMethodInfo(
+        adapter,
+        "_placeReversePositionOrder"
+      ),
+
+      brokerHasNativeClose:
+        typeof getValue(connection, "closePosition") === "function",
+
+      brokerHasNativeReverse:
+        typeof getValue(connection, "reversePosition") === "function",
+
+      brokerHasNamedPlaceOrder:
+        typeof getValue(connection, "placeOrder") === "function",
+
+      explanation:
+        "These are structural findings only. No order function was called."
+    };
+
+    // ------------------------------------------------
+    // 5. Read local cached open position.
+    // Verify exact known source before invocation.
+    // ------------------------------------------------
+
+    const positionsMethod = findDescriptor(
+      positionService,
+      "positions"
+    );
+
+    if (
+      positionsMethod.found &&
+      typeof positionsMethod.value === "function"
+    ) {
+      const source = safeSource(positionsMethod.value, 1200);
+      const normalized = String(source || "").replace(/\s+/g, "");
+
+      const verified =
+        normalized.includes(
+          "returnArray.from(this._positions.values())"
+        );
+
+      report.currentPosition.sourceVerified = verified;
+
+      if (verified) {
+        const list = positionsMethod.value.call(positionService);
+
+        report.safety.localPositionsRead = true;
+
+        if (Array.isArray(list)) {
+          report.currentPosition.count = list.length;
+          report.currentPosition.items = list.slice(0, 5).map((p, index) => {
+            const id = primitiveValue(p, "id");
+            const qty = primitiveValue(p, "qty");
+            const qtyBySide = primitiveValue(p, "qtyBySide");
+
+            return {
+              index,
+              positionIdPresent: id !== undefined && id !== null,
+              positionIdType: id === null ? "null" : typeof id,
+              positionIdHidden: true,
+
+              symbol: primitiveValue(p, "symbol") ?? null,
+              side: primitiveValue(p, "side") ?? null,
+
+              quantityPresent: qty !== undefined,
+              quantityType: qty === null ? "null" : typeof qty,
+              quantityHidden: true,
+
+              signedQuantityPresent: qtyBySide !== undefined,
+              signedQuantitySign:
+                typeof qtyBySide === "number"
+                  ? qtyBySide > 0 ? "positive" :
+                    qtyBySide < 0 ? "negative" : "zero"
+                  : null,
+
+              supportClose:
+                primitiveValue(p, "supportClose") ?? null,
+
+              supportReverse:
+                primitiveValue(p, "supportReverse") ?? null,
+
+              supportBrackets:
+                primitiveValue(p, "supportBrackets") ?? null
+            };
+          });
+        } else {
+          report.currentPosition.note =
+            "Local positions() did not return an array.";
+        }
+      } else {
+        report.currentPosition.note =
+          "Method source changed; it was NOT invoked.";
+      }
+    } else {
+      report.currentPosition.note =
+        "Local positionService.positions() was not found.";
+    }
+
+  } catch (error) {
+    report.warnings.push(
+      "Audit error: " + String(error).slice(0, 500)
+    );
+  }
+
+  report.completedAt = new Date().toISOString();
+
+  report.summary = {
+    closeCapability:
+      report.capabilities.supportClosePosition?.value ?? "unknown",
+
+    nativeReverseCapability:
+      report.capabilities.supportNativeReversePosition?.value ?? "unknown",
+
+    nativeCloseMethod:
+      report.closeReverseImplementation?.brokerHasNativeClose ?? false,
+
+    namedPlaceOrderMethod:
+      report.closeReverseImplementation?.brokerHasNamedPlaceOrder ?? false,
+
+    reverseMethod:
+      report.closeReverseImplementation?.brokerHasNativeReverse ?? false,
+
+    localPositionCount:
+      report.currentPosition?.count ?? "unknown",
+
+    connectionMethodsInspected:
+      report.brokerConnection?.methodCount ?? 0
+  };
+
+  // ------------------------------------------------
+  // Popup with Copy Report.
+  // ------------------------------------------------
+
+  const host = D.createElement("div");
+  host.id = PANEL_ID;
+
+  host.style.cssText =
+    "position:fixed;top:16px;right:16px;z-index:2147483647;" +
+    "width:min(760px,calc(100vw - 32px));" +
+    "height:min(800px,calc(100vh - 32px));";
+
+  D.documentElement.appendChild(host);
+
+  const shadow = host.attachShadow({ mode: "open" });
+
+  shadow.innerHTML = `
+    <style>
+      *{box-sizing:border-box}
+      .panel{
+        height:100%;display:flex;flex-direction:column;
+        overflow:hidden;color:#e8edf5;background:#101722;
+        border:1px solid #43536a;border-radius:13px;
+        box-shadow:0 20px 60px #0009;
+        font-family:Arial,sans-serif
+      }
+      .header{padding:14px 16px;background:#1c2b40}
+      .title{font-size:15px;font-weight:700}
+      .sub{font-size:11px;color:#a8b8cc;margin-top:5px;line-height:1.5}
+      .status{padding:10px 14px;font-size:12px;color:#b8e5d3}
+      .actions{display:flex;gap:8px;padding:10px 14px}
+      button{
+        cursor:pointer;padding:8px 12px;border-radius:7px;
+        border:1px solid #536982;background:#293d55;
+        color:white;font-size:12px;font-weight:600
+      }
+      button.primary{background:#176b54;border-color:#2d9779}
+      button.danger{background:#613b48;border-color:#a05c6d}
+      textarea{
+        flex:1;min-height:0;width:100%;resize:none;
+        padding:13px;background:#080e17;color:#d8e5f3;
+        border:0;outline:0;font:11px/1.5 Consolas,monospace
+      }
+      .footer{padding:8px 13px;color:#8799b0;font-size:10px}
+    </style>
+    <div class="panel">
+      <div class="header">
+        <div class="title">Bitunix Final API Check v1.1</div>
+        <div class="sub">
+          Broker method inventory + local position metadata.
+          No trading actions.
+        </div>
+      </div>
+      <div class="status" id="status"></div>
+      <div class="actions">
+        <button class="primary" id="copy">Copy Report</button>
+        <button id="select">Select All</button>
+        <button class="danger" id="close">Close</button>
+      </div>
+      <textarea id="out" readonly spellcheck="false"></textarea>
+      <div class="footer">
+        Position ID and exact quantity are hidden. No order methods invoked.
+      </div>
+    </div>
+  `;
+
+  const $ = s => shadow.querySelector(s);
+  const out = $("#out");
+  const status = $("#status");
+
+  out.value = JSON.stringify(report, null, 2);
+
+  status.textContent =
+    "Positions: " + (report.summary.localPositionCount) +
+    " · Close: " + report.summary.closeCapability +
+    " · Native Reverse: " + report.summary.nativeReverseCapability +
+    " · Broker methods inspected: " +
+    report.summary.connectionMethodsInspected;
+
+  $("#copy").addEventListener("click", async () => {
+    try {
+      await W.navigator.clipboard.writeText(out.value);
+      status.textContent = "Report copied to clipboard.";
+    } catch (_) {
+      out.focus();
+      out.select();
+      status.textContent = "Press Ctrl+C to copy.";
+    }
+  });
+
+  $("#select").addEventListener("click", () => {
+    out.focus();
+    out.select();
+    status.textContent = "Report selected. Press Ctrl+C.";
+  });
+
+  $("#close").addEventListener("click", () => host.remove());
+
+  console.log("[Bitunix Final API Check] Read-only audit completed.");
+})();
+</CodeBlock>
+
+**نحوه اجرا:** مثل قبل در Console و Context برابر `top` اجرا کن. اگر الان پوزیشن باز داری، گزارش مشخصات ساختاری همان پوزیشن را هم می‌گیرد؛ اگر پوزیشن باز نباشد، تعداد صفر گزارش می‌شود.
+
+بعد از دریافت گزارش، مشخص می‌شود آیا مسیر Close جایگزین و Reverse بومی آماده استفاده هستند یا هنوز یک ابهام در Broker باقی مانده است.
+
+
+کاربر | پیام 46 | 11/15/2026, 11:06:35 AM
+------------------------------------------------------------
+
+[گزارشات بیتیونیکس18.txt](https://github.com/artaville/KCEX-Enhancer/blob/main/%DA%AF%D8%B2%D8%A7%D8%B1%D8%B4%D8%A7%D8%AA%20%D8%A8%DB%8C%D8%AA%DB%8C%D9%88%D9%86%DB%8C%DA%A9%D8%B318.txt "گزارشات بیتیونیکس18.txt")
+
+
+دستیار | پیام 47 | 11/15/2026, 11:06:36 AM
+------------------------------------------------------------
+
+گزارش ۱۸ را از مخزن می‌خوانم و مشخصاً بررسی می‌کنم آیا مسیر نهایی Close و Reverse برای همان یک پوزیشن روشن شده و آیا هنوز ابهام فنی مهمی باقی مانده است.
+
+
+دستیار | پیام 48 | 11/15/2026, 11:06:40 AM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_file","args":{"repository_full_name":"artaville/KCEX-Enhancer","path":"\u06af\u0632\u0627\u0631\u0634\u0627\u062a \u0628\u06cc\u062a\u06cc\u0648\u0646\u06cc\u06a9\u063318.txt","encoding":"utf-8"}}
+
+
+دستیار | پیام 49 | 11/15/2026, 11:07:02 AM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_file","args":{"repository_full_name":"artaville/KCEX-Enhancer","path":"\u06af\u0632\u0627\u0631\u0634\u0627\u062a \u0628\u06cc\u062a\u06cc\u0648\u0646\u06cc\u06a9\u063318.txt","encoding":"utf-8"}}
+
+
+دستیار | پیام 50 | 11/15/2026, 11:08:14 AM
+------------------------------------------------------------
+
+Worked for 1m 38s
+
+
+دستیار | پیام 51 | 11/15/2026, 11:08:14 AM
+------------------------------------------------------------
+
+گزارش ۱۸ نتیجه بسیار خوبی دارد. این بار افزونه توانسته **یک پوزیشن واقعی و باز را از حافظه داخلی Bitunix شناسایی کند.** همچنین وضعیت دو عملیات Close و Reverse مشخص‌تر شده است.
+
+## ۱. وضعیت پوزیشن فعلی
+
+<box border radius="lg" padding={3} gap={2}>
+  <row justify="between">
+    **XAUTUSDT**
+    <badge color="danger">Short</badge>
+  </row>
+  <title size="2xl" color="default" tabularNums>1</title>
+  <text color="secondary" size="xs">پوزیشن باز شناسایی‌شده</text>
+  <divider color="subtle"/>
+  <row justify="between">
+    پشتیبانی Close
+    <badge color="success">فعال</badge>
+  </row>
+  <row justify="between">
+    پشتیبانی Reverse
+    <badge color="success">فعال</badge>
+  </row>
+  <row justify="between">
+    شناسه پوزیشن
+    <badge color="success">شناسایی شده</badge>
+  </row>
+</box>
+
+شناسه و حجم دقیق در گزارش مخفی بوده‌اند؛ بنابراین آن‌ها را نداریم، اما وجودشان تأیید شده است.
+
+## ۲. وضعیت APIها
+
+| بخش | نتیجه |
+|---|---|
+| `adapter.closePosition` | پیدا شده |
+| `adapter.reversePosition` | پیدا شده |
+| `brokerConnection.reversePosition` | پیدا شده |
+| پشتیبانی Native Reverse | فعال |
+| `brokerConnection.closePosition` | پیدا نشده |
+| `brokerConnection.placeOrder` | پیدا نشده |
+
+### Reverse
+
+<badge color="success">مسیر مناسب پیدا شده</badge>
+
+مسیر اجرای Reverse کاملاً مشخص‌تر است:
+
+```javascript
+adapter.reversePosition(positionId)
+```
+
+این متد به مسیر Native Reverse صرافی می‌رسد و در گزارش، پشتیبانی آن فعال بوده است.
+
+### Close
+
+<badge color="warning">یک ابهام باقی مانده</badge>
+
+اینجا یک مسئله داریم.
+
+کد داخلی Close دو حالت دارد:
+
+1. استفاده از `brokerConnection.closePosition`
+2. در صورت نبودن آن، استفاده از `brokerConnection.placeOrder`
+
+اما در گزارش ۱۸ هیچ‌کدام از این دو متد در Broker Connection پیدا نشده‌اند.
+
+بنابراین با اینکه قابلیت Close فعال گزارش شده، هنوز نمی‌توانیم مطمئن باشیم فراخوانی مستقیم `adapter.closePosition(positionId)` موفق می‌شود.
+
+## ۳. قدم بعدی
+
+فقط باید مسیر جایگزین Close را بررسی کنیم؛ به‌خصوص این رویداد که در گزارش ۱۶ پیدا کرده بودیم:
+
+```javascript
+window.bitunixTv.eventBus.events.closePosition
+```
+
+باید بفهمیم Listener مربوط به این رویداد چگونه عملیات بستن پوزیشن را به بخش اصلی Bitunix منتقل می‌کند.
+
+**نتیجه نهایی فعلی:** برای Reverse مسیر بومی مناسبی داریم؛ برای Close هنوز باید یک بررسی محدود دیگر انجام دهیم. لازم نیست دوباره کل چارت یا ساختار پوزیشن‌ها را بررسی کنیم. هیچ سفارش واقعی هم در این مراحل ارسال نشده است.
+
+
+کاربر | پیام 52 | 11/15/2026, 11:09:13 AM
+------------------------------------------------------------
+
+بفرس
+
+
+دستیار | پیام 53 | 11/15/2026, 11:12:17 AM
+------------------------------------------------------------
+
+Worked for 3m 2s
+
+
+دستیار | پیام 54 | 11/15/2026, 11:11:59 AM
+------------------------------------------------------------
+
+این کد مرحله بعد است. هدفش مشخص کردن یک موضوع باقی‌مانده است: **آیا مسیر داخلی Close از Event Bus خود Bitunix اجرا می‌شود یا از Broker Connection دیگری؟**
+
+در گزارش ۱۸ پوزیشن XAUTUSDT شناسایی شد و پشتیبانی Close و Reverse هر دو فعال بودند. این بار دو Event Bus را با هم مقایسه می‌کنیم و کد Listenerها و متدهای مربوط به Close را دقیق‌تر استخراج می‌کنیم.
+
+## کد Bitunix Close Event Trace v1.2
+
+این نسخه هیچ متد معاملاتی را فراخوانی نمی‌کند؛ حتی برای آزمایش. فقط مشخصات و کد توابع را می‌خواند. شناسه و حجم پوزیشن هم در گزارش پنهان می‌ماند.
+
+<CodeBlock language="javascript" editable>
+(() => {
+  "use strict";
+
+  /* =========================================================
+     BITUNIX CLOSE EVENT TRACE v1.2
+     READ ONLY — NO TRADING METHOD INVOCATION
+     ========================================================= */
+
+  const PANEL_ID = "__BITUNIX_CLOSE_EVENT_TRACE_V12__";
+  const W = window.top || window;
+  const D = W.document;
+
+  const previous = D.getElementById(PANEL_ID);
+  if (previous) previous.remove();
+
+  const report = {
+    reportName: "BITUNIX_CLOSE_EVENT_TRACE",
+    version: "1.2",
+    timestamp: new Date().toISOString(),
+
+    safety: {
+      readOnly: true,
+      functionsInvoked: 0,
+      tradingMethodsInvoked: 0,
+      eventBusEventsEmitted: 0,
+      exchangeButtonsClicked: 0,
+      networkRequests: 0,
+      credentialsRead: false,
+      positionIdsIncluded: false,
+      exactQuantitiesIncluded: false,
+      accessorsInvoked: false
+    },
+
+    discovery: {},
+    busComparison: {},
+    bitunixEventBus: {},
+    brokerEventBus: {},
+    brokerConnection: {},
+    closeReverseMethods: {},
+    customUI: {},
+    warnings: []
+  };
+
+  // -------------------------------------------------------
+  // Safe descriptor-only property access.
+  // -------------------------------------------------------
+
+  function descriptor(obj, key, maxLevels = 5) {
+    let current = obj;
+
+    for (let level = 0; current && level < maxLevels; level++) {
+      try {
+        const d = Object.getOwnPropertyDescriptor(current, key);
+
+        if (d) {
+          return {
+            found: true,
+            level,
+            descriptor: d,
+            value: Object.prototype.hasOwnProperty.call(d, "value")
+              ? d.value
+              : undefined
+          };
+        }
+
+        current = Object.getPrototypeOf(current);
+      } catch (_) {
+        break;
+      }
+    }
+
+    return { found: false };
+  }
+
+  function value(obj, key) {
+    const d = descriptor(obj, key);
+
+    if (
+      d.found &&
+      Object.prototype.hasOwnProperty.call(d.descriptor, "value")
+    ) {
+      return d.value;
+    }
+
+    return undefined;
+  }
+
+  function keys(obj, max = 250) {
+    try {
+      return Object.getOwnPropertyNames(obj).slice(0, max);
+    } catch (_) {
+      return [];
+    }
+  }
+
+  function source(fn, max = 6000) {
+    if (typeof fn !== "function") return null;
+
+    try {
+      const s = Function.prototype.toString.call(fn);
+      if (!s || s.includes("[native code]")) return null;
+      return s.slice(0, max);
+    } catch (_) {
+      return null;
+    }
+  }
+
+  function methodInfo(obj, name, path) {
+    const d = descriptor(obj, name);
+
+    if (!d.found) {
+      return { found: false, path };
+    }
+
+    if (!Object.prototype.hasOwnProperty.call(d.descriptor, "value")) {
+      return {
+        found: true,
+        path,
+        type: "accessor",
+        getterInvoked: false
+      };
+    }
+
+    const fn = d.value;
+
+    return {
+      found: true,
+      path,
+      ownerLevel: d.level,
+      type: typeof fn,
+      functionName: typeof fn === "function" ? (fn.name || "") : "",
+      argumentCount: typeof fn === "function" ? fn.length : null,
+      source: typeof fn === "function" ? source(fn, 8000) : null
+    };
+  }
+
+  function objectSummary(obj, path) {
+    if (!obj) {
+      return { found: false, path };
+    }
+
+    return {
+      found: true,
+      path,
+      type: Array.isArray(obj) ? "array" : typeof obj,
+      ownKeys: keys(obj, 120).filter(k =>
+        !/token|password|secret|credential|cookie|authorization|balance|wallet|private/i.test(k)
+      )
+    };
+  }
+
+  // -------------------------------------------------------
+  // Event bus inspection.
+  // No events are emitted and no listeners are called.
+  // -------------------------------------------------------
+
+  function inspectQueue(queue, path) {
+    if (!queue) return { found: false, path };
+
+    const result = {
+      found: true,
+      path,
+      type: Array.isArray(queue) ? "array" : typeof queue,
+      keys: keys(queue, 80)
+    };
+
+    if (Array.isArray(queue)) {
+      result.length = queue.length;
+    }
+
+    // Do not read queue entries or payloads.
+    return result;
+  }
+
+  function inspectEventArray(arr, eventName, busPath) {
+    const result = {
+      eventName,
+      busPath,
+      found: Array.isArray(arr),
+      listenerCount: 0,
+      listeners: []
+    };
+
+    if (!Array.isArray(arr)) return result;
+
+    result.listenerCount = arr.length;
+
+    for (let i = 0; i < Math.min(arr.length, 15); i++) {
+      const fn = (() => {
+        try {
+          const d = Object.getOwnPropertyDescriptor(arr, String(i));
+          return d && Object.prototype.hasOwnProperty.call(d, "value")
+            ? d.value
+            : undefined;
+        } catch (_) {
+          return undefined;
+        }
+      })();
+
+      if (typeof fn === "function") {
+        result.listeners.push({
+          index: i,
+          name: fn.name || "(anonymous)",
+          argumentCount: fn.length,
+          source: source(fn, 9000)
+        });
+      } else {
+        result.listeners.push({
+          index: i,
+          type: typeof fn
+        });
+      }
+    }
+
+    return result;
+  }
+
+  function inspectBus(bus, path) {
+    if (!bus) {
+      return { found: false, path };
+    }
+
+    const result = {
+      found: true,
+      path,
+      ownKeys: keys(bus, 100),
+      eventNames: [],
+      selectedEvents: {},
+      prototypeMethods: [],
+      queue: null
+    };
+
+    const events = value(bus, "events");
+    const queue = value(bus, "queue");
+
+    result.eventsFound = !!events;
+
+    if (events) {
+      const eventNames = keys(events, 250);
+
+      result.eventNames = eventNames;
+
+      for (const name of [
+        "closePosition",
+        "reversePosition",
+        "marketClose",
+        "positionUpdate",
+        "positionOrderSelected"
+      ]) {
+        const arr = value(events, name);
+
+        result.selectedEvents[name] =
+          inspectEventArray(arr, name, path + ".events");
+      }
+    }
+
+    result.queue = inspectQueue(queue, path + ".queue");
+
+    // Inspect prototype functions, but never invoke them.
+    let current = bus;
+    let level = 0;
+    const seen = new WeakSet();
+
+    while (current && level < 4) {
+      if (seen.has(current)) break;
+      seen.add(current);
+
+      for (const key of keys(current, 250)) {
+        const d = (() => {
+          try {
+            return Object.getOwnPropertyDescriptor(current, key);
+          } catch (_) {
+            return null;
+          }
+        })();
+
+        if (
+          !d ||
+          !Object.prototype.hasOwnProperty.call(d, "value") ||
+          typeof d.value !== "function"
+        ) continue;
+
+        const fn = d.value;
+        const fnSource = source(fn, 3500);
+
+        result.prototypeMethods.push({
+          ownerLevel: level,
+          name: key,
+          argumentCount: fn.length,
+          source: fnSource
+        });
+      }
+
+      try {
+        current = Object.getPrototypeOf(current);
+      } catch (_) {
+        break;
+      }
+
+      level++;
+    }
+
+    return result;
+  }
+
+  // -------------------------------------------------------
+  // Locate Bitunix and TradingView bridge.
+  // -------------------------------------------------------
+
+  try {
+    const bridge = value(W, "bitunixTv");
+    const widget = value(bridge, "tvWidget");
+    const host = value(widget, "host");
+    const adapter = value(host, "_adapter");
+    const connection = value(adapter, "_brokerConnection");
+
+    const bitunixBus = value(bridge, "eventBus");
+    const connectionBus = value(connection, "_eventBus");
+
+    const brokerMeta = value(adapter, "_brokerMetainfo");
+    const customUI = value(
+      value(value(W, "tradingview_0f462"), "brokerConfig"),
+      "customUI"
+    );
+
+    report.discovery = {
+      bitunixTvFound: !!bridge,
+      tvWidgetFound: !!widget,
+      hostFound: !!host,
+      adapterFound: !!adapter,
+      brokerConnectionFound: !!connection,
+      brokerMetainfoFound: !!brokerMeta,
+      bitunixEventBusFound: !!bitunixBus,
+      connectionEventBusFound: !!connectionBus,
+      customUIFound: !!customUI
+    };
+
+    // -----------------------------------------------------
+    // 1. Compare EventBus identities.
+    // -----------------------------------------------------
+
+    report.busComparison = {
+      sameObject:
+        !!bitunixBus &&
+        !!connectionBus &&
+        bitunixBus === connectionBus,
+
+      bitunixBusType:
+        bitunixBus ? typeof bitunixBus : "missing",
+
+      connectionBusType:
+        connectionBus ? typeof connectionBus : "missing",
+
+      conclusion:
+        bitunixBus && connectionBus
+          ? bitunixBus === connectionBus
+            ? "Both references point to the same EventBus object."
+            : "Two different EventBus objects are used."
+          : "At least one EventBus reference is unavailable."
+    };
+
+    // -----------------------------------------------------
+    // 2. Inspect both event buses separately.
+    // -----------------------------------------------------
+
+    report.bitunixEventBus = inspectBus(
+      bitunixBus,
+      "window.bitunixTv.eventBus"
+    );
+
+    report.brokerEventBus = inspectBus(
+      connectionBus,
+      "window.bitunixTv.tvWidget.host._adapter._brokerConnection._eventBus"
+    );
+
+    // -----------------------------------------------------
+    // 3. Inspect BrokerConnection structure and methods.
+    // -----------------------------------------------------
+
+    const connectionProto = (() => {
+      try { return Object.getPrototypeOf(connection); }
+      catch (_) { return null; }
+    })();
+
+    const constructorFn = value(connectionProto, "constructor");
+
+    report.brokerConnection = {
+      found: !!connection,
+
+      ownKeys: keys(connection, 120),
+
+      constructorSource: source(constructorFn, 10000),
+
+      constructorArgumentCount:
+        typeof constructorFn === "function"
+          ? constructorFn.length
+          : null,
+
+      privatePositions: objectSummary(
+        value(connection, "_positions"),
+        "connection._positions"
+      ),
+
+      privateOrders: objectSummary(
+        value(connection, "_orders"),
+        "connection._orders"
+      ),
+
+      baseConfigKeys: keys(
+        value(connection, "_baseConfig"),
+        150
+      ).filter(k =>
+        /close|reverse|position|order|trade|support|market/i.test(k)
+      ),
+
+      namedMethods: {
+        reversePosition: methodInfo(
+          connection,
+          "reversePosition",
+          "brokerConnection.reversePosition"
+        ),
+
+        closePosition: methodInfo(
+          connection,
+          "closePosition",
+          "brokerConnection.closePosition"
+        ),
+
+        placeOrder: methodInfo(
+          connection,
+          "placeOrder",
+          "brokerConnection.placeOrder"
+        ),
+
+        positions: methodInfo(
+          connection,
+          "positions",
+          "brokerConnection.positions"
+        )
+      }
+    };
+
+    // -----------------------------------------------------
+    // 4. Inspect adapter Close/Reverse paths.
+    // -----------------------------------------------------
+
+    report.closeReverseMethods = {
+      adapterClosePosition: methodInfo(
+        adapter,
+        "closePosition",
+        "adapter.closePosition"
+      ),
+
+      adapterReversePosition: methodInfo(
+        adapter,
+        "reversePosition",
+        "adapter.reversePosition"
+      ),
+
+      internalClose: methodInfo(
+        adapter,
+        "_closePosition",
+        "adapter._closePosition"
+      ),
+
+      internalReverse: methodInfo(
+        adapter,
+        "_reversePosition",
+        "adapter._reversePosition"
+      ),
+
+      reverseFallback: methodInfo(
+        adapter,
+        "_placeReversePositionOrder",
+        "adapter._placeReversePositionOrder"
+      )
+    };
+
+    // -----------------------------------------------------
+    // 5. Inspect custom UI wrappers.
+    // They are not called.
+    // -----------------------------------------------------
+
+    report.customUI = {
+      found: !!customUI,
+
+      showClosePositionDialog: methodInfo(
+        customUI,
+        "showClosePositionDialog",
+        "brokerConfig.customUI.showClosePositionDialog"
+      ),
+
+      showReversePositionDialog: methodInfo(
+        customUI,
+        "showReversePositionDialog",
+        "brokerConfig.customUI.showReversePositionDialog"
+      )
+    };
+
+    // -----------------------------------------------------
+    // 6. Extract relevant listener names on Bitunix bus.
+    // -----------------------------------------------------
+
+    const eventNames = value(bitunixBus, "events");
+
+    if (eventNames) {
+      report.bitunixEventBus.relevantEvents = keys(eventNames, 300)
+        .filter(name =>
+          /close|reverse|position|order|trade/i.test(name)
+        );
+    }
+
+    // -----------------------------------------------------
+    // 7. Summaries.
+    // -----------------------------------------------------
+
+    const closeListeners =
+      report.bitunixEventBus.selectedEvents?.closePosition;
+
+    const reverseListeners =
+      report.bitunixEventBus.selectedEvents?.reversePosition;
+
+    report.summary = {
+      sameEventBus:
+        report.busComparison.sameObject,
+
+      bitunixCloseListenerCount:
+        closeListeners?.listenerCount ?? 0,
+
+      bitunixReverseListenerCount:
+        reverseListeners?.listenerCount ?? 0,
+
+      brokerEventBusFound:
+        report.brokerEventBus.found,
+
+      brokerReverseMethodFound:
+        report.brokerConnection.namedMethods.reversePosition.found,
+
+      brokerCloseMethodFound:
+        report.brokerConnection.namedMethods.closePosition.found,
+
+      customCloseDialogFound:
+        report.customUI.showClosePositionDialog.found,
+
+      customReverseDialogFound:
+        report.customUI.showReversePositionDialog.found
+    };
+
+  } catch (err) {
+    report.warnings.push(
+      "Audit error: " + String(err).slice(0, 600)
+    );
+  }
+
+  report.completedAt = new Date().toISOString();
+
+  // -------------------------------------------------------
+  // Popup UI.
+  // -------------------------------------------------------
+
+  const panel = D.createElement("div");
+  panel.id = PANEL_ID;
+
+  panel.style.cssText =
+    "position:fixed;top:16px;right:16px;z-index:2147483647;" +
+    "width:min(760px,calc(100vw - 32px));" +
+    "height:min(800px,calc(100vh - 32px));";
+
+  D.documentElement.appendChild(panel);
+
+  const shadow = panel.attachShadow({ mode: "open" });
+
+  shadow.innerHTML = `
+    <style>
+      *{box-sizing:border-box}
+      .panel{
+        height:100%;display:flex;flex-direction:column;
+        overflow:hidden;color:#e8edf5;background:#101722;
+        border:1px solid #43536a;border-radius:13px;
+        box-shadow:0 20px 60px #0009;
+        font-family:Arial,sans-serif
+      }
+      .header{padding:14px 16px;background:#1c2b40}
+      .title{font-size:15px;font-weight:700}
+      .sub{font-size:11px;color:#a8b8cc;margin-top:5px;line-height:1.5}
+      .status{padding:10px 14px;font-size:12px;color:#b8e5d3}
+      .actions{display:flex;gap:8px;padding:10px 14px}
+      button{
+        cursor:pointer;padding:8px 12px;border-radius:7px;
+        border:1px solid #536982;background:#293d55;
+        color:white;font-size:12px;font-weight:600
+      }
+      button.primary{background:#176b54;border-color:#2d9779}
+      button.danger{background:#613b48;border-color:#a05c6d}
+      textarea{
+        flex:1;min-height:0;width:100%;resize:none;
+        padding:13px;background:#080e17;color:#d8e5f3;
+        border:0;outline:0;font:11px/1.5 Consolas,monospace
+      }
+      .footer{padding:8px 13px;color:#8799b0;font-size:10px}
+    </style>
+    <div class="panel">
+      <div class="header">
+        <div class="title">Bitunix Close Event Trace v1.2</div>
+        <div class="sub">
+          EventBus identity comparison and Close / Reverse listener inspection.
+          No methods are invoked.
+        </div>
+      </div>
+      <div class="status" id="status"></div>
+      <div class="actions">
+        <button class="primary" id="copy">Copy Report</button>
+        <button id="select">Select All</button>
+        <button class="danger" id="close">Close</button>
+      </div>
+      <textarea id="out" readonly spellcheck="false"></textarea>
+      <div class="footer">
+        Read-only audit · No order submission · No EventBus dispatch
+      </div>
+    </div>
+  `;
+
+  const $ = s => shadow.querySelector(s);
+  const output = $("#out");
+  const status = $("#status");
+
+  output.value = JSON.stringify(report, null, 2);
+
+  status.textContent =
+    "Same EventBus: " + report.summary.sameEventBus +
+    " · Close listeners: " + report.summary.bitunixCloseListenerCount +
+    " · Reverse listeners: " + report.summary.bitunixReverseListenerCount +
+    " · Broker Reverse: " + report.summary.brokerReverseMethodFound +
+    " · Broker Close: " + report.summary.brokerCloseMethodFound;
+
+  $("#copy").addEventListener("click", async () => {
+    try {
+      await W.navigator.clipboard.writeText(output.value);
+      status.textContent = "Report copied to clipboard.";
+    } catch (_) {
+      output.focus();
+      output.select();
+      status.textContent = "Press Ctrl+C to copy.";
+    }
+  });
+
+  $("#select").addEventListener("click", () => {
+    output.focus();
+    output.select();
+    status.textContent = "Report selected. Press Ctrl+C.";
+  });
+
+  $("#close").addEventListener("click", () => panel.remove());
+
+  console.log("[Bitunix Close Event Trace v1.2] Read-only audit complete.");
+})();
+</CodeBlock>
+
+**اجرا:** مثل دفعات قبل، در Console با Context روی `top` اجرا کن و کل گزارش را با Copy Report بفرست.
+
+این گزارش کمک می‌کند مشخص کنیم مسیر نهایی Close را از همان دیالوگ رسمی Bitunix اجرا کنیم یا از اتصال داخلی Broker. فعلاً هیچ نیازی به زدن دکمه Close یا Reverse در صرافی نیست.
+
+
+کاربر | پیام 55 | 11/15/2026, 11:14:52 AM
+------------------------------------------------------------
+
+[گزارشات بیتیونیکس19.txt](https://github.com/artaville/KCEX-Enhancer/blob/main/%DA%AF%D8%B2%D8%A7%D8%B1%D8%B4%D8%A7%D8%AA%20%D8%A8%DB%8C%D8%AA%DB%8C%D9%88%D9%86%DB%8C%DA%A9%D8%B319.txt "گزارشات بیتیونیکس19.txt")
+
+
+دستیار | پیام 56 | 11/15/2026, 11:14:54 AM
+------------------------------------------------------------
+
+گزارش ۱۹ را بررسی می‌کنم؛ مهم‌ترین بخشش مقایسه Event Bus اصلی Bitunix با Event Bus داخلی Broker است تا مسیر نهایی Close را بدون حدس مشخص کنیم.
+
+
+دستیار | پیام 57 | 11/15/2026, 11:14:58 AM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_file","args":{"repository_full_name":"artaville/KCEX-Enhancer","path":"\u06af\u0632\u0627\u0631\u0634\u0627\u062a \u0628\u06cc\u062a\u06cc\u0648\u0646\u06cc\u06a9\u063319.txt","encoding":"utf-8"}}
+
+
+دستیار | پیام 58 | 11/15/2026, 11:18:27 AM
+------------------------------------------------------------
+
+Worked for 3m 34s
+
+
+دستیار | پیام 59 | 11/15/2026, 11:16:24 AM
+------------------------------------------------------------
+
+گزارش ۱۹ یک کشف مهم دارد: **Event Bus اصلی Bitunix و Event Bus مربوط به Broker دقیقاً یک آبجکت هستند.** یعنی دو مسیر جدا نداریم و هر دو به یک سیستم فرمان‌دهی می‌رسند.
+
+مهم‌تر اینکه مسیر درست Close را هم از مسیر اشتباه `marketClose` تفکیک کردیم:
+
+| رویداد | کاربرد |
+|---|---|
+| `closePosition` | رسیدگی به بستن پوزیشن |
+| `reversePosition` | اجرای Reverse پوزیشن |
+| `marketClose` | تغییر وضعیت سفارش سریع بازار؛ نه فرمان بستن پوزیشن |
+
+Listener مربوط به Close این ورودی را انتظار دارد:
+
+```javascript
+{
+  position,
+  resolve,
+  reject
+}
+```
+
+و Listener مربوط به Reverse ورودی `positionId` و `resolve` را دریافت می‌کند و سپس مسیر Reverse را فراخوانی می‌کند.
+
+## مرحله بعد: بررسی شکل دقیق آبجکت پوزیشن
+
+یک تفاوت مهم باقی مانده: Listener مربوط به Close از `position.id` استفاده می‌کند، اما Listener مربوط به Reverse از `position.positionId`. باید مشخص کنیم آبجکت پوزیشن فعلی هر دو فیلد را دارد یا باید برای هر عملیات آبجکت متفاوتی بسازیم.
+
+این کد فقط همین موضوع را بررسی می‌کند و پنجره گزارش با دکمه کپی باز می‌کند.
+
+<CodeBlock language="javascript" editable>
+(() => {
+  "use strict";
+
+  const PANEL_ID = "__BITUNIX_POSITION_PAYLOAD_AUDIT_V1__";
+  const W = window.top || window;
+  const D = W.document;
+
+  const old = D.getElementById(PANEL_ID);
+  if (old) old.remove();
+
+  const report = {
+    reportName: "BITUNIX_POSITION_PAYLOAD_AUDIT",
+    version: "1.0",
+    timestamp: new Date().toISOString(),
+    safety: {
+      readOnly: true,
+      onlyVerifiedLocalPositionsMethodCalled: false,
+      tradingMethodsCalled: 0,
+      eventBusPublished: 0,
+      networkRequests: 0,
+      positionIdsExposed: false,
+      exactQuantitiesExposed: false
+    },
+    currentPositions: [],
+    eventBus: {},
+    dialogWrappers: {},
+    conclusion: {}
+  };
+
+  function desc(obj, key) {
+    let p = obj;
+
+    for (let level = 0; p && level < 6; level++) {
+      try {
+        const d = Object.getOwnPropertyDescriptor(p, key);
+        if (d) return {
+          d,
+          level,
+          value: Object.prototype.hasOwnProperty.call(d, "value")
+            ? d.value : undefined
+        };
+        p = Object.getPrototypeOf(p);
+      } catch (_) { break; }
+    }
+
+    return null;
+  }
+
+  function val(obj, key) {
+    const d = desc(obj, key);
+    return d && Object.prototype.hasOwnProperty.call(d.d, "value")
+      ? d.value : undefined;
+  }
+
+  function keys(obj) {
+    try { return Object.getOwnPropertyNames(obj); }
+    catch (_) { return []; }
+  }
+
+  function fnSource(fn, max = 5000) {
+    if (typeof fn !== "function") return null;
+    try {
+      const s = Function.prototype.toString.call(fn);
+      return s.includes("[native code]") ? null : s.slice(0, max);
+    } catch (_) { return null; }
+  }
+
+  function fieldInfo(obj, name) {
+    const d = desc(obj, name);
+
+    if (!d) return { present: false };
+
+    if (!Object.prototype.hasOwnProperty.call(d.d, "value")) {
+      return {
+        present: true,
+        type: "accessor",
+        getterInvoked: false
+      };
+    }
+
+    const v = d.value;
+
+    if (name === "id" || name === "positionId") {
+      return {
+        present: v !== undefined && v !== null,
+        type: typeof v,
+        valueHidden: true,
+        stringLength: typeof v === "string" ? v.length : null
+      };
+    }
+
+    if (name === "qty" || name === "qtyBySide") {
+      return {
+        present: v !== undefined && v !== null,
+        type: typeof v,
+        valueHidden: true,
+        sign: typeof v === "number"
+          ? v > 0 ? "positive" : v < 0 ? "negative" : "zero"
+          : null
+      };
+    }
+
+    if (v === null || ["string", "number", "boolean"].includes(typeof v)) {
+      return { present: true, type: typeof v, value: v };
+    }
+
+    return {
+      present: true,
+      type: Array.isArray(v) ? "array" : typeof v
+    };
+  }
+
+  function nestedKeys(obj, name) {
+    const v = val(obj, name);
+    if (!v || typeof v !== "object") {
+      return { present: false };
+    }
+
+    return {
+      present: true,
+      type: Array.isArray(v) ? "array" : "object",
+      keys: keys(v).filter(k =>
+        !/token|password|secret|cookie|auth|balance|wallet|private/i.test(k)
+      ).slice(0, 100)
+    };
+  }
+
+  try {
+    const bridge = val(W, "bitunixTv");
+    const widget = val(bridge, "tvWidget");
+    const host = val(widget, "host");
+    const adapter = val(host, "_adapter");
+    const trading = val(host, "_trading");
+    const ps = val(trading, "_positionService");
+
+    const positionsDescriptor = desc(ps, "positions");
+    const positionsFn = positionsDescriptor?.value;
+    const normalized = String(fnSource(positionsFn, 1000) || "")
+      .replace(/\s+/g, "");
+
+    const verified =
+      typeof positionsFn === "function" &&
+      normalized.includes(
+        "returnArray.from(this._positions.values())"
+      );
+
+    if (!verified) {
+      report.conclusion.positionMethodVerified = false;
+      report.conclusion.note =
+        "Local positions() source did not match the previously verified read-only implementation. It was not called.";
+    } else {
+      report.conclusion.positionMethodVerified = true;
+
+      const positions = positionsFn.call(ps);
+      report.safety.onlyVerifiedLocalPositionsMethodCalled = true;
+
+      if (Array.isArray(positions)) {
+        for (let i = 0; i < Math.min(positions.length, 5); i++) {
+          const p = positions[i];
+
+          const item = {
+            index: i,
+            objectKeys: keys(p).filter(k =>
+              !/token|password|secret|cookie|auth|balance|wallet|private|email|phone/i.test(k)
+            ).slice(0, 120),
+
+            id: fieldInfo(p, "id"),
+            positionId: fieldInfo(p, "positionId"),
+            symbol: fieldInfo(p, "symbol"),
+            side: fieldInfo(p, "side"),
+            qty: fieldInfo(p, "qty"),
+            qtyBySide: fieldInfo(p, "qtyBySide"),
+
+            supportClose: fieldInfo(p, "supportClose"),
+            supportReverse: fieldInfo(p, "supportReverse"),
+
+            callbacks: nestedKeys(p, "callbacks"),
+            data: nestedKeys(p, "data"),
+            source: nestedKeys(p, "source")
+          };
+
+          report.currentPositions.push(item);
+        }
+
+        report.conclusion.positionCount = positions.length;
+      }
+    }
+
+    // EventBus listener source only. No event is published.
+    const bus = val(bridge, "eventBus");
+    const events = val(bus, "events");
+
+    for (const eventName of ["closePosition", "reversePosition"]) {
+      const list = val(events, eventName);
+      const listeners = [];
+
+      if (Array.isArray(list)) {
+        for (let i = 0; i < Math.min(list.length, 10); i++) {
+          const fn = val(list, String(i));
+
+          listeners.push({
+            index: i,
+            source: fnSource(fn, 7000)
+          });
+        }
+      }
+
+      report.eventBus[eventName] = {
+        listenerCount: Array.isArray(list) ? list.length : null,
+        listeners
+      };
+    }
+
+    // Dialog function source only.
+    const tvBridge = val(W, "tradingview_0f462");
+    const brokerConfig = val(tvBridge, "brokerConfig");
+    const ui = val(brokerConfig, "customUI");
+
+    for (const name of [
+      "showClosePositionDialog",
+      "showReversePositionDialog"
+    ]) {
+      const fn = val(ui, name);
+
+      report.dialogWrappers[name] = {
+        found: typeof fn === "function",
+        source: fnSource(fn, 5000)
+      };
+    }
+
+    report.conclusion.closeHasId =
+      report.currentPositions.some(p => p.id.present);
+
+    report.conclusion.closeHasPositionId =
+      report.currentPositions.some(p => p.positionId.present);
+
+    report.conclusion.positionCount =
+      report.conclusion.positionCount ?? 0;
+
+  } catch (error) {
+    report.error = String(error).slice(0, 600);
+  }
+
+  report.completedAt = new Date().toISOString();
+
+  const panel = D.createElement("div");
+  panel.id = PANEL_ID;
+  panel.style.cssText =
+    "position:fixed;top:16px;right:16px;z-index:2147483647;" +
+    "width:min(720px,calc(100vw - 32px));" +
+    "height:min(780px,calc(100vh - 32px));";
+
+  D.documentElement.appendChild(panel);
+
+  const shadow = panel.attachShadow({ mode: "open" });
+
+  shadow.innerHTML = `
+    <style>
+      *{box-sizing:border-box}
+      .panel{height:100%;display:flex;flex-direction:column;
+        overflow:hidden;color:#e8edf5;background:#101722;
+        border:1px solid #43536a;border-radius:13px;
+        box-shadow:0 20px 60px #0009;font-family:Arial}
+      .header{padding:14px 16px;background:#1c2b40}
+      .title{font-size:15px;font-weight:700}
+      .sub{font-size:11px;color:#a8b8cc;margin-top:5px}
+      .status{padding:10px 14px;font-size:12px;color:#b8e5d3}
+      .actions{display:flex;gap:8px;padding:10px 14px}
+      button{cursor:pointer;padding:8px 12px;border-radius:7px;
+        border:1px solid #536982;background:#293d55;
+        color:white;font-size:12px;font-weight:600}
+      button.primary{background:#176b54;border-color:#2d9779}
+      button.danger{background:#613b48;border-color:#a05c6d}
+      textarea{flex:1;min-height:0;width:100%;resize:none;
+        padding:13px;background:#080e17;color:#d8e5f3;
+        border:0;outline:0;font:11px/1.5 Consolas,monospace}
+      .footer{padding:8px 13px;color:#8799b0;font-size:10px}
+    </style>
+    <div class="panel">
+      <div class="header">
+        <div class="title">Bitunix Position Payload Audit v1.0</div>
+        <div class="sub">Read-only · Position field names and dialog source inspection</div>
+      </div>
+      <div class="status" id="status"></div>
+      <div class="actions">
+        <button class="primary" id="copy">Copy Report</button>
+        <button id="select">Select All</button>
+        <button class="danger" id="close">Close</button>
+      </div>
+      <textarea id="out" readonly spellcheck="false"></textarea>
+      <div class="footer">Position ID and exact quantity are hidden. No order actions.</div>
+    </div>
+  `;
+
+  const $ = s => shadow.querySelector(s);
+  const out = $("#out");
+  const status = $("#status");
+
+  out.value = JSON.stringify(report, null, 2);
+
+  status.textContent =
+    "Positions: " + (report.conclusion.positionCount ?? "unknown") +
+    " · id field: " + !!report.conclusion.closeHasId +
+    " · positionId field: " + !!report.conclusion.closeHasPositionId;
+
+  $("#copy").addEventListener("click", async () => {
+    try {
+      await W.navigator.clipboard.writeText(out.value);
+      status.textContent = "Report copied.";
+    } catch (_) {
+      out.focus();
+      out.select();
+      status.textContent = "Press Ctrl+C to copy.";
+    }
+  });
+
+  $("#select").addEventListener("click", () => {
+    out.focus();
+    out.select();
+    status.textContent = "Report selected. Press Ctrl+C.";
+  });
+
+  $("#close").addEventListener("click", () => panel.remove());
+
+  console.log("[Bitunix Position Payload Audit] Read-only scan completed.");
+})();
+</CodeBlock>
+
+این آخرین بررسی ساختاری است که قبل از طراحی نهایی دکمه‌ها لازم داریم. گزارش را بفرست تا مشخص کنیم برای هر دکمه کدام مسیر رسمی را به کار ببریم.
+
+
+کاربر | پیام 60 | 11/15/2026, 11:20:08 AM
+------------------------------------------------------------
+
+گزارش بیت 20
+
+{\
+&#x20; "reportName": "BITUNIX_POSITION_PAYLOAD_AUDIT",\
+&#x20; "version": "1.0",\
+&#x20; "timestamp": "2026-11-15T07:49:32.542Z",\
+&#x20; "safety": {\
+&#x20;   "readOnly": true,\
+&#x20;   "onlyVerifiedLocalPositionsMethodCalled": true,\
+&#x20;   "tradingMethodsCalled": 0,\
+&#x20;   "eventBusPublished": 0,\
+&#x20;   "networkRequests": 0,\
+&#x20;   "positionIdsExposed": false,\
+&#x20;   "exactQuantitiesExposed": false\
+&#x20; },\
+&#x20; "currentPositions": [],\
+&#x20; "eventBus": {\
+&#x20;   "closePosition": {\
+&#x20;     "listenerCount": 2,\
+&#x20;     "listeners": [\
+&#x20;       {\
+&#x20;         "index": 0,\
+&#x20;         "source": "async({position:t,resolve:r,reject:o})=>{bn(t.id)||b_e(t,e,{resolve:r})}"\
+&#x20;       },\
+&#x20;       {\
+&#x20;         "index": 1,\
+&#x20;         "source": "ie=>{var ee,re;const fe=String(((ee=ie?.position)==null?void 0:ee.id)??\\"\\");fe.startsWith(\\"replay_pos\_\\")&&(aU(fe.endsWith(\\"short\\")?\\"short\\":\\"long\\"),(re=ie.resolve)==null||re.call(ie))}"\
+&#x20;       }\
+&#x20;     ]\
+&#x20;   },\
+&#x20;   "reversePosition": {\
+&#x20;     "listenerCount": 1,\
+&#x20;     "listeners": [\
+&#x20;       {\
+&#x20;         "index": 0,\
+&#x20;         "source": "({position:r,resolve:o})=>{const n=r.positionId,i=ro(n);if(\_t(\\"futures_reverse_position_entry_click\\",{futures_from:\\"kline_position\\",symbol:i?.symbol,futures_need_confirm:String(t?.()??!0)},{tradeType:!0,market:!0,klineFullscreen:!0}),$e(\\"futures_reverse_position\\",{kline_id:n}),!i)throw \_1(n),o(),new Error(\\"Position information that can be reversed is not found\\");e(\\"reversePosition\\",i,l=>{o(),l&&($e(\\"futures_reverse_position_success\\",{kline_id:n}),e(\\"tips\\",\_(\\"notification.success\\"),\\"success\\"))})}"\
+&#x20;       }\
+&#x20;     ]\
+&#x20;   }\
+&#x20; },\
+&#x20; "dialogWrappers": {\
+&#x20;   "showClosePositionDialog": {\
+&#x20;     "found": true,\
+&#x20;     "source": "o=>{const n=r,i=t,l=nd();return e[i(559,\\"s0OD\\")]\(et[n(4523)+i(4688,\\"qK)]\\")],{position:o,resolve:l[i(5724,\\"#eY9\\")],reject:l[n(3408)]}),l[n(5108)]}"\
+&#x20;   },\
+&#x20;   "showReversePositionDialog": {\
+&#x20;     "found": true,\
+&#x20;     "source": "o=>{const n=t,i=r,l=nd();e[i(2296)]\(et[i(1296)+i(2343)],{position:o,resolve:l[n(5222,\\"s0OD\\")],reject:l[n(1884,\\"xu8q\\")]})}"\
+&#x20;   }\
+&#x20; },\
+&#x20; "conclusion": {\
+&#x20;   "positionMethodVerified": true,\
+&#x20;   "positionCount": 0,\
+&#x20;   "closeHasId": false,\
+&#x20;   "closeHasPositionId": false\
+&#x20; },\
+&#x20; "completedAt": "2026-11-15T07:49:32.542Z"\
+}
+
+
+دستیار | پیام 61 | 11/15/2026, 11:21:23 AM
+------------------------------------------------------------
+
+Worked for 1m 15s
+
+
+دستیار | پیام 62 | 11/15/2026, 11:21:23 AM
+------------------------------------------------------------
+
+گزارش ۲۰ را بررسی کردم. یک نکته مهم دارد: **کد درست اجرا شده، اما هنگام اجرای آن هیچ پوزیشن بازی وجود نداشته است.**
+
+<box border radius="lg" padding={3} gap={2}>
+  <row justify="between">
+    **نتیجه گزارش ۲۰**
+    <badge color="warning">نیازمند تکرار</badge>
+  </row>
+  تعداد پوزیشن باز: **۰**
+  متد خواندن پوزیشن: موفق
+  تعداد عملیات معاملاتی: **۰**
+  درخواست شبکه: **۰**
+</box>
+
+### چه چیزی مشخص شد؟
+
+دو Listener ساختار متفاوتی دارند:
+
+**Close** از فیلد زیر استفاده می‌کند:
+
+```javascript
+payload.position.id
+```
+
+**Reverse** از این فیلد استفاده می‌کند:
+
+```javascript
+payload.position.positionId
+```
+
+هر دو از آبجکت Position استفاده می‌کنند، اما هنوز تأیید نکرده‌ایم که پوزیشن واقعی Bitunix هر دو فیلد را دارد.
+
+### قدم بعدی
+
+وقتی پوزیشن معمول XAUTUSDT باز است، همان کد **Bitunix Position Payload Audit v1.0** را دوباره اجرا کن.
+
+لازم نیست صرفاً برای آزمایش معامله جدیدی باز کنی. گزارش ۱۸ قبلاً یک پوزیشن را شناسایی کرده بود، اما گزارش ۲۰ زمانی اجرا شده که تعداد پوزیشن‌ها صفر بوده است.
+
+**بعد از این بررسی می‌توانیم ساختار دکمه‌های Close و Reverse را نهایی کنیم.** همچنان فقط یک پوزیشن باز، بستن کامل و Reverse کامل؛ بدون درصد و بدون مدیریت چند پوزیشن.
+
+
+کاربر | پیام 63 | 11/15/2026, 11:22:39 AM
+------------------------------------------------------------
+
+گزارش بیت 21
+
+{\
+&#x20; "reportName": "BITUNIX_POSITION_PAYLOAD_AUDIT",\
+&#x20; "version": "1.0",\
+&#x20; "timestamp": "2026-11-15T07:52:07.954Z",\
+&#x20; "safety": {\
+&#x20;   "readOnly": true,\
+&#x20;   "onlyVerifiedLocalPositionsMethodCalled": true,\
+&#x20;   "tradingMethodsCalled": 0,\
+&#x20;   "eventBusPublished": 0,\
+&#x20;   "networkRequests": 0,\
+&#x20;   "positionIdsExposed": false,\
+&#x20;   "exactQuantitiesExposed": false\
+&#x20; },\
+&#x20; "currentPositions": [\
+&#x20;   {\
+&#x20;     "index": 0,\
+&#x20;     "objectKeys": [\
+&#x20;       "id",\
+&#x20;       "qty",\
+&#x20;       "qtyText",\
+&#x20;       "pl",\
+&#x20;       "plStyle",\
+&#x20;       "side",\
+&#x20;       "symbol",\
+&#x20;       "avgPrice",\
+&#x20;       "textTooltip",\
+&#x20;       "qtyTooltip",\
+&#x20;       "tpHoverTooltip",\
+&#x20;       "slHoverTooltip",\
+&#x20;       "reverseTooltip",\
+&#x20;       "closeTooltip",\
+&#x20;       "type",\
+&#x20;       "align",\
+&#x20;       "status",\
+&#x20;       "refreshWidth",\
+&#x20;       "color",\
+&#x20;       "reverseColor",\
+&#x20;       "tpsl",\
+&#x20;       "lineExtend",\
+&#x20;       "lineStyle",\
+&#x20;       "lineWidth",\
+&#x20;       "lineColor",\
+&#x20;       "closeBtn",\
+&#x20;       "reverseBtn",\
+&#x20;       "getProfitLossText",\
+&#x20;       "orderBusinessType",\
+&#x20;       "\_",\
+&#x20;       "ep",\
+&#x20;       "edit",\
+&#x20;       "move",\
+&#x20;       "estLiqPrice",\
+&#x20;       "plBasedOnLast",\
+&#x20;       "price",\
+&#x20;       "qtyBySide",\
+&#x20;       "supportClose",\
+&#x20;       "supportReverse",\
+&#x20;       "supportBrackets",\
+&#x20;       "supportOnlyPairBrackets",\
+&#x20;       "supportTrailingStop"\
+&#x20;     ],\
+&#x20;     "id": {\
+&#x20;       "present": true,\
+&#x20;       "type": "string",\
+&#x20;       "valueHidden": true,\
+&#x20;       "stringLength": 19\
+&#x20;     },\
+&#x20;     "positionId": {\
+&#x20;       "present": false\
+&#x20;     },\
+&#x20;     "symbol": {\
+&#x20;       "present": true,\
+&#x20;       "type": "string",\
+&#x20;       "value": "XAUTUSDT"\
+&#x20;     },\
+&#x20;     "side": {\
+&#x20;       "present": true,\
+&#x20;       "type": "number",\
+&#x20;       "value": -1\
+&#x20;     },\
+&#x20;     "qty": {\
+&#x20;       "present": true,\
+&#x20;       "type": "number",\
+&#x20;       "valueHidden": true,\
+&#x20;       "sign": "positive"\
+&#x20;     },\
+&#x20;     "qtyBySide": {\
+&#x20;       "present": true,\
+&#x20;       "type": "number",\
+&#x20;       "valueHidden": true,\
+&#x20;       "sign": "negative"\
+&#x20;     },\
+&#x20;     "supportClose": {\
+&#x20;       "present": true,\
+&#x20;       "type": "boolean",\
+&#x20;       "value": true\
+&#x20;     },\
+&#x20;     "supportReverse": {\
+&#x20;       "present": true,\
+&#x20;       "type": "boolean",\
+&#x20;       "value": true\
+&#x20;     },\
+&#x20;     "callbacks": {\
+&#x20;       "present": false\
+&#x20;     },\
+&#x20;     "data": {\
+&#x20;       "present": false\
+&#x20;     },\
+&#x20;     "source": {\
+&#x20;       "present": false\
+&#x20;     }\
+&#x20;   }\
+&#x20; ],\
+&#x20; "eventBus": {\
+&#x20;   "closePosition": {\
+&#x20;     "listenerCount": 2,\
+&#x20;     "listeners": [\
+&#x20;       {\
+&#x20;         "index": 0,\
+&#x20;         "source": "async({position:t,resolve:r,reject:o})=>{bn(t.id)||b_e(t,e,{resolve:r})}"\
+&#x20;       },\
+&#x20;       {\
+&#x20;         "index": 1,\
+&#x20;         "source": "ie=>{var ee,re;const fe=String(((ee=ie?.position)==null?void 0:ee.id)??\\"\\");fe.startsWith(\\"replay_pos\_\\")&&(aU(fe.endsWith(\\"short\\")?\\"short\\":\\"long\\"),(re=ie.resolve)==null||re.call(ie))}"\
+&#x20;       }\
+&#x20;     ]\
+&#x20;   },\
+&#x20;   "reversePosition": {\
+&#x20;     "listenerCount": 1,\
+&#x20;     "listeners": [\
+&#x20;       {\
+&#x20;         "index": 0,\
+&#x20;         "source": "({position:r,resolve:o})=>{const n=r.positionId,i=ro(n);if(\_t(\\"futures_reverse_position_entry_click\\",{futures_from:\\"kline_position\\",symbol:i?.symbol,futures_need_confirm:String(t?.()??!0)},{tradeType:!0,market:!0,klineFullscreen:!0}),$e(\\"futures_reverse_position\\",{kline_id:n}),!i)throw \_1(n),o(),new Error(\\"Position information that can be reversed is not found\\");e(\\"reversePosition\\",i,l=>{o(),l&&($e(\\"futures_reverse_position_success\\",{kline_id:n}),e(\\"tips\\",\_(\\"notification.success\\"),\\"success\\"))})}"\
+&#x20;       }\
+&#x20;     ]\
+&#x20;   }\
+&#x20; },\
+&#x20; "dialogWrappers": {\
+&#x20;   "showClosePositionDialog": {\
+&#x20;     "found": true,\
+&#x20;     "source": "o=>{const n=r,i=t,l=nd();return e[i(559,\\"s0OD\\")]\(et[n(4523)+i(4688,\\"qK)]\\")],{position:o,resolve:l[i(5724,\\"#eY9\\")],reject:l[n(3408)]}),l[n(5108)]}"\
+&#x20;   },\
+&#x20;   "showReversePositionDialog": {\
+&#x20;     "found": true,\
+&#x20;     "source": "o=>{const n=t,i=r,l=nd();e[i(2296)]\(et[i(1296)+i(2343)],{position:o,resolve:l[n(5222,\\"s0OD\\")],reject:l[n(1884,\\"xu8q\\")]})}"\
+&#x20;   }\
+&#x20; },\
+&#x20; "conclusion": {\
+&#x20;   "positionMethodVerified": true,\
+&#x20;   "positionCount": 1,\
+&#x20;   "closeHasId": true,\
+&#x20;   "closeHasPositionId": false\
+&#x20; },\
+&#x20; "completedAt": "2026-11-15T07:52:07.955Z"\
+}
+
+
+دستیار | پیام 64 | 11/15/2026, 11:23:49 AM
+------------------------------------------------------------
+
+Worked for 1m 9s
+
+
+دستیار | پیام 65 | 11/15/2026, 11:23:49 AM
+------------------------------------------------------------
+
+گزارش ۲۱ بسیار مهم است. بالاخره توانستیم ساختار پوزیشن واقعی را هنگام باز بودن معامله بررسی کنیم.
+
+<badge color="success">ساختار پوزیشن تأیید شد</badge>
+
+## ۱. مشخصات پوزیشن شناسایی‌شده
+
+<box border radius="lg" padding={3} gap={2}>
+  <row justify="between">
+    **XAUTUSDT**
+    <badge color="danger">SHORT</badge>
+  </row>
+  <row justify="between">
+    تعداد پوزیشن‌ها
+    **۱**
+  </row>
+  <row justify="between">
+    شناسه پوزیشن
+    <badge color="success">موجود</badge>
+  </row>
+  <row justify="between">
+    پشتیبانی Close
+    <badge color="success">فعال</badge>
+  </row>
+  <row justify="between">
+    پشتیبانی Reverse
+    <badge color="success">فعال</badge>
+  </row>
+</box>
+
+## ۲. کشف مهم درباره شناسه پوزیشن
+
+آبجکت پوزیشن این فیلد را دارد:
+
+```javascript
+position.id
+```
+
+اما این فیلد را ندارد:
+
+```javascript
+position.positionId
+```
+
+این موضوع برای ما مهم است، چون متدهای رسمی Broker که قبلاً پیدا کردیم، شناسه را به‌صورت آرگومان اول دریافت می‌کنند:
+
+```javascript
+adapter.closePosition(position.id)
+adapter.reversePosition(position.id)
+```
+
+بنابراین برای مسیر مستقیم Adapter نیازی به ساختن `positionId` نداریم.
+
+## ۳. وضعیت نهایی دو قابلیت
+
+| قابلیت | وضعیت |
+|---|---|
+| شناسایی پوزیشن | <badge color="success">تأییدشده</badge> |
+| دریافت شناسه | <badge color="success">تأییدشده</badge> |
+| تشخیص سمت Long/Short | <badge color="success">تأییدشده</badge> |
+| پشتیبانی Reverse | <badge color="success">تأییدشده</badge> |
+| مسیر Native Reverse | <badge color="success">پیدا شده</badge> |
+| مسیر اجرای نهایی Close | <badge color="warning">نیازمند بررسی آخر</badge> |
+
+### چرا هنوز Close را نهایی نمی‌کنیم؟
+
+چون در گزارش ۱۹ مشخص شد Broker متدهای `closePosition` و `placeOrder` را به‌صورت مستقیم ارائه نمی‌دهد؛ درحالی‌که کد داخلی Adapter برای بستن پوزیشن به یکی از این مسیرها وابسته است.
+
+بنابراین نمی‌خواهم دکمه‌ای بسازیم که ظاهراً کار کند ولی هنگام بستن معامله خطا بدهد.
+
+## ۴. قدم بعدی
+
+دیگر لازم نیست سراغ Canvas یا مختصات دکمه‌ها برویم.
+
+باید فقط اتصال Callback مربوط به `closePosition` را در ماژول TradingView بررسی کنیم و ببینیم Bitunix چطور آن را به سیستم سفارش خودش متصل کرده است.
+
+**پیشنهاد من:** یک گزارش تشخیصی نهایی برای همین Callback بسازیم؛ بدون ارسال سفارش. بعد از آن می‌توانیم پیاده‌سازی دو دکمه `CLOSE` و `REVERSE` را شروع کنیم.

@@ -1,0 +1,2946 @@
+﻿BITUNIX CONVERSATION EXPORT
+Conversation ID: 6af96541-3ddc-83ed-8973-fa61aeb3a9d9
+Conversation URL: https://chatgpt.com/c/6af96541-3ddc-83ed-8973-fa61aeb3a9d9
+Conversation Title: برنامه ساخت افزونه Bitunix (5)
+Export Date: 2026-11-15T10:34:12.341Z
+API Type: current
+Pages: 1
+Raw Messages: 163
+User Messages: 12
+Assistant Messages: 44
+Extracted Text Messages: 56
+History Complete: YES
+======================================================================
+
+
+دستیار | پیام 1 | 11/15/2026, 11:23:49 AM
+------------------------------------------------------------
+
+گزارش ۲۱ بسیار مهم است. بالاخره توانستیم ساختار پوزیشن واقعی را هنگام باز بودن معامله بررسی کنیم.
+
+<badge color="success">ساختار پوزیشن تأیید شد</badge>
+
+## ۱. مشخصات پوزیشن شناسایی‌شده
+
+<box border radius="lg" padding={3} gap={2}>
+  <row justify="between">
+    **XAUTUSDT**
+    <badge color="danger">SHORT</badge>
+  </row>
+  <row justify="between">
+    تعداد پوزیشن‌ها
+    **۱**
+  </row>
+  <row justify="between">
+    شناسه پوزیشن
+    <badge color="success">موجود</badge>
+  </row>
+  <row justify="between">
+    پشتیبانی Close
+    <badge color="success">فعال</badge>
+  </row>
+  <row justify="between">
+    پشتیبانی Reverse
+    <badge color="success">فعال</badge>
+  </row>
+</box>
+
+## ۲. کشف مهم درباره شناسه پوزیشن
+
+آبجکت پوزیشن این فیلد را دارد:
+
+```javascript
+position.id
+```
+
+اما این فیلد را ندارد:
+
+```javascript
+position.positionId
+```
+
+این موضوع برای ما مهم است، چون متدهای رسمی Broker که قبلاً پیدا کردیم، شناسه را به‌صورت آرگومان اول دریافت می‌کنند:
+
+```javascript
+adapter.closePosition(position.id)
+adapter.reversePosition(position.id)
+```
+
+بنابراین برای مسیر مستقیم Adapter نیازی به ساختن `positionId` نداریم.
+
+## ۳. وضعیت نهایی دو قابلیت
+
+| قابلیت | وضعیت |
+|---|---|
+| شناسایی پوزیشن | <badge color="success">تأییدشده</badge> |
+| دریافت شناسه | <badge color="success">تأییدشده</badge> |
+| تشخیص سمت Long/Short | <badge color="success">تأییدشده</badge> |
+| پشتیبانی Reverse | <badge color="success">تأییدشده</badge> |
+| مسیر Native Reverse | <badge color="success">پیدا شده</badge> |
+| مسیر اجرای نهایی Close | <badge color="warning">نیازمند بررسی آخر</badge> |
+
+### چرا هنوز Close را نهایی نمی‌کنیم؟
+
+چون در گزارش ۱۹ مشخص شد Broker متدهای `closePosition` و `placeOrder` را به‌صورت مستقیم ارائه نمی‌دهد؛ درحالی‌که کد داخلی Adapter برای بستن پوزیشن به یکی از این مسیرها وابسته است.
+
+بنابراین نمی‌خواهم دکمه‌ای بسازیم که ظاهراً کار کند ولی هنگام بستن معامله خطا بدهد.
+
+## ۴. قدم بعدی
+
+دیگر لازم نیست سراغ Canvas یا مختصات دکمه‌ها برویم.
+
+باید فقط اتصال Callback مربوط به `closePosition` را در ماژول TradingView بررسی کنیم و ببینیم Bitunix چطور آن را به سیستم سفارش خودش متصل کرده است.
+
+**پیشنهاد من:** یک گزارش تشخیصی نهایی برای همین Callback بسازیم؛ بدون ارسال سفارش. بعد از آن می‌توانیم پیاده‌سازی دو دکمه `CLOSE` و `REVERSE` را شروع کنیم.
+
+
+کاربر | پیام 2 | 11/15/2026, 11:24:59 AM
+------------------------------------------------------------
+
+یعنی الان بازم کد باید قرار بدم توی کنسول و گزارش اونو برات بفرستم؟ بدون باز کردن پوزیشن؟
+
+
+دستیار | پیام 3 | 11/15/2026, 11:25:15 AM
+------------------------------------------------------------
+
+Worked for 16s
+
+
+دستیار | پیام 4 | 11/15/2026, 11:25:15 AM
+------------------------------------------------------------
+
+بله، فقط **یک کد تشخیصی دیگر** باید در Console اجرا کنی و گزارشش را برایم بفرستی.
+
+اما این بار **اصلاً نیازی به باز کردن پوزیشن نیست.** حتی بهتر است بدون پوزیشن اجرا کنی.
+
+کد بعدی فقط مسیر داخلی اجرای دستور `CLOSE` را بررسی می‌کند؛ یعنی توابع و اتصال Callbackها را می‌خواند. هیچ سفارشی ارسال نمی‌کند و هیچ پوزیشنی را تغییر نمی‌دهد.
+
+پس:
+- نیازی به باز کردن معامله نداری.
+- دکمه‌های CLOSE و REVERSE را نزن.
+- کد را در Console با Context روی `top` اجرا کن.
+
+با گزارش بعدی می‌توانیم مسیر Close را هم دقیق‌تر مشخص کنیم.
+
+
+کاربر | پیام 5 | 11/15/2026, 11:25:31 AM
+------------------------------------------------------------
+
+باشه بفرس زود
+
+
+دستیار | پیام 6 | 11/15/2026, 11:27:19 AM
+------------------------------------------------------------
+
+Worked for 1m 48s
+
+
+دستیار | پیام 7 | 11/15/2026, 11:27:19 AM
+------------------------------------------------------------
+
+این کد را کامل در Console با Context روی `top` اجرا کن. نیازی به باز کردن پوزیشن نیست.
+
+**این بررسی فقط کدها و توابع داخلی را می‌خواند؛ هیچ سفارش یا رویداد معاملاتی اجرا نمی‌کند.**
+
+```javascript
+(async () => {
+  const report = {
+    reportName: "BITUNIX_CLOSE_CALLBACK_ROUTE_AUDIT",
+    version: "1.0",
+    timestamp: new Date().toISOString(),
+    safety: {
+      readOnly: true,
+      tradingMethodsCalled: 0,
+      eventBusPublished: 0,
+      networkRequests: 0,
+      positionDataRead: false,
+      positionIdsExposed: false,
+      exactQuantitiesExposed: false
+    },
+    contexts: [],
+    closeListeners: [],
+    reverseListeners: [],
+    dialogWrappers: [],
+    adapterMethods: [],
+    brokerConnectionMethods: [],
+    webpackModules: [],
+    errors: []
+  };
+
+  const read = (obj, key) => {
+    try {
+      let p = obj;
+      while (p && p !== Object.prototype) {
+        const d = Object.getOwnPropertyDescriptor(p, key);
+        if (d) return "value" in d ? d.value : undefined;
+        p = Object.getPrototypeOf(p);
+      }
+    } catch (_) {}
+    return undefined;
+  };
+
+  const source = fn => {
+    try {
+      return typeof fn === "function"
+        ? Function.prototype.toString.call(fn).slice(0, 2200)
+        : null;
+    } catch (_) {
+      return null;
+    }
+  };
+
+  const path = (obj, keys) => {
+    for (const key of keys) {
+      obj = read(obj, key);
+      if (!obj) return undefined;
+    }
+    return obj;
+  };
+
+  // فقط پنجره‌های قابل دسترسی و هم‌مبدأ
+  const windows = [{ win: window.top, label: "top" }];
+  const seen = new Set([window.top]);
+
+  for (let depth = 0; depth < 2; depth++) {
+    const current = windows.slice();
+    for (const item of current) {
+      try {
+        const frames = item.win.document.querySelectorAll("iframe");
+        frames.forEach((frame, index) => {
+          try {
+            const child = frame.contentWindow;
+            if (child && !seen.has(child)) {
+              seen.add(child);
+              windows.push({
+                win: child,
+                label: item.label + " > iframe[" + index + "]"
+              });
+            }
+          } catch (_) {}
+        });
+      } catch (_) {}
+    }
+  }
+
+  const relevant = /close|reverse|position|order|submit|broker/i;
+
+  for (const item of windows) {
+    try {
+      const w = item.win;
+      const tv = read(w, "bitunixTv");
+      const tvWidget = read(tv, "tvWidget");
+      const host = read(tvWidget, "host");
+      const trading = read(host, "_trading");
+      const adapter =
+        read(host, "_adapter") ||
+        read(trading, "_adapter");
+
+      const connection =
+        read(adapter, "_brokerConnection") ||
+        read(trading, "_brokerConnection");
+
+      const eventBus =
+        read(tv, "eventBus") ||
+        read(connection, "_eventBus");
+
+      const ctx = {
+        frame: item.label,
+        hasBitunixTv: !!tv,
+        hasTvWidget: !!tvWidget,
+        hasHost: !!host,
+        hasAdapter: !!adapter,
+        hasBrokerConnection: !!connection,
+        hasEventBus: !!eventBus
+      };
+
+      report.contexts.push(ctx);
+
+      // بررسی Listenerها، بدون انتشار رویداد
+      const events = read(eventBus, "events");
+
+      for (const eventName of ["closePosition", "reversePosition"]) {
+        const list = read(events, eventName);
+        const listeners = Array.isArray(list) ? list : [];
+
+        const target = eventName === "closePosition"
+          ? report.closeListeners
+          : report.reverseListeners;
+
+        listeners.forEach((fn, index) => {
+          target.push({
+            frame: item.label,
+            index,
+            source: source(fn)
+          });
+        });
+      }
+
+      // بررسی متدهای Adapter
+      if (adapter) {
+        for (const obj of [adapter]) {
+          const names = new Set();
+
+          let p = obj;
+          for (let depth = 0; p && depth < 3; depth++) {
+            Object.getOwnPropertyNames(p).forEach(n => names.add(n));
+            p = Object.getPrototypeOf(p);
+          }
+
+          for (const name of names) {
+            if (!relevant.test(name)) continue;
+            const fn = read(obj, name);
+            if (typeof fn === "function") {
+              report.adapterMethods.push({
+                frame: item.label,
+                name,
+                source: source(fn)
+              });
+            }
+          }
+        }
+      }
+
+      // بررسی متدهای BrokerConnection
+      if (connection) {
+        const names = new Set();
+        let p = connection;
+
+        for (let depth = 0; p && depth < 4; depth++) {
+          Object.getOwnPropertyNames(p).forEach(n => names.add(n));
+          p = Object.getPrototypeOf(p);
+        }
+
+        for (const name of names) {
+          const fn = read(connection, name);
+          if (typeof fn !== "function") continue;
+
+          const src = source(fn);
+          if (
+            relevant.test(name) ||
+            /closePosition|reversePosition|placeOrder|submitOrder|createOrder/i.test(src || "")
+          ) {
+            report.brokerConnectionMethods.push({
+              frame: item.label,
+              name,
+              source: src
+            });
+          }
+        }
+      }
+
+      // یافتن Dialog Wrapperهای رسمی
+      let globalNames = [];
+      try {
+        globalNames = Object.getOwnPropertyNames(w);
+      } catch (_) {}
+
+      for (const globalName of globalNames) {
+        if (!/^tradingview_/i.test(globalName)) continue;
+
+        const tvGlobal = read(w, globalName);
+        const customUI = path(tvGlobal, ["brokerConfig", "customUI"]);
+
+        if (!customUI) continue;
+
+        for (const name of [
+          "showClosePositionDialog",
+          "showReversePositionDialog"
+        ]) {
+          const fn = read(customUI, name);
+          if (typeof fn === "function") {
+            report.dialogWrappers.push({
+              frame: item.label,
+              globalName,
+              name,
+              source: source(fn)
+            });
+          }
+        }
+      }
+
+      // یافتن ماژول‌های Webpack که مسیر Close را تعریف می‌کنند
+      let chunkNames = [];
+      try {
+        chunkNames = Object.getOwnPropertyNames(w).filter(
+          n => /webpackChunk|webpackJsonp/i.test(n)
+        );
+      } catch (_) {}
+
+      for (const chunkName of chunkNames) {
+        const chunks = read(w, chunkName);
+        if (!Array.isArray(chunks)) continue;
+
+        for (const chunk of chunks) {
+          if (!Array.isArray(chunk) || !chunk[1]) continue;
+
+          const modules = chunk[1];
+          let scanned = 0;
+
+          for (const moduleId of Object.keys(modules)) {
+            if (scanned++ > 6000) break;
+
+            const factory = modules[moduleId];
+            if (typeof factory !== "function") continue;
+
+            let src = "";
+            try {
+              src = Function.prototype.toString.call(factory);
+            } catch (_) {
+              continue;
+            }
+
+            if (!/closePosition|showClosePositionDialog|supportClosePosition/i.test(src)) {
+              continue;
+            }
+
+            const terms = [
+              "closePosition",
+              "showClosePositionDialog",
+              "supportClosePosition",
+              "placeOrder",
+              "brokerConnection"
+            ];
+
+            const snippets = [];
+
+            for (const term of terms) {
+              let start = 0;
+              let count = 0;
+
+              while (count < 2) {
+                const pos = src.indexOf(term, start);
+                if (pos < 0) break;
+
+                snippets.push({
+                  term,
+                  excerpt: src.slice(
+                    Math.max(0, pos - 280),
+                    Math.min(src.length, pos + 520)
+                  )
+                });
+
+                start = pos + term.length;
+                count++;
+              }
+            }
+
+            report.webpackModules.push({
+              frame: item.label,
+              chunkName,
+              moduleId,
+              sourceLength: src.length,
+              snippets
+            });
+
+            if (report.webpackModules.length >= 18) break;
+          }
+        }
+      }
+
+    } catch (e) {
+      report.errors.push({
+        frame: item.label,
+        error: String(e).slice(0, 250)
+      });
+    }
+  }
+
+  const output = JSON.stringify(report, null, 2);
+
+  // نمایش گزارش در پنجره قابل کپی
+  try {
+    const old = document.getElementById("bitunix-close-route-audit");
+    if (old) old.remove();
+
+    const panel = document.createElement("div");
+    panel.id = "bitunix-close-route-audit";
+
+    Object.assign(panel.style, {
+      position: "fixed",
+      inset: "35px",
+      zIndex: "2147483647",
+      background: "#101820",
+      color: "#fff",
+      padding: "16px",
+      border: "2px solid #3686ff",
+      borderRadius: "10px",
+      display: "flex",
+      flexDirection: "column",
+      gap: "10px",
+      direction: "rtl",
+      fontFamily: "Arial",
+      boxShadow: "0 5px 30px #000"
+    });
+
+    const title = document.createElement("div");
+    title.textContent = "BITUNIX CLOSE CALLBACK AUDIT";
+    title.style.fontWeight = "bold";
+
+    const area = document.createElement("textarea");
+    area.value = output;
+    area.readOnly = true;
+
+    Object.assign(area.style, {
+      flex: "1",
+      width: "100%",
+      boxSizing: "border-box",
+      background: "#07111b",
+      color: "#b8e1ff",
+      border: "1px solid #456",
+      padding: "10px",
+      direction: "ltr",
+      textAlign: "left",
+      fontSize: "12px",
+      resize: "none"
+    });
+
+    const actions = document.createElement("div");
+    actions.style.display = "flex";
+    actions.style.gap = "10px";
+
+    const copy = document.createElement("button");
+    copy.textContent = "Copy Report";
+    copy.style.padding = "10px 22px";
+    copy.style.cursor = "pointer";
+
+    copy.onclick = async () => {
+      try {
+        await navigator.clipboard.writeText(area.value);
+        copy.textContent = "Copied!";
+      } catch (_) {
+        area.focus();
+        area.select();
+        document.execCommand("copy");
+        copy.textContent = "Copy attempted";
+      }
+    };
+
+    const close = document.createElement("button");
+    close.textContent = "Close";
+    close.style.padding = "10px 22px";
+    close.style.cursor = "pointer";
+    close.onclick = () => panel.remove();
+
+    actions.append(copy, close);
+    panel.append(title, area, actions);
+    (document.body || document.documentElement).appendChild(panel);
+
+    area.focus();
+    area.select();
+  } catch (e) {
+    console.log("BITUNIX AUDIT REPORT:", output);
+  }
+
+  console.log("BITUNIX_CLOSE_CALLBACK_ROUTE_AUDIT completed.");
+})();
+```
+
+وقتی پنجره گزارش ظاهر شد، روی **Copy Report** بزن و کل گزارش را همین‌جا بفرست. هیچ معامله‌ای باز یا بسته نکن.
+
+
+کاربر | پیام 8 | 11/15/2026, 11:29:04 AM
+------------------------------------------------------------
+
+گزارش بیت 22
+
+{\
+&#x20; "reportName": "BITUNIX_CLOSE_CALLBACK_ROUTE_AUDIT",\
+&#x20; "version": "1.0",\
+&#x20; "timestamp": "2026-11-15T07:58:32.508Z",\
+&#x20; "safety": {\
+&#x20;   "readOnly": true,\
+&#x20;   "tradingMethodsCalled": 0,\
+&#x20;   "eventBusPublished": 0,\
+&#x20;   "networkRequests": 0,\
+&#x20;   "positionDataRead": false,\
+&#x20;   "positionIdsExposed": false,\
+&#x20;   "exactQuantitiesExposed": false\
+&#x20; },\
+&#x20; "contexts": [\
+&#x20;   {\
+&#x20;     "frame": "top",\
+&#x20;     "hasBitunixTv": true,\
+&#x20;     "hasTvWidget": true,\
+&#x20;     "hasHost": true,\
+&#x20;     "hasAdapter": true,\
+&#x20;     "hasBrokerConnection": true,\
+&#x20;     "hasEventBus": true\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "frame": "top > iframe[0]",\
+&#x20;     "hasBitunixTv": false,\
+&#x20;     "hasTvWidget": false,\
+&#x20;     "hasHost": false,\
+&#x20;     "hasAdapter": false,\
+&#x20;     "hasBrokerConnection": false,\
+&#x20;     "hasEventBus": false\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "frame": "top > iframe[1]",\
+&#x20;     "hasBitunixTv": false,\
+&#x20;     "hasTvWidget": false,\
+&#x20;     "hasHost": false,\
+&#x20;     "hasAdapter": false,\
+&#x20;     "hasBrokerConnection": false,\
+&#x20;     "hasEventBus": false\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "frame": "top > iframe[2]",\
+&#x20;     "hasBitunixTv": false,\
+&#x20;     "hasTvWidget": false,\
+&#x20;     "hasHost": false,\
+&#x20;     "hasAdapter": false,\
+&#x20;     "hasBrokerConnection": false,\
+&#x20;     "hasEventBus": false\
+&#x20;   }\
+&#x20; ],\
+&#x20; "closeListeners": [\
+&#x20;   {\
+&#x20;     "frame": "top",\
+&#x20;     "index": 0,\
+&#x20;     "source": "async({position:t,resolve:r,reject:o})=>{bn(t.id)||b_e(t,e,{resolve:r})}"\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "frame": "top",\
+&#x20;     "index": 1,\
+&#x20;     "source": "ie=>{var ee,re;const fe=String(((ee=ie?.position)==null?void 0:ee.id)??\\"\\");fe.startsWith(\\"replay_pos\_\\")&&(aU(fe.endsWith(\\"short\\")?\\"short\\":\\"long\\"),(re=ie.resolve)==null||re.call(ie))}"\
+&#x20;   }\
+&#x20; ],\
+&#x20; "reverseListeners": [\
+&#x20;   {\
+&#x20;     "frame": "top",\
+&#x20;     "index": 0,\
+&#x20;     "source": "({position:r,resolve:o})=>{const n=r.positionId,i=ro(n);if(\_t(\\"futures_reverse_position_entry_click\\",{futures_from:\\"kline_position\\",symbol:i?.symbol,futures_need_confirm:String(t?.()??!0)},{tradeType:!0,market:!0,klineFullscreen:!0}),$e(\\"futures_reverse_position\\",{kline_id:n}),!i)throw \_1(n),o(),new Error(\\"Position information that can be reversed is not found\\");e(\\"reversePosition\\",i,l=>{o(),l&&($e(\\"futures_reverse_position_success\\",{kline_id:n}),e(\\"tips\\",\_(\\"notification.success\\"),\\"success\\"))})}"\
+&#x20;   }\
+&#x20; ],\
+&#x20; "dialogWrappers": [\
+&#x20;   {\
+&#x20;     "frame": "top",\
+&#x20;     "globalName": "tradingview_0f462",\
+&#x20;     "name": "showClosePositionDialog",\
+&#x20;     "source": "o=>{const n=r,i=t,l=nd();return e[i(559,\\"s0OD\\")]\(et[n(4523)+i(4688,\\"qK)]\\")],{position:o,resolve:l[i(5724,\\"#eY9\\")],reject:l[n(3408)]}),l[n(5108)]}"\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "frame": "top",\
+&#x20;     "globalName": "tradingview_0f462",\
+&#x20;     "name": "showReversePositionDialog",\
+&#x20;     "source": "o=>{const n=t,i=r,l=nd();e[i(2296)]\(et[i(1296)+i(2343)],{position:o,resolve:l[n(5222,\\"s0OD\\")],reject:l[n(1884,\\"xu8q\\")]})}"\
+&#x20;   }\
+&#x20; ],\
+&#x20; "adapterMethods": [\
+&#x20;   {\
+&#x20;     "frame": "top",\
+&#x20;     "name": "onOrderUpdate",\
+&#x20;     "source": "onOrderUpdate(e){this.\_ordersCache.update(e)}"\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "frame": "top",\
+&#x20;     "name": "onOrderPartialUpdate",\
+&#x20;     "source": "onOrderPartialUpdate(e,t){this.\_ordersCache.partialUpdate(e,t)}"\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "frame": "top",\
+&#x20;     "name": "onPositionUpdate",\
+&#x20;     "source": "onPositionUpdate(e,t){if((0,C.assert)(!!this.config.supportPositions,\\"Broker doesn\`t support positions\\"),0===e.qty){const t=this.\_lastFireResult[e.id];t&&delete t.PL}(0,C.ensure)(this.\_positionsCache).update(e,t)}"\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "frame": "top",\
+&#x20;     "name": "onPositionPartialUpdate",\
+&#x20;     "source": "onPositionPartialUpdate(e,t){(0,C.assert)(!!this.config.supportPositions,\\"Broker doesn\`t support positions\\"),(0,C.ensure)(this.\_positionsCache).partialUpdate(e,t)}"\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "frame": "top",\
+&#x20;     "name": "onIndividualPositionUpdate",\
+&#x20;     "source": "onIndividualPositionUpdate(e,t){if((0,C.assert)(!!this.config.supportPositionNetting,\\"Broker doesn\`t support individual positions\\"),0===e.qty){const t=this.\_lastFireResult[e.symbol];t&&delete t.IndividualPositionPL}(0,C.ensure)(this.\_individualPositionsCache).update(e,t)}"\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "frame": "top",\
+&#x20;     "name": "onIndividualPositionPartialUpdate",\
+&#x20;     "source": "onIndividualPositionPartialUpdate(e,t){(0,C.ensure)(this.\_individualPositionsCache).partialUpdate(e,t)}"\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "frame": "top",\
+&#x20;     "name": "getOrderDialogOptions",\
+&#x20;     "source": "async getOrderDialogOptions(e){if(void 0!==this.\_brokerConnection.getOrderDialogOptions)try{return await this.\_brokerConnection.getOrderDialogOptions(e)}catch(e){return void this.\_brokerLogger.logError(\`Failed to fetch options for the order dialog: ${(0,D.getLoggerMessage)(e)}\`)}}"\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "frame": "top",\
+&#x20;     "name": "getPositionDialogOptions",\
+&#x20;     "source": "getPositionDialogOptions(){return void 0!==this.\_brokerConnection.getPositionDialogOptions?this.\_brokerConnection.getPositionDialogOptions():void 0}"\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "frame": "top",\
+&#x20;     "name": "brokerPlan",\
+&#x20;     "source": "brokerPlan(){return this.\_brokerPlan}"\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "frame": "top",\
+&#x20;     "name": "positions",\
+&#x20;     "source": "positions(e){return this.config.supportPositions?(this.\_makeSureBrokerIsConnected(),this.\_positions().then(t=>t.filter(t=>void 0===e||t.symbol===e))):Promise.resolve([])}"\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "frame": "top",\
+&#x20;     "name": "individualPositions",\
+&#x20;     "source": "individualPositions(e){return this.\_makeSureBrokerIsConnected(),(0,C.assert)(!!this.config.supportPositionNetting,\\"Broker doesn\`t support individual positions\\"),this.\_individualPositions().then(t=>t.filter(t=>void 0===e||t.symbol===e))}"\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "frame": "top",\
+&#x20;     "name": "positionById",\
+&#x20;     "source": "positionById(e){return this.\_brokerConnection.positionById?this.\_brokerConnection.positionById(e):this.positions().then(t=>t.find(t=>t.id===e))}"\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "frame": "top",\
+&#x20;     "name": "individualPositionById",\
+&#x20;     "source": "individualPositionById(e){return(0,C.assert)(!!this.config.supportPositionNetting,\\"Broker doesn\`t support individual positions\\"),this.individualPositions().then(t=>t.find(t=>t.id===e))}"\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "frame": "top",\
+&#x20;     "name": "orders",\
+&#x20;     "source": "orders(e){return this.\_makeSureBrokerIsConnected(),this.\_orders().then(t=>t.filter(t=>void 0===e||t.symbol===e))}"\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "frame": "top",\
+&#x20;     "name": "ordersHistory",\
+&#x20;     "source": "ordersHistory(){return this.\_makeSureBrokerIsConnected(),this.config.supportOrdersHistory&&this.\_brokerConnection.ordersHistory?this.\_brokerConnection.ordersHistory():Promise.resolve([])}"\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "frame": "top",\
+&#x20;     "name": "orderById",\
+&#x20;     "source": "orderById(e){return this.\_makeSureBrokerIsConnected(),this.\_brokerConnection.orders().then(t=>t.find(t=>t.id===e))}"\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "frame": "top",\
+&#x20;     "name": "createInitialPreOrder",\
+&#x20;     "source": "async createInitialPreOrder(e){const[t,i]=await Promise.all([this.getOrderDialogOptions(e.symbol),this.symbolInfo(e.symbol)]);return this.\_createInitialPreOrder(e,i,t)}"\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "frame": "top",\
+&#x20;     "name": "createPlaceOrderContext",\
+&#x20;     "source": "async createPlaceOrderContext(e,t,i=!0){var r;const s=this.\_placeOrderContextWithMetaInfo;if(void 0!==s&&s.context.data().symbol===e.symbol&&s.isValidationEnabled===i)return await s.context.setData(e,t),s.context;null===(r=this.\_placeOrderContextWithMetaInfo)||void 0===r||r.context.destroy();const o=await this.\_createPlaceOrderContext(e,t,i);return s===this.\_placeOrderContextWithMetaInfo&&(this.\_placeOrderContextWithMetaInfo={context:o,isValidationEnabled:i}),o}"\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "frame": "top",\
+&#x20;     "name": "createEditOrderContext",\
+&#x20;     "source": "async createEditOrderContext(e,t,i=!0){const r=this.\_editOrderContextWithMetaInfo;if(void 0!==r&&r.context.data().id===e.id&&r.isValidationEnabled===i)return await r.context.setData(e,t),r.context;const s=await this.\_createEditOrderContext(e,t,i);return r===this.\_editOrderContextWithMetaInfo&&(this.\_editOrderContextWithMetaInfo={context:s,isValidationEnabled:i}),s}"\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "frame": "top",\
+&#x20;     "name": "placeOrder",\
+&#x20;     "source": "placeOrder(e,t){return this.\_placeOrder(e,t)}"\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "frame": "top",\
+&#x20;     "name": "previewOrder",\
+&#x20;     "source": "previewOrder(e){return this.\_previewOrder(e)}"\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "frame": "top",\
+&#x20;     "name": "modifyOrder",\
+&#x20;     "source": "modifyOrder(e,t){return this.\_modifyOrder(e,t)}"\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "frame": "top",\
+&#x20;     "name": "cancelOrder",\
+&#x20;     "source": "cancelOrder(e){return l(e),this.\_makeSureBrokerIsConnected(),this.processErrors(this.\_brokerConnection.cancelOrder(e),!0,m.t(null,void 0,i(915926)))}"\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "frame": "top",\
+&#x20;     "name": "cancelOrders",\
+&#x20;     "source": "cancelOrders(e,t,r){return this.\_makeSureBrokerIsConnected(),this.processErrors(this.\_brokerConnection.cancelOrders(e,t,r),!0,m.t(null,void 0,i(305140)))}"\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "frame": "top",\
+&#x20;     "name": "closePosition",\
+&#x20;     "source": "async closePosition(e,t){let i;l(e),this.\_makeSureBrokerIsConnected(),(0,C.assert)(void 0===t||!!this.config.supportPartialClosePosition,\\"Broker doesn\`t support partial position closing\\");const r=new Promise(async(r,s)=>{try{const s=await this.\_positionCopyById(e);i=e=>{void 0!==s&&e.id===s.id&&e.symbol===s.symbol&&e.qty!==s.qty&&(this.positionUpdate.unsubscribe(this,i),r(!0))},this.positionUpdate.subscribe(this,i),await this.\_closePosition(e,t)}catch(e){s(e)}});return(0,T.makeTimeLimited)(r,3e4,\\"Position closing timeout\\").catch(e=>(this.\_brokerLogger.logError(\`${oe}: ${(0,D.getLoggerMessage)(e)}\`),this.positionUpdate.unsubscribe(this,i),!1))}"\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "frame": "top",\
+&#x20;     "name": "closeIndividualPosition",\
+&#x20;     "source": "async closeIndividualPosition(e,t){var r;l(e),this.\_makeSureBrokerIsConnected(),(0,C.assert)(!!this.config.supportPositionNetting,\\"Broker doesn\`t support individual positions\\"),(0,C.assert)(void 0===t||null!==(r=this.config.supportPartialCloseIndividualPosition)&&void 0!==r&&r,\\"Broker doesn\`t support partial individual position closing\\");const s=(0,C.ensureDefined)(await this.individualPositionById(e));if(0===s.qty)return this.\_host.showNotification(m.t(null,void 0,i(791401)),m.t(null,void 0,i(715842)),0),!1;if(void 0===t||t<=Math.abs(s.qty)){if(this.\_brokerConnection.closeIndividualPosition){const i=n(null!=t?t:Math.abs(s.qty),s);return this.processErrors(this.\_brokerConnection.closeIndividualPosition(e,t),!0,oe,()=>(0,C.ensureNotNull)(this.\_tradingStat).trackOrderPlaced(i))}throw new Error(\\"Method closeIndividualPosition is not implemented\\")}return this.\_host.showNotification(m.t(null,void 0,i(791401)),m.t(null,void 0,i(365389)),0),!1}"\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "frame": "top",\
+&#x20;     "name": "reversePosition",\
+&#x20;     "source": "reversePosition(e){if(l(e),this.\_makeSureBrokerIsConnected(),this.config.supportMultiposition&&!this.config.supportNativeReversePosition)throw new Error(\\"Cannot reverse position on multiposition account\\");let t;const i=new Promise(async(i,r)=>{try{const r=await this.\_positionCopyById(e);t=e=>{void 0!==r&&e.symbol===r.symbol&&e.side!==r.side&&(this.positionUpdate.unsubscribe(this,t),i(!0))},this.positionUpdate.subscribe(this,t),await this.\_reversePosition(e)}catch(e){r(e)}});return(0,T.makeTimeLimited)(i,3e4,\\"Position reversing timeout\\").catch(e=>(this.\_brokerLogger.logError(\`${ne}: ${(0,D.getLoggerMessage)(e)}\`),this.positionUpdate.unsubscribe(this,t),!1))}"\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "frame": "top",\
+&#x20;     "name": "editPositionBrackets",\
+&#x20;     "source": "editPositionBrackets(e,t,r){if(this.\_makeSureBrokerIsConnected(),this.\_brokerConnection.editPositionBrackets)return this.processErrors(this.\_brokerConnection.editPositionBrackets(e,t,r),!0,m.t(null,void 0,i(140766)));throw new Error(\\"Method editPositionBrackets is not implemented\\")}"\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "frame": "top",\
+&#x20;     "name": "editIndividualPositionBrackets",\
+&#x20;     "source": "editIndividualPositionBrackets(e,t){if(this.\_makeSureBrokerIsConnected(),(0,C.assert)(!!this.config.supportIndividualPositionBrackets,\\"Broker doesn\`t support brackets on individual positions\\"),this.\_brokerConnection.editIndividualPositionBrackets)return this.processErrors(this.\_brokerConnection.editIndividualPositionBrackets(e,t),!0,m.t(null,void 0,i(140766)));throw new Error(\\"Method editIndividualPositionBrackets is not implemented\\")}"\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "frame": "top",\
+&#x20;     "name": "subscribePositionEstLiqPrice",\
+&#x20;     "source": "subscribePositionEstLiqPrice(e,t){this.\_makeSureBrokerIsConnected(),this.\_addSubscription(\\"PositionEstLiqPrice\\",e,t)}"\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "frame": "top",\
+&#x20;     "name": "subscribeIndividualPositionPL",\
+&#x20;     "source": "subscribeIndividualPositionPL(e,t){return this.\_makeSureBrokerIsConnected(),this.\_addSubscription(\\"IndividualPositionPL\\",e,t)}"\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "frame": "top",\
+&#x20;     "name": "unsubscribeIndividualPositionPL",\
+&#x20;     "source": "unsubscribeIndividualPositionPL(e,t){this.\_removeSubscription(\\"IndividualPositionPL\\",e,t)}"\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "frame": "top",\
+&#x20;     "name": "getPositionCurrency",\
+&#x20;     "source": "async getPositionCurrency(e){try{const t=await this.\_brokerConnection.symbolInfo(e);return this.\_brokerMetainfo.configFlags.positionPLInInstrumentCurrency&&void 0!==t.currency?t.currency:(await this.accountMetainfo(),\\"\\")}catch(e){return void se.logError(e)}}"\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "frame": "top",\
+&#x20;     "name": "currentBroker",\
+&#x20;     "source": "currentBroker(){return this.\_brokerMetainfo.id}"\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "frame": "top",\
+&#x20;     "name": "\_createEditOrderContext",\
+&#x20;     "source": "async \_createEditOrderContext(e,t,r=!0){const s=new ie({orderData:e,source:t,callbacks:{modifyOrder:this.\_modifyOrder.bind(this),metainfo:this.metainfo.bind(this),symbolInfo:this.symbolInfo.bind(this),orderById:this.orderById.bind(this),previewOrder:this.\_previewOrder.bind(this),handleError:this.\_makeContextErrorHandler(m.t(null,void 0,i(54746)))}});return await s.onReady(),s}"\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "frame": "top",\
+&#x20;     "name": "\_createPlaceOrderContext",\
+&#x20;     "source": "async \_createPlaceOrderContext(e,t,r=!0){const[s,o,n]=await Promise.all([this.symbolInfo(e.symbol),this.formatter(e.symbol),this.getOrderDialogOptions(e.symbol)]),{configFlags:a}=this.metainfo(),l=a.supportBalances&&s.baseCurrency?this.\_cryptoBalanceObservable(s.baseCurrency):(0,v.of)(null),c=a.supportBalances&&s.quoteCurrency?this.\_cryptoBalanceObservable(s.quoteCurrency):(0,v.of)(null),d=(0,re.extractTakeProfitValidationRules)(this,e.symbol),u=(0,re.extractStopLossValidationRules)(this,e.symbol),h=(0,y.fromEventPattern)(t=>this.subscribeRealtime(e.symbol,t),t=>this.unsubscribeRealtime(e.symbol,t),(e,t)=>t),p=new Y({orderData:e,source:t,instrumentInfo:s,quotes$:h,configFlags:a,formatter:o,isValidationEnabled:r,orderDialogOptions:n,tpValidationRules:d,slValidationRules:u,baseCurrencyCryptoBalance$:l,quoteCurrencyCryptoBalance$:c,callbacks:{createInitialPreOrder:async e=>this.\_createInitialPreOrder(e,s,n),placeOrder:(e,t)=>this.\_placeOrder(e,t),previewOrder:e=>this.\_previewOrder(e),handleError:this.\_makeContextErrorHandler(m.t(null,void 0,i(842180)))}});return await p.onReady(),p}"\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "frame": "top",\
+&#x20;     "name": "\_createInitialPreOrder",\
+&#x20;     "source": "\_createInitialPreOrder(e,t,i){var r,s,o;if(void 0===e.duration){const{durations:i}=this.metainfo(),n=(0,A.getOrderDuration)({orderDuration:void 0,orderType:e.type,savedDuration:null!==(o=null===(s=null===(r=this.\_getTradingSettingsStorage)||void 0===r?void 0:r.call(this))||void 0===s?void 0:s.duration(e.symbol,e.type))&&void 0!==o?o:null,orderDurations:i,symbolDurations:t.allowedDurations});null!==n&&(e.duration=n)}if(void 0===e.customFields){const t=this.\_getSavedCustomFields(e.symbol,e.type,i);void 0!==t&&(e.customFields=t)}return e}"\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "frame": "top",\
+&#x20;     "name": "\_placeOrder",\
+&#x20;     "source": "\_placeOrder(e,t){return this.\_makeSureBrokerIsConnected(),this.processErrors(this.\_brokerConnection.placeOrder(e,t),!0,m.t(null,void 0,i(842180)),t=>{(0,C.ensureNotNull)(this.\_tradingStat).trackOrderPlaced({...e,id:t.orderId}),this.\_host.trackEvent(\\"\\",\\"SilentMode\\",this.\_host.silentOrdersPlacement().value()?\\"On\\":\\"Off\\")})}"\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "frame": "top",\
+&#x20;     "name": "\_modifyOrder",\
+&#x20;     "source": "async \_modifyOrder(e,t){this.\_makeSureBrokerIsConnected();const r=new Set((await this.\_orders()).map(({id:e})=>e));return r.delete(e.id),await this.processErrors(this.\_brokerConnection.modifyOrder(e,t),!0,m.t(null,void 0,i(54746)),()=>(0,C.ensureNotNull)(this.\_tradingStat).trackOrderModified(e))&&this.\_waitForOrderModification(e,r)}"\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "frame": "top",\
+&#x20;     "name": "\_previewOrder",\
+&#x20;     "source": "\_previewOrder(e){if(!this.\_brokerConnection.previewOrder)throw new Error(\\"Order preview is not supported\\");return this.\_brokerConnection.previewOrder(e)}"\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "frame": "top",\
+&#x20;     "name": "\_isBrokerSideMaintenance",\
+&#x20;     "source": "\_isBrokerSideMaintenance(){return isFeatureEnabled((0,A.makeBrokerSideMaintananceFeatureToggleName)(this.\_brokerMetainfo.id))}"\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "frame": "top",\
+&#x20;     "name": "\_positionCopyById",\
+&#x20;     "source": "async \_positionCopyById(e){const t=await this.positionById(e);return void 0!==t?(0,\_.default)(t):void 0}"\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "frame": "top",\
+&#x20;     "name": "\_patchBrokerSubscribeUnsubscribeDOMMethods",\
+&#x20;     "source": "\_patchBrokerSubscribeUnsubscribeDOMMethods(){const e=!this.\_brokerMetainfo.configFlags.supportLevel2Data;this.\_brokerConnection.subscribeDOM=e?e=>{this.\_fakeSubscribeDOM(e)}:this.\_originalDOMSubscriptionMethods.subscribeDOM,this.\_brokerConnection.unsubscribeDOM=e?e=>{this.\_fakeUnsubscribeDOM(e)}:this.\_originalDOMSubscriptionMethods.unsubscribeDOM}"\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "frame": "top",\
+&#x20;     "name": "\_positions",\
+&#x20;     "source": "\_positions(){return this.\_positionsCache?this.\_positionsCache.getObjects():Promise.resolve([])}"\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "frame": "top",\
+&#x20;     "name": "\_individualPositions",\
+&#x20;     "source": "\_individualPositions(){return this.\_individualPositionsCache?this.\_individualPositionsCache.getObjects():Promise.resolve([])}"\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "frame": "top",\
+&#x20;     "name": "\_orders",\
+&#x20;     "source": "\_orders(){return this.\_ordersCache.getObjects()}"\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "frame": "top",\
+&#x20;     "name": "\_makeSureBrokerIsConnected",\
+&#x20;     "source": "\_makeSureBrokerIsConnected(){(0,C.assert)(1===this.connectionStatus(),\\"Broker is not connected\\")}"\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "frame": "top",\
+&#x20;     "name": "\_placeReversePositionOrder",\
+&#x20;     "source": "\_placeReversePositionOrder(e){const t=n(2\*e.qty,e);return this.\_placeOrder(t)}"\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "frame": "top",\
+&#x20;     "name": "\_closePosition",\
+&#x20;     "source": "async \_closePosition(e,t){const r=(0,C.ensureDefined)(await this.positionById(e));if(!(0,A.checkIsExistingPosition)(r)){const e=m.t(null,void 0,i(715842));throw this.\_host.showNotification(oe,e,0),new Error(e)}if(!(void 0===t||t<=Math.abs(r.qty))){const e=m.t(null,void 0,i(365389));throw this.\_host.showNotification(oe,e,0),new Error(e)}{const i=n(null!=t?t:Math.abs(r.qty),r);if(this.config.supportClosePosition&&this.\_brokerConnection.closePosition){if(!await this.processErrors(this.\_brokerConnection.closePosition(e,t),!0,oe,()=>(0,C.ensureNotNull)(this.\_tradingStat).trackOrderPlaced(i)))throw new Error(oe)}else if(!await this.processErrors(this.\_brokerConnection.placeOrder(i),!0,oe,()=>(0,C.ensureNotNull)(this.\_tradingStat).trackOrderPlaced(i)))throw new Error(oe)}}"\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "frame": "top",\
+&#x20;     "name": "\_reversePosition",\
+&#x20;     "source": "async \_reversePosition(e){const t=(0,C.ensureDefined)(await this.positionById(e));if(0===t.qty){const e=m.t(null,void 0,i(726500));throw this.\_host.showNotification(ne,e,0),new Error(e)}this.config.supportNativeReversePosition&&this.\_brokerConnection.reversePosition?await this.processErrors(this.\_brokerConnection.reversePosition(e),!0,ne):await this.processErrors(this.\_placeReversePositionOrder(t),!0,ne,()=>(0,C.ensureNotNull)(this.\_tradingStat).trackOrderPlaced())}"\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "frame": "top",\
+&#x20;     "name": "\_waitForOrderModification",\
+&#x20;     "source": "async \_waitForOrderModification(e,t){return new Promise(async i=>{const r=()=>{i(!0),o(),clearTimeout(n)},s=t=>{this.\_areOrdersEqual(t,e)&&r()},o=()=>this.orderUpdate.unsubscribe(this,s),n=setTimeout(()=>{i(!1),this.\_brokerLogger.logError(\\"Failed to modify order: timeout waiting for new order\\"),o()},3e4);this.orderUpdate.subscribe(this,s);for(const i of await this.\_orders())if(!t.has(i.id)&&this.\_areOrdersEqual(e,i))return void r()})}"\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "frame": "top",\
+&#x20;     "name": "\_areOrdersEqual",\
+&#x20;     "source": "\_areOrdersEqual(e,t){const{checkBracketsAfterOrderModification:i}=this.\_brokerMetainfo.configFlags;return function(e,t){return e.type===t.type&&e.qty===t.qty&&e.limitPrice===t.limitPrice&&e.stopPrice===t.stopPrice}(e,t)&&(!i||function(e,t){return e.stopLoss===t.stopLoss&&e.takeProfit===t.takeProfit&&e.trailingStopPips===t.trailingStopPips}(e,t))}"\
+&#x20;   }\
+&#x20; ],\
+&#x20; "brokerConnectionMethods": [\
+&#x20;   {\
+&#x20;     "frame": "top",\
+&#x20;     "name": "orders",\
+&#x20;     "source": "async[w(2251,\\"p&(x\\")]\(){return this[w(176,\\"p&(x\\")]}"\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "frame": "top",\
+&#x20;     "name": "positions",\
+&#x20;     "source": "async[k(1764)]\(){const t=k;return Promise[w(2312,\\"phWK\\")]\(this[t(5426)])}"\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "frame": "top",\
+&#x20;     "name": "reversePosition",\
+&#x20;     "source": "async[w(1939,\\"83UK\\")+w(1495,\\"fvAC\\")]\(t){const r=k,o=w;this[o(3256,\\"kcA1\\")][r(2296)]\(et[o(4229,\\"YYPc\\")+o(4447,\\"kcA1\\")],t)}"\
+&#x20;   }\
+&#x20; ],\
+&#x20; "webpackModules": [\
+&#x20;   {\
+&#x20;     "frame": "top > iframe[0]",\
+&#x20;     "chunkName": "webpackChunktradingview",\
+&#x20;     "moduleId": "66786",\
+&#x20;     "sourceLength": 739,\
+&#x20;     "snippets": [\
+&#x20;       {\
+&#x20;         "term": "closePosition",\
+&#x20;         "excerpt": "(e,t,i)=>{\\"use strict\\";async function r(e){const{positionId:t,showErrorNotification:r,handler:n,closePositionCancelsOrders:a,abortSignal:l}=e;if(!await(0,o.showSimpleConfirmDialog)({title:s.t(null,void 0,i(172361)).replace(\\"{positionId}\\",t),text:s.t(null,void 0,i(492698)).replace(\\"{positionId}\\",t)+(a?\\" \\"+s.t(null,void 0,i(893827)):\\"\\"),mainButtonText:s.t(null,void 0,i(920848)),mainButtonIntent:\\"primary\\",cancelButtonText:s.t(null,void 0,i(620036)),showBackdrop:!0,abortSignal:l}))return!1;try{return await n()}catch(e){return r(s.t(null,void 0,i(945593)),function(e){let t=\\"\\";return null!==e&&\\"object\\"==typeof e&&e"\
+&#x20;       }\
+&#x20;     ]\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "frame": "top > iframe[0]",\
+&#x20;     "chunkName": "webpackChunktradingview",\
+&#x20;     "moduleId": "326285",\
+&#x20;     "sourceLength": 64557,\
+&#x20;     "snippets": [\
+&#x20;       {\
+&#x20;         "term": "closePosition",\
+&#x20;         "excerpt": "is.\_makeSureBrokerIsConnected(),this.processErrors(this.\_brokerConnection.cancelOrder(e),!0,m.t(null,void 0,i(915926)))}cancelOrders(e,t,r){return this.\_makeSureBrokerIsConnected(),this.processErrors(this.\_brokerConnection.cancelOrders(e,t,r),!0,m.t(null,void 0,i(305140)))}async closePosition(e,t){let i;l(e),this.\_makeSureBrokerIsConnected(),(0,C.assert)(void 0===t||!!this.config.supportPartialClosePosition,\\"Broker doesn\`t support partial position closing\\");const r=new Promise(async(r,s)=>{try{const s=await this.\_positionCopyById(e);i=e=>{void 0!==s&&e.id===s.id&&e.symbol===s.symbol&&e.qty!==s.qty&&(this.positionUpdate.unsubscribe(this,i),r(!0))},this.positionUpdate.subscribe(this,i),await this.\_closePosition(e,t)}catch(e){s(e)}});return(0,T.makeTimeLimited)(r,3e4,\\"Position closing timeout"\
+&#x20;       },\
+&#x20;       {\
+&#x20;         "term": "closePosition",\
+&#x20;         "excerpt": "t support partial position closing\\");const r=new Promise(async(r,s)=>{try{const s=await this.\_positionCopyById(e);i=e=>{void 0!==s&&e.id===s.id&&e.symbol===s.symbol&&e.qty!==s.qty&&(this.positionUpdate.unsubscribe(this,i),r(!0))},this.positionUpdate.subscribe(this,i),await this.\_closePosition(e,t)}catch(e){s(e)}});return(0,T.makeTimeLimited)(r,3e4,\\"Position closing timeout\\").catch(e=>(this.\_brokerLogger.logError(\`${oe}: ${(0,D.getLoggerMessage)(e)}\`),this.positionUpdate.unsubscribe(this,i),!1))}async closeIndividualPosition(e,t){var r;l(e),this.\_makeSureBrokerIsConnected(),(0,C.assert)(!!this.config.supportPositionNetting,\\"Broker doesn\`t support individual positions\\"),(0,C.assert)(void 0===t||null!==(r=this.config.supportPartialCloseIndividualPosition)&&void 0!==r&&r,\\"Broker doesn\`t suppor"\
+&#x20;       },\
+&#x20;       {\
+&#x20;         "term": "supportClosePosition",\
+&#x20;         "excerpt": "cribeDOM=e?e=>{this.\_fakeUnsubscribeDOM(e)}:this.\_originalDOMSubscriptionMethods.unsubscribeDOM}\_patchMetainfo(e){const t=(0,x.deepCopy)(e);return t.configFlags.supportNativeReversePosition=!this.config.supportMultiposition||this.config.supportNativeReversePosition,t.configFlags.supportClosePosition=!0,t.configFlags.supportPLUpdate=!0,t}\_addSubscription(e,t,i){this.\_pendingSubscriptions.push({brokerMethodName:e,symbol:t,listener:i});const r=this.\_lastFireResult[t];if(void 0!==r&&void 0!==r[e]&&null!==r[e]&&i(t,r[e].data),!this.\_removePendingSubscription({brokerMethodName:e,symbol:t,listener:i}))return;void 0===this.\_subscriptions[t]&&(this.\_subscriptions[t]={Realtime:[],PL:[],PositionEstLiqPrice:[],TradePL:[],Equity:[],DOM:[],IndividualPositionPL:[],PipValue:[],MarginAvailable:[],CryptoBal"\
+&#x20;       },\
+&#x20;       {\
+&#x20;         "term": "supportClosePosition",\
+&#x20;         "excerpt": "n)(r)){const e=m.t(null,void 0,i(715842));throw this.\_host.showNotification(oe,e,0),new Error(e)}if(!(void 0===t||t<=Math.abs(r.qty))){const e=m.t(null,void 0,i(365389));throw this.\_host.showNotification(oe,e,0),new Error(e)}{const i=n(null!=t?t:Math.abs(r.qty),r);if(this.config.supportClosePosition&&this.\_brokerConnection.closePosition){if(!await this.processErrors(this.\_brokerConnection.closePosition(e,t),!0,oe,()=>(0,C.ensureNotNull)(this.\_tradingStat).trackOrderPlaced(i)))throw new Error(oe)}else if(!await this.processErrors(this.\_brokerConnection.placeOrder(i),!0,oe,()=>(0,C.ensureNotNull)(this.\_tradingStat).trackOrderPlaced(i)))throw new Error(oe)}}async \_reversePosition(e){const t=(0,C.ensureDefined)(await this.positionById(e));if(0===t.qty){const e=m.t(null,void 0,i(726500));throw "\
+&#x20;       },\
+&#x20;       {\
+&#x20;         "term": "placeOrder",\
+&#x20;         "excerpt": "1,quotesGetter:v,formatter:n,instrumentInfo:r,validationRules:c}),validatorName:\\"trailingStopPips\\"}]),this.\_quotesSubscription=b,this.\_quoteCurrencyCryptoBalanceSubscription=C,this.\_baseCurrencyCryptoBalanceSubscription=f,this.\_createInitialPreOrder=h.createInitialPreOrder,this.\_placeOrder=h.placeOrder,this.\_previewOrder=h.previewOrder,this.\_handleError=h.handleError,this.\_onReady=Promise.all([y,S,B]).then(()=>this.setData(t,i)).then(()=>{m.onValueChange=()=>this.\_assertOrderIsValid()})}externalContext(){return{type:L.PlaceOrEditContextType.PlaceOrder,source:()=>this.source(),data:()=>this.data(),preview:()=>this.preview(),send:()=>this.send(),status:()=>this.status(),errors:()=>this.errors()}}destroy(){this.\_quotesSubscription.unsubscribe(),this.\_quoteCurrencyCryptoBalanceSubscription.uns"\
+&#x20;       },\
+&#x20;       {\
+&#x20;         "term": "placeOrder",\
+&#x20;         "excerpt": "r:v,formatter:n,instrumentInfo:r,validationRules:c}),validatorName:\\"trailingStopPips\\"}]),this.\_quotesSubscription=b,this.\_quoteCurrencyCryptoBalanceSubscription=C,this.\_baseCurrencyCryptoBalanceSubscription=f,this.\_createInitialPreOrder=h.createInitialPreOrder,this.\_placeOrder=h.placeOrder,this.\_previewOrder=h.previewOrder,this.\_handleError=h.handleError,this.\_onReady=Promise.all([y,S,B]).then(()=>this.setData(t,i)).then(()=>{m.onValueChange=()=>this.\_assertOrderIsValid()})}externalContext(){return{type:L.PlaceOrEditContextType.PlaceOrder,source:()=>this.source(),data:()=>this.data(),preview:()=>this.preview(),send:()=>this.send(),status:()=>this.status(),errors:()=>this.errors()}}destroy(){this.\_quotesSubscription.unsubscribe(),this.\_quoteCurrencyCryptoBalanceSubscription.unsubscribe(),th"\
+&#x20;       },\
+&#x20;       {\
+&#x20;         "term": "brokerConnection",\
+&#x20;         "excerpt": "ibe(null,r),i.destroy())};null==e||e.onBrokerChange.subscribe(null,r),n=i}else n=r;const a=new Se(e,o.metainfo,i,n);try{const t=await o.createBrokerFunction(a,null==e?void 0:e.brokerTelemetry),i=new Oe.BrokerRealtimeAdapter(o.metainfo.id);return new ae({brokerMetainfo:o.metainfo,brokerConnection:t,host:a,brokerRealtimeAdapter:i,tradingStat:e&&e.tradingStat(),tradingSettingsStorageGetter:e&&e.getBrokerTradingSettingsStorage,brokerPlan:s})}catch(e){return Promise.reject(\`${t} broker creation error: ${(0,D.getLoggerMessage)(e)}\`)}}function g(e){return h().filter(t=>t.id===e)[0]}i.r(t),i.d(t,{addBroker:()=>u,brokersList:()=>h,createBrokerConnection:()=>p,getBrokerMetainfo:()=>g});var m=i(609838),\_=i(116193),b=i(148442),v=i(586639),y=i(275734),f=i(156963),k=i(656846),P=i(372605),S=i(466052),C=i"\
+&#x20;       },\
+&#x20;       {\
+&#x20;         "term": "brokerConnection",\
+&#x20;         "excerpt": "is.\_handleError(e)}\_preview(e){return this.\_previewOrder({...e,seenPrice:null})}\_configureValidator(){}}var re=i(232192);const se=(0,B.getLogger)(\\"Trading.BrokerConnectionAdapter\\"),oe=m.t(null,void 0,i(473142)),ne=m.t(null,void 0,i(945593));class ae{constructor({brokerMetainfo:e,brokerConnection:t,host:r,brokerRealtimeAdapter:s,tradingStat:o,tradingSettingsStorageGetter:n,brokerPlan:a}){this.connectionStatusUpdate=new S.Delegate,this.executionUpdate=new S.Delegate,this.tradingOperationFinished=new S.Delegate,this.currentAccountUpdate=new S.Delegate,this.\_brokerPlan=null,this.\_subscriptions={},this.\_lastFireResult={},this.\_fakeDOMSubscriptions={},this.\_formattersCache={},this.\_spreadFormattersCache={},this.\_quantityFormattersCache={},this.\_individualPositionsCache=null,this.\_fakePositionUpd"\
+&#x20;       }\
+&#x20;     ]\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "frame": "top > iframe[0]",\
+&#x20;     "chunkName": "webpackChunktradingview",\
+&#x20;     "moduleId": "583705",\
+&#x20;     "sourceLength": 5426,\
+&#x20;     "snippets": [\
+&#x20;       {\
+&#x20;         "term": "supportClosePosition",\
+&#x20;         "excerpt": "?t:null==o?void 0:o.pl)&&void 0!==i?i:null}return{...e,pl:u,estLiqPrice:o?o.estLiqPrice:void 0,plBasedOnLast:r.calculatePLUsingLast||!1,price:Math.abs((0,s.ensureDefined)(l)),qtyBySide:Math.abs(e.qty)\*(1===e.side?1:-1),supportClose:Boolean(n?r.supportCloseIndividualPosition&&d:r.supportClosePosition),supportReverse:Boolean(!n&&r.supportReversePosition),supportBrackets:a,supportOnlyPairBrackets:Boolean(r.supportOnlyPairPositionBrackets),supportTrailingStop:(0,c.checkTrailingStopAvailability)(r)}}\_firePositionUpdate(e,t){this.\_positionUpdate.fire({data:e,type:t})}\_updateType(e){const t=this.\_positions.get(e.id);if(void 0===t)return u.Full;for(const i of Object.keys(t)){const r=i;if(\\"pl\\"!==r&&\\"unrealizedPl\\"!==r&&t[r]!==e[r])return u.Full}return u.Partial}\_logPositionUpdate(e,t){if(!t)return;c"\
+&#x20;       }\
+&#x20;     ]\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "frame": "top > iframe[0]",\
+&#x20;     "chunkName": "webpackChunktradingview",\
+&#x20;     "moduleId": "974945",\
+&#x20;     "sourceLength": 121577,\
+&#x20;     "snippets": [\
+&#x20;       {\
+&#x20;         "term": "closePosition",\
+&#x20;         "excerpt": ":!0}))})}(e,s);if(!o.status)return!1;try{return await t(o.qty)}catch(e){return r(B.t(null,void 0,i(791401)),function(e){let t=\\"\\";return null!==e&&\\"object\\"==typeof e&&e.message?t=e.message:\\"string\\"==typeof e&&(t=e),t}(e)),!1}}function l(e){const{symbol:t,side:r,qty:s,price:o,id:n,closePositionCancelsOrders:a}=e,l=(0,Le.splitThousands)(s,\\" \\"),c=(0,Le.splitThousands)(o,\\" \\");return Ae.createElement(Ae.Fragment,null,Ae.createElement(\\"div\\",null,void 0!==n?B.t(null,void 0,i(170392)).replace(\\"{id}\\",n):B.t(null,void 0,i(381617))),Ae.createElement(\\"div\\",null,Ae.createElement(\\"b\\",null,t)),Ae.createElement(\\"div\\",null,Ae.createElement(\\"b\\",null,\`${r} ${l} @ ${c}\`)),Ae.createElement(\\"div\\",null,a&&\` ${B.t(null,void 0,i(218329))}\`))}function c(e){const{className:t,type:i=\\"secondary\\",size:r=\\"small\\",orientat"\
+&#x20;       },\
+&#x20;       {\
+&#x20;         "term": "closePosition",\
+&#x20;         "excerpt": "84095);const Ve=(0,I.getLogger)(\\"Trading.BrokerCommandsUI\\"),Re={symbol:1,qty:1,side:1,type:1,seenPrice:1};class Fe{constructor({activeBroker:e,guiAccessor:t,noConfirmEnabled:i,orderViewController:r,showErrorNotification:s,trackEvent:o,tradingLinking:n,abortSignalGetter:a}){this.\_closePositionDialogVisibility=new de.DialogVisibility,this.\_isClosePositionDialogLoading=!1,this.\_isCloseIndividualPositionDialogLoading=!1,this.\_onClosePositionDialogOpen=e=>{this.\_closePositionDialogVisibility.setValue({isVisible:!0,isFullScreen:e})},this.\_onClosePositionDialogClose=()=>{this.\_closePositionDialogVisibility.setValue({isVisible:!1})},this.\_tradingLinking=n,this.\_activeBroker=e,this.\_guiAccessor=t,this.\_orderViewController=r,this.\_showErrorNotification=s,this.\_noConfirmEnabled=i,this.\_trackEvent=o,t"\
+&#x20;       },\
+&#x20;       {\
+&#x20;         "term": "showClosePositionDialog",\
+&#x20;         "excerpt": "this.\_activeBroker.closePosition(e);s=await this.\_obtainPositionClosingData(r)}finally{this.\_isClosePositionDialogLoading=!1}if(void 0===s)return!1;const{supportPartialClosePosition:o,...l}=s,c=this.\_activeBroker.metainfo();if(void 0!==(null===(t=c.customUI)||void 0===t?void 0:t.showClosePositionDialog))return null===(i=c.customUI)||void 0===i?void 0:i.showClosePositionDialog(r);if(o){const t=t=>(t!==(null==r?void 0:r.qty)?this.\_trackEvent(\\"\\",\\"Close Position Dialog\\",\\"partial\\"):this.\_trackEvent(\\"\\",\\"Close Position Dialog\\",\\"full\\"),this.\_activeBroker.closePosition(e,t));return a({...l,positionOrIndividualPosition:r,onOpen:this.\_onClosePositionDialogOpen,onClose:this.\_onClosePositionDialogClose},t,this.\_showErrorNotification,this.\_getAbortSignal())}{const t=()=>this.\_activeBroker.closePosition("\
+&#x20;       },\
+&#x20;       {\
+&#x20;         "term": "showClosePositionDialog",\
+&#x20;         "excerpt": "(r)}finally{this.\_isClosePositionDialogLoading=!1}if(void 0===s)return!1;const{supportPartialClosePosition:o,...l}=s,c=this.\_activeBroker.metainfo();if(void 0!==(null===(t=c.customUI)||void 0===t?void 0:t.showClosePositionDialog))return null===(i=c.customUI)||void 0===i?void 0:i.showClosePositionDialog(r);if(o){const t=t=>(t!==(null==r?void 0:r.qty)?this.\_trackEvent(\\"\\",\\"Close Position Dialog\\",\\"partial\\"):this.\_trackEvent(\\"\\",\\"Close Position Dialog\\",\\"full\\"),this.\_activeBroker.closePosition(e,t));return a({...l,positionOrIndividualPosition:r,onOpen:this.\_onClosePositionDialogOpen,onClose:this.\_onClosePositionDialogClose},t,this.\_showErrorNotification,this.\_getAbortSignal())}{const t=()=>this.\_activeBroker.closePosition(e);return n({showErrorNotification:this.\_showErrorNotification,handler:t,me"\
+&#x20;       },\
+&#x20;       {\
+&#x20;         "term": "supportClosePosition",\
+&#x20;         "excerpt": "s=t.qty.uiStep,o=t.qty.min,n=t.units;return{supportLots:i,qtyStep:r,uiQtyStep:s,minQty:o,qtyFormatter:await this.\_activeBroker.quantityFormatter(e.symbol),priceFormatter:await this.\_activeBroker.formatter(e.symbol,!1),qtyLabel:n}}async \_closePositionForNonTradableSymbol(e){const{supportClosePositionForNonTradableSymbol:t,supportClosePosition:r}=this.\_activeBroker.metainfo().configFlags;if(!t||!r){const t=B.t(null,{replace:{symbol:e.symbol}},i(946305));return this.\_showErrorNotification(t,B.t(null,void 0,i(348434))),!1}return!!await xe.show(e.symbol)&&this.\_activeBroker.closePosition(e.id)}async \_cancelOrderForNonTradableSymbol(e,t){if(!this.\_activeBroker.metainfo().configFlags.supportCancelOrderForNonTradableSymbol){const t=B.t(null,{replace:{symbol:e}},i(993545));return this.\_showErrorNot"\
+&#x20;       },\
+&#x20;       {\
+&#x20;         "term": "supportClosePosition",\
+&#x20;         "excerpt": "{supportLots:i,qtyStep:r,uiQtyStep:s,minQty:o,qtyFormatter:await this.\_activeBroker.quantityFormatter(e.symbol),priceFormatter:await this.\_activeBroker.formatter(e.symbol,!1),qtyLabel:n}}async \_closePositionForNonTradableSymbol(e){const{supportClosePositionForNonTradableSymbol:t,supportClosePosition:r}=this.\_activeBroker.metainfo().configFlags;if(!t||!r){const t=B.t(null,{replace:{symbol:e.symbol}},i(946305));return this.\_showErrorNotification(t,B.t(null,void 0,i(348434))),!1}return!!await xe.show(e.symbol)&&this.\_activeBroker.closePosition(e.id)}async \_cancelOrderForNonTradableSymbol(e,t){if(!this.\_activeBroker.metainfo().configFlags.supportCancelOrderForNonTradableSymbol){const t=B.t(null,{replace:{symbol:e}},i(993545));return this.\_showErrorNotification(t,B.t(null,void 0,i(30665))),!1}r"\
+&#x20;       },\
+&#x20;       {\
+&#x20;         "term": "placeOrder",\
+&#x20;         "excerpt": ":!1})},this.\_tradingLinking=n,this.\_activeBroker=e,this.\_guiAccessor=t,this.\_orderViewController=r,this.\_showErrorNotification=s,this.\_noConfirmEnabled=i,this.\_trackEvent=o,this.\_getAbortSignal=a,this.closePositionDialogVisibility=this.\_closePositionDialogVisibility.value$}async placeOrder(e,t,i){const r=t&&this.\_noConfirmEnabled.value(),s=this.\_guiAccessor&&r?this.\_guiAccessor.showReplayConfirmationDialog():Promise.resolve(!1);try{await s}catch(e){Promise.resolve(!1)}const o=await this.\_activeBroker.isTradable(e.symbol);if(!(r&&o.tradable&&function(e){for(const t in Re)if(!(t in e))return!1;return!0}(e))){{const t=this.\_activeBroker.metainfo();if(t.customUI&&void 0!==t.customUI.showOrderDialog)return t.customUI.showOrderDialog(e)}return this.\_orderViewController().then(t=>this.\_activeBrok"\
+&#x20;       },\
+&#x20;       {\
+&#x20;         "term": "placeOrder",\
+&#x20;         "excerpt": "|void 0===i?void 0:i.ask:null===(r=this.\_currentQuotes)||void 0===r?void 0:r.bid,a={symbol:(0,w\.ensureNotNull)(this.\_symbol),qty:s,side:t,type:o,seenPrice:null!=n?n:null,currentQuotes:this.\_currentQuotes};1===o&&(a.limitPrice=e),await(0,w\.ensureNotNull)(this.\_brokerCommandsUI()).placeOrder(a,!0)}\_toggleState(e){e?this.\_start():this.\_stop()}\_start(){this.\_dataEvents.symbolResolved().subscribe(this,this.\_createTradedSymbol),this.\_dataEvents.symbolError().subscribe(this,this.\_createTradedSymbol),this.\_createTradedSymbol()}\_stop(){var e;null===(e=this.\_symbolChangeSubscription)||void 0===e||e.unsubscribe(),this.\_clearTradedSymbol(),this.\_symbol=null,this.\_dataEvents.symbolResolved().unsubscribeAll(this),this.\_dataEvents.symbolError().unsubscribeAll(this)}\_initTradedSymbol(e){this.\_symbol=e,thi"\
+&#x20;       },\
+&#x20;       {\
+&#x20;         "term": "brokerConnection",\
+&#x20;         "excerpt": "erConnected.subscribe(this.\_updateQtyTooltip.bind(this),{callWithLast:!0}),this.\_isBrokerConnected.subscribe(this.\_updateBrokerIcon.bind(this)),this.\_isBrokerConnected.subscribe(this.\_createTradedSymbol),this.\_isBrokerConnecting=(0,\_t.createWVFromGetterAndSubscription)(()=>2===s.brokerConnectionStatus(),s.onBrokerConnectionStatusChange),this.\_isBrokerConnecting.subscribe(this.\_updateBrokerIcon.bind(this)),this.visible=new x.WatchedValue(!1),this.\_enabled=(0,ne.combine)((e,t)=>e&&!t,this.visible.weakReference(),a.ownership()),this.\_enabled.subscribe(this.\_toggleState.bind(this),{callWithLast:!0}),this.\_showSellBuyButtons=c,this.\_isInReplay=n,this.\_isNonTradableInstrument=i,this.\_showSellBuyButtons.subscribe(this.\_updateVisibility.bind(this)),this.\_isInReplay.subscribe(this.\_updateVisibility"\
+&#x20;       },\
+&#x20;       {\
+&#x20;         "term": "brokerConnection",\
+&#x20;         "excerpt": "aEvents(),function(e){return()=>{const t=e.symbolInfo();return null!==t?t.pro_name||t.full_name||t.name||\\"\\":e.proSymbol()}}(s),n.ownership(),i,{onNeedSelectBroker:t.onNeedSelectBroker,realtimeProvider:t.realtimeProvider(),onBrokerConnectionStatusChange:t.onConnectionStatusChange,brokerConnectionStatus:t.connectStatus.bind(t),trackEvent:t.trackEvent,toggleTradingWidget:t.toggleTradingWidget.bind(t),toggleTradingPanelPopup:t.toggleTradingPanelPopup.bind(t),brokerCommandsUI:t.brokerCommandsUI.bind(t),toggleMinimizeBottomWidgetBar:()=>t.toggleMinimizeBottomWidgetBar(),makeActualSymbolObservable:t.makeActualSymbolObservable.bind(t)},{showSellBuyButtons:t.showSellBuyButtons.spawnOwnership(),noConfirmEnabled:t.noConfirmEnabled.spawnOwnership(),themeName:r.ownership()},o.ownership(),e.collapsed()."\
+&#x20;       }\
+&#x20;     ]\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "frame": "top > iframe[0]",\
+&#x20;     "chunkName": "webpackChunktradingview",\
+&#x20;     "moduleId": "721678",\
+&#x20;     "sourceLength": 155583,\
+&#x20;     "snippets": [\
+&#x20;       {\
+&#x20;         "term": "closePosition",\
+&#x20;         "excerpt": "y=new kt.DialogVisibility,this.\_orderWidgetStat=null,this.\_orderTypeSubscription=null,this.\_settings=new a.WatchedValue(Pt.defaultSettings),this.\_mode=new a.WatchedValue(T.OrderEditorDisplayMode.Panel),this.openPanel=async()=>{var e;try{await this.\_closeOrderDialog(),await this.\_closePositionDialog(),this.\_setDisplayMode(T.OrderEditorDisplayMode.Panel),this.\_openTradingPanelPage(vt.TradingPage.OrderPanel);const t=void 0!==this.\_tradedContextLinking?null===(e=this.\_tradedContextLinking.context())||void 0===e?void 0:e.data():void 0;await this.\_recreateOrderViewModel(null,t),await this.\_openOrderPanel()}catch(e){St.logWarn(\`Failed to open panel: ${(0,l.getLoggerMessage)(e)}\`)}},this.closePanel=()=>{null!==this.\_positionViewModel&&(this.\_positionViewModel.onDoneButtonClicked.reject(),this.\_unm"\
+&#x20;       },\
+&#x20;       {\
+&#x20;         "term": "closePosition",\
+&#x20;         "excerpt": "ntOrderPanel()))},this.\_onStatusChanged=async e=>{try{const t=this.\_state,i=this.\_makeState();i.symbol===t.symbol&&i.broker===t.broker&&i.accountId===t.accountId&&i.isAuthenticated===t.isAuthenticated||(this.\_state=i,this.\_setSettings(),await this.\_closeOrderDialog(),await this.\_closePositionDialog(),!(null==e?void 0:e.aborted)&&this.\_isTradingPanelOpened.value()&&this.\_mode.value()===T.OrderEditorDisplayMode.Panel&&this.\_tradingPanelActivePage.value()===vt.TradingPage.OrderPanel&&(await this.\_recreateOrderViewModel(e),this.\_deactivateOrderTicket(),this.\_openOrderPanel()))}catch(e){\nSt.logWarn(\`Failed to change status: ${(0,l.getLoggerMessage)(e)}\`)}},this.\_saveSettings=e=>{this.\_orderViewDataStorage.saveSettings(e)},this.\_recreateOrderViewModel=async(e,t)=>{var i,s,o,n,a;null!==this.\_orde"\
+&#x20;       },\
+&#x20;       {\
+&#x20;         "term": "placeOrder",\
+&#x20;         "excerpt": ":l,symbol:u,side:d}=this.\_state;let c=null;if(null===l)c=new ct({...this.\_commonOrderViewModelProps(),adapter:l,isTradable:{tradable:!1},sendHandler:()=>Promise.resolve(!0),previewHandler:async()=>({sections:[]})});else{const a=await(0,Ae.respectAbort)(e,l.isTradable(u));let h=l.placeOrder.bind(l);void 0!==this.\_tradedContextLinking&&(h=async(e,t)=>{const i=(0,r.ensureDefined)(this.\_tradedContextLinking,\\"Recreate order view model: Trade context linking\\");return(0,r.ensureNotNull)(i.context(),\\"Recreate order view model: Place order handler trade context\\").send(t)});const p=this.\_orderStub.hasOwnProperty(\\"id\\")?l.modifyOrder.bind(l):h,\_=async e=>{var t;const i=null===(t=this.\_tradedContextLinking)||void 0===t?void 0:t.context();return(null==i?void 0:i.type)===ft.PlaceOrEditContextType.PlaceOr"\
+&#x20;       },\
+&#x20;       {\
+&#x20;         "term": "placeOrder",\
+&#x20;         "excerpt": "te:!0,orderDialogOptions:y})}if(this.\_orderViewModel=c,this.\_subscribeOrderViewModel(),await(0,Ae.respectAbort)(e,c.onReady),this.\_orderViewModel!==c)return this.\_unsubscribeOrderViewModel(),Promise.reject(\\"OrderViewModel was recreated during the initialization\\");null===(a=this.\_placeOrderAbortController)||void 0===a||a.abort(),this.\_placeOrderAbortController=new AbortController,this.\_updateTradedContextLinking(this.\_placeOrderAbortController.signal)},this.\_updateTradedContextLinking=async e=>{if(null!==this.\_state.broker&&void 0!==this.\_tradedContextLinking&&null!==this.\_orderViewModel&&!this.\_orderViewModel.existingOrder&&this.\_orderViewModel.status.value()!==T.OrderPanelStatus.Wait)try{const t=await(0,Ae.respectAbort)(e,this.\_state.broker.createPlaceOrderContext(this.\_orderViewModel.pre"\
+&#x20;       }\
+&#x20;     ]\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "frame": "top > iframe[0]",\
+&#x20;     "chunkName": "webpackChunktradingview",\
+&#x20;     "moduleId": "16951",\
+&#x20;     "sourceLength": 50149,\
+&#x20;     "snippets": [\
+&#x20;       {\
+&#x20;         "term": "closePosition",\
+&#x20;         "excerpt": ")},sendOrder:async()=>{const e=await(0,d.ensureNotNull)(this.\_tradedContextLinking.context()).send();return this.\_tradedContextLinking.clear(),e}}}\_createCallbacksForPosition(){return{reversePosition:this.\_reversePosition.bind(this),modifyPosition:this.\_modifyPosition.bind(this),closePosition:this.\_closePosition.bind(this)}}async \_processingModifyOrder(e,t,i,r){let s=!1;try{s=await(0,d.ensureNotNull)(this.\_brokerCommandsUIGetter()).modifyOrder(e,i,r)}catch(e){Y.logError(\`Try to modify order with error ${(0,\_.errorToString)(e)}\`)}return s}\_modifyOrder(e,t,i,r){const s=(0,d.ensureNotNull)(this.\_ordersService.find(e));return this.\_processingModifyOrder(t,s,r,i)}\_moveOrder(e,t,i){const r=(0,d.ensureNotNull)(this.\_ordersService.find(e));return this.\_processingModifyOrder(t,r,!0,i)}\_cancelOrder("\
+&#x20;       },\
+&#x20;       {\
+&#x20;         "term": "closePosition",\
+&#x20;         "excerpt": "=>{const e=await(0,d.ensureNotNull)(this.\_tradedContextLinking.context()).send();return this.\_tradedContextLinking.clear(),e}}}\_createCallbacksForPosition(){return{reversePosition:this.\_reversePosition.bind(this),modifyPosition:this.\_modifyPosition.bind(this),closePosition:this.\_closePosition.bind(this)}}async \_processingModifyOrder(e,t,i,r){let s=!1;try{s=await(0,d.ensureNotNull)(this.\_brokerCommandsUIGetter()).modifyOrder(e,i,r)}catch(e){Y.logError(\`Try to modify order with error ${(0,\_.errorToString)(e)}\`)}return s}\_modifyOrder(e,t,i,r){const s=(0,d.ensureNotNull)(this.\_ordersService.find(e));return this.\_processingModifyOrder(t,s,r,i)}\_moveOrder(e,t,i){const r=(0,d.ensureNotNull)(this.\_ordersService.find(e));return this.\_processingModifyOrder(t,r,!0,i)}\_cancelOrder(e){return(0,d.ensure"\
+&#x20;       },\
+&#x20;       {\
+&#x20;         "term": "placeOrder",\
+&#x20;         "excerpt": ":async e=>{const t=(0,l.default)(e),i=await(0,d.ensureNotNull)(this.\_realtimeProvider.activeBroker()).createPlaceOrderContext(t,\\"traded-source\\");return this.\_tradedContextLinking.setContext(i),!0},openOrderTicket:e=>{var t;null===(t=this.\_brokerCommandsUIGetter())||void 0===t||t.placeOrder(e,!1)},cancelOrder:()=>{this.\_tradedContextLinking.clear()},sendOrder:async()=>{const e=await(0,d.ensureNotNull)(this.\_tradedContextLinking.context()).send();return this.\_tradedContextLinking.clear(),e}}}\_createCallbacksForPosition(){return{reversePosition:this.\_reversePosition.bind(this),modifyPosition:this.\_modifyPosition.bind(this),closePosition:this.\_closePosition.bind(this)}}async \_processingModifyOrder(e,t,i,r){let s=!1;try{s=await(0,d.ensureNotNull)(this.\_brokerCommandsUIGetter()).modifyOrder(e,i,"\
+&#x20;       }\
+&#x20;     ]\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "frame": "top > iframe[0]",\
+&#x20;     "chunkName": "webpackChunktradingview",\
+&#x20;     "moduleId": "25412",\
+&#x20;     "sourceLength": 3644,\
+&#x20;     "snippets": [\
+&#x20;       {\
+&#x20;         "term": "closePosition",\
+&#x20;         "excerpt": ")}async onReverse(t={}){t=(0,c.mergeGaParams)(t,{event:\\"Reverse Position\\"}),await this.\_doActionWithBlock(\\"reversePosition\\",!0,t)}supportClose(){return!y&&this.\_data.supportClose}async onClose(t={}){t=(0,c.mergeGaParams)(t,{event:\\"Close Position\\"}),await this.\_doActionWithBlock(\\"closePosition\\",!0,t)}supportModify(){return this.supportBrackets()}async onModify(t={}){return t=(0,c.mergeGaParams)(t,{event:\\"Edit Position\\"}),this.\_doActionWithBlock(\\"modifyPosition\\",!0,t,void 0,void 0,!1)}useMinTickFormatter(){return!1}async onModifyWithBracket(t={},e={},o=!0,i,s=!0){var a,l;const n=this.\_symbolDataProvider.lastData(),c=null!==(a=null==n?void 0:n.bid)&&void 0!==a?a:null,h=null!==(l=null==n?void 0:n.ask)&&void 0!==l?l:null;if(void 0!==e.trailingStop&&c&&h){const t=1===this.\_data.side?c:h,{pipSize"\
+&#x20;       }\
+&#x20;     ]\
+&#x20;   }\
+&#x20; ],\
+&#x20; "errors": []\
+}
+
+
+دستیار | پیام 9 | 11/15/2026, 11:30:24 AM
+------------------------------------------------------------
+
+Worked for 1m 18s
+
+
+دستیار | پیام 10 | 11/15/2026, 11:30:24 AM
+------------------------------------------------------------
+
+عالیه! گزارش ۲۲ بالاخره مسیر اجرای هر دو دستور را مشخص کرد. **دیگر نیازی به اجرای کد در Console یا فرستادن گزارش دیگری نیست.**
+
+## نتیجه بررسی
+
+<box border radius="lg" padding={3} gap={3}>
+  <box gap={1}>
+    <row align="center" justify="between">
+      **CLOSE**
+      <badge color="success">مسیر مشخص شد</badge>
+    </row>
+    فراخوانی متد رسمی:
+
+    ```javascript
+    adapter.closePosition(position.id)
+    ```
+
+    با حذف پارامتر مقدار، کل حجم پوزیشن بسته می‌شود. کد داخلی ابتدا پوزیشن را پیدا می‌کند و سپس سفارش بستن کامل را می‌سازد.
+  </box>
+  <divider color="subtle"/>
+  <box gap={1}>
+    <row align="center" justify="between">
+      **REVERSE**
+      <badge color="success">مسیر مشخص شد</badge>
+    </row>
+    فراخوانی متد رسمی:
+
+    ```javascript
+    adapter.reversePosition(position.id)
+    ```
+
+    مسیر Native Reverse در صرافی وجود دارد و Adapter تغییر سمت پوزیشن را بررسی می‌کند.
+  </box>
+</box>
+
+## نکته مهم
+
+برای `CLOSE` مسیر جایگزین `placeOrder` هم در کد رسمی TradingView مشخص شده است؛ یعنی حتی اگر متد مستقل بستن پوزیشن در BrokerConnection وجود نداشته باشد، Adapter سفارش معکوس با حجم کامل را می‌سازد.
+
+**مرحله بعد، ساخت دکمه‌های CLOSE و REVERSE در افزونه Bitunix است.**
+
+منطق افزونه را این‌طور در نظر می‌گیرم:
+- فقط یک پوزیشن باز را مدیریت کند.
+- فقط پوزیشن نماد فعال چارت را هدف بگیرد.
+- Close همیشه کل پوزیشن را ببندد.
+- Reverse کل پوزیشن را معکوس کند.
+- از شناسه واقعی پوزیشن در لحظه کلیک استفاده کند، نه شناسه ثابت.
+
+فقط توجه کن که مسیرهای کد شناسایی شده‌اند؛ هنوز اجرای واقعی سفارش از داخل افزونه آزمایش نشده است.
+
+
+کاربر | پیام 11 | 11/15/2026, 11:33:03 AM
+------------------------------------------------------------
+
+بستن پوزیشن و ریورس با شورتکات ها صورت میگیره نه دکمه روی پاپ اپ. کنترل و راست میشه کلوز و کنترل و چپ میشه ریورس
+
+خیلخ خب به نظر میاد این جا هم تکمیل شد
+حالا برگردیم به بقیه موارد. ببین سر این کلوز و ریورس خیلی طولش دادی. بقیه موارد مونده توی لیست رو کدهای حجیم قابل کپی بفرس چندتا رو موازی بررسی بکنیم و بریم جلو که زودتر تموم بشه. واسه بقیه موارد هم مثل کلوز و ریورس بکنیم چند روز علافیم. حالا بگو از لیست کجاها رو باید اوکی کنیم و موازی بریم جلو
+کد بزرگ و پر و پیمون بفرس
+
+
+دستیار | پیام 12 | 11/15/2026, 11:33:16 AM
+------------------------------------------------------------
+
+درست شد: **Ctrl + Right = CLOSE** و **Ctrl + Left = REVERSE**؛ نه دکمه داخل پاپ‌آپ. این را مبنای پیاده‌سازی می‌گیرم.
+
+برای اینکه دوباره روی یک قابلیت چند روز نمانیم، اول فهرست واقعی کارهای باقی‌مانده را از سوابق پروژه درمی‌آورم؛ بعد یک بسته‌ی تشخیصی بزرگ می‌دهم که چند بخش مستقل را در یک اجرا و فقط به‌صورت Read-only بررسی کند.
+
+
+دستیار | پیام 13 | 11/15/2026, 11:33:20 AM
+------------------------------------------------------------
+
+Worked for 16s
+
+
+دستیار | پیام 14 | 11/15/2026, 11:33:20 AM
+------------------------------------------------------------
+
+در پروژه افزونه Bitunix، بستن کامل پوزیشن باید با میانبر Ctrl+Right و معکوس‌کردن کامل پوزیشن با Ctrl+Left انجام شود؛ نه با دکمه‌های داخل پاپ‌آپ. کاربر فقط یک پوزیشن باز دارد و Close/Reverse باید کل همان پوزیشن نماد فعال چارت را مدیریت کنند. اتمام بررسی Close/Reverse و ادامه‌دادن سایر موارد پروژه با گزارش‌های تشخیصی حجیم و اجرای موازی برای کاهش رفت‌وبرگشت‌ها از ترجیحات کاربر است.
+
+
+دستیار | پیام 15 | 11/15/2026, 11:38:00 AM
+------------------------------------------------------------
+
+دقیقاً؛ از اینجا به بعد باید چند شاخه را با هم جلو ببریم، نه اینکه برای هر قابلیت یک گزارش جدا بگیریم.
+
+### وضعیت پروژه و مواردی که باید بررسی کنیم
+
+| بخش | موضوع بررسی |
+|---|---|
+| ۱ | تایم‌فریم‌های ثانیه‌ای و امکان ساخت Resolutionهای موردنیاز |
+| ۲ | دیتافید و سابقه معاملات؛ به‌خصوص امکان ساخت کندل‌های گذشته تا حدود یک ساعت |
+| ۳ | ساختار داخلی چارت و دسترسی به کندل‌ها و زمان دقیق آن‌ها |
+| ۴ | اندیکاتورها، Studyها و پنل‌های پایین چارت |
+| ۵ | تایمر شناور، شمارش معکوس و محور زمان |
+| ۶ | شورتکات‌ها، کنترل‌های چارت و تداخل کلیدها |
+| ۷ | ساختار اتصال افزونه به صفحه و APIهای داخلی Bitunix |
+
+Close و Reverse را از مرحله کشف API خارج می‌کنیم؛ فقط میانبرهایشان در مرحله پیاده‌سازی رعایت می‌شوند:
+
+<box border radius="lg" padding={3} gap={2}>
+  <row justify="between">
+    **Ctrl + Right**
+    <badge color="danger">CLOSE</badge>
+  </row>
+  <row justify="between">
+    **Ctrl + Left**
+    <badge color="warning">REVERSE</badge>
+  </row>
+</box>
+
+یک نکته: فهرست اولیه‌ای که در گفت‌وگوهای قبلی ساخته بودیم، به‌طور کامل در متن فعلی در دسترسم نیست؛ بنابراین کد زیر یک اسکن گسترده از ساختار واقعی صفحه انجام می‌دهد تا موارد قابل‌استفاده را در یک گزارش جمع کنیم، نه اینکه قابلیت‌های تأییدنشده را حدس بزنیم.
+
+## کد جامع بررسی Bitunix — Batch Audit 1.0
+
+<badge color="success">فقط خواندنی</badge> <badge color="info">بدون نیاز به پوزیشن باز</badge>
+
+این کد چندین بخش را در یک اجرا بررسی می‌کند: ساختار چارت، تایم‌فریم‌ها، دیتافید، تاریخچه کندل‌ها، Studyها، تایمرها، شورتکات‌ها، ساختار سفارش و پوزیشن، Eventها و ماژول‌های داخلی Webpack.
+
+**روش اجرا:** صفحه Bitunix را Reload کن، DevTools را باز کن، در Console مطمئن شو Context روی `top` است و کل کد را یک‌جا اجرا کن.
+
+```javascript
+(async () => {
+  "use strict";
+
+  const REPORT_NAME = "BITUNIX_BATCH_PLATFORM_AUDIT";
+  const VERSION = "1.0";
+  const PANEL_ID = "bitunix-batch-platform-audit";
+
+  const report = {
+    reportName: REPORT_NAME,
+    version: VERSION,
+    startedAt: new Date().toISOString(),
+
+    safety: {
+      readOnly: true,
+      tradingMethodsCalled: 0,
+      eventBusPublished: 0,
+      networkRequestsMade: 0,
+      domControlsClicked: 0,
+      keyboardEventsDispatched: 0,
+      positionIdsExposed: false,
+      exactQuantitiesExposed: false,
+      balancesExposed: false,
+      credentialsOrTokensRead: false,
+      storageValuesRead: false
+    },
+
+    page: {},
+    frames: [],
+    chartContexts: [],
+    chartObjects: [],
+    chartMethods: [],
+    resolutions: [],
+    datafeeds: [],
+    historyStructures: [],
+    studies: [],
+    overlays: [],
+    chartDom: [],
+    keyboard: [],
+    keyboardConflicts: [],
+    positionInfrastructure: [],
+    brokerCapabilities: [],
+    eventBus: [],
+    websocketResources: [],
+    scriptResources: [],
+    webpackModules: [],
+    storageKeys: [],
+    errors: [],
+    summary: {}
+  };
+
+  const MAX = {
+    keys: 100,
+    methods: 90,
+    labels: 100,
+    chartNodes: 50,
+    canvases: 30,
+    resources: 90,
+    modules: 28,
+    excerpts: 5,
+    sourceLength: 1400
+  };
+
+  const own = (obj, key) => {
+    try {
+      if (!obj) return undefined;
+
+      let p = obj;
+
+      for (let i = 0; p && i < 5; i++) {
+        const d = Object.getOwnPropertyDescriptor(p, key);
+
+        // فقط data property؛ هیچ getter اجرا نمی‌شود.
+        if (d && Object.prototype.hasOwnProperty.call(d, "value")) {
+          return d.value;
+        }
+
+        p = Object.getPrototypeOf(p);
+      }
+    } catch (_) {}
+
+    return undefined;
+  };
+
+  const ownKeys = obj => {
+    try {
+      return Object.getOwnPropertyNames(obj).slice(0, MAX.keys);
+    } catch (_) {
+      return [];
+    }
+  };
+
+  const typeOf = obj => {
+    if (obj === null) return "null";
+    if (obj === undefined) return "undefined";
+    if (Array.isArray(obj)) return "Array";
+
+    if (obj instanceof Map) return "Map";
+    if (obj instanceof Set) return "Set";
+
+    try {
+      return obj.constructor?.name || typeof obj;
+    } catch (_) {
+      return typeof obj;
+    }
+  };
+
+  const getPath = (obj, path) => {
+    for (const key of path) {
+      obj = own(obj, key);
+      if (obj === undefined || obj === null) return undefined;
+    }
+
+    return obj;
+  };
+
+  const functionSource = (fn, limit = 1000) => {
+    try {
+      if (typeof fn !== "function") return null;
+
+      return Function.prototype.toString
+        .call(fn)
+        .slice(0, limit);
+    } catch (_) {
+      return "[SOURCE_UNAVAILABLE]";
+    }
+  };
+
+  const methodNames = obj => {
+    const result = [];
+    const seen = new Set();
+
+    try {
+      let p = obj;
+
+      for (let depth = 0; p && depth < 4; depth++) {
+        for (const name of Object.getOwnPropertyNames(p)) {
+          if (seen.has(name)) continue;
+          seen.add(name);
+
+          const fn = own(obj, name);
+
+          if (typeof fn === "function") {
+            result.push(name);
+          }
+        }
+
+        p = Object.getPrototypeOf(p);
+      }
+    } catch (_) {}
+
+    return result.slice(0, MAX.methods);
+  };
+
+  const describeObject = (name, obj) => {
+    if (!obj || typeof obj !== "object" && typeof obj !== "function") {
+      return {
+        name,
+        present: false
+      };
+    }
+
+    const keys = ownKeys(obj);
+    const methods = methodNames(obj);
+
+    return {
+      name,
+      present: true,
+      type: typeOf(obj),
+      ownKeyCount: keys.length,
+      keys,
+      methods,
+      relevantMethods: methods.filter(n =>
+        /chart|resolution|interval|history|bar|candle|trade|quote|datafeed|subscribe|study|indicator|position|order|close|reverse|keyboard|shortcut|timer|time|symbol|price|market/i.test(n)
+      )
+    };
+  };
+
+  const summarizeCollection = value => {
+    if (value === undefined || value === null) {
+      return {
+        present: false
+      };
+    }
+
+    if (Array.isArray(value)) {
+      return {
+        present: true,
+        type: "Array",
+        count: value.length
+      };
+    }
+
+    if (value instanceof Map || value instanceof Set) {
+      return {
+        present: true,
+        type: typeOf(value),
+        count: value.size
+      };
+    }
+
+    return {
+      present: true,
+      type: typeOf(value),
+      keys: ownKeys(value).slice(0, 40)
+    };
+  };
+
+  const sanitizeUrl = raw => {
+    try {
+      const u = new URL(raw, location.href);
+
+      const path = u.pathname
+        .split("/")
+        .map(part => {
+          if (/^[0-9]{5,}$/.test(part)) return "[numeric-id]";
+          if (/^[a-f0-9-]{24,}$/i.test(part)) return "[id]";
+          return part;
+        })
+        .join("/");
+
+      return u.origin + path;
+    } catch (_) {
+      return String(raw).slice(0, 180);
+    }
+  };
+
+  const getRect = el => {
+    try {
+      const r = el.getBoundingClientRect();
+
+      return {
+        x: Math.round(r.x),
+        y: Math.round(r.y),
+        width: Math.round(r.width),
+        height: Math.round(r.height),
+        visible: r.width > 0 && r.height > 0
+      };
+    } catch (_) {
+      return null;
+    }
+  };
+
+  const addError = (where, error) => {
+    report.errors.push({
+      where,
+      error: String(error?.message || error).slice(0, 350)
+    });
+  };
+
+  // ==========================================================
+  // 1. Page and accessible frame discovery
+  // ==========================================================
+
+  report.page = {
+    url: sanitizeUrl(location.href),
+    title: document.title,
+    readyState: document.readyState,
+    userAgent: navigator.userAgent,
+    viewport: {
+      width: window.innerWidth,
+      height: window.innerHeight,
+      devicePixelRatio: window.devicePixelRatio
+    }
+  };
+
+  const contexts = [];
+  const seenWindows = new Set();
+
+  const addFrame = (w, label, depth) => {
+    if (!w || seenWindows.has(w) || depth > 3) return;
+
+    seenWindows.add(w);
+
+    let doc = null;
+
+    try {
+      doc = w.document;
+    } catch (_) {
+      report.frames.push({
+        frame: label,
+        accessible: false
+      });
+      return;
+    }
+
+    contexts.push({
+      win: w,
+      doc,
+      label,
+      depth
+    });
+
+    report.frames.push({
+      frame: label,
+      accessible: true,
+      url: (() => {
+        try { return sanitizeUrl(w.location.href); }
+        catch (_) { return null; }
+      })(),
+      title: doc.title,
+      iframeCount: doc.querySelectorAll("iframe").length
+    });
+
+    try {
+      const frames = doc.querySelectorAll("iframe");
+
+      frames.forEach((frame, index) => {
+        try {
+          addFrame(
+            frame.contentWindow,
+            label + " > iframe[" + index + "]",
+            depth + 1
+          );
+        } catch (_) {}
+      });
+    } catch (_) {}
+  };
+
+  addFrame(window.top, "top", 0);
+
+  // ==========================================================
+  // 2. Bitunix / TradingView / chart object discovery
+  // ==========================================================
+
+  const chartCandidates = [];
+
+  for (const ctx of contexts) {
+    const w = ctx.win;
+
+    try {
+      const tv = own(w, "bitunixTv");
+      const tvWidget = own(tv, "tvWidget");
+      const host = own(tvWidget, "host");
+      const trading = own(host, "_trading");
+
+      const adapter =
+        own(host, "_adapter") ||
+        own(trading, "_adapter");
+
+      const connection =
+        own(adapter, "_brokerConnection") ||
+        own(trading, "_brokerConnection");
+
+      const eventBus =
+        own(tv, "eventBus") ||
+        own(connection, "_eventBus");
+
+      const tvApi = own(w, "TradingViewApi");
+      const activeWidget = getPath(tvApi, [
+        "_activeChartWidgetWV",
+        "_value"
+      ]);
+
+      const chartWidget =
+        own(activeWidget, "_chartWidget") ||
+        own(tvApi, "_chartWidget");
+
+      const chartModel =
+        own(chartWidget, "_model") ||
+        own(chartWidget, "_chartModel");
+
+      const positionService =
+        own(trading, "_positionService") ||
+        own(host, "_positionService");
+
+      chartCandidates.push({
+        frame: ctx.label,
+        tv,
+        tvWidget,
+        host,
+        trading,
+        adapter,
+        connection,
+        eventBus,
+        tvApi,
+        activeWidget,
+        chartWidget,
+        chartModel,
+        positionService
+      });
+
+      report.chartContexts.push({
+        frame: ctx.label,
+        hasBitunixTv: !!tv,
+        hasTvWidget: !!tvWidget,
+        hasTradingHost: !!host,
+        hasTrading: !!trading,
+        hasAdapter: !!adapter,
+        hasBrokerConnection: !!connection,
+        hasEventBus: !!eventBus,
+        hasTradingViewApi: !!tvApi,
+        hasActiveChartWidget: !!activeWidget,
+        hasChartWidget: !!chartWidget,
+        hasChartModel: !!chartModel,
+        hasPositionService: !!positionService
+      });
+
+      const objects = [
+        ["bitunixTv", tv],
+        ["tvWidget", tvWidget],
+        ["tradingHost", host],
+        ["trading", trading],
+        ["adapter", adapter],
+        ["brokerConnection", connection],
+        ["TradingViewApi", tvApi],
+        ["activeChartWidget", activeWidget],
+        ["chartWidget", chartWidget],
+        ["chartModel", chartModel],
+        ["positionService", positionService]
+      ];
+
+      for (const [name, obj] of objects) {
+        if (!obj) continue;
+
+        report.chartObjects.push({
+          frame: ctx.label,
+          ...describeObject(name, obj)
+        });
+      }
+
+      // بررسی ساختارهای تاریخچه و بارها بدون فراخوانی متدها
+      const historyRoots = [
+        ["chartWidget", chartWidget],
+        ["chartModel", chartModel],
+        ["activeChartWidget", activeWidget],
+        ["tvWidget", tvWidget]
+      ];
+
+      for (const [rootName, root] of historyRoots) {
+        if (!root) continue;
+
+        const keys = ownKeys(root);
+
+        for (const key of keys) {
+          if (!/bar|candle|history|series|data|source|time/i.test(key)) {
+            continue;
+          }
+
+          const value = own(root, key);
+
+          if (
+            value === undefined ||
+            value === null ||
+            typeof value === "function"
+          ) {
+            continue;
+          }
+
+          report.historyStructures.push({
+            frame: ctx.label,
+            root: rootName,
+            property: key,
+            structure: summarizeCollection(value)
+          });
+        }
+      }
+
+      // بررسی قابلیت‌های Adapter و Broker بدون اجرای آن‌ها
+      if (adapter) {
+        const flags = getPath(adapter, [
+          "_brokerMetainfo",
+          "configFlags"
+        ]);
+
+        const config = own(adapter, "config");
+
+        report.brokerCapabilities.push({
+          frame: ctx.label,
+          flags: flags ? Object.fromEntries(
+            ownKeys(flags)
+              .filter(k =>
+                /support|position|reverse|close|history|order|bracket|trade|quote/i.test(k)
+              )
+              .map(k => [k, own(flags, k)])
+              .filter(x => typeof x[1] === "boolean" || typeof x[1] === "string" || typeof x[1] === "number")
+          ) : null,
+          configKeys: ownKeys(config),
+          adapterMethods: methodNames(adapter).filter(n =>
+            /position|order|close|reverse|quote|trade|history|symbol|resolution|subscribe/i.test(n)
+          ),
+          brokerMethods: methodNames(connection).filter(n =>
+            /position|order|close|reverse|quote|trade|history|symbol|resolution|subscribe/i.test(n)
+          )
+        });
+      }
+
+      // فقط تعداد احتمالی داده‌های Cache؛ شناسه‌ها و مقادیر خوانده نمی‌شوند
+      if (positionService) {
+        const positionRoots = [
+          "_positions",
+          "_positionsCache",
+          "_positionMap",
+          "positions"
+        ];
+
+        const caches = {};
+
+        for (const key of positionRoots) {
+          const value = own(positionService, key);
+
+          if (value !== undefined) {
+            caches[key] = summarizeCollection(value);
+          }
+        }
+
+        report.positionInfrastructure.push({
+          frame: ctx.label,
+          positionServicePresent: true,
+          cacheStructures: caches,
+          serviceMethods: methodNames(positionService).filter(n =>
+            /position|subscribe|update|remove/i.test(n)
+          ),
+          note: "No position method invoked. No IDs or quantities read."
+        });
+      }
+
+      // EventBus فقط از نظر ساختار و Listener موجود بررسی می‌شود
+      if (eventBus) {
+        const events = own(eventBus, "events");
+        const eventNames = ownKeys(events);
+
+        const selected = eventNames.filter(n =>
+          /position|order|trade|close|reverse|market/i.test(n)
+        );
+
+        for (const name of selected) {
+          const listeners = own(events, name);
+
+          report.eventBus.push({
+            frame: ctx.label,
+            event: name,
+            listenerCount: Array.isArray(listeners)
+              ? listeners.length
+              : null,
+            listenerSources: Array.isArray(listeners)
+              ? listeners.slice(0, 5).map(fn =>
+                  functionSource(fn, 850)
+                )
+              : []
+          });
+        }
+      }
+
+      // یافتن APIهای احتمالی Datafeed در سطوح شناخته‌شده
+      const datafeedCandidates = [
+        ["tvWidget", own(tvWidget, "datafeed")],
+        ["tvWidget.options", getPath(tvWidget, ["_options", "datafeed"])],
+        ["TradingViewApi", own(tvApi, "datafeed")],
+        ["host", own(host, "datafeed")],
+        ["trading", own(trading, "datafeed")]
+      ];
+
+      for (const [name, obj] of datafeedCandidates) {
+        if (!obj) continue;
+
+        report.datafeeds.push({
+          frame: ctx.label,
+          path: name,
+          ...describeObject(name, obj)
+        });
+      }
+
+    } catch (e) {
+      addError("chart-context:" + ctx.label, e);
+    }
+  }
+
+  // ==========================================================
+  // 3. Resolution buttons and chart DOM
+  // ==========================================================
+
+  const resolutionPattern =
+    /(^|\s)(1s|2s|3s|5s|10s|15s|20s|30s|45s|1m|3m|5m|15m|30m|1h|4h|1d)(\s|$)/i;
+
+  const relevantLabelPattern =
+    /resolution|interval|timeframe|chart|candle|second|minute|indicator|study|position|close|reverse|long|short|order|trade|timer|market/i;
+
+  for (const ctx of contexts) {
+    try {
+      const doc = ctx.doc;
+
+      const elements = doc.querySelectorAll(
+        "button,[role='button'],[aria-label],[title],input,select"
+      );
+
+      const labels = [];
+      const resolutions = [];
+
+      for (const el of Array.from(elements).slice(0, 900)) {
+        const aria = el.getAttribute("aria-label") || "";
+        const title = el.getAttribute("title") || "";
+        const text = (
+          el.innerText ||
+          el.textContent ||
+          ""
+        ).trim().replace(/\s+/g, " ").slice(0, 100);
+
+        const label = [aria, title, text]
+          .filter(Boolean)
+          .join(" | ")
+          .slice(0, 180);
+
+        if (!label) continue;
+
+        if (resolutionPattern.test(label)) {
+          resolutions.push({
+            label,
+            tag: el.tagName,
+            role: el.getAttribute("role"),
+            disabled: !!el.disabled
+          });
+        }
+
+        if (relevantLabelPattern.test(label)) {
+          labels.push({
+            tag: el.tagName,
+            role: el.getAttribute("role"),
+            label,
+            rect: getRect(el)
+          });
+        }
+      }
+
+      report.resolutions.push({
+        frame: ctx.label,
+        candidates: [...new Set(
+          resolutions.map(x => x.label)
+        )].slice(0, 80),
+        matchingElements: resolutions.slice(0, 100)
+      });
+
+      report.chartDom.push({
+        frame: ctx.label,
+        relevantControls: labels.slice(0, MAX.labels)
+      });
+
+      // ساختار Containerهای احتمالی چارت
+      const chartNodes = [];
+
+      const nodes = doc.querySelectorAll(
+        "[id],[class]"
+      );
+
+      for (const el of Array.from(nodes).slice(0, 2500)) {
+        const id = String(el.id || "");
+        const cls = typeof el.className === "string"
+          ? el.className
+          : "";
+
+        if (!/(chart|tradingview|kline|toolbar|resolution|study|indicator)/i.test(id + " " + cls)) {
+          continue;
+        }
+
+        const rect = getRect(el);
+
+        if (!rect?.visible) continue;
+
+        chartNodes.push({
+          tag: el.tagName,
+          id: id.slice(0, 100),
+          className: cls.slice(0, 180),
+          rect
+        });
+
+        if (chartNodes.length >= MAX.chartNodes) break;
+      }
+
+      report.chartDom.push({
+        frame: ctx.label,
+        chartContainers: chartNodes
+      });
+
+      // Canvasها فقط از نظر ابعاد و موقعیت
+      report.overlays.push({
+        frame: ctx.label,
+        canvases: Array.from(doc.querySelectorAll("canvas"))
+          .slice(0, MAX.canvases)
+          .map((canvas, index) => ({
+            index,
+            width: canvas.width,
+            height: canvas.height,
+            rect: getRect(canvas)
+          })),
+        timerElements: Array.from(
+          doc.querySelectorAll("[id],[class]")
+        )
+          .filter(el => {
+            const id = String(el.id || "");
+            const cls = typeof el.className === "string"
+              ? el.className
+              : "";
+
+            return /timer|countdown|candle.?time|seconds.?label/i.test(id + " " + cls);
+          })
+          .slice(0, 30)
+          .map(el => ({
+            tag: el.tagName,
+            id: String(el.id || "").slice(0, 100),
+            className: String(el.className || "").slice(0, 130),
+            rect: getRect(el)
+          }))
+      });
+
+    } catch (e) {
+      addError("chart-dom:" + ctx.label, e);
+    }
+  }
+
+  // ==========================================================
+  // 4. Keyboard / shortcut audit
+  // ==========================================================
+
+  const getListeners =
+    typeof getEventListeners === "function"
+      ? getEventListeners
+      : null;
+
+  const shortcutRegex =
+    /keydown|keyup|keypress|ctrlKey|metaKey|altKey|shiftKey|ArrowLeft|ArrowRight|keyCode|which|event\.key|\.key\b/i;
+
+  const shortcutTargets = [];
+
+  for (const ctx of contexts) {
+    shortcutTargets.push({
+      frame: ctx.label,
+      name: "document",
+      target: ctx.doc
+    });
+
+    shortcutTargets.push({
+      frame: ctx.label,
+      name: "window",
+      target: ctx.win
+    });
+  }
+
+  if (getListeners) {
+    for (const item of shortcutTargets) {
+      try {
+        const listeners = getListeners(item.target);
+
+        const summary = {
+          frame: item.frame,
+          target: item.name,
+          eventCounts: {},
+          keyHandlers: []
+        };
+
+        for (const eventName of [
+          "keydown",
+          "keyup",
+          "keypress"
+        ]) {
+          const list = listeners[eventName] || [];
+
+          summary.eventCounts[eventName] = list.length;
+
+          for (const entry of list.slice(0, 30)) {
+            const fn = entry.listener;
+
+            const src = functionSource(fn, 1200);
+
+            summary.keyHandlers.push({
+              event: eventName,
+              listenerName: fn?.name || "anonymous",
+              capture: !!entry.useCapture,
+              passive: !!entry.passive,
+              once: !!entry.once,
+              source: src
+            });
+
+            if (src && shortcutRegex.test(src)) {
+              report.keyboardConflicts.push({
+                frame: item.frame,
+                target: item.name,
+                event: eventName,
+                source: src.slice(0, 1000)
+              });
+            }
+          }
+        }
+
+        report.keyboard.push(summary);
+
+      } catch (e) {
+        addError("keyboard:" + item.frame + ":" + item.name, e);
+      }
+    }
+  } else {
+    report.keyboard.push({
+      available: false,
+      reason: "Chrome DevTools getEventListeners helper is not available in this Console context."
+    });
+  }
+
+  // ==========================================================
+  // 5. Webpack module source discovery
+  // No module factory is executed.
+  // Only Function.prototype.toString is inspected.
+  // ==========================================================
+
+  const moduleGroups = [
+    {
+      name: "marketDataAndHistory",
+      regex: /getBars|subscribeBars|unsubscribeBars|resolveSymbol|searchSymbols|getHistory|historyRequest|kline|candlestick|candle|timeframe|resolution|interval/i
+    },
+    {
+      name: "studiesAndIndicators",
+      regex: /createStudy|removeStudy|studyId|studyMetaInfo|indicator|studyPane|createIndicator/i
+    },
+    {
+      name: "keyboardAndControls",
+      regex: /keydown|keyup|hotkey|shortcut|keyboard|ArrowLeft|ArrowRight|ctrlKey/i
+    },
+    {
+      name: "positionAndOrder",
+      regex: /closePosition|reversePosition|showClosePositionDialog|showReversePositionDialog|placeOrder|positionUpdate/i
+    },
+    {
+      name: "timerAndOverlay",
+      regex: /countdown|remainingTime|barTime|timeScale|tickMark|timer|secondsLabel/i
+    }
+  ];
+
+  let totalModuleRecords = 0;
+
+  for (const ctx of contexts) {
+    try {
+      const globalNames = Object.getOwnPropertyNames(ctx.win)
+        .filter(n => /webpackChunk|webpackJsonp/i.test(n))
+        .slice(0, 12);
+
+      let scanned = 0;
+
+      for (const chunkName of globalNames) {
+        const chunks = own(ctx.win, chunkName);
+
+        if (!Array.isArray(chunks)) continue;
+
+        for (const chunk of chunks.slice(-12)) {
+          if (!Array.isArray(chunk)) continue;
+
+          const modules = chunk[1];
+
+          if (!modules || typeof modules !== "object") continue;
+
+          for (const moduleId of Object.keys(modules)) {
+            if (scanned >= 10000) break;
+
+            scanned++;
+
+            const factory = modules[moduleId];
+
+            if (typeof factory !== "function") continue;
+
+            let src = "";
+
+            try {
+              src = Function.prototype.toString.call(factory);
+            } catch (_) {
+              continue;
+            }
+
+            const hits = [];
+
+            for (const group of moduleGroups) {
+              const match = group.regex.exec(src);
+
+              if (match) {
+                const pos = match.index;
+
+                hits.push({
+                  group: group.name,
+                  matchedTerm: match[0],
+                  excerpt: src.slice(
+                    Math.max(0, pos - 240),
+                    Math.min(src.length, pos + 620)
+                  )
+                });
+              }
+            }
+
+            if (!hits.length) continue;
+
+            report.webpackModules.push({
+              frame: ctx.label,
+              chunkName,
+              moduleId: String(moduleId),
+              sourceLength: src.length,
+              groups: hits.map(h => h.group),
+              excerpts: hits.slice(0, MAX.excerpts)
+            });
+
+            totalModuleRecords++;
+
+            if (totalModuleRecords >= MAX.modules) break;
+          }
+
+          if (totalModuleRecords >= MAX.modules || scanned >= 10000) break;
+        }
+
+        if (totalModuleRecords >= MAX.modules || scanned >= 10000) break;
+      }
+
+      report.webpackModules.push({
+        frame: ctx.label,
+        scanSummary: {
+          chunkGlobals: globalNames,
+          modulesScanned: scanned,
+          recordsCollected: totalModuleRecords
+        }
+      });
+
+    } catch (e) {
+      addError("webpack:" + ctx.label, e);
+    }
+
+    if (totalModuleRecords >= MAX.modules) break;
+  }
+
+  // ==========================================================
+  // 6. Existing resource inventory
+  // No new request is made.
+  // ==========================================================
+
+  try {
+    const entries = performance.getEntriesByType("resource");
+
+    const seen = new Set();
+
+    for (const entry of entries) {
+      const url = sanitizeUrl(entry.name);
+
+      if (seen.has(url)) continue;
+      seen.add(url);
+
+      if (/^wss?:/i.test(entry.name)) {
+        report.websocketResources.push({
+          url,
+          initiatorType: entry.initiatorType,
+          durationMs: Math.round(entry.duration || 0)
+        });
+      }
+
+      if (
+        /\.(js|mjs)(\?|$)/i.test(entry.name) ||
+        /webpack|tradingview|bitunix/i.test(entry.name)
+      ) {
+        report.scriptResources.push({
+          url,
+          initiatorType: entry.initiatorType,
+          durationMs: Math.round(entry.duration || 0)
+        });
+      }
+
+      if (
+        report.websocketResources.length +
+        report.scriptResources.length >= MAX.resources
+      ) {
+        break;
+      }
+    }
+
+  } catch (e) {
+    addError("performance-resources", e);
+  }
+
+  // ==========================================================
+  // 7. Storage key names only
+  // Values are NEVER accessed.
+  // ==========================================================
+
+  for (const storageName of [
+    "localStorage",
+    "sessionStorage"
+  ]) {
+    try {
+      const storage = window[storageName];
+      const keys = [];
+
+      for (let i = 0; i < storage.length && i < 150; i++) {
+        keys.push(storage.key(i));
+      }
+
+      report.storageKeys.push({
+        storage: storageName,
+        keyCount: storage.length,
+        keys
+      });
+
+    } catch (e) {
+      report.storageKeys.push({
+        storage: storageName,
+        accessible: false,
+        error: String(e).slice(0, 180)
+      });
+    }
+  }
+
+  // ==========================================================
+  // 8. Summary
+  // ==========================================================
+
+  const topContext = report.chartContexts.find(
+    x => x.frame === "top"
+  );
+
+  report.summary = {
+    accessibleFrames: contexts.length,
+    chartContextCount: report.chartContexts.filter(
+      x => x.hasChartWidget || x.hasTradingViewApi || x.hasTvWidget
+    ).length,
+
+    adapterFound: report.chartContexts.some(x => x.hasAdapter),
+    brokerConnectionFound: report.chartContexts.some(x => x.hasBrokerConnection),
+
+    resolutionCandidates: report.resolutions.reduce(
+      (n, x) => n + (x.candidates?.length || 0),
+      0
+    ),
+
+    datafeedObjectsFound: report.datafeeds.length,
+    historyStructuresFound: report.historyStructures.length,
+
+    chartDomGroups: report.chartDom.length,
+    canvasCount: report.overlays.reduce(
+      (n, x) => n + (x.canvases?.length || 0),
+      0
+    ),
+
+    keyboardInspectionAvailable: !!getListeners,
+    keyboardConflictCandidates: report.keyboardConflicts.length,
+
+    positionInfrastructureFound: report.positionInfrastructure.length,
+    brokerCapabilityReports: report.brokerCapabilities.length,
+
+    eventTypesFound: report.eventBus.length,
+    websocketResourcesFound: report.websocketResources.length,
+    scriptResourcesFound: report.scriptResources.length,
+
+    webpackModulesFound: report.webpackModules.filter(
+      x => x.moduleId
+    ).length,
+
+    errors: report.errors.length,
+
+    topHasTradingView: !!topContext?.hasTradingViewApi,
+    topHasAdapter: !!topContext?.hasAdapter
+  };
+
+  report.finishedAt = new Date().toISOString();
+  report.durationMs =
+    Date.parse(report.finishedAt) -
+    Date.parse(report.startedAt);
+
+  // ==========================================================
+  // 9. Copyable report panel
+  // ==========================================================
+
+  const output = JSON.stringify(report, null, 2);
+
+  try {
+    const old = document.getElementById(PANEL_ID);
+    if (old) old.remove();
+
+    const panel = document.createElement("div");
+    panel.id = PANEL_ID;
+
+    panel.style.cssText = [
+      "position:fixed",
+      "inset:24px",
+      "z-index:2147483647",
+      "background:#101820",
+      "color:#eef6ff",
+      "border:2px solid #3288d6",
+      "border-radius:12px",
+      "padding:15px",
+      "display:flex",
+      "flex-direction:column",
+      "gap:10px",
+      "font:13px Arial,sans-serif",
+      "direction:rtl",
+      "box-shadow:0 12px 45px #000b"
+    ].join(";");
+
+    const title = document.createElement("div");
+    title.textContent =
+      "BITUNIX BATCH AUDIT 1.0 — گزارش جامع بررسی";
+
+    title.style.cssText =
+      "font-weight:bold;font-size:16px;color:#80c7ff";
+
+    const status = document.createElement("div");
+
+    status.textContent =
+      "بررسی به پایان رسید؛ هیچ سفارش، کلیک معاملاتی یا درخواست جدیدی اجرا نشده است.";
+
+    status.style.cssText =
+      "color:#a9d7b4;line-height:1.7";
+
+    const stats = document.createElement("div");
+
+    stats.textContent = [
+      "Frames: " + report.summary.accessibleFrames,
+      "Resolution candidates: " + report.summary.resolutionCandidates,
+      "Datafeeds: " + report.summary.datafeedObjectsFound,
+      "History structures: " + report.summary.historyStructuresFound,
+      "Keyboard candidates: " + report.summary.keyboardConflictCandidates,
+      "Webpack modules: " + report.summary.webpackModulesFound,
+      "Errors: " + report.summary.errors
+    ].join("  |  ");
+
+    stats.style.cssText =
+      "color:#d0dce8;font-size:11px;line-height:1.8";
+
+    const area = document.createElement("textarea");
+    area.value = output;
+    area.readOnly = true;
+
+    area.style.cssText = [
+      "flex:1",
+      "width:100%",
+      "min-height:100px",
+      "box-sizing:border-box",
+      "resize:none",
+      "background:#07111b",
+      "color:#c5e5ff",
+      "border:1px solid #38536a",
+      "border-radius:8px",
+      "padding:10px",
+      "font:11px Consolas,monospace",
+      "direction:ltr",
+      "text-align:left"
+    ].join(";");
+
+    const actions = document.createElement("div");
+
+    actions.style.cssText =
+      "display:flex;gap:9px;flex-wrap:wrap";
+
+    const button = (label, bg) => {
+      const b = document.createElement("button");
+      b.textContent = label;
+
+      b.style.cssText =
+        "border:0;border-radius:7px;padding:10px 18px;" +
+        "background:" + bg +
+        ";color:white;font-weight:bold;cursor:pointer";
+
+      return b;
+    };
+
+    const copy = button("Copy Full Report", "#1677c8");
+    const close = button("Close", "#525d69");
+
+    copy.onclick = async () => {
+      try {
+        await navigator.clipboard.writeText(area.value);
+        copy.textContent = "Copied ✓";
+      } catch (_) {
+        area.focus();
+        area.select();
+
+        const ok = document.execCommand("copy");
+
+        copy.textContent = ok
+          ? "Copied ✓"
+          : "متن را دستی کپی کن";
+      }
+    };
+
+    close.onclick = () => panel.remove();
+
+    actions.append(copy, close);
+    panel.append(title, status, stats, area, actions);
+
+    (document.body || document.documentElement).appendChild(panel);
+
+    area.focus();
+    area.select();
+
+  } catch (e) {
+    console.log("BITUNIX BATCH AUDIT REPORT:", output);
+    addError("report-panel", e);
+  }
+
+  console.log(
+    "BITUNIX BATCH AUDIT COMPLETE",
+    report.summary
+  );
+
+})();
+```
+
+### بعد از اجرا چه چیزی بفرستی؟
+
+فقط روی **Copy Full Report** بزن و کل گزارش را اینجا بفرست.
+
+با همین یک خروجی، می‌توانیم چند مسیر را با هم دسته‌بندی کنیم:
+
+- کدام قابلیت‌ها از API رسمی چارت قابل پیاده‌سازی‌اند.
+- کجا باید داده‌های معاملات را جمع‌آوری و کندل‌های ثانیه‌ای را بسازیم.
+- کجا از ساختار فعلی TradingView استفاده می‌کنیم و کجا Overlay مستقل لازم داریم.
+- کدام شورتکات‌ها با میانبرهای موجود تداخل دارند.
+- کدام بخش‌ها نیاز به تست عملی دارند و کدام‌ها صرفاً با بررسی ساختار داخلی قابل تأییدند.
+
+**لازم نیست پوزیشن باز کنی یا هیچ دکمه معاملاتی را بزنی.** همچنین این کد چیزی را در افزونه، چارت یا تنظیمات Bitunix تغییر نمی‌دهد.
+
+
+کاربر | پیام 16 | 11/15/2026, 11:41:01 AM
+------------------------------------------------------------
+
+# Selected text:
+
+## Selection 1
+فهرست اولیه‌ای که در گفت‌وگوهای قبلی ساخته بودیم، به‌طور کامل در متن فعلی در دسترسم نیست
+
+## My request:
+در چت های گذشته مون مونده. برو ببین. چت ها با اسم برنامه ساخت افزونه هست که از بدونه شماره و شماره یک هست تا الان که این چت شماره 5 هست. برو ببین از اول هر چی نیازه رو دربیار. منم این کد رو میندازم و خروجیشو میگیرم
+
+
+دستیار | پیام 17 | 11/15/2026, 11:41:12 AM
+------------------------------------------------------------
+
+می‌گردم سراغ گفت‌وگوهای «برنامه ساخت افزونه» از نسخه بدون شماره تا شماره ۴ و مواردی را که قبلاً خواسته‌ای یا درباره‌شان تصمیم گرفته‌ای استخراج می‌کنم. در کنارش، کدی که الان آماده کرده‌ای را هم به‌عنوان اسکن مکمل نگه می‌داریم؛ قرار نیست فقط به خروجی اسکن تکیه کنیم.
+
+
+دستیار | پیام 18 | 11/15/2026, 11:42:17 AM
+------------------------------------------------------------
+
+{"path":"/files/search","args":{"search_query":[{"q":"\"\u0628\u0631\u0646\u0627\u0645\u0647 \u0633\u0627\u062e\u062a \u0627\u0641\u0632\u0648\u0646\u0647 Bitunix\""},{"q":"Bitunix enhancer requirements feature checklist shortcuts timeframe seconds chart historical trade data websocket"},{"q":"Bitunix project user requested features chart indicator timer popup keyboard shortcut"},{"q":"\u0628\u0631\u0646\u0627\u0645\u0647 \u0633\u0627\u062e\u062a \u0627\u0641\u0632\u0648\u0646\u0647 \u0634\u0645\u0627\u0631\u0647 1 \u0634\u0645\u0627\u0631\u0647 2 \u0634\u0645\u0627\u0631\u0647 3 \u0634\u0645\u0627\u0631\u0647 4 Bitunix \u062a\u0635\u0645\u06cc\u0645\u0627\u062a \u0648 \u0644\u06cc\u0633\u062a \u06a9\u0627\u0631\u0647\u0627"}],"scope":{"surfaces":["conversation","library"]},"top_k":20}}
+
+
+دستیار | پیام 19 | 11/15/2026, 11:42:17 AM
+------------------------------------------------------------
+
+{"path":"/files/search","args":{"search_query":[{"q":"Bitunix"},{"q":"\u0628\u06cc\u062a\u06cc\u0648\u0646\u06cc\u06a9\u0633"},{"q":"Bitunix seconds candles chart websocket trade history"},{"q":"Bitunix position chart shortcut hotkeys reverse close"},{"q":"Bitunix timeframe indicator overlay timer project"}],"scope":{"surfaces":["library"]},"top_k":30}}
+
+
+دستیار | پیام 20 | 11/15/2026, 11:42:17 AM
+------------------------------------------------------------
+
+در جست‌وجوی فایل‌های ذخیره‌شده، چند گزارش و اسکریپت قدیمی TradingView/KCEX پیدا شد، اما آن‌ها را با نیازهای Bitunix قاطی نمی‌کنم. عنوان و متن کامل خودِ چت‌های قبلی مستقیماً مثل فایل قابل بازکردن در اینجا نیست؛ در عوض خلاصه‌ی گفت‌وگوهای شماره‌دار و گزارش‌های Bitunix که در سابقه‌ی همین پروژه موجود است را مبنا می‌گیرم و فقط مواردی را قطعی می‌نویسم که واقعاً از آن‌ها پشتیبانی می‌شود.
+
+
+دستیار | پیام 21 | 11/15/2026, 11:42:17 AM
+------------------------------------------------------------
+
+{"path":"/files/search","args":{"search_query":[{"q":"Bitunix","search_title_only":true},{"q":"\u0628\u06cc\u062a\u06cc\u0648\u0646\u06cc\u06a9\u0633","search_title_only":true},{"q":"\u0628\u0631\u0646\u0627\u0645\u0647 \u0633\u0627\u062e\u062a \u0627\u0641\u0632\u0648\u0646\u0647 Bitunix","search_title_only":true}],"scope":{"surfaces":["library"]},"top_k":50,"sort":"created_at","sort_order":"asc"}}
+
+
+دستیار | پیام 22 | 11/15/2026, 11:43:03 AM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/search","args":{"query":"\u0628\u06cc\u062a\u06cc\u0648\u0646\u06cc\u06a9\u0633","repository_name":"artaville/KCEX-Enhancer","topn":15}}
+
+
+دستیار | پیام 23 | 11/15/2026, 11:43:03 AM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/search","args":{"query":"Bitunix","repository_name":"artaville/KCEX-Enhancer","topn":15}}
+
+
+دستیار | پیام 24 | 11/15/2026, 11:43:03 AM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/search","args":{"query":"POSITION_PAYLOAD_AUDIT","repository_name":"artaville/KCEX-Enhancer","topn":15}}
+
+
+دستیار | پیام 25 | 11/15/2026, 11:43:03 AM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/search","args":{"query":"BITUNIX_CLOSE_REVERSE_API_AUDIT","repository_name":"artaville/KCEX-Enhancer","topn":15}}
+
+
+دستیار | پیام 26 | 11/15/2026, 11:43:04 AM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/search","args":{"query":"seconds websocket trade history","repository_name":"artaville/KCEX-Enhancer","topn":15}}
+
+
+دستیار | پیام 27 | 11/15/2026, 11:44:20 AM
+------------------------------------------------------------
+
+Worked for 3m 19s
+
+
+کاربر | پیام 28 | 11/15/2026, 11:44:20 AM
+------------------------------------------------------------
+
+[بیت23.txt](https://github.com/artaville/KCEX-Enhancer/blob/main/%D8%A8%DB%8C%D8%AA23.txt "بیت23.txt") &#x20;
+منظورم فایل ها نیست. چتمون. گفتگومون رو برو ببین چه با این اسم ها ثبت شده توی اکانت من. گراش رو میفرستم برات
+
+
+دستیار | پیام 29 | 11/15/2026, 11:44:42 AM
+------------------------------------------------------------
+
+Worked for 21s
+
+
+دستیار | پیام 30 | 11/15/2026, 11:44:42 AM
+------------------------------------------------------------
+
+آها، متوجه شدم. منظورت خودِ چت‌های ChatGPT با عنوان «برنامه ساخت افزونه Bitunix»، از چت بدون شماره تا شماره ۴ است، نه فایل‌های داخل GitHub.
+
+بابت اشتباه قبلی عذر می‌خوام.
+
+یک محدودیت مهم دارم: **به فهرست کامل گفتگوهای حساب و امکان بازکردن چت‌های قبلی با جست‌وجوی عنوان دسترسی مستقیم ندارم.** جست‌وجویی که انجام دادم فقط فایل‌های ذخیره‌شده را پیدا می‌کرد، نه تاریخچه چت‌ها.
+
+از خلاصه‌ای که از پروژه در اختیارم هست، این موارد را دارم:
+- بررسی مسیر دریافت معاملات و ساخت کندل‌های ثانیه‌ای
+- بررسی مقدار تاریخچه قابل دریافت، خصوصاً یک ساعت گذشته
+- شناسایی ساختار چارت TradingView و فریم‌ها
+- بررسی پوزیشن و APIهای Close و Reverse
+- میانبرهای `Ctrl + Right` و `Ctrl + Left`
+
+اما نمی‌خواهم ادعا کنم تمام درخواست‌های چت‌های ۱ تا ۴ را استخراج کرده‌ام.
+
+**گزارش ۲۳ را بفرست.** من آن را با یافته‌های قبلی تطبیق می‌دهم و فهرست کارها را به چند بسته موازی تقسیم می‌کنم تا دیگر برای هر قابلیت جداگانه وقت نگذاریم.
+
+
+کاربر | پیام 31 | 11/15/2026, 11:46:13 AM
+------------------------------------------------------------
+
+گزارش را بالا فرستادم
+[image.png](https://github.com/artaville/KCEX-Enhancer/blob/main/image.png "image.png") &#x20;
+اینم عکس از اسم چت هامون. تلاش کن دسترسی داشته باشی. همه این چت ها به همدیگه ربط دارن. وقتی چت پر شده اتاق جدید ایجاد کردی ک به قبلی ربط داره
+
+
+دستیار | پیام 32 | 11/15/2026, 11:46:48 AM
+------------------------------------------------------------
+
+لینک‌های GitHub را باز کردم، اما دریافت مستقیم صفحه‌ها از مسیر وب خطا داد. دارم همان فایل گزارش و تصویر را از مسیر خام مخزن بررسی می‌کنم؛ این کار برای خواندن گزارش ۲۳ و دیدن عنوان چت‌هاست، نه دسترسی به فهرست خصوصی حساب ChatGPT.
+
+
+دستیار | پیام 33 | 11/15/2026, 11:47:00 AM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_file","args":{"repository_full_name":"artaville/KCEX-Enhancer","path":"\u0628\u06cc\u062a23.txt","encoding":"utf-8"}}
+
+
+دستیار | پیام 34 | 11/15/2026, 11:47:00 AM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_file","args":{"repository_full_name":"artaville/KCEX-Enhancer","path":"image.png","encoding":"base64"}}
+
+
+دستیار | پیام 35 | 11/15/2026, 11:47:23 AM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_file","args":{"repository_full_name":"artaville/KCEX-Enhancer","path":"image.png","encoding":"base64"}}
+
+
+دستیار | پیام 36 | 11/15/2026, 11:47:27 AM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_file","args":{"repository_full_name":"artaville/KCEX-Enhancer","path":"image.png","encoding":"base64"}}
+
+
+دستیار | پیام 37 | 11/15/2026, 11:47:44 AM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_file","args":{"repository_full_name":"artaville/KCEX-Enhancer","path":"\u0628\u06cc\u062a23.txt","encoding":"utf-8"}}
+
+
+دستیار | پیام 38 | 11/15/2026, 11:49:34 AM
+------------------------------------------------------------
+
+Worked for 3m
+
+
+کاربر | پیام 39 | 11/15/2026, 11:49:34 AM
+------------------------------------------------------------
+
+[https://chatgpt.com/share/6af96aae-9a08-83ed-bd29-eb85afc611c3](https://chatgpt.com/share/6af96aae-9a08-83ed-bd29-eb85afc611c3)
+[https://chatgpt.com/share/6af96ac4-fe48-83ed-b220-061c747f6d48](https://chatgpt.com/share/6af96ac4-fe48-83ed-b220-061c747f6d48)
+[https://chatgpt.com/share/6af96ad2-b2c8-83ed-a48f-491e78702825](https://chatgpt.com/share/6af96ad2-b2c8-83ed-a48f-491e78702825)
+[https://chatgpt.com/share/6af96ae4-59cc-83eb-8991-79a214a79a65](https://chatgpt.com/share/6af96ae4-59cc-83eb-8991-79a214a79a65)
+[https://chatgpt.com/share/6af96af0-9874-83eb-bc97-026c2efa81b2](https://chatgpt.com/share/6af96af0-9874-83eb-bc97-026c2efa81b2)
+
+این 5 تا اتاق قبلی که حرف زدیم با هم و این اتاقی هم ک توش هستم رو داری. همه رو بخون دوباره ببین چه کردیم و باید چی کار بکنیم
+
+
+دستیار | پیام 40 | 11/15/2026, 11:50:12 AM
+------------------------------------------------------------
+
+گزارش ۲۳ را از مخزن خواندم و تصویرت هم عنوان شش اتاق را نشان می‌دهد: بدون شماره و شماره‌های ۱ تا ۵. لینک‌های Share از مسیر مرور وب با خطای دسترسی روبه‌رو شدند؛ یک مسیر جایگزین برای واکشی خود صفحات را هم امتحان می‌کنم. نکته‌ی مهم گزارش ۲۳ این است که دیتافید و متدهای تاریخچه‌ی کندل در دسترس‌اند، ولی هنوز رفتار واقعی دریافت تاریخچه و WebSocket به‌طور کامل اندازه‌گیری نشده است.
+
+
+دستیار | پیام 41 | 11/15/2026, 11:50:56 AM
+------------------------------------------------------------
+
+Worked for 1m 21s
+
+
+کاربر | پیام 42 | 11/15/2026, 11:50:56 AM
+------------------------------------------------------------
+
+لینک ها مربوط به خود چت جی پی تی هستند! سایت خودت را بخوان! از گفتگویمان شیر کردم
+
+
+دستیار | پیام 43 | 11/15/2026, 11:51:19 AM
+------------------------------------------------------------
+
+bash -lc python - <<'PY'
+import requests
+u='https://chatgpt.com/share/6af96aae-9a08-83ed-bd29-eb85afc611c3'
+try:
+ r=requests.get(u,timeout=20,headers={'User-Agent':'Mozilla/5.0'})
+ print(r.status_code, r.url, len(r.text), r.headers.get('content-type'))
+ print(r.text[:1000])
+except Exception as e: print(type(e).__name__,e)
+PY
+
+
+دستیار | پیام 44 | 11/15/2026, 11:51:30 AM
+------------------------------------------------------------
+
+تلاش مستقیم روی هر پنج لینک از طریق خواندن صفحه با خطای محدودیت دسترسی دامنه‌ی `chatgpt.com` متوقف شد؛ دانلود مستقیم هم از این محیط ممکن نشد. یک جست‌وجوی جایگزین برای نسخه‌های ایندکس‌شده‌ی همین لینک‌ها انجام می‌دهم. اگر آن هم چیزی برنگرداند، راه مطمئن این است که متن خروجی Shareها یا Export گفتگوها را اینجا بیاوری؛ نمی‌خواهم وانمود کنم چت‌ها را خوانده‌ام.
+
+
+دستیار | پیام 45 | 11/15/2026, 11:52:17 AM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_file","args":{"repository_full_name":"artaville/KCEX-Enhancer","path":"\u0628\u06cc\u062a23.txt","encoding":"utf-8"}}
+
+
+دستیار | پیام 46 | 11/15/2026, 11:54:05 AM
+------------------------------------------------------------
+
+Worked for 3m 9s
+
+
+دستیار | پیام 47 | 11/15/2026, 11:54:05 AM
+------------------------------------------------------------
+
+الان تصویر را دیدم؛ حق با توست. این شش گفتگو یک پروژه‌ی پیوسته هستند:
+
+1. Bitunix ــ برنامه ساخت افزونه
+2. Bitunix (1)
+3. Bitunix (2)
+4. Bitunix (3)
+5. Bitunix (4)
+6. Bitunix (5) ــ همین اتاق
+
+هر پنج لینک Share را هم مستقیماً امتحان کردم؛ اما دسترسی ابزار خواندن صفحات به دامنه‌های ChatGPT مسدود است. لینک‌ها درست‌اند و مشکل از اشتراک‌گذاری تو نیست. حتی مسیر جایگزین دانلود را هم امتحان کردم. بنابراین نمی‌توانم صادقانه ادعا کنم متن کامل آن پنج گفتگو را خوانده‌ام. تصویر فقط عنوان اتاق‌ها را تأیید می‌کند، نه محتوای آن‌ها.
+
+اما **گزارش بیت ۲۳ را از GitHub دریافت کردم و بررسی کردم.** چند نتیجه‌ی مهم دارد.
+
+## ۱. نتیجه واقعی گزارش ۲۳
+
+<badge color="success">اسکن با موفقیت انجام شده</badge>
+
+| بخش | نتیجه |
+|---|---|
+| شناسایی TradingView | موفق |
+| دسترسی به Datafeed | موفق |
+| تابع دریافت تاریخچه `getBars` | موجود |
+| دریافت زنده `subscribeBars` | موجود |
+| تبدیل نماد `resolveSymbol` | موجود |
+| دریافت Quote | موجود |
+| شناسایی ساختار Position Service | موفق |
+| شناسایی APIهای معاملاتی | موفق |
+| شناسایی تایم‌فریم ثانیه‌ای در نوار اصلی | هنوز تأیید نشده |
+| دریافت یک ساعت تاریخچه | هنوز آزمایش نشده |
+| شناسایی WebSocket از Resourceها | صفر مورد؛ به معنی نبود WebSocket نیست |
+| شناسایی تایمر موجود | موردی پیدا نشده |
+| خطای اجرای اسکن | صفر |
+
+### کشف مهم اول: محل واقعی TradingView
+
+در گزارش‌های قبلی محل چارت `iframe[2]` بود؛ اما در گزارش ۲۳، `TradingViewApi` داخل `iframe[0]` پیدا شده است.
+
+پس در افزونه نباید شماره iframe را ثابت کنیم. باید خود فریم دارای TradingView را هنگام اجرا شناسایی کنیم.
+
+### کشف مهم دوم: مسیر دیتافید
+
+این توابع در اختیارمان هستند:
+
+```javascript
+onReady
+searchSymbols
+getServerTime
+getQuotes
+subscribeQuotes
+unsubscribeQuotes
+resolveSymbol
+getBars
+subscribeBars
+unsubscribeBars
+```
+
+این یعنی لازم نیست دیتافید را از صفر حدس بزنیم. می‌توانیم مسیر موجود را بررسی کنیم و بفهمیم چطور داده‌های بازار را وارد چارت می‌کند.
+
+اما هنوز نمی‌دانیم `getBars` دقیقاً چه بازه‌ای از تاریخچه را برمی‌گرداند و آیا منبع داده، کندل یک‌ثانیه‌ای یا معاملات خام را پشتیبانی می‌کند.
+
+### کشف مهم سوم: شورتکات‌ها
+
+در صفحه اصلی ۱۲ Listener برای `keydown` پیدا شده، ولی هیچ‌کدام در سورس قابل مشاهده، تداخل مشخصی با Ctrl + Right یا Ctrl + Left نشان نداده‌اند.
+
+برای اطمینان باید Listenerهای داخل فریم چارت و رفتار کلیدها هنگام فوکوس روی ورودی‌ها را هم بررسی کنیم.
+
+---
+
+## ۲. فهرست کاری که باید تکمیل کنیم
+
+این فهرست را بر اساس اطلاعات موجود از گفت‌وگوهای پروژه، گزارش‌های قبلی و گزارش ۲۳ تنظیم کرده‌ام. مواردی را که از متن کامل اتاق‌های قبلی قابل تأیید نیستند، به‌عنوان تصمیم قطعی جا نمی‌زنم.
+
+<box border radius="lg" padding={3} gap={3}>
+  **بسته A ــ ساخت کندل‌های ثانیه‌ای**
+
+  <badge color="warning">نیازمند بررسی</badge>
+
+  بررسی پشتیبانی Resolution، نگاشت تایم‌فریم، ساخت OHLCV از معاملات واقعی، مرزبندی کندل‌ها، به‌روزرسانی کندل باز و عدم Repaint.
+
+  <divider color="subtle"/>
+  **بسته B ــ تاریخچه و معاملات گذشته**
+
+  <badge color="warning">نیازمند بررسی</badge>
+
+  بررسی REST و WebSocket، امکان دریافت یک ساعت گذشته، محدودیت تعداد معاملات، Pagination، ترتیب زمانی و اتصال تاریخچه به داده زنده.
+
+  <divider color="subtle"/>
+  **بسته C ــ اتصال به TradingView**
+
+  <badge color="success">ساختار اولیه پیدا شده</badge>
+
+  شناسایی پویا iframe، Datafeed، `getBars`، `subscribeBars` و نحوه تغییر Resolution بدون خراب‌کردن چارت اصلی.
+
+  <divider color="subtle"/>
+  **بسته D ــ اندیکاتورها و پنل‌ها**
+
+  <badge color="warning">نیازمند بررسی</badge>
+
+  دسترسی به Studyها، اسیلاتورها، Paneها و اطمینان از عملکرد اندیکاتورها روی کندل‌های ثانیه‌ای.
+
+  <divider color="subtle"/>
+  **بسته E ــ تایمر و Overlay**
+
+  <badge color="warning">نیازمند بررسی</badge>
+
+  تایمر شناور، شمارش معکوس، محل نمایش، امکان جابه‌جایی با موس، هماهنگی با کندل و تغییر رنگ در زمان باقی‌مانده.
+
+  <divider color="subtle"/>
+  **بسته F ــ کنترل‌ها و شورتکات‌ها**
+
+  <badge color="success">منطق Close/Reverse مشخص شده</badge>
+
+  `Ctrl + Right` برای Close کامل و `Ctrl + Left` برای Reverse کامل. بررسی تداخل و اجرای امن از افزونه.
+
+  <divider color="subtle"/>
+  **بسته G ــ زیرساخت افزونه**
+
+  <badge color="warning">نیازمند بررسی</badge>
+
+  ساختار Manifest، تزریق کد به Main World، ارتباط Content Script با فریم چارت، مدیریت Reload و تغییر نماد.
+</box>
+
+## ۳. چطور موازی جلو برویم؟
+
+به نظرم دیگر نباید برای هر مورد یک گزارش جدا بسازیم.
+
+| مرحله | کارهای موازی |
+|---|---|
+| اول | A + B + C: دیتافید، کندل و تاریخچه |
+| دوم | D + E: اندیکاتورها و تایمر |
+| سوم | F + G: شورتکات و زیرساخت افزونه |
+| آخر | تست یکپارچه، رفع خطا و ساخت ZIP |
+
+نکته مهم این است که بررسی A و B را به یک گزارش مشترک تبدیل کنیم؛ چون ساخت کندل ثانیه‌ای بدون شناخت تاریخچه و جریان معاملات ناقص خواهد بود.
+
+## ۴. برای اینکه فهرست هیچ‌چیزی را جا نیندازد
+
+راه مستقیم خواندن آن پنج Share در این محیط جواب نداد. برای استخراج کامل تصمیمات، باید متن گفتگوها از صفحه Share در قالب فایل متنی یا Export در اختیارم قرار بگیرد. نیازی نیست دوباره همه چیز را توضیح بدهی؛ خود متن‌ها کافی هستند.
+
+فعلاً گزارش ۲۳ را مبنا می‌گذاریم و دیگر لازم نیست همان بررسی‌های قبلی را تکرار کنیم. **قدم بعدی باید بررسی عمیق Datafeed و مسیر تاریخچه و معاملات باشد؛ نه یک اسکن عمومی دیگر.** <MemoryCite />
+
+
+کاربر | پیام 48 | 11/15/2026, 11:55:41 AM
+------------------------------------------------------------
+
+یک سوال. از دیروز که این پروژه رو شروع کردیم و تا الان 5 تا اتاق حرف زدیم و فایل برات فرستادم یادت نیست؟ چیا مونده چیا نمونده؟
+
+
+دستیار | پیام 49 | 11/15/2026, 11:56:45 AM
+------------------------------------------------------------
+
+Worked for 1m 4s
+
+
+دستیار | پیام 50 | 11/15/2026, 11:56:45 AM
+------------------------------------------------------------
+
+بله، بخش مهمی از پروژه را یادم هست و خلاصه‌ی فنی گفتگوهای قبلی هم در اختیارم هست؛ اما متن کامل هر پنج اتاق را به‌صورت خط‌به‌خط ندارم. این دو موضوع با هم فرق دارند.
+
+اشتباه من در پاسخ قبلی این بود که به‌جای بازسازی دقیق وضعیت پروژه، یک فهرست عمومی از قابلیت‌های احتمالی نوشتم. نباید آن را فهرست قطعی خواسته‌های تو معرفی می‌کردم.
+
+### چیزهایی که از پروژه واقعاً یادم هست
+
+**۱. هدف اصلی پروژه**
+
+ساخت افزونه اختصاصی Bitunix با تمرکز بر امکانات چارت و معاملات، به‌خصوص قابلیت‌های تایم‌فریم ثانیه‌ای و بررسی امکان استفاده از داده‌های معاملاتی برای ساخت کندل.
+
+**۲. موضوع تاریخچه معاملات**
+
+یکی از سؤال‌های اصلی تو این بود:
+
+- آیا می‌توانیم معاملات گذشته را دریافت کنیم؟
+- آیا امکان ساخت کندل‌های ثانیه‌ای از داده‌های قبلی وجود دارد؟
+- آیا می‌توانیم مثلاً یک ساعت گذشته را نمایش دهیم؟
+- داده زنده و تاریخچه چطور به هم متصل می‌شوند؟
+
+این بخش هنوز کامل نشده است.
+
+**۳. شناسایی ساختار داخلی چارت**
+
+در گزارش‌های قبلی مشخص کردیم که چارت مبتنی بر TradingView است، به فریم داخلی دسترسی داریم و ساختارهای مهمی از جمله Datafeed و متدهای `getBars` و `subscribeBars` قابل شناسایی هستند.
+
+گزارش ۲۳ هم این دسترسی‌ها را دوباره تأیید کرد.
+
+**۴. Close و Reverse**
+
+این قسمت از مرحله شناسایی API عبور کرده است:
+
+- یک پوزیشن باز در هر لحظه.
+- Close کامل پوزیشن.
+- Reverse کامل پوزیشن.
+- استفاده از شناسه واقعی `position.id`.
+- `Ctrl + Right` برای CLOSE.
+- `Ctrl + Left` برای REVERSE.
+- بدون دکمه معاملاتی داخل پاپ‌آپ.
+
+مسیرهای API پیدا شده‌اند؛ اما پیاده‌سازی و آزمایش واقعی شورتکات‌ها در افزونه باقی مانده است.
+
+### وضعیت فعلی
+
+| موضوع | وضعیت |
+|---|---|
+| شناسایی ساختار چارت و TradingView | <badge color="success">انجام شده</badge> |
+| کشف APIهای Position | <badge color="success">انجام شده</badge> |
+| کشف مسیر Close و Reverse | <badge color="success">انجام شده</badge> |
+| تعیین شورتکات‌ها | <badge color="success">قطعی شده</badge> |
+| پیاده‌سازی شورتکات‌ها در افزونه | <badge color="warning">باقی مانده</badge> |
+| شناسایی Datafeed | <badge color="success">انجام شده</badge> |
+| ساخت کندل‌های ثانیه‌ای | <badge color="warning">باقی مانده</badge> |
+| دریافت یک ساعت تاریخچه معاملات | <badge color="warning">بررسی نشده</badge> |
+| اتصال تاریخچه به معاملات زنده | <badge color="warning">بررسی نشده</badge> |
+| تست نهایی و ساخت ZIP | <badge color="warning">باقی مانده</badge> |
+
+### چیزی که نمی‌خواهم اشتباه انجام بدهم
+
+نمی‌خواهم مواردی مثل تایمر شناور، پنل اندیکاتورها یا Overlay را بدون اطمینان وارد فهرست اصلی کنم و بعد وقتت را برای قابلیت‌هایی بگذاریم که شاید اصلاً جزو درخواست اولیه نبوده‌اند.
+
+پس پاسخ صادقانه این است: **اهداف و یافته‌های فنی اصلی را یادم هست، اما تمام جزئیات و تصمیمات پنج اتاق را نه.** بهتر است از اینجا به بعد، گزارش‌ها و تصمیمات را در یک چک‌لیست مرکزی نگه داریم تا با عوض‌شدن اتاق چیزی گم نشود.
+
+و مهم‌تر از همه، دیگر Close و Reverse را از صفر بررسی نمی‌کنیم. `<MemoryCite />`
+
+
+کاربر | پیام 51 | 11/15/2026, 11:58:31 AM
+------------------------------------------------------------
+
+ببین الان قبل از هر چیزی نیاز دارم که بری دوباره تمامی متن های اتاق ها رو از اول بخونی. چندتا هم لینک دادم بهت. ی راهی پیدا کن بخون. یا ی مدلی بگو بهم انجام بدم که بتونی بخونی. توی نت جستجو بکن چطوری اون 5 تا لینکو بخونی
+
+
+دستیار | پیام 52 | 11/15/2026, 11:58:37 AM
+------------------------------------------------------------
+
+این بار دو مسیر را هم‌زمان بررسی می‌کنم: اول خود پنج لینک Share را با ابزار وب باز می‌کنم؛ دوم راه رسمی و مطمئن انتقال متن گفتگوهای Shareشده یا Export چت‌ها را از مستندات جدید ChatGPT پیدا می‌کنم. هدف این است که متن کامل اتاق‌ها را به شکلی به دست بیاوریم که بتوانم همه را از ابتدا بخوانم، نه اینکه به خلاصه‌ها اکتفا کنم.
+
+
+دستیار | پیام 53 | 11/15/2026, 11:59:20 AM
+------------------------------------------------------------
+
+Worked for 48s
+
+
+کاربر | پیام 54 | 11/15/2026, 11:59:20 AM
+------------------------------------------------------------
+
+متن های اتاق ها سوال و جواب هست. هم حرف های من هست و هم حرف های تو
+
+
+دستیار | پیام 55 | 11/15/2026, 12:00:40 PM
+------------------------------------------------------------
+
+Worked for 1m 20s
+
+
+دستیار | پیام 56 | 11/15/2026, 12:00:40 PM
+------------------------------------------------------------
+
+بله، دقیقاً متوجه‌ام. چیزی که لازم دارم **متن کامل مکالمه‌هاست؛ هم تمام پیام‌های تو و هم تمام پاسخ‌های من، به‌ترتیب زمانی**. صرفاً گزارش‌ها یا خلاصه‌ی موضوعات کافی نیست.
+
+من هر پنج لینک را جداگانه امتحان کردم. هر پنج مورد با خطای `DisabledError` مواجه شدند. یعنی ابزار مرور من اجازه دریافت محتوای صفحات `chatgpt.com` را نمی‌دهد؛ نه اینکه لینک‌هایی که فرستادی خراب باشند.
+
+اما دو راه عملی داریم:
+
+## راه اول: سریع‌تر و بدون نیاز به Export
+
+این روش را پیشنهاد می‌کنم:
+
+۱. یکی از پنج لینک Share را در Chrome خودت باز کن.
+
+۲. مطمئن شو مکالمه از اولین پیام تا آخرین پاسخ نمایش داده می‌شود.
+
+۳. کلیدهای `Ctrl + P` را بزن.
+
+۴. در قسمت Destination گزینه‌ی **Save as PDF** را انتخاب کن.
+
+۵. PDF را ذخیره کن و همین‌جا برایم بفرست.
+
+همین کار را برای پنج اتاق انجام بده. لازم نیست متن‌ها را دستی کپی کنی.
+
+## راه دوم: Export کامل حساب ChatGPT
+
+طبق راهنمای رسمی OpenAI:
+
+۱. وارد Settings شو.
+
+۲. به Data Controls برو.
+
+۳. گزینه Export Data را انتخاب کن.
+
+۴. روی Confirm export بزن.
+
+۵. فایل ZIP از طریق ایمیل برایت ارسال می‌شود. <Cite refs={["turn297253search1","turn321590search0"]}/>
+
+داخل ZIP فایل‌های گفتگو با فرمت JSON وجود دارند. فایل `shared_conversations.json` فقط اطلاعات شناسایی لینک‌های اشتراکی را دارد و متن کامل گفتگوها نیست. <Cite refs={["turn297253search0","turn321590search0"]}/>
+
+می‌توانی فایل JSON گفتگوها را اینجا بفرستی تا فقط همان پنج اتاق را جدا کنم و پیام‌های هر دو طرف را به ترتیب بخوانم.
+
+**پیشنهاد من راه اول است.** چون فقط پنج گفتگوی مشخص داریم، لازم نیست کل تاریخچه خصوصی حسابت را ارسال کنی.
+
+وقتی متن‌ها را دریافت کنم، هر شش اتاق را به ترتیب بررسی می‌کنم و یک سند مرکزی از تمام خواسته‌ها، تصمیم‌ها، آزمایش‌های انجام‌شده، گزارش‌ها، موارد حل‌شده و کارهای باقی‌مانده می‌سازم. بعد از آن دیگر لازم نیست برای ادامه پروژه به حافظه ناقص اتاق‌های قبلی تکیه کنیم.

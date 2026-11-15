@@ -1,0 +1,2952 @@
+﻿BITUNIX CONVERSATION EXPORT
+Conversation ID: 6af8a75c-dea8-83eb-87a5-b198559c88e4
+Conversation URL: https://chatgpt.com/c/6af8a75c-dea8-83eb-87a5-b198559c88e4
+Conversation Title: برنامه ساخت افزونه Bitunix (2)
+Export Date: 2026-11-15T10:31:27.258Z
+API Type: current
+Pages: 1
+Raw Messages: 308
+User Messages: 17
+Assistant Messages: 98
+Extracted Text Messages: 115
+History Complete: YES
+======================================================================
+
+
+دستیار | پیام 1 | 11/14/2026, 9:52:39 PM
+------------------------------------------------------------
+
+الان دقیقاً متوجه منظورت شدم. نتیجهٔ بررسی این است که **برای چارت یک‌ساعتهٔ گذشته را می‌توانیم دریافت کنیم؛ اما برای ساخت کندل‌های ثانیه‌ای از معاملات واقعیِ یک ساعت قبل، هنوز مدرک کافی نداریم.**
+
+این دو موضوع را جدا کنیم:
+
+### ۱. خود چارت Bitunix چقدر تاریخچه دریافت می‌کند؟
+
+در گزارش ۹، درخواست واقعی چارت XAUTUSDT را دیدیم:
+
+- تایم‌فریم یک‌دقیقه: `limit=329` و پاسخ شامل ۳۲۹ کندل بود؛ یعنی حدود **۵ ساعت و ۲۹ دقیقه تاریخچه**.
+- تایم‌فریم ۱۵ دقیقه: باز هم ۳۲۹ کندل دریافت شده بود؛ یعنی حدود **۸۲ ساعت و ۱۵ دقیقه تاریخچه**.
+
+بنابراین برای دیدن یک ساعت قبل روی چارت یک‌دقیقه‌ای مشکلی نداریم. اما این‌ها کندل‌های یک‌دقیقه‌ای هستند، نه معاملات تکی یا اطلاعات ثانیه‌ای.
+
+### ۲. پنل معاملات اخیر (Recent Trades) چقدر به گذشته دسترسی دارد؟
+
+اینجا هنوز جواب قطعی نداریم.
+
+در گزارش ۹، هنگام بررسی صفحه، ۲۵۹۹ فریم باینری روی مسیر `/ws-tide-batch/` ثبت شد؛ اما محتوای آن‌ها رمزگشایی نشد. بنابراین هنوز نمی‌دانیم این پیام‌ها فقط معاملات جدید را منتقل می‌کنند یا هنگام اتصال، مجموعه‌ای از معاملات قبلی را هم می‌فرستند.
+
+مستندات رسمی Bitunix برای کانال عمومی معاملات، قیمت، حجم، سمت خرید یا فروش و زمان هر معامله را توضیح می‌دهد؛ اما برای این کانال، ارسال تاریخچهٔ یک ساعت گذشته را تضمین نکرده است. <Cite refs={["turn399767view0"]}/>
+
+یک API با نام `Get History Trades` هم وجود دارد، اما نیازمند احراز هویت API است و برای تاریخچهٔ معاملات حساب و سفارش‌های خود کاربر است؛ نه آرشیو عمومی تمام معاملات بازار. <Cite refs={["turn399767view3"]}/>
+
+### ۳. آیا می‌توانیم یک ساعت قبل را به کندل‌های ثانیه‌ای تبدیل کنیم؟
+
+<badge color="success">تأییدشده</badge> دریافت یک ساعت گذشته به شکل کندل‌های یک‌دقیقه‌ای امکان‌پذیر است.
+
+<badge color="warning">هنوز تأییدنشده</badge> دریافت معاملات واقعی یک ساعت گذشته و ساخت کندل‌های ۱، ۵، ۱۰، ۲۰، ۳۰ و ۴۵ ثانیه‌ای از آن‌ها.
+
+علت این است که کندل یک‌دقیقه‌ای فقط قیمت بازشدن، بالاترین، پایین‌ترین و بسته‌شدن آن دقیقه را دارد. از روی این چهار مقدار نمی‌توان ترتیب واقعی معاملات داخل آن دقیقه را بازسازی کرد.
+
+### قدم بعدی که باید انجام بدهیم
+
+باید همان کانال باینری `/ws-tide-batch/` را رمزگشایی کنیم و زمان معاملات داخل پیام‌هایش را بررسی کنیم. به‌خصوص باید بفهمیم هنگام اتصال اولیه، چه بازه‌ای از معاملات را ارسال می‌کند.
+
+برای مثال اگر هنگام اتصال در ساعت ۱۲:۰۰، سرور معاملات XAUTUSDT را از ساعت ۱۱:۰۰ هم در پیام اولیه بفرستد، دقیقاً همان چیزی است که برای ساخت یک ساعت تاریخچهٔ واقعی لازم داریم.
+
+**پس فعلاً نمی‌خواهم به تو قول بدهم که یک ساعت گذشته را از جدول معاملات می‌گیریم؛ اما مسیر فنی بررسی آن مشخص است.** مهم‌ترین کار بعدی رمزگشایی همان پیام‌های باینری است، نه ساخت کندل از داده‌های یک‌دقیقه‌ای.
+
+
+کاربر | پیام 2 | 11/14/2026, 9:54:59 PM
+------------------------------------------------------------
+
+### **۲. پنل معاملات اخیر (Recent Trades) چقدر به گذشته دسترسی دارد؟**
+
+اینجا هنوز جواب قطعی نداریم.
+
+
+
+اره منم میخوام تکلیف اینجا معلوم بشه. اقدام کن به رمزگشایی. کد میدی یا افزونه؟ کاراری دیگه باید چی انجام بدیم تو این تست؟
+
+
+دستیار | پیام 3 | 11/14/2026, 9:55:04 PM
+------------------------------------------------------------
+
+برای این تست، **افزونهٔ تشخیصی بهتر از کد Console است**؛ چون اتصال WebSocket باید از لحظهٔ بارگذاری صفحه زیر نظر گرفته شود و پیام‌های باینری هم باید قبل از بسته‌شدن یا تغییر صفحه ذخیره شوند.
+
+پیشنهادم این است که یک نسخهٔ دوم از Network Inspector بسازیم؛ فقط برای رمزگشایی کانال معاملات Bitunix، نه برای معامله‌کردن. این افزونه باید دادهٔ خام پیام‌ها را ذخیره کند تا بتوانیم ساختارشان را بررسی کنیم. گزارش قبلی فقط اندازهٔ فریم‌ها را ثبت کرده بود، نه محتوای واقعی آن‌ها؛ بنابراین با گزارش ۹ به‌تنهایی نمی‌شود معاملات را رمزگشایی کرد.
+
+
+دستیار | پیام 4 | 11/14/2026, 9:55:09 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_blob","args":{"repository_full_name":"artaville/KCEX-Enhancer","blob_sha":"99b6390602aa82c9e95b2922484da4e1f61c4cfd"}}
+
+
+کاربر | پیام 5 | 11/14/2026, 9:55:22 PM
+------------------------------------------------------------
+
+### **۲. پنل معاملات اخیر (Recent Trades) چقدر به گذشته دسترسی دارد؟**
+
+اینجا هنوز جواب قطعی نداریم.
+
+
+
+اره منم میخوام تکلیف اینجا معلوم بشه. اقدام کن به رمزگشایی. کد میدی یا افزونه؟ کاراری دیگه باید چی انجام بدیم تو این تست؟
+
+
+دستیار | پیام 6 | 11/14/2026, 9:56:38 PM
+------------------------------------------------------------
+
+گزارش ۹ را دوباره مبنا قرار دادم: کانال هدف همان `/ws-tide-batch/` است و پارامتر `transfer=pb` احتمال استفاده از قالب باینری Protobuf را مطرح می‌کند؛ ولی هنوز نمی‌دانیم قبل از Protobuf فشرده‌سازی دیگری هم انجام می‌شود یا نه. افزونهٔ جدید هم فریم‌های ورودی و هم پیام‌های اشتراک ارسالی به همین کانال را می‌گیرد؛ کانال حساب کاربری `/ws-user/` را عمداً ضبط نمی‌کند.
+
+
+دستیار | پیام 7 | 11/14/2026, 9:56:42 PM
+------------------------------------------------------------
+
+bash -lc mkdir -p /mnt/data/Bitunix-WS-Decoder-v2/src/main /mnt/data/Bitunix-WS-Decoder-v2/src/content /mnt/data/Bitunix-WS-Decoder-v2/decoder
+
+
+دستیار | پیام 8 | 11/14/2026, 9:57:27 PM
+------------------------------------------------------------
+
+bash -lc cat > /mnt/data/Bitunix-WS-Decoder-v2/manifest.json <<'EOF'
+{
+  "manifest_version": 3,
+  "name": "Bitunix WS Decoder v2",
+  "version": "2.0.0",
+  "description": "Local diagnostic capture of Bitunix market WebSocket binary frames for protocol analysis.",
+  "permissions": [],
+  "host_permissions": ["https://www.bitunix.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.bitunix.com/*"],
+      "js": ["src/main/ws-hook.js"],
+      "run_at": "document_start",
+      "world": "MAIN"
+    },
+    {
+      "matches": ["https://www.bitunix.com/*"],
+      "js": ["src/content/panel.js"],
+      "run_at": "document_start",
+      "world": "ISOLATED"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["decoder/decoder.html", "decoder/decoder.js"],
+      "matches": ["https://www.bitunix.com/*"]
+    }
+  ]
+}
+EOF
+cat > /mnt/data/Bitunix-WS-Decoder-v2/src/main/ws-hook.js <<'EOF'
+(() => {
+  'use strict';
+  const KEY = '__BITUNIX_WS_DECODER_V2__';
+  if (window[KEY]?.installed) return;
+
+  const NativeWebSocket = window.WebSocket;
+  if (!NativeWebSocket) return;
+
+  let socketCounter = 0;
+  let frameCounter = 0;
+  const TARGET_PATH = '/ws-tide-batch/';
+  const MAX_FRAME_BYTES = 2 * 1024 * 1024;
+
+  function safeUrl(input) {
+    try {
+      const u = new URL(String(input), location.href);
+      // Keep only protocol host and path. Query parameters contain user/trace IDs.
+      return `${u.protocol}//${u.host}${u.pathname}`;
+    } catch (_) {
+      return 'wss://[unparsed]/';
+    }
+  }
+
+  function sanitizeOutgoingText(text) {
+    if (typeof text !== 'string') return text;
+    try {
+      const obj = JSON.parse(text);
+      const sensitive = /token|sign|secret|userid|user_id|uid|apikey|api_key|traceid|trace_id|session|auth/i;
+      const walk = (value) => {
+        if (Array.isArray(value)) return value.map(walk);
+        if (value && typeof value === 'object') {
+          const out = {};
+          for (const [k, v] of Object.entries(value)) out[k] = sensitive.test(k) ? '[REDACTED]' : walk(v);
+          return out;
+        }
+        return value;
+      };
+      return JSON.stringify(walk(obj));
+    } catch (_) {
+      return text.length > 2000 ? text.slice(0, 2000) + '…[truncated]' : text;
+    }
+  }
+
+  function bytesToBase64(bytes) {
+    let binary = '';
+    const step = 0x8000;
+    for (let i = 0; i < bytes.length; i += step) {
+      binary += String.fromCharCode(...bytes.subarray(i, Math.min(i + step, bytes.length)));
+    }
+    return btoa(binary);
+  }
+
+  function postFrame(meta, direction, payload, dataType) {
+    const sequence = ++frameCounter;
+    const base = {
+      source: 'BITUNIX_WS_DECODER_V2',
+      type: 'FRAME',
+      sequence,
+      socketId: meta.socketId,
+      url: meta.url,
+      direction,
+      receivedAt: Date.now(),
+      performanceMs: Math.round(performance.now() * 10) / 10,
+      dataType
+    };
+
+    if (typeof payload === 'string') {
+      const text = direction === 'out' ? sanitizeOutgoingText(payload) : payload;
+      const clipped = text.length > 200000 ? text.slice(0, 200000) + '…[truncated]' : text;
+      window.postMessage({ ...base, encoding: 'text', text: clipped, byteLength: new TextEncoder().encode(clipped).byteLength }, '*');
+      return;
+    }
+
+    const bytes = payload instanceof Uint8Array ? payload : new Uint8Array(payload);
+    if (bytes.byteLength > MAX_FRAME_BYTES) {
+      window.postMessage({ ...base, encoding: 'skipped', byteLength: bytes.byteLength, reason: 'frame_over_2MiB' }, '*');
+      return;
+    }
+    window.postMessage({ ...base, encoding: 'base64', byteLength: bytes.byteLength, base64: bytesToBase64(bytes) }, '*');
+  }
+
+  async function captureIncoming(meta, data) {
+    try {
+      if (typeof data === 'string') {
+        postFrame(meta, 'in', data, 'string');
+      } else if (data instanceof ArrayBuffer) {
+        postFrame(meta, 'in', new Uint8Array(data), 'ArrayBuffer');
+      } else if (ArrayBuffer.isView(data)) {
+        postFrame(meta, 'in', new Uint8Array(data.buffer, data.byteOffset, data.byteLength), data.constructor?.name || 'ArrayBufferView');
+      } else if (data instanceof Blob) {
+        const buffer = await data.arrayBuffer();
+        postFrame(meta, 'in', new Uint8Array(buffer), 'Blob');
+      } else {
+        window.postMessage({
+          source: 'BITUNIX_WS_DECODER_V2', type: 'FRAME', sequence: ++frameCounter,
+          socketId: meta.socketId, url: meta.url, direction: 'in', receivedAt: Date.now(),
+          performanceMs: Math.round(performance.now() * 10) / 10,
+          encoding: 'unsupported', dataType: typeof data, byteLength: 0
+        }, '*');
+      }
+    } catch (error) {
+      window.postMessage({ source: 'BITUNIX_WS_DECODER_V2', type: 'ERROR', message: String(error?.message || error) }, '*');
+    }
+  }
+
+  function attachSocket(ws, inputUrl) {
+    const rawUrl = String(inputUrl || '');
+    const isTarget = rawUrl.includes(TARGET_PATH);
+    const socketId = ++socketCounter;
+    const meta = { socketId, url: safeUrl(rawUrl) };
+
+    window.postMessage({
+      source: 'BITUNIX_WS_DECODER_V2', type: 'SOCKET', socketId,
+      url: meta.url, target: isTarget, readyState: ws.readyState, createdAt: Date.now()
+    }, '*');
+
+    // Only record the market batch socket. User/private websocket payloads are deliberately excluded.
+    if (!isTarget) return;
+
+    try {
+      NativeWebSocket.prototype.addEventListener.call(ws, 'message', (event) => {
+        captureIncoming(meta, event.data);
+      });
+      const originalSend = ws.send;
+      if (typeof originalSend === 'function') {
+        Object.defineProperty(ws, 'send', {
+          configurable: true,
+          writable: true,
+          value: function(data) {
+            try {
+              if (typeof data === 'string') postFrame(meta, 'out', data, 'string');
+              else if (data instanceof ArrayBuffer) postFrame(meta, 'out', new Uint8Array(data), 'ArrayBuffer');
+              else if (ArrayBuffer.isView(data)) postFrame(meta, 'out', new Uint8Array(data.buffer, data.byteOffset, data.byteLength), data.constructor?.name || 'ArrayBufferView');
+              else if (data instanceof Blob) data.arrayBuffer().then(buf => postFrame(meta, 'out', new Uint8Array(buf), 'Blob')).catch(() => {});
+            } catch (_) {}
+            return originalSend.call(this, data);
+          }
+        });
+      }
+    } catch (error) {
+      window.postMessage({ source: 'BITUNIX_WS_DECODER_V2', type: 'ERROR', message: `hook:${String(error?.message || error)}` }, '*');
+    }
+  }
+
+  class BitunixCapturedWebSocket extends NativeWebSocket {
+    constructor(url, protocols) {
+      super(url, protocols);
+      attachSocket(this, url);
+    }
+  }
+  Object.setPrototypeOf(BitunixCapturedWebSocket, NativeWebSocket);
+  try {
+    Object.defineProperty(BitunixCapturedWebSocket, 'CONNECTING', { value: NativeWebSocket.CONNECTING });
+    Object.defineProperty(BitunixCapturedWebSocket, 'OPEN', { value: NativeWebSocket.OPEN });
+    Object.defineProperty(BitunixCapturedWebSocket, 'CLOSING', { value: NativeWebSocket.CLOSING });
+    Object.defineProperty(BitunixCapturedWebSocket, 'CLOSED', { value: NativeWebSocket.CLOSED });
+  } catch (_) {}
+
+  window.WebSocket = BitunixCapturedWebSocket;
+  window[KEY] = { installed: true, version: '2.0.0', startedAt: Date.now(), targetPath: TARGET_PATH };
+  window.postMessage({ source: 'BITUNIX_WS_DECODER_V2', type: 'READY', version: '2.0.0' }, '*');
+})();
+EOF
+
+
+دستیار | پیام 9 | 11/14/2026, 9:58:52 PM
+------------------------------------------------------------
+
+bash -lc cat > /mnt/data/Bitunix-WS-Decoder-v2/src/content/panel.js <<'EOF'
+(() => {
+  'use strict';
+  const SOURCE = 'BITUNIX_WS_DECODER_V2';
+  if (window.__bitunixWsDecoderPanelV2) return;
+  window.__bitunixWsDecoderPanelV2 = true;
+
+  const state = {
+    recording: true,
+    frames: [],
+    sockets: [],
+    totalBytes: 0,
+    dropped: 0,
+    startedAt: Date.now(),
+    lastFrameAt: null,
+    lastError: ''
+  };
+  const MAX_FRAMES = 12000;
+  const MAX_ESTIMATED_BYTES = 8 * 1024 * 1024;
+  let estimatedBytes = 0;
+  let ui;
+
+  function fmtBytes(n) {
+    if (n < 1024) return `${n} B`;
+    if (n < 1024 * 1024) return `${(n / 1024).toFixed(1)} KB`;
+    return `${(n / 1024 / 1024).toFixed(2)} MB`;
+  }
+  function fmtTime(ts) {
+    if (!ts) return '—';
+    try { return new Date(ts).toLocaleTimeString(); } catch (_) { return String(ts); }
+  }
+  function esc(s) {
+    return String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  }
+
+  function makeSummary() {
+    const inbound = state.frames.filter(f => f.direction === 'in');
+    const binary = state.frames.filter(f => f.encoding === 'base64');
+    const text = state.frames.filter(f => f.encoding === 'text');
+    const bySocket = {};
+    for (const f of state.frames) {
+      const k = String(f.socketId);
+      bySocket[k] ||= { frames: 0, inbound: 0, outbound: 0, bytes: 0, firstAt: f.receivedAt, lastAt: f.receivedAt };
+      const x = bySocket[k];
+      x.frames++; x.bytes += Number(f.byteLength || 0);
+      if (f.direction === 'in') x.inbound++; else x.outbound++;
+      x.firstAt = Math.min(x.firstAt, f.receivedAt); x.lastAt = Math.max(x.lastAt, f.receivedAt);
+    }
+    return {
+      tool: 'BITUNIX_WS_DECODER_V2', version: '2.0.0',
+      page: location.origin + location.pathname,
+      exportedAt: new Date().toISOString(),
+      captureStartedAt: new Date(state.startedAt).toISOString(),
+      captureEndedAt: new Date().toISOString(),
+      recording: state.recording,
+      socketConnections: state.sockets,
+      counts: {
+        targetedSockets: state.sockets.filter(s => s.target).length,
+        capturedFrames: state.frames.length,
+        inboundFrames: inbound.length,
+        binaryFrames: binary.length,
+        textFrames: text.length,
+        totalPayloadBytes: state.totalBytes,
+        droppedFrames: state.dropped,
+        perSocket: bySocket
+      },
+      firstFrameAt: state.frames.length ? new Date(Math.min(...state.frames.map(f => f.receivedAt))).toISOString() : null,
+      lastFrameAt: state.lastFrameAt ? new Date(state.lastFrameAt).toISOString() : null,
+      errors: state.lastError ? [state.lastError] : []
+    };
+  }
+
+  function render() {
+    if (!ui) return;
+    const inbound = state.frames.filter(f => f.direction === 'in').length;
+    const binary = state.frames.filter(f => f.encoding === 'base64').length;
+    const targeted = state.sockets.filter(s => s.target).length;
+    const elapsed = Math.max(0, Math.floor((Date.now() - state.startedAt) / 1000));
+    ui.status.textContent = state.recording ? 'در حال ضبط' : 'متوقف';
+    ui.status.className = state.recording ? 'status on' : 'status off';
+    ui.stats.innerHTML = `
+      <div><b>${targeted}</b><small>اتصال هدف</small></div>
+      <div><b>${state.frames.length}</b><small>کل فریم‌ها</small></div>
+      <div><b>${binary}</b><small>فریم باینری</small></div>
+      <div><b>${fmtBytes(state.totalBytes)}</b><small>حجم داده</small></div>
+      <div><b>${inbound}</b><small>پیام ورودی</small></div>
+      <div><b>${elapsed}s</b><small>مدت ضبط</small></div>`;
+    ui.last.textContent = state.frames.length
+      ? `آخرین پیام: ${fmtTime(state.lastFrameAt)} | ${state.frames[state.frames.length - 1].dataType || state.frames[state.frames.length - 1].encoding}`
+      : 'هنوز پیامی از کانال هدف ثبت نشده است.';
+    ui.warning.textContent = state.dropped
+      ? `توجه: ${state.dropped} فریم به دلیل محدودیت حافظه ثبت نشد.`
+      : (state.lastError || 'فقط /ws-tide-batch/ ضبط می‌شود؛ /ws-user/ و اطلاعات حساب ضبط نمی‌شوند.');
+    ui.pause.textContent = state.recording ? 'توقف ضبط' : 'ادامه ضبط';
+  }
+
+  function downloadReport() {
+    const report = {
+      ...makeSummary(),
+      frames: state.frames
+    };
+    const blob = new Blob([JSON.stringify(report)], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `bitunix-ws-raw-${new Date().toISOString().replace(/[:.]/g, '-')}.json`;
+    document.documentElement.appendChild(a);
+    a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 30000);
+  }
+
+  async function copySummary() {
+    const summary = JSON.stringify(makeSummary(), null, 2);
+    try {
+      await navigator.clipboard.writeText(summary);
+      ui.copy.textContent = 'کپی شد ✓';
+      setTimeout(() => ui.copy.textContent = 'کپی خلاصه', 1600);
+    } catch (_) {
+      const ta = document.createElement('textarea'); ta.value = summary;
+      document.body.appendChild(ta); ta.select();
+      try { document.execCommand('copy'); ui.copy.textContent = 'کپی شد ✓'; }
+      catch (_) { ui.copy.textContent = 'کپی ناموفق'; }
+      ta.remove(); setTimeout(() => ui.copy.textContent = 'کپی خلاصه', 1600);
+    }
+  }
+
+  function createPanel() {
+    if (!document.documentElement) return;
+    const host = document.createElement('div');
+    host.id = 'bitunix-ws-decoder-v2-host';
+    host.style.cssText = 'all:initial;position:fixed;z-index:2147483647;right:18px;bottom:18px;width:330px;max-width:calc(100vw - 24px);font-family:Tahoma,Arial,sans-serif;';
+    const shadow = host.attachShadow({ mode: 'open' });
+    shadow.innerHTML = `
+      <style>
+        *{box-sizing:border-box} .panel{color:#e8edf6;background:rgba(17,22,33,.96);border:1px solid rgba(139,160,190,.28);border-radius:15px;box-shadow:0 16px 50px #0009;backdrop-filter:blur(16px);padding:13px;direction:rtl}
+        .head{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:10px}.title{font-size:13px;font-weight:700;letter-spacing:.1px}.sub{font-size:10px;color:#8f9caf;margin-top:3px}.status{font-size:10px;padding:4px 8px;border-radius:20px}.on{color:#7de2b2;background:#16382e}.off{color:#ffcf7b;background:#44351c}
+        .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin:10px 0}.stats>div{background:#222b3b;border:1px solid #ffffff0c;border-radius:9px;padding:8px 5px;text-align:center}.stats b{display:block;font:700 15px Tahoma;color:#f5f7fb}.stats small{display:block;color:#9eabc0;font-size:9px;margin-top:4px}
+        .last,.warning{font-size:10px;line-height:1.7;color:#aebbd0;overflow-wrap:anywhere}.warning{color:#d1b987;margin-top:4px;min-height:30px}.buttons{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-top:10px}.buttons button{border:1px solid #ffffff1b;background:#293449;color:#edf3fc;border-radius:8px;padding:9px 5px;font:11px Tahoma;cursor:pointer}.buttons button.primary{background:#b8d6ff;color:#172438;border-color:#b8d6ff;font-weight:700}.buttons button:active{transform:scale(.98)}.foot{font-size:9px;color:#8190a7;margin-top:9px;line-height:1.6}
+      </style>
+      <div class="panel">
+        <div class="head"><div><div class="title">Bitunix WS Decoder v2</div><div class="sub">XAUTUSDT · ضبط فریم‌های بازار</div></div><span class="status on">در حال ضبط</span></div>
+        <div class="stats"></div>
+        <div class="last">در انتظار پیام…</div>
+        <div class="warning"></div>
+        <div class="buttons">
+          <button class="primary pause">توقف ضبط</button><button class="download">دانلود فریم خام</button>
+          <button class="copy">کپی خلاصه</button><button class="decoder">بازکردن رمزگشا</button>
+          <button class="clear">پاک‌کردن داده‌ها</button><button class="hide">مخفی‌کردن پنل</button>
+        </div>
+        <div class="foot">پس از بارگذاری صفحه، ۹۰ تا ۱۲۰ ثانیه صبر کن. برای بررسی بازهٔ تاریخی، پیش از اتصال مجدد صفحه را تازه‌سازی نکن.</div>
+      </div>`;
+    document.documentElement.appendChild(host);
+    ui = {
+      host, status: shadow.querySelector('.status'), stats: shadow.querySelector('.stats'),
+      last: shadow.querySelector('.last'), warning: shadow.querySelector('.warning'),
+      pause: shadow.querySelector('.pause'), copy: shadow.querySelector('.copy')
+    };
+    shadow.querySelector('.pause').addEventListener('click', () => { state.recording = !state.recording; render(); });
+    shadow.querySelector('.download').addEventListener('click', downloadReport);
+    shadow.querySelector('.copy').addEventListener('click', copySummary);
+    shadow.querySelector('.clear').addEventListener('click', () => {
+      state.frames = []; state.totalBytes = 0; state.dropped = 0; estimatedBytes = 0; state.startedAt = Date.now(); state.lastFrameAt = null; render();
+    });
+    shadow.querySelector('.hide').addEventListener('click', () => host.remove());
+    shadow.querySelector('.decoder').addEventListener('click', () => {
+      const href = chrome.runtime.getURL('decoder/decoder.html');
+      window.open(href, '_blank', 'noopener');
+    });
+    render();
+  }
+
+  function acceptMessage(message) {
+    if (!state.recording) return;
+    const approxSize = message.encoding === 'base64' ? Math.ceil((message.base64 || '').length * 0.75) : (message.text?.length || 0);
+    if (state.frames.length >= MAX_FRAMES || estimatedBytes + approxSize > MAX_ESTIMATED_BYTES) {
+      state.dropped++;
+      state.recording = false;
+      render();
+      return;
+    }
+    state.frames.push(message);
+    estimatedBytes += approxSize;
+    state.totalBytes += Number(message.byteLength || 0);
+    state.lastFrameAt = message.receivedAt || Date.now();
+    render();
+  }
+
+  window.addEventListener('message', (event) => {
+    if (event.source !== window || !event.data || event.data.source !== SOURCE) return;
+    const m = event.data;
+    if (m.type === 'SOCKET') {
+      state.sockets.push({ socketId: m.socketId, url: m.url, target: !!m.target, createdAt: m.createdAt });
+      render();
+    } else if (m.type === 'FRAME') {
+      acceptMessage(m);
+    } else if (m.type === 'ERROR') {
+      state.lastError = String(m.message || 'Unknown hook error'); render();
+    } else if (m.type === 'READY') {
+      state.lastError = '';
+    }
+  });
+
+  const start = () => { createPanel(); render(); };
+  if (document.documentElement) start();
+  else new MutationObserver(() => { if (document.documentElement) { start(); } }).observe(document, { childList: true, subtree: true });
+  setInterval(render, 1000);
+})();
+EOF
+
+
+دستیار | پیام 10 | 11/14/2026, 10:00:47 PM
+------------------------------------------------------------
+
+bash -lc cat > /mnt/data/Bitunix-WS-Decoder-v2/decoder/decoder.html <<'EOF'
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bitunix Binary Frame Decoder</title>
+<style>
+:root{color-scheme:dark}*{box-sizing:border-box}body{margin:0;background:#0e1420;color:#e7edf7;font-family:Tahoma,Arial,sans-serif;padding:24px}.wrap{max-width:1100px;margin:auto}.card{background:#171f2e;border:1px solid #2b3950;border-radius:14px;padding:18px;margin:14px 0}h1{font-size:20px;margin:0 0 8px}p{color:#aab7ca;font-size:13px;line-height:1.9}.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}button,.filebtn{background:#c6ddff;color:#15243b;border:0;border-radius:8px;padding:10px 14px;font:12px Tahoma;font-weight:bold;cursor:pointer}input[type=file]{max-width:100%}pre{white-space:pre-wrap;word-break:break-word;background:#0b111b;border:1px solid #273448;padding:12px;border-radius:9px;max-height:360px;overflow:auto;direction:ltr;text-align:left;font:11px/1.65 Consolas,monospace}.muted{color:#8fa0b8}.pill{display:inline-block;background:#25344a;border-radius:18px;padding:5px 9px;font-size:11px;margin:3px}.frame{border:1px solid #2a3a50;border-radius:10px;margin:10px 0;overflow:hidden}.frame summary{cursor:pointer;padding:12px;background:#1d293b;font-size:12px}.frame pre{margin:10px}.good{color:#80dfb2}.warn{color:#ffd18a}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px}.stat{background:#202d40;padding:12px;border-radius:9px}.stat b{font-size:19px;display:block}.stat small{color:#99a9bf}
+</style>
+</head>
+<body><div class="wrap">
+  <div class="card"><h1>رمزگشای فریم‌های باینری Bitunix</h1>
+    <p>فایل JSON دکمهٔ «دانلود فریم خام» را انتخاب کن. این ابزار فقط تحلیل آفلاین انجام می‌دهد و هیچ اتصالی به Bitunix ندارد. خروجی Protobuf در این مرحله ساختار فیلدها را نشان می‌دهد، نه نام معنایی قطعی آن‌ها؛ برای نام‌گذاری فیلدها به چند پیام نمونه و تطبیق زمانی نیاز داریم.</p>
+    <div class="row"><input id="file" type="file" accept=".json,application/json"><button id="analyze">تحلیل فایل</button><button id="export" disabled>دانلود نتایج تحلیل</button></div>
+    <p id="status" class="muted">هنوز فایلی انتخاب نشده است.</p>
+  </div>
+  <div id="overview" class="card" hidden></div>
+  <div id="results"></div>
+</div>
+<script src="decoder.js"></script></body></html>
+EOF
+cat > /mnt/data/Bitunix-WS-Decoder-v2/decoder/decoder.js <<'EOF'
+(() => {
+  const $ = id => document.getElementById(id);
+  let decodedExport = null;
+  const decoder = new TextDecoder('utf-8', { fatal: true });
+
+  function bytesFromBase64(s) {
+    const bin = atob(s); const out = new Uint8Array(bin.length);
+    for (let i = 0; i < bin.length; i++) out[i] = bin.charCodeAt(i);
+    return out;
+  }
+  function printableStrings(bytes) {
+    const out = []; let run = [];
+    const flush = () => { if (run.length >= 4) out.push(new TextDecoder().decode(new Uint8Array(run))); run = []; };
+    for (const b of bytes) { if (b >= 32 && b <= 126) run.push(b); else flush(); }
+    flush(); return [...new Set(out)].slice(0, 30);
+  }
+  function readVarint(bytes, state) {
+    let value = 0n, shift = 0n;
+    for (let i = 0; i < 10; i++) {
+      if (state.pos >= bytes.length) throw Error('varint_truncated');
+      const b = bytes[state.pos++]; value |= BigInt(b & 0x7f) << shift;
+      if (!(b & 0x80)) return value;
+      shift += 7n;
+    }
+    throw Error('varint_too_long');
+  }
+  function parseProto(bytes, baseOffset = 0, depth = 0) {
+    if (depth > 4 || bytes.length === 0) return { ok:false, fields:[], consumed:0, reason:'depth_or_empty' };
+    const st = { pos: 0 }, fields = [];
+    try {
+      while (st.pos < bytes.length && fields.length < 100) {
+        const start = st.pos;
+        const tag = readVarint(bytes, st);
+        const fieldNo = Number(tag >> 3n), wire = Number(tag & 7n);
+        if (fieldNo < 1 || fieldNo > 536870911 || ![0,1,2,5].includes(wire)) throw Error('invalid_tag');
+        const f = { field: fieldNo, wire, offset: baseOffset + start };
+        if (wire === 0) {
+          const v = readVarint(bytes, st); f.value = v <= BigInt(Number.MAX_SAFE_INTEGER) ? Number(v) : v.toString();
+          f.hex = '0x' + v.toString(16);
+        } else if (wire === 1) {
+          if (st.pos + 8 > bytes.length) throw Error('fixed64_truncated');
+          const slice = bytes.slice(st.pos, st.pos + 8); f.hex = [...slice].map(x=>x.toString(16).padStart(2,'0')).join('');
+          const dv = new DataView(slice.buffer, slice.byteOffset, slice.byteLength); f.fixed64 = dv.getBigUint64(0, true).toString();
+          f.double = dv.getFloat64(0, true); st.pos += 8;
+        } else if (wire === 5) {
+          if (st.pos + 4 > bytes.length) throw Error('fixed32_truncated');
+          const slice = bytes.slice(st.pos, st.pos + 4); f.hex = [...slice].map(x=>x.toString(16).padStart(2,'0')).join('');
+          const dv = new DataView(slice.buffer, slice.byteOffset, slice.byteLength); f.fixed32 = dv.getUint32(0, true); f.float = dv.getFloat32(0, true); st.pos += 4;
+        } else {
+          const lenBig = readVarint(bytes, st); const len = Number(lenBig);
+          if (!Number.isSafeInteger(len) || len < 0 || st.pos + len > bytes.length) throw Error('length_out_of_range');
+          const body = bytes.slice(st.pos, st.pos + len); st.pos += len;
+          f.length = len; f.hex = [...body.slice(0,24)].map(x=>x.toString(16).padStart(2,'0')).join('') + (len>24?'…':'');
+          try { const text = decoder.decode(body); if (text && !/[\u0000-\u0008\u000e-\u001f]/.test(text)) f.utf8 = text.slice(0,300); } catch (_) {}
+          if (depth < 3 && len >= 2 && len <= bytes.length) {
+            const nested = parseProto(body, baseOffset + st.pos - len, depth + 1);
+            if (nested.ok && nested.fields.length) f.nested = nested.fields;
+          }
+        }
+        fields.push(f);
+      }
+      const consumed = st.pos;
+      return { ok: consumed === bytes.length && fields.length > 0, fields, consumed, reason: consumed === bytes.length ? 'ok' : 'partial' };
+    } catch (e) { return { ok:false, fields, consumed:st.pos, reason:String(e.message || e) }; }
+  }
+  async function decompressTry(bytes) {
+    const tries = [];
+    const signatures = {
+      gzip: bytes[0] === 0x1f && bytes[1] === 0x8b,
+      zlib: bytes.length > 2 && (bytes[0] & 0x0f) === 8 && ((bytes[0] << 8) + bytes[1]) % 31 === 0,
+      zstd: bytes[0] === 0x28 && bytes[1] === 0xb5 && bytes[2] === 0x2f && bytes[3] === 0xfd
+    };
+    const formats = signatures.gzip ? ['gzip'] : signatures.zlib ? ['deflate'] : ['deflate','deflate-raw','gzip'];
+    for (const format of formats) {
+      try {
+        if (typeof DecompressionStream === 'undefined') break;
+        const ds = new DecompressionStream(format);
+        const stream = new Blob([bytes]).stream().pipeThrough(ds);
+        const arr = new Uint8Array(await new Response(stream).arrayBuffer());
+        if (arr.length && arr.length < 10 * 1024 * 1024) tries.push({ format, bytes:arr });
+      } catch (_) {}
+    }
+    return { signatures, tries };
+  }
+  function flattenFields(fields, out=[]) { for (const f of fields) { out.push(f); if (f.nested) flattenFields(f.nested,out); } return out; }
+  function timestampCandidates(fields) {
+    const found=[];
+    for(const f of flattenFields(fields)) if(f.wire===0 && typeof f.value==='number') {
+      const n=f.value;
+      if(n>1000000000 && n<100000000000) found.push({field:f.field,value:n,iso:new Date(n>1e11?n:n*1000).toISOString(),unit:n>1e11?'ms':'s'});
+    }
+    return found.slice(0,20);
+  }
+  async function decodeFrame(frame) {
+    if (frame.encoding === 'text') {
+      let parsed=null; try { parsed=JSON.parse(frame.text); } catch (_) {}
+      return { sequence:frame.sequence, socketId:frame.socketId, direction:frame.direction, time:frame.receivedAt, encoding:'text', textPreview:(frame.text||'').slice(0,1200), jsonParsed:!!parsed, jsonKeys:parsed&&typeof parsed==='object'?Object.keys(parsed):[] };
+    }
+    if (frame.encoding !== 'base64') return { sequence:frame.sequence, direction:frame.direction, encoding:frame.encoding, byteLength:frame.byteLength, reason:frame.reason||'' };
+    const raw=bytesFromBase64(frame.base64||'');
+    const attempts=[];
+    for(let offset=0;offset<=Math.min(8,raw.length-1);offset++) {
+      const part=raw.slice(offset); const p=parseProto(part,offset,0);
+      if(p.fields.length) attempts.push({kind:'protobuf_raw',offset,ok:p.ok,consumed:p.consumed,total:part.length,reason:p.reason,fields:p.fields,score:(p.ok?100:0)+p.fields.length*2-(p.reason==='invalid_tag'?40:0)});
+    }
+    const decomp=await decompressTry(raw);
+    for(const d of decomp.tries) {
+      for(let offset=0;offset<=Math.min(8,d.bytes.length-1);offset++) {
+        const p=parseProto(d.bytes.slice(offset),offset,0);
+        if(p.fields.length) attempts.push({kind:`protobuf_${d.format}`,offset,ok:p.ok,consumed:p.consumed,total:d.bytes.length-offset,reason:p.reason,fields:p.fields,score:(p.ok?100:0)+p.fields.length*2});
+      }
+    }
+    attempts.sort((a,b)=>b.score-a.score);
+    const best=attempts[0]||null;
+    return {
+      sequence:frame.sequence,socketId:frame.socketId,direction:frame.direction,time:frame.receivedAt,
+      encoding:'base64',byteLength:raw.length,headerHex:[...raw.slice(0,24)].map(x=>x.toString(16).padStart(2,'0')).join(' '),
+      signatures:decomp.signatures, printableStrings:printableStrings(raw),
+      protoCandidateCount:attempts.length,best,
+      timestamps:best?timestampCandidates(best.fields):[],
+      alternatives:attempts.slice(0,3).map(a=>({kind:a.kind,offset:a.offset,ok:a.ok,consumed:a.consumed,total:a.total,reason:a.reason,score:a.score,fields:a.fields}))
+    };
+  }
+  function summarizeDecoded(items) {
+    const binary=items.filter(x=>x.encoding==='base64');
+    const best=binary.filter(x=>x.best);
+    const full=best.filter(x=>x.best.ok);
+    const kinds={}; for(const x of best) kinds[x.best.kind]=(kinds[x.best.kind]||0)+1;
+    const socketIds=[...new Set(items.map(x=>x.socketId).filter(x=>x!=null))];
+    return {frames:items.length,binaryFrames:binary.length,framesWithProtoCandidate:best.length,fullyParsedProtoFrames:full.length,protoCandidatesByType:kinds,sockets:socketIds};
+  }
+  async function run() {
+    const file=$('file').files?.[0]; if(!file){$('status').textContent='اول فایل خام JSON را انتخاب کن.';return;}
+    $('status').textContent=`در حال خواندن ${file.name}…`;
+    try {
+      const report=JSON.parse(await file.text());
+      if(!Array.isArray(report.frames)) throw Error('آرایهٔ frames در فایل پیدا نشد. فایل باید خروجی نسخهٔ ۲ باشد.');
+      const selected=report.frames.slice(0,12000);
+      const decoded=[];
+      for(let i=0;i<selected.length;i++) {
+        decoded.push(await decodeFrame(selected[i]));
+        if(i%100===0) $('status').textContent=`در حال رمزگشایی ${i+1} از ${selected.length}…`;
+      }
+      const summary=summarizeDecoded(decoded);
+      decodedExport={tool:'BITUNIX_BINARY_DECODER',version:'1.0',sourceFile:file.name,sourceSummary:report.counts||{},decodedSummary:summary,frames:decoded};
+      $('overview').hidden=false;
+      $('overview').innerHTML=`<h2 style="font-size:15px;margin-top:0">نتیجهٔ کلی</h2><div class="grid">
+        <div class="stat"><b>${summary.frames}</b><small>کل فریم‌ها</small></div>
+        <div class="stat"><b>${summary.binaryFrames}</b><small>فریم باینری</small></div>
+        <div class="stat"><b class="good">${summary.framesWithProtoCandidate}</b><small>دارای نامزد Protobuf</small></div>
+        <div class="stat"><b>${summary.fullyParsedProtoFrames}</b><small>فریم با parse کامل</small></div>
+      </div><p>نوع‌های شناسایی‌شده: ${Object.entries(summary.protoCandidatesByType).map(([k,v])=>`<span class="pill">${k}: ${v}</span>`).join('')||'هیچ نامزد مطمئنی پیدا نشد.'}</p><p class="warn">Parse موفق به‌تنهایی اثبات نمی‌کند که فیلدها درست تفسیر معنایی شده‌اند. باید ساختار فریم‌ها را بین پیام‌ها و زمان‌ها مقایسه کنیم.</p>`;
+      const visible=decoded.filter(x=>x.encoding==='base64').slice(0,300);
+      $('results').innerHTML=`<div class="card"><h2 style="font-size:15px">جزئیات فریم‌های باینری (حداکثر ۳۰۰ مورد اول)</h2>${visible.map(x=>`<details class="frame"><summary>#${x.sequence} | socket ${x.socketId} | ${x.direction} | ${x.byteLength} bytes | ${x.best?`${x.best.kind} offset ${x.best.offset} ${x.best.ok?'✓':'(partial)'}`:'بدون parse قابل‌قبول'}</summary><pre>${escapeHtml(JSON.stringify({headerHex:x.headerHex,signatures:x.signatures,printableStrings:x.printableStrings,timestamps:x.timestamps,best:x.best},null,2))}</pre></details>`).join('')}</div>`;
+      $('status').textContent=`تحلیل تمام شد. ${decoded.length} فریم بررسی شد.`;
+      $('export').disabled=false;
+    } catch(e) { $('status').textContent=`خطا: ${e.message||e}`; }
+  }
+  function escapeHtml(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+  $('analyze').addEventListener('click',run);
+  $('export').addEventListener('click',()=>{if(!decodedExport)return;const blob=new Blob([JSON.stringify(decodedExport)],{type:'application/json'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='bitunix-ws-decoded-report.json';a.click();URL.revokeObjectURL(url);});
+})();
+EOF
+
+
+دستیار | پیام 11 | 11/14/2026, 10:01:33 PM
+------------------------------------------------------------
+
+bash -lc cat > /mnt/data/Bitunix-WS-Decoder-v2/README_FA.txt <<'EOF'
+Bitunix WS Decoder v2.0
+=======================
+
+هدف
+---
+این افزونه فقط برای تشخیص ساختار پیام‌های WebSocket بازار Bitunix ساخته شده است. پیام‌های کانال /ws-tide-batch/ را در همان تب XAUTUSDT ضبط می‌کند تا بفهمیم آیا پیام اولیه شامل معاملات قبل از زمان اتصال هست یا فقط داده زنده را می‌فرستد.
+
+محدوده و حریم خصوصی
+-------------------
+- هیچ سفارش یا معامله‌ای ارسال نمی‌کند.
+- هیچ API key، secret یا امضایی درخواست نمی‌کند.
+- محتوای /ws-user/ را ضبط نمی‌کند.
+- Query string آدرس WebSocket را در گزارش حذف می‌کند تا شناسه‌های کاربر و traceId وارد فایل نشوند.
+- پیام‌های متنی خروجی JSON از فیلدهایی با نام token/sign/secret/userid/uid/apikey/traceid/session پاک‌سازی می‌شوند.
+- payload باینری کانال بازار به صورت Base64 داخل فایل محلی ذخیره می‌شود؛ چون قالب آن هنوز ناشناخته است، پیش از انتشار عمومی فایل را بررسی کنید. فایل را در مخزن عمومی GitHub قرار ندهید مگر اینکه ابتدا محتوای آن را بررسی و اطلاعات احتمالی حساس را حذف کرده باشید.
+- هیچ داده‌ای به سرور یا سایت دیگری ارسال نمی‌شود؛ فایل فقط با دکمه Download روی سیستم شما ذخیره می‌شود.
+
+نصب در Chrome
+-------------
+1) ZIP را Extract کنید.
+2) در نوار آدرس Chrome بروید به: chrome://extensions
+3) Developer mode را روشن کنید.
+4) روی Load unpacked بزنید.
+5) پوشه Bitunix-WS-Decoder-v2 را که manifest.json داخل آن است انتخاب کنید.
+6) اگر قبلاً نسخه 1.0 Network Inspector فعال است، برای جلوگیری از تداخل موقتاً آن را خاموش کنید.
+7) یک تب تازه باز کنید یا در صفحه Bitunix کلید Ctrl+Shift+R بزنید تا افزونه از document_start اجرا شود.
+8) صفحه XAUTUSDT Futures را باز بگذارید. پنل Bitunix WS Decoder v2 باید گوشه پایین صفحه ظاهر شود.
+
+مراحل تست استاندارد
+-------------------
+تست A — اتصال تازه و بررسی پیام اولیه:
+1) صفحه XAUTUSDT را ببندید و یک تب تازه باز کنید؛ یا Ctrl+Shift+R بزنید.
+2) مطمئن شوید پنل نمایش داده می‌شود و وضعیت «در حال ضبط» است.
+3) از لحظه بارگذاری، 120 ثانیه صبر کنید. در این مدت صفحه را Refresh نکنید و نماد/صفحه را عوض نکنید.
+4) یادداشت کنید پنل چه تعداد اتصال هدف، فریم باینری و حجم داده نشان می‌دهد.
+5) روی «دانلود فریم خام» کلیک کنید. فایل JSON را نگه دارید.
+
+تست B — مقایسهٔ پیام‌های لحظهٔ اتصال با پیام‌های بعدی:
+1) فایل تست A را دانلود کنید.
+2) دوباره صفحه را با Ctrl+Shift+R بارگذاری کنید تا ضبط از اتصال تازه شروع شود.
+3) بلافاصله پس از ظاهر شدن پنل، فایل خام را پس از 10 تا 15 ثانیه دانلود کنید.
+4) سپس بدون Refresh تا 120 ثانیه صبر کنید و فایل دوم را هم دانلود کنید.
+5) با مقایسهٔ زمان پیام‌ها و payloadها می‌توانیم تشخیص دهیم پیام‌های اول Snapshot/Backfill دارند یا جریان زنده‌اند.
+
+نکته مهم دربارهٔ «یک ساعت قبل»:
+- هیچ‌کدام از تست‌های 120 ثانیه‌ای به‌تنهایی ثابت نمی‌کند که یک ساعت تاریخچه ارائه می‌شود.
+- باید ببینیم فریم‌های آغازین timestamp معاملاتی قدیمی‌تر از زمان اتصال دارند یا نه و فاصله زمانی آن‌ها چقدر است.
+- اگر فقط timestamp نزدیک زمان اتصال مشاهده شد، معنایش این است که این کانال در تست ما backfill یک‌ساعته نشان نداده؛ نه اینکه در هیچ کانال یا endpoint دیگری قطعاً وجود ندارد.
+
+تحلیل آفلاین
+------------
+1) در پنل روی «بازکردن رمزگشا» کلیک کنید.
+2) در صفحه Decoder، فایل JSON دانلودشده را انتخاب و «تحلیل فایل» را بزنید.
+3) ابزار امضاهای ابتدایی، متن‌های قابل‌خواندن، تلاش‌های فشرده‌گشایی متداول و ساختارهای احتمالی Protobuf را بررسی می‌کند.
+4) «دانلود نتایج تحلیل» را بزنید تا فایل bitunix-ws-decoded-report.json ساخته شود.
+
+چه فایل‌هایی برای بررسی لازم است؟
+---------------------------------
+- فایل خام کوتاه (10 تا 15 ثانیه پس از اتصال تازه)
+- فایل خام کامل (حدود 120 ثانیه پس از اتصال تازه)
+- فایل decoded report متناظر با یکی از فایل‌های خام
+- یک یادداشت کوتاه از ساعت دقیق اتصال و زمان دانلود فایل‌ها
+
+اگر فریم خام زیاد بود، فایل‌ها را در GitHub عمومی آپلود نکنید؛ بهتر است همین‌جا پیوست کنید. این نسخه حداکثر حدود 8 MiB دادهٔ تقریبی/12,000 فریم را در حافظهٔ تب نگه می‌دارد. در صورت رسیدن به سقف، ضبط متوقف می‌شود تا داده ناقص و بی‌علامت تولید نشود.
+
+محدودیت رمزگشا
+--------------
+پارامتر transfer=pb فقط قرینه‌ای برای Protobuf است و schema رسمی پیام‌های داخلی ws-tide-batch در دست نداریم. Decoder تلاش می‌کند چند قالب رایج را تشخیص دهد؛ خروجی آن «کاندیدای ساختاری» است. نام‌گذاری قطعی فیلدها و تشخیص دقیق price/size/side/trade timestamp پس از بررسی نمونه‌های واقعی و مقایسهٔ چند فریم به دست می‌آید. اگر فشرده‌سازی zstd یا قالب اختصاصی باشد، ممکن است به decoder مناسب‌تری نیاز داشته باشیم.
+EOF
+node --check /mnt/data/Bitunix-WS-Decoder-v2/src/main/ws-hook.js
+node --check /mnt/data/Bitunix-WS-Decoder-v2/src/content/panel.js
+node --check /mnt/data/Bitunix-WS-Decoder-v2/decoder/decoder.js
+
+
+دستیار | پیام 12 | 11/14/2026, 10:02:06 PM
+------------------------------------------------------------
+
+bash -lc cd /mnt/data && zip -qr Bitunix-WS-Decoder-v2.zip Bitunix-WS-Decoder-v2 && ls -lh /mnt/data/Bitunix-WS-Decoder-v2.zip && find /mnt/data/Bitunix-WS-Decoder-v2 -maxdepth 3 -type f -printf '%P %k KB\n'
+
+
+دستیار | پیام 13 | 11/14/2026, 10:03:16 PM
+------------------------------------------------------------
+
+bash -lc python - <<'PY'
+p='/mnt/data/Bitunix-WS-Decoder-v2/src/main/ws-hook.js'
+s=open(p).read()
+s=s.replace("      // Keep only protocol host and path. Query parameters contain user/trace IDs.\n      return `${u.protocol}//${u.host}${u.pathname}`;", "      // Keep only harmless market-transport parameters; strip user/trace/session identifiers.\n      const allowed = ['from', 'compress', 'transfer', 'symbol', 'channel', 'ch', 'type'];\n      const safe = new URLSearchParams();\n      for (const key of allowed) if (u.searchParams.has(key)) safe.set(key, u.searchParams.get(key).slice(0, 80));\n      const query = safe.toString();\n      return `${u.protocol}//${u.host}${u.pathname}${query ? `?${query}` : ''}`;")
+s=s.replace("  function postFrame(meta, direction, payload, dataType) {\n    const sequence = ++frameCounter;", "  function postFrame(meta, direction, payload, dataType, timing = {}) {\n    const sequence = timing.sequence ?? ++frameCounter;")
+s=s.replace("      receivedAt: Date.now(),\n      performanceMs: Math.round(performance.now() * 10) / 10,", "      receivedAt: timing.receivedAt ?? Date.now(),\n      performanceMs: timing.performanceMs ?? Math.round(performance.now() * 10) / 10,")
+s=s.replace("  async function captureIncoming(meta, data) {\n    try {\n      if (typeof data === 'string') {\n        postFrame(meta, 'in', data, 'string');\n      } else if (data instanceof ArrayBuffer) {\n        postFrame(meta, 'in', new Uint8Array(data), 'ArrayBuffer');\n      } else if (ArrayBuffer.isView(data)) {\n        postFrame(meta, 'in', new Uint8Array(data.buffer, data.byteOffset, data.byteLength), data.constructor?.name || 'ArrayBufferView');\n      } else if (data instanceof Blob) {\n        const buffer = await data.arrayBuffer();\n        postFrame(meta, 'in', new Uint8Array(buffer), 'Blob');", "  async function captureIncoming(meta, data) {\n    const timing = { sequence: ++frameCounter, receivedAt: Date.now(), performanceMs: Math.round(performance.now() * 10) / 10 };\n    try {\n      if (typeof data === 'string') {\n        postFrame(meta, 'in', data, 'string', timing);\n      } else if (data instanceof ArrayBuffer) {\n        postFrame(meta, 'in', new Uint8Array(data), 'ArrayBuffer', timing);\n      } else if (ArrayBuffer.isView(data)) {\n        postFrame(meta, 'in', new Uint8Array(data.buffer, data.byteOffset, data.byteLength), data.constructor?.name || 'ArrayBufferView', timing);\n      } else if (data instanceof Blob) {\n        const buffer = await data.arrayBuffer();\n        postFrame(meta, 'in', new Uint8Array(buffer), 'Blob', timing);")
+s=s.replace("          source: 'BITUNIX_WS_DECODER_V2', type: 'FRAME', sequence: ++frameCounter,\n          socketId: meta.socketId, url: meta.url, direction: 'in', receivedAt: Date.now(),\n          performanceMs: Math.round(performance.now() * 10) / 10,", "          source: 'BITUNIX_WS_DECODER_V2', type: 'FRAME', sequence: timing.sequence,\n          socketId: meta.socketId, url: meta.url, direction: 'in', receivedAt: timing.receivedAt,\n          performanceMs: timing.performanceMs,")
+open(p,'w').write(s)
+PY
+node --check /mnt/data/Bitunix-WS-Decoder-v2/src/main/ws-hook.js
+cd /mnt/data && rm -f Bitunix-WS-Decoder-v2.zip && zip -qr Bitunix-WS-Decoder-v2.zip Bitunix-WS-Decoder-v2
+ls -lh /mnt/data/Bitunix-WS-Decoder-v2.zip
+
+
+دستیار | پیام 14 | 11/14/2026, 10:03:27 PM
+------------------------------------------------------------
+
+bash -lc grep -n "safeUrl\|function postFrame\|async function captureIncoming\|sequence: timing" -A12 -B2 /mnt/data/Bitunix-WS-Decoder-v2/src/main/ws-hook.js && python - <<'PY'
+import json
+p='/mnt/data/Bitunix-WS-Decoder-v2/manifest.json'
+json.load(open(p))
+print('manifest json: OK')
+PY
+unzip -t /mnt/data/Bitunix-WS-Decoder-v2.zip | tail -n 2
+
+
+دستیار | پیام 15 | 11/14/2026, 10:04:15 PM
+------------------------------------------------------------
+
+Worked for 8m 49s
+
+
+دستیار | پیام 16 | 11/14/2026, 10:04:15 PM
+------------------------------------------------------------
+
+<row align="center" gap={2}>
+  <badge color="success">آماده شد</badge>
+  **Bitunix WS Decoder v2.0**
+</row>
+
+<box border radius="lg" padding={3} gap={2}>
+  <row align="center">
+    <icon name="file-zip" size="2xl"/>
+    <box flex="1" gap={1}>
+      **افزونهٔ تشخیصی و رمزگشای Bitunix**
+      <text color="secondary" size="xs">فایل ZIP · نسخه ۲.۰</text>
+    </box>
+  </row>
+  [دانلود Bitunix WS Decoder v2.0](sandbox:/mnt/data/Bitunix-WS-Decoder-v2.zip)
+</box>
+
+این نسخه دو قسمت دارد:
+
+1. **ضبط‌کننده:** پیام‌های ورودی و خروجی WebSocket مربوط به `/ws-tide-batch/` را ثبت می‌کند. اطلاعات شناسه‌های کاربر و Trace ID را از آدرس اتصال حذف می‌کند و محتوای کانال خصوصی `/ws-user/` را ضبط نمی‌کند.
+2. **رمزگشا:** فایل ضبط‌شده را آفلاین بررسی می‌کند؛ از جمله ساختارهای احتمالی Protobuf، فشرده‌سازی‌های رایج، داده‌های متنی و مقادیر شبیه Timestamp.
+
+نکته مهم: گزارش ۹ محتوای باینری را ذخیره نکرده بود و فقط اندازهٔ فریم‌ها را داشت. بنابراین هنوز نمی‌توانم ادعا کنم معاملات را رمزگشایی کرده‌ام. این افزونه ابزار لازم برای گرفتن محتوای واقعی را فراهم می‌کند.
+
+## مراحل نصب و آزمایش
+
+**مرحله اول: نصب**
+
+۱. ZIP را Extract کن.
+
+۲. وارد `chrome://extensions` شو.
+
+۳. Developer mode را فعال کن.
+
+۴. روی Load unpacked بزن و پوشهٔ `Bitunix-WS-Decoder-v2` را انتخاب کن؛ همان پوشه‌ای که `manifest.json` داخل آن است.
+
+۵. افزونهٔ قبلی Network Inspector نسخه ۱ را موقتاً خاموش کن تا تداخل نداشته باشند.
+
+۶. صفحهٔ XAUTUSDT Futures را با `Ctrl + Shift + R` تازه‌سازی کن.
+
+## مرحله دوم: ضبط اطلاعات
+
+<AsyncImage query="dark glassmorphism floating developer diagnostic panel network websocket monitoring UI" aspectRatio="16:9" maxHeight={120} width="100%" />
+
+بعد از بارگذاری صفحه، پنل جدید باید در گوشهٔ پایین صفحه ظاهر شود.
+
+این آزمایش را انجام بده:
+
+| زمان پس از اتصال تازه | اقدام |
+|---|---|
+| ۱۵ ثانیه | روی Download raw frames بزن و فایل اول را ذخیره کن |
+| ۱۲۰ ثانیه | بدون Refresh دوباره دانلود کن و فایل دوم را ذخیره کن |
+
+فایل دوم شامل فریم‌های فایل اول هم هست؛ بنابراین می‌توانیم پیام‌های ابتدای اتصال را با پیام‌های بعدی مقایسه کنیم.
+
+**در این دو دقیقه:**
+- صفحه را Refresh نکن.
+- نماد معاملاتی را تغییر نده.
+- اجازه بده اتصال WebSocket برقرار بماند.
+- اگر تعداد اتصال هدف صفر بود، از پنل عکس بگیر و بفرست.
+
+## مرحله سوم: رمزگشایی
+
+در پنل روی «بازکردن رمزگشا» کلیک کن. فایل JSON ضبط‌شده را انتخاب و Analyze را بزن.
+
+رمزگشا یک گزارش جدید می‌سازد. البته اگر Bitunix از فشرده‌سازی اختصاصی یا Zstandard استفاده کرده باشد، ممکن است به رمزگشای تکمیلی نیاز داشته باشیم؛ این ابزار هنوز Schema اختصاصی پیام‌های Bitunix را در اختیار ندارد.
+
+## دقیقاً دنبال چه چیزی هستیم؟
+
+سه موضوع باید روشن شود:
+
+1. آیا بلافاصله پس از اتصال، پیام‌هایی با Timestamp قدیمی‌تر از زمان اتصال دریافت می‌کنیم؟
+2. اگر بله، قدیمی‌ترین معامله چقدر با زمان اتصال فاصله دارد؟ مثلاً ۱۰ دقیقه، ۳۰ دقیقه یا یک ساعت؟
+3. آیا محتوای پیام‌ها شامل قیمت، حجم، سمت معامله و زمان هر معامله است یا دادهٔ تجمیع‌شده؟
+
+مستندات رسمی کانال عمومی `trade` فیلدهای قیمت، حجم، سمت و زمان معامله را معرفی می‌کند، ولی تاریخچهٔ یک‌ساعته هنگام اشتراک را تضمین نکرده است. کانال داخلی `/ws-tide-batch/` را باید جداگانه بررسی کنیم. <Cite refs={["turn631855search0"]}/>
+
+**کاری که الان از تو لازم دارم:** فایل خام ۱۵ ثانیه‌ای و فایل خام ۱۲۰ ثانیه‌ای را همین‌جا پیوست کن. لازم نیست در GitHub عمومی قرارشان بدهی؛ چون محتوای باینری هنوز بررسی نشده است.
+
+بعد از دریافتشان، می‌توانیم به‌جای حدس زدن، مشخص کنیم آیا Bitunix واقعاً معاملات گذشته را هنگام اتصال ارسال می‌کند و عمق تاریخچه‌اش چقدر است.
+
+
+کاربر | پیام 17 | 11/14/2026, 10:09:33 PM
+------------------------------------------------------------
+
+ببین درست متوجه شدم یا نه. بعد از 15 ثانیه باید روی دانلود فریم خام بزنم و یک فایل دانلود میشه؟
+بعدش بعد از 120 ثانیه روی چی باید بزنم؟
+
+و اون مرحله سوم چیه و چی باید تحویل بدم گیج شدم
+
+
+دستیار | پیام 18 | 11/14/2026, 10:09:40 PM
+------------------------------------------------------------
+
+bash -lc unzip -l /mnt/data/Bitunix-WS-Decoder-v2.zip && echo '---' && rm -rf /tmp/bitunix_decoder && mkdir /tmp/bitunix_decoder && unzip -q /mnt/data/Bitunix-WS-Decoder-v2.zip -d /tmp/bitunix_decoder && find /tmp/bitunix_decoder -maxdepth 3 -type f -print
+
+
+دستیار | پیام 19 | 11/14/2026, 10:09:48 PM
+------------------------------------------------------------
+
+bash -lc cat /tmp/bitunix_decoder/Bitunix-WS-Decoder-v2/README_FA.txt && echo '\n---PANEL BUTTON LABELS---' && grep -nE 'button|textContent|innerHTML|download|decoder|Decode|تحلیل|خام|فریم' /tmp/bitunix_decoder/Bitunix-WS-Decoder-v2/src/content/panel.js | head -100 && echo '\n---DECODER UI---' && cat /tmp/bitunix_decoder/Bitunix-WS-Decoder-v2/decoder/decoder.html
+
+
+دستیار | پیام 20 | 11/14/2026, 10:10:07 PM
+------------------------------------------------------------
+
+bash -lc sed -n '70,180p' /tmp/bitunix_decoder/Bitunix-WS-Decoder-v2/src/content/panel.js && sed -n '1,160p' /tmp/bitunix_decoder/Bitunix-WS-Decoder-v2/src/main/ws-hook.js
+
+
+دستیار | پیام 21 | 11/14/2026, 10:10:24 PM
+------------------------------------------------------------
+
+Worked for 49s
+
+
+دستیار | پیام 22 | 11/14/2026, 10:10:24 PM
+------------------------------------------------------------
+
+بله، درست متوجه شدی. مرحله‌به‌مرحله می‌گویم؛ فقط **یک دکمه را باید دو بار بزنی.**
+
+## مرحله اول: گرفتن فایل اول در ثانیه ۱۵
+
+۱. صفحهٔ XAUTUSDT Futures را با `Ctrl + Shift + R` تازه‌سازی کن.
+
+۲. وقتی پنل Bitunix WS Decoder v2 ظاهر شد، ضبط شروع شده است.
+
+۳. حدود ۱۵ ثانیه صبر کن.
+
+۴. روی دکمهٔ **«دانلود فریم خام»** کلیک کن.
+
+<badge color="success">فایل اول ذخیره می‌شود</badge>
+
+نام فایل چیزی شبیه `bitunix-ws-raw-....json` خواهد بود.
+
+## مرحله دوم: گرفتن فایل دوم در ثانیه ۱۲۰
+
+حالا هیچ کاری نکن!
+
+- صفحه را Refresh نکن.
+- روی توقف ضبط نزن.
+- نماد را تغییر نده.
+- فقط صبر کن تا مدت ضبط پنل به حدود ۱۲۰ ثانیه برسد.
+
+سپس دوباره روی همان دکمهٔ **«دانلود فریم خام»** کلیک کن.
+
+<badge color="success">فایل دوم ذخیره می‌شود</badge>
+
+نکته: فایل دوم تمام فریم‌های ثبت‌شده از ابتدای اتصال تا ۱۲۰ ثانیه را دارد؛ نه فقط ۱۰۵ ثانیهٔ آخر را.
+
+## مرحله سوم: رمزگشا چیست؟
+
+این مرحله یک ابزار کمکی داخل همان افزونه است که فایل خام را بررسی می‌کند.
+
+برای استفاده از آن:
+۱. روی «بازکردن رمزگشا» بزن.
+۲. فایل JSON را انتخاب کن.
+۳. روی «تحلیل فایل» بزن.
+۴. در صورت نیاز، «دانلود نتایج تحلیل» را انتخاب کن.
+
+اما فعلاً لازم نیست این مرحله را انجام بدهی؛ می‌خواهم کار را برایت ساده کنم. **اول فقط دو فایل خام را برایم بفرست تا خودم محتوایشان را بررسی کنم.**
+
+## در نهایت چه چیزی برای من بفرستی؟
+
+<box border radius="lg" padding={3} gap={3}>
+  <row align="center" gap={2}>
+    <icon name="file-json" color="success" size="xl"/>
+    **فایل اول: ضبط حدود ۱۵ ثانیه**
+  </row>
+  <divider color="subtle"/>
+  <row align="center" gap={2}>
+    <icon name="file-json" color="success" size="xl"/>
+    **فایل دوم: ضبط حدود ۱۲۰ ثانیه**
+  </row>
+  <divider color="subtle"/>
+  <row align="center" gap={2}>
+    <icon name="info" color="secondary" size="xl"/>
+    **یک توضیح کوتاه:** ساعت شروع اتصال و ساعت دانلود هر فایل.
+  </row>
+</box>
+
+هر دو فایل را همین‌جا به‌صورت پیوست ارسال کن؛ در GitHub عمومی آپلود نکن.
+
+بعد من بررسی می‌کنم که آیا پیام‌های اولیه حاوی معاملات قدیمی هستند، قدیمی‌ترین Timestamp چقدر عقب‌تر است و آیا امکان استخراج تاریخچهٔ یک‌ساعته وجود دارد.
+
+**پس فعلاً فقط دو بار دانلود فریم خام؛ مرحلهٔ رمزگشا را به من بسپار.**
+
+
+کاربر | پیام 23 | 11/14/2026, 10:12:12 PM
+------------------------------------------------------------
+
+باید توقف رو بزنم و بعدش رمزگشا رو بزنم؟
+
+
+دستیار | پیام 24 | 11/14/2026, 10:12:21 PM
+------------------------------------------------------------
+
+bash -lc unzip -l /mnt/data/Bitunix-WS-Decoder-v2.zip && rm -rf /mnt/data/wsdec_inspect && mkdir /mnt/data/wsdec_inspect && unzip -q /mnt/data/Bitunix-WS-Decoder-v2.zip -d /mnt/data/wsdec_inspect && find /mnt/data/wsdec_inspect -maxdepth 3 -type f -print
+
+
+دستیار | پیام 25 | 11/14/2026, 10:12:26 PM
+------------------------------------------------------------
+
+bash -lc grep -nE 'stop|توقف|دانلود|رمزگشا|decoder|capture|download|Stop|Analyze' /mnt/data/wsdec_inspect/Bitunix-WS-Decoder-v2/README_FA.txt /mnt/data/wsdec_inspect/Bitunix-WS-Decoder-v2/src/content/panel.js /mnt/data/wsdec_inspect/Bitunix-WS-Decoder-v2/decoder/decoder.html
+
+
+دستیار | پیام 26 | 11/14/2026, 10:12:31 PM
+------------------------------------------------------------
+
+bash -lc sed -n '35,115p' /mnt/data/wsdec_inspect/Bitunix-WS-Decoder-v2/src/content/panel.js && sed -n '140,180p' /mnt/data/wsdec_inspect/Bitunix-WS-Decoder-v2/src/content/panel.js && sed -n '30,75p' /mnt/data/wsdec_inspect/Bitunix-WS-Decoder-v2/README_FA.txt
+
+
+دستیار | پیام 27 | 11/14/2026, 10:12:47 PM
+------------------------------------------------------------
+
+Worked for 33s
+
+
+دستیار | پیام 28 | 11/14/2026, 10:12:47 PM
+------------------------------------------------------------
+
+بله، دقیقاً؛ ترتیب کار این است:
+
+1. در ثانیهٔ ۱۵ روی **دانلود فریم خام** بزن و فایل اول را ذخیره کن.
+2. تا ثانیهٔ ۱۲۰ صبر کن و دوباره روی **دانلود فریم خام** بزن تا فایل دوم ذخیره شود.
+3. حالا روی **توقف ضبط** بزن. با این کار ضبط متوقف می‌شود، اما فایل‌هایی که دانلود کرده‌ای پاک نمی‌شوند.
+4. سپس روی **بازکردن رمزگشا** بزن.
+5. در صفحهٔ جدید، فایل JSON را انتخاب کن و روی **تحلیل فایل** بزن.
+6. بعد از تحلیل، روی **دانلود نتایج تحلیل** بزن.
+
+<badge color="success">نکته</badge> لازم نیست خودت حتماً مرحلهٔ رمزگشایی را انجام بدهی. می‌توانی بعد از مرحلهٔ ۳، هر دو فایل خام را همین‌جا برایم بفرستی تا خودم بررسی‌شان کنم.
+
+**پس بله: اول دو دانلود، بعد توقف، و در آخر رمزگشا (در صورت تمایل).**
+
+
+کاربر | پیام 29 | 11/14/2026, 10:20:28 PM
+------------------------------------------------------------
+
+[Bitunix Enhanser- WS RAW.zip](https://github.com/artaville/KCEX-Enhancer/blob/main/Bitunix%20Enhanser-%20WS%20RAW.zip "Bitunix Enhanser- WS RAW.zip") &#x20;
+هر دو فایل را در زیپ قرار دادم. چک کن
+
+
+دستیار | پیام 30 | 11/14/2026, 10:20:35 PM
+------------------------------------------------------------
+
+فایل ZIP را از مخزن بررسی می‌کنم؛ اول خود آرشیو و دو ضبط داخلش را استخراج می‌کنم، بعد زمان‌بندی فریم‌ها و محتوای باینری کانال را مقایسه می‌کنم تا ببینیم دادهٔ تاریخی واقعاً در شروع اتصال آمده یا نه.
+
+
+دستیار | پیام 31 | 11/14/2026, 10:20:47 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_file","args":{"repository_full_name":"artaville/KCEX-Enhancer","path":"Bitunix Enhanser- WS RAW.zip","encoding":"base64"}}
+
+
+دستیار | پیام 32 | 11/14/2026, 10:20:51 PM
+------------------------------------------------------------
+
+Worked for 18s
+
+
+کاربر | پیام 33 | 11/14/2026, 10:20:51 PM
+------------------------------------------------------------
+
+چون دیر لود شد سایت به جای 15 ثانیه 45 ثانیه طول کشید
+
+
+دستیار | پیام 34 | 11/14/2026, 10:21:00 PM
+------------------------------------------------------------
+
+اشکالی ندارد؛ این موضوع لزوماً تست را خراب نمی‌کند. فقط باید زمان واقعی ضبط را از داخل فایل‌ها بخوانیم، نه از زمانی که قصد داشتی دکمه را بزنی. بنابراین فایل اول را فعلاً «حدود ۴۵ ثانیه» در نظر می‌گیرم و آن را با فایل دوم مقایسه می‌کنم.
+
+
+دستیار | پیام 35 | 11/14/2026, 10:21:19 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch","args":{"url":"https://api.github.com/repos/artaville/KCEX-Enhancer/contents/Bitunix%20Enhanser-%20WS%20RAW.zip"}}
+
+
+دستیار | پیام 36 | 11/14/2026, 10:21:44 PM
+------------------------------------------------------------
+
+bash -lc python - <<'PY'
+import urllib.request
+u='https://github.com/artaville/KCEX-Enhancer/raw/refs/heads/main/Bitunix%20Enhanser-%20WS%20RAW.zip'
+try:
+ r=urllib.request.urlopen(u, timeout=20)
+ data=r.read()
+ print(r.status, r.headers.get('Content-Type'), len(data))
+ open('/mnt/data/Bitunix-WsRaw.zip','wb').write(data)
+except Exception as e: print(type(e).__name__, e)
+PY
+
+
+دستیار | پیام 37 | 11/14/2026, 10:22:05 PM
+------------------------------------------------------------
+
+bash -lc ls -l /mnt/data | sed -n '1,80p'
+
+
+دستیار | پیام 38 | 11/14/2026, 10:22:08 PM
+------------------------------------------------------------
+
+bash -lc find /mnt/data/Bitunix-WS-Decoder-v2 -maxdepth 3 -type f -printf '%p\n'
+
+
+دستیار | پیام 39 | 11/14/2026, 10:22:12 PM
+------------------------------------------------------------
+
+bash -lc sed -n '1,260p' /mnt/data/Bitunix-WS-Decoder-v2/src/main/ws-hook.js && printf '\n--- PANEL ---\n' && sed -n '1,260p' /mnt/data/Bitunix-WS-Decoder-v2/src/content/panel.js
+
+
+دستیار | پیام 40 | 11/14/2026, 10:22:18 PM
+------------------------------------------------------------
+
+bash -lc cat /mnt/data/Bitunix-WS-Decoder-v2/manifest.json && printf '\n--- decoder ---\n' && sed -n '1,240p' /mnt/data/Bitunix-WS-Decoder-v2/decoder/decoder.js
+
+
+دستیار | پیام 41 | 11/14/2026, 10:22:40 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_blob","args":{"repository_full_name":"artaville/KCEX-Enhancer","blob_sha":"e47cf0c632afb1281983d27d920f3bf68733294b"}}
+
+
+دستیار | پیام 42 | 11/14/2026, 10:22:45 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch","args":{"url":"https://api.github.com/repos/artaville/KCEX-Enhancer/git/blobs/e47cf0c632afb1281983d27d920f3bf68733294b"}}
+
+
+دستیار | پیام 43 | 11/14/2026, 10:23:06 PM
+------------------------------------------------------------
+
+Worked for 2m 14s
+
+
+دستیار | پیام 44 | 11/14/2026, 10:23:06 PM
+------------------------------------------------------------
+
+مشکلی نیست؛ اتفاقاً فایل اول با ضبط حدود ۴۵ ثانیه هم برای آزمایش مفید است. لازم نیست دوباره تست را از اول انجام بدهی.
+
+یک نکته را هم از کد خود افزونه بررسی کردم: زمان شروع ضبط و زمان دریافت اولین و آخرین فریم داخل فایل JSON ثبت می‌شوند. بنابراین می‌توانم زمان واقعی ضبط را تشخیص بدهم، حتی اگر زمان دانلود با برنامهٔ اولیه فرق داشته باشد.
+
+**اما یک مانع در دریافت فایل وجود دارد:** فایل ZIP را در GitHub پیدا کردم، ولی ابزار دسترسی من محتوای فایل باینری ZIP را دریافت نمی‌کند؛ فقط مشخصات آن را می‌بیند.
+
+لطفاً همان فایل `Bitunix Enhanser- WS RAW.zip` را مستقیماً با دکمهٔ پیوست همین گفت‌وگو آپلود کن. نیازی به ضبط مجدد نیست.
+
+بعد از دریافت، هر دو فایل را بررسی می‌کنم و مشخصاً این موارد را درمی‌آورم:
+
+- فایل اول واقعاً چند ثانیه ضبط دارد؟
+- فایل دوم چند فریم و چند بایت داده دارد؟
+- آیا هنگام اتصال، Timestamp معاملات قدیمی‌تر از زمان اتصال دیده می‌شود؟
+- قدیمی‌ترین معامله چقدر قبل از اتصال بوده؟
+- آیا می‌توانیم به تاریخچهٔ یک‌ساعته برسیم؟
+
+هدف نهایی همچنان پیدا کردن **قدیمی‌ترین معاملهٔ واقعی XAUTUSDT قابل دریافت هنگام اتصال** است.
+
+
+کاربر | پیام 45 | 11/14/2026, 10:24:26 PM
+------------------------------------------------------------
+
+محدود شدم نمیتونم فایل اپلود کنم. این مشکلو سری قبل هم داشتیم و تونستی ردیفش بکنی با ی روشی و خوندی فایلا رو. زیپ به سصورت استور زیپ شده و راحته. دوباره تلاش کن و یادت بیار سری قبل چ مدلی خوندی
+
+
+دستیار | پیام 46 | 11/14/2026, 10:24:34 PM
+------------------------------------------------------------
+
+حق با توست؛ دفعهٔ قبل هم فایل بزرگ را با مسیر معمولی نخواندیم و از شناسهٔ Blob خود GitHub گرفتیم. این بار مشکل از اندازه نیست، از باینری بودن ZIP است. دارم روش جایگزین را امتحان می‌کنم: دریافت مستقیم آرشیو از نشانی خام GitHub تا بتوانم آن را در محیط بررسی باز کنم.
+
+
+دستیار | پیام 47 | 11/14/2026, 10:24:45 PM
+------------------------------------------------------------
+
+bash -lc python - <<'PY'
+import requests
+urls=[
+'https://raw.githubusercontent.com/artaville/KCEX-Enhancer/main/Bitunix%20Enhanser-%20WS%20RAW.zip',
+'https://github.com/artaville/KCEX-Enhancer/raw/refs/heads/main/Bitunix%20Enhanser-%20WS%20RAW.zip',
+'https://api.github.com/repos/artaville/KCEX-Enhancer/contents/Bitunix%20Enhanser-%20WS%20RAW.zip'
+]
+for u in urls:
+ try:
+  r=requests.get(u,timeout=30)
+  print(u, r.status_code, r.headers.get('content-type'),len(r.content),r.url)
+  print(r.content[:32])
+  if r.status_code==200 and r.content[:2]==b'PK':
+   open('/mnt/data/bitunix_ws_raw.zip','wb').write(r.content)
+   print('SAVED')
+   break
+ except Exception as e: print(type(e).__name__,e)
+PY
+
+
+دستیار | پیام 48 | 11/14/2026, 10:25:23 PM
+------------------------------------------------------------
+
+bash -lc ls -la /mnt/data | sed -n '1,120p'; find /mnt/data -maxdepth 2 -iname '*bitunix*' -type f -printf '%p %s bytes\n' 2>/dev/null | head -50
+
+
+دستیار | پیام 49 | 11/14/2026, 10:25:41 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch","args":{"url":"https://api.github.com/repos/artaville/KCEX-Enhancer/git/blobs/e47cf0c632afb1281983d27d920f3bf68733294b?mediaType=application/vnd.github+json"}}
+
+
+دستیار | پیام 50 | 11/14/2026, 10:25:42 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch","args":{"url":"https://api.github.com/repos/artaville/KCEX-Enhancer/contents/Bitunix%20Enhanser-%20WS%20RAW.zip?ref=main"}}
+
+
+دستیار | پیام 51 | 11/14/2026, 10:25:42 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch","args":{"url":"https://api.github.com/repos/artaville/KCEX-Enhancer/contents/Bitunix%20Enhanser-%20WS%20RAW.zip?ref=main&mediaType=application/vnd.github+json"}}
+
+
+دستیار | پیام 52 | 11/14/2026, 10:26:03 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch","args":{"url":"https://github.com/artaville/KCEX-Enhancer/blob/main/Bitunix%20Enhanser-%20WS%20RAW.zip"}}
+
+
+دستیار | پیام 53 | 11/14/2026, 10:26:03 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch","args":{"url":"https://github.com/artaville/KCEX-Enhancer/raw/refs/heads/main/Bitunix%20Enhanser-%20WS%20RAW.zip"}}
+
+
+دستیار | پیام 54 | 11/14/2026, 10:26:04 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch","args":{"url":"https://raw.githubusercontent.com/artaville/KCEX-Enhancer/main/Bitunix%20Enhanser-%20WS%20RAW.zip"}}
+
+
+دستیار | پیام 55 | 11/14/2026, 10:26:39 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch","args":{"url":"https://github.com/artaville/KCEX-Enhancer/blob/main/Bitunix%20Enhanser-%20WS%20RAW.zip?plain=1"}}
+
+
+دستیار | پیام 56 | 11/14/2026, 10:26:39 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch","args":{"url":"https://github.com/artaville/KCEX-Enhancer/blob/main/Bitunix%20Enhanser-%20WS%20RAW.zip?raw=1"}}
+
+
+دستیار | پیام 57 | 11/14/2026, 10:26:40 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch","args":{"url":"https://github.com/artaville/KCEX-Enhancer/blob/main/Bitunix%20Enhanser-%20WS%20RAW.zip?download=1"}}
+
+
+دستیار | پیام 58 | 11/14/2026, 10:26:40 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch","args":{"url":"https://api.github.com/repos/artaville/KCEX-Enhancer/git/blobs/e47cf0c632afb1281983d27d920f3bf68733294b?per_page=1"}}
+
+
+دستیار | پیام 59 | 11/14/2026, 10:27:58 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_file","args":{"repository_full_name":"artaville/KCEX-Enhancer","path":"Bitunix Enhanser- WS RAW.zip","encoding":"utf-8"}}
+
+
+دستیار | پیام 60 | 11/14/2026, 10:29:00 PM
+------------------------------------------------------------
+
+{"path":"/files/search","args":{"search_query":[{"q":"Bitunix Enhanser WS RAW zip raw WebSocket frames"}],"scope":{"surfaces":["conversation","library"]},"top_k":10}}
+
+
+دستیار | پیام 61 | 11/14/2026, 10:29:07 PM
+------------------------------------------------------------
+
+{"path":"/files/list","args":{"surface":"conversation","limit":30,"sort":"created_at","sort_order":"desc"}}
+
+
+دستیار | پیام 62 | 11/14/2026, 10:30:03 PM
+------------------------------------------------------------
+
+Worked for 5m 35s
+
+
+دستیار | پیام 63 | 11/14/2026, 10:30:03 PM
+------------------------------------------------------------
+
+حق با تو بود؛ روش دفعهٔ قبل را دوباره امتحان کردم. این بار حتی شناسهٔ Blob فایل را هم پیدا کردم:
+
+`e47cf0c632afb1281983d27d920f3bf68733294b`
+
+اما تفاوت مهم این دو فایل این است:
+
+- دفعهٔ قبل فایل `گزارشات بیتیونیکس9.txt` یک فایل متنی بود. با `fetch_blob` توانستیم محتوای کامل حدود ۲ میلیون کاراکتری آن را بخوانیم.
+- این بار فایل ZIP است. حتی با گزینهٔ Store هم ZIP همچنان یک فایل باینری است. ابزار خواندن Blob هنگام تبدیل آن به متن با خطای UTF-8 متوقف می‌شود. روش قبلی برای این نوع فایل جواب نمی‌دهد.
+
+**راه‌حل بدون نیاز به آپلود در ChatGPT:**
+
+۱. روی ZIP در ویندوز راست‌کلیک کن و Extract All را بزن.
+
+۲. دو فایل JSON داخلش را جدا کن.
+
+۳. در همان مخزن GitHub وارد شو و از مسیر Add file → Upload files هر دو فایل JSON را مستقیماً آپلود کن؛ نیازی به ZIP کردن مجدد نیست.
+
+۴. لینک هر دو فایل را همین‌جا بفرست.
+
+این بار می‌توانم هر فایل متنی را با همان روش قبلی، یعنی `fetch_blob`، دریافت و پردازش کنم.
+
+**نکته:** فایل‌های JSON را پیش از انتشار عمومی از نظر وجود کلید API، توکن یا اطلاعات خصوصی بررسی کن.
+
+نمی‌خواهم وانمود کنم ZIP را خوانده‌ام؛ هنوز محتوای دو ضبط را ندیده‌ام. اما این مسیر جایگزین، مشکل باینری بودن ZIP را برطرف می‌کند و نیازی به ضبط مجدد هم نداری.
+
+
+کاربر | پیام 64 | 11/14/2026, 10:36:32 PM
+------------------------------------------------------------
+
+| [bitunix-ws-raw-2026-11-14T18-45-12-856Z.json](https://github.com/artaville/KCEX-Enhancer/blob/main/bitunix-ws-raw-2026-11-14T18-45-12-856Z.json "bitunix-ws-raw-2026-11-14T18-45-12-856Z.json") | [A](https://github.com/artaville/KCEX-Enhancer/commit/dcdde3f0b831fc8ea364c8a2de24445c3584d95a "Add files via upload") |
+| :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------- |
+
+| [bitunix-ws-raw-2026-11-14T18-43-57-538Z.json](https://github.com/artaville/KCEX-Enhancer/blob/main/bitunix-ws-raw-2026-11-14T18-43-57-538Z.json "bitunix-ws-raw-2026-11-14T18-43-57-538Z.json") |    |
+| :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :- |
+
+
+دستیار | پیام 65 | 11/14/2026, 10:36:35 PM
+------------------------------------------------------------
+
+عالی؛ حالا هر دو ضبط به‌صورت JSON متنی در مخزن هستند و می‌توانم با همان روش قبلی آن‌ها را بخوانم. ابتدا هر دو فایل را دریافت می‌کنم، سپس زمان واقعی ضبط، فریم‌های ابتدایی و Timestampهای داخل پیام‌ها را کنار هم می‌گذارم.
+
+
+دستیار | پیام 66 | 11/14/2026, 10:36:42 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_file","args":{"repository_full_name":"artaville/KCEX-Enhancer","path":"bitunix-ws-raw-2026-11-14T18-45-12-856Z.json","encoding":"utf-8"}}
+
+
+دستیار | پیام 67 | 11/14/2026, 10:36:43 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_file","args":{"repository_full_name":"artaville/KCEX-Enhancer","path":"bitunix-ws-raw-2026-11-14T18-43-57-538Z.json","encoding":"utf-8"}}
+
+
+دستیار | پیام 68 | 11/14/2026, 10:36:48 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_blob","args":{"repository_full_name":"artaville/KCEX-Enhancer","blob_sha":"8a594cc5368c175fccd14724dbe8f9fa4097f3ac"}}
+
+
+دستیار | پیام 69 | 11/14/2026, 10:36:49 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_blob","args":{"repository_full_name":"artaville/KCEX-Enhancer","blob_sha":"13c987c050697f1d4279ad91c72066d395dc24f1"}}
+
+
+دستیار | پیام 70 | 11/14/2026, 10:36:54 PM
+------------------------------------------------------------
+
+هر دو فایل را خواندم. ضبط اول از `18:43:11.785` تا `18:43:57.482` بوده؛ یعنی حدود ۴۵٫۷ ثانیه، و ضبط دوم از همان زمان شروع تا `18:45:12.626` ادامه دارد؛ یعنی حدود ۲ دقیقه و ۰٫۸ ثانیه. پس تأخیر دانلود فایل اول مشکلی برای آزمایش ایجاد نکرده و فایل دوم هم ادامهٔ همان ضبط است. حالا دارم ساختار خود فریم‌ها و زمان‌های احتمالی معاملات را از داخلشان استخراج می‌کنم.
+
+
+دستیار | پیام 71 | 11/14/2026, 10:37:06 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_blob","args":{"repository_full_name":"artaville/KCEX-Enhancer","blob_sha":"13c987c050697f1d4279ad91c72066d395dc24f1"}}
+
+
+دستیار | پیام 72 | 11/14/2026, 10:37:07 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_blob","args":{"repository_full_name":"artaville/KCEX-Enhancer","blob_sha":"8a594cc5368c175fccd14724dbe8f9fa4097f3ac"}}
+
+
+دستیار | پیام 73 | 11/14/2026, 10:37:23 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_blob","args":{"repository_full_name":"artaville/KCEX-Enhancer","blob_sha":"8a594cc5368c175fccd14724dbe8f9fa4097f3ac"}}
+
+
+دستیار | پیام 74 | 11/14/2026, 10:37:40 PM
+------------------------------------------------------------
+
+یک نکتهٔ مهم از داده‌ها روشن شد: این بار واقعاً محتوای باینری ضبط شده، نه فقط اندازهٔ پیام‌ها. فایل ۱۲۰ ثانیه‌ای ۱٬۹۱۶ پیام ورودی باینری و ۳۷ پیام خروجی دارد؛ همه روی همان WebSocket هدف بوده‌اند و هیچ فریمی هم در ضبط‌کننده Drop نشده است. پیام‌های خروجی هم اشتراک کانال `futures_deals_xautusdt` را صریحاً نشان می‌دهند؛ حالا باید محتوای پیام‌های ورودی همان کانال را باز کنیم و ببینیم دادهٔ ابتدایی Snapshot است یا صرفاً معاملات تازه.
+
+
+دستیار | پیام 75 | 11/14/2026, 10:38:02 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_blob","args":{"repository_full_name":"artaville/KCEX-Enhancer","blob_sha":"8a594cc5368c175fccd14724dbe8f9fa4097f3ac"}}
+
+
+دستیار | پیام 76 | 11/14/2026, 10:38:45 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_blob","args":{"repository_full_name":"artaville/KCEX-Enhancer","blob_sha":"8a594cc5368c175fccd14724dbe8f9fa4097f3ac"}}
+
+
+دستیار | پیام 77 | 11/14/2026, 10:38:59 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_blob","args":{"repository_full_name":"artaville/KCEX-Enhancer","blob_sha":"8a594cc5368c175fccd14724dbe8f9fa4097f3ac"}}
+
+
+دستیار | پیام 78 | 11/14/2026, 10:39:28 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_blob","args":{"repository_full_name":"artaville/KCEX-Enhancer","blob_sha":"8a594cc5368c175fccd14724dbe8f9fa4097f3ac"}}
+
+
+دستیار | پیام 79 | 11/14/2026, 10:39:53 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_blob","args":{"repository_full_name":"artaville/KCEX-Enhancer","blob_sha":"8a594cc5368c175fccd14724dbe8f9fa4097f3ac"}}
+
+
+دستیار | پیام 80 | 11/14/2026, 10:40:00 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_blob","args":{"repository_full_name":"artaville/KCEX-Enhancer","blob_sha":"8a594cc5368c175fccd14724dbe8f9fa4097f3ac"}}
+
+
+دستیار | پیام 81 | 11/14/2026, 10:40:55 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_blob","args":{"repository_full_name":"artaville/KCEX-Enhancer","blob_sha":"8a594cc5368c175fccd14724dbe8f9fa4097f3ac"}}
+
+
+دستیار | پیام 82 | 11/14/2026, 10:41:43 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_blob","args":{"repository_full_name":"artaville/KCEX-Enhancer","blob_sha":"13c987c050697f1d4279ad91c72066d395dc24f1"}}
+
+
+دستیار | پیام 83 | 11/14/2026, 10:41:44 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_blob","args":{"repository_full_name":"artaville/KCEX-Enhancer","blob_sha":"8a594cc5368c175fccd14724dbe8f9fa4097f3ac"}}
+
+
+دستیار | پیام 84 | 11/14/2026, 10:44:04 PM
+------------------------------------------------------------
+
+Worked for 7m 31s
+
+
+دستیار | پیام 85 | 11/14/2026, 10:44:04 PM
+------------------------------------------------------------
+
+**رمزگشایی موفق بود!** این بار محتوای واقعی پیام‌های باینری Bitunix را باز کردم و به نتیجه‌ای رسیدیم که برای تصمیم‌گیری دربارهٔ ساخت کندل‌های ثانیه‌ای بسیار مهم است.
+
+<badge color="success">رمزگشایی موفق</badge> <badge color="success">۱۰۰ معاملهٔ تاریخی استخراج شد</badge>
+
+## ۱. نتیجهٔ دو فایل
+
+هر دو فایل را بررسی کردم:
+
+| مشخصات | فایل اول | فایل دوم |
+|---|---:|---:|
+| مدت ضبط اسمی | ۴۵٫۷ ثانیه | ۱۲۰٫۸ ثانیه |
+| تعداد فریم‌ها | ۳۴۳ | ۱٬۹۵۳ |
+| فریم‌های ورودی باینری | ۳۳۱ | ۱٬۹۱۶ |
+| فریم ازدست‌رفته | ۰ | ۰ |
+
+فایل‌ها:
+- <Link url="https://github.com/artaville/KCEX-Enhancer/blob/main/bitunix-ws-raw-2026-11-14T18-43-57-538Z.json" title="ضبط اول – حدود ۴۵ ثانیه"/>
+- <Link url="https://github.com/artaville/KCEX-Enhancer/blob/main/bitunix-ws-raw-2026-11-14T18-45-12-856Z.json" title="ضبط دوم – حدود ۱۲۰ ثانیه"/>
+
+## ۲. کشف اصلی: Bitunix هنگام اشتراک، ۱۰۰ معاملهٔ قبلی را می‌فرستد
+
+کانال معاملات XAUTUSDT این است:
+
+`futures_deals_xautusdt`
+
+هنگام اشتراک، سرور یک پیام باینری با رویداد `sub` ارسال می‌کند. داخل آن، دقیقاً ۱۰۰ معاملهٔ قبلی وجود داشت.
+
+نکتهٔ بسیار خوب اینکه ساختار پیام را هم رمزگشایی کردیم:
+
+| فیلد | اطلاعات استخراج‌شده |
+|---|---|
+| 1 | شناسهٔ معامله |
+| 2 | زمان معامله |
+| 3 | سمت معامله، Buy یا Sell |
+| 4 | حجم معامله |
+| 6 | قیمت معامله |
+
+یعنی داده‌ها دقیقاً همان اطلاعاتی هستند که برای ساخت کندل از معاملات واقعی نیاز داریم.
+
+## ۳. این ۱۰۰ معامله چقدر به گذشته برمی‌گردند؟
+
+<box border radius="lg" padding={3} gap={3}>
+  <box gap={1}>
+    <text color="secondary" size="sm">قدیمی‌ترین معامله در Snapshot</text>
+    <title size="2xl" color="success" tabularNums>18:32:33 UTC</title>
+    <text color="secondary" size="xs">۱۴ نوامبر ۲۰۲۶</text>
+  </box>
+  <divider color="subtle"/>
+  <box gap={1}>
+    <text color="secondary" size="sm">جدیدترین معامله در Snapshot</text>
+    <title size="2xl" tabularNums>18:43:23 UTC</title>
+    <text color="secondary" size="xs">۱۴ نوامبر ۲۰۲۶</text>
+  </box>
+  <divider color="subtle"/>
+  <grid columns={2} gap={2}>
+    <grid-item>
+      <text color="secondary" size="xs">تعداد معاملات</text>
+      <title size="2xl" tabularNums>100</title>
+    </grid-item>
+    <grid-item>
+      <text color="secondary" size="xs">عمق زمانی این نمونه</text>
+      <title size="2xl" color="success" tabularNums>10:50</title>
+    </grid-item>
+  </grid>
+</box>
+
+یعنی هنگام دریافت Snapshot در ساعت 18:43:39، قدیمی‌ترین معامله تقریباً ۱۱ دقیقه قبل انجام شده بود.
+
+این یک نتیجهٔ واقعی از داده‌های XAUTUSDT خودت است، نه تخمین.
+
+## ۴. در طول دو دقیقه چه اتفاقی افتاد؟
+
+بعد از آن ۱۰۰ معاملهٔ اولیه، سرور معاملات جدید را به‌صورت پیام‌های `push` فرستاد.
+
+من ۱۸ معاملهٔ جدید استخراج کردم. شناسه‌های این ۱۸ معامله با ۱۰۰ معاملهٔ قبلی متفاوت بودند؛ بنابراین در مجموع ۱۱۸ معاملهٔ مستقل داشتیم.
+
+پس ساختار کار کاملاً مشخص شده است:
+
+<box border radius="lg" padding={3} gap={2} align="center">
+  <box background="rgba(16,185,129,0.10)" radius="md" padding={3} width="100%" align="center">
+    **اتصال به WebSocket**
+    <text color="secondary" size="xs">کانال futures_deals_xautusdt</text>
+  </box>
+  <icon name="arrow-down" color="secondary" size="lg"/>
+  <box background="rgba(16,185,129,0.10)" radius="md" padding={3} width="100%" align="center">
+    **۱۰۰ معاملهٔ قبلی**
+    <text color="secondary" size="xs">Snapshot اولیه</text>
+  </box>
+  <icon name="arrow-down" color="secondary" size="lg"/>
+  <box background="rgba(59,130,246,0.10)" radius="md" padding={3} width="100%" align="center">
+    **دریافت معاملات جدید**
+    <text color="secondary" size="xs">Push زنده از سرور</text>
+  </box>
+  <icon name="arrow-down" color="secondary" size="lg"/>
+  <box background="rgba(59,130,246,0.10)" radius="md" padding={3} width="100%" align="center">
+    **ذخیره در IndexedDB**
+    <text color="secondary" size="xs">تجمیع معاملات و جلوگیری از تکرار با شناسه</text>
+  </box>
+  <icon name="arrow-down" color="secondary" size="lg"/>
+  <box background="rgba(16,185,129,0.10)" radius="md" padding={3} width="100%" align="center">
+    **ساخت کندل‌های ثانیه‌ای**
+    <text color="secondary" size="xs">1s · 5s · 10s · 15s · 20s · 30s · 45s</text>
+  </box>
+</box>
+
+## ۵. آیا می‌توانیم یک ساعت قبل را دریافت کنیم؟
+
+<badge color="danger">از Snapshot اولیه، خیر؛ در این نمونه</badge>
+
+در این ضبط فقط ۱۰۰ معاملهٔ گذشته به سرور تحویل داده شد. این تعداد حدود ۱۰ دقیقه و ۵۰ ثانیه را پوشش می‌داد.
+
+با نرخ معامله‌ای که در این نمونه مشاهده کردیم، یک ساعت تاریخچه تقریباً به ۵۵۴ معامله نیاز دارد؛ البته تعداد واقعی با شرایط بازار تغییر می‌کند.
+
+**نکتهٔ مهم:** هنوز ثابت نکرده‌ایم که خود پنل Recent Trades با اسکرول به بالا نمی‌تواند اطلاعات قدیمی‌تری دریافت کند. در ضبط فعلی، هیچ درخواست صفحه‌بندی تاریخچهٔ معاملات مشاهده نشد؛ اما اسکرول کردن خود پنل را آزمایش نکرده‌ایم.
+
+## ۶. قدم بعدی چیست؟
+
+به نظرم قبل از ساخت موتور کندل‌ها، یک آزمایش نهایی انجام بدهیم:
+
+در صفحهٔ Bitunix، پنل **Recent Trades** را پیدا کن و با ماوس داخل همان فهرست به سمت بالا اسکرول کن تا به قدیمی‌ترین معامله برسی.
+
+می‌خواهیم بفهمیم آیا با اسکرول:
+- معاملات قدیمی‌تر از ۱۰۰ مورد دریافت می‌شوند؟
+- سرور درخواست جدیدی می‌گیرد؟
+- یا فهرست در همان ۱۰۰ معامله متوقف می‌شود؟
+
+این آزمایش مشخص می‌کند آیا خود رابط کاربری Bitunix راهی برای دریافت معاملات قدیمی‌تر دارد یا خیر.
+
+**جمع‌بندی من:** مسیر ساخت کندل‌های ثانیه‌ای واقعی از طریق WebSocket تأیید شده است. ۱۰۰ معاملهٔ اولیه را هم می‌توانیم استخراج کنیم. فقط برای رسیدن به تاریخچهٔ یک‌ساعته هنوز باید موضوع دریافت معاملات قدیمی‌تر از این ۱۰۰ مورد را حل کنیم.
+
+
+کاربر | پیام 86 | 11/14/2026, 10:48:56 PM
+------------------------------------------------------------
+
+اسکرول کردم. فقط همین 100 تاس. بیشتر نیست. هی این لیست 100 تایی اپدیت میشه. اوکیه همین مقدار و 10 دقیقه معامله قدیمی داشتن مناسب و خوبه
+
+
+دستیار | پیام 87 | 11/14/2026, 10:49:35 PM
+------------------------------------------------------------
+
+Worked for 37s
+
+
+دستیار | پیام 88 | 11/14/2026, 10:49:35 PM
+------------------------------------------------------------
+
+عالی! پس این موضوع را قطعی می‌کنیم. با آزمایش اسکرول تو و رمزگشایی پیام‌های WebSocket، رفتار پنل معاملات Bitunix مشخص شد.
+
+<badge color="success">تأیید شد</badge> **سقف تاریخچهٔ اولیه: ۱۰۰ معامله**
+
+### نتیجهٔ نهایی
+
+1. هنگام اتصال، Bitunix آخرین ۱۰۰ معاملهٔ XAUTUSDT را ارسال می‌کند.
+2. در نمونهٔ آزمایش ما، این ۱۰۰ معامله حدود ۱۰ دقیقه و ۵۰ ثانیه تاریخچه داشتند.
+3. پس از اتصال، معاملات جدید به‌صورت زنده ارسال می‌شوند.
+4. فهرست Recent Trades همیشه ۱۰۰ معاملهٔ آخر را نگه می‌دارد و با ورود معاملات جدید، قدیمی‌ترین‌ها حذف می‌شوند.
+
+نکته: پوشش زمانی ۱۰۰ معامله ثابت نیست؛ در بازار شلوغ ممکن است کمتر از ۱۰ دقیقه و در بازار آرام بیشتر باشد.
+
+### تصمیم فنی برای Bitunix Enhancer
+
+من پیشنهاد می‌کنم دقیقاً این معماری را پیاده کنیم:
+
+- هنگام اتصال، هر ۱۰۰ معاملهٔ اولیه را دریافت و ذخیره کنیم.
+- معاملات جدید را دائماً از WebSocket بگیریم.
+- همه را در IndexedDB نگه داریم، نه فقط ۱۰۰ مورد آخر.
+- شناسهٔ یکتای معامله را برای جلوگیری از ثبت تکراری استفاده کنیم.
+- از ترکیب تاریخچهٔ اولیه و معاملات زنده، کندل‌های ثانیه‌ای بسازیم.
+
+<box border radius="lg" padding={3} gap={1}>
+  **یک مزیت مهم**
+
+  اگر افزونه یک ساعت بدون قطعی فعال بماند، می‌توانیم پس از آن یک ساعت تاریخچهٔ واقعی معاملات را در اختیار داشته باشیم؛ با حدود ۱۰ دقیقه دادهٔ اولیه برای شروع.
+
+  البته در زمان قطعی اتصال، اگر بیش از ۱۰۰ معامله رخ دهد، ممکن است بخشی از معاملات ازدست‌رفته قابل بازیابی نباشد.
+</box>
+
+به نظرم دیگر نیازی به آزمایش بیشتر روی سقف Recent Trades نداریم. این بخش را می‌توانیم تأییدشده در طراحی نسخهٔ Bitunix Enhancer در نظر بگیریم.
+
+
+کاربر | پیام 89 | 11/14/2026, 10:50:47 PM
+------------------------------------------------------------
+
+اوکی. بقیه موارد رو چ کنیم و کجا رو الان باید ازمایش بکنیم؟ زود زود بریم بعدیا
+
+
+دستیار | پیام 90 | 11/14/2026, 10:51:19 PM
+------------------------------------------------------------
+
+Worked for 29s
+
+
+کاربر | پیام 91 | 11/14/2026, 10:51:19 PM
+------------------------------------------------------------
+
+تا الان کدوم بخش ها با اطمینان اطلاعات مورد نیازشون رو دریافت کردیم از اون لیست من و کدوما چیاشون مونده؟
+
+
+دستیار | پیام 92 | 11/14/2026, 10:52:09 PM
+------------------------------------------------------------
+
+Worked for 50s
+
+
+دستیار | پیام 93 | 11/14/2026, 10:52:09 PM
+------------------------------------------------------------
+
+تا اینجا بخش مهمی از اطلاعات فنی Bitunix را استخراج کرده‌ایم. مخصوصاً یک کشف اساسی داشتیم: **منبع واقعی معاملات XAUTUSDT را پیدا و رمزگشایی کردیم.**
+
+اما باید تفاوت بگذاریم بین «اطلاعات فنی را پیدا کرده‌ایم» و «قابلیت را ساخته و آزمایش کرده‌ایم». وضعیت هر ۸ قابلیت درخواستی تو این است:
+
+## وضعیت ۸ قابلیت Bitunix Enhancer
+
+<box border radius="lg" padding={3} gap={3}>
+  <row align="center" justify="between">
+    **۱. دکمه‌های Long، Short و Close**
+    <badge color="warning">نیمه‌کامل</badge>
+  </row>
+  دکمه‌های Open Long و Open Short را در صفحه پیدا کرده‌ایم. اما هنوز ساختار دکمه Close، رویدادهای کلیک و درخواست واقعی ثبت سفارش را استخراج نکرده‌ایم.
+  <divider color="subtle"/>
+  <row align="center" justify="between">
+    **۲. تایم‌فریم‌های ثانیه‌ای**
+    <badge color="warning">زیرساخت آماده، ادغام مانده</badge>
+  </row>
+  ساختار داخلی چارت، DataFeed و روش دریافت کندل‌ها را شناسایی کرده‌ایم. تایم‌فریم‌های ثانیه‌ای در لیست رسمی تایم‌فریم‌های فعلی چارت وجود ندارند. اما معاملات واقعی لازم برای ساخت کندل‌های ثانیه‌ای را از WebSocket استخراج کرده‌ایم.
+  <divider color="subtle"/>
+  <row align="center" justify="between">
+    **۳. اندیکاتور ترجمه‌شده به JavaScript**
+    <badge color="warning">نیمه‌کامل</badge>
+  </row>
+  توابع داخلی چارت برای اضافه‌کردن و حذف اندیکاتورها را پیدا کرده‌ایم؛ از جمله `insertStudy` و `removeAllStudies`. اما اجرای اندیکاتور خودت روی چارت Bitunix و کنترل روشن/خاموش آن هنوز آزمایش نشده است.
+  <divider color="subtle"/>
+  <row align="center" justify="between">
+    **۴. صدای تشکیل خط روی چارت**
+    <badge color="warning">نیمه‌کامل</badge>
+  </row>
+  سیستم ابزارهای رسم و مدیریت خطوط را شناسایی کرده‌ایم. اما هنوز رویداد دقیق ساخته‌شدن یک خط جدید را پیدا نکرده‌ایم تا صدا دقیقاً همان لحظه پخش شود.
+  <divider color="subtle"/>
+  <row align="center" justify="between">
+    **۵. تنظیمات حجم معامله، SL و TP**
+    <badge color="danger">باقی مانده</badge>
+  </row>
+  هنوز ساختار دقیق فیلدهای حجم، حد ضرر و حد سود و نحوه اتصالشان به درخواست سفارش استخراج نشده است.
+  <divider color="subtle"/>
+  <row align="center" justify="between">
+    **۶. تایمر شناور کندل**
+    <badge color="warning">زیرساخت چارت مشخص است</badge>
+  </row>
+  محل چارت و iframe آن را پیدا کرده‌ایم. اما موقعیت دقیق لایه شناور، زمان‌بندی کندل‌ها و تغییر رنگ در ۲۰ درصد پایانی هنوز پیاده‌سازی و آزمایش نشده‌اند.
+  <divider color="subtle"/>
+  <row align="center" justify="between">
+    **۷. Align Candle Opens**
+    <badge color="warning">اطلاعات اولیه موجود است</badge>
+  </row>
+  ساختار آرایه کندل‌ها و تابع `bars.merge()` را پیدا کرده‌ایم. اما روش امن تغییر Open هر کندل بر اساس Close کندل قبلی، بدون آسیب به High و Low و داده زنده، هنوز آزمایش نشده است.
+  <divider color="subtle"/>
+  <row align="center" justify="between">
+    **۸. پنل تنظیمات و ظاهر افزونه**
+    <badge color="danger">باقی مانده</badge>
+  </row>
+  طراحی کلی مشخص است: پنل شیشه‌ای تیره، ذخیره خودکار، تنظیم مستقل هر قابلیت و بدون دکمه Save. اما هنوز پیاده‌سازی نشده و آیکون اختصاصی تو هم لازم است.
+</box>
+
+## چه چیزی را با اطمینان به دست آورده‌ایم؟
+
+<box border radius="lg" padding={3} gap={2}>
+  <row align="center" gap={2}>
+    <icon name="check-circle-filled" color="success" size="lg"/>
+    **منبع معاملات واقعی XAUTUSDT**
+  </row>
+  <text color="secondary" size="sm">کانال `futures_deals_xautusdt`، پیام‌های Protobuf، شناسه، زمان، سمت، حجم و قیمت معامله.</text>
+  <divider color="subtle"/>
+  <row align="center" gap={2}>
+    <icon name="check-circle-filled" color="success" size="lg"/>
+    **۱۰۰ معاملهٔ تاریخی هنگام اتصال**
+  </row>
+  <text color="secondary" size="sm">به‌علاوه معاملات جدید به‌صورت زنده. در نمونه آزمایش حدود ۱۰ دقیقه و ۵۰ ثانیه تاریخچه داشتیم.</text>
+  <divider color="subtle"/>
+  <row align="center" gap={2}>
+    <icon name="check-circle-filled" color="success" size="lg"/>
+    **ساختار داخلی چارت TradingView**
+  </row>
+  <text color="secondary" size="sm">iframe، DataFeed، توابع دریافت و به‌روزرسانی داده، ساختار کندل‌ها و APIهای مدیریت Study و Drawing.</text>
+</box>
+
+## پیشنهاد من برای آزمایش‌های بعدی
+
+برای اینکه سریع پیش برویم، اول اطلاعات مربوط به معاملات را کامل کنیم؛ چون چند قابلیت افزونه به آن وابسته‌اند.
+
+<list connector="solid" marker="number" gap={2}>
+  <list-item>
+    **آزمایش بعدی: پنل سفارش و مدیریت پوزیشن**
+
+    استخراج فیلدهای حجم، SL، TP و دکمه Close و مشخص‌کردن نحوه کارشان. بدون ارسال سفارش واقعی.
+    <badge color="success">اولویت اول</badge>
+  </list-item>
+  <list-item>
+    **آزمایش تشخیص خطوط**
+
+    بررسی رویدادهای ایجاد خطوط Horizontal، Trend Line و ابزارهای رسم تا صدای هشدار را دقیقاً به آن‌ها متصل کنیم.
+  </list-item>
+  <list-item>
+    **آزمایش تایمر و تغییر تایم‌فریم**
+
+    بررسی زمان سرور، زمان کندل فعال و امکان افزودن تایم‌فریم‌های ثانیه‌ای به چارت.
+  </list-item>
+  <list-item>
+    **آزمایش اندیکاتور و Align Candle Opens**
+
+    بررسی اینکه چارت اجازه می‌دهد داده‌های کندل پیش از نمایش اصلاح شوند و اندیکاتور JavaScript خودت بدون محدودیت اجرا شود.
+  </list-item>
+</list>
+
+**پیشنهاد قطعی من:** فعلاً سراغ ساخت افزونه نرویم. یک گزارش تشخیصی جامع برای پنل سفارش تهیه کنیم تا Long، Short، Close، حجم، SL و TP را با یک بار اجرا بررسی کنیم. بعد سراغ تشخیص خطوط برویم.
+
+این ترتیب باعث می‌شود چندین بار مجبور نشوی در Console کد اجرا کنی و گزارش بفرستی.
+
+<MemoryCite />
+
+
+کاربر | پیام 94 | 11/14/2026, 10:54:02 PM
+------------------------------------------------------------
+
+باشه بفرس کد قابل کپی شدن رو
+
+
+دستیار | پیام 95 | 11/14/2026, 10:55:15 PM
+------------------------------------------------------------
+
+Worked for 1m 12s
+
+
+دستیار | پیام 96 | 11/14/2026, 10:55:15 PM
+------------------------------------------------------------
+
+این کد تشخیصی مرحلهٔ بعد است: **بررسی پنل سفارش XAUTUSDT برای استخراج دکمه‌های Long، Short، Close و فیلدهای حجم، Stop Loss و Take Profit.**
+
+<badge color="success">بدون ارسال سفارش</badge> این کد هیچ دکمه‌ای را کلیک نمی‌کند، هیچ سفارشی نمی‌فرستد و تنظیمات معاملات را تغییر نمی‌دهد. فقط ساختار صفحه را می‌خواند.
+
+### روش اجرا
+
+۱. وارد صفحهٔ XAUTUSDT Futures در Bitunix شو.
+
+۲. صبر کن صفحه و پنل سفارش کاملاً بارگذاری شوند.
+
+۳. `F12` را بزن و وارد Console شو.
+
+۴. کل کد زیر را کپی و اجرا کن.
+
+۵. یک پنجرهٔ گزارش ظاهر می‌شود. روی «کپی گزارش» کلیک کن و متن را همین‌جا بفرست.
+
+<CodeBlock language="javascript" editable>
+(() => {
+  'use strict';
+
+  const PANEL_ID = '__BITUNIX_ORDER_AUDIT_V1__';
+
+  // Remove an older diagnostic panel, if present.
+  document.getElementById(PANEL_ID)?.remove();
+
+  const clean = (value, max = 220) =>
+    String(value ?? '')
+      .replace(/\s+/g, ' ')
+      .trim()
+      .slice(0, max);
+
+  const safe = (fn, fallback = null) => {
+    try {
+      const value = fn();
+      return value === undefined ? fallback : value;
+    } catch (_) {
+      return fallback;
+    }
+  };
+
+  const isVisible = (el, win) => {
+    const style = safe(() => win.getComputedStyle(el));
+    const rect = safe(() => el.getBoundingClientRect());
+
+    return !!(
+      style &&
+      rect &&
+      style.display !== 'none' &&
+      style.visibility !== 'hidden' &&
+      Number(style.opacity) !== 0 &&
+      rect.width > 0 &&
+      rect.height > 0
+    );
+  };
+
+  const getText = el =>
+    clean(
+      el?.innerText ||
+      el?.textContent ||
+      el?.getAttribute?.('aria-label') ||
+      el?.getAttribute?.('title') ||
+      '',
+      300
+    );
+
+  const getReactInfo = el => {
+    const key = Object.keys(el).find(k =>
+      k.startsWith('__reactProps$')
+    );
+
+    if (!key) {
+      return { detected: false };
+    }
+
+    const props = safe(() => el[key], {});
+    const eventHandlers = Object.keys(props || {}).filter(k =>
+      /^on[A-Z]/.test(k)
+    );
+
+    return {
+      detected: true,
+      propNames: Object.keys(props || {}).slice(0, 50),
+      eventHandlers: eventHandlers.slice(0, 30)
+    };
+  };
+
+  const getContext = el => {
+    const result = [];
+    let node = el;
+
+    for (let i = 0; i < 4 && node; i++) {
+      result.push({
+        tag: node.tagName?.toLowerCase() || '',
+        id: clean(node.id, 100),
+        className: clean(
+          typeof node.className === 'string'
+            ? node.className
+            : '',
+          180
+        ),
+        text: getText(node)
+      });
+
+      node = node.parentElement;
+    }
+
+    return result;
+  };
+
+  const getAttributes = el => {
+    const names = [
+      'type',
+      'name',
+      'id',
+      'role',
+      'placeholder',
+      'aria-label',
+      'aria-labelledby',
+      'title',
+      'data-testid',
+      'data-state',
+      'data-value',
+      'autocomplete',
+      'min',
+      'max',
+      'step'
+    ];
+
+    const result = {};
+
+    for (const name of names) {
+      const value = el.getAttribute?.(name);
+
+      if (value !== null && value !== undefined && value !== '') {
+        result[name] = clean(value, 180);
+      }
+    }
+
+    result.className = clean(
+      typeof el.className === 'string' ? el.className : '',
+      180
+    );
+
+    return result;
+  };
+
+  const docs = [{
+    doc: document,
+    win: window,
+    frame: 'main document'
+  }];
+
+  // Inspect accessible same-origin frames.
+  for (let i = 0; i < window.frames.length; i++) {
+    try {
+      const frameWin = window.frames[i];
+
+      if (
+        frameWin.document &&
+        frameWin.document !== document
+      ) {
+        docs.push({
+          doc: frameWin.document,
+          win: frameWin,
+          frame: `iframe ${i}`
+        });
+      }
+    } catch (_) {
+      // Cross-origin frames cannot be inspected.
+    }
+  }
+
+  const report = {
+    tool: 'BITUNIX_ORDER_PANEL_AUDIT',
+    version: '1.0.0',
+    capturedAt: new Date().toISOString(),
+    page: location.origin + location.pathname,
+    documents: [],
+    forms: [],
+    buttons: [],
+    inputs: [],
+    relevantText: [],
+    inaccessibleFrames: []
+  };
+
+  const keyword = /
+    long|short|close|position|order|buy|sell|
+    take.?profit|stop.?loss|tp|sl|
+    quantity|qty|size|amount|volume|
+    market|limit|leverage|margin|
+    خرید|فروش|بستن|حجم|حد.?سود|حد.?ضرر
+  /ix;
+
+  for (const item of docs) {
+    const { doc, win, frame } = item;
+
+    report.documents.push({
+      frame,
+      title: clean(doc.title, 150),
+      url: safe(() => win.location.origin + win.location.pathname),
+      readyState: doc.readyState,
+      viewport: {
+        width: win.innerWidth,
+        height: win.innerHeight
+      }
+    });
+
+    // Forms: action and method only, never submitted.
+    for (const form of Array.from(doc.forms || []).slice(0, 50)) {
+      report.forms.push({
+        frame,
+        id: clean(form.id, 100),
+        name: clean(form.name, 100),
+        method: clean(form.method, 30),
+        action: safe(() => {
+          const u = new URL(form.action);
+          return u.origin + u.pathname;
+        }),
+        controlsCount: form.elements?.length || 0,
+        context: getContext(form).slice(0, 2)
+      });
+    }
+
+    const selector = [
+      'button',
+      '[role="button"]',
+      '[role="tab"]',
+      'input',
+      'textarea',
+      'select',
+      '[role="spinbutton"]',
+      '[contenteditable="true"]'
+    ].join(',');
+
+    const elements = Array.from(
+      doc.querySelectorAll(selector)
+    ).slice(0, 500);
+
+    for (const el of elements) {
+      const tag = el.tagName.toLowerCase();
+      const visible = isVisible(el, win);
+      const text = getText(el);
+      const attrs = getAttributes(el);
+      const context = getContext(el);
+
+      if (
+        tag === 'input' ||
+        tag === 'textarea' ||
+        tag === 'select' ||
+        el.getAttribute('role') === 'spinbutton' ||
+        el.isContentEditable
+      ) {
+        const labels = safe(
+          () => Array.from(el.labels || []).map(getText),
+          []
+        );
+
+        report.inputs.push({
+          frame,
+          tag,
+          visible,
+          attributes: attrs,
+          labels,
+          value: '[NOT CAPTURED]',
+          hasReact: getReactInfo(el),
+          context
+        });
+      } else {
+        report.buttons.push({
+          frame,
+          tag,
+          visible,
+          text,
+          attributes: attrs,
+          hasReact: getReactInfo(el),
+          context
+        });
+      }
+    }
+
+    // Find additional labeled elements that may wrap custom controls.
+    const candidates = Array.from(
+      doc.querySelectorAll(
+        'label,[aria-label],[data-testid],[role="group"]'
+      )
+    );
+
+    for (const el of candidates) {
+      const text = getText(el);
+      const aria = el.getAttribute('aria-label') || '';
+      const testId = el.getAttribute('data-testid') || '';
+
+      if (
+        keyword.test(text) ||
+        keyword.test(aria) ||
+        keyword.test(testId)
+      ) {
+        report.relevantText.push({
+          frame,
+          tag: el.tagName.toLowerCase(),
+          text,
+          attributes: getAttributes(el),
+          context: getContext(el).slice(0, 3)
+        });
+      }
+    }
+  }
+
+  report.summary = {
+    documentsScanned: report.documents.length,
+    formsFound: report.forms.length,
+    buttonsFound: report.buttons.length,
+    inputsFound: report.inputs.length,
+    relevantTextFound: report.relevantText.length,
+    note: 'Read-only inspection. No clicks, no form submission, no network interception.'
+  };
+
+  const output = JSON.stringify(report, null, 2);
+
+  // Build floating report window.
+  const panel = document.createElement('div');
+  panel.id = PANEL_ID;
+
+  panel.style.cssText = `
+    position:fixed;
+    z-index:2147483647;
+    right:18px;
+    bottom:18px;
+    width:min(650px,calc(100vw - 36px));
+    height:min(78vh,680px);
+    display:flex;
+    flex-direction:column;
+    background:rgba(14,19,29,.98);
+    color:#e5edf7;
+    border:1px solid #34445c;
+    border-radius:13px;
+    box-shadow:0 16px 55px rgba(0,0,0,.55);
+    font-family:Arial,sans-serif;
+    overflow:hidden;
+    direction:rtl;
+  `;
+
+  const header = document.createElement('div');
+  header.style.cssText = `
+    padding:12px 14px;
+    background:#1b2637;
+    border-bottom:1px solid #34445c;
+    font-size:14px;
+    font-weight:bold;
+  `;
+  header.textContent = 'Bitunix Order Panel Audit — v1.0';
+
+  const info = document.createElement('div');
+  info.style.cssText = `
+    padding:10px 14px;
+    color:#aebdd0;
+    font-size:12px;
+    line-height:1.8;
+    border-bottom:1px solid #29384c;
+  `;
+  info.textContent =
+    `گزارش آماده است | ${report.buttons.length} دکمه | ` +
+    `${report.inputs.length} فیلد | ${report.forms.length} فرم`;
+
+  const area = document.createElement('textarea');
+  area.readOnly = true;
+  area.spellcheck = false;
+  area.value = output;
+  area.style.cssText = `
+    flex:1;
+    min-height:0;
+    width:100%;
+    box-sizing:border-box;
+    resize:none;
+    border:0;
+    outline:0;
+    background:#0b111b;
+    color:#d6e2f1;
+    padding:12px;
+    direction:ltr;
+    text-align:left;
+    font:11px/1.5 Consolas,monospace;
+  `;
+
+  const footer = document.createElement('div');
+  footer.style.cssText = `
+    display:flex;
+    gap:9px;
+    padding:11px;
+    background:#151f2e;
+    border-top:1px solid #34445c;
+  `;
+
+  function makeButton(label, color) {
+    const btn = document.createElement('button');
+    btn.textContent = label;
+    btn.style.cssText = `
+      flex:1;
+      padding:10px;
+      border:0;
+      border-radius:7px;
+      background:${color};
+      color:white;
+      font-size:12px;
+      font-weight:bold;
+      cursor:pointer;
+    `;
+    return btn;
+  }
+
+  const copyBtn = makeButton('کپی گزارش', '#167a60');
+  const closeBtn = makeButton('بستن پنجره', '#38475c');
+
+  copyBtn.addEventListener('click', async () => {
+    try {
+      await navigator.clipboard.writeText(area.value);
+      copyBtn.textContent = 'کپی شد ✓';
+    } catch (_) {
+      area.focus();
+      area.select();
+
+      const ok = document.execCommand('copy');
+      copyBtn.textContent = ok
+        ? 'کپی شد ✓'
+        : 'متن را دستی کپی کن';
+    }
+  });
+
+  closeBtn.addEventListener('click', () => panel.remove());
+
+  footer.append(copyBtn, closeBtn);
+  panel.append(header, info, area, footer);
+  (document.body || document.documentElement).append(panel);
+
+  console.info('[BITUNIX ORDER AUDIT] Report generated.', report.summary);
+})();
+</CodeBlock>
+
+### بعد از اجرای کد
+
+فقط روی «کپی گزارش» بزن و متن را اینجا بفرست.
+
+من از روی گزارش بررسی می‌کنم:
+
+- دکمه‌های Long و Short و Close دقیقاً چه ساختاری دارند.
+- فیلد حجم معامله کدام است.
+- SL و TP در چه بخشی قرار دارند.
+- کدام فیلدها ورودی عددی هستند و چه محدودیت‌هایی دارند.
+- آیا دکمه‌ها و فیلدها رویدادهای React دارند یا خیر.
+
+**فعلاً هیچ دکمهٔ معاملاتی را نزن و هیچ سفارشی ثبت نکن.** این مرحله فقط شناسایی ساختار پنل است.
+
+
+کاربر | پیام 97 | 11/14/2026, 10:57:25 PM
+------------------------------------------------------------
+
+انگار ارور داد 
+})();
+
+VM11806:170 Uncaught SyntaxError: Invalid regular expression: missing / (at VM11806:170:19)
+arms-ba00c1dd9e.js:8  POST https://web-log.zouliangbu.com/rum/web/v2?workspace=default-cms-5168731498105524-ap-northeast-1&service_id=1ew5ugxa27o@fe8e759f829b3480b3994 net::ERR_NAME_NOT_RESOLVED
+arms-ba00c1dd9e.js:8  POST https://web-log.zouliangbu.com/rum/web/v2?workspace=default-cms-5168731498105524-ap-northeast-1&service_id=1ew5ugxa27o@fe8e759f829b3480b3994 net::ERR_NAME_NOT_RESOLVED
+arms-ba00c1dd9e.js:8  POST https://web-log.zouliangbu.com/rum/web/v2?workspace=default-cms-5168731498105524-ap-northeast-1&service_id=1ew5ugxa27o@fe8e759f829b3480b3994 net::ERR_NAME_NOT_RESOLVED
+arms-ba00c1dd9e.js:8  POST https://web-log.zouliangbu.com/rum/web/v2?workspace=default-cms-5168731498105524-ap-northeast-1&service_id=1ew5ugxa27o@fe8e759f829b3480b3994 net::ERR_NAME_NOT_RESOLVED
+
+
+دستیار | پیام 98 | 11/14/2026, 10:57:43 PM
+------------------------------------------------------------
+
+Worked for 17s
+
+
+دستیار | پیام 99 | 11/14/2026, 10:57:43 PM
+------------------------------------------------------------
+
+بله، خطا از کدی است که من فرستادم؛ اشتباه از من بود. عذر می‌خواهم.
+
+مشکل این قسمت است که عبارت منظم را چندخطی نوشته بودم و از فلگ `x` استفاده کرده بودم؛ جاوااسکریپت این فلگ را پشتیبانی نمی‌کند.
+
+**لازم نیست کل کد را دوباره اجرا کنی.** در کد قبلی قسمت `const keyword = ...` را پیدا کن و کل آن بخش را با این خط جایگزین کن:
+
+```javascript
+const keyword = /long|short|close|position|order|buy|sell|take.?profit|stop.?loss|tp|sl|quantity|qty|size|amount|volume|خرید|فروش|بستن|حجم|حد.?سود|حد.?ضرر/i;
+```
+
+بعد کل کد اصلاح‌شده را دوباره در Console اجرا کن.
+
+در مورد خطاهای `ERR_NAME_NOT_RESOLVED` هم نگران نباش؛ مربوط به سرویس گزارش‌گیری خود سایت Bitunix است و با خطای نحوی کد ما ارتباطی ندارد.
+
+این بار باید پنجرهٔ گزارش باز شود و دکمهٔ **کپی گزارش** را ببینی.
+
+
+کاربر | پیام 100 | 11/14/2026, 10:58:05 PM
+------------------------------------------------------------
+
+سخته. کد بازنویسی شده را بفرست
+
+
+دستیار | پیام 101 | 11/14/2026, 10:58:39 PM
+------------------------------------------------------------
+
+Worked for 23s
+
+
+دستیار | پیام 102 | 11/14/2026, 10:58:39 PM
+------------------------------------------------------------
+
+حتماً. این نسخه را کامل بازنویسی کردم و خطای عبارت منظم هم برطرف شده است. **کد قبلی را کنار بگذار و فقط همین نسخه را یک‌جا در Console کپی و اجرا کن.**
+
+این کد هیچ سفارشی ارسال نمی‌کند و هیچ دکمهٔ معاملاتی را نمی‌زند.
+
+<CodeBlock language="javascript" editable>
+(() => {
+  'use strict';
+
+  const PANEL_ID = '__BITUNIX_ORDER_AUDIT_V2__';
+
+  // Remove an older diagnostic panel.
+  const oldPanel = document.getElementById(PANEL_ID);
+  if (oldPanel) oldPanel.remove();
+
+  function safe(fn, fallback = null) {
+    try {
+      const value = fn();
+      return value === undefined ? fallback : value;
+    } catch (_) {
+      return fallback;
+    }
+  }
+
+  function clean(value, max = 220) {
+    return String(value ?? '')
+      .replace(/\s+/g, ' ')
+      .trim()
+      .slice(0, max);
+  }
+
+  function getText(el) {
+    return clean(
+      el.innerText ||
+      el.textContent ||
+      el.getAttribute('aria-label') ||
+      el.getAttribute('title') ||
+      '',
+      300
+    );
+  }
+
+  function isVisible(el, win) {
+    const style = safe(() => win.getComputedStyle(el));
+    const rect = safe(() => el.getBoundingClientRect());
+
+    return Boolean(
+      style &&
+      rect &&
+      style.display !== 'none' &&
+      style.visibility !== 'hidden' &&
+      Number(style.opacity) !== 0 &&
+      rect.width > 0 &&
+      rect.height > 0
+    );
+  }
+
+  function getAttributes(el) {
+    const names = [
+      'type',
+      'name',
+      'id',
+      'role',
+      'placeholder',
+      'aria-label',
+      'aria-labelledby',
+      'title',
+      'data-testid',
+      'data-state',
+      'data-value',
+      'autocomplete',
+      'min',
+      'max',
+      'step'
+    ];
+
+    const result = {};
+
+    for (const name of names) {
+      const value = el.getAttribute(name);
+      if (value !== null && value !== '') {
+        result[name] = clean(value, 180);
+      }
+    }
+
+    result.className = clean(
+      typeof el.className === 'string' ? el.className : '',
+      180
+    );
+
+    return result;
+  }
+
+  function getContext(el) {
+    const result = [];
+    let node = el;
+
+    for (let i = 0; i < 4 && node; i++) {
+      result.push({
+        tag: node.tagName ? node.tagName.toLowerCase() : '',
+        id: clean(node.id, 100),
+        className: clean(
+          typeof node.className === 'string'
+            ? node.className
+            : '',
+          180
+        ),
+        text: getText(node)
+      });
+
+      node = node.parentElement;
+    }
+
+    return result;
+  }
+
+  function getReactInfo(el) {
+    const key = Object.keys(el).find(name =>
+      name.startsWith('__reactProps$')
+    );
+
+    if (!key) {
+      return { detected: false };
+    }
+
+    const props = safe(() => el[key], {});
+    const names = Object.keys(props || {});
+
+    return {
+      detected: true,
+      propNames: names.slice(0, 50),
+      eventHandlers: names
+        .filter(name => /^on[A-Z]/.test(name))
+        .slice(0, 30)
+    };
+  }
+
+  // Locate the main page and accessible same-origin iframes.
+  const documents = [{
+    doc: document,
+    win: window,
+    frame: 'main document'
+  }];
+
+  for (let i = 0; i < window.frames.length; i++) {
+    try {
+      const frameWin = window.frames[i];
+      const frameDoc = frameWin.document;
+
+      if (frameDoc && frameDoc !== document) {
+        documents.push({
+          doc: frameDoc,
+          win: frameWin,
+          frame: 'iframe ' + i
+        });
+      }
+    } catch (_) {
+      // Cross-origin frames cannot be inspected.
+    }
+  }
+
+  const report = {
+    tool: 'BITUNIX_ORDER_PANEL_AUDIT',
+    version: '2.0.0',
+    capturedAt: new Date().toISOString(),
+    page: location.origin + location.pathname,
+    documents: [],
+    forms: [],
+    buttons: [],
+    inputs: [],
+    relevantText: [],
+    summary: {}
+  };
+
+  // Search terms for order-panel labels.
+  const keyword = /long|short|close|position|order|buy|sell|take.?profit|stop.?loss|tp|sl|quantity|qty|size|amount|volume|خرید|فروش|بستن|حجم|حد.?سود|حد.?ضرر/i;
+
+  for (const item of documents) {
+    const doc = item.doc;
+    const win = item.win;
+    const frame = item.frame;
+
+    report.documents.push({
+      frame: frame,
+      title: clean(doc.title, 150),
+      url: safe(() => win.location.origin + win.location.pathname),
+      readyState: doc.readyState,
+      viewport: {
+        width: win.innerWidth,
+        height: win.innerHeight
+      }
+    });
+
+    // Inspect forms without submitting them.
+    for (const form of Array.from(doc.forms || []).slice(0, 60)) {
+      report.forms.push({
+        frame: frame,
+        id: clean(form.id, 100),
+        name: clean(form.name, 100),
+        method: clean(form.method, 30),
+        action: safe(() => {
+          const url = new URL(form.action, doc.location.href);
+          return url.origin + url.pathname;
+        }),
+        controlsCount: form.elements ? form.elements.length : 0,
+        context: getContext(form).slice(0, 2)
+      });
+    }
+
+    const selector = [
+      'button',
+      '[role="button"]',
+      '[role="tab"]',
+      'input',
+      'textarea',
+      'select',
+      '[role="spinbutton"]',
+      '[contenteditable="true"]'
+    ].join(',');
+
+    const elements = Array.from(
+      doc.querySelectorAll(selector)
+    ).slice(0, 600);
+
+    for (const el of elements) {
+      const tag = el.tagName.toLowerCase();
+      const visible = isVisible(el, win);
+      const attributes = getAttributes(el);
+      const context = getContext(el);
+
+      const isInput =
+        tag === 'input' ||
+        tag === 'textarea' ||
+        tag === 'select' ||
+        el.getAttribute('role') === 'spinbutton' ||
+        el.isContentEditable;
+
+      if (isInput) {
+        const labels = safe(
+          () => Array.from(el.labels || []).map(getText),
+          []
+        );
+
+        report.inputs.push({
+          frame: frame,
+          tag: tag,
+          visible: visible,
+          attributes: attributes,
+          labels: labels,
+          value: '[NOT CAPTURED]',
+          hasReact: getReactInfo(el),
+          context: context
+        });
+      } else {
+        report.buttons.push({
+          frame: frame,
+          tag: tag,
+          visible: visible,
+          text: getText(el),
+          attributes: attributes,
+          hasReact: getReactInfo(el),
+          context: context
+        });
+      }
+    }
+
+    // Find labels and custom control wrappers.
+    const candidates = Array.from(
+      doc.querySelectorAll(
+        'label,[aria-label],[data-testid],[role="group"]'
+      )
+    ).slice(0, 1000);
+
+    for (const el of candidates) {
+      const text = getText(el);
+      const aria = el.getAttribute('aria-label') || '';
+      const testId = el.getAttribute('data-testid') || '';
+
+      if (
+        keyword.test(text) ||
+        keyword.test(aria) ||
+        keyword.test(testId)
+      ) {
+        report.relevantText.push({
+          frame: frame,
+          tag: el.tagName.toLowerCase(),
+          text: text,
+          attributes: getAttributes(el),
+          context: getContext(el).slice(0, 3)
+        });
+      }
+    }
+  }
+
+  report.summary = {
+    documentsScanned: report.documents.length,
+    formsFound: report.forms.length,
+    buttonsFound: report.buttons.length,
+    inputsFound: report.inputs.length,
+    relevantTextFound: report.relevantText.length,
+    safety: 'Read-only. No clicks, no form submission, no network requests.'
+  };
+
+  const output = JSON.stringify(report, null, 2);
+
+  // Create the floating report panel.
+  const panel = document.createElement('div');
+  panel.id = PANEL_ID;
+
+  panel.style.cssText = [
+    'position:fixed',
+    'z-index:2147483647',
+    'right:18px',
+    'bottom:18px',
+    'width:min(650px,calc(100vw - 36px))',
+    'height:min(78vh,680px)',
+    'display:flex',
+    'flex-direction:column',
+    'background:rgba(14,19,29,.98)',
+    'color:#e5edf7',
+    'border:1px solid #34445c',
+    'border-radius:13px',
+    'box-shadow:0 16px 55px rgba(0,0,0,.55)',
+    'font-family:Arial,sans-serif',
+    'overflow:hidden',
+    'direction:rtl'
+  ].join(';');
+
+  const header = document.createElement('div');
+  header.style.cssText =
+    'padding:13px 14px;background:#1b2637;' +
+    'border-bottom:1px solid #34445c;' +
+    'font-size:14px;font-weight:bold';
+
+  header.textContent = 'Bitunix Order Panel Audit - v2.0';
+
+  const info = document.createElement('div');
+  info.style.cssText =
+    'padding:10px 14px;color:#aebdd0;' +
+    'font-size:12px;line-height:1.8;' +
+    'border-bottom:1px solid #29384c';
+
+  info.textContent =
+    'گزارش آماده است | ' +
+    report.buttons.length + ' دکمه | ' +
+    report.inputs.length + ' فیلد | ' +
+    report.forms.length + ' فرم';
+
+  const area = document.createElement('textarea');
+  area.readOnly = true;
+  area.spellcheck = false;
+  area.value = output;
+
+  area.style.cssText =
+    'flex:1;min-height:0;width:100%;box-sizing:border-box;' +
+    'resize:none;border:0;outline:0;background:#0b111b;' +
+    'color:#d6e2f1;padding:12px;direction:ltr;' +
+    'text-align:left;font:11px/1.5 Consolas,monospace';
+
+  const footer = document.createElement('div');
+  footer.style.cssText =
+    'display:flex;gap:9px;padding:11px;' +
+    'background:#151f2e;border-top:1px solid #34445c';
+
+  function makeButton(label, color) {
+    const btn = document.createElement('button');
+    btn.textContent = label;
+    btn.style.cssText =
+      'flex:1;padding:10px;border:0;border-radius:7px;' +
+      'background:' + color + ';color:white;' +
+      'font-size:12px;font-weight:bold;cursor:pointer';
+    return btn;
+  }
+
+  const copyBtn = makeButton('کپی گزارش', '#167a60');
+  const closeBtn = makeButton('بستن پنجره', '#38475c');
+
+  copyBtn.addEventListener('click', async () => {
+    try {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        await navigator.clipboard.writeText(area.value);
+        copyBtn.textContent = 'کپی شد ✓';
+        return;
+      }
+    } catch (_) {
+      // Use the fallback below.
+    }
+
+    area.focus();
+    area.select();
+
+    const copied = safe(
+      () => document.execCommand('copy'),
+      false
+    );
+
+    copyBtn.textContent = copied
+      ? 'کپی شد ✓'
+      : 'متن انتخاب شد؛ Ctrl+C بزن';
+  });
+
+  closeBtn.addEventListener('click', () => {
+    panel.remove();
+  });
+
+  footer.append(copyBtn, closeBtn);
+  panel.append(header, info, area, footer);
+
+  (document.body || document.documentElement).append(panel);
+
+  console.info(
+    '[BITUNIX ORDER AUDIT] Report generated:',
+    report.summary
+  );
+})();
+</CodeBlock>
+
+**بعد از اجرا:** پنجره‌ای در پایین صفحه باز می‌شود. روی «کپی گزارش» بزن و متن را همین‌جا بفرست. اگر کپی انجام نشد، متن داخل پنجره را انتخاب کن و `Ctrl+C` بزن.
+
+
+کاربر | پیام 103 | 11/14/2026, 11:01:04 PM
+------------------------------------------------------------
+
+[گزارشات بتیونیکس 10.txt](https://github.com/artaville/KCEX-Enhancer/blob/main/%DA%AF%D8%B2%D8%A7%D8%B1%D8%B4%D8%A7%D8%AA%20%D8%A8%D8%AA%DB%8C%D9%88%D9%86%DB%8C%DA%A9%D8%B3%2010.txt "گزارشات بتیونیکس 10.txt")
+
+
+دستیار | پیام 104 | 11/14/2026, 11:01:15 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_file","args":{"repository_full_name":"artaville/KCEX-Enhancer","path":"\u06af\u0632\u0627\u0631\u0634\u0627\u062a \u0628\u062a\u06cc\u0648\u0646\u06cc\u06a9\u0633 10.txt","encoding":"utf-8"}}
+
+
+دستیار | پیام 105 | 11/14/2026, 11:01:25 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_blob","args":{"repository_full_name":"artaville/KCEX-Enhancer","blob_sha":"1dbba24cb7943b1f9c6d11a8f46b691e6b160b07"}}
+
+
+دستیار | پیام 106 | 11/14/2026, 11:01:40 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_blob","args":{"repository_full_name":"artaville/KCEX-Enhancer","blob_sha":"1dbba24cb7943b1f9c6d11a8f46b691e6b160b07"}}
+
+
+دستیار | پیام 107 | 11/14/2026, 11:02:13 PM
+------------------------------------------------------------
+
+{"path":"/GitHub/link_6aeaab8826d081918d7b0b20cf73cb16/fetch_blob","args":{"repository_full_name":"artaville/KCEX-Enhancer","blob_sha":"1dbba24cb7943b1f9c6d11a8f46b691e6b160b07"}}
+
+
+دستیار | پیام 108 | 11/14/2026, 11:03:38 PM
+------------------------------------------------------------
+
+Worked for 2m 31s
+
+
+دستیار | پیام 109 | 11/14/2026, 11:03:38 PM
+------------------------------------------------------------
+
+گزارش شماره ۱۰ را کامل دریافت و بررسی کردم. نتیجه خوب است؛ اطلاعات اصلی پنل سفارش را پیدا کردیم. چند بخش هنوز نیاز به بررسی دارند.
+
+## ۱. مواردی که پیدا شدند
+
+<badge color="success">تأیید شد</badge>
+
+| قابلیت | نتیجه |
+|---|---|
+| دکمه Long | `Open Long` پیدا شد |
+| دکمه Short | `Open Short` پیدا شد |
+| حجم معامله | فیلد ورودی با واحد USDT پیدا شد |
+| حد سود | فیلد `TP` پیدا شد |
+| حد ضرر | فیلد `SL` پیدا شد |
+
+جزئیات فنی فیلدها:
+
+- حجم: کلاس `volume-input-number` و واحد USDT؛ حداقل نمایش‌داده‌شده `5.13`.
+- TP: کلاس `tp-input` و Placeholder برابر `TP`.
+- SL: کلاس `sl-input` و Placeholder برابر `SL`.
+- یک ورودی دیگر با نام `bitunix_market` و برچسب `By Cost (USDT)` نیز در پنل سفارش Market پیدا شد.
+
+همچنین دو دکمهٔ دیگر با قیمت لحظه‌ای، یعنی `Open long` و `Open short`، در یک پنل سفارش سریع دیده شدند.
+
+## ۲. چه چیزی هنوز پیدا نشده؟
+
+<badge color="warning">نیازمند آزمایش</badge>
+
+**دکمه Close Position**
+
+در گزارش هیچ دکمهٔ بستن پوزیشن در بخش معاملات فعال پیدا نشد. مواردی که با عنوان `Close` دیده شدند فقط دکمهٔ بستن پنجره‌های Popup بودند.
+
+احتمالاً چون در زمان ضبط، بخش پوزیشن‌های باز نمایش داده نمی‌شد، دکمهٔ بستن معامله هم در DOM وجود نداشت.
+
+همچنین هنوز درخواست واقعی سفارش، پارامترهای API و نحوهٔ ارتباط دکمه‌ها با سیستم سفارش را استخراج نکرده‌ایم.
+
+## ۳. آزمایش بعدی
+
+فعلاً نیازی به ثبت معامله نیست.
+
+۱. در صفحهٔ Bitunix به قسمت پایین چارت برو.
+
+۲. تب **Positions / Open Positions** را پیدا و باز کن.
+
+۳. از همان قسمت یک گزارش می‌گیریم تا ساختار دکمه‌های Close، Close All و گزینه‌های بستن پوزیشن مشخص شود.
+
+<text color="secondary" size="xs">یک نکته: عنوان صفحه و آدرس گزارش XAUTUSDT است، اما متن دکمهٔ انتخاب نماد در هدر `EVAAUSDT /` ثبت شده. بهتر است قبل از آزمایش بعدی نماد فعال را هم از روی صفحه تأیید کنیم.</text>
+
+**پس Long، Short، حجم، TP و SL را فعلاً پیدا کرده‌ایم. تمرکز آزمایش بعدی فقط روی مدیریت و بستن پوزیشن‌ها خواهد بود.**
+
+
+کاربر | پیام 110 | 11/14/2026, 11:09:42 PM
+------------------------------------------------------------
+
+خب الان بهتر نیست یدونه پوزیشن باز بکنم و دکمه کلوز رو ببینی؟ یدونه هم دکمه ریورس میخوام که روی چارت هست وقتی پوزیشن بازه. اینو هم ببینی میتونی پیدا بکنی. الان چ کنیم؟
+
+
+دستیار | پیام 111 | 11/14/2026, 11:11:02 PM
+------------------------------------------------------------
+
+Worked for 1m 18s
+
+
+دستیار | پیام 112 | 11/14/2026, 11:11:02 PM
+------------------------------------------------------------
+
+بله، اتفاقاً این بهترین روش است. با بازکردن یک پوزیشن می‌توانیم هم دکمهٔ **Close** و هم دکمهٔ **Reverse** روی چارت را در حالت واقعی شناسایی کنیم.
+
+این بار فقط یک پوزیشن آزمایشی لازم داریم؛ نیازی به چند معامله نیست.
+
+### مرحله اول: بازکردن پوزیشن
+
+قبل از هر چیز یک نکتهٔ مهم: در گزارش شماره ۱۰ آدرس صفحه و عنوان آن XAUTUSDT بود، ولی متن انتخاب‌گر نماد `EVAAUSDT /` ثبت شده بود.
+
+پس اول مطمئن شو نمادی که در فرم سفارش نمایش داده می‌شود **XAUTUSDT Futures** است. اگر نماد دیگری دیدی، سفارش نزن.
+
+بعد:
+1. اگر حساب Demo یا Testnet داری، از آن استفاده کن.
+2. در غیر این صورت، فقط با حداقل حجم مجاز و اهرم پایین یک پوزیشن باز کن.
+3. ترجیحاً یک Long باز کن؛ برای شناسایی اولیهٔ دکمه‌ها کافی است.
+4. دکمه‌های Close و Reverse را فعلاً نزن.
+
+### مرحله دوم: شناسایی دکمه Close
+
+<AsyncImage query="Bitunix futures trading open positions table close position action interface" aspectRatio="16:9" width="100%" maxHeight={145}/>
+
+به قسمت **Positions / Open Positions** برو تا ردیف پوزیشن باز نمایش داده شود.
+
+همان کد قبلی `BITUNIX ORDER PANEL AUDIT v2.0` را دوباره اجرا کن و گزارش را با نام `گزارشات بیتیونیکس 11.txt` ذخیره کن.
+
+### مرحله سوم: شناسایی Reverse روی چارت
+
+<AsyncImage query="TradingView futures chart open position line reverse close floating buttons toolbar" aspectRatio="16:9" width="100%" maxHeight={145}/>
+
+حالا به خود چارت برگرد:
+
+1. خط پوزیشن باز را روی چارت پیدا کن.
+2. نشانگر ماوس را روی خط پوزیشن نگه دار تا کنترل‌های شناور ظاهر شوند.
+3. هیچ‌کدام از دکمه‌ها را کلیک نکن.
+4. همان کد را مجدداً اجرا کن و گزارش دوم را با نام `گزارشات بیتیونیکس 12.txt` ذخیره کن.
+
+### چه چیزی به دست می‌آوریم؟
+
+| قابلیت | اطلاعات موردنیاز |
+|---|---|
+| Close Position | دکمه، شناسه و ساختار رویداد |
+| Reverse | محل دکمه روی چارت و رویداد آن |
+| Position Size | حجم و واحد پوزیشن |
+| Position Direction | تشخیص Long و Short |
+| ارتباط با پوزیشن | اینکه Close و Reverse روی کدام پوزیشن اعمال می‌شوند |
+
+<badge color="success">هدف این مرحله</badge>
+
+می‌خواهیم سه میانبر مستقل در Bitunix Enhancer بسازیم: **Long، Short و Close**؛ به‌علاوه یک دکمهٔ **Reverse** که بتواند جهت پوزیشن باز را برعکس کند.
+
+پس فعلاً یک پوزیشن باز کن، دو گزارش بگیر و تا پایان ضبط گزارش دوم، پوزیشن را باز نگه دار. بعد می‌توانی آن را دستی ببندی.
+
+
+کاربر | پیام 113 | 11/14/2026, 11:13:31 PM
+------------------------------------------------------------
+
+نفهمیدم کدوم کد رو باید کجا بذارم؟ کد رو قبل از باز کردن پوزیشن ران کنم؟ دکمه ریورس و کلوز رو نزنم اصلا؟
+
+
+دستیار | پیام 114 | 11/14/2026, 11:14:10 PM
+------------------------------------------------------------
+
+Worked for 38s
+
+
+دستیار | پیام 115 | 11/14/2026, 11:14:10 PM
+------------------------------------------------------------
+
+نه، کد را **بعد از باز کردن پوزیشن** اجرا کن، نه قبل از آن. بگذار دقیق و به ترتیب بگویم:
+
+### مرحله ۱: باز کردن پوزیشن
+
+۱. وارد صفحه معاملات Futures شو.
+
+۲. حتماً مطمئن شو نماد انتخاب‌شده **XAUTUSDT** است. چون در گزارش قبلی عبارت `EVAAUSDT` هم در هدر دیده می‌شد؛ نمی‌خواهیم اشتباهی روی نماد دیگری معامله کنی.
+
+۳. یک پوزیشن آزمایشی با حداقل حجم مجاز و اهرم پایین باز کن. ترجیحاً از Demo استفاده کن.
+
+### مرحله ۲: گرفتن گزارش اول
+
+وقتی پوزیشن باز شد و در قسمت Positions نمایش داده شد:
+
+۱. `F12` را بزن و وارد Console شو.
+
+۲. همان کد کامل **Bitunix Order Panel Audit v2.0** که پیام قبلی فرستادم را اجرا کن؛ نه کد WebSocket Decoder.
+
+۳. پنجره گزارش ظاهر می‌شود. روی «کپی گزارش» بزن و آن را برای من بفرست.
+
+<badge color="success">گزارش شماره ۱۱</badge> ساختار پوزیشن و دکمه‌های بستن آن را بررسی می‌کنیم.
+
+### مرحله ۳: گرفتن گزارش دوم برای Reverse
+
+حالا به چارت برگرد و نشانگر ماوس را روی خط پوزیشن باز نگه دار تا دکمه‌های شناور ظاهر شوند.
+
+دوباره همان کد **Order Panel Audit v2.0** را در Console اجرا کن و گزارش دوم را بفرست.
+
+<badge color="success">گزارش شماره ۱۲</badge> دنبال دکمه Reverse روی خط پوزیشن می‌گردیم.
+
+### خیلی مهم: کدام دکمه‌ها را نزن؟
+
+<box border radius="lg" padding={3} gap={2}>
+  <row align="center" gap={2}>
+    <icon name="eye" color="success" size="lg"/>
+    **فقط مشاهده و شناسایی**
+  </row>
+  - دکمه Close را نزن.
+  - دکمه Reverse را نزن.
+  - فقط ظاهر و ساختارشان را ثبت می‌کنیم.
+  <divider color="subtle"/>
+  بعد از گرفتن هر دو گزارش، پوزیشن را دستی ببند.
+</box>
+
+**پس ترتیب نهایی: باز کردن یک پوزیشن ← اجرای کد و گزارش ۱۱ ← مشاهدهٔ کنترل‌های روی چارت و اجرای مجدد کد و گزارش ۱۲ ← بستن دستی پوزیشن.**
