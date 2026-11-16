@@ -1,0 +1,2327 @@
+چارت کوچک
+{
+  "reportName": "BITUNIX_SHORTCUT_AUDIT_1.0",
+  "version": "1.0.0",
+  "generatedAt": "2026-11-16T07:19:48.886Z",
+  "page": {
+    "url": "https://www.bitunix.com/contract-trade/XAUTUSDT",
+    "title": "3,838.45 | XAUTUSDT Futures Exchange - Crypto Futures | Bitunix",
+    "hasFocus": false,
+    "fullscreen": false,
+    "activeElement": {
+      "tag": "BODY",
+      "id": null,
+      "className": "zendesk-launcher-hidden"
+    }
+  },
+  "safety": {
+    "readOnly": true,
+    "ordersSent": 0,
+    "tradingMethodsInvoked": 0,
+    "buttonsClicked": 0,
+    "keyboardEventsDispatched": 0,
+    "keyboardListenersAdded": 0,
+    "inputsChanged": 0,
+    "formsSubmitted": 0,
+    "positionDataRead": false,
+    "balanceOrPnlRead": false,
+    "storageRead": false
+  },
+  "frames": [
+    {
+      "name": "TOP",
+      "accessible": true,
+      "url": "https://www.bitunix.com/contract-trade/XAUTUSDT",
+      "title": "3,838.45 | XAUTUSDT Futures Exchange - Crypto Futures | Bitunix",
+      "hasFocus": false,
+      "fullscreen": false,
+      "activeElement": {
+        "tag": "BODY",
+        "id": null,
+        "className": "zendesk-launcher-hidden"
+      },
+      "iframeAttributes": null
+    },
+    {
+      "name": "iframe[0]",
+      "accessible": true,
+      "url": "blob:https://www.bitunix.com/ab7d273c-8869-460e-89d4-432bcda5204d",
+      "title": "",
+      "hasFocus": false,
+      "fullscreen": false,
+      "activeElement": {
+        "tag": "BODY",
+        "id": null,
+        "className": "chart-page unselectable on-widget"
+      },
+      "iframeAttributes": {
+        "src": "blob:https://www.bitunix.com/ab7d273c-8869-460e-89d4-432bcda5204d",
+        "title": "Financial Chart",
+        "allow": null,
+        "allowFullscreen": true,
+        "rect": {
+          "x": 0,
+          "y": 229,
+          "width": 1272,
+          "height": 494
+        }
+      }
+    },
+    {
+      "name": "iframe[1]",
+      "accessible": true,
+      "url": "about:blank",
+      "title": "",
+      "hasFocus": false,
+      "fullscreen": false,
+      "activeElement": {
+        "tag": "BODY",
+        "id": null,
+        "className": ""
+      },
+      "iframeAttributes": {
+        "src": "about:blank",
+        "title": "No content",
+        "allow": "microphone *",
+        "allowFullscreen": false,
+        "rect": {
+          "x": 0,
+          "y": -9999,
+          "width": 0,
+          "height": 0
+        }
+      }
+    },
+    {
+      "name": "iframe[2]",
+      "accessible": true,
+      "url": "about:blank",
+      "title": "Button to launch messaging window",
+      "hasFocus": false,
+      "fullscreen": false,
+      "activeElement": {
+        "tag": "BODY",
+        "id": null,
+        "className": ""
+      },
+      "iframeAttributes": {
+        "src": null,
+        "title": "Button to launch messaging window",
+        "allow": null,
+        "allowFullscreen": false,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      }
+    }
+  ],
+  "keyboardListeners": {
+    "devtoolsHelperAvailable": true,
+    "frames": [
+      {
+        "frame": "TOP",
+        "targets": [
+          {
+            "target": "window",
+            "keyboard": {
+              "keydown": [
+                {
+                  "listenerName": "onKeyDown",
+                  "useCapture": true,
+                  "passive": false,
+                  "once": false,
+                  "source": "function onKeyDown(event) {\n    if(!state.settings.shortcutsEnabled || !event.ctrlKey || event.altKey || event.shiftKey || event.metaKey || event.repeat || isTyping(event.target)) return;\n    let action=null;\n    if(event.code==='ArrowUp') action='long';\n    else if(event.code==='ArrowDown') action='short';\n    else if(event.code==='ArrowRight') action='close';\n    else if(event.code==='ArrowLeft') action='reverse';\n    if(!action) return;\n    const now=Date.now(); if(now-lastHotkeyAt<260) return;\n    lastHotkeyAt=now;\n    event.preventDefault(); event.stopPropagation(); event.stopImmediatePropagation();\n    execute(action);\n  }"
+                },
+                {
+                  "listenerName": "te",
+                  "useCapture": false,
+                  "passive": false,
+                  "once": false,
+                  "source": "H=>{const P=H.target;P.tagName===\"INPUT\"||P.tagName===\"TEXTAREA\"||P.isContentEditable||(H.key===\"/\"?(H.preventDefault(),_e()):H.key===\"Escape\"&&_e(!1))}"
+                },
+                {
+                  "listenerName": "te",
+                  "useCapture": false,
+                  "passive": false,
+                  "once": false,
+                  "source": "H=>{const P=H.target;P.tagName===\"INPUT\"||P.tagName===\"TEXTAREA\"||P.isContentEditable||(H.key===\"/\"?(H.preventDefault(),_e()):H.key===\"Escape\"&&_e(!1))}"
+                },
+                {
+                  "listenerName": "Vt",
+                  "useCapture": false,
+                  "passive": false,
+                  "once": false,
+                  "source": "ie=>{ie.key===\"Escape\"&&Y.pickArmed&&(Y.pickArmed=!1)}"
+                }
+              ],
+              "keyup": [],
+              "keypress": []
+            },
+            "inlineHandlers": {}
+          },
+          {
+            "target": "document",
+            "keyboard": {
+              "keydown": [
+                {
+                  "listenerName": "s",
+                  "useCapture": false,
+                  "passive": false,
+                  "once": false,
+                  "source": "function s(i){i.key===\"Escape\"&&e.value&&t?.()}"
+                },
+                {
+                  "listenerName": "v",
+                  "useCapture": false,
+                  "passive": false,
+                  "once": false,
+                  "source": "function v(y){var M;if(!(y.key!==\"Escape\"||Kse(y.target))){if(o){(M=o.onEscape)==null||M.call(o),d();return}l.value&&s()}}"
+                },
+                {
+                  "listenerName": "",
+                  "useCapture": false,
+                  "passive": false,
+                  "once": false,
+                  "source": "p=>{Ase(p,R4(vd()))}"
+                },
+                {
+                  "listenerName": "f",
+                  "useCapture": true,
+                  "passive": true,
+                  "once": false,
+                  "source": "d=>r(Ex(d))"
+                },
+                {
+                  "listenerName": "S",
+                  "useCapture": false,
+                  "passive": false,
+                  "once": false,
+                  "source": "c=>{c.key===\"Escape\"&&a.visible&&i()}"
+                },
+                {
+                  "listenerName": "S",
+                  "useCapture": false,
+                  "passive": false,
+                  "once": false,
+                  "source": "c=>{c.key===\"Escape\"&&a.visible&&i()}"
+                },
+                {
+                  "listenerName": "S",
+                  "useCapture": false,
+                  "passive": false,
+                  "once": false,
+                  "source": "c=>{c.key===\"Escape\"&&a.visible&&i()}"
+                },
+                {
+                  "listenerName": "S",
+                  "useCapture": false,
+                  "passive": false,
+                  "once": false,
+                  "source": "c=>{c.key===\"Escape\"&&a.visible&&i()}"
+                },
+                {
+                  "listenerName": "S",
+                  "useCapture": false,
+                  "passive": false,
+                  "once": false,
+                  "source": "c=>{c.key===\"Escape\"&&a.visible&&i()}"
+                },
+                {
+                  "listenerName": "S",
+                  "useCapture": false,
+                  "passive": false,
+                  "once": false,
+                  "source": "c=>{c.key===\"Escape\"&&a.visible&&i()}"
+                },
+                {
+                  "listenerName": "S",
+                  "useCapture": false,
+                  "passive": false,
+                  "once": false,
+                  "source": "c=>{c.key===\"Escape\"&&a.visible&&i()}"
+                },
+                {
+                  "listenerName": "S",
+                  "useCapture": false,
+                  "passive": false,
+                  "once": false,
+                  "source": "c=>{c.key===\"Escape\"&&a.visible&&i()}"
+                }
+              ],
+              "keyup": [],
+              "keypress": []
+            },
+            "inlineHandlers": {}
+          },
+          {
+            "target": "body",
+            "keyboard": {
+              "keydown": [],
+              "keyup": [],
+              "keypress": []
+            },
+            "inlineHandlers": {}
+          },
+          {
+            "target": "html",
+            "keyboard": {
+              "keydown": [],
+              "keyup": [],
+              "keypress": []
+            },
+            "inlineHandlers": {}
+          }
+        ]
+      },
+      {
+        "frame": "iframe[0]",
+        "targets": [
+          {
+            "target": "window",
+            "keyboard": {
+              "keydown": [],
+              "keyup": [],
+              "keypress": []
+            },
+            "inlineHandlers": {}
+          },
+          {
+            "target": "document",
+            "keyboard": {
+              "keydown": [],
+              "keyup": [],
+              "keypress": []
+            },
+            "inlineHandlers": {}
+          },
+          {
+            "target": "body",
+            "keyboard": {
+              "keydown": [],
+              "keyup": [],
+              "keypress": []
+            },
+            "inlineHandlers": {}
+          },
+          {
+            "target": "html",
+            "keyboard": {
+              "keydown": [],
+              "keyup": [],
+              "keypress": []
+            },
+            "inlineHandlers": {}
+          }
+        ]
+      },
+      {
+        "frame": "iframe[1]",
+        "targets": [
+          {
+            "target": "window",
+            "keyboard": {
+              "keydown": [],
+              "keyup": [],
+              "keypress": []
+            },
+            "inlineHandlers": {}
+          },
+          {
+            "target": "document",
+            "keyboard": {
+              "keydown": [],
+              "keyup": [],
+              "keypress": []
+            },
+            "inlineHandlers": {}
+          },
+          {
+            "target": "body",
+            "keyboard": {
+              "keydown": [],
+              "keyup": [],
+              "keypress": []
+            },
+            "inlineHandlers": {}
+          },
+          {
+            "target": "html",
+            "keyboard": {
+              "keydown": [],
+              "keyup": [],
+              "keypress": []
+            },
+            "inlineHandlers": {}
+          }
+        ]
+      },
+      {
+        "frame": "iframe[2]",
+        "targets": [
+          {
+            "target": "window",
+            "keyboard": {
+              "keydown": [],
+              "keyup": [],
+              "keypress": []
+            },
+            "inlineHandlers": {}
+          },
+          {
+            "target": "document",
+            "keyboard": {
+              "keydown": [],
+              "keyup": [],
+              "keypress": []
+            },
+            "inlineHandlers": {}
+          },
+          {
+            "target": "body",
+            "keyboard": {
+              "keydown": [],
+              "keyup": [],
+              "keypress": []
+            },
+            "inlineHandlers": {}
+          },
+          {
+            "target": "html",
+            "keyboard": {
+              "keydown": [],
+              "keyup": [],
+              "keypress": []
+            },
+            "inlineHandlers": {}
+          }
+        ]
+      }
+    ]
+  },
+  "orderButtons": [
+    {
+      "frame": "TOP",
+      "count": 14,
+      "buttons": [
+        {
+          "tag": "div",
+          "label": "Close",
+          "disabled": false,
+          "attrs": {
+            "testId": null,
+            "ariaLabel": "Close",
+            "title": null,
+            "className": "arco-modal-close-btn",
+            "role": "button"
+          },
+          "selector": "div.arco-modal-container > div.arco-modal-wrapper.arco-modal-wrapper-align-center:nth-of-type(2) > div.arco-modal > div.arco-modal-header:nth-of-type(1) > div.arco-modal-close-btn:nth-of-type(2)",
+          "visibility": {
+            "visible": false,
+            "display": "block",
+            "visibility": "hidden",
+            "width": 0,
+            "height": 0
+          },
+          "parentText": "Debugger tool"
+        },
+        {
+          "tag": "div",
+          "label": "Buy Crypto",
+          "disabled": false,
+          "attrs": {
+            "testId": null,
+            "ariaLabel": null,
+            "title": null,
+            "className": "arco-collapse-item-header arco-collapse-item-header-right",
+            "role": "button"
+          },
+          "selector": "section.multi-menu-drawer > section.overflow-auto.select-none.px-15 > div.arco-collapse.arco-collapse-borderless.multi-menu-collapse:nth-of-type(1) > div.arco-collapse-item:nth-of-type(1) > div.arco-collapse-item-header.arco-collapse-item-header-right:nth-of-type(1)",
+          "visibility": {
+            "visible": false,
+            "display": "flex",
+            "visibility": "hidden",
+            "width": 0,
+            "height": 0
+          },
+          "parentText": "Buy CryptoOne Click Buy Fiat Deposit Credit/Debit Card P2P Trading Third-party"
+        },
+        {
+          "tag": "button",
+          "label": "Open Long ≈ 5.6400 USDT",
+          "disabled": false,
+          "attrs": {
+            "testId": null,
+            "ariaLabel": null,
+            "title": null,
+            "className": "arco-btn arco-btn-secondary arco-btn-shape-square arco-btn-size-medium arco-btn-status-normal btn h40 color-text-1 items-center justify-center flex-col cursor-pointer rounded-full ",
+            "role": null
+          },
+          "selector": "div.bitunix-tabs-content:nth-of-type(2) > div > div.place-order-container.flex.flex-row:nth-of-type(8) > div.item.flex-1.overflow-hidden:nth-of-type(1) > button.arco-btn.arco-btn-secondary.arco-btn-shape-square",
+          "visibility": {
+            "visible": true,
+            "display": "inline-flex",
+            "visibility": "visible",
+            "width": 135,
+            "height": 40
+          },
+          "parentText": "Open Long ≈ 5.6400 USDT"
+        },
+        {
+          "tag": "button",
+          "label": "Open Short ≈ 5.3800 USDT",
+          "disabled": false,
+          "attrs": {
+            "testId": null,
+            "ariaLabel": null,
+            "title": null,
+            "className": "arco-btn arco-btn-secondary arco-btn-shape-square arco-btn-size-medium arco-btn-status-normal btn h40 color-text-1 items-center justify-center flex-col cursor-pointer rounded-full ",
+            "role": null
+          },
+          "selector": "div.bitunix-tabs-content:nth-of-type(2) > div > div.place-order-container.flex.flex-row:nth-of-type(8) > div.item.flex-1.overflow-hidden:nth-of-type(2) > button.arco-btn.arco-btn-secondary.arco-btn-shape-square",
+          "visibility": {
+            "visible": true,
+            "display": "inline-flex",
+            "visibility": "visible",
+            "width": 135,
+            "height": 40
+          },
+          "parentText": "Open Short ≈ 5.3800 USDT"
+        },
+        {
+          "tag": "div",
+          "label": "Close",
+          "disabled": false,
+          "attrs": {
+            "testId": null,
+            "ariaLabel": "Close",
+            "title": null,
+            "className": "arco-modal-close-btn",
+            "role": "button"
+          },
+          "selector": "div.arco-modal-container:nth-of-type(12) > div.arco-modal-wrapper.arco-modal-wrapper-align-center:nth-of-type(2) > div.arco-modal.position-share-modal-widget > div.arco-modal-header:nth-of-type(1) > div.arco-modal-close-btn:nth-of-type(2)",
+          "visibility": {
+            "visible": false,
+            "display": "block",
+            "visibility": "visible",
+            "width": 0,
+            "height": 0
+          },
+          "parentText": "Profit Sharing"
+        },
+        {
+          "tag": "div",
+          "label": "Close",
+          "disabled": false,
+          "attrs": {
+            "testId": null,
+            "ariaLabel": "Close",
+            "title": null,
+            "className": "arco-modal-close-btn",
+            "role": "button"
+          },
+          "selector": "div.arco-modal-container:nth-of-type(13) > div.arco-modal-wrapper.arco-modal-wrapper-align-center:nth-of-type(2) > div.arco-modal > div.arco-modal-header:nth-of-type(1) > div.arco-modal-close-btn:nth-of-type(2)",
+          "visibility": {
+            "visible": false,
+            "display": "block",
+            "visibility": "visible",
+            "width": 0,
+            "height": 0
+          },
+          "parentText": "Margin mode"
+        },
+        {
+          "tag": "button",
+          "label": "Close",
+          "disabled": false,
+          "attrs": {
+            "testId": null,
+            "ariaLabel": null,
+            "title": null,
+            "className": "arco-btn arco-btn-secondary arco-btn-shape-square arco-btn-size-medium arco-btn-status-normal inline-block h-48 color-bg-4 fs-16 cursor-pointer flex-1 mr-12px text-center btn-secon",
+            "role": null
+          },
+          "selector": "div.arco-modal.grid-result-modal.arco-modal-simple > div.arco-modal-body:nth-of-type(2) > div.flex.flex-col.items-center > div.mt-32px.flex.justify-between:nth-of-type(3) > button.arco-btn.arco-btn-secondary.arco-btn-shape-square:nth-of-type(1)",
+          "visibility": {
+            "visible": false,
+            "display": "block",
+            "visibility": "visible",
+            "width": 0,
+            "height": 0
+          },
+          "parentText": "CloseView Details"
+        },
+        {
+          "tag": "button",
+          "label": "Close",
+          "disabled": false,
+          "attrs": {
+            "testId": null,
+            "ariaLabel": null,
+            "title": null,
+            "className": "arco-btn arco-btn-secondary arco-btn-shape-square arco-btn-size-medium arco-btn-status-normal inline-block h-48 color-bg-4 fs-16 cursor-pointer flex-1 mr-12px text-center btn-secon",
+            "role": null
+          },
+          "selector": "div.arco-modal.grid-result-modal.arco-modal-simple > div.arco-modal-body:nth-of-type(2) > div.flex.flex-col.items-center > div.mt-32px.flex.justify-between:nth-of-type(3) > button.arco-btn.arco-btn-secondary.arco-btn-shape-square:nth-of-type(1)",
+          "visibility": {
+            "visible": false,
+            "display": "block",
+            "visibility": "visible",
+            "width": 0,
+            "height": 0
+          },
+          "parentText": "CloseView Details"
+        },
+        {
+          "tag": "div",
+          "label": "Close",
+          "disabled": false,
+          "attrs": {
+            "testId": null,
+            "ariaLabel": "Close",
+            "title": null,
+            "className": "arco-modal-close-btn",
+            "role": "button"
+          },
+          "selector": "div.arco-modal-container:nth-of-type(28) > div.arco-modal-wrapper.arco-modal-wrapper-align-center:nth-of-type(2) > div.arco-modal.position-share-modal-widget > div.arco-modal-header:nth-of-type(1) > div.arco-modal-close-btn:nth-of-type(2)",
+          "visibility": {
+            "visible": false,
+            "display": "block",
+            "visibility": "visible",
+            "width": 0,
+            "height": 0
+          },
+          "parentText": "Profit Sharing"
+        },
+        {
+          "tag": "div",
+          "label": "Close",
+          "disabled": false,
+          "attrs": {
+            "testId": null,
+            "ariaLabel": "Close",
+            "title": null,
+            "className": "arco-modal-close-btn",
+            "role": "button"
+          },
+          "selector": "div.arco-modal-container:nth-of-type(29) > div.arco-modal-wrapper.arco-modal-wrapper-align-center:nth-of-type(2) > div.arco-modal > div.arco-modal-header:nth-of-type(1) > div.arco-modal-close-btn:nth-of-type(2)",
+          "visibility": {
+            "visible": false,
+            "display": "block",
+            "visibility": "visible",
+            "width": 0,
+            "height": 0
+          },
+          "parentText": "Margin mode"
+        },
+        {
+          "tag": "div",
+          "label": "Close",
+          "disabled": false,
+          "attrs": {
+            "testId": null,
+            "ariaLabel": "Close",
+            "title": null,
+            "className": "arco-modal-close-btn",
+            "role": "button"
+          },
+          "selector": "div.arco-modal-container:nth-of-type(38) > div.arco-modal-wrapper.arco-modal-wrapper-align-center:nth-of-type(2) > div.arco-modal > div.arco-modal-header:nth-of-type(1) > div.arco-modal-close-btn:nth-of-type(2)",
+          "visibility": {
+            "visible": false,
+            "display": "block",
+            "visibility": "visible",
+            "width": 0,
+            "height": 0
+          },
+          "parentText": "TP/SL reminder"
+        },
+        {
+          "tag": "div",
+          "label": "Close",
+          "disabled": false,
+          "attrs": {
+            "testId": null,
+            "ariaLabel": "Close",
+            "title": null,
+            "className": "arco-modal-close-btn",
+            "role": "button"
+          },
+          "selector": "div.arco-modal-container:nth-of-type(40) > div.arco-modal-wrapper.arco-modal-wrapper-align-center:nth-of-type(2) > div.arco-modal.bx-risk-rate-modal > div.arco-modal-header:nth-of-type(1) > div.arco-modal-close-btn",
+          "visibility": {
+            "visible": false,
+            "display": "block",
+            "visibility": "visible",
+            "width": 0,
+            "height": 0
+          },
+          "parentText": ""
+        },
+        {
+          "tag": "button",
+          "label": "Open long 3,838.45",
+          "disabled": false,
+          "attrs": {
+            "testId": null,
+            "ariaLabel": null,
+            "title": null,
+            "className": "flex flex-1 flex-col items-center justify-center select-none border-none px-10px leading-16px py-4px min-w-88px cursor-pointer transition-colors duration-300 ease-in-out bx-buy-col",
+            "role": null
+          },
+          "selector": "html > body.zendesk-launcher-hidden > div.focus\\:outline-none.border-1px.border-solid:nth-of-type(41) > div.flex.flex-1.text-12px:nth-of-type(2) > button.flex.flex-1.flex-col:nth-of-type(1)",
+          "visibility": {
+            "visible": true,
+            "display": "flex",
+            "visibility": "visible",
+            "width": 88,
+            "height": 42
+          },
+          "parentText": "Open long 3,838.45 By Cost (‪USDT‬) Open short 3,838.46"
+        },
+        {
+          "tag": "button",
+          "label": "Open short 3,838.46",
+          "disabled": false,
+          "attrs": {
+            "testId": null,
+            "ariaLabel": null,
+            "title": null,
+            "className": "flex flex-1 items-center justify-center flex-col select-none border-none px-10px leading-16px py-4px min-w-88px cursor-pointer transition-colors duration-300 ease-in-out bx-sell-co",
+            "role": null
+          },
+          "selector": "html > body.zendesk-launcher-hidden > div.focus\\:outline-none.border-1px.border-solid:nth-of-type(41) > div.flex.flex-1.text-12px:nth-of-type(2) > button.flex.flex-1.items-center:nth-of-type(2)",
+          "visibility": {
+            "visible": true,
+            "display": "flex",
+            "visibility": "visible",
+            "width": 88,
+            "height": 42
+          },
+          "parentText": "Open long 3,838.45 By Cost (‪USDT‬) Open short 3,838.46"
+        }
+      ]
+    },
+    {
+      "frame": "iframe[0]",
+      "count": 2,
+      "buttons": [
+        {
+          "tag": "button",
+          "label": "Long Position",
+          "disabled": false,
+          "attrs": {
+            "testId": null,
+            "ariaLabel": "Long Position",
+            "title": null,
+            "className": "button-KTgbfaP5 apply-common-tooltip common-tooltip-vertical isTransparent-KTgbfaP5 accessible-KTgbfaP5",
+            "role": null
+          },
+          "selector": "span:nth-of-type(5) > div.dropdown-pbhJWNrt > div.control-pbhJWNrt > div.buttonWrap-pbhJWNrt.accessible-pbhJWNrt > button.button-KTgbfaP5.apply-common-tooltip.common-tooltip-vertical",
+          "visibility": {
+            "visible": true,
+            "display": "flex",
+            "visibility": "visible",
+            "width": 52,
+            "height": 36
+          },
+          "parentText": ""
+        },
+        {
+          "tag": "button",
+          "label": "Magnet Mode snaps drawings placed near price bars to the closest OHLC value",
+          "disabled": false,
+          "attrs": {
+            "testId": null,
+            "ariaLabel": "Magnet Mode snaps drawings placed near price bars to the closest OHLC value",
+            "title": null,
+            "className": "button-KTgbfaP5 apply-common-tooltip common-tooltip-vertical isActive-KTgbfaP5 accessible-KTgbfaP5",
+            "role": null
+          },
+          "selector": "div.toolButtonMagnet-wg76fIbD:nth-of-type(1) > div.dropdown-pbhJWNrt.undefined > div.control-pbhJWNrt > div.buttonWrap-pbhJWNrt.accessible-pbhJWNrt > button.button-KTgbfaP5.apply-common-tooltip.common-tooltip-vertical",
+          "visibility": {
+            "visible": true,
+            "display": "flex",
+            "visibility": "visible",
+            "width": 52,
+            "height": 36
+          },
+          "parentText": ""
+        }
+      ]
+    },
+    {
+      "frame": "iframe[1]",
+      "count": 0,
+      "buttons": []
+    },
+    {
+      "frame": "iframe[2]",
+      "count": 0,
+      "buttons": []
+    }
+  ],
+  "adapter": {
+    "found": false,
+    "adapterType": "undefined",
+    "ownKeys": [],
+    "methods": {
+      "positions": null,
+      "placeOrder": null,
+      "createInitialPreOrder": null,
+      "createPlaceOrderContext": null,
+      "openPosition": null,
+      "openLong": null,
+      "openShort": null,
+      "submitOrder": null,
+      "sendOrder": null,
+      "closePosition": null,
+      "reversePosition": null,
+      "isTradable": null,
+      "symbolInfo": null
+    },
+    "prototypeMethods": {}
+  },
+  "applicationObjects": {
+    "bitunixTvFound": true,
+    "bitunixTvKeys": [
+      "eventBus",
+      "transform",
+      "onRequest",
+      "get",
+      "tvWidget"
+    ],
+    "tvWidgetKeys": [
+      "_id",
+      "_ready",
+      "_readyHandlers",
+      "_onWindowResize",
+      "_options",
+      "_iFrame",
+      "_innerWindowLoaded",
+      "onDlay",
+      "listenerGuids",
+      "ticks",
+      "resetCacheFn",
+      "barDelay",
+      "lastBarTime",
+      "host",
+      "_callbackMap",
+      "historyOrderMarksCache",
+      "barDelayVisibilityHandler",
+      "barDelayInterval",
+      "getPriceAxis",
+      "kline_delay"
+    ],
+    "relevantGlobalNames": [
+      "SVGTextPositioningElement",
+      "MediaRecorder",
+      "GeolocationPositionError",
+      "GeolocationPosition",
+      "CompositionEvent",
+      "CaretPosition",
+      "CSSPositionValue",
+      "CSSPositionTryRule",
+      "CSSPositionTryDescriptors",
+      "XRCompositionLayer",
+      "__BITUNIX_SECONDS_LAB_TEST__",
+      "__BITUNIX_ENHANCER_FEATURES_V040__",
+      "__BITUNIX_ENHANCER_API_V040__",
+      "__BITUNIX_CUSTOM_PINE_V404__",
+      "__BITUNIX_CUSTOM_PINE_V403__",
+      "Bitunix_PineIndicatorEngine",
+      "__BITUNIX_PINE_VERSION__",
+      "Bitunix_createCustomIndicators",
+      "Bitunix_renderVerticalSignalShapesOnChart",
+      "__BITUNIX_CUSTOM_INDICATORS_V040__",
+      "__BITUNIX_CUSTOM_PINE_STATUS_V404__",
+      "__BITUNIX_CUSTOM_PINE_STATUS_V403__",
+      "bitunix_tracking_sdk",
+      "__BITUNIX_LCP_SETTLER__",
+      "__BITUNIX_CUSTOMER_SERVICE__",
+      "bitunixTv"
+    ],
+    "relevantFunctions": {
+      "bitunixTv": {},
+      "bitunixTv.tvWidget": {
+        "onShortcut": {
+          "level": 1,
+          "name": "onShortcut",
+          "argumentCount": 2,
+          "source": "[w(627,\"p&(x\")](e,t){const r=w;this[r(4902,\"ySJ%\")+r(4259,\"ySJ%\")+r(3035,\"i#a&\")](o=>{const n=r;o[n(1875,\"W4QN\")+n(2071,\"P0pz\")](e,t)})}"
+        },
+        "closePopupsAndDialogs": {
+          "level": 1,
+          "name": "closePopupsAndDialogs",
+          "argumentCount": 0,
+          "source": "[k(5475)+k(1802)+\"s\"](){const e=w,t=k;this[t(1858)+e(2794,\"9!Cm\")+\"d\"](r=>{const o=e;r[t(5475)+o(314,\"CiQI\")+\"s\"]()})}"
+        }
+      }
+    }
+  },
+  "warnings": [],
+  "errors": [],
+  "summary": {
+    "accessibleFrames": 4,
+    "totalFrames": 4,
+    "devtoolsListenerHelperAvailable": true,
+    "keyboardListenerCounts": [
+      {
+        "frame": "TOP",
+        "target": "window",
+        "event": "keydown",
+        "count": 4
+      },
+      {
+        "frame": "TOP",
+        "target": "window",
+        "event": "keyup",
+        "count": 0
+      },
+      {
+        "frame": "TOP",
+        "target": "window",
+        "event": "keypress",
+        "count": 0
+      },
+      {
+        "frame": "TOP",
+        "target": "document",
+        "event": "keydown",
+        "count": 12
+      },
+      {
+        "frame": "TOP",
+        "target": "document",
+        "event": "keyup",
+        "count": 0
+      },
+      {
+        "frame": "TOP",
+        "target": "document",
+        "event": "keypress",
+        "count": 0
+      },
+      {
+        "frame": "TOP",
+        "target": "body",
+        "event": "keydown",
+        "count": 0
+      },
+      {
+        "frame": "TOP",
+        "target": "body",
+        "event": "keyup",
+        "count": 0
+      },
+      {
+        "frame": "TOP",
+        "target": "body",
+        "event": "keypress",
+        "count": 0
+      },
+      {
+        "frame": "TOP",
+        "target": "html",
+        "event": "keydown",
+        "count": 0
+      },
+      {
+        "frame": "TOP",
+        "target": "html",
+        "event": "keyup",
+        "count": 0
+      },
+      {
+        "frame": "TOP",
+        "target": "html",
+        "event": "keypress",
+        "count": 0
+      },
+      {
+        "frame": "iframe[0]",
+        "target": "window",
+        "event": "keydown",
+        "count": 0
+      },
+      {
+        "frame": "iframe[0]",
+        "target": "window",
+        "event": "keyup",
+        "count": 0
+      },
+      {
+        "frame": "iframe[0]",
+        "target": "window",
+        "event": "keypress",
+        "count": 0
+      },
+      {
+        "frame": "iframe[0]",
+        "target": "document",
+        "event": "keydown",
+        "count": 0
+      },
+      {
+        "frame": "iframe[0]",
+        "target": "document",
+        "event": "keyup",
+        "count": 0
+      },
+      {
+        "frame": "iframe[0]",
+        "target": "document",
+        "event": "keypress",
+        "count": 0
+      },
+      {
+        "frame": "iframe[0]",
+        "target": "body",
+        "event": "keydown",
+        "count": 0
+      },
+      {
+        "frame": "iframe[0]",
+        "target": "body",
+        "event": "keyup",
+        "count": 0
+      },
+      {
+        "frame": "iframe[0]",
+        "target": "body",
+        "event": "keypress",
+        "count": 0
+      },
+      {
+        "frame": "iframe[0]",
+        "target": "html",
+        "event": "keydown",
+        "count": 0
+      },
+      {
+        "frame": "iframe[0]",
+        "target": "html",
+        "event": "keyup",
+        "count": 0
+      },
+      {
+        "frame": "iframe[0]",
+        "target": "html",
+        "event": "keypress",
+        "count": 0
+      },
+      {
+        "frame": "iframe[1]",
+        "target": "window",
+        "event": "keydown",
+        "count": 0
+      },
+      {
+        "frame": "iframe[1]",
+        "target": "window",
+        "event": "keyup",
+        "count": 0
+      },
+      {
+        "frame": "iframe[1]",
+        "target": "window",
+        "event": "keypress",
+        "count": 0
+      },
+      {
+        "frame": "iframe[1]",
+        "target": "document",
+        "event": "keydown",
+        "count": 0
+      },
+      {
+        "frame": "iframe[1]",
+        "target": "document",
+        "event": "keyup",
+        "count": 0
+      },
+      {
+        "frame": "iframe[1]",
+        "target": "document",
+        "event": "keypress",
+        "count": 0
+      },
+      {
+        "frame": "iframe[1]",
+        "target": "body",
+        "event": "keydown",
+        "count": 0
+      },
+      {
+        "frame": "iframe[1]",
+        "target": "body",
+        "event": "keyup",
+        "count": 0
+      },
+      {
+        "frame": "iframe[1]",
+        "target": "body",
+        "event": "keypress",
+        "count": 0
+      },
+      {
+        "frame": "iframe[1]",
+        "target": "html",
+        "event": "keydown",
+        "count": 0
+      },
+      {
+        "frame": "iframe[1]",
+        "target": "html",
+        "event": "keyup",
+        "count": 0
+      },
+      {
+        "frame": "iframe[1]",
+        "target": "html",
+        "event": "keypress",
+        "count": 0
+      },
+      {
+        "frame": "iframe[2]",
+        "target": "window",
+        "event": "keydown",
+        "count": 0
+      },
+      {
+        "frame": "iframe[2]",
+        "target": "window",
+        "event": "keyup",
+        "count": 0
+      },
+      {
+        "frame": "iframe[2]",
+        "target": "window",
+        "event": "keypress",
+        "count": 0
+      },
+      {
+        "frame": "iframe[2]",
+        "target": "document",
+        "event": "keydown",
+        "count": 0
+      },
+      {
+        "frame": "iframe[2]",
+        "target": "document",
+        "event": "keyup",
+        "count": 0
+      },
+      {
+        "frame": "iframe[2]",
+        "target": "document",
+        "event": "keypress",
+        "count": 0
+      },
+      {
+        "frame": "iframe[2]",
+        "target": "body",
+        "event": "keydown",
+        "count": 0
+      },
+      {
+        "frame": "iframe[2]",
+        "target": "body",
+        "event": "keyup",
+        "count": 0
+      },
+      {
+        "frame": "iframe[2]",
+        "target": "body",
+        "event": "keypress",
+        "count": 0
+      },
+      {
+        "frame": "iframe[2]",
+        "target": "html",
+        "event": "keydown",
+        "count": 0
+      },
+      {
+        "frame": "iframe[2]",
+        "target": "html",
+        "event": "keyup",
+        "count": 0
+      },
+      {
+        "frame": "iframe[2]",
+        "target": "html",
+        "event": "keypress",
+        "count": 0
+      }
+    ],
+    "adapterFound": false,
+    "placeOrderFound": false,
+    "closePositionFound": false,
+    "reversePositionFound": false,
+    "longShortButtonsFound": 6
+  },
+  "finishedAt": "2026-11-16T07:19:48.904Z",
+  "durationMs": 18
+}
+
+
+چارت بزرگ
+{
+  "reportName": "BITUNIX_SHORTCUT_AUDIT_1.0",
+  "version": "1.0.0",
+  "generatedAt": "2026-11-16T07:20:43.944Z",
+  "page": {
+    "url": "https://www.bitunix.com/contract-trade/XAUTUSDT",
+    "title": "3,838.66 | XAUTUSDT Futures Exchange - Crypto Futures | Bitunix",
+    "hasFocus": false,
+    "fullscreen": false,
+    "activeElement": {
+      "tag": "IFRAME",
+      "id": "tradingview_aa223",
+      "className": ""
+    }
+  },
+  "safety": {
+    "readOnly": true,
+    "ordersSent": 0,
+    "tradingMethodsInvoked": 0,
+    "buttonsClicked": 0,
+    "keyboardEventsDispatched": 0,
+    "keyboardListenersAdded": 0,
+    "inputsChanged": 0,
+    "formsSubmitted": 0,
+    "positionDataRead": false,
+    "balanceOrPnlRead": false,
+    "storageRead": false
+  },
+  "frames": [
+    {
+      "name": "TOP",
+      "accessible": true,
+      "url": "https://www.bitunix.com/contract-trade/XAUTUSDT",
+      "title": "3,838.66 | XAUTUSDT Futures Exchange - Crypto Futures | Bitunix",
+      "hasFocus": false,
+      "fullscreen": false,
+      "activeElement": {
+        "tag": "IFRAME",
+        "id": "tradingview_aa223",
+        "className": ""
+      },
+      "iframeAttributes": null
+    },
+    {
+      "name": "iframe[0]",
+      "accessible": true,
+      "url": "blob:https://www.bitunix.com/ab7d273c-8869-460e-89d4-432bcda5204d",
+      "title": "",
+      "hasFocus": false,
+      "fullscreen": false,
+      "activeElement": {
+        "tag": "BODY",
+        "id": null,
+        "className": "chart-page unselectable on-widget"
+      },
+      "iframeAttributes": {
+        "src": "blob:https://www.bitunix.com/ab7d273c-8869-460e-89d4-432bcda5204d",
+        "title": "Financial Chart",
+        "allow": null,
+        "allowFullscreen": true,
+        "rect": {
+          "x": 0,
+          "y": 40,
+          "width": 1920,
+          "height": 839
+        }
+      }
+    },
+    {
+      "name": "iframe[1]",
+      "accessible": true,
+      "url": "about:blank",
+      "title": "",
+      "hasFocus": false,
+      "fullscreen": false,
+      "activeElement": {
+        "tag": "BODY",
+        "id": null,
+        "className": ""
+      },
+      "iframeAttributes": {
+        "src": "about:blank",
+        "title": "No content",
+        "allow": "microphone *",
+        "allowFullscreen": false,
+        "rect": {
+          "x": 0,
+          "y": -9999,
+          "width": 0,
+          "height": 0
+        }
+      }
+    },
+    {
+      "name": "iframe[2]",
+      "accessible": true,
+      "url": "about:blank",
+      "title": "Button to launch messaging window",
+      "hasFocus": false,
+      "fullscreen": false,
+      "activeElement": {
+        "tag": "BODY",
+        "id": null,
+        "className": ""
+      },
+      "iframeAttributes": {
+        "src": null,
+        "title": "Button to launch messaging window",
+        "allow": null,
+        "allowFullscreen": false,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      }
+    }
+  ],
+  "keyboardListeners": {
+    "devtoolsHelperAvailable": true,
+    "frames": [
+      {
+        "frame": "TOP",
+        "targets": [
+          {
+            "target": "window",
+            "keyboard": {
+              "keydown": [
+                {
+                  "listenerName": "onKeyDown",
+                  "useCapture": true,
+                  "passive": false,
+                  "once": false,
+                  "source": "function onKeyDown(event) {\n    if(!state.settings.shortcutsEnabled || !event.ctrlKey || event.altKey || event.shiftKey || event.metaKey || event.repeat || isTyping(event.target)) return;\n    let action=null;\n    if(event.code==='ArrowUp') action='long';\n    else if(event.code==='ArrowDown') action='short';\n    else if(event.code==='ArrowRight') action='close';\n    else if(event.code==='ArrowLeft') action='reverse';\n    if(!action) return;\n    const now=Date.now(); if(now-lastHotkeyAt<260) return;\n    lastHotkeyAt=now;\n    event.preventDefault(); event.stopPropagation(); event.stopImmediatePropagation();\n    execute(action);\n  }"
+                },
+                {
+                  "listenerName": "te",
+                  "useCapture": false,
+                  "passive": false,
+                  "once": false,
+                  "source": "H=>{const P=H.target;P.tagName===\"INPUT\"||P.tagName===\"TEXTAREA\"||P.isContentEditable||(H.key===\"/\"?(H.preventDefault(),_e()):H.key===\"Escape\"&&_e(!1))}"
+                },
+                {
+                  "listenerName": "Vt",
+                  "useCapture": false,
+                  "passive": false,
+                  "once": false,
+                  "source": "ie=>{ie.key===\"Escape\"&&Y.pickArmed&&(Y.pickArmed=!1)}"
+                }
+              ],
+              "keyup": [],
+              "keypress": []
+            },
+            "inlineHandlers": {}
+          },
+          {
+            "target": "document",
+            "keyboard": {
+              "keydown": [
+                {
+                  "listenerName": "s",
+                  "useCapture": false,
+                  "passive": false,
+                  "once": false,
+                  "source": "function s(i){i.key===\"Escape\"&&e.value&&t?.()}"
+                },
+                {
+                  "listenerName": "v",
+                  "useCapture": false,
+                  "passive": false,
+                  "once": false,
+                  "source": "function v(y){var M;if(!(y.key!==\"Escape\"||Kse(y.target))){if(o){(M=o.onEscape)==null||M.call(o),d();return}l.value&&s()}}"
+                },
+                {
+                  "listenerName": "",
+                  "useCapture": false,
+                  "passive": false,
+                  "once": false,
+                  "source": "p=>{Ase(p,R4(vd()))}"
+                },
+                {
+                  "listenerName": "f",
+                  "useCapture": true,
+                  "passive": true,
+                  "once": false,
+                  "source": "d=>r(Ex(d))"
+                },
+                {
+                  "listenerName": "S",
+                  "useCapture": false,
+                  "passive": false,
+                  "once": false,
+                  "source": "c=>{c.key===\"Escape\"&&a.visible&&i()}"
+                },
+                {
+                  "listenerName": "S",
+                  "useCapture": false,
+                  "passive": false,
+                  "once": false,
+                  "source": "c=>{c.key===\"Escape\"&&a.visible&&i()}"
+                },
+                {
+                  "listenerName": "S",
+                  "useCapture": false,
+                  "passive": false,
+                  "once": false,
+                  "source": "c=>{c.key===\"Escape\"&&a.visible&&i()}"
+                },
+                {
+                  "listenerName": "S",
+                  "useCapture": false,
+                  "passive": false,
+                  "once": false,
+                  "source": "c=>{c.key===\"Escape\"&&a.visible&&i()}"
+                },
+                {
+                  "listenerName": "S",
+                  "useCapture": false,
+                  "passive": false,
+                  "once": false,
+                  "source": "c=>{c.key===\"Escape\"&&a.visible&&i()}"
+                },
+                {
+                  "listenerName": "S",
+                  "useCapture": false,
+                  "passive": false,
+                  "once": false,
+                  "source": "c=>{c.key===\"Escape\"&&a.visible&&i()}"
+                },
+                {
+                  "listenerName": "S",
+                  "useCapture": false,
+                  "passive": false,
+                  "once": false,
+                  "source": "c=>{c.key===\"Escape\"&&a.visible&&i()}"
+                },
+                {
+                  "listenerName": "S",
+                  "useCapture": false,
+                  "passive": false,
+                  "once": false,
+                  "source": "c=>{c.key===\"Escape\"&&a.visible&&i()}"
+                }
+              ],
+              "keyup": [],
+              "keypress": []
+            },
+            "inlineHandlers": {}
+          },
+          {
+            "target": "body",
+            "keyboard": {
+              "keydown": [],
+              "keyup": [],
+              "keypress": []
+            },
+            "inlineHandlers": {}
+          },
+          {
+            "target": "html",
+            "keyboard": {
+              "keydown": [],
+              "keyup": [],
+              "keypress": []
+            },
+            "inlineHandlers": {}
+          }
+        ]
+      },
+      {
+        "frame": "iframe[0]",
+        "targets": [
+          {
+            "target": "window",
+            "keyboard": {
+              "keydown": [],
+              "keyup": [],
+              "keypress": []
+            },
+            "inlineHandlers": {}
+          },
+          {
+            "target": "document",
+            "keyboard": {
+              "keydown": [],
+              "keyup": [],
+              "keypress": []
+            },
+            "inlineHandlers": {}
+          },
+          {
+            "target": "body",
+            "keyboard": {
+              "keydown": [],
+              "keyup": [],
+              "keypress": []
+            },
+            "inlineHandlers": {}
+          },
+          {
+            "target": "html",
+            "keyboard": {
+              "keydown": [],
+              "keyup": [],
+              "keypress": []
+            },
+            "inlineHandlers": {}
+          }
+        ]
+      },
+      {
+        "frame": "iframe[1]",
+        "targets": [
+          {
+            "target": "window",
+            "keyboard": {
+              "keydown": [],
+              "keyup": [],
+              "keypress": []
+            },
+            "inlineHandlers": {}
+          },
+          {
+            "target": "document",
+            "keyboard": {
+              "keydown": [],
+              "keyup": [],
+              "keypress": []
+            },
+            "inlineHandlers": {}
+          },
+          {
+            "target": "body",
+            "keyboard": {
+              "keydown": [],
+              "keyup": [],
+              "keypress": []
+            },
+            "inlineHandlers": {}
+          },
+          {
+            "target": "html",
+            "keyboard": {
+              "keydown": [],
+              "keyup": [],
+              "keypress": []
+            },
+            "inlineHandlers": {}
+          }
+        ]
+      },
+      {
+        "frame": "iframe[2]",
+        "targets": [
+          {
+            "target": "window",
+            "keyboard": {
+              "keydown": [],
+              "keyup": [],
+              "keypress": []
+            },
+            "inlineHandlers": {}
+          },
+          {
+            "target": "document",
+            "keyboard": {
+              "keydown": [],
+              "keyup": [],
+              "keypress": []
+            },
+            "inlineHandlers": {}
+          },
+          {
+            "target": "body",
+            "keyboard": {
+              "keydown": [],
+              "keyup": [],
+              "keypress": []
+            },
+            "inlineHandlers": {}
+          },
+          {
+            "target": "html",
+            "keyboard": {
+              "keydown": [],
+              "keyup": [],
+              "keypress": []
+            },
+            "inlineHandlers": {}
+          }
+        ]
+      }
+    ]
+  },
+  "orderButtons": [
+    {
+      "frame": "TOP",
+      "count": 14,
+      "buttons": [
+        {
+          "tag": "div",
+          "label": "Close",
+          "disabled": false,
+          "attrs": {
+            "testId": null,
+            "ariaLabel": "Close",
+            "title": null,
+            "className": "arco-modal-close-btn",
+            "role": "button"
+          },
+          "selector": "div.arco-modal-container > div.arco-modal-wrapper.arco-modal-wrapper-align-center:nth-of-type(2) > div.arco-modal > div.arco-modal-header:nth-of-type(1) > div.arco-modal-close-btn:nth-of-type(2)",
+          "visibility": {
+            "visible": false,
+            "display": "block",
+            "visibility": "hidden",
+            "width": 0,
+            "height": 0
+          },
+          "parentText": "Debugger tool"
+        },
+        {
+          "tag": "div",
+          "label": "Buy Crypto",
+          "disabled": false,
+          "attrs": {
+            "testId": null,
+            "ariaLabel": null,
+            "title": null,
+            "className": "arco-collapse-item-header arco-collapse-item-header-right",
+            "role": "button"
+          },
+          "selector": "section.multi-menu-drawer > section.overflow-auto.select-none.px-15 > div.arco-collapse.arco-collapse-borderless.multi-menu-collapse:nth-of-type(1) > div.arco-collapse-item:nth-of-type(1) > div.arco-collapse-item-header.arco-collapse-item-header-right:nth-of-type(1)",
+          "visibility": {
+            "visible": false,
+            "display": "flex",
+            "visibility": "hidden",
+            "width": 0,
+            "height": 0
+          },
+          "parentText": "Buy CryptoOne Click Buy Fiat Deposit Credit/Debit Card P2P Trading Third-party"
+        },
+        {
+          "tag": "button",
+          "label": "Open Long ≈ 5.6400 USDT",
+          "disabled": false,
+          "attrs": {
+            "testId": null,
+            "ariaLabel": null,
+            "title": null,
+            "className": "arco-btn arco-btn-secondary arco-btn-shape-square arco-btn-size-medium arco-btn-status-normal btn h40 color-text-1 items-center justify-center flex-col cursor-pointer rounded-full ",
+            "role": null
+          },
+          "selector": "div.bitunix-tabs-content:nth-of-type(2) > div > div.place-order-container.flex.flex-row:nth-of-type(8) > div.item.flex-1.overflow-hidden:nth-of-type(1) > button.arco-btn.arco-btn-secondary.arco-btn-shape-square",
+          "visibility": {
+            "visible": true,
+            "display": "inline-flex",
+            "visibility": "visible",
+            "width": 134,
+            "height": 40
+          },
+          "parentText": "Open Long ≈ 5.6400 USDT"
+        },
+        {
+          "tag": "button",
+          "label": "Open Short ≈ 5.3800 USDT",
+          "disabled": false,
+          "attrs": {
+            "testId": null,
+            "ariaLabel": null,
+            "title": null,
+            "className": "arco-btn arco-btn-secondary arco-btn-shape-square arco-btn-size-medium arco-btn-status-normal btn h40 color-text-1 items-center justify-center flex-col cursor-pointer rounded-full ",
+            "role": null
+          },
+          "selector": "div.bitunix-tabs-content:nth-of-type(2) > div > div.place-order-container.flex.flex-row:nth-of-type(8) > div.item.flex-1.overflow-hidden:nth-of-type(2) > button.arco-btn.arco-btn-secondary.arco-btn-shape-square",
+          "visibility": {
+            "visible": true,
+            "display": "inline-flex",
+            "visibility": "visible",
+            "width": 135,
+            "height": 40
+          },
+          "parentText": "Open Short ≈ 5.3800 USDT"
+        },
+        {
+          "tag": "div",
+          "label": "Close",
+          "disabled": false,
+          "attrs": {
+            "testId": null,
+            "ariaLabel": "Close",
+            "title": null,
+            "className": "arco-modal-close-btn",
+            "role": "button"
+          },
+          "selector": "div.arco-modal-container:nth-of-type(12) > div.arco-modal-wrapper.arco-modal-wrapper-align-center:nth-of-type(2) > div.arco-modal.position-share-modal-widget > div.arco-modal-header:nth-of-type(1) > div.arco-modal-close-btn:nth-of-type(2)",
+          "visibility": {
+            "visible": false,
+            "display": "block",
+            "visibility": "visible",
+            "width": 0,
+            "height": 0
+          },
+          "parentText": "Profit Sharing"
+        },
+        {
+          "tag": "div",
+          "label": "Close",
+          "disabled": false,
+          "attrs": {
+            "testId": null,
+            "ariaLabel": "Close",
+            "title": null,
+            "className": "arco-modal-close-btn",
+            "role": "button"
+          },
+          "selector": "div.arco-modal-container:nth-of-type(13) > div.arco-modal-wrapper.arco-modal-wrapper-align-center:nth-of-type(2) > div.arco-modal > div.arco-modal-header:nth-of-type(1) > div.arco-modal-close-btn:nth-of-type(2)",
+          "visibility": {
+            "visible": false,
+            "display": "block",
+            "visibility": "visible",
+            "width": 0,
+            "height": 0
+          },
+          "parentText": "Margin mode"
+        },
+        {
+          "tag": "button",
+          "label": "Close",
+          "disabled": false,
+          "attrs": {
+            "testId": null,
+            "ariaLabel": null,
+            "title": null,
+            "className": "arco-btn arco-btn-secondary arco-btn-shape-square arco-btn-size-medium arco-btn-status-normal inline-block h-48 color-bg-4 fs-16 cursor-pointer flex-1 mr-12px text-center btn-secon",
+            "role": null
+          },
+          "selector": "div.arco-modal.grid-result-modal.arco-modal-simple > div.arco-modal-body:nth-of-type(2) > div.flex.flex-col.items-center > div.mt-32px.flex.justify-between:nth-of-type(3) > button.arco-btn.arco-btn-secondary.arco-btn-shape-square:nth-of-type(1)",
+          "visibility": {
+            "visible": false,
+            "display": "block",
+            "visibility": "visible",
+            "width": 0,
+            "height": 0
+          },
+          "parentText": "CloseView Details"
+        },
+        {
+          "tag": "button",
+          "label": "Close",
+          "disabled": false,
+          "attrs": {
+            "testId": null,
+            "ariaLabel": null,
+            "title": null,
+            "className": "arco-btn arco-btn-secondary arco-btn-shape-square arco-btn-size-medium arco-btn-status-normal inline-block h-48 color-bg-4 fs-16 cursor-pointer flex-1 mr-12px text-center btn-secon",
+            "role": null
+          },
+          "selector": "div.arco-modal.grid-result-modal.arco-modal-simple > div.arco-modal-body:nth-of-type(2) > div.flex.flex-col.items-center > div.mt-32px.flex.justify-between:nth-of-type(3) > button.arco-btn.arco-btn-secondary.arco-btn-shape-square:nth-of-type(1)",
+          "visibility": {
+            "visible": false,
+            "display": "block",
+            "visibility": "visible",
+            "width": 0,
+            "height": 0
+          },
+          "parentText": "CloseView Details"
+        },
+        {
+          "tag": "div",
+          "label": "Close",
+          "disabled": false,
+          "attrs": {
+            "testId": null,
+            "ariaLabel": "Close",
+            "title": null,
+            "className": "arco-modal-close-btn",
+            "role": "button"
+          },
+          "selector": "div.arco-modal-container:nth-of-type(28) > div.arco-modal-wrapper.arco-modal-wrapper-align-center:nth-of-type(2) > div.arco-modal.position-share-modal-widget > div.arco-modal-header:nth-of-type(1) > div.arco-modal-close-btn:nth-of-type(2)",
+          "visibility": {
+            "visible": false,
+            "display": "block",
+            "visibility": "visible",
+            "width": 0,
+            "height": 0
+          },
+          "parentText": "Profit Sharing"
+        },
+        {
+          "tag": "div",
+          "label": "Close",
+          "disabled": false,
+          "attrs": {
+            "testId": null,
+            "ariaLabel": "Close",
+            "title": null,
+            "className": "arco-modal-close-btn",
+            "role": "button"
+          },
+          "selector": "div.arco-modal-container:nth-of-type(29) > div.arco-modal-wrapper.arco-modal-wrapper-align-center:nth-of-type(2) > div.arco-modal > div.arco-modal-header:nth-of-type(1) > div.arco-modal-close-btn:nth-of-type(2)",
+          "visibility": {
+            "visible": false,
+            "display": "block",
+            "visibility": "visible",
+            "width": 0,
+            "height": 0
+          },
+          "parentText": "Margin mode"
+        },
+        {
+          "tag": "div",
+          "label": "Close",
+          "disabled": false,
+          "attrs": {
+            "testId": null,
+            "ariaLabel": "Close",
+            "title": null,
+            "className": "arco-modal-close-btn",
+            "role": "button"
+          },
+          "selector": "div.arco-modal-container:nth-of-type(38) > div.arco-modal-wrapper.arco-modal-wrapper-align-center:nth-of-type(2) > div.arco-modal > div.arco-modal-header:nth-of-type(1) > div.arco-modal-close-btn:nth-of-type(2)",
+          "visibility": {
+            "visible": false,
+            "display": "block",
+            "visibility": "visible",
+            "width": 0,
+            "height": 0
+          },
+          "parentText": "TP/SL reminder"
+        },
+        {
+          "tag": "div",
+          "label": "Close",
+          "disabled": false,
+          "attrs": {
+            "testId": null,
+            "ariaLabel": "Close",
+            "title": null,
+            "className": "arco-modal-close-btn",
+            "role": "button"
+          },
+          "selector": "div.arco-modal-container:nth-of-type(40) > div.arco-modal-wrapper.arco-modal-wrapper-align-center:nth-of-type(2) > div.arco-modal.bx-risk-rate-modal > div.arco-modal-header:nth-of-type(1) > div.arco-modal-close-btn",
+          "visibility": {
+            "visible": false,
+            "display": "block",
+            "visibility": "visible",
+            "width": 0,
+            "height": 0
+          },
+          "parentText": ""
+        },
+        {
+          "tag": "button",
+          "label": "Open long 3,838.65",
+          "disabled": false,
+          "attrs": {
+            "testId": null,
+            "ariaLabel": null,
+            "title": null,
+            "className": "flex flex-1 flex-col items-center justify-center select-none border-none px-10px leading-16px py-4px min-w-88px cursor-pointer transition-colors duration-300 ease-in-out bx-buy-col",
+            "role": null
+          },
+          "selector": "html > body.zendesk-launcher-hidden > div.focus\\:outline-none.border-1px.border-solid:nth-of-type(41) > div.flex.flex-1.text-12px:nth-of-type(2) > button.flex.flex-1.flex-col:nth-of-type(1)",
+          "visibility": {
+            "visible": true,
+            "display": "flex",
+            "visibility": "visible",
+            "width": 88,
+            "height": 42
+          },
+          "parentText": "Open long 3,838.65 By Cost (‪USDT‬) Open short 3,838.66"
+        },
+        {
+          "tag": "button",
+          "label": "Open short 3,838.66",
+          "disabled": false,
+          "attrs": {
+            "testId": null,
+            "ariaLabel": null,
+            "title": null,
+            "className": "flex flex-1 items-center justify-center flex-col select-none border-none px-10px leading-16px py-4px min-w-88px cursor-pointer transition-colors duration-300 ease-in-out bx-sell-co",
+            "role": null
+          },
+          "selector": "html > body.zendesk-launcher-hidden > div.focus\\:outline-none.border-1px.border-solid:nth-of-type(41) > div.flex.flex-1.text-12px:nth-of-type(2) > button.flex.flex-1.items-center:nth-of-type(2)",
+          "visibility": {
+            "visible": true,
+            "display": "flex",
+            "visibility": "visible",
+            "width": 88,
+            "height": 42
+          },
+          "parentText": "Open long 3,838.65 By Cost (‪USDT‬) Open short 3,838.66"
+        }
+      ]
+    },
+    {
+      "frame": "iframe[0]",
+      "count": 2,
+      "buttons": [
+        {
+          "tag": "button",
+          "label": "Long Position",
+          "disabled": false,
+          "attrs": {
+            "testId": null,
+            "ariaLabel": "Long Position",
+            "title": null,
+            "className": "button-KTgbfaP5 apply-common-tooltip common-tooltip-vertical isTransparent-KTgbfaP5 accessible-KTgbfaP5",
+            "role": null
+          },
+          "selector": "span:nth-of-type(5) > div.dropdown-pbhJWNrt > div.control-pbhJWNrt > div.buttonWrap-pbhJWNrt.accessible-pbhJWNrt > button.button-KTgbfaP5.apply-common-tooltip.common-tooltip-vertical",
+          "visibility": {
+            "visible": true,
+            "display": "flex",
+            "visibility": "visible",
+            "width": 52,
+            "height": 36
+          },
+          "parentText": ""
+        },
+        {
+          "tag": "button",
+          "label": "Magnet Mode snaps drawings placed near price bars to the closest OHLC value",
+          "disabled": false,
+          "attrs": {
+            "testId": null,
+            "ariaLabel": "Magnet Mode snaps drawings placed near price bars to the closest OHLC value",
+            "title": null,
+            "className": "button-KTgbfaP5 apply-common-tooltip common-tooltip-vertical isActive-KTgbfaP5 accessible-KTgbfaP5",
+            "role": null
+          },
+          "selector": "div.toolButtonMagnet-wg76fIbD:nth-of-type(1) > div.dropdown-pbhJWNrt.undefined > div.control-pbhJWNrt > div.buttonWrap-pbhJWNrt.accessible-pbhJWNrt > button.button-KTgbfaP5.apply-common-tooltip.common-tooltip-vertical",
+          "visibility": {
+            "visible": true,
+            "display": "flex",
+            "visibility": "visible",
+            "width": 52,
+            "height": 36
+          },
+          "parentText": ""
+        }
+      ]
+    },
+    {
+      "frame": "iframe[1]",
+      "count": 0,
+      "buttons": []
+    },
+    {
+      "frame": "iframe[2]",
+      "count": 0,
+      "buttons": []
+    }
+  ],
+  "adapter": {
+    "found": false,
+    "adapterType": "undefined",
+    "ownKeys": [],
+    "methods": {
+      "positions": null,
+      "placeOrder": null,
+      "createInitialPreOrder": null,
+      "createPlaceOrderContext": null,
+      "openPosition": null,
+      "openLong": null,
+      "openShort": null,
+      "submitOrder": null,
+      "sendOrder": null,
+      "closePosition": null,
+      "reversePosition": null,
+      "isTradable": null,
+      "symbolInfo": null
+    },
+    "prototypeMethods": {}
+  },
+  "applicationObjects": {
+    "bitunixTvFound": true,
+    "bitunixTvKeys": [
+      "eventBus",
+      "transform",
+      "onRequest",
+      "get",
+      "tvWidget"
+    ],
+    "tvWidgetKeys": [
+      "_id",
+      "_ready",
+      "_readyHandlers",
+      "_onWindowResize",
+      "_options",
+      "_iFrame",
+      "_innerWindowLoaded",
+      "onDlay",
+      "listenerGuids",
+      "ticks",
+      "resetCacheFn",
+      "barDelay",
+      "lastBarTime",
+      "host",
+      "_callbackMap",
+      "historyOrderMarksCache",
+      "barDelayVisibilityHandler",
+      "barDelayInterval",
+      "getPriceAxis",
+      "kline_delay"
+    ],
+    "relevantGlobalNames": [
+      "SVGTextPositioningElement",
+      "MediaRecorder",
+      "GeolocationPositionError",
+      "GeolocationPosition",
+      "CompositionEvent",
+      "CaretPosition",
+      "CSSPositionValue",
+      "CSSPositionTryRule",
+      "CSSPositionTryDescriptors",
+      "XRCompositionLayer",
+      "__BITUNIX_SECONDS_LAB_TEST__",
+      "__BITUNIX_ENHANCER_FEATURES_V040__",
+      "__BITUNIX_ENHANCER_API_V040__",
+      "__BITUNIX_CUSTOM_PINE_V404__",
+      "__BITUNIX_CUSTOM_PINE_V403__",
+      "Bitunix_PineIndicatorEngine",
+      "__BITUNIX_PINE_VERSION__",
+      "Bitunix_createCustomIndicators",
+      "Bitunix_renderVerticalSignalShapesOnChart",
+      "__BITUNIX_CUSTOM_INDICATORS_V040__",
+      "__BITUNIX_CUSTOM_PINE_STATUS_V404__",
+      "__BITUNIX_CUSTOM_PINE_STATUS_V403__",
+      "bitunix_tracking_sdk",
+      "__BITUNIX_LCP_SETTLER__",
+      "__BITUNIX_CUSTOMER_SERVICE__",
+      "bitunixTv"
+    ],
+    "relevantFunctions": {
+      "bitunixTv": {},
+      "bitunixTv.tvWidget": {
+        "onShortcut": {
+          "level": 1,
+          "name": "onShortcut",
+          "argumentCount": 2,
+          "source": "[w(627,\"p&(x\")](e,t){const r=w;this[r(4902,\"ySJ%\")+r(4259,\"ySJ%\")+r(3035,\"i#a&\")](o=>{const n=r;o[n(1875,\"W4QN\")+n(2071,\"P0pz\")](e,t)})}"
+        },
+        "closePopupsAndDialogs": {
+          "level": 1,
+          "name": "closePopupsAndDialogs",
+          "argumentCount": 0,
+          "source": "[k(5475)+k(1802)+\"s\"](){const e=w,t=k;this[t(1858)+e(2794,\"9!Cm\")+\"d\"](r=>{const o=e;r[t(5475)+o(314,\"CiQI\")+\"s\"]()})}"
+        }
+      }
+    }
+  },
+  "warnings": [],
+  "errors": [],
+  "summary": {
+    "accessibleFrames": 4,
+    "totalFrames": 4,
+    "devtoolsListenerHelperAvailable": true,
+    "keyboardListenerCounts": [
+      {
+        "frame": "TOP",
+        "target": "window",
+        "event": "keydown",
+        "count": 3
+      },
+      {
+        "frame": "TOP",
+        "target": "window",
+        "event": "keyup",
+        "count": 0
+      },
+      {
+        "frame": "TOP",
+        "target": "window",
+        "event": "keypress",
+        "count": 0
+      },
+      {
+        "frame": "TOP",
+        "target": "document",
+        "event": "keydown",
+        "count": 12
+      },
+      {
+        "frame": "TOP",
+        "target": "document",
+        "event": "keyup",
+        "count": 0
+      },
+      {
+        "frame": "TOP",
+        "target": "document",
+        "event": "keypress",
+        "count": 0
+      },
+      {
+        "frame": "TOP",
+        "target": "body",
+        "event": "keydown",
+        "count": 0
+      },
+      {
+        "frame": "TOP",
+        "target": "body",
+        "event": "keyup",
+        "count": 0
+      },
+      {
+        "frame": "TOP",
+        "target": "body",
+        "event": "keypress",
+        "count": 0
+      },
+      {
+        "frame": "TOP",
+        "target": "html",
+        "event": "keydown",
+        "count": 0
+      },
+      {
+        "frame": "TOP",
+        "target": "html",
+        "event": "keyup",
+        "count": 0
+      },
+      {
+        "frame": "TOP",
+        "target": "html",
+        "event": "keypress",
+        "count": 0
+      },
+      {
+        "frame": "iframe[0]",
+        "target": "window",
+        "event": "keydown",
+        "count": 0
+      },
+      {
+        "frame": "iframe[0]",
+        "target": "window",
+        "event": "keyup",
+        "count": 0
+      },
+      {
+        "frame": "iframe[0]",
+        "target": "window",
+        "event": "keypress",
+        "count": 0
+      },
+      {
+        "frame": "iframe[0]",
+        "target": "document",
+        "event": "keydown",
+        "count": 0
+      },
+      {
+        "frame": "iframe[0]",
+        "target": "document",
+        "event": "keyup",
+        "count": 0
+      },
+      {
+        "frame": "iframe[0]",
+        "target": "document",
+        "event": "keypress",
+        "count": 0
+      },
+      {
+        "frame": "iframe[0]",
+        "target": "body",
+        "event": "keydown",
+        "count": 0
+      },
+      {
+        "frame": "iframe[0]",
+        "target": "body",
+        "event": "keyup",
+        "count": 0
+      },
+      {
+        "frame": "iframe[0]",
+        "target": "body",
+        "event": "keypress",
+        "count": 0
+      },
+      {
+        "frame": "iframe[0]",
+        "target": "html",
+        "event": "keydown",
+        "count": 0
+      },
+      {
+        "frame": "iframe[0]",
+        "target": "html",
+        "event": "keyup",
+        "count": 0
+      },
+      {
+        "frame": "iframe[0]",
+        "target": "html",
+        "event": "keypress",
+        "count": 0
+      },
+      {
+        "frame": "iframe[1]",
+        "target": "window",
+        "event": "keydown",
+        "count": 0
+      },
+      {
+        "frame": "iframe[1]",
+        "target": "window",
+        "event": "keyup",
+        "count": 0
+      },
+      {
+        "frame": "iframe[1]",
+        "target": "window",
+        "event": "keypress",
+        "count": 0
+      },
+      {
+        "frame": "iframe[1]",
+        "target": "document",
+        "event": "keydown",
+        "count": 0
+      },
+      {
+        "frame": "iframe[1]",
+        "target": "document",
+        "event": "keyup",
+        "count": 0
+      },
+      {
+        "frame": "iframe[1]",
+        "target": "document",
+        "event": "keypress",
+        "count": 0
+      },
+      {
+        "frame": "iframe[1]",
+        "target": "body",
+        "event": "keydown",
+        "count": 0
+      },
+      {
+        "frame": "iframe[1]",
+        "target": "body",
+        "event": "keyup",
+        "count": 0
+      },
+      {
+        "frame": "iframe[1]",
+        "target": "body",
+        "event": "keypress",
+        "count": 0
+      },
+      {
+        "frame": "iframe[1]",
+        "target": "html",
+        "event": "keydown",
+        "count": 0
+      },
+      {
+        "frame": "iframe[1]",
+        "target": "html",
+        "event": "keyup",
+        "count": 0
+      },
+      {
+        "frame": "iframe[1]",
+        "target": "html",
+        "event": "keypress",
+        "count": 0
+      },
+      {
+        "frame": "iframe[2]",
+        "target": "window",
+        "event": "keydown",
+        "count": 0
+      },
+      {
+        "frame": "iframe[2]",
+        "target": "window",
+        "event": "keyup",
+        "count": 0
+      },
+      {
+        "frame": "iframe[2]",
+        "target": "window",
+        "event": "keypress",
+        "count": 0
+      },
+      {
+        "frame": "iframe[2]",
+        "target": "document",
+        "event": "keydown",
+        "count": 0
+      },
+      {
+        "frame": "iframe[2]",
+        "target": "document",
+        "event": "keyup",
+        "count": 0
+      },
+      {
+        "frame": "iframe[2]",
+        "target": "document",
+        "event": "keypress",
+        "count": 0
+      },
+      {
+        "frame": "iframe[2]",
+        "target": "body",
+        "event": "keydown",
+        "count": 0
+      },
+      {
+        "frame": "iframe[2]",
+        "target": "body",
+        "event": "keyup",
+        "count": 0
+      },
+      {
+        "frame": "iframe[2]",
+        "target": "body",
+        "event": "keypress",
+        "count": 0
+      },
+      {
+        "frame": "iframe[2]",
+        "target": "html",
+        "event": "keydown",
+        "count": 0
+      },
+      {
+        "frame": "iframe[2]",
+        "target": "html",
+        "event": "keyup",
+        "count": 0
+      },
+      {
+        "frame": "iframe[2]",
+        "target": "html",
+        "event": "keypress",
+        "count": 0
+      }
+    ],
+    "adapterFound": false,
+    "placeOrderFound": false,
+    "closePositionFound": false,
+    "reversePositionFound": false,
+    "longShortButtonsFound": 6
+  },
+  "finishedAt": "2026-11-16T07:20:43.958Z",
+  "durationMs": 14
+}
