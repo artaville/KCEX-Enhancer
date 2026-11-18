@@ -1,0 +1,246 @@
+{
+  "reportName": "BITUNIX_SERIES_DATA_READONLY",
+  "generatedAt": "2026-11-18T14:22:36.291Z",
+  "chart": {
+    "symbol": "XAUTUSDT",
+    "resolution": "5S",
+    "visibleRange": {
+      "from": 1795011340,
+      "to": 1795011815
+    }
+  },
+  "series": {
+    "constructor": "O",
+    "methods": [
+      "__defineGetter__",
+      "__defineSetter__",
+      "__lookupGetter__",
+      "__lookupSetter__",
+      "_pane",
+      "barsCount",
+      "bringToFront",
+      "changePriceScale",
+      "chartStyleProperties",
+      "constructor",
+      "data",
+      "detachNoScale",
+      "detachToLeft",
+      "detachToRight",
+      "entityId",
+      "hasOwnProperty",
+      "isLoading",
+      "isPrototypeOf",
+      "isUserEditEnabled",
+      "isVisible",
+      "mergeDown",
+      "mergeUp",
+      "priceScale",
+      "propertyIsEnumerable",
+      "sendToBack",
+      "setChartStyleProperties",
+      "setUserEditEnabled",
+      "setVisible",
+      "symbolSource",
+      "toLocaleString",
+      "toString",
+      "unmergeDown",
+      "unmergeUp",
+      "valueOf"
+    ],
+    "data": {
+      "type": "p",
+      "keys": [
+        "_pressedChunks",
+        "m_bars",
+        "m_nsBars",
+        "lastProjectionPrice",
+        "reversalAmount"
+      ],
+      "samples": {
+        "_pressedChunks": {
+          "type": "Object",
+          "keys": [
+            "chunks",
+            "priceSource"
+          ],
+          "samples": {
+            "chunks": {
+              "type": "Map",
+              "keys": []
+            },
+            "priceSource": "uninitialized"
+          }
+        },
+        "m_bars": {
+          "type": "u",
+          "keys": [
+            "_items",
+            "_start",
+            "_end",
+            "_shareRead",
+            "_minMaxCache",
+            "_rowSearchCacheByIndex",
+            "_rowSearchCacheByIndexWithoutEmptyValues",
+            "_rowSearchCacheByTime",
+            "_rowSearchCacheByTimeWithoutEmptyValues",
+            "_plotFunctions",
+            "_emptyValuePredicate"
+          ],
+          "samples": {
+            "_items": {
+              "type": "Array",
+              "length": 294,
+              "samples": [
+                {
+                  "type": "Object",
+                  "keys": [
+                    "index",
+                    "value",
+                    "timeMs"
+                  ]
+                },
+                {
+                  "type": "Object",
+                  "keys": [
+                    "index",
+                    "value",
+                    "timeMs"
+                  ]
+                }
+              ],
+              "last": {
+                "type": "Object",
+                "keys": [
+                  "index",
+                  "value",
+                  "timeMs"
+                ]
+              }
+            },
+            "_start": 0,
+            "_end": 294,
+            "_shareRead": false,
+            "_minMaxCache": {
+              "type": "Map",
+              "keys": []
+            },
+            "_rowSearchCacheByIndex": {
+              "type": "Map",
+              "keys": []
+            },
+            "_rowSearchCacheByIndexWithoutEmptyValues": {
+              "type": "Map",
+              "keys": []
+            },
+            "_rowSearchCacheByTime": {
+              "type": "Map",
+              "keys": []
+            },
+            "_rowSearchCacheByTimeWithoutEmptyValues": {
+              "type": "Map",
+              "keys": []
+            },
+            "_plotFunctions": {
+              "type": "Map",
+              "keys": []
+            }
+          }
+        },
+        "m_nsBars": {
+          "type": "u",
+          "keys": [
+            "_items",
+            "_start",
+            "_end",
+            "_shareRead",
+            "_minMaxCache",
+            "_rowSearchCacheByIndex",
+            "_rowSearchCacheByIndexWithoutEmptyValues",
+            "_rowSearchCacheByTime",
+            "_rowSearchCacheByTimeWithoutEmptyValues",
+            "_plotFunctions",
+            "_emptyValuePredicate"
+          ],
+          "samples": {
+            "_items": {
+              "type": "Array",
+              "length": 0,
+              "samples": [],
+              "last": null
+            },
+            "_start": 0,
+            "_end": 0,
+            "_shareRead": false,
+            "_minMaxCache": {
+              "type": "Map",
+              "keys": []
+            },
+            "_rowSearchCacheByIndex": {
+              "type": "Map",
+              "keys": []
+            },
+            "_rowSearchCacheByIndexWithoutEmptyValues": {
+              "type": "Map",
+              "keys": []
+            },
+            "_rowSearchCacheByTime": {
+              "type": "Map",
+              "keys": []
+            },
+            "_rowSearchCacheByTimeWithoutEmptyValues": {
+              "type": "Map",
+              "keys": []
+            },
+            "_plotFunctions": {
+              "type": "Map",
+              "keys": []
+            }
+          }
+        },
+        "lastProjectionPrice": null,
+        "reversalAmount": null
+      }
+    }
+  },
+  "timeScale": {
+    "available": true,
+    "constructor": "d",
+    "methods": [
+      "__defineGetter__",
+      "__defineSetter__",
+      "__lookupGetter__",
+      "__lookupSetter__",
+      "barSpacing",
+      "barSpacingChanged",
+      "constructor",
+      "coordinateToTime",
+      "defaultRightOffset",
+      "defaultRightOffsetPercentage",
+      "hasOwnProperty",
+      "isEmpty",
+      "isPrototypeOf",
+      "pointsCount",
+      "propertyIsEnumerable",
+      "rightOffset",
+      "rightOffsetChanged",
+      "scrollToFirstBar",
+      "scrollToRealtime",
+      "setBarSpacing",
+      "setRightOffset",
+      "toLocaleString",
+      "toString",
+      "usePercentageRightOffset",
+      "valueOf",
+      "width"
+    ]
+  },
+  "safety": {
+    "readOnly": true,
+    "studiesAdded": 0,
+    "studiesRemoved": 0,
+    "shapesCreated": 0,
+    "chartReset": false,
+    "resolutionChanged": false,
+    "ordersSent": 0
+  }
+}
