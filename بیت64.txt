@@ -1,0 +1,2410 @@
+{
+  "reportName": "BITUNIX_WEBPACK_STUDY_REPOSITORY_AUDIT",
+  "version": "1.0",
+  "timestamp": "2026-11-18T14:47:20.195Z",
+  "safety": {
+    "studyInserted": false,
+    "registryModified": false,
+    "chartModified": false,
+    "paneCreated": false,
+    "ordersSent": false,
+    "temporaryWebpackChunkAttempted": true,
+    "temporaryWebpackChunkRemoved": true,
+    "moduleFactoriesExecutedByAudit": false,
+    "moduleExportsFunctionsInvoked": false
+  },
+  "environment": {
+    "frame": {
+      "index": 0,
+      "id": "tradingview_b6c11",
+      "title": "Financial Chart"
+    },
+    "symbol": "XAUTUSDT",
+    "resolution": "5S",
+    "chunkCount": 57,
+    "pendingChunkCount": 57,
+    "pendingModuleIdCount": 3129
+  },
+  "webpack": {
+    "pushFunctionSource": "function () { [native code] }",
+    "chunkInventory": [
+      {
+        "index": 0,
+        "chunkIds": [
+          9173
+        ],
+        "moduleCount": 743,
+        "moduleIdSample": [
+          "2441",
+          "2949",
+          "3195",
+          "4868",
+          "6215",
+          "8975",
+          "9846",
+          "14452",
+          "14642",
+          "16267",
+          "16750",
+          "16812"
+        ],
+        "hasRuntimeCallback": false
+      },
+      {
+        "index": 1,
+        "chunkIds": [
+          7326
+        ],
+        "moduleCount": 100,
+        "moduleIdSample": [
+          "5531",
+          "7492",
+          "9757",
+          "12481",
+          "22828",
+          "29419",
+          "43688",
+          "44631",
+          "54744",
+          "64531",
+          "86441",
+          "91679"
+        ],
+        "hasRuntimeCallback": false
+      },
+      {
+        "index": 2,
+        "chunkIds": [
+          1297
+        ],
+        "moduleCount": 650,
+        "moduleIdSample": [
+          "1176",
+          "3260",
+          "6835",
+          "9619",
+          "10329",
+          "13510",
+          "19406",
+          "20334",
+          "20630",
+          "22121",
+          "24667",
+          "24990"
+        ],
+        "hasRuntimeCallback": true
+      },
+      {
+        "index": 3,
+        "chunkIds": [
+          1637
+        ],
+        "moduleCount": 159,
+        "moduleIdSample": [
+          "5595",
+          "7122",
+          "8793",
+          "15307",
+          "23750",
+          "26338",
+          "30665",
+          "32241",
+          "37475",
+          "54746",
+          "63470",
+          "69208"
+        ],
+        "hasRuntimeCallback": false
+      },
+      {
+        "index": 4,
+        "chunkIds": [
+          5173
+        ],
+        "moduleCount": 30,
+        "moduleIdSample": [
+          "6044",
+          "28412",
+          "52916",
+          "102310",
+          "107435",
+          "115993",
+          "141610",
+          "152449",
+          "215815",
+          "257310",
+          "301084",
+          "332960"
+        ],
+        "hasRuntimeCallback": false
+      },
+      {
+        "index": 5,
+        "chunkIds": [
+          9255
+        ],
+        "moduleCount": 1,
+        "moduleIdSample": [
+          "159255"
+        ],
+        "hasRuntimeCallback": false
+      },
+      {
+        "index": 6,
+        "chunkIds": [
+          2464
+        ],
+        "moduleCount": 21,
+        "moduleIdSample": [
+          "9995",
+          "24654",
+          "116193",
+          "169977",
+          "173587",
+          "196573",
+          "218286",
+          "233064",
+          "265728",
+          "265742",
+          "312694",
+          "323002"
+        ],
+        "hasRuntimeCallback": false
+      },
+      {
+        "index": 7,
+        "chunkIds": [
+          5267
+        ],
+        "moduleCount": 41,
+        "moduleIdSample": [
+          "3955",
+          "38323",
+          "72117",
+          "91034",
+          "114501",
+          "116217",
+          "138966",
+          "174786",
+          "177441",
+          "188605",
+          "259142",
+          "263535"
+        ],
+        "hasRuntimeCallback": false
+      },
+      {
+        "index": 8,
+        "chunkIds": [
+          7137,
+          4811,
+          8413
+        ],
+        "moduleCount": 54,
+        "moduleIdSample": [
+          "28466",
+          "65160",
+          "72571",
+          "100578",
+          "111706",
+          "132455",
+          "163694",
+          "190410",
+          "192063",
+          "230553",
+          "230789",
+          "234404"
+        ],
+        "hasRuntimeCallback": false
+      },
+      {
+        "index": 9,
+        "chunkIds": [
+          7129,
+          5565
+        ],
+        "moduleCount": 3,
+        "moduleIdSample": [
+          "362453",
+          "379142",
+          "902374"
+        ],
+        "hasRuntimeCallback": false
+      },
+      {
+        "index": 10,
+        "chunkIds": [
+          5142,
+          766,
+          2874
+        ],
+        "moduleCount": 127,
+        "moduleIdSample": [
+          "2537",
+          "29834",
+          "40766",
+          "48008",
+          "66786",
+          "75577",
+          "80137",
+          "99708",
+          "101414",
+          "106056",
+          "112235",
+          "117105"
+        ],
+        "hasRuntimeCallback": false
+      },
+      {
+        "index": 11,
+        "chunkIds": [
+          962,
+          959
+        ],
+        "moduleCount": 6,
+        "moduleIdSample": [
+          "50959",
+          "500962",
+          "650690",
+          "685568",
+          "695257",
+          "922962"
+        ],
+        "hasRuntimeCallback": false
+      },
+      {
+        "index": 12,
+        "chunkIds": [
+          7102
+        ],
+        "moduleCount": 3,
+        "moduleIdSample": [
+          "132455",
+          "672511",
+          "974063"
+        ],
+        "hasRuntimeCallback": false
+      },
+      {
+        "index": 13,
+        "chunkIds": [
+          5275
+        ],
+        "moduleCount": 58,
+        "moduleIdSample": [
+          "2443",
+          "16631",
+          "18567",
+          "23886",
+          "36785",
+          "38925",
+          "44629",
+          "121327",
+          "132868",
+          "141610",
+          "141648",
+          "179964"
+        ],
+        "hasRuntimeCallback": false
+      },
+      {
+        "index": 14,
+        "chunkIds": [
+          4689
+        ],
+        "moduleCount": 64,
+        "moduleIdSample": [
+          "6205",
+          "9540",
+          "25684",
+          "35387",
+          "50985",
+          "61523",
+          "68160",
+          "93111",
+          "111828",
+          "127531",
+          "134569",
+          "145088"
+        ],
+        "hasRuntimeCallback": false
+      },
+      {
+        "index": 15,
+        "chunkIds": [
+          660
+        ],
+        "moduleCount": 7,
+        "moduleIdSample": [
+          "73359",
+          "80423",
+          "350146",
+          "476007",
+          "721678",
+          "895318",
+          "901317"
+        ],
+        "hasRuntimeCallback": false
+      },
+      {
+        "index": 16,
+        "chunkIds": [
+          4773,
+          1277
+        ],
+        "moduleCount": 2,
+        "moduleIdSample": [
+          "254773",
+          "330950"
+        ],
+        "hasRuntimeCallback": false
+      },
+      {
+        "index": 17,
+        "chunkIds": [
+          8044
+        ],
+        "moduleCount": 7,
+        "moduleIdSample": [
+          "90932",
+          "315882",
+          "336349",
+          "375880",
+          "691622",
+          "721153",
+          "749209"
+        ],
+        "hasRuntimeCallback": false
+      },
+      {
+        "index": 18,
+        "chunkIds": [
+          8468
+        ],
+        "moduleCount": 29,
+        "moduleIdSample": [
+          "27164",
+          "47102",
+          "53431",
+          "72571",
+          "92910",
+          "111706",
+          "137869",
+          "144242",
+          "163915",
+          "179807",
+          "234404",
+          "259142"
+        ],
+        "hasRuntimeCallback": false
+      },
+      {
+        "index": 19,
+        "chunkIds": [
+          5613
+        ],
+        "moduleCount": 22,
+        "moduleIdSample": [
+          "27164",
+          "101414",
+          "130099",
+          "135257",
+          "171529",
+          "206397",
+          "331774",
+          "408323",
+          "465890",
+          "470048",
+          "487466",
+          "578601"
+        ],
+        "hasRuntimeCallback": false
+      }
+    ],
+    "runtime": {
+      "captureSucceeded": true,
+      "captureError": null,
+      "temporaryEntryRemoved": true,
+      "requireType": "function",
+      "requireProperties": [
+        {
+          "key": "length",
+          "type": "number",
+          "getter": false,
+          "setter": false
+        },
+        {
+          "key": "name",
+          "type": "string",
+          "getter": false,
+          "setter": false
+        },
+        {
+          "key": "prototype",
+          "type": "object",
+          "getter": false,
+          "setter": false
+        },
+        {
+          "key": "m",
+          "type": "object",
+          "getter": false,
+          "setter": false
+        },
+        {
+          "key": "c",
+          "type": "object",
+          "getter": false,
+          "setter": false
+        },
+        {
+          "key": "O",
+          "type": "function",
+          "getter": false,
+          "setter": false
+        },
+        {
+          "key": "n",
+          "type": "function",
+          "getter": false,
+          "setter": false
+        },
+        {
+          "key": "t",
+          "type": "function",
+          "getter": false,
+          "setter": false
+        },
+        {
+          "key": "d",
+          "type": "function",
+          "getter": false,
+          "setter": false
+        },
+        {
+          "key": "f",
+          "type": "object",
+          "getter": false,
+          "setter": false
+        },
+        {
+          "key": "e",
+          "type": "function",
+          "getter": false,
+          "setter": false
+        },
+        {
+          "key": "u",
+          "type": "function",
+          "getter": false,
+          "setter": false
+        },
+        {
+          "key": "miniCssF",
+          "type": "function",
+          "getter": false,
+          "setter": false
+        },
+        {
+          "key": "g",
+          "type": "object",
+          "getter": false,
+          "setter": false
+        },
+        {
+          "key": "hmd",
+          "type": "function",
+          "getter": false,
+          "setter": false
+        },
+        {
+          "key": "o",
+          "type": "function",
+          "getter": false,
+          "setter": false
+        },
+        {
+          "key": "l",
+          "type": "function",
+          "getter": false,
+          "setter": false
+        },
+        {
+          "key": "r",
+          "type": "function",
+          "getter": false,
+          "setter": false
+        },
+        {
+          "key": "nmd",
+          "type": "function",
+          "getter": false,
+          "setter": false
+        },
+        {
+          "key": "p",
+          "type": "string",
+          "getter": false,
+          "setter": false
+        },
+        {
+          "key": "tf",
+          "type": "function",
+          "getter": false,
+          "setter": false
+        },
+        {
+          "key": "s",
+          "type": "number",
+          "getter": false,
+          "setter": false
+        }
+      ],
+      "factoryCount": 3129,
+      "cachedModuleCount": 2841,
+      "factoryMatchCount": 13
+    },
+    "moduleMatches": [
+      {
+        "moduleId": "129789",
+        "score": 265,
+        "cached": true,
+        "sourceLength": 2458,
+        "matchedTerms": [
+          "studyMetaInfoRepository",
+          "Cannot get study",
+          "findById",
+          "StudyInserter",
+          "InsertionErrorCode"
+        ],
+        "imports": [],
+        "sourceBeginning": "(e,t,i)=>{\"use strict\";i.d(t,{StudyInserter:()=>h});var s=i(597399),r=i(372605),n=i(982552),o=i(902232),a=i(929258);const l=(0,i(6835).getLogger)(\"Chart.Studies.StudyInserter\"),c=/^PUB;.*/;class h{constructor(e,t){this._parentSources=[],this._propsState=void 0,this._preferredPriceScale=void 0,this._allowChangeCurrency=!1,this._allowChangeUnit=!1,this._paneSize=void 0,this._forceOverlay=!1,this._inserterImpl=t,this._studyDescriptor=e}setParentSources(e){this._parentSources=e}setPaneSize(e){this._paneSize=e}setPreferredPriceScale(e){this._preferredPriceScale=e}\nsetAllowChangeCurrency(e){this._allowChangeCurrency=e}setAllowChangeUnit(e){this._allowChangeUnit=e}setForceOverlay(e){this._forceOverlay=e}setPropertiesState(e){this._propsState=e}setTargetPriceScaleMode(e){this._targetPriceScaleMode=e}async insert(e,t){var i,h;const d=void 0!==(u=this._inserterImpl).createStub&&void 0!==u.removeStub?this._inserterImpl.createStub():null;var u;let p,_=!0;try{p=await(0,n.studyMetaInfoRepository)().findById(this._studyDescriptor)}catch(e){l.logWarn(`Cannot get study ${JSON.stringify(this._studyDescriptor)}`);const t=this._studyDescriptor.pineId,s=c.test(t),r=!!(null===(i=null==e?void 0:e.errors)||void 0===i?void 0:i.length);return s&&r?Promise.reject(a.InsertionErrorCode.CannotCompilePub):Promise.reject(a.InsertionErrorCode.CannotGetMetainfo)}finally{null!==d&&(_=this._inserterImpl.removeStub(d))}if(!_)return Promise.reject(a.InsertionErrorCode.StubWasRemoved);if(void 0!==t&&t.cancelled)return Promise.reject(a.InsertionErrorCode.Cancelled);if(!this._canApplyStudyToParent(p))return Promis",
+        "snippets": [
+          {
+            "term": "studyMetaInfoRepository",
+            "position": 973,
+            "context": "ertiesState(e){this._propsState=e}setTargetPriceScaleMode(e){this._targetPriceScaleMode=e}async insert(e,t){var i,h;const d=void 0!==(u=this._inserterImpl).createStub&&void 0!==u.removeStub?this._inserterImpl.createStub():null;var u;let p,_=!0;try{p=await(0,n.studyMetaInfoRepository)().findById(this._studyDescriptor)}catch(e){l.logWarn(`Cannot get study ${JSON.stringify(this._studyDescriptor)}`);const t=this._studyDescriptor.pineId,s=c.test(t),r=!!(null===(i=null==e?void 0:e.errors)||void 0===i?void 0:i.length);return s&&r?Promise.reject(a.InsertionErrorCode.CannotCompilePub):Promise.reject(a.InsertionErrorCode.CannotGetMetainfo)}finally{null!==d&&(_=this._inserterImpl.removeStub(d))}if(!_)retu"
+          },
+          {
+            "term": "Cannot get study",
+            "position": 1052,
+            "context": "caleMode=e}async insert(e,t){var i,h;const d=void 0!==(u=this._inserterImpl).createStub&&void 0!==u.removeStub?this._inserterImpl.createStub():null;var u;let p,_=!0;try{p=await(0,n.studyMetaInfoRepository)().findById(this._studyDescriptor)}catch(e){l.logWarn(`Cannot get study ${JSON.stringify(this._studyDescriptor)}`);const t=this._studyDescriptor.pineId,s=c.test(t),r=!!(null===(i=null==e?void 0:e.errors)||void 0===i?void 0:i.length);return s&&r?Promise.reject(a.InsertionErrorCode.CannotCompilePub):Promise.reject(a.InsertionErrorCode.CannotGetMetainfo)}finally{null!==d&&(_=this._inserterImpl.removeStub(d))}if(!_)return Promise.reject(a.InsertionErrorCode.StubWasRemoved);if(void 0!==t&&t."
+          },
+          {
+            "term": "findById",
+            "position": 1000,
+            "context": "tate=e}setTargetPriceScaleMode(e){this._targetPriceScaleMode=e}async insert(e,t){var i,h;const d=void 0!==(u=this._inserterImpl).createStub&&void 0!==u.removeStub?this._inserterImpl.createStub():null;var u;let p,_=!0;try{p=await(0,n.studyMetaInfoRepository)().findById(this._studyDescriptor)}catch(e){l.logWarn(`Cannot get study ${JSON.stringify(this._studyDescriptor)}`);const t=this._studyDescriptor.pineId,s=c.test(t),r=!!(null===(i=null==e?void 0:e.errors)||void 0===i?void 0:i.length);return s&&r?Promise.reject(a.InsertionErrorCode.CannotCompilePub):Promise.reject(a.InsertionErrorCode.CannotGetMetainfo)}finally{null!==d&&(_=this._inserterImpl.removeStub(d))}if(!_)return Promise.r"
+          },
+          {
+            "term": "StudyInserter",
+            "position": 30,
+            "context": "(e,t,i)=>{\"use strict\";i.d(t,{StudyInserter:()=>h});var s=i(597399),r=i(372605),n=i(982552),o=i(902232),a=i(929258);const l=(0,i(6835).getLogger)(\"Chart.Studies.StudyInserter\"),c=/^PUB;.*/;class h{constructor(e,t){this._parentSources=[],this._propsState=void 0,this._preferredPriceScale=void 0,this._allowChangeCurrency=!1,this._allowChangeUnit=!1,this._paneSize=void 0,this._forceOverlay=!1,this._inserterImpl=t,this._studyDescriptor=e}setParentSources(e){this._"
+          },
+          {
+            "term": "InsertionErrorCode",
+            "position": 1259,
+            "context": ".findById(this._studyDescriptor)}catch(e){l.logWarn(`Cannot get study ${JSON.stringify(this._studyDescriptor)}`);const t=this._studyDescriptor.pineId,s=c.test(t),r=!!(null===(i=null==e?void 0:e.errors)||void 0===i?void 0:i.length);return s&&r?Promise.reject(a.InsertionErrorCode.CannotCompilePub):Promise.reject(a.InsertionErrorCode.CannotGetMetainfo)}finally{null!==d&&(_=this._inserterImpl.removeStub(d))}if(!_)return Promise.reject(a.InsertionErrorCode.StubWasRemoved);if(void 0!==t&&t.cancelled)return Promise.reject(a.InsertionErrorCode.Cancelled);if(!this._canApplyStudyToParent(p))return Promise.reject(a.InsertionErrorCode.StudyCannotBeChild);const m={...p.defaults.inputs};let g={};if(void"
+          }
+        ]
+      },
+      {
+        "moduleId": "938251",
+        "score": 130,
+        "cached": true,
+        "sourceLength": 248279,
+        "matchedTerms": [
+          "studyMetaInfoRepository",
+          "StudyInserter"
+        ],
+        "imports": [],
+        "sourceBeginning": "(e,t,i)=>{\"use strict\";i.d(t,{ChartWidgetBase:()=>Gi});var s=i(327714),r=i(650151),n=i(930202),o=i(609838),a=i(559410),l=(i(688401),i(601227)),c=i(870122),h=i(554267),d=i(32133),u=i(32240),p=i(6835),_=i(794966),m=i(350299),g=i(46130);function f(e,t){const i=Object.create(Object.getPrototypeOf(e));for(const s of t)Object.prototype.hasOwnProperty.call(e,s)&&(i[s]=e[s]);return i}var v=i(906247),S=i(812297),y=i(421721),b=i(372605),w=i(782425),C=i(804550);async function P(e,t,s,r,n,a=\"default\"){let l,c=[];const h=e.model().model(),d=(0,b.clone)(t),u=new C.default({inputs:d}),p=function(e,t){return\"symbol\"===t?e.inputs.filter((t=>t.id===e.symbolInputId())):e.inputs.filter((e=>e.confirm))}(s,a),_=()=>{l&&h.removeCustomSource(l)},m=()=>{_(),n()},g=e=>{r({inputs:e,parentSources:c}),_()},f=p.filter(w.isTimeOrPriceNotHiddenInput);if(f.length>0)try{const t=await Promise.all([i.e(5362),i.e(2666),i.e(4015),i.e(3842),i.e(2109),i.e(2253),i.e(580),i.e(2108),i.e(6),i.e(8194),i.e(5145),i.e(8056),i.e(5993),i.e(855),i.e(2639),i.e(2191),i.e(3502),i.e(9842),i.e(7845),i.e(2587),i.e(4474),i.e(7194),i.e(4215),i.e(1625),i.e(6884),i.e(1631),i.e(7807),i.e(6738),i.e(5295),i.e(4578),i.e(9327),i.e(6260),i.e(237),i.e(1762),i.e(962),i.e(1810),i.e(7125),i.e(5130),i.e(4119),i.e(5613),i.e(544),i.e(3030)]).then(i.bind(i,759393)),r=await t.selectInputValuesOnChart(e,f,u,s.shortDescription,s.inputs);if(l=r.customSourceId,r.destPane){const e=r.destPane.mainDataSource();c=e===h.mainSeries()?[]:[e]}else c=[]}catch(e){return void m()}f.length!==p.length?Promise.all([i.e(5362),i.e(2666),i.e(4015),i.e(3842),i.e(2109),i",
+        "snippets": [
+          {
+            "term": "studyMetaInfoRepository",
+            "position": 236831,
+            "context": "nnect(){this.hasModel()&&this.model().model().disconnect(),this._model&&this._model.model().fullUpdate(),this._disconnected.fire()}async _requestMetadataAndProcessModel(){await this._requestMetadata(),this._inited?this.model().model().setStudiesMetaData((0,vi.studyMetaInfoRepository)().getInternalMetaInfoArray(),(0,vi.studyMetaInfoRepository)().getMigrations()):(await(0,Y.initAllLineToolsFromContent)(this._content),this._init(),this._chartWidgetInitialized.fire(),\nk.enabled(\"charting_library_base\")||Fi.logDebug(\"initialized\"))}async _requestMetadata(){this._addPerfMark(\"RequestMetadataStart\"),await(0,vi.studyMetaInfoRepository)().requestMetaInfo(),this._addPerfMark(\"RequestMetadataEnd\")}async _"
+          },
+          {
+            "term": "StudyInserter",
+            "position": 200042,
+            "context": "))}),{source:\"study on study\"}):r(this._insertStudy(e,t,i,s))})).catch((()=>null))}addOverlayStudy(e,t,i){const s=this.model();return this._options&&this._options.isSymbolAvailable?this._options.isSymbolAvailable(e).then((r=>{if(!r)return null;const n=s.createStudyInserter({type:\"java\",studyId:\"Overlay@tv-basicstudies\"},[]),o={allowExtendTimeScale:i};if(k.enabled(\"use_overrides_for_overlay\")){const e=(0,Ei.factoryDefaults)(\"study_Overlay@tv-basicstudies.style\");o.style=e}return n.setPropertiesState(o),n.setForceOverlay(t),n.insert((()=>Promise.resolve({inputs:{symbol:e},parentSources:[]})))\n})):Promise.resolve(null)}addCompareStudy(e){const t=this.model();return this._options&&this._o"
+          }
+        ]
+      },
+      {
+        "moduleId": "978823",
+        "score": 130,
+        "cached": true,
+        "sourceLength": 36434,
+        "matchedTerms": [
+          "studyMetaInfoRepository",
+          "StudyInserter"
+        ],
+        "imports": [],
+        "sourceBeginning": "(e,t,i)=>{\"use strict\";var s=i(664902).TranslatedString,r=i(650151).assert,n=i(786129).Series,o=i(156963),a=i(634121).ActionBinder,l=i(870122).setValue,c=i(642469).TabNames,h=i(582860).showGoToDateDialog,d=i(180185),u=i(376202),p=i(962852).Study,_=i(646659).StudyStub,m=i(593194).isStudy,g=i(160069).LineDataSource,f=i(919577),v=f.isLineTool,S=f.isStudyLineTool,y=i(602907).STUDYPLOTDISPLAYTARGET,b=i(982552).studyMetaInfoRepository,w=i(973602).Action,C=i(974533).ACTION_ID,P=i(683471),x=i(628589).Interval,T=i(681434),I=T.getDefaultStyle,M=T.hasVolume,L=i(948251).InvalidationMask,A=i(688401).linking,k=i(730388).showChangeIntervalDialogAsync,D=i(408403).createSymbolSearchAction,E=i(210696),B=E.availableTimezones,V=E.timezoneIsAvailable,R=i(812297).toggleHideMode,N=i(597399).StudyMetaInfo,O=i(32133).trackEvent,F=i(596853).lastMouseOrTouchEventInfo,W=i(902232);const{viewportChangeEvent:z}=i(364124);var H=i(466052).Delegate,U=i(6835).getLogger(\"ChartWidget\",{color:\"#606\"\n}),j=i(350299).appendEllipsis,G=i(743180).addPerfMark,q=i(648067).combineProperty,$=i(938251).ChartWidgetBase,K=i(601227).CheckMobile.any(),Y=i(383581).TIMEFRAMETYPE,Z=i(122217).addPlusButtonProperty;const X=o.enabled(\"show_average_close_price_line_and_label\");var J=new s(\"change timezone\",i.tf(null,void 0,i(820505))),Q=new s(\"scale price chart only\",i.tf(null,void 0,i(599042))),ee=new s(\"stay in drawing mode\",i.tf(null,void 0,i(52010))),te=(new s(\"hide all drawing tools\",i.tf(null,void 0,i(454781))),new s(\"hide marks on bars\",i.tf(null,void 0,i(744974)))),ie=new s(\"change symbol last value visibility\",i.tf(null,voi",
+        "snippets": [
+          {
+            "term": "studyMetaInfoRepository",
+            "position": 409,
+            "context": "ue,c=i(642469).TabNames,h=i(582860).showGoToDateDialog,d=i(180185),u=i(376202),p=i(962852).Study,_=i(646659).StudyStub,m=i(593194).isStudy,g=i(160069).LineDataSource,f=i(919577),v=f.isLineTool,S=f.isStudyLineTool,y=i(602907).STUDYPLOTDISPLAYTARGET,b=i(982552).studyMetaInfoRepository,w=i(973602).Action,C=i(974533).ACTION_ID,P=i(683471),x=i(628589).Interval,T=i(681434),I=T.getDefaultStyle,M=T.hasVolume,L=i(948251).InvalidationMask,A=i(688401).linking,k=i(730388).showChangeIntervalDialogAsync,D=i(408403).createSymbolSearchAction,E=i(210696),B=E.availableTimezones,V=E.timezoneIsAvailable,R=i(812297).toggleHideMode,N=i(597399).StudyMetaInfo,O=i(32133).trackEvent,F=i(596853).lastMouseOrTouchEventInfo"
+          },
+          {
+            "term": "StudyInserter",
+            "position": 28321,
+            "context": "ts().symbolResolved().subscribe(this,(function(){var e=this;setTimeout((function(){\nvar t=e._model.model().mainSeries().symbolInfo();if(t){var i=M(t);if(!e.containsVolume()&&i){var s=W.factoryDefaults(\"chartproperties.volumePaneSize\"),r=e._model.model().createStudyInserter({type:\"java\",studyId:\"Volume@tv-basicstudies\"});r.setForceOverlay(o.enabled(\"volume_force_overlay\")),r.setPaneSize(s),o.enabled(\"hide_volume_ma\")&&r.setPropertiesState({styles:{vol_ma:{display:y.None}}}),r.insert()}else if(!i&&e.containsVolume()){var n=e.model().dataSources().filter((function(e){return e instanceof p&&\"Volume\"===e.metaInfo().shortId}))[0];e._model.model().removeSource(n)}}}),0)}),s)}_createSessions("
+          }
+        ]
+      },
+      {
+        "moduleId": "314489",
+        "score": 120,
+        "cached": true,
+        "sourceLength": 4712,
+        "matchedTerms": [
+          "studyMetaInfoRepository",
+          "findByIdSync",
+          "findById"
+        ],
+        "imports": [],
+        "sourceBeginning": "(e,t,i)=>{\"use strict\";i.d(t,{LineToolVbPFixed:()=>v});var s=i(277973),r=i(650151),n=i(771737),o=i(597399),a=i(236607),l=i(704672),c=i(535017),h=i(364124),d=i(372605),u=i(602164),p=i(962852),_=i(982552);const m=(0,n.studyIdString)(\"VbPFixed\",\"tv-volumebyprice\");function g(e,t,i,s){return t.styles&&(f(t.styles.developingPoc),f(t.styles.developingVAHigh),f(t.styles.developingVALow)),t}function f(e){void 0!==e&&void 0!==e.visible&&(e.display=e.visible?15:0,delete e.visible)}class v extends a.StudyLineDataSource{\nconstructor(e,t,i,s,r){super(e,i||(0,_.studyMetaInfoRepository)().findByIdSync({type:\"java\",studyId:m}),\"vbpfixed_\",null!=t?t:v.createProperties(e),s,r),this._createPaneViews().then((e=>{this._setPaneViews(e),e.forEach((e=>e.update((0,h.sourceChangeEvent)({sourceId:this.id(),clearData:!0}))))})),this.clearData()}pointsCount(){return 2}boundToSymbol(){return!1}offset(e){return 0}getMinFirstBarIndexForPlot(){return-1/0}calcIsActualSymbol(){this._isActualSymbol=!0,this._isActualCurrency=!0,this._isActualUnit=!0,this.calcIsActualInterval()}cloneable(){return!1}isSynchronizable(){return!1}isPlotVisibleAt(e,t){return(this.properties().childs().styles.childs()[e].childs().display.value()&t)===t}preferredZOrder(){return 0}static createProperties(e,t){const i=o.StudyMetaInfo.getStudyPropertyRootNameById(m),s=(0,r.ensureNotNull)((0,_.studyMetaInfoRepository)().findByIdSync({type:\"java\",studyId:m})),n=(0,u.createDefaultsState)(!0,i,[],e.studyVersioning());return this.createPropertiesFromStudyMetaInfoAndState(s,s,(0,d.merge)((0,d.clone)(n),null!=t?t:{}),e.studyVersioning())}static",
+        "snippets": [
+          {
+            "term": "studyMetaInfoRepository",
+            "position": 554,
+            "context": "les&&(f(t.styles.developingPoc),f(t.styles.developingVAHigh),f(t.styles.developingVALow)),t}function f(e){void 0!==e&&void 0!==e.visible&&(e.display=e.visible?15:0,delete e.visible)}class v extends a.StudyLineDataSource{\nconstructor(e,t,i,s,r){super(e,i||(0,_.studyMetaInfoRepository)().findByIdSync({type:\"java\",studyId:m}),\"vbpfixed_\",null!=t?t:v.createProperties(e),s,r),this._createPaneViews().then((e=>{this._setPaneViews(e),e.forEach((e=>e.update((0,h.sourceChangeEvent)({sourceId:this.id(),clearData:!0}))))})),this.clearData()}pointsCount(){return 2}boundToSymbol(){return!1}offset(e){return 0}getMinFirstBarIndexForPlot(){return-1/0}calcIsActualSymbol(){this._isActualSymbol=!0,this._isActualCu"
+          },
+          {
+            "term": "findByIdSync",
+            "position": 581,
+            "context": "Poc),f(t.styles.developingVAHigh),f(t.styles.developingVALow)),t}function f(e){void 0!==e&&void 0!==e.visible&&(e.display=e.visible?15:0,delete e.visible)}class v extends a.StudyLineDataSource{\nconstructor(e,t,i,s,r){super(e,i||(0,_.studyMetaInfoRepository)().findByIdSync({type:\"java\",studyId:m}),\"vbpfixed_\",null!=t?t:v.createProperties(e),s,r),this._createPaneViews().then((e=>{this._setPaneViews(e),e.forEach((e=>e.update((0,h.sourceChangeEvent)({sourceId:this.id(),clearData:!0}))))})),this.clearData()}pointsCount(){return 2}boundToSymbol(){return!1}offset(e){return 0}getMinFirstBarIndexForPlot(){return-1/0}calcIsActualSymbol(){this._isActualSymbol=!0,this._isActualCurrency=!0,this._"
+          },
+          {
+            "term": "findById",
+            "position": 581,
+            "context": "Poc),f(t.styles.developingVAHigh),f(t.styles.developingVALow)),t}function f(e){void 0!==e&&void 0!==e.visible&&(e.display=e.visible?15:0,delete e.visible)}class v extends a.StudyLineDataSource{\nconstructor(e,t,i,s,r){super(e,i||(0,_.studyMetaInfoRepository)().findByIdSync({type:\"java\",studyId:m}),\"vbpfixed_\",null!=t?t:v.createProperties(e),s,r),this._createPaneViews().then((e=>{this._setPaneViews(e),e.forEach((e=>e.update((0,h.sourceChangeEvent)({sourceId:this.id(),clearData:!0}))))})),this.clearData()}pointsCount(){return 2}boundToSymbol(){return!1}offset(e){return 0}getMinFirstBarIndexForPlot(){return-1/0}calcIsActualSymbol(){this._isActualSymbol=!0,this._isActualCurrency=!0,th"
+          }
+        ]
+      },
+      {
+        "moduleId": "919577",
+        "score": 120,
+        "cached": true,
+        "sourceLength": 18593,
+        "matchedTerms": [
+          "studyMetaInfoRepository",
+          "findByIdSync",
+          "findById"
+        ],
+        "imports": [],
+        "sourceBeginning": "(e,t,i)=>{\"use strict\";i.r(t),i.d(t,{cloneLineTool:()=>ue,createLineTool:()=>se,createLineToolProperties:()=>ne,createStudyLineToolProperties:()=>oe,getNewToolProperties:()=>Q,initAllLineToolsFromContent:()=>ie,initLineTool:()=>te,isLineTool:()=>le,isStudyLineTool:()=>ce,isTrading:()=>he,lineToolByLinkKey:()=>pe,prepareLineToolPropertiesByOwnerSource:()=>re,setNewToolProperties:()=>X,supportsPhantomMode:()=>ae,tryFindStudyLineToolNameByStudyId:()=>de,unsetNewToolProperties:()=>J});var s=i(650151),r=i(86441),n=i(76273),o=i(236607),a=i(160069),l=i(282130),c=i.t(l,2),h=i(742484),d=i(771737),u=i(597399),p=i(962852),_=i(986790),m=i(372605),g=i(602164),f=i(982552);const v=(0,d.studyIdString)(\"RegressionTrend\",\"tv-basicstudies\");function S(e){return void 0!==e.startPrice&&void 0!==e.endPrice}function y(e,t,i,s){return t.styles&&(b(t.styles.baseLine),b(t.styles.downLine),b(t.styles.upLine)),t}function b(e){void 0!==e&&void 0!==e.visible&&(e.display=e.visible?15:0,delete e.visible)}class w extends o.StudyLineDataSource{constructor(e,t,r,n,o){super(e,r=null!=r?r:(0,s.ensureNotNull)((0,f.studyMetaInfoRepository)().findByIdSync({type:\"java\",studyId:v})),\"linreg_\",null!=t?t:w.createProperties(e),n,o),this.version=2,this._trendData=null,i.e(1583).then(i.bind(i,790727)).then((e=>{this._setPaneViews([new e.RegressionTrendPaneView(this,this._model)])}))}formatter(){throw new Error(\"This method should never be called\")}pointsCount(){return 2}clearData(){this._trendData=null,super.clearData()}state(e){var t;const i=super.state(e);return e?{...i,nonseriesdata:null!==(t=this._trendData)&&void 0",
+        "snippets": [
+          {
+            "term": "studyMetaInfoRepository",
+            "position": 1094,
+            "context": "b(t.styles.baseLine),b(t.styles.downLine),b(t.styles.upLine)),t}function b(e){void 0!==e&&void 0!==e.visible&&(e.display=e.visible?15:0,delete e.visible)}class w extends o.StudyLineDataSource{constructor(e,t,r,n,o){super(e,r=null!=r?r:(0,s.ensureNotNull)((0,f.studyMetaInfoRepository)().findByIdSync({type:\"java\",studyId:v})),\"linreg_\",null!=t?t:w.createProperties(e),n,o),this.version=2,this._trendData=null,i.e(1583).then(i.bind(i,790727)).then((e=>{this._setPaneViews([new e.RegressionTrendPaneView(this,this._model)])}))}formatter(){throw new Error(\"This method should never be called\")}pointsCount(){return 2}clearData(){this._trendData=null,super.clearData()}state(e){var t;const i=super.state(e);"
+          },
+          {
+            "term": "findByIdSync",
+            "position": 1121,
+            "context": "yles.downLine),b(t.styles.upLine)),t}function b(e){void 0!==e&&void 0!==e.visible&&(e.display=e.visible?15:0,delete e.visible)}class w extends o.StudyLineDataSource{constructor(e,t,r,n,o){super(e,r=null!=r?r:(0,s.ensureNotNull)((0,f.studyMetaInfoRepository)().findByIdSync({type:\"java\",studyId:v})),\"linreg_\",null!=t?t:w.createProperties(e),n,o),this.version=2,this._trendData=null,i.e(1583).then(i.bind(i,790727)).then((e=>{this._setPaneViews([new e.RegressionTrendPaneView(this,this._model)])}))}formatter(){throw new Error(\"This method should never be called\")}pointsCount(){return 2}clearData(){this._trendData=null,super.clearData()}state(e){var t;const i=super.state(e);return e?{...i,n"
+          },
+          {
+            "term": "findById",
+            "position": 1121,
+            "context": "yles.downLine),b(t.styles.upLine)),t}function b(e){void 0!==e&&void 0!==e.visible&&(e.display=e.visible?15:0,delete e.visible)}class w extends o.StudyLineDataSource{constructor(e,t,r,n,o){super(e,r=null!=r?r:(0,s.ensureNotNull)((0,f.studyMetaInfoRepository)().findByIdSync({type:\"java\",studyId:v})),\"linreg_\",null!=t?t:w.createProperties(e),n,o),this.version=2,this._trendData=null,i.e(1583).then(i.bind(i,790727)).then((e=>{this._setPaneViews([new e.RegressionTrendPaneView(this,this._model)])}))}formatter(){throw new Error(\"This method should never be called\")}pointsCount(){return 2}clearData(){this._trendData=null,super.clearData()}state(e){var t;const i=super.state(e);return e?{.."
+          }
+        ]
+      },
+      {
+        "moduleId": "982552",
+        "score": 120,
+        "cached": true,
+        "sourceLength": 3071,
+        "matchedTerms": [
+          "studyMetaInfoRepository",
+          "findByIdSync",
+          "findById"
+        ],
+        "imports": [],
+        "sourceBeginning": "(e,t,i)=>{\"use strict\";i.d(t,{studyMetaInfoRepository:()=>_});var s=i(895171),r=i(609838),n=i(650151),o=i(597399),a=i(974789),l=i(181989),c=i(6835),h=i(46130);(0,c.getLogger)(\"Chart.Studies.StudyMetaInfoRepository\",{color:\"#606\"});class d{constructor(e){this._isReady=!1,this._rawStudiesMetaInfo=[],this._rawStudiesMetaInfoDeferredPromise=null,this._javaStudiesMetaInfo=[],this._pineMetaInfoCache=[],this._studiesMigrations=[],this._chartApi=e}async requestMetaInfo(){if(null===this._rawStudiesMetaInfoDeferredPromise){this._rawStudiesMetaInfoDeferredPromise=(0,h.createDeferredPromise)(),this._rawStudiesMetaInfoDeferredPromise.promise.finally((()=>{this._rawStudiesMetaInfoDeferredPromise=null})),this._requestStarted();const e=(await this._chartApi.requestMetadata()).params[1].metainfo.slice();this._processLibraryMetaInfo(e),this._requestFinished(),this._rawStudiesMetaInfoDeferredPromise.resolve(this._rawStudiesMetaInfo)}return this._rawStudiesMetaInfoDeferredPromise.promise}async findById(e){this._isReady||await this.requestMetaInfo();const t=this._findStudyMetaInfo(e)\n;return null!==t?Promise.resolve(t):\"pine\"===e.type?this._compilePine(e):Promise.reject(`unexpected study id=${e.studyId} with type=${e.type}`)}findByIdSync(e){return this._findStudyMetaInfo(e)}isReady(){return this._isReady}async findAllJavaStudies(){return this._isReady||await this.requestMetaInfo(),this._javaStudiesMetaInfo}getInternalMetaInfoArray(){return this._javaStudiesMetaInfo}getMigrations(){return this._studiesMigrations}addPineMetaInfo(e){return p(this._pineMetaInfoCache,e)}async getLatestMetaInfoForPin",
+        "snippets": [
+          {
+            "term": "studyMetaInfoRepository",
+            "position": 30,
+            "context": "(e,t,i)=>{\"use strict\";i.d(t,{studyMetaInfoRepository:()=>_});var s=i(895171),r=i(609838),n=i(650151),o=i(597399),a=i(974789),l=i(181989),c=i(6835),h=i(46130);(0,c.getLogger)(\"Chart.Studies.StudyMetaInfoRepository\",{color:\"#606\"});class d{constructor(e){this._isReady=!1,this._rawStudiesMetaInfo=[],this._rawStudiesMetaInfoDeferredPromise=null,this._javaStudiesMetaInfo=[],this._pineMetaInfoCache=[],this._studiesMigrations=[],this._chartApi=e}async requestMetaInfo(){if(nu"
+          },
+          {
+            "term": "findByIdSync",
+            "position": 1224,
+            "context": "redPromise.promise}async findById(e){this._isReady||await this.requestMetaInfo();const t=this._findStudyMetaInfo(e)\n;return null!==t?Promise.resolve(t):\"pine\"===e.type?this._compilePine(e):Promise.reject(`unexpected study id=${e.studyId} with type=${e.type}`)}findByIdSync(e){return this._findStudyMetaInfo(e)}isReady(){return this._isReady}async findAllJavaStudies(){return this._isReady||await this.requestMetaInfo(),this._javaStudiesMetaInfo}getInternalMetaInfoArray(){return this._javaStudiesMetaInfo}getMigrations(){return this._studiesMigrations}addPineMetaInfo(e){return p(this._pineMetaInfoCache,e)}async getLatestMetaInfoForPineStudy(e,t){return null}_processMigrations(e){throw new "
+          },
+          {
+            "term": "findById",
+            "position": 989,
+            "context": "=(await this._chartApi.requestMetadata()).params[1].metainfo.slice();this._processLibraryMetaInfo(e),this._requestFinished(),this._rawStudiesMetaInfoDeferredPromise.resolve(this._rawStudiesMetaInfo)}return this._rawStudiesMetaInfoDeferredPromise.promise}async findById(e){this._isReady||await this.requestMetaInfo();const t=this._findStudyMetaInfo(e)\n;return null!==t?Promise.resolve(t):\"pine\"===e.type?this._compilePine(e):Promise.reject(`unexpected study id=${e.studyId} with type=${e.type}`)}findByIdSync(e){return this._findStudyMetaInfo(e)}isReady(){return this._isReady}async findAllJavaStudies(){return this._isReady||await this.requestMetaInfo(),this._javaStudiesMetaInfo}getInter"
+          }
+        ]
+      },
+      {
+        "moduleId": "141319",
+        "score": 105,
+        "cached": true,
+        "sourceLength": 247949,
+        "matchedTerms": [
+          "studyMetaInfoRepository",
+          "findById"
+        ],
+        "imports": [],
+        "sourceBeginning": "(e,t,i)=>{\"use strict\";i.d(t,{ChartModelBase:()=>Cs});var s=i(12481),r=i(822914),n=i(650151),o=i(86441),a=i(724377),l=i(149962),c=i(609838),h=i(702054),d=i(554267),u=i(32133),p=i(46130),_=i(559410),m=i(131595),g=i(247905),f=i(955643),v=i(680974),S=i(919577);function y(e){return(0,S.isLineTool)(e)&&e.boundToSymbol()||!1}class b{constructor(){this._items=[],this._set=new Set,this._dataSourcesCache=null,this._customSourcesCache=null,this._lineSourcesCache=null}isEmpty(){return 0===this._items.length}add(e){if(this._items.length>0&&!y(this._items[0])&&this.clear(),y(e)){const t=(0,v.lowerbound)(this._items,e,((e,t)=>e.zorder()<t.zorder()));this._items.splice(t,0,e)}else this.clear(),this._items=[e];this._set.add(e),this._invalidateCache()}canBeAddedToSelection(e){return 0===this._items.length||y(this._items[0])&&y(e)}isSelected(e){return this._set.has(e)}allSources(){return this._items.slice(0)}dataSources(){return null===this._dataSourcesCache&&(this._dataSourcesCache=this._items.filter(f.isDataSource)),this._dataSourcesCache}lineDataSources(){return null===this._lineSourcesCache&&(this._lineSourcesCache=this._items.filter(S.isLineTool)),this._lineSourcesCache}customSources(){return null===this._customSourcesCache&&(this._customSourcesCache=this._items.filter((e=>!(0,f.isDataSource)(e)))),this._customSourcesCache}checkLineToolSelection(){this._items.forEach((e=>(0,S.isLineTool)(e)&&e.calcIsActualSymbol())),this._items=this._items.filter((e=>!(0,S.isLineTool)(e)||e.isActualSymbol())),this._invalidateCache()}remove(e){this._items=this._items.filter((t=>t!==e)),this._set.delete(e",
+        "snippets": [
+          {
+            "term": "studyMetaInfoRepository",
+            "position": 6179,
+            "context": "e.metaInfo,graphics:e.data.graphics}),this.restoreState(i,t)}applyPreferences(e){this._properties.mergePreferences(e)}metaInfo(){return(0,\nn.ensureNotNull)(this._metaInfo)}async _requestAndProcessMetaInfo(){if(this._model.isSnapshot())return;const e=await(0,D.studyMetaInfoRepository)().findById({type:\"java\",studyId:\"Sessions@tv-basicstudies\"});this._destroyed||null===this._loadedGraphics&&(this._setMetaInfo(e),null!==this._metaInfo&&(this._studySource=new E.StudyDataSource(this._model.chartApi(),this._model.mainSeries().seriesSource(),\"sessions_\",this._metaInfo),this._createPaneViews(),this._studySource.dataCleared().subscribe(this,this.updateAllViews.bind(this,(0,z.sourceChangeEvent)(this.id()"
+          },
+          {
+            "term": "findById",
+            "position": 6206,
+            "context": "graphics}),this.restoreState(i,t)}applyPreferences(e){this._properties.mergePreferences(e)}metaInfo(){return(0,\nn.ensureNotNull)(this._metaInfo)}async _requestAndProcessMetaInfo(){if(this._model.isSnapshot())return;const e=await(0,D.studyMetaInfoRepository)().findById({type:\"java\",studyId:\"Sessions@tv-basicstudies\"});this._destroyed||null===this._loadedGraphics&&(this._setMetaInfo(e),null!==this._metaInfo&&(this._studySource=new E.StudyDataSource(this._model.chartApi(),this._model.mainSeries().seriesSource(),\"sessions_\",this._metaInfo),this._createPaneViews(),this._studySource.dataCleared().subscribe(this,this.updateAllViews.bind(this,(0,z.sourceChangeEvent)(this.id()))),this._st"
+          }
+        ]
+      },
+      {
+        "moduleId": "94299",
+        "score": 100,
+        "cached": true,
+        "sourceLength": 75978,
+        "matchedTerms": [
+          "studyMetaInfoRepository"
+        ],
+        "imports": [],
+        "sourceBeginning": "(e,t,a)=>{\"use strict\";a.r(t),a.d(t,{getRestrictedToolSet:()=>Qn});var n=a(156963),i=a(50959),l=a(719036),o=a(609838),s=a(688401),r=a(754771),h=a(583798),c=a(72571),v=a(53431),d=a(497754),u=a.n(d),m=a(497041);const p=i.forwardRef(((e,t)=>{const{children:a,className:n,...l}=e;return i.createElement(\"div\",{className:d(n,m.wrap),ref:t,...l},a)}));var g=a(501836),b=a(552045);class w extends i.PureComponent{constructor(){\nsuper(...arguments),this._handleClick=()=>{const{onClick:e,onClickArg:t}=this.props;e&&e(t)}}render(){const{className:e,icon:t,hint:a,text:n,isDisabled:l,isActive:o,isFirst:s,isLast:r,onClick:h,onClickArg:c,...v}=this.props;return i.createElement(g.ToolbarButton,{...v,icon:t,text:n,tooltip:a,isDisabled:l,isActive:o,isGrouped:!0,onClick:this._handleClick,className:d(e,b.button,{[b.first]:s,[b.last]:r})})}}var C=a(917850),S=a(930052),y=a(996038),f=a(614417),_=a(261401),E=a(938867),M=a(681434),x=a(269842),A=a(930202),I=a(892932);function T(e){const{orientation:t,onKeyDown:a,...n}=e,l=I.PLATFORM_ACCESSIBILITY_ENABLED?{role:\"radiogroup\",\"aria-orientation\":t}:{};return i.createElement(\"div\",{...n,...l,onKeyDown:(0,x.createSafeMulticastEventHandler)((function(e){if(!I.PLATFORM_ACCESSIBILITY_ENABLED)return;if(e.defaultPrevented)return;if(!(document.activeElement instanceof HTMLElement))return;const a=(0,A.hashFromEvent)(e);if(\"vertical\"!==t&&38!==a&&40!==a)return;if(\"vertical\"===t&&37!==a&&39!==a)return;const n=(i=e.currentTarget,Array.from(i.querySelectorAll('[role=\"radio\"]:not([disabled]):not([aria-disabled])')).filter((0,I.createScopedVisibleElementFilter)(i))).sort",
+        "snippets": [
+          {
+            "term": "studyMetaInfoRepository",
+            "position": 9523,
+            "context": "w Map;return e.forEach((e=>{switch(e.type){case\"java\":i.set(e.studyId,e);break;case\"pine\":isPublishedPineId(e.pineId)?a.set(e.pineId,e):n.set(e.pineId,e);break;default:(0,le.assert)(!1,`unknown favorite type ${JSON.stringify(e)}`)}})),0!==i.size&&t.push((0,re.studyMetaInfoRepository)().findAllJavaStudies().then((e=>{const t=new Map\n;for(const a of e)!a.is_hidden_study&&i.has(a.id)&&t.set(a.id,{name:a.description,localizedName:a.description_localized,studyMarketShittyObject:a});return t})).then((e=>{const t=function(e,t){const a={items:[],notFoundItems:[]};return e.forEach(((e,n)=>{const i=t.get(n);void 0!==i?a.items.push({item:e,info:i}):a.notFoundItems.push(e)})),a}(i,e);if(0!==t.notFoundItems"
+          }
+        ]
+      },
+      {
+        "moduleId": "929258",
+        "score": 50,
+        "cached": true,
+        "sourceLength": 288,
+        "matchedTerms": [
+          "InsertionErrorCode"
+        ],
+        "imports": [],
+        "sourceBeginning": "(e,t,i)=>{\"use strict\";var s;i.d(t,{InsertionErrorCode:()=>s}),function(e){e.StudyCannotBeChild=\"cannot_be_child\",e.StubWasRemoved=\"stub_was_removed\",e.CannotGetMetainfo=\"cannot_get_metainfo\",e.CannotCompilePub=\"cannot_compile_pub\",e.Cancelled=\"cancelled\",e.Unknown=\"unknown\"}(s||(s={}))}",
+        "snippets": [
+          {
+            "term": "InsertionErrorCode",
+            "position": 36,
+            "context": "(e,t,i)=>{\"use strict\";var s;i.d(t,{InsertionErrorCode:()=>s}),function(e){e.StudyCannotBeChild=\"cannot_be_child\",e.StubWasRemoved=\"stub_was_removed\",e.CannotGetMetainfo=\"cannot_get_metainfo\",e.CannotCompilePub=\"cannot_compile_pub\",e.Cancelled=\"cancelled\",e.Unknown=\"unknown\"}(s||(s={}))}"
+          }
+        ]
+      },
+      {
+        "moduleId": "407259",
+        "score": 30,
+        "cached": true,
+        "sourceLength": 34498,
+        "matchedTerms": [
+          "StudyInserter"
+        ],
+        "imports": [],
+        "sourceBeginning": "(e,t,i)=>{\"use strict\";i.d(t,{ChartWidgetApiBase:()=>ie});var s=i(650151),r=i(609838),n=i(664902),o=i(156963),a=i(628589),l=i(295555),c=i(867188),h=i(388785);class d{constructor(e){this._timeScale=e}coordinateToTime(e){const t=this._timeScale.coordinateToIndex(e);return this._timeScale.indexToTimePoint(t)}barSpacingChanged(){return this._timeScale.barSpacingChanged()}rightOffsetChanged(){return this._timeScale.rightOffsetChanged()}setRightOffset(e){this._timeScale.setRightOffset(e)}setBarSpacing(e){this._timeScale.setBarSpacing(e)}barSpacing(){return this._timeScale.barSpacing()}rightOffset(){return this._timeScale.rightOffset()}width(){return this._timeScale.width()}defaultRightOffset(){return this._timeScale.defaultRightOffset().spawn()}defaultRightOffsetPercentage(){return this._timeScale.defaultRightOffsetPercentage().spawn()}usePercentageRightOffset(){return this._timeScale.usePercentageRightOffset().spawn()}isEmpty(){return this._timeScale.isEmpty()}scrollToFirstBar(e){this._timeScale.scrollToFirstBar(e)}scrollToRealtime(e){this._timeScale.scrollToRealtime(!1,e)}pointsCount(){return this._timeScale.points().size()}}var u=i(466052),p=i(210696);const _=new n.TranslatedString(\"change timezone\",r.t(null,void 0,i(820505)));class m{constructor(e){this._onTimezoneChanged=new u.Delegate,this._chartWidget=e,this._timezoneProperty=e.properties().childs().timezone,this._timezoneProperty.subscribe(this,(e=>{this._onTimezoneChanged.fire(e.value())})),e.onAboutToBeDestroyed().subscribe(this,(()=>{this._timezoneProperty.unsubscribeAll(this)}),!0)}availableTimezones(){return p.availa",
+        "snippets": [
+          {
+            "term": "StudyInserter",
+            "position": 22928,
+            "context": "canCreateStudy())return(0,G.showTooManyStudiesNotice)(),Promise.resolve(null);e=e.toLowerCase();const o=n.disableUndo?this._chartWidget.model().model():this._chartWidget.model(),a=q.StudyMetaInfo.findStudyMetaInfoByDescription(o.studiesMetaData(),e),c=o.createStudyInserter({type:\"java\",studyId:a.id},[]);if(c.setForceOverlay(!!t),n.priceScale&&c.setPreferredPriceScale(function(e){switch(e){case\"no-scale\":return\"overlay\";case\"as-series\":return\"as-series\";case\"new-left\":return\"left\";case\"new-right\":return\"right\";default:throw new Error('The pricescale \"'+e+'\" is invalid, the only valid options are \"no-scale\", \"as-series\", \"new-left\" and \"new-right\".')}}(n.priceScale)),n.allowChangeCurren"
+          }
+        ]
+      },
+      {
+        "moduleId": "466933",
+        "score": 30,
+        "cached": true,
+        "sourceLength": 74292,
+        "matchedTerms": [
+          "StudyInserter"
+        ],
+        "imports": [],
+        "sourceBeginning": "(e,t,i)=>{\"use strict\";i.d(t,{ChartUndoModelBase:()=>ts});var s=i(685459),r=i.n(s),n=i(316230),o=i(650151),a=i(86441),l=i(609838),c=i(49630),h=i(711117),d=i(597399),u=i(383581),p=i(628589);function _(e,t){return!!p.Interval.isEqual(e.res,t.res)&&(0,u.areEqualTimeFrames)(e.val,t.val)}var m=i(289892),g=i(498274),f=i(919577),v=i(350136),S=i(32133),y=i(518055),b=i(156963),w=i(6835),C=i(593194),P=i(587333),x=i(664902);const T=new x.TranslatedString(\"toggle collapsed pane state\",l.t(null,void 0,i(74724)));class I extends P.UndoCommand{constructor(e,t){super(T),this._chartModel=e,this._paneIndex=t}redo(){this._chartModel.toggleCollapsedPane(this._paneIndex)}undo(){this._chartModel.toggleCollapsedPane(this._paneIndex)}}var M=i(372605);const L=new x.TranslatedString(\"move all scales to left\",l.t(null,void 0,i(581898))),A=new x.TranslatedString(\"move all scales to right\",l.t(null,void 0,i(622863))),k=(0,w.getLogger)(\"Chart.MergeAllScales\");class D extends P.UndoCommand{constructor(e,t,i,s,r,n){super(n),this._model=e,this._paneIndex=e.panes().indexOf(t),this._targetPosition=s,this._targetIndex=r,this._scaleId=i.id(),this._sourcePosition=t.priceScalePosition(i),\"overlay\"!==this._sourcePosition&&(this._sourceIndex=t.priceScaleIndex(i,this._sourcePosition))}redo(){const e=this._model.panes()[this._paneIndex],t=(0,\no.ensureNotNull)(e.getPriceScaleById(this._scaleId));e.movePriceScale(t,this._targetPosition,this._targetIndex),this._model.fullUpdate()}undo(){const e=this._model.panes()[this._paneIndex],t=(0,o.ensureNotNull)(e.getPriceScaleById(this._scaleId));e.movePriceScale(t,this._source",
+        "snippets": [
+          {
+            "term": "StudyInserter",
+            "position": 54497,
+            "context": "app)){const e=JSON.parse(i.app);if(null!==await this.pasteSourceFromClip(t,e))return}await this._processSpecialLineToolsContents(e,i,t)}applyStudyTemplate(e,t){const i=new Ye(this._model(),e,t);this._pushUndoCommand(i),(0,hi.emit)(\"load_study_template\")}createStudyInserter(e,t,i={}){const{stubTitle:s,isOverlay:r}=i,n={createStudy:(e,t,i,s,r,n,o,a,l,c,h)=>this.checkIfFeatureAvailable(e,n)?((0,S.trackEvent)(\"studies\",\"Study_\"+e.id),\"Compare@tv-basicstudies\"===e.id&&(0,S.trackEvent)(\"compare\",\"symbol:\"+t.symbol),this._insertStudy(e,t,s,r,n,o,a,l,c,null,h)):(Zi.logNormal(\"Cannot insert study \"+e.id),null)};void 0!==s&&(n.createStub=()=>this.m_model.insertStudyStub(s,r).id(),n.removeStub=e"
+          }
+        ]
+      },
+      {
+        "moduleId": "491344",
+        "score": 30,
+        "cached": true,
+        "sourceLength": 10421,
+        "matchedTerms": [
+          "StudyInserter"
+        ],
+        "imports": [],
+        "sourceBeginning": "(e,t,i)=>{\"use strict\";var s=i(650151).assert,r=i(141319).ChartModelBase,n=i(919577).isLineTool,o=i(524130).Watermark,a=i(601227).CheckMobile,l=i(948251).InvalidationLevel,c=i(466052).Delegate;const{globalChangeEvent:h,sourceChangeEvent:d}=i(364124);var u=i(593194),p=u.isStudy,_=u.isFundamentalStudy,m=i(683471),g=i(304591).MainSeriesScaleRatioProperty,f=i(250136).scaleRatio,v=i(129789).StudyInserter,S=i(556691).dateFormatProperty,y=i(565626).timeHoursFormatProperty,b=i(559410),w=i(912957).StudyColorRotatorFactory,C=i(156963),P=i(863336).AppliedTimeFrame;C.enabled(\"fix_left_edge\");class x extends r{constructor(e,t,i,s,r,n,a,l,c,h){super(e,t,i,s,r,n,a,l,c,h);var d=this;this._mainSeriesScaleRatioProperty=new g(this),this.m_mainSeries.dataEvents().completed().subscribe(this,function(){this._scrollingState&&this.gotoTime()}.bind(this)),this.m_mainSeries.onIntervalChanged().subscribe(this,(function(){\nthis._recalcVRStudiesParams.oldStartVisibleIndex=NaN,this._recalcVRStudiesParams.oldEndVisibleIndex=NaN})),this._readOnly||(this.m_mainSeries.properties().addChild(\"priceAxisProperties\",this.m_mainSeries.priceScale().properties()),this._properties.paneProperties.legendProperties.showStudyTitles.listeners().subscribe(this,(function(e){e.value()||d._properties.paneProperties.legendProperties.showStudyArguments.setValue(!1)}))),this._watermarkSource=this._options.watermarkEnabled?new o(this,this.m_mainSeries):null,m.hideAllDrawings().subscribe(this,this._onDrawingsVisibilityChanged),m.hideAllIndicators().subscribe(this,this._onIndicatorsVisibilityChanged),this._properties.scalesPropert",
+        "snippets": [
+          {
+            "term": "StudyInserter",
+            "position": 389,
+            "context": ".CheckMobile,l=i(948251).InvalidationLevel,c=i(466052).Delegate;const{globalChangeEvent:h,sourceChangeEvent:d}=i(364124);var u=i(593194),p=u.isStudy,_=u.isFundamentalStudy,m=i(683471),g=i(304591).MainSeriesScaleRatioProperty,f=i(250136).scaleRatio,v=i(129789).StudyInserter,S=i(556691).dateFormatProperty,y=i(565626).timeHoursFormatProperty,b=i(559410),w=i(912957).StudyColorRotatorFactory,C=i(156963),P=i(863336).AppliedTimeFrame;C.enabled(\"fix_left_edge\");class x extends r{constructor(e,t,i,s,r,n,a,l,c,h){super(e,t,i,s,r,n,a,l,c,h);var d=this;this._mainSeriesScaleRatioProperty=new g(this),this.m_mainSeries.dataEvents().completed().subscribe(this,function(){this._scrollingState&&this.got"
+          }
+        ]
+      },
+      {
+        "moduleId": "626458",
+        "score": 5,
+        "cached": true,
+        "sourceLength": 18510,
+        "matchedTerms": [
+          "findById"
+        ],
+        "imports": [],
+        "sourceBeginning": "(e,t,n)=>{\"use strict\";n.d(t,{Calendar:()=>_});var s=n(50959),a=n(497754),r=n(898237),i=n(317140),o=n(837287);function l(e){const{prevAriaLabel:t,nextAriaLabel:n,currentAriaLabel:a,currentVisibleTitle:l,isNextDisabled:u,isPrevDisabled:c,isViewModeDisabled:d,prevRef:h,middleRef:p,onPrevClick:g,onNextClick:f,onCurrentClick:m,onPrevKeyDown:v,onMiddleKeyDown:D,onHeaderKeyDown:y}=e;return s.createElement(\"div\",{className:o.header,onKeyDown:y},s.createElement(r.LightButton,{startIcon:i,onClick:g,size:\"small\",variant:\"ghost\",\"aria-label\":t,disabled:c,onKeyDown:v,reference:h}),s.createElement(r.LightButton,{size:\"small\",variant:\"ghost\",\"aria-label\":a,onClick:m,disabled:d,onKeyDown:D,reference:p},l),s.createElement(r.LightButton,{startIcon:i,onClick:f,size:\"small\",variant:\"ghost\",\"aria-label\":n,disabled:u,className:o[\"flip-horizontal\"]}))}var u=n(508550),c=n(325314),d=n(906355);class h extends s.PureComponent{constructor(){super(...arguments),this._dateFormatter=new d.DateFormatter,this._getVariant=()=>{let e=\"ghost\";return this._withinSelectedRange()&&(e=this.props.isDisabled?\"secondary\":\"quiet-primary\"),this._isOnHighlightedEdge()&&this.props.isDisabled&&(e=\"quiet-primary\"),e},this._onClick=()=>{this.props.onClick&&!this.props.isDisabled&&this.props.onClick(new Date(this.props.day))}}render(){const e=a(o.day,this.props.isDisabled&&o.disabled,!this.props.isDisabled&&(this.props.isSelected||this._isOnHighlightedEdge())&&o[\"accent-color\"],this._withinSelectedRange()&&o[\"within-selected-range\"],this._isCurrentDay()&&o[\"current-day\"],!this.props.showFocusRing&&o[\"hide-focus-ring\"]),t=t",
+        "snippets": [
+          {
+            "term": "findById",
+            "position": 9786,
+            "context": "ch((e=>{e.innerText=\"\"})),this._renderedMessage=null,this._alternate=!1}_generateId(){return`live-region-${this._type}-${this._idCounter++}`}_calculateDestroyTimeout(e,t=0){const n=50*e.trim().length+200,s=250*e.trim().length;return Math.min(Math.max(n,t),s)}_findById(e){var t;return(null===(t=this._renderedMessage)||void 0===t?void 0:t.id)===e?this._renderedMessage:this._messagesQueue.find((t=>t.id===e))}_getDestroyMessageCallback(e){return async t=>{const n=this._findById(e);return!!n&&(n.renderedTo?!!t&&(this._removeRenderedMessage(),this._renderMessage(),!0):(this._removeFromQueue(n),!0))}}_removeRenderedMessage(){var e;const t=null===(e=this._renderedMessage)||void 0===e?voi"
+          }
+        ]
+      }
+    ],
+    "moduleImportGraph": [],
+    "cachedRelevantModules": [
+      {
+        "moduleId": "94299",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "__esModule",
+          "getRestrictedToolSet"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "129789",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "StudyInserter"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "141319",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "ChartModelBase"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "314489",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "LineToolVbPFixed"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "407259",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "ChartWidgetApiBase"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "466933",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "ChartUndoModelBase"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "491344",
+        "loaded": true,
+        "exportsType": "function",
+        "exportsKeys": [
+          "length",
+          "name",
+          "prototype"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "626458",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "Calendar"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "919577",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "__esModule",
+          "cloneLineTool",
+          "createLineTool",
+          "createLineToolProperties",
+          "createStudyLineToolProperties",
+          "getNewToolProperties",
+          "initAllLineToolsFromContent",
+          "initLineTool",
+          "isLineTool",
+          "isStudyLineTool",
+          "isTrading",
+          "lineToolByLinkKey",
+          "prepareLineToolPropertiesByOwnerSource",
+          "setNewToolProperties",
+          "supportsPhantomMode",
+          "tryFindStudyLineToolNameByStudyId",
+          "unsetNewToolProperties"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "929258",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "InsertionErrorCode"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "938251",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "ChartWidgetBase"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "978823",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "ChartWidget"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "982552",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "studyMetaInfoRepository"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "24667",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "StudyBaseWindowView"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "50959",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "Children",
+          "Component",
+          "Fragment",
+          "Profiler",
+          "PureComponent",
+          "StrictMode",
+          "Suspense",
+          "__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED",
+          "cloneElement",
+          "createContext",
+          "createElement",
+          "createFactory",
+          "createRef",
+          "forwardRef",
+          "isValidElement",
+          "lazy",
+          "memo",
+          "startTransition",
+          "unstable_act",
+          "useCallback",
+          "useContext",
+          "useDebugValue",
+          "useDeferredValue",
+          "useEffect",
+          "useId",
+          "useImperativeHandle",
+          "useInsertionEffect",
+          "useLayoutEffect",
+          "useMemo",
+          "useReducer",
+          "useRef",
+          "useState",
+          "useSyncExternalStore",
+          "useTransition",
+          "version"
+        ],
+        "relevantMembers": [
+          {
+            "key": "useInsertionEffect",
+            "type": "function",
+            "name": null,
+            "arguments": 2,
+            "source": "function(e,n){return R.current.useInsertionEffect(e,n)}"
+          }
+        ]
+      },
+      {
+        "moduleId": "66247",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "isCustomStudy"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "79232",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "StudyValuesProvider"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "105586",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "MetaInfoHelper"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "112117",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "StaticStudyGraphics",
+          "emptyStudyGraphics",
+          "loadStudyGraphics",
+          "saveStudyGraphics"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "131148",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "SYMBOL_LIST_REPOSITORY_BACKEND_SERVICE"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "133304",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "StudyPriceAxisView"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "168716",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "Technicals_study",
+          "Average Day Range_study",
+          "Bull Bear Power_study",
+          "Capital expenditures_study",
+          "Cash to debt ratio_study",
+          "Debt to EBITDA ratio_study",
+          "Directional Movement Index_study",
+          "DMI_study",
+          "Dividend payout ratio %_study",
+          "Equity to assets ratio_study",
+          "Enterprise value to EBIT ratio_study",
+          "Enterprise value to EBITDA ratio_study",
+          "Enterprise value to revenue ratio_study",
+          "Goodwill, net_study",
+          "Ichimoku Cloud_study",
+          "Ichimoku_study",
+          "Moving Average Convergence Divergence_study",
+          "Operating income_study",
+          "Price to book ratio_study",
+          "Price to cash flow ratio_study",
+          "Price to earnings ratio_study",
+          "Price to free cash flow ratio_study",
+          "Price to sales ratio_study",
+          "Float shares outstanding_study",
+          "Stoch_study",
+          "Total common shares outstanding_study",
+          "Volume Weighted Average Price_study",
+          "Volume Weighted Moving Average_study",
+          "Williams Percent Range_study",
+          "Doji_study",
+          "Spinning Top Black_study",
+          "Spinning Top White_study",
+          "Accounts payable_study",
+          "Accounts receivables, gross_study",
+          "Accounts receivable - trade, net_study",
+          "Accruals_study",
+          "Accrued payroll_study",
+          "Accumulated depreciation, total_study",
+          "Additional paid-in capital/Capital surplus_study",
+          "After tax other income/expense_study",
+          "Altman Z-score_study",
+          "Amortization_study",
+          "Amortization of intangibles_study",
+          "Amortization of deferred charges_study",
+          "Asset turnover_study",
+          "Average basic shares outstanding_study",
+          "Bad debt / Doubtful accounts_study",
+          "Basic EPS_study",
+          "Basic earnings per share (Basic EPS)_study",
+          "Beneish M-score_study",
+          "Book value per share_study",
+          "Buyback yield %_study",
+          "Capital and operating lease obligations_study",
+          "Capital expenditures - fixed assets_study",
+          "Capital expenditures - other assets_study",
+          "Capitalized lease obligations_study",
+          "Cash and short term investments_study",
+          "Cash conversion cycle_study",
+          "Cash & equivalents_study",
+          "Cash from financing activities_study",
+          "Cash from investing activities_study",
+          "Cash from operating activities_study",
+          "Change in accounts payable_study",
+          "Change in accounts receivable_study",
+          "Change in accrued expenses_study",
+          "Change in inventories_study",
+          "Change in other assets/liabilities_study",
+          "Change in taxes payable_study",
+          "Changes in working capital_study",
+          "COGS to revenue ratio_study",
+          "Common dividends paid_study",
+          "Common equity, total_study",
+          "Common stock par/Carrying value_study",
+          "Cost of goods_study",
+          "Cost of goods sold_study",
+          "Current portion of LT debt and capital leases_study",
+          "Current ratio_study",
+          "Days inventory_study",
+          "Days payable_study",
+          "Days sales outstanding_study",
+          "Debt to assets ratio_study",
+          "Debt to equity ratio_study",
+          "Debt to revenue ratio_study",
+          "Deferred income, current_study",
+          "Deferred income, non-current_study",
+          "Deferred tax assets_study",
+          "Deferred taxes (cash flow)_study",
+          "Deferred tax liabilities_study",
+          "Depreciation_study",
+          "Deprecation and amortization_study",
+          "Depreciation & amortization (cash flow)_study",
+          "Depreciation/depletion_study",
+          "Diluted EPS_study",
+          "Diluted earnings per share (Diluted EPS)_study",
+          "Diluted net income available to common stockholders_study",
+          "Diluted shares outstanding_study",
+          "Dilution adjustment_study",
+          "Discontinued operations_study",
+          "Dividends payable_study",
+          "Dividends per share - common stock primary issue_study"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "188372",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "StudyDataWindowView"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "199288",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "__esModule",
+          "getChartContent",
+          "getCharts",
+          "getChartsCount",
+          "getCustomAdapter",
+          "getDrawingTemplates",
+          "getStandardStudyTemplateContentById",
+          "getStorageURL",
+          "getStudyTemplateContent",
+          "getStudyTemplateContentById",
+          "getStudyTemplatesList",
+          "initialize",
+          "invalidateStudyTemplatesList",
+          "isThemeExist",
+          "loadChart",
+          "loadDrawingTemplate",
+          "loadTheme",
+          "loadThemes",
+          "removeChart",
+          "removeDrawingTemplate",
+          "removeStudyTemplate",
+          "removeStudyTemplateById",
+          "removeTheme",
+          "renameStudyTemplate",
+          "replaceStudyTemplate",
+          "saveChart",
+          "saveDrawingTemplate",
+          "saveStudyTemplate",
+          "saveTheme",
+          "setCustomAdapter",
+          "updateUser"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "199833",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "regressionTrendStudyItem"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "236607",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "StudyLineDataSource"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "244000",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "changeDescription",
+          "create",
+          "exact",
+          "exclude",
+          "getListById",
+          "getListIds",
+          "getListsMap",
+          "insert",
+          "put",
+          "reducer",
+          "remove",
+          "rename",
+          "replace",
+          "setup"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "247414",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "__esModule",
+          "DEFAULT_ADJUSTMENT",
+          "DEFAULT_SESSION",
+          "DEFAULT_SETTLEMENT_AS_CLOSE",
+          "compareSymbols",
+          "decodeExtendedSymbol",
+          "encodeExtendedSymbolOrGetSimpleSymbolString",
+          "isEncodedExtendedSymbol",
+          "isReplaySymbol",
+          "isStudySymbol",
+          "unwrapSimpleSymbol"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "266755",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "Std",
+          "Series",
+          "Symbol",
+          "StudyEngine",
+          "BarSet",
+          "OHLCV",
+          "BarBuilder",
+          "setupFeed",
+          "getVolumeProfileResolutionForPeriod",
+          "overwriteVolumeProfileResolutionForPeriodGetter"
+        ],
+        "relevantMembers": [
+          {
+            "key": "StudyEngine",
+            "type": "function",
+            "name": null,
+            "arguments": 1,
+            "source": "class{constructor(e){this.runner=new v(e)}stop(){this.runner.stop()}isStarted(){return this.runner.isStarted}}"
+          }
+        ]
+      },
+      {
+        "moduleId": "286453",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "StudyDataSource"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "295555",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "applyOverridesToStudy",
+          "applyOverridesToStudyDefaults"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "305990",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "StudyStatusType"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "313134",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "createStudyPlotColorProvider"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "326285",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "__esModule",
+          "addBroker",
+          "brokersList",
+          "createBrokerConnection",
+          "getBrokerMetainfo"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "361698",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "moveAfterSource",
+          "moveBeforeSource",
+          "newLineToolZOrder",
+          "newStudyZOrder",
+          "reorderDataSourcesStateZOrder"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "363940",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "__esModule",
+          "addWatchlistSymbolsThunk",
+          "createWatchlistThunk",
+          "getActiveWatchlistThunk",
+          "getCustomWatchlistsThunk",
+          "putCustomWatchlistsThunk",
+          "removeWatchlistSymbolsThunk",
+          "removeWatchlistThunk",
+          "renameSeparatorThunk",
+          "renameWatchlistThunk",
+          "replaceWatchlistSymbolsThunk",
+          "setActiveWatchlistThunk",
+          "symbolListRepositorySaga",
+          "validateWatchListSymbols"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "377539",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "marginlegendhoriz",
+          "legend",
+          "item",
+          "withAction",
+          "selected",
+          "last",
+          "text",
+          "noWrapWrapper",
+          "noWrap",
+          "series",
+          "valuesAdditionalWrapper",
+          "valueItem",
+          "valueTitle",
+          "valueValue",
+          "hideUniportantValueItems",
+          "unimportant",
+          "valuesWrapper",
+          "wrappable",
+          "directionColumn",
+          "titlesWrapper",
+          "button",
+          "statusesWrapper",
+          "logoWrapper",
+          "buttonsWrapper",
+          "buttons",
+          "statusesWrapper__statuses",
+          "pairContainer",
+          "logo",
+          "hidden",
+          "noActions",
+          "titleWrapper",
+          "title",
+          "intervalTitle",
+          "withDot",
+          "disabled",
+          "disabledOnInterval",
+          "withCustomTextColor",
+          "study",
+          "mainTitle",
+          "descTitle",
+          "hideValues",
+          "has5Buttons",
+          "stayInHoveredMode",
+          "withTail",
+          "loader",
+          "providerTitle",
+          "exchangeTitle",
+          "styleTitle",
+          "priceSourceTitle",
+          "minHideIntervalTitle",
+          "microHideIntervalTitle",
+          "hideExchangeProviderTitles",
+          "flagged",
+          "medium",
+          "minimized",
+          "micro",
+          "linked",
+          "onlyOneButtonCanBeStick",
+          "touchMode",
+          "buttonIcon",
+          "flag",
+          "invisibleHover",
+          "eye",
+          "eyeLoading",
+          "eye-animation",
+          "linking",
+          "intervalEye",
+          "markerContainer",
+          "flagWrapper",
+          "sourcesWrapper",
+          "legendMainSourceWrapper",
+          "sources",
+          "toggler",
+          "onlyOneSourceShown",
+          "counter",
+          "iconArrow",
+          "objectTree",
+          "closed",
+          "objectsTreeCanBeShown"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "377884",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "PriceLineAxisView",
+          "SeriesPriceLineAxisView",
+          "StudyPriceLineAxisView"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "389021",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "studyEmptyPlotValuePredicate",
+          "studyPlotFunctionMap"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "440354",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "StudyPaneViewInplaceUpdatable"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "447996",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "makeNextStudyId",
+          "makeNextSymbolId"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "481330",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "addAsciiDotIfTextDoesNotEndWithSentenceEndingMark",
+          "adjustSavedCustomFieldsValues",
+          "alignToMinTick",
+          "bottomTradingTabClassName",
+          "brokersListFromPlans",
+          "checkIsExistingPosition",
+          "convertActionDescriptionsToActions",
+          "executionText",
+          "filterDurationsByOrderType",
+          "filterDurationsBySymbolDurations",
+          "findDurationMetaInfo",
+          "formatValue",
+          "getAsk",
+          "getBid",
+          "getCryptoBalanceValue",
+          "getCurrency",
+          "getDefaultOrderType",
+          "getLast",
+          "getOrderDuration",
+          "getOrderPrice",
+          "getPlatform",
+          "getPriceStep",
+          "getQuotePrice",
+          "getTimestamp",
+          "isBatsQuotes",
+          "isBrokerSupportOrderModification",
+          "isDefined",
+          "isMintickMultiple",
+          "isModifyOrderSupported",
+          "isMoveOrderSupported",
+          "isNoQuotes",
+          "isOAuthAuthType",
+          "isOrderActive",
+          "isOrderTypeAllowed",
+          "makeBrokerSideMaintananceFeatureToggleName",
+          "makeDatePlus24UTCHours",
+          "makeInitialOrderDuration",
+          "makeMaintananceFeatureToggleName",
+          "makeOrderDuration",
+          "orderStatusToText",
+          "roundToStepRequired"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "528524",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "NonSeriesStudy",
+          "isNonSeriesStudy"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "535017",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "StudyPlotPaneView"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "550286",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "isLineToolState",
+          "isMainSeriesState",
+          "isStudyLineToolState",
+          "isStudyState"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "552746",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "study_Overlay"
+        ],
+        "relevantMembers": [
+          {
+            "key": "study_Overlay",
+            "type": "function",
+            "name": null,
+            "arguments": 4,
+            "source": "class extends n{constructor(e,t,i,s){super(e,t,i,s),this._paneView=null;var r=this;this.properties().minTick.listeners().subscribe(null,(function(){r._recreatePriceFormattingDependencies(),r.updateAllViews(),r._model.fullUpdate()}))}_onQuotesUpdate(e,t){!this._legendView||void 0===t.values.change&&void 0===t.values.change_percent||(this._legendView.update(),this._model.updateSource(this))}destroy(){this._quotesProvider.quotesUpdate().unsubscribeAll(this),this._quotesProvider.destroy(),super.destroy()}tags(){var e=[],t=this.symbolInfo();return t?e.push(t.name):this._properties.inputs.symbol.value()&&e.push(this._properties.inputs.symbol.value()),e}async _getPropertyDefinitionsViewModelClass(){return(await Promise.all([i.e(2285),i.e(4433),i.e(9637),i.e(4520),i.e(8762),i.e(607)]).then(i.bind(i,746418))).StudyOverlayDefinitionsViewModel}defaultPlotIdForAlert(){return\"\"}valuesProvider(){return new s(this,this.model())}statusProvider(e){return new r(this,this.model())}}"
+          }
+        ]
+      },
+      {
+        "moduleId": "557487",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "createStudyTemplateMetaInfo",
+          "descriptionString"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "563573",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "JStudyDataUpdate"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "577461",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "__esModule",
+          "isImageToolName",
+          "isLineDrawnWithPressedButton",
+          "isLineToolDrawWithoutPoints",
+          "isLineToolFinishRequiredWhenCreatedByApi",
+          "isLineToolName",
+          "isMtpPredictorToolName",
+          "isStudyLineToolName",
+          "isTextToolName"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "587892",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "pivotPointsStandardStudyItem"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "590800",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "StudyStatusType",
+          "convertStudyStatusToString",
+          "studyStatusFeature",
+          "studyStatusSolutionId",
+          "studyStatusTitle"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "593194",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "__esModule",
+          "createStudy",
+          "isESDStudy",
+          "isFundamentalStudy",
+          "isRollDatesStudy",
+          "isStudy",
+          "isStudyStrategy",
+          "isStudyStub",
+          "studyColorRotationMode",
+          "useSameColorRotationComparator"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "597399",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "StudyMetaInfo"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "602907",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "__esModule",
+          "LineStudyPlotStyle",
+          "PlotSymbolSize",
+          "STUDYPLOTDISPLAYTARGET",
+          "isAlertConditionPlot",
+          "isArrowsPlot",
+          "isBarColorerPlot",
+          "isBgColorerPlot",
+          "isCandleBorderColorerPlot",
+          "isCandleWickColorerPlot",
+          "isCharsPlot",
+          "isColorerPlot",
+          "isDataOffsetPlot",
+          "isDataPlot",
+          "isDownColorerPlot",
+          "isLinePlot",
+          "isNonVisualPlot",
+          "isOhlcClosePlot",
+          "isOhlcColorerPlot",
+          "isOhlcHighPlot",
+          "isOhlcLowPlot",
+          "isOhlcOpenPlot",
+          "isOhlcPlot",
+          "isOhlcPlotStyleBars",
+          "isOhlcPlotStyleCandles",
+          "isPaletteColorerPlot",
+          "isPlotSupportDisplay",
+          "isPlotTitleDefined",
+          "isPlotWithTechnicalValues",
+          "isRgbaColorerPlot",
+          "isShapesPlot",
+          "isTextColorerPlot",
+          "isUpColorerPlot"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "605347",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "volumeProfileVisibleRangeStudyItem"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "607898",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "__esModule",
+          "addSymbolsThunk",
+          "addSymbolsToCustomListThunk",
+          "changeDescriptionThunk",
+          "clearSymbolListThunk",
+          "findInWatchlistThunk",
+          "insertSymbolBeforeThunk",
+          "markSymbolsThunk",
+          "moveSymbolsToCustomListThunk",
+          "openSectionBySymbolThunk",
+          "removeSelectedSymbolsThunk",
+          "removeSymbolsThunk",
+          "renameSymbolListThunk",
+          "reorderSymbolsThunk",
+          "saveListAsThunk",
+          "selectSymbolListThunk",
+          "sortSymbolsThunk",
+          "updateScrollToIdThunk",
+          "userCreateWatchlistThunk"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "613658",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "spreadStudyItem"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "620793",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "__esModule",
+          "entityForDataSource",
+          "lineToolEntityInfo",
+          "seriesEntityInfo",
+          "studyEntityInfo"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "625028",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "StudyMetaInfoBase"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "628598",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "StudyOverlayBase"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "646659",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "StudyStub"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "647362",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "StudyCompare"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "657376",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "getStudyStylesInfo"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "663672",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "opened",
+          "hover",
+          "clicked",
+          "autoSaveWrapper",
+          "sharingWrapper",
+          "button",
+          "buttonSmallPadding",
+          "hintPlaceHolder",
+          "smallHintPlaceHolder",
+          "popupItemRowTabletSmall",
+          "shortcut",
+          "toolTitle",
+          "toolTitleMobile",
+          "layoutItem",
+          "layoutMeta",
+          "labelRow",
+          "layoutTitle",
+          "layoutItemWrap",
+          "layoutTitleMobile",
+          "active",
+          "textWrap",
+          "text",
+          "withIcon",
+          "sharingLabelWrap",
+          "titleSharingLabel",
+          "switcherLabel",
+          "iconWrap",
+          "infoIcon",
+          "copyLink",
+          "copyLinkMobile",
+          "accessibleLabel"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "677635",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "StudyStatusView"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "681434",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "__esModule",
+          "actualSymbol",
+          "chartStyleStudyId",
+          "createSeriesFormatter",
+          "displayedSymbolExchange",
+          "displayedSymbolName",
+          "extractLineToolSymbolFromSymbolInfo",
+          "extractSymbolNameFromSymbolInfo",
+          "getChartStyleByResolution",
+          "getDefaultStyle",
+          "getLastUsedRawDataStyle",
+          "getLastUsedSingleValueBasedStyle",
+          "getLastUsedStyle",
+          "getSeriesDisplayErrorWV",
+          "getSeriesPriceFormattingState",
+          "getSourceForEconomySymbol",
+          "getSymbolExchange",
+          "getTranslatedChartStyleName",
+          "hasProjection",
+          "hasVolume",
+          "isCloseBasedSymbol",
+          "isConvertedToOtherCurrency",
+          "isConvertedToOtherUnit",
+          "isEconomicSymbol",
+          "isFutureContinuousSymbolWithBackajustment",
+          "isFuturesContractSymbol",
+          "isMeasureUnitSymbol",
+          "isPriceSourceStyle",
+          "isRangeBasedStyle",
+          "isRangeStyle",
+          "isRawDataStyle",
+          "isRegularSessionId",
+          "isRequiringRestartSeriesStyles",
+          "isSingleValueBasedStyle",
+          "isTimeBasedStyle",
+          "isValidStyle",
+          "isVolumeWeightedStyle",
+          "measureUnitId",
+          "preparePriceAxisProperties",
+          "proSymbol",
+          "setLastUsedRawDataStyle",
+          "setLastUsedStyle",
+          "styleChangeRequiresRestart",
+          "symbolBaseCurrency",
+          "symbolCurrency",
+          "symbolCurrencyConvertible",
+          "symbolCurrentContract",
+          "symbolHasEconomicEvents",
+          "symbolHasPreOrPostMarket",
+          "symbolHasSeveralSessions",
+          "symbolOriginalCurrency",
+          "symbolOriginalUnit",
+          "symbolTitle",
+          "symbolTitleSeparator",
+          "symbolToSaveInState",
+          "symbolUnit",
+          "symbolUnitConvertible",
+          "symbolUnitConvertibleGroupsIfExist"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "683471",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "__esModule",
+          "SelectPointMode",
+          "activePointSelectionMode",
+          "barTimesUnderCursor",
+          "beenSetLineToolLastPoint",
+          "cancelLineTool",
+          "cancelledLineTool",
+          "changeLineStyle",
+          "changeLineTool",
+          "changedLineStyle",
+          "changedLineTool",
+          "continueLineTool",
+          "continuedLineTool",
+          "copiedLineTool",
+          "copyLineTool",
+          "createLineTool",
+          "createdLineTool",
+          "crosshairLock",
+          "cursorTool",
+          "drawOnAllCharts",
+          "drawOnAllChartsMode",
+          "emojiTool",
+          "finishChangingLineTool",
+          "finishLineTool",
+          "finishMovingLineTool",
+          "finishedChangingLineTool",
+          "finishedLineTool",
+          "finishedMovingLineTool",
+          "hideAllDrawings",
+          "hideAllIndicators",
+          "hideMarksOnBars",
+          "iconTool",
+          "init",
+          "isDirectionalMovementActive",
+          "isStudyEditingNow",
+          "isToolCreatingNow",
+          "isToolEditingNow",
+          "isToolMovingNow",
+          "lockDrawings",
+          "moveLineTool",
+          "movedLineTool",
+          "properties",
+          "removeLineTool",
+          "removedLineTool",
+          "resetToCursor",
+          "restoreLineTool",
+          "restoreLineToolState",
+          "restoredLineTool",
+          "restoredLineToolState",
+          "runOnDrawingStateReady",
+          "setLineToolLastPoint",
+          "startChangingLineTool",
+          "startMovingLineTool",
+          "startedChangingLineTool",
+          "startedMovingLineTool",
+          "stickerTool",
+          "tool",
+          "toolIsCursor",
+          "toolIsMeasure",
+          "_mouseDownEventForLineTool",
+          "c",
+          "D",
+          "LinetoolsFavoritesStore",
+          "_handleHidden",
+          "_handleMagnetOpen",
+          "_handleMagnetMode",
+          "_handleMeasureClick",
+          "_handleZoomInClick",
+          "_handleDrawingClick",
+          "_handleLockClick",
+          "_handleSyncClick",
+          "_handleObjectsTreeClick",
+          "i",
+          "_toogleDrawginMode",
+          "_handleRemoveDrawings",
+          "_handleRemoveStudies",
+          "_handleRemoveAll",
+          "_handleFavoriteClick",
+          "_a",
+          "prt",
+          "eis",
+          "_",
+          "study",
+          "sid",
+          "as",
+          "sa",
+          "app",
+          "ali",
+          "al"
+        ],
+        "relevantMembers": [
+          {
+            "key": "study",
+            "type": "function",
+            "name": null,
+            "arguments": 2,
+            "source": "(a,u)=>i[r(2506,\"r%js\")](nt[r(3728,\"r%js\")],{title:a,study:u})"
+          }
+        ]
+      },
+      {
+        "moduleId": "691035",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "anchoredVWAPStudyItem"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "695257",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "Children",
+          "Component",
+          "Fragment",
+          "Profiler",
+          "PureComponent",
+          "StrictMode",
+          "Suspense",
+          "__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED",
+          "cloneElement",
+          "createContext",
+          "createElement",
+          "createFactory",
+          "createRef",
+          "forwardRef",
+          "isValidElement",
+          "lazy",
+          "memo",
+          "startTransition",
+          "unstable_act",
+          "useCallback",
+          "useContext",
+          "useDebugValue",
+          "useDeferredValue",
+          "useEffect",
+          "useId",
+          "useImperativeHandle",
+          "useInsertionEffect",
+          "useLayoutEffect",
+          "useMemo",
+          "useReducer",
+          "useRef",
+          "useState",
+          "useSyncExternalStore",
+          "useTransition",
+          "version"
+        ],
+        "relevantMembers": [
+          {
+            "key": "useInsertionEffect",
+            "type": "function",
+            "name": null,
+            "arguments": 2,
+            "source": "function(e,n){return R.current.useInsertionEffect(e,n)}"
+          }
+        ]
+      },
+      {
+        "moduleId": "704672",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "LiveStudyGraphics",
+          "createGraphicsPaneViews",
+          "createGraphicsPriceAxisViews",
+          "emptyStudyGraphics",
+          "isStudyGraphicsEmpty",
+          "loadStudyGraphics",
+          "saveStudyGraphics"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "708745",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "StudyVersioning"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "710155",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "getPriceValueFormatterForSource",
+          "getPriceValueFormatterForStudy",
+          "shouldBeFormattedAsIndexedTo100",
+          "shouldBeFormattedAsPercent"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "751073",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "volumeProfileFixedRangeBSStudyItem",
+          "volumeProfileFixedRangeVbPStudyItem"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "771737",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "extractStudyId",
+          "studyIdString"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "773160",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "StudyStatusProviderBase"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "780386",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "LiveStudyGraphics"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "782425",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "ChartColorDependentStudyInputNames",
+          "InputDisplayFlags",
+          "RangeDependentStudyInputNames",
+          "areStudyInputsEqual",
+          "editableStudyInputs",
+          "getInputValue",
+          "isExtendedInput",
+          "isExtendedInputSource",
+          "isStudyInputDependsOnChartColors",
+          "isStudyInputOptionsInfo",
+          "isTimeOrPriceNotHiddenInput"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "825346",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "isStudyGraphicsEmpty",
+          "primitiveNames",
+          "primitivesZOrders",
+          "splitHHistsByTimePointIndex"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "849102",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "getStudyInputsInfo"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "853498",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "study_ScriptWithDataOffset"
+        ],
+        "relevantMembers": [
+          {
+            "key": "study_ScriptWithDataOffset",
+            "type": "function",
+            "name": null,
+            "arguments": 4,
+            "source": "class extends n{constructor(e,t,i,s){super(e,t,i,s),this._underlyingData=new o(a(s),l)}clearData(){super.clearData(),this._underlyingData.clear()}_mergeData(e){this._invalidateLastNonEmptyPlotRowCache();var t=this._underlyingData.firstIndex();this._underlyingData.merge(e),t!==this._underlyingData.firstIndex()&&(this._data=new o(a(this._metaInfo),l));var i=this._data.lastIndex();this._underlyingData.range(i,this._underlyingData.lastIndex()).each(function(e,t){return this._data.add(e,r(t)),!1}.bind(this)),this._plotsForStrategyProcessing().forEach((function(e){new c(e.strategyIndex,e.targetIndex,i).rebuildData(this._data)}),this)}_plotsForStrategyProcessing(){var e=[];return this._metaInfo.plots.forEach((function(t,i){if(\"dataoffset\"===t.type){var r=this._metaInfo.plots.findIndex((function(e){return e.id===t.target}));s(r>=0,\"target plot not found for strategy plot \"+t.id);var n={strategyIndex:i,targetIndex:r};e.push(n)}}),this),e}}"
+          }
+        ]
+      },
+      {
+        "moduleId": "863653",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "StudyStatusProvider"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "868649",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "FavoriteStudyTemplateService"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "872373",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "ratioStudyItem"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "912957",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "StudyColorRotatorFactory"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "920977",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "getChartStyleStudy"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "962852",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "Study",
+          "createStudyError",
+          "prepareStudyProperties",
+          "prepareStudyPropertiesForLoadChart"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "974789",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "migrateMetaInfoAndPropState"
+        ],
+        "relevantMembers": []
+      },
+      {
+        "moduleId": "997461",
+        "loaded": true,
+        "exportsType": "object",
+        "exportsKeys": [
+          "Container",
+          "StudyGraphicsData"
+        ],
+        "relevantMembers": []
+      }
+    ]
+  },
+  "tradingView": {
+    "globalStudyMetaInfoAvailable": true,
+    "globalStudyAvailable": true,
+    "studyLibraryCount": null,
+    "chartApiFound": true
+  },
+  "errors": []
+}
