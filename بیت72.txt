@@ -1,0 +1,766 @@
+{
+  "reportName": "BITUNIX_NATIVE_STUDY_CONSTRUCTOR_SOURCE_AUDIT",
+  "version": "1.0",
+  "timestamp": "2026-11-18T16:02:08.366Z",
+  "safety": {
+    "readOnly": true,
+    "constructorsInvoked": false,
+    "studyInstancesCreated": false,
+    "studiesInserted": false,
+    "repositoryModified": false,
+    "metadataModified": false,
+    "chartModified": false,
+    "paneCreated": false,
+    "ordersSent": false
+  },
+  "chart": {
+    "frame": "tradingview_b6c11",
+    "symbol": "XAUTUSDT",
+    "resolution": "5S",
+    "libraryCount": 115
+  },
+  "targets": [
+    {
+      "name": "Williams %R",
+      "expectedFullId": "Willams %R@tv-basicstudies-1",
+      "matchCount": 1,
+      "matches": [
+        {
+          "topLevelKeys": [
+            "name",
+            "metainfo",
+            "constructor"
+          ],
+          "constructor": {
+            "type": "function",
+            "name": "constructor",
+            "sourceLength": 363,
+            "prototypeKeys": [
+              "constructor"
+            ],
+            "staticKeys": [
+              "length",
+              "name",
+              "prototype"
+            ],
+            "sourceStart": "function(){this.f_0=function(e,t,i){return 100*(e-t)/(t-i)},this.main=function(e,t){this._context=e,this._input=t;var i=this._input(0),s=r.Std.high(this._context),n=this._context.new_var(s),o=r.Std.highest(n,i,this._context),a=r.Std.low(this._context),l=this._context.new_var(a),c=r.Std.lowest(l,i,this._context);return[this.f_0(r.Std.close(this._context),o,c)]}}",
+            "sourceEnd": null,
+            "keywordSnippets": [
+              {
+                "keyword": "main",
+                "position": 65,
+                "text": "function(){this.f_0=function(e,t,i){return 100*(e-t)/(t-i)},this.main=function(e,t){this._context=e,this._input=t;var i=this._input(0),s=r.Std.high(this._context),n=this._context.new_var(s),o=r.Std.highest(n,i,this._context),a=r.Std.low(this._context),l=this._context.new_var(a),c=r.Std.lowest(l,i,this._context);return[this.f_0("
+              },
+              {
+                "keyword": "new_var",
+                "position": 179,
+                "text": "function(){this.f_0=function(e,t,i){return 100*(e-t)/(t-i)},this.main=function(e,t){this._context=e,this._input=t;var i=this._input(0),s=r.Std.high(this._context),n=this._context.new_var(s),o=r.Std.highest(n,i,this._context),a=r.Std.low(this._context),l=this._context.new_var(a),c=r.Std.lowest(l,i,this._context);return[this.f_0(r.Std.close(this._context),o,c)]}}"
+              },
+              {
+                "keyword": "new_var",
+                "position": 268,
+                "text": "._context=e,this._input=t;var i=this._input(0),s=r.Std.high(this._context),n=this._context.new_var(s),o=r.Std.highest(n,i,this._context),a=r.Std.low(this._context),l=this._context.new_var(a),c=r.Std.lowest(l,i,this._context);return[this.f_0(r.Std.close(this._context),o,c)]}}"
+              },
+              {
+                "keyword": "Std",
+                "position": 139,
+                "text": "function(){this.f_0=function(e,t,i){return 100*(e-t)/(t-i)},this.main=function(e,t){this._context=e,this._input=t;var i=this._input(0),s=r.Std.high(this._context),n=this._context.new_var(s),o=r.Std.highest(n,i,this._context),a=r.Std.low(this._context),l=this._context.new_var(a),c=r.Std.lowest(l,i,this._context);return[this.f_0(r.Std.close(this._context),o,c)]}}"
+              },
+              {
+                "keyword": "Std",
+                "position": 194,
+                "text": "s.f_0=function(e,t,i){return 100*(e-t)/(t-i)},this.main=function(e,t){this._context=e,this._input=t;var i=this._input(0),s=r.Std.high(this._context),n=this._context.new_var(s),o=r.Std.highest(n,i,this._context),a=r.Std.low(this._context),l=this._context.new_var(a),c=r.Std.lowest(l,i,this._context);return[this.f_0(r.Std.close(this._context),o,c)]}}"
+              },
+              {
+                "keyword": "Std",
+                "position": 229,
+                "text": "-t)/(t-i)},this.main=function(e,t){this._context=e,this._input=t;var i=this._input(0),s=r.Std.high(this._context),n=this._context.new_var(s),o=r.Std.highest(n,i,this._context),a=r.Std.low(this._context),l=this._context.new_var(a),c=r.Std.lowest(l,i,this._context);return[this.f_0(r.Std.close(this._context),o,c)]}}"
+              },
+              {
+                "keyword": "context",
+                "position": 90,
+                "text": "function(){this.f_0=function(e,t,i){return 100*(e-t)/(t-i)},this.main=function(e,t){this._context=e,this._input=t;var i=this._input(0),s=r.Std.high(this._context),n=this._context.new_var(s),o=r.Std.highest(n,i,this._context),a=r.Std.low(this._context),l=this._context.new_var(a),c=r.Std.lowest(l,i,this._context);return[this.f_0(r.Std.close(this._context),o"
+              },
+              {
+                "keyword": "context",
+                "position": 154,
+                "text": "function(){this.f_0=function(e,t,i){return 100*(e-t)/(t-i)},this.main=function(e,t){this._context=e,this._input=t;var i=this._input(0),s=r.Std.high(this._context),n=this._context.new_var(s),o=r.Std.highest(n,i,this._context),a=r.Std.low(this._context),l=this._context.new_var(a),c=r.Std.lowest(l,i,this._context);return[this.f_0(r.Std.close(this._context),o,c)]}}"
+              },
+              {
+                "keyword": "context",
+                "position": 171,
+                "text": "function(){this.f_0=function(e,t,i){return 100*(e-t)/(t-i)},this.main=function(e,t){this._context=e,this._input=t;var i=this._input(0),s=r.Std.high(this._context),n=this._context.new_var(s),o=r.Std.highest(n,i,this._context),a=r.Std.low(this._context),l=this._context.new_var(a),c=r.Std.lowest(l,i,this._context);return[this.f_0(r.Std.close(this._context),o,c)]}}"
+              },
+              {
+                "keyword": "input",
+                "position": 106,
+                "text": "function(){this.f_0=function(e,t,i){return 100*(e-t)/(t-i)},this.main=function(e,t){this._context=e,this._input=t;var i=this._input(0),s=r.Std.high(this._context),n=this._context.new_var(s),o=r.Std.highest(n,i,this._context),a=r.Std.low(this._context),l=this._context.new_var(a),c=r.Std.lowest(l,i,this._context);return[this.f_0(r.Std.close(this._context),o,c)]}}"
+              },
+              {
+                "keyword": "input",
+                "position": 126,
+                "text": "function(){this.f_0=function(e,t,i){return 100*(e-t)/(t-i)},this.main=function(e,t){this._context=e,this._input=t;var i=this._input(0),s=r.Std.high(this._context),n=this._context.new_var(s),o=r.Std.highest(n,i,this._context),a=r.Std.low(this._context),l=this._context.new_var(a),c=r.Std.lowest(l,i,this._context);return[this.f_0(r.Std.close(this._context),o,c)]}}"
+              }
+            ]
+          },
+          "metainfo": {
+            "id": "Willams %R@tv-basicstudies-1",
+            "shortDescription": "%R",
+            "description": "Williams %R",
+            "metainfoVersion": 52,
+            "is_price_study": false,
+            "keys": [
+              "_metainfoVersion",
+              "isTVScript",
+              "isTVScriptStub",
+              "is_hidden_study",
+              "defaults",
+              "plots",
+              "styles",
+              "description",
+              "shortDescription",
+              "is_price_study",
+              "bands",
+              "filledAreas",
+              "inputs",
+              "id",
+              "scriptIdPart",
+              "name",
+              "format",
+              "usePlotsZOrder",
+              "description_localized"
+            ],
+            "inputs": [
+              {
+                "id": "in_0",
+                "name": "length",
+                "defval": 14,
+                "type": "integer",
+                "min": 1,
+                "max": 2000,
+                "display": 15
+              }
+            ],
+            "plots": [
+              {
+                "id": "plot_0",
+                "type": "line"
+              }
+            ],
+            "defaultsKeys": [
+              "styles",
+              "bands",
+              "filledAreasStyle",
+              "inputs"
+            ],
+            "stylesKeys": [
+              "plot_0"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Pivot Points Standard",
+      "expectedFullId": "PivotPointsStandard@tv-basicstudies-80",
+      "matchCount": 1,
+      "matches": [
+        {
+          "topLevelKeys": [
+            "name",
+            "metainfo",
+            "constructor"
+          ],
+          "constructor": {
+            "type": "function",
+            "name": "constructor",
+            "sourceLength": 3405,
+            "prototypeKeys": [
+              "constructor",
+              "init",
+              "main",
+              "_createResponse",
+              "_removeUnusedPivots"
+            ],
+            "staticKeys": [
+              "length",
+              "name",
+              "prototype"
+            ],
+            "sourceStart": "class{constructor(){this._secondaryRes=\"1D\",this._firstMainSeriesBarTime=NaN}init(e,t){const i=t(0),s=t(1),o=t(2),l=t(3);this._data=new a,this._firstMainSeriesBarTime=NaN,this._kindPP=function(e){switch(e){case\"Traditional\":return 0;case\"Fibonacci\":return 1;case\"Woodie\":return 2;case\"Classic\":return 3;case\"DeMark\":return 4;case\"Camarilla\":return 5;case\"Floor\":return 6;default:throw new Error(\"Unknown kind \"+e)}}(i),this._showHistoricalPivots=s,this._historicalPivotsToKeep=l,this._pivTimeFrame=o,this._isValidResolution=function(e,t){return!(n.Std.isdaily(e)&&\"Daily\"===t||n.Std.isweekly(e)&&(\"Daily\"===t||\"Weekly\"===t)||n.Std.ismonthly(e)&&(\"Daily\"===t||\"Weekly\"===t||\"Monthly\"===t))}(e,this._pivTimeFrame),this._isValidResolution||n.Std.error(\"You cannot see this pivot timeframe on this resolution\"),this._isValidResolution&&(this._secondaryRes=h(e,this._pivTimeFrame),void 0!==e.symbol.info&&(0,r.findSuitableResolutionToBuildFrom)(this._secondaryRes,e.symbol.info).error&&(this._isValidResolution=!1,n.Std.error(`Resolution ${this._secondaryRes} is not supported for this symbol`))),e.new_sym(e.symbol.tickerid,this._secondaryRes)}main(e,t,i){if(!this._isValidResolution)return null;if(e.is_main_symbol(i))return isNaN(this._firstMainSeriesBarTime)&&(this._firstMainSeriesBarTime=e.symbol.time,this._removeUnusedPivots()),e.symbol.isLastBar&&e.symbol.isNewBar?this._createResponse():null;e.select_sym(1);const s=e.new_var(n.Std.open(e)),r=e.new_var(n.Std.high(e)),a=e.new_var(n.Std.low(e)),l=e.new_var(n.Std.close(e)),h=e.new_var(n.Std.time(e)),d=this._data,u=s.get(0),p=h.get(0),_=s.get(1),m=r.get(1),g=a.get(1),f=l.get(1),v=e.symbol.isLastBar;if(0!==d.pivots.length&&e.symbol.isNewBar){const e=d.pivots[d.pivots.length-1];e.endIndex__t!==p&&(e.endIndex__t=p)}if(0===e.symbol.index||!e.symbol.isNewBar)return e.select_sym(0),null\n;const S=function(e,t,i,s,r,a,l,c){const h=new o;let d=NaN;const u=i-s;switch(c){case 0:d=(i+s+r)/3,h.p=d,h.r1=2*d-s,h.s1=2*d-i,h.r2=d+(i-s),h.s2=d-(i-s),h.r3=2*d+(i-2*s),h.s3=2*d-(2*i-s),h.r4=3*d+(i-3*s),h.s4=3*d-(3*i-s),h.r5=4*d+(i-4*s),h.s5=4*d-(4*i-s);break;case 1:d=(i+s+r)/3,h.p=d,h.r1=d+.382*u,h.s1=d-.382*u,h.r2=d+.618*u,h.s2=d-.618*u,h.r3=d+u,h.s3=d-u;break;case 2:d=(i+s+2*e)/4,h.p=d,h.r1=2*d-s,h.s1=2*d-i,h.r2=d+u,h.s2=d-u,h.r3=i+2*(d-s),h.s3=s-2*(i-d),h.r4=h.r3+u,h.s4=h.s3-u;break;case 3:d=(i+s+r)/3,h.p=d,h.r1=2*d-s,h.s1=2*d-i,h.r2=d+u,h.s2=d-u,h.r3=d+2*u,h.s3=d-2*u,h.r4=d+3*u,h.s4=d-3*u;break;case 4:let o=NaN;o=n.Std.equal(t,r)?i+s+2*r:n.Std.greater(r,t)?2*i+s+r:2*s+i+r,d=o/4,h.p=d,h.r1=o/2-s,h.s1=o/2-i;break;case 5:d=(i+s+r)/3,h.p=d,h.r1=r+1.1*u/12,h.s1=r-1.1*u/12,h.r2=r+1.1*u/6,h.s2=r-1.1*u/6,h.r3=r+1.1*u/4,h.s3=r-1.1*u/4,h.r4=r+1.1*u/2,h.s4=r-1.1*u/2;break;case 6:d=(i+s+r)/3,h.p=d,h.r1=2*d-s,h.s1=2*d-i,h.r2=d+(i-s),h.s2=d-(i-s),h.r3=d-h.s1+h.r2,h.s3=2*d-(2*i-s);break;default:throw new Error(\"Unknown kind\")}return h.startIndex__t=a,h.endIndex__t=l,h}(u,_,m,g,f,p,c(e,p),this._kindPP);return e.select_sym(0),this._showHistoricalPivots||(d.pivots=[]),d.pivots.push(S),d.pivots.length>this._historicalPivotsToKeep&&d.pivots.shift(),v?this._createResponse():null}_createResponse(){return 0===this._data.pivots.length?null:{nonseries:!0,type:\"non_series_data\",data:{data:this._data}}}_removeUnusedPivots(){const e=Math.max(this._data.pivots.findIndex((e=>e.startIndex__t>this._firstMainSeriesBarTime))-1,0);e>0&&this._data.pivots.splice(0,e)}}",
+            "sourceEnd": null,
+            "keywordSnippets": [
+              {
+                "keyword": "main",
+                "position": 1140,
+                "text": ".symbol.info).error&&(this._isValidResolution=!1,n.Std.error(`Resolution ${this._secondaryRes} is not supported for this symbol`))),e.new_sym(e.symbol.tickerid,this._secondaryRes)}main(e,t,i){if(!this._isValidResolution)return null;if(e.is_main_symbol(i))return isNaN(this._firstMainSeriesBarTime)&&(this._firstMainSeriesBarTime=e.symbol.time,this._removeUnusedPivots()),e.symbol.isLastBar&&e.symbol.isNewBar?this._createResponse():null;e.selec"
+              },
+              {
+                "keyword": "main",
+                "position": 1200,
+                "text": "(`Resolution ${this._secondaryRes} is not supported for this symbol`))),e.new_sym(e.symbol.tickerid,this._secondaryRes)}main(e,t,i){if(!this._isValidResolution)return null;if(e.is_main_symbol(i))return isNaN(this._firstMainSeriesBarTime)&&(this._firstMainSeriesBarTime=e.symbol.time,this._removeUnusedPivots()),e.symbol.isLastBar&&e.symbol.isNewBar?this._createResponse():null;e.select_sym(1);const s=e.new_var(n.Std.open(e)),r=e.new_var(n.Std."
+              },
+              {
+                "keyword": "init",
+                "position": 77,
+                "text": "class{constructor(){this._secondaryRes=\"1D\",this._firstMainSeriesBarTime=NaN}init(e,t){const i=t(0),s=t(1),o=t(2),l=t(3);this._data=new a,this._firstMainSeriesBarTime=NaN,this._kindPP=function(e){switch(e){case\"Traditional\":return 0;case\"Fibonacci\":return 1;case\"Woodie\":return 2;case\"Classic\":return 3;case\"DeMark\":return 4;case\"Camarilla\":"
+              },
+              {
+                "keyword": "new_var",
+                "position": 1423,
+                "text": "SeriesBarTime)&&(this._firstMainSeriesBarTime=e.symbol.time,this._removeUnusedPivots()),e.symbol.isLastBar&&e.symbol.isNewBar?this._createResponse():null;e.select_sym(1);const s=e.new_var(n.Std.open(e)),r=e.new_var(n.Std.high(e)),a=e.new_var(n.Std.low(e)),l=e.new_var(n.Std.close(e)),h=e.new_var(n.Std.time(e)),d=this._data,u=s.get(0),p=h.get(0),_=s.get(1),m=r.get(1),g=a.get(1),f=l.get(1),v=e.symbol.isLastBar;if(0!==d.pivots.length&&e.symbol.isN"
+              },
+              {
+                "keyword": "new_var",
+                "position": 1450,
+                "text": "tMainSeriesBarTime=e.symbol.time,this._removeUnusedPivots()),e.symbol.isLastBar&&e.symbol.isNewBar?this._createResponse():null;e.select_sym(1);const s=e.new_var(n.Std.open(e)),r=e.new_var(n.Std.high(e)),a=e.new_var(n.Std.low(e)),l=e.new_var(n.Std.close(e)),h=e.new_var(n.Std.time(e)),d=this._data,u=s.get(0),p=h.get(0),_=s.get(1),m=r.get(1),g=a.get(1),f=l.get(1),v=e.symbol.isLastBar;if(0!==d.pivots.length&&e.symbol.isNewBar){const e=d.pivots[d.p"
+              },
+              {
+                "keyword": "new_var",
+                "position": 1477,
+                "text": ".time,this._removeUnusedPivots()),e.symbol.isLastBar&&e.symbol.isNewBar?this._createResponse():null;e.select_sym(1);const s=e.new_var(n.Std.open(e)),r=e.new_var(n.Std.high(e)),a=e.new_var(n.Std.low(e)),l=e.new_var(n.Std.close(e)),h=e.new_var(n.Std.time(e)),d=this._data,u=s.get(0),p=h.get(0),_=s.get(1),m=r.get(1),g=a.get(1),f=l.get(1),v=e.symbol.isLastBar;if(0!==d.pivots.length&&e.symbol.isNewBar){const e=d.pivots[d.pivots.length-1];e.endIndex_"
+              },
+              {
+                "keyword": "Std",
+                "position": 548,
+                "text": " 6;default:throw new Error(\"Unknown kind \"+e)}}(i),this._showHistoricalPivots=s,this._historicalPivotsToKeep=l,this._pivTimeFrame=o,this._isValidResolution=function(e,t){return!(n.Std.isdaily(e)&&\"Daily\"===t||n.Std.isweekly(e)&&(\"Daily\"===t||\"Weekly\"===t)||n.Std.ismonthly(e)&&(\"Daily\"===t||\"Weekly\"===t||\"Monthly\"===t))}(e,this._pivTimeFrame),this._isValidResolution||n.Std.error(\"You cannot see this pivot timeframe on this resolution\"),this"
+              },
+              {
+                "keyword": "Std",
+                "position": 579,
+                "text": "nown kind \"+e)}}(i),this._showHistoricalPivots=s,this._historicalPivotsToKeep=l,this._pivTimeFrame=o,this._isValidResolution=function(e,t){return!(n.Std.isdaily(e)&&\"Daily\"===t||n.Std.isweekly(e)&&(\"Daily\"===t||\"Weekly\"===t)||n.Std.ismonthly(e)&&(\"Daily\"===t||\"Weekly\"===t||\"Monthly\"===t))}(e,this._pivTimeFrame),this._isValidResolution||n.Std.error(\"You cannot see this pivot timeframe on this resolution\"),this._isValidResolution&&(this._sec"
+              },
+              {
+                "keyword": "Std",
+                "position": 627,
+                "text": ",this._historicalPivotsToKeep=l,this._pivTimeFrame=o,this._isValidResolution=function(e,t){return!(n.Std.isdaily(e)&&\"Daily\"===t||n.Std.isweekly(e)&&(\"Daily\"===t||\"Weekly\"===t)||n.Std.ismonthly(e)&&(\"Daily\"===t||\"Weekly\"===t||\"Monthly\"===t))}(e,this._pivTimeFrame),this._isValidResolution||n.Std.error(\"You cannot see this pivot timeframe on this resolution\"),this._isValidResolution&&(this._secondaryRes=h(e,this._pivTimeFrame),void 0!==e.sym"
+              },
+              {
+                "keyword": "constructor",
+                "position": 6,
+                "text": "class{constructor(){this._secondaryRes=\"1D\",this._firstMainSeriesBarTime=NaN}init(e,t){const i=t(0),s=t(1),o=t(2),l=t(3);this._data=new a,this._firstMainSeriesBarTime=NaN,this._kindPP=function(e){switch(e){case\"Traditional\":return 0;case\"Fibonacci\":return 1;case\"Woodie\":return"
+              }
+            ]
+          },
+          "metainfo": {
+            "id": "PivotPointsStandard@tv-basicstudies-80",
+            "shortDescription": "Pivots",
+            "description": "Pivot Points Standard",
+            "metainfoVersion": 44,
+            "is_price_study": true,
+            "keys": [
+              "_metainfoVersion",
+              "defaults",
+              "description",
+              "id",
+              "inputs",
+              "is_price_study",
+              "linkedToSeries",
+              "shortDescription",
+              "format",
+              "description_localized"
+            ],
+            "inputs": [
+              {
+                "defval": "Traditional",
+                "id": "kind",
+                "name": "Type",
+                "options": [
+                  "Traditional",
+                  "Fibonacci",
+                  "Woodie",
+                  "Classic",
+                  "DeMark",
+                  "Camarilla",
+                  "Floor"
+                ],
+                "type": "text",
+                "display": 15
+              },
+              {
+                "defval": true,
+                "id": "showHistoricalPivots",
+                "name": "Show historical pivots",
+                "type": "bool",
+                "display": 0
+              },
+              {
+                "defval": "Auto",
+                "id": "pivTimeFrame",
+                "name": "Pivots Timeframe",
+                "options": [
+                  "Auto",
+                  "Daily",
+                  "Weekly",
+                  "Monthly",
+                  "Yearly"
+                ],
+                "type": "text",
+                "display": 15
+              },
+              {
+                "defval": 15,
+                "id": "lookBack",
+                "max": 5000,
+                "min": 1,
+                "name": "Number of Pivots Back",
+                "type": "integer",
+                "display": 15
+              }
+            ],
+            "plots": [],
+            "defaultsKeys": [
+              "inputs",
+              "precision"
+            ],
+            "stylesKeys": []
+          }
+        }
+      ]
+    },
+    {
+      "name": "Price Channel",
+      "expectedFullId": "Price Channel@tv-basicstudies-1",
+      "matchCount": 1,
+      "matches": [
+        {
+          "topLevelKeys": [
+            "name",
+            "metainfo",
+            "constructor"
+          ],
+          "constructor": {
+            "type": "function",
+            "name": "constructor",
+            "sourceLength": 360,
+            "prototypeKeys": [
+              "constructor"
+            ],
+            "staticKeys": [
+              "length",
+              "name",
+              "prototype"
+            ],
+            "sourceStart": "function(){this.main=function(e,t){this._context=e,this._input=t;var i=r.Std.high(this._context),s=this._context.new_var(i),n=r.Std.low(this._context),o=this._context.new_var(n),a=this._input(0),l=this._input(1),c=r.Std.highest(s,a,this._context),h=r.Std.lowest(o,a,this._context);return[{value:c,offset:l},{value:h,offset:l},{value:r.Std.avg(c,h),offset:l}]}}",
+            "sourceEnd": null,
+            "keywordSnippets": [
+              {
+                "keyword": "main",
+                "position": 16,
+                "text": "function(){this.main=function(e,t){this._context=e,this._input=t;var i=r.Std.high(this._context),s=this._context.new_var(i),n=r.Std.low(this._context),o=this._context.new_var(n),a=this._input(0),l=this._input(1),c=r.Std.highest(s,a,this._context),h=r.Std.lowest(o,a,this._context)"
+              },
+              {
+                "keyword": "new_var",
+                "position": 113,
+                "text": "function(){this.main=function(e,t){this._context=e,this._input=t;var i=r.Std.high(this._context),s=this._context.new_var(i),n=r.Std.low(this._context),o=this._context.new_var(n),a=this._input(0),l=this._input(1),c=r.Std.highest(s,a,this._context),h=r.Std.lowest(o,a,this._context);return[{value:c,offset:l},{value:h,offset:l},{value:r.Std.avg(c,h),offset:l}]}}"
+              },
+              {
+                "keyword": "new_var",
+                "position": 167,
+                "text": "function(){this.main=function(e,t){this._context=e,this._input=t;var i=r.Std.high(this._context),s=this._context.new_var(i),n=r.Std.low(this._context),o=this._context.new_var(n),a=this._input(0),l=this._input(1),c=r.Std.highest(s,a,this._context),h=r.Std.lowest(o,a,this._context);return[{value:c,offset:l},{value:h,offset:l},{value:r.Std.avg(c,h),offset:l}]}}"
+              },
+              {
+                "keyword": "Std",
+                "position": 73,
+                "text": "function(){this.main=function(e,t){this._context=e,this._input=t;var i=r.Std.high(this._context),s=this._context.new_var(i),n=r.Std.low(this._context),o=this._context.new_var(n),a=this._input(0),l=this._input(1),c=r.Std.highest(s,a,this._context),h=r.Std.lowest(o,a,this._context);return[{value:c,offset:l},{value:h,offset:l},{value:r.S"
+              },
+              {
+                "keyword": "Std",
+                "position": 128,
+                "text": "function(){this.main=function(e,t){this._context=e,this._input=t;var i=r.Std.high(this._context),s=this._context.new_var(i),n=r.Std.low(this._context),o=this._context.new_var(n),a=this._input(0),l=this._input(1),c=r.Std.highest(s,a,this._context),h=r.Std.lowest(o,a,this._context);return[{value:c,offset:l},{value:h,offset:l},{value:r.Std.avg(c,h),offset:l}]}}"
+              },
+              {
+                "keyword": "Std",
+                "position": 216,
+                "text": "his._context=e,this._input=t;var i=r.Std.high(this._context),s=this._context.new_var(i),n=r.Std.low(this._context),o=this._context.new_var(n),a=this._input(0),l=this._input(1),c=r.Std.highest(s,a,this._context),h=r.Std.lowest(o,a,this._context);return[{value:c,offset:l},{value:h,offset:l},{value:r.Std.avg(c,h),offset:l}]}}"
+              },
+              {
+                "keyword": "context",
+                "position": 41,
+                "text": "function(){this.main=function(e,t){this._context=e,this._input=t;var i=r.Std.high(this._context),s=this._context.new_var(i),n=r.Std.low(this._context),o=this._context.new_var(n),a=this._input(0),l=this._input(1),c=r.Std.highest(s,a,this._context),h=r.Std.lowest(o,a,this._context);return[{value:c,offset:l},{"
+              },
+              {
+                "keyword": "context",
+                "position": 88,
+                "text": "function(){this.main=function(e,t){this._context=e,this._input=t;var i=r.Std.high(this._context),s=this._context.new_var(i),n=r.Std.low(this._context),o=this._context.new_var(n),a=this._input(0),l=this._input(1),c=r.Std.highest(s,a,this._context),h=r.Std.lowest(o,a,this._context);return[{value:c,offset:l},{value:h,offset:l},{value:r.Std.avg(c,h),offset:"
+              },
+              {
+                "keyword": "context",
+                "position": 105,
+                "text": "function(){this.main=function(e,t){this._context=e,this._input=t;var i=r.Std.high(this._context),s=this._context.new_var(i),n=r.Std.low(this._context),o=this._context.new_var(n),a=this._input(0),l=this._input(1),c=r.Std.highest(s,a,this._context),h=r.Std.lowest(o,a,this._context);return[{value:c,offset:l},{value:h,offset:l},{value:r.Std.avg(c,h),offset:l}]}}"
+              },
+              {
+                "keyword": "input",
+                "position": 57,
+                "text": "function(){this.main=function(e,t){this._context=e,this._input=t;var i=r.Std.high(this._context),s=this._context.new_var(i),n=r.Std.low(this._context),o=this._context.new_var(n),a=this._input(0),l=this._input(1),c=r.Std.highest(s,a,this._context),h=r.Std.lowest(o,a,this._context);return[{value:c,offset:l},{value:h,offset"
+              },
+              {
+                "keyword": "input",
+                "position": 186,
+                "text": "on(){this.main=function(e,t){this._context=e,this._input=t;var i=r.Std.high(this._context),s=this._context.new_var(i),n=r.Std.low(this._context),o=this._context.new_var(n),a=this._input(0),l=this._input(1),c=r.Std.highest(s,a,this._context),h=r.Std.lowest(o,a,this._context);return[{value:c,offset:l},{value:h,offset:l},{value:r.Std.avg(c,h),offset:l}]}}"
+              },
+              {
+                "keyword": "input",
+                "position": 203,
+                "text": "nction(e,t){this._context=e,this._input=t;var i=r.Std.high(this._context),s=this._context.new_var(i),n=r.Std.low(this._context),o=this._context.new_var(n),a=this._input(0),l=this._input(1),c=r.Std.highest(s,a,this._context),h=r.Std.lowest(o,a,this._context);return[{value:c,offset:l},{value:h,offset:l},{value:r.Std.avg(c,h),offset:l}]}}"
+              }
+            ]
+          },
+          "metainfo": {
+            "id": "Price Channel@tv-basicstudies-1",
+            "shortDescription": "PC",
+            "description": "Price Channel",
+            "metainfoVersion": 52,
+            "is_price_study": true,
+            "keys": [
+              "_metainfoVersion",
+              "isTVScript",
+              "isTVScriptStub",
+              "is_hidden_study",
+              "defaults",
+              "plots",
+              "styles",
+              "description",
+              "shortDescription",
+              "is_price_study",
+              "inputs",
+              "id",
+              "scriptIdPart",
+              "name",
+              "format",
+              "description_localized"
+            ],
+            "inputs": [
+              {
+                "id": "in_0",
+                "name": "Length",
+                "defval": 20,
+                "type": "integer",
+                "min": 1,
+                "max": 2000,
+                "display": 15
+              },
+              {
+                "id": "in_1",
+                "name": "Offset Length",
+                "defval": 0,
+                "type": "integer",
+                "min": 1,
+                "max": 2000,
+                "display": 15
+              }
+            ],
+            "plots": [
+              {
+                "id": "plot_0",
+                "type": "line"
+              },
+              {
+                "id": "plot_1",
+                "type": "line"
+              },
+              {
+                "id": "plot_2",
+                "type": "line"
+              }
+            ],
+            "defaultsKeys": [
+              "styles",
+              "inputs"
+            ],
+            "stylesKeys": [
+              "plot_0",
+              "plot_1",
+              "plot_2"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Williams Fractals",
+      "expectedFullId": "Williams Fractals@tv-basicstudies-1",
+      "matchCount": 1,
+      "matches": [
+        {
+          "topLevelKeys": [
+            "name",
+            "metainfo",
+            "constructor"
+          ],
+          "constructor": {
+            "type": "function",
+            "name": "constructor",
+            "sourceLength": 1925,
+            "prototypeKeys": [
+              "constructor"
+            ],
+            "staticKeys": [
+              "length",
+              "name",
+              "prototype"
+            ],
+            "sourceStart": "function(){this.f_0=function(){for(var e=this._input(0),t=this._context.new_var(r.Std.high(this._context)),i=!0,s=!0,n=!0,o=!0,a=!0,l=!0,c=1;c<=e;c++)i=r.Std.and(i,r.Std.lt(t.get(e-c),t.get(e))),s=r.Std.and(s,r.Std.lt(t.get(e+c),t.get(e))),n=r.Std.and(n,r.Std.and(r.Std.le(t.get(e+1),t.get(e)),r.Std.lt(t.get(e+c+1),t.get(e)))),o=r.Std.and(o,r.Std.and(r.Std.le(t.get(e+1),t.get(e)),r.Std.and(r.Std.le(t.get(e+2),t.get(e)),r.Std.lt(t.get(e+c+2),t.get(e))))),a=r.Std.and(a,r.Std.and(r.Std.le(t.get(e+1),t.get(e)),r.Std.and(r.Std.le(t.get(e+2),t.get(e)),r.Std.and(r.Std.le(t.get(e+3),t.get(e)),r.Std.lt(t.get(e+c+3),t.get(e)))))),l=r.Std.and(l,r.Std.and(r.Std.le(t.get(e+1),t.get(e)),r.Std.and(r.Std.le(t.get(e+2),t.get(e)),r.Std.and(r.Std.le(t.get(e+3),t.get(e)),r.Std.and(r.Std.le(t.get(e+4),t.get(e)),r.Std.lt(t.get(e+c+4),t.get(e)))))));var h=r.Std.or(s,r.Std.or(n,r.Std.or(o,r.Std.or(a,l)))),d=r.Std.and(i,h),u=this._context.new_var(r.Std.low(this._context)),p=1,_=1,m=1,g=1,f=1,v=1;for(c=1;c<=e;c++)p=r.Std.and(p,r.Std.gt(u.get(e-c),u.get(e))),_=r.Std.and(_,r.Std.gt(u.get(e+c),u.get(e))),m=r.Std.and(m,r.Std.and(r.Std.ge(u.get(e+1),u.get(e)),r.Std.gt(u.get(e+c+1),u.get(e)))),g=r.Std.and(g,r.Std.and(r.Std.ge(u.get(e+1),u.get(e)),r.Std.and(r.Std.ge(u.get(e+2),u.get(e)),r.Std.gt(u.get(e+c+2),u.get(e))))),f=r.Std.and(f,r.Std.and(r.Std.ge(u.get(e+1),u.get(e)),r.Std.and(r.Std.ge(u.get(e+2),u.get(e)),r.Std.and(r.Std.ge(u.get(e+3),u.get(e)),r.Std.gt(u.get(e+c+3),u.get(e)))))),v=r.Std.and(v,r.Std.and(r.Std.ge(u.get(e+1),u.get(e)),r.Std.and(r.Std.ge(u.get(e+2),u.get(e)),r.Std.and(r.Std.ge(u.get(e+3),u.get(e)),r.Std.and(r.Std.ge(u.get(e+4),u.get(e)),r.Std.gt(u.get(e+c+4),u.get(e)))))));var S=r.Std.or(_,r.Std.or(m,r.Std.or(g,r.Std.or(f,v))))\n;return[r.Std.and(p,S),d]},this.main=function(e,t){this._context=e,this._input=t;var i=this.f_0();return[{value:i[0],offset:-this._input(0)},{value:i[1],offset:-this._input(0)}]}}",
+            "sourceEnd": null,
+            "keywordSnippets": [
+              {
+                "keyword": "main",
+                "position": 1778,
+                "text": "e+3),u.get(e)),r.Std.and(r.Std.ge(u.get(e+4),u.get(e)),r.Std.gt(u.get(e+c+4),u.get(e)))))));var S=r.Std.or(_,r.Std.or(m,r.Std.or(g,r.Std.or(f,v))))\n;return[r.Std.and(p,S),d]},this.main=function(e,t){this._context=e,this._input=t;var i=this.f_0();return[{value:i[0],offset:-this._input(0)},{value:i[1],offset:-this._input(0)}]}}"
+              },
+              {
+                "keyword": "new_var",
+                "position": 72,
+                "text": "function(){this.f_0=function(){for(var e=this._input(0),t=this._context.new_var(r.Std.high(this._context)),i=!0,s=!0,n=!0,o=!0,a=!0,l=!0,c=1;c<=e;c++)i=r.Std.and(i,r.Std.lt(t.get(e-c),t.get(e))),s=r.Std.and(s,r.Std.lt(t.get(e+c),t.get(e))),n=r.Std.and(n,r.Std.and(r.Std.le(t.get(e+1),t.get(e)),r.Std.lt(t.get(e+c+1),t.get(e)))),o=r.Std.and"
+              },
+              {
+                "keyword": "new_var",
+                "position": 927,
+                "text": "+3),t.get(e)),r.Std.and(r.Std.le(t.get(e+4),t.get(e)),r.Std.lt(t.get(e+c+4),t.get(e)))))));var h=r.Std.or(s,r.Std.or(n,r.Std.or(o,r.Std.or(a,l)))),d=r.Std.and(i,h),u=this._context.new_var(r.Std.low(this._context)),p=1,_=1,m=1,g=1,f=1,v=1;for(c=1;c<=e;c++)p=r.Std.and(p,r.Std.gt(u.get(e-c),u.get(e))),_=r.Std.and(_,r.Std.gt(u.get(e+c),u.get(e))),m=r.Std.and(m,r.Std.and(r.Std.ge(u.get(e+1),u.get(e)),r.Std.gt(u.get(e+c+1),u.get(e)))),g=r.Std.and(g,"
+              },
+              {
+                "keyword": "Std",
+                "position": 82,
+                "text": "function(){this.f_0=function(){for(var e=this._input(0),t=this._context.new_var(r.Std.high(this._context)),i=!0,s=!0,n=!0,o=!0,a=!0,l=!0,c=1;c<=e;c++)i=r.Std.and(i,r.Std.lt(t.get(e-c),t.get(e))),s=r.Std.and(s,r.Std.lt(t.get(e+c),t.get(e))),n=r.Std.and(n,r.Std.and(r.Std.le(t.get(e+1),t.get(e)),r.Std.lt(t.get(e+c+1),t.get(e)))),o=r.Std.and(o,r.S"
+              },
+              {
+                "keyword": "Std",
+                "position": 154,
+                "text": "function(){this.f_0=function(){for(var e=this._input(0),t=this._context.new_var(r.Std.high(this._context)),i=!0,s=!0,n=!0,o=!0,a=!0,l=!0,c=1;c<=e;c++)i=r.Std.and(i,r.Std.lt(t.get(e-c),t.get(e))),s=r.Std.and(s,r.Std.lt(t.get(e+c),t.get(e))),n=r.Std.and(n,r.Std.and(r.Std.le(t.get(e+1),t.get(e)),r.Std.lt(t.get(e+c+1),t.get(e)))),o=r.Std.and(o,r.Std.and(r.Std.le(t.get(e+1),t.get(e)),r.Std.and(r.Std.le(t.get(e+2),t.get"
+              },
+              {
+                "keyword": "Std",
+                "position": 166,
+                "text": "function(){this.f_0=function(){for(var e=this._input(0),t=this._context.new_var(r.Std.high(this._context)),i=!0,s=!0,n=!0,o=!0,a=!0,l=!0,c=1;c<=e;c++)i=r.Std.and(i,r.Std.lt(t.get(e-c),t.get(e))),s=r.Std.and(s,r.Std.lt(t.get(e+c),t.get(e))),n=r.Std.and(n,r.Std.and(r.Std.le(t.get(e+1),t.get(e)),r.Std.lt(t.get(e+c+1),t.get(e)))),o=r.Std.and(o,r.Std.and(r.Std.le(t.get(e+1),t.get(e)),r.Std.and(r.Std.le(t.get(e+2),t.get(e)),r.Std.l"
+              },
+              {
+                "keyword": "context",
+                "position": 64,
+                "text": "function(){this.f_0=function(){for(var e=this._input(0),t=this._context.new_var(r.Std.high(this._context)),i=!0,s=!0,n=!0,o=!0,a=!0,l=!0,c=1;c<=e;c++)i=r.Std.and(i,r.Std.lt(t.get(e-c),t.get(e))),s=r.Std.and(s,r.Std.lt(t.get(e+c),t.get(e))),n=r.Std.and(n,r.Std.and(r.Std.le(t.get(e+1),t.get(e)),r.Std.lt(t.get(e+c+1),t.get(e)))),o=r"
+              },
+              {
+                "keyword": "context",
+                "position": 97,
+                "text": "function(){this.f_0=function(){for(var e=this._input(0),t=this._context.new_var(r.Std.high(this._context)),i=!0,s=!0,n=!0,o=!0,a=!0,l=!0,c=1;c<=e;c++)i=r.Std.and(i,r.Std.lt(t.get(e-c),t.get(e))),s=r.Std.and(s,r.Std.lt(t.get(e+c),t.get(e))),n=r.Std.and(n,r.Std.and(r.Std.le(t.get(e+1),t.get(e)),r.Std.lt(t.get(e+c+1),t.get(e)))),o=r.Std.and(o,r.Std.and(r.Std.le(t.g"
+              },
+              {
+                "keyword": "context",
+                "position": 919,
+                "text": "(t.get(e+3),t.get(e)),r.Std.and(r.Std.le(t.get(e+4),t.get(e)),r.Std.lt(t.get(e+c+4),t.get(e)))))));var h=r.Std.or(s,r.Std.or(n,r.Std.or(o,r.Std.or(a,l)))),d=r.Std.and(i,h),u=this._context.new_var(r.Std.low(this._context)),p=1,_=1,m=1,g=1,f=1,v=1;for(c=1;c<=e;c++)p=r.Std.and(p,r.Std.gt(u.get(e-c),u.get(e))),_=r.Std.and(_,r.Std.gt(u.get(e+c),u.get(e))),m=r.Std.and(m,r.Std.and(r.Std.ge(u.get(e+1),u.get(e)),r.Std.gt(u.get(e+c+1),u.get(e)))),g=r.St"
+              },
+              {
+                "keyword": "input",
+                "position": 47,
+                "text": "function(){this.f_0=function(){for(var e=this._input(0),t=this._context.new_var(r.Std.high(this._context)),i=!0,s=!0,n=!0,o=!0,a=!0,l=!0,c=1;c<=e;c++)i=r.Std.and(i,r.Std.lt(t.get(e-c),t.get(e))),s=r.Std.and(s,r.Std.lt(t.get(e+c),t.get(e))),n=r.Std.and(n,r.Std.and(r.Std.le(t.get(e+1),t.get(e)),r.Std.lt(t.get(e+c"
+              },
+              {
+                "keyword": "input",
+                "position": 1819,
+                "text": "+4),u.get(e)),r.Std.gt(u.get(e+c+4),u.get(e)))))));var S=r.Std.or(_,r.Std.or(m,r.Std.or(g,r.Std.or(f,v))))\n;return[r.Std.and(p,S),d]},this.main=function(e,t){this._context=e,this._input=t;var i=this.f_0();return[{value:i[0],offset:-this._input(0)},{value:i[1],offset:-this._input(0)}]}}"
+              },
+              {
+                "keyword": "input",
+                "position": 1877,
+                "text": ".Std.or(_,r.Std.or(m,r.Std.or(g,r.Std.or(f,v))))\n;return[r.Std.and(p,S),d]},this.main=function(e,t){this._context=e,this._input=t;var i=this.f_0();return[{value:i[0],offset:-this._input(0)},{value:i[1],offset:-this._input(0)}]}}"
+              }
+            ]
+          },
+          "metainfo": {
+            "id": "Williams Fractals@tv-basicstudies-1",
+            "shortDescription": "Fractals",
+            "description": "Williams Fractal",
+            "metainfoVersion": 52,
+            "is_price_study": true,
+            "keys": [
+              "_metainfoVersion",
+              "isTVScript",
+              "isTVScriptStub",
+              "defaults",
+              "plots",
+              "styles",
+              "description",
+              "shortDescription",
+              "is_price_study",
+              "is_hidden_study",
+              "id",
+              "inputs",
+              "scriptIdPart",
+              "name",
+              "isCustomIndicator",
+              "format",
+              "description_localized"
+            ],
+            "inputs": [
+              {
+                "id": "in_0",
+                "name": "Periods",
+                "defval": 2,
+                "type": "integer",
+                "min": 2,
+                "max": 1000000000000,
+                "display": 15
+              }
+            ],
+            "plots": [
+              {
+                "id": "plot_0",
+                "type": "shapes"
+              },
+              {
+                "id": "plot_1",
+                "type": "shapes"
+              }
+            ],
+            "defaultsKeys": [
+              "styles",
+              "inputs"
+            ],
+            "stylesKeys": [
+              "plot_0",
+              "plot_1"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "ZigZag",
+      "expectedFullId": "ZigZag@tv-basicstudies-1",
+      "matchCount": 1,
+      "matches": [
+        {
+          "topLevelKeys": [
+            "name",
+            "metainfo",
+            "constructor"
+          ],
+          "constructor": {
+            "type": "function",
+            "name": "constructor",
+            "sourceLength": 205,
+            "prototypeKeys": [
+              "constructor"
+            ],
+            "staticKeys": [
+              "length",
+              "name",
+              "prototype"
+            ],
+            "sourceStart": "function(){this.main=function(e,t){this._context=e,this._input=t;var i=this._input(0),s=this._input(1),r=i/100,o=Math.ceil(s/2);return[n.Std.zigzag(r,o,this._context),n.Std.zigzagbars(r,o,this._context)]}}",
+            "sourceEnd": null,
+            "keywordSnippets": [
+              {
+                "keyword": "main",
+                "position": 16,
+                "text": "function(){this.main=function(e,t){this._context=e,this._input=t;var i=this._input(0),s=this._input(1),r=i/100,o=Math.ceil(s/2);return[n.Std.zigzag(r,o,this._context),n.Std.zigzagbars(r,o,this._context)]}}"
+              },
+              {
+                "keyword": "Std",
+                "position": 137,
+                "text": "function(){this.main=function(e,t){this._context=e,this._input=t;var i=this._input(0),s=this._input(1),r=i/100,o=Math.ceil(s/2);return[n.Std.zigzag(r,o,this._context),n.Std.zigzagbars(r,o,this._context)]}}"
+              },
+              {
+                "keyword": "Std",
+                "position": 169,
+                "text": "function(){this.main=function(e,t){this._context=e,this._input=t;var i=this._input(0),s=this._input(1),r=i/100,o=Math.ceil(s/2);return[n.Std.zigzag(r,o,this._context),n.Std.zigzagbars(r,o,this._context)]}}"
+              },
+              {
+                "keyword": "context",
+                "position": 41,
+                "text": "function(){this.main=function(e,t){this._context=e,this._input=t;var i=this._input(0),s=this._input(1),r=i/100,o=Math.ceil(s/2);return[n.Std.zigzag(r,o,this._context),n.Std.zigzagbars(r,o,this._context)]}}"
+              },
+              {
+                "keyword": "context",
+                "position": 158,
+                "text": "function(){this.main=function(e,t){this._context=e,this._input=t;var i=this._input(0),s=this._input(1),r=i/100,o=Math.ceil(s/2);return[n.Std.zigzag(r,o,this._context),n.Std.zigzagbars(r,o,this._context)]}}"
+              },
+              {
+                "keyword": "context",
+                "position": 194,
+                "text": "s.main=function(e,t){this._context=e,this._input=t;var i=this._input(0),s=this._input(1),r=i/100,o=Math.ceil(s/2);return[n.Std.zigzag(r,o,this._context),n.Std.zigzagbars(r,o,this._context)]}}"
+              },
+              {
+                "keyword": "input",
+                "position": 57,
+                "text": "function(){this.main=function(e,t){this._context=e,this._input=t;var i=this._input(0),s=this._input(1),r=i/100,o=Math.ceil(s/2);return[n.Std.zigzag(r,o,this._context),n.Std.zigzagbars(r,o,this._context)]}}"
+              },
+              {
+                "keyword": "input",
+                "position": 77,
+                "text": "function(){this.main=function(e,t){this._context=e,this._input=t;var i=this._input(0),s=this._input(1),r=i/100,o=Math.ceil(s/2);return[n.Std.zigzag(r,o,this._context),n.Std.zigzagbars(r,o,this._context)]}}"
+              },
+              {
+                "keyword": "input",
+                "position": 94,
+                "text": "function(){this.main=function(e,t){this._context=e,this._input=t;var i=this._input(0),s=this._input(1),r=i/100,o=Math.ceil(s/2);return[n.Std.zigzag(r,o,this._context),n.Std.zigzagbars(r,o,this._context)]}}"
+              }
+            ]
+          },
+          "metainfo": {
+            "id": "ZigZag@tv-basicstudies-1",
+            "shortDescription": "ZigZag",
+            "description": "Zig Zag",
+            "metainfoVersion": 52,
+            "is_price_study": true,
+            "keys": [
+              "_metainfoVersion",
+              "isTVScript",
+              "isTVScriptStub",
+              "is_hidden_study",
+              "defaults",
+              "plots",
+              "styles",
+              "description",
+              "shortDescription",
+              "is_price_study",
+              "classId",
+              "inputs",
+              "id",
+              "format",
+              "description_localized"
+            ],
+            "inputs": [
+              {
+                "id": "in_0",
+                "name": "deviation",
+                "defval": 5,
+                "type": "float",
+                "min": 0.001,
+                "max": 100,
+                "display": 15
+              },
+              {
+                "id": "in_1",
+                "name": "depth",
+                "defval": 10,
+                "type": "integer",
+                "min": 2,
+                "max": 1000,
+                "display": 15
+              }
+            ],
+            "plots": [
+              {
+                "id": "plot_0",
+                "type": "line"
+              },
+              {
+                "id": "plot_1",
+                "target": "plot_0",
+                "type": "dataoffset"
+              }
+            ],
+            "defaultsKeys": [
+              "styles",
+              "inputs"
+            ],
+            "stylesKeys": [
+              "plot_0"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "errors": []
+}
