@@ -1,0 +1,2096 @@
+{
+  "reportName": "BITUNIX_USER_INDICATOR_NATIVE_CAPABILITY_AUDIT",
+  "version": "1.0",
+  "timestamp": "2026-11-18T16:10:10.722Z",
+  "safety": {
+    "readOnly": true,
+    "constructorsInvoked": false,
+    "studiesInserted": false,
+    "repositoryModified": false,
+    "metadataModified": false,
+    "chartModified": false,
+    "paneCreated": false,
+    "drawingsCreated": false,
+    "ordersSent": false
+  },
+  "root": {
+    "name": "__bbm_seo_tab__:a99bfc96-18f3-40f8-8759-e5376c7a718d",
+    "href": "https://www.bitunix.com/contract-trade/XAUTUSDT"
+  },
+  "chartFrame": {
+    "path": "frames[0]",
+    "name": "tradingview_b6c11",
+    "href": "blob:https://www.bitunix.com/c9bb7c28-07d1-4953-93c9-c0662f8acd62",
+    "symbol": "XAUTUSDT",
+    "resolution": "5S",
+    "chartApiAvailable": true,
+    "chartWidgetAvailable": true,
+    "actualModelAvailable": true
+  },
+  "studyEngine": {
+    "available": true,
+    "ownKeys": [
+      "_studiesCache",
+      "_objectsDataCache",
+      "_studiesNonSeriesTimes",
+      "_metainfoCache",
+      "_barsCoefficientsCache",
+      "_externalDatafeed",
+      "_datafeedConfiguration",
+      "_marketStatusWatchers",
+      "_resolveRequests",
+      "_resolvePromisesBySymbolId",
+      "_symbolIdToSymbolRequestString",
+      "_callbacks",
+      "_serverTimeOffset",
+      "_invalidatedPointsetSessions",
+      "_refreshPointsetsTimerId",
+      "_pointsetsManagers",
+      "_quotesInfo",
+      "_depthInfo",
+      "_endOfData",
+      "_computeStudyCounter",
+      "_symbolExtrapolators",
+      "_timeScales",
+      "_cachedDatafeed"
+    ],
+    "propertyNames": [
+      "_studiesCache",
+      "_objectsDataCache",
+      "_studiesNonSeriesTimes",
+      "_metainfoCache",
+      "_barsCoefficientsCache",
+      "_externalDatafeed",
+      "_datafeedConfiguration",
+      "_marketStatusWatchers",
+      "_resolveRequests",
+      "_resolvePromisesBySymbolId",
+      "_symbolIdToSymbolRequestString",
+      "_callbacks",
+      "_serverTimeOffset",
+      "_invalidatedPointsetSessions",
+      "_refreshPointsetsTimerId",
+      "_pointsetsManagers",
+      "_quotesInfo",
+      "_depthInfo",
+      "_endOfData",
+      "_computeStudyCounter",
+      "_symbolExtrapolators",
+      "_timeScales",
+      "_cachedDatafeed"
+    ],
+    "methods": [
+      {
+        "name": "_studiesCache",
+        "ownerDepth": 0,
+        "kind": "object",
+        "source": null
+      },
+      {
+        "name": "_objectsDataCache",
+        "ownerDepth": 0,
+        "kind": "object",
+        "source": null
+      },
+      {
+        "name": "_metainfoCache",
+        "ownerDepth": 0,
+        "kind": "object",
+        "source": null
+      },
+      {
+        "name": "_barsCoefficientsCache",
+        "ownerDepth": 0,
+        "kind": "object",
+        "source": null
+      },
+      {
+        "name": "_externalDatafeed",
+        "ownerDepth": 0,
+        "kind": "object",
+        "source": null
+      },
+      {
+        "name": "_datafeedConfiguration",
+        "ownerDepth": 0,
+        "kind": "object",
+        "source": null
+      },
+      {
+        "name": "_resolvePromisesBySymbolId",
+        "ownerDepth": 0,
+        "kind": "object",
+        "source": null
+      },
+      {
+        "name": "_symbolIdToSymbolRequestString",
+        "ownerDepth": 0,
+        "kind": "object",
+        "source": null
+      },
+      {
+        "name": "_endOfData",
+        "ownerDepth": 0,
+        "kind": "object",
+        "source": null
+      },
+      {
+        "name": "_computeStudyCounter",
+        "ownerDepth": 0,
+        "kind": "number",
+        "source": null
+      },
+      {
+        "name": "_symbolExtrapolators",
+        "ownerDepth": 0,
+        "kind": "object",
+        "source": null
+      },
+      {
+        "name": "_cachedDatafeed",
+        "ownerDepth": 0,
+        "kind": "object",
+        "source": null
+      },
+      {
+        "name": "_getSymbolExtrapolator",
+        "ownerDepth": 1,
+        "kind": "function",
+        "source": "function(e,t,i){var s=d.normalize(i),r=function(e,t,i){const s=void 0!==t.subsession_id?\",\"+t.subsession_id:\"\";return e+\",\"+t.full_name+\",\"+i+s}(e,t,s),n=this._symbolExtrapolators[r];return void 0===n&&(n=new o(t,s),this._symbolExtrapolators[r]=n),n}"
+      },
+      {
+        "name": "_barsCoefficients",
+        "ownerDepth": 1,
+        "kind": "function",
+        "source": "function(e,t){if(void 0===y(e).type)return{};var i=e+t;return this._barsCoefficientsCache[i]||(this._barsCoefficientsCache[i]={}),this._barsCoefficientsCache[i]}"
+      },
+      {
+        "name": "purgeCache",
+        "ownerDepth": 1,
+        "kind": "function",
+        "source": "function(){this._endOfData={},this._resolveRequests={},this._objectsDataCache={},this._studiesNonSeriesTimes={},this._studiesCache={},this._resolvePromisesBySymbolId.clear(),this._symbolIdToSymbolRequestString.clear(),Object.keys(this._pointsetsManagers).forEach((function(e){this._pointsetsManagers[e].destroy()}),this),this._pointsetsManagers={},Object.keys(this._timeScales).forEach((function(e){this._timeScales[e].destroy()}),this),this._timeScales={},Object.keys(this._symbolExtrapolators).forEach((function(e){this._symbolExtrapolators[e].destroy()}),this),this._symbolExtrapolators={}}"
+      },
+      {
+        "name": "purgeDataCache",
+        "ownerDepth": 1,
+        "kind": "function",
+        "source": "function(){this._cachedDatafeed.purgeCache()}"
+      },
+      {
+        "name": "_adoptConfigurationData",
+        "ownerDepth": 1,
+        "kind": "function",
+        "source": "function(e){var t=TradingView.merge({},e),i=t.supported_resolutions;if(!i||0===i.length)return t.supported_resolutions=void 0,t;for(var s=[],r=0;r<i.length;r++){var n=i[r];if(-1!==s.indexOf(n))throw new Error(\"Duplicating resolution `\"+n+\"`\");s.push(n)}return t.supported_resolutions=s,t}"
+      },
+      {
+        "name": "supportedSymbolsTypes",
+        "ownerDepth": 1,
+        "kind": "function",
+        "source": "function(){return this._datafeedConfiguration.symbols_types||[]}"
+      },
+      {
+        "name": "symbolsGrouping",
+        "ownerDepth": 1,
+        "kind": "function",
+        "source": "function(){return this._datafeedConfiguration.symbols_grouping||{futures:/$a/}}"
+      },
+      {
+        "name": "_findStudyObject",
+        "ownerDepth": 1,
+        "kind": "function",
+        "source": "function(e){e.endsWith(\"!\")&&(e=e.slice(0,-1));var t=e.split(\"@\")[0],i=JSServer.studyLibrary.filter((function(i){return i.metainfo.id===e||i.metainfo.shortDescription===t}));return 0===i.length?null:i[0]}"
+      },
+      {
+        "name": "getSeriesLastBarTime",
+        "ownerDepth": 1,
+        "kind": "function",
+        "source": "function(e,t){var i=this._getSeriesData(e,t);return null===i||0===i.length?null:i[i.length-1].timeMs}"
+      },
+      {
+        "name": "getSeriesSymbolInfo",
+        "ownerDepth": 1,
+        "kind": "function",
+        "source": "function(e,t){var i=this._studiesCache[e][t];return i?i.symbolInfo:null}"
+      },
+      {
+        "name": "_getSeriesData",
+        "ownerDepth": 1,
+        "kind": "function",
+        "source": "function(e,t){return this._objectsDataCache[R(e,t)]||null}"
+      },
+      {
+        "name": "_computeStudy",
+        "ownerDepth": 1,
+        "kind": "function",
+        "source": "async function(e,t,i,s,n,o,a,l,c,u){var p=!0,_=[];null!==l&&(this._objectsDataCache[l]=null),this._timeScales[e].setCompleted(!1);var m=this._computeStudyCounter++;function g(e,t){if(e<c())return L;if(0===t)return 0;var i=_[t-1].index;return i===L?0:i+1}var v=new Map;var S=!1,y=this,b=function(){return y._studiesCache[e]&&y._studiesCache[e][n]&&y._studiesCache[e][n].activeResolve===m};y._studiesCache[e][n].activeResolve=m;var w,P,T=this._resolvePromisesBySymbolId.get(D(e,i));if(void 0===T)throw new Error(\"This should never happen\");try{var I=await T;w=I.symbolInfo,P=I.requestedSymbol}catch(e){return void(b()&&u.onSymbolErrorCallback(e))}b()&&function(i,c){var m=d.parse(s);if(!m.isIntraday()||i.has_intraday){if(d.isDWM(s)&&void 0!==a.to){var b=h(s,i);null!==b&&(a.to=b.timeToExchangeTradingDay(a.to))}if(a.from&&a.to){const e=x(i.session,i.session_holidays,i.corrections,m.letter(),m.multiplier(),a.from,a.to);a.countBack=Math.max(e,a.countBack)}try{var w=new r.StudyEngine({tickerid:c,symbolInfo:i,period:s,body:t,sessionId:e,onErrorCallback:u.onErrorCallback,dataRange:a,subsessionId:i.sub"
+      },
+      {
+        "name": "_createStudy",
+        "ownerDepth": 1,
+        "kind": "function",
+        "source": "function(e,t,i,s,r,n,o,a){var l=this;function c(e,t,i){if(l._studiesCache[s][r].completed=!0,e=A(e),l._setEndOfData(s,r,n,!0),l._studyCanExtendTimeScale(s,r)){const t=e.map((function(e){return e.timeMs})),i=l._timeScales[s].setStudyBarsTimes(r,t);l._applyTimeScaleUpdate(s,i)}l._timeScales[s].fillIndexesInRows(e),TradingView.ChartapiMessagerInstances[s].onDataUpdate(r,n,e,t),TradingView.ChartapiMessagerInstances[s].onStudyCompleted(r,n),l._updateTimeScaleState(s)}function h(e){var t={};if(0!==e.size){var i={},n=l._studiesCache[s][r].metainfo;e.forEach((function(e,t){i[n.plots[t].id]=e})),t.data={offsets:i}}return t}a=function(e){if(Array.isArray(e))return e;for(var t=[],i=l._studiesCache[s][r].metainfo.inputs,n=0;n<i.length;n++)t[n]=e[i[n].id];return t}(a),TradingView.ChartapiMessagerInstances[s].onStudyLoading(r,n);var d=null,u=!1;l._setEndOfData(s,r,n,!0),l._computeStudy(s,i,e,t,r,a,this._seriesDataRange(s,o),null,(function(){if(null===d){var e=l._getSeriesData(s,o)[0];if(void 0===e)return 1/0;d=e.timeMs}return d}),{onDataReadyCallback:function(e,t,i){u&&0===e.length||c(e,h(t))},onR"
+      },
+      {
+        "name": "_recreateSourcesForDataRange",
+        "ownerDepth": 1,
+        "kind": "function",
+        "source": "function(e,t){var i=[];for(var s in this._studiesCache[e]){(r=this._studiesCache[e][s])&&\"series\"===r.type&&!this._isEndOfData(e,s,r.turnaround)&&(this._stopSourcesTree(e,s),i.push(s))}for(var s in i.forEach((function(i){this._startSourcesTree(e,i,Object.assign({},t))}),this),this._studiesCache[e]){var r;\"series\"===(r=this._studiesCache[e][s]).type&&this._isEndOfData(e,s,r.turnaround)&&TradingView.ChartapiMessagerInstances[e].onSeriesCompleted(s,r.turnaround,r.engine.runner.host.symbolInfo.data_status)}this._updateTimeScaleState(e)}"
+      },
+      {
+        "name": "removeStudy",
+        "ownerDepth": 1,
+        "kind": "function",
+        "source": "function(e,t){if(this._studiesCache[e]&&this._studiesCache[e][t]&&this._studiesCache[e][t].engine&&(this._studiesCache[e][t].engine.stop(),n.unsubscribeUnused()),this._studyCanExtendTimeScale(e,t)){this._timeScales[e].setCompleted(!1);const i=this._timeScales[e].setStudyBarsTimes(t,[]);this._applyTimeScaleUpdate(e,i),this._updateTimeScaleState(e)}delete this._studiesCache[e][t],delete this._studiesNonSeriesTimes[e][t]}"
+      },
+      {
+        "name": "removeSeries",
+        "ownerDepth": 1,
+        "kind": "function",
+        "source": "function(e,t){this._stopSourcesTree(e,t),delete this._studiesCache[e][t],this._updateMainTsBuilder(e),this._timeScales[e].isCompleted()&&this._timeScales[e].setCompleted(!1);var i=this._timeScales[e].setSeriesBarsTimes(t,[]);this._applyTimeScaleUpdate(e,i),this._updateTimeScaleState(e)}"
+      },
+      {
+        "name": "modifyStudy",
+        "ownerDepth": 1,
+        "kind": "function",
+        "source": "function(e,t,i,s){var r=this._studiesCache[e][t];if(!r)throw Error(\"This should never happen\");var o=this._studiesCache[e][r.parentId];r.inputs=s,r.turnaround=i,r.engine&&(r.engine.stop(),n.unsubscribeUnused()),this._studiesNonSeriesTimes[e][t]=null,this._createStudy(o.symbolId,o.resolution,r.studyObject,e,t,i,r.parentId,s)}"
+      },
+      {
+        "name": "createStudy",
+        "ownerDepth": 1,
+        "kind": "function",
+        "source": "function(e,t,i,s,r,n){var o=this._studiesCache[e][i],a=this._findStudyObject(r);if(null===a)return console.warn(\"Study does not exist: \"+r),void TradingView.ChartapiMessagerInstances[e].onStudyError(t,s,\"unknown study name\");var l=new a.constructor;this._studiesCache[e]=this._studiesCache[e]||{},this._studiesCache[e][t]={studyObject:l,guid:t,type:\"study\",inputs:n,metainfo:a.metainfo,turnaround:s,parentId:i},this._studiesNonSeriesTimes[e][t]=null,this._createStudy(o.symbolId,o.resolution,l,e,t,s,i,n)}"
+      },
+      {
+        "name": "_seriesDataRange",
+        "ownerDepth": 1,
+        "kind": "function",
+        "source": "function(e,t){var i=this._studiesCache[e][t];return null!==i.firstLoadedTimeMs?{to:i.firstLoadedTimeMs,countBack:0}:i.dataRange}"
+      },
+      {
+        "name": "_prepareSeriesNonSeriesData",
+        "ownerDepth": 1,
+        "kind": "function",
+        "source": "function(e,t,i){var s=i.data[i.data.length-1],r=this._getSeriesData(e,t),n=null===r?[]:i.data;return{data:{data:{reversalAmount:i.reversalAmount,boxSize:i.boxSize,price:s?s[4]:i.price,bars:n.map((function(e,t){return{time:t,open:e[1],high:e[2],low:e[3],close:e[4],volume:e[5],factor:e[6],additionalPrice:e[6]}}))}},indexes:this._timeScales[e].convertTimesToIndexes(n.map((function(e){var t=e[0]||0;return t<0?r[r.length+t].timeMs:i.projectionTime+t})))}}"
+      },
+      {
+        "name": "createSeries",
+        "ownerDepth": 1,
+        "kind": "function",
+        "source": "function(e,t,i,s,n,o,a){this._setEndOfData(e,t,i,!1);var l=new r.OHLCV;this._studiesCache[e]=this._studiesCache[e]||{};var c=this._getSeriesData(e,t),h=this._studiesCache[e][t],u=this._seriesCount(e),p=this._mainSeriesRecord(e);if(!h||d.isEqual(h.resolution,n)&&h.symbolId===s)void 0!==o.countBack&&null!==c&&0!==c.length&&(o.to=c[0].timeMs),h&&null!=h.firstLoadedTimeMs?o.to=void 0!==o.to?Math.min(h.firstLoadedTimeMs,o.to):h.firstLoadedTimeMs:h||0===u||null!==p&&(null!=p.firstLoadedTimeMs?(o.to=p.firstLoadedTimeMs,\no.countBack=0):o=Object.assign({},p.dataRange));else if(1===u)o=Object.assign({},h.initialDatarange);else{var _=this._timeScales[e].firstSeriesBarTime();(void 0===o.to||null!==_&&_<o.to)&&(o.to=_,o.countBack=0)}if(void 0===o.countBack&&(o.countBack=0),void 0===o.to&&0===o.countBack&&(o.countBack=100),this._studiesCache[e][t]={symbolId:s,resolution:n,studyObject:l,guid:t,type:\"series\",turnaround:i,dataRange:o,initialDatarange:h&&h.initialDatarange||Object.assign({},o),firstLoadedTimeMs:null,symbolInfo:null,isMain:h&&h.isMain||0===u,completed:!1},null===p||p.guid===t||!p.error"
+      },
+      {
+        "name": "_clearSeriesData",
+        "ownerDepth": 1,
+        "kind": "function",
+        "source": "function(e,t){var i={};for(var s in i[t]={turnaround:this._studiesCache[e][t].turnaround},this._studiesCache[e]){var r=this._studiesCache[e][s];\"study\"===r.type&&r.parentId===t&&(i[s]={turnaround:r.turnaround})}TradingView.ChartapiMessagerInstances[e].onClearData(i)}"
+      },
+      {
+        "name": "chartCreateSession",
+        "ownerDepth": 1,
+        "kind": "function",
+        "source": "function(e){this._pointsetsManagers[e]=new l,this._timeScales[e]=new a,this._studiesNonSeriesTimes[e]={}}"
+      },
+      {
+        "name": "removePointset",
+        "ownerDepth": 1,
+        "kind": "function",
+        "source": "function(e,t){this._pointsetsManagers[e].removePointset(t)}"
+      },
+      {
+        "name": "createPointset",
+        "ownerDepth": 1,
+        "kind": "function",
+        "source": "async function(e,t,i,s,r){var n,o=this._resolvePromisesBySymbolId.get(D(e,i));try{n=(await o).symbolInfo}catch(e){return}var a=this._getSymbolExtrapolator(e,n,s);if(this._pointsetsManagers[e].createPointset(t,n.full_name,s,r,a),null===this._refreshPointsetsTimerId){var l=this;this._refreshPointsetsTimerId=setTimeout((function(){l._refreshPointsetsTimerId=null,l._refreshPointsets(l._invalidatedPointsetSessions),l._invalidatedPointsetSessions.clear()}),0)}this._invalidatedPointsetSessions.add(e)}"
+      },
+      {
+        "name": "studiesMetadata",
+        "ownerDepth": 1,
+        "kind": "function",
+        "source": "function(){return 0===this._metainfoCache.length&&(this._metainfoCache=JSServer.studyLibrary.map((function(e){return e.metainfo})),this._metainfoCache.push({palettes:{},inputs:[],plots:[{id:\"open\",type:\"line\"},{id:\"high\",type:\"line\"},{id:\"low\",type:\"line\"},{id:\"close\",type:\"line\"},{id:\"volume\",type:\"line\"}],graphics:{},_metainfoVersion:48,\ndescription:\"Unnamed Study\",format:{type:\"inherit\"},is_hidden_study:!0,is_price_study:!1,shortDescription:\"Unnamed Study\",description_localized:\"Unnamed Study\",id:\"BarSetHeikenAshi@tv-prostudies\",shortId:\"BarSetHeikenAshi\",packageId:\"tv-basicstudies\",version:\"13\",fullId:\"BarSetHeikenAshi@tv-basicstudies-13\",productId:\"tv-basicstudies\",name:\"BarSetHeikenAshi@tv-basicstudies\"}),this._metainfoCache.push({palettes:{},inputs:[{defval:\"ATR\",id:\"style\",name:\"Style\",options:[\"ATR\",\"Traditional\"],type:\"text\"},{defval:5,id:\"boxSize\",max:17976931348623157e292,min:1e-4,name:\"BoxSize\",type:\"float\",visible:\"style==Traditional\"},{defval:14,id:\"atrLength\",max:100,min:1,name:\"AtrLength\",type:\"integer\",visible:\"style==ATR\"}],plots:[{id:\"open\",type:\"line\"},{id:\"high\""
+      },
+      {
+        "name": "searchSymbols",
+        "ownerDepth": 1,
+        "kind": "function",
+        "source": "function(e,t,i,s){this._logMessage(\"Symbol search requested: search string `{0}`, exchange: `{1}`, type `{2}`\".format(e,t,i));var r=this;this._externalDatafeed.searchSymbols(e,t,i,(function(e){r._logMessage(\"Symbol search response: {0}\".format(JSON.stringify(e))),e.forEach((e=>{k(e.logo_urls,e.exchange_logo,e)})),s(e)}))}"
+      },
+      {
+        "name": "resolveSymbol",
+        "ownerDepth": 1,
+        "kind": "function",
+        "source": "function(e,t,i){var s=this;this._symbolIdToSymbolRequestString.set(D(e,t),i),this._resolvePromisesBySymbolId.set(D(e,t),new Promise((function(r,n){s._resolveSymbolImpl(i,(function(s){TradingView.ChartapiMessagerInstances[e].onSymbolResolved(t,s),r({symbolInfo:s,requestedSymbol:i})}),(function(i){TradingView.ChartapiMessagerInstances[e].onSymbolError(t,i),n(i)}))})))}"
+      },
+      {
+        "name": "_resolveSymbolImpl",
+        "ownerDepth": 1,
+        "kind": "function",
+        "source": "function(e,t,i){S(e)||console.error(\"Expect to get symbol encoded string, but got the following instead: \"+e);const[s,r]=B(e);this._resolveSymbolByName(s,r,t,i)}"
+      },
+      {
+        "name": "_resolveSymbolByName",
+        "ownerDepth": 1,
+        "kind": "function",
+        "source": "function(e,t,i,s){var r,n=t&&t.currency,o=t&&t.unit,a=t&&t.session,l=N(e,n,o,a);if(this._resolveRequests[l])r=this._resolveRequests[l];else{r=this._resolveSymbolInternal(e,n||void 0,o||void 0,a||void 0),this._resolveRequests[l]=r;var c=this;r.then((function(t){c._resolveRequests[N(e,t.currency_id,t.unit_id,t.subsession_id)]=r,c._resolveRequests[N(b(t,null),t.currency_id,t.unit_id,t.subsession_id)]=r,c._resolveRequests[N(b(t,null),n,o,a)]=r})).catch((function(){}))}r.then(i).catch(s)}"
+      },
+      {
+        "name": "_resolveSymbolInternal",
+        "ownerDepth": 1,
+        "kind": "function",
+        "source": "function(e,t,i,s){var r=this;return new Promise(function(n,o){const a=[e,t,i,s].filter((e=>!!e)).join(\"|\");this._logMessage(\"Symbol resolve requested: `{0}` \".format(a));var l=!0;this._externalDatafeed.resolveSymbol(e,(function(e){l&&console.warn(\"`resolveSymbol` should return result asynchronously. Use `setTimeout` with 0 interval to execute the callback function.\"),r._logMessage(\"Symbol resolved: `{0}`, SymbolInfo in server response {1}\".format(a,JSON.stringify(e))),function(e){if(e.base_name||(e.base_name=[e.name]),e.legs||(e.legs=[e.name]),e.exchange||(e.exchange=e[\"exchange-listed\"]),\ne.ticker||(e.ticker=e.symbol||e.name),!e.full_name){const t=e.exchange?e.exchange+\":\"+e.name:e.name;e.full_name=T?e.ticker:t}if(e.pro_name||(e.pro_name=T?e.ticker:e.full_name),e.data_status||(e.data_status=\"streaming\"),!e.session&&e[\"session-regular\"]&&(e.session=e[\"session-regular\"]),!e.minmov&&e.minmovement&&(e.minmov=e.minmovement),e.currency_code&&(e.currency_id=e.currency_code),e.original_currency_code&&(e.original_currency_id=e.original_currency_code),e.holidays&&(e.session_holidays=e.holiday"
+      },
+      {
+        "name": "_createMarketStatusWatchers",
+        "ownerDepth": 1,
+        "kind": "function",
+        "source": "function(e,t){\nvoid 0===this._marketStatusWatchers[e]&&(this._marketStatusWatchers[e]={});for(let i=0;i<t.length;i+=1){const r=t[i];if(void 0===this._marketStatusWatchers[e][r]){const[t,i]=B(r);this._marketStatusWatchers[e][r]=new s(((s,n,o,a)=>this._resolveSymbolByName(t,i,o,(t=>{this.quoteRemoveSymbols(e,[r]),a(t)}))),e,r)}}}"
+      },
+      {
+        "name": "_removeMarketStatusWatchers",
+        "ownerDepth": 1,
+        "kind": "function",
+        "source": "function(e){var t=this;Object.keys(this._marketStatusWatchers[e]||{}).forEach((function(i){t._marketStatusWatchers[e][i].stop()})),this._marketStatusWatchers[e]={}}"
+      },
+      {
+        "name": "quoteCreateSession",
+        "ownerDepth": 1,
+        "kind": "function",
+        "source": "function(e){this._quotesInfo[e]={symbols:[],fastSymbols:[],listenerGUID:void 0}}"
+      },
+      {
+        "name": "quoteAddSymbols",
+        "ownerDepth": 1,
+        "kind": "function",
+        "source": "function(e,t){this._quotesInfo[e].symbols=this._filteredSymbols(this._quotesInfo[e].symbols.concat(t)),this._restartQuotesSubscription(e)}"
+      },
+      {
+        "name": "quoteRemoveSymbols",
+        "ownerDepth": 1,
+        "kind": "function",
+        "source": "function(e,t){this._quotesInfo[e].symbols=this._quotesInfo[e].symbols.filter((function(e){return t.indexOf(e)<0})),this._restartQuotesSubscription(e)}"
+      },
+      {
+        "name": "quoteFastSymbols",
+        "ownerDepth": 1,
+        "kind": "function",
+        "source": "function(e,t){this._quotesInfo[e].fastSymbols=this._filteredSymbols(t),this._restartQuotesSubscription(e)}"
+      },
+      {
+        "name": "depthCreateSession",
+        "ownerDepth": 1,
+        "kind": "function",
+        "source": "function(e){this._depthInfo[e]={symbol:null,listenerGUID:void 0}}"
+      },
+      {
+        "name": "depthSetSymbol",
+        "ownerDepth": 1,
+        "kind": "function",
+        "source": "function(e,t){this._depthInfo[e].symbol=t,this._restartDepthSubscription(e)}"
+      },
+      {
+        "name": "_filteredSymbols",
+        "ownerDepth": 1,
+        "kind": "function",
+        "source": "function(e){var t=[];return e.forEach((function(e){e instanceof Object||t.indexOf(e)<0&&t.push(e)})),t}"
+      },
+      {
+        "name": "_isEndOfData",
+        "ownerDepth": 1,
+        "kind": "function",
+        "source": "function(e,t,i){var s=e+\"!\"+t+\"@\"+i;return!!this._endOfData[s]}"
+      },
+      {
+        "name": "_setEndOfData",
+        "ownerDepth": 1,
+        "kind": "function",
+        "source": "function(e,t,i,s){var r=e+\"!\"+t+\"@\"+i;this._endOfData[r]=!1!==s}"
+      },
+      {
+        "name": "_studyCanExtendTimeScale",
+        "ownerDepth": 1,
+        "kind": "function",
+        "source": "function(e,t){const i=this._studiesCache[e][t]?.metainfo;return void 0!==i&&(C.enabled(\"studies_extend_time_scale\")&&i.canExtendTimeScale||C.enabled(\"secondary_series_extend_time_scale\")&&\"Overlay@tv-basicstudies-1\"===i.id)}"
+      }
+    ],
+    "cache": {
+      "keys": [
+        "cs_YBDxImw2IGPM"
+      ],
+      "metainfoCacheCount": 120
+    }
+  },
+  "registry": {
+    "libraryCount": 115,
+    "repositoryCount": 119,
+    "engineMetaCacheCount": 120,
+    "hasPineJS": false,
+    "hasJSServer": true,
+    "JSServerKeys": [
+      "studyLibrary",
+      "ChartApi"
+    ]
+  },
+  "plotTypes": {
+    "line": 188,
+    "colorer": 7,
+    "shapes": 16,
+    "dataoffset": 1,
+    "chars": 18
+  },
+  "plotExamples": {
+    "line": [
+      {
+        "id": "Accumulation/Distribution@tv-basicstudies-1",
+        "description": "Accumulation/Distribution",
+        "is_price_study": false,
+        "plot": {
+          "id": "plot_0",
+          "type": "line"
+        }
+      },
+      {
+        "id": "Accumulative Swing Index@tv-basicstudies-1",
+        "description": "Accumulative Swing Index",
+        "is_price_study": false,
+        "plot": {
+          "id": "plot_0",
+          "type": "line"
+        }
+      },
+      {
+        "id": "Advance/Decline@tv-basicstudies-1",
+        "description": "Advance/Decline",
+        "is_price_study": false,
+        "plot": {
+          "id": "plot_0",
+          "type": "line"
+        }
+      },
+      {
+        "id": "Arnaud Legoux Moving Average@tv-basicstudies-1",
+        "description": "Arnaud Legoux Moving Average",
+        "is_price_study": true,
+        "plot": {
+          "id": "plot_0",
+          "type": "line"
+        }
+      },
+      {
+        "id": "Aroon@tv-basicstudies-1",
+        "description": "Aroon",
+        "is_price_study": false,
+        "plot": {
+          "id": "plot_0",
+          "type": "line"
+        }
+      }
+    ],
+    "colorer": [
+      {
+        "id": "Awesome Oscillator@tv-basicstudies-1",
+        "description": "Awesome Oscillator",
+        "is_price_study": false,
+        "plot": {
+          "id": "plot_1",
+          "palette": "palette_0",
+          "target": "plot_0",
+          "type": "colorer"
+        }
+      },
+      {
+        "id": "Accelerator Oscillator@tv-basicstudies-1",
+        "description": "Accelerator Oscillator",
+        "is_price_study": false,
+        "plot": {
+          "id": "plot_1",
+          "palette": "palette_0",
+          "target": "plot_0",
+          "type": "colorer"
+        }
+      },
+      {
+        "id": "chop_zone@tv-basicstudies-1",
+        "description": "Chop Zone",
+        "is_price_study": false,
+        "plot": {
+          "id": "plot_1",
+          "palette": "palette_0",
+          "target": "plot_0",
+          "type": "colorer"
+        }
+      },
+      {
+        "id": "Ichimoku Cloud@tv-basicstudies-1",
+        "description": "Ichimoku Cloud",
+        "is_price_study": true,
+        "plot": {
+          "id": "plot_5",
+          "palette": "palette_0",
+          "target": "fill_0",
+          "type": "colorer"
+        }
+      },
+      {
+        "id": "Moving Average Convergence/Divergence@tv-basicstudies-1",
+        "description": "MACD",
+        "is_price_study": false,
+        "plot": {
+          "id": "plot_3",
+          "palette": "palette_0",
+          "target": "plot_0",
+          "type": "colorer"
+        }
+      }
+    ],
+    "shapes": [
+      {
+        "id": "Williams Fractals@tv-basicstudies-1",
+        "description": "Williams Fractal",
+        "is_price_study": true,
+        "plot": {
+          "id": "plot_0",
+          "type": "shapes"
+        }
+      },
+      {
+        "id": "Williams Fractals@tv-basicstudies-1",
+        "description": "Williams Fractal",
+        "is_price_study": true,
+        "plot": {
+          "id": "plot_1",
+          "type": "shapes"
+        }
+      },
+      {
+        "id": "SuperTrend@tv-basicstudies-1",
+        "description": "SuperTrend",
+        "is_price_study": true,
+        "plot": {
+          "id": "plot_2",
+          "type": "shapes"
+        }
+      },
+      {
+        "id": "SuperTrend@tv-basicstudies-1",
+        "description": "SuperTrend",
+        "is_price_study": true,
+        "plot": {
+          "id": "plot_3",
+          "type": "shapes"
+        }
+      },
+      {
+        "id": "TradingSessions@tv-basicstudies-1",
+        "description": "Trading Sessions",
+        "is_price_study": true,
+        "plot": {
+          "id": "label_0",
+          "type": "shapes"
+        }
+      }
+    ],
+    "dataoffset": [
+      {
+        "id": "ZigZag@tv-basicstudies-1",
+        "description": "Zig Zag",
+        "is_price_study": true,
+        "plot": {
+          "id": "plot_1",
+          "target": "plot_0",
+          "type": "dataoffset"
+        }
+      }
+    ],
+    "chars": [
+      {
+        "id": "TDSequential@tv-basicstudies-1",
+        "description": "TD Sequential",
+        "is_price_study": true,
+        "plot": {
+          "id": "sell_1",
+          "type": "chars"
+        }
+      },
+      {
+        "id": "TDSequential@tv-basicstudies-1",
+        "description": "TD Sequential",
+        "is_price_study": true,
+        "plot": {
+          "id": "sell_2",
+          "type": "chars"
+        }
+      },
+      {
+        "id": "TDSequential@tv-basicstudies-1",
+        "description": "TD Sequential",
+        "is_price_study": true,
+        "plot": {
+          "id": "sell_3",
+          "type": "chars"
+        }
+      },
+      {
+        "id": "TDSequential@tv-basicstudies-1",
+        "description": "TD Sequential",
+        "is_price_study": true,
+        "plot": {
+          "id": "sell_4",
+          "type": "chars"
+        }
+      },
+      {
+        "id": "TDSequential@tv-basicstudies-1",
+        "description": "TD Sequential",
+        "is_price_study": true,
+        "plot": {
+          "id": "sell_5",
+          "type": "chars"
+        }
+      }
+    ]
+  },
+  "multiTimeframeConstructors": [
+    {
+      "id": "Correlation Coeff@tv-basicstudies-1",
+      "description": "Correlation Coefficient",
+      "shortDescription": "CC",
+      "is_price_study": false,
+      "prototypeMethods": [
+        "constructor"
+      ],
+      "flags": {
+        "new_sym": true,
+        "select_sym": true,
+        "non_series_data": false,
+        "security": false,
+        "new_var": true,
+        "context": true
+      },
+      "sourceLength": 652,
+      "sourceStart": "function(){this.init=function(e,t){this._context=e,this._input=t,this._context.new_sym(this._input(0),r.Std.period(this._context))},this.main=function(e,t){this._context=e,this._input=t;var i=this._context.new_unlimited_var(this._context.symbol.time),s=(this._input(0),r.Std.period(this._context),r.Std.close(this._context)),n=this._input(1);this._context.select_sym(1);var o=this._context.new_unlimited_var(this._context.symbol.time),a=r.Std.close(this._context),l=this._context.new_unlimited_var(a);this._context.select_sym(0);var c=l.adopt(o,i,0),h=this._context.new_var(s),d=this._context.new_var(c);return[r.Std.correlation(h,d,n,this._context)]}}"
+    },
+    {
+      "id": "Correlation - Log@tv-basicstudies-1",
+      "description": "Correlation - Log",
+      "shortDescription": "Correlation - Log",
+      "is_price_study": false,
+      "prototypeMethods": [
+        "constructor"
+      ],
+      "flags": {
+        "new_sym": true,
+        "select_sym": true,
+        "non_series_data": false,
+        "security": false,
+        "new_var": true,
+        "context": true
+      },
+      "sourceLength": 1133,
+      "sourceStart": "function(){this.init=function(e,t){this._context=e,this._input=t,this._context.new_sym(this._input(0),r.Std.period(this._context)),this._context.new_sym(this._input(1),r.Std.period(this._context)),this.period=this._input(2)},this.correlationLog=function(e,t,i,s){var n=r.Std.sma(e,i,s),o=r.Std.sma(t,i,s),a=s.new_var(e.get()*t.get());return(r.Std.sma(a,i,s)-n*o)/Math.sqrt(r.Std.variance2(e,n,i)*r.Std.variance2(t,o,i))},this.main=function(e,t){this._context=e,this._input=t;var i=this._context.new_var(this._context.symbol.time);this._context.select_sym(2);var s=this._context.new_var(r.Std.close(this._context)),n=this._context.new_var(r.Std.log(s.get()/s.get(1))),o=this._context.new_var(this._context.symbol.time);this._context.select_sym(1);var a=this._context.new_var(this._context.symbol.time),l=this._context.new_var(r.Std.close(this._context)),c=this._context.new_var(r.Std.log(l.get()/l.get(1))),h=this._context.new_var(n.adopt(o,a,0)),d=this._context.new_var(this.correlationLog(c,h,this.period,this._context)),u=this._context.new_var(d.adopt(a,i,0)).get(),p=r.Std.round(1e3*u)/1e3;return this._context.select_sym(0),[p]}}"
+    },
+    {
+      "id": "Moving Average@tv-basicstudies-1",
+      "description": "Moving Average",
+      "shortDescription": "MA",
+      "is_price_study": true,
+      "prototypeMethods": [
+        "constructor"
+      ],
+      "flags": {
+        "new_sym": true,
+        "select_sym": true,
+        "non_series_data": false,
+        "security": false,
+        "new_var": true,
+        "context": true
+      },
+      "sourceLength": 858,
+      "sourceStart": "function(){this.init=function(e,t){this._context=e,\"\"!==t(0)&&this._context.new_sym(t(0),r.Std.period(this._context))},this.main=function(e,t){this._context=e,this._input=t;var i=this._context.new_var(this._context.symbol.time),s=r.Std[this._input(2)](this._context),n=this._input(1),o=this._input(3),a=this._input(4),l=this._input(5);if(this._context.setMinimumAdditionalDepth(n+l),\"\"!==this._input(0)){this._context.select_sym(1);var c=this._context.new_var(this._context.symbol.time),h=r.Std[this._input(2)](this._context);s=this._context.new_var(h).adopt(c,i,1),this._context.select_sym(0)}var d,u=this._context.new_var(s),p=r.Std.sma(u,n,this._context),_=this._context.new_var(p);return\"EMA\"===a?d=r.Std.ema(_,l,this._context):\"WMA\"===a?d=r.Std.wma(_,l,this._context):\"SMA\"===a&&(d=r.Std.sma(_,l,this._context)),[{value:p,offset:o},{value:d,offset:o}]}}"
+    },
+    {
+      "id": "Volatility Index@tv-basicstudies-1",
+      "description": "Volatility Index",
+      "shortDescription": "Volatility Index",
+      "is_price_study": true,
+      "prototypeMethods": [
+        "constructor"
+      ],
+      "flags": {
+        "new_sym": false,
+        "select_sym": true,
+        "non_series_data": false,
+        "security": false,
+        "new_var": true,
+        "context": true
+      },
+      "sourceLength": 2458,
+      "sourceStart": "function(){this.init=function(e,t){this._context=e,this._input=t,this.period=this._input(0),this.atrMult=this._input(1),this.maMethod=this._input(2),this.nextsar=null,this.position=null,this.sic=null,this.bars=[],this.count=0,this.lastSar=null,this._context.setMinimumAdditionalDepth(\"Exponential\"===this.maMethod?2*this.period+2:this.period)},this.computeATR=function(){var e=r.Std.high(this._context)-r.Std.low(this._context),t=r.Std.high(this._context)-this.bars[this.bars.length-2],i=this.bars[this.bars.length-2]-r.Std.low(this._context);return this.tr=Math.max(e,t,i),\"Exponential\"===this.maMethod?this.atr=r.Std.ema(this._context.new_var(this.tr),this.period,this._context):this.atr=this.tr/this.period+(1-1/this.period)*this.atr,this.atr*this.atrMult},this.calculateVolatility=function(){if(r.Std.close(this._context)===this.bars[this.bars.length-1])return this.lastSar;if(this.bars.push(r.Std.close(this._context)),1===this.count)this.atr=r.Std.high(this._context)-r.Std.low(this._context),this.sic=r.Std.close(this._context);else if(this.count<this.period){var e=r.Std.high(this._context)-r.Std.low(this._context),t=r.Std.high(this._context)-this.bars[this.bars.length-2],i=this.bars[this.bars.length-2]-r.Std.low(this._context);this.atr+=Math.max(e,t,i),r.Std.close(this._context)>this.sic&&(this.sic=r.Std.close(this._context))}else if(this.count===this.period){e=r.Std.high(this._context)-r.Std.low(this._context),t=r.Std.high(this._context)-this.bars[this.bars.length-2],\ni=this.bars[this.bars.length-2]-r.Std.low(this._context);this.atr+=Math.max(e,t,i),this.atr*=1/this.period,r.Std.close(this._context)>this.sic&&(this.sic=r.Std.close(this._context)),this.position=\"LONG\",this.nextsar=this.sic-this.atr*this.atrMult}else{var s=this.nextsar;\"LONG\"===this.position?r.Std.close(this._co"
+    },
+    {
+      "id": "52 Week High/Low@tv-basicstudies-1",
+      "description": "52 Week High/Low",
+      "shortDescription": "52W H/L",
+      "is_price_study": true,
+      "prototypeMethods": [
+        "constructor"
+      ],
+      "flags": {
+        "new_sym": true,
+        "select_sym": true,
+        "non_series_data": false,
+        "security": false,
+        "new_var": false,
+        "context": true
+      },
+      "sourceLength": 1357,
+      "sourceStart": "function(){this.init=function(e,t){this._context=e,this._input=t,this._symbolSupports1DResolution=!this._context.symbol.info.supported_resolutions||-1!==this._context.symbol.info.supported_resolutions.indexOf(\"1D\"),\nthis._symbolSupports1DResolution&&\"1D\"!==r.Std.period(this._context)&&this._context.new_sym(this._context.symbol.ticker,\"1D\")},this.main=function(e,t){this._symbolSupports1DResolution||r.Std.error(`Daily bars are not available for ${this._context.symbol.info.name}`),this._context=e,this._input=t,\"1D\"!==r.Std.period(this._context)&&this._context.select_sym(1);const i=this._input(0),s=this._input(1),n=r.Std.time(this._context),o=this._context.new_unlimited_var(n),a=this._context.new_unlimited_var(r.Std[i](this._context)),l=this._context.new_unlimited_var(r.Std[s](this._context));if(o.get(365),!this._context.symbol.isLastBar||!this._context.symbol.isNewBar)return null;const c=r.Std.add_years_considering_dst(this._context.symbol.info.timezone,new Date(n),-1),h=o.indexOf(c.getTime());return{nonseries:!0,type:\"study_graphics\",data:{graphicsCmds:{create:{horizlines:[{styleId:\"highest\",data:[{startIndex:n,endIndex:n,level:r.Std.highest(a,h,this._context),extendLeft:!0,extendRight:!0}]},{styleId:\"lowest\",data:[{startIndex:n,endIndex:n,level:r.Std.lowest(l,h,this._context),extendLeft:!0,extendRight:!0}]}]},erase:[{action:\"all\"}]}}}}}"
+    },
+    {
+      "id": "Compare@tv-basicstudies-1",
+      "description": "Compare",
+      "shortDescription": "Compare",
+      "is_price_study": true,
+      "prototypeMethods": [
+        "constructor"
+      ],
+      "flags": {
+        "new_sym": true,
+        "select_sym": true,
+        "non_series_data": false,
+        "security": false,
+        "new_var": false,
+        "context": true
+      },
+      "sourceLength": 426,
+      "sourceStart": "function(){this.init=function(e,t){this._context=e,this._context.new_sym(t(1),n.Std.period(this._context))},this.main=function(e,t){this._context=e;var i=this._context.new_unlimited_var(this._context.symbol.time);this._context.select_sym(1)\n;var s=this._context.new_unlimited_var(this._context.symbol.time),r=n.Std[t(0)](this._context),o=this._context.new_unlimited_var(r);return this._context.select_sym(0),[o.adopt(s,i,0)]}}"
+    },
+    {
+      "id": "Overlay@tv-basicstudies-1",
+      "description": "Overlay",
+      "shortDescription": "Overlay",
+      "is_price_study": false,
+      "prototypeMethods": [
+        "constructor"
+      ],
+      "flags": {
+        "new_sym": true,
+        "select_sym": true,
+        "non_series_data": false,
+        "security": false,
+        "new_var": false,
+        "context": true
+      },
+      "sourceLength": 706,
+      "sourceStart": "function(){this.init=function(e,t){this._context=e,this._context.new_sym(t(0),n.Std.period(this._context))},this.main=function(e,t){this._context=e;var i=!g||!0!==t(1),s=this._context.new_unlimited_var(this._context.symbol.time);this._context.select_sym(1);var r=this._context.new_unlimited_var(this._context.symbol.time),o=this._context.new_unlimited_var(n.Std.open(this._context)),a=this._context.new_unlimited_var(n.Std.high(this._context)),l=this._context.new_unlimited_var(n.Std.low(this._context)),c=this._context.new_unlimited_var(n.Std.close(this._context));return i?(this._context.select_sym(0),[o.adopt(r,s,1),a.adopt(r,s,1),l.adopt(r,s,1),c.adopt(r,s,1)]):[o.get(0),a.get(0),l.get(0),c.get(0)]}}"
+    },
+    {
+      "id": "Volume@tv-basicstudies-1",
+      "description": "Volume",
+      "shortDescription": "Volume",
+      "is_price_study": false,
+      "prototypeMethods": [
+        "constructor"
+      ],
+      "flags": {
+        "new_sym": true,
+        "select_sym": true,
+        "non_series_data": false,
+        "security": false,
+        "new_var": true,
+        "context": true
+      },
+      "sourceLength": 1137,
+      "sourceStart": "function(){this.init=function(e,t){this._context=e,\"\"!==t(0)&&this._context.new_sym(t(0),n.Std.period(this._context))},this.f_0=function(e,t){return n.Std.gt(e,t)?0:1},this.main=function(e,t){this._context=e,this._input=t;var i=n.Std.volume(this._context),s=n.Std.open(this._context),r=n.Std.close(this._context),o=this._context.new_var(this._context.symbol.time),a=this._input(4),l=this._input(5);if(this._context.setMinimumAdditionalDepth(this._input(2)+l),\"\"!==this._input(0)){this._context.select_sym(1);var c=this._context.new_var(this._context.symbol.time),h=this._context.new_var(n.Std.volume(this._context)),d=this._context.new_var(n.Std.open(this._context)),u=this._context.new_var(n.Std.close(this._context));i=h.adopt(c,o,1),s=d.adopt(c,o,1),r=u.adopt(c,o,1),this._context.select_sym(0)}var p,_,m=this._context.new_var(i),g=n.Std.sma(m,this._input(2),this._context),f=this._context.new_var(g),v=this._context.new_var(r);return p=v.get(1)&&this._input(3)?this.f_0(v.get(1),r):this.f_0(s,r),\"EMA\"===a?_=n.Std.ema(f,l,this._context):\"WMA\"===a?_=n.Std.wma(f,l,this._context):\"SMA\"===a&&(_=n.Std.sma(f,l,this._context)),[i,p,g,_]}}"
+    },
+    {
+      "id": "PivotPointsStandard@tv-basicstudies-80",
+      "description": "Pivot Points Standard",
+      "shortDescription": "Pivots",
+      "is_price_study": true,
+      "prototypeMethods": [
+        "constructor",
+        "init",
+        "main",
+        "_createResponse",
+        "_removeUnusedPivots"
+      ],
+      "flags": {
+        "new_sym": true,
+        "select_sym": true,
+        "non_series_data": true,
+        "security": false,
+        "new_var": true,
+        "context": false
+      },
+      "sourceLength": 3405,
+      "sourceStart": "class{constructor(){this._secondaryRes=\"1D\",this._firstMainSeriesBarTime=NaN}init(e,t){const i=t(0),s=t(1),o=t(2),l=t(3);this._data=new a,this._firstMainSeriesBarTime=NaN,this._kindPP=function(e){switch(e){case\"Traditional\":return 0;case\"Fibonacci\":return 1;case\"Woodie\":return 2;case\"Classic\":return 3;case\"DeMark\":return 4;case\"Camarilla\":return 5;case\"Floor\":return 6;default:throw new Error(\"Unknown kind \"+e)}}(i),this._showHistoricalPivots=s,this._historicalPivotsToKeep=l,this._pivTimeFrame=o,this._isValidResolution=function(e,t){return!(n.Std.isdaily(e)&&\"Daily\"===t||n.Std.isweekly(e)&&(\"Daily\"===t||\"Weekly\"===t)||n.Std.ismonthly(e)&&(\"Daily\"===t||\"Weekly\"===t||\"Monthly\"===t))}(e,this._pivTimeFrame),this._isValidResolution||n.Std.error(\"You cannot see this pivot timeframe on this resolution\"),this._isValidResolution&&(this._secondaryRes=h(e,this._pivTimeFrame),void 0!==e.symbol.info&&(0,r.findSuitableResolutionToBuildFrom)(this._secondaryRes,e.symbol.info).error&&(this._isValidResolution=!1,n.Std.error(`Resolution ${this._secondaryRes} is not supported for this symbol`))),e.new_sym(e.symbol.tickerid,this._secondaryRes)}main(e,t,i){if(!this._isValidResolution)return null;if(e.is_main_symbol(i))return isNaN(this._firstMainSeriesBarTime)&&(this._firstMainSeriesBarTime=e.symbol.time,this._removeUnusedPivots()),e.symbol.isLastBar&&e.symbol.isNewBar?this._createResponse():null;e.select_sym(1);const s=e.new_var(n.Std.open(e)),r=e.new_var(n.Std.high(e)),a=e.new_var(n.Std.low(e)),l=e.new_var(n.Std.close(e)),h=e.new_var(n.Std.time(e)),d=this._data,u=s.get(0),p=h.get(0),_=s.get(1),m=r.get(1),g=a.get(1),f=l.get(1),v=e.symbol.isLastBar;if(0!==d.pivots.length&&e.symbol.isNewBar){const e=d.pivots[d.pivots.length-1];e.endIndex__t!==p&&(e.endIndex__t=p)}if(0===e.symbol.index||!e.symb"
+    },
+    {
+      "id": "VbPVisible@tv-basicstudies-49",
+      "description": "Volume Profile Visible Range",
+      "shortDescription": "VPVR",
+      "is_price_study": true,
+      "prototypeMethods": [
+        "constructor",
+        "nextGraphicsObjId",
+        "pushEraseObjCmd",
+        "popEraseCmds",
+        "init",
+        "main",
+        "time",
+        "open",
+        "high",
+        "low",
+        "close",
+        "volume",
+        "developingPoc",
+        "developingVAHigh",
+        "developingVALow"
+      ],
+      "flags": {
+        "new_sym": true,
+        "select_sym": true,
+        "non_series_data": false,
+        "security": false,
+        "new_var": false,
+        "context": false
+      },
+      "sourceLength": 4248,
+      "sourceStart": "class f extends r.VolumeProfileBase{constructor(){super(...arguments),this._rowsLayout=\"Number Of Rows\",this._rowSize=24,this._volume=\"Up/Down\",this._firstBarTime=0,this._lastBarTime=0,this._vaVolumePercent=70,this._anInt=0,this._eraseCmds=[]}nextGraphicsObjId(){return++this._anInt}pushEraseObjCmd(e,t){this._eraseCmds.push(new u.EraseObj(e,t))}popEraseCmds(){const e=this._eraseCmds;return this._eraseCmds=[],e}init(e,t){this._studyDataUpdate=new p.JStudyDataUpdate(!0),this._hists=new a.GraphicsListColl,this._pocLines=new c.GraphicsList,this._valueAreaHists=new a.GraphicsListColl;const i=new d.StudyGraphicsData;i.getObjsContainer(\"hhists\").push(new d.Container(\"histBars2\",this._hists)),i.getObjsContainer(\"hhists\").push(new d.Container(\"histBarsVA\",this._valueAreaHists)),i.getObjsContainer(\"horizlines\").push(new d.Container(\"pocLines\",this._pocLines)),this._studyDataUpdate.init(i),this._rowsLayout=t(0),this._rowSize=t(1),this._volume=t(2),this._firstBarTime=t(3),this._lastBarTime=t(4),this._vaVolumePercent=t(5),this.verifyRowSizeInput(this._rowSize,this._rowsLayout),this._originalResolution=o.Interval.parse(e.symbol.interval+e.symbol.resolution)\n;const n=this._lastBarTime+this._originalResolution.inMilliseconds(this._lastBarTime);0===this._firstBarTime&&0===this._lastBarTime?this._basicResolution=this._originalResolution:this._basicResolution=this.findBasicResolutionForFromTo(this._originalResolution,this._firstBarTime,n,(0,s.ensureDefined)(e.symbol.info)),this._hasSecondarySymbol=!this._originalResolution.isEqualTo(this._basicResolution),this._hasSecondarySymbol&&e.new_sym(e.symbol.tickerid,this._basicResolution.value());const l=this._getRowsLayout(this._rowsLayout,this._rowSize);this._vbPCheckHaveVolumeExpr=new _.VbPCheckHaveVolumeExpr(this),this._volumeByPriceExpr=new h"
+    },
+    {
+      "id": "VbPFixed@tv-volumebyprice-57",
+      "description": "Volume Profile Fixed Range",
+      "shortDescription": "VPFR",
+      "is_price_study": true,
+      "prototypeMethods": [
+        "constructor",
+        "nextGraphicsObjId",
+        "pushEraseObjCmd",
+        "popEraseCmds",
+        "init",
+        "main",
+        "time",
+        "open",
+        "high",
+        "low",
+        "close",
+        "volume",
+        "developingPoc",
+        "developingVAHigh",
+        "developingVALow"
+      ],
+      "flags": {
+        "new_sym": true,
+        "select_sym": true,
+        "non_series_data": false,
+        "security": false,
+        "new_var": false,
+        "context": false
+      },
+      "sourceLength": 4405,
+      "sourceStart": "class S extends r.VolumeProfileBase{constructor(){super(...arguments),this._rowsLayout=\"Number Of Rows\",this._rowSize=24,this._volume=\"Up/Down\",this._firstBarTime=0,this._lastBarTime=0,this._vaVolumePercent=70,this._anInt=0,this._eraseCmds=[]}nextGraphicsObjId(){return++this._anInt}pushEraseObjCmd(e,t){this._eraseCmds.push(new h.EraseObj(e,t))}popEraseCmds(){const e=this._eraseCmds;return this._eraseCmds=[],e}init(e,t){this._studyDataUpdate=new u.JStudyDataUpdate(!0),this._hists=new l.GraphicsListColl,this._boxPolygons=new d.GraphicsList,this._pocLines=new d.GraphicsList,this._valueAreaHists=new l.GraphicsListColl;const i=new c.StudyGraphicsData;i.getObjsContainer(\"hhists\").push(new c.Container(\"histBars2\",this._hists)),i.getObjsContainer(\"hhists\").push(new c.Container(\"histBarsVA\",this._valueAreaHists)),\ni.getObjsContainer(\"horizlines\").push(new c.Container(\"pocLines\",this._pocLines)),i.getObjsContainer(\"polygons\").push(new c.Container(\"histBoxBg\",this._boxPolygons)),this._studyDataUpdate.init(i),this._rowsLayout=t(0),this._rowSize=t(1),this._volume=t(2),this._firstBarTime=t(3),this._lastBarTime=t(4),this._vaVolumePercent=t(5),this.verifyRowSizeInput(this._rowSize,this._rowsLayout),this._originalResolution=a.Interval.parse(e.symbol.interval+e.symbol.resolution);const n=this._lastBarTime+this._originalResolution.inMilliseconds(this._lastBarTime);0===this._firstBarTime&&0===this._lastBarTime?this._basicResolution=this._originalResolution:this._basicResolution=this.findBasicResolutionForFromTo(this._originalResolution,this._firstBarTime,n,(0,s.ensureDefined)(e.symbol.info)),this._hasSecondarySymbol=!this._originalResolution.isEqualTo(this._basicResolution),this._hasSecondarySymbol&&e.new_sym(e.symbol.tickerid,this._basicResolution.value());const o=this._getRowsLayout(this"
+    },
+    {
+      "id": "VbPFixed@tv-basicstudies-152",
+      "description": "Fixed Range",
+      "shortDescription": "VPFR",
+      "is_price_study": true,
+      "prototypeMethods": [
+        "constructor",
+        "nextGraphicsObjId",
+        "pushEraseObjCmd",
+        "popEraseCmds",
+        "init",
+        "main",
+        "time",
+        "open",
+        "high",
+        "low",
+        "close",
+        "volume",
+        "developingPoc",
+        "developingVAHigh",
+        "developingVALow"
+      ],
+      "flags": {
+        "new_sym": true,
+        "select_sym": true,
+        "non_series_data": false,
+        "security": false,
+        "new_var": false,
+        "context": false
+      },
+      "sourceLength": 4405,
+      "sourceStart": "class S extends r.VolumeProfileBase{constructor(){super(...arguments),this._rowsLayout=\"Number Of Rows\",this._rowSize=24,this._volume=\"Up/Down\",this._firstBarTime=0,this._lastBarTime=0,this._vaVolumePercent=70,this._anInt=0,this._eraseCmds=[]}nextGraphicsObjId(){return++this._anInt}pushEraseObjCmd(e,t){this._eraseCmds.push(new h.EraseObj(e,t))}popEraseCmds(){const e=this._eraseCmds;return this._eraseCmds=[],e}init(e,t){this._studyDataUpdate=new u.JStudyDataUpdate(!0),this._hists=new l.GraphicsListColl,this._boxPolygons=new d.GraphicsList,this._pocLines=new d.GraphicsList,this._valueAreaHists=new l.GraphicsListColl;const i=new c.StudyGraphicsData;i.getObjsContainer(\"hhists\").push(new c.Container(\"histBars2\",this._hists)),i.getObjsContainer(\"hhists\").push(new c.Container(\"histBarsVA\",this._valueAreaHists)),\ni.getObjsContainer(\"horizlines\").push(new c.Container(\"pocLines\",this._pocLines)),i.getObjsContainer(\"polygons\").push(new c.Container(\"histBoxBg\",this._boxPolygons)),this._studyDataUpdate.init(i),this._rowsLayout=t(0),this._rowSize=t(1),this._volume=t(2),this._firstBarTime=t(3),this._lastBarTime=t(4),this._vaVolumePercent=t(5),this.verifyRowSizeInput(this._rowSize,this._rowsLayout),this._originalResolution=a.Interval.parse(e.symbol.interval+e.symbol.resolution);const n=this._lastBarTime+this._originalResolution.inMilliseconds(this._lastBarTime);0===this._firstBarTime&&0===this._lastBarTime?this._basicResolution=this._originalResolution:this._basicResolution=this.findBasicResolutionForFromTo(this._originalResolution,this._firstBarTime,n,(0,s.ensureDefined)(e.symbol.info)),this._hasSecondarySymbol=!this._originalResolution.isEqualTo(this._basicResolution),this._hasSecondarySymbol&&e.new_sym(e.symbol.tickerid,this._basicResolution.value());const o=this._getRowsLayout(this"
+    },
+    {
+      "id": "RegressionTrend@tv-basicstudies-144",
+      "description": "Regression Trend",
+      "shortDescription": "Reg Trend",
+      "is_price_study": true,
+      "prototypeMethods": [
+        "constructor",
+        "init",
+        "main",
+        "_updateData"
+      ],
+      "flags": {
+        "new_sym": false,
+        "select_sym": false,
+        "non_series_data": true,
+        "security": false,
+        "new_var": false,
+        "context": false
+      },
+      "sourceLength": 1255,
+      "sourceStart": "class{constructor(){this._resultSent=!1}init(e,t){this._resultSent=!1,this._data={baseLine:{startPrice:NaN,endPrice:NaN},upLine:{startPrice:NaN,endPrice:NaN},downLine:{startPrice:NaN,endPrice:NaN},pearsons:NaN,startIndex__t:NaN,endIndex__t:NaN}}main(e,t){const i=t(6),n=e.new_unlimited_var(s.Std.time(e)),o=e.new_unlimited_var(s.Std.high(e)),a=e.new_unlimited_var(s.Std.low(e)),l=e.new_unlimited_var(s.Std[i](e));if(!e.symbol.isLastBar)return null;if(this._resultSent)return null;const c=t(0),h=t(1),d=t(2),u=t(3),p=t(4),_=t(5),m=n.indexOf(p),g=n.indexOf(_),f=[],v=[],S=[],y=[];for(let e=m;e>=g;--e)f.push(n.get(e)),v.push(o.get(e)),S.push(a.get(e)),y.push(l.get(e));return this._updateData(f,d,c,u,h,p,_,r(y,v,S)),this._resultSent=!0,{type:\"non_series_data\",nonseries:!0,data:{data:this._data}}}_updateData(e,t,i,s,r,n,o,a){const l=e.length-1;this._data.baseLine.startPrice=a.intercept,this._data.baseLine.endPrice=a.intercept+a.slope*l;const c=a.intercept+(t?a.stdDev*i:a.upDev);this._data.upLine.startPrice=c,this._data.upLine.endPrice=c+a.slope*l;const h=a.intercept+(s?a.stdDev*r:-a.downDev);this._data.downLine.startPrice=h,this._data.downLine.endPrice=h+a.slope*l,this._data.pearsons=a.pearsons,this._data.startIndex__t=n,this._data.endIndex__t=o}}"
+    }
+  ],
+  "nativeDrawingMethods": [
+    {
+      "name": "_visibleBarsChanged",
+      "ownerDepth": 0,
+      "kind": "object",
+      "source": null
+    },
+    {
+      "name": "_ranges",
+      "ownerDepth": 0,
+      "kind": "object",
+      "source": null
+    },
+    {
+      "name": "_panes",
+      "ownerDepth": 0,
+      "kind": "object",
+      "source": null
+    },
+    {
+      "name": "_lineDataSources",
+      "ownerDepth": 0,
+      "kind": "object",
+      "source": null
+    },
+    {
+      "name": "_prevVisibleRange",
+      "ownerDepth": 0,
+      "kind": "object",
+      "source": null
+    },
+    {
+      "name": "setEntityVisibility",
+      "ownerDepth": 1,
+      "kind": "function",
+      "source": "setEntityVisibility(e,t){console.warn(\"`setEntityVisibility` is deprecated. Use shape/study API instead\");var i=this._chartWidget.model().model().dataSourceForId(e);if(i){var s=i.properties();s&&s.visible&&s.visible.setValue(t)}}"
+    },
+    {
+      "name": "getAllShapes",
+      "ownerDepth": 1,
+      "kind": "function",
+      "source": "getAllShapes(){return this._chartWidget.model().model().allLineTools().map(L).filter((function(e){return null!==e.name}))}"
+    },
+    {
+      "name": "removeEntity",
+      "ownerDepth": 1,
+      "kind": "function",
+      "source": "removeEntity(e,t){var i=this._chartWidget.model().chartModel().dataSourceForId(e);i?t&&t.disableUndo?new k(this._chartWidget.model().chartModel(),[i],\"\").redo():this._chartWidget.model().removeSource(i,!0,!0):console.warn(\"Can't find a source with id: \"+e)}"
+    },
+    {
+      "name": "removeEntityWithUndo",
+      "ownerDepth": 1,
+      "kind": "function",
+      "source": "removeEntityWithUndo(e){var t=this._chartWidget.model().chartModel().dataSourceForId(e);this._chartWidget.model().removeSource(t,!1)}"
+    },
+    {
+      "name": "drawOnAllCharts",
+      "ownerDepth": 1,
+      "kind": "function",
+      "source": "drawOnAllCharts(e){R.drawOnAllCharts.setValue(e)}"
+    },
+    {
+      "name": "getVisiblePriceRange",
+      "ownerDepth": 1,
+      "kind": "function",
+      "source": "getVisiblePriceRange(){return console.warn(\"`getVisiblePriceRange` is deprecated. Use Price Scale API instead\"),\nthis._chartWidget.model().mainSeries()?this._chartWidget.model().mainSeries().priceScale().priceRangeInPrice():null}"
+    },
+    {
+      "name": "createOrderLine",
+      "ownerDepth": 1,
+      "kind": "function",
+      "source": "createOrderLine(e){e=e||{};return this._createTradingPrimitive(\"LineToolOrder\",e.disableUndo)}"
+    },
+    {
+      "name": "createPositionLine",
+      "ownerDepth": 1,
+      "kind": "function",
+      "source": "createPositionLine(e){e=e||{};return this._createTradingPrimitive(\"LineToolPosition\",e.disableUndo)}"
+    },
+    {
+      "name": "createExecutionShape",
+      "ownerDepth": 1,
+      "kind": "function",
+      "source": "createExecutionShape(e){e=e||{};return this._createTradingPrimitive(\"LineToolExecution\",e.disableUndo)}"
+    },
+    {
+      "name": "createShape",
+      "ownerDepth": 1,
+      "kind": "function",
+      "source": "createShape(e,t){return this.createMultipointShape([e],t)}"
+    },
+    {
+      "name": "createMultipointShape",
+      "ownerDepth": 1,
+      "kind": "function",
+      "source": "createMultipointShape(e,t){const i=Object.assign({},this._getDefaultCreateMultipointShapeOptions(),t);var s=T[i.shape]||T.flag;var r=this._chartWidget.model().model(),n=r.mainSeries();if(!r.timeScale().isEmpty()){var o=r.dataSourceForId(i.ownerStudyId)||n,a=r.paneForSource(o),l=this._convertUserPointsToDataSource(e);if(s.onlySelectable)throw new Error('Cannot create \"'+i.shape+'\" shape');if(\"LineToolIcon\"===s.name){if(i.icon=i.icon||i.overrides&&i.overrides.icon,!i.hasOwnProperty(\"icon\"))throw new Error(\"icon must be specified in options\");i.overrides=i.overrides||{},i.overrides.icon=i.icon}var c,h,d=I(s.name,void 0,this._chartWidget.model().model());if(M(d,o),i.overrides)for(var u in i.overrides)d[u]?d[u].mergeAndFire(i.overrides[u]):x(s.name)&&-1!==[\"profitLevel\",\"stopLevel\"].indexOf(u)&&d.addProperty(u,i.overrides[u]);if(void 0!==d.text&&i.text&&d.text.setValue(i.text),d.hasChild(\"filled\")&&i.filled&&d.filled.setValue(!0),null!==(h=i.disableUndo?(c=this._chartWidget.model().model()).createLineTool(a,l[0],s.name,d,void 0,o):(c=this._chartWidget.model()).createLineTool({pane:a,point"
+    },
+    {
+      "name": "shapesGroupController",
+      "ownerDepth": 1,
+      "kind": "function",
+      "source": "shapesGroupController(){return new A(this._chartWidget.model().lineToolsGroupController(),this._chartWidget.model())}"
+    },
+    {
+      "name": "requestSelectBar",
+      "ownerDepth": 1,
+      "kind": "function",
+      "source": "requestSelectBar(){if(this.isSelectBarRequested())return Promise.reject(\"already requested\");var e=this;return new Promise((function(t,i){e._chartWidget.requestSelectPoint({pointType:\"time\"}).then((function(i){t(e._convertTimeToPublic(i.point.time))})).catch((function(){i(\"cancelled\")}))}))}"
+    },
+    {
+      "name": "cancelSelectBar",
+      "ownerDepth": 1,
+      "kind": "function",
+      "source": "cancelSelectBar(){this.isSelectBarRequested()&&this._chartWidget.cancelRequestSelectPoint()}"
+    },
+    {
+      "name": "getPriceToBarRatio",
+      "ownerDepth": 2,
+      "kind": "function",
+      "source": "getPriceToBarRatio(){return this._chartWidget.model().model().mainSeriesScaleRatioProperty().value()}"
+    },
+    {
+      "name": "setPriceToBarRatio",
+      "ownerDepth": 2,
+      "kind": "function",
+      "source": "setPriceToBarRatio(e,t){const i=this._chartWidget.model(),s=i.model(),r=s.mainSeriesScaleRatioProperty();(null==t?void 0:t.disableUndo)?new H.SetScaleRatioPropertiesCommand(r,e,null,s).redo():i.setScaleRatioProperty(r,e,ee)}"
+    },
+    {
+      "name": "isPriceToBarRatioLocked",
+      "ownerDepth": 2,
+      "kind": "function",
+      "source": "isPriceToBarRatioLocked(){return this._chartWidget.model().model().mainSeries().priceScale().isLockScale()}"
+    },
+    {
+      "name": "setPriceToBarRatioLocked",
+      "ownerDepth": 2,
+      "kind": "function",
+      "source": "setPriceToBarRatioLocked(e,t){const i=this._chartWidget.model(),s=i.model(),r=s.mainSeries().priceScale();(null==t?void 0:t.disableUndo)?new z.SetPriceScaleModeCommand({lockScale:e},r,null,s).redo():i.setPriceScaleMode({lockScale:e},r,te)}"
+    },
+    {
+      "name": "onVisibleRangeChanged",
+      "ownerDepth": 2,
+      "kind": "function",
+      "source": "onVisibleRangeChanged(){return this._makeSubscriptionFromDelegate(this._visibleBarsChanged)}"
+    },
+    {
+      "name": "setVisibleRange",
+      "ownerDepth": 2,
+      "kind": "function",
+      "source": "setVisibleRange(e,t){return new Promise((i=>{this._chartWidget.setVisibleTimeRange(e.from,e.to,t,i)}))}"
+    },
+    {
+      "name": "setResolution",
+      "ownerDepth": 2,
+      "kind": "function",
+      "source": "async setResolution(e,t){(0,v.isFunction)(t)&&(t={dataReady:t})\n;const{dataReady:i,doNotActivateChart:s}=t||{};let r=a.Interval.normalize(e);if(null!==r&&(r=this._chartWidget.model().mainSeries().getSupportedResolution(r)),null===r||r===this.resolution())return null==i||i(),!0;s||this._activateChart();const n=this._chartWidget.chartWidgetCollection().setResolution(r,void 0,this._chartWidget);return j(this._chartWidget.model().mainSeries(),(e=>{!e&&i&&i()})),n}"
+    },
+    {
+      "name": "getBarsMarksSources",
+      "ownerDepth": 2,
+      "kind": "function",
+      "source": "getBarsMarksSources(){return this._chartWidget.model().barsMarksSources()}"
+    },
+    {
+      "name": "getAllPanesHeight",
+      "ownerDepth": 2,
+      "kind": "function",
+      "source": "getAllPanesHeight(){const e=this._chartWidget.model().model().panes();if(this._chartWidget.isMaximizedPane()){let t=0,i=0;e.forEach((e=>{t+=e.height(),i+=e.stretchFactor()}));const s=i/t;return e.map((e=>Math.round(e.stretchFactor()/s*100)/100))}return e.map((e=>e.height()))}"
+    },
+    {
+      "name": "setAllPanesHeight",
+      "ownerDepth": 2,
+      "kind": "function",
+      "source": "setAllPanesHeight(e){const t=this._chartWidget.model().model(),i=t.panes();(0,s.assert)(i.length===e.length,\"There`s a mismatch between the number of heights you provided and the number of panes.\");const r=i.reduce(((e,t)=>e+t.stretchFactor()),0)/e.reduce(((e,t)=>e+t));e.forEach(((e,t)=>{const s=e*r;i[t].setStretchFactor(s)})),t.fullUpdate()}"
+    },
+    {
+      "name": "getTimeScaleLogicalRange",
+      "ownerDepth": 2,
+      "kind": "function",
+      "source": "getTimeScaleLogicalRange(){return this._chartWidget.model().timeScale().logicalRange()}"
+    },
+    {
+      "name": "createStudy",
+      "ownerDepth": 2,
+      "kind": "function",
+      "source": "createStudy(e,t,i,s,r,n){if(\"function\"==typeof r)return console.warn('\"createStudy\" does not take \"callback\" parameter anymore'),Promise.resolve(null);if(n=n||{},\"string\"!=typeof e)return this._createStudy(e);if(n.checkLimit&&!this._chartWidget.model().canCreateStudy())return(0,G.showTooManyStudiesNotice)(),Promise.resolve(null);e=e.toLowerCase();const o=n.disableUndo?this._chartWidget.model().model():this._chartWidget.model(),a=q.StudyMetaInfo.findStudyMetaInfoByDescription(o.studiesMetaData(),e),c=o.createStudyInserter({type:\"java\",studyId:a.id},[]);if(c.setForceOverlay(!!t),n.priceScale&&c.setPreferredPriceScale(function(e){switch(e){case\"no-scale\":return\"overlay\";case\"as-series\":return\"as-series\";case\"new-left\":return\"left\";case\"new-right\":return\"right\";default:throw new Error('The pricescale \"'+e+'\" is invalid, the only valid options are \"no-scale\", \"as-series\", \"new-left\" and \"new-right\".')}}(n.priceScale)),n.allowChangeCurrency&&c.setAllowChangeCurrency(!0),n.allowChangeUnit&&c.setAllowChangeUnit(!0),Array.isArray(s)){\nconsole.warn(\"Passing study inputs as an ordered array is "
+    },
+    {
+      "name": "getStudyById",
+      "ownerDepth": 2,
+      "kind": "function",
+      "source": "getStudyById(e){const t=this._chartWidget.model().model().getStudyById(e);if(null===t)throw new Error(\"There is no such study\");return this._getStudyApi(t)}"
+    },
+    {
+      "name": "getShapeById",
+      "ownerDepth": 2,
+      "kind": "function",
+      "source": "getShapeById(e){const t=this._chartWidget.model().model().getLineToolById(e);if(null===t)throw new Error(\"There is no such shape\");return this._getLineDataSourceApi(t)}"
+    },
+    {
+      "name": "removeAllShapes",
+      "ownerDepth": 2,
+      "kind": "function",
+      "source": "removeAllShapes(){this._chartWidget.removeAllDrawingTools()}"
+    },
+    {
+      "name": "createStudyTemplate",
+      "ownerDepth": 2,
+      "kind": "function",
+      "source": "createStudyTemplate(e){return this._chartWidget.model().model().studyTemplate(e.saveSymbol,e.saveInterval)}"
+    },
+    {
+      "name": "applyStudyTemplate",
+      "ownerDepth": 2,
+      "kind": "function",
+      "source": "applyStudyTemplate(e){this._chartWidget.model().applyStudyTemplate(e,\"\"+1e3*Math.random())}"
+    },
+    {
+      "name": "resolution",
+      "ownerDepth": 2,
+      "kind": "function",
+      "source": "resolution(){return this._chartWidget.model().mainSeries().interval()}"
+    },
+    {
+      "name": "getVisibleRange",
+      "ownerDepth": 2,
+      "kind": "function",
+      "source": "getVisibleRange(){const e={from:0,to:0},t=this._chartWidget.model().timeScale(),i=t.visibleBarsStrictRange();if(null===i)return e;const r=i.firstBar(),n=i.lastBar(),o=this._convertIndexToPublicTime(n);if(null===o)return e;const a=Math.max((0,s.ensureNotNull)(t.points().range().value()).firstIndex,r);return e.from=(0,s.ensureNotNull)(this._convertIndexToPublicTime(a)),e.to=o,e}"
+    },
+    {
+      "name": "getPanes",
+      "ownerDepth": 2,
+      "kind": "function",
+      "source": "getPanes(){return this._chartWidget.model().model().panes().map((e=>this._getPaneApi(e)))}"
+    },
+    {
+      "name": "isSelectBarRequested",
+      "ownerDepth": 2,
+      "kind": "function",
+      "source": "isSelectBarRequested(){return this._chartWidget.selectPointMode().value()!==$.SelectPointMode.None}"
+    },
+    {
+      "name": "barTimeToEndOfPeriod",
+      "ownerDepth": 2,
+      "kind": "function",
+      "source": "barTimeToEndOfPeriod(e){const t=this._prepareEndOfPeriodArgs();return(0,h.barTimeToEndOfPeriod)(t.barBuilder,e,t.intervalObj)}"
+    },
+    {
+      "name": "endOfPeriodToBarTime",
+      "ownerDepth": 2,
+      "kind": "function",
+      "source": "endOfPeriodToBarTime(e){const t=this._prepareEndOfPeriodArgs();return(0,h.endOfPeriodToBarTime)(t.barBuilder,e,t.intervalObj)}"
+    },
+    {
+      "name": "createAnchoredShape",
+      "ownerDepth": 2,
+      "kind": "function",
+      "source": "createAnchoredShape(e,t){const i=t.shape;if((0,\nK.isSupportedLineTool)(i)&&!0!==K.supportedLineTools[i].isAnchored)return console.warn(`${i} is not an anchored shape. It can be created using createShape or createMultipointShape`),null;const s=this._chartWidget.model().model(),r=s.mainSeries();if(s.timeScale().isEmpty())return null;const n=void 0!==t.ownerStudyId?s.dataSourceForId(t.ownerStudyId):r,o=this._convertPositionPercentToPricedPoint(e,n);return null===o?null:this.createMultipointShape([o],t)}"
+    },
+    {
+      "name": "setBarSpacing",
+      "ownerDepth": 2,
+      "kind": "function",
+      "source": "setBarSpacing(e){this._chartWidget.model().timeScale().setBarSpacing(e)}"
+    },
+    {
+      "name": "scrollChartByBar",
+      "ownerDepth": 2,
+      "kind": "function",
+      "source": "scrollChartByBar(e){this._chartWidget.model().scrollChartByBar(e)}"
+    },
+    {
+      "name": "addOverlayStudy",
+      "ownerDepth": 2,
+      "kind": "function",
+      "source": "addOverlayStudy(e,t,i){return this._chartWidget.addOverlayStudy(e,t,i)}"
+    },
+    {
+      "name": "lineToolsSynchronizer",
+      "ownerDepth": 2,
+      "kind": "function",
+      "source": "lineToolsSynchronizer(){return this._chartWidget.lineToolsSynchronizer()}"
+    },
+    {
+      "name": "cloneLineTool",
+      "ownerDepth": 2,
+      "kind": "function",
+      "source": "cloneLineTool(e){const t=this._chartWidget.model(),i=t.model().dataSourceForId(e);t.cloneLineTools([i],!1)}"
+    },
+    {
+      "name": "shareLineTools",
+      "ownerDepth": 2,
+      "kind": "function",
+      "source": "shareLineTools(e,t){const i=this._chartWidget.model(),s=e.map((e=>i.model().dataSourceForId(e)));i.shareLineTools(s,t)}"
+    },
+    {
+      "name": "ranges",
+      "ownerDepth": 2,
+      "kind": "function",
+      "source": "ranges(){throw new Error(\"not implemented\")}"
+    },
+    {
+      "name": "syncDateRange",
+      "ownerDepth": 2,
+      "kind": "function",
+      "source": "syncDateRange(e,t){this._chartWidget.hasModel()&&this._chartWidget.model().model().gotoTimeRange(e,t)}"
+    },
+    {
+      "name": "getLineToolsState",
+      "ownerDepth": 2,
+      "kind": "function",
+      "source": "getLineToolsState(e,t,i){this._canUseLineToolsSynchronizer(\"getLineToolsState\");const r=null==i||i,n=(0,s.ensureNotNull)(this.lineToolsSynchronizer()).getDTO(e,t,r);return delete n.clientId,n}"
+    },
+    {
+      "name": "applyLineToolsState",
+      "ownerDepth": 2,
+      "kind": "function",
+      "source": "async applyLineToolsState(e){this._canUseLineToolsSynchronizer(\"applyLineToolsState\"),await(0,s.ensureNotNull)(this.lineToolsSynchronizer()).applyDTO(e)}"
+    },
+    {
+      "name": "reloadLineToolsFromServer",
+      "ownerDepth": 2,
+      "kind": "function",
+      "source": "reloadLineToolsFromServer(){this._canUseLineToolsSynchronizer(\"reloadLineToolsFromServer\"),(0,s.ensureNotNull)(this.lineToolsSynchronizer()).reloadAllLineTools()}"
+    },
+    {
+      "name": "_createStudy",
+      "ownerDepth": 2,
+      "kind": "function",
+      "source": "_createStudy(e){return Promise.reject(\"Pine Script™ and java studies are not supported\")}"
+    },
+    {
+      "name": "_getDefaultCreateMultipointShapeOptions",
+      "ownerDepth": 2,
+      "kind": "function",
+      "source": "_getDefaultCreateMultipointShapeOptions(){return{filled:!0}}"
+    },
+    {
+      "name": "_convertPositionPercentToPricedPoint",
+      "ownerDepth": 2,
+      "kind": "function",
+      "source": "_convertPositionPercentToPricedPoint(e,t){const i=this._chartWidget.model().timeScale(),s=t.priceScale(),r=t.firstValue();if(null==r||!isFinite(r)||null===s)return null;const n=i.coordinateToIndex(e.x*i.width()),o=i.indexToTimePoint(n);if(null===o)return null;return{price:s.coordinateToPrice(e.y*s.height(),r),time:o}}"
+    },
+    {
+      "name": "_convertUserPointsToDataSource",
+      "ownerDepth": 2,
+      "kind": "function",
+      "source": "_convertUserPointsToDataSource(e){const t=this._chartWidget.model().model(),i=t.mainSeries(),r=t.timeScale().points(),n=i.data();if(t.timeScale().isEmpty())return null;const o=e.map((e=>e.time||0)),a=this._alignPoints(o),l=(e,t,o)=>{const a=r.closestIndexLeft(e)||0,l={index:a,price:NaN},c=(0,s.ensureNotNull)(r.valueAt(a)),h=(0,s.ensureNotNull)(r.range().value());if(e>c&&a===h.lastIndex){const t=(0,s.ensureNotNull)(i.syncModel()).distance(c,e);t.success&&(l.index=l.index+t.result)}else if(e<c&&a===h.firstIndex){const t=(0,s.ensureNotNull)(i.syncModel()).distance(e,c);t.success&&(l.index=l.index-t.result)}if((0,v.isNumber)(t))l.price=t;else{const e=[\"open\",\"high\",\"low\",\"close\"];let t=o?e.indexOf(o)+1:1;t<=0&&(t=1),l.price=(0,s.ensure)((0,s.ensureNotNull)(n.valueAt(a))[t])}return l},c=[];for(let t=0;t<e.length;t++){const i=e[t];c.push(l(a[t],i.price,i.channel))}return c}"
+    },
+    {
+      "name": "_getPaneApi",
+      "ownerDepth": 2,
+      "kind": "function",
+      "source": "_getPaneApi(e){let t=this._panes.get(e);return void 0===t&&(t=new w(e,this._chartWidget),this._panes.set(e,t)),t}"
+    },
+    {
+      "name": "_getStudyApi",
+      "ownerDepth": 2,
+      "kind": "function",
+      "source": "_getStudyApi(e){let t=this._studies.get(e);return void 0===t&&(t=new R(e,this._chartWidget),this._studies.set(e,t)),t}"
+    },
+    {
+      "name": "_getLineDataSourceApi",
+      "ownerDepth": 2,
+      "kind": "function",
+      "source": "_getLineDataSourceApi(e){let t=this._lineDataSources.get(e);return void 0===t&&(t=new N.LineDataSourceApi(e,this._chartWidget.model(),{apiPointsToDataSource:this._convertUserPointsToDataSource.bind(this),dataSourcePointsToPriced:e=>{const t=(0,s.ensureNotNull)(this._chartWidget.model().mainSeries().syncModel()),i=this._chartWidget.model().timeScale();return e.map((e=>{const s=i.normalizeBarIndex(e.index);return{price:e.price,time:this._convertTimeToPublic(t.projectTime(s.time_t,s.offset))}}))}}),this._lineDataSources.set(e,t)),t}"
+    },
+    {
+      "name": "_alignPoints",
+      "ownerDepth": 2,
+      "kind": "function",
+      "source": "_alignPoints(e){const t=this._chartWidget.model().model(),i=t.mainSeries(),s=i.interval(),r=i.symbolInfo();if(t.timeScale().isEmpty()||!a.Interval.isDWM(s)||null===r)return e;const n=(0,X.createDwmAligner)(s,r);return null===n?e:e.map((e=>n.timeToSessionStart(1e3*e)/1e3))}"
+    },
+    {
+      "name": "_onLogicalRangeChanged",
+      "ownerDepth": 2,
+      "kind": "function",
+      "source": "_onLogicalRangeChanged(){const e=this._chartWidget.model().mainSeries(),t=e.data().isEmpty();if(null!==this._chartWidget.model().timeScale().visibleBarsStrictRange()&&t)return void e.dataEvents().completed().subscribe(this,this._onLogicalRangeChanged,!0);const i=this.getVisibleRange();null!==this._prevVisibleRange&&(0,v.deepEquals)(this._prevVisibleRange,i)[0]||(this._prevVisibleRange=i,this._visibleBarsChanged.fire(i))}"
+    },
+    {
+      "name": "_canUseLineToolsSynchronizer",
+      "ownerDepth": 2,
+      "kind": "function",
+      "source": "_canUseLineToolsSynchronizer(e){if(!o.enabled(\"saveload_separate_drawings_storage\"))throw new Error(`${e} can only be used when 'saveload_separate_drawings_storage' featureset is enabled`)}"
+    },
+    {
+      "name": "hasOwnProperty",
+      "ownerDepth": 3,
+      "kind": "function",
+      "source": "function hasOwnProperty() { [native code] }"
+    }
+  ],
+  "chartModelMethods": [
+    {
+      "name": "_onRearrangePanes",
+      "ownerDepth": 0,
+      "kind": "object",
+      "source": null
+    },
+    {
+      "name": "_lineToolsGroupModel",
+      "ownerDepth": 0,
+      "kind": "object",
+      "source": null
+    },
+    {
+      "name": "_sourcesBeingMoved",
+      "ownerDepth": 0,
+      "kind": "object",
+      "source": null
+    },
+    {
+      "name": "_lineBeingEdited",
+      "ownerDepth": 0,
+      "kind": "object",
+      "source": null
+    },
+    {
+      "name": "_linePointBeingEdited",
+      "ownerDepth": 0,
+      "kind": "object",
+      "source": null
+    },
+    {
+      "name": "_linePointBeingChanged",
+      "ownerDepth": 0,
+      "kind": "object",
+      "source": null
+    },
+    {
+      "name": "_customSourceBeingMovedHitTestData",
+      "ownerDepth": 0,
+      "kind": "object",
+      "source": null
+    },
+    {
+      "name": "_customSourceBeingMoved",
+      "ownerDepth": 0,
+      "kind": "object",
+      "source": null
+    },
+    {
+      "name": "_dataSourceCollectionChanged",
+      "ownerDepth": 0,
+      "kind": "object",
+      "source": null
+    },
+    {
+      "name": "_sourceProperitesChanged",
+      "ownerDepth": 0,
+      "kind": "object",
+      "source": null
+    },
+    {
+      "name": "_sourceZOrderChanged",
+      "ownerDepth": 0,
+      "kind": "object",
+      "source": null
+    },
+    {
+      "name": "_symbolSourceResolved",
+      "ownerDepth": 0,
+      "kind": "object",
+      "source": null
+    },
+    {
+      "name": "_symbolSourceResolvingActive",
+      "ownerDepth": 0,
+      "kind": "object",
+      "source": null
+    },
+    {
+      "name": "_lineBeingCreated",
+      "ownerDepth": 0,
+      "kind": "object",
+      "source": null
+    },
+    {
+      "name": "_paneBeingCreatedLineOn",
+      "ownerDepth": 0,
+      "kind": "object",
+      "source": null
+    },
+    {
+      "name": "_lineCancelled",
+      "ownerDepth": 0,
+      "kind": "object",
+      "source": null
+    },
+    {
+      "name": "_phantomSourceContainer",
+      "ownerDepth": 0,
+      "kind": "object",
+      "source": null
+    },
+    {
+      "name": "_studyInserted",
+      "ownerDepth": 0,
+      "kind": "object",
+      "source": null
+    },
+    {
+      "name": "_panes",
+      "ownerDepth": 0,
+      "kind": "object",
+      "source": null
+    },
+    {
+      "name": "_strategySources",
+      "ownerDepth": 0,
+      "kind": "object",
+      "source": null
+    },
+    {
+      "name": "_strategySourcesChange",
+      "ownerDepth": 0,
+      "kind": "object",
+      "source": null
+    },
+    {
+      "name": "_activeStrategySource",
+      "ownerDepth": 0,
+      "kind": "object",
+      "source": null
+    },
+    {
+      "name": "_paneCollapsingAvailable",
+      "ownerDepth": 0,
+      "kind": "object",
+      "source": null
+    },
+    {
+      "name": "_panesCollectionChanged",
+      "ownerDepth": 0,
+      "kind": "object",
+      "source": null
+    },
+    {
+      "name": "_lollipopSourcesWatcher",
+      "ownerDepth": 0,
+      "kind": "object",
+      "source": null
+    },
+    {
+      "name": "_hoveredSource",
+      "ownerDepth": 0,
+      "kind": "object",
+      "source": null
+    },
+    {
+      "name": "_hoveredSourceChanged",
+      "ownerDepth": 0,
+      "kind": "object",
+      "source": null
+    },
+    {
+      "name": "_topmostCustomSources",
+      "ownerDepth": 0,
+      "kind": "object",
+      "source": null
+    },
+    {
+      "name": "_fgCustomSources",
+      "ownerDepth": 0,
+      "kind": "object",
+      "source": null
+    },
+    {
+      "name": "_bgCustomSources",
+      "ownerDepth": 0,
+      "kind": "object",
+      "source": null
+    },
+    {
+      "name": "_allCustomSources",
+      "ownerDepth": 0,
+      "kind": "object",
+      "source": null
+    },
+    {
+      "name": "_customSourcesMap",
+      "ownerDepth": 0,
+      "kind": "object",
+      "source": null
+    },
+    {
+      "name": "_multiPaneSources",
+      "ownerDepth": 0,
+      "kind": "object",
+      "source": null
+    },
+    {
+      "name": "_availablePriceSources",
+      "ownerDepth": 0,
+      "kind": "object",
+      "source": null
+    },
+    {
+      "name": "_availablePriceSourcesBySymbol",
+      "ownerDepth": 0,
+      "kind": "object",
+      "source": null
+    },
+    {
+      "name": "_gradientColorsCache",
+      "ownerDepth": 0,
+      "kind": "object",
+      "source": null
+    },
+    {
+      "name": "_resetScalesAvailable",
+      "ownerDepth": 0,
+      "kind": "object",
+      "source": null
+    },
+    {
+      "name": "_recalcColorStudiesParams",
+      "ownerDepth": 0,
+      "kind": "object",
+      "source": null
+    },
+    {
+      "name": "_recalcVisibleRangeStudiesImplDebounced",
+      "ownerDepth": 0,
+      "kind": "function",
+      "source": "function j(){var e=o(),n=y(e);if(u=arguments,s=this,_=e,n){if(void 0===l)return m(_);if(b)return clearTimeout(l),l=setTimeout(w,t),g(_)}return void 0===l&&(l=setTimeout(w,t)),f}"
+    },
+    {
+      "name": "_recalcColorStudiesImplDebounced",
+      "ownerDepth": 0,
+      "kind": "function",
+      "source": "function j(){var e=o(),n=y(e);if(u=arguments,s=this,_=e,n){if(void 0===l)return m(_);if(b)return clearTimeout(l),l=setTimeout(w,t),g(_)}return void 0===l&&(l=setTimeout(w,t)),f}"
+    },
+    {
+      "name": "_resetScales",
+      "ownerDepth": 0,
+      "kind": "object",
+      "source": null
+    },
+    {
+      "name": "_selectedSourceChanged",
+      "ownerDepth": 0,
+      "kind": "object",
+      "source": null
+    },
+    {
+      "name": "_symbolSourceCollectionChanged",
+      "ownerDepth": 0,
+      "kind": "object",
+      "source": null
+    },
+    {
+      "name": "_gridSource",
+      "ownerDepth": 0,
+      "kind": "object",
+      "source": null
+    },
+    {
+      "name": "_visibleRangeStudiesInputs",
+      "ownerDepth": 0,
+      "kind": "object",
+      "source": null
+    },
+    {
+      "name": "_lastAppliedGotoTimeRange",
+      "ownerDepth": 0,
+      "kind": "object",
+      "source": null
+    },
+    {
+      "name": "_lastGotoTimeRange",
+      "ownerDepth": 0,
+      "kind": "object",
+      "source": null
+    },
+    {
+      "name": "_lollipopSourcesWatcherLoader",
+      "ownerDepth": 0,
+      "kind": "object",
+      "source": null
+    },
+    {
+      "name": "_removeSourceFromSelection",
+      "ownerDepth": 0,
+      "kind": "function",
+      "source": "e=>{this._selection.remove(e)}"
+    },
+    {
+      "name": "_addSourceToSelection",
+      "ownerDepth": 0,
+      "kind": "function",
+      "source": "(e,t)=>{const i=this._selection.isSelected(e);i&&this._lastSelectedHittestData===t||e&&!e.isSelectionEnabled()||(this._lastSelectedHittestData=t||null,i||this._selection.add(e))}"
+    },
+    {
+      "name": "_recalcPaneCollapsingAvailable",
+      "ownerDepth": 0,
+      "kind": "function",
+      "source": "e=>{let t=this._panes.filter((e=>!e.collapsed().value())).length;0===t&&e&&this._panes.length>0&&(this._panes[0].collapsed().setValue(!1),t=1),this._paneCollapsingAvailable.setValue(t>1)}"
+    },
+    {
+      "name": "_updateResetScalesAvailableValue",
+      "ownerDepth": 0,
+      "kind": "function",
+      "source": "()=>{const e=this._timeScale.resetAvailable().value()||this._panes.some((e=>e.resetPriceScalesAvailable().value()));this._resetScalesAvailable.setValue(e)}"
+    },
+    {
+      "name": "_backgroundColor",
+      "ownerDepth": 0,
+      "kind": "object",
+      "source": null
+    },
+    {
+      "name": "_backgroundTopColor",
+      "ownerDepth": 0,
+      "kind": "object",
+      "source": null
+    },
+    {
+      "name": "_backgroundCounterColor",
+      "ownerDepth": 0,
+      "kind": "object",
+      "source": null
+    },
+    {
+      "name": "_studyVersioning",
+      "ownerDepth": 0,
+      "kind": "object",
+      "source": null
+    },
+    {
+      "name": "m_crossHairSource",
+      "ownerDepth": 0,
+      "kind": "object",
+      "source": null
+    },
+    {
+      "name": "_timeScale",
+      "ownerDepth": 0,
+      "kind": "object",
+      "source": null
+    },
+    {
+      "name": "_boundUpdateStudiesMaxOffset",
+      "ownerDepth": 0,
+      "kind": "function",
+      "source": "function () { [native code] }"
+    },
+    {
+      "name": "_barsMarksSources",
+      "ownerDepth": 0,
+      "kind": "object",
+      "source": null
+    },
+    {
+      "name": "_mainSeriesScaleRatioProperty",
+      "ownerDepth": 0,
+      "kind": "object",
+      "source": null
+    },
+    {
+      "name": "_watermarkSource",
+      "ownerDepth": 0,
+      "kind": "object",
+      "source": null
+    },
+    {
+      "name": "_studyShiftColorStartOffset",
+      "ownerDepth": 0,
+      "kind": "undefined",
+      "source": null
+    },
+    {
+      "name": "_studyColorRotatorFactory",
+      "ownerDepth": 0,
+      "kind": "object",
+      "source": null
+    },
+    {
+      "name": "_lineToolsSynchronizer",
+      "ownerDepth": 0,
+      "kind": "object",
+      "source": null
+    },
+    {
+      "name": "updatePane",
+      "ownerDepth": 1,
+      "kind": "function",
+      "source": "updatePane(e){var t=this._paneInvalidationMask(e);this.invalidate(t)}"
+    },
+    {
+      "name": "studyVersioning",
+      "ownerDepth": 1,
+      "kind": "function",
+      "source": "studyVersioning(){return this._studyVersioning}"
+    },
+    {
+      "name": "timeScale",
+      "ownerDepth": 1,
+      "kind": "function",
+      "source": "timeScale(){return this._timeScale}"
+    },
+    {
+      "name": "watermarkSource",
+      "ownerDepth": 1,
+      "kind": "function",
+      "source": "watermarkSource(){return this._watermarkSource}"
+    },
+    {
+      "name": "priceScaleSlotsCount",
+      "ownerDepth": 1,
+      "kind": "function",
+      "source": "priceScaleSlotsCount(){var e=0,t=0;this._panes.forEach((function(i){e=Math.max(i.leftPriceScales().length,e),t=Math.max(i.rightPriceScales().length,t)}));var i=e+t;if(a.any()){var s=this.paneForSource(this.mainSeries()),r=s.priceScalePosition(this.mainSeries().priceScale()),n=\"right\"===r;return\"overlay\"===r&&(n=s.rightPriceScales().length>0),n?{left:0,right:1,totallySlots:i}:{left:1,right:0,totallySlots:i}}return{left:e,right:t,totallySlots:e+t}}"
+    }
+  ],
+  "widgetMethods": [
+    {
+      "name": "_createLineCommand",
+      "ownerDepth": 0,
+      "kind": "object",
+      "source": null
+    },
+    {
+      "name": "_currentSourceMoveCommand",
+      "ownerDepth": 0,
+      "kind": "object",
+      "source": null
+    },
+    {
+      "name": "_currentLineChangeCommand",
+      "ownerDepth": 0,
+      "kind": "object",
+      "source": null
+    },
+    {
+      "name": "_lineToolsGroupController",
+      "ownerDepth": 0,
+      "kind": "object",
+      "source": null
+    },
+    {
+      "name": "createUndoCheckpoint",
+      "ownerDepth": 0,
+      "kind": "function",
+      "source": "function () { [native code] }"
+    },
+    {
+      "name": "createPane",
+      "ownerDepth": 1,
+      "kind": "function",
+      "source": "createPane(e){return this.m_model.createPane(e)}"
+    },
+    {
+      "name": "studyVersioning",
+      "ownerDepth": 1,
+      "kind": "function",
+      "source": "studyVersioning(){return this.m_model.studyVersioning()}"
+    },
+    {
+      "name": "setPaneHeight",
+      "ownerDepth": 1,
+      "kind": "function",
+      "source": "setPaneHeight(e,t){this.m_model.setPaneHeight(e,t)}"
+    },
+    {
+      "name": "gridSource",
+      "ownerDepth": 1,
+      "kind": "function",
+      "source": "gridSource(){return this.m_model.gridSource()}"
+    },
+    {
+      "name": "watermarkSource",
+      "ownerDepth": 1,
+      "kind": "function",
+      "source": "watermarkSource(){return this.m_model.watermarkSource()}"
+    },
+    {
+      "name": "publishedChartsTimelineSource",
+      "ownerDepth": 1,
+      "kind": "function",
+      "source": "publishedChartsTimelineSource(){return this.m_model.publishedChartsTimelineSource()}"
+    },
+    {
+      "name": "crossHairSource",
+      "ownerDepth": 1,
+      "kind": "function",
+      "source": "crossHairSource(){return this.m_model.crossHairSource()}"
+    },
+    {
+      "name": "setHoveredSource",
+      "ownerDepth": 1,
+      "kind": "function",
+      "source": "setHoveredSource(e,t){this.m_model.setHoveredSource(e,t)}"
+    },
+    {
+      "name": "onSelectedSourceChanged",
+      "ownerDepth": 1,
+      "kind": "function",
+      "source": "onSelectedSourceChanged(){return this.m_model.onSelectedSourceChanged()}"
+    },
+    {
+      "name": "activeStrategySource",
+      "ownerDepth": 1,
+      "kind": "function",
+      "source": "activeStrategySource(){return this.m_model.activeStrategySource()}"
+    },
+    {
+      "name": "lineBeingCreated",
+      "ownerDepth": 1,
+      "kind": "function",
+      "source": "lineBeingCreated(){return this.m_model.lineBeingCreated()}"
+    },
+    {
+      "name": "paneBeingCreatedLineOn",
+      "ownerDepth": 1,
+      "kind": "function",
+      "source": "paneBeingCreatedLineOn(){return this.m_model.paneBeingCreatedLineOn()}"
+    },
+    {
+      "name": "cancelCreatingLine",
+      "ownerDepth": 1,
+      "kind": "function",
+      "source": "cancelCreatingLine(){this.m_model.cancelCreatingLine()}"
+    },
+    {
+      "name": "lineCancelled",
+      "ownerDepth": 1,
+      "kind": "function",
+      "source": "lineCancelled(){return this.m_model.lineCancelled()}"
+    },
+    {
+      "name": "lineBeingEdited",
+      "ownerDepth": 1,
+      "kind": "function",
+      "source": "lineBeingEdited(){return this.m_model.lineBeingEdited()}"
+    },
+    {
+      "name": "sourcesBeingMoved",
+      "ownerDepth": 1,
+      "kind": "function",
+      "source": "sourcesBeingMoved(){return this.m_model.sourcesBeingMoved()}"
+    },
+    {
+      "name": "dataSources",
+      "ownerDepth": 1,
+      "kind": "function",
+      "source": "dataSources(){return this.m_model.dataSources()}"
+    },
+    {
+      "name": "orderedDataSources",
+      "ownerDepth": 1,
+      "kind": "function",
+      "source": "orderedDataSources(e){return this.m_model.orderedDataSources(e)}"
+    },
+    {
+      "name": "dataSourceForId",
+      "ownerDepth": 1,
+      "kind": "function",
+      "source": "dataSourceForId(e){return this.m_model.dataSourceForId(e)}"
+    },
+    {
+      "name": "applyLineToolTemplate",
+      "ownerDepth": 1,
+      "kind": "function",
+      "source": "applyLineToolTemplate(e,t,i){this.beginUndoMacro(i,!1),this.saveLineToolState(e,i);var s=new l(e,t,i);this.pushUndoCommand(s),this.saveLineToolState(e,i),this.endUndoMacro(),this.model().updateSource(e)}"
+    },
+    {
+      "name": "removePane",
+      "ownerDepth": 1,
+      "kind": "function",
+      "source": "removePane(e){var t=this.m_model.panes()[e].dataSources().slice();this.removeSources(t,!1,x)}"
+    },
+    {
+      "name": "lineToolsGroupController",
+      "ownerDepth": 2,
+      "kind": "function",
+      "source": "lineToolsGroupController(){return this._lineToolsGroupController}"
+    },
+    {
+      "name": "createLineTool",
+      "ownerDepth": 2,
+      "kind": "function",
+      "source": "createLineTool({pane:e,point:t,linetool:i,properties:s,linkKey:r,ownerSource:n,disableSynchronization:a,sharingMode:l=es(),id:c}){if((\"LineToolRegressionTrend\"===i||\"LineToolAnchoredVWAP\"===i)&&!this.canCreateStudy())return(0,h.showTooManyStudiesNotice)(),null;const d=Hi.format({tool:new x.TranslatedString(i,St.lineToolsLocalizedNames[i])});this.beginUndoMacro(d,Xi);const u=!a;this._createLineCommand=new z.CreateLineToolUndoCommand({model:this._model(),pane:e,lineTool:i,ownerSource:n||(0,o.ensureNotNull)(e.mainDataSource()),drawOnAllChartsMode:l,id:c});const p=this._createLineCommand.startCreatingLine(t,s,r||null,l),_=(0,o.ensureNotNull)(this._createLineCommand.line());let m=null;if(p&&(u&&this.finishLineTool(_),\nthis._pushUndoCommand(this._createLineCommand),this._createLineCommand=null,m={points:_.normalizedPoints(),interval:this.mainSeries().interval()}),u&&void 0===r&&(0,De.drawOnAllCharts)().value()&&_.isSynchronizable()){const e=(0,o.ensureNotNull)(this.model().externalTimeStamp(t.index)),s={point:{price:t.price,timeStamp:e},linetool:i,properties:_.properties(),symbol:this.main"
+    },
+    {
+      "name": "continueCreatingLine",
+      "ownerDepth": 2,
+      "kind": "function",
+      "source": "continueCreatingLine(e,t,i,s){const r=(0,o.ensureNotNull)(this._createLineCommand);this.beginUndoMacro(r.text(),Xi);const n=(0,o.ensureNotNull)(this._model().lineBeingCreated()),a=r.continueCreatingLine(e,t,i,s);let l=null;if(a&&(this.finishLineTool(n),this._pushUndoCommand(r),this._createLineCommand=null,l={points:n.normalizedPoints(),interval:this.mainSeries().interval()}),r.drawOnAllCharts()&&n.isSynchronizable()){const i=(0,o.ensureNotNull)(this._model().externalTimeStamp(e.index));(0,De.continueLineTool)({point:{price:e.price,timeStamp:i},envState:t,finalState:l,model:this._model()})}return this.endUndoMacro(),a}"
+    },
+    {
+      "name": "continueExternalLine",
+      "ownerDepth": 2,
+      "kind": "function",
+      "source": "continueExternalLine(e,t,i){const s=(0,o.ensureNotNull)(this._createLineCommand),r=s.continueCreatingLine(e,t,i);return r&&(this._pushUndoCommand(s),this._createLineCommand=null),r}"
+    },
+    {
+      "name": "finishLineTool",
+      "ownerDepth": 2,
+      "kind": "function",
+      "source": "finishLineTool(e){this._model().finishLineTool(e)}"
+    },
+    {
+      "name": "pasteImageAsLineTool",
+      "ownerDepth": 2,
+      "kind": "function",
+      "source": "pasteImageAsLineTool(e,t,i,s){return null}"
+    },
+    {
+      "name": "unlinkLines",
+      "ownerDepth": 2,
+      "kind": "function",
+      "source": "unlinkLines(e){const t=this.model();this.beginUndoMacro(yi,Xi);for(const i of e)null!==i.linkKey().value()&&(0,De.removeLineTool)({withUndo:!0,model:this.model(),symbol:i.symbol(),linkKey:(0,o.ensureNotNull)(i.linkKey().value()),sourceTitle:(0,W.getTranslatedStringForSource)(H.TitleDisplayTarget.StatusLine,i),lineToolState:i.state(!1),unlink:!0}),this._pushUndoCommand(new Mt(t,i));this.endUndoMacro()}"
+    },
+    {
+      "name": "hoveredSource",
+      "ownerDepth": 2,
+      "kind": "function",
+      "source": "hoveredSource(){return this.m_model.hoveredSource()}"
+    },
+    {
+      "name": "barsMarksSources",
+      "ownerDepth": 2,
+      "kind": "function",
+      "source": "barsMarksSources(){return this.m_model.barsMarksSources()}"
+    },
+    {
+      "name": "removeAllDrawingTools",
+      "ownerDepth": 2,
+      "kind": "function",
+      "source": "removeAllDrawingTools(){this.beginUndoMacro($i,!1),this._removeAllDrawingToolsImpl(),this.endUndoMacro()}"
+    },
+    {
+      "name": "removeAllStudiesAndDrawingTools",
+      "ownerDepth": 2,
+      "kind": "function",
+      "source": "removeAllStudiesAndDrawingTools(){this.beginUndoMacro(Ki),this._removeAllDrawingToolsImpl(),this._removeAllStudiesImpl(),this.endUndoMacro()}"
+    },
+    {
+      "name": "removeAllStudies",
+      "ownerDepth": 2,
+      "kind": "function",
+      "source": "removeAllStudies(){this.beginUndoMacro(qi),\nthis._removeAllStudiesImpl(),this.endUndoMacro()}"
+    },
+    {
+      "name": "startMovingSources",
+      "ownerDepth": 2,
+      "kind": "function",
+      "source": "startMovingSources(e,t,i,s){e.filter((e=>e.doesMovingAffectsUndo())).length&&(this._currentSourceMoveCommand=new R(this.model(),e,Ci,!1),e.every(f.isLineTool)&&this._currentSourceMoveCommand.setCustomFlag(\"doesnt_affect_save\",Xi)),this.model().startMovingSources(e,t,i,new Map,s)}"
+    },
+    {
+      "name": "moveSources",
+      "ownerDepth": 2,
+      "kind": "function",
+      "source": "moveSources(e,t){this.model().moveSources(e,new Map,t)}"
+    },
+    {
+      "name": "endMovingSource",
+      "ownerDepth": 2,
+      "kind": "function",
+      "source": "endMovingSource(e,t){this.model().endMovingSources(e,void 0,t),null!==this._currentSourceMoveCommand&&(this._currentSourceMoveCommand.saveNewState(),this._pushUndoCommand(this._currentSourceMoveCommand)),this._currentSourceMoveCommand=null}"
+    },
+    {
+      "name": "startChangingLinetool",
+      "ownerDepth": 2,
+      "kind": "function",
+      "source": "startChangingLinetool(e,t,i,s,r){this._currentLineChangeCommand=new R(this.model(),[e],Ui.format({pointIndex:i}),!1),this._currentLineChangeCommand.setCustomFlag(\"doesnt_affect_save\",Xi),this.model().startChangingLinetool(e,t,i,s,r)}"
+    },
+    {
+      "name": "changeLinePoint",
+      "ownerDepth": 2,
+      "kind": "function",
+      "source": "changeLinePoint(e,t){this.model().changeLinePoint(e,t)}"
+    },
+    {
+      "name": "endChangingLinetool",
+      "ownerDepth": 2,
+      "kind": "function",
+      "source": "endChangingLinetool(e){this.model().endChangingLinetool(e),null!==this._currentLineChangeCommand&&(this._currentLineChangeCommand.saveNewState(),this._pushUndoCommand(this._currentLineChangeCommand)),this._currentLineChangeCommand=null}"
+    },
+    {
+      "name": "restorePropertiesForSource",
+      "ownerDepth": 2,
+      "kind": "function",
+      "source": "restorePropertiesForSource(e){(0,f.isLineTool)(e)?this._restoreLineToolFactoryDefaults(e):this._restoreStudyFactoryDefaults(e)}"
+    },
+    {
+      "name": "restoreLineToolsFactoryDefaults",
+      "ownerDepth": 2,
+      "kind": "function",
+      "source": "restoreLineToolsFactoryDefaults(e){1===e.length?this._restoreLineToolFactoryDefaults(e[0]):(this.beginUndoMacro(xi),e.forEach((e=>this._restoreLineToolFactoryDefaults(e))),this.endUndoMacro())}"
+    },
+    {
+      "name": "applyStudyTemplate",
+      "ownerDepth": 2,
+      "kind": "function",
+      "source": "applyStudyTemplate(e,t){const i=new Ye(this._model(),e,t);this._pushUndoCommand(i),(0,hi.emit)(\"load_study_template\")}"
+    },
+    {
+      "name": "createStudyInserter",
+      "ownerDepth": 2,
+      "kind": "function",
+      "source": "createStudyInserter(e,t,i={}){const{stubTitle:s,isOverlay:r}=i,n={createStudy:(e,t,i,s,r,n,o,a,l,c,h)=>this.checkIfFeatureAvailable(e,n)?((0,S.trackEvent)(\"studies\",\"Study_\"+e.id),\"Compare@tv-basicstudies\"===e.id&&(0,S.trackEvent)(\"compare\",\"symbol:\"+t.symbol),this._insertStudy(e,t,s,r,n,o,a,l,c,null,h)):(Zi.logNormal(\"Cannot insert study \"+e.id),null)};void 0!==s&&(n.createStub=()=>this.m_model.insertStudyStub(s,r).id(),n.removeStub=e=>this.m_model.removeStudyStub(e));const o=new ci.StudyInserter(e,n);return o.setParentSources(t),o}"
+    },
+    {
+      "name": "panes",
+      "ownerDepth": 2,
+      "kind": "function",
+      "source": "panes(){return this.m_model.panes()}"
+    },
+    {
+      "name": "cloneLineTools",
+      "ownerDepth": 2,
+      "kind": "function",
+      "source": "cloneLineTools(e,t){for(let t=0;t<Math.min(5,e.length);++t)(0,me.trackDrawingCloned)(e[t]);this.beginUndoMacro(Mi,Xi);const i=new E(this._model(),e,t,Mi);this._pushUndoCommand(i);const s=i.newIds().map((e=>(0,o.ensureNotNull)(this.model().dataSourceForId(e)))).filter((e=>0!==e.sharingMode().value()));return s.length&&this._model().copyToOtherCharts(s,!0),this.endUndoMacro(),this.emitEvent(\"cloneLineTools\"),i.newIds()}"
+    },
+    {
+      "name": "removeSource",
+      "ownerDepth": 2,
+      "kind": "function",
+      "source": "removeSource(e,t,i){this.lineBeingCreated()!==e?this.removeSources([e],t,fi.format({title:(0,W.getTranslatedStringForSource)(H.TitleDisplayTarget.StatusLine,e)}),i):this.cancelCreatingLine()}"
+    },
+    {
+      "name": "removeSelectedSources",
+      "ownerDepth": 2,
+      "kind": "function",
+      "source": "removeSelectedSources(){const e=this._model().selection().dataSources();if(!e.length)return;const t=(e.length>1?vi:fi).format({title:(0,W.getTranslatedStringForSource)(H.TitleDisplayTarget.StatusLine,e[0])});this.removeSources(e,!1,t)}"
+    },
+    {
+      "name": "removeSources",
+      "ownerDepth": 2,
+      "kind": "function",
+      "source": "removeSources(e,t,i,s){s||(e=e.filter((e=>e.isUserDeletable())));const r=this._model(),n=r.lineToolsGroupModel(),a=e.every(f.isLineTool)&&Xi;this.beginUndoMacro(i,a),r.selectionMacro((s=>{const a=new Map;e.forEach((e=>{if((0,f.isLineTool)(e)){const t=n.groupForLineTool(e);if(null!==t){const i=a.get(t)||[];i.push(e),a.set(t,i)}\nnull!==e.linkKey().value()&&(0,De.removeLineTool)({withUndo:!0,model:this.model(),linkKey:(0,o.ensureNotNull)(e.linkKey().value()),symbol:this.model().mainSeries().symbol(),lineToolState:e.state(!1),sourceTitle:(0,W.getTranslatedStringForSource)(H.TitleDisplayTarget.StatusLine,e)})}}));const l=new B.RemoveSourcesUndoCommand(r,e,i),c=l.removedIds();this._pushUndoCommand(l),!t&&c.length>0&&(1===c.length?this.emitEvent(\"removeSource\",[c[0]]):this.emitEvent(\"removeSources\",[c]))}),!0),this.endUndoMacro()}"
+    },
+    {
+      "name": "removeUnloadedLineTool",
+      "ownerDepth": 2,
+      "kind": "function",
+      "source": "removeUnloadedLineTool({sourceTitle:e,linkKey:t,symbol:i,state:s,withUndo:r,unlink:n}){}"
+    },
+    {
+      "name": "scrollToLineTool",
+      "ownerDepth": 2,
+      "kind": "function",
+      "source": "async scrollToLineTool(e){const t=this.timeScale().logicalRange();if(null===t)return;const i=this.timeScale().barSpacing();let s=t.left();const r=e.points().map((e=>e.index)),n=this.timeScale().points().range().value();if(null===n)return;let a=n.firstIndex;const l=n.lastIndex,h=t.length()/2;if(0===r.length||r.some((e=>t.contains(e))))return;const d=()=>{const t=e.points().map((e=>e.index)),i=t.filter((e=>e<=l)).reduce(((e,t)=>null===e?t:Math.max(e,t)),null);return null!==i?i:t.reduce(((e,t)=>Math.min(e,t)))};let u,p=d();if(a-h>p){const t=e.points().map((e=>e.time)).filter(M.notUndefined).map((e=>e.valueOf()));if(0===t.length)return;const i=t.reduce(((e,t)=>Math.min(e,t)),t[0]);await this.model().gotoTime(i),p=d();const r=(0,o.ensureNotNull)(this.timeScale().logicalRange());if(r.contains(p))return;s=r.left(),a=(0,o.ensureNotNull)(this.timeScale().points().range().value()).firstIndex}a-h>p?(u=(s-a+h)*i,this.mainSeries().setGotoDateResult({timestamp:(0,o.ensureNotNull)(this.timeScale().points().valueAt(a)),eod:!0})):u=(s-p+1+h)*i,this.startScrollTime(0),(0,v.doAnimate)({onStep:(e,t)=>th"
+    }
+  ],
+  "errors": []
+}
