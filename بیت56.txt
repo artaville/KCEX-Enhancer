@@ -1,0 +1,2672 @@
+{
+  "reportName": "BITUNIX_CUSTOM_INDICATOR_REGISTRATION_AUDIT",
+  "version": "2.0",
+  "generatedAt": "2026-11-18T14:12:14.222Z",
+  "page": {
+    "url": "https://www.bitunix.com/contract-trade/XAUTUSDT",
+    "symbol": "XAUTUSDT",
+    "resolution": "5S",
+    "iframe": {
+      "index": 0,
+      "id": "tradingview_b6c11",
+      "title": "Financial Chart",
+      "url": "blob:https://www.bitunix.com/c9bb7c28-07d1-4953-93c9-c0662f8acd62",
+      "origin": "https://www.bitunix.com"
+    }
+  },
+  "safety": {
+    "readOnly": true,
+    "createStudyCalled": false,
+    "insertStudyCalled": false,
+    "removeStudyCalled": false,
+    "removeAllStudiesCalled": false,
+    "chartResetCalled": false,
+    "resolutionChanged": false,
+    "datafeedMethodsCalled": false,
+    "ordersSent": 0,
+    "note": "Only existing object properties, method names, method source text, and existing Study records were inspected. No chart mutation or Datafeed methods were called."
+  },
+  "chart": {
+    "activeChart": {
+      "path": "activeChart",
+      "available": true,
+      "constructor": "O",
+      "ownKeys": [
+        "_visibleBarsChanged",
+        "_crosshairMoved",
+        "_dataSourceHovered",
+        "_ranges",
+        "_panes",
+        "_studies",
+        "_lineDataSources",
+        "_selectionApi",
+        "_prevVisibleRange",
+        "_prevHoveredSourceId",
+        "_chartWidget",
+        "_activateChart",
+        "_timezoneApi",
+        "_widgetLinkingGroupIndex",
+        "_apiLinkingGroupIndex"
+      ],
+      "methods": [
+        "_activateChart",
+        "_alignPoints",
+        "_canUseLineToolsSynchronizer",
+        "_convertIndexToPublicTime",
+        "_convertPositionPercentToPricedPoint",
+        "_convertTimeFromPublic",
+        "_convertTimeToPublic",
+        "_convertUserPointsToDataSource",
+        "_createStudy",
+        "_createTradingPrimitive",
+        "_destroy",
+        "_getDefaultCreateMultipointShapeOptions",
+        "_getLineDataSourceApi",
+        "_getPaneApi",
+        "_getStudyApi",
+        "_getTimeConverter",
+        "_makeSubscriptionFromDelegate",
+        "_onCrosshairMoved",
+        "_onHoveredSourceChanged",
+        "_onLogicalRangeChanged",
+        "_prepareEndOfPeriodArgs",
+        "addOverlayStudy",
+        "applyLineToolsState",
+        "applyOverrides",
+        "applyStudyTemplate",
+        "availableZOrderOperations",
+        "barTimeToEndOfPeriod",
+        "bringForward",
+        "bringToFront",
+        "canZoomOut",
+        "cancelSelectBar",
+        "chartModel",
+        "chartPainted",
+        "chartType",
+        "clearMarks",
+        "cloneLineTool",
+        "constructor",
+        "createAnchoredShape",
+        "createExecutionShape",
+        "createMultipointShape",
+        "createOrderLine",
+        "createPositionLine",
+        "createShape",
+        "createStudy",
+        "createStudyTemplate",
+        "crossHairMoved",
+        "dataReady",
+        "defaultScrollPosition",
+        "disableAllUtilitySources",
+        "drawOnAllCharts",
+        "endOfPeriodToBarTime",
+        "executeActionById",
+        "exportData",
+        "getAllPanesHeight",
+        "getAllShapes",
+        "getAllStudies",
+        "getBarsMarksSources",
+        "getCheckableActionState",
+        "getLineToolsState",
+        "getPanes",
+        "getPriceToBarRatio",
+        "getSeries",
+        "getShapeById",
+        "getStudyById",
+        "getTimeScale",
+        "getTimeScaleLogicalRange",
+        "getTimezone",
+        "getTimezoneApi",
+        "getVisiblePriceRange",
+        "getVisibleRange",
+        "hasModel",
+        "id",
+        "insertAfter",
+        "insertBefore",
+        "isMaximized",
+        "isPriceToBarRatioLocked",
+        "isSelectBarRequested",
+        "lineToolsSynchronizer",
+        "linkingGroupIndex",
+        "loadChartTemplate",
+        "loadingScreenActive",
+        "marketStatus",
+        "maximizeChart",
+        "mergeAllScales",
+        "onChartTypeChanged",
+        "onDataLoaded",
+        "onHoveredSourceChanged",
+        "onIntervalChanged",
+        "onSeriesTimeframe",
+        "onSymbolChanged",
+        "onVisibleRangeChanged",
+        "priceFormatter",
+        "properties",
+        "ranges",
+        "refreshMarks",
+        "reloadLineToolsFromServer",
+        "removeAllShapes",
+        "removeAllStudies",
+        "removeEntity",
+        "removeEntityWithUndo"
+      ],
+      "selectedFunctions": {
+        "createStudy": {
+          "name": "createStudy",
+          "argumentCount": 6,
+          "sourceLength": 1426,
+          "source": "createStudy(e,t,i,s,r,n){if(\"function\"==typeof r)return console.warn('\"createStudy\" does not take \"callback\" parameter anymore'),Promise.resolve(null);if(n=n||{},\"string\"!=typeof e)return this._createStudy(e);if(n.checkLimit&&!this._chartWidget.model().canCreateStudy())return(0,G.showTooManyStudiesNotice)(),Promise.resolve(null);e=e.toLowerCase();const o=n.disableUndo?this._chartWidget.model().model():this._chartWidget.model(),a=q.StudyMetaInfo.findStudyMetaInfoByDescription(o.studiesMetaData(),e),c=o.createStudyInserter({type:\"java\",studyId:a.id},[]);if(c.setForceOverlay(!!t),n.priceScale&&c.setPreferredPriceScale(function(e){switch(e){case\"no-scale\":return\"overlay\";case\"as-series\":return\"as-series\";case\"new-left\":return\"left\";case\"new-right\":return\"right\";default:throw new Error('The pricescale \"'+e+'\" is invalid, the only valid options are \"no-scale\", \"as-series\", \"new-left\" and \"new-right\".')}}(n.priceScale)),n.allowChangeCurrency&&c.setAllowChangeCurrency(!0),n.allowChangeUnit&&c.setAllowChangeUnit(!0),Array.isArray(s)){ console.warn(\"Passing study inputs as an ordered array is now deprecated. Please use an object where keys correspond to the inputs of your study instead.\");const e={};for(let t=0;t<a.inputs.length;++t)e[a.inputs[t].id]=s[t];s=e}return c.insert((()=>Promise.resolve({inputs:s||{},parentSources:[]}))).then((e=>(r&&(0,l.applyOverridesToStudy)(e,r),i&&e.setUserEditEnabled(!1),e.id())))}"
+        },
+        "getAllStudies": {
+          "name": "getAllStudies",
+          "argumentCount": 0,
+          "sourceLength": 95,
+          "source": "getAllStudies(){return this._chartWidget.model().model().allStudies(!0).map(f.studyEntityInfo)}"
+        },
+        "getStudyById": {
+          "name": "getStudyById",
+          "argumentCount": 1,
+          "sourceLength": 156,
+          "source": "getStudyById(e){const t=this._chartWidget.model().model().getStudyById(e);if(null===t)throw new Error(\"There is no such study\");return this._getStudyApi(t)}"
+        },
+        "removeEntity": {
+          "name": "removeEntity",
+          "argumentCount": 2,
+          "sourceLength": 257,
+          "source": "removeEntity(e,t){var i=this._chartWidget.model().chartModel().dataSourceForId(e);i?t&&t.disableUndo?new k(this._chartWidget.model().chartModel(),[i],\"\").redo():this._chartWidget.model().removeSource(i,!0,!0):console.warn(\"Can't find a source with id: \"+e)}"
+        },
+        "removeAllStudies": {
+          "name": "removeAllStudies",
+          "argumentCount": 0,
+          "sourceLength": 56,
+          "source": "removeAllStudies(){this._chartWidget.removeAllStudies()}"
+        },
+        "getSeries": {
+          "name": "getSeries",
+          "argumentCount": 0,
+          "sourceLength": 81,
+          "source": "getSeries(){const e=this._chartWidget.model(),t=e.mainSeries();return new O(t,e)}"
+        },
+        "getPanes": {
+          "name": "getPanes",
+          "argumentCount": 0,
+          "sourceLength": 90,
+          "source": "getPanes(){return this._chartWidget.model().model().panes().map((e=>this._getPaneApi(e)))}"
+        },
+        "onDataLoaded": {
+          "name": "onDataLoaded",
+          "argumentCount": 0,
+          "sourceLength": 122,
+          "source": "onDataLoaded(){return this._makeSubscriptionFromDelegate(this._chartWidget.model().mainSeries().dataEvents().completed())}"
+        },
+        "onSymbolChanged": {
+          "name": "onSymbolChanged",
+          "argumentCount": 0,
+          "sourceLength": 130,
+          "source": "onSymbolChanged(){return this._makeSubscriptionFromDelegate(this._chartWidget.model().mainSeries().dataEvents().symbolResolved())}"
+        },
+        "onIntervalChanged": {
+          "name": "onIntervalChanged",
+          "argumentCount": 0,
+          "sourceLength": 122,
+          "source": "onIntervalChanged(){return this._makeSubscriptionFromDelegate(this._chartWidget.model().mainSeries().onIntervalChanged())}"
+        },
+        "setResolution": {
+          "name": "setResolution",
+          "argumentCount": 2,
+          "sourceLength": 464,
+          "source": "async setResolution(e,t){(0,v.isFunction)(t)&&(t={dataReady:t}) ;const{dataReady:i,doNotActivateChart:s}=t||{};let r=a.Interval.normalize(e);if(null!==r&&(r=this._chartWidget.model().mainSeries().getSupportedResolution(r)),null===r||r===this.resolution())return null==i||i(),!0;s||this._activateChart();const n=this._chartWidget.chartWidgetCollection().setResolution(r,void 0,this._chartWidget);return j(this._chartWidget.model().mainSeries(),(e=>{!e&&i&&i()})),n}"
+        },
+        "resetData": {
+          "name": "resetData",
+          "argumentCount": 0,
+          "sourceLength": 67,
+          "source": "resetData(){this._chartWidget.model().mainSeries().rerequestData()}"
+        },
+        "_createStudy": {
+          "name": "_createStudy",
+          "argumentCount": 1,
+          "sourceLength": 89,
+          "source": "_createStudy(e){return Promise.reject(\"Pine Script™ and java studies are not supported\")}"
+        },
+        "_createTradingPrimitive": {
+          "name": "_createTradingPrimitive",
+          "argumentCount": 2,
+          "sourceLength": 328,
+          "source": "_createTradingPrimitive(e,t){var i,s=this._chartWidget.model(),r=s.model(),n=r.paneForSource(r.mainSeries());function o(){var e=TradingView.CLOSE_PLOT,t=P(s.mainSeries().bars().last());return{index:t.index,price:t.value[e]}}return(i=t?r.createLineTool(n,o(),e):s.createLineTool({pane:n,point:o(),linetool:e}))?i._adapter:void 0}"
+        },
+        "_getDefaultCreateMultipointShapeOptions": {
+          "name": "_getDefaultCreateMultipointShapeOptions",
+          "argumentCount": 0,
+          "sourceLength": 60,
+          "source": "_getDefaultCreateMultipointShapeOptions(){return{filled:!0}}"
+        },
+        "_getPaneApi": {
+          "name": "_getPaneApi",
+          "argumentCount": 1,
+          "sourceLength": 113,
+          "source": "_getPaneApi(e){let t=this._panes.get(e);return void 0===t&&(t=new w(e,this._chartWidget),this._panes.set(e,t)),t}"
+        },
+        "_getStudyApi": {
+          "name": "_getStudyApi",
+          "argumentCount": 1,
+          "sourceLength": 118,
+          "source": "_getStudyApi(e){let t=this._studies.get(e);return void 0===t&&(t=new R(e,this._chartWidget),this._studies.set(e,t)),t}"
+        },
+        "_makeSubscriptionFromDelegate": {
+          "name": "_makeSubscriptionFromDelegate",
+          "argumentCount": 1,
+          "sourceLength": 145,
+          "source": "_makeSubscriptionFromDelegate(e){return{subscribe:e.subscribe.bind(e),unsubscribe:e.unsubscribe.bind(e),unsubscribeAll:e.unsubscribeAll.bind(e)}}"
+        },
+        "addOverlayStudy": {
+          "name": "addOverlayStudy",
+          "argumentCount": 3,
+          "sourceLength": 71,
+          "source": "addOverlayStudy(e,t,i){return this._chartWidget.addOverlayStudy(e,t,i)}"
+        },
+        "applyStudyTemplate": {
+          "name": "applyStudyTemplate",
+          "argumentCount": 1,
+          "sourceLength": 91,
+          "source": "applyStudyTemplate(e){this._chartWidget.model().applyStudyTemplate(e,\"\"+1e3*Math.random())}"
+        },
+        "barTimeToEndOfPeriod": {
+          "name": "barTimeToEndOfPeriod",
+          "argumentCount": 1,
+          "sourceLength": 126,
+          "source": "barTimeToEndOfPeriod(e){const t=this._prepareEndOfPeriodArgs();return(0,h.barTimeToEndOfPeriod)(t.barBuilder,e,t.intervalObj)}"
+        },
+        "cancelSelectBar": {
+          "name": "cancelSelectBar",
+          "argumentCount": 0,
+          "sourceLength": 92,
+          "source": "cancelSelectBar(){this.isSelectBarRequested()&&this._chartWidget.cancelRequestSelectPoint()}"
+        },
+        "createAnchoredShape": {
+          "name": "createAnchoredShape",
+          "argumentCount": 2,
+          "sourceLength": 505,
+          "source": "createAnchoredShape(e,t){const i=t.shape;if((0, K.isSupportedLineTool)(i)&&!0!==K.supportedLineTools[i].isAnchored)return console.warn(`${i} is not an anchored shape. It can be created using createShape or createMultipointShape`),null;const s=this._chartWidget.model().model(),r=s.mainSeries();if(s.timeScale().isEmpty())return null;const n=void 0!==t.ownerStudyId?s.dataSourceForId(t.ownerStudyId):r,o=this._convertPositionPercentToPricedPoint(e,n);return null===o?null:this.createMultipointShape([o],t)}"
+        },
+        "createExecutionShape": {
+          "name": "createExecutionShape",
+          "argumentCount": 1,
+          "sourceLength": 103,
+          "source": "createExecutionShape(e){e=e||{};return this._createTradingPrimitive(\"LineToolExecution\",e.disableUndo)}"
+        },
+        "createMultipointShape": {
+          "name": "createMultipointShape",
+          "argumentCount": 2,
+          "sourceLength": 2139,
+          "source": "createMultipointShape(e,t){const i=Object.assign({},this._getDefaultCreateMultipointShapeOptions(),t);var s=T[i.shape]||T.flag;var r=this._chartWidget.model().model(),n=r.mainSeries();if(!r.timeScale().isEmpty()){var o=r.dataSourceForId(i.ownerStudyId)||n,a=r.paneForSource(o),l=this._convertUserPointsToDataSource(e);if(s.onlySelectable)throw new Error('Cannot create \"'+i.shape+'\" shape');if(\"LineToolIcon\"===s.name){if(i.icon=i.icon||i.overrides&&i.overrides.icon,!i.hasOwnProperty(\"icon\"))throw new Error(\"icon must be specified in options\");i.overrides=i.overrides||{},i.overrides.icon=i.icon}var c,h,d=I(s.name,void 0,this._chartWidget.model().model());if(M(d,o),i.overrides)for(var u in i.overrides)d[u]?d[u].mergeAndFire(i.overrides[u]):x(s.name)&&-1!==[\"profitLevel\",\"stopLevel\"].indexOf(u)&&d.addProperty(u,i.overrides[u]);if(void 0!==d.text&&i.text&&d.text.setValue(i.text),d.hasChild(\"filled\")&&i.filled&&d.filled.setValue(!0),null!==(h=i.disableUndo?(c=this._chartWidget.model().model()).createLineTool(a,l[0],s.name,d,void 0,o):(c=this._chartWidget.model()).createLineTool({pane:a,point:l[0],linetool:s.name,properties:d,ownerSource:o}))){if(x(s.name)){if(l.length>2)throw new Error(\"Wrong points count for \"+i.shape+\". Required 1 or 2\");2===l.length&&(h.startChanging(1,l[1]),h.setPoint(1,l[1]),h.endChanging())}else{var p=h.pointsCount();if(p!==l.length&&-1!==p)throw new Error(\"Wrong points count for \"+i.shape+\". Required \"+p);for(var _=new B(void 0,!0),m=D(s.name),g=1;g<l.length&&this._chartWidget.model().lineBeingCreated();g++)h.setLastPoint(l[g]),c.continueCreatingLine(l[g],_,g<l.length-1||m);E(s.name)&&(h.finish(),c.finishLineTool(h),c.continueCreatingLine(l[l.length-1],_,!1))}if(i.lock&&h.setUserEditEnabled(!1),i.disableSelection&&h.setSelectionEnabled(!1),i.disableSave&&(h.customization.disableSave=!0), i.hasOwnProperty(\"showInObjectsTree\")&&(h.customization.showInObjectsTree=i.showInObjectsTree),i.zOrder){var f=this._chartWidget.model().availableZOrderOperations([h]);\"top\"===i.zOrder&&f.bringToFrontEnabled?c.bringToFront([h]):\"bottom\"===i.zOrder&&f.sendToBackEnabled&&c.sendToBack([h])}return h.id()}}}"
+        },
+        "createOrderLine": {
+          "name": "createOrderLine",
+          "argumentCount": 1,
+          "sourceLength": 94,
+          "source": "createOrderLine(e){e=e||{};return this._createTradingPrimitive(\"LineToolOrder\",e.disableUndo)}"
+        },
+        "createPositionLine": {
+          "name": "createPositionLine",
+          "argumentCount": 1,
+          "sourceLength": 100,
+          "source": "createPositionLine(e){e=e||{};return this._createTradingPrimitive(\"LineToolPosition\",e.disableUndo)}"
+        },
+        "createShape": {
+          "name": "createShape",
+          "argumentCount": 2,
+          "sourceLength": 58,
+          "source": "createShape(e,t){return this.createMultipointShape([e],t)}"
+        },
+        "createStudyTemplate": {
+          "name": "createStudyTemplate",
+          "argumentCount": 1,
+          "sourceLength": 107,
+          "source": "createStudyTemplate(e){return this._chartWidget.model().model().studyTemplate(e.saveSymbol,e.saveInterval)}"
+        },
+        "endOfPeriodToBarTime": {
+          "name": "endOfPeriodToBarTime",
+          "argumentCount": 1,
+          "sourceLength": 126,
+          "source": "endOfPeriodToBarTime(e){const t=this._prepareEndOfPeriodArgs();return(0,h.endOfPeriodToBarTime)(t.barBuilder,e,t.intervalObj)}"
+        },
+        "getAllPanesHeight": {
+          "name": "getAllPanesHeight",
+          "argumentCount": 0,
+          "sourceLength": 276,
+          "source": "getAllPanesHeight(){const e=this._chartWidget.model().model().panes();if(this._chartWidget.isMaximizedPane()){let t=0,i=0;e.forEach((e=>{t+=e.height(),i+=e.stretchFactor()}));const s=i/t;return e.map((e=>Math.round(e.stretchFactor()/s*100)/100))}return e.map((e=>e.height()))}"
+        },
+        "getBarsMarksSources": {
+          "name": "getBarsMarksSources",
+          "argumentCount": 0,
+          "sourceLength": 74,
+          "source": "getBarsMarksSources(){return this._chartWidget.model().barsMarksSources()}"
+        },
+        "getPriceToBarRatio": {
+          "name": "getPriceToBarRatio",
+          "argumentCount": 0,
+          "sourceLength": 101,
+          "source": "getPriceToBarRatio(){return this._chartWidget.model().model().mainSeriesScaleRatioProperty().value()}"
+        },
+        "insertAfter": {
+          "name": "insertAfter",
+          "argumentCount": 2,
+          "sourceLength": 132,
+          "source": "insertAfter(e,t){var i=this._chartWidget.model().model(),s=N(i,e),r=i.dataSourceForId(t);this._chartWidget.model().insertAfter(s,r)}"
+        },
+        "insertBefore": {
+          "name": "insertBefore",
+          "argumentCount": 2,
+          "sourceLength": 134,
+          "source": "insertBefore(e,t){var i=this._chartWidget.model().model(),s=N(i,e),r=i.dataSourceForId(t);this._chartWidget.model().insertBefore(s,r)}"
+        }
+      }
+    },
+    "currentStudies": {
+      "available": true,
+      "count": 2,
+      "items": [
+        {
+          "id": "27A6G2",
+          "name": "Moving Average Exponential",
+          "itemKeys": [
+            "id",
+            "name"
+          ],
+          "studyObject": {
+            "constructor": "R",
+            "keys": [
+              "_onStudyCompleted",
+              "_onStudyError",
+              "_study",
+              "_chartWidget",
+              "_undoModel",
+              "_model"
+            ],
+            "methods": [
+              "anyGraphicsReady",
+              "applyOverrides",
+              "applyToEntireLayout",
+              "bringToFront",
+              "changePriceScale",
+              "constructor",
+              "currency",
+              "dataLength",
+              "getInputValues",
+              "getInputsInfo",
+              "getStyleInfo",
+              "getStyleValues",
+              "graphicsViewsReady",
+              "hasPendingUnresolvedSymbols",
+              "isLoading",
+              "isUserEditEnabled",
+              "isVisible",
+              "mergeDown",
+              "mergeDownWithUndo",
+              "mergeUp",
+              "mergeUpWithUndo",
+              "onDataLoaded",
+              "onStudyError",
+              "priceScale",
+              "properties",
+              "sendToBack",
+              "setInputValues",
+              "setUserEditEnabled",
+              "setVisible",
+              "status",
+              "symbolSource",
+              "symbolsResolved",
+              "title",
+              "unmergeDown",
+              "unmergeDownWithUndo",
+              "unmergeUp",
+              "unmergeUpWithUndo"
+            ]
+          }
+        },
+        {
+          "id": "GenwPA",
+          "name": "Williams %R",
+          "itemKeys": [
+            "id",
+            "name"
+          ],
+          "studyObject": {
+            "constructor": "R",
+            "keys": [
+              "_onStudyCompleted",
+              "_onStudyError",
+              "_study",
+              "_chartWidget",
+              "_undoModel",
+              "_model"
+            ],
+            "methods": [
+              "anyGraphicsReady",
+              "applyOverrides",
+              "applyToEntireLayout",
+              "bringToFront",
+              "changePriceScale",
+              "constructor",
+              "currency",
+              "dataLength",
+              "getInputValues",
+              "getInputsInfo",
+              "getStyleInfo",
+              "getStyleValues",
+              "graphicsViewsReady",
+              "hasPendingUnresolvedSymbols",
+              "isLoading",
+              "isUserEditEnabled",
+              "isVisible",
+              "mergeDown",
+              "mergeDownWithUndo",
+              "mergeUp",
+              "mergeUpWithUndo",
+              "onDataLoaded",
+              "onStudyError",
+              "priceScale",
+              "properties",
+              "sendToBack",
+              "setInputValues",
+              "setUserEditEnabled",
+              "setVisible",
+              "status",
+              "symbolSource",
+              "symbolsResolved",
+              "title",
+              "unmergeDown",
+              "unmergeDownWithUndo",
+              "unmergeUp",
+              "unmergeUpWithUndo"
+            ]
+          }
+        }
+      ]
+    },
+    "series": {
+      "apiAvailable": true,
+      "methods": [
+        "_pane",
+        "barsCount",
+        "bringToFront",
+        "changePriceScale",
+        "chartStyleProperties",
+        "constructor",
+        "data",
+        "detachNoScale",
+        "detachToLeft",
+        "detachToRight",
+        "entityId",
+        "isLoading",
+        "isUserEditEnabled",
+        "isVisible",
+        "mergeDown",
+        "mergeUp",
+        "priceScale",
+        "sendToBack",
+        "setChartStyleProperties",
+        "setUserEditEnabled",
+        "setVisible",
+        "symbolSource",
+        "unmergeDown",
+        "unmergeUp"
+      ]
+    },
+    "panes": [
+      {
+        "index": 0,
+        "constructor": "w",
+        "methods": [
+          "_getPriceScaleApi",
+          "collapse",
+          "constructor",
+          "getAllEntities",
+          "getHeight",
+          "getLeftPriceScales",
+          "getMainSourcePriceScale",
+          "getRightPriceScales",
+          "hasMainSeries",
+          "legendLoaded",
+          "moveTo",
+          "paneIndex",
+          "restore",
+          "setHeight",
+          "setMaximized"
+        ],
+        "entityCount": 2
+      },
+      {
+        "index": 1,
+        "constructor": "w",
+        "methods": [
+          "_getPriceScaleApi",
+          "collapse",
+          "constructor",
+          "getAllEntities",
+          "getHeight",
+          "getLeftPriceScales",
+          "getMainSourcePriceScale",
+          "getRightPriceScales",
+          "hasMainSeries",
+          "legendLoaded",
+          "moveTo",
+          "paneIndex",
+          "restore",
+          "setHeight",
+          "setMaximized"
+        ],
+        "entityCount": 1
+      }
+    ]
+  },
+  "chartWidget": {
+    "path": "iframe.chartWidget",
+    "available": true,
+    "constructor": "",
+    "ownKeys": [
+      "activePaneWidget",
+      "_model",
+      "_paneWidgets",
+      "_maximizedPaneWidget",
+      "_timeAxisWidget",
+      "_paneSeparators",
+      "_controlBarNavigation",
+      "_lineToolsSynchronizer",
+      "_modelCreated",
+      "_isDestroyed",
+      "_customLegendWidgetsFactoryMap",
+      "_backgroundTopTheme",
+      "_backgroundBasedTheme",
+      "_backgroundBottomTheme",
+      "_lhsAxesWidth",
+      "_rhsAxesWidth",
+      "_lhsPriceAxisWidthChanged",
+      "_rhsPriceAxisWidthChanged",
+      "_mainDiv",
+      "_parent",
+      "_elTooltipDiv",
+      "_hotkeysListener",
+      "_mouseWheelHelper",
+      "_onWheelBound",
+      "_justActivated",
+      "_inited",
+      "_containsData",
+      "_initialLoading",
+      "_defTimeframe",
+      "_removeMaximizeHotkey",
+      "_invalidationMask",
+      "_drawPlanned",
+      "_drawRafId",
+      "_inLoadingState",
+      "_timingsMeter",
+      "_tagsChanged",
+      "_redraw",
+      "_isVisible",
+      "_collapsed",
+      "_dataWindowWidget",
+      "_resizeHandler",
+      "_spinner",
+      "_keydownEventListener",
+      "_properties",
+      "_symbolWV",
+      "_resolutionWV",
+      "_updateThemedColorBound",
+      "_disconnected",
+      "_reconnectBailout",
+      "_connected",
+      "_chartWidgetInitialized",
+      "_saveChartService",
+      "_objectTreeDialogController",
+      "_chartPaintedPromise",
+      "_noExchangeSubscrptionWarning",
+      "_paneWidgetsSharedState",
+      "_onZoom",
+      "_onScroll",
+      "_availableScreen",
+      "_hoveredPriceAxes",
+      "_anyAxisHovered",
+      "_linkingGroupIndex",
+      "_showDataWindowAction",
+      "_activeHint",
+      "_eventHintDeferredPromise",
+      "_warningHintDeferredPromise",
+      "_setSymbolIntervalContentOverrides",
+      "_ariaPriceDescription",
+      "_invalidationHandler",
+      "_onChartSessionIsConnectedChanged",
+      "_subscribeToBanInfo",
+      "_id",
+      "_layoutId",
+      "_options",
+      "_chartWidgetCollection",
+      "_errorRenderer",
+      "_scrollHelper",
+      "_chartSession",
+      "_isMultipleLayout",
+      "_hotkeys",
+      "_content",
+      "_readOnly",
+      "_defSymbol",
+      "_defInterval",
+      "_defStyle",
+      "_onWidget",
+      "_compareSymbols",
+      "_hideSymbolSearch",
+      "_frameTime",
+      "_metaInfo"
+    ],
+    "methods": [
+      "GUIResetScales",
+      "_activateSymbolSearchHotkeys",
+      "_addPerfMark",
+      "_adjustSize",
+      "_applyStudiesOverrides",
+      "_applyTimeScaleInvalidation",
+      "_applyTimeScaleInvalidations",
+      "_beginRequestActive",
+      "_cancelCreatingLine",
+      "_checkObsoleteTimezone",
+      "_clearSelectionHotkey",
+      "_contentSeriesProperties",
+      "_createAddToWatchlistAction",
+      "_createApplyColorThemeAction",
+      "_createChartPropertiesAction",
+      "_createChartResetAction",
+      "_createControlBar",
+      "_createEventHint",
+      "_createHideSelectedObjectAction",
+      "_createLineToolsSynchronizerIfNeeded",
+      "_createMainSeriesPropertiesAction",
+      "_createPrePostMarket",
+      "_createRemoveSelectedObjectAction",
+      "_createResetTimescaleAction",
+      "_createScalesPropertiesAction",
+      "_createSelectedSourcePropertiesAction",
+      "_createSessions",
+      "_createShowDataWindowAction",
+      "_createShowFinancialsAction",
+      "_createShowSymbolInfoDialogAction",
+      "_createVolumeIfNeeded",
+      "_createWarningHint",
+      "_endRequestActive",
+      "_getChartPropertyDefinitionsViewModel",
+      "_getInternalMetaInfoArray",
+      "_handleLoginStateChanged",
+      "_height",
+      "_hideHint",
+      "_init",
+      "_initBackgroundColor",
+      "_initColors",
+      "_initMaximizeHotkey",
+      "_insertStudy",
+      "_invalidationHandler",
+      "_invalidationRAFCallback",
+      "_isLineToolModeExceptBrush",
+      "_keydownEventListener",
+      "_makeAvailableOnTVPopup",
+      "_makeDefaultGui",
+      "_makeDefaultModel",
+      "_makeLoadingScreen",
+      "_makePaneWidgetsAndSeparators",
+      "_makeTimeAxisWidget",
+      "_menuItemsProvider",
+      "_onBackgroundColorChanged",
+      "_onChartSessionCriticalError",
+      "_onChartSessionIsConnectedChanged",
+      "_onChartStyleChanged",
+      "_onConnection",
+      "_onData",
+      "_onDisconnect",
+      "_onMousewheel",
+      "_onWheelBound",
+      "_registerLineToolHotkeys",
+      "_removeMaximizeHotkey",
+      "_requestActive",
+      "_requestMetadata",
+      "_requestMetadataAndProcessModel",
+      "_resizeHandler",
+      "_setActions",
+      "_setElement",
+      "_setFirstRequestNumbarsUsingTimeframeAndInterval",
+      "_setPaneSeparatorLineColor",
+      "_showChartProperties",
+      "_showEventHint",
+      "_showWarningHint",
+      "_startSpinner",
+      "_subscribeToBanInfo",
+      "_subscribeToDrawingState",
+      "_titlesProvider",
+      "_update",
+      "_updateAndPaint",
+      "_updateAriaPriceDescription",
+      "_updateGui",
+      "_updateScalesActions",
+      "_updateThemedColor",
+      "_updateThemedColorBound",
+      "_updateTimingsMeterState",
+      "_width",
+      "actions",
+      "addCompareAsOverlay",
+      "addCompareStudy",
+      "addCustomWidgetToLegend",
+      "addOverlayStudy",
+      "anyPriceAxisHovered",
+      "applyAlertIdByExternalSource",
+      "applyIndicatorsToAllChartsAvailable",
+      "applyLineToolUpdateNotification",
+      "applyOverrides",
+      "applyStudiesOverrides"
+    ],
+    "selectedFunctions": {
+      "insertStudy": {
+        "name": "insertStudy",
+        "argumentCount": 4,
+        "sourceLength": 193,
+        "source": "insertStudy(e,t,i,s){return new Promise((r=>{0!==t.length?window.runOrSignIn((()=>{r(this._insertStudy(e,t,i,s))}),{source:\"study on study\"}):r(this._insertStudy(e,t,i,s))})).catch((()=>null))}"
+      },
+      "removeAllStudies": {
+        "name": "removeAllStudies",
+        "argumentCount": 0,
+        "sourceLength": 51,
+        "source": "removeAllStudies(){this.model().removeAllStudies()}"
+      },
+      "setResolution": {
+        "name": "setResolution",
+        "argumentCount": 1,
+        "sourceLength": 268,
+        "source": "setResolution(e){this._model?(this._resolutionWV.setValue(e),this._model.setResolution(this._model.mainSeries(),e)):(this.properties().childs().mainSeriesProperties.merge({interval:e}),this._resolutionWV.setValue(e),this._setSymbolIntervalContentOverrides.interval=e)}"
+      },
+      "isInitialized": {
+        "name": "isInitialized",
+        "argumentCount": 0,
+        "sourceLength": 45,
+        "source": "isInitialized(){return Boolean(this._inited)}"
+      },
+      "modelCreated": {
+        "name": "modelCreated",
+        "argumentCount": 0,
+        "sourceLength": 41,
+        "source": "modelCreated(){return this._modelCreated}"
+      },
+      "paneWidgets": {
+        "name": "paneWidgets",
+        "argumentCount": 0,
+        "sourceLength": 39,
+        "source": "paneWidgets(){return this._paneWidgets}"
+      },
+      "paneByState": {
+        "name": "paneByState",
+        "argumentCount": 1,
+        "sourceLength": 134,
+        "source": "paneByState(e){for(var t=0;t<this._paneWidgets.length;t++)if(this._paneWidgets[t].state()===e)return this._paneWidgets[t];return null}"
+      },
+      "paneByCanvas": {
+        "name": "paneByCanvas",
+        "argumentCount": 1,
+        "sourceLength": 136,
+        "source": "paneByCanvas(e){for(var t=0;t<this._paneWidgets.length;t++)if(this._paneWidgets[t].hasCanvas(e))return this._paneWidgets[t];return null}"
+      },
+      "properties": {
+        "name": "properties",
+        "argumentCount": 0,
+        "sourceLength": 37,
+        "source": "properties(){return this._properties}"
+      },
+      "_contentSeriesProperties": {
+        "name": "_contentSeriesProperties",
+        "argumentCount": 0,
+        "sourceLength": 195,
+        "source": "_contentSeriesProperties(){if(this._content)for(var e=this._content.panes.length;e-- >0;)for(var t=this._content.panes[e].sources,i=t.length;i-- >0;)if(\"MainSeries\"===t[i].type)return t[i].state}"
+      },
+      "_createAddToWatchlistAction": {
+        "name": "_createAddToWatchlistAction",
+        "argumentCount": 0,
+        "sourceLength": 140,
+        "source": "_createAddToWatchlistAction(){if(!this._options.addToWatchlistEnabled)return null;const e={hotkeyGroup:this._hotkeys};return new wi(this,e)}"
+      },
+      "_createApplyColorThemeAction": {
+        "name": "_createApplyColorThemeAction",
+        "argumentCount": 0,
+        "sourceLength": 43,
+        "source": "_createApplyColorThemeAction(){return null}"
+      },
+      "_createChartPropertiesAction": {
+        "name": "_createChartPropertiesAction",
+        "argumentCount": 0,
+        "sourceLength": 275,
+        "source": "_createChartPropertiesAction(){return new N.ActionWithStandardIcon({actionId:\"Chart.Dialogs.ShowGeneralSettings\",options:{label:(0,m.appendEllipsis)(o.t(null,void 0,i(389517))),iconId:\"Settings\",statName:\"ChartProperties\",onExecute:()=>{this.showGeneralChartProperties()}}})}"
+      },
+      "_createChartResetAction": {
+        "name": "_createChartResetAction",
+        "argumentCount": 0,
+        "sourceLength": 278,
+        "source": "_createChartResetAction(){return new N.ActionWithStandardIcon({actionId:\"Chart.Scales.Reset\",options:{label:o.t(null,void 0,i(834301)),iconId:\"Chart.Reset\",statName:\"ResetChart\",onExecute:this.GUIResetScales.bind(this),hotkeyGroup:this._hotkeys,hotkeyHash:n.Modifiers.Alt+82}})}"
+      },
+      "_createControlBar": {
+        "name": "_createControlBar",
+        "argumentCount": 0,
+        "sourceLength": 349,
+        "source": "async _createControlBar(){const e=await Promise.all([i.e(5173),i.e(6119),i.e(4015),i.e(9842),i.e(6639),i.e(8450),i.e(5254),i.e(6707),i.e(962),i.e(9255),i.e(2941),i.e(5093)]).then(i.bind(i,803609));this._controlBarNavigation=new e.ControlBarNavigation(this,(0,r.ensureNotNull)(this._mainDiv),this._options.controlBar),this._model&&this._adjustSize()}"
+      },
+      "_createEventHint": {
+        "name": "_createEventHint",
+        "argumentCount": 0,
+        "sourceLength": 342,
+        "source": "_createEventHint(){if(null===this._eventHintDeferredPromise){const e=(0,g.createDeferredPromise)();this._eventHintDeferredPromise=e,Promise.all([i.e(6214),i.e(962),i.e(6166)]).then(i.bind(i,215593)).then((t=>{e.resolve(new t.ChartEventHintRenderer(this._chartWidgetCollection.getContainer()))}))}return this._eventHintDeferredPromise.promise}"
+      },
+      "_createHideSelectedObjectAction": {
+        "name": "_createHideSelectedObjectAction",
+        "argumentCount": 0,
+        "sourceLength": 248,
+        "source": "_createHideSelectedObjectAction(){return new N.ActionWithStandardIcon({actionId:\"Chart.SelectedObject.Hide\",options:{label:o.t(null,void 0,i(831971)),iconId:\"Chart.Hide\",statName:\"HideSelectedObject\",onExecute:this.hideSelectedObject.bind(this)}})}"
+      },
+      "_createLineToolsSynchronizerIfNeeded": {
+        "name": "_createLineToolsSynchronizerIfNeeded",
+        "argumentCount": 0,
+        "sourceLength": 770,
+        "source": "_createLineToolsSynchronizerIfNeeded(){var e;if(k.enabled(\"saveload_separate_drawings_storage\")){const t={readOnlyMode:this.readOnly(),migrateSyncedLineTools:this===this._options.chartWidgetCollection.getAll()[0]},i=(0,Oi.getLineToolsSynchronizerClass)();this._lineToolsSynchronizer=new i({layoutId:this.layoutId(),chartId:this._id,clientId:this._chartWidgetCollection.clientId},this.model().model(),t,(()=>this._chartWidgetCollection.isFirstChartInLayout(this)),(()=>this._chartWidgetCollection.deserializedChartIds())),null!==this._saveChartService&&this._lineToolsSynchronizer.setSaveChartService(this._saveChartService), this._lineToolsSynchronizer.invalidateAll(),null===(e=this._model)||void 0===e||e.model().setLineToolsSynchronizer(this._lineToolsSynchronizer)}}"
+      },
+      "_createMainSeriesPropertiesAction": {
+        "name": "_createMainSeriesPropertiesAction",
+        "argumentCount": 0,
+        "sourceLength": 312,
+        "source": "_createMainSeriesPropertiesAction(){return new N.ActionWithStandardIcon({actionId:\"Chart.Dialogs.ShowGeneralSettings.SymbolTab\",options:{label:(0,m.appendEllipsis)(o.t(null,void 0,i(389517))),iconId:\"Settings\",statName:\"MainSeriesProperties\",onExecute:()=>{this.showGeneralChartProperties(j.TabNames.symbol)}}})}"
+      },
+      "_createPrePostMarket": {
+        "name": "_createPrePostMarket",
+        "argumentCount": 1,
+        "sourceLength": 25,
+        "source": "_createPrePostMarket(e){}"
+      },
+      "_createRemoveSelectedObjectAction": {
+        "name": "_createRemoveSelectedObjectAction",
+        "argumentCount": 0,
+        "sourceLength": 415,
+        "source": "_createRemoveSelectedObjectAction(){return new N.ActionWithStandardIcon({actionId:\"Chart.SelectedObject.Remove\",options:{label:o.t(null,void 0,i(734596)),iconId:\"Chart.RemoveSelectedObject\",statName:\"RemoveSelectedObject\",onExecute:()=>{var e;(null!==(e=this._chartWidgetCollection.activeChartWidget.value())&&void 0!==e?e:this).removeSelectedSources()},hotkeyGroup:this._hotkeys,hotkeyHash:n.isMacKeyboard?8:46}})}"
+      },
+      "_createResetTimescaleAction": {
+        "name": "_createResetTimescaleAction",
+        "argumentCount": 0,
+        "sourceLength": 306,
+        "source": "_createResetTimescaleAction(){return new N.ActionWithStandardIcon({actionId:\"Chart.TimeScale.Reset\",options:{label:o.t(null,void 0,i(825333)),iconId:\"Chart.Reset\",statName:\"ResetScale\",onExecute:()=>{this.model().resetTimeScale()},hotkeyGroup:this._hotkeys,hotkeyHash:n.Modifiers.Mod+n.Modifiers.Alt+81}})}"
+      },
+      "_createScalesPropertiesAction": {
+        "name": "_createScalesPropertiesAction",
+        "argumentCount": 0,
+        "sourceLength": 304,
+        "source": "_createScalesPropertiesAction(){return new N.ActionWithStandardIcon({actionId:\"Chart.Dialogs.ShowGeneralSettings.ScalesTab\",options:{label:(0,m.appendEllipsis)(o.t(null,void 0,i(389517))),iconId:\"Settings\",statName:\"ScalesProperties\",onExecute:()=>{this.showGeneralChartProperties(j.TabNames.scales)}}})}"
+      },
+      "_createSelectedSourcePropertiesAction": {
+        "name": "_createSelectedSourcePropertiesAction",
+        "argumentCount": 0,
+        "sourceLength": 296,
+        "source": "_createSelectedSourcePropertiesAction(){return new N.ActionWithStandardIcon({actionId:\"Chart.SelectedObject.ShowSettingsDialog\",options:{label:(0,m.appendEllipsis)(o.t(null,void 0,i(389517))),iconId:\"Settings\",statName:\"EditSelectedObject\",onExecute:()=>{this.showSelectedSourcesProperties()}}})}"
+      },
+      "_createSessions": {
+        "name": "_createSessions",
+        "argumentCount": 1,
+        "sourceLength": 107,
+        "source": "_createSessions(e){var t=this.showGeneralChartProperties.bind(this,c.timezoneSessions);e.createSessions(t)}"
+      },
+      "_createShowDataWindowAction": {
+        "name": "_createShowDataWindowAction",
+        "argumentCount": 0,
+        "sourceLength": 366,
+        "source": "_createShowDataWindowAction(){return this._showDataWindowAction=new N.ActionWithStandardIcon({ actionId:\"Chart.DataWindow.Show\",options:{label:(0,m.appendEllipsis)(o.t(null,void 0,i(409068))),statName:\"DataWindow\",hotkeyGroup:this._hotkeys,hotkeyHash:n.Modifiers.Alt+68,iconId:\"Chart.ShowDataWindow\",onExecute:Ci.showChartObjectsWidget}}),this._showDataWindowAction}"
+      },
+      "_createShowFinancialsAction": {
+        "name": "_createShowFinancialsAction",
+        "argumentCount": 0,
+        "sourceLength": 42,
+        "source": "_createShowFinancialsAction(){return null}"
+      },
+      "_createShowSymbolInfoDialogAction": {
+        "name": "_createShowSymbolInfoDialogAction",
+        "argumentCount": 0,
+        "sourceLength": 508,
+        "source": "_createShowSymbolInfoDialogAction(){return new N.ActionWithStandardIcon({actionId:\"Chart.Dialogs.ShowSymbolInfo\",options:{label:(0,m.appendEllipsis)(o.t(null,void 0,i(665986))),iconId:\"Chart.SymbolInfo\",checkable:!1,statName:\"SymbolInfo\",onExecute:()=>{{const e=this.model().model(),t=e.mainSeries().symbolInfo();if(t){ const i=e.availableUnits(),s={symbolInfo:t,showUnit:e.unitConversionEnabled(),unitDescription:e=>e?i.description(e):\"\",dateFormatter:e.dateFormatter()};(0,_.showSymbolInfoDialog)(s)}}}}})}"
+      },
+      "_createVolumeIfNeeded": {
+        "name": "_createVolumeIfNeeded",
+        "argumentCount": 0,
+        "sourceLength": 980,
+        "source": "_createVolumeIfNeeded(){var e=o.enabled(\"create_volume_indicator_by_default\")&&this._options.addVolume,t=!this._content,i=o.enabled(\"charting_library_base\"),s=o.enabled(\"create_volume_indicator_by_default_once\"),r=this._content&&!this._content.loading;e&&(t||i&&r&&!s)&&this._model.mainSeries().dataEvents().symbolResolved().subscribe(this,(function(){var e=this;setTimeout((function(){ var t=e._model.model().mainSeries().symbolInfo();if(t){var i=M(t);if(!e.containsVolume()&&i){var s=W.factoryDefaults(\"chartproperties.volumePaneSize\"),r=e._model.model().createStudyInserter({type:\"java\",studyId:\"Volume@tv-basicstudies\"});r.setForceOverlay(o.enabled(\"volume_force_overlay\")),r.setPaneSize(s),o.enabled(\"hide_volume_ma\")&&r.setPropertiesState({styles:{vol_ma:{display:y.None}}}),r.insert()}else if(!i&&e.containsVolume()){var n=e.model().dataSources().filter((function(e){return e instanceof p&&\"Volume\"===e.metaInfo().shortId}))[0];e._model.model().removeSource(n)}}}),0)}),s)}"
+      },
+      "_createWarningHint": {
+        "name": "_createWarningHint",
+        "argumentCount": 0,
+        "sourceLength": 39,
+        "source": "async _createWarningHint(){return null}"
+      },
+      "_getInternalMetaInfoArray": {
+        "name": "_getInternalMetaInfoArray",
+        "argumentCount": 0,
+        "sourceLength": 66,
+        "source": "_getInternalMetaInfoArray(){return b().getInternalMetaInfoArray()}"
+      },
+      "_insertStudy": {
+        "name": "_insertStudy",
+        "argumentCount": 4,
+        "sourceLength": 770,
+        "source": "_insertStudy(e,t,i,s){const n=(0,r.ensureNotNull)(this._model).createStudyInserter(e,t,i);n.setForceOverlay(\"java\"===e.type&&\"Volume@tv-basicstudies\"===e.studyId&&k.enabled(\"volume_force_overlay\"));const o=n.insert(((e,i,r)=>new Promise(((n,o)=>{var a;this.selectPointMode().value()!==Ae.SelectPointMode.None&&this.cancelRequestSelectPoint(),s?n(s(e,i,r)):!function(e){return ji.includes(e.id)}(r)?(null!=(a=i)?a:[]).some((e=>e.confirm))?((0,d.trackEvent)(\"GUI\",\"Confirmation dialogs\",\"Inputs confirmation dialog\"),P(this,e,r,n,o)):n({inputs:{},parentSources:t}):((0,d.trackEvent)(\"GUI\",\"Confirmation dialogs\",\"Symbol confirmation dialog\"),P(this,e,r,n,o,\"symbol\"))}))));return o.then((()=>{(0,Ae.hideAllIndicators)().value()&&(0,S.toggleHideMode)()})).catch((e=>{})),o}"
+      },
+      "_invalidationRAFCallback": {
+        "name": "_invalidationRAFCallback",
+        "argumentCount": 1,
+        "sourceLength": 439,
+        "source": "_invalidationRAFCallback(e){if(this._drawPlanned=!1,this._drawRafId=0,!this._inLoadingState){if(this._invalidationMask){const t=this._invalidationMask;this._invalidationMask=null,this._update(t,e);for(const i of t.timeScaleInvalidations())if(0===i.type&&!i.value.finished(e)){this.model().model().setTimeScaleAnimation(i.value);break}}null!==this._chartPaintedPromise&&(this._chartPaintedPromise.resolve(),this._chartPaintedPromise=null)}}"
+      },
+      "_makePaneWidgetsAndSeparators": {
+        "name": "_makePaneWidgetsAndSeparators",
+        "argumentCount": 0,
+        "sourceLength": 2531,
+        "source": "_makePaneWidgetsAndSeparators(){const e=this.model().model().panes(),t=e.length,i=this._paneWidgets.length;for(let e=t;e<i;e++){(0,r.ensureDefined)(this._paneWidgets.pop()).destroy();const e=this._paneSeparators.pop();e&&e.destroy()}const s=this._options.containsData;for(let r=i;r<t;r++){const t={contextMenuEnabled:this._options.paneContextMenuEnabled,currencyConversionEnabled:this._options.currencyConversionEnabled,unitConversionEnabled:this._options.unitConversionEnabled,handleScale:this._options.handleScale,handleScroll:this._options.handleScroll,priceScaleContextMenuEnabled:this._options.priceScaleContextMenuEnabled,legendWidgetEnabled:this._options.legendWidgetEnabled,sourceStatusesWidgetEnabled:!s,sourceStatusesWidget:this._options.sourceStatusesWidget,marketStatusWidgetEnabled:this._options.marketStatusWidgetEnabled&&!s,chartWarningWidgetEnabled:this._options.chartWarningWidgetEnabled&&!s,chartWarningWidget:this._options.chartWarningWidget,dataProblemWidgetEnabled:this._options.dataProblemWidgetEnabled&&!s,legendWidget:this._options.legendWidget,propertyPagesEnabled:this._options.propertyPagesEnabled,sourceSelectionEnabled:this._options.sourceSelectionEnabled,controlsEnabled:this._options.paneControlsEnabled,croppedTickMarks:this._options.croppedTickMarks,countdownEnabled:this._options.countdownEnabled,customLegendWidgetFactories:new Map(this._customLegendWidgetsFactoryMap),useKineticScroll:this._options.useKineticScroll};void 0!==this._options.paneContextMenu&&(t.contextMenu=this._options.paneContextMenu),void 0!==this._options.priceScaleContextMenu&&(t.priceScaleContextMenu=this._options.priceScaleContextMenu);const i=new ai(this,e[r],t,this._paneWidgetsSharedState);TradingView.__._mouseDownEventForLineTool=((e,o)=>{const n=new Me.EnvironmentState(e),t=this._model.timeScale().coordinateToIndex(e.localX);return i._mouseDownEventForLineTool(e,n,t,o)});if(this._paneWidgets.push(i),r>0){const e=new we(this,r-1,r);this._paneSeparators.push(e),this._timeAxisWidget?this._elMainTable.insertBefore(e.getElement(),this._timeAxisWidget.getElement()):this._elMainTable.appendChild(e.getElement())}this._timeAxisWidget?this._elMainTable.insertBefore(i.getElement(),this"
+      },
+      "_registerLineToolHotkeys": {
+        "name": "_registerLineToolHotkeys",
+        "argumentCount": 0,
+        "sourceLength": 344,
+        "source": "_registerLineToolHotkeys(){if(!this.readOnly()){const e=(e,t)=>{this.activePaneWidget&&(\"drawRightThere\"===t.action?this.activePaneWidget.drawRightThere(e):Ae.tool.setValue(e))},t=(t,i)=>()=>e(t,i);Object.entries(Ti.lineToolsSelectHotkeys).map((([e,i])=>({desc:i.description,hotkey:i.hash,handler:t(e,i)}))).forEach((e=>this._hotkeys.add(e)))}}"
+      }
+    }
+  },
+  "chartInternal": {
+    "path": "iframe.tradingViewApi._chartApiInstance",
+    "available": true,
+    "constructor": "",
+    "ownKeys": [
+      "_notificationHandlers",
+      "_sessions",
+      "studyCounter",
+      "_metadataRequestNextNumber",
+      "_connected",
+      "_enabled",
+      "_studyEngine",
+      "_callbacks",
+      "_serverTimeOffset",
+      "_setVisibleRangeTimeout",
+      "studiesAccessController",
+      "sessionid"
+    ],
+    "methods": [
+      "StudiesAccessController",
+      "__defineGetter__",
+      "__defineSetter__",
+      "__lookupGetter__",
+      "__lookupSetter__",
+      "_applyTimeFrame",
+      "_dispatchNotification",
+      "_fireEvent",
+      "_invokeHandler",
+      "_invokeNotificationHandler",
+      "_makeNextRequestId",
+      "_notifySessions",
+      "_onMessage",
+      "_sendRequest",
+      "allStudiesMetadata",
+      "availableCurrencies",
+      "availablePriceSources",
+      "availableUnits",
+      "canCreateStudy",
+      "chartCreateSession",
+      "chartDeleteSession",
+      "connect",
+      "connected",
+      "constructor",
+      "createPointset",
+      "createSeries",
+      "createSession",
+      "createStudiesAccessController",
+      "createStudy",
+      "defaultResolutions",
+      "depthClearSymbol",
+      "depthCreateSession",
+      "depthDeleteSession",
+      "depthSetScale",
+      "depthSetSymbol",
+      "destroy",
+      "disconnect",
+      "disconnectCount",
+      "getMarks",
+      "getStudyCounter",
+      "getTimescaleMarks",
+      "hasOwnProperty",
+      "isPrototypeOf",
+      "modifyPointset",
+      "modifySeries",
+      "modifyStudy",
+      "on",
+      "propertyIsEnumerable",
+      "purgeCache",
+      "quoteAddSymbols",
+      "quoteCreateSession",
+      "quoteDeleteSession",
+      "quoteFastSymbols",
+      "quoteHibernateAll",
+      "quoteRemoveSymbols",
+      "quoteSetFields",
+      "rebindStudy",
+      "receiveLocalResponse",
+      "removePointset",
+      "removeSeries",
+      "removeSession",
+      "removeStudy",
+      "requestFirstBarTime",
+      "requestMetadata",
+      "requestMoreData",
+      "requestMoreTickmarks",
+      "resolveSymbol",
+      "searchSymbols",
+      "serverTime",
+      "serverTimeOffset",
+      "setStudiesAccessController",
+      "setVisibleTimeRange",
+      "start",
+      "supportedSymbolsTypes",
+      "switchTimezone",
+      "symbolsGrouping",
+      "toLocaleString",
+      "toString",
+      "unpack",
+      "unsubscribe",
+      "valueOf"
+    ],
+    "selectedFunctions": {
+      "createStudy": {
+        "name": "createStudy",
+        "argumentCount": 7,
+        "sourceLength": 242,
+        "source": "function(e,t,i,s,r,n,o){if(!this.canCreateStudy()){const e=new Error(\"Exceeded the limit of studies\");throw e.cause=\"TooManyStudies\",e}this._notificationHandlers[e][t]=new c(o,t),this._studyEngine.createStudy(e,t,s,i,r,n),this.studyCounter++}"
+      },
+      "removeStudy": {
+        "name": "removeStudy",
+        "argumentCount": 3,
+        "sourceLength": 147,
+        "source": "function(e,t,i){this._notificationHandlers[e][t]&&(delete this._notificationHandlers[e][t],this._studyEngine.removeStudy(e,t),this.studyCounter--)}"
+      },
+      "canCreateStudy": {
+        "name": "canCreateStudy",
+        "argumentCount": 0,
+        "sourceLength": 66,
+        "source": "function(){return this.studyCounter<TradingView.STUDY_COUNT_LIMIT}"
+      },
+      "requestMetadata": {
+        "name": "requestMetadata",
+        "argumentCount": 0,
+        "sourceLength": 208,
+        "source": "function(){return new Promise(((e,t)=>{const i=this.studiesAccessController.getEnabledTools();e({method:\"studies_metadata\",params:[this._makeNextRequestId(),{errors:[],hash:\"\",metainfo:i,migrations:[]}]})}))}"
+      },
+      "allStudiesMetadata": {
+        "name": "allStudiesMetadata",
+        "argumentCount": 0,
+        "sourceLength": 54,
+        "source": "function(){return this._studyEngine.studiesMetadata()}"
+      },
+      "chartCreateSession": {
+        "name": "chartCreateSession",
+        "argumentCount": 2,
+        "sourceLength": 54,
+        "source": "function(e,t){this._studyEngine.chartCreateSession(e)}"
+      },
+      "createPointset": {
+        "name": "createPointset",
+        "argumentCount": 7,
+        "sourceLength": 112,
+        "source": "function(e,t,i,s,r,n,o){this._notificationHandlers[e][t]=new c(o,t),this._studyEngine.createPointset(e,t,s,r,n)}"
+      },
+      "createSeries": {
+        "name": "createSeries",
+        "argumentCount": 8,
+        "sourceLength": 315,
+        "source": "function(e,t,i,s,r,n,o,a){var l=this;this._notificationHandlers[e][t]=new c((function(r){\"series_completed\"===r.method&&null!==o&&(l._applyTimeFrame(e,s,t,i,o),o=null),a(r)}),t);const h={countBack:n||300};null!==o&&o.type===u.TimeRange&&(h.to=1e3*o.to,h.from=1e3*o.from),this._studyEngine.createSeries(e,t,i,s,r,h)}"
+      },
+      "createSession": {
+        "name": "createSession",
+        "argumentCount": 2,
+        "sourceLength": 184,
+        "source": "function(e,t){TradingView.ChartapiMessagerInstances[e]=new a(this,e),this._sessions[e]=t,this._notificationHandlers[e]={},this.connected()&&t.onMessage({method:\"connected\",params:[]})}"
+      },
+      "createStudiesAccessController": {
+        "name": "createStudiesAccessController",
+        "argumentCount": 3,
+        "sourceLength": 117,
+        "source": "function(e,t,i){return new this.StudiesAccessController(this._studyEngine,e&&JSON.parse(e)||{type:\"black\",tools:[]})}"
+      },
+      "depthCreateSession": {
+        "name": "depthCreateSession",
+        "argumentCount": 1,
+        "sourceLength": 59,
+        "source": "function(e){return this._studyEngine.depthCreateSession(e)}"
+      },
+      "getStudyCounter": {
+        "name": "getStudyCounter",
+        "argumentCount": 0,
+        "sourceLength": 36,
+        "source": "function(){return this.studyCounter}"
+      },
+      "modifySeries": {
+        "name": "modifySeries",
+        "argumentCount": 8,
+        "sourceLength": 222,
+        "source": "function(e,t,i,s,r,n,o,a){var l=this;this._notificationHandlers[e][t]=new c((function(r){\"series_completed\"===r.method&&null!==o&&(l._applyTimeFrame(e,s,t,i,o),o=null),a(r)}),t),this._studyEngine.modifySeries(e,t,s,r,i,n)}"
+      },
+      "modifyStudy": {
+        "name": "modifyStudy",
+        "argumentCount": 5,
+        "sourceLength": 103,
+        "source": "function(e,t,i,s,r){this._notificationHandlers[e][t]=new c(r,t),this._studyEngine.modifyStudy(e,t,i,s)}"
+      },
+      "quoteCreateSession": {
+        "name": "quoteCreateSession",
+        "argumentCount": 1,
+        "sourceLength": 59,
+        "source": "function(e){return this._studyEngine.quoteCreateSession(e)}"
+      },
+      "quoteRemoveSymbols": {
+        "name": "quoteRemoveSymbols",
+        "argumentCount": 2,
+        "sourceLength": 63,
+        "source": "function(e,t){return this._studyEngine.quoteRemoveSymbols(e,t)}"
+      },
+      "rebindStudy": {
+        "name": "rebindStudy",
+        "argumentCount": 8,
+        "sourceLength": 61,
+        "source": "function(e,t,i,s,r,n,o,a){throw new Error(\"Not implemented\")}"
+      },
+      "removePointset": {
+        "name": "removePointset",
+        "argumentCount": 3,
+        "sourceLength": 92,
+        "source": "function(e,t,i){this._notificationHandlers[e][t]=null,this._studyEngine.removePointset(e,t)}"
+      },
+      "removeSeries": {
+        "name": "removeSeries",
+        "argumentCount": 2,
+        "sourceLength": 90,
+        "source": "function(e,t){delete this._notificationHandlers[e][t],this._studyEngine.removeSeries(e,t)}"
+      },
+      "removeSession": {
+        "name": "removeSession",
+        "argumentCount": 1,
+        "sourceLength": 107,
+        "source": "function(e){delete this._sessions[e],delete this._notificationHandlers[e],this._studyEngine.stopSources(e)}"
+      },
+      "requestFirstBarTime": {
+        "name": "requestFirstBarTime",
+        "argumentCount": 4,
+        "sourceLength": 62,
+        "source": "function(e,t,i,s){this._notificationHandlers[e][t]=new c(s,t)}"
+      }
+    }
+  },
+  "studyEngine": {
+    "object": {
+      "path": "iframe.tradingViewApi._chartApiInstance._studyEngine",
+      "available": true,
+      "constructor": "V",
+      "ownKeys": [
+        "_studiesCache",
+        "_objectsDataCache",
+        "_studiesNonSeriesTimes",
+        "_metainfoCache",
+        "_barsCoefficientsCache",
+        "_externalDatafeed",
+        "_datafeedConfiguration",
+        "_marketStatusWatchers",
+        "_resolveRequests",
+        "_resolvePromisesBySymbolId",
+        "_symbolIdToSymbolRequestString",
+        "_callbacks",
+        "_serverTimeOffset",
+        "_invalidatedPointsetSessions",
+        "_refreshPointsetsTimerId",
+        "_pointsetsManagers",
+        "_quotesInfo",
+        "_depthInfo",
+        "_endOfData",
+        "_computeStudyCounter",
+        "_symbolExtrapolators",
+        "_timeScales",
+        "_cachedDatafeed"
+      ],
+      "methods": [
+        "__defineGetter__",
+        "__defineSetter__",
+        "__lookupGetter__",
+        "__lookupSetter__",
+        "_adoptConfigurationData",
+        "_applyTimeScaleUpdate",
+        "_barsCoefficients",
+        "_clearSeriesData",
+        "_computeStudy",
+        "_createMarketStatusWatchers",
+        "_createStudy",
+        "_filteredSymbols",
+        "_findStudyObject",
+        "_fireEvent",
+        "_getSeriesData",
+        "_getSymbolExtrapolator",
+        "_isEndOfData",
+        "_logMessage",
+        "_mainSeriesRecord",
+        "_modifyMainSeries",
+        "_prepareSeriesNonSeriesData",
+        "_recreateSourcesForDataRange",
+        "_refreshPointsets",
+        "_removeMarketStatusWatchers",
+        "_resolveSymbolByName",
+        "_resolveSymbolImpl",
+        "_resolveSymbolInternal",
+        "_restartDepthSubscription",
+        "_restartQuotesSubscription",
+        "_seriesCount",
+        "_seriesDataRange",
+        "_setEndOfData",
+        "_startDepthSubscription",
+        "_startQuotesSubscription",
+        "_startSourcesTree",
+        "_stopDepthSubscription",
+        "_stopQuotesSubscription",
+        "_stopSourcesTree",
+        "_studyCanExtendTimeScale",
+        "_updateMainTsBuilder",
+        "_updateTimeScaleState",
+        "chartCreateSession",
+        "chartDeleteSession",
+        "constructor",
+        "createPointset",
+        "createSeries",
+        "createStudy",
+        "depthCreateSession",
+        "depthDeleteSession",
+        "depthSetSymbol",
+        "destroy",
+        "ensureExtendedTo",
+        "extendSeriesRange",
+        "getCurrentUTCTime",
+        "getMarks",
+        "getSeriesInterval",
+        "getSeriesLastBarTime",
+        "getSeriesSymbolInfo",
+        "getTimescaleMarks",
+        "hasOwnProperty",
+        "isPrototypeOf",
+        "isTimeScaleExtendedTo",
+        "modifySeries",
+        "modifyStudy",
+        "on",
+        "onSessionSeriesError",
+        "propertyIsEnumerable",
+        "purgeCache",
+        "purgeDataCache",
+        "quoteAddSymbols",
+        "quoteCreateSession",
+        "quoteDeleteSession",
+        "quoteFastSymbols",
+        "quoteHibernateAll",
+        "quoteRemoveSymbols",
+        "quoteSetFields",
+        "removePointset",
+        "removeSeries",
+        "removeStudy",
+        "requestMoreTickmarks",
+        "resolveSymbol",
+        "searchSymbols",
+        "seriesTurnaround",
+        "serverTime",
+        "serverTimeOffset",
+        "sessionTimeScale",
+        "stopSources",
+        "studiesMetadata",
+        "supportedCurrencies",
+        "supportedPriceSources",
+        "supportedResolutions",
+        "supportedSymbolsTypes",
+        "supportedUnits",
+        "switchTimezone",
+        "symbolsGrouping",
+        "toLocaleString",
+        "toString",
+        "valueOf"
+      ],
+      "selectedFunctions": {
+        "createStudy": {
+          "name": "createStudy",
+          "argumentCount": 6,
+          "sourceLength": 505,
+          "source": "function(e,t,i,s,r,n){var o=this._studiesCache[e][i],a=this._findStudyObject(r);if(null===a)return console.warn(\"Study does not exist: \"+r),void TradingView.ChartapiMessagerInstances[e].onStudyError(t,s,\"unknown study name\");var l=new a.constructor;this._studiesCache[e]=this._studiesCache[e]||{},this._studiesCache[e][t]={studyObject:l,guid:t,type:\"study\",inputs:n,metainfo:a.metainfo,turnaround:s,parentId:i},this._studiesNonSeriesTimes[e][t]=null,this._createStudy(o.symbolId,o.resolution,l,e,t,s,i,n)}"
+        },
+        "_createStudy": {
+          "name": "_createStudy",
+          "argumentCount": 8,
+          "sourceLength": 2577,
+          "source": "function(e,t,i,s,r,n,o,a){var l=this;function c(e,t,i){if(l._studiesCache[s][r].completed=!0,e=A(e),l._setEndOfData(s,r,n,!0),l._studyCanExtendTimeScale(s,r)){const t=e.map((function(e){return e.timeMs})),i=l._timeScales[s].setStudyBarsTimes(r,t);l._applyTimeScaleUpdate(s,i)}l._timeScales[s].fillIndexesInRows(e),TradingView.ChartapiMessagerInstances[s].onDataUpdate(r,n,e,t),TradingView.ChartapiMessagerInstances[s].onStudyCompleted(r,n),l._updateTimeScaleState(s)}function h(e){var t={};if(0!==e.size){var i={},n=l._studiesCache[s][r].metainfo;e.forEach((function(e,t){i[n.plots[t].id]=e})),t.data={offsets:i}}return t}a=function(e){if(Array.isArray(e))return e;for(var t=[],i=l._studiesCache[s][r].metainfo.inputs,n=0;n<i.length;n++)t[n]=e[i[n].id];return t}(a),TradingView.ChartapiMessagerInstances[s].onStudyLoading(r,n);var d=null,u=!1;l._setEndOfData(s,r,n,!0),l._computeStudy(s,i,e,t,r,a,this._seriesDataRange(s,o),null,(function(){if(null===d){var e=l._getSeriesData(s,o)[0];if(void 0===e)return 1/0;d=e.timeMs}return d}),{onDataReadyCallback:function(e,t,i){u&&0===e.length||c(e,h(t))},onRealtimeCallback:function(e,t,i,o,a){if(e=A(e),l._studyCanExtendTimeScale(s,r)){const t=e.map((function(e){return e.timeMs})),i=l._timeScales[s].replaceBarsTimesTail(r,t);l._applyTimeScaleUpdate(s,i)}l._timeScales[s].fillIndexesInRows(e),TradingView.ChartapiMessagerInstances[s].onDataUpdate(r,n,e,h(o)),l._updateTimeScaleState(s)},onSymbolErrorCallback:function(){l._studiesCache[s][r].completed=!0,TradingView.ChartapiMessagerInstances[s].onStudyError(r,n,\"error in series\")},onErrorCallback:function(e){l._studiesCache[s][r].completed=!0,TradingView.ChartapiMessagerInstances[s].onStudyError(r,n,e)},onNonSeriesDataUpdate:function(e,t){switch(u=!0,e.type){case\"projection\":break;case\"study_graphics\":var i={data:e.data,indexes:[]},n=w(i);l._studiesNonSeriesTimes[s][r]=n,i.indexes=l._timeScales[s].convertTimesToIndexes(n),c([],i);break;case\"non_series_data\":n=function(e){var t={};p(e,(function(e){_(e)&&Object.keys(e).forEach((function(i){i.endsWith(\"__t\")&&(t[e[i]]=!0)}))}),{visitInstances:!0});var i=Object.keys(t).map(Number).sort((function(e,t){return e-t}));return i.forEach((function(e,i){"
+        },
+        "removeStudy": {
+          "name": "removeStudy",
+          "argumentCount": 2,
+          "sourceLength": 422,
+          "source": "function(e,t){if(this._studiesCache[e]&&this._studiesCache[e][t]&&this._studiesCache[e][t].engine&&(this._studiesCache[e][t].engine.stop(),n.unsubscribeUnused()),this._studyCanExtendTimeScale(e,t)){this._timeScales[e].setCompleted(!1);const i=this._timeScales[e].setStudyBarsTimes(t,[]);this._applyTimeScaleUpdate(e,i),this._updateTimeScaleState(e)}delete this._studiesCache[e][t],delete this._studiesNonSeriesTimes[e][t]}"
+        },
+        "modifyStudy": {
+          "name": "modifyStudy",
+          "argumentCount": 4,
+          "sourceLength": 326,
+          "source": "function(e,t,i,s){var r=this._studiesCache[e][t];if(!r)throw Error(\"This should never happen\");var o=this._studiesCache[e][r.parentId];r.inputs=s,r.turnaround=i,r.engine&&(r.engine.stop(),n.unsubscribeUnused()),this._studiesNonSeriesTimes[e][t]=null,this._createStudy(o.symbolId,o.resolution,r.studyObject,e,t,i,r.parentId,s)}"
+        },
+        "_computeStudy": {
+          "name": "_computeStudy",
+          "argumentCount": 10,
+          "sourceLength": 2242,
+          "source": "async function(e,t,i,s,n,o,a,l,c,u){var p=!0,_=[];null!==l&&(this._objectsDataCache[l]=null),this._timeScales[e].setCompleted(!1);var m=this._computeStudyCounter++;function g(e,t){if(e<c())return L;if(0===t)return 0;var i=_[t-1].index;return i===L?0:i+1}var v=new Map;var S=!1,y=this,b=function(){return y._studiesCache[e]&&y._studiesCache[e][n]&&y._studiesCache[e][n].activeResolve===m};y._studiesCache[e][n].activeResolve=m;var w,P,T=this._resolvePromisesBySymbolId.get(D(e,i));if(void 0===T)throw new Error(\"This should never happen\");try{var I=await T;w=I.symbolInfo,P=I.requestedSymbol}catch(e){return void(b()&&u.onSymbolErrorCallback(e))}b()&&function(i,c){var m=d.parse(s);if(!m.isIntraday()||i.has_intraday){if(d.isDWM(s)&&void 0!==a.to){var b=h(s,i);null!==b&&(a.to=b.timeToExchangeTradingDay(a.to))}if(a.from&&a.to){const e=x(i.session,i.session_holidays,i.corrections,m.letter(),m.multiplier(),a.from,a.to);a.countBack=Math.max(e,a.countBack)}try{var w=new r.StudyEngine({tickerid:c,symbolInfo:i,period:s,body:t,sessionId:e,onErrorCallback:u.onErrorCallback,dataRange:a,subsessionId:i.subsession_id,forceAlignBars:!C.enabled(\"disable_sameinterval_aligning\")&&f(),enableDwmAligning:!y._studyCanExtendTimeScale(e,n),input:function(e){return o[e]},out:function(e,t){!function(e,t,i){for(var s=e.time,r=\"number\"==typeof t?[t]:t,n=0;n<r.length;++n){var o=r[n];o&&\"object\"==typeof o&&(v.set(n,o.offset),o=o.value),\"number\"==typeof o&&isNaN(o)&&(o=void 0),r[n]=o}var a=_.length-1,l=a<0||s>_[a].timeMs;l?_.push({index:g(s,_.length),value:[s/1e3].concat(r),timeMs:s}):(_[a].index=g(s,a),_[a].value=[s/1e3].concat(r),_[a].timeMs=s), p||u.onRealtimeCallback([_[_.length-1]],l,_.length,v,i)}(e,t,i)},nonseriesOut:function(e,t){u.onNonSeriesDataUpdate(t,i)},setNoMoreData:function(){S=!0},recalc:function(e,s){p=!1,_.endOfData=S,_.emptyBarCount=s.emptyBarCount,t.error&&null!==t.error()||(null!==l&&(y._objectsDataCache[l]=_),u.onDataReadyCallback(_,v,i,s))}});if(!y._studiesCache[e]||!y._studiesCache[e][n])throw Error(\"This should never happen\");y._studiesCache[e][n].engine=w}catch(e){if(!e.studyError)throw e;u.onErrorCallback(e.message)}}else u.onErrorCallback(\"Unsupported resolution. Did you fo"
+        },
+        "_findStudyObject": {
+          "name": "_findStudyObject",
+          "argumentCount": 1,
+          "sourceLength": 204,
+          "source": "function(e){e.endsWith(\"!\")&&(e=e.slice(0,-1));var t=e.split(\"@\")[0],i=JSServer.studyLibrary.filter((function(i){return i.metainfo.id===e||i.metainfo.shortDescription===t}));return 0===i.length?null:i[0]}"
+        },
+        "_adoptConfigurationData": {
+          "name": "_adoptConfigurationData",
+          "argumentCount": 1,
+          "sourceLength": 288,
+          "source": "function(e){var t=TradingView.merge({},e),i=t.supported_resolutions;if(!i||0===i.length)return t.supported_resolutions=void 0,t;for(var s=[],r=0;r<i.length;r++){var n=i[r];if(-1!==s.indexOf(n))throw new Error(\"Duplicating resolution `\"+n+\"`\");s.push(n)}return t.supported_resolutions=s,t}"
+        },
+        "resolveSymbol": {
+          "name": "resolveSymbol",
+          "argumentCount": 3,
+          "sourceLength": 369,
+          "source": "function(e,t,i){var s=this;this._symbolIdToSymbolRequestString.set(D(e,t),i),this._resolvePromisesBySymbolId.set(D(e,t),new Promise((function(r,n){s._resolveSymbolImpl(i,(function(s){TradingView.ChartapiMessagerInstances[e].onSymbolResolved(t,s),r({symbolInfo:s,requestedSymbol:i})}),(function(i){TradingView.ChartapiMessagerInstances[e].onSymbolError(t,i),n(i)}))})))}"
+        },
+        "supportedResolutions": {
+          "name": "supportedResolutions",
+          "argumentCount": 0,
+          "sourceLength": 68,
+          "source": "function(){return this._datafeedConfiguration.supported_resolutions}"
+        },
+        "on": {
+          "name": "on",
+          "argumentCount": 2,
+          "sourceLength": 112,
+          "source": "function(e,t){return this._callbacks.hasOwnProperty(e)||(this._callbacks[e]=[]),this._callbacks[e].push(t),this}"
+        },
+        "_fireEvent": {
+          "name": "_fireEvent",
+          "argumentCount": 3,
+          "sourceLength": 138,
+          "source": "function(e,t,i){if(this._callbacks.hasOwnProperty(e)){for(var s=this._callbacks[e],r=0;r<s.length;++r)s[r](t);i||(this._callbacks[e]=[])}}"
+        },
+        "_barsCoefficients": {
+          "name": "_barsCoefficients",
+          "argumentCount": 2,
+          "sourceLength": 161,
+          "source": "function(e,t){if(void 0===y(e).type)return{};var i=e+t;return this._barsCoefficientsCache[i]||(this._barsCoefficientsCache[i]={}),this._barsCoefficientsCache[i]}"
+        },
+        "_clearSeriesData": {
+          "name": "_clearSeriesData",
+          "argumentCount": 2,
+          "sourceLength": 267,
+          "source": "function(e,t){var i={};for(var s in i[t]={turnaround:this._studiesCache[e][t].turnaround},this._studiesCache[e]){var r=this._studiesCache[e][s];\"study\"===r.type&&r.parentId===t&&(i[s]={turnaround:r.turnaround})}TradingView.ChartapiMessagerInstances[e].onClearData(i)}"
+        },
+        "_createMarketStatusWatchers": {
+          "name": "_createMarketStatusWatchers",
+          "argumentCount": 2,
+          "sourceLength": 329,
+          "source": "function(e,t){ void 0===this._marketStatusWatchers[e]&&(this._marketStatusWatchers[e]={});for(let i=0;i<t.length;i+=1){const r=t[i];if(void 0===this._marketStatusWatchers[e][r]){const[t,i]=B(r);this._marketStatusWatchers[e][r]=new s(((s,n,o,a)=>this._resolveSymbolByName(t,i,o,(t=>{this.quoteRemoveSymbols(e,[r]),a(t)}))),e,r)}}}"
+        },
+        "_getSeriesData": {
+          "name": "_getSeriesData",
+          "argumentCount": 2,
+          "sourceLength": 58,
+          "source": "function(e,t){return this._objectsDataCache[R(e,t)]||null}"
+        },
+        "_mainSeriesRecord": {
+          "name": "_mainSeriesRecord",
+          "argumentCount": 1,
+          "sourceLength": 207,
+          "source": "function(e){var t=null,i=null;for(var s in this._studiesCache[e]){var r=this._studiesCache[e][s];if(\"series\"===r.type&&(null===t&&(t=r),r.isMain)){i=r;break}}return null===i&&(i=t),null!==i&&(i.isMain=!0),i}"
+        },
+        "_modifyMainSeries": {
+          "name": "_modifyMainSeries",
+          "argumentCount": 5,
+          "sourceLength": 842,
+          "source": "function(e,t,i,s,r){this.stopSources(e);var n=this._mainSeriesRecord(e);let o=!1;for(var a in this._studiesCache[e]){if((l=this._studiesCache[e][a])&&\"series\"===l.type)if(l.guid===n.guid){o=n.symbolId!==t||n.resolution!==i;const a=E(r),l={countBack:a||0};C.enabled(\"request_only_visible_range_on_reset\")&&a&&(delete this._objectsDataCache[R(e,n.guid)],delete this._studiesCache[e][n.guid]),this.createSeries(e,n.guid,s,t,i,l,!0)}else this.createSeries(e,l.guid,l.turnaround,l.symbolId,i,{countBack:0},!0)}for(var a in this._studiesCache[e]){var l;if((l=this._studiesCache[e][a])&&\"study\"===l.type){this._studiesNonSeriesTimes[e][a]=null;var c=this._studiesCache[e][l.parentId];this._createStudy(c.symbolId,c.resolution,l.studyObject,e,a,l.turnaround,l.parentId,l.inputs)}}o&&this._applyTimeScaleUpdate(e,this._timeScales[e].clearTimeScale())}"
+        },
+        "_prepareSeriesNonSeriesData": {
+          "name": "_prepareSeriesNonSeriesData",
+          "argumentCount": 3,
+          "sourceLength": 454,
+          "source": "function(e,t,i){var s=i.data[i.data.length-1],r=this._getSeriesData(e,t),n=null===r?[]:i.data;return{data:{data:{reversalAmount:i.reversalAmount,boxSize:i.boxSize,price:s?s[4]:i.price,bars:n.map((function(e,t){return{time:t,open:e[1],high:e[2],low:e[3],close:e[4],volume:e[5],factor:e[6],additionalPrice:e[6]}}))}},indexes:this._timeScales[e].convertTimesToIndexes(n.map((function(e){var t=e[0]||0;return t<0?r[r.length+t].timeMs:i.projectionTime+t})))}}"
+        },
+        "_recreateSourcesForDataRange": {
+          "name": "_recreateSourcesForDataRange",
+          "argumentCount": 2,
+          "sourceLength": 538,
+          "source": "function(e,t){var i=[];for(var s in this._studiesCache[e]){(r=this._studiesCache[e][s])&&\"series\"===r.type&&!this._isEndOfData(e,s,r.turnaround)&&(this._stopSourcesTree(e,s),i.push(s))}for(var s in i.forEach((function(i){this._startSourcesTree(e,i,Object.assign({},t))}),this),this._studiesCache[e]){var r;\"series\"===(r=this._studiesCache[e][s]).type&&this._isEndOfData(e,s,r.turnaround)&&TradingView.ChartapiMessagerInstances[e].onSeriesCompleted(s,r.turnaround,r.engine.runner.host.symbolInfo.data_status)}this._updateTimeScaleState(e)}"
+        },
+        "_removeMarketStatusWatchers": {
+          "name": "_removeMarketStatusWatchers",
+          "argumentCount": 1,
+          "sourceLength": 164,
+          "source": "function(e){var t=this;Object.keys(this._marketStatusWatchers[e]||{}).forEach((function(i){t._marketStatusWatchers[e][i].stop()})),this._marketStatusWatchers[e]={}}"
+        },
+        "_restartDepthSubscription": {
+          "name": "_restartDepthSubscription",
+          "argumentCount": 1,
+          "sourceLength": 75,
+          "source": "function(e){this._stopDepthSubscription(e),this._startDepthSubscription(e)}"
+        },
+        "_restartQuotesSubscription": {
+          "name": "_restartQuotesSubscription",
+          "argumentCount": 1,
+          "sourceLength": 77,
+          "source": "function(e){this._stopQuotesSubscription(e),this._startQuotesSubscription(e)}"
+        },
+        "_seriesCount": {
+          "name": "_seriesCount",
+          "argumentCount": 1,
+          "sourceLength": 114,
+          "source": "function(e){var t=0;for(var i in this._studiesCache[e]){\"series\"===this._studiesCache[e][i].type&&(t+=1)}return t}"
+        },
+        "_seriesDataRange": {
+          "name": "_seriesDataRange",
+          "argumentCount": 2,
+          "sourceLength": 128,
+          "source": "function(e,t){var i=this._studiesCache[e][t];return null!==i.firstLoadedTimeMs?{to:i.firstLoadedTimeMs,countBack:0}:i.dataRange}"
+        },
+        "_startDepthSubscription": {
+          "name": "_startDepthSubscription",
+          "argumentCount": 1,
+          "sourceLength": 512,
+          "source": "function(e){var t=this,i=this._depthInfo[e].symbol;function s(e){return e.map((function(e){return{p:e.price,v:e.volume}}))}function r(e){var t={};return t.s=i,t.bids=s(e.bids),t.asks=s(e.asks),t}i&&this._externalDatafeed.subscribeDepth&&(t._depthInfo[e].listenerGUID=this._externalDatafeed.subscribeDepth(i,(function(i){var s;t._depthInfo[e]&&((s=i).snapshot?TradingView.ChartapiMessagerInstances[e].onDepthData([e].concat([r(s)])):TradingView.ChartapiMessagerInstances[e].onDepthUpdate([e].concat([r(s)])))})))}"
+        },
+        "_startQuotesSubscription": {
+          "name": "_startQuotesSubscription",
+          "argumentCount": 1,
+          "sourceLength": 1281,
+          "source": "function(e){var t={},i=this;function s(t,s){var r=i._marketStatusWatchers[e][t.n];t.symbolname=t.n,t.status=t.s,t.values=t.v,t.values.change=t.v.ch,t.values.last_price=t.v.lp,t.values.change_percent=t.v.chp,t.values.current_session=t.v.cs||r&&r.marketStatus(),t.values.pricescale=s.pricescale,t.values.minmov=s.minmov,t.values.minmove2=s.minmove2||0,t.values.fractional=s.fractional||!1,k(s.logo_urls,s.exchange_logo,t.values),r&&t.v.cs&&r.stop(),TradingView.ChartapiMessagerInstances[e].onQuotesData([e].concat([t]))}function r(e){e.forEach((function(e){void 0!==t[e.n]?null!==t[e.n]&&s(e,t[e.n]):i._resolveSymbolByName(e.n,null,(function(i){t[e.n]=i,s(e,i)}),(function(){t[e.n]=null}))}))}var n=this._quotesInfo[e].symbols;if(0===n.length)return;const o=n.map((e=>B(e)[0]));this._externalDatafeed.getQuotes&&!C.enabled(\"charting_library\")?this._externalDatafeed.getQuotes(o,(function(t){i._quotesInfo[e]&&0!==i._quotesInfo[e].symbols.length&&(r(t),i._quotesInfo[e].listenerGUID=e,i._externalDatafeed.subscribeQuotes(o,i._quotesInfo[e].fastSymbols,r,i._quotesInfo[e].listenerGUID))}),(function(e){})):!this._externalDatafeed.getQuotes&&C.enabled(\"trading_terminal\")&&setTimeout((function(){r(o.map((function(e){return{n:e,s:\"ok\",v:{}}})))})),this._createMarketStatusWatchers(e,n)}"
+        },
+        "_stopDepthSubscription": {
+          "name": "_stopDepthSubscription",
+          "argumentCount": 1,
+          "sourceLength": 160,
+          "source": "function(e){ this._depthInfo[e].listenerGUID&&(this._externalDatafeed.unsubscribeDepth(this._depthInfo[e].listenerGUID),this._depthInfo[e].listenerGUID=void 0)}"
+        },
+        "_stopQuotesSubscription": {
+          "name": "_stopQuotesSubscription",
+          "argumentCount": 1,
+          "sourceLength": 199,
+          "source": "function(e){this._quotesInfo[e].listenerGUID&&(this._externalDatafeed.unsubscribeQuotes(this._quotesInfo[e].listenerGUID),this._quotesInfo[e].listenerGUID=void 0),this._removeMarketStatusWatchers(e)}"
+        },
+        "_studyCanExtendTimeScale": {
+          "name": "_studyCanExtendTimeScale",
+          "argumentCount": 2,
+          "sourceLength": 224,
+          "source": "function(e,t){const i=this._studiesCache[e][t]?.metainfo;return void 0!==i&&(C.enabled(\"studies_extend_time_scale\")&&i.canExtendTimeScale||C.enabled(\"secondary_series_extend_time_scale\")&&\"Overlay@tv-basicstudies-1\"===i.id)}"
+        },
+        "chartCreateSession": {
+          "name": "chartCreateSession",
+          "argumentCount": 1,
+          "sourceLength": 105,
+          "source": "function(e){this._pointsetsManagers[e]=new l,this._timeScales[e]=new a,this._studiesNonSeriesTimes[e]={}}"
+        },
+        "createPointset": {
+          "name": "createPointset",
+          "argumentCount": 5,
+          "sourceLength": 499,
+          "source": "async function(e,t,i,s,r){var n,o=this._resolvePromisesBySymbolId.get(D(e,i));try{n=(await o).symbolInfo}catch(e){return}var a=this._getSymbolExtrapolator(e,n,s);if(this._pointsetsManagers[e].createPointset(t,n.full_name,s,r,a),null===this._refreshPointsetsTimerId){var l=this;this._refreshPointsetsTimerId=setTimeout((function(){l._refreshPointsetsTimerId=null,l._refreshPointsets(l._invalidatedPointsetSessions),l._invalidatedPointsetSessions.clear()}),0)}this._invalidatedPointsetSessions.add(e)}"
+        },
+        "createSeries": {
+          "name": "createSeries",
+          "argumentCount": 7,
+          "sourceLength": 4267,
+          "source": "function(e,t,i,s,n,o,a){this._setEndOfData(e,t,i,!1);var l=new r.OHLCV;this._studiesCache[e]=this._studiesCache[e]||{};var c=this._getSeriesData(e,t),h=this._studiesCache[e][t],u=this._seriesCount(e),p=this._mainSeriesRecord(e);if(!h||d.isEqual(h.resolution,n)&&h.symbolId===s)void 0!==o.countBack&&null!==c&&0!==c.length&&(o.to=c[0].timeMs),h&&null!=h.firstLoadedTimeMs?o.to=void 0!==o.to?Math.min(h.firstLoadedTimeMs,o.to):h.firstLoadedTimeMs:h||0===u||null!==p&&(null!=p.firstLoadedTimeMs?(o.to=p.firstLoadedTimeMs, o.countBack=0):o=Object.assign({},p.dataRange));else if(1===u)o=Object.assign({},h.initialDatarange);else{var _=this._timeScales[e].firstSeriesBarTime();(void 0===o.to||null!==_&&_<o.to)&&(o.to=_,o.countBack=0)}if(void 0===o.countBack&&(o.countBack=0),void 0===o.to&&0===o.countBack&&(o.countBack=100),this._studiesCache[e][t]={symbolId:s,resolution:n,studyObject:l,guid:t,type:\"series\",turnaround:i,dataRange:o,initialDatarange:h&&h.initialDatarange||Object.assign({},o),firstLoadedTimeMs:null,symbolInfo:null,isMain:h&&h.isMain||0===u,completed:!1},null===p||p.guid===t||!p.error){this._updateMainTsBuilder(e),this._updateTimeScaleState(e),TradingView.ChartapiMessagerInstances[e].onSeriesLoading(t,i);var m=this;this._computeStudy(e,l,s,n,t,[],o,R(e,t),(function(){return-1/0}),{onDataReadyCallback:function(r,o,l,c){var h=m._studiesCache[e][t];if(!h)throw Error(\"This should never happen\");if(h.symbolInfo=l,h.firstLoadedTimeMs=c.firstLoadedTimeMs,h.completed=!0,m._updateMainTsBuilder(e),a&&m._pointsetsManagers[e].invalidatePointsetsForSymbol(l.full_name,n),0!==r.length){var d=m._symbolIdToSymbolRequestString.get(D(e,s)),u=m._barsCoefficients(d,n);u.expectedBarsCount&&u.barsCount&&(u.barsCoefficient=Math.min(Math.max(u.barsCoefficient||1,parseInt(u.expectedBarsCount/(r.length-u.barsCount)+.5)),100)),u.barsCount=r.length,m._clearSeriesData(e,t)}else!c.endOfData&&h.isMain&&setTimeout((function(){m._studiesCache[e]&&m._recreateSourcesForDataRange(e,{countBack:10})}),0);g(l),c.endOfData&&(m._logMessage(\"Series has no more data on server: {0}\".format(l.full_name)),m._setEndOfData(e,t,i)),0===r.length&&m._clearSeriesData(e,t),TradingView.ChartapiMessagerInstances[e].on"
+        },
+        "depthCreateSession": {
+          "name": "depthCreateSession",
+          "argumentCount": 1,
+          "sourceLength": 65,
+          "source": "function(e){this._depthInfo[e]={symbol:null,listenerGUID:void 0}}"
+        },
+        "extendSeriesRange": {
+          "name": "extendSeriesRange",
+          "argumentCount": 2,
+          "sourceLength": 636,
+          "source": "function(e,t){var i=this._timeScales[e].firstSeriesBarTime();if(null!==i){var s=this._mainSeriesRecord(e);if(d.isDWM(s.resolution)&&null!=s.symbolInfo){var r=h(s.resolution,s.symbolInfo);null!==r&&(i=r.timeToExchangeTradingDay(i))}var n=this._symbolIdToSymbolRequestString.get(D(e,s.symbolId)),o=this._barsCoefficients(n,s.resolution),a=o.barsCoefficient||1;if(!o.barsCoefficient){var l=this._getSeriesData(e,s.guid);null!==l&&(o.expectedBarsCount=l.length+t)}var c=this;setTimeout((function(){c._recreateSourcesForDataRange(e,{to:i,countBack:(t+2)*a})}),0)}else this._logMessage(\"Nothing to extend - there is no points on time scale\")}"
+        },
+        "getSeriesInterval": {
+          "name": "getSeriesInterval",
+          "argumentCount": 2,
+          "sourceLength": 72,
+          "source": "function(e,t){var i=this._studiesCache[e][t];return i?i.resolution:null}"
+        }
+      }
+    },
+    "stores": {
+      "metainfoCache": {
+        "exists": true,
+        "type": "[object Array]",
+        "keyCount": 120,
+        "keys": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12",
+          "13",
+          "14",
+          "15",
+          "16",
+          "17",
+          "18",
+          "19",
+          "20",
+          "21",
+          "22",
+          "23",
+          "24",
+          "25",
+          "26",
+          "27",
+          "28",
+          "29",
+          "30",
+          "31",
+          "32",
+          "33",
+          "34"
+        ],
+        "samples": [
+          {
+            "key": "0",
+            "type": "object",
+            "constructor": "Object",
+            "keys": [
+              "_metainfoVersion",
+              "isTVScript",
+              "isTVScriptStub",
+              "is_hidden_study",
+              "defaults",
+              "plots",
+              "styles",
+              "description",
+              "shortDescription",
+              "is_price_study",
+              "inputs",
+              "id",
+              "scriptIdPart",
+              "name",
+              "format"
+            ]
+          },
+          {
+            "key": "1",
+            "type": "object",
+            "constructor": "Object",
+            "keys": [
+              "_metainfoVersion",
+              "isTVScript",
+              "isTVScriptStub",
+              "is_hidden_study",
+              "defaults",
+              "plots",
+              "styles",
+              "description",
+              "shortDescription",
+              "is_price_study",
+              "inputs",
+              "id",
+              "scriptIdPart",
+              "name",
+              "format"
+            ]
+          },
+          {
+            "key": "2",
+            "type": "object",
+            "constructor": "Object",
+            "keys": [
+              "_metainfoVersion",
+              "isTVScript",
+              "isTVScriptStub",
+              "is_hidden_study",
+              "defaults",
+              "plots",
+              "styles",
+              "description",
+              "shortDescription",
+              "is_price_study",
+              "inputs",
+              "id",
+              "scriptIdPart",
+              "name",
+              "format"
+            ]
+          },
+          {
+            "key": "3",
+            "type": "object",
+            "constructor": "Object",
+            "keys": [
+              "_metainfoVersion",
+              "isTVScript",
+              "isTVScriptStub",
+              "is_hidden_study",
+              "defaults",
+              "plots",
+              "styles",
+              "description",
+              "shortDescription",
+              "is_price_study",
+              "inputs",
+              "id",
+              "scriptIdPart",
+              "name",
+              "format"
+            ]
+          },
+          {
+            "key": "4",
+            "type": "object",
+            "constructor": "Object",
+            "keys": [
+              "_metainfoVersion",
+              "isTVScript",
+              "isTVScriptStub",
+              "is_hidden_study",
+              "defaults",
+              "plots",
+              "styles",
+              "description",
+              "shortDescription",
+              "is_price_study",
+              "inputs",
+              "id",
+              "scriptIdPart",
+              "name",
+              "format"
+            ]
+          },
+          {
+            "key": "5",
+            "type": "object",
+            "constructor": "Object",
+            "keys": [
+              "_metainfoVersion",
+              "isTVScript",
+              "isTVScriptStub",
+              "is_hidden_study",
+              "id",
+              "scriptIdPart",
+              "name",
+              "description",
+              "shortDescription",
+              "is_price_study",
+              "plots",
+              "defaults",
+              "styles",
+              "inputs",
+              "format"
+            ]
+          },
+          {
+            "key": "6",
+            "type": "object",
+            "constructor": "Object",
+            "keys": [
+              "_metainfoVersion",
+              "isTVScript",
+              "isTVScriptStub",
+              "is_hidden_study",
+              "defaults",
+              "plots",
+              "styles",
+              "description",
+              "shortDescription",
+              "is_price_study",
+              "inputs",
+              "id",
+              "scriptIdPart",
+              "name",
+              "format"
+            ]
+          },
+          {
+            "key": "7",
+            "type": "object",
+            "constructor": "Object",
+            "keys": [
+              "_metainfoVersion",
+              "isTVScript",
+              "isTVScriptStub",
+              "is_hidden_study",
+              "defaults",
+              "plots",
+              "styles",
+              "description",
+              "shortDescription",
+              "is_price_study",
+              "inputs",
+              "id",
+              "scriptIdPart",
+              "name",
+              "format"
+            ]
+          },
+          {
+            "key": "8",
+            "type": "object",
+            "constructor": "Object",
+            "keys": [
+              "_metainfoVersion",
+              "isTVScript",
+              "isTVScriptStub",
+              "is_hidden_study",
+              "defaults",
+              "plots",
+              "styles",
+              "description",
+              "shortDescription",
+              "is_price_study",
+              "palettes",
+              "inputs",
+              "id",
+              "scriptIdPart",
+              "name"
+            ]
+          },
+          {
+            "key": "9",
+            "type": "object",
+            "constructor": "Object",
+            "keys": [
+              "_metainfoVersion",
+              "isTVScript",
+              "isTVScriptStub",
+              "is_hidden_study",
+              "defaults",
+              "plots",
+              "styles",
+              "description",
+              "shortDescription",
+              "is_price_study",
+              "palettes",
+              "inputs",
+              "id",
+              "scriptIdPart",
+              "name"
+            ]
+          },
+          {
+            "key": "10",
+            "type": "object",
+            "constructor": "Object",
+            "keys": [
+              "_metainfoVersion",
+              "isTVScript",
+              "isTVScriptStub",
+              "is_hidden_study",
+              "defaults",
+              "plots",
+              "styles",
+              "description",
+              "shortDescription",
+              "is_price_study",
+              "inputs",
+              "id",
+              "scriptIdPart",
+              "name",
+              "format"
+            ]
+          },
+          {
+            "key": "11",
+            "type": "object",
+            "constructor": "Object",
+            "keys": [
+              "_metainfoVersion",
+              "isTVScript",
+              "isTVScriptStub",
+              "is_hidden_study",
+              "defaults",
+              "plots",
+              "styles",
+              "description",
+              "shortDescription",
+              "is_price_study",
+              "filledAreas",
+              "inputs",
+              "id",
+              "scriptIdPart",
+              "name"
+            ]
+          },
+          {
+            "key": "12",
+            "type": "object",
+            "constructor": "Object",
+            "keys": [
+              "_metainfoVersion",
+              "isTVScript",
+              "isTVScriptStub",
+              "is_hidden_study",
+              "defaults",
+              "plots",
+              "styles",
+              "description",
+              "shortDescription",
+              "is_price_study",
+              "bands",
+              "filledAreas",
+              "inputs",
+              "id",
+              "scriptIdPart"
+            ]
+          },
+          {
+            "key": "13",
+            "type": "object",
+            "constructor": "Object",
+            "keys": [
+              "_metainfoVersion",
+              "isTVScript",
+              "isTVScriptStub",
+              "is_hidden_study",
+              "defaults",
+              "plots",
+              "styles",
+              "description",
+              "shortDescription",
+              "is_price_study",
+              "inputs",
+              "id",
+              "scriptIdPart",
+              "name",
+              "format"
+            ]
+          },
+          {
+            "key": "14",
+            "type": "object",
+            "constructor": "Object",
+            "keys": [
+              "_metainfoVersion",
+              "isTVScript",
+              "isTVScriptStub",
+              "is_hidden_study",
+              "defaults",
+              "plots",
+              "styles",
+              "description",
+              "shortDescription",
+              "is_price_study",
+              "bands",
+              "inputs",
+              "id",
+              "scriptIdPart",
+              "name"
+            ]
+          }
+        ]
+      },
+      "studiesCache": {
+        "exists": true,
+        "type": "[object Object]",
+        "keyCount": 1,
+        "keys": [
+          "cs_YBDxImw2IGPM"
+        ],
+        "samples": [
+          {
+            "key": "cs_YBDxImw2IGPM",
+            "type": "object",
+            "constructor": "Object",
+            "keys": [
+              "st1",
+              "st2",
+              "sds_2"
+            ]
+          }
+        ]
+      },
+      "objectsDataCache": {
+        "exists": true,
+        "type": "[object Object]",
+        "keyCount": 1,
+        "keys": [
+          "cs_YBDxImw2IGPM_sds_2"
+        ],
+        "samples": [
+          {
+            "key": "cs_YBDxImw2IGPM_sds_2",
+            "type": "object",
+            "constructor": "Array",
+            "keys": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "10",
+              "11",
+              "12",
+              "13",
+              "14"
+            ]
+          }
+        ]
+      },
+      "datafeedConfiguration": {
+        "exists": true,
+        "type": "[object Object]",
+        "keyCount": 2,
+        "keys": [
+          "supported_resolutions",
+          "exchanges"
+        ],
+        "samples": [
+          {
+            "key": "supported_resolutions",
+            "type": "object",
+            "constructor": "Array",
+            "keys": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "10",
+              "11",
+              "12",
+              "13",
+              "14"
+            ]
+          },
+          {
+            "key": "exchanges",
+            "type": "object",
+            "constructor": "Array",
+            "keys": []
+          }
+        ]
+      },
+      "callbacks": {
+        "exists": true,
+        "type": "[object Object]",
+        "keyCount": 2,
+        "keys": [
+          "configuration_received",
+          "realtime_tick"
+        ],
+        "samples": [
+          {
+            "key": "configuration_received",
+            "type": "object",
+            "constructor": "Array",
+            "keys": [
+              "0"
+            ]
+          },
+          {
+            "key": "realtime_tick",
+            "type": "object",
+            "constructor": "Array",
+            "keys": [
+              "0"
+            ]
+          }
+        ]
+      }
+    },
+    "functionSources": {
+      "createStudy": {
+        "name": "createStudy",
+        "argumentCount": 6,
+        "sourceLength": 505,
+        "source": "function(e,t,i,s,r,n){var o=this._studiesCache[e][i],a=this._findStudyObject(r);if(null===a)return console.warn(\"Study does not exist: \"+r),void TradingView.ChartapiMessagerInstances[e].onStudyError(t,s,\"unknown study name\");var l=new a.constructor;this._studiesCache[e]=this._studiesCache[e]||{},this._studiesCache[e][t]={studyObject:l,guid:t,type:\"study\",inputs:n,metainfo:a.metainfo,turnaround:s,parentId:i},this._studiesNonSeriesTimes[e][t]=null,this._createStudy(o.symbolId,o.resolution,l,e,t,s,i,n)}"
+      },
+      "internalCreateStudy": {
+        "name": "_createStudy",
+        "argumentCount": 8,
+        "sourceLength": 2577,
+        "source": "function(e,t,i,s,r,n,o,a){var l=this;function c(e,t,i){if(l._studiesCache[s][r].completed=!0,e=A(e),l._setEndOfData(s,r,n,!0),l._studyCanExtendTimeScale(s,r)){const t=e.map((function(e){return e.timeMs})),i=l._timeScales[s].setStudyBarsTimes(r,t);l._applyTimeScaleUpdate(s,i)}l._timeScales[s].fillIndexesInRows(e),TradingView.ChartapiMessagerInstances[s].onDataUpdate(r,n,e,t),TradingView.ChartapiMessagerInstances[s].onStudyCompleted(r,n),l._updateTimeScaleState(s)}function h(e){var t={};if(0!==e.size){var i={},n=l._studiesCache[s][r].metainfo;e.forEach((function(e,t){i[n.plots[t].id]=e})),t.data={offsets:i}}return t}a=function(e){if(Array.isArray(e))return e;for(var t=[],i=l._studiesCache[s][r].metainfo.inputs,n=0;n<i.length;n++)t[n]=e[i[n].id];return t}(a),TradingView.ChartapiMessagerInstances[s].onStudyLoading(r,n);var d=null,u=!1;l._setEndOfData(s,r,n,!0),l._computeStudy(s,i,e,t,r,a,this._seriesDataRange(s,o),null,(function(){if(null===d){var e=l._getSeriesData(s,o)[0];if(void 0===e)return 1/0;d=e.timeMs}return d}),{onDataReadyCallback:function(e,t,i){u&&0===e.length||c(e,h(t))},onRealtimeCallback:function(e,t,i,o,a){if(e=A(e),l._studyCanExtendTimeScale(s,r)){const t=e.map((function(e){return e.timeMs})),i=l._timeScales[s].replaceBarsTimesTail(r,t);l._applyTimeScaleUpdate(s,i)}l._timeScales[s].fillIndexesInRows(e),TradingView.ChartapiMessagerInstances[s].onDataUpdate(r,n,e,h(o)),l._updateTimeScaleState(s)},onSymbolErrorCallback:function(){l._studiesCache[s][r].completed=!0,TradingView.ChartapiMessagerInstances[s].onStudyError(r,n,\"error in series\")},onErrorCallback:function(e){l._studiesCache[s][r].completed=!0,TradingView.ChartapiMessagerInstances[s].onStudyError(r,n,e)},onNonSeriesDataUpdate:function(e,t){switch(u=!0,e.type){case\"projection\":break;case\"study_graphics\":var i={data:e.data,indexes:[]},n=w(i);l._studiesNonSeriesTimes[s][r]=n,i.indexes=l._timeScales[s].convertTimesToIndexes(n),c([],i);break;case\"non_series_data\":n=function(e){var t={};p(e,(function(e){_(e)&&Object.keys(e).forEach((function(i){i.endsWith(\"__t\")&&(t[e[i]]=!0)}))}),{visitInstances:!0});var i=Object.keys(t).map(Number).sort((function(e,t){return e-t}));return i.forEach((function(e,i){t[e]=i})),Object.assign(e,p(e,(function(e){return _(e)&&Object.keys(e).forEach((function(i){i.endsWith(\"__t\")&&(e[i.slice(0,-3)]=t[e[i]])})),e}),{visitInstances:!0})),i}(i={data:e.data,indexes:[]});l._studiesNonSeriesTimes[s][r]=n, i.indexes=l._timeScales[s].convertTimesToIndexes(n),c([],i);break;default:console.warn(\"unsupported non-series data type for study \"+e.type)}}})}"
+      },
+      "computeStudy": {
+        "name": "_computeStudy",
+        "argumentCount": 10,
+        "sourceLength": 2242,
+        "source": "async function(e,t,i,s,n,o,a,l,c,u){var p=!0,_=[];null!==l&&(this._objectsDataCache[l]=null),this._timeScales[e].setCompleted(!1);var m=this._computeStudyCounter++;function g(e,t){if(e<c())return L;if(0===t)return 0;var i=_[t-1].index;return i===L?0:i+1}var v=new Map;var S=!1,y=this,b=function(){return y._studiesCache[e]&&y._studiesCache[e][n]&&y._studiesCache[e][n].activeResolve===m};y._studiesCache[e][n].activeResolve=m;var w,P,T=this._resolvePromisesBySymbolId.get(D(e,i));if(void 0===T)throw new Error(\"This should never happen\");try{var I=await T;w=I.symbolInfo,P=I.requestedSymbol}catch(e){return void(b()&&u.onSymbolErrorCallback(e))}b()&&function(i,c){var m=d.parse(s);if(!m.isIntraday()||i.has_intraday){if(d.isDWM(s)&&void 0!==a.to){var b=h(s,i);null!==b&&(a.to=b.timeToExchangeTradingDay(a.to))}if(a.from&&a.to){const e=x(i.session,i.session_holidays,i.corrections,m.letter(),m.multiplier(),a.from,a.to);a.countBack=Math.max(e,a.countBack)}try{var w=new r.StudyEngine({tickerid:c,symbolInfo:i,period:s,body:t,sessionId:e,onErrorCallback:u.onErrorCallback,dataRange:a,subsessionId:i.subsession_id,forceAlignBars:!C.enabled(\"disable_sameinterval_aligning\")&&f(),enableDwmAligning:!y._studyCanExtendTimeScale(e,n),input:function(e){return o[e]},out:function(e,t){!function(e,t,i){for(var s=e.time,r=\"number\"==typeof t?[t]:t,n=0;n<r.length;++n){var o=r[n];o&&\"object\"==typeof o&&(v.set(n,o.offset),o=o.value),\"number\"==typeof o&&isNaN(o)&&(o=void 0),r[n]=o}var a=_.length-1,l=a<0||s>_[a].timeMs;l?_.push({index:g(s,_.length),value:[s/1e3].concat(r),timeMs:s}):(_[a].index=g(s,a),_[a].value=[s/1e3].concat(r),_[a].timeMs=s), p||u.onRealtimeCallback([_[_.length-1]],l,_.length,v,i)}(e,t,i)},nonseriesOut:function(e,t){u.onNonSeriesDataUpdate(t,i)},setNoMoreData:function(){S=!0},recalc:function(e,s){p=!1,_.endOfData=S,_.emptyBarCount=s.emptyBarCount,t.error&&null!==t.error()||(null!==l&&(y._objectsDataCache[l]=_),u.onDataReadyCallback(_,v,i,s))}});if(!y._studiesCache[e]||!y._studiesCache[e][n])throw Error(\"This should never happen\");y._studiesCache[e][n].engine=w}catch(e){if(!e.studyError)throw e;u.onErrorCallback(e.message)}}else u.onErrorCallback(\"Unsupported resolution. Did you forget to set has_intraday to true?\")}(w,P)}"
+      },
+      "adoptConfiguration": {
+        "name": "_adoptConfigurationData",
+        "argumentCount": 1,
+        "sourceLength": 288,
+        "source": "function(e){var t=TradingView.merge({},e),i=t.supported_resolutions;if(!i||0===i.length)return t.supported_resolutions=void 0,t;for(var s=[],r=0;r<i.length;r++){var n=i[r];if(-1!==s.indexOf(n))throw new Error(\"Duplicating resolution `\"+n+\"`\");s.push(n)}return t.supported_resolutions=s,t}"
+      },
+      "removeStudy": {
+        "name": "removeStudy",
+        "argumentCount": 2,
+        "sourceLength": 422,
+        "source": "function(e,t){if(this._studiesCache[e]&&this._studiesCache[e][t]&&this._studiesCache[e][t].engine&&(this._studiesCache[e][t].engine.stop(),n.unsubscribeUnused()),this._studyCanExtendTimeScale(e,t)){this._timeScales[e].setCompleted(!1);const i=this._timeScales[e].setStudyBarsTimes(t,[]);this._applyTimeScaleUpdate(e,i),this._updateTimeScaleState(e)}delete this._studiesCache[e][t],delete this._studiesNonSeriesTimes[e][t]}"
+      },
+      "resolveSymbol": {
+        "name": "resolveSymbol",
+        "argumentCount": 3,
+        "sourceLength": 369,
+        "source": "function(e,t,i){var s=this;this._symbolIdToSymbolRequestString.set(D(e,t),i),this._resolvePromisesBySymbolId.set(D(e,t),new Promise((function(r,n){s._resolveSymbolImpl(i,(function(s){TradingView.ChartapiMessagerInstances[e].onSymbolResolved(t,s),r({symbolInfo:s,requestedSymbol:i})}),(function(i){TradingView.ChartapiMessagerInstances[e].onSymbolError(t,i),n(i)}))})))}"
+      }
+    }
+  },
+  "studyRegistration": {
+    "tradingViewNamespaceKeys": [
+      "StudyMetaInfo",
+      "Study",
+      "study_PivotPointsStandard",
+      "study_Overlay",
+      "study_Compare",
+      "study_Volume",
+      "study_VbPVisible",
+      "study_ScriptWithDataOffset",
+      "STUDY_COUNT_LIMIT"
+    ],
+    "studyFactories": {
+      "StudyMetaInfo": {
+        "name": "a",
+        "argumentCount": 1,
+        "sourceLength": 3153,
+        "source": "class a extends n{constructor(e){super(),TradingView.merge(this,{palettes:{},inputs:[],plots:[],graphics:{},defaults:{}}),TradingView.merge(this,e);var t=e.fullId||e.id;TradingView.merge(this,a.parseIdString(t)),this._updateInputDisplayDefaults()}static versionOf(e){var t=\"_metainfoVersion\"in e&&isNumber(e._metainfoVersion)?e._metainfoVersion:0;return t<0&&s.logError(\"Metainfo format version cannot be negative: \"+t),t}static parseIdString(e){var t={};if(-1===e.indexOf(\"@\"))t.shortId=e,t.packageId=\"tv-basicstudies\",t.id=e+\"@\"+t.packageId,t.version=1;else{var i=e.split(\"@\");t.shortId=i[0];var s=i[1].split(\"-\");if(3===s.length)t.packageId=s.slice(0,2).join(\"-\"),t.id=t.shortId+\"@\"+t.packageId,t.version=s[2];else if(1===s.length&&\"decisionbar\"===s[0])t.packageId=\"les-\"+s[0],t.id=t.shortId+\"@\"+t.packageId, t.version=1;else{if(1!==s.length)throw new Error(\"unexpected study id:\"+e);t.packageId=\""
+      },
+      "Study": {
+        "name": "ti",
+        "argumentCount": 4,
+        "sourceLength": 62143,
+        "source": "class ti extends m.PriceDataSource{constructor(e,t,i,s){var r,n,a;super(e),this._onStart=new u.Delegate,this._restarting=!1,this._paneViews=[],this._legendView=null,this._priceAxisViews=[],this._resolvedSymbols={},this._resolvedSymbolsByInput={},this._priceAxisViewsBase=[],this._priceLinesAxisViews=[],this._labelPaneViews=[],this._ownFirstValue=null,this._formatter=null,this._dataUpdated=new u.Delegate,this._currencySourceSymbolInputProperty=null,this._onHibernationStateChange=new u.Delegate,this._symbolsResolved=new u.Delegate,this._statusChanged=new u.Delegate,this._inputsAnchorsPaneView=null,this._inputsLinesPaneView=null,this._inputsTimeAxisPaneViews=[],this._inputsPriceAxisPaneViews=[],this._sources=[],this._status={type:at.StudyStatusType.Undefined},this._wasCompletedBefore=!1,this._studyId=null,this._isSubscribedToSessionId=!1,this._titleStrCache={},this._titleInPartsCache={},this"
+      },
+      "study_PivotPointsStandard": {
+        "name": "B",
+        "argumentCount": 4,
+        "sourceLength": 3445,
+        "source": "class B extends a.NonSeriesStudy{constructor(e,t,i,s){super(e,t,i,s),this._cache=null,this._cachedPixelRatioParams=null;const r=[\"P\",\"S1/R1\",\"S2/R2\",\"S3/R3\",\"S4/R4\",\"S5/R5\"],n=this.properties().childs().levelsStyle.childs().visibility;for(let e=0;e<r.length;e++)n.childs()[r[e]].listeners().subscribe(this,(()=>this.processHibernate()))}pricesView(){return this._pricesView}indexes(){return this._indexes}properties(){return this._properties}getCache(e){if(null===this._cache||null==this._cachedPixelRatioParams||(t=e,i=this._cachedPixelRatioParams,t.horizontalPixelRatio!==i.horizontalPixelRatio||t.verticalPixelRatio!==i.verticalPixelRatio)){this._cache&&this._cache.destroy();const t=this._getActualCacheParams(),i={horizontalPixelRatio:e.horizontalPixelRatio,verticalPixelRatio:e.verticalPixelRatio};this._cache=new h(i,t.font,t.fontSize,t.backColors), this._cache.setPrices((0,o.ensureNotNull)(t"
+      },
+      "study_Overlay": {
+        "name": "study_Overlay",
+        "argumentCount": 4,
+        "sourceLength": 978,
+        "source": "class extends n{constructor(e,t,i,s){super(e,t,i,s),this._paneView=null;var r=this;this.properties().minTick.listeners().subscribe(null,(function(){r._recreatePriceFormattingDependencies(),r.updateAllViews(),r._model.fullUpdate()}))}_onQuotesUpdate(e,t){!this._legendView||void 0===t.values.change&&void 0===t.values.change_percent||(this._legendView.update(),this._model.updateSource(this))}destroy(){this._quotesProvider.quotesUpdate().unsubscribeAll(this),this._quotesProvider.destroy(),super.destroy()}tags(){var e=[],t=this.symbolInfo();return t?e.push(t.name):this._properties.inputs.symbol.value()&&e.push(this._properties.inputs.symbol.value()),e}async _getPropertyDefinitionsViewModelClass(){return(await Promise.all([i.e(2285),i.e(4433),i.e(9637),i.e(4520),i.e(8762),i.e(607)]).then(i.bind(i,746418))).StudyOverlayDefinitionsViewModel}defaultPlotIdForAlert(){return\"\"}valuesProvider(){retur"
+      },
+      "study_Compare": {
+        "name": "F",
+        "argumentCount": 4,
+        "sourceLength": 8202,
+        "source": "class F extends n.Study{constructor(e,t,i,s){super(e,function(e){return e.hasChild(\"currencyId\")||e.addChild(\"currencyId\",new a.default(null)),e.hasChild(\"unitId\")||e.addChild(\"unitId\",new a.default(null)),e.addExclusion(\"currencyId\"),e.addExclusion(\"unitId\"),e}(t),i,s),this._isActingAsSymbolSource=new E.WatchedValue(!0),this._realignToolsLastParams=null,this._lastResolvedSymbolSource=\"\",this.properties().childs().minTick.subscribe(null,(()=>this._recreatePriceFormattingDependencies())),this.properties().childs().minTick.subscribe(null,(()=>this._model.fullUpdate())),this.properties().childs().currencyId.subscribe(this,this._onCurrencyChanged),this.properties().childs().unitId.subscribe(this,this._onUnitChanged),this._symbolResolvingActive=new E.WatchedValue(!1),this._symbolHibernated=new E.WatchedValue(!1),e.mainSeries().onIntervalChanged().subscribe(this,(()=>e.realignLineTools(this)))"
+      },
+      "study_Volume": {
+        "name": "z",
+        "argumentCount": 4,
+        "sourceLength": 1106,
+        "source": "class z extends n.Study{constructor(e,t,i,s){super(e,t,i,s),(0,o.ensureDefined)(this.properties().childs().styles.childs().vol_ma).childs().display.subscribe(this,(()=>this.invalidateTitleCache()))}base(){return 1}destroy(){(0,o.ensureDefined)(this.properties().childs().styles.childs().vol_ma).childs().display.listeners().unsubscribeAll(this), super.destroy()}showOnTopOnHovering(){return!1}_titleInputs(e){const t={symbolsForDisplay:!0,skipHiddenInputs:!0,fakeInputsForDisplay:!0,asObject:!0,displayMask:e,skipOptionalEmptySymbolInputs:W};return 0!==(0,o.ensureDefined)(this.properties().childs().styles.childs().vol_ma).childs().display.value()?this.inputs(t):this.inputs({...t,skippedInputs:[\"length\"]})}_titleInParts(e,t,i,s,r){const n=super._titleInParts(e,t,i,s,r),o=this._getVolumeUnit();return o&&(n[0]+=` · ${o}`),n}_getVolumeUnit(){const e=this.symbolSource().symbolInfo();return e?functi"
+      },
+      "study_VbPVisible": {
+        "name": "study_VbPVisible",
+        "argumentCount": 0,
+        "sourceLength": 118,
+        "source": "class extends X{alertCreationAvailable(){return new H.WatchedValue(!1).readonly()}_needExtendToBarsEnding(){return!1}}"
+      },
+      "study_ScriptWithDataOffset": {
+        "name": "study_ScriptWithDataOffset",
+        "argumentCount": 4,
+        "sourceLength": 944,
+        "source": "class extends n{constructor(e,t,i,s){super(e,t,i,s),this._underlyingData=new o(a(s),l)}clearData(){super.clearData(),this._underlyingData.clear()}_mergeData(e){this._invalidateLastNonEmptyPlotRowCache();var t=this._underlyingData.firstIndex();this._underlyingData.merge(e),t!==this._underlyingData.firstIndex()&&(this._data=new o(a(this._metaInfo),l));var i=this._data.lastIndex();this._underlyingData.range(i,this._underlyingData.lastIndex()).each(function(e,t){return this._data.add(e,r(t)),!1}.bind(this)),this._plotsForStrategyProcessing().forEach((function(e){new c(e.strategyIndex,e.targetIndex,i).rebuildData(this._data)}),this)}_plotsForStrategyProcessing(){var e=[];return this._metaInfo.plots.forEach((function(t,i){if(\"dataoffset\"===t.type){var r=this._metaInfo.plots.findIndex((function(e){return e.id===t.target}));s(r>=0,\"target plot not found for strategy plot \"+t.id);var n={strategyI"
+      },
+      "STUDY_COUNT_LIMIT": {
+        "type": "number",
+        "value": 210
+      }
+    },
+    "StudyMetaInfo": {
+      "name": "a",
+      "argumentCount": 1,
+      "sourceLength": 3153,
+      "source": "class a extends n{constructor(e){super(),TradingView.merge(this,{palettes:{},inputs:[],plots:[],graphics:{},defaults:{}}),TradingView.merge(this,e);var t=e.fullId||e.id;TradingView.merge(this,a.parseIdString(t)),this._updateInputDisplayDefaults()}static versionOf(e){var t=\"_metainfoVersion\"in e&&isNumber(e._metainfoVersion)?e._metainfoVersion:0;return t<0&&s.logError(\"Metainfo format version cannot be negative: \"+t),t}static parseIdString(e){var t={};if(-1===e.indexOf(\"@\"))t.shortId=e,t.packageId=\"tv-basicstudies\",t.id=e+\"@\"+t.packageId,t.version=1;else{var i=e.split(\"@\");t.shortId=i[0];var s=i[1].split(\"-\");if(3===s.length)t.packageId=s.slice(0,2).join(\"-\"),t.id=t.shortId+\"@\"+t.packageId,t.version=s[2];else if(1===s.length&&\"decisionbar\"===s[0])t.packageId=\"les-\"+s[0],t.id=t.shortId+\"@\"+t.packageId, t.version=1;else{if(1!==s.length)throw new Error(\"unexpected study id:\"+e);t.packageId=\"tv-\"+s[0],t.id=t.shortId+\"@\"+t.packageId,t.version=1}}if(t.fullId=t.id+\"-\"+t.version,\"tv-scripting\"===t.packageId){var r=t.shortId;if(0===r.indexOf(\"Script$\")||0===r.indexOf(\"StrategyScript$\")){var n=r.indexOf(\"_\");t.productId=n>=0?r.substring(0,n):t.packageId}else t.productId=t.packageId}else t.productId=t.packageId;return t}static getPackageName(e){return(/^[^@]+@([^-]+-[^-]+)/.exec(e||\"\")||[0,\"tv-basicstudies\"])[1]}static cutDollarHash(e){var t=e.indexOf(\"$\"),i=e.indexOf(\"@\");return-1===t?e:e.substring(0,t)+(i>=0?e.substring(i):\"\")}static hasUserIdSuffix(e){return/^USER;[\\d\\w]+;\\d+$/.test(e)}static hasPubSuffix(e){return/^PUB;.+$/.test(e)}static hasStdSuffix(e){return/^STD;.+$/.test(e)}static isStandardPine(e){return/^(Strategy)?Script\\$STD;.*@tv-scripting$/.test(e)}static getStudyIdWithLatestVersion(e){const t=a.cutDollarHash(e.id);let i=t;return t.indexOf(\"@tv-scripting\")>=0?i+=\"-10"
+    },
+    "Study": {
+      "name": "ti",
+      "argumentCount": 4,
+      "sourceLength": 62143,
+      "source": "class ti extends m.PriceDataSource{constructor(e,t,i,s){var r,n,a;super(e),this._onStart=new u.Delegate,this._restarting=!1,this._paneViews=[],this._legendView=null,this._priceAxisViews=[],this._resolvedSymbols={},this._resolvedSymbolsByInput={},this._priceAxisViewsBase=[],this._priceLinesAxisViews=[],this._labelPaneViews=[],this._ownFirstValue=null,this._formatter=null,this._dataUpdated=new u.Delegate,this._currencySourceSymbolInputProperty=null,this._onHibernationStateChange=new u.Delegate,this._symbolsResolved=new u.Delegate,this._statusChanged=new u.Delegate,this._inputsAnchorsPaneView=null,this._inputsLinesPaneView=null,this._inputsTimeAxisPaneViews=[],this._inputsPriceAxisPaneViews=[],this._sources=[],this._status={type:at.StudyStatusType.Undefined},this._wasCompletedBefore=!1,this._studyId=null,this._isSubscribedToSessionId=!1,this._titleStrCache={},this._titleInPartsCache={},this._children=[],this._numericFormatter=new V.NumericFormatter,this._graphicsPriceAxisViews=[],this._plotOffsets={},this._ongoingDataUpdate=Promise.resolve(),this._studyModified=!1,this._tagsChanged=new u.Delegate,this._studyName=\"\",this._turnaround=\"st0\",this._pendingResolveSymbols=new Map,this._onIsActualIntervalChange=new u.Delegate,this._childStudyByRebind=new u.Delegate,this._lastNonEmptyPlotRowCache={},this._startMovingPoint=null,this._processHibernateBound=this.processHibernate.bind(this,1),this._maxOffset=new dt.WatchedValue(0),this._currencySourceSymbolInfo=null,this._graphicsPriceRangeGroups=null,this._graphicsViewsReady=!1,this._visibleTimeRangeInputs=null,this._turnaroundCounter=0,this._deferredPinePatchProps=!1,this._propertiesPatched=Promise.resolve(),this._aboutToBeDestroyed=new u.Delegate,this._definitionsViewModel=null,this._plotFormatters=new Map,this._onParentSourcesChang"
+    },
+    "StudyMetaInfoPrototype": {
+      "path": "TradingView.StudyMetaInfo.prototype",
+      "available": true,
+      "constructor": "a",
+      "ownKeys": [],
+      "methods": [
+        "__defineGetter__",
+        "__defineSetter__",
+        "__lookupGetter__",
+        "__lookupSetter__",
+        "_updateInputDisplayDefaults",
+        "constructor",
+        "createDefaults",
+        "defaultInputs",
+        "hasOwnProperty",
+        "isPrototypeOf",
+        "propertyIsEnumerable",
+        "removeDefaults",
+        "state",
+        "symbolInputId",
+        "toLocaleString",
+        "toString",
+        "valueOf"
+      ],
+      "selectedFunctions": {
+        "createDefaults": {
+          "name": "createDefaults",
+          "argumentCount": 0,
+          "sourceLength": 157,
+          "source": "createDefaults(){if(this.defaults){var e=TradingView.clone(this.defaults);e.precision=\"default\";var t=a.getStudyPropertyRootName(this);defaults.create(t,e)}}"
+        },
+        "removeDefaults": {
+          "name": "removeDefaults",
+          "argumentCount": 0,
+          "sourceLength": 67,
+          "source": "removeDefaults(){defaults.remove(a.getStudyPropertyRootName(this))}"
+        }
+      }
+    },
+    "StudyPrototype": {
+      "path": "TradingView.Study.prototype",
+      "available": true,
+      "constructor": "ti",
+      "ownKeys": [],
+      "methods": [
+        "_alertMetaInfo",
+        "_allInputsAreValid",
+        "_allSymbolsAreResolved",
+        "_apiInputs",
+        "_applyPlotToPrecalculatedAutoscaleInfo",
+        "_areStudyInputsModified",
+        "_bandsFirstValue",
+        "_buildInputs",
+        "_calcIsActualInterval",
+        "_calcSources",
+        "_changeInputsImpl",
+        "_checkTurnaround",
+        "_collectDepsForAlert",
+        "_concatPriceAxisViews",
+        "_createGraphicsPaneViews",
+        "_createGraphicsPriceAxisViews",
+        "_createPriceAxisView",
+        "_createPriceLineAxisView",
+        "_createStudyError",
+        "_createStudyOnServer",
+        "_createStudyPlotPaneView",
+        "_createViews",
+        "_debugId",
+        "_dependenciesForAlerts",
+        "_enablePriceRangeReady",
+        "_fillPrecalculatedAutoscaleInfo",
+        "_firstSourceOrSeries",
+        "_getAlertCreationAvailable",
+        "_getAllOwnerSources",
+        "_getMTFResolutionInputTitle",
+        "_getNonPriceParent",
+        "_getPropertyDefinitionsViewModelClass",
+        "_getStudyErrorText",
+        "_getStudyIdWithLatestVersion",
+        "_getSymbolForApi",
+        "_getSymbolForResolve",
+        "_getSymbolObject",
+        "_getTelemetryAdditionalData",
+        "_getTelemetryObjectName",
+        "_handleStudyError",
+        "_hasAlertConditions",
+        "_hasAlertFunction",
+        "_hasAvailableAlertPlots",
+        "_incrementTurnaround",
+        "_initializeCurrencySource",
+        "_initializeStudyInputsPaneViews",
+        "_inputSymbols",
+        "_invalidateLastNonEmptyPlotRowCache",
+        "_isStopped",
+        "_joinTitlesParts",
+        "_lastNonEmptyPlotRow",
+        "_mergeData",
+        "_modifyStudyOnServer",
+        "_onCurrencyChanged",
+        "_onCurrencyMayChange",
+        "_onData",
+        "_onDataUnpacked",
+        "_onDataUpdate",
+        "_onDataUpdated",
+        "_onPropertiesChanged",
+        "_onSessionIdChanged",
+        "_onSourceCurrencyChanged",
+        "_onSourceFormatterChanged",
+        "_onSourceInputChanged",
+        "_onSourcePriceRangeReadyChanged",
+        "_onSourcePriceStepChanged",
+        "_onSourceUnitChanged",
+        "_onStudyCompleted",
+        "_onStudyError",
+        "_onStudyLoading",
+        "_onSymbolError",
+        "_onSymbolResolved",
+        "_onSymbolResolvingStart",
+        "_onVisibleTimeRangeInputsChanged",
+        "_pinePatchProps",
+        "_plotsForAlert",
+        "_postProcessGraphics",
+        "_postProcessPriceRange",
+        "_precisionChanged",
+        "_prepareInput",
+        "_prepareInputValue",
+        "_prepareInputs",
+        "_priceScaleByMetaInfo",
+        "_priceScaleByProperties",
+        "_processPlotOffsets",
+        "_rebindToSource",
+        "_rebindToSourceOrRestorePreviousValue",
+        "_recheckLineToolsActuality",
+        "_recreateFormatter",
+        "_recreatePaneViews",
+        "_recreatePlotsFormatters",
+        "_recreatePriceFormattingDependencies",
+        "_recreatePriceStep",
+        "_resolveSymbol",
+        "_rightOffsetToUnixTime",
+        "_sendTelemetryCounter",
+        "_seriesDataRangeToSave",
+        "_setSources",
+        "_setStatus",
+        "_skipHistogramBaseOnAutoScale"
+      ],
+      "selectedFunctions": {
+        "_alertMetaInfo": {
+          "name": "_alertMetaInfo",
+          "argumentCount": 0,
+          "sourceLength": 40,
+          "source": "_alertMetaInfo(){return this.metaInfo()}"
+        },
+        "_areStudyInputsModified": {
+          "name": "_areStudyInputsModified",
+          "argumentCount": 1,
+          "sourceLength": 394,
+          "source": "_areStudyInputsModified(e){if(0===Object.keys(e).length)return!1;if(void 0===this._oldStudyInputs)return!0;const t=Object.keys(this._oldStudyInputs);(0,o.assert)(t.length===Object.keys(e).length,\"keys quantity should be equal\");for(const i of t)if((0,o.assert)(e.hasOwnProperty(i),`key '${i}' should exist in study inputs`),(0,o.ensureDefined)(this._oldStudyInputs)[i]!==e[i])return!0;return!1}"
+        },
+        "_createGraphicsPaneViews": {
+          "name": "_createGraphicsPaneViews",
+          "argumentCount": 0,
+          "sourceLength": 88,
+          "source": "async _createGraphicsPaneViews(){return(0,S.createGraphicsPaneViews)(this,this.model())}"
+        },
+        "_createGraphicsPriceAxisViews": {
+          "name": "_createGraphicsPriceAxisViews",
+          "argumentCount": 0,
+          "sourceLength": 79,
+          "source": "_createGraphicsPriceAxisViews(){return(0,S.createGraphicsPriceAxisViews)(this)}"
+        },
+        "_createPriceAxisView": {
+          "name": "_createPriceAxisView",
+          "argumentCount": 1,
+          "sourceLength": 77,
+          "source": "_createPriceAxisView(e){return new _t.StudyPriceAxisView(this,{plotIndex:e})}"
+        },
+        "_createPriceLineAxisView": {
+          "name": "_createPriceLineAxisView",
+          "argumentCount": 1,
+          "sourceLength": 73,
+          "source": "_createPriceLineAxisView(e){return new mt.StudyPriceLineAxisView(this,e)}"
+        },
+        "_createStudyError": {
+          "name": "_createStudyError",
+          "argumentCount": 1,
+          "sourceLength": 162,
+          "source": "_createStudyError(e){var t;return Xt(\"string\"==typeof e?{error:this._getStudyErrorText(e)}:e,null===(t=this.symbolSource().symbolInfo())||void 0===t||t.exchange)}"
+        },
+        "_createStudyOnServer": {
+          "name": "_createStudyOnServer",
+          "argumentCount": 0,
+          "sourceLength": 641,
+          "source": "_createStudyOnServer(){if(this._isDestroyed)return;const e=this._getStudyIdWithLatestVersion();this._studyId=(0,k.makeNextStudyId)(),this._incrementTurnaround(),this._studyName=e;const t=(0,B.clone)((0,o.ensureDefined)(this._inputs));v.StudyMetaInfo.patchSoSInputs(t,(e=>{var t,i;return null!==(i=null===(t=this._sources.find((t=>t.id()===e)))||void 0===t?void 0:t.sourceId())&&void 0!==i?i:null})),this._chartApi.createStudy(this._studyId,this._turnaround,this.isChildStudy()?(0,o.ensureNotNull)(this._sources[0].sourceId()):(0,o.ensureNotNull)(this._series.seriesSource().instanceId()),this._studyName,t,this._handler,this.isChildStudy())}"
+        },
+        "_createStudyPlotPaneView": {
+          "name": "_createStudyPlotPaneView",
+          "argumentCount": 1,
+          "sourceLength": 93,
+          "source": "_createStudyPlotPaneView(e){return new Ge.StudyPlotPaneView(this,this._series,this._model,e)}"
+        },
+        "_createViews": {
+          "name": "_createViews",
+          "argumentCount": 0,
+          "sourceLength": 3262,
+          "source": "_createViews(){var e,t,i,s;this._priceAxisViewsBase=[],this._priceLinesAxisViews=[],this._paneViews=[], this._labelPaneViews=[];const r=new Set,n=this.metaInfo(),a=Boolean(n.usePlotsZOrder),l=new Map,c=this._properties.childs();if(c.filledAreasStyle&&n.filledAreas)for(let e=0;e<n.filledAreas.length;++e){const t=n.filledAreas[e],i=(0,o.ensureDefined)(c.filledAreasStyle.childs()[t.id]),s=Ft(n,t.id);let r;if(\"plot_plot\"===t.type||s?r=new Qe(this,this.model(),t,i):\"hline_hline\"===t.type?r=new ot(this,t,i):Lt.logWarn(\"Unsupported filledArea type: \"+t.type),void 0!==r){const e=a?(0,o.ensureDefined)(t.zorder):l.size;Ot(e,l),l.set(e,{paneViews:[r]})}}{let s=-1e5;for(let c=0;c<n.plots.length;c++){const h=n.plots[c];let d,u,p,_,m;if((0,T.isNonVisualPlot)(h))continue;let g=h.id,f=n.styles;const v=(0,T.isBgColorerPlot)(h);if(v)d=new G(this,this._series,this._model,g);else if((0,T.isShapesPlot)(h))d=new Te(this,this._series,this._model,g);else if((0,T.isCharsPlot)(h))d=new ke(this,this._series,this._model,g);else if((0,T.isArrowsPlot)(h))d=new Oe(this,this._series,this._model,g);else if((0,T.isOhlcPlot)(h)){const e=h.target;if(r.has(e))continue;if(r.add(e),Rt(n,c))d=new ze(this,this._series,this._model,e);else{if(!Nt(n,c)){Lt.logError(`plot ${h.id} looks to be invalid`);continue}d=new Ue(this,this._series,this._model,e)}_=this._createPriceAxisView(e),p=new je.PanePriceAxisView(_,this,this._model),g=e,f=n.ohlcPlots}else(0,T.isDataPlot)(h)||(_=this._createPriceAxisView(g),m=this._createPriceLineAxisView(g),d=this._createStudyPlotPaneView(g),(null===(t=null===(e=this._properties.childs().styles.childs()[g])||void 0===e?void 0:e.child(\"trackPrice\"))||void 0===t?void 0:t.value())&&(u=new Ke(this,g)),p=new je.PanePriceAxisView(_,this,this._model));const S=a?v?s++:(0,o.ensureDefined)(null===(i=null==f?void 0:f[g])||void 0===i?void 0:i.zorder):l.size;Ot(S,l);const y={paneViews:void 0!==d?[d]:[],labelView:p,priceAxisView:_,priceLineAxisView:m};void 0!==u&&y.paneViews.push(u),l.set(S,y)}}(null!==(s=this._metaInfo.bands)&&void 0!==s?s:[]).forEach(((e,t)=>{const i=c.bands.childs()[t];if(i&&i.childs().visible.value()){const t=new it(i,this),s=a?(0,o.ensureDefined)(e.zorder):l.size;Ot(s,l"
+        },
+        "_firstSourceOrSeries": {
+          "name": "_firstSourceOrSeries",
+          "argumentCount": 0,
+          "sourceLength": 91,
+          "source": "_firstSourceOrSeries(){var e;return null!==(e=this._sources[0])&&void 0!==e?e:this._series}"
+        },
+        "_getStudyErrorText": {
+          "name": "_getStudyErrorText",
+          "argumentCount": 1,
+          "sourceLength": 47,
+          "source": "_getStudyErrorText(e){return e.split(\":\",2)[0]}"
+        },
+        "_getStudyIdWithLatestVersion": {
+          "name": "_getStudyIdWithLatestVersion",
+          "argumentCount": 0,
+          "sourceLength": 99,
+          "source": "_getStudyIdWithLatestVersion(){return v.StudyMetaInfo.getStudyIdWithLatestVersion(this.metaInfo())}"
+        },
+        "_handleStudyError": {
+          "name": "_handleStudyError",
+          "argumentCount": 1,
+          "sourceLength": 146,
+          "source": "_handleStudyError(e){var t;this.clearData(),this._setStatus(e),null===(t=this._statusView)||void 0===t||t.update(),this._model.updateSource(this)}"
+        },
+        "_initializeStudyInputsPaneViews": {
+          "name": "_initializeStudyInputsPaneViews",
+          "argumentCount": 0,
+          "sourceLength": 35,
+          "source": "_initializeStudyInputsPaneViews(){}"
+        },
+        "_modifyStudyOnServer": {
+          "name": "_modifyStudyOnServer",
+          "argumentCount": 2,
+          "sourceLength": 333,
+          "source": "_modifyStudyOnServer(e,t){const i=(0,B.clone)((0,o.ensureDefined)(e));v.StudyMetaInfo.patchSoSInputs(i,(e=>{var t,i;return null!==(i=null===(t=this._sources.find((t=>t.id()===e)))||void 0===t?void 0:t.sourceId())&&void 0!==i?i:null})),this._chartApi.modifyStudy((0,o.ensureNotNull)(this._studyId),this._turnaround,i,this._handler,t)}"
+        },
+        "_onStudyCompleted": {
+          "name": "_onStudyCompleted",
+          "argumentCount": 1,
+          "sourceLength": 466,
+          "source": "_onStudyCompleted(e){var t;this._studyModified&&(this.clearData(),this._studyModified=!1),this._setStatus({type:at.StudyStatusType.Completed}),null===(t=this._statusView)||void 0===t||t.update();const i=this._model.paneForSource(this);this._model.recalculatePane(i,(0,ht.sourceChangeEvent)(this.id())), this._updateSources();const s=ct.InvalidationMask.full();null!==this._model.appliedTimeFrame().value()&&s.lockVisibleTimeRangeOnResize(),this._model.invalidate(s)}"
+        },
+        "_onStudyError": {
+          "name": "_onStudyError",
+          "argumentCount": 1,
+          "sourceLength": 97,
+          "source": "_onStudyError(e){this._handleStudyError(this._createStudyError(e)),this._enablePriceRangeReady()}"
+        },
+        "_onStudyLoading": {
+          "name": "_onStudyLoading",
+          "argumentCount": 0,
+          "sourceLength": 179,
+          "source": "_onStudyLoading(){var e;this._setStatus({type:at.StudyStatusType.Loading,startTime:Date.now()}),null===(e=this._statusView)||void 0===e||e.update(),this._model.updateSource(this)}"
+        },
+        "_pinePatchProps": {
+          "name": "_pinePatchProps",
+          "argumentCount": 0,
+          "sourceLength": 53,
+          "source": "_pinePatchProps(){throw new Error(\"Not implemented\")}"
+        },
+        "_priceScaleByMetaInfo": {
+          "name": "_priceScaleByMetaInfo",
+          "argumentCount": 0,
+          "sourceLength": 447,
+          "source": "_priceScaleByMetaInfo(){const e=this.metaInfo().format,t=\"inherit\"!==e.type?e.precision:void 0,i=(0,B.isNumber)(t)?Math.pow(10,t):void 0;if(\"price\"===e.type||\"percent\"===e.type)return i||100;if(\"volume\"===e.type){if(void 0===e.precision){const e=this.series().symbolInfo();if(null!==e&&(0,B.isNumber)(e.volume_precision))return Math.pow(10,e.volume_precision)}return 1}return\"inherit\"===e.type||Lt.logWarn(\"Unsupported format type: \"+e.type),null}"
+        },
+        "_recreateFormatter": {
+          "name": "_recreateFormatter",
+          "argumentCount": 1,
+          "sourceLength": 275,
+          "source": "_recreateFormatter(e){this._recreatePlotsFormatters(e),this._formatter=this._tryCreateFormatter(e),this._formatterChanged.fire();const t=this.priceScale();null!==t&&t.updateFormatter(),this.getAllChildren().forEach((e=>{e.recreatePriceFormatter()})),this._model.fullUpdate()}"
+        },
+        "_recreatePaneViews": {
+          "name": "_recreatePaneViews",
+          "argumentCount": 0,
+          "sourceLength": 191,
+          "source": "_recreatePaneViews(){this.hasBarColorer()&&this._model.mainSeries().invalidateBarStylesCache(),this._createViews(),this.recalculate(),this.updateAllViews((0,ht.sourceChangeEvent)(this.id()))}"
+        },
+        "_recreatePlotsFormatters": {
+          "name": "_recreatePlotsFormatters",
+          "argumentCount": 1,
+          "sourceLength": 805,
+          "source": "_recreatePlotsFormatters(e){var t,i;this._plotFormatters.clear();const s=this._metaInfo.format,r=this._priceScaleByProperties(),n=void 0===e?this.symbolSource().symbolInfo():e;for(const[e,i]of Object.entries(null!==(t=this._metaInfo.ohlcPlots)&&void 0!==t?t:{}))if(null==i?void 0:i.format){const t=Qt(Jt({...s,...null==i?void 0:i.format}),r,n,this.properties().childs().precision.value());t&&this._plotFormatters.set(e,t)}for(const[e,t]of Object.entries(null!==(i=this._metaInfo.styles)&&void 0!==i?i:{}))if(null==t?void 0:t.format){const i=Qt(Jt({...s,...null==t?void 0:t.format}),r,n,this.properties().childs().precision.value());i&&this._plotFormatters.set(e,i)}for(const e of this._metaInfo.plots)if((0,T.isOhlcPlot)(e)){const t=this._plotFormatters.get(e.target);t&&this._plotFormatters.set(e.id,t)}}"
+        },
+        "_recreatePriceFormattingDependencies": {
+          "name": "_recreatePriceFormattingDependencies",
+          "argumentCount": 1,
+          "sourceLength": 93,
+          "source": "_recreatePriceFormattingDependencies(e){this._recreateFormatter(e),this._recreatePriceStep()}"
+        },
+        "_recreatePriceStep": {
+          "name": "_recreatePriceStep",
+          "argumentCount": 0,
+          "sourceLength": 220,
+          "source": "_recreatePriceStep(){var e;let t=null;const i=null!==(e=this._priceScaleByProperties())&&void 0!==e?e:this._priceScaleByMetaInfo();null!==i&&(t=1/i),this._priceStep!==t&&(this._priceStep=t,this._priceStepChanged.fire())}"
+        },
+        "_seriesDataRangeToSave": {
+          "name": "_seriesDataRangeToSave",
+          "argumentCount": 1,
+          "sourceLength": 87,
+          "source": "_seriesDataRangeToSave(e){return this._model.timeScale().visibleExtendedDataRange(e,0)}"
+        },
+        "_stopStudyOnServer": {
+          "name": "_stopStudyOnServer",
+          "argumentCount": 0,
+          "sourceLength": 250,
+          "source": "_stopStudyOnServer(){this._chartApi&&this._chartApi.isConnected().value()&&this.isStarted()&&(this._chartApi.removeStudy((0,o.ensureNotNull)(this._studyId),this.isChildStudy()),this._setStatus({type:at.StudyStatusType.Undefined})),this._studyId=null}"
+        },
+        "_tryCreateFormatter": {
+          "name": "_tryCreateFormatter",
+          "argumentCount": 1,
+          "sourceLength": 188,
+          "source": "_tryCreateFormatter(e){const t=void 0===e?this.symbolSource().symbolInfo():e;return Qt(this._metaInfo.format,this._priceScaleByProperties(),t,this.properties().childs().precision.value())}"
+        },
+        "barColorer": {
+          "name": "barColorer",
+          "argumentCount": 0,
+          "sourceLength": 182,
+          "source": "barColorer(){const e=this._metaInfo.plots;let t=null;for(let i=0;i<e.length;++i)if((0,T.isBarColorerPlot)(e[i])){const e=new ft(this,i);null===t?t=e:t.pushBackBarColorer(e)}return t}"
+        },
+        "barsProvider": {
+          "name": "barsProvider",
+          "argumentCount": 0,
+          "sourceLength": 65,
+          "source": "barsProvider(){return this._firstSourceOrSeries().barsProvider()}"
+        },
+        "childStudyByRebind": {
+          "name": "childStudyByRebind",
+          "argumentCount": 0,
+          "sourceLength": 53,
+          "source": "childStudyByRebind(){return this._childStudyByRebind}"
+        },
+        "getMinFirstBarIndexForPlot": {
+          "name": "getMinFirstBarIndexForPlot",
+          "argumentCount": 1,
+          "sourceLength": 848,
+          "source": "getMinFirstBarIndexForPlot(e){var t,i,s,r,n,o,a,l,c,h,d,u,p,_,m;const g=this._properties.childs(),f=this._metaInfo,v=null!==(m=null!==(u=null!==(c=null!==(o=null!==(s=null===(i=null===(t=g.styles.childs()[e])||void 0===t?void 0:t.child(\"showLast\"))||void 0===i?void 0:i.value())&&void 0!==s?s:null===(n=null===(r=g.filledAreasStyle.childs()[e])||void 0===r?void 0:r.child(\"showLast\"))||void 0===n?void 0:n.value())&&void 0!==o?o:null===(l=null===(a=f.styles)||void 0===a?void 0:a[e])||void 0===l?void 0:l.showLast)&&void 0!==c?c:null===(d=null===(h=g.ohlcPlots.childs()[e])||void 0===h?void 0:h.child(\"showLast\"))||void 0===d?void 0:d.value())&&void 0!==u?u:null===(_=null===(p=f.ohlcPlots)||void 0===p?void 0:p[e])||void 0===_?void 0:_.showLast)&&void 0!==m?m:null;if(null===v)return-1/0;const S=this.data().lastIndex();return null===S?-1/0:S-v+1}"
+        },
+        "getStudyName": {
+          "name": "getStudyName",
+          "argumentCount": 0,
+          "sourceLength": 38,
+          "source": "getStudyName(){return this._studyName}"
+        },
+        "hasBarColorer": {
+          "name": "hasBarColorer",
+          "argumentCount": 0,
+          "sourceLength": 89,
+          "source": "hasBarColorer(){return(0,o.ensureNotNull)(this._metaInfo).plots.some(T.isBarColorerPlot)}"
+        }
+      }
+    },
+    "chartApiCreateStudy": {
+      "name": "createStudy",
+      "argumentCount": 6,
+      "sourceLength": 1426,
+      "source": "createStudy(e,t,i,s,r,n){if(\"function\"==typeof r)return console.warn('\"createStudy\" does not take \"callback\" parameter anymore'),Promise.resolve(null);if(n=n||{},\"string\"!=typeof e)return this._createStudy(e);if(n.checkLimit&&!this._chartWidget.model().canCreateStudy())return(0,G.showTooManyStudiesNotice)(),Promise.resolve(null);e=e.toLowerCase();const o=n.disableUndo?this._chartWidget.model().model():this._chartWidget.model(),a=q.StudyMetaInfo.findStudyMetaInfoByDescription(o.studiesMetaData(),e),c=o.createStudyInserter({type:\"java\",studyId:a.id},[]);if(c.setForceOverlay(!!t),n.priceScale&&c.setPreferredPriceScale(function(e){switch(e){case\"no-scale\":return\"overlay\";case\"as-series\":return\"as-series\";case\"new-left\":return\"left\";case\"new-right\":return\"right\";default:throw new Error('The pricescale \"'+e+'\" is invalid, the only valid options are \"no-scale\", \"as-series\", \"new-left\" and \"new-right\".')}}(n.priceScale)),n.allowChangeCurrency&&c.setAllowChangeCurrency(!0),n.allowChangeUnit&&c.setAllowChangeUnit(!0),Array.isArray(s)){ console.warn(\"Passing study inputs as an ordered array is now deprecated. Please use an object where keys correspond to the inputs of your study instead.\");const e={};for(let t=0;t<a.inputs.length;++t)e[a.inputs[t].id]=s[t];s=e}return c.insert((()=>Promise.resolve({inputs:s||{},parentSources:[]}))).then((e=>(r&&(0,l.applyOverridesToStudy)(e,r),i&&e.setUserEditEnabled(!1),e.id())))}"
+    },
+    "chartApiGetStudyById": {
+      "name": "getStudyById",
+      "argumentCount": 1,
+      "sourceLength": 156,
+      "source": "getStudyById(e){const t=this._chartWidget.model().model().getStudyById(e);if(null===t)throw new Error(\"There is no such study\");return this._getStudyApi(t)}"
+    },
+    "chartWidgetInsertStudy": {
+      "name": "insertStudy",
+      "argumentCount": 4,
+      "sourceLength": 193,
+      "source": "insertStudy(e,t,i,s){return new Promise((r=>{0!==t.length?window.runOrSignIn((()=>{r(this._insertStudy(e,t,i,s))}),{source:\"study on study\"}):r(this._insertStudy(e,t,i,s))})).catch((()=>null))}"
+    },
+    "chartInternalCreateStudy": {
+      "name": "createStudy",
+      "argumentCount": 7,
+      "sourceLength": 242,
+      "source": "function(e,t,i,s,r,n,o){if(!this.canCreateStudy()){const e=new Error(\"Exceeded the limit of studies\");throw e.cause=\"TooManyStudies\",e}this._notificationHandlers[e][t]=new c(o,t),this._studyEngine.createStudy(e,t,s,i,r,n),this.studyCounter++}"
+    },
+    "chartInternalCanCreateStudy": {
+      "name": "canCreateStudy",
+      "argumentCount": 0,
+      "sourceLength": 66,
+      "source": "function(){return this.studyCounter<TradingView.STUDY_COUNT_LIMIT}"
+    },
+    "chartInternalRequestMetadata": {
+      "name": "requestMetadata",
+      "argumentCount": 0,
+      "sourceLength": 208,
+      "source": "function(){return new Promise(((e,t)=>{const i=this.studiesAccessController.getEnabledTools();e({method:\"studies_metadata\",params:[this._makeNextRequestId(),{errors:[],hash:\"\",metainfo:i,migrations:[]}]})}))}"
+    },
+    "chartInternalAllStudiesMetadata": {
+      "exists": true,
+      "type": "[object Function]",
+      "keyCount": 0,
+      "keys": [],
+      "samples": []
+    }
+  },
+  "datafeed": {
+    "available": true,
+    "object": {
+      "path": "studyEngine._externalDatafeed",
+      "available": true,
+      "constructor": "Object",
+      "ownKeys": [
+        "onReady",
+        "searchSymbols",
+        "getServerTime",
+        "getQuotes",
+        "subscribeQuotes",
+        "unsubscribeQuotes",
+        "resolveSymbol",
+        "getBars",
+        "subscribeBars",
+        "unsubscribeBars"
+      ],
+      "methods": [
+        "__defineGetter__",
+        "__defineSetter__",
+        "__lookupGetter__",
+        "__lookupSetter__",
+        "constructor",
+        "getBars",
+        "getQuotes",
+        "getServerTime",
+        "hasOwnProperty",
+        "isPrototypeOf",
+        "onReady",
+        "propertyIsEnumerable",
+        "resolveSymbol",
+        "searchSymbols",
+        "subscribeBars",
+        "subscribeQuotes",
+        "toLocaleString",
+        "toString",
+        "unsubscribeBars",
+        "unsubscribeQuotes",
+        "valueOf"
+      ],
+      "selectedFunctions": {
+        "resolveSymbol": {
+          "name": "resolveSymbol",
+          "argumentCount": 0,
+          "sourceLength": 341,
+          "source": "function(...args) { const callbackIndex = 1; if (typeof args[callbackIndex] === 'function') { const originalCallback = args[callbackIndex]; args[callbackIndex] = info => originalCallback(patchSymbolInfo(info)); } return chartOriginals.resolveSymbol.apply(this, args); }"
+        },
+        "getBars": {
+          "name": "getBars",
+          "argumentCount": 5,
+          "sourceLength": 4139,
+          "source": "function(symbolInfo, resolution, periodParams, onHistory, onError) { chartBridge.lastFeedResolution = String(resolution || ''); const step = getSecondsFromResolution(resolution); if (!step || !INTERVALS.includes(step)) { const args = Array.from(arguments); if (typeof args[3] === 'function') { const originalHistory = args[3]; args[3] = function(bars, meta) { const transformed = applyChartBarTransforms('history', symbolInfo, resolution, bars); return originalHistory.call(this, transformed, meta); }; } return chartOriginals.getBars.apply(this, args); } chartBridge.getBarsCalls++; chartBridge.lastFeedResolution = String(resolution || ''); try { const symbol = getSymbolForFeed(symbolInfo); chartBridge.lastFeedSymbol = symbol; chartBridge.lastHistorySymbol = symbol; chartBridge.lastHistoryResolution = String(resolution || ''); chartBridge.lastFirstDataRequest = !!(periodParams && periodParams.firstDataRequest); const deliverHistory = result => { const bars = applyChartBarTransforms('history', symbolInfo, resolution, result.bars); chartBridge.lastHistoryBars = bars.length; chartBridge.lastHistoryEmpty = bars.length === 0; chartBridge.lastHistoryNoData = !!result.noData; chartBridge.lastHistoryMode = result.mode || 'unknown'; chartBridge.historyBarsReturned += bars.length; const historyKey = `${symbol}|${step}`; if (bars.length === 0) { emptyHistoryRequests.set(historyKey, { at: Date.now(), symbol, step }); chartBridge.historyEmptyRequests++; } else { emptyHistoryRequests.delete(historyKey); } // Async callback delivery breaks TradingView's nested countBack recursion. chartBridge.lastHistoryCallbackAsync = true; setTimeout(() => { try { if (typeof onHistory === 'function') { onHistory(bars, { noData: !!result.noData }); chartBridge.lastHistoryCallbackAt = new Date().toISOString(); } } catch (callbackError) { chartBridge.lastError = 'Seconds history callback failed: ' + String(callbackError && callbackError.message || callbackError).slice(0, 180); } }, 0); }; const historyResult = getBridgeBars(symbol, step, periodParams); // On a symbol switch TradingView may call getBars before Bitunix has // delivered its initial binary deals snapshot. Do not answer firstDataRequest /"
+        },
+        "subscribeBars": {
+          "name": "subscribeBars",
+          "argumentCount": 5,
+          "sourceLength": 3959,
+          "source": "function(symbolInfo, resolution, onRealtime, subscriberUID, onResetCache) { chartBridge.lastFeedResolution = String(resolution || ''); const step = getSecondsFromResolution(resolution); if (!step || !INTERVALS.includes(step)) { const resetId = String(subscriberUID || `native-${Date.now()}-${Math.random().toString(36).slice(2)}`); // If TradingView reuses a previous seconds UID for a native series, retire // our local record first so its later unsubscribe cannot affect the native feed. const staleLocal = localSubscriptions.get(resetId); if (staleLocal) retireLocalSubscription(resetId, staleLocal, 'reused by native resolution'); knownLocalSubscriptionIds.delete(resetId); if (typeof onResetCache === 'function') { chartResetCallbacks.set(resetId, { symbol: getSymbolForFeed(symbolInfo), callback: onResetCache }); } const args = Array.from(arguments); if (typeof args[2] === 'function') { const originalRealtime = args[2]; args[2] = bar => originalRealtime(applyChartBarTransforms('realtime', symbolInfo, resolution, bar)); } return chartOriginals.subscribeBars.apply(this, args); } const id = String(subscriberUID || `bsl-${Date.now()}-${Math.random().toString(36).slice(2)}`); const symbol = getSymbolForFeed(symbolInfo); // There is one active chart series. Retire subscriptions belonging to the // previous symbol/resolution before registering the new one; this prevents a // stale timer from competing with the new symbol's stream. retireSubscriptionsForOtherSeries(symbol, step); retireAllLocalSubscriptionsExcept(id); const previous = localSubscriptions.get(id); if (previous) retireLocalSubscription(id, previous, 'replaced by newer subscription generation'); pruneKnownSubscriptionIds(); knownLocalSubscriptionIds.set(id, Date.now()); const initialStore = getStore(symbol); const initialBars = initialStore ? aggregateFromSeconds(getSortedSecondCandles(initialStore), step, MAX_CANDLES).bars : []; const historyKey = `${symbol}|${step}`; const sub = { id, symbol, step, generation: ++chartBridge.subscriptionGeneration, startedAt: Date.now(), earlyUnsubscribeIgnored: false, callback: bar => onRealtime(applyChartBarTransforms('realtime', symbolInfo, resolution, bar)), onResetCache: t"
+        },
+        "unsubscribeBars": {
+          "name": "unsubscribeBars",
+          "argumentCount": 1,
+          "sourceLength": 1729,
+          "source": "function(subscriberUID) { const id = String(subscriberUID || ''); const sub = localSubscriptions.get(id); chartBridge.lastUnsubscribeAt = new Date().toISOString(); chartBridge.lastUnsubscribeId = id; if (sub) { const activeResolution = safeChartCall(() => chartApiRef?.activeChart?.().resolution?.(), ''); const activeStep = getSecondsFromResolution(activeResolution); // Bitunix may reuse the same subscriber UID across a symbol-series reset. // If the unsubscribe for the previous generation arrives immediately after // the replacement subscribe, do not tear down the fresh live callback. const isStillActiveSeries = isCurrentChartSymbol(sub.symbol) && (!activeStep || activeStep === sub.step); if (!sub.earlyUnsubscribeIgnored && Date.now() - sub.startedAt < 350 && isStillActiveSeries) { sub.earlyUnsubscribeIgnored = true; chartBridge.staleUnsubscribeIgnored++; knownLocalSubscriptionIds.set(id, Date.now()); return undefined; } retireLocalSubscription(id, sub, 'TradingView unsubscribe'); knownLocalSubscriptionIds.set(id, Date.now()); return undefined; } // We previously owned this UID. It may be a delayed unsubscribe from the // old symbol after our symbol-switch cleanup; do not pass it into Bitunix's // original feed, where it could tear down unrelated native subscriptions. const knownAt = knownLocalSubscriptionIds.get(id); if (knownAt && Date.now() - knownAt < 60000) return undefined; return chartOriginals.unsubscribeBars.call(this, subscriberUID); }"
+        },
+        "onReady": {
+          "name": "onReady",
+          "argumentCount": 1,
+          "sourceLength": 362,
+          "source": "function(callback) { return chartOriginals.onReady.call(this, config => { const next = { ...(config || {}) }; next.supported_resolutions = Array.from(new Set((next.supported_resolutions || []).map(String).concat(SECOND_RESOLUTIONS))); next.supports_seconds = true; callback(next); }); }"
+        },
+        "searchSymbols": {
+          "name": "searchSymbols",
+          "argumentCount": 1,
+          "sourceLength": 171,
+          "source": "async e=>{const t=C,r=P,{tvWidget:o,eventBus:i}=window[r(3834)],n=o[r(5617)][r(5837)][r(5862)];return i[r(1091)](nt[t(3090,\"3ovl\")+t(2725,\"Cr(e\")],{symbol:e,type:n}),null}"
+        }
+      }
+    },
+    "getBars": {
+      "name": "getBars",
+      "argumentCount": 5,
+      "sourceLength": 4139,
+      "source": "function(symbolInfo, resolution, periodParams, onHistory, onError) { chartBridge.lastFeedResolution = String(resolution || ''); const step = getSecondsFromResolution(resolution); if (!step || !INTERVALS.includes(step)) { const args = Array.from(arguments); if (typeof args[3] === 'function') { const originalHistory = args[3]; args[3] = function(bars, meta) { const transformed = applyChartBarTransforms('history', symbolInfo, resolution, bars); return originalHistory.call(this, transformed, meta); }; } return chartOriginals.getBars.apply(this, args); } chartBridge.getBarsCalls++; chartBridge.lastFeedResolution = String(resolution || ''); try { const symbol = getSymbolForFeed(symbolInfo); chartBridge.lastFeedSymbol = symbol; chartBridge.lastHistorySymbol = symbol; chartBridge.lastHistoryResolution = String(resolution || ''); chartBridge.lastFirstDataRequest = !!(periodParams && periodParams.firstDataRequest); const deliverHistory = result => { const bars = applyChartBarTransforms('history', symbolInfo, resolution, result.bars); chartBridge.lastHistoryBars = bars.length; chartBridge.lastHistoryEmpty = bars.length === 0; chartBridge.lastHistoryNoData = !!result.noData; chartBridge.lastHistoryMode = result.mode || 'unknown'; chartBridge.historyBarsReturned += bars.length; const historyKey = `${symbol}|${step}`; if (bars.length === 0) { emptyHistoryRequests.set(historyKey, { at: Date.now(), symbol, step }); chartBridge.historyEmptyRequests++; } else { emptyHistoryRequests.delete(historyKey); } // Async callback delivery breaks TradingView's nested countBack recursion. chartBridge.l"
+    },
+    "subscribeBars": {
+      "name": "subscribeBars",
+      "argumentCount": 5,
+      "sourceLength": 3959,
+      "source": "function(symbolInfo, resolution, onRealtime, subscriberUID, onResetCache) { chartBridge.lastFeedResolution = String(resolution || ''); const step = getSecondsFromResolution(resolution); if (!step || !INTERVALS.includes(step)) { const resetId = String(subscriberUID || `native-${Date.now()}-${Math.random().toString(36).slice(2)}`); // If TradingView reuses a previous seconds UID for a native series, retire // our local record first so its later unsubscribe cannot affect the native feed. const staleLocal = localSubscriptions.get(resetId); if (staleLocal) retireLocalSubscription(resetId, staleLocal, 'reused by native resolution'); knownLocalSubscriptionIds.delete(resetId); if (typeof onResetCache === 'function') { chartResetCallbacks.set(resetId, { symbol: getSymbolForFeed(symbolInfo), callback: onResetCache }); } const args = Array.from(arguments); if (typeof args[2] === 'function') { const originalRealtime = args[2]; args[2] = bar => originalRealtime(applyChartBarTransforms('realtime', symbolInfo, resolution, bar)); } return chartOriginals.subscribeBars.apply(this, args); } const id = String(subscriberUID || `bsl-${Date.now()}-${Math.random().toString(36).slice(2)}`); const symbol = getSymbolForFeed(symbolInfo); // There is one active chart series. Retire subscriptions belonging to the // previous symbol/resolution before registering the new one; this prevents a // stale timer from competing with the new symbol's stream. retireSubscriptionsForOtherSeries(symbol, step); retireAllLocalSubscriptionsExcept(id); const previous = localSubscriptions.get(id); if (previous) retireLoca"
+    },
+    "resolveSymbol": {
+      "name": "resolveSymbol",
+      "argumentCount": 0,
+      "sourceLength": 341,
+      "source": "function(...args) { const callbackIndex = 1; if (typeof args[callbackIndex] === 'function') { const originalCallback = args[callbackIndex]; args[callbackIndex] = info => originalCallback(patchSymbolInfo(info)); } return chartOriginals.resolveSymbol.apply(this, args); }"
+    }
+  },
+  "summary": {
+    "activeChartCreateStudy": true,
+    "studyEngineCreateStudy": true,
+    "internalCreateStudy": true,
+    "chartWidgetInsertStudy": true,
+    "metaInfoConstructorAvailable": true,
+    "studyConstructorAvailable": true,
+    "externalDatafeedAvailable": true,
+    "pineJSGlobalAvailable": false,
+    "tradingViewWidgetFactoryAvailable": false
+  }
+}
