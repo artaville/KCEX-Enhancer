@@ -1,0 +1,501 @@
+{
+  "reportName": "BITUNIX_STUDY_REPOSITORY_AND_CHART_ARRAY_AUDIT",
+  "version": "1.0",
+  "timestamp": "2026-11-18T14:52:34.308Z",
+  "safety": {
+    "readOnly": true,
+    "repositoryFactoryAccessed": true,
+    "repositoryMethodsCalled": [
+      "isReady",
+      "getInternalMetaInfoArray",
+      "getMigrations",
+      "findByIdSync"
+    ],
+    "repositoryArraysModified": false,
+    "repositoryMethodsThatFetchMetadataCalled": false,
+    "studyConstructorsCalled": false,
+    "studyInserted": false,
+    "chartModified": false,
+    "paneCreated": false,
+    "ordersSent": false,
+    "temporaryWebpackChunkRemoved": true
+  },
+  "environment": {
+    "frameId": "tradingview_b6c11",
+    "symbol": "XAUTUSDT",
+    "resolution": "5S"
+  },
+  "repository": {
+    "ready": true,
+    "constructorName": "d",
+    "ownProperties": [
+      {
+        "key": "_isReady",
+        "type": "boolean",
+        "getter": false,
+        "setter": false,
+        "valueType": "boolean",
+        "arrayLength": null
+      },
+      {
+        "key": "_rawStudiesMetaInfo",
+        "type": "object",
+        "getter": false,
+        "setter": false,
+        "valueType": "object",
+        "arrayLength": 0
+      },
+      {
+        "key": "_rawStudiesMetaInfoDeferredPromise",
+        "type": "object",
+        "getter": false,
+        "setter": false,
+        "valueType": "object",
+        "arrayLength": null
+      },
+      {
+        "key": "_javaStudiesMetaInfo",
+        "type": "object",
+        "getter": false,
+        "setter": false,
+        "valueType": "object",
+        "arrayLength": 119
+      },
+      {
+        "key": "_pineMetaInfoCache",
+        "type": "object",
+        "getter": false,
+        "setter": false,
+        "valueType": "object",
+        "arrayLength": 0
+      },
+      {
+        "key": "_studiesMigrations",
+        "type": "object",
+        "getter": false,
+        "setter": false,
+        "valueType": "object",
+        "arrayLength": 0
+      },
+      {
+        "key": "_chartApi",
+        "type": "object",
+        "getter": false,
+        "setter": false,
+        "valueType": "object",
+        "arrayLength": null
+      }
+    ],
+    "prototypeMethods": [
+      {
+        "level": 0,
+        "name": "requestMetaInfo",
+        "arguments": 0,
+        "source": "async requestMetaInfo(){if(null===this._rawStudiesMetaInfoDeferredPromise){this._rawStudiesMetaInfoDeferredPromise=(0,h.createDeferredPromise)(),this._rawStudiesMetaInfoDeferredPromise.promise.finally((()=>{this._rawStudiesMetaInfoDeferredPromise=null})),this._requestStarted();const e=(await this._chartApi.requestMetadata()).params[1].metainfo.slice();this._processLibraryMetaInfo(e),this._requestFinished(),this._rawStudiesMetaInfoDeferredPromise.resolve(this._rawStudiesMetaInfo)}return this._rawStudiesMetaInfoDeferredPromise.promise}"
+      },
+      {
+        "level": 0,
+        "name": "findById",
+        "arguments": 1,
+        "source": "async findById(e){this._isReady||await this.requestMetaInfo();const t=this._findStudyMetaInfo(e)\n;return null!==t?Promise.resolve(t):\"pine\"===e.type?this._compilePine(e):Promise.reject(`unexpected study id=${e.studyId} with type=${e.type}`)}"
+      },
+      {
+        "level": 0,
+        "name": "findByIdSync",
+        "arguments": 1,
+        "source": "findByIdSync(e){return this._findStudyMetaInfo(e)}"
+      },
+      {
+        "level": 0,
+        "name": "isReady",
+        "arguments": 0,
+        "source": "isReady(){return this._isReady}"
+      },
+      {
+        "level": 0,
+        "name": "findAllJavaStudies",
+        "arguments": 0,
+        "source": "async findAllJavaStudies(){return this._isReady||await this.requestMetaInfo(),this._javaStudiesMetaInfo}"
+      },
+      {
+        "level": 0,
+        "name": "getInternalMetaInfoArray",
+        "arguments": 0,
+        "source": "getInternalMetaInfoArray(){return this._javaStudiesMetaInfo}"
+      },
+      {
+        "level": 0,
+        "name": "getMigrations",
+        "arguments": 0,
+        "source": "getMigrations(){return this._studiesMigrations}"
+      },
+      {
+        "level": 0,
+        "name": "addPineMetaInfo",
+        "arguments": 1,
+        "source": "addPineMetaInfo(e){return p(this._pineMetaInfoCache,e)}"
+      },
+      {
+        "level": 0,
+        "name": "getLatestMetaInfoForPineStudy",
+        "arguments": 2,
+        "source": "async getLatestMetaInfoForPineStudy(e,t){return null}"
+      },
+      {
+        "level": 0,
+        "name": "_processMigrations",
+        "arguments": 1,
+        "source": "_processMigrations(e){throw new Error(\"not implemented\")}"
+      },
+      {
+        "level": 0,
+        "name": "_processSiteMetaInfo",
+        "arguments": 2,
+        "source": "_processSiteMetaInfo(e,t){throw new Error(\"not implemented\")}"
+      },
+      {
+        "level": 0,
+        "name": "_processLibraryMetaInfo",
+        "arguments": 1,
+        "source": "_processLibraryMetaInfo(e){for(const t of e)u(t),p(this._javaStudiesMetaInfo,t);this._javaStudiesMetaInfo=this._javaStudiesMetaInfo.sort(((e,t)=>{const i=e.description_localized||e.description,s=t.description_localized||t.description;return i>s?1:i<s?-1:0})),o.StudyMetaInfo.overrideDefaults(this._javaStudiesMetaInfo)}"
+      },
+      {
+        "level": 0,
+        "name": "_requestStarted",
+        "arguments": 0,
+        "source": "_requestStarted(){this._isReady=!1,this._javaStudiesMetaInfo=[],this._pineMetaInfoCache=[],this._studiesMigrations=[],this._rawStudiesMetaInfo=[]}"
+      },
+      {
+        "level": 0,
+        "name": "_requestFinished",
+        "arguments": 0,
+        "source": "_requestFinished(){this._isReady=!0}"
+      },
+      {
+        "level": 0,
+        "name": "_findStudyMetaInfo",
+        "arguments": 1,
+        "source": "_findStudyMetaInfo(e){return\"java\"===e.type?this._javaStudiesMetaInfo.find((t=>t.id===e.studyId))||null:this._pineMetaInfoCache.find((t=>t.scriptIdPart===e.pineId&&(void 0===e.pineVersion||(0,n.ensureDefined)(t.pine).version===e.pineVersion)))||null}"
+      },
+      {
+        "level": 0,
+        "name": "_compilePine",
+        "arguments": 1,
+        "source": "_compilePine(e){throw new Error(\"unsupported\")}"
+      },
+      {
+        "level": 1,
+        "name": "__defineGetter__",
+        "arguments": 2,
+        "source": "function __defineGetter__() { [native code] }"
+      },
+      {
+        "level": 1,
+        "name": "__defineSetter__",
+        "arguments": 2,
+        "source": "function __defineSetter__() { [native code] }"
+      },
+      {
+        "level": 1,
+        "name": "hasOwnProperty",
+        "arguments": 1,
+        "source": "function hasOwnProperty() { [native code] }"
+      },
+      {
+        "level": 1,
+        "name": "__lookupGetter__",
+        "arguments": 1,
+        "source": "function __lookupGetter__() { [native code] }"
+      },
+      {
+        "level": 1,
+        "name": "__lookupSetter__",
+        "arguments": 1,
+        "source": "function __lookupSetter__() { [native code] }"
+      },
+      {
+        "level": 1,
+        "name": "isPrototypeOf",
+        "arguments": 1,
+        "source": "function isPrototypeOf() { [native code] }"
+      },
+      {
+        "level": 1,
+        "name": "propertyIsEnumerable",
+        "arguments": 1,
+        "source": "function propertyIsEnumerable() { [native code] }"
+      },
+      {
+        "level": 1,
+        "name": "toString",
+        "arguments": 0,
+        "source": "function toString() { [native code] }"
+      },
+      {
+        "level": 1,
+        "name": "valueOf",
+        "arguments": 0,
+        "source": "function valueOf() { [native code] }"
+      },
+      {
+        "level": 1,
+        "name": "toLocaleString",
+        "arguments": 0,
+        "source": "function toLocaleString() { [native code] }"
+      }
+    ],
+    "rawMetaCount": 0,
+    "javaMetaCount": 119,
+    "pineMetaCount": 0,
+    "migrationsCount": 0,
+    "javaArrayIsChartMetadataArray": false,
+    "rawMetaSample": [],
+    "repositoryTargets": {
+      "Willams %R@tv-basicstudies": {
+        "id": "Willams %R@tv-basicstudies",
+        "shortId": "Willams %R",
+        "packageId": "tv-basicstudies",
+        "version": "1",
+        "fullId": "Willams %R@tv-basicstudies-1",
+        "description": "Williams %R",
+        "description_localized": "Williams %R",
+        "shortDescription": "%R",
+        "is_price_study": false,
+        "is_hidden_study": false,
+        "isTVScript": false,
+        "_metainfoVersion": 53,
+        "pine": null,
+        "inputs": [
+          {
+            "id": "in_0",
+            "name": "length",
+            "type": "integer",
+            "defval": 14
+          }
+        ],
+        "plots": [
+          {
+            "id": "plot_0",
+            "type": "line"
+          }
+        ],
+        "defaults": {
+          "inputs": {
+            "in_0": 14
+          },
+          "styles": {
+            "plot_0": {
+              "display": 15,
+              "linestyle": 0,
+              "linewidth": 1,
+              "plottype": 0,
+              "trackPrice": false,
+              "transparency": 0,
+              "color": "#7E57C2"
+            }
+          }
+        }
+      },
+      "Williams %R@tv-basicstudies": null,
+      "Williams Fractals@tv-basicstudies": {
+        "id": "Williams Fractals@tv-basicstudies",
+        "shortId": "Williams Fractals",
+        "packageId": "tv-basicstudies",
+        "version": "1",
+        "fullId": "Williams Fractals@tv-basicstudies-1",
+        "description": "Williams Fractal",
+        "description_localized": "Williams Fractal",
+        "shortDescription": "Fractals",
+        "is_price_study": true,
+        "is_hidden_study": false,
+        "isTVScript": false,
+        "_metainfoVersion": 53,
+        "pine": null,
+        "inputs": [
+          {
+            "id": "in_0",
+            "name": "Periods",
+            "type": "integer",
+            "defval": 2
+          }
+        ],
+        "plots": [
+          {
+            "id": "plot_0",
+            "type": "shapes"
+          },
+          {
+            "id": "plot_1",
+            "type": "shapes"
+          }
+        ],
+        "defaults": {
+          "inputs": {
+            "in_0": 2
+          },
+          "styles": {
+            "plot_0": {
+              "display": 15,
+              "plottype": "shape_triangle_down",
+              "location": "BelowBar",
+              "transparency": 0,
+              "color": "#F23645"
+            },
+            "plot_1": {
+              "display": 15,
+              "plottype": "shape_triangle_up",
+              "location": "AboveBar",
+              "transparency": 0,
+              "color": "#089981"
+            }
+          }
+        }
+      },
+      "Pivot Points Standard@tv-basicstudies": null,
+      "Price Channel@tv-basicstudies": {
+        "id": "Price Channel@tv-basicstudies",
+        "shortId": "Price Channel",
+        "packageId": "tv-basicstudies",
+        "version": "1",
+        "fullId": "Price Channel@tv-basicstudies-1",
+        "description": "Price Channel",
+        "description_localized": "Price Channel",
+        "shortDescription": "PC",
+        "is_price_study": true,
+        "is_hidden_study": false,
+        "isTVScript": false,
+        "_metainfoVersion": 53,
+        "pine": null,
+        "inputs": [
+          {
+            "id": "in_0",
+            "name": "Length",
+            "type": "integer",
+            "defval": 20
+          },
+          {
+            "id": "in_1",
+            "name": "Offset Length",
+            "type": "integer",
+            "defval": 0
+          }
+        ],
+        "plots": [
+          {
+            "id": "plot_0",
+            "type": "line"
+          },
+          {
+            "id": "plot_1",
+            "type": "line"
+          },
+          {
+            "id": "plot_2",
+            "type": "line"
+          }
+        ],
+        "defaults": {
+          "inputs": {
+            "in_0": 20,
+            "in_1": 0
+          },
+          "styles": {
+            "plot_0": {
+              "display": 15,
+              "linestyle": 0,
+              "linewidth": 1,
+              "plottype": 0,
+              "trackPrice": false,
+              "transparency": 0,
+              "color": "#F50057"
+            },
+            "plot_1": {
+              "display": 15,
+              "linestyle": 0,
+              "linewidth": 1,
+              "plottype": 0,
+              "trackPrice": false,
+              "transparency": 0,
+              "color": "#F50057"
+            },
+            "plot_2": {
+              "display": 15,
+              "linestyle": 0,
+              "linewidth": 1,
+              "plottype": 0,
+              "trackPrice": false,
+              "transparency": 0,
+              "color": "#2196F3"
+            }
+          }
+        }
+      }
+    }
+  },
+  "chartModel": {
+    "found": false,
+    "constructorName": null,
+    "metadataCount": null,
+    "arrayIsSameReference": false,
+    "idCount": 0,
+    "targetIds": [],
+    "repositoryIdsMissingFromChart": [
+      "Accelerator Oscillator@tv-basicstudies",
+      "Accumulation/Distribution@tv-basicstudies",
+      "Accumulative Swing Index@tv-basicstudies",
+      "Advance/Decline@tv-basicstudies",
+      "AnchoredVWAP@tv-basicstudies",
+      "Arnaud Legoux Moving Average@tv-basicstudies",
+      "Aroon@tv-basicstudies",
+      "average_directional_Index@tv-basicstudies",
+      "AveragePrice@tv-basicstudies",
+      "Average True Range@tv-basicstudies",
+      "Awesome Oscillator@tv-basicstudies",
+      "Balance of Power@tv-basicstudies",
+      "Bollinger Bands@tv-basicstudies",
+      "Bollinger Bands %B@tv-basicstudies",
+      "Bollinger Bands Width@tv-basicstudies",
+      "Chaikin Money Flow@tv-basicstudies",
+      "Chaikin Oscillator@tv-basicstudies",
+      "Chaikin Volatility@tv-basicstudies",
+      "Chande Kroll Stop@tv-basicstudies",
+      "Chande Momentum Oscillator@tv-basicstudies",
+      "chop_zone@tv-basicstudies",
+      "Choppiness Index@tv-basicstudies",
+      "Commodity Channel Index@tv-basicstudies",
+      "Compare@tv-basicstudies",
+      "Connors RSI@tv-basicstudies",
+      "Coppock Curve@tv-basicstudies",
+      "Correlation - Log@tv-basicstudies",
+      "Correlation Coeff@tv-basicstudies",
+      "detrended_price_oscillator@tv-basicstudies",
+      "Directional Movement Index@tv-basicstudies",
+      "Donchian Channels@tv-basicstudies",
+      "Double Exponential Moving Average@tv-basicstudies",
+      "EMA Cross@tv-basicstudies",
+      "Ease of Movement@tv-basicstudies",
+      "Elders Force Index@tv-basicstudies",
+      "Envelope@tv-basicstudies",
+      "fisher_transform@tv-basicstudies",
+      "VbPFixed@tv-basicstudies",
+      "Guppy Multiple Moving Average@tv-basicstudies",
+      "historical_volatility@tv-basicstudies",
+      "Hull MA@tv-basicstudies",
+      "Ichimoku Cloud@tv-basicstudies",
+      "KDJ@tv-basicstudies",
+      "Keltner Channels@tv-basicstudies",
+      "Klinger Oscillator@tv-basicstudies",
+      "Know Sure Thing@tv-basicstudies",
+      "Least Squares Moving Average@tv-basicstudies",
+      "Linear Regression Curve@tv-basicstudies",
+      "Linear Regression Slope@tv-basicstudies",
+      "MA Cross@tv-basicstudies"
+    ],
+    "chartIdsMissingFromRepository": []
+  },
+  "studyLibrary": {
+    "count": null,
+    "targets": []
+  },
+  "errors": []
+}
