@@ -1,0 +1,318 @@
+{
+  "reportName": "BITUNIX_NATIVE_STUDY_ARRAY_IDENTITY_AUDIT",
+  "version": "1.0",
+  "timestamp": "2026-11-18T15:49:07.408Z",
+  "safety": {
+    "readOnly": true,
+    "constructorsInvoked": false,
+    "inserterCreated": false,
+    "insertCalled": false,
+    "repositoryModified": false,
+    "metadataModified": false,
+    "chartModified": false,
+    "paneCreated": false,
+    "ordersSent": false,
+    "temporaryChunkRemoved": true
+  },
+  "environment": {
+    "frameId": "tradingview_b6c11",
+    "symbol": "XAUTUSDT",
+    "resolution": "5S"
+  },
+  "paths": {
+    "repositoryFound": true,
+    "chartWidgetFound": true,
+    "widgetModelFound": true,
+    "actualModelFound": true,
+    "actualModelOwnKeys": [
+      "_onRearrangePanes",
+      "_sourcesBeingMoved",
+      "_customSourceBeingMovedHitTestData",
+      "_customSourceBeingMoved",
+      "_dataSourceCollectionChanged",
+      "_sourceProperitesChanged",
+      "_sourceZOrderChanged",
+      "_symbolSourceResolved",
+      "_symbolSourceResolvingActive",
+      "_paneBeingCreatedLineOn",
+      "_phantomSourceContainer",
+      "_studyInserted",
+      "_panes",
+      "_strategySources",
+      "_strategySourcesChange",
+      "_activeStrategySource",
+      "_paneCollapsingAvailable",
+      "_panesCollectionChanged",
+      "_lollipopSourcesWatcher",
+      "_hoveredSource",
+      "_hoveredSourceChanged",
+      "_topmostCustomSources",
+      "_fgCustomSources",
+      "_bgCustomSources",
+      "_allCustomSources",
+      "_customSourcesMap",
+      "_multiPaneSources",
+      "_availablePriceSources",
+      "_availablePriceSourcesBySymbol",
+      "_selectedSourceChanged",
+      "_symbolSourceCollectionChanged",
+      "_gridSource",
+      "_lollipopSourcesWatcherLoader",
+      "_removeSourceFromSelection",
+      "_addSourceToSelection",
+      "_recalcPaneCollapsingAvailable",
+      "_studiesMetaData",
+      "_studyVersioning",
+      "m_crossHairSource",
+      "m_mainSeries",
+      "_barsMarksSources",
+      "_mainSeriesScaleRatioProperty",
+      "_watermarkSource",
+      "_studyShiftColorStartOffset",
+      "_studyColorRotatorFactory"
+    ],
+    "chartWidgetSameAsWindowGlobal": true,
+    "repositoryChartApiSameAsGlobal": true
+  },
+  "arrays": {
+    "repository": {
+      "available": true,
+      "count": 119,
+      "targetIds": [
+        "PivotPointsStandard@tv-basicstudies",
+        "Price Channel@tv-basicstudies",
+        "Willams %R@tv-basicstudies",
+        "Williams Fractals@tv-basicstudies",
+        "ZigZag@tv-basicstudies"
+      ]
+    },
+    "widgetInternal": {
+      "available": true,
+      "count": 119,
+      "targetIds": [
+        "PivotPointsStandard@tv-basicstudies",
+        "Price Channel@tv-basicstudies",
+        "Willams %R@tv-basicstudies",
+        "Williams Fractals@tv-basicstudies",
+        "ZigZag@tv-basicstudies"
+      ]
+    },
+    "widgetStudies": {
+      "available": true,
+      "count": 119,
+      "targetIds": [
+        "PivotPointsStandard@tv-basicstudies",
+        "Price Channel@tv-basicstudies",
+        "Willams %R@tv-basicstudies",
+        "Williams Fractals@tv-basicstudies",
+        "ZigZag@tv-basicstudies"
+      ]
+    },
+    "wrapperStudies": {
+      "available": true,
+      "count": 119,
+      "targetIds": [
+        "PivotPointsStandard@tv-basicstudies",
+        "Price Channel@tv-basicstudies",
+        "Willams %R@tv-basicstudies",
+        "Williams Fractals@tv-basicstudies",
+        "ZigZag@tv-basicstudies"
+      ]
+    },
+    "actualModelStudies": {
+      "available": true,
+      "count": 119,
+      "targetIds": [
+        "PivotPointsStandard@tv-basicstudies",
+        "Price Channel@tv-basicstudies",
+        "Willams %R@tv-basicstudies",
+        "Williams Fractals@tv-basicstudies",
+        "ZigZag@tv-basicstudies"
+      ]
+    }
+  },
+  "identity": {
+    "repository === widgetInternal": true,
+    "repository === widgetStudies": true,
+    "repository === wrapperStudies": true,
+    "repository === actualModelStudies": true,
+    "widgetInternal === widgetStudies": true,
+    "widgetInternal === wrapperStudies": true,
+    "widgetInternal === actualModelStudies": true,
+    "widgetStudies === wrapperStudies": true,
+    "widgetStudies === actualModelStudies": true,
+    "wrapperStudies === actualModelStudies": true
+  },
+  "repositoryTargets": {
+    "Willams %R@tv-basicstudies": {
+      "id": "Willams %R@tv-basicstudies",
+      "fullId": "Willams %R@tv-basicstudies-1",
+      "description": "Williams %R",
+      "is_price_study": false,
+      "metainfoVersion": 53,
+      "inputs": [
+        {
+          "id": "in_0",
+          "name": "length",
+          "type": "integer",
+          "defval": 14
+        }
+      ],
+      "plots": [
+        {
+          "id": "plot_0",
+          "type": "line"
+        }
+      ]
+    },
+    "PivotPointsStandard@tv-basicstudies": {
+      "id": "PivotPointsStandard@tv-basicstudies",
+      "fullId": "PivotPointsStandard@tv-basicstudies-80",
+      "description": "Pivot Points Standard",
+      "is_price_study": true,
+      "metainfoVersion": 53,
+      "inputs": [
+        {
+          "id": "kind",
+          "name": "Type",
+          "type": "text",
+          "defval": "Traditional"
+        },
+        {
+          "id": "showHistoricalPivots",
+          "name": "Show historical pivots",
+          "type": "bool",
+          "defval": true
+        },
+        {
+          "id": "pivTimeFrame",
+          "name": "Pivots Timeframe",
+          "type": "text",
+          "defval": "Auto"
+        },
+        {
+          "id": "lookBack",
+          "name": "Number of Pivots Back",
+          "type": "integer",
+          "defval": 15
+        }
+      ],
+      "plots": []
+    },
+    "Williams Fractals@tv-basicstudies": {
+      "id": "Williams Fractals@tv-basicstudies",
+      "fullId": "Williams Fractals@tv-basicstudies-1",
+      "description": "Williams Fractal",
+      "is_price_study": true,
+      "metainfoVersion": 53,
+      "inputs": [
+        {
+          "id": "in_0",
+          "name": "Periods",
+          "type": "integer",
+          "defval": 2
+        }
+      ],
+      "plots": [
+        {
+          "id": "plot_0",
+          "type": "shapes"
+        },
+        {
+          "id": "plot_1",
+          "type": "shapes"
+        }
+      ]
+    },
+    "Price Channel@tv-basicstudies": {
+      "id": "Price Channel@tv-basicstudies",
+      "fullId": "Price Channel@tv-basicstudies-1",
+      "description": "Price Channel",
+      "is_price_study": true,
+      "metainfoVersion": 53,
+      "inputs": [
+        {
+          "id": "in_0",
+          "name": "Length",
+          "type": "integer",
+          "defval": 20
+        },
+        {
+          "id": "in_1",
+          "name": "Offset Length",
+          "type": "integer",
+          "defval": 0
+        }
+      ],
+      "plots": [
+        {
+          "id": "plot_0",
+          "type": "line"
+        },
+        {
+          "id": "plot_1",
+          "type": "line"
+        },
+        {
+          "id": "plot_2",
+          "type": "line"
+        }
+      ]
+    },
+    "ZigZag@tv-basicstudies": {
+      "id": "ZigZag@tv-basicstudies",
+      "fullId": "ZigZag@tv-basicstudies-1",
+      "description": "Zig Zag",
+      "is_price_study": true,
+      "metainfoVersion": 53,
+      "inputs": [
+        {
+          "id": "in_0",
+          "name": "deviation",
+          "type": "float",
+          "defval": 5
+        },
+        {
+          "id": "in_1",
+          "name": "depth",
+          "type": "integer",
+          "defval": 10
+        }
+      ],
+      "plots": [
+        {
+          "id": "plot_0",
+          "type": "line"
+        },
+        {
+          "id": "plot_1",
+          "type": "dataoffset",
+          "target": "plot_0"
+        }
+      ]
+    }
+  },
+  "library": {
+    "available": true,
+    "count": 115,
+    "targets": []
+  },
+  "engine": {
+    "found": true,
+    "metaInfoCacheCount": 120,
+    "targetIds": [
+      "Price Channel@tv-basicstudies-1",
+      "Willams %R@tv-basicstudies-1",
+      "Williams Fractals@tv-basicstudies-1",
+      "ZigZag@tv-basicstudies-1",
+      "PivotPointsStandard@tv-basicstudies-80"
+    ]
+  },
+  "modelMethods": {
+    "studiesMetaData": "studiesMetaData(){return this._studiesMetaData}",
+    "setStudiesMetaData": "setStudiesMetaData(e,t){this._studiesMetaData=e,this._studyVersioning=new w.StudyVersioning(this._studiesMetaData,t)}",
+    "insertStudyWithParams": "insertStudyWithParams(e,t,i,s,o,a,l,c,h,d,u){var p,_;let m=null;if(!o&&void 0!==e.groupingKey){const t=this.findNonOverlayStudyWithGroupingKey(e.groupingKey);null!==t&&(m=t.pane)}null===m&&(o||e.is_price_study?m=(0,n.ensureNotNull)(this.paneForSource(null!==(p=null==a?void 0:a[0])&&void 0!==p?p:this.m_mainSeries)):(m=this.createPane(),void 0!==d&&m.setPaneSize(d))),\"Compare@tv-basicstudies\"===e.id&&this.m_mainSeries.priceScale().setMode({log:!1,percentage:!0});const g=(0,se.merge)((0,r.default)(null!=s?s:{}),{inputs:t,parentSources:[]}),f=null!=a?a:[],v=(0,x.prepareStudyProperties)(e,g,m,this.studyVersioning(),f),S=(0,G.createStudy)(this,v,f,e,u);this._recalcVisibleRangeStudiesImpl({studies:[S],oldEndVisibleIndex:-1,oldStartVisibleIndex:-1,force:!0});const y=m.findSuitableScale(S,null!==(_=null==a?void 0:a[0])&&void 0!==_?_:this.mainSeries(),l);if(y===this.mainSeries().priceScale()&&(0,me.isSymbolSource)(S)){const e=c?(0,hs.sourceNewCurrencyOnPinningToPriceScale)(S,y,this,!0):null,t=h?(0,\nge.sourceNewUnitOnPinningToPriceScale)(S,y,this,!0):null;null===e&&null===t||S.setSymbolParams({currency:e||void 0,unit:t||void 0})}(0,me.isSymbolSource)(S)&&(0,n.ensureNotNull)(m).hasDataSource(this.mainSeries())&&fs&&!us.getBool(\"enable_symbol_labels_on_inserting_compare_once\",!1)&&((0,I.saveDefaultProperties)(!0),this.properties().childs().scalesProperties.childs().showSymbolLabels.setValue(!0),(0,I.saveDefaultProperties)(!1),us.setValue(\"enable_symbol_labels_on_inserting_compare_once\",!0));const b=S.start();if(i&&m.id()===i.paneId)m.insertDataSource(S,y,i.zorder);else{m.addDataSource(S,y,!1);null!==S.preferredZOrder()&&m.insertAfter([S],this.mainSeries())}return S.isLinkedToSeries()&&S.setOwnerSource(this.mainSeries()),this.recalculatePane(m,(0,z.sourceChangeEvent)(S.id())),this.fullUpdate(),this._invalidateBarColorerCaches(),this._recalcVisibleRangeStudiesImpl({studies:[S],force:!0}),this._recalcColorStudiesImpl({studies:[S],force:!0}),this._studyInserted.fire(S),S.maxOffset().subscribe(this._boundUpdateStudiesMaxOffset,{callWithLast:!0}),{study:S,startPromise:b}}",
+    "createStudyInserter": "createStudyInserter(e,t,i={}){const{stubTitle:s,isOverlay:r}=i,n={createStudy:(e,t,i,s,r,n,o,a,l,c,h)=>this.checkIfFeatureAvailable(e,n)?((0,S.trackEvent)(\"studies\",\"Study_\"+e.id),\"Compare@tv-basicstudies\"===e.id&&(0,S.trackEvent)(\"compare\",\"symbol:\"+t.symbol),this._insertStudy(e,t,s,r,n,o,a,l,c,null,h)):(Zi.logNormal(\"Cannot insert study \"+e.id),null)};void 0!==s&&(n.createStub=()=>this.m_model.insertStudyStub(s,r).id(),n.removeStub=e=>this.m_model.removeStudyStub(e));const o=new ci.StudyInserter(e,n);return o.setParentSources(t),o}"
+  },
+  "errors": []
+}
