@@ -1,0 +1,332 @@
+{
+  "reportName": "BITUNIX_STUDY_REGISTRY_MATCH_AUDIT",
+  "version": "1.0",
+  "timestamp": "2026-11-18T16:00:02.931Z",
+  "safety": {
+    "readOnly": true,
+    "constructorsInvoked": false,
+    "studiesInserted": false,
+    "repositoryModified": false,
+    "metadataModified": false,
+    "chartModified": false,
+    "paneCreated": false,
+    "ordersSent": false
+  },
+  "root": {
+    "name": "__bbm_seo_tab__:a99bfc96-18f3-40f8-8759-e5376c7a718d",
+    "href": "https://www.bitunix.com/contract-trade/XAUTUSDT",
+    "frameCount": 3
+  },
+  "chartFrame": {
+    "name": "tradingview_b6c11",
+    "href": "blob:https://www.bitunix.com/c9bb7c28-07d1-4953-93c9-c0662f8acd62",
+    "symbol": "XAUTUSDT",
+    "resolution": "5S",
+    "libraryCount": 115,
+    "repositoryCount": 119,
+    "engineCacheCount": 120
+  },
+  "targets": [
+    {
+      "name": "Williams %R",
+      "expectedBaseId": "Willams %R@tv-basicstudies",
+      "expectedFullId": "Willams %R@tv-basicstudies-1",
+      "repository": {
+        "id": "Willams %R@tv-basicstudies",
+        "description": "Williams %R",
+        "shortDescription": "%R",
+        "version": "1",
+        "metainfoVersion": null,
+        "is_price_study": false,
+        "sameObjectAsLibraryMeta": false
+      },
+      "libraryHits": [
+        {
+          "metaId": "Willams %R@tv-basicstudies-1",
+          "shortDescription": "%R",
+          "description": "Williams %R",
+          "fullName": null,
+          "version": null,
+          "metainfoVersion": 52,
+          "is_price_study": false,
+          "constructorType": "function",
+          "constructorName": "constructor",
+          "constructorPrototypeMethods": [],
+          "hasMainOnPrototype": false,
+          "hasInitOnPrototype": false,
+          "sameMetainfoObjectAsRepository": false,
+          "sameIdAsBase": false,
+          "sameIdAsFull": true,
+          "engineRuleMatch": true
+        }
+      ],
+      "engineHits": [
+        {
+          "metaId": "Willams %R@tv-basicstudies-1",
+          "shortDescription": "%R",
+          "description": "Williams %R",
+          "fullName": null,
+          "version": null,
+          "metainfoVersion": 52,
+          "is_price_study": false,
+          "constructorType": "function",
+          "constructorName": "constructor",
+          "constructorPrototypeMethods": [],
+          "hasMainOnPrototype": false,
+          "hasInitOnPrototype": false,
+          "sameMetainfoObjectAsRepository": false,
+          "sameIdAsBase": false,
+          "sameIdAsFull": true,
+          "engineRuleMatch": true
+        }
+      ],
+      "counts": {
+        "libraryHits": 1,
+        "engineRuleHits": 1
+      }
+    },
+    {
+      "name": "Pivot Points Standard",
+      "expectedBaseId": "PivotPointsStandard@tv-basicstudies",
+      "expectedFullId": "PivotPointsStandard@tv-basicstudies-80",
+      "repository": {
+        "id": "PivotPointsStandard@tv-basicstudies",
+        "description": "Pivot Points Standard",
+        "shortDescription": "Pivots",
+        "version": "80",
+        "metainfoVersion": null,
+        "is_price_study": true,
+        "sameObjectAsLibraryMeta": false
+      },
+      "libraryHits": [
+        {
+          "metaId": "PivotPointsStandard@tv-basicstudies-80",
+          "shortDescription": "Pivots",
+          "description": "Pivot Points Standard",
+          "fullName": null,
+          "version": null,
+          "metainfoVersion": 44,
+          "is_price_study": true,
+          "constructorType": "function",
+          "constructorName": "constructor",
+          "constructorPrototypeMethods": [
+            "init",
+            "main",
+            "_createResponse",
+            "_removeUnusedPivots"
+          ],
+          "hasMainOnPrototype": true,
+          "hasInitOnPrototype": true,
+          "sameMetainfoObjectAsRepository": false,
+          "sameIdAsBase": false,
+          "sameIdAsFull": true,
+          "engineRuleMatch": true
+        }
+      ],
+      "engineHits": [
+        {
+          "metaId": "PivotPointsStandard@tv-basicstudies-80",
+          "shortDescription": "Pivots",
+          "description": "Pivot Points Standard",
+          "fullName": null,
+          "version": null,
+          "metainfoVersion": 44,
+          "is_price_study": true,
+          "constructorType": "function",
+          "constructorName": "constructor",
+          "constructorPrototypeMethods": [
+            "init",
+            "main",
+            "_createResponse",
+            "_removeUnusedPivots"
+          ],
+          "hasMainOnPrototype": true,
+          "hasInitOnPrototype": true,
+          "sameMetainfoObjectAsRepository": false,
+          "sameIdAsBase": false,
+          "sameIdAsFull": true,
+          "engineRuleMatch": true
+        }
+      ],
+      "counts": {
+        "libraryHits": 1,
+        "engineRuleHits": 1
+      }
+    },
+    {
+      "name": "Price Channel",
+      "expectedBaseId": "Price Channel@tv-basicstudies",
+      "expectedFullId": "Price Channel@tv-basicstudies-1",
+      "repository": {
+        "id": "Price Channel@tv-basicstudies",
+        "description": "Price Channel",
+        "shortDescription": "PC",
+        "version": "1",
+        "metainfoVersion": null,
+        "is_price_study": true,
+        "sameObjectAsLibraryMeta": false
+      },
+      "libraryHits": [
+        {
+          "metaId": "Price Channel@tv-basicstudies-1",
+          "shortDescription": "PC",
+          "description": "Price Channel",
+          "fullName": null,
+          "version": null,
+          "metainfoVersion": 52,
+          "is_price_study": true,
+          "constructorType": "function",
+          "constructorName": "constructor",
+          "constructorPrototypeMethods": [],
+          "hasMainOnPrototype": false,
+          "hasInitOnPrototype": false,
+          "sameMetainfoObjectAsRepository": false,
+          "sameIdAsBase": false,
+          "sameIdAsFull": true,
+          "engineRuleMatch": true
+        }
+      ],
+      "engineHits": [
+        {
+          "metaId": "Price Channel@tv-basicstudies-1",
+          "shortDescription": "PC",
+          "description": "Price Channel",
+          "fullName": null,
+          "version": null,
+          "metainfoVersion": 52,
+          "is_price_study": true,
+          "constructorType": "function",
+          "constructorName": "constructor",
+          "constructorPrototypeMethods": [],
+          "hasMainOnPrototype": false,
+          "hasInitOnPrototype": false,
+          "sameMetainfoObjectAsRepository": false,
+          "sameIdAsBase": false,
+          "sameIdAsFull": true,
+          "engineRuleMatch": true
+        }
+      ],
+      "counts": {
+        "libraryHits": 1,
+        "engineRuleHits": 1
+      }
+    },
+    {
+      "name": "Williams Fractals",
+      "expectedBaseId": "Williams Fractals@tv-basicstudies",
+      "expectedFullId": "Williams Fractals@tv-basicstudies-1",
+      "repository": {
+        "id": "Williams Fractals@tv-basicstudies",
+        "description": "Williams Fractal",
+        "shortDescription": "Fractals",
+        "version": "1",
+        "metainfoVersion": null,
+        "is_price_study": true,
+        "sameObjectAsLibraryMeta": false
+      },
+      "libraryHits": [
+        {
+          "metaId": "Williams Fractals@tv-basicstudies-1",
+          "shortDescription": "Fractals",
+          "description": "Williams Fractal",
+          "fullName": null,
+          "version": null,
+          "metainfoVersion": 52,
+          "is_price_study": true,
+          "constructorType": "function",
+          "constructorName": "constructor",
+          "constructorPrototypeMethods": [],
+          "hasMainOnPrototype": false,
+          "hasInitOnPrototype": false,
+          "sameMetainfoObjectAsRepository": false,
+          "sameIdAsBase": false,
+          "sameIdAsFull": true,
+          "engineRuleMatch": true
+        }
+      ],
+      "engineHits": [
+        {
+          "metaId": "Williams Fractals@tv-basicstudies-1",
+          "shortDescription": "Fractals",
+          "description": "Williams Fractal",
+          "fullName": null,
+          "version": null,
+          "metainfoVersion": 52,
+          "is_price_study": true,
+          "constructorType": "function",
+          "constructorName": "constructor",
+          "constructorPrototypeMethods": [],
+          "hasMainOnPrototype": false,
+          "hasInitOnPrototype": false,
+          "sameMetainfoObjectAsRepository": false,
+          "sameIdAsBase": false,
+          "sameIdAsFull": true,
+          "engineRuleMatch": true
+        }
+      ],
+      "counts": {
+        "libraryHits": 1,
+        "engineRuleHits": 1
+      }
+    },
+    {
+      "name": "ZigZag",
+      "expectedBaseId": "ZigZag@tv-basicstudies",
+      "expectedFullId": "ZigZag@tv-basicstudies-1",
+      "repository": {
+        "id": "ZigZag@tv-basicstudies",
+        "description": "Zig Zag",
+        "shortDescription": "ZigZag",
+        "version": "1",
+        "metainfoVersion": null,
+        "is_price_study": true,
+        "sameObjectAsLibraryMeta": false
+      },
+      "libraryHits": [
+        {
+          "metaId": "ZigZag@tv-basicstudies-1",
+          "shortDescription": "ZigZag",
+          "description": "Zig Zag",
+          "fullName": null,
+          "version": null,
+          "metainfoVersion": 52,
+          "is_price_study": true,
+          "constructorType": "function",
+          "constructorName": "constructor",
+          "constructorPrototypeMethods": [],
+          "hasMainOnPrototype": false,
+          "hasInitOnPrototype": false,
+          "sameMetainfoObjectAsRepository": false,
+          "sameIdAsBase": false,
+          "sameIdAsFull": true,
+          "engineRuleMatch": true
+        }
+      ],
+      "engineHits": [
+        {
+          "metaId": "ZigZag@tv-basicstudies-1",
+          "shortDescription": "ZigZag",
+          "description": "Zig Zag",
+          "fullName": null,
+          "version": null,
+          "metainfoVersion": 52,
+          "is_price_study": true,
+          "constructorType": "function",
+          "constructorName": "constructor",
+          "constructorPrototypeMethods": [],
+          "hasMainOnPrototype": false,
+          "hasInitOnPrototype": false,
+          "sameMetainfoObjectAsRepository": false,
+          "sameIdAsBase": false,
+          "sameIdAsFull": true,
+          "engineRuleMatch": true
+        }
+      ],
+      "counts": {
+        "libraryHits": 1,
+        "engineRuleHits": 1
+      }
+    }
+  ],
+  "errors": []
+}
