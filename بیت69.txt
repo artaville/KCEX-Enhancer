@@ -1,0 +1,80 @@
+{
+  "reportName": "BITUNIX_STUDY_REGISTRY_FULL_ID_AUDIT",
+  "version": "1.0",
+  "timestamp": "2026-11-18T15:52:57.476Z",
+  "safety": {
+    "readOnly": true,
+    "constructorsInvoked": false,
+    "inserterCreated": false,
+    "insertCalled": false,
+    "repositoryModified": false,
+    "metadataModified": false,
+    "chartModified": false,
+    "paneCreated": false,
+    "ordersSent": false
+  },
+  "environment": {
+    "frameId": "__bbm_seo_tab__:a99bfc96-18f3-40f8-8759-e5376c7a718d",
+    "symbol": null,
+    "resolution": null
+  },
+  "registry": {
+    "available": true,
+    "count": 0,
+    "sampleKeys": [],
+    "engineCacheCount": 0,
+    "chartMetadataCount": 0
+  },
+  "targets": [
+    {
+      "name": "Williams %R",
+      "repository": null,
+      "libraryHits": [],
+      "engineHits": [],
+      "counts": {
+        "libraryMatches": 0,
+        "engineMatches": 0
+      }
+    },
+    {
+      "name": "Pivot Points Standard",
+      "repository": null,
+      "libraryHits": [],
+      "engineHits": [],
+      "counts": {
+        "libraryMatches": 0,
+        "engineMatches": 0
+      }
+    },
+    {
+      "name": "Price Channel",
+      "repository": null,
+      "libraryHits": [],
+      "engineHits": [],
+      "counts": {
+        "libraryMatches": 0,
+        "engineMatches": 0
+      }
+    },
+    {
+      "name": "Williams Fractals",
+      "repository": null,
+      "libraryHits": [],
+      "engineHits": [],
+      "counts": {
+        "libraryMatches": 0,
+        "engineMatches": 0
+      }
+    },
+    {
+      "name": "ZigZag",
+      "repository": null,
+      "libraryHits": [],
+      "engineHits": [],
+      "counts": {
+        "libraryMatches": 0,
+        "engineMatches": 0
+      }
+    }
+  ]
+}
